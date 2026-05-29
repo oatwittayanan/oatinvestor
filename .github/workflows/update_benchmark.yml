@@ -1,0 +1,64 @@
+name: Update Benchmark Data
+
+on:
+  schedule:
+    # 06:05 BKK = 23:05 UTC วันก่อน, รัน จันทร์-ศุกร์
+    - cron: '5 23 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas requests
+
+      - name: Generate benchmark.json
+        run: |
+          python3 - <<'PYEOF'
+          import yfinance as yf, json, sys
+          from datetime import datetime, date, timedelta
+          from pathlib import Path
+
+          BENCHMARKS = {"SPY": "S&P 500", "QQQ": "NASDAQ 100", "VT": "Total World"}
+          out = {}
+          for sym, name in BENCHMARKS.items():
+              try:
+                  hist = yf.Ticker(sym).history(period="1y")
+                  if hist.empty: continue
+                  prices = hist["Close"].dropna()
+                  start = float(prices.iloc[0])
+                  end   = float(prices.iloc[-1])
+                  out[sym] = {
+                      "name": name,
+                      "return_1y": round((end/start - 1)*100, 2),
+                      "price": round(end, 2),
+                      "date": str(prices.index[-1].date())
+                  }
+                  print(f"  {sym}: {out[sym]['return_1y']}% (${out[sym]['price']})")
+              except Exception as e:
+                  print(f"  {sym} failed: {e}")
+          out["generated_at"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          Path("data/benchmark.json").write_text(json.dumps(out, indent=2))
+          print("✅ benchmark.json updated")
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name  "oat-bot"
+          git config user.email "bot@oatinvestor.com"
+          git add data/benchmark.json
+          git diff --staged --quiet \
+            || git commit -m "📈 Auto-update benchmark data $(date +'%Y-%m-%d')"
+          git push
