@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Watchlist — oatinvestor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .stocks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .stock-card-wrap { text-decoration: none; display: block; }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="stocks.html" class="active">Watchlist</a>
+      <a href="trends.html">Trends</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <!-- Header -->
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+    <div>
+      <div class="section-label">Watchlist</div>
+      <h1 style="font-size:1.8rem;margin-bottom:4px">หุ้น <span id="ticker-count">—</span> ตัว</h1>
+      <p style="font-size:.88rem">จัดเรียงตาม WAF Score · อัพเดทล่าสุด <span id="last-updated">—</span></p>
+    </div>
+    <div>
+      <input type="text" id="search-input" placeholder="ค้นหา ticker หรือชื่อบริษัท..."
+        style="padding:8px 14px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg-card);color:var(--text);font-size:.88rem;width:240px;font-family:var(--font-sans)">
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+    <button class="filter-btn" data-filter="buy">BUY</button>
+    <button class="filter-btn" data-filter="watch">WATCH</button>
+    <button class="filter-btn" data-filter="hold">HOLD</button>
+    <button class="filter-btn" data-filter="study">STUDY</button>
+    <span style="width:1px;background:var(--border);margin:0 4px;align-self:stretch"></span>
+    <button class="filter-btn" data-filter-cat="all">ทุก Sector</button>
+    <button class="filter-btn" data-filter-cat="semi">Semiconductor</button>
+    <button class="filter-btn" data-filter-cat="mega">Mega Tech</button>
+    <button class="filter-btn" data-filter-cat="cloud">Cloud/SaaS</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="stocks-grid" id="stocks-grid">
+    <div style="grid-column:1/-1;text-align:center;padding:48px 0;color:var(--text-3)">กำลังโหลด...</div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="../app.js"></script>
+<script>
+let allStocks = [];
+let filterAction = 'all';
+let filterCat = 'all';
+let searchTerm = '';
+
+const CAT_MAP = {
+  semi: ['Semiconductor','semiconductor'],
+  mega: ['Mega Tech','mega_tech','mega'],
+  cloud: ['Cloud','SaaS','cloud','saas','software']
+};
+
+function matchesCat(s, cat) {
+  if (cat === 'all') return true;
+  const keys = CAT_MAP[cat] || [];
+  const val = ((s.category || '') + ' ' + (s.sector || '')).toLowerCase();
+  return keys.some(k => val.includes(k.toLowerCase()));
+}
+
+function renderGrid() {
+  const grid = document.getElementById('stocks-grid');
+  const filtered = allStocks.filter(s => {
+    const action = (s.action || '').toLowerCase();
+    const search = searchTerm.toLowerCase();
+    const matchA = filterAction === 'all' || action === filterAction;
+    const matchC = matchesCat(s, filterCat);
+    const matchS = !search || s.symbol.toLowerCase().includes(search) || (s.name||'').toLowerCase().includes(search);
+    return matchA && matchC && matchS;
+  });
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-3)">ไม่พบหุ้นที่ค้นหา</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(s => {
+    const action = (s.action || 'study').toLowerCase();
+    const mos = s.mos;
+    const mosClass = mos == null ? '' : mos >= 15 ? 'pos' : mos < 0 ? 'neg' : '';
+    const mosText = mos == null ? '—' : (mos >= 0 ? '+' : '') + mos.toFixed(1) + '%';
+    return `
+    <a href="stock.html?t=${s.symbol}" class="stock-card-wrap" data-action="${action}" data-sector="${(s.sectorSlug||'')}">
+      <div class="stock-card">
+        <div class="stock-card-header">
+          <div>
+            <div class="stock-ticker">${s.symbol}</div>
+            <div class="stock-name">${s.name || ''}</div>
+            <div class="stock-meta" style="margin-top:6px">
+              ${tierBadge(s.tier || s.wafBadge || '')}
+            </div>
+          </div>
+          ${actionBadge(action)}
+        </div>
+        ${wafBar(s.waf)}
+        <div class="stock-numbers">
+          <div class="stock-num-item">
+            <div class="stock-num-label">Fair Value</div>
+            <div class="stock-num-value">${fmtPrice(s.fv)}</div>
+          </div>
+          <div class="stock-num-item">
+            <div class="stock-num-label">MoS</div>
+            <div class="stock-num-value ${mosClass}">${mosText}</div>
+          </div>
+        </div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+// Filters
+document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn[data-filter]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filterAction = btn.dataset.filter;
+    renderGrid();
+  });
+});
+document.querySelectorAll('.filter-btn[data-filter-cat]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn[data-filter-cat]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filterCat = btn.dataset.filterCat;
+    renderGrid();
+  });
+});
+document.getElementById('search-input').addEventListener('input', e => {
+  searchTerm = e.target.value;
+  renderGrid();
+});
+
+// Load data
+fetch('../data/stocks.json').then(r => r.json()).then(data => {
+  allStocks = Object.values(data).sort((a,b) => (b.waf||0) - (a.waf||0));
+  document.getElementById('ticker-count').textContent = allStocks.length;
+  const dates = allStocks.map(s => s.updated).filter(Boolean).sort();
+  document.getElementById('last-updated').textContent = dates[dates.length-1] || '—';
+  renderGrid();
+}).catch(() => {
+  document.getElementById('stocks-grid').innerHTML =
+    '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-3)">โหลดข้อมูลไม่ได้ — ลองรันผ่าน local server</div>';
+});
+</script>
+</body>
+</html>

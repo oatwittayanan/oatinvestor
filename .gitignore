@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# macOS
+.DS_Store
+*.command
+
+# Credentials (never commit)
+*.json.key
+*credentials*.json
+*service_account*.json
+
+# Local dev
+*.local

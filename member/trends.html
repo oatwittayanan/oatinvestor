@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trends — oatinvestor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .trends-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    .expand-btn {
+      background: none; border: none; cursor: pointer;
+      font-size: .82rem; color: var(--text-3); font-weight: 500;
+      display: flex; align-items: center; gap: 4px;
+      padding: 4px 0; transition: color var(--ease);
+      font-family: var(--font-sans);
+    }
+    .expand-btn:hover { color: var(--yellow-text); }
+    .expand-icon { transition: transform var(--ease); }
+    .trend-card.expanded .expand-icon { transform: rotate(180deg); }
+    @media (max-width: 600px) {
+      .trends-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="stocks.html">Watchlist</a>
+      <a href="trends.html" class="active">Trends</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <!-- Header -->
+  <div style="margin-bottom:28px">
+    <div class="section-label">Mega Trends</div>
+    <h1 style="font-size:1.8rem;margin-bottom:8px">Trends ที่ขับเคลื่อนตลาด</h1>
+    <p style="font-size:.9rem">วิเคราะห์ <span id="trend-count">—</span> Mega Trends พร้อม Conviction และหุ้นที่ได้ประโยชน์</p>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-conv="all">ทั้งหมด</button>
+    <button class="filter-btn" data-conv="high">HIGH Conviction</button>
+    <button class="filter-btn" data-conv="medium">MEDIUM</button>
+  </div>
+
+  <!-- Trends Grid -->
+  <div class="trends-grid" id="trends-grid">
+    <div style="grid-column:1/-1;text-align:center;padding:48px 0;color:var(--text-3)">กำลังโหลด...</div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="../trends.js"></script>
+<script src="../app.js"></script>
+<script>
+let activeConv = 'all';
+
+function convLabel(c) {
+  const map = { HIGH: 'badge-high', MEDIUM: 'badge-medium', LOW: 'badge-low' };
+  return `<span class="badge ${map[c] || 'badge-medium'}">${c}</span>`;
+}
+
+function renderTrends() {
+  if (!window.TRENDS_DATA) return;
+  const grid = document.getElementById('trends-grid');
+  const filtered = TRENDS_DATA.filter(t => {
+    if (activeConv === 'all') return true;
+    return (t.conviction||'').toLowerCase() === activeConv;
+  });
+
+  document.getElementById('trend-count').textContent = TRENDS_DATA.length;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-3)">ไม่มี Trend ที่ตรงเงื่อนไข</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map((t, i) => `
+    <div class="trend-card" id="${t.tag}" data-tag="${t.tag}">
+      <div class="trend-card-header">
+        <div class="trend-card-header-left">
+          <div class="trend-tag">${t.tag || ''}</div>
+          <div class="trend-title">${t.title || ''}</div>
+          <div class="trend-subtitle">${t.subtitle || ''}</div>
+        </div>
+      </div>
+      <div class="trend-card-meta">
+        ${convLabel(t.conviction || '')}
+        <span class="trend-date">อัพเดท ${t.last_updated || ''}</span>
+      </div>
+      ${t.summary ? `<p style="font-size:.86rem;color:var(--text-2);line-height:1.65;margin:10px 0 0">${t.summary}</p>` : ''}
+      ${t.tickers && t.tickers.length ? `
+      <div class="ticker-strip" style="margin-top:10px">
+        ${t.tickers.map(tk => `<a href="stock.html?t=${tk}" class="ticker-pill">${tk}</a>`).join('')}
+      </div>` : ''}
+      <div style="margin-top:12px">
+        <button class="expand-btn" onclick="toggleTrend(${i})">
+          <span>อ่านวิเคราะห์</span> <span class="expand-icon">▼</span>
+        </button>
+      </div>
+      <div class="trend-content prose" id="trend-content-${i}">
+        ${renderMd(t.content||'')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleTrend(i) {
+  const card = document.getElementById(`trend-${i}`);
+  const content = document.getElementById(`trend-content-${i}`);
+  const isExp = card.classList.contains('expanded');
+  card.classList.toggle('expanded', !isExp);
+  content.classList.toggle('show', !isExp);
+}
+
+// Filters
+document.querySelectorAll('.filter-btn[data-conv]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn[data-conv]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeConv = btn.dataset.conv;
+    renderTrends();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderTrends();
+  // Scroll to anchor if URL has #tag
+  const hash = location.hash.replace('#', '');
+  if (hash) {
+    setTimeout(() => {
+      const el = document.getElementById(hash);
+      if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.style.outline = '2px solid var(--yellow)'; setTimeout(()=>el.style.outline='',2000); }
+    }, 100);
+  }
+});
+</script>
+</body>
+</html>

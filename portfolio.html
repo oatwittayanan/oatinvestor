@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>พอร์ตโฟลิโอ — oatinvestor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    .perf-grid  { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 24px; }
+    .holding-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0; border-bottom: 1px solid var(--border-soft);
+      gap: 12px;
+    }
+    .holding-row:last-child { border-bottom: none; }
+    .holding-ticker { font-weight: 800; font-size: 1rem; min-width: 50px; }
+    .holding-name   { font-size: .78rem; color: var(--text-3); margin-top: 2px; }
+    .holding-bar    { flex: 1; max-width: 120px; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+    .holding-bar-fill { height: 100%; border-radius: 3px; background: var(--yellow); }
+    .holding-numbers { text-align: right; min-width: 120px; }
+    .holding-value  { font-weight: 700; font-size: .95rem; }
+    .holding-pl     { font-size: .78rem; margin-top: 2px; }
+    .tx-row {
+      display: grid; grid-template-columns: 100px 1fr auto auto auto;
+      gap: 12px; align-items: center;
+      padding: 10px 0; border-bottom: 1px solid var(--border-soft);
+      font-size: .85rem;
+    }
+    .tx-row:last-child { border-bottom: none; }
+    .tx-date  { color: var(--text-3); font-size: .8rem; }
+    .tx-total { font-weight: 700; }
+    @media (max-width: 600px) {
+      .perf-grid { grid-template-columns: 1fr 1fr; }
+      .tx-row { grid-template-columns: 80px 1fr auto auto; font-size: .78rem; }
+      .tx-price-col { display: none; }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="portfolio.html" class="active">พอร์ตโฟลิโอ</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <div style="margin-bottom:32px">
+    <h1 style="margin-bottom:6px">พอร์ตโฟลิโอสาธิต</h1>
+    <p>ออมเงินสร้างพอร์ตจริง — ดูข้อมูล Real-time เทียบ Benchmark</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-ai">🤖 ลงทุนกับ AI</button>
+    <button class="tab-btn" data-tab="tab-sp500">📦 พอร์ตออม S&P500</button>
+  </div>
+
+  <!-- ── Tab AI PORT ─────────────────────────────────────── -->
+  <div class="tab-pane active" id="tab-ai">
+    <div id="ai-loading" style="text-align:center;padding:48px;color:var(--text-3)">กำลังโหลด...</div>
+    <div id="ai-content" style="display:none">
+
+      <!-- Stats -->
+      <div class="perf-grid" id="ai-stats"></div>
+
+      <!-- Chart -->
+      <div class="card" style="margin-bottom:20px;padding:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+          <h4 style="font-family:var(--font-serif)">ผลตอบแทน (Indexed = 100)</h4>
+          <div class="period-btns" id="ai-period-btns"></div>
+        </div>
+        <div class="chart-wrap"><canvas id="ai-chart"></canvas></div>
+        <div id="ai-legend" style="display:flex;gap:16px;margin-top:12px;flex-wrap:wrap"></div>
+      </div>
+
+      <!-- Holdings -->
+      <div class="card" style="margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+          <h4 style="font-family:var(--font-serif)">การถือครอง</h4>
+          <span id="ai-updated" style="font-size:.78rem;color:var(--text-3)"></span>
+        </div>
+        <div id="ai-holdings"></div>
+      </div>
+
+      <!-- Transactions -->
+      <div class="card">
+        <h4 style="font-family:var(--font-serif);margin-bottom:20px">ประวัติการซื้อขาย</h4>
+        <div id="ai-transactions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Tab S&P500 ─────────────────────────────────────── -->
+  <div class="tab-pane" id="tab-sp500">
+    <div id="sp-loading" style="text-align:center;padding:48px;color:var(--text-3)">กำลังโหลด...</div>
+    <div id="sp-content" style="display:none">
+
+      <!-- Stats -->
+      <div class="perf-grid" id="sp-stats"></div>
+
+      <!-- Chart -->
+      <div class="card" style="margin-bottom:20px;padding:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+          <h4 style="font-family:var(--font-serif)">ผลตอบแทน (Indexed = 100)</h4>
+          <div class="period-btns" id="sp-period-btns"></div>
+        </div>
+        <div class="chart-wrap"><canvas id="sp-chart"></canvas></div>
+        <div id="sp-legend" style="display:flex;gap:16px;margin-top:12px;flex-wrap:wrap"></div>
+      </div>
+
+      <!-- Holdings -->
+      <div class="card" style="margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+          <h4 style="font-family:var(--font-serif)">การถือครอง</h4>
+          <span id="sp-updated" style="font-size:.78rem;color:var(--text-3)"></span>
+        </div>
+        <div id="sp-holdings"></div>
+      </div>
+
+      <!-- DCA Transactions -->
+      <div class="card">
+        <h4 style="font-family:var(--font-serif);margin-bottom:20px">ประวัติ DCA</h4>
+        <div style="overflow-x:auto">
+          <div style="display:grid;grid-template-columns:100px 1fr auto auto auto;gap:12px;padding:8px 0;border-bottom:1px solid var(--border);font-size:.75rem;font-weight:700;color:var(--text-3);text-transform:uppercase;letter-spacing:.05em">
+            <span>วันที่</span><span>หุ้น</span><span>หน่วย</span><span class="tx-price-col">ราคา/หน่วย</span><span>ยอดรวม</span>
+          </div>
+          <div id="sp-transactions"></div>
+        </div>
+        <div id="sp-dca-summary" style="margin-top:16px;padding:14px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border-soft)"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div style="margin-top:28px;padding:14px 18px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border)">
+    <p style="font-size:.78rem;color:var(--text-3)">⚠️ ข้อมูลเพื่อการศึกษาและแชร์ประสบการณ์เท่านั้น ไม่ถือเป็นคำแนะนำการลงทุน ผู้ลงทุนควรศึกษาข้อมูลและตัดสินใจด้วยตนเอง</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+const COLORS = { port:'#F5C518', voo:'#0ECB81', qqqm:'#3B82F6', sp:'#0ECB81' };
+const NAMES  = { portfolio:'Portfolio', voo:'VOO', qqqm:'QQQM' };
+let charts = {};
+let activePeriod = { ai:'ALL', sp:'ALL' };
+
+// ── Utils ────────────────────────────────────────────────────────
+function pctClass(v) { return v > 0 ? 'pos' : v < 0 ? 'neg' : ''; }
+function pctStr(v, digits=2) {
+  if (v == null) return '—';
+  return (v >= 0 ? '+' : '') + v.toFixed(digits) + '%';
+}
+function usdStr(v) {
+  if (v == null) return '—';
+  return (v >= 0 ? '+$' : '-$') + Math.abs(v).toFixed(2);
+}
+
+function statCard(label, value, cls='', sub='', subCls='') {
+  const subStyle = subCls ? '' : 'color:var(--text-3);';
+  return `<div class="card stat-card" style="padding:16px">
+    <div class="stat-label" style="font-size:.75rem">${label}</div>
+    <div class="stat-value ${cls}" style="font-size:1.4rem;margin-top:4px">${value}</div>
+    ${sub ? `<div class="${subCls}" style="font-size:.75rem;${subStyle}margin-top:2px">${sub}</div>` : ''}
+  </div>`;
+}
+
+function txBadge(type) {
+  if (type === 'BUY')  return '<span class="badge badge-green" style="font-size:.7rem">BUY</span>';
+  if (type === 'SELL') return '<span class="badge badge-red"   style="font-size:.7rem">SELL</span>';
+  if (type === 'DIV')  return '<span class="badge badge-div"   style="font-size:.7rem">DIV</span>';
+  return `<span class="badge" style="font-size:.7rem">${type}</span>`;
+}
+
+function legendItem(color, label, value, cls='') {
+  return `<div style="display:flex;align-items:center;gap:6px;font-size:.8rem">
+    <span style="width:20px;height:3px;background:${color};display:inline-block;border-radius:2px"></span>
+    <span style="color:var(--text-3)">${label}</span>
+    <span class="${cls}" style="font-weight:600">${value}</span>
+  </div>`;
+}
+
+// ── Chart ────────────────────────────────────────────────────────
+function getChartColors() {
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  return {
+    grid: dark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)',
+    text: dark ? '#7A7060' : '#A8A29E'
+  };
+}
+
+function rebase(arr) {
+  if (!arr || !arr.length) return [];
+  const base = arr.find(v => v > 0) || arr[0];
+  return arr.map(v => base ? +((v / base) * 100).toFixed(4) : 100);
+}
+
+function slicePeriod(hist, period) {
+  const n = hist.dates.length;
+  if (period === 'ALL' || n === 0) return hist;
+  const map = { '1M':21,'3M':63,'6M':126,'1Y':252 };
+  const days = map[period] || n;
+  const start = Math.max(0, n - days);
+  const result = {
+    dates: hist.dates.slice(start),
+    portfolio: hist.portfolio.slice(start),
+    deposited: hist.deposited ? hist.deposited.slice(start) : null
+  };
+  ['voo','qqqm'].forEach(k => { if (hist[k]) result[k] = hist[k].slice(start); });
+  return result;
+}
+
+function buildPeriodBtns(id, hist, portKey) {
+  const n = hist.dates.length;
+  const opts = ['1M','3M','6M','1Y','ALL'].filter(p => {
+    if (p === 'ALL') return true;
+    return n >= ({ '1M':21,'3M':63,'6M':126,'1Y':252 }[p] || 0);
+  });
+  const wrap = document.getElementById(id);
+  if (!wrap) return;
+  wrap.innerHTML = opts.map(p =>
+    `<button class="period-btn${p === activePeriod[portKey] ? ' active' : ''}"
+      onclick="selectPeriod('${portKey}','${p}')">${p}</button>`
+  ).join('');
+}
+
+function selectPeriod(portKey, p) {
+  activePeriod[portKey] = p;
+  if (portKey === 'ai' && window._aiHist) renderChart('ai-chart', window._aiHist, portKey, ['voo','qqqm'], false);
+  if (portKey === 'sp' && window._spHist) renderChart('sp-chart', window._spHist, portKey, ['qqqm'], true);
+  buildPeriodBtns(`${portKey}-period-btns`, portKey === 'ai' ? window._aiHist : window._spHist, portKey);
+}
+
+function renderChart(canvasId, hist, portKey, benchmarks, depositNorm=false) {
+  if (!hist || !hist.dates.length) return;
+  const sliced = slicePeriod(hist, activePeriod[portKey]);
+  const cc = getChartColors();
+
+  // depositNorm=true → normalize by deposited capital (ignores DCA cash inflows)
+  // depositNorm=false → rebase from first data point
+  const norm = (arr) => {
+    if (depositNorm && sliced.deposited && sliced.deposited.length) {
+      return arr.map((v, i) => sliced.deposited[i] > 0
+        ? +((v / sliced.deposited[i]) * 100).toFixed(4) : 100);
+    }
+    return rebase(arr);
+  };
+
+  const datasets = [
+    { label:'Portfolio', data: norm(sliced.portfolio),
+      borderColor: COLORS.port, borderWidth: 2.5, pointRadius:0, tension:.2, fill:false }
+  ];
+  if (benchmarks.includes('voo') && sliced.voo)
+    datasets.push({ label:'VOO', data: norm(sliced.voo),
+      borderColor: COLORS.voo, borderWidth:1.8, pointRadius:0, tension:.2, fill:false, borderDash:[4,3] });
+  if (benchmarks.includes('qqqm') && sliced.qqqm)
+    datasets.push({ label:'QQQM', data: norm(sliced.qqqm),
+      borderColor: COLORS.qqqm, borderWidth:1.8, pointRadius:0, tension:.2, fill:false, borderDash:[2,4] });
+
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+  if (charts[canvasId]) charts[canvasId].destroy();
+  charts[canvasId] = new Chart(ctx, {
+    type:'line', data:{ labels: sliced.dates, datasets },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      interaction:{ mode:'index', intersect:false },
+      plugins:{
+        legend:{ display:false },
+        tooltip:{ callbacks:{
+          label: c => `${c.dataset.label}: ${c.parsed.y.toFixed(2)} (${c.parsed.y>=100?'+':''}${(c.parsed.y-100).toFixed(2)}%)`
+        }}
+      },
+      scales:{
+        x:{ grid:{color:cc.grid}, ticks:{color:cc.text, maxTicksLimit:8, font:{size:11}} },
+        y:{ grid:{color:cc.grid}, ticks:{color:cc.text, font:{size:11}, callback:v=>v.toFixed(0)} }
+      }
+    }
+  });
+}
+
+// ── Render AI PORT ────────────────────────────────────────────────
+function renderAI(p) {
+  const hist = p.history || {};
+  const s    = hist.summary || {};
+  window._aiHist = hist;
+
+  // Stats
+  const cashHolding = p.holdings.find(h => h.ticker === 'CASH');
+  const cashAmt     = cashHolding ? cashHolding.value : 0;
+  document.getElementById('ai-stats').innerHTML = [
+    statCard('มูลค่ารวม', '$' + (p.total_value||0).toFixed(2)),
+    statCard('ต้นทุนรวม', '$' + (p.total_cost||0).toFixed(2)),
+    statCard('กำไร/ขาดทุน', usdStr(p.pl_usd), pctClass(p.pl_usd), pctStr(p.pl_pct), pctClass(p.pl_usd)),
+    statCard('Cash (เงินสด)', fmtPrice(cashAmt), '', 'เงินสดในพอร์ต'),
+  ].join('');
+
+  // Chart — need ≥2 data points for a line; show comparison cards if too short
+  const chartCard = document.getElementById('ai-chart').closest('.card');
+  if (hist.dates && hist.dates.length >= 2) {
+    buildPeriodBtns('ai-period-btns', hist, 'ai');
+    renderChart('ai-chart', hist, 'ai', ['voo','qqqm'], false);
+    const bms = [];
+    if (s.voo_pct  != null) bms.push(legendItem(COLORS.voo,  'VOO',  pctStr(s.voo_pct),  pctClass(s.voo_pct)));
+    if (s.qqqm_pct != null) bms.push(legendItem(COLORS.qqqm, 'QQQM', pctStr(s.qqqm_pct), pctClass(s.qqqm_pct)));
+    document.getElementById('ai-legend').innerHTML =
+      legendItem(COLORS.port, 'Portfolio', pctStr(s.portfolio_pct || p.pl_pct), pctClass(s.portfolio_pct || p.pl_pct)) +
+      bms.join('');
+  } else {
+    // Single day — show comparison cards (Portfolio vs VOO vs QQQM)
+    chartCard.innerHTML = `
+      <h4 style="font-family:var(--font-serif);margin-bottom:16px">ผลตอบแทนวันแรก (${hist.dates?.[0] || '—'})</h4>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        ${[
+          ['Portfolio', pctStr(s.portfolio_pct ?? p.pl_pct), COLORS.port],
+          ['VOO', pctStr(s.voo_pct), COLORS.voo],
+          ['QQQM', pctStr(s.qqqm_pct), COLORS.qqqm]
+        ].map(([label,val,color]) => `
+          <div style="text-align:center;padding:16px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border)">
+            <div style="font-size:.75rem;color:var(--text-3);margin-bottom:6px">${label}</div>
+            <div style="font-size:1.4rem;font-weight:700;color:${color}">${val}</div>
+          </div>`).join('')}
+      </div>
+      <p style="text-align:center;color:var(--text-3);font-size:.8rem;margin-top:16px">กราฟจะแสดงเมื่อมีข้อมูลมากกว่า 1 วัน</p>`;
+  }
+
+  // Holdings
+  const hMap = { CASH:'เงินสด', NVDA:'NVIDIA', MSFT:'Microsoft', META:'Meta', AMZN:'Amazon', GOOGL:'Alphabet', AAPL:'Apple' };
+  const totalVal = p.total_value || 1;
+  document.getElementById('ai-holdings').innerHTML = p.holdings
+    .filter(h => h.ticker !== 'CASH' || h.value > 0)
+    .map(h => {
+      const pct = (h.value / totalVal * 100);
+      return `<div class="holding-row">
+        <div style="min-width:100px">
+          <div class="holding-ticker">${h.ticker}</div>
+          <div class="holding-name">${hMap[h.ticker] || h.ticker}</div>
+        </div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%"></div></div>
+        <div class="holding-numbers">
+          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-pl ${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)} · ${pct.toFixed(1)}%</div>
+        </div>
+      </div>`;
+    }).join('');
+
+  // Transactions
+  document.getElementById('ai-transactions').innerHTML = `
+    <div style="overflow-x:auto">
+      <div style="display:grid;grid-template-columns:100px 1fr auto auto auto;gap:12px;padding:8px 0;border-bottom:1px solid var(--border);font-size:.75rem;font-weight:700;color:var(--text-3);text-transform:uppercase;letter-spacing:.05em">
+        <span>วันที่</span><span>หุ้น</span><span>หน่วย</span><span class="tx-price-col">ราคา/หน่วย</span><span>ยอดรวม</span>
+      </div>
+      ${p.transactions.filter(t=>t.ticker!=='CASH').map(t => `
+        <div class="tx-row">
+          <span class="tx-date">${t.date}</span>
+          <span>${txBadge(t.type)} <strong>${t.ticker}</strong></span>
+          <span>${t.type==='DIV' ? '—' : t.shares.toFixed(4)}</span>
+          <span class="tx-price-col" style="color:var(--text-3)">${t.type==='DIV' ? '—' : '$'+t.price.toFixed(2)}</span>
+          <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${t.type==='DIV' ? '+$'+t.total.toFixed(2) : '$'+t.total.toFixed(2)}</span>
+        </div>`).join('')}
+    </div>`;
+
+  document.getElementById('ai-loading').style.display = 'none';
+  document.getElementById('ai-content').style.display = 'block';
+}
+
+// ── Render S&P500 PORT ────────────────────────────────────────────
+function renderSP(p) {
+  const hist = p.history || {};
+  const s    = hist.summary || {};
+  window._spHist = hist;
+
+  // Stats
+  document.getElementById('sp-stats').innerHTML = [
+    statCard('มูลค่ารวม', '$' + (p.total_value||0).toFixed(2)),
+    statCard('ต้นทุนรวม', '$' + (p.total_cost||0).toFixed(2)),
+    statCard('กำไร/ขาดทุน', usdStr(p.pl_usd), pctClass(p.pl_usd), pctStr(p.pl_pct), pctClass(p.pl_usd)),
+    statCard('vs QQQM', s.qqqm_pct != null ? pctStr(s.qqqm_pct) : '—',
+      s.qqqm_pct != null ? pctClass(s.qqqm_pct) : ''),
+  ].join('');
+
+  // Chart (depositNorm=true: performance only, ignores DCA cash inflows)
+  if (hist.dates && hist.dates.length) {
+    buildPeriodBtns('sp-period-btns', hist, 'sp');
+    renderChart('sp-chart', hist, 'sp', ['qqqm'], true);
+    document.getElementById('sp-legend').innerHTML =
+      legendItem(COLORS.port, 'พอร์ต DCA', pctStr(s.portfolio_pct || p.pl_pct), pctClass(s.portfolio_pct || p.pl_pct)) +
+      (s.qqqm_pct != null ? legendItem(COLORS.qqqm,'QQQM',pctStr(s.qqqm_pct),pctClass(s.qqqm_pct)) : '');
+  }
+
+  // Holdings
+  document.getElementById('sp-holdings').innerHTML = p.holdings
+    .filter(h => h.ticker !== 'CASH' && h.value > 0)
+    .map(h => `
+      <div class="holding-row">
+        <div style="min-width:100px">
+          <div class="holding-ticker">${h.ticker}</div>
+          <div class="holding-name">Vanguard S&P 500 ETF</div>
+        </div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:100%"></div></div>
+        <div class="holding-numbers">
+          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-pl ${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)} · ${h.shares.toFixed(4)} หน่วย</div>
+        </div>
+      </div>`).join('');
+
+  // DCA Transactions
+  document.getElementById('sp-transactions').innerHTML = p.transactions.filter(t => t.type !== 'DIV').map(t => `
+    <div class="tx-row">
+      <span class="tx-date">${t.date}</span>
+      <span>${txBadge(t.type === 'BUY' ? 'BUY' : t.type)} <strong>${t.ticker}</strong></span>
+      <span>${t.type==='DIV' ? '—' : t.shares.toFixed(4)}</span>
+      <span class="tx-price-col" style="color:var(--text-3)">${t.type==='DIV' ? '—' : '$'+t.price.toFixed(2)}</span>
+      <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${t.type==='DIV' ? '+$'+t.total.toFixed(2) : '$'+t.total.toFixed(2)}</span>
+    </div>`).join('');
+
+  // DCA Summary
+  const buyTxs      = p.transactions.filter(t => t.type !== 'DIV');
+  const totalShares  = buyTxs.reduce((sum,t) => sum + t.shares, 0);
+  const avgPrice     = totalShares > 0 ? p.total_cost / totalShares : 0;
+  const currentPrice = p.holdings.find(h=>h.ticker==='VOO')?.price || 0;
+  const divTotal     = p.total_dividends || 0;
+  document.getElementById('sp-dca-summary').innerHTML = `
+    <div style="display:flex;gap:24px;flex-wrap:wrap;font-size:.85rem">
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ออม DCA</div><div style="font-weight:700">${buyTxs.length} ครั้ง</div></div>
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">เงินทั้งหมด</div><div style="font-weight:700">$${p.total_cost.toFixed(2)}</div></div>
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ราคาเฉลี่ย</div><div style="font-weight:700">$${avgPrice.toFixed(2)}</div></div>
+      ${currentPrice ? `<div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ราคาปัจจุบัน</div><div style="font-weight:700">$${currentPrice.toFixed(2)}</div></div>` : ''}
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">หน่วยทั้งหมด</div><div style="font-weight:700">${totalShares.toFixed(4)}</div></div>
+      ${divTotal > 0 ? `<div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ปันผลสะสม</div><div style="font-weight:700;color:var(--green)">+$${divTotal.toFixed(2)}</div></div>` : ''}
+    </div>`;
+
+  document.getElementById('sp-loading').style.display = 'none';
+  document.getElementById('sp-content').style.display = 'block';
+}
+
+// ── Load & Init ───────────────────────────────────────────────────
+fetch('data/portfolio.json').then(r => r.json()).then(data => {
+  renderAI(data.ai_port);
+  renderSP(data.sp500_port);
+}).catch(err => {
+  ['ai','sp'].forEach(k => {
+    const el = document.getElementById(`${k}-loading`);
+    if (el) el.innerHTML = '<div style="color:var(--text-3);font-size:.85rem;text-align:center;padding:32px">โหลดข้อมูลไม่ได้ — ลองรันผ่าน local server</div>';
+  });
+});
+
+// Re-render charts on theme change
+new MutationObserver(() => {
+  if (window._aiHist) renderChart('ai-chart', window._aiHist, 'ai', ['voo','qqqm'], false);
+  if (window._spHist) renderChart('sp-chart', window._spHist, 'sp', ['qqqm'], true);
+}).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
+</script>
+</body>
+</html>
