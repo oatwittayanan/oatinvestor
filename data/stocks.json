@@ -383,6 +383,67 @@
       "AI-Infrastructure",
       "Advanced-Packaging",
       "Semiconductor-Equipment"
+    ],
+    "mark_easy": {
+      "one_liner": "TSMC คือโรงงานชิปเดียวในโลกที่ผลิต AI chips ระดับ frontier ได้ทั้งหมด — ไม่มีทางเลือกอื่น",
+      "what": "TSMC เป็นบริษัทรับจ้างผลิตชิปที่ใหญ่ที่สุดในโลกแบบ Pure-play Foundry คือผลิตให้คนอื่นโดยไม่ออกแบบชิปเอง ทำให้ Apple, NVIDIA, AMD ต่างส่ง IP ลับมาให้ผลิตโดยไม่กลัวถูกแข่ง ทุก AI chip ระดับ top ในโลกตอนนี้ล้วนผ่านมือ TSMC ทั้งสิ้น",
+      "why_invest": [
+        "Monopoly ที่แท้จริง — TSMC เป็นเจ้าเดียวที่ผลิต N3/N2 ได้ในปริมาณมาก คู่แข่งอย่าง Samsung ยังตามหลังด้าน yield ไม่พอจะแย่งลูกค้าได้",
+        "AI demand พุ่งสูงอย่างไม่หยุด — Q1 2026 Revenue +40.6% YoY ที่ $35.9B, Gross Margin สูงสุดในประวัติที่ 66.2%",
+        "Visibility ที่หายาก — Management ยืนยัน FY2026 >30% growth พร้อมหลักฐานสัญญาจาก CSPs Supply ตึงตัวถึงปี 2027",
+        "Advanced Packaging (CoWoS) near-monopoly — ทุก AI GPU ต้องใช้ CoWoS packaging ของ TSMC ทำให้มี pricing power เพิ่มอีก layer"
+      ],
+      "watch_out": [
+        "Taiwan geopolitical risk คือ systemic risk ที่หลีกเลี่ยงไม่ได้ — ถ้า PRC-Taiwan tension escalate ผลกระทบต่อหุ้นจะรุนแรงมาก",
+        "Customer concentration สูง — Apple 19% + NVIDIA 17% = 36% ของ Revenue ถ้าลูกค้าสองรายนี้ลด order พร้อมกันกระทบหนักมาก",
+        "N2 ramp และ Arizona fab มีต้นทุนสูงกว่าโรงงานในไต้หวัน ทำให้ Margin กดดันในช่วงสั้น"
+      ],
+      "bottom_line": "TSMC คือ backbone ของ AI revolution ที่หลีกเลี่ยงไม่ได้ แต่ตอนนี้ราคาสะท้อน quality ไปบ้างแล้ว MoS แค่ 8% คุ้มกว่าถ้ารอ pullback ก่อนเข้า"
+    },
+    "mark_full": {
+      "business_overview": "TSMC ก่อตั้งปี 1987 โดย Dr. Morris Chang ผู้ประดิษฐ์โมเดล Pure-play Foundry ที่เปลี่ยน semiconductor industry ตลอดกาล รับจ้างผลิตชิปให้ 534 customers โดยไม่ออกแบบชิปเอง เงินส่วนใหญ่มาจาก HPC (AI/Server) ที่ 61% ของ Revenue ใน Q1 2026 เติบโต +20% QoQ และ Smartphone 26% ทิศทางชัดเจนว่า AI เป็น growth engine หลักที่ขับเคลื่อน TSMC ไปข้างหน้า FY2025 Revenue อยู่ที่ $122.42B (+35.9%) เป็นปีแรกที่ผ่าน $100B",
+      "tam": "ตลาด AI semiconductor โตในลักษณะ structural ไม่ใช่ cyclical เพราะ Agentic AI ต้องการ compute มากกว่า Generative AI หลายเท่า Management ประเมิน AI accelerator revenue CAGR อยู่ในระดับ high 50s% ถึงปี 2029 ตลาด Foundry 2.0 ที่ TSMC มี market share ~40% จะโตตามอุปสงค์นี้ไปด้วย เป้า Revenue CAGR ของบริษัทอยู่ที่ ~25%/ปี ถึงปี 2029 ที่ scale ที่ใหญ่กว่าบริษัทส่วนใหญ่มาก",
+      "moat": "TSMC มี MOAT 4 ชั้นซ้อนกัน ชั้นแรกคือ Technology Leadership — 74% ของ Revenue มาจาก ≤7nm ที่ Samsung ทำ yield ตามไม่ได้ ชั้นที่สองคือ Pure-play model ที่ทำให้ลูกค้าส่ง IP ลับมาโดยไม่กลัวถูกแข่ง ชั้นที่สามคือ OIP ecosystem (EDA+IP+Equipment) ที่ใช้เวลาหลายปีกว่าจะ migrate ออก และชั้นที่สี่คือ CoWoS Advanced Packaging ที่เป็น near-monopoly สำหรับ AI GPU assembly ทั้งหมด — ลูกค้าจ่ายสองรอบให้ TSMC ทั้ง wafer และ packaging",
+      "latest_financials": "Q1 2026: Revenue $35.9B (+40.6% YoY), Gross Margin 66.2% (+740bps) — beat guidance ทุก metric FY2025 Full Year: Revenue $122.42B (+35.9%), EPS NT$66.25 (+46.4%), ROE 35.4%, FCF NT$1,002B Q2 2026 Guidance: Revenue $39.0–40.2B (+32% YoY), GM 65.5–67.5%, FY2026 ยืนยัน >30% growth ใน USD",
+      "key_points": [
+        "N2 เข้า HVM Q4 2025 ด้วย yield ที่ดี — เร็วกว่าที่ตลาดคาด และกำลัง ramp เร็วใน 2026 ส่งผล positive ต่อ NVIDIA B200 และ Apple A20",
+        "Arizona GIGAFAB strategy: Fab 1 ผลิตแล้ว, Fab 2 pull-forward ไป H2 2027, Fab 3 กำลังสร้าง, Fab 4 ซื้อที่ดินแล้ว + packaging facility แรก — commitment ต่อ US ชัดเจน",
+        "CoWoS Advanced Packaging revenue โตจาก ~10% FY2025 → low-teens% FY2026 — margin สูงกว่า wafer ธรรมดาและเป็น bottleneck ที่ทุกคน depend",
+        "ITC investigation (Marlin patent) และ chip diversion investigation ยังอยู่ระหว่างดำเนินการ — tail risk ที่ต้องติดตามแม้ไม่น่ากระทบ thesis หลัก"
+      ]
+    },
+    "warren_easy": [
+      "TSMC คือ 'Essential Infrastructure' ของ AI revolution ที่ Warren มองว่าแทบจะสมบูรณ์แบบในเชิง competitive moat — BQ Score 9.5 สะท้อน Technology leadership ที่คู่แข่งต้องใช้เวลาหลายปีกว่าจะตาม OIP ecosystem ที่สร้างมาทศวรรษ และ CoWoS packaging monopoly ที่เป็น chokepoint ของทุก AI GPU ในโลก ไม่มีใครผ่าน AI era โดยไม่พึ่ง TSMC",
+      "ตอนนี้ Warren มองว่า TSM ดีมากแต่ยังไม่ถึงราคาที่ BUY ได้ FV Base อยู่ที่ $440, FV Weighted $451 แต่ราคาปัจจุบันที่ ~$404 ให้ MoS เพียง 8-9% ยังต่ำกว่า gate 15% แม้ว่า 5yr Expected Return ที่ 27.7% และ PEG 0.56 จะผ่านทุก gate แล้ว ความน่าสนใจของ TSM ชัดเจนมาก แค่ราคายังไม่เหมาะสม",
+      "กลยุทธ์ของ Warren คือ WATCH อย่างใกล้ชิด รอ pullback ไปแถว $385 (MoS ~15%) ก่อนจะเปลี่ยนเป็น BUY Conviction ระดับ HIGH เพราะ Business quality ไม่มีข้อสงสัย แต่การเข้าราคาดีมีความสำคัญโดยเฉพาะในช่วงที่ N2 ramp และ overseas fabs กำลังกดดัน margin ระยะสั้น"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันว่า Business แข็งแกร่งจริง — Q1 2026 Revenue $35.9B +40.6% YoY และ Gross Margin 66.2% สูงสุดในประวัติ ตัวเลขจาก primary sources confirm ทุก metric ที่ Warren อ้างอิง CoWoS packaging monopoly และ N2 yield ที่ดีถือเป็น positive surprise ที่ยืนยัน execution track record ของ TSMC",
+        "Charlie ออก CAUTION เพราะ Geopolitical risk เพิ่มขึ้นล่าสุด (PRC-Taiwan tension escalating พฤษภาคม 2026) ซึ่งเป็น tail risk ที่ Warren อาจ underweight ในโมเดล Arizona fab cost overruns จะเป็น margin headwind จากปี 2027 และ chip diversion investigation ยังไม่ resolved ซึ่งเป็นความเสี่ยงด้าน regulatory ที่ต้องติดตาม",
+        "Charlie แนะนำ WATCH อย่างใกล้ชิด โดย monitor 3 สิ่ง: (1) US-Taiwan geopolitical tension ทุกสัปดาห์, (2) N2 ramp margin ใน Q2-Q3 2026, (3) Arizona fab update ใน Q2 earnings ถ้าราคาร่วงลง $385+ และ geopolitical ยังไม่ escalate — Charlie พร้อม upgrade เป็น AGREE ทันที"
+      ]
+    },
+    "idea_th": "TSMC คือโรงงานชิปที่เป็น backbone ของ AI revolution — เจ้าเดียวที่ผลิต N3/N2 advanced nodes ได้ในเชิงพาณิชย์ ทำให้ทุก AI chip ระดับ frontier ของโลกต้องพึ่ง TSMC โดย Revenue กำลังโตเร็วกว่า 30% ต่อปีบน scale $122B พร้อมกับ Gross Margin ที่พุ่งสู่ 66% สูงสุดในประวัติศาสตร์",
+    "story_gate_th": {
+      "what": "TSMC เป็นเจ้าเดียวในโลกที่ผลิตชิปขั้นสูง N3 และ N2 ได้ในปริมาณมาก ทำให้ทุก AI chip ดัง ไม่ว่าจะเป็น NVIDIA H/B series, Apple Silicon, Google TPU หรือ AMD MI-series ต้องผ่านมือ TSMC ทั้งหมด ไม่มีทางเลือกอื่นในระยะ 3-5 ปีข้างหน้า",
+      "why": "N2 เพิ่งเข้า volume production Q4 2025 ด้วย yield ที่ดีกว่าคาด + Management ยืนยัน FY2026 >30% growth พร้อมหลักฐานสั่งซื้อจาก CSPs + Supply ตึงตัวถึงปี 2027 — ตลาดยังไม่ได้ price-in full potential ของ Agentic AI demand ที่ต้องการ compute มากกว่า Generative AI หลายเท่า",
+      "risk": "ถ้า PRC ดำเนินการทางทหารต่อไต้หวัน หรือ Apple กับ NVIDIA ย้าย order ไปที่ Samsung/Intel Foundry มากกว่า 30% พร้อมกัน — thesis จะพังทันที"
+    },
+    "bull_th": [
+      "N2 ramp ด้วย yield ที่ดีกว่าคาด — capacity ขยายเร็วกว่า schedule ทำให้ CSPs ได้ชิป AI รุ่นใหม่เร็วขึ้น กระตุ้น demand ต่อเนื่องและยืนยัน technology leadership ของ TSMC",
+      "CoWoS Advanced Packaging near-monopoly — Revenue จาก segment นี้โตจาก ~10% FY2025 เป็น low-teens% FY2026 margin สูงกว่า wafer ปกติ และเป็น chokepoint ที่คู่แข่งสร้างทดแทนได้ยากมาก",
+      "GIGAFAB Arizona ทำให้ลูกค้า US ไว้วางใจมากขึ้น ลดความกังวล geopolitical risk ช่วยล็อก Apple+NVIDIA ไว้กับ TSMC ระยะยาว และเปิด opportunity รับ CHIPS Act funding $6.6B+",
+      "FY2026 >30% growth ที่ scale $122B+ เป็น visibility ที่หายากมากในอุตสาหกรรม semiconductor — สะท้อน demand จริงจาก AI supercycle ไม่ใช่ hype",
+      "Pricing power กำลังเพิ่ม — ข่าวล่าสุดพ.ค. 2026 TSMC เตรียมขึ้นราคา ขณะที่ demand ยังแข็งแกร่ง สัญญาณว่า MOAT ยังสมบูรณ์และ margin มี upside เพิ่มเติม"
+    ],
+    "risk_th": [
+      "Taiwan geopolitical risk — production ส่วนใหญ่ยังอยู่ในไต้หวัน ถ้า PRC-Taiwan tension escalate ถึงขั้น military action ราคาหุ้นจะกระทบรุนแรงและ thesis จะพังทันที",
+      "Customer concentration สูง — Apple 19% + NVIDIA 17% รวม 36% ของ Revenue ถ้าลูกค้าสองรายนี้ย้าย order ไปคู่แข่งพร้อมกัน Revenue จะหายหนักมาก",
+      "N2 ramp และ Overseas fab cost — margin อาจถูกกดดันใน H2 2026 ก่อนที่ pricing ปรับตาม ต้นทุนโรงงานใน Arizona/Japan/Germany สูงกว่าไต้หวันอย่างมีนัยสำคัญ",
+      "Export control risk — การสอบสวน chip diversion ยังไม่จบ และ US export restrictions ที่เพิ่มขึ้นอาจกระทบ revenue บางส่วน โดยเฉพาะในตลาดจีนที่ 7% ของ Revenue",
+      "CapEx massive $52-56B ปี 2026 — ถ้า AI demand ชะลอกะทันหัน utilization rate จะตกแต่ต้นทุนคงที่ยังอยู่ กดดัน FCF และ margin อย่างรุนแรง"
     ]
   },
   "META": {
