@@ -1,0 +1,45 @@
+name: Update Portfolio Data
+
+on:
+  schedule:
+    # 06:00 BKK = 23:00 UTC วันก่อน, รัน จันทร์-ศุกร์
+    - cron: '0 23 * * 1-5'
+  workflow_dispatch:   # รันด้วยมือได้จาก GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install \
+            yfinance pandas requests \
+            google-auth google-auth-httplib2 google-api-python-client
+
+      - name: Write Google credentials
+        run: echo '${{ secrets.GOOGLE_CRED_JSON }}' > /tmp/gcp_creds.json
+
+      - name: Generate portfolio.json
+        env:
+          GOOGLE_CRED_FILE: /tmp/gcp_creds.json
+        run: python3 scripts/generate_portfolio.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "oat-bot"
+          git config user.email "bot@oatinvestor.com"
+          git add data/portfolio.json
+          git diff --staged --quiet \
+            || git commit -m "📊 Auto-update portfolio data $(date +'%Y-%m-%d')"
+          git push
