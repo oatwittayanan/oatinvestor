@@ -103,7 +103,7 @@ function renderTrends() {
   }
 
   grid.innerHTML = filtered.map((t, i) => `
-    <div class="trend-card" id="${t.tag}" data-tag="${t.tag}">
+    <div class="trend-card" id="trend-${i}" data-tag="${t.tag}">
       <div class="trend-card-header">
         <div class="trend-card-header-left">
           <div class="trend-tag">${t.tag || ''}</div>
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hash = location.hash.replace('#', '');
   if (hash) {
     setTimeout(() => {
-      const el = document.getElementById(hash);
+      const el = document.querySelector(`[data-tag="${hash}"]`);
       if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.style.outline = '2px solid var(--yellow)'; setTimeout(()=>el.style.outline='',2000); }
     }, 100);
   }
