@@ -21,6 +21,27 @@
     .holding-numbers { text-align: right; min-width: 120px; }
     .holding-value  { font-weight: 700; font-size: .95rem; }
     .holding-pl     { font-size: .78rem; margin-top: 2px; }
+    /* Split layout: pie chart (left) + holdings list (right) */
+    .holdings-split { display: grid; grid-template-columns: 360px 1fr; gap: 56px; align-items: center; }
+    .holdings-chart-wrap { position: relative; width: 100%; max-width: 360px; margin: 0 auto; }
+    .holdings-chart-center {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; pointer-events: none;
+    }
+    .hc-label { font-size: .72rem; color: var(--text-3); }
+    .hc-value { font-size: 1.4rem; font-weight: 800; margin-top: 2px; }
+    .holding-logo {
+      width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+      object-fit: cover; background: var(--bg-surface); border: 1px solid var(--border-soft);
+    }
+    .holding-logo-fallback {
+      display: flex; align-items: center; justify-content: center;
+      font-size: .68rem; font-weight: 800; color: var(--text-2);
+    }
+    .holding-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    @media (max-width: 700px) {
+      .holdings-split { grid-template-columns: 1fr; gap: 20px; }
+    }
     .tx-row {
       display: grid; grid-template-columns: 100px 1fr auto auto auto;
       gap: 12px; align-items: center;
@@ -86,11 +107,20 @@
 
       <!-- Holdings -->
       <div class="card" style="margin-bottom:20px">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
           <h4 style="font-family:var(--font-serif)">การถือครอง</h4>
           <span id="ai-updated" style="font-size:.78rem;color:var(--text-3)"></span>
         </div>
-        <div id="ai-holdings"></div>
+        <div class="holdings-split" style="margin-top:-28px">
+          <div class="holdings-chart-wrap">
+            <canvas id="ai-alloc-chart"></canvas>
+            <div class="holdings-chart-center">
+              <div class="hc-label">มูลค่ารวม</div>
+              <div class="hc-value" id="ai-alloc-total">—</div>
+            </div>
+          </div>
+          <div id="ai-holdings"></div>
+        </div>
       </div>
 
       <!-- Transactions -->
@@ -164,6 +194,226 @@
 <script>
 const COLORS = { port:'#FFE94D', voo:'#0ECB81', qqqm:'#3B82F6', sp:'#0ECB81' };
 const NAMES  = { portfolio:'Portfolio', voo:'VOO', qqqm:'QQQM' };
+
+// ── Ticker brand colors + logo domains (เหมือน Public Website เดิม) ────────
+const TICKER_COLORS = {
+  NVDA:'#76b900', GOOGL:'#10b981', TSLA:'#ef4444', TSM:'#0072c6',
+  MSFT:'#00a4ef', AMZN:'#ff9900', META:'#0668e1', AAPL:'#a2aaad',
+  PLTR:'#8b5cf6', AVGO:'#f97316', NFLX:'#e50914', CRWD:'#fc0000',
+};
+const CASH_COLOR      = '#475569';
+const FALLBACK_COLORS = ['#f59e0b','#06b6d4','#84cc16','#f43f5e','#8b5cf6','#fb923c'];
+const LOGO_DOMAINS = {
+  NVDA:'nvidia.com', MSFT:'microsoft.com', META:'meta.com', AMZN:'amazon.com',
+  GOOGL:'google.com', AAPL:'apple.com', TSM:'tsmc.com', AVGO:'broadcom.com',
+  PLTR:'palantir.com', NFLX:'netflix.com',
+};
+// คืน map: ticker -> สี (Cash เทาเสมอ, ตัวที่ไม่มีในชุดใช้สี fallback)
+function assignColors(sorted) {
+  const map = {}; let f = 0;
+  for (const h of sorted) {
+    if (h.ticker === 'CASH') map[h.ticker] = CASH_COLOR;
+    else map[h.ticker] = TICKER_COLORS[h.ticker] || FALLBACK_COLORS[f++ % FALLBACK_COLORS.length];
+  }
+  return map;
+}
+function logoHTML(ticker) {
+  const domain = LOGO_DOMAINS[ticker];
+  if (!domain) {
+    const txt = ticker === 'CASH' ? '฿' : ticker.slice(0, 2);
+    return `<div class="holding-logo holding-logo-fallback">${txt}</div>`;
+  }
+  return `<img class="holding-logo" src="https://www.google.com/s2/favicons?domain=${domain}&sz=64"
+    alt="${ticker}" onerror="this.outerHTML='<div class=\\'holding-logo holding-logo-fallback\\'>${ticker.slice(0,2)}</div>'">`;
+}
+
+// ── โหลดโลโก้ล่วงหน้าเป็น Image object (สำหรับวาดบน canvas) ─────────────────
+const logoCache = {};
+function preloadLogos(tickers) {
+  return Promise.all(tickers.map(ticker => {
+    if (ticker in logoCache) return Promise.resolve();
+    const domain = LOGO_DOMAINS[ticker];
+    if (!domain) { logoCache[ticker] = null; return Promise.resolve(); }
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload  = () => { logoCache[ticker] = img; resolve(); };
+      img.onerror = () => { logoCache[ticker] = null; resolve(); };
+      img.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+      setTimeout(resolve, 4000);
+    });
+  }));
+}
+
+// ── Plugin: เส้นชี้ออกนอกวง + โลโก้ + ticker + % ───────────────────────────
+const outerLabelPlugin = {
+  id: 'outerLabels',
+  afterDraw(chart) {
+    if (chart.canvas.id !== 'ai-alloc-chart') return;
+    const { ctx } = chart;
+    const ds   = chart.data.datasets[0];
+    const meta = chart.getDatasetMeta(0);
+    if (!meta || !meta.data.length) return;
+
+    const arc0 = meta.data[0];
+    const cx = arc0.x, cy = arc0.y, outerR = arc0.outerRadius;
+    const W = chart.width, cH = chart.height;
+    const EDGE = 4; // ระยะกันชนจากขอบ canvas
+    const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const tickerCol = dark ? '#EDE7DB' : '#2A2A2E';
+    const circleBg  = dark ? 'rgba(26,26,28,0.92)' : 'rgba(255,255,255,0.95)';
+
+    const RADIAL = 14, H_LINE = 18, LR = 15, GAP = 8, ROW = 14;
+
+    const items = chart.data.labels.map((label, i) => {
+      const pct = ds.data[i];
+      if (pct < 4) return null;                       // ก้อนเล็กกว่า 4% ไม่ติดป้าย
+      const arc = meta.data[i];
+      const midAngle = (arc.startAngle + arc.endAngle) / 2;
+      const right = Math.cos(midAngle) >= 0;
+      const px2x = cx + (outerR + RADIAL) * Math.cos(midAngle);
+      const px2y = cy + (outerR + RADIAL) * Math.sin(midAngle);
+      const elbowX = px2x + (right ? H_LINE : -H_LINE);
+      const logoCX = right ? elbowX + LR + 2 : elbowX - LR - 2;
+      return { i, label, pct, midAngle, right, elbowX, elbowY: px2y, logoCX };
+    }).filter(Boolean);
+
+    // กันป้ายชนกันแนวตั้ง
+    const MIN_GAP = ROW * 2 + 6;
+    for (let pass = 0; pass < 4; pass++) {
+      for (let a = 0; a < items.length; a++) {
+        for (let b = a + 1; b < items.length; b++) {
+          const ia = items[a], ib = items[b];
+          if (ia.right !== ib.right) continue;
+          const dy = ib.elbowY - ia.elbowY;
+          if (Math.abs(dy) < MIN_GAP) {
+            const push = (MIN_GAP - Math.abs(dy)) / 2;
+            if (dy >= 0) { ia.elbowY -= push; ib.elbowY += push; }
+            else         { ia.elbowY += push; ib.elbowY -= push; }
+          }
+        }
+      }
+    }
+
+    items.forEach(({ i, label, pct, midAngle, right, elbowX, elbowY, logoCX }) => {
+      const color = ds.backgroundColor[i];
+      const tickerStr = label === 'CASH' ? 'Cash' : label;
+
+      // วัดความกว้างป้าย (ticker / %) เพื่อเช็คว่าล้นขอบไหม
+      ctx.font = `700 14px Kanit, sans-serif`;
+      const tickerW = ctx.measureText(tickerStr).width;
+      ctx.font = `600 12px Kanit, sans-serif`;
+      const pctW = ctx.measureText(pct + '%').width;
+      const labelW = Math.max(tickerW, pctW);
+
+      // ดึงป้ายกลับเข้ากรอบถ้าล้นขอบ (เลื่อน elbow + logo + text พร้อมกัน)
+      let lx = logoCX;          // จุดศูนย์กลางโลโก้
+      let ex = elbowX;          // ปลายเส้นแนวนอน
+      let tx = right ? logoCX + LR + GAP : logoCX - LR - GAP; // ขอบในของ text
+      if (right) {
+        const rightEdge = tx + labelW;
+        const over = rightEdge - (W - EDGE);
+        if (over > 0) { lx -= over; ex -= over; tx -= over; }
+      } else {
+        const leftEdge = tx - labelW;
+        const under = EDGE - leftEdge;
+        if (under > 0) { lx += under; ex += under; tx += under; }
+      }
+
+      const px1x = cx + outerR * Math.cos(midAngle);
+      const px1y = cy + outerR * Math.sin(midAngle);
+      const px2x = cx + (outerR + RADIAL) * Math.cos(midAngle);
+      const px2y = cy + (outerR + RADIAL) * Math.sin(midAngle);
+      const logoCY = Math.max(LR + EDGE, Math.min(cH - LR - EDGE, elbowY));
+
+      // เส้นชี้ (segment → radial → horizontal)
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(px1x, px1y);
+      ctx.lineTo(px2x, px2y);
+      ctx.lineTo(ex, logoCY);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.4;
+      ctx.globalAlpha = 0.55;
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+      ctx.restore();
+
+      // วงกลมโลโก้
+      const logoImg = logoCache[label];
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(lx, logoCY, LR + 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = circleBg;
+      ctx.fill();
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = color;
+      ctx.globalAlpha = 0.9;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+      if (logoImg) {
+        ctx.beginPath();
+        ctx.arc(lx, logoCY, LR, 0, Math.PI * 2);
+        ctx.clip();
+        try { ctx.drawImage(logoImg, lx - LR, logoCY - LR, LR * 2, LR * 2); } catch(_) {}
+      } else {
+        ctx.font = `700 10px Kanit, sans-serif`;
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = color;
+        ctx.fillText(label.substring(0, 2), lx, logoCY);
+      }
+      ctx.restore();
+
+      // ticker + %
+      ctx.save();
+      ctx.textAlign = right ? 'left' : 'right';
+      ctx.font = `700 14px Kanit, sans-serif`;
+      ctx.fillStyle = tickerCol;
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(tickerStr, tx, logoCY + 1);
+      ctx.font = `600 12px Kanit, sans-serif`;
+      ctx.fillStyle = color;
+      ctx.textBaseline = 'top';
+      ctx.fillText(pct + '%', tx, logoCY + 3);
+      ctx.restore();
+    });
+  }
+};
+
+// ── Allocation doughnut chart ─────────────────────────────────────────────
+let allocChart = null;
+async function renderAllocChart(sorted, totalVal, colorMap) {
+  const canvas = document.getElementById('ai-alloc-chart');
+  if (!canvas) return;
+  const items = sorted.filter(h => h.value > 0);
+  await preloadLogos(items.map(h => h.ticker));
+  // เส้นขอบวงใช้สีพื้นหลัง card เพื่อให้ช่องว่างกลืนกับพื้นหลัง
+  const border = getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#34343A';
+  if (allocChart) allocChart.destroy();
+  allocChart = new Chart(canvas, {
+    type: 'doughnut',
+    plugins: [outerLabelPlugin],
+    data: {
+      labels: items.map(h => h.ticker),
+      datasets: [{
+        data: items.map(h => +(h.value / totalVal * 100).toFixed(1)),
+        backgroundColor: items.map(h => colorMap[h.ticker] || CASH_COLOR),
+        borderColor: border, borderWidth: 2.5, hoverOffset: 6
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: true, aspectRatio: 1, cutout: '60%',
+      layout: { padding: 80 },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: c => ` ${c.label}: ${c.raw}%` } }
+      },
+      animation: { duration: 500 }
+    }
+  });
+  const totalEl = document.getElementById('ai-alloc-total');
+  if (totalEl) totalEl.textContent = '$' + totalVal.toFixed(0);
+}
+
 let charts = {};
 let activePeriod = { ai:'ALL', sp:'ALL' };
 
@@ -346,22 +596,43 @@ function renderAI(p) {
       <p style="text-align:center;color:var(--text-3);font-size:.8rem;margin-top:16px">กราฟจะแสดงเมื่อมีข้อมูลมากกว่า 1 วัน</p>`;
   }
 
-  // Holdings
+  // Holdings — เรียงจากมูลค่ามากสุด → น้อยสุด, Cash อยู่ล่างสุดเสมอ
   const hMap = { CASH:'เงินสด', NVDA:'NVIDIA', MSFT:'Microsoft', META:'Meta', AMZN:'Amazon', GOOGL:'Alphabet', AAPL:'Apple' };
   const totalVal = p.total_value || 1;
-  document.getElementById('ai-holdings').innerHTML = p.holdings
+  const sortedHoldings = p.holdings
     .filter(h => h.ticker !== 'CASH' || h.value > 0)
+    .sort((a, b) => {
+      if (a.ticker === 'CASH') return 1;
+      if (b.ticker === 'CASH') return -1;
+      return b.value - a.value;
+    });
+
+  const colorMap = assignColors(sortedHoldings);
+  window._aiSorted = sortedHoldings;
+  window._aiTotal  = totalVal;
+  window._aiColors = colorMap;
+  renderAllocChart(sortedHoldings, totalVal, colorMap);
+
+  document.getElementById('ai-holdings').innerHTML = sortedHoldings
     .map(h => {
       const pct = (h.value / totalVal * 100);
       return `<div class="holding-row">
-        <div style="min-width:100px">
-          <div class="holding-ticker">${h.ticker}</div>
-          <div class="holding-name">${hMap[h.ticker] || h.ticker}</div>
+        <div style="display:flex;align-items:center;gap:10px;min-width:120px">
+          ${logoHTML(h.ticker)}
+          <div>
+            <div class="holding-ticker" style="display:flex;align-items:center;gap:6px">
+              <span class="holding-dot" style="background:${colorMap[h.ticker]}"></span>${h.ticker}
+            </div>
+            <div class="holding-name">${hMap[h.ticker] || h.ticker}</div>
+          </div>
         </div>
         <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%"></div></div>
         <div class="holding-numbers">
           <div class="holding-value">$${h.value.toFixed(2)}</div>
-          <div class="holding-pl ${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)} · ${pct.toFixed(1)}%</div>
+          <div class="holding-pl">
+            <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
+            <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
+          </div>
         </div>
       </div>`;
     }).join('');
@@ -471,6 +742,7 @@ fetch('data/portfolio.json').then(r => r.json()).then(data => {
 new MutationObserver(() => {
   if (window._aiHist) renderChart('ai-chart', window._aiHist, 'ai', ['voo','qqqm'], false);
   if (window._spHist) renderChart('sp-chart', window._spHist, 'sp', ['qqqm'], true);
+  if (window._aiSorted) renderAllocChart(window._aiSorted, window._aiTotal, window._aiColors);
 }).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
 </script>
 </body>
