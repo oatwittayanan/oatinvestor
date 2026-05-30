@@ -24,6 +24,32 @@ PUB_STOCKS_OUT = PUB / "data" / "stocks.json"
 CHARLIE_JSON   = CRED_DIR / "charlie_watchlist_reviews.json"
 OUT_FILE       = ROOT / "data" / "stocks.json"
 
+PIPELINE_STATUS = OAT_OS / "investment-system" / "scripts" / "pipeline_status.py"
+KNOW_PORTFOLIO  = OAT_OS / "oat-investment-knowledge" / "portfolio"   # git mirror
+MIRROR_FILES    = ["charlie_watchlist_reviews.json", "watchlist_valuations.json",
+                   "papers.json", "pipeline_log.json"]
+
+
+def warn_consistency():
+    """เตือนถ้า card sections ไม่ consistent + wikilink broken (ผ่าน pipeline_status.py)."""
+    if not PIPELINE_STATUS.exists():
+        return
+    print("[consistency] ตรวจ card sections + wikilink ...")
+    subprocess.run([sys.executable, str(PIPELINE_STATUS), "--consistency", "--quiet"], cwd=OAT_OS)
+
+
+def sync_git_mirror():
+    """copy canonical portfolio state → oat-investment-knowledge/portfolio (git backup)."""
+    if not KNOW_PORTFOLIO.exists():
+        return
+    synced = 0
+    for fn in MIRROR_FILES:
+        src = CRED_DIR / fn
+        if src.exists():
+            shutil.copy2(src, KNOW_PORTFOLIO / fn)
+            synced += 1
+    print(f"  ✅ synced {synced} portfolio state files → git mirror")
+
 
 # ── Step 1: Run oat-public-website generator ─────────────────────────────────
 def run_pub_generator():
@@ -155,6 +181,11 @@ def main():
     has_tier    = sum(1 for v in stocks.values() if v.get("tier"))
     has_charlie = sum(1 for v in stocks.values() if v.get("charlie"))
     print(f"  ✅ {len(stocks)} tickers | tier: {has_tier} | charlie: {has_charlie}")
+
+    # Guards: consistency warning + git mirror of canonical portfolio state
+    warn_consistency()
+    print()
+    sync_git_mirror()
 
 
 if __name__ == "__main__":
