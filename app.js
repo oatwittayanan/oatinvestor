@@ -64,12 +64,13 @@ function convictionBadge(conv) {
 function tierBadge(tier) {
   if (!tier) return '';
   const t = tier.toLowerCase();
-  let cls = 'tier-avoid', label = tier;
-  if (t.includes('inevitable') && !t.includes('pre')) { cls = 'tier-inevitable'; label = '🏛️ Inevitable'; }
-  else if (t.includes('pre')) { cls = 'tier-pre-inev'; label = '🚀 Pre-Inev'; }
-  else if (t.includes('fast')) { cls = 'tier-fast'; label = '🌱 Fast Grower'; }
-  else if (t.includes('cyclical')) { cls = 'tier-cyclical'; label = '🔁 Cyclical'; }
-  else if (t.includes('turnaround')) { cls = 'tier-turnaround'; label = '⚠️ Turnaround'; }
+  const label = tier.replace(/\s*\(.*\)\s*$/, '').trim();
+  let cls = 'tier-avoid';
+  if (t.includes('inevitable') && !t.includes('pre')) cls = 'tier-inevitable';
+  else if (t.includes('pre')) cls = 'tier-pre-inev';
+  else if (t.includes('fast')) cls = 'tier-fast';
+  else if (t.includes('cyclical')) cls = 'tier-cyclical';
+  else if (t.includes('turnaround')) cls = 'tier-turnaround';
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
