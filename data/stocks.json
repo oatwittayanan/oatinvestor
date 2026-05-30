@@ -1189,7 +1189,68 @@
       ],
       "summary": "⚠️ PEG discrepancy: yfinance 3.04 vs Warren's 1.09. Warren used 25% growth; consensus sees 8-9%. HOWEVER analyst targets $450-500 (Morgan Stanley $500) are much more bullish than Warren's FV $394.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "Eaton คือบริษัทที่จัดการพลังงานไฟฟ้าให้ AI Data Center ตั้งแต่กริดไฟฟ้าจนถึงชิป — เป็นรายเดียวที่ครบวงจร",
+      "what": "Eaton ผลิตอุปกรณ์จัดการไฟฟ้าและความเย็นสำหรับ data center เช่น switchgear, UPS, PDU และ liquid cooling รายได้หลักมาจากธุรกิจ Electrical Americas ที่โตเร็วมากจาก AI supercycle หลัง Boyd Thermal เป็นบริษัทเดียวในโลกที่ครอบคลุม power+cooling+switchgear ครบในรายเดียว",
+      "why_invest": [
+        "คำสั่งซื้อ data center +240% YoY และ backlog 228 GW เท่ากับ 12 ปีที่อัตราสร้าง 2025 — visibility ระดับนี้หาได้ยากในหุ้นอุตสาหกรรม",
+        "Boyd Thermal ทำให้ ETN เป็นรายเดียวที่ครบวงจร grid-to-chip ทั้ง power+cooling+switchgear+modular enclosures ไม่มีคู่แข่งรายใดทำได้แบบนี้",
+        "เป็น ecosystem partner กับ NVIDIA สำหรับ 800V DC architecture รุ่นต่อไป ที่ first shipments ปลาย 2027 — spec-in แล้วสำหรับ data center รุ่นต่อไป",
+        "Mobility spin-off Q1 2027 จะช่วยให้ตลาดให้ valuation สูงขึ้นสำหรับ Electrical+Aerospace ที่ margin สูงกว่า Mobility อย่างมาก"
+      ],
+      "watch_out": [
+        "หนี้พุ่งจาก $9.3B เป็น $20.4B Net Debt หลัง Boyd Thermal ทำให้ Net Debt/EBITDA >3.5x — ถ้า performance ต่ำกว่าคาดเสี่ยงทางการเงินสูง",
+        "Margin กดใน H1 2026 จาก capacity ramp costs — CFO คาด recovery H2 แต่ถ้า demand ชะลอขณะรอ จะกดนานกว่าคาด",
+        "DC orders +240% YoY สูงมากจน sustain ได้ยาก — ถ้า hyperscalers pause capex แม้ชั่วคราว order flow จะ miss อย่างรวดเร็ว"
+      ],
+      "bottom_line": "Pete มองว่า ETN เป็นหุ้นโครงสร้างพื้นฐาน AI ที่มี thesis ชัดเจนที่สุดในตลาด แต่ราคาตอนนี้ใกล้ FV แล้ว ต้องรอ pullback ก่อน"
+    },
+    "mark_full": {
+      "business_overview": "Eaton เป็น intelligent power management company ที่ทำเงินจาก 4 ธุรกิจ ได้แก่ Electrical Americas (~$3.6B/ไตรมาส margin ~25% — data center AI growth engine), Electrical Global (ยุโรป/APAC), Aerospace (ระบบไฮดรอลิกและไฟฟ้าเครื่องบิน margin ~27%), และ Mobility (ยานยนต์ที่กำลัง spin-off Q1 2027) Q1 2026 revenue รวม $7.5B +17% YoY — record ไตรมาสแรก",
+      "tam": "ตลาดโครงสร้างพื้นฐาน AI กำลังระเบิด hyperscalers ทำสัญญาซื้อ power management equipment ล่วงหน้า 5-7 ปี คำสั่งซื้อ DC ของ Eaton +240% YoY และ backlog $22.8B จากลูกค้าที่ 70% เป็น AI-related ทำให้มี revenue visibility สูงสุดในอุตสาหกรรม",
+      "moat": "หลัง Boyd Thermal Eaton เป็นรายเดียวในโลกที่ครอบคลุม grid-to-chip ครบสมบูรณ์ — power generation → switchgear → UPS/PDU/busbar → cooling (Boyd liquid cooling) → modular enclosures (Fibrebond) ไม่มีคู่แข่งรายใดสร้าง portfolio นี้ได้ทัน และ backlog 228 GW = 12 ปีที่อัตรา 2025 แสดงว่าลูกค้า lock ไว้แล้ว",
+      "latest_financials": "Q1 2026: Revenue $7.5B +17% YoY, Adj. EPS $2.81 +3%, FCF +245% YoY FY2026 guidance: organic growth 10%, Adj. EPS $13.05-13.50 midpoint $13.28 Segment margin ต่ำลงใน H1 เพราะ ramp costs แต่ CFO คาด Q4 2026 50%+ incremental margins เมื่อ capacity เต็ม",
+      "key_points": [
+        "Boyd Thermal ทำให้ ETN เป็น 'one-stop-shop' จริงๆ เป็นครั้งแรกในประวัติศาสตร์ power+cooling+switchgear ในรายเดียว",
+        "24 โรงงานกำลังขยาย capacity — 12 เปิดแล้ว, 6 เปิดปี 2026, 6 หลัง 2027 เป็น barrier to entry ที่คู่แข่งสร้างตามไม่ทัน",
+        "Mobility spin-off Q1 2027 จะ unlock valuation ให้ Electrical+Aerospace ซึ่ง margin สูงกว่า Mobility ~11% มาก",
+        "800V DC architecture ร่วมกับ NVIDIA = standard ของ next-gen AI data center ที่ Eaton spec-in ไว้แล้ว"
+      ]
+    },
+    "warren_easy": [
+      "ETN เป็น infrastructure play บริสุทธิ์ใน AI supercycle — ธุรกิจไม่ขึ้นกับ semiconductor cycle โดยตรง แต่เป็น 'picks and shovels' ที่ supply power+cooling+switchgear ให้ hyperscalers ทุกราย MOAT อยู่ที่ portfolio ครบวงจร grid-to-chip ที่ไม่มีใครทำตามได้ในเวลาสั้น — Boyd Thermal $9.5B เป็นดีลที่ตัดโอกาสคู่แข่งออกไปอีกหลายปี",
+      "ทำไมตอนนี้น่าสนใจ คำสั่งซื้อ DC +240% YoY และ backlog 228 GW = 12 ปีที่อัตรา 2025 คือ visibility ที่หาได้ยากมากในหุ้นอุตสาหกรรม Boyd Thermal เพิ่งปิดดีลมีนาคม 2026 ทำให้ full contribution เริ่ม Q2 และ margin recovery H2 2026 ยังเป็น catalyst ที่ยังไม่ price-in ทั้งหมด FV Base $394 ใกล้ราคาตลาด แต่ Bull case $560 ยังมี room +43%",
+      "Warren ถือ ETN ในฐานะ WATCH ราคา $390-391 เกือบเท่า FV Base $394 ไม่ผ่าน MoS 15% gate แต่ถ้าตลาดย่อลงมา 15-20% จาก execution risk หรือ market correction จะ upgrade เป็น BUY ทันที 5yr Expected Return 17.5%/yr ผ่าน threshold แล้ว Conviction: HIGH — thesis ชัดเจน แต่ต้องการ entry ที่ดีกว่า"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยัน thesis ETN แข็งแกร่ง DC orders +240% YoY และ Boyd Thermal ทำให้ portfolio ครบจริง แต่พบ PEG discrepancy น่าเป็นห่วง — yfinance ให้ PEG 3.04 ขณะที่ Warren ใช้ 1.09 สาเหตุคือ Warren ใช้ growth assumption 25% ขณะที่ consensus คาดแค่ 8-9% YoY ช่องว่างนี้ใหญ่มากและต้องการ reconciliation",
+        "Charlie กังวลว่าถ้า growth rate จริงใกล้ consensus มากกว่า Warren's assumption valuation จะแพงกว่าที่ดูเหมือน นอกจากนี้ Net Debt $20.4B หลัง Boyd เป็นภาระสูงมาก Net Debt/EBITDA >3.5x — ถ้า margin recovery H2 ไม่เป็นตามที่ CFO ระบุ liquidity risk จะสูงขึ้น",
+        "Charlie สรุปว่า WATCH ถูกต้อง แต่ต้องติดตาม 2 สิ่ง: (1) margin recovery Q2-Q3 2026 จริงหรือไม่ตามที่ CFO บอก (2) growth rate จริงว่าใกล้ Warren's 25% หรือ consensus 8-9% เพื่อ validate valuation ก่อนตัดสินใจเพิ่ม position"
+      ]
+    },
+    "idea_th": "Eaton เป็นบริษัทเดียวที่จัดการพลังงานไฟฟ้าครบวงจรจาก grid จนถึงชิป AI ผ่าน power+cooling+switchgear+modular enclosures ครบสมบูรณ์ ทำให้เป็น essential infrastructure partner ที่ hyperscalers ต้องพึ่งพาในการสร้าง AI data center รุ่นต่อไป",
+    "story_gate_th": {
+      "what": "Eaton จัดการพลังงานไฟฟ้าทุกชั้นตั้งแต่กริดไฟฟ้าจนถึงชิป AI ผ่านพอร์ตโฟลิโอที่ครบสมบูรณ์ที่สุดในโลก รวม power+cooling+switchgear+modular enclosures มี backlog 228 GW = 12 ปีที่อัตราสร้าง 2025 หลัง Boyd Thermal เป็นรายเดียวที่ทำได้ครบแบบนี้",
+      "why": "คำสั่งซื้อ DC +240% YoY + Boyd Thermal ปิดดีลสำเร็จ + raised FY2026 organic growth 10% + FCF +245% YoY Q1 2026 = momentum แข็งแกร่งและตลาดยังไม่ fully price-in H2 margin recovery จาก 24 โรงงาน capacity expansion",
+      "risk": "ถ้า AI Capex supercycle หยุดชะงักหรือ pause >2 ไตรมาส ทำให้ Electrical Americas orders reversal หรือ Boyd Thermal integration ($9.5B) สร้างผลประกอบการต่ำกว่าคาดอย่างมีนัยสำคัญ"
+    },
+    "bull_th": [
+      "คำสั่งซื้อ data center +240% YoY และ backlog 228 GW = 12 ปีที่อัตราสร้าง 2025 — hyperscalers ทำสัญญา 5-7 ปีล่วงหน้า ทำให้ visibility สูงสุดในอุตสาหกรรม",
+      "Boyd Thermal ทำให้ ETN เป็นรายเดียวในโลกที่ครอบ grid-to-chip ครบสมบูรณ์ ไม่มีคู่แข่งรายใดสร้าง portfolio นี้ได้ทัน",
+      "800V DC architecture + NVIDIA partnership = spec-in สำหรับ AI data center รุ่นต่อไป — 10 pilot projects ปัจจุบัน, commercial ramp ปลาย 2027 เปิด TAM ใหม่",
+      "Mobility spin-off Q1 2027 จะ unlock valuation สูงขึ้นสำหรับ Electrical+Aerospace ที่ margin 25-27% เทียบ Mobility ที่แค่ 11-12%",
+      "24 โรงงาน expansion คาด 50%+ incremental margins ใน H2 2026 เมื่อ capacity เต็ม — margin recovery เป็น near-term catalyst ที่ชัดเจน"
+    ],
+    "risk_th": [
+      "Net Debt พุ่งจาก $9.3B → $20.4B หลัง Boyd Thermal ทำให้ Net Debt/EBITDA >3.5x — ดอกเบี้ยเพิ่ม 3x YoY ถ้า performance ต่ำกว่าคาด liquidity risk สูงขึ้น",
+      "Goodwill+Intangibles $32.7B = 59% ของ Total Assets — ถ้า DC cooling market ชะลอ impairment risk ใหญ่มากและ catastrophic สำหรับ EPS",
+      "Margin กดใน H1 2026 จาก capacity ramp costs — ถ้า demand ชะลอขณะที่ยังรอ recovery H2 ก็จะกดนานกว่าที่ CFO คาด",
+      "Mobility spin-off ซับซ้อนต้องผ่าน Form 10 + regulatory approvals — ถ้า delay กระทบ timeline และ management attention",
+      "DC orders +240% YoY สูงมากจน sustain ได้ยาก — ถ้า hyperscalers pause capex แม้ชั่วคราว Eaton จะ miss order run rate อย่างรวดเร็ว"
+    ]
   },
   "AMD": {
     "symbol": "AMD",
@@ -1272,7 +1333,68 @@
       ],
       "summary": "⚠️ Price $503.89 now ABOVE Warren's FV $467 by 7.9%. Q1 2026 beat (May 5): Revenue $10.25B, EPS $1.37. Analyst targets $500-625 suggest Warren's FV understated. WATCH correct but FV may need revision.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "AMD คือคู่แข่งอันดับ 2 ของ NVIDIA ที่กำลังกลายเป็น 'second platform' ที่ hyperscalers ต้องมีเพื่อความปลอดภัย",
+      "what": "AMD ออกแบบ CPU (EPYC สำหรับ server), GPU (Instinct สำหรับ AI), และ FPGA (จาก Xilinx) รายได้หลักตอนนี้ 56% มาจาก Data Center ที่โตระเบิด Meta และ OpenAI เพิ่งเลือก AMD เป็น AI GPU หลักในสัญญาขนาด 6GW แต่ละราย ซึ่งเป็นสัญญาณว่า AMD ไม่ใช่แค่ทางเลือกสำรองอีกต่อไป",
+      "why_invest": [
+        "EPYC ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory นี้เหมือน Intel CPU story ที่ AMD เคยทำสำเร็จมาแล้ว",
+        "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว ไม่ใช่แค่ทดสอบ",
+        "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้งสองด้าน",
+        "Helios rack platform (MI450 + Venice CPU + networking) เริ่ม ramp H2 2026 = complete AI system เทียบ NVIDIA ที่ตลาดยังไม่ fully price in"
+      ],
+      "watch_out": [
+        "ROCm software ecosystem ยังห่างจาก CUDA มาก ทำให้ enterprise ยังย้ายมา AMD ช้าและ execution risk สูง",
+        "Warrant dilution จาก OpenAI+Meta รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute",
+        "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ถ้า delay กระทบ Q4 2026 guidance"
+      ],
+      "bottom_line": "Pete มอง AMD เป็น 'second platform' ที่น่าสนใจมาก thesis ชัดเจน แต่ราคาตอนนี้ตรง FV Base พอดีแทบไม่มี margin of safety ต้องรอ pullback ก่อน"
+    },
+    "mark_full": {
+      "business_overview": "AMD เป็น fabless semiconductor company ออกแบบ CPU (EPYC server, Ryzen PC), GPU (Instinct AI, Radeon gaming) และ FPGA (Xilinx) ทั้งหมดผลิตโดย TSMC Data Center (56% revenue) คือ growth engine หลักที่โต +57% YoY Q1 2026 จาก EPYC CPU ที่ชนะ Intel และ Instinct AI GPU ที่ได้ลูกค้า Meta+OpenAI",
+      "tam": "Server CPU TAM กำลังโตจาก ~$60B → >$120B by 2030 เพราะ agentic AI เปลี่ยน CPU demand อย่างมีนัยสำคัญ ทุก agentic workload ต้องใช้ CPU สำหรับ orchestration+data movement+parallel execution AMD เป็น beneficiary ตรงเพราะมีทั้ง CPU+GPU+rack พร้อมกัน",
+      "moat": "EPYC MOAT อยู่ที่ performance/watt ที่เหนือ Intel Xeon อย่างชัดเจน + AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system (Helios) พร้อมกัน = one-stop AI infrastructure partner ROCm open software ยังเป็นจุดอ่อนเทียบ CUDA แต่ improving อย่างต่อเนื่องโดยเฉพาะ inference workloads",
+      "latest_financials": "Q1 2026: Revenue $10.3B +38% YoY, Non-GAAP EPS $1.37 +43%, FCF $2.6B +257% YoY — record Data Center $5.8B +57% Q2 2026 guidance: $11.2B +46% YoY, Non-GAAP GM 56% FV Base $467 ใกล้เท่ากับราคาตลาด $467.51 — แทบไม่มี margin of safety",
+      "key_points": [
+        "Helios rack platform (MI450 + Venice CPU + networking) = complete AI system เทียบ DGX ของ NVIDIA — Q3 initial, Q4 significant ramp 2026",
+        "Meta+OpenAI warrant structure ทำให้ลูกค้าต้อง advocate AMD ต่อสาธารณะ เพราะ warrant vest ตาม GPU shipment milestones",
+        "Agentic AI shift ทำให้ CPU TAM ใหญ่กว่าที่ตลาดคาด — AMD ได้ประโยชน์ทั้ง CPU (EPYC) และ GPU (Instinct) พร้อมกัน",
+        "'Advancing AI' event July 2026 = catalyst ใหม่สำหรับ roadmap เปิดเผย อาจ push ราคาได้ถ้า roadmap ดีเกินคาด"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ AMD เพราะ thesis 'second platform' — โลก AI ไม่มีทางพึ่ง NVIDIA รายเดียว 100% hyperscalers ต้องการ second source เพื่อความปลอดภัย AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system พร้อมกัน ทำให้เป็นตัวเลือก complete ที่สุดในการ diversify จาก NVIDIA",
+      "ทำไมตอนนี้น่าสนใจ Meta+OpenAI deal ขนาด 6GW แต่ละราย = multi-year revenue visibility ที่ชัดเจน EPYC ยังขยาย share ใน server CPU อย่างต่อเนื่อง และ agentic AI เปลี่ยน CPU TAM ให้ใหญ่กว่าที่ตลาดเข้าใจ FV Base $467 แทบเท่ากับราคา แต่ 5yr Expected Return 21.4%/yr ผ่าน threshold",
+      "Action: WATCH ราคา $467.51 ≈ FV Base $467 ไม่มี MoS ที่ต้องการ แต่ถ้า pullback 15-20% จาก H2 MI450 execution risk หรือ market correction Warren จะ upgrade เป็น BUY ทันที Conviction: MEDIUM เพราะ ROCm risk + warrant dilution 320M shares ที่อาจกด EPS"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยัน thesis AMD แข็งแกร่ง Data Center +57% YoY ใน Q1 2026 เป็นหลักฐานชัดว่า hyperscalers ลงทุนใน AMD จริง EPYC server share >41% verified จาก Mercury Research และ FCF +257% YoY แสดง operating leverage ที่ดีขึ้นอย่างชัดเจน",
+        "Charlie กังวล 2 จุดที่ Warren อาจ underweight: (1) ราคา $503 ปลาย May สูงกว่า FV $467 แล้ว 7.9% ขณะที่ analyst consensus ให้ PT $500-625 อาจหมายความว่า Warren's FV understate จริง; (2) Warrant dilution 320M shares = 19.6% ถ้า vest ทั้งหมด เป็นความเสี่ยงที่ไม่ค่อยถูกพูดถึงในการคำนวณ per-share value",
+        "Charlie สรุปว่า WATCH ถูกต้อง business direction ชัดเจนและ momentum ดี แต่ต้องติดตาม MI450 execution ใน H2 2026 และ warrant vesting schedule เพื่อ calibrate dilution risk ก่อนตัดสินใจ"
+      ]
+    },
+    "idea_th": "AMD กำลังกลายเป็น second platform สำหรับ AI infrastructure — EPYC CPU ครอง >41% server market และ Instinct MI450 GPU ที่ Meta+OpenAI เลือกขนาด 6GW ทำให้ AMD ไม่ใช่แค่คู่แข่ง NVIDIA แต่เป็น 'insurance policy' ที่ hyperscalers ต้องมี",
+    "story_gate_th": {
+      "what": "AMD เป็นรายเดียวที่มีทั้ง x86 CPU (EPYC Turin/Venice) + AI GPU (Instinct MI450) + rack platform (Helios) พร้อมกัน ทำให้เป็น one-stop AI infrastructure partner สำหรับ hyperscalers ที่ต้องการ diversify จาก NVIDIA — server CPU share >41% และ Data Center revenue $5.8B +57% YoY Q1 2026",
+      "why": "Meta+OpenAI เลือก AMD ขนาด 6GW แต่ละราย + EPYC Turin >50% revenue mix Q1 2026 + Q2 guidance +46% YoY = momentum ชัดเจนว่า AMD กำลัง rerate จาก 'GPU laggard' เป็น 'indispensable second source' ใน 2H 2026–1H 2027",
+      "risk": "ROCm software ecosystem ยังไม่ catch up CUDA ทำให้ enterprise ไม่ adopt MI-series จริงจัง หรือ MI450+Helios ramp ล่าช้าใน H2 2026 ทำให้ miss guidance"
+    },
+    "bull_th": [
+      "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว — เป็นสัญญาณ financial lock-in ไม่ใช่แค่ทดสอบ",
+      "EPYC Turin ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory ชัดว่า AMD กำลัง rerate เหมือน 'Intel CPU story' ที่ตลาดเคยเห็นมาแล้ว",
+      "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้ง CPU และ GPU พร้อมกัน",
+      "Helios rack (MI450+Venice+networking) = complete AI system เทียบ NVL72 — Q3 initial ramp, Q4 significant ramp 2026 เป็น near-term catalyst ที่ยังไม่ fully price in",
+      "FCF +257% YoY Q1 2026 $2.6B = operating leverage แข็งแกร่ง Net Cash $9.1B ไม่มีหนี้สุทธิ ให้ flexibility ในการลงทุน R&D และ buyback"
+    ],
+    "risk_th": [
+      "ROCm software ecosystem ยังห่างจาก CUDA มาก — enterprise ที่ invest ใน CUDA pipeline ลำบากในการ migrate ทำให้ AMD ยังได้ส่วน inference เป็นหลัก training ยังยาก",
+      "OpenAI+Meta warrant รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute ผู้ถือหุ้นเดิม",
+      "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ยังไม่เคยทำในระดับนี้ ถ้า delay กระทบ Q4 2026 guidance อย่างมีนัยสำคัญ",
+      "TSMC concentration 100% สำหรับ advanced wafers — Taiwan geopolitical risk เป็นความเสี่ยงสูงสุดที่ AMD control ไม่ได้",
+      "Gaming H2 2026 คาดลง >20% vs H1 จาก memory price inflation — กด Client revenue และ margin รวม"
+    ]
   },
   "MRVL": {
     "symbol": "MRVL",
@@ -1356,7 +1478,68 @@
       "summary": "Q1 FY27 beat confirmed (,418M +28%, EPS /bin/zsh.80 beat /bin/zsh.75 est); Q2 guide .7B +35% = legit acceleration. แต่ Charlie พบ 3 risks ที่ Warren อาจ underweight: (1) Analyst report วา MRVL อาจสูญเสีย Amazon custom XPU ให้คู่แข่ง (April 2026 downgrade catalyst); (2) Risk สูญเสีย Microsoft XPU ให้ Broadcom; (3) Stock ลง -4.24% intraday May 27 แม้ earnings beat — สัญญาณว่าตลาดมีข้อกังวลที่ซ่อนอยู่. Warren FV  (conservative) vs street -210 = Warren ถูกในทิศทาง แต่ customer loss risk เป็น tail risk ที่ต้องติดตาม.",
       "review_date": "2026-05-28"
     },
-    "tier": "🔁 Cyclical"
+    "tier": "🔁 Cyclical",
+    "mark_easy": {
+      "one_liner": "Marvell คือ hidden champion ของ AI infrastructure ที่ออกแบบ custom AI chip และ optical interconnect ให้ hyperscalers รายใหญ่ทุกราย",
+      "what": "Marvell ออกแบบ custom AI accelerator (XPU) ให้ hyperscalers รายใหญ่ 5 รายในสหรัฐฯ รวมถึงชิป optical interconnect ที่ส่ง data ระหว่าง GPU ด้วยความเร็ว 800G และ 1.6T เป็นผู้นำตลาด 70% share ใน high-speed data connectivity ของ AI data center FY2028 revenue target ยกเป็น $16.5B",
+      "why_invest": [
+        "ออกแบบ custom XPU ให้ hyperscalers ทั้ง 5 รายใน US — embedded ลึกใน AI roadmap หลายปีข้างหน้า SerDes IP switching cost ทำให้ลูกค้าเปลี่ยนใจยากมาก",
+        "PAM DSP market leader 70% share ใน optical interconnect — ทุก AI cluster ต้องใช้ชิปนี้ และ 1.6T → 3.2T transition ทำให้ content per port สูงขึ้น 2x",
+        "NVIDIA เลือก Marvell เป็น silicon photonics partner + NVLink Fusion = custom chips ของ Marvell ทำงานใน NVIDIA ecosystem ได้ เปิด TAM ใหม่นอก 5 hyperscalers",
+        "FY2028 revenue target ยกเป็น $16.5B (+$1.5B raise) มาจาก 3 sources ที่ทุก bucket กำลัง 'sizing up' ตาม CEO"
+      ],
+      "watch_out": [
+        "ราคา $215 แพงกว่า FV Base $171 ถึง 37.8% — overvalued อย่างชัดเจน ราคาสะท้อน Bull scenario ไปแล้ว",
+        "มีข้อกังวลว่า MRVL อาจสูญเสีย Amazon และ Microsoft XPU ให้คู่แข่ง ถ้าจริงกระทบ FY28 target อย่างมีนัยสำคัญ",
+        "Customer concentration สูงมาก top-4 = 73% ของ accounts receivable — ถ้า hyperscaler รายใดลด AI capex กระทบหนัก"
+      ],
+      "bottom_line": "Pete มองว่า MRVL คือหนึ่งในบริษัท AI infrastructure ที่น่าสนใจที่สุด แต่ราคาตอนนี้แพงเกินไปมาก ต้องรอ pullback มาสู่ $150-165 ก่อน"
+    },
+    "mark_full": {
+      "business_overview": "Marvell เป็น fabless semiconductor ที่ทำรายได้ 74% จาก Data Center ผ่าน 3 กลุ่มหลัก: custom AI accelerator (XPU ~$1.5B FY26), optical interconnect (PAM DSP 800G/1.6T → 3.2T via Polariton), และ switching FY2026 revenue $8.2B +42% YoY, FY2027 expected ~$11.5B +40% YoY, FY2028 target $16.5B",
+      "tam": "ตลาด custom silicon และ optical interconnect สำหรับ AI data center กำลังระเบิด CEO คาด FY2029 custom silicon $10B+ จาก TAM $55B × market share 20%+ ส่วน optical interconnect TAM ใหญ่กว่า เพราะทุก AI cluster ทุกระดับต้องมี interconnect ครบ",
+      "moat": "SerDes IP switching cost คือ MOAT ที่ซ่อนอยู่และสำคัญที่สุด — hyperscaler ที่ design custom chip บน Marvell's SerDes IP ถ้าจะย้าย vendor ต้อง redesign ทั้งหมดจากศูนย์ ใช้เวลา R&D หลายปีและเสีย time-to-market นอกจากนี้ Marvell เป็นรายเดียวที่ cover scale-out+scale-across+scale-up+switching+CXL+photonics ในบริษัทเดียว",
+      "latest_financials": "Q1 FY2027: Revenue $2,418M +28% YoY, Non-GAAP EPS $0.80 (beat guidance), Data Center $1,833M +27% YoY Q2 FY2027 guidance: $2,700M ±5% +35% YoY, EPS $0.93 +16% QoQ FY2027 full year ~$11.5B, FY2028 raised เป็น $16.5B (+$1.5B จาก prior)",
+      "key_points": [
+        "NVIDIA Strategic Partnership 3 pillars: silicon photonics co-development, NVLink Fusion, AI RAN — เปิด TAM ใหม่นอกเหนือ 5 US hyperscalers เป็นครั้งแรก",
+        "Polariton acquisition ทำให้ MRVL กระโดดจาก 1.6T → 3.2T+ optical DSP ก่อน competitor ทุกราย scale-up optics FY28 >$300M (2x prior $150M outlook)",
+        "FY2028 custom silicon มาจาก 3 buckets เท่าๆ กัน: existing programs + XPU attach (CXL/NIC) + new tier-1 XPU ramp — ทุก bucket 'sizing up' ตาม CEO",
+        "Celestial AI CPO selected by tier-1 hyperscaler สำหรับ next-gen XPU scale-up networks — CPO revenue $500M annualized ใน Q4 FY28"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ MRVL เพราะ thesis ที่ชัดเจน — ทุก hyperscaler ต้องการ custom AI chip และ high-speed optical connectivity สำหรับ AI cluster Marvell อยู่ใน position ที่ดีที่สุดเพราะ SerDes IP switching cost ทำให้ลูกค้าที่ design บน Marvell เปลี่ยนใจได้ยากมาก MOAT นี้ไม่ค่อยมีคนพูดถึงแต่สำคัญมากในระยะยาว",
+      "ทำไมตอนนี้น่าสนใจ Q1 FY27 beat + Q2 guide $2.7B +35% YoY + FY28 raised $1.5B → $16.5B + NVIDIA partnership ใหม่ 3 pillars เป็น 4 catalyst ที่ reinforce thesis พร้อมกัน ตลาดรับรู้ thesis แต่ Warren เชื่อว่ายัง underprice magnitude ของ FY28 revenue ramp",
+      "Action: WATCH แต่ราคา $215 ไกลจาก FV Base $171 มาก (MoS -37.8% FAIL) ER Base ~8%/yr ไม่ผ่าน Warren รอ entry ที่ $150-165 ซึ่งจะให้ MoS 15%+ — ถ้าตลาด AI cool down หรือมี execution miss ราคาอาจมาได้ Conviction: MEDIUM"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยัน Q1 FY27 beat จริง Revenue $2,418M +28% YoY และ Q2 guide $2.7B +35% YoY คือ acceleration ที่ legit FY28 raise $1.5B → $16.5B มีน้ำหนัก NVIDIA partnership ใหม่ confirm ว่า MRVL custom chips ทำงานใน NVIDIA ecosystem ได้ — เป็น positive structural change",
+        "Charlie กังวล 2 เรื่องใหญ่: (1) มี analyst report ว่า MRVL อาจสูญเสีย Amazon Trainium custom XPU ให้คู่แข่ง — ถ้าจริงกระทบ FY28 target อย่างมีนัยสำคัญ นอกจากนี้มีข้อกังวล Microsoft XPU ด้วย; (2) หุ้นลง -4.24% intraday วัน earnings beat May 27 เป็น signal ว่าตลาดมีข้อกังวลที่ซ่อนอยู่ Fwd P/E ~50x สูงกว่า industry average 34.65x อย่างมาก",
+        "Charlie สรุปว่า WATCH ถูกต้อง ไม่ควรซื้อที่ $215 ต้องติดตามว่า Amazon/Microsoft XPU status เป็นอย่างไรจริง และ management จะ address concern นี้ใน Q2 FY27 earnings call หรือไม่"
+      ]
+    },
+    "idea_th": "Marvell คือ hidden champion ของ AI infrastructure — ออกแบบ custom AI chip (XPU) ให้ hyperscalers ทั้ง 5 รายใน US และเป็นผู้นำตลาด optical interconnect SerDes IP switching cost ทำให้ลูกค้าที่ใช้แล้วเปลี่ยนใจได้ยาก เป็น defensible position ระยะยาวที่ตลาดมักมองข้าม",
+    "story_gate_th": {
+      "what": "Marvell ออกแบบ custom AI accelerator (XPU) และ optical interconnect (800G/1.6T/3.2T+ ผ่าน Polariton) เป็นบริษัทเดียวที่ cover ทั้ง scale-out+scale-across+scale-up+switching+CXL+photonics ฝังลึกใน roadmap multi-year ของ 5 US hyperscalers พร้อม FY2027 revenue ~$11.5B และ FY2028 $16.5B",
+      "why": "ตลาดรู้ว่า MRVL เป็น AI beneficiary แต่ยัง underprice 4 จุด: Polariton 3.2T+ leadership, FY28 raised $1.5B, Q2 Non-GAAP EPS $0.93 (+16% QoQ), และ NVIDIA Partnership 3 pillars ที่เปิด TAM ใหม่นอกเหนือ 5 hyperscalers",
+      "risk": "ถ้า hyperscalers ลด AI capex หรือ Polariton integration ล่าช้า/แพงเกิน หรือ custom XPU program ถูก in-house โดย hyperscaler รายใหญ่ เช่น Amazon หรือ Microsoft"
+    },
+    "bull_th": [
+      "Custom XPU embedded ลึกใน 5 US hyperscalers roadmap หลายปี — SerDes IP switching cost ทำให้ลูกค้าที่ design แล้วเปลี่ยนใจได้ยากมาก ต้อง redesign ทั้งหมดถ้าจะย้าย vendor",
+      "PAM DSP market leader 70% share ใน optical interconnect — ทุก AI cluster ต้องซื้อชิปนี้ และ 1.6T → 3.2T+ transition (Polariton) ทำให้ content per port สูงขึ้น 2x",
+      "FY2028 revenue $16.5B (+$1.5B raise) มาจาก 3 sources ที่ทุก bucket กำลัง 'sizing up': existing programs + XPU attach (CXL/NIC) + new tier-1 XPU ramp",
+      "NVIDIA Strategic Partnership เปิด TAM ใหม่: silicon photonics co-development, NVLink Fusion, AI RAN — MRVL custom chips ไม่ได้แข่งกับ NVIDIA แต่ทำงานร่วมกัน",
+      "Celestial AI CPO + Polariton 3.2T+ = ผู้นำ scale-up optical ที่จะ revenue >$300M FY28 (2x prior $150M outlook) — Tier-1 hyperscaler เลือกแล้ว"
+    ],
+    "risk_th": [
+      "Customer concentration top-4 = 73% accounts receivable — ถ้า hyperscaler รายใดลด AI capex หรือ in-source XPU จะกระทบ revenue หนักและรวดเร็ว",
+      "มีข้อกังวลจาก analyst ว่า MRVL อาจสูญเสีย Amazon Trainium และ Microsoft XPU ให้คู่แข่ง — ถ้าจริงกระทบ FY28 $10B custom target อย่างมีนัยสำคัญ",
+      "Goodwill $11B = 49.7% ของ Total Assets — ถ้าหุ้นตก sharply จะ trigger impairment review และกระทบ EPS อย่างหนัก",
+      "Polariton acquisition เพิ่ง close — 3.2T optical ยังไม่ proven ที่ volume production จริง integration risk สูง และเพิ่ม M&A burden",
+      "China destination shipments 36% revenue มีความเสี่ยงจาก BIS export control ที่อาจขยายวงกว้างขึ้น รวมถึง 15% revenue sharing mechanism ที่อาจถูก impose"
+    ]
   },
   "PLTR": {
     "symbol": "PLTR",
@@ -1439,7 +1622,68 @@
       ],
       "summary": "WATCH confirmed. MoS -43.8%. PEG 1.97 yfinance vs Warren's 0.93 — Warren too aggressive on growth. DO NOT BUY at $137.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของซอฟต์แวร์ AI ที่เปลี่ยนข้อมูลกองทัพและบริษัทใหญ่ให้กลายเป็นการตัดสินใจจริงภายใน 5 วัน",
+      "what": "Palantir ทำซอฟต์แวร์ที่เอาข้อมูลกระจัดกระจายขององค์กรมารวมกันแล้วให้ AI ช่วยตัดสินใจและสั่งงานได้จริง ลูกค้าหลักมี 2 กลุ่มคือ รัฐบาล/กองทัพสหรัฐ (Gotham) กับบริษัทเอกชน (Foundry + AIP) จุดเด่นคือ AIP Bootcamp ที่พาลูกค้าจากศูนย์ไปใช้งาน AI จริงได้ใน 5 วัน",
+      "why_invest": [
+        "โตเร็วมากและโตแบบมีกำไร — รายได้ Q1 2026 +85% YoY รายได้ฝั่งสหรัฐ +104% และที่สำคัญคือ GAAP กำไรจริง net margin 53% ไม่ใช่บริษัทเผาเงิน Rule of 40 อยู่ที่ 145 ซึ่งสูงที่สุดในกลุ่ม",
+        "Moat รัฐบาลฝังลึก 20 ปี — Palantir ฝังตัวในงานข่าวกรองและกลาโหมสหรัฐมากว่า 20 ปี ความสัมพันธ์กับลูกค้า top 3 เฉลี่ย 10 ปี ย้ายออกแทบไม่ได้เพราะเป็นระบบที่ภารกิจขาดไม่ได้",
+        "AIP Bootcamp เป็นอาวุธลับ — พาองค์กรไปใช้ AI จริงใน 5 วัน เปลี่ยนวงจรขายจากเป็นเดือนเหลือเป็นวัน และแต่ละ bootcamp มักแปลงเป็นสัญญาหลายปี Net Dollar Retention 150% แปลว่าลูกค้าเก่าใช้จ่ายเพิ่มขึ้นเอง",
+        "ฐานะการเงินแกร่งมาก — เงินสด $8.0B หนี้เป็นศูนย์ FCF margin 57% เป็นบริษัทซอฟต์แวร์ asset-light ที่แทบไม่ต้องลงทุนหนัก"
+      ],
+      "watch_out": [
+        "ราคาแพงมาก — Forward PE สูงถึง 66 เท่า ราคาเกิน Fair Value Base ($95) ไปกว่า 40% ทำให้แทบไม่มี margin of safety ถ้าการเติบโตสะดุดนิดเดียวราคาอาจปรับฐานแรง",
+        "พึ่งงบรัฐบาลมาก — รายได้ส่วนใหญ่มาจากภาครัฐที่มีเงื่อนไขยกเลิกสัญญาได้ ถ้ามีการตัดงบแบบ DOGE หรือเปลี่ยนนโยบาย อาจกระทบรายได้ก้อนใหญ่ทันที",
+        "อำนาจกระจุกที่ผู้ก่อตั้ง + เจือจางหุ้น — Karp/Thiel/Cohen คุมเสียงโหวตเบ็ดเสร็จผ่านหุ้นหลายชั้น และมี SBC ราว 12% ของรายได้ (~$800M/ปี) ที่ทำให้หุ้นเจือจางต่อเนื่อง"
+      ],
+      "bottom_line": "Pete มองว่า Palantir เป็นธุรกิจคุณภาพดีจริง โตแรงและมีกำไร Moat รัฐบาลแข็งแกร่ง แต่ปัญหาเดียวคือ 'ราคา' ที่วิ่งนำพื้นฐานไปไกล ถ้าได้ของดีในราคาที่สมเหตุสมผลกว่านี้จะน่าสนใจมาก ตอนนี้เลยเป็นหุ้นที่ควรจับตารอจังหวะมากกว่ารีบเข้า"
+    },
+    "mark_full": {
+      "business_overview": "Palantir หาเงินจากการขายซอฟต์แวร์ 4 แพลตฟอร์มหลัก — Foundry (ระบบจัดการข้อมูลองค์กร), AIP (แพลตฟอร์ม AI ที่ต่อยอดเป็น agentic workflow), Gotham (งานกลาโหม/ข่าวกรอง) และ Apollo (ระบบ deploy ซอฟต์แวร์ได้ทุกที่ทั้ง cloud และ air-gapped) แบ่งรายได้เป็นรัฐบาล 54% เอกชน 46% และเป็นสหรัฐ 74% ต่างประเทศ 26% เครื่องยนต์โตที่ร้อนแรงที่สุดตอนนี้คือ US Commercial ที่โต +133% YoY จากการนำ AIP ไปใช้",
+      "tam": "ตลาดของ Palantir คือการเอา AI ไปใช้งานจริงในองค์กรขนาดใหญ่และภาครัฐ ซึ่งเป็นคลื่นที่เพิ่งเริ่ม ฝั่งเอกชนสหรัฐเพิ่งมีลูกค้า 615 ราย (โต +42% YoY) ยังมี runway อีกมหาศาล ฝั่งต่างประเทศคิดเป็นแค่ 21% ของรายได้ = โอกาสขยายอีกเยอะ ตัวเร่งใหญ่คือดีล PLTR + NVIDIA Sovereign AI OS ที่รวมฮาร์ดแวร์ Blackwell กับซอฟต์แวร์ Palantir สำหรับลูกค้าที่ต้องการระบบปิด และงานกลาโหมอย่าง Maven Smart System ที่ขยายในกระทรวงกลาโหม",
+      "moat": "Moat ที่ลึกที่สุดคือ Ontology — แกน IP ที่จำลองตัวตน ตรรกะ และการกระทำขององค์กรในโลกจริง ทำให้คนกับ AI agent ทำงานบนบริบทเดียวกันได้แบบ real-time ลอกเลียนยากและแพงมาก ชั้นที่สองคือ Government Embedded Moat ที่ฝังในงานข่าวกรองสหรัฐมา 20+ ปี เป็นระบบที่ภารกิจขาดไม่ได้ switching cost สูงลิ่ว และชั้นที่สามคือความเร็วของ AIP Bootcamp ที่พาลูกค้าไปใช้งานจริงใน 5 วัน บวก Net Dollar Retention 150% ที่เป็นเครื่องยนต์โตในตัว",
+      "latest_financials": "Q1 2026 รายได้ $1,633M โต +85% YoY, Gross Margin GAAP 87%, Operating Margin GAAP พุ่งเป็น 46% (จาก 20%), GAAP Net Income $870M = net margin 53% และ Adjusted FCF $925M (margin 57%) ทุกตัวเลขแข็งแรงรอบด้าน บริษัทขึ้น guidance ทั้งปี FY2026 เป็นโต +71% (~$7.65B) และคาดทำกำไร GAAP ทุกไตรมาส ฐานะการเงินมีเงินสด+หลักทรัพย์ $8.0B หนี้เป็นศูนย์",
+      "key_points": [
+        "Rule of 40 อยู่ที่ 145% (โตเร็ว+ทำกำไรพร้อมกัน) ไต่ขึ้นต่อเนื่องจาก 64% เมื่อ Q2 2024 — สะท้อนคุณภาพการเติบโตระดับท็อป",
+        "Net Dollar Retention 150% แปลว่าลูกค้าเดิมใช้จ่ายเพิ่ม 50% ต่อปีโดยไม่ต้องหาลูกค้าใหม่ เป็น growth engine ที่ฝังในตัว",
+        "SBC (หุ้นจ่ายพนักงาน) ราว 12% ของรายได้ หรือ ~$800M/ปี เป็นต้นทุนจริงที่ทำให้หุ้นเจือจาง แม้จะถูกหักออกจาก Adjusted EPS",
+        "อำนาจโหวตกระจุกที่ผู้ก่อตั้ง (Karp/Thiel/Cohen) ผ่านโครงสร้างหุ้นหลายชั้น = governance risk ที่ต้องรับรู้ก่อนลงทุน"
+      ]
+    },
+    "warren_easy": [
+      "Warren มอง Palantir ในฐานะ Fast Grower ที่มี Moat จริง 2 ชั้น — ชั้นแรกคือ Ontology ซึ่งเป็นแกนซอฟต์แวร์ที่ลอกเลียนยากและแพงมาก ชั้นที่สองคือการฝังตัวในงานกลาโหม/ข่าวกรองสหรัฐมา 20 ปี ที่ภารกิจขาดไม่ได้ บวกกับ AIP Bootcamp ที่พาลูกค้าไปใช้ AI จริงใน 5 วัน ซึ่ง Warren เชื่อว่าเป็นความได้เปรียบที่ hyperscaler อย่าง Microsoft/Google ลอกได้ยากเพราะขาดบริบทเชิงปฏิบัติการ",
+      "แต่จุดที่ Warren ติดเบรกคือ 'ราคา' — ที่ $137 ราคาวิ่งเกิน Fair Value Base ($95) ไปถึง 44% ทำให้ Margin of Safety ติดลบ -44% ไม่ผ่าน gate แม้ Expected Return 5 ปี (25%/ปี) และ PEG 0.93 จะยังผ่าน แต่ Warren ยึดหลักว่าของดีต้องซื้อในราคาที่มีส่วนเผื่อความปลอดภัย ไม่ใช่ไล่ราคาตอนที่ตลาดตื่นเต้นเต็มที่",
+      "กลยุทธ์ของ Warren คือ WATCH — รอ pullback ลงมาแถว $92 ที่ FV Base ก่อนถึงจะน่าสนใจเข้าซื้อ Conviction ระดับ MEDIUM เพราะธุรกิจดีแต่ valuation ตึงและมีความเสี่ยงเรื่องงบรัฐบาล (DOGE) กับการเจือจางหุ้นจาก SBC ที่ต้องเฝ้าระวัง"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie เห็นด้วยกับ Warren ว่าตัวธุรกิจดีกว่าที่ตลาดกลัว — ตรวจสอบอิสระแล้วยืนยันว่ารายได้ Q1 2026 โตแรงจริง รายได้ภาครัฐยัง surge สวนทางกับความกังวลเรื่อง DOGE และบริษัททำกำไร GAAP จริง ฐานะการเงินแกร่ง เงินสด $8B หนี้ศูนย์ คุณภาพธุรกิจไม่มีข้อกังขา",
+        "จุดที่ Charlie เน้นย้ำคือ valuation ที่ตึงมาก — Margin of Safety ติดลบราว -44% และตัวเลข PEG จาก consensus ของ yfinance อยู่ที่ 1.97 ซึ่งสูงกว่า 0.93 ที่ Warren ใช้พอสมควร สะท้อนว่า Warren อาจมองการเติบโตในระยะยาวสวยกว่าที่ตลาดทั่วไปประเมิน ที่ Forward PE 66 เท่า ความผิดพลาดเล็กน้อยเรื่อง growth ก็ทำให้ downside แรงได้",
+        "สรุป Charlie ให้ AGREE กับท่าที WATCH ของ Warren — ไม่ใช่ว่าหุ้นไม่ดี แต่ราคา ณ $137 แพงเกินไปที่จะเข้า สิ่งที่ต้อง monitor คือ การเติบโตของ US Commercial ว่ารักษาระดับ 120%+ ได้ไหม, ความเสี่ยงงบรัฐบาล และการที่ Microsoft/Google อาจ replicate AIP bootcamp ผ่าน Azure Foundry/Vertex"
+      ]
+    },
+    "idea_th": "Palantir คือเจ้าของซอฟต์แวร์ AI ที่มี Moat 2 ชั้น — Ontology ที่ลอกยากกับการฝังตัวในงานกลาโหมสหรัฐ 20 ปี บวก AIP Bootcamp ที่พาลูกค้าไปใช้ AI จริงใน 5 วัน รายได้สหรัฐโต +104% Rule of 40 = 145 และทำกำไร GAAP จริง แต่ราคา ณ $137 วิ่งเกิน Fair Value ไป 44% ทำให้ยังไม่มี margin of safety ควรจับตารอจังหวะราคาย่อ",
+    "story_gate_th": {
+      "what": "Palantir สร้างความได้เปรียบจากแพลตฟอร์ม AIP ที่เปลี่ยนข้อมูลขององค์กรและภาครัฐให้กลายเป็นการตัดสินใจ AI ที่ใช้งานจริงได้ใน 5 วันผ่านโมเดล bootcamp ซึ่ง hyperscaler อย่าง Microsoft/Google/Amazon ลอกได้ยากเพราะขาดบริบทเชิงปฏิบัติการและความลึกของ workflow บวกแกน Ontology ที่ลอกเลียนแพงมาก",
+      "why": "ตอนนี้น่าสนใจเพราะรายได้สหรัฐโต +104% YoY, Rule of 40 = 145 (ดีที่สุดในกลุ่ม), guidance ทั้งปี +71% และทำกำไร GAAP จริง net margin 53% พร้อม FCF $925M ไม่ใช่หุ้นที่ยังไม่มีรายได้ บวกดีล Sovereign AI OS กับ NVIDIA ที่เปิดตลาดใหม่",
+      "risk": "ถ้า Thesis ผิดจะเห็นจาก: Microsoft/Google/Amazon ใช้ distribution scale ใหญ่ replicate AIP bootcamp ผ่าน Azure Foundry/Vertex ได้สำเร็จ, หรือการตัดงบกลาโหม (sequestration) กระทบสัญญารัฐบาล >30%, หรือ SBC ที่เจือจางหุ้นมากเกินจนกินกำไรต่อหุ้น"
+    },
+    "bull_th": [
+      "โตเร็วแบบมีกำไร — รายได้ Q1 2026 +85% YoY, รายได้สหรัฐ +104%, Rule of 40 = 145% (ดีที่สุดในกลุ่ม) และเป็น GAAP กำไรจริง net margin 53% ไม่ใช่บริษัทเผาเงิน",
+      "Moat รัฐบาลฝังลึก 20 ปี — ฝังในงานข่าวกรอง/กลาโหมสหรัฐ ความสัมพันธ์ลูกค้า top 3 เฉลี่ย 10 ปี switching cost สูงมาก บวก Net Dollar Retention 150% ที่เป็นเครื่องยนต์โตในตัว",
+      "AIP Bootcamp = อาวุธ GTM — พาลูกค้าไปใช้ AI จริงใน 5 วัน เปลี่ยนวงจรขายจากเดือนเหลือวัน Q1 ปิดดีล ≥$1M ถึง 206 ดีล เร่ง deal velocity ต่อเนื่อง",
+      "ฐานะการเงินแกร่ง + asset-light — เงินสด+หลักทรัพย์ $8.0B หนี้เป็นศูนย์ CapEx แค่ $7M/ไตรมาส FCF margin 57% โมเดลซอฟต์แวร์บริสุทธิ์ที่แทบไม่ต้องลงทุนหนัก",
+      "ตัวเร่งใหม่หลายตัว — ดีล Sovereign AI OS กับ NVIDIA (Jensen Huang หนุนเอง), Maven Smart System ขยายในกระทรวงกลาโหม และตลาดต่างประเทศที่ยังเป็นแค่ 21% ของรายได้"
+    ],
+    "risk_th": [
+      "ราคาแพงมาก ไม่มี margin of safety — Forward PE 66 เท่า ราคาเกิน Fair Value Base ($95) ไป 44% ถ้าการเติบโตสะดุดเล็กน้อย downside แรงได้ทันที",
+      "พึ่งงบรัฐบาลสูง — รายได้ส่วนใหญ่มาจากภาครัฐที่มีเงื่อนไขยกเลิกสัญญาได้ การตัดงบแบบ DOGE หรือเปลี่ยนนโยบายกระทบรายได้ก้อนใหญ่",
+      "การเติบโตต้องรักษาระดับสูงต่อเนื่อง — guidance +71% ต้องเร่งจากฐานที่สูงอยู่แล้ว ($4.5B ปี 2025) US Commercial ต้องรักษา ~120%+ ถ้าชะลอตลาดจะผิดหวัง",
+      "SBC เจือจางหุ้น — หุ้นจ่ายพนักงาน ~12% ของรายได้ (~$800M/ปี) เป็นต้นทุนจริงที่กินกำไรต่อหุ้น แม้ถูกหักออกจาก Adjusted EPS",
+      "อำนาจกระจุกที่ผู้ก่อตั้ง — Karp/Thiel/Cohen คุมเสียงโหวตเบ็ดเสร็จผ่านหุ้นหลายชั้น การตัดสินใจ M&A/กลยุทธ์อยู่ในมือผู้ก่อตั้ง บวกสไตล์ Karp ที่อาจกระทบภาพลักษณ์แบรนด์"
+    ]
   },
   "AAPL": {
     "symbol": "AAPL",
@@ -1522,7 +1766,68 @@
       ],
       "summary": "WATCH confirmed. MoS -20.9%. FwdPE 32x for ~10-12% growth is expensive. China market share loss continuing.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของระบบนิเวศที่แข็งแกร่งที่สุดใน Consumer Tech กับอุปกรณ์ใช้งานอยู่กว่า 2.5 พันล้านเครื่องทั่วโลก",
+      "what": "Apple ขายฮาร์ดแวร์อย่าง iPhone/Mac/iPad/Watch/AirPods แล้วผูกทุกอย่างเข้าด้วยกันด้วย iOS และบริการ (App Store, iCloud, Apple Pay, Apple TV+) จุดเด่นคือ ecosystem ที่ทำให้ลูกค้าย้ายออกยากมาก และธุรกิจ Services ที่มี margin สูงถึง 75% โตทุกไตรมาส",
+      "why_invest": [
+        "Ecosystem lock-in ที่แข็งที่สุดในวงการ — มีอุปกรณ์ใช้งานอยู่ 2.5 พันล้านเครื่อง ทุกอย่างทำงานร่วมกัน seamless ความพึงพอใจ iPhone ในสหรัฐสูงถึง 99% ทำให้ลูกค้าไม่ย้ายไปไหน",
+        "Services เป็นเครื่องจักรกำไร — รายได้ Services $109B/ปี (+14%) ที่ margin 75% เป็น recurring revenue ที่โตทำสถิติทุกไตรมาส และยังขยายต่อด้วยโฆษณาใน Maps/App Store และ Apple TV+",
+        "คืนเงินผู้ถือหุ้นมหาศาล — ซื้อหุ้นคืน $90B+/ปี อนุมัติโครงการใหม่ $100B และมีกระสุนรอ deploy รวม ~$164B พร้อม net cash $62B เป็นเครื่องหนุนราคาหุ้นในตัว",
+        "เงินลงทุน $600B ในสหรัฐ — แผน 4 ปีสร้าง supply chain ในประเทศ ทั้งเซิร์ฟเวอร์ AI ที่ Houston, กระจก Corning, packaging จาก Micron เพื่อลดความเสี่ยงภาษีระยะยาว"
+      ],
+      "watch_out": [
+        "ราคาแพงเทียบกับการเติบโต — Forward PE 32 เท่า แต่กำไรโตแค่ราว 10% ทำให้ PEG สูงถึง 3.2 ราคาเกิน Fair Value ไป ~20% แทบไม่มีส่วนเผื่อความปลอดภัย",
+        "ความเสี่ยง Google TAC — Apple รับเงินจาก Google ~$18-20B/ปี (16-18% ของ Services) เพื่อเป็น default search ถ้าศาล antitrust สั่งห้ามจ่าย Services จะกระทบหนักมาก",
+        "จีน + กฎเกณฑ์ App Store — แม้จีนฟื้นในไตรมาสล่าสุด แต่ความเสี่ยงเชิงโครงสร้างจาก Huawei ยังอยู่ บวก EU DMA ที่ปรับได้สูงสุด 10% ของยอดขายทั่วโลก และคดี App Store"
+      ],
+      "bottom_line": "Pete มองว่า Apple คือธุรกิจคุณภาพระดับตำนาน — Moat ลึก เงินสดล้น คืนเงินผู้ถือหุ้นเก่ง แต่ปัญหาคือราคาที่ 52-week high กับ PEG 3.2 สะท้อนความคาดหวังสูงเกินกว่าการเติบโตจริงที่ ~10% ถ้า Apple Intelligence จุด upgrade cycle ไม่ติด อาจผิดหวังได้ เป็นหุ้นดีที่ควรรอราคาที่สมเหตุสมผลกว่านี้"
+    },
+    "mark_full": {
+      "business_overview": "Apple หาเงินจาก 2 ขาหลัก — Products (iPhone ~50% ของรายได้, Mac, iPad, Wearables) และ Services (App Store, iCloud, Apple TV+, Apple Pay, โฆษณา) ที่มี margin สูงกว่ามาก รายงานเป็น 5 ภูมิภาค โดย Americas ใหญ่สุด ตามด้วย Europe และ Greater China ที่น่าสนใจคือ Services โตเป็น all-time record แทบทุกไตรมาสจากฐานอุปกรณ์ 2.5 พันล้านเครื่อง ขณะที่ iPhone ยังเป็นเสาหลักรายได้",
+      "tam": "ตลาดของ Apple กว้างมากเพราะครอบทั้งฮาร์ดแวร์พรีเมียมและบริการดิจิทัล ตัวเร่งหลักคือ (1) Apple Intelligence + Siri ใหม่ที่อาจจุด upgrade cycle ของ iPhone, (2) อินเดีย ตลาดสมาร์ทโฟนอันดับ 2 ของโลกที่ Apple เพิ่งเริ่มเจาะและผลิต iPhone 50%+ ในประเทศแล้ว, (3) การขยาย Services ด้วยโฆษณาใน Maps/App Store, Digital ID และ Apple TV+ ที่ viewership โต 36% YoY บวกลิขสิทธิ์ F1/MLS",
+      "moat": "Moat ที่แข็งที่สุดคือ Ecosystem Lock-in — ฮาร์ดแวร์ + iOS/macOS + App Store + iCloud + Services ทำงานร่วมกัน seamless จนลูกค้าย้ายออกแทบไม่ได้เพราะข้อมูล แอป และ workflow ผูกไว้หมด ชั้นที่สองคือ Vertical Integration ผ่าน Apple Silicon (ชิป M/A series) ที่คุม roadmap เองได้ 100% และทำ AI on-device และชั้นที่สามคือ Brand Premium ที่ความพึงพอใจ iPhone ในสหรัฐสูงถึง 99% บวก Services ที่ margin 75% เป็นเครื่องจักรกำไรที่ยิ่งขายฮาร์ดแวร์มากยิ่งโต",
+      "latest_financials": "Q2 FY2026 (ม.ค.-มี.ค. 2026) รายได้ $111.2B โต +17% (สถิติไตรมาสมีนาคม), iPhone $57.0B +22%, Services $31.0B +16% (all-time record), Gross Margin 49.3% (+220bps), Diluted EPS $2.01 +22% ก่อนหน้านี้ Q1 FY2026 ก็ทำสถิติรายได้ $143.8B +16% ทั้งปี FY2025 รายได้ $416.2B +6.4% กำไรสุทธิ $112B FCF $98.8B แต่ guidance Q3 เตือนว่าต้นทุน memory (DRAM/NAND) สูงขึ้นมากจะกด gross margin ลงเหลือ 47.5-48.5% บวกปัญหา supply ของ Mac",
+      "key_points": [
+        "Services คือพระเอก — $109B/ปีที่ margin 75% โตทำสถิติทุกไตรมาส เป็นตัวยกคุณภาพกำไรทั้งบริษัท แต่ ~16-18% ของ Services พึ่งเงิน Google TAC ที่มีความเสี่ยงคดี",
+        "เปลี่ยน CEO — Tim Cook ส่งไม้ต่อให้ John Ternus (สาย hardware) วันที่ 1 ก.ย. 2026 โดย Cook ขึ้นเป็น Executive Chairman เป็น transition risk ที่ต้องจับตา",
+        "ต้นทุน memory เป็นลมต้าน — DRAM/NAND แพงขึ้น 'อย่างมีนัยสำคัญ' ใน Q3 และมีแนวโน้มเพิ่มต่อ กด gross margin ในระยะข้างหน้า",
+        "มีปริศนา intangibles — สินทรัพย์ไม่มีตัวตนกระโดดจาก $11.1B เป็น $21.3B ใน 6 เดือน (+$10.2B) บ่งชี้การซื้อกิจการหรือ IP ขนาดใหญ่ที่ยังไม่เปิดเผย"
+      ]
+    },
+    "warren_easy": [
+      "Warren มอง Apple เป็นหุ้น Tier 'Inevitable' — ธุรกิจคุณภาพระดับตำนานที่มี Ecosystem Lock-in แข็งแกร่งที่สุดใน Consumer Tech อุปกรณ์ใช้งาน 2.5 พันล้านเครื่อง switching cost สูงลิ่ว บวก Services margin 75% ที่เป็นเครื่องจักรกำไร recurring และการคืนเงินผู้ถือหุ้นมหาศาล ($90B+/ปี) เป็นบริษัทที่ Warren ให้คะแนน Business Quality สูงถึง 9.5 และ Risk Assessment 8.5",
+      "แต่จุดที่ Warren ไม่เข้าซื้อคือ 'ราคา' — ที่ $308 (52-week high) Forward PE 32 เท่า แต่กำไรโตแค่ ~10% ทำให้ PEG พุ่งถึง 3.22 ซึ่งเกินเพดาน 1.5 ไปมาก Margin of Safety ติดลบ -21% และ Expected Return 5 ปีเหลือแค่ 3%/ปี ไม่ผ่าน gate เลยสักตัว สะท้อนว่าราคาแพงเกินกว่าการเติบโตที่มี",
+      "กลยุทธ์ของ Warren คือ WATCH — รอ pullback ลงมาแถว $217 ที่ให้ส่วนเผื่อความปลอดภัยพอ Conviction ระดับ MEDIUM เพราะแม้ธุรกิจจะ inevitable แต่ผลตอบแทนคาดหวังที่ราคานี้ต่ำเกินไป สิ่งที่ต้องเฝ้าคือคดี Google TAC, ความเสี่ยงจีน และว่า Apple Intelligence จะจุด upgrade cycle ได้จริงไหม"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie เห็นด้วยกับ Warren ว่า Apple เป็นธุรกิจชั้นยอด — ตรวจสอบอิสระแล้วยืนยันว่า Services โตแข็งแรง margin สูง ฐานะการเงินแกร่ง net cash $62B และ ecosystem moat ไม่มีข้อกังขา คุณภาพธุรกิจอยู่ในระดับท็อปของตลาด",
+        "แต่จุดที่ Charlie เน้นเหมือน Warren คือ valuation ที่แพงเกินไป — ที่ Forward PE 32 เท่าสำหรับการเติบโตเพียง ~10-12% ถือว่าตึงมาก Margin of Safety ติดลบ -21% และ PEG ตาม consensus สูงถึง 2.68 บวกความเสี่ยงเชิงโครงสร้างที่จีนค่อยๆ เสียส่วนแบ่งให้ Huawei และยังไม่มี AI upgrade cycle ที่ชัดเจนเป็นรูปธรรม",
+        "สรุป Charlie ให้ AGREE กับท่าที WATCH — Apple ดีจริงแต่ราคา ณ จุดนี้ไม่ได้ให้ความคุ้มค่า DO NOT BUY ที่ระดับนี้ สิ่งที่ต้อง monitor คือ คำตัดสินคดี Google TAC (กระทบ Services ~16-18%), แรงกดดันกฎเกณฑ์ App Store, การฟื้น/ถดถอยในจีน และความสำเร็จของ Apple Intelligence"
+      ]
+    },
+    "idea_th": "Apple คือเจ้าของ Ecosystem Lock-in ที่แข็งที่สุดใน Consumer Tech อุปกรณ์ใช้งาน 2.5 พันล้านเครื่อง บวก Services margin 75% ที่โตทุกไตรมาส และคืนเงินผู้ถือหุ้นมหาศาล แต่ราคา ณ $308 อยู่ที่ 52-week high กับ PEG 3.22 ที่แพงเกินกว่าการเติบโต ~10% ทำให้ Expected Return เหลือแค่ 3%/ปี เป็นหุ้นคุณภาพที่ควรรอจังหวะราคาย่อ",
+    "story_gate_th": {
+      "what": "Apple สร้างความได้เปรียบจาก Ecosystem Lock-in ที่ฮาร์ดแวร์ iPhone/Mac/iPad/Watch ทำงานร่วมกับ iOS และ Services อย่าง seamless ทำให้ switching cost สูงมาก บวก Services ที่ margin 73%+ และ recurring $100B+/ปี และ Apple Silicon ที่ทำให้คุม roadmap และทำ AI on-device ได้เอง",
+      "why": "ตอนนี้น่าสนใจเพราะ Apple Intelligence + Siri ใหม่อาจจุด upgrade cycle ของ iPhone, Services โตทำสถิติทุกไตรมาส (Q2 $31B +16%), อินเดียเป็น growth engine ใหม่ และมีแผนลงทุน $600B ในสหรัฐเพื่อลดความเสี่ยงภาษี",
+      "risk": "ถ้า Thesis ผิดจะเห็นจาก: คดี Google TAC ที่อาจตัดเงิน ~$18-20B/ปีออกจาก Services, EU DMA ที่ปรับได้สูงสุด 10% ของยอดขายทั่วโลก, ภาษีนำเข้า iPhone (ผลิต >90% ในจีน/อินเดีย), Apple Intelligence ไม่จุด upgrade cycle หรือจีนเสียส่วนแบ่งให้ Huawei ต่อเนื่อง"
+    },
+    "bull_th": [
+      "Ecosystem Lock-in ที่แข็งที่สุดในวงการ — อุปกรณ์ใช้งาน 2.5 พันล้านเครื่อง ความพึงพอใจ iPhone ในสหรัฐ 99% switching cost สูงจนลูกค้าไม่ย้าย เป็น Moat ที่กัดกร่อนยากมาก",
+      "Services เป็นเครื่องจักรกำไร margin สูง — $109B/ปี (+14%) ที่ Gross Margin 75% โตทำสถิติทุกไตรมาส ยกคุณภาพกำไรทั้งบริษัท และขยายต่อด้วยโฆษณา Maps/App Store + Digital ID",
+      "คืนเงินผู้ถือหุ้นมหาศาล — ซื้อหุ้นคืน $90B+/ปี อนุมัติโครงการใหม่ $100B มีกระสุนรอ deploy ~$164B พร้อม net cash $62B เป็นเครื่องหนุนราคาในตัว",
+      "Apple Intelligence + อินเดีย = ตัวเร่งใหม่ — Siri ใหม่ (ร่วมกับ Google Foundation Model) คาดออก H2 2026 จุด upgrade cycle และอินเดียตลาดอันดับ 2 ของโลกที่ผลิต iPhone 50%+ ในประเทศแล้ว",
+      "ลงทุน $600B สร้าง supply chain ในสหรัฐ — เซิร์ฟเวอร์ AI ที่ Houston, กระจก Corning, packaging จาก Micron ลดความเสี่ยงภาษีระยะยาวและสร้างความมั่นคงด้าน supply"
+    ],
+    "risk_th": [
+      "ราคาแพงเทียบการเติบโต — Forward PE 32 เท่าสำหรับกำไรโตแค่ ~10% ทำให้ PEG พุ่งถึง 3.22 ราคาเกิน Fair Value ~20% Expected Return 5 ปีเหลือเพียง 3%/ปี",
+      "ความเสี่ยง Google TAC ระดับวิกฤต — Apple รับเงิน ~$18-20B/ปี (16-18% ของ Services) จาก Google เป็น default search ถ้าศาล antitrust ห้ามจ่าย Services จะกระทบหนักมาก",
+      "EU DMA + คดี App Store — EU ปรับได้สูงสุด 10% ของยอดขายทั่วโลก (~$41.6B) บวกคดี Epic/DOJ ที่อาจบังคับเปลี่ยน business model ของ App Store",
+      "ต้นทุน memory + เปลี่ยน CEO — DRAM/NAND แพงขึ้นกด gross margin ลงในระยะข้างหน้า บวก Tim Cook ส่งไม้ต่อให้ John Ternus (1 ก.ย. 2026) ที่ยังไม่พิสูจน์ด้าน Services/geopolitics",
+      "ความเสี่ยงจีนเชิงโครงสร้าง — Greater China ~18% ของรายได้ ถ้าผู้บริโภคหันไป Huawei/Xiaomi มากขึ้นหรือ US-China ตึงเครียด จะกระทบหนัก แม้ไตรมาสล่าสุดจะฟื้น"
+    ]
   },
   "CRWD": {
     "symbol": "CRWD",
@@ -1605,7 +1910,68 @@
       ],
       "summary": "DO NOT BUY confirmed. PEG 5.47 per yfinance (Warren 4.49). FwdPE 109x extreme. July 2024 outage liability still overhang.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าพ่อ Cybersecurity แบบ AI-native ที่ยิ่งมีลูกค้ามากยิ่งฉลาดขึ้น แต่ราคาแพงระดับ extreme premium",
+      "what": "CrowdStrike ทำซอฟต์แวร์ความปลอดภัยไซเบอร์บน Falcon platform ที่อยู่บน cloud เก็บข้อมูลภัยคุกคามจากทุก endpoint เข้า AI threat graph ทำเงินจากค่าสมาชิกรายเดือน (ARR) ลูกค้าเริ่มจาก endpoint แล้วซื้อเพิ่มได้จาก 33 modules บนแพลตฟอร์มเดียว",
+      "why_invest": [
+        "Moat 'พลังของฝูง' — ยิ่งมีลูกค้ามาก ยิ่งเก็บข้อมูลภัยคุกคามได้มาก AI ก็ตรวจจับเร็วและแม่นขึ้น กลายเป็นวงจรที่คู่แข่งตามยาก บวก threat graph ที่ทำให้ย้ายออกแพงและเสี่ยง",
+        "ขายเพิ่มเก่งมาก — Net Revenue Retention 115% ลูกค้าเดิมซื้อ module เพิ่มเรื่อยๆ โดย Falcon Flex (ซื้อแบบยืดหยุ่น) โตถึง +120% YoY และ Charlotte AI (ผู้ช่วย AI ด้านความปลอดภัย) ARR โตเป็น 3 เท่า",
+        "ลมหนุนระยะยาวชัดเจน — AI ทำให้การโจมตีไซเบอร์ถี่และซับซ้อนขึ้น ทุกองค์กรจำเป็นต้องซื้อ AI defense และเทรนด์ consolidate vendor ทำให้ CRWD ได้ประโยชน์เพราะมีครบใน platform เดียว",
+        "การเงินกำลังดีขึ้น — FCF เป็นบวกแล้ว ขาดทุน GAAP ลดลงต่อเนื่อง เงินสด $5.2B และ ARR แตะ $5.25B (+24%)"
+      ],
+      "watch_out": [
+        "ราคาแพงสุดขั้ว — Forward PE สูงถึง ~108-109 เท่า และ PEG 4.49 ราคาเกิน Fair Value Base ($500) ไปกว่า 30% เป็นการ price-in ความสมบูรณ์แบบ ถ้าโตช้าลงนิดเดียว multiple จะถูก re-rate แรง",
+        "แผลจากเหตุการณ์ปี 2024 — กรกฎาคม 2024 อัพเดท Falcon ทำ Windows ทั่วโลก crash กระทบ ~8.5 ล้านเครื่อง Delta ฟ้องเรียก $500M+ เป็นความเสี่ยงด้านชื่อเสียงและ churn ที่ยังตามมา",
+        "Microsoft Defender บีบราคา — Defender แถมฟรีกับ Windows เป็นคู่แข่งฟรีสำหรับ SMB บวก Palo Alto ที่ใช้กลยุทธ์แจก module ฟรีชั่วคราวเจาะลูกค้า"
+      ],
+      "bottom_line": "Pete มองว่า CrowdStrike เป็นธุรกิจ cybersecurity คุณภาพดี Moat แข็งจากพลังของฝูงและขายเพิ่มเก่ง แต่ราคา ณ จุดนี้แพงระดับ extreme — PEG 4.49 และ PE 108 เท่าแทบไม่เหลือ margin of safety บวกแผลจากเหตุ outage ปี 2024 ที่ยังไม่จบ เป็นหุ้นดีที่ต้องรอราคาย่อลงมาเยอะก่อนถึงจะคุ้มเสี่ยง"
+    },
+    "mark_full": {
+      "business_overview": "CrowdStrike หาเงินหลักจากค่าสมาชิก SaaS แบบ ARR บน Falcon platform ที่เป็น cloud-native รายได้ FY2026 อยู่ที่ $4,812M (+22%) โดยเป็น Subscription ~$4,600M (+23%) ที่เหลือเป็น Professional Services โมเดลคือลูกค้าเริ่มจาก endpoint แล้ว expand ไปยัง module อื่นใน 33 modules ที่ครอบทั้ง kill chain (EDR/XDR/Identity/Cloud/SIEM) ตัวเร่งล่าสุดคือ Falcon Flex ที่ให้ซื้อแบบยืดหยุ่นและโต +120% YoY",
+      "tam": "ตลาด cybersecurity ใหญ่และโตต่อเนื่องเพราะ AI ทำให้การโจมตีไซเบอร์ถี่และซับซ้อนขึ้น ทุกองค์กรจำเป็นต้องลงทุนด้าน AI defense ตัวเร่งหลักของ CRWD คือ (1) เทรนด์ consolidate security vendor ที่ enterprise อยากรวมไว้ที่ platform เดียว ซึ่ง CRWD ได้ประโยชน์, (2) Charlotte AI ที่ช่วยลดภาระงาน analyst ทำให้ ROI ชัด, (3) ตลาด Government/Federal ที่ได้ FedRAMP แล้ว และ (4) การขยายไป EMEA + APAC",
+      "moat": "Moat ที่ลึกที่สุดคือ 'Power of the Crowd' network effect — ยิ่งมีลูกค้ามาก ยิ่งมี threat intelligence มาก AI ก็ตรวจจับได้เร็วและแม่นขึ้น เป็นวงจรที่ทิ้งห่างคู่แข่ง ชั้นที่สองคือ AI-native architecture + threat graph ที่ทำให้ switching cost สูงมากเพราะย้ายออกแล้วเสียทั้งข้อมูลและการป้องกัน และชั้นที่สามคือโมเดล 33 modules upsell ที่ทำให้ Net Retention 115% บวก Falcon Flex ที่ทำให้ enterprise ลอง module ใหม่ง่ายขึ้น เร่งวงจร upsell",
+      "latest_financials": "FY2026 รายได้ $4,812M (+22% YoY), ARR $5,252.8M (+24%), Net Revenue Retention 115%, เงินสด $5,230M ส่วนกำไร GAAP ยังขาดทุน -$162.5M แต่กำลังดีขึ้นต่อเนื่องและ FCF เป็นบวกแล้ว ตัวเลขที่โดดเด่นคือ Falcon Flex ที่เป็น ~30% ของ ARR และโต +120% YoY กับ Charlotte AI ที่ ARR โตเป็น 3 เท่า สะท้อนว่าธุรกิจ post-outage consolidation ทำงานจริง",
+      "key_points": [
+        "ยังขาดทุน GAAP (-$162.5M) แม้ FCF เป็นบวก — ทำให้ multiple อ่อนไหวมากถ้าตลาด risk-off เพราะราคาพึ่งความคาดหวังการเติบโตล้วนๆ",
+        "เหตุการณ์ 19 ก.ค. 2024 ยังเป็นเงา — Falcon update ทำ Windows ~8.5 ล้านเครื่องทั่วโลก crash กระทบสายการบิน/โรงพยาบาล/ธนาคาร Delta ฟ้อง $500M+ เป็น reputation risk ที่ใหญ่ที่สุด",
+        "Falcon Flex +120% และ Charlotte AI ARR x3 เป็นหลักฐานว่าลูกค้ายัง expand ต่อแม้หลัง outage — thesis การ consolidate vendor ยังทำงาน",
+        "คู่แข่งกดดันด้านราคา — Microsoft Defender แถมฟรีกับ Windows เจาะ SMB และ Palo Alto ใช้ 'platformization' แจก module ฟรีชั่วคราวเพื่อแย่งลูกค้า"
+      ]
+    },
+    "warren_easy": [
+      "Warren มอง CrowdStrike เป็น Fast Grower ที่มี Moat จริงจาก 'Power of the Crowd' — ยิ่งมีลูกค้ามากยิ่งเก็บ threat intelligence ได้มาก AI ก็ฉลาดขึ้นเรื่อยๆ เป็น flywheel ที่คู่แข่งตามยาก บวก threat graph ที่ทำให้ switching cost สูงและโมเดล 33 modules ที่ทำให้ลูกค้าเก่าซื้อเพิ่มต่อเนื่อง (NRR 115%) Warren ให้ Business Quality 8.5 ซึ่งสะท้อนคุณภาพธุรกิจที่ดี",
+      "แต่จุดที่ Warren ปฏิเสธคือ 'ราคา' ที่แพงระดับ extreme — ที่ $663-672 Forward PE สูงถึง ~108 เท่า และ PEG 4.49 ซึ่งเกินเพดาน 1.5 ไปเกือบ 3 เท่า Margin of Safety ติดลบ -34% และ Expected Return 5 ปีเหลือแค่ 8.4% ไม่ผ่าน gate สำคัญเลย เป็นการ price-in ความสมบูรณ์แบบที่ไม่เหลือส่วนเผื่อความปลอดภัย",
+      "กลยุทธ์ของ Warren คือ WATCH ด้วย Conviction ระดับ LOW (WAF 6.47) — รอ pullback ลงมาเยอะก่อนถึงจะน่าสนใจ สิ่งที่ต้องเฝ้าคือภาระจากคดี outage ปี 2024, แรงบีบจาก Microsoft Defender bundle และ churn หลัง Falcon Flex commitment แรกหมดอายุ ถ้า ARR growth ชะลอที่ multiple ระดับนี้ downside จะแรงมาก"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie เห็นด้วยกับ Warren ว่าตัวธุรกิจดี — ตรวจสอบอิสระแล้วยืนยันว่า ARR โตแข็งแรง (+24%), Falcon Flex และ Charlotte AI เป็นเครื่องยนต์ upsell จริง และ Moat จากพลังของฝูงไม่มีข้อกังขา CrowdStrike เป็นผู้นำใน AI-native endpoint security ที่กำลังขยายสู่ SIEM/SOC",
+        "แต่จุดที่ Charlie เน้นย้ำหนักคือ valuation ที่แพงสุดขั้ว — Forward PE ~109 เท่าเป็นระดับที่ price-in ความสมบูรณ์แบบ และ PEG ตาม consensus ของ yfinance สูงถึง 5.47 (มากกว่า 4.49 ที่ Warren ใช้อีก) บวกภาระจากเหตุ outage กรกฎาคม 2024 ที่ยังเป็นเงาค้าง (claims $0.5B+) และแรงบีบจาก Microsoft Defender bundle ที่กดดัน pricing",
+        "สรุป Charlie ให้ AGREE กับท่าที DO NOT BUY — ธุรกิจดีจริงแต่ราคา ณ จุดนี้ไม่มีทางคุ้มความเสี่ยง สิ่งที่ต้อง monitor คือ ARR growth ว่ารักษา +24% ได้ไหมหลัง recovery เต็มที่, การ resolve คดี Delta, timeline สู่กำไร GAAP และ trend ของ Net Revenue Retention ว่าขึ้นหรือลง"
+      ]
+    },
+    "idea_th": "CrowdStrike คือผู้นำ cybersecurity แบบ AI-native บน Falcon platform ที่มี Moat จากพลังของฝูง — ยิ่งมีลูกค้ามากยิ่งฉลาดขึ้น บวกขายเพิ่มเก่ง (NRR 115%, Falcon Flex +120%) แต่ราคา ณ $672 แพงระดับ extreme ด้วย Forward PE ~108 เท่าและ PEG 4.49 ที่เกินเพดานไปเกือบ 3 เท่า บวกแผลจากเหตุ outage ปี 2024 ที่ยังไม่จบ ทำให้ต้องรอราคาย่อลงมาเยอะก่อน",
+    "story_gate_th": {
+      "what": "CrowdStrike สร้างความได้เปรียบจาก Falcon platform แบบ AI-native ที่มี 33 modules ครอบทั้ง kill chain (EDR/XDR/Identity/Cloud/SIEM) เมื่อลูกค้าผูกกับ Falcon Flex แล้ว switching cost สูงเพราะ consolidate ข้าม module และล็อกด้วยการสะสมข้อมูลใน threat graph ที่ยิ่งมีลูกค้ามากยิ่งแม่น",
+      "why": "ตอนนี้น่าสนใจเพราะ Falcon Flex +120% YoY, Charlotte AI ARR โตเป็น 3 เท่า และ NRR 115% สะท้อนว่า thesis การ consolidate vendor หลัง outage ทำงานจริง บวกลมหนุนที่ AI ทำให้การโจมตีไซเบอร์ถี่ขึ้น ทุกองค์กรต้องซื้อ AI defense — แต่ valuation ที่ Forward PE 108 เท่าทำให้ยังต้องรอราคาย่อ",
+      "risk": "ถ้า Thesis ผิดจะเห็นจาก: Microsoft Defender bundle scale ดึง enterprise ไปได้ >20% market share, หรือ Falcon Flex churn กลับมาเกิน 10% หลัง commitment แรกหมดอายุ, หรือ ARR growth ชะลอลงจน multiple ระดับ premium ถูก re-rate แรง"
+    },
+    "bull_th": [
+      "Moat 'พลังของฝูง' ที่ทบต้น — ยิ่งมีลูกค้ามาก ยิ่งเก็บ threat intelligence มาก AI ตรวจจับเร็วและแม่นขึ้น เป็น flywheel ที่คู่แข่งตามยาก บวก threat graph ที่ทำให้ย้ายออกแพงและเสี่ยง",
+      "ขายเพิ่มเก่งระดับท็อป — Net Revenue Retention 115% ลูกค้าเดิมซื้อ module เพิ่มต่อเนื่อง โดย Falcon Flex โต +120% YoY และ Charlotte AI ARR โตเป็น 3 เท่า",
+      "ลมหนุน AI cyberattack ชัดเจน — AI ทำให้การโจมตีไซเบอร์ถี่และซับซ้อนขึ้น ทุกองค์กรจำเป็นต้องลงทุน AI defense บวกเทรนด์ consolidate vendor ที่ CRWD ได้ประโยชน์เพราะครบใน platform เดียว",
+      "การเงินกำลังพลิกดีขึ้น — FCF เป็นบวกแล้ว ขาดทุน GAAP ลดลงต่อเนื่อง เงินสด $5.2B และ ARR แตะ $5.25B (+24%) บนเส้นทางสู่กำไร GAAP",
+      "ขยายตลาดใหม่ต่อเนื่อง — Government/Federal ที่ได้ FedRAMP แล้ว, การขยาย EMEA + APAC และ Charlotte AI ที่ monetize ผู้ช่วย AI ด้าน SOC เพิ่มขุมรายได้ใหม่"
+    ],
+    "risk_th": [
+      "ราคาแพงสุดขั้ว ไม่มี margin of safety — Forward PE ~108-109 เท่า, PEG 4.49 (เกินเพดาน 1.5 เกือบ 3 เท่า), ราคาเกิน Fair Value Base ($500) กว่า 30% ถ้าโตช้าลงนิดเดียว multiple ถูก re-rate แรง",
+      "แผลจากเหตุ outage ปี 2024 — 19 ก.ค. 2024 อัพเดท Falcon ทำ Windows ~8.5 ล้านเครื่อง crash กระทบสายการบิน/โรงพยาบาล/ธนาคาร Delta ฟ้อง $500M+ เป็นความเสี่ยงด้านชื่อเสียงและ churn ที่ยังตามมา",
+      "Microsoft Defender บีบราคา — Defender แถมฟรีกับ Windows เป็นคู่แข่งฟรีสำหรับ SMB บวก Palo Alto ที่ใช้ 'platformization' แจก module ฟรีชั่วคราวเพื่อเจาะลูกค้า CRWD",
+      "ยังขาดทุน GAAP — ขาดทุน -$162.5M ทำให้ multiple อ่อนไหวมากในตลาด risk-off เพราะราคาพึ่งความคาดหวังการเติบโตล้วนๆ ถ้า ARR growth decelerate premium จะหดเร็ว",
+      "การเติบโตต้องรักษาระดับสูง — ที่ valuation ระดับนี้ตลาดคาดหวังการเติบโตสมบูรณ์แบบ ถ้า ARR ชะลอจาก +24% หรือ NRR 115% เริ่มลดลง downside จะรุนแรง"
+    ]
   },
   "COHR": {
     "symbol": "COHR",
