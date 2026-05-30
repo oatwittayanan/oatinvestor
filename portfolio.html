@@ -151,11 +151,20 @@
 
       <!-- Holdings -->
       <div class="card" style="margin-bottom:20px">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
           <h4 style="font-family:var(--font-serif)">การถือครอง</h4>
           <span id="sp-updated" style="font-size:.78rem;color:var(--text-3)"></span>
         </div>
-        <div id="sp-holdings"></div>
+        <div class="holdings-split" style="margin-top:-28px">
+          <div class="holdings-chart-wrap">
+            <canvas id="sp-alloc-chart"></canvas>
+            <div class="holdings-chart-center">
+              <div class="hc-label">มูลค่ารวม</div>
+              <div class="hc-value" id="sp-alloc-total">—</div>
+            </div>
+          </div>
+          <div id="sp-holdings"></div>
+        </div>
       </div>
 
       <!-- DCA Transactions -->
@@ -200,13 +209,14 @@ const TICKER_COLORS = {
   NVDA:'#76b900', GOOGL:'#10b981', TSLA:'#ef4444', TSM:'#0072c6',
   MSFT:'#00a4ef', AMZN:'#ff9900', META:'#0668e1', AAPL:'#a2aaad',
   PLTR:'#8b5cf6', AVGO:'#f97316', NFLX:'#e50914', CRWD:'#fc0000',
+  VOO:'#96151d',
 };
 const CASH_COLOR      = '#475569';
 const FALLBACK_COLORS = ['#f59e0b','#06b6d4','#84cc16','#f43f5e','#8b5cf6','#fb923c'];
 const LOGO_DOMAINS = {
   NVDA:'nvidia.com', MSFT:'microsoft.com', META:'meta.com', AMZN:'amazon.com',
   GOOGL:'google.com', AAPL:'apple.com', TSM:'tsmc.com', AVGO:'broadcom.com',
-  PLTR:'palantir.com', NFLX:'netflix.com',
+  PLTR:'palantir.com', NFLX:'netflix.com', VOO:'vanguard.com',
 };
 // คืน map: ticker -> สี (Cash เทาเสมอ, ตัวที่ไม่มีในชุดใช้สี fallback)
 function assignColors(sorted) {
@@ -248,7 +258,7 @@ function preloadLogos(tickers) {
 const outerLabelPlugin = {
   id: 'outerLabels',
   afterDraw(chart) {
-    if (chart.canvas.id !== 'ai-alloc-chart') return;
+    if (!chart.canvas.id.endsWith('-alloc-chart')) return;
     const { ctx } = chart;
     const ds   = chart.data.datasets[0];
     const meta = chart.getDatasetMeta(0);
@@ -379,17 +389,17 @@ const outerLabelPlugin = {
   }
 };
 
-// ── Allocation doughnut chart ─────────────────────────────────────────────
-let allocChart = null;
-async function renderAllocChart(sorted, totalVal, colorMap) {
-  const canvas = document.getElementById('ai-alloc-chart');
+// ── Allocation doughnut chart (ใช้ร่วมกันได้หลายแท็บผ่าน canvasId) ──────────
+const allocCharts = {};
+async function renderAllocChart(canvasId, totalElId, sorted, totalVal, colorMap) {
+  const canvas = document.getElementById(canvasId);
   if (!canvas) return;
   const items = sorted.filter(h => h.value > 0);
   await preloadLogos(items.map(h => h.ticker));
   // เส้นขอบวงใช้สีพื้นหลัง card เพื่อให้ช่องว่างกลืนกับพื้นหลัง
   const border = getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#34343A';
-  if (allocChart) allocChart.destroy();
-  allocChart = new Chart(canvas, {
+  if (allocCharts[canvasId]) allocCharts[canvasId].destroy();
+  allocCharts[canvasId] = new Chart(canvas, {
     type: 'doughnut',
     plugins: [outerLabelPlugin],
     data: {
@@ -410,7 +420,7 @@ async function renderAllocChart(sorted, totalVal, colorMap) {
       animation: { duration: 500 }
     }
   });
-  const totalEl = document.getElementById('ai-alloc-total');
+  const totalEl = document.getElementById(totalElId);
   if (totalEl) totalEl.textContent = '$' + totalVal.toFixed(0);
 }
 
@@ -611,7 +621,7 @@ function renderAI(p) {
   window._aiSorted = sortedHoldings;
   window._aiTotal  = totalVal;
   window._aiColors = colorMap;
-  renderAllocChart(sortedHoldings, totalVal, colorMap);
+  renderAllocChart('ai-alloc-chart', 'ai-alloc-total', sortedHoldings, totalVal, colorMap);
 
   document.getElementById('ai-holdings').innerHTML = sortedHoldings
     .map(h => {
@@ -664,12 +674,12 @@ function renderSP(p) {
   window._spHist = hist;
 
   // Stats
+  const spDiv = p.total_dividends || 0;
   document.getElementById('sp-stats').innerHTML = [
     statCard('มูลค่ารวม', '$' + (p.total_value||0).toFixed(2)),
     statCard('ต้นทุนรวม', '$' + (p.total_cost||0).toFixed(2)),
     statCard('กำไร/ขาดทุน', usdStr(p.pl_usd), pctClass(p.pl_usd), pctStr(p.pl_pct), pctClass(p.pl_usd)),
-    statCard('vs QQQM', s.qqqm_pct != null ? pctStr(s.qqqm_pct) : '—',
-      s.qqqm_pct != null ? pctClass(s.qqqm_pct) : ''),
+    statCard('ปันผลสะสม', '+$' + spDiv.toFixed(2), spDiv > 0 ? 'pos' : '', 'รวมทั้งหมดที่เคยได้รับ'),
   ].join('');
 
   // Chart (depositNorm=true: performance only, ignores DCA cash inflows)
@@ -681,21 +691,46 @@ function renderSP(p) {
       (s.qqqm_pct != null ? legendItem(COLORS.qqqm,'QQQM',pctStr(s.qqqm_pct),pctClass(s.qqqm_pct)) : '');
   }
 
-  // Holdings
-  document.getElementById('sp-holdings').innerHTML = p.holdings
-    .filter(h => h.ticker !== 'CASH' && h.value > 0)
-    .map(h => `
-      <div class="holding-row">
-        <div style="min-width:100px">
-          <div class="holding-ticker">${h.ticker}</div>
-          <div class="holding-name">Vanguard S&P 500 ETF</div>
+  // Holdings — เรียงมาก→น้อย, Cash ล่างสุด (เหมือนแท็บ AI)
+  const spNames = { VOO:'Vanguard S&P 500 ETF', CASH:'เงินสด' };
+  const spTotal = p.total_value || 1;
+  const spSorted = p.holdings
+    .filter(h => h.ticker !== 'CASH' || h.value > 0)
+    .sort((a, b) => {
+      if (a.ticker === 'CASH') return 1;
+      if (b.ticker === 'CASH') return -1;
+      return b.value - a.value;
+    });
+
+  const spColors = assignColors(spSorted);
+  window._spSorted = spSorted;
+  window._spTotal  = spTotal;
+  window._spColors = spColors;
+  renderAllocChart('sp-alloc-chart', 'sp-alloc-total', spSorted, spTotal, spColors);
+
+  document.getElementById('sp-holdings').innerHTML = spSorted
+    .map(h => {
+      const pct = (h.value / spTotal * 100);
+      return `<div class="holding-row">
+        <div style="display:flex;align-items:center;gap:10px;min-width:120px">
+          ${logoHTML(h.ticker)}
+          <div>
+            <div class="holding-ticker" style="display:flex;align-items:center;gap:6px">
+              <span class="holding-dot" style="background:${spColors[h.ticker]}"></span>${h.ticker}
+            </div>
+            <div class="holding-name">${spNames[h.ticker] || h.ticker}</div>
+          </div>
         </div>
-        <div class="holding-bar"><div class="holding-bar-fill" style="width:100%"></div></div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%"></div></div>
         <div class="holding-numbers">
           <div class="holding-value">$${h.value.toFixed(2)}</div>
-          <div class="holding-pl ${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)} · ${h.shares.toFixed(4)} หน่วย</div>
+          <div class="holding-pl">
+            <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
+            <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
+          </div>
         </div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
 
   // DCA Transactions
   document.getElementById('sp-transactions').innerHTML = p.transactions.filter(t => t.type !== 'DIV').map(t => `
@@ -738,11 +773,19 @@ fetch('data/portfolio.json').then(r => r.json()).then(data => {
   });
 });
 
+// กราฟใน tab ที่ซ่อนอยู่ตอน render อาจขนาดเพี้ยน → resize เมื่อสลับมาแสดง
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 60);
+  });
+});
+
 // Re-render charts on theme change
 new MutationObserver(() => {
   if (window._aiHist) renderChart('ai-chart', window._aiHist, 'ai', ['voo','qqqm'], false);
   if (window._spHist) renderChart('sp-chart', window._spHist, 'sp', ['qqqm'], true);
-  if (window._aiSorted) renderAllocChart(window._aiSorted, window._aiTotal, window._aiColors);
+  if (window._aiSorted) renderAllocChart('ai-alloc-chart', 'ai-alloc-total', window._aiSorted, window._aiTotal, window._aiColors);
+  if (window._spSorted) renderAllocChart('sp-alloc-chart', 'sp-alloc-total', window._spSorted, window._spTotal, window._spColors);
 }).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
 </script>
 </body>
