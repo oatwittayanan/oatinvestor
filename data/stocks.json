@@ -2918,7 +2918,68 @@
       ],
       "summary": "⚠️ Warren's FV $20 may be too pessimistic. yfinance PEG 1.36 < ceiling 1.5 — consensus prices in 18A turnaround. However, at $123.52 vs FV $20 = 517% premium. Extreme risk either way.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "Intel กำลังพลิกฟื้นจากยักษ์ที่เคยตกต่ำ — ด้วย 18A chip technology ใหม่และ CEO ที่ดึงความเชื่อใจกลับมาได้ใน 6 quarters",
+      "what": "Intel เป็นบริษัทชิปที่ทำทั้งออกแบบและผลิตเองในสหรัฐฯ เจ้าเดียว ผลิตทั้ง CPU สำหรับ PC/Laptop (Core Ultra), Server (Xeon) และกำลังเปิด Foundry รับจ้างผลิตชิปให้บริษัทอื่น ผ่านช่วงขาดทุนหนักมาหลายปี แต่ Q1 2026 กลับมา beat คาดการณ์ทุก metric ทำให้หุ้นพุ่งสู่ all-time high ครั้งแรกในรอบ 26 ปี",
+      "why_invest": [
+        "18A process node เป็น 'first in industry' ทั้ง RibbonFET + PowerVia — yield กำลังถึง target เร็วกว่า schedule 6 เดือน เป็นเทคโนโลยีที่ Samsung ยังตามไม่ถึง",
+        "Q1 2026 EPS Surprise +1,400% — Non-GAAP EPS $0.29 vs คาด $0.01 CEO กล่าวว่า 'วันนี้เราคุยเรื่องจะเพิ่ม capacity เร็วแค่ไหน ไม่ใช่เรื่องจะรอดไหม'",
+        "NVIDIA เลือก Xeon 6 เป็น host CPU ใน DGX Rubin NVL8 — signal สำคัญที่สุดว่า Intel CPU กลับมามีบทบาทใน AI infrastructure อีกครั้ง",
+        "TeraFab (SpaceX/xAI/Tesla) + CHIPS Act $16B+ — strategic customers ระดับ top tier และ government support ทำให้ foundry thesis มี foundation ที่แข็งแกร่งขึ้น"
+      ],
+      "watch_out": [
+        "ราคาหุ้น ~$120 อยู่สูงกว่า Fair Value $20 ของ Warren ถึง 500% — ตลาด price-in turnaround success เต็มที่แล้ว ความเสี่ยง downside สูงมากถ้า execution สะดุด",
+        "Intel Foundry ยังขาดทุน Operating Margin (45)% — external revenue แค่ $174M ยังห่างไกลจาก break-even และ 14A ต้องดึง external customers ได้",
+        "ถ้า 14A node ไม่ได้ลูกค้าภายนอก Intel ต้องพึ่ง TSMC ต่อไป = foundry thesis พัง และการเป็น US-only leading-edge manufacturer จะหมดความหมาย"
+      ],
+      "bottom_line": "Intel เป็น high-risk turnaround bet ที่ดีที่สุดในวงการ semiconductor ตอนนี้ — ถ้า 18A/14A สำเร็จ upside มหาศาล แต่ราคาปัจจุบันสะท้อน success แบบเต็มๆ ไปแล้ว เหมาะสำหรับ monitor รอ pullback"
+    },
+    "mark_full": {
+      "business_overview": "Intel เป็น IDM (Integrated Device Manufacturer) รายเดียวในสหรัฐฯ ที่ออกแบบและผลิตชิปในองค์กรเดียว แบ่งเป็น 4 segment: CCG (PC CPU) ราว 57% ของรายได้, DCAI (Server+AI) ราว 37%, Intel Foundry ที่กำลัง scale เป็น external business และ All Other (Mobileye/Altera) Q1 2026 Revenue $13.6B +7.2% YoY โดย AI businesses รวมกันคิดเป็น 60% ของ Revenue และโต 40% YoY — สัญญาณชัดว่า Intel กำลังเปลี่ยนตัวเองสู่ AI company",
+      "tam": "Intel เล่นใน TAM หลายก้อน: PC TAM ~400M units/ปี (ชะลอตัว), Server CPU ที่โตตาม AI workload โดยเฉพาะ Inference และ Foundry TAM ที่ใหญ่มากถ้าดึงลูกค้าได้ CEO ชี้ว่า CPU:GPU ratio กำลังเปลี่ยนจาก 8:1 (training) สู่ 1:1 (agentic AI) หมายความว่า Xeon demand ในศูนย์ข้อมูล AI อาจโตสูงกว่าที่ consensus คาดไว้มากถ้า thesis นี้เป็นจริง",
+      "moat": "MOAT ของ Intel มีจริงหลายชั้น: x86 ISA compatibility ยังเป็น lock-in ใน enterprise legacy ที่ย้ายออกได้ยาก, 18A ที่มี RibbonFET+PowerVia เป็น first-in-industry สร้าง technology edge, Government CHIPS Act + DoD Secure Enclave เป็น political moat ที่ TSMC ไม่มี และ Advanced Packaging (EMIB+Foveros) backlog ระดับ billions/year เป็น high-margin business ที่กำลังโต",
+      "latest_financials": "Q1 2026: Revenue $13.6B (+7.2%), Non-GAAP GM 41% (+650bps beat), Non-GAAP EPS $0.29 (+1,400% vs $0.01 est) ทำให้ INTC +20% AH และ all-time high ครั้งแรกนับตั้งแต่ dot-com ปี 2000 ASIC revenue >$1B annual run rate แทบ doubled YoY Q2 2026 Guidance: Revenue $13.8–14.8B (+10% beat vs consensus), EPS $0.20 แต่ GM guided ลงเหลือ 39% ชั่วคราวเพราะ 18A ramp dilutive",
+      "key_points": [
+        "Xeon 6 ถูกเลือกเป็น host CPU ใน NVIDIA DGX Rubin NVL8 — Intel CPU renaissance datapoint ที่ชัดเจนที่สุด บ่งบอกว่า Intel กลับมามีที่ยืนใน AI infrastructure จริงๆ",
+        "6 quarters ชนะ consensus ติดต่อกันภายใต้ CEO Lip-Bu Tan — track record ที่ tangible ที่สุดว่า turnaround กำลังเกิดขึ้นจริง",
+        "Intel 14A yields กำลัง outpace 18A ในระยะเดียวกัน + design commitments คาดว่าจะมาใน H2 2026–2027 — ถ้าได้ external customer = massive re-rating trigger",
+        "TeraFab กับ SpaceX/xAI/Tesla ยังไม่ได้ถูก price-in ใน DCF — ถ้า 14A ผลิตให้ลูกค้า tier-1 เหล่านี้จริง Intel Foundry จะ breakeven เร็วขึ้น"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ Intel ไว้ใน Watchlist ด้วย WAF 4.27 — ไม่ใช่เพราะธุรกิจดีเยี่ยม แต่เพราะ turnaround story มี foundation ที่จับต้องได้มากขึ้นทุก quarter CEO Lip-Bu Tan 6 quarters ชนะ consensus ติดต่อกัน BQ Score 5.0 สะท้อนว่า Business ยังมีจุดอ่อนโครงสร้าง (Foundry ขาดทุน, Gaudi ล้มเหลว) แต่ GP Score 6.0 บอกว่า upside ยังใหญ่มากถ้า 18A/14A สำเร็จ",
+      "ปัญหาหลักที่ Warren มองเห็นชัดคือ Valuation — ราคา ~$120 อยู่สูงกว่า FV Base $20 ถึง 499% และ MoS ติดลบ 499% บ่งบอกว่าตลาดได้ price-in turnaround success อย่างเต็มที่แล้ว FY2027 EPS consensus $1.10 × Forward P/E 195x ไม่ justify ราคา อย่างไรก็ตาม analyst อย่าง Jason's Chips ให้ DCF $344/share โดยอิง foundry + CPU turnaround + TeraFab — ความแตกต่างนี้บ่งชี้ว่าถ้า turnaround สำเร็จมี upside มหาศาล",
+      "กลยุทธ์ Warren คือ WATCH อย่างใกล้ชิด 2 catalyst: (1) 14A external customer announcement ใน H2 2026–2027 เป็น trigger ที่ชัดเจนที่สุด ถ้าได้ลูกค้า tier-1 = re-rate ถ้าไม่ได้ = thesis แตก (2) Intel Foundry Op Margin ต้องเห็น trend ขึ้นจาก (45)% ปัจจุบัน Conviction 3/5 เหมาะสำหรับ WATCH ไม่ใช่ BUY ในราคานี้"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันว่า Q1 2026 เป็น quarter ที่ดีจริง — Revenue $13.6B +10% beat, Non-GAAP EPS $0.29 ชนะ $0.01 ถึง 2,800% แสดงว่า CEO Lip-Bu Tan กำลัง execute จริง NVIDIA เลือก Xeon 6 ใน DGX Rubin NVL8 เป็น third-party validation ที่น่าเชื่อถือที่สุดว่า Intel CPU renaissance กำลังเกิดขึ้นจริง",
+        "Charlie ออก CAUTION เพราะ 3 ความกังวล: (1) 18A process yield ยังเป็น binary outcome — ยังไม่มีหลักฐาน production ที่ scale จริง (2) Intel Foundry Op Margin (45)% ยังห่างไกล breakeven external revenue แค่ $174M Q1 (3) ราคา ~$120 เกิน FV $20 ของ Warren ถึง 500% แม้ analyst DCF จะให้ถึง $344 แต่ก็อิง best-case scenario ที่ยังไม่ proven",
+        "Charlie monitor 3 สิ่ง: (1) 14A external customer decision ใน H2 2026–2027 คือ most critical milestone — ได้ = re-rate, ไม่ได้ = thesis แตก (2) Intel Foundry Op Margin ต้องเห็น path toward breakeven (3) Geopolitical risk ของ Israel fab ที่เป็น revenue contributor สำคัญแต่ self-insured ในพื้นที่ความขัดแย้ง"
+      ]
+    },
+    "idea_th": "Intel กำลัง turnaround ครั้งประวัติศาสตร์ด้วย 18A foundry technology ที่เป็น first-in-industry + CEO Lip-Bu Tan ที่พิสูจน์ตัวเองด้วย 6 quarters ชนะ consensus ติดต่อกัน ทำให้หุ้นพุ่งสู่ all-time high ครั้งแรกในรอบ 26 ปี แต่ราคาปัจจุบันสะท้อน success scenario แบบเต็มๆ ไปแล้ว",
+    "story_gate_th": {
+      "what": "Intel เป็นบริษัทชิปสหรัฐฯ เจ้าเดียวที่ทำทั้งออกแบบและผลิตชิปในบ้านเดียวกัน กำลังสร้าง Foundry แข่ง TSMC ด้วย 18A process node ที่มีเทคโนโลยี RibbonFET + PowerVia เป็น first-in-industry ทั้งคู่ x86 ecosystem ยังเป็น lock-in ในตลาด enterprise และ NVIDIA ได้เลือก Xeon 6 เป็น host CPU ใน DGX Rubin — สัญญาณว่า Intel CPU กลับมามีบทบาทใน AI era จริงๆ",
+      "why": "CEO Lip-Bu Tan พิสูจน์ตัวเองด้วย 6 quarters ชนะ consensus ติดต่อกัน Q1 2026 Revenue +10% beat, EPS +1,400% surprise ตลาดยังไม่ได้ price-in TeraFab (SpaceX/xAI/Tesla) และ 14A node ที่ yield outpace 18A ในระยะเดียวกัน — ถ้าได้ external customer จะ re-rate Intel อีกครั้ง",
+      "risk": "ถ้า 14A node ไม่ได้ external customer รายใหญ่ → ต้องยกเลิก 14A และพึ่ง TSMC ถาวร = foundry thesis พัง ถ้า Israel fab ได้รับผลกระทบจากความขัดแย้งในพื้นที่ = เสีย revenue สำคัญโดยไม่มีประกัน และถ้า AMD ดึง server CPU share ต่อเนื่อง = x86 moat แตก"
+    },
+    "bull_th": [
+      "18A RibbonFET + PowerVia เป็น 'first in industry' ทั้งคู่ — yield กำลังถึง target เร็วกว่า schedule 6 เดือน สร้าง technology edge ที่ Samsung ยังตามไม่ถึง เป็น foundation สำคัญของ foundry business",
+      "Q1 2026 EPS +1,400% surprise + INTC +20% AH all-time high — 6 quarters ชนะ consensus ติดต่อกัน เป็น track record ที่ tangible ที่สุดว่า Lip-Bu Tan กำลัง execute turnaround ได้จริง",
+      "NVIDIA เลือก Xeon 6 เป็น host CPU ใน DGX Rubin NVL8 — Intel CPU renaissance validation ที่ชัดเจนที่สุด บ่งบอกว่า Intel กลับมามีที่ยืนใน AI infrastructure จริงๆ",
+      "TeraFab (SpaceX/xAI/Tesla) + CHIPS Act $16B+ + DoD Secure Enclave — strategic customers tier-1 และ government support ทำให้ Intel Foundry มีรายได้ที่ชัดเจนระยะยาว",
+      "CPU:GPU ratio เปลี่ยนในยุค Agentic AI สู่ 1:1+ — ถ้า thesis นี้เป็นจริง Xeon demand จากศูนย์ข้อมูล AI จะพุ่งสูงขึ้นมากกว่าที่ consensus คาดไว้มาก"
+    ],
+    "risk_th": [
+      "ราคาหุ้น ~$120 สูงกว่า FV $20 ของ Warren ถึง 500% — ตลาดได้ price-in turnaround success เต็มที่แล้ว ถ้า execution สะดุดแม้แต่ quarter เดียว downside จะรุนแรงมาก",
+      "Intel Foundry ยังขาดทุน Operating Margin (45)% และ external revenue แค่ $174M Q1 — ต้องรอ 14A เพื่อ breakeven ยังไม่มีหลักฐานว่าจะสำเร็จเมื่อไหร่",
+      "14A external customer risk — ถ้าไม่ได้ลูกค้าภายนอกรายสำคัญ Intel อาจยกเลิก 14A และต้องพึ่ง TSMC ถาวร foundry strategy จะล่มสลายทั้งหมด",
+      "Geopolitical — Israel fab (Intel 7) เป็น revenue contributor สำคัญแต่ self-insured ในพื้นที่ขัดแย้ง บวก US-China tariff กระทบ PC TAM ทำให้ CCG ชะลอตัว",
+      "AMD ยังดึง server CPU market share ต่อเนื่อง + ARM ecosystem ขยายตัว — ถ้า x86 moat แตกเร็วกว่า foundry พร้อม Intel จะเจอ double jeopardy"
+    ]
   },
   "SPCX": {
     "symbol": "SPCX",
@@ -2957,6 +3018,67 @@
       "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิดภายใต้ ticker SPCX บน Nasdaq; Connectivity 2025 Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA $7.2B; Starlink subscribers 10.3M (Mar 2026, +105% YoY จาก 5.0M); Starship full reusability จะ unlock ต้นทุน launch ที่ต่ำลงอย่างมีนัยสำคัญ",
       "risk": "AI segment เผาเงิน $(6.4B) operating loss ใน 2025 + $12.7B CapEx = drag ต่อ consolidated P&L; Starlink ARPU กำลัง decline structurally ($99→$91→$81→$66); Elon Musk overextended ทำให้ execution risk สูง; Starship commercialization ยังไม่เกิด"
     },
-    "tier": "🚀 Pre-Inevitable"
+    "tier": "🚀 Pre-Inevitable",
+    "mark_easy": {
+      "one_liner": "SpaceX กำลัง IPO — Starlink คือ cash machine ที่ไม่มีคู่แข่ง Falcon 9 ครองอวกาศ และ AI via Grok กำลังเติบโต",
+      "what": "SpaceX เป็นบริษัทที่ทำธุรกิจใหญ่ 3 อย่างในองค์กรเดียว: ส่งจรวดขึ้นอวกาศ (Falcon 9 ครอง 82% ของ commercial launches ทั่วโลก), ให้ internet ผ่านดาวเทียม Starlink (10.3M subscribers), และ AI ผ่าน xAI (Grok) + X (Twitter) ที่รวมเข้ามาในปี 2026 เพิ่งยื่น S-1 ต่อ SEC เพื่อ IPO บน Nasdaq ภายใต้ ticker SPCX",
+      "why_invest": [
+        "Starlink เป็น cash machine ระดับโลก — Revenue $11.4B (+50% YoY), Adj EBITDA $7.2B, margin 63% จาก 10.3M subscribers ที่โต +102% YoY ไม่มีคู่แข่งที่ใกล้เคียงในอีก 5 ปีข้างหน้า",
+        "Falcon 9 reusability สร้าง cost moat ที่แทบ replicate ไม่ได้ — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ทำให้ Starlink deployment ถูกลงเรื่อยๆ แบบ flywheel",
+        "Revenue $18.7B (+33% YoY 2025) กระจายใน 3 segment ที่แตกต่างกัน — Backlog $28.4B แสดง revenue visibility ที่ดีมาก",
+        "Starship ถ้าสำเร็จ = revolution ในต้นทุน launch ลดลงอีก 10-100x เปิด TAM ใหม่ทั้ง Lunar/Mars/mega-constellation ที่ไม่มีใครเคยทำได้"
+      ],
+      "watch_out": [
+        "AI segment เผาเงินหนักมาก — xAI/X มี Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ดึง consolidated P&L ให้ Net Loss $(4.9B) ทั้งที่ Starlink กำไรดีมาก",
+        "Elon Musk key person risk ขั้นสูงสุด — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน หากเกิดเหตุหรือ focus แตก ทุกบริษัทจะได้รับผลกระทบพร้อมกัน",
+        "IPO investors แทบไม่มีสิทธิ์ควบคุม — Class B (10 votes) ของ Elon ทำให้เขา control board ฝ่ายเดียว IPO investors ซื้อแค่ economic exposure ไม่มี governance power"
+      ],
+      "bottom_line": "SpaceX คือ IPO ที่น่าตื่นเต้นที่สุดแห่งทศวรรษ — Starlink เป็น world-class business แต่ valuation $1.75T ต้องการ AI + Starship future ที่ยังไม่แน่นอน รอดูราคา IPO ก่อนตัดสินใจ"
+    },
+    "mark_full": {
+      "business_overview": "SpaceX ก่อตั้งปี 2002 โดย Elon Musk สำนักงานใหญ่ที่ Starbase, Texas แบ่งธุรกิจเป็น 3 segment: Space (Falcon 9/Heavy + Dragon + Starship R&D) Revenue $4.1B ยังขาดทุนจาก Starship R&D $3B/ปี, Connectivity (Starlink) Revenue $11.4B Op Income $4.4B เป็น cash engine หลัก, และ AI (xAI/Grok + X/Twitter) Revenue $3.2B แต่ขาดทุน $(6.4B) หลัง merge xAI (Feb 2026) entity นี้กลายเป็น Space + Internet + AI ในหน้าเดียว",
+      "tam": "Starlink TAM ยังใหญ่มาก — 10.3M subscribers จาก potential 50M+ ใน 5-7 ปี บวก Starlink Mobile ที่กำลัง partner กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ตลาด Space launch TAM จะโตตาม demand จาก Amazon Kuiper (FCC deadline Jul 2026), SDA Tranche 3 และ commercial constellations ต่างๆ ส่วน AI/Grok TAM ยังใหม่แต่ถ้า scale ได้จะยิ่งใหญ่กว่าทั้งสองอย่างรวมกัน",
+      "moat": "MOAT มีหลายชั้น: Falcon 9 reusability flywheel ที่ cost ต่ำกว่าคู่แข่ง 5-10x ทำให้แข่งได้ยากมาก, Starlink constellation 10,300+ satellites ที่สร้างมาหลายปีไม่สามารถ replicate ได้รวดเร็ว, Vertical integration ที่ผลิต rocket engine/avionics/terminals เองทำให้ต้นทุนต่ำและ supply chain เป็นอิสระ, และ 82% global commercial launch share ที่สร้าง pricing power ต่อเนื่อง",
+      "latest_financials": "FY2025: Revenue $18.7B (+33%), Connectivity Op Income $4.4B, Adj EBITDA $6.6B แต่ Net Loss $(4.9B) เพราะ AI drag Q1 2026: Revenue $4.7B (+15%), Starlink 10.3M subs (+105% YoY), Adj EBITDA $1.1B แต่ Net Loss $(4.3B) เพราะ AI CapEx $7.7B ใน Q1 เดียว Backlog $28.4B (53% delivery ใน 2027-2028) แสดง revenue visibility ที่ดีมาก",
+      "key_points": [
+        "Starlink ARPU declining: $99 (2023) → $81 (2025) → $66 (Q1 2026) — มาจากการขยายสู่ตลาดที่จ่ายน้อยกว่า subscriber growth +105% YoY ยังชดเชยได้ แต่ต้องติดตามว่า ARPU จะ stabilize ที่ไหน",
+        "xAI 1 GW compute cluster Q1 2026 — CapEx $7.7B ใน Q1 เดียวแสดง scaling AI อย่างรวดเร็วมาก แต่ monetization ยังไม่ชัดเจน",
+        "IPO target $1.75T valuation / $75B raise — Roadshow June 4, Pricing June 11, Listing June 12, 2026 ตามข่าว นับเป็น largest IPO in history",
+        "TeraFab กับ Intel 14A + in-house FOPLP semiconductor manufacturing — SpaceX กำลังลด dependency ต่อ suppliers ระยะยาว ซึ่งอาจลดต้นทุน Starlink terminal ได้อีก"
+      ]
+    },
+    "warren_easy": [
+      "Warren ยังไม่ได้ประเมิน WAF สำหรับ SPCX เพราะยังเป็น Pre-IPO — ไม่มีราคาหุ้น public ที่จะเปรียบเทียบกับ Fair Value ได้ แต่ถ้า Warren ดู Connectivity segment อย่างเดียว Adj EBITDA $7.2B × 20x = ~$144B เป็น conservative floor ที่ไม่ต้องการ Starship หรือ AI ให้ประสบความสำเร็จเลย Starlink เพียงอย่างเดียวพิสูจน์แล้วว่าเป็น world-class cash machine",
+      "ปัญหาหลักที่ Warren จะมองคือ AI segment เผาเงิน $(6.4B) Op Loss + CapEx $12.7B ในปี 2025 เพียงปีเดียว ทำให้ consolidated เป็นขาดทุนทั้งที่ Starlink กำไรดี IPO target $1.75T หมายความว่าตลาดต้องเชื่อใน Starship optionality + AI scaling ที่ยังไม่ proven — ซึ่งเป็น speculation ไม่ใช่ fundamental value ตามหลักการของ Warren",
+      "กลยุทธ์ WATCH IPO price ก่อนตัดสินใจ — ถ้า IPO ที่ conservative Starlink valuation ~$300B (Connectivity-only floor) จะ risk/reward ดีกว่า IPO ที่ $1.75T ซึ่ง price-in AI + Starship future แบบเต็มๆ หลัง IPO หากมี pullback จาก hype และ AI แสดง path toward profitability = จะน่าสนใจมากขึ้น"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันข้อมูลจาก S-1 ที่ยื่น SEC โดยตรงว่า Connectivity segment แข็งแกร่งจริง — Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA Margin 63%, subscriber growth +102% YoY ใน 2025 Falcon 9 launch cadence 170/year เป็น fact ที่ independent sources ยืนยันตรงกัน Backlog $28.4B แสดง revenue visibility ที่น่าเชื่อถือ",
+        "Charlie ออก CAUTION เพราะ consolidated financials มีหลาย red flags: AI segment ขาดทุน $(6.4B) Op Loss + CapEx $7.7B เพียง Q1 2026 เดียว ยังไม่มี clear path to breakeven Starlink ARPU declining structurally $99→$66 ใน 3 ปี และ Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก",
+        "Charlie แนะนำ WATCH IPO price และ S-1 amendments — monitor 3 สิ่ง: (1) IPO valuation ที่ fair ควรอิง Connectivity $144B+ เป็น floor ไม่ใช่ $1.75T full AI optionality (2) xAI path to profitability ใน 2027-2028 ต้องเห็น revenue ramp ชัดเจน (3) Starlink ARPU stabilization ที่ $60-65 ถ้า ARPU ยังลงต่อแสดงว่า pricing power กำลังหาย"
+      ]
+    },
+    "idea_th": "SpaceX กำลัง IPO ครั้งแรกภายใต้ SPCX โดยรวม Starlink (cash machine $7.2B Adj EBITDA, 63% margin) + Falcon 9 (82% global commercial launches) + xAI/Grok ไว้ในองค์กรเดียว — thesis หลักคือ Starlink จะเติบโตสู่ 50M+ subscribers ขณะที่ Starship จะปฏิวัติต้นทุน launch ลงอีก 10-100x",
+    "story_gate_th": {
+      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครอง 82% commercial launches ทั่วโลก), Connectivity (Starlink 10.3M subscribers Adj EBITDA margin 63%) และ AI (xAI Grok + X Twitter ที่รวมเข้ามา 2026) Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้และเป็นพื้นฐานของ flywheel ทั้งหมด",
+      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิด SPCX บน Nasdaq Starlink Revenue $11.4B (+50% YoY) Op Income $4.4B Adj EBITDA $7.2B — ตัวเลขพิสูจน์ว่าธุรกิจกำไรได้จริง subscribers 10.3M ยังเป็นส่วนน้อยของ potential market ถ้า Starship full reusability สำเร็จ = launch cost revolution unlock TAM ใหม่ทั้งหมด",
+      "risk": "AI segment เผาเงิน $(6.4B) Op Loss + $12.7B CapEx ยังไม่มี path to profitability ชัดเจน Starlink ARPU declining structurally $99→$66 ใน 3 ปี Elon Musk overextended (CEO ของ 4 บริษัทพร้อมกัน) และ Starship commercialization ยังไม่เกิด — ถ้า AI drag ยืดออกและ ARPU ลงต่อ thesis จะอ่อนแอลงมาก"
+    },
+    "bull_th": [
+      "Starlink cash machine ที่ไม่มีคู่แข่ง — Revenue $11.4B (+50%), Adj EBITDA $7.2B margin 63% จาก 10.3M subscribers Amazon Kuiper ช้ากว่า 5+ ปี ทำให้ Starlink มีเวลาสร้าง lock-in ก่อนที่คู่แข่งจะพร้อม",
+      "Falcon 9 reusability flywheel — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ไม่มีคู่แข่งใกล้เคียง เป็น moat ที่ใช้เวลาและเงินมหาศาลจะ replicate",
+      "Starlink Mobile D2D — partnership กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ถ้า TAM นี้แม้แต่ 10% ก็คือ 300M subscribers เพิ่มเติม",
+      "Starship commercialization Q4 2026 target — ถ้าสำเร็จ launch cost ลดลงอีก 10-100x เปิด Lunar/Mars/mega-constellation และ businesses ใหม่ที่ไม่มีใครเคยทำได้",
+      "TeraFab + in-house FOPLP semiconductor manufacturing — SpaceX กำลังสร้าง vertical integration ใน chip supply chain เพื่อลดต้นทุน Starlink terminal และลด external dependency ระยะยาว"
+    ],
+    "risk_th": [
+      "AI segment เผาเงินหนักมาก — xAI/X Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ถ้า xAI ไม่สามารถ monetize ได้ใน 2-3 ปี จะกัดกร่อน Starlink profits ทั้งหมด",
+      "Elon Musk key person risk — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน ถ้า focus แตกหรือเกิดเหตุส่วนตัว ทุกบริษัทจะได้รับผลกระทบพร้อมกันทันที",
+      "Starlink ARPU declining structurally: $99→$81→$66 — pricing pressure รุนแรง ถ้า ARPU ไม่ stabilize revenue growth จะช้าลงแม้ subscribers โตต่อ",
+      "Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก — Elon ควบคุม board ฝ่ายเดียว ถ้า allocate capital ไป AI/Starship มากเกินไป shareholders มีอำนาจน้อยมากในการ object",
+      "Starship commercialization ยังไม่เกิด — R&D burn $3B/ปี FAA approvals ล่าช้า timeline ยืดออกเรื่อยๆ ถ้า commercial operation ล้มเหลวทำให้ Starlink constellation replenishment ยังต้องใช้ Falcon 9 ที่แพงกว่า"
+    ]
   }
 }
