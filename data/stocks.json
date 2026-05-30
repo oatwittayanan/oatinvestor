@@ -614,7 +614,68 @@
       ],
       "summary": "WATCH confirmed. MoS -9%, PEG 2.45 both fail gates. Analyst target $1,660 slightly above current $1,632.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าเดียวในโลกที่ผลิตเครื่องพิมพ์ชิประดับ EUV — ไม่มี ASML ก็ไม่มีชิปรุ่นใหม่",
+      "what": "ASML คือผู้ผลิตเครื่อง Lithography ที่ใช้ \"วาดลวดลาย\" บนชิปเซมิคอนดักเตอร์ที่เล็กที่สุดที่มนุษย์ทำได้ เครื่อง EUV ของ ASML เป็นเทคโนโลยีที่ไม่มีบริษัทไหนในโลกทำได้อีก — ทุก fab อย่าง TSMC, Samsung, Intel ต้องซื้อจาก ASML เท่านั้น รายได้มาจากสองส่วน คือขายเครื่องใหม่ (~75%) และรายได้บริการ/อัพเกรดเครื่องเก่า (~25%) ที่โตแบบ Recurring",
+      "why_invest": [
+        "Monopoly ที่แท้จริง — ไม่มีคู่แข่งทั้งโลกในตลาด EUV ซึ่งจำเป็นต่อการผลิตชิปขนาด 7nm ลงไปทุกตัว",
+        "2027 EUV supply shortage — management ประกาศเองว่า demand จะเกิน supply ในปี 2027 สะท้อน pricing power ที่จะเพิ่มขึ้น",
+        "High-NA EUV รุ่นใหม่ราคา M ต่อเครื่อง — เป็น next catalyst สำหรับชิป A14/A10 node ปี 2028 ที่ยังไม่ถูก price in เต็มที่",
+        "IBM revenue (Service) โต +24% YoY ใน Q1 2026 — ยิ่ง EUV installed base ใหญ่ขึ้น รายได้ recurring ก็โตตามโดยอัตโนมัติ"
+      ],
+      "watch_out": [
+        "ราคาตอนนี้เกิน Fair Value ประมาณ 9% — ไม่ใช่จังหวะ BUY ที่ดี รอ pullback ก่อน",
+        "China เคยคิดเป็น 36% ของ system sales แต่ลดเหลือ 19% ในไตรมาสเดียว — export control escalation อีกรอบกระทบหนักแน่",
+        "Customer concentration สูง — TSMC + Samsung รวมกัน 38% ของรายได้ ถ้าสองเจ้านี้ชะลอ capex กระทบทันที"
+      ],
+      "bottom_line": "Pete มองว่า ASML คือธุรกิจที่ดีที่สุดตัวหนึ่งที่มีอยู่ในโลก — แต่ราคาตอนนี้ยังแพงกว่า fair value อยู่ ถ้าอยากถือก็รอจังหวะที่ราคาลงมาใกล้ ,498 หรือต่ำกว่า ถึงจะคุ้มค่าจริงๆ"
+    },
+    "mark_full": {
+      "business_overview": "ASML เป็นบริษัทเนเธอร์แลนด์ที่ผูกขาดตลาด EUV Lithography — เครื่องจักรที่ใช้แสงอัลตราไวโอเลตระดับสุดขีดในการ \"วาด\" ลวดลายของ transistor บนซิลิกอน เงินมาจากสองทาง คือขายเครื่องใหม่ (Net System Sales ประมาณ 75% ของรายได้) และ Installed Base Management หรือบริการ + อัพเกรดเครื่องที่ลูกค้าซื้อไปแล้ว (25%) ซึ่งโตแบบ recurring เร็วกว่า system sales เสียอีก ใน FY2025 รายได้รวม €32.7B โต +15.6% YoY และ operating margin แตะ 34.6%",
+      "tam": "อุตสาหกรรมเซมิคอนดักเตอร์คาดแตะ  Trillion ภายในปี 2030 ด้วย CAGR ประมาณ 9% per year — ขับเคลื่อนโดย AI infrastructure, Memory supercycle, และ Advanced Packaging ASML เองตั้งเป้า revenue opportunity ระยะยาวที่ €44B – €60B ภายในปี 2030 พร้อม gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก catalyst หลักคือ AI data center ที่ต้องการ chip ประมวลผลแรงขึ้นทุกปี ทำให้ TSMC และ Samsung เร่ง capex ต่อเนื่อง",
+      "moat": "MOAT ที่แข็งแกร่งที่สุดของ ASML คือการเป็นเจ้าเดียวในโลกที่ผลิต EUV ได้ — เกิดจากการสะสม IP, know-how, และ ecosystem ที่ซับซ้อนมาหลายทศวรรษ Carl Zeiss SMT ทำ optics, Cymer/TRUMPF ทำ light source ทั้งหมดนี้ทำงานร่วมกันเป็น integrated system ที่ไม่มีใครสร้างซ้ำได้ในเวลาสั้น นอกจากนี้ ASML ยังรวม software + metrology เข้ากับ hardware เป็น \"Holistic Lithography Platform\" ที่ทำให้ลูกค้าติด ecosystem และมี switching cost สูงมาก อีกทั้งยังออก performance upgrades สำหรับเครื่องเดิม ทำให้ลูกค้าจ่ายซ้ำโดยไม่ต้องซื้อเครื่องใหม่",
+      "latest_financials": "Q1 2026 รายได้ €8,767M โต +13.2% YoY, Gross Margin 53.0%, Operating Margin 36.0%, EPS €7.15 โต +19.2% YoY IBM (service) revenue โต +24.3% เร็วกว่า system sales +9.4% สะท้อน recurring engine ที่แข็งแกร่ง FY2026 guidance อัพเดทล่าสุดคือ €36B – €40B (ปรับขึ้นจาก €34-39B) โดยรายได้จะหนักใน H2 2026 สอดคล้องกับ EUV delivery schedule",
+      "key_points": [
+        "2027 EUV supply shortage — management ระบุ demand จะเกิน supply แสดงว่า backlog visibility แน่นอยู่อีก 2-3 ปีข้างหน้า",
+        "High-NA EUV (EXE Series) ประมวลผลชิปไปแล้วกว่า 500,000 wafers ณ Q1 2026 พร้อมสำหรับ volume ramp ปี 2028",
+        "IBM revenue เป็น flywheel — ยิ่ง EUV installed base โต รายได้ service ยิ่งโตตาม ลด cyclicality ของ equipment business",
+        "ASML วางแผนจ้าง 1,000 คนในไต้หวัน (พ.ค. 2026) เพื่อรองรับความต้องการของลูกค้า — สะท้อนการเติบโตที่ยังเร่งตัวอยู่"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ ASML เพราะเป็นหนึ่งในไม่กี่บริษัทในโลกที่มี monopoly แบบ structural จริงๆ — ไม่ใช่แค่ market share ที่สูง แต่เป็นเจ้าเดียวในโลกที่ผลิต EUV Lithography ได้ ทำให้ทุก fab ที่อยากผลิตชิป advanced node ต้องมาหา ASML เท่านั้น MOAT นี้สร้างมาหลายทศวรรษและไม่สามารถ replicate ได้ในเวลาสั้น BQ score 9.5/10 สูงที่สุดในพอร์ต",
+      "ทำไมตอนนี้ถึงน่าจับตา — management ประกาศเองว่า 2027 จะมี EUV supply shortage แปลว่า demand แน่นอยู่อีก 2-3 ปี FY2026 guidance ถูกปรับขึ้นเป็น €36-40B พร้อม High-NA EUV ราคา M/unit ที่กำลัง ramp สู่ volume production ปี 2028 สิ่งที่ตลาดยังไม่ price-in เต็มที่คือ 2030 revenue target ที่ €44-60B + gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก",
+      "กลยุทธ์: Warren ให้ status WATCH เพราะราคา ,640 เกิน Base FV ,498 อยู่ 9% — ยังไม่ถึง MoS gate 15% Conviction ระดับ HIGH แต่รอจังหวะซื้อที่ดีกว่า ถ้าราคาปรับลงมาใกล้ ,350-1,400 จะน่าสนใจมาก เป็นหุ้นที่ Warren จะ BUY ทันทีเมื่อราคาเข้าเกณฑ์"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยันได้จากข้อมูลอิสระว่า Q1 2026 earnings beat expectations ได้จริง — Revenue €8,767M, EPS €7.15 โต +19.2% YoY, FY2026 guidance ถูกปรับขึ้นเป็น €36-40B EUV monopoly ยังสมบูรณ์อยู่ ไม่มีคู่แข่งที่ใกล้เคียง WAF 7.92 สะท้อน business quality สูงมาก Charlie เห็นด้วยกับ Warren ในเรื่องพื้นฐานธุรกิจ",
+        "Charlie กังวลใน 3 เรื่อง: หนึ่ง — TSMC เลื่อน High-NA EUV deployment ออกไปถึงปี 2029 ทำให้ catalyst สำคัญช้ากว่าที่คาด สอง — China เคยเป็น 29% ของรายได้ปี 2025 แต่กำลังถูก squeeze ลงเรื่อยๆ จาก export controls ถ้า tighten เพิ่มกระทบรายได้ทันที สาม — PEG 1.72 ยังเกิน ceiling 1.5 ของระบบ ราคายังแพงกว่า fair value อยู่",
+        "Charlie สรุปว่า ASML เป็นบริษัทที่ดีมากจริงๆ และ Warren วิเคราะห์ถูกต้อง แต่ WATCH เพราะราคาเกิน FV — สิ่งที่ต้อง monitor คือ: ราคาหุ้นปรับลงมาใกล้ ,350-1,400, ข่าว export control จากรัฐบาลสหรัฐหรือ EU, และ High-NA EUV qualification timeline ของ TSMC"
+      ]
+    },
+    "idea_th": "ASML คือ sole supplier ของเครื่อง EUV Lithography ที่ไม่มีทางแทนที่ได้ในห่วงโซ่การผลิต semiconductor โลก — 2027 supply shortage ที่ management เตือนเองสะท้อนว่า backlog แน่นอยู่อีก 2-3 ปี แต่รอจังหวะราคาเข้าเกณฑ์ก่อนซื้อ",
+    "story_gate_th": {
+      "what": "ASML เป็นผู้ผลิต EUV Lithography Systems เพียงรายเดียวในโลก — เครื่องจักรที่ใช้วาดลวดลายชิปขนาดเล็กที่สุดที่มนุษย์ผลิตได้ ทุก fab ที่อยากผลิตชิปรุ่นใหม่ต้องซื้อจาก ASML เท่านั้น ไม่มีตัวเลือกอื่น",
+      "why": "ปี 2027 จะเกิด EUV supply shortage — management ระบุเองว่า demand จะเกินกำลังการผลิต ขณะที่ TSMC กำลัง ramp N2 node และ High-NA EUV สำหรับ A14 ปี 2028 กำลังเข้าสู่ volume production ทำให้ backlog visibility แน่นอีก 2-3 ปีข้างหน้า",
+      "risk": "ถ้าเกิด semiconductor capex crash จาก recession ทำให้ TSMC/Samsung ชะลอ EUV orders, หรือ US/EU ออก export control ใหม่ที่ตัด DUV China revenue โดยกะทันหัน ทั้งสองกรณีนี้จะทำให้ thesis หลักสั่นคลอน"
+    },
+    "bull_th": [
+      "EUV monopoly ถาวร — ไม่มีบริษัทไหนในโลกที่ใกล้เคียงกับการสร้าง EUV ได้ และสิ่งนี้จะไม่เปลี่ยนในทศวรรษนี้ ทำให้ ASML มี pricing power สูงมาก",
+      "2027 EUV supply shortage — demand จาก TSMC, Samsung, SK Hynix เกินกว่า ASML ผลิตได้ สะท้อน backlog ที่แน่นมากและโอกาสขึ้นราคาอีก",
+      "High-NA EUV ราคา M/unit สำหรับชิป A14/A10 node — เป็น next wave ที่ยังไม่ถูก price in เต็มที่ หากลูกค้า qualify สำเร็จ revenue ต่อเครื่องจะสูงกว่าเดิมมาก",
+      "IBM (Service) revenue เป็น structural growth engine ที่โต +24% YoY โดยไม่ขึ้นกับ equipment cycle — ยิ่ง installed base ใหญ่ รายได้ recurring ยิ่งโต",
+      "2030 revenue opportunity €44-60B + gross margin 56-60% — ถ้า semiconductor industry แตะ T ตามคาด ASML จะเป็นหนึ่งในผู้ได้ประโยชน์มากที่สุด"
+    ],
+    "risk_th": [
+      "Export controls จีน — China เคยคิดเป็น 29% ของรายได้ ลดเหลือ 19% ในไตรมาสเดียว ถ้า US/EU/NL ออก restrictions เพิ่มเติมกระทบรายได้ทันที และยังมีการ suspend US Affiliates Rule อยู่ถึง Nov 2026",
+      "Customer concentration สูงมาก — TSMC + Samsung รวมกัน 38% ของรายได้ปี 2025 และ Taiwan + South Korea คิดเป็น 68% ของ system sales ถ้าสองประเทศนี้มีปัญหา geopolitical กระทบทันที",
+      "Single-source supplier Carl Zeiss SMT — เป็น sole supplier ของ precision optics สำหรับ EUV ทั้งหมด ถ้ามีปัญหาที่ Zeiss กระทบ production โดยตรงโดยไม่มีทางเลือก",
+      "Semiconductor capex cyclicality — unit sales ลดจาก 449 (2023) → 418 (2024) → 327 (2025) แม้ revenue โตเพราะ ASP สูงขึ้น แต่ถ้า cycle หันทิศทาง orders อาจชะลอกะทันหัน",
+      "High-NA EUV execution risk — TSMC เลื่อน deployment ถึงปี 2029 และยังอยู่ใน early adoption phase ถ้า qualification ล้มเหลวหรือล่าช้ากว่าที่คาด จะกระทบ long-term revenue thesis"
+    ]
   },
   "NFLX": {
     "symbol": "NFLX",
