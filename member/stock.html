@@ -216,7 +216,7 @@ function renderStock(s) {
       <div class="story-gate-header">
         <div class="story-gate-icon">${sgPass ? '✅' : '❌'}</div>
         <h4>Story Gate — ${sgPass ? 'PASS' : 'FAIL'}</h4>
-        ${sg.tier ? `<span class="badge" style="font-size:.72rem">${sg.tier}</span>` : ''}
+        ${sg.tier ? tierBadge(sg.tier) : ''}
       </div>
       <div class="story-gate-body">
         ${sg.what ? `<div class="story-gate-row"><span class="story-gate-key">WHAT</span><span class="story-gate-val">${sg.what}</span></div>` : ''}
