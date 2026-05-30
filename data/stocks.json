@@ -901,7 +901,68 @@
       ],
       "summary": "WATCH confirmed. MoS -13.4% fails gate. yfinance PEG 0.92 more attractive than Warren's 0.45 — both below ceiling. Price $422 higher than Warren's $414.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของ Custom AI Chip เฉพาะทางสำหรับ Google, Meta, OpenAI และ Networking Switch 100 Tbps ที่ไม่มีคู่แข่งในโลก",
+      "what": "Broadcom ออกแบบชิปพิเศษที่เรียกว่า XPU ให้กับ Hyperscaler โดยตรง — ไม่ใช่ GPU ทั่วไปแบบ NVIDIA แต่เป็นชิปที่สร้างมาสำหรับ AI workload ของแต่ละบริษัทโดยเฉพาะ ควบคู่กับ Tomahawk Networking Switch ที่เป็นรายเดียวในโลกที่ทำได้ 100 Tbps นอกจากนี้ยังมีธุรกิจซอฟต์แวร์ฝั่ง VMware ที่ช่วยจัดการ Private Cloud ขององค์กรขนาดใหญ่ทั่วโลก",
+      "why_invest": [
+        "AI Revenue พุ่ง 106% YoY ใน Q1 FY2026 และ Q2 Guided ที่ $10.7B (+140% YoY) — ลูกค้า 6 ราย รวมทั้ง Google, Meta, OpenAI และ Anthropic ล็อค roadmap ล่วงหน้า 2-4 ปี",
+        "Tomahawk 6 เป็น Switch เดียวในโลกที่ 100 Tbps — ทั้ง XPU และ GPU cluster ต้องใช้ Broadcom networking ทุกตัว",
+        "VMware ARR โต +19% YoY, contract value $9.2B+ ใน Q1 เดียว — ธุรกิจ Software ที่ Margin 93% คือ Cash Machine ที่เสถียรมาก",
+        "FCF $26.9B ใน FY2025 (42% margin), buyback $10B ใหม่, ปันผลเพิ่มต่อเนื่อง 15 ปีติดต่อกัน"
+      ],
+      "watch_out": [
+        "ราคาหุ้น $414 สูงกว่า Fair Value Base $372 อยู่ประมาณ 11% — Warren บอก WATCH ไม่ใช่ BUY ณ ราคานี้ รอ Pullback",
+        "ลูกค้าหลัก Top 5 คิดเป็น 50% ของ Revenue และ Distributor รายเดียวถึง 42% — ถ้าสูญเสีย Google หรือ Meta กระทบหนักมาก",
+        "หนี้ $68B จากการซื้อ VMware — ดอกเบี้ย $3.2B ต่อปี ถ่วงตัวเลข Net Income และจำกัด Flexibility"
+      ],
+      "bottom_line": "Broadcom คือ picks-and-shovels play ที่แท้จริงของยุค AI — ใครก็ตามที่สร้าง Hyperscale AI ต้องใช้ทั้ง XPU และ Networking ของ Broadcom แต่ราคาตอนนี้วิ่งเกินมูลค่าไปพอสมควร รอให้ราคาลงมาที่โซน $316-350 ก่อนจึงจะน่าเข้า"
+    },
+    "mark_full": {
+      "business_overview": "Broadcom มี 2 ธุรกิจหลักที่แตกต่างกันโดยสิ้นเชิง ฝั่ง Semiconductor (65% of revenue ใน Q1 FY2026) โตแรงมากจาก AI — ทำ Custom AI Accelerator (XPU) ให้ Hyperscaler 6 ราย บวกกับ Ethernet Networking Switch ที่ครองตลาด AI Data Center ส่วนฝั่ง Infrastructure Software (35%) คือ VMware ที่ Margin สูงถึง 93% — ช่วยองค์กรจัดการ Private Cloud ทั่วโลก สองธุรกิจนี้ช่วยกันทำให้ EBITDA Margin อยู่ที่ 68% ตลอด และ FCF $8B ต่อไตรมาสในปัจจุบัน",
+      "tam": "ตลาด Custom AI Silicon กำลังระเบิด — Broadcom เองตั้งเป้า AI Chip Revenue >$100B ในปี FY2027 จากที่ทำได้ $8.4B ใน Q1 FY2026 เพียงไตรมาสเดียว ทิศทางมาจาก Hyperscaler ทุกรายที่ต้องการ XPU เฉพาะทางแทน GPU ทั่วไป เพื่อประสิทธิภาพสูงกว่าและราคาถูกกว่าในระดับ Large Scale ส่วนตลาด Networking ก็โตตาม เพราะทุก AI Cluster ต้องการ High-Speed Switch ที่เฉพาะทางเช่นกัน",
+      "moat": "MOAT ที่แข็งแกร่งที่สุดคือ Custom XPU Co-Design Relationship — ลูกค้าแชร์ AI Roadmap ล่วงหน้า 2-4 ปี ทำให้ความสัมพันธ์นี้ลึกมากจนแทบ Switch ไม่ได้ โปรแกรม In-House ของลูกค้า (COT) ยังตามหลัง Broadcom 12-18 เดือนในด้านประสิทธิภาพ ฝั่ง Networking มี Tomahawk 6 ที่เป็น Switch เดียวในโลกที่ 100 Tbps และ VMware ที่เป็น Abstraction Layer ของ Private Cloud ที่ Uninstall แทบไม่ได้เลยในองค์กรขนาดใหญ่",
+      "latest_financials": "Q1 FY2026: Revenue $19.3B (+29% YoY) โดย AI Semiconductor $8.4B (+106% YoY) คือ Engine หลัก Non-GAAP EPS $2.05 (+28%) FCF $8.0B (41% margin) EBITDA $13.1B (68% margin) Q2 FY2026 Guided ที่ $22B (+47% YoY) โดย AI Semiconductor คาด $10.7B (+140% YoY) — ตัวเลขทุกอย่างยังเร่งตัวขึ้นต่อเนื่อง",
+      "key_points": [
+        "Hock Tan ประกาศ FY2027 AI Revenue >$100B อ้างอิงจาก 10 Gigawatt compute deployment จาก 6 ลูกค้า — เป้าหมายนี้อยู่ห่างจาก Run-Rate ปัจจุบันเพียง 2 ปี",
+        "OpenAI คือลูกค้า XPU รายที่ 6 ที่เพิ่งประกาศ เริ่ม Deploy >1 GW Compute Capacity ปี 2027",
+        "VMware VCF Total Contract Value ที่ Booked ใน Q1 เดียวเกิน $9.2B — แสดงว่าการ Migration ยังอยู่ในช่วงต้นมาก",
+        "TSMC ผลิต 95% ของชิปทั้งหมด และ Broadcom ได้ล็อค Capacity สำหรับ Leading-Edge Wafer, HBM, Substrate ไปถึงปี 2028 แล้ว"
+      ]
+    },
+    "warren_easy": [
+      "ทำไม Warren ถือ AVGO? เพราะมันคือ Infrastructure สำหรับ AI ที่ใครหลีกเลี่ยงไม่ได้ — ถ้าคุณสร้าง AI ที่ Scale ระดับ Hyperscaler คุณต้องใช้ XPU ของ Broadcom หรือ Networking Switch ของ Broadcom หรือทั้งคู่ MOAT นี้แข็งแกร่งมากเพราะลูกค้าแชร์ Roadmap ล่วงหน้า 2-4 ปี และโปรแกรม In-House ของพวกเขายังตามหลัง 12-18 เดือน ฝั่ง VMware ก็เป็น Recurring Revenue กับ Margin 93% ที่เสถียรมากในระยะยาว",
+      "ทำไมตอนนี้ถึงน่าสนใจ? AI Revenue โต 106% YoY ใน Q1 และ Guided +140% YoY ใน Q2 — แต่ตลาดยังไม่ Price-In FY2027 Target ที่ >$100B ซึ่ง Hock Tan ประกาศชัดเจนจาก Line-of-Sight ใน 10 Gigawatt Compute Deployment PEG เพียง 0.45 สำหรับธุรกิจที่โต 50%+ คือสัญญาณว่า Growth ยังถูก Underpriced อยู่พอสมควร ถึงแม้ราคาจะเกิน FV ตอนนี้",
+      "กลยุทธ์ของ Warren คือ WATCH — รอ Pullback ลงมาที่ ~$316-350 (MoS ประมาณ 15%) ก่อนจึงจะ Trigger BUY Conviction ระดับ HIGH ราคาปัจจุบัน $414 สูงกว่า FV Base $372 ประมาณ 11% จึงยังไม่ใช่จังหวะเข้า แต่ถ้าตลาดแก้ไขหรือ Sector มี Rotation ลงมา นี่คือหนึ่งใน AI Infrastructure Play ที่น่าสะสมมากที่สุด"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยัน Business Thesis ของ Warren ถูกต้อง — ราคา $425 ที่ Charlie Verify อิสระตรงกับ Warren เป๊ะ AI Momentum แข็งแกร่งจริง Meta-Broadcom Multi-Gigawatt XPU Deal ถูก Confirm ในเดือนเมษายน 2026 Anthropic Partnership ก็ชัดเจน Revenue Visibility จาก Remaining Performance Obligations $45B บวกกับ 6 XPU Customer ที่ล็อค Roadmap ยาวทำให้ Charlie เห็นด้วยกับ Warren ว่า Business คุณภาพสูงมาก",
+        "สิ่งที่ Charlie กังวลคือ Concentration Risk ที่สูงผิดปกติ — Distributor รายเดียวคิดเป็น 42% ของ Revenue ใน Q1 FY2026 (เพิ่มจาก 29% ปีก่อน) สัดส่วนนี้สูงเกินไปมากแม้แต่สำหรับบริษัทที่ Business แข็งแกร่ง ถ้าเกิด Issue กับ Distribution Channel นั้น Revenue จะหาย overnight อีก Risk ที่น่ากังวลคือ Hyperscaler In-House Silicon ในระยะ 3-5 ปี ซึ่งแม้ตอนนี้ยังตามหลัง 12-18 เดือน แต่ Google และ Meta มี Engineering Team ที่สามารถลด Dependency ได้",
+        "Charlie สรุปว่า WATCH Action ถูกต้อง — Business แข็งแกร่งมาก แต่ราคาเกิน FV ไปแล้ว ไม่ใช่จังหวะ BUY ณ ราคาปัจจุบัน สิ่งที่ต้อง Monitor คือ AI Revenue Mix ว่ายังโตต่อเนื่องหรือไม่ใน Q3 FY2026 และ VMware Renewal Rate ของลูกค้าที่ยังสามารถ Terminate ได้ (67% ของ Contract Liability)"
+      ]
+    },
+    "idea_th": "Broadcom คือผู้ชนะที่แท้จริงของยุค AI Infrastructure — ออกแบบ Custom AI Chip (XPU) เฉพาะทางให้ Google, Meta, OpenAI, Anthropic ล็อคความสัมพันธ์ 2-4 ปีล่วงหน้า บวกกับ Networking Switch ที่ไม่มีคู่แข่ง ทำให้ทุก AI Data Center ไม่สามารถหลีกเลี่ยง Broadcom ได้",
+    "story_gate_th": {
+      "what": "Broadcom ออกแบบ XPU เฉพาะทางให้ Hyperscaler 6 รายและผลิต Ethernet Networking Switch ระดับ 100 Tbps ที่ไม่มีใครทำได้ — เป็น Infrastructure Layer ของ AI ที่ขาดไม่ได้",
+      "why": "AI Revenue โต 106% YoY แล้วยังมี Guidance ที่ +140% อีก Hock Tan ประกาศ FY2027 Target >$100B ชัดเจน จาก 10 GW Compute Deployment ที่ Committed แล้ว — ตลาดยังไม่ได้ Price-In เป้าหมายนี้เต็มที่",
+      "risk": "ถ้า Google หรือ Meta พัฒนาชิปเองสำเร็จและลด AVGO Dependency >50% หรือ VMware Integration สร้าง Synergy น้อยกว่า $8B ที่คาดไว้"
+    },
+    "bull_th": [
+      "AI Semiconductor Revenue $8.4B ใน Q1 FY2026 (+106% YoY) กำลัง Ramp ต่อเนื่องไป $10.7B ใน Q2 (+140% YoY) โดย Hock Tan ประกาศ Line-of-Sight ถึง >$100B ในปี FY2027",
+      "Tomahawk 6 เป็น Switch เดียวในโลกที่ 100 Tbps — ทั้ง XPU Cluster และ GPU Cluster ต้องใช้ และ Tomahawk 7 ปี 2027 จะ 2× Performance อีก ทำให้ Lead ยาวขึ้นไปอีก",
+      "VMware VCF ARR โต +19% YoY, Contract Value $9.2B+ ใน Q1 เดียว — ซอฟต์แวร์ที่ Margin 93% และ Fortune 500 ถอดแทบไม่ได้เป็น Cash Cow ที่เสถียรมาก",
+      "FCF $26.9B ในปี FY2025 (42% Margin) พร้อม Buyback $10B ใหม่และปันผลเพิ่มต่อเนื่อง 15 ปีติดต่อกัน — Capital Return Policy ชัดเจนมาก",
+      "ล็อค Capacity สำหรับ Leading-Edge Wafer, HBM และ Substrate ไปถึงปี 2028 แล้ว — Supply Chain Secured ก่อนที่คู่แข่งจะตาม"
+    ],
+    "risk_th": [
+      "ราคาหุ้น $414 สูงกว่า Fair Value Base $372 ประมาณ 11% — Warren ให้ WATCH ไม่ใช่ BUY ณ ราคานี้ MoS -11.3% ยังไม่ผ่าน Gate 15%",
+      "Distributor รายเดียว = 42% ของ Revenue ทั้งบริษัทใน Q1 FY2026 — Concentration Risk สูงผิดปกติมาก ถ้าเกิด Issue กับ Channel นั้นกระทบหนักทันที",
+      "หนี้ $68B จากการซื้อ VMware — ดอกเบี้ย $3.2B ต่อปี ลด FCF ที่แท้จริง บวกกับ Global Minimum Tax ที่จะเพิ่ม Tax Rate ใน FY2026",
+      "TSMC ผลิตชิป 95% ของทั้งหมด — ถ้า Taiwan มีปัญหาด้านภูมิรัฐศาสตร์จะกระทบ Supply Chain ทันทีและหาทางทดแทนยาก",
+      "ระยะยาว 3-5 ปี Google, Meta, Anthropic และ OpenAI มี Team วิศวกรที่สามารถพัฒนาชิปเองได้มากขึ้นเรื่อยๆ — Customer-Owned Tooling (COT) อาจลดการพึ่งพา Broadcom ลง"
+    ]
   },
   "GOOGL": {
     "symbol": "GOOGL",
