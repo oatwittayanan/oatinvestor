@@ -2054,7 +2054,68 @@
       ],
       "summary": "⚠️ PEG discrepancy (favorable to COHR): yfinance 0.92 vs Warren's 2.03. Analyst consensus sees faster growth than Warren assumed. MoS -28.4% still fails gate. WATCH is correct.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของเทคโนโลยี optical transceiver 800G/1.6T ที่เชื่อม GPU เข้าด้วยกันใน AI data center — NVIDIA ลงทุนด้วย $2B",
+      "what": "Coherent (ชื่อเดิม II-VI) ทำชิ้นส่วน 'แสง' (photonics) — โดยเฉพาะ optical transceiver ที่ทำหน้าที่ส่งข้อมูลความเร็วสูงระหว่างการ์ด GPU ในศูนย์ข้อมูล AI. จุดเด่นคือปลูก InP crystal เองตั้งแต่ต้นน้ำยันผลิตเป็น transceiver สำเร็จรูป (vertical integration) ซึ่งไม่มีคู่แข่งทำได้ครบเท่า.",
+      "why_invest": [
+        "ผู้นำ optical transceiver สำหรับ AI — Q3 FY26 รายได้กลุ่ม Datacenter โต 40% YoY กำลังเปลี่ยนผ่านจาก 800G ไป 1.6T ที่ราคา/มาร์จิ้นดีกว่า",
+        "Vertical integration ที่เลียนแบบยาก — ปลูก InP crystal เอง → ทำ wafer → ออกแบบชิป → ประกอบเป็น transceiver ครบวงจร คุมต้นทุนและ supply ได้เอง",
+        "NVIDIA ลงทุน $2B แลกหุ้น + เซ็นสัญญา CPO ยาวถึงปลายทศวรรษ — เท่ากับ NVIDIA รับรองว่า COHR เป็นพาร์ตเนอร์ optical หลัก",
+        "งบดุลแข็งขึ้นมาก — เงินก้อน NVIDIA ช่วยลด net leverage จาก ~1.7x เหลือ ~0.5x และล้างหนี้ preferred stock หมด"
+      ],
+      "watch_out": [
+        "เทคโนโลยี CPO (Co-Packaged Optics) อาจมาแทน pluggable transceiver ที่เป็นรายได้หลัก — แม้ COHR ทำ CPO เองด้วย แต่ก็เสี่ยงถูก disrupt ตัวเอง",
+        "ภาระหนี้และ goodwill จากดีล II-VI เดิม — goodwill + intangibles รวม $7.36B = 43% ของสินทรัพย์; ถ้าตลาด optical อ่อนตัวมีความเสี่ยง impairment",
+        "พึ่งลูกค้าน้อยราย — ~75% ของรายได้มาจาก hyperscaler ไม่กี่เจ้า; บวกกับ FCF ที่ติดลบหนักช่วงลงทุนขยายกำลังผลิต"
+      ],
+      "bottom_line": "Pete ชอบ story ของ COHR มาก — optical interconnect คือ 'ทางด่วน' ที่ขาดไม่ได้ของคลัสเตอร์ AI และการที่ NVIDIA ลงเงินเองคือสัญญาณความเชื่อมั่นชั้นดี. แต่ที่ราคา $376 ตอนนี้แพงกว่า Fair Value ($297) พอสมควร และ PEG ก็เกินเพดาน. เป็นหุ้นน่าติดตามที่ควรรอ pullback ก่อนเข้า."
+    },
+    "mark_full": {
+      "business_overview": "Coherent แบ่งเป็น 2 กลุ่ม: Datacenter & Communications (~75% ของรายได้) — transceiver 800G/1.6T, CPO, laser, ชิ้นส่วน InP; และ Industrial (~25%) — laser สำหรับงานอุตสาหกรรม, อุปกรณ์ผลิตเซมิคอนดักเตอร์, วัสดุขั้นสูง (SiC, GaAs, InP). หัวใจที่แยก COHR ออกจากคู่แข่งคือ vertical integration ใน InP — ปลูกผลึกเอง ทำ wafer เอง ออกแบบและประกอบชิปเอง ไม่มีใครทำครบวงจรเท่า.",
+      "tam": "ดีมานด์หลักมาจากการสร้าง AI data center ที่ต้องการ bandwidth สูงระหว่าง GPU — ผลักการเปลี่ยนผ่าน 800G → 1.6T optics. นอกจากนี้ยังมี OCS (Optical Circuit Switch) ที่ TAM ถูกยกขึ้นเป็น $4B+ และแทบไม่มีคู่แข่งในระดับ scale, CPO ที่จะเริ่มมีรายได้ H2 FY2026, และ long-haul/metro optics ที่ฟื้นตัว. ฝั่ง Industrial (EV battery welding, จอแสดงผล, semiconductor capex) เป็น diversification ที่ช่วยลด cyclicality เมื่อ capex cycle กลับมา.",
+      "moat": "MOAT ที่ชัดสุดคือ vertical integration ใน InP — เป็นบริษัทเดียวที่ปลูก InP crystal เองตั้งแต่ต้น CEO ถึงกับบอกว่า 'InP คือหัวใจที่แทนที่ไม่ได้ของ optical ความเร็วสูง'. บวกกับสิทธิบัตร 3,100+ ฉบับทั่วโลก, ปริมาณการผลิต transceiver ที่ใหญ่สุดในโลกสำหรับ AI data center, และพาร์ตเนอร์ชิป NVIDIA ($2B + สัญญา CPO ถึงปลายทศวรรษ). การเปลี่ยน wafer จาก 3 นิ้วเป็น 6 นิ้ว (die ต่อ wafer เพิ่ม 4 เท่า) ยิ่งตอกย้ำความได้เปรียบด้านต้นทุน.",
+      "latest_financials": "Q3 FY26 (ม.ค.-มี.ค. 2026) รายได้ $1,806M (+21% YoY), non-GAAP gross margin 39.6%, กำไรต่อหุ้น non-GAAP $1.41 (+55% YoY). กลุ่ม Datacenter & Communications โต 40% YoY แตะ $1,362M. งบ 9 เดือน FY26 รายได้ $5,073M (+18.5%), EPS non-GAAP $3.86 (+53%). งบดุลแข็งขึ้นมากหลัง NVIDIA ลงทุน $2B — net leverage เหลือ ~0.5x. แต่ต้องระวัง: operating cash แทบเป็นศูนย์เพราะ inventory build $699M และ CapEx $547M ทำให้ FCF ติดลบหนักช่วงลงทุน.",
+      "key_points": [
+        "Warren จัด COHR เป็นหุ้นวัฏจักร (Cyclical) ให้ WATCH conviction LOW — ราคา $376 เกิน Fair Value $297 และ PEG 2.03 เกินเพดาน 1.5",
+        "Charlie ตั้งข้อสังเกตว่า PEG จาก yfinance อยู่ที่ 0.92 (ต่ำกว่า Warren มาก) แปลว่า consensus มอง growth เร็วกว่าที่ Warren ประเมิน — Warren อาจ conservative เกินไปด้านการเติบโต",
+        "ความเสี่ยงเชิงเทคโนโลยีที่ย้อนแย้ง: CPO อาจ disrupt pluggable transceiver ที่เป็นรายได้หลัก แต่ COHR ก็เป็นผู้นำ CPO เองด้วย จึงเป็นทั้งโอกาสและความเสี่ยง",
+        "ยังมี BIS inquiry เรื่องการขายสินค้าให้ Huawei ในอดีต (ตั้งแต่ ม.ค. 2025) ที่ยังประเมินผลกระทบไม่ได้ — เป็น critical risk ที่ต้องจับตา"
+      ]
+    },
+    "warren_easy": [
+      "COHR อยู่ในจุดยุทธศาสตร์ที่ดีของยุค AI — optical interconnect คือ 'ทางด่วน' ที่เชื่อม GPU หลายพันตัวเข้าด้วยกัน และจะขาดไม่ได้เมื่อคลัสเตอร์ใหญ่ขึ้น. MOAT ที่ผมให้น้ำหนักคือ vertical integration ใน InP ที่ไม่มีคู่แข่งทำได้ครบ บวกกับการที่ NVIDIA ลงทุน $2B และเซ็นสัญญา CPO ยาว — นั่นคือการรับรองจากลูกค้าที่สำคัญที่สุดในอุตสาหกรรม.",
+      "แต่ราคาปัจจุบัน $376 เกิน Fair Value ฐานที่ผมประเมินไว้ ($297) อยู่ราว 27% และ PEG 2.03 ก็เกินเพดาน 1.5 ของผม. ผมยอมรับว่าอาจประเมิน growth ไว้ conservative — Charlie ชี้ว่า consensus มอง PEG แค่ 0.92 ซึ่งสะท้อนความคาดหวังการเติบโตที่สูงกว่า. แต่ด้วยภาระหนี้เดิมจาก II-VI, goodwill ก้อนใหญ่, FCF ที่ติดลบ และ BIS inquiry ที่ค้างอยู่ ผมเลือกที่จะระมัดระวัง.",
+      "กลยุทธ์: ⏸ WATCH — ธุรกิจดี แต่ราคายังไม่ให้ margin of safety. ผมอยากเห็น pullback ลงมาใกล้ Fair Value ก่อน (แถว $250-300) แล้วค่อยพิจารณา. ระหว่างนี้สิ่งที่ต้องติดตามคือการ ramp 1.6T, ความคืบหน้า CPO/OCS และว่า FCF จะกลับมาเป็นบวกได้เมื่อไหร่."
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันว่าโมเมนตัมธุรกิจของ COHR แข็งแกร่งจริง — กลุ่ม Datacom โต 40% YoY, การเปลี่ยนผ่านไป 1.6T มาจริง และการลงทุน $2B ของ NVIDIA เป็นสัญญาณเชิงบวกที่ตรวจสอบได้. ที่น่าสนใจคือ PEG จาก yfinance อยู่ที่ 0.92 ซึ่งต่ำกว่า Warren (2.03) อย่างมีนัย — แปลว่าตลาดมอง growth ของ COHR เร็วกว่าที่ Warren ประเมินไว้.",
+        "อย่างไรก็ตาม Charlie ยังเห็นความเสี่ยงที่ต้องเฝ้าระวัง: CPO อาจมาแทน pluggable transceiver, หนี้เดิมจาก II-VI ราว $4.5B (ตอนนี้สุทธิเหลือ ~$3.2B), goodwill + intangibles ก้อนใหญ่ และ FCF ที่ยังติดลบ. ที่สำคัญคือ MoS -28% ยังไม่ผ่าน gate — ต่อให้ growth ดีกว่าคาด ราคาก็ยังไม่มีส่วนเผื่อความปลอดภัย.",
+        "สรุป Charlie ให้ CAUTION และเห็นด้วยกับ WATCH ของ Warren — ธุรกิจน่าสนใจและอาจถูกประเมิน growth ต่ำไป แต่ที่ราคานี้ยังควรรอ. แนะนำจับตา ramp 1.6T และผลของ BIS inquiry ก่อนตัดสินใจ."
+      ]
+    },
+    "idea_th": "Optical Transceiver Leader — Coherent เป็นผู้นำ optical transceiver 800G/1.6T ที่ปลูก InP crystal เองครบวงจร เป็น 'ทางด่วน' เชื่อม GPU ในคลัสเตอร์ AI โดยมี NVIDIA ลงทุน $2B และเซ็นสัญญา CPO ระยะยาว แต่ราคาปัจจุบันเกิน Fair Value จึงควรรอจังหวะ",
+    "story_gate_th": {
+      "what": "Coherent เป็นผู้ผลิต transceiver 800G/1.6T และ EML/VCSEL laser ชั้นนำที่ใช้เชื่อมต่อ GPU ความเร็วสูงใน AI data center โดยมี vertical integration ใน InP (ปลูกผลึกเอง ผลิต laser chip เอง) ที่ไม่มีคู่แข่งทำได้ครบ ทำให้ต้นทุนต่ำและ margin สูงกว่า",
+      "why": "การสร้าง AI data center กำลังดันดีมานด์ optics จาก 800G ไป 1.6T; Q3 FY26 รายได้ Datacom โต 40% YoY; NVIDIA ลงทุน $2B + สัญญา CPO ถึงปลายทศวรรษ = รับรองสถานะ preferred supplier; งบดุลแข็งขึ้นมากหลังเงินก้อน NVIDIA (net leverage 1.7x → 0.5x)",
+      "risk": "CPO (Co-Packaged Optics) อาจถูก adopt เร็วกว่าคาดจนทำให้ pluggable transceiver ล้าสมัย; ภาระหนี้เดิม II-VI; Lumentum/Fabrinet แข่งดุ; และ BIS inquiry เรื่องการขายให้ Huawei ที่ยังประเมินผลไม่ได้"
+    },
+    "bull_th": [
+      "ผู้นำ optical transceiver สำหรับ AI — Q3 FY26 รายได้ Datacom โต 40% YoY กำลังเปลี่ยนผ่านไป 1.6T ที่ราคา/มาร์จิ้นดีกว่า 800G",
+      "Vertical integration ใน InP ที่เลียนแบบยาก — ปลูกผลึกเอง → wafer → ชิป → transceiver ครบวงจร เป็นรายเดียวที่ทำได้",
+      "NVIDIA ลงทุน $2B แลกหุ้น + สัญญา CPO ยาวถึงปลายทศวรรษ = รับรองสถานะพาร์ตเนอร์ optical หลักของ AI",
+      "OCS (Optical Circuit Switch) TAM $4B+ แทบไร้คู่แข่ง + CPO เริ่มมีรายได้ H2 FY2026 = ตัวขับเคลื่อนรอบใหม่",
+      "งบดุลแข็งขึ้นมาก — net leverage จาก ~1.7x เหลือ ~0.5x หลัง NVIDIA ลงทุน และล้างหนี้ preferred stock หมด"
+    ],
+    "risk_th": [
+      "CPO อาจมาแทน pluggable transceiver ที่เป็นรายได้หลัก — แม้ COHR ทำ CPO เองก็เสี่ยง disrupt ตัวเอง",
+      "ภาระหนี้และ goodwill จากดีล II-VI เดิม — goodwill + intangibles $7.36B = 43% ของสินทรัพย์ มีความเสี่ยง impairment ถ้าตลาด optical อ่อน",
+      "พึ่งลูกค้าน้อยราย ~75% จาก hyperscaler ไม่กี่เจ้า — ถ้าเจ้าใหญ่ชะลอคำสั่งซื้อกระทบหนัก",
+      "FCF ติดลบหนักช่วงลงทุน — operating cash แทบเป็นศูนย์ + CapEx สูง + inventory build $699M เสี่ยง write-down ถ้าดีมานด์อ่อน",
+      "BIS inquiry เรื่องขายสินค้าให้ Huawei ในอดีต (ตั้งแต่ ม.ค. 2025) — โทษ/ค่าใช้จ่ายยังประเมินไม่ได้ เป็น critical risk"
+    ]
   },
   "QCOM": {
     "symbol": "QCOM",
@@ -2137,7 +2198,68 @@
       ],
       "summary": "⚠️ Price +4.5% vs Warren's May 25 analysis. yfinance PEG 1.01 vs Warren's 1.84 — yfinance is significantly more bullish. MoS -26.3% still fails. ARM dispute risk ongoing.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของสิทธิบัตร 5G ที่ทุกมือถือต้องจ่ายค่าลิขสิทธิ์ กำลังกระจายธุรกิจสู่รถยนต์ พีซี และ data center",
+      "what": "Qualcomm มี 2 ขาหลัก: QCT ออกแบบชิป Snapdragon (มือถือ, รถยนต์, PC, IoT) และ QTL เก็บค่าลิขสิทธิ์สิทธิบัตร 5G/4G จากผู้ผลิตมือถือทั่วโลก (margin 72% เหมือนเครื่องพิมพ์เงิน). ใครจะขายมือถือก็ต้องจ่าย Qualcomm ไม่ว่าจะใช้ชิปของเขาหรือไม่.",
+      "why_invest": [
+        "ฐาน licensing 5G ที่แข็งแกร่ง — QTL margin 72% เป็นกระแสเงินสดที่มั่นคง; สัญญาหลักจะ renew รอบ FY2027-2031 ปรับราคาขึ้นได้",
+        "Automotive โตแรง — Q2 FY26 ทำสถิติ $1.33B (+38%) มี design win pipeline $45B+ ที่จะทยอยรับรู้ถึงปี 2030",
+        "บุก PC สำเร็จ — Snapdragon X Elite ชิงส่วนแบ่งจาก Intel ในตลาด Windows AI PC ด้วย NPU ที่โดดเด่น",
+        "ลุย Data Center — ชิป AI200/AI250 (768GB LPDDR) ส่งมอบครั้งแรก ธ.ค. 2026; Investor Day 24 มิ.ย. 2026 จะเปิดเผยลูกค้า hyperscaler"
+      ],
+      "watch_out": [
+        "⚠️ Apple กำลังทำ modem เอง — Apple เป็นลูกค้ารายใหญ่ที่จ่าย royalty สูงสุด ถ้าถอนตัวหมดภายในปี 2027+ กระทบรายได้โดยตรง",
+        "พึ่งมือถือและจีนสูง — handset = 66% ของ QCT และลูกค้าจีนคิดเป็นสัดส่วนใหญ่; Q3 guidance อ่อนเพราะ OEM จีนลด build plan จากปัญหา memory",
+        "คดี ARM vs Qualcomm — ข้อพิพาทเรื่อง Oryon CPU ยังอยู่ในชั้น appeal (นัดพิจารณาใหม่ ต.ค. 2026) ถ้าแพ้กระทบ custom CPU ใน Snapdragon"
+      ],
+      "bottom_line": "Pete มองว่า QCOM เป็นเรื่องราว 'การกระจายตัว' ที่น่าสนใจ — จากมือถืออย่างเดียวสู่รถยนต์ พีซี และ data center และเทรดที่ ~23x P/E ก็ไม่แพงเทียบกลุ่ม AI semi. แต่เงาของ Apple ที่จะถอนตัวและการพึ่งจีนทำให้ความเสี่ยงสูง. ที่ราคา $238 ยังเกิน Fair Value ($197) — เป็นหุ้นน่าติดตามที่ควรรอจังหวะและรอดู Investor Day มิ.ย. นี้ก่อน."
+    },
+    "mark_full": {
+      "business_overview": "Qualcomm มี 2 ธุรกิจที่ต่างกันมาก: QCT (semiconductor) ออกแบบชิป Snapdragon/Dragonwing — Handsets เป็น segment ใหญ่สุด ตามด้วย Automotive (โตเร็วสุด), IoT และ Data Center (เกิดใหม่); และ QTL (licensing) เก็บค่า royalty จากสิทธิบัตร 5G/4G ราว $1.4B/ไตรมาส ที่ EBT margin ~72%. โมเดล fabless — ผลิตที่ TSMC เป็นหลัก.",
+      "tam": "ตลาดที่ Qualcomm กำลังขยายเข้าไปกว้างมาก: Automotive (digital cockpit + ADAS/AD) มี pipeline $45B+ และ TAM โตไปถึง L3-L4 autonomy ปี 2027-2030; PC (Windows on Snapdragon ชิงจาก Intel); Data Center custom silicon (เริ่มส่งมอบ ธ.ค. 2026, TAM อาจ $5-8B ภายใน FY2028); และโอกาสใหม่อย่าง Starlink Mobile (X105 NR-NTN modem) และ physical AI/หุ่นยนต์. กลยุทธ์ LPDDR (768GB) แทน HBM เป็นจุดขายด้าน cost ต่อ token ในงาน inference.",
+      "moat": "MOAT ที่แข็งสุดคือ patent licensing (QTL) — Qualcomm ถือ essential patent 5G/4G ที่ทุกคนขายมือถือต้องจ่าย royalty ไม่ว่าจะซื้อชิปของเขาหรือไม่ ที่ margin 72%. รองลงมาคือ Snapdragon ecosystem (ครองพรีเมียม Android, Samsung Galaxy S26 Ultra ยังใช้), Automotive ที่ฝังใน design cycle OEM ล่วงหน้า 3-5 ปี, และ edge AI leadership (ทุก Snapdragon มี NPU). การซื้อ Alphawave ($2.3B) และ Ventana (RISC-V CPU) เติมเต็ม stack สำหรับ data center และลดการพึ่ง ARM.",
+      "latest_financials": "Q2 FY26 (สิ้นสุด มี.ค. 2026) รายได้ $10,599M (-3% YoY), กำไรต่อหุ้น non-GAAP $2.65 (-7%). แยกตาม segment: Handsets $6,024M (-13% จากปัญหา memory ที่ OEM จีนลด build), Automotive $1,326M (+38% ทำสถิติ), IoT $1,726M (+9%), QTL $1,382M (+5%). Guidance Q3 FY26 อ่อนลงที่ $9.2-10.0B + EPS $2.10-2.30 เพราะ OEM จีนยัง drawdown inventory (คาด bottom Q3 แล้วฟื้น Q4). งบแข็ง — เงินสด $9.8B, จ่ายปันผลต่อเนื่อง 23 ปี, buyback เหลือ $21.9B.",
+      "key_points": [
+        "Warren จัด QCOM เป็นหุ้นวัฏจักร (Cyclical) ให้ WATCH conviction LOW — ราคา $238 เกิน Fair Value $197 (MoS -20.9%) และ PEG 1.84 เกินเพดาน",
+        "Charlie ชี้ว่า PEG จาก yfinance อยู่ที่ ~1.01 (bullish กว่า Warren 1.84 มาก) — consensus มอง growth เร็วกว่าที่ Warren ประเมิน แต่ MoS ก็ยังไม่ผ่าน gate อยู่ดี",
+        "ตัวแปรสำคัญคือ Data Center — CEO ยืนยัน 'high confidence' ส่งมอบ ธ.ค. 2026; Investor Day 24 มิ.ย. 2026 จะเปิดเผยตัวลูกค้า hyperscaler (มีการเก็งว่าเป็น Meta)",
+        "ความเสี่ยงระยะ — Apple ถอน modem + handset จีนฟื้นช้า อาจเกิด 'ช่องว่างรายได้' ก่อนที่ data center จะ ramp ทันใน FY2027-2028"
+      ]
+    },
+    "warren_easy": [
+      "QCOM เป็นเรื่องราวของการกระจายธุรกิจที่ผมให้เครดิต — จากเดิมพึ่งมือถือเป็นหลัก ตอนนี้ขยายสู่ Automotive (pipeline $45B+), PC (Snapdragon X ชิงจาก Intel) และ Data Center (ส่งมอบ ธ.ค. 2026). ฐานที่มั่นคงที่สุดคือ QTL — สิทธิบัตร 5G ที่ทุกคนขายมือถือต้องจ่าย royalty ที่ margin 72% เป็นเครื่องพิมพ์เงินที่หาคู่แข่งยาก. เทรดที่ ~23x P/E ก็ไม่แพงเทียบกลุ่ม AI semiconductor.",
+      "แต่ผมระวัง 2 เรื่องใหญ่: หนึ่ง Apple กำลังทำ modem เอง — Apple เป็นผู้จ่าย royalty รายใหญ่สุด ถ้าถอนตัวหมดภายในปี 2027+ จะเป็นรูรั่วถาวร; สอง การพึ่งมือถือและจีน (handset = 66% ของ QCT) ที่ตอนนี้กำลังอ่อนจากปัญหา memory ทำให้ Q3 guidance ดูเหนื่อย. บวกกับคดี ARM ที่ยังค้าง การวางมูลค่าจึงต้อง conservative.",
+      "กลยุทธ์: ⏸ WATCH — ราคา $238 เกิน Fair Value ($197) อยู่ ราว 21% ยังไม่มี margin of safety. ผมอยากรอ 2 อย่าง: pullback ลงมาใกล้ Fair Value และความชัดเจนจาก Investor Day 24 มิ.ย. ว่าลูกค้า data center เป็นใครและดีลใหญ่แค่ไหน. ถ้า data center พิสูจน์ตัวได้จริง เรื่องราวจะเปลี่ยน — แต่ตอนนี้ขอดูก่อน."
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันว่าฝั่ง Automotive ของ QCOM แข็งแกร่งจริง (+38% ทำสถิติ) และฐาน licensing 5G ยังเป็นกระแสเงินสดที่มั่นคง. ที่น่าสนใจคือ PEG จาก yfinance อยู่ที่ ~1.01 ซึ่ง bullish กว่า Warren (1.84) อย่างมาก — สะท้อนว่า consensus มอง growth ของ Qualcomm ดีกว่าที่ Warren ประเมิน โดยเฉพาะถ้า data center ติด.",
+        "แต่ Charlie เห็นด้วยกับความกังวลหลักของ Warren: ความเสี่ยง Apple ถอน modem เป็น terminal risk ที่จับต้องได้, การพึ่งจีนสูง, และคดี ARM ที่ยังไม่จบ. ที่สำคัญ MoS -26% ยังไม่ผ่าน gate — ราคายังเกินมูลค่าพื้นฐานอยู่ ไม่ว่าจะมองด้วยสมมติฐาน growth แบบไหน.",
+        "สรุป Charlie ให้ CAUTION และเห็นด้วยกับ WATCH — ธุรกิจกำลังเปลี่ยนผ่านที่น่าสนใจและอาจถูกประเมิน growth ต่ำไป แต่ที่ราคานี้ยังควรรอ. จุดชี้ขาดคือ Investor Day มิ.ย. 2026 ที่จะเปิดเผยดีล data center — รอดูก่อนตัดสินใจ."
+      ]
+    },
+    "idea_th": "Diversification Story — Qualcomm มีฐาน licensing 5G ที่ทุกมือถือต้องจ่าย royalty (margin 72%) และกำลังกระจายสู่ Automotive ($45B pipeline), PC (Snapdragon X) และ Data Center (ส่งมอบ ธ.ค. 2026) แต่เงาความเสี่ยง Apple ถอน modem + พึ่งจีนสูง และราคายังเกิน Fair Value จึงควรรอจังหวะ",
+    "story_gate_th": {
+      "what": "Qualcomm เป็นเจ้าของ patent portfolio 5G/4G ที่แข็งแกร่งสุด ทำให้ผู้ผลิตมือถือทุกรายต้องจ่าย royalty (QTL margin 72%); Snapdragon ครอง >50% ตลาด premium Android และกำลังกระจายสู่ Automotive (Snapdragon Ride), PC (Snapdragon X Elite ท้าชน Intel) และ Data Center",
+      "why": "Data center entry ชัดเจนขึ้น — CEO ยืนยันส่งมอบ custom silicon ให้ hyperscaler ปลายปี 2026; กลยุทธ์ LPDDR (768GB) แทน HBM = ต้นทุนต่อ token ถูกกว่าในงาน inference; Automotive ทำสถิติ $1.33B (+38%); Investor Day 24 มิ.ย. 2026 จะเปิดเผยตัวลูกค้า; เทรดที่ ~15-23x P/E ถูกสุดในกลุ่ม AI semiconductor",
+      "risk": "Apple ออก ARM/modem เองหมด = ไม่ต้องพึ่ง royalty ของ QCOM (terminal risk); Samsung/MediaTek พัฒนา in-house SoC ดีขึ้น; คดี ARM license ยืดเยื้อ; ตลาดมือถือจีนฟื้นช้า"
+    },
+    "bull_th": [
+      "ฐาน licensing 5G ที่แข็งแกร่ง — QTL margin 72% เป็นกระแสเงินสดมั่นคง; สัญญาหลัก renew รอบ FY2027-2031 ปรับราคาขึ้นได้",
+      "Automotive โตแรงทำสถิติ — Q2 FY26 $1.33B (+38%) มี design win pipeline $45B+ ทยอยรับรู้ถึงปี 2030",
+      "บุก PC สำเร็จ — Snapdragon X Elite ชิงส่วนแบ่งจาก Intel ในตลาด Windows AI PC ด้วย NPU ที่โดดเด่น",
+      "ลุย Data Center — AI200/AI250 (768GB LPDDR) ส่งมอบครั้งแรก ธ.ค. 2026; Alphawave + Ventana RISC-V เติมเต็ม stack",
+      "Valuation ถูกเทียบกลุ่ม — เทรดที่ ~15-23x P/E ถูกสุดในบรรดา AI semiconductor play; ปันผลต่อเนื่อง 23 ปี + buyback $21.9B"
+    ],
+    "risk_th": [
+      "⚠️ Apple ทำ modem เอง — Apple เป็นผู้จ่าย royalty รายใหญ่สุด ถ้าถอนตัวหมดภายในปี 2027+ กระทบรายได้โดยตรง (terminal risk)",
+      "พึ่งมือถือและจีนสูง — handset = 66% ของ QCT; ลูกค้าจีนสัดส่วนใหญ่; Q3 guidance อ่อนเพราะ OEM จีนลด build plan จากปัญหา memory",
+      "คดี ARM vs Qualcomm เรื่อง Oryon CPU ยังอยู่ชั้น appeal (นัดใหม่ ต.ค. 2026) — ถ้าแพ้กระทบ custom CPU ใน Snapdragon X/8 Elite",
+      "Data Center ยัง execution risk — ส่งมอบครั้งแรกแค่ ธ.ค. 2026, รายได้ material ไม่น่าก่อน FY2027-2028 + software stack ยังไม่มี track record เทียบ NVIDIA CUDA",
+      "Goodwill $14.3B (25% ของสินทรัพย์) + inventory สูง $7.4B — เสี่ยง impairment/obsolescence ถ้า data center ไม่โตหรือ handset ฟื้นช้า"
+    ]
   },
   "MU": {
     "symbol": "MU",
@@ -2219,7 +2341,68 @@
       ],
       "summary": "BUY strongly confirmed. yfinance FwdPE 8.62 and PEG 0.26 = dirt cheap. MoS 55.2%. Q2 FY26 +32% EPS beat validates thesis. LTA floor pricing through 2028-2029.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "ผู้ผลิต HBM รายเดียวของอเมริกาที่ป้อนชิป AI ให้ NVIDIA — ธุรกิจสุดยอด แต่ตอนนี้ราคาวิ่งไปถึงจุดพีคของวัฏจักรแล้ว",
+      "what": "Micron ทำ memory หรือหน่วยความจำ — DRAM, NAND และที่สำคัญสุดคือ HBM ซึ่งเป็นหัวใจของการ์ด AI ทุกตัว. เป็นบริษัทเดียวในสหรัฐฯ ที่ผลิต advanced memory ได้ จึงได้แรงหนุนจากรัฐบาล (CHIPS Act) และเป็นซัพพลายเออร์ HBM ให้ NVIDIA Vera Rubin/GB200 โดยตรง.",
+      "why_invest": [
+        "เป็นผู้ผลิต HBM รายเดียวในอเมริกา — มี LTA (สัญญาระยะยาว) ล็อกราคาและปริมาณ HBM ทั้งปี 2026 ไว้หมดแล้ว มองเห็นรายได้ล่วงหน้าชัดเจน",
+        "ผลประกอบการระเบิด — Q2 FY26 กำไรต่อหุ้น $12.20 โต 32% เกินคาด รายได้โต 196% YoY และ guidance ไตรมาสหน้า $19.15 ยิ่งสูงขึ้นอีก",
+        "เทคโนโลยีนำคู่แข่ง — นำ DRAM 4 รุ่น, NAND 3 รุ่น และเป็นเจ้าแรกที่ใช้ EUV ใน DRAM; HBM3E กินไฟน้อยกว่าคู่แข่ง ~30%",
+        "ดีมานด์ AI เชิงโครงสร้าง — agentic AI ต้องใช้ memory มหาศาล (ปัญหา KV-cache) ดัน HBM + NAND พร้อมกัน; HBM TAM คาดโตเป็น ~$100B ปี 2028"
+      ],
+      "watch_out": [
+        "⚠️ นี่คือหุ้นวัฏจักร (cyclical) — ราคา memory ขึ้นแรงลงแรงในอดีต DRAM แกว่งได้ ±40% ต่อปี ตอนนี้กำไรอยู่ช่วงพีค ซึ่งของแบบนี้ไม่ยั่งยืน",
+        "สัญญาณ 'พีค' ครบ 3 ข้อตามตำรา Peter Lynch — นักวิเคราะห์แห่อัพเป้าราคา (Melius $1,100, UBS $1,625), ข่าวพาดหัว '$1T AI Memory Boom' และ P/E ที่ดูถูกเพราะใช้กำไรช่วงพีค",
+        "Samsung กับ SK Hynix เร่งเพิ่มกำลังผลิต HBM — ถ้า supply ออกมาเร็ว ราคาจะถูกกดลง (Samsung เพิ่งหลีกเลี่ยงการสไตรค์ได้เมื่อ 23 พ.ค. = supply กลับเข้าตลาด)"
+      ],
+      "bottom_line": "Pete มองว่า MU เป็นธุรกิจชั้นเยี่ยมในยุคทองของ memory จริง — แต่ 'ธุรกิจดี' กับ 'ราคาดี' เป็นคนละเรื่องกัน. ตอนนี้ราคา $944 สะท้อนกำไรช่วงพีคไปแล้วเหมือนมันจะคงอยู่ตลอด ซึ่งเป็นกับดักคลาสสิกของหุ้นวัฏจักร. Warren จึงให้ WATCH ไว้ก่อน รอวัฏจักรย่อตัวแล้วค่อยเข้าจะปลอดภัยกว่ามาก."
+    },
+    "mark_full": {
+      "business_overview": "Micron แบ่งธุรกิจเป็น 4 หน่วย: Cloud Memory (HBM + memory ให้ hyperscaler), Core Data Center (memory + SSD), Mobile & Client (มือถือ/PC) และ Automotive & Embedded. รายได้หลักมาจาก DRAM (~79%) และ NAND (~21%). ตัวที่โตแรงและทำกำไรงามสุดคือ HBM ในกลุ่ม data center — Q2 FY26 รายได้รวมพุ่งเป็น $23,860M โต 196% YoY ด้วย gross margin สูงถึง 74%.",
+      "tam": "ตลาด HBM กำลังโตแบบก้าวกระโดด — ผู้บริหารคาด TAM จาก ~$35B ปี 2025 เป็น ~$100B ปี 2028 (CAGR ~40%) เร็วกว่าที่เคยคาดไว้ 2 ปี. ตัวเร่งคือ AI ทุกชนิด: การ์ด GPU ทุกตัวต้องการ HBM, agentic AI ต้องการ context ยาวขึ้นและ memory มากขึ้น, รถ L4 ต้องใช้ DRAM >300GB (เทียบกับ ~16GB วันนี้), และ AI PC แนะนำ 32GB+. ปี 2026 จะเป็นปีแรกที่ bit ของ data center เกิน 50% ของ TAM ทั้งอุตสาหกรรม.",
+      "moat": "จุดแข็งที่สุดคือการนำเทคโนโลยี — Micron นำ DRAM ถึง 4 generation และ NAND 3 generation เหนือคู่แข่ง เป็นเจ้าแรกของโลกที่ใช้ EUV ในการผลิต DRAM และ HBM3E ของบริษัทกินไฟน้อยกว่าคู่แข่ง ~30%. บวกกับสถานะ 'ผู้ผลิต advanced memory รายเดียวในสหรัฐฯ' ทำให้ได้ CHIPS Act $6.4B และความได้เปรียบเชิง national security. แต่ต้องยอมรับว่า MOAT นี้ไม่ถาวร — Samsung/SK Hynix ไล่ตามตลอด และราคา memory เป็นสินค้าโภคภัณฑ์ที่ผันผวนสูง.",
+      "latest_financials": "Q2 FY26 (สิ้นสุด ก.พ. 2026) ทำสถิติทุกด้าน: รายได้ $23.86B, gross margin 74.9%, กำไรต่อหุ้น non-GAAP $12.20 (+32% เกินคาด), FCF สูงสุดเป็นประวัติการณ์ $6.9B และมีเงินสดสุทธิเป็นบวก $6.5B หลังจ่ายหนี้หนัก. Guidance ไตรมาสหน้า (FQ3) ที่ $33.5B + EPS $19.15 ถือว่าแค่ไตรมาสเดียวก็เกินรายได้ทั้งปีของทุกปีในอดีตของบริษัท (ก่อน FY2024). CapEx FY2026 >$25B และจะ step up อีกใน FY2027.",
+      "key_points": [
+        "Warren จัด MU เป็น 'หุ้นวัฏจักร' (Cyclical) และใช้ Normalized Earnings ในการตีมูลค่า — ไม่ใช้กำไรพีคคูณ multiple ปกติ ซึ่งจะให้ราคาที่สูงเกินจริง",
+        "Fwd P/E 6.9× ที่ดูถูกมากนั้นเป็น 'ภาพลวง' เพราะคำนวณจากกำไรช่วงพีค (FY27E EPS ~$130) ที่ไม่ยั่งยืน",
+        "สัญญาณ Lynch Peak ครบ 3/3: นักวิเคราะห์อัพเป้ารัวๆ + ข่าวพาดหัวใหญ่โต + P/E ต่ำหลอกตา = มักเป็นสัญญาณ 'ขาย' ไม่ใช่ 'ซื้อ' สำหรับหุ้นวัฏจักร",
+        "เงื่อนไขที่จะอัพเกรด: ถ้า MU ผ่าน downcycle รอบหน้า (ราว 2027-2028) ได้โดยกำไรไม่ติดลบ (EPS ≥ $10/ปี) จะพิสูจน์ความแข็งแกร่งและอาจถูกจัดเป็น Pre-Inevitable"
+      ]
+    },
+    "warren_easy": [
+      "MU เป็นกรณีศึกษาคลาสสิกของ 'ธุรกิจดีที่ราคาผิดจังหวะ'. ผมยอมรับว่า MOAT ของ Micron แข็งจริง — เป็นผู้ผลิต HBM รายเดียวในอเมริกา นำเทคโนโลยีคู่แข่งหลาย generation มี LTA ล็อกราคา HBM ทั้งปี 2026 และได้แรงหนุนจาก CHIPS Act. แต่ memory คือธุรกิจวัฏจักร และวัฏจักรไม่เคยหายไป มันแค่ถูกเลื่อนออกไป.",
+      "ปัญหาคือราคา $944 ตอนนี้สะท้อนกำไรช่วงพีคไปแล้วเหมือนมันจะอยู่ถาวร. Fwd P/E 6.9× ที่ดูถูกจับใจนั้นหลอกตา เพราะคำนวณจากกำไรพีค FY27E ~$130 ต่อหุ้น — นี่คือสัญญาณ Peter Lynch แบบตำราเป๊ะ: เมื่อหุ้นวัฏจักรมี P/E ต่ำที่สุด มักเป็นจุดที่ใกล้ 'ขาย' ไม่ใช่ 'ซื้อ'. ผมจึงตีมูลค่าด้วย Normalized Earnings (กำไรเฉลี่ยทั้งวัฏจักร ~$12/ปี) ได้ Fair Value ฐานเพียง ~$144 ทำให้ MoS ติดลบหนัก.",
+      "กลยุทธ์ของผมคือ ⛔ WATCH — ไม่ซื้อที่ราคานี้. MU ไม่ผ่าน gate ทุกข้อ (MoS, Expected Return, WAF 6.05 = LOW, Lynch Peak 3/3). ราคาที่ผมจะเริ่มสนใจอยู่แถว $122-357 (ขึ้นกับว่าวัฏจักรรอบหน้าจะลึกแค่ไหน). สิ่งที่ต้องจับตา: ถ้า MU ผ่าน memory downcycle รอบหน้าได้โดยกำไรไม่ติดลบ จะพิสูจน์ว่ามันเปลี่ยนเป็นธุรกิจคุณภาพแบบใหม่จริง — แล้วค่อยกลับมาคุยกันใหม่."
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "ในแง่ตัวเลข Charlie ยืนยันว่าฝั่งธุรกิจของ Micron แข็งแกร่งจริง — Q2 FY26 กำไรเกินคาด 32% ชัดเจน, HBM ขายหมดทั้งปี 2026 ภายใต้ LTA และสถานะผู้ผลิต HBM รายเดียวในสหรัฐฯ เป็นเรื่องจริง. ถ้ามองเฉพาะ forward valuation ตัวเลขดูถูก (Fwd P/E ~8.6×, PEG 0.26).",
+        "แต่จุดที่ Charlie กังวลตรงกับ Warren คือ 'ความเป็นวัฏจักร'. การตีมูลค่าด้วยกำไรช่วงพีคนั้นอันตราย — ถ้าวัฏจักรพลิก (Samsung/SK Hynix เร่ง HBM capacity, หรือ AI capex ชะลอ) กำไรอาจหายไปครึ่งหนึ่งได้ง่ายๆ และ bear case ลงไปได้ลึกถึง $40-120. ราคาที่พุ่ง +20% ในวันเดียวก็บ่งบอกว่า short-term overextended.",
+        "สรุป Charlie ให้ CAUTION — เห็นด้วยว่าธุรกิจเยี่ยม แต่เตือนว่าควรเข้าด้วย position ที่เล็กกว่าที่ตัวเลขชวนให้ทำ และต้อง monitor สัญญาณวัฏจักรกลับตัวอย่างใกล้ชิด. ที่ราคาปัจจุบัน รอจังหวะดีกว่าไล่ราคา."
+      ]
+    },
+    "idea_th": "HBM Memory Supercycle — Micron เป็นผู้ผลิต HBM รายเดียวในสหรัฐฯ ที่ป้อนชิป AI ให้ NVIDIA มี LTA ล็อกราคาถึงปี 2028-2029 และ agentic AI ดันดีมานด์ memory เชิงโครงสร้าง แต่ราคาปัจจุบันสะท้อนกำไรช่วงพีคของวัฏจักรไปแล้ว จึงควรรอจังหวะ",
+    "story_gate_th": {
+      "what": "Micron เป็นผู้ผลิต HBM memory รายเดียวในอเมริกาที่ป้อนชิปให้ระบบ AI ของ NVIDIA (Vera Rubin/GB200) โดย HBM ทั้งปี 2026 ถูกล็อกราคาและปริมาณผ่าน LTA ไว้หมดแล้ว ได้ประโยชน์จากปัญหา KV-cache ของ agentic AI ที่ดัน HBM + NAND พร้อมกัน",
+      "why": "ตลาดมองว่า Q2 ที่เกินคาด ($12.20, +32%) + guidance $19.15 คือหลักฐานว่า supercycle ยืดยาว — แต่ Warren มองต่าง: ราคา $944 มอง P/E 6.9× ว่าถูก ทั้งที่ใช้กำไรพีค (FY27E ~$130) ซึ่งเป็นสัญญาณ Lynch Peak แบบตำรา; นักวิเคราะห์ (Melius/UBS/Deutsche/HSBC) อัพเป้า $1,100-1,625 พร้อมกัน = สัญญาณขาย ไม่ใช่ซื้อ; แถมตลาดยังไม่ price-in ว่า Samsung หลีกเลี่ยงสไตรค์ได้ (23 พ.ค.) = supply ปล่อยเข้าตลาดกดราคา HBM",
+      "risk": "Samsung/SK Hynix เร่งกำลังผลิต HBM เร็วกว่าที่ LTA ดูดซับได้ → ราคาถูกกดจนต้อง capitulate; หรือ AI hyperscaler ลด CapEx อย่างมีนัยสำคัญ → วัฏจักรพลิกเป็นขาลง"
+    },
+    "bull_th": [
+      "เป็นผู้ผลิต HBM รายเดียวในอเมริกา ป้อน NVIDIA โดยตรง — margin HBM สูงกว่า DRAM ปกติหลายเท่า และได้แรงหนุน national security + CHIPS Act $6.4B",
+      "LTA ล็อกราคาและปริมาณ HBM ทั้งปี 2026 ไว้หมด = มองเห็นรายได้ล่วงหน้าชัดเจนผิดปกติสำหรับหุ้น memory",
+      "ผลประกอบการระเบิด — Q2 FY26 รายได้ +196% YoY, gross margin 74.9%, FCF สูงสุดเป็นประวัติการณ์ $6.9B และเงินสดสุทธิเป็นบวก $6.5B",
+      "เทคโนโลยีนำคู่แข่ง — DRAM นำ 4 รุ่น, NAND นำ 3 รุ่น, เป็นเจ้าแรกที่ใช้ EUV ใน DRAM, HBM3E กินไฟน้อยกว่าคู่แข่ง ~30%",
+      "ดีมานด์เชิงโครงสร้าง — HBM TAM คาดโตจาก ~$35B (2025) เป็น ~$100B (2028); agentic AI, รถ L4, AI PC ล้วนกิน memory มหาศาล"
+    ],
+    "risk_th": [
+      "⚠️ ความเสี่ยงสูงสุด — เป็นหุ้นวัฏจักร: ราคา memory ขึ้นแรงลงแรง (DRAM ±40%/ปีในอดีต); ตอนนี้กำไรอยู่ช่วงพีคที่ไม่ยั่งยืน และราคาสะท้อนกำไรพีคไปแล้ว",
+      "สัญญาณ Lynch Peak ครบ 3/3 — นักวิเคราะห์อัพเป้ารัวๆ + ข่าวพาดหัวใหญ่ + P/E ต่ำหลอกตา = มักเป็นสัญญาณใกล้จุดสูงสุดของวัฏจักร",
+      "Samsung/SK Hynix ทุ่มสร้าง HBM capacity แข่ง — ถ้า supply ออกเร็ว (Samsung เพิ่งเลี่ยงสไตรค์ได้) ราคา HBM จะถูกกดลง",
+      "ความเสี่ยงจีน — คำสั่ง CAC ban ทำให้สูญตลาดลูกค้าที่มีสำนักงานใหญ่ในจีน; รวมถึงความเสี่ยง tariff/trade ที่ guidance ยังไม่รวม",
+      "CapEx หนักมาก — >$25B FY2026 และ step up อีกใน FY2027 จะกด FCF ช่วง build-out; บวกกับคดี patent (Netlist, YMTC) ที่ยังค้าง"
+    ]
   },
   "VRT": {
     "symbol": "VRT",
