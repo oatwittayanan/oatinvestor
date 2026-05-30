@@ -100,9 +100,41 @@ def enrich(stocks: dict, charlie: dict) -> dict:
     return stocks
 
 
+PETE_FIELDS = [
+    "mark_easy", "mark_full", "warren_easy", "charlie_easy",
+    "idea_th", "story_gate_th", "bull_th", "risk_th",
+]
+
+
+def save_pete_fields(existing_path: Path) -> dict:
+    """Read existing stocks.json and extract Pete-authored fields per ticker."""
+    if not existing_path.exists():
+        return {}
+    with open(existing_path, encoding="utf-8") as f:
+        existing = json.load(f)
+    saved = {}
+    for ticker, data in existing.items():
+        pete = {k: data[k] for k in PETE_FIELDS if k in data}
+        if pete:
+            saved[ticker] = pete
+    if saved:
+        print(f"  preserving Pete fields for: {sorted(saved.keys())}")
+    return saved
+
+
+def restore_pete_fields(stocks: dict, pete_saved: dict) -> dict:
+    for ticker, pete in pete_saved.items():
+        if ticker in stocks:
+            stocks[ticker].update(pete)
+    return stocks
+
+
 # ── Step 3: Write output ──────────────────────────────────────────────────────
 def main():
     print("📦 generate_stocks.py\n")
+
+    # Save Pete-authored fields before overwriting
+    pete_saved = save_pete_fields(OUT_FILE)
 
     run_pub_generator()
 
@@ -113,6 +145,7 @@ def main():
 
     charlie = load_charlie()
     stocks  = enrich(stocks, charlie)
+    stocks  = restore_pete_fields(stocks, pete_saved)
 
     print(f"\n[3/3] Writing → {OUT_FILE}")
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)

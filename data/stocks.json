@@ -80,74 +80,7 @@
       ],
       "summary": "yfinance confirms cheap valuation: FwdPE 16.99 with 85% revenue growth, PEG 0.66. Analyst consensus $297 target. Vera CPU $200B TAM thesis intact. BUY confirmed.",
       "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าของ GPU ที่ AI ทุกตัวในโลกต้องใช้ — แทบไม่มีทางเลี่ยง",
-      "what": "NVIDIA สร้างชิป GPU ที่เป็น 'เครื่องยนต์' ของ AI ทุกตัว ไม่ว่าจะเป็น ChatGPT, Claude, Gemini หรือ AI ในโรงพยาบาล โรงงาน รถยนต์ — ล้วนรันบน NVIDIA ทั้งนั้น จุดแข็งที่แท้จริงไม่ใช่ชิป แต่คือ CUDA ซอฟต์แวร์ที่นักพัฒนา 7.5 ล้านคนใช้ ทำให้การเปลี่ยนไปคู่แข่งแทบเป็นไปไม่ได้",
-      "why_invest": [
-        "Google, Microsoft, Amazon, Meta ประกาศลงทุน AI รวมกัน $1 Trillion+ ในปีนี้ — NVIDIA รับเงินเป็นก้อนแรกเสมอ",
-        "Vera Rubin ชิปรุ่นต่อไปเร็วกว่า Blackwell 35 เท่า กำลัง launch H2 2026 — demand จองแน่นแล้ว",
-        "ราคา $214 ต่ำกว่ามูลค่าจริงที่ Warren คำนวณ ($308) อยู่ 30% — ยังถูกอยู่",
-        "เพิ่ง launch CPU Vera เข้า market ใหม่ $200B — รายได้ยังไม่ได้ถูก price-in"
-      ],
-      "watch_out": [
-        "สหรัฐฯ แบน export ชิปไปจีน ตัดรายได้ Data Center จีนหายไปทันที $4.6B/ปี",
-        "Pre-order ชิปแบบ non-cancellable $119B — ถ้า demand ชะลอกะทันหันจะเจ็บปวดมาก",
-        "Valuation สูง ต้องการ execution สมบูรณ์หลายปีติดต่อกัน — miss guidance ครั้งเดียวราคาร่วงแรง"
-      ],
-      "bottom_line": "Mark มองว่า NVDA คือ 'ทางผ่าน' ที่ AI ทุกชนิดต้องผ่านในทศวรรษนี้ ราคาตอนนี้ยังสมเหตุสมผลถ้าเชื่อว่า AI เป็นของจริงและยังโตต่อ"
-    },
-    "mark_full": {
-      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company — สร้างชิป GPU, ซอฟต์แวร์ CUDA, และระบบ networking ที่รวมกันเป็น 'AI Factory' ที่ทุกบริษัทต้องการ ธุรกิจหลักแบ่งเป็น 2 ส่วน: Data Center ($75.2B/ไตรมาส +92% YoY) ที่รองรับ AI training และ inference และ Edge Computing ($6.4B/ไตรมาส) ที่ครอบคลุม gaming, robotics, และรถยนต์ไร้คนขับ",
-      "tam": "AI Infrastructure เป็นตลาดที่โตเร็วที่สุดในโลกตอนนี้ — hyperscaler ทั้ง 4 ราย (Google, Microsoft, Amazon, Meta) ประกาศ CapEx รวมกัน $1 Trillion+ ในปี 2026 เพียงปีเดียว Jensen Huang คาดว่าจะโตเป็น $3-4 Trillion ต่อปีภายในสิ้นทศวรรษ นอกจากนี้ NVDA เพิ่งเข้าตลาด CPU ใหม่มูลค่า $200B ผ่าน Vera CPU ที่ออกแบบมาเฉพาะสำหรับ Agentic AI — ยังไม่ได้นับใน estimate ปัจจุบัน",
-      "moat": "CUDA ecosystem คือ moat ที่แข็งแกร่งที่สุด: นักพัฒนา 7.5 ล้านคนและ AI model 1.5 ล้านตัวรันบน CUDA การเปลี่ยนไปใช้ competitor ต้องเขียนโค้ดใหม่ทั้งหมด — แทบเป็นไปไม่ได้ในทางปฏิบัติ Jensen Huang พูดว่า 'NVIDIA เป็น platform เดียวที่รัน frontier AI model ทุกตัว' นอกจากนี้ยังมี Full-stack lock-in: GPU + NVLink networking + CUDA + NIM microservices ทำให้ลูกค้าอยู่ใน NVIDIA ecosystem ทั้งระบบโดยไม่มีเหตุผลต้องเปลี่ยน",
-      "latest_financials": "Q1 FY27 (เมษายน 2026): Revenue $81.6B (+85% YoY, +20% QoQ) — ทำ record ใหม่ทุกไตรมาส Data Center $75.2B (+92% YoY) | Gross Margin 74.9% | Operating Income $53.5B | FCF ~$45B+ Q2 FY27 Guidance: $91B (+75% YoY) — ยังไม่มีสัญญาณชะลอ",
-      "key_points": [
-        "Vera Rubin ชิปรุ่นต่อไปเร็วกว่า Blackwell 35 เท่า — launch H2 2026 และ Google จองแล้ว 960K GPUs",
-        "Vera CPU เข้าตลาด $200B ใหม่ทั้งหมด — $20B visibility ปีนี้ยังไม่ได้ถูก price-in",
-        "Supply commitment $119B (non-cancellable) = บริษัทใหญ่ๆ จองล่วงหน้าจริงๆ ไม่ใช่แค่พูด",
-        "Frontier AI ทุกตัว (GPT-5.5, Claude Opus 4.6, Gemini) รันบน Blackwell — lock-in ชัดเจน"
-      ]
-    },
-    "warren_easy": [
-      "Warren มองว่า NVIDIA คือหนึ่งในหุ้นที่น่าสนใจที่สุดในพอร์ตตอนนี้ เหตุผลง่ายๆ คือทุกบริษัทที่ต้องการสร้าง AI ล้วนต้องซื้อ GPU จาก NVIDIA ไม่ว่าจะเป็น Google, Microsoft, Amazon หรือ Meta — ตราบใดที่ AI ยังโต รายได้ของ NVIDIA ก็โตตาม ยิ่งไปกว่านั้น CUDA ซอฟต์แวร์ที่นักพัฒนา 7.5 ล้านคนใช้ทำให้การเปลี่ยนไปใช้คู่แข่งแทบเป็นไปไม่ได้ในทางปฏิบัติ",
-      "ราคา $214 ตอนนี้ Warren คำนวณว่าต่ำกว่ามูลค่าที่แท้จริงอยู่ 30% (Fair Value $308) ซึ่งถือว่าถูกมากสำหรับบริษัทที่รายได้โต 85% ต่อปี ที่น่าสนใจเพิ่มคือตลาดยังไม่ได้ price-in ชิปรุ่นใหม่ Vera Rubin ที่เร็วกว่าเดิม 35 เท่า และ CPU ใหม่มูลค่า $200B ที่เพิ่งประกาศ",
-      "กลยุทธ์: BUY และถือระยะยาว ถ้าราคาร่วงมา $180 เป็นโอกาสเพิ่ม position ไม่ใช่สัญญาณหนี Conviction: Very High (WAF 8.75/10)"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ตรวจสอบข้อมูลอิสระแล้ว ยืนยันว่า thesis ของ Warren ตั้งอยู่บนข้อมูลจริง ทั้ง Revenue $81.6B +85% YoY เป็นตัวเลขจาก 10-Q, CUDA moat ยืนยันได้จากการที่ frontier AI ทุกตัว (GPT-5.5, Claude Opus 4.6, Gemini) รันบน Blackwell และ Google จอง 960K Rubin GPUs ล่วงหน้าแล้ว — ทั้งหมดนี้คือ demand จริงๆ",
-        "ที่ Charlie ขอให้ระวังเพิ่มเติม 3 เรื่อง: อย่างแรกคือการแบน export ชิปไปจีน ซึ่งตัดรายได้ Data Center จีน $4.6B/ปีไปทันทีและ Warren อาจ underweight risk นี้ใน model อย่างที่สองคือสัญญา pre-order $119B ที่ยกเลิกไม่ได้ — ถ้า demand ชะลอกะทันหัน provision ขนาดใหญ่จะตามมา และอย่างที่สามคือ 2 ลูกค้าแรกคิดเป็น 36% ของรายได้ทั้งหมด",
-        "สรุป: Charlie เห็นด้วยกับ Warren แต่ขอให้ติดตาม China export policy เป็น monthly watch item"
-      ]
-    },
-    "idea_th": "NVIDIA เป็นเจ้าของ 'โรงงานผลิต AI' ที่ทุกบริษัทในโลกต้องพึ่งพา — CUDA lock-in ทำให้ลูกค้าออกไปไม่ได้ และยังมีชิปรุ่นใหม่ Vera Rubin กับตลาด CPU ใหม่ $200B ที่ตลาดยังไม่ได้ price-in",
-    "story_gate_th": {
-      "what": "NVIDIA ขาย AI factory ครบระบบตั้งแต่ชิป GPU, software CUDA ไปจนถึง networking — ทุกบริษัทที่อยากสร้าง AI ต้องซื้อจาก NVIDIA เพราะนักพัฒนา 7.5 ล้านคนเขียนโค้ดบน CUDA และการเปลี่ยนไปใช้คู่แข่งต้องเขียนระบบใหม่ทั้งหมดซึ่งแทบไม่มีใครทำ",
-      "why": "ตลาดมองแค่ Q2 FY27 guide $91B ว่า AI ยังโตต่อ แต่ Warren เห็นว่ายังมีอะไรที่ยังไม่ถูก price-in: Vera CPU ที่เข้าตลาดใหม่มูลค่า $200B และ Vera Rubin ชิปรุ่นต่อไปที่เร็วกว่า 35 เท่า — ถ้าตลาดเริ่มเข้าใจ upside เหล่านี้ ราคาจะปรับขึ้นอีกมาก",
-      "risk": "ถ้า Vera Rubin launch ล่าช้ากว่า 1 ไตรมาส หรือ hyperscaler ใหญ่ตัด budget AI ลงกว่า 30% เพราะ ROI ไม่เป็นไปตามคาด supply commitment $119B ที่ยกเลิกไม่ได้จะกลายเป็นปัญหาใหญ่"
-    },
-    "bull_th": [
-      "CUDA moat แทบแตกไม่ได้: นักพัฒนา 7.5 ล้านคนรันโค้ดบน CUDA, AI model 1.5 ล้านตัวอยู่บน NVIDIA — switching cost สูงจนแทบไม่มีใครย้ายออก",
-      "Blackwell ทำ record ทุกไตรมาส: Data Center $75.2B (+92% YoY) ใน Q1 FY27 — Jensen บอกว่าเป็น fastest product ramp ในประวัติบริษัท",
-      "Revenue $81.6B โต 85% ต่อปี พร้อม FCF $45B+ — ทำเงินให้ผู้ถือหุ้นต่อเนื่องและไม่มีสัญญาณชะลอ",
-      "Q2 FY27 Guidance $91B (+75% YoY) — pipeline แน่นและ demand ยังเกิน supply",
-      "Vera CPU เพิ่ม TAM ใหม่ $200B สำหรับ agentic AI — ยังไม่ได้รวมใน estimate ปัจจุบันเลย"
-    ],
-    "risk_th": [
-      "Valuation สูง ต้องการ execution สมบูรณ์หลายปีติดต่อกัน — miss guidance ครั้งเดียวราคาร่วงแรง",
-      "US แบน export ชิปไปจีน: ตัดรายได้ $4.6B/ปีไปทันที และยังไม่รู้ว่านโยบายจะเข้มขึ้นอีกไหม",
-      "Revenue กระจุกตัว: 2 ลูกค้าแรกคิดเป็น 36% ของรายได้ทั้งหมด ถ้าหนึ่งในนั้นชะลอ CapEx กระทบทันที",
-      "Supply obligation $119B แบบยกเลิกไม่ได้ — ถ้า demand ชะลอกะทันหันจะต้องตั้ง provision ขนาดใหญ่",
-      "AMD, Google TPU, Amazon Trainium พยายามแย่ง market share — ยังไม่สำเร็จแต่ต้องติดตาม"
-    ],
-    "trend_tags": [
-      "AI-Infrastructure",
-      "Agentic-AI",
-      "Memory-Supercycle",
-      "Optical-Interconnect"
-    ]
+    }
   },
   "MSFT": {
     "symbol": "MSFT",
@@ -230,73 +163,7 @@
       ],
       "summary": "MoS 19.8% passes gate. FwdPE 21.5 with Azure +29%. PEG 1.29 reasonable. RPO $627B+ visibility confirmed. BUY confirmed.",
       "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "ซอฟต์แวร์ที่ทุกองค์กรในโลกใช้ กำลัง upgrade ตัวเองเป็น AI platform",
-      "what": "Microsoft เป็นเจ้าของ Office 365, Azure Cloud, Teams, LinkedIn, GitHub — ซอฟต์แวร์ที่ฝังอยู่ในทุกองค์กรทั่วโลก ตอนนี้กำลังเพิ่ม Copilot AI เข้าไปในทุกผลิตภัณฑ์ ทำให้ลูกค้าเดิมจ่ายเพิ่มโดยไม่ต้องหาลูกค้าใหม่ นี่คือสิ่งที่ทำให้ Warren ให้ Tier 'Inevitable'",
-      "why_invest": [
-        "Azure Cloud โต 30% YoY และ demand ยังเกิน supply — เพิ่ม capacity ไม่ทัน ถือว่าดีมาก",
-        "M365 Copilot 20M+ paid seats ใน 1 ปีแรก — fastest growing enterprise product ในประวัติ Microsoft",
-        "ลูกค้าล็อก contract ไว้แล้ว $627B (RPO) — รายได้ในอนาคตที่รอแค่ deliver",
-        "ลูกค้าองค์กรเปลี่ยนออกจาก Microsoft ยากมาก — switching cost สูงสุดใน enterprise software"
-      ],
-      "watch_out": [
-        "CapEx $190B/ปีทำให้ Free Cash Flow ลด -22% YoY — ลงทุนหนักมาก ต้องรอดู return จริงๆ",
-        "IRS ฟ้องภาษีย้อนหลัง $28.9B — ยังไม่จบ อาจกระทบงบฯ",
-        "OpenAI อาจสร้าง cloud platform ของตัวเองและย้าย workload ออกจาก Azure ในอนาคต"
-      ],
-      "bottom_line": "Mark มองว่า MSFT คือทางเลือก 'ปลอดภัยกว่า' สำหรับคนอยากลงทุน Big Tech AI — upside ไม่สูงเท่า NVDA แต่โอกาสพลาดก็น้อยกว่า"
-    },
-    "mark_full": {
-      "business_overview": "Microsoft เป็น enterprise software platform ที่ฝังอยู่ในทุกองค์กรทั่วโลก ธุรกิจหลัก 3 ส่วน: Intelligent Cloud (Azure, $34.7B/ไตรมาส +30% YoY), Productivity & Business Processes (Office 365, LinkedIn, Dynamics, $35B/ไตรมาส +17% YoY), และ More Personal Computing (Windows, Xbox, $13.2B/ไตรมาส) ทุก product กำลัง upgrade ตัวเองเป็น AI version ผ่าน Copilot",
-      "tam": "Enterprise Cloud market: Azure ครอง ~22-23% market share (เบอร์ 2 รองจาก AWS) ตลาดรวมคาดว่าจะถึง $1 Trillion+ ต่อปีภายใน 2028 AI layer เพิ่ม TAM อย่างมีนัยสำคัญ: M365 Copilot $30/seat × 300M+ enterprise users = $108B TAM ที่เพิ่งเริ่ม penetrate เพียง 20M seats (6.7%) ในปีแรก",
-      "moat": "Enterprise Lock-in ที่แข็งแกร่งที่สุดใน software: Active Directory, Exchange, Teams, Azure AD ฝังอยู่ใน IT infrastructure ทุกองค์กร การเปลี่ยนออกจาก Microsoft ใช้เวลาและเงินมหาศาล AI Flywheel เสริม moat เพิ่มอีก: M365 Copilot อ่าน emails, meetings, docs ขององค์กร ทำให้ AI ของ Microsoft 'รู้จัก' องค์กรลึกกว่าคู่แข่ง — ยิ่งใช้ยิ่งยากจะเปลี่ยน",
-      "latest_financials": "Q3 FY2026 (มีนาคม 2026): Revenue $82.9B (+18% YoY) Azure +30% YoY | AI ARR $37B (+123% YoY) | Operating Margin 46% (+1pt) M365 Copilot 20M+ paid seats | RPO (สัญญาลูกค้า) $627B FCF ลด -22% YoY เพราะ CapEx $80.2B ใน 9M FY2026 — ลงทุนหนักเพื่ออนาคต",
-      "key_points": [
-        "Azure demand ยังเกิน supply — เพิ่ม capacity ไม่ทัน = demand แท้จริง ไม่ใช่ hype",
-        "RPO $627B = รายได้ที่ลูกค้า commit ล่วงหน้าแล้ว รอแค่ deliver — visibility สูงมาก",
-        "M365 Copilot 20M seats ใน 1 ปีแรก = fastest growing enterprise product ในประวัติ Microsoft",
-        "AI ARR $37B (+123% YoY) — ยังไม่รวม infrastructure ที่ AI customers ใช้ (upside ซ่อนอยู่)"
-      ]
-    },
-    "warren_easy": [
-      "Warren ให้ MSFT เป็น Tier 'Inevitable' — นั่นแปลว่าถ้าต้องเลือกหุ้นหนึ่งตัวที่โอกาสพลาดต่ำที่สุด Warren จะเลือก MSFT ทุกองค์กรในโลกพึ่งพา Office, Azure, Teams อยู่แล้ว และตอนนี้กำลัง upgrade เป็น AI version ผ่าน Copilot ลูกค้าออกไปไม่ได้ และยิ่งใช้ AI ยิ่งออกยากขึ้น",
-      "สิ่งที่ทำให้ Warren มั่นใจพิเศษ: ลูกค้าล็อก contract ไว้แล้ว $627B (RPO) รอแค่ deliver, Azure ยังมี demand มากกว่า supply ซึ่งแปลว่าความต้องการจริงๆ ไม่ใช่แค่ marketing และ M365 Copilot ขาย 20 ล้าน seats ในปีแรก ซึ่งเร็วที่สุดในประวัติ Microsoft",
-      "กลยุทธ์: BUY และถือเป็น core holding ระยะยาว เหมาะสำหรับคนอยากได้ AI exposure แบบปลอดภัยกว่า NVDA ถ้าราคาลงมา $370 = ซื้อเพิ่มได้ทันที Conviction: Very High (WAF 9.0/10)"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie เห็นด้วยกับ Warren อย่างแข็งขัน ยืนยันว่า Azure +30% YoY มาจาก earnings จริง, RPO $627B มาจาก 10-Q filing, M365 Copilot 20M seats ยืนยันจาก press release และ Accenture 740K seats deal ที่เป็น public information ทุกข้อที่ Warren อ้างยืนยันได้ทั้งหมด",
-        "สิ่งที่ Charlie ขอให้ติดตาม: CapEx $190B/ปี ทำให้ FCF ลด -22% YoY ถ้า AI ROI ไม่ materialize ใน 2-3 ปีข้างหน้าจะกระทบ thesis และ IRS tax dispute $28.9B ยังไม่จบ แม้ไม่ใช่ risk ที่ทำให้ thesis พัง แต่อาจ impact งบฯ ได้",
-        "สรุป: MSFT เป็น investment ที่ Charlie เห็นด้วยมากที่สุดใน watchlist ปัจจุบัน risk หลักคือ execution timeline ไม่ใช่ business model"
-      ]
-    },
-    "idea_th": "Microsoft คือซอฟต์แวร์ที่ฝังอยู่ในทุกองค์กรทั่วโลก และกำลัง upgrade ตัวเองเป็น AI platform — ลูกค้าออกไปไม่ได้และยิ่งใช้ AI ยิ่งออกยากขึ้น Warren ให้เป็น Tier 'Inevitable'",
-    "story_gate_th": {
-      "what": "Microsoft monetize องค์กรทั่วโลกผ่าน Azure Cloud, Office 365, Teams, GitHub — ซอฟต์แวร์ที่ฝังอยู่ใน IT infrastructure ทุกองค์กร ตอนนี้กำลัง upgrade ทุกผลิตภัณฑ์เป็น AI version ผ่าน Copilot ทำให้ลูกค้าเดิมจ่ายเพิ่มโดยไม่ต้องหาลูกค้าใหม่",
-      "why": "Azure ยัง demand เกิน supply มาหลายไตรมาสต่อเนื่อง ซึ่งแปลว่า demand จริงๆ ไม่ใช่แค่ marketing M365 Copilot ขาย 20M seats ในปีแรก และลูกค้าล็อก contract ล่วงหน้า $627B แล้ว — visibility ระดับนี้หาได้ยากมากในหุ้นอื่น",
-      "risk": "ถ้า Azure growth ชะลอลงต่ำกว่า 15% สองไตรมาสติดต่อกัน หรือ OpenAI สร้าง cloud platform ของตัวเองและลด dependency บน Azure ซึ่งจะทำให้ AI edge ของ Microsoft ลดลงอย่างมีนัยสำคัญ"
-    },
-    "bull_th": [
-      "Azure โต 30% YoY และ demand ยังเกิน supply — เพิ่ม capacity ไม่ทัน = real demand ไม่ใช่ hype",
-      "M365 Copilot 20M+ paid seats ใน 1 ปีแรก — fastest growing enterprise product ในประวัติ Microsoft",
-      "RPO $627B = รายได้ที่ลูกค้า commit ล่วงหน้าแล้ว รอแค่ deliver ไม่ต้องไปหาลูกค้าใหม่",
-      "AI ARR $37B (+123% YoY) — ยังไม่รวม infrastructure ที่ AI customers ใช้ upside ซ่อนอยู่อีกมาก",
-      "Enterprise lock-in ที่แข็งแกร่ง: Active Directory, Exchange, Teams ฝังอยู่ใน IT ทุกองค์กร ย้ายออกยากมาก"
-    ],
-    "risk_th": [
-      "CapEx $190B/ปี ทำให้ FCF ลด -22% YoY — ถ้า AI ROI ไม่มาใน 2-3 ปี กระทบ thesis หนัก",
-      "IRS ฟ้องภาษีย้อนหลัง $28.9B สำหรับปี 2004-2013 — ยังไม่จบ อาจกระทบงบฯ อย่างมีนัยสำคัญ",
-      "OpenAI อาจพัฒนา cloud platform ของตัวเองและย้าย workload ออกจาก Azure ในอนาคต",
-      "Azure growth ชะลอลงบ้างจาก 33% → 29% → ? ต้องดูว่าจะ stabilize ที่ระดับไหน",
-      "Windows / Gaming ยังไม่โต (MPC -1% YoY) ทำให้ growth กระจุกอยู่ใน Cloud เป็นหลัก"
-    ],
-    "trend_tags": [
-      "Cloud-Acceleration",
-      "Agentic-AI",
-      "AI-Infrastructure"
-    ]
+    }
   },
   "TSM": {
     "symbol": "TSM",
@@ -379,11 +246,6 @@
       "summary": "MoS 6.3% fails 15% gate — WATCH is correct. yfinance PEG 1.26 confirms reasonable valuation but not cheap enough. Price $412 slightly above Warren's $404.",
       "review_date": "2026-05-27"
     },
-    "trend_tags": [
-      "AI-Infrastructure",
-      "Advanced-Packaging",
-      "Semiconductor-Equipment"
-    ],
     "mark_easy": {
       "one_liner": "TSMC คือโรงงานชิปเดียวในโลกที่ผลิต AI chips ระดับ frontier ได้ทั้งหมด — ไม่มีทางเลือกอื่น",
       "what": "TSMC เป็นบริษัทรับจ้างผลิตชิปที่ใหญ่ที่สุดในโลกแบบ Pure-play Foundry คือผลิตให้คนอื่นโดยไม่ออกแบบชิปเอง ทำให้ Apple, NVIDIA, AMD ต่างส่ง IP ลับมาให้ผลิตโดยไม่กลัวถูกแข่ง ทุก AI chip ระดับ top ในโลกตอนนี้ล้วนผ่านมือ TSMC ทั้งสิ้น",
@@ -527,72 +389,7 @@
       ],
       "summary": "BUY action passes gate but margin is razor-thin: MoS 15.2% (gate 15%). Any further price increase makes this a FAIL. yfinance PEG 0.88 supports growth story.",
       "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "3.56 พันล้านคนใช้ทุกวัน และ AI กำลังทำให้โฆษณาแพงขึ้นเรื่อยๆ",
-      "what": "Meta เป็นเจ้าของ Facebook, Instagram, WhatsApp, Threads — แพลตฟอร์มที่คนทั่วโลกเปิดทุกวัน รายได้ 97% มาจากโฆษณา ซึ่ง AI ของ Meta กำลังทำให้แม่นยำขึ้นทุกไตรมาส ผลคือ impressions โฆษณาเพิ่ม +19% และราคาโฆษณาแพงขึ้น +12% พร้อมกัน — ทั้งสองพร้อมกันนี้แหละที่ทำให้ revenue พุ่ง",
-      "why_invest": [
-        "Revenue +33% YoY ใน Q1 2026 — เร่งตัวขึ้น ไม่ใช่ชะลอ ขณะที่ scale ใหญ่ขึ้น",
-        "Valuation ถูกสุดใน Big Tech: Forward P/E 17x ขณะที่โต 33% — นักลงทุนกลัวคดีกฎหมายมากเกินไป",
-        "Ray-Ban AI Glasses ขาย 3x YoY — อาจเป็น next computing platform หลัง smartphone",
-        "WhatsApp Business $2B+ annual run-rate — ยังไม่ได้ monetize เต็มที่เลย"
-      ],
-      "watch_out": [
-        "คดีกฎหมายสะสม: IRS $15.89B + EU DSA สูงสุด $12B + FTC antitrust ที่ยังสู้อุทธรณ์",
-        "Reality Labs ขาดทุน $19B/ปี — เป็น long-term bet AR/VR ที่ยังไม่รู้ว่าจะได้คืนเมื่อไหร่",
-        "ถ้าแพ้คดี FTC รอบอุทธรณ์ อาจถูกบังคับขาย Instagram + WhatsApp — thesis พังทันที"
-      ],
-      "bottom_line": "Mark มองว่า META คือ Big Tech ที่ถูกที่สุดในตลาดตอนนี้ เพราะนักลงทุนกลัวคดีกฎหมายมากเกินจริง ขณะที่ธุรกิจโฆษณา AI ยังแข็งแกร่งมาก"
-    },
-    "mark_full": {
-      "business_overview": "Meta Platforms เป็นเจ้าของ social media ecosystem ที่ใหญ่ที่สุดในโลก: Facebook, Instagram, WhatsApp, Threads, Messenger — แพลตฟอร์มที่คนทั่วโลก 3.56 พันล้านคนเปิดทุกวัน รายได้ 97% มาจากโฆษณาที่ AI ทำให้แม่นยำขึ้นทุกไตรมาส ส่วน Reality Labs ทำ VR headsets และ Ray-Ban AI Glasses ซึ่งเป็น long-term bet บน AR/VR",
-      "tam": "Digital advertising market ปัจจุบัน ~$700B/ปี และโตต่อเนื่อง — Meta ครอง ~$200B+ ต่อปี AI ช่วยให้ ROI โฆษณาดีขึ้น ทำให้ผู้ประกอบการยอมจ่ายแพงขึ้น WhatsApp Business messaging เพิ่งเริ่ม monetize อยู่ที่ $2B+ run-rate — ยังมี runway ยาวมากสำหรับ 2.5B users ที่ยังไม่ได้จ่ายเงิน",
-      "moat": "Network Effect ขนาดมหาศาล: 3.56B Daily Active People ใช้ทุกวัน — ยิ่งคนใช้มากแพลตฟอร์มยิ่งมีคุณค่า แทบเป็นไปไม่ได้ที่ competitor จะสร้าง scale นี้ใหม่ AI Flywheel ที่วัดได้: ทุก $ ที่ลงทุนใน AI ทำให้ impressions เพิ่ม +19% และราคาโฆษณาแพงขึ้น +12% พร้อมกัน ยิ่ง AI แม่นยิ่งโฆษณาแพง ยิ่งแพงยิ่งมีเงินลงทุน AI ต่อ — เป็น self-reinforcing flywheel ที่คู่แข่งตามยากขึ้นทุกวัน",
-      "latest_financials": "Q1 2026 (มีนาคม 2026): Revenue $56.3B (+33% YoY) — ผ่าน $200B annual run-rate Operating Margin 41% (record) | EPS Adjusted $6.43 vs $5.14 est (beat 25%) Daily Active People 3.56B (+7% YoY) | CapEx guidance 2026: $64-72B",
-      "key_points": [
-        "Revenue เร่งตัวขึ้น +33% vs +21% ปีก่อน — ยิ่งใหญ่ยิ่งโต แสดงว่า AI ทำงานจริง",
-        "Meta Superintelligence Labs ปล่อย Muse Spark frontier model — ครั้งแรกที่ Meta ทำ closed-source AI",
-        "Ray-Ban AI Glasses ขาย 3x YoY — อาจเป็น next computing platform หลัง smartphone",
-        "WhatsApp paid messaging $2B+ run-rate เพิ่งเริ่ม — 2.5B users ยังไม่ได้ monetize เต็มที่"
-      ]
-    },
-    "warren_easy": [
-      "Warren มองว่า META คือ Big Tech ที่ถูกที่สุดในตลาดตอนนี้ ราคาถูกเพราะนักลงทุนกลัวคดีกฎหมาย (IRS, EU, FTC) แต่ Warren เห็นต่างว่าธุรกิจจริงๆ แข็งแกร่งกว่าที่ราคาสะท้อนมาก",
-      "ข้อมูลที่ Warren ให้น้ำหนัก: รายได้โต +33% ทั้งที่ scale ใหญ่แล้ว, Operating Margin 41% (record), และ AI ทำให้ impression โฆษณาเพิ่ม +19% กับราคาโฆษณาแพงขึ้น +12% พร้อมกัน — สองอย่างนี้เกิดพร้อมกันได้เพราะ AI ทำให้โฆษณาแม่นยำขึ้นจริงๆ Forward P/E แค่ 17x สำหรับ growth 33% ถือว่าถูกมากๆ",
-      "กลยุทธ์: BUY ที่ราคาปัจจุบัน ถ้าราคาร่วงเพราะข่าวคดี = โอกาสซื้อเพิ่ม ไม่ใช่สัญญาณหนี 5-Year Expected Return: 28.5%/ปี — สูงที่สุดใน watchlist ปัจจุบัน Conviction: High"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ตรวจสอบแล้วยืนยันว่าตัวเลขของ Warren ถูกต้อง Revenue +33% YoY, Operating Margin 41% record, และ DAP 3.56B +7% ล้วนมาจากตัวเลขจริงใน earnings release และ 10-Q ไม่ใช่การคาดการณ์ Fwd P/E 17x ถูกกว่า S&P500 average ขณะ grow 33% — valuation argument ของ Warren ยืนยันได้",
-        "แต่มี 2 ประเด็นที่ Charlie ต้องการให้ Warren track อย่างใกล้ชิด: อย่างแรกคือ IRS $15.89B + EU DSA สูงสุด $12B รวมกันสูงถึง $28B ซึ่ง model ยังไม่ได้ stress test เต็มที่ และอย่างที่สำคัญกว่าคือคดี FTC อุทธรณ์ที่ยังดำเนินอยู่ — ถ้าผลคดีออกมาเสียเปรียบ Meta อาจถูกบังคับขาย Instagram กับ WhatsApp ซึ่งจะทำให้ thesis พังทลายทันที",
-        "สรุป: Charlie เห็นด้วยและให้ติดตามคดี FTC appeal เป็น top priority ทุกเดือน"
-      ]
-    },
-    "idea_th": "META เป็น advertising machine ที่ AI ทำให้ทรงพลังขึ้นทุกวัน — 3.56 พันล้านคนใช้ทุกวัน ทำให้ network effect แทบสร้างทดแทนไม่ได้ และ valuation ยังถูกกว่าที่ควรจะเป็น",
-    "story_gate_th": {
-      "what": "META monetize คน 3.56 พันล้านคนที่เปิด Facebook, Instagram, WhatsApp ทุกวัน ผ่านโฆษณาที่ AI ทำให้แม่นยำขึ้นเรื่อยๆ ทั้ง impression โฆษณาเพิ่ม +19% และราคาโฆษณาแพงขึ้น +12% พร้อมกันในไตรมาสเดียว — นี่คือ network effect + AI flywheel ที่ทำให้คู่แข่งตามยากขึ้นทุกปี",
-      "why": "ตลาดกลัวคดีกฎหมาย (IRS, EU, FTC) มากเกินไปจนทำให้ราคาถูกกว่าที่ควร Warren เห็นต่างว่า Fwd PE 18x ขณะโต 33% คือ 'Big Tech ที่ถูกที่สุด' ในตลาดตอนนี้ และ operating margin 41% record แสดงว่า AI ทำงานได้จริง ไม่ใช่แค่ story",
-      "risk": "ถ้าศาลอุทธรณ์ตัดสินให้ FTC ชนะในคดี antitrust META อาจถูกบังคับขาย Instagram กับ WhatsApp ซึ่งจะทำให้มูลค่าบริษัทลดลงอย่างมากทันที นี่คือ binary risk ที่ต้อง monitor ทุกเดือน"
-    },
-    "bull_th": [
-      "Revenue เร่งตัวขึ้น: +33% YoY ใน Q1 2026 เทียบกับ +21% ปีก่อน — ยิ่งใหญ่ยิ่งโต แสดงว่า AI flywheel ทำงานจริง",
-      "Operating Margin 41% record — ทุกบาทที่ลงทุนใน AI ส่งผลต่อกำไรได้จริงและวัดได้",
-      "Fwd P/E 17x สำหรับบริษัทที่โต 33% — ถูกกว่า S&P500 average ทั้งที่ grow เร็วกว่ามาก",
-      "Ray-Ban AI Glasses ขาย 3x YoY — อาจเป็น next computing platform หลัง smartphone",
-      "WhatsApp Business $2B+ run-rate เพิ่งเริ่ม — 2.5B users ที่ยังไม่ได้ monetize เต็มที่"
-    ],
-    "risk_th": [
-      "FTC antitrust อุทธรณ์ยังดำเนินอยู่ — ถ้าแพ้ต้องขาย Instagram + WhatsApp thesis พังทันที",
-      "IRS เรียกเก็บภาษีย้อนหลัง $15.89B สำหรับปี 2017-2019 — ยังอยู่ในกระบวนการ ยังไม่จบ",
-      "EU DSA อาจปรับสูงสุด $12B จากกรณีเด็กอายุต่ำกว่า 13 ปีใช้ Facebook/Instagram",
-      "Reality Labs ขาดทุน $19B/ปี — เป็น long-term bet AR/VR ที่ยังไม่รู้ว่าจะ payoff เมื่อไหร่",
-      "CapEx $64-72B ในปี 2026 — ลงทุนหนักมาก ต้องรอดูว่า AI ROI จะมาตามคาดไหม"
-    ],
-    "trend_tags": [
-      "Agentic-AI",
-      "Digital-Advertising"
-    ]
+    }
   },
   "AMZN": {
     "symbol": "AMZN",
@@ -675,10 +472,66 @@
       "summary": "WATCH is correct. Price $265 barely at FV $268 (MoS 1%). PEG 1.83 yfinance vs Warren's 0.90 — Warren's aggressive AWS AI growth assumptions.",
       "review_date": "2026-05-27"
     },
-    "trend_tags": [
-      "Cloud-Acceleration",
-      "Agentic-AI",
-      "Custom-Silicon"
+    "mark_easy": {
+      "one_liner": "Amazon คือ 3 บริษัทในบริษัทเดียว — Cloud king (AWS), โรงงานชิป AI (Trainium), และ e-commerce จักรพรรดิ",
+      "what": "Amazon ดูเหมือน e-commerce แต่จริงๆ กำไรส่วนใหญ่มาจาก AWS ซึ่งเป็น #1 cloud ของโลก ยิ่งกว่านั้นยังมี Trainium ชิป AI ที่ถูกกว่า NVIDIA 10 เท่า และ Advertising ที่โต +22% ต่อปี สามล้อ engine นี้ช่วยกันขับเคลื่อนบริษัทเดียวกัน",
+      "why_invest": [
+        "AWS AI แรงสุดใน 15 ไตรมาส — Q1 2026 โต +28% YoY ที่ $37.6B และ backlog สะสม $364B คือหลักฐานว่าลูกค้าจองล่วงหน้าอีกหลายปี",
+        "Trainium ชิป AI ถูกกว่า NVIDIA 10 เท่า — Trainium3 เพิ่งเริ่ม ship และ nearly fully subscribed แล้ว ถ้า Amazon ขายให้ third-party ด้วยจะเป็น revenue stream ใหม่มหาศาล",
+        "Advertising $70B+ run rate โต +22% YoY — high-margin ไม่ต้องลงทุนมาก และยิ่ง agentic commerce โตขึ้น โฆษณาก็ยิ่งมีคุณค่าเพิ่มขึ้น",
+        "FCF กดดันชั่วคราว แต่ Operating Cash Flow ยัง $148.5B — CapEx $200B+ ที่ใช้ตอนนี้จะ convert เป็น revenue ใน 2-3 ปีข้างหน้าตาม pattern เดิม"
+      ],
+      "watch_out": [
+        "FCF เหลือแค่ $1.2B TTM (-95% YoY) เพราะ CapEx พุ่ง — ถ้า AWS growth ชะลอก่อน CapEx peak FCF อาจติดลบ",
+        "GCP โต +63%, Azure +39% เร็วกว่า AWS +28% — ถ้า market share ลดต่อเนื่อง thesis หลักจะอ่อนแอลง",
+        "OpenAI investment $50B conflict — Amazon ลงทุนใน OpenAI ซึ่งเป็นทั้ง partner และ competitor ของ AWS เป็น conflict ที่จัดการยาก"
+      ],
+      "bottom_line": "Amazon เป็นบริษัทที่ดีมาก แต่ราคาตอนนี้ใกล้เคียง Fair Value แทบไม่มี MoS เลย รอ pullback ก่อนจะคุ้มกว่า"
+    },
+    "mark_full": {
+      "business_overview": "Amazon ดำเนินธุรกิจ 3 segments: North America, International, และ AWS แต่ profit engine หลักคือ AWS ที่สร้างรายได้แค่ 21% ของ total revenue แต่สร้าง operating income ถึง 59% ของทั้งบริษัทใน Q1 2026 AWS Revenue $37.6B (+28% YoY) มี Op Margin 37.7% Advertising เป็น high-margin engine ที่สอง $17.2B Q1 2026 (+22% YoY) TTM >$70B run rate Custom Silicon (Graviton+Trainium) มี ARR $50B standalone กลายเป็น top-3 datacenter chip globally",
+      "tam": "Cloud computing ยังมี runway มหาศาล — 85% ของ global IT spend ยังอยู่ on-premises รอ migrate ขึ้น cloud ตลาด AI cloud กำลัง explode ด้วย AWS AI run rate >$15B growing triple digits revenue commitments สำหรับ Trainium สูงถึง $225B+ Amazon Leo (satellite internet) กำลัง commercial launch Q3 2026 เปิด TAM ใหม่ทั้ง enterprise connectivity และ direct-to-device ที่ Google/Microsoft ยังไม่มี",
+      "moat": "AWS มี MOAT 3 ชั้น: security+reliability ที่รัฐบาล/Fortune 100 ไว้วางใจ, data flywheel จากปริมาณลูกค้าที่ใหญ่มาก, และ breadth ของ services ที่คู่แข่งต้องใช้เวลาหลายปีกว่าจะตาม Custom Silicon คือ emerging MOAT ที่แข็งแกร่งมาก — Graviton ดีกว่า x86 40% ด้าน price-performance, Trainium3 ถูกกว่า NVIDIA B200 ถึง 10 เท่า ทำให้ AWS ลด dependency จาก NVIDIA อย่างมีนัยสำคัญ",
+      "latest_financials": "Q1 2026: Revenue $181.5B (+17% YoY), Op Income $23.9B (+30%), Op Margin 13.1% record high, EPS $2.78 (+75%) Note: Net Income $30.3B มี one-time Anthropic unrealized gain $16.8B รวมอยู่ FY2025: Revenue $716.9B (+12%), Op Margin 11.2%, FCF $11.2B Q2 2026 Guidance: $194-199B (+16-19%), Op Income $20-24B",
+      "key_points": [
+        "AWS backlog $364B (ไม่รวม Anthropic $100B+ deal ใหม่) สะท้อน committed revenue ล่วงหน้าหลายปี demand เกิน supply จริง — two large customers ขอซื้อ Graviton capacity ทั้งหมดแต่ Amazon ทำไม่ได้",
+        "Trainium3 nearly fully subscribed ก่อน broad availability — OpenAI commit 2GW Trainium capacity ยืนยันว่าไม่ใช่ chip สำหรับ Anthropic ฝ่ายเดียว",
+        "Amazon Leo commercial launch Q3 2026 พร้อม deal ใหญ่: Delta (500 planes), JetBlue, AT&T, NASA — satellite internet เป็น TAM ใหม่ที่ Google/NVIDIA ยังไม่มี",
+        "FCF TTM เหลือ $1.2B (-95%) จาก CapEx $173B annualized แต่ management ชี้ว่า operating cash flow $148.5B ยัง strong FCF จะ recover เมื่อ CapEx growth ชะลอใน 2-3 ปี"
+      ]
+    },
+    "warren_easy": [
+      "Warren มอง Amazon เป็น business 3 engine ที่เสริมกัน — AWS เป็น #1 cloud ที่มี MOAT ยาวที่สุดด้วย 85% global IT spend ยังรอ migrate; Custom Silicon (Trainium) คือ emerging MOAT ที่ถูกกว่า NVIDIA 10 เท่า; และ Advertising high-margin โต +22% BQ Score 9.5 สะท้อน Business นี้มีคุณภาพ best-in-class",
+      "ตอนนี้ Warren มองว่า AMZN ดีมากแต่ราคาเกินไปเล็กน้อย FV Base อยู่ที่ $268 ในขณะที่ราคาแถว $264-267 ทำให้ MoS เพียง 0.6% แม้ 5yr Expected Return 21% จะผ่าน gate แต่ MoS ต่ำเกินไปสำหรับ Expensive market ที่ต้องการ MoS 15-20%",
+      "กลยุทธ์ของ Warren คือ WATCH และรอ pullback ลงมาแถว $230 (MoS ~15%) ก่อนเข้า Conviction ระดับ HIGH แต่ราคาสำคัญมาก โดยเฉพาะช่วงนี้ที่ FCF ยังกดดันจาก CapEx surge และตลาดอาจ re-rate ถ้า AWS growth ชะลอกว่าคาด"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยัน Warren's WATCH call ถูกต้อง — Business ยอดเยี่ยม AWS +28% YoY ที่ $37.6B, Op Margin 13.1% record high, Trainium3 nearly fully subscribed ข้อมูลอิสระ confirm ทุก metric OpenAI expanded deal $100B+ (8 ปี) ยืนยัน Trainium ไม่ใช่แค่ Anthropic-only chip",
+        "Charlie ยืนยันว่า MoS 0.4-0.6% ที่ราคา ~$264-267 ไม่ผ่าน gate ความเสี่ยงที่ Warren อาจ underweight: FCF -95% YoY จาก CapEx surge อาจกดดัน sentiment ระยะสั้น, GCP +63% โตเร็วกว่า AWS ในเชิง rate ซึ่งเป็น market share signal ที่ต้องจับตา, และ OpenAI $50B investment สร้าง dual-role conflict",
+        "Charlie แนะนำ WATCH รอ pullback ถึง ~$230 (MoS ~15%) โดย monitor 3 สิ่ง: (1) AWS growth rate ใน Q2 2026 ยังเกิน 25% ไหม, (2) FCF trajectory เมื่อ CapEx growth peak, (3) Amazon Leo launch Q3 2026 ว่า enterprise adoption เป็นอย่างไร"
+      ]
+    },
+    "idea_th": "Amazon คือ 3 business ในบริษัทเดียว — AWS cloud #1 โลก, Trainium custom silicon ที่ถูกกว่า NVIDIA 10 เท่าและ nearly fully subscribed, และ Advertising $70B+ run rate ที่โตเร็ว; Business ยอดเยี่ยมแต่ราคาปัจจุบันสะท้อน fair value ไปแล้ว รอ pullback จะคุ้มกว่า",
+    "story_gate_th": {
+      "what": "Amazon เป็น #1 cloud (AWS 33% market share), กำลังเป็น top-3 datacenter chip (Trainium/Graviton $50B standalone ARR), และมี Prime ecosystem 200M+ subscribers สร้าง flywheel ที่คู่แข่งสร้างยาก เงินส่วนใหญ่มาจาก AWS ที่ Op Margin 37.7% แม้จะดูเหมือน e-commerce บริษัท",
+      "why": "AWS AI revenue growing triple digits + Trainium3 nearly fully subscribed 18 เดือนก่อน availability + AWS backlog $364B ตลาดยังไม่ได้ price-in full value ของ Custom Silicon ที่ $50B standalone ARR และ Amazon Leo satellite internet ที่กำลัง launch Q3 2026",
+      "risk": "ถ้า Trainium ไม่สามารถ capture NVIDIA convergence rates ได้ และ AWS growth ชะลอ <20% เพราะ Azure/GCP แข่งเข้มข้น — thesis custom silicon จะไม่ deliver ROI ตามคาด"
+    },
+    "bull_th": [
+      "AWS backlog $364B + AI revenue triple-digit growth — committed revenue ล่วงหน้าหลายปีสะท้อน demand จริงเกิน supply อยู่ ไม่ใช่ hype",
+      "Trainium custom silicon ถูกกว่า NVIDIA B200 ถึง 10 เท่า — ถ้า Amazon เริ่มขายให้ third-party (Andy ระบุ 'good chance') จะเปิด revenue stream ใหม่หลักสิบ billion",
+      "Advertising $70B+ run rate โต +22% YoY — high-margin, structural tailwind จาก agentic commerce ที่ทุก multi-turn conversation = more ad slots",
+      "Amazon Leo commercial launch Q3 2026 — satellite internet พร้อม deal ใหญ่ Delta/JetBlue/AT&T/NASA เปิด TAM ใหม่ที่ Google ยังไม่มี",
+      "FCF จะ recover ใน 2-3 ปี — pattern เดิมชัดเจน Amazon ลงทุน CapEx หนักก่อน revenue ตามมาทีหลัง Operating Cash Flow $148.5B TTM ยัง strong เป็นหลักฐาน"
+    ],
+    "risk_th": [
+      "FCF เหลือแค่ $1.2B TTM (-95%) จาก CapEx surge — ถ้า AWS revenue growth ชะลอก่อน CapEx peak FCF จะติดลบและกระทบ investor sentiment รุนแรง",
+      "GCP +63%, Azure +39% เร็วกว่า AWS +28% — ถ้า market share trend ดำเนินต่อไป AWS dominance จะลดลงและ valuation premium จะหาย",
+      "OpenAI $50B investment dual-role conflict — Amazon ลงทุนใน OpenAI ซึ่งเป็นทั้ง partner บน Bedrock และ competitor ของ AWS ความขัดแย้งนี้อาจนำไปสู่ผลลัพธ์ที่ไม่แน่นอน",
+      "FTC antitrust + multiple legal cases — Frame-Wilson และ cases อื่นเรียกร้อง 'billions + treble damages + structural relief' ถ้าแพ้อาจต้องเปลี่ยน business practices หลัก",
+      "Amazon Leo execution risk — ยังไม่เคย launch large-scale satellite service มาก่อน Globalstar acquisition ซับซ้อน และมี ~$1B cost เพิ่มใน Q2 2026 guidance แล้ว"
     ]
   },
   "ASML": {
@@ -761,11 +614,7 @@
       ],
       "summary": "WATCH confirmed. MoS -9%, PEG 2.45 both fail gates. Analyst target $1,660 slightly above current $1,632.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Semiconductor-Equipment",
-      "Advanced-Packaging"
-    ]
+    }
   },
   "NFLX": {
     "symbol": "NFLX",
@@ -848,10 +697,7 @@
       ],
       "summary": "⚠️ PEG discrepancy: yfinance 1.72 ABOVE ceiling 1.5 vs Warren's 0.83. At 22.8x FwdPE, implied growth 13% vs Warren's 28%. MoS 28% passes but PEG gate may fail.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Digital-Advertising"
-    ]
+    }
   },
   "AVGO": {
     "symbol": "AVGO",
@@ -933,13 +779,7 @@
       ],
       "summary": "WATCH confirmed. MoS -13.4% fails gate. yfinance PEG 0.92 more attractive than Warren's 0.45 — both below ceiling. Price $422 higher than Warren's $414.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Custom-Silicon",
-      "AI-Infrastructure",
-      "Optical-Interconnect",
-      "Advanced-Packaging"
-    ]
+    }
   },
   "GOOGL": {
     "symbol": "GOOGL",
@@ -1022,12 +862,7 @@
       ],
       "summary": "WATCH confirmed. But PEG 1.51 sits exactly at the 1.5 ceiling — one consensus revision away from failing. DOJ Search remedy risk is live.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Cloud-Acceleration",
-      "Agentic-AI",
-      "Digital-Advertising"
-    ]
+    }
   },
   "ETN": {
     "symbol": "ETN",
@@ -1193,12 +1028,7 @@
       ],
       "summary": "⚠️ Price $503.89 now ABOVE Warren's FV $467 by 7.9%. Q1 2026 beat (May 5): Revenue $10.25B, EPS $1.37. Analyst targets $500-625 suggest Warren's FV understated. WATCH correct but FV may need revision.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "AI-Infrastructure",
-      "CPU-Renaissance",
-      "Memory-Supercycle"
-    ]
+    }
   },
   "MRVL": {
     "symbol": "MRVL",
@@ -1282,12 +1112,7 @@
       "summary": "Q1 FY27 beat confirmed (,418M +28%, EPS /bin/zsh.80 beat /bin/zsh.75 est); Q2 guide .7B +35% = legit acceleration. แต่ Charlie พบ 3 risks ที่ Warren อาจ underweight: (1) Analyst report วา MRVL อาจสูญเสีย Amazon custom XPU ให้คู่แข่ง (April 2026 downgrade catalyst); (2) Risk สูญเสีย Microsoft XPU ให้ Broadcom; (3) Stock ลง -4.24% intraday May 27 แม้ earnings beat — สัญญาณว่าตลาดมีข้อกังวลที่ซ่อนอยู่. Warren FV  (conservative) vs street -210 = Warren ถูกในทิศทาง แต่ customer loss risk เป็น tail risk ที่ต้องติดตาม.",
       "review_date": "2026-05-28"
     },
-    "tier": "🔁 Cyclical",
-    "trend_tags": [
-      "Custom-Silicon",
-      "Optical-Interconnect",
-      "AI-Infrastructure"
-    ]
+    "tier": "🔁 Cyclical"
   },
   "PLTR": {
     "symbol": "PLTR",
@@ -1370,10 +1195,7 @@
       ],
       "summary": "WATCH confirmed. MoS -43.8%. PEG 1.97 yfinance vs Warren's 0.93 — Warren too aggressive on growth. DO NOT BUY at $137.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Agentic-AI"
-    ]
+    }
   },
   "AAPL": {
     "symbol": "AAPL",
@@ -1456,10 +1278,7 @@
       ],
       "summary": "WATCH confirmed. MoS -20.9%. FwdPE 32x for ~10-12% growth is expensive. China market share loss continuing.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Agentic-AI"
-    ]
+    }
   },
   "CRWD": {
     "symbol": "CRWD",
@@ -1542,10 +1361,7 @@
       ],
       "summary": "DO NOT BUY confirmed. PEG 5.47 per yfinance (Warren 4.49). FwdPE 109x extreme. July 2024 outage liability still overhang.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Agentic-AI"
-    ]
+    }
   },
   "COHR": {
     "symbol": "COHR",
@@ -1793,11 +1609,7 @@
       ],
       "summary": "BUY strongly confirmed. yfinance FwdPE 8.62 and PEG 0.26 = dirt cheap. MoS 55.2%. Q2 FY26 +32% EPS beat validates thesis. LTA floor pricing through 2028-2029.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Memory-Supercycle",
-      "AI-Infrastructure"
-    ]
+    }
   },
   "VRT": {
     "symbol": "VRT",
@@ -1880,11 +1692,7 @@
       ],
       "summary": "DO NOT BUY confirmed. Price 2.72× above Warren's FV $119. FwdPE 36.65 with PEG 1.64 above ceiling. Analyst targets needed to justify $324 price.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Power-Infrastructure",
-      "AI-Infrastructure"
-    ]
+    }
   },
   "ARM": {
     "symbol": "ARM",
@@ -1967,12 +1775,7 @@
       ],
       "summary": "DO NOT BUY confirmed. Price 147% above FV $130. FwdPE 105x, PEG 2.66. DOJ/FTC antitrust investigation is a NEW material risk to licensing revenue model.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "AI-Infrastructure",
-      "CPU-Renaissance",
-      "Custom-Silicon"
-    ]
+    }
   },
   "TSLA": {
     "symbol": "TSLA",
@@ -2055,10 +1858,7 @@
       ],
       "summary": "DO NOT BUY confirmed. FwdPE 172.8x, PEG 5.87. Price 155% above FV $170. Robotaxi commercial launch unproven.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "Humanoid-Robots"
-    ]
+    }
   },
   "INTC": {
     "symbol": "INTC",
@@ -2142,11 +1942,7 @@
       ],
       "summary": "⚠️ Warren's FV $20 may be too pessimistic. yfinance PEG 1.36 < ceiling 1.5 — consensus prices in 18A turnaround. However, at $123.52 vs FV $20 = 517% premium. Extreme risk either way.",
       "review_date": "2026-05-27"
-    },
-    "trend_tags": [
-      "CPU-Renaissance",
-      "Semiconductor-Equipment"
-    ]
+    }
   },
   "SPCX": {
     "symbol": "SPCX",
