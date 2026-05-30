@@ -2302,7 +2302,68 @@
       ],
       "summary": "DO NOT BUY confirmed. Price 2.72× above Warren's FV $119. FwdPE 36.65 with PEG 1.64 above ceiling. Analyst targets needed to justify $324 price.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของระบบไฟ-ระบายความร้อนให้ดาต้าเซ็นเตอร์ AI ธุรกิจสุดแข็งแต่ราคาแพงเกินจริงไปไกลมาก",
+      "what": "Vertiv ขายและบริการ \"โครงสร้างพื้นฐานสำคัญ\" ของดาต้าเซ็นเตอร์ — ระบบจ่ายไฟ (UPS, สวิตช์เกียร์) และระบบระบายความร้อน (รวมถึง liquid cooling ส่งตรงถึงชิป) ลูกค้าหลักคือพวก hyperscaler อย่าง AWS, Google, Microsoft, Meta. พูดง่ายๆ คือเวลามีดาต้าเซ็นเตอร์ AI เกิดใหม่ Vertiv ได้ขายของแทบทุกครั้ง",
+      "why_invest": [
+        "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ทำให้ความต้องการระบบไฟและระบายความร้อนของ Vertiv พุ่งตามการสร้างดาต้าเซ็นเตอร์",
+        "Q1 2026 กำไรต่อหุ้น (Adjusted EPS) โต +83% YoY และยกเป้าทั้งปี 2026 เป็นรายได้ ~$13.75B (+34%) EPS ~$6.35 — โมเมนตัมแรงจริง",
+        "เป็นไม่กี่บริษัทที่ทำครบทั้ง power + cooling + IT ในระบบเดียว (OneCore, SmartRun) คู่แข่งอย่าง Eaton/Schneider ยังทำครบแบบนี้ไม่ได้",
+        "จับมือ NVIDIA พัฒนาสถาปัตยกรรมไฟ 800V DC ตั้งแต่ต้นน้ำ ทำให้รู้ roadmap ชิปรุ่นใหม่ก่อนใคร + มีทีมช่างบริการ ~5,000 คนสร้างรายได้ประจำ"
+      ],
+      "watch_out": [
+        "ราคาแพงมากแบบสุดขั้ว — ซื้อขายสูงกว่ามูลค่าที่ Warren ประเมิน (FV $119) ถึงประมาณ 2.7 เท่า แม้แต่กรณี Bull ($175) ราคาก็ยังเกินไปแล้ว",
+        "ธุรกิจอิงกับ capex ของ Big Tech ถ้าวันหนึ่งชะลอการลงทุน AI คำสั่งซื้อจะหดทันที (เป็นธุรกิจวัฏจักร)",
+        "ยังมีคดี Securities Class Action ค้างอยู่ + EMEA ยอดอ่อน (-29% organic Q1) + ความเสี่ยงภาษีนำเข้าต่อ supply chain"
+      ],
+      "bottom_line": "Pete ชอบธุรกิจนี้มากในเชิงคุณภาพ — มันคือ \"คนขายจอบเสียม\" ของยุค AI ตัวจริง แต่ราคาตอนนี้แพงเกินเหตุผลไปไกล มูลค่าทุก scenario ต่ำกว่าราคาหมด ส่วนตัว Pete ขอรอให้ย่อลงมาแถว $100 ก่อนค่อยคิดจริงจัง ตอนนี้ WATCH อย่างเดียว"
+    },
+    "mark_full": {
+      "business_overview": "Vertiv (VRT) เป็นผู้นำระดับโลกด้าน critical digital infrastructure แบ่งสินค้าเป็น 3 กลุ่มหลัก: (1) Power — UPS, PDU, สวิตช์เกียร์, ระบบไฟ DC; (2) Thermal Management — ระบบทำความเย็นแม่นยำ, liquid cooling ส่งตรงถึงชิป, immersion cooling; (3) IT Infrastructure + Services — แร็ค, ตู้, ระบบมอนิเตอร์ และบริการดูแลตลอดอายุการใช้งาน จุดเด่นคือ OneCore และ SmartRun ที่รวม power + thermal + IT เป็นระบบเดียวสำเร็จรูป ลูกค้าครอบคลุม 130+ ประเทศ และเพิ่งเข้า S&P 500 เมื่อมีนาคม 2026",
+      "tam": "ตลาดโตจากคลื่น AI infrastructure — งบ capex รวมของ Big Tech 4 รายปี 2026 ประมาณ $725B (+77% YoY) Vertiv ได้ส่วนแบ่งจากฝั่งไฟและความเย็น Backlog อยู่ราว $9.5B (Q1 2026) ให้ visibility ล่วงหน้าหลายไตรมาส ตัวเร่งสำคัญถัดไปคือการเปลี่ยนผ่านสู่ไฟ 800V DC (ร่วมกับ NVIDIA) ที่จะเปิดตัว H2 2026 รับรู้รายได้จริงปี 2027+ ยิ่งชิปหนาแน่นขึ้นยิ่งต้องใช้ liquid cooling มากขึ้น = TAM ขยายต่อเนื่อง",
+      "moat": "ข้อได้เปรียบที่ยั่งยืนที่สุดคือ \"end-to-end portfolio\" — Vertiv เป็นหนึ่งในไม่กี่รายที่ทำครบทั้ง power + thermal + IT whitespace ในระบบเดียว ขณะที่ Eaton/Schneider/ABB ยังทำครบแบบ converged ไม่ได้ เสริมด้วย services flywheel จากช่างบริการ ~5,000 คนที่สร้างรายได้ประจำจากฐานติดตั้งที่โตขึ้นเรื่อยๆ และความสัมพันธ์ระยะยาวกับลูกค้าผ่านสัญญาบำรุงรักษาที่เปลี่ยนเจ้ายาก บวกความเร็วในการติดตั้งด้วยโซลูชันสำเร็จรูป (SmartRun) ที่ลดงานหน้างาน",
+      "latest_financials": "Q1 2026 รายได้ $2,650M (+30% YoY), organic +23%, Adjusted Operating Margin 20.8% (+430bps), Adjusted EPS $1.17 (+83% YoY) และ Free Cash Flow $652.8M (+147%) ทุกตัวเกินไกด์ Americas โดดเด่นมาก organic +44% ส่วน EMEA อ่อน -29% (ฝ่ายบริหารบอกชั่วคราว คาดฟื้น H2 2026) งบดุลแข็ง net leverage แค่ ~0.2x เงินสด+เงินลงทุนระยะสั้นรวม ~$2,500M ไกด์ทั้งปี 2026: รายได้ $13.5-14.0B, Adjusted EPS $6.30-6.40, Adjusted FCF $2.1-2.3B",
+      "key_points": [
+        "ราคาปัจจุบันสะท้อนความสมบูรณ์แบบไปแล้ว — Fwd PE 38x และเทรดสูงกว่า FV ทุก scenario (Bull $175 / Base $119 / Bear $68) ดังนั้น downside ใหญ่หากการเติบโตสะดุด",
+        "เป็นธุรกิจวัฏจักร (Cyclical) — รายได้ผูกตรงกับ capex ของ hyperscaler ถ้า AI ROI ไม่ชัดและ Big Tech ชะลอลงทุน คำสั่งซื้อจะหดเร็ว",
+        "ตัวเร่งระยะกลางคือ 800V DC + EMEA recovery + การเปลี่ยนลูกค้ามาใช้ระบบ converged (SmartRun/OneCore) แต่ส่วนใหญ่รับรู้รายได้จริงปี 2027",
+        "งบดุลแข็งแกร่ง net leverage ~0.2x ได้ credit rating ระดับ investment grade (Baa3/BBB-) มีความยืดหยุ่นสูงสำหรับ M&A และขยายกำลังการผลิต"
+      ]
+    },
+    "warren_easy": [
+      "Warren มองว่า Vertiv เป็นธุรกิจคุณภาพดี — เป็น \"picks-and-shovels\" ของยุค AI ที่ขายระบบไฟและระบายความร้อนให้ดาต้าเซ็นเตอร์ทุกที่ MOAT มาจาก portfolio ที่ครบวงจร + ฐานบริการที่สร้างรายได้ประจำ + ความสัมพันธ์ตรงกับ NVIDIA บน 800V DC ทำให้คะแนนคุณภาพธุรกิจ (BQ 7.5) และศักยภาพการเติบโต (GP 8.0) สูง",
+      "แต่ปัญหาเดียวที่ใหญ่มากคือ \"ราคา\" — ที่ $337 ราคาเกินมูลค่าพื้นฐาน (FV Base $119) ไปประมาณ 2.7 เท่า MoS ติดลบหนัก และผลตอบแทนคาดหวัง 5 ปีเหลือเพียง -2.9%/ปี คะแนน Valuation จึงต่ำสุด (VA 1.5) ลากให้ WAF รวมเหลือแค่ 5.85 (LOW) ต่อให้ธุรกิจดีแค่ไหน ถ้าซื้อแพงเกินไป โอกาสขาดทุนก็สูง",
+      "กลยุทธ์ของ Warren ชัดเจน: WATCH เท่านั้น ยังไม่ซื้อที่ราคานี้ Conviction = LOW จุดที่น่าสนใจคือรอให้ราคาย่อลงมาแถว ~$100 (ใกล้ FV) ก่อน ถึงจะกลับมาพิจารณาจริงจัง"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ตรวจสอบอิสระแล้วเห็นด้วยกับ Warren เต็มที่ว่า \"ห้ามซื้อ\" ที่ราคานี้ ราคาที่ตรวจได้ ~$324 สูงกว่ามูลค่าพื้นฐาน $119 ถึง 2.72 เท่า Fwd PE 36.65 ส่วน PEG 1.64 ก็เกินเพดาน 1.5 ที่ยอมรับได้ — แปลว่าราคาแพงเกินทั้งในเชิงมูลค่าและเชิงการเติบโต",
+        "สิ่งที่ Charlie กังวลคือเรื่องที่อาจถูกประเมินต่ำไป: ความเป็นวัฏจักรของ datacenter capex (ถ้ารอบลงทุนกลับทิศ คำสั่งซื้อหายเร็ว) และการแข่งขันจาก Schneider/Eaton ที่ไล่ตามในตลาด liquid cooling รวมถึงคดีความที่ยังค้างอยู่",
+        "สรุป Charlie's take: ธุรกิจแข็งแรงจริง ไม่มีข้อกังขา แต่ valuation คือปัญหาเดียวที่ใหญ่พอจะทำให้ความเสี่ยงขาลงมหาศาล สิ่งที่ต้อง monitor คือจังหวะที่ราคาย่อลงมาใกล้ FV และสัญญาณว่า capex ของ hyperscaler ยังแข็งแรงอยู่หรือไม่"
+      ]
+    },
+    "idea_th": "Vertiv คือเจ้าของระบบไฟและระบายความร้อนที่ขาดไม่ได้ของดาต้าเซ็นเตอร์ AI — ธุรกิจคุณภาพสูงที่ได้ประโยชน์เต็มๆ จากคลื่นการสร้างดาต้าเซ็นเตอร์ แต่ราคาปัจจุบันแพงเกินมูลค่าพื้นฐานไปหลายเท่า จึงน่าจับตารอจังหวะย่อมากกว่าจะไล่ซื้อ",
+    "story_gate_th": {
+      "what": "Vertiv เป็นผู้นำโครงสร้างพื้นฐานสำคัญของดาต้าเซ็นเตอร์ — UPS, ระบบจ่ายไฟ และระบบระบายความร้อน (รวม liquid cooling ส่งตรงถึงชิป AI) ลูกค้าหลักคือ hyperscaler ที่หยุดระบบไม่ได้ จุดแข็งคือทำครบทั้ง power + thermal + IT ในระบบเดียวที่คู่แข่งยังตามไม่ทัน",
+      "why": "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ความต้องการระบบไฟและความเย็นจึงพุ่ง Q1 2026 organic +23%, EPS +83% YoY, backlog ~$9.5B และยกไกด์ทั้งปีขึ้น — ดีมานด์แรงและมองเห็นล่วงหน้าได้",
+      "risk": "ถ้า datacenter capex ของ Big Tech ชะลอเพราะ AI ROI ไม่ชัด คำสั่งซื้อจะหดทันที + คู่แข่ง Eaton/Schneider + ความเสี่ยงภาษีนำเข้า และที่สำคัญที่สุดคือราคาแพงมาก (Fwd PE สูง) ทำให้ downside ใหญ่ถ้าโตพลาด"
+    },
+    "bull_th": [
+      "AI supercycle หนุนเต็มที่ — งบ capex ของ Big Tech 4 รายปี 2026 ราว $725B (+77% YoY) Vertiv กินส่วนแบ่งจากฝั่งไฟและความเย็นโดยตรง",
+      "การเปลี่ยนผ่านสู่ไฟ 800V DC ร่วมกับ NVIDIA จะเปิด TAM ใหม่ — ยิ่งชิปหนาแน่นยิ่งต้องใช้ liquid cooling มากขึ้น เริ่มรับรู้รายได้ 2027+",
+      "EMEA เป็น \"สปริงที่ถูกอัด\" — ยุโรปขาดแคลนดาต้าเซ็นเตอร์รองรับ AI อย่างหนัก คำสั่งซื้อที่สะสมไว้จะแปลงเป็นรายได้ครึ่งปีหลัง 2026",
+      "Services flywheel — ฐานติดตั้งที่โตจาก AI buildout สร้างรายได้บริการประจำต่อเนื่องหลายสิบปี + ช่างบริการเพิ่ม ~25% YoY",
+      "งบดุลแข็งมาก net leverage ~0.2x + credit rating investment grade มีกระสุนพร้อมทำ M&A และขยายกำลังการผลิต"
+    ],
+    "risk_th": [
+      "ราคาแพงสุดขั้ว — เทรดสูงกว่า FV Base $119 ราว 2.7 เท่า และเกินแม้กระทั่งกรณี Bull ($175) ถ้าการเติบโตสะดุดแม้เล็กน้อย downside จะรุนแรง",
+      "เป็นธุรกิจวัฏจักรที่ผูกกับ capex ของ hyperscaler — ถ้า AI ROI ไม่ชัดและ Big Tech เบรกการลงทุน order book จะหดเร็วมาก",
+      "การแข่งขันจาก Eaton, Schneider Electric, ABB โดยเฉพาะในตลาด liquid cooling ที่กำลังเป็นสมรภูมิใหม่",
+      "คดี Securities Class Action (2022) + Derivative Lawsuits ยังค้างศาล + ความเสี่ยงภาษีนำเข้า (Section 232/122) ต่อ supply chain",
+      "Goodwill + intangibles รวม ~$3.8B (29% ของสินทรัพย์) จากการ M&A หลายดีล ถ้าโตช้าลงมีความเสี่ยง impairment + EMEA ถ้าฟื้นช้ากว่าไกด์อาจพลาดเป้าทั้งปี"
+    ]
   },
   "ARM": {
     "symbol": "ARM",
@@ -2385,7 +2446,68 @@
       ],
       "summary": "DO NOT BUY confirmed. Price 147% above FV $130. FwdPE 105x, PEG 2.66. DOJ/FTC antitrust investigation is a NEW material risk to licensing revenue model.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของพิมพ์เขียวซีพียูที่อยู่ในชิปเกือบทุกตัวบนโลก เก็บค่าลิขสิทธิ์แทบไม่มีต้นทุน แต่ราคาแพงมหาศาล",
+      "what": "ARM ออกแบบสถาปัตยกรรมซีพียู (ISA) แล้วให้บริษัทอื่นเช่าไปใช้ — เก็บทั้งค่า license ตอนนำไปออกแบบ และค่า royalty ทุกครั้งที่ชิปถูกผลิตขายออกไป โทรศัพท์มือถือทั่วโลกกว่า 95% ใช้ ARM และตอนนี้ขยายเข้าดาต้าเซ็นเตอร์ (Amazon Graviton, Google Axion) กับเริ่มทำชิปสำเร็จรูปของตัวเอง (AGI CPU) ด้วย",
+      "why_invest": [
+        "โมเดลธุรกิจสุดสวย — เป็น IP licensing ต้นทุนต่อชิปเพิ่มแทบเป็นศูนย์ Gross Margin สูงถึง ~98% และไม่ต้องแบกโรงงาน",
+        "ค่า royalty ต่อชิปเพิ่มขึ้น 2-3 เท่าเมื่อลูกค้าอัพจาก ARMv8 เป็น ARMv9 และใช้ CSS (พิมพ์เขียวสำเร็จรูป) — รายได้ต่อชิปโตขึ้นแม้ยอดขายเครื่องไม่โต",
+        "ดาต้าเซ็นเตอร์โตแรงมาก — royalty จากกลุ่มนี้โตเกิน 100% YoY และ ARM ครองส่วนแบ่ง ~50% ในซีพียูของ hyperscaler รายใหญ่",
+        "Switching cost สูงมหาศาล — ถ้าจะเลิกใช้ ARM ต้องเขียน software stack ใหม่ทั้งหมด ทำให้ลูกค้าที่ย้ายมาแล้วแทบไม่ย้ายกลับ"
+      ],
+      "watch_out": [
+        "ราคาแพงสุดๆ — Fwd PE สูงถึง ~105 เท่า, PEG 3.74 (เกินเพดานไปไกล) ราคาเกินแม้กระทั่งกรณี Bull ($200) ไปแล้ว 60%",
+        "ความเสี่ยงกฎหมายเพิ่มขึ้น — มีการสอบสวน antitrust จาก DOJ/FTC (พ.ค. 2026) เรื่องวิธีคิดค่าลิขสิทธิ์ + คดีกับ Qualcomm ที่ยังไม่จบ",
+        "RISC-V (สถาปัตยกรรมโอเพนซอร์สที่ไม่ต้องจ่ายค่า royalty) เป็นภัยคุกคามระยะยาว + SoftBank ถือหุ้น ~87% เป็นความเสี่ยงด้านธรรมาภิบาล"
+      ],
+      "bottom_line": "Pete ยอมรับว่า ARM เป็นหนึ่งในธุรกิจที่มี moat สวยที่สุดในโลกชิป — เก็บค่าผ่านทางจากชิปเกือบทุกตัว แต่ราคาตอนนี้แพงจนน่ากลัว ตลาดให้ราคาราวกับทุกอย่างจะเป๊ะหมด พอมี antitrust เข้ามาเสริมความเสี่ยงด้วย Pete ขอ WATCH และรอให้ย่อลงแรงๆ ก่อน ไม่ไล่ราคาเด็ดขาด"
+    },
+    "mark_full": {
+      "business_overview": "ARM Holdings ออกแบบและให้สิทธิใช้งาน IP สำหรับ CPU, GPU และ System IP โดยไม่ผลิตชิปเอง รายได้มา 2 ทาง: ค่า License ตอนลูกค้านำ IP ไปออกแบบ และค่า Royalty ทุกครั้งที่ชิปถูกผลิตและส่งออก ปีงบ FY2026 (สิ้นสุด มี.ค. 2026) รายได้รวม $4,920M (+23%) แบ่งเป็น Royalty $2,613M (53%) และ License & Other $2,307M (47%) ล่าสุดขยายสู่ชิปสำเร็จรูป Arm AGI CPU สำหรับดาต้าเซ็นเตอร์ ซึ่งเป็น production silicon ตัวแรกของบริษัท",
+      "tam": "ตลาดแบ่งเป็น 3 ส่วน: Cloud AI (ดาต้าเซ็นเตอร์) ที่ royalty โตเกิน 100% YoY และครองส่วนแบ่ง ~50% ในกลุ่ม hyperscaler, Edge AI (มือถือ/IoT) ที่ครองตลาด >99% และดันค่า royalty/ชิปขึ้นทุกรอบด้วย ARMv9+CSS, และ Physical AI (ยานยนต์/หุ่นยนต์) ที่โตเลขสองหลัก เป้าระยะยาว FY2031 คือรายได้รวม $25B ($15B จากชิป AGI CPU + $10B จาก IP) และ Non-GAAP EPS เกิน $9 ซึ่งต้องโตเฉลี่ย ~40% CAGR ถึง 5 ปี",
+      "moat": "MOAT ที่แข็งที่สุดคือ ecosystem lock-in — มีนักพัฒนา 22M+ คน (>80% ของโลก) และชิป ARM ส่งออกสะสม 350B+ ตัว ซอฟต์แวร์ทั่วโลก optimize บน ARM ทำให้ switching cost สูงมาก เสริมด้วยความเป็นผู้นำด้าน performance-per-watt (สำคัญทั้งค่าไฟดาต้าเซ็นเตอร์และแบตมือถือ) และโมเดล asset-light ที่ GM ~98% นอกจากนี้ ARMv9 + CSS ยังดันค่า royalty ต่อชิปขึ้น 2-3 เท่าแบบ structural และ Neoverse ครองดาต้าเซ็นเตอร์ ~50% ของ hyperscaler รายใหญ่",
+      "latest_financials": "FY2026 รายได้ $4,920M (+23%), Non-GAAP Operating Margin 43.0% (ลดจาก 46.7% เพราะ R&D โต +34%), Non-GAAP EPS $1.77 (+9%), FCF พุ่งเป็น $882M (จาก $99M) ไตรมาสล่าสุด Q4 FY2026 รายได้ $1,490M (+20%, สถิติสูงสุด), Non-GAAP EPS $0.60 (สถิติ) แต่ ACV โต +22% (ชะลอจาก +28%) ไกด์ Q1 FY2027 รายได้ ~$1.26B (+20%), Non-GAAP EPS ~$0.40 งบดุลสะอาดไม่มีหนี้ มีเงินสด+เงินลงทุน $3,601M",
+      "key_points": [
+        "ราคาแพงมากในเชิงมูลค่า — Fwd PE ~105x, PEG 3.74 เกินเพดาน 1.5 ไปไกล และเทรดสูงกว่า FV Bull ($200) อยู่ ~60% MoS ติดลบหนัก",
+        "ตัวเร่งใหญ่สุดคือ Arm AGI CPU — ชิปสำเร็จรูปตัวแรกสำหรับดาต้าเซ็นเตอร์ (136 cores/ชิป) มี Meta เป็น lead partner ดีมานด์ $2B+ ใน FY2027-2028 แต่ติดข้อจำกัด supply (TSMC N3 เต็มกำลัง)",
+        "ความเสี่ยงกฎหมายเพิ่มชัด — DOJ/FTC สอบสวน antitrust เรื่อง licensing (พ.ค. 2026) + คดี Qualcomm/Nuvia ที่ยังค้าง post-trial motions (Qualcomm คิดเป็น ~10% รายได้)",
+        "SBC สูงมาก ($1,052M ใน FY2026 มากกว่ากำไร GAAP) + SoftBank ถือ ~87% และ Arm China (~17% รายได้) ที่ ARM ไม่มีอำนาจควบคุมโดยตรง"
+      ]
+    },
+    "warren_easy": [
+      "Warren ให้คะแนนคุณภาพธุรกิจ ARM สูงมาก (BQ 8.5) เพราะมันคือเจ้าของ ISA ที่อยู่ในชิปเกือบทุกตัวบนโลก — โมเดล IP licensing ต้นทุนต่อชิปเกือบเป็นศูนย์ GM ~98% และ switching cost มหาศาลเพราะลูกค้าต้องเขียนซอฟต์แวร์ใหม่หมดถ้าจะย้าย หัวใจ thesis คือ ARMv9 + CSS ที่ดันค่า royalty ต่อชิปขึ้น 2-3 เท่า ทำให้รายได้โตแม้ยอดขายเครื่องไม่โต",
+      "แต่ Warren ติดเรื่องราคาอย่างหนัก — ที่ $320 ราคาเกิน FV Base ($130) ไปเกินเท่าตัว Fwd PE สูงถึง 105x และ PEG 3.74 เกินเพดานไปไกล ผลตอบแทนคาดหวัง 5 ปีติดลบ คะแนน Valuation จึงต่ำสุด (VA 1.5) ยิ่งมี antitrust จาก DOJ/FTC เข้ามากดคะแนนความเสี่ยง (RA ลงเหลือ 5.0) ทำให้ WAF รวมเหลือแค่ 5.78 (LOW)",
+      "กลยุทธ์: WATCH เท่านั้น Conviction = LOW Warren บอกชัดว่าต้องรอให้ราคาย่อลงแรงๆ อย่างน้อย ~50% ก่อนถึงจะกลับมา revisit — ธุรกิจดีไม่เถียง แต่ราคานี้ไม่มี margin of safety เลย"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ตรวจสอบอิสระแล้วเห็นด้วยว่า \"ห้ามซื้อ\" — ราคา ~$321 สูงกว่า FV $130 ถึง 147% Fwd PE 105x, PEG 2.66 (Charlie ใช้ตัวเลข consensus) ก็ยังเกินเพดาน ราคาสะท้อนความสมบูรณ์แบบไปหมดแล้ว",
+        "ประเด็นที่ Charlie เน้นเป็นพิเศษคือความเสี่ยงใหม่ที่เป็น material: การสอบสวน antitrust จาก DOJ/FTC ที่เล็งวิธีคิดค่าลิขสิทธิ์โดยตรง (พ.ค. 2026) — ถ้าผลออกมาบังคับให้ ARM เปลี่ยนโมเดลหรือลด royalty rate จะกระทบหัวใจรายได้ทันที บวกกับ RISC-V ที่เร่งตัว และคดี Qualcomm ที่ยังมี post-trial motions ค้าง",
+        "สรุป Charlie's take: เห็นด้วยกับ Warren ทุกประการ — moat แข็งจริงแต่ราคาแพงเกินไป และความเสี่ยงกฎหมายไม่ใช่เรื่องเล็ก สิ่งที่ต้อง monitor คือผลการสอบสวน antitrust และความคืบหน้าของ AGI CPU ว่าจะแก้ข้อจำกัด supply ได้แค่ไหน"
+      ]
+    },
+    "idea_th": "ARM คือเจ้าของพิมพ์เขียวซีพียูที่เก็บค่าผ่านทางจากชิปเกือบทุกตัวบนโลกด้วยโมเดล IP licensing margin สูงและ switching cost มหาศาล แต่ราคาปัจจุบันแพงเกินมูลค่าพื้นฐานไปเกินเท่าตัว บวกความเสี่ยง antitrust ที่เพิ่งโผล่ จึงเป็นหุ้นคุณภาพที่ต้องรอราคา ไม่ใช่ไล่ซื้อ",
+    "story_gate_th": {
+      "what": "ARM เป็นเจ้าของ ISA ที่ครองตลาดมือถือ >95% และขยายเข้าดาต้าเซ็นเตอร์/ยานยนต์ ผ่านโมเดล IP licensing + royalty ที่ต้นทุนต่อชิปเกือบเป็นศูนย์ Cortex/Neoverse คือพิมพ์เขียวที่ hyperscaler (Graviton, Axion, M-series) ใช้ตรง — switching cost สูงเพราะต้องเขียนซอฟต์แวร์ใหม่ทั้งสแตก",
+      "why": "CSS (พิมพ์เขียวสำเร็จรูป) ลด time-to-market จาก 5 ปีเหลือ 2-3 ปี + ค่า royalty ต่อชิปเพิ่ม 2-3 เท่าจาก v8 เป็น v9 + ดีมานด์ AGI CPU >$2B ใน FY2027-2028 + royalty ดาต้าเซ็นเตอร์โตเกินเท่าตัว YoY",
+      "risk": "RISC-V โอเพนซอร์สเป็นภัยระยะยาว + การสอบสวน antitrust จาก DOJ/FTC (พ.ค. 2026) อาจบังคับเปลี่ยนโมเดลค่าลิขสิทธิ์ + SoftBank ถือ ~87% + China ~17% รายได้ผ่าน Arm China ที่ควบคุมไม่ได้ + คดี Qualcomm — และที่สำคัญราคาเกิน FV ทุก scenario"
+    },
+    "bull_th": [
+      "Arm AGI CPU เป็น revenue vector ใหม่ที่ใหญ่ที่สุด — ชิปดาต้าเซ็นเตอร์ 136 cores/ชิป มี Meta เป็น co-developer ดีมานด์ $2B+ FY2027-2028 (โตเท่าตัวจาก $1B ใน 6 สัปดาห์)",
+      "Data center royalty supercycle — โตเท่าตัว YoY ใน FY2026 และคาดโตอีกเท่าตัวใน FY2027 จาก Graviton5, Axion, Cobalt 200, NVIDIA Vera",
+      "ARMv9 + CSS ดันค่า royalty ต่อชิปขึ้นทุก cycle แม้ยอดมือถือแผ่ว — CSS ปัจจุบัน \"into the teens\" % ของ royalty และคาดเกิน 50% ในไม่กี่ปี",
+      "Physical AI โตเลขสองหลักต่อเนื่อง — Rivian, Tesla Optimus, NVIDIA Jetson Thor ล้วนใช้ ARM",
+      "เป้า FY2031 รายได้ $25B + Non-GAAP EPS >$9 + งบดุลสะอาดไม่มีหนี้ + SoftBank จ่าย $200M/ไตรมาสเป็น run rate ถาวร"
+    ],
+    "risk_th": [
+      "ราคาแพงสุดขั้ว — Fwd PE ~105x, PEG 3.74 เกินเพดาน และเทรดสูงกว่า FV Bull ($200) ~60% ไม่มี margin of safety เลยในทุก scenario",
+      "คดี Qualcomm/Nuvia — split verdict ยังค้าง post-trial motions; Qualcomm คิดเป็น ~10% รายได้ ถ้าแพ้/เจรจาใหม่กระทบ licensing income มีนัย",
+      "การสอบสวน antitrust จาก DOJ/FTC (พ.ค. 2026) เล็ง licensing practices โดยตรง — อาจบังคับเปลี่ยนโมเดลหรือลด royalty rate = hit ตรงหัวใจรายได้",
+      "China ~17% รายได้ผ่าน Arm China ที่ ARM ไม่มีอำนาจควบคุม + ความเสี่ยง export control เข้มขึ้น + SoftBank ถือ ~87% เป็น governance risk",
+      "RISC-V โอเพนซอร์สไม่มีค่า royalty กำลังได้ momentum + AGI CPU เป็น channel conflict กับลูกค้าที่ทำชิปเอง + SBC สูงกว่ากำไร GAAP"
+    ]
   },
   "TSLA": {
     "symbol": "TSLA",
@@ -2468,7 +2590,68 @@
       ],
       "summary": "DO NOT BUY confirmed. FwdPE 172.8x, PEG 5.87. Price 155% above FV $170. Robotaxi commercial launch unproven.",
       "review_date": "2026-05-27"
-    }
+    },
+    "mark_easy": {
+      "one_liner": "บริษัท Physical AI ที่เดิมพันอนาคตกับ Robotaxi และหุ่นยนต์ Optimus แต่ราคาแพงและความเสี่ยงสูงสุดในวอทช์ลิสต์",
+      "what": "Tesla ไม่ได้มองตัวเองเป็นแค่บริษัทรถ EV แล้ว — แต่เป็นบริษัท \"Physical AI\" ที่เอา AI ออกสู่โลกจริงผ่าน FSD (ระบบขับเอง), Robotaxi (แท็กซี่ไร้คนขับ) และ Optimus (หุ่นยนต์มนุษย์) ยังมีธุรกิจ Energy (Megapack/Powerwall) เสริม รายได้หลักวันนี้ยังมาจากการขายรถ แต่ตลาดให้ราคากับ \"option\" ของ Robotaxi และ Optimus เป็นหลัก",
+      "why_invest": [
+        "มี Real-World AI data moat — รถ 9.2M+ คันวิ่งสะสมเกือบ 10 พันล้านไมล์ป้อนข้อมูลฝึก FSD เป็น flywheel ที่คู่แข่งลอกเลียนยากในระยะสั้น",
+        "Robotaxi เริ่ม pilot จริงแล้วใน Austin/Dallas/Houston และ paid miles เพิ่มเกือบ 2 เท่า QoQ — Musk บอกรายได้จะ material ในปี 2027",
+        "Optimus เป็น optionality ขนาดมหึมา — ถ้าผลิตจำนวนมากสำเร็จ ตลาดที่จับได้เป็นระดับหลายล้านล้านดอลลาร์",
+        "Vertical integration ลึก — ทำเองตั้งแต่แบตเตอรี่ (4680), ชิป AI (AI5 tapeout เสร็จ), โรงกลั่นลิเทียม ลดความเสี่ยง supply chain และต้นทุนระยะยาว"
+      ],
+      "watch_out": [
+        "ราคาแพงมหาศาล — Fwd PE ~200 เท่า, ราคาเกิน FV Base ($170) ไป 150% มูลค่าสะท้อนความสำเร็จของ Robotaxi+Optimus ไปหมดแล้ว ถ้าล่าช้า sentiment พังหนัก",
+        "Key person risk จาก Elon Musk — แบรนด์เสียหายจากประเด็นการเมือง (DOGE) ทำยอดส่งมอบ Q1 ตก และ Musk ยังบริหารหลายบริษัทพร้อมกัน",
+        "ปี 2026 จะ Free Cash Flow ติดลบทั้งปี (capex >$25B) + คดี FSD/Autopilot หลายคดี + การแข่งขันจาก BYD ในจีน"
+      ],
+      "bottom_line": "Pete มองว่า Tesla เป็นเดิมพันกับอนาคต — ถ้า Robotaxi และ Optimus สำเร็จจริง upside มหาศาล แต่ราคาตอนนี้แพงเกินมูลค่าพื้นฐานไป 1.5 เท่า และความเสี่ยงในการ execute สูงที่สุดในวอทช์ลิสต์ Warren ให้คะแนนต่ำสุด (WAF 4.95) ส่วนตัว Pete มองว่านี่เป็นหุ้น \"story\" ที่ราคาวิ่งนำพื้นฐานไปไกล — WATCH และดูว่า Robotaxi จะทำรายได้จริงได้แค่ไหนก่อน"
+    },
+    "mark_full": {
+      "business_overview": "Tesla (TSLA) เปลี่ยนนิยามตัวเองจากบริษัท EV เป็นบริษัท \"Physical AI\" ที่เน้นนำ AI สู่โลกจริงผ่าน FSD, Robotaxi และ Optimus มี 2 segment หลัก: (1) Automotive — รถ EV (Model 3/Y/S/X/Cybertruck/Semi), บริการ Robotaxi, FSD subscription, regulatory credits, ประกัน; (2) Energy Generation & Storage — Megapack, Powerwall, Solar Q1 2026 รายได้รวม $22,387M (+16% YoY) โดย Automotive $16,234M (+16%), Energy $2,408M (-12%), Services & Other $3,745M (+42%)",
+      "tam": "เรื่องราวการเติบโตอยู่ที่ 3 เสา: Robotaxi (ขยายไป ~12 รัฐภายในปลายปี 2026, รายได้ material ปี 2027), Optimus (Factory 1 ที่ Fremont กำลังการผลิต 1M ตัว/ปี เริ่ม H2 2026; Factory 2 ที่ Texas ออกแบบรองรับ 10M ตัว/ปี เริ่มกลางปี 2027), และ Energy storage (Megapack 3 ที่ Houston เริ่ม H2 2026) ทั้งหมดหนุนด้วย Cortex AI training infrastructure (Cortex 2 >130k H100e) — แต่ส่วนใหญ่ยังเป็น optionality ที่ยังไม่สร้างรายได้จริง",
+      "moat": "MOAT ที่ชัดที่สุดคือ Real-World AI data flywheel — FSD วิ่งสะสมเข้าใกล้ 10 พันล้านไมล์จากฝูงรถ 9.2M+ คันทั่วโลก เป็น dataset ที่คู่แข่งลอกในระยะสั้นยาก เสริมด้วย vertical integration ที่ลึกกว่าใคร (ทำเองตั้งแต่เซลล์แบต 4680, powertrain, ชิป AI inference, โรงกลั่นลิเทียม) และเครือข่าย Supercharger ที่ใหญ่ที่สุดในโลก (8,463 สถานี) ซึ่งกลายเป็นมาตรฐาน NACS ที่ค่ายอื่นมาใช้ = network effect แต่จุดอ่อนคือ BYD แข่งราคาเหนือกว่าในจีน และ Waymo มีข้อมูล Robotaxi ที่ mature กว่า",
+      "latest_financials": "Q1 2026 รายได้ $22,387M (+16% YoY), GAAP Gross Margin 21.1% (+478bps), GAAP Operating Margin 4.2%, Non-GAAP EPS $0.41 (+52%), FCF $1,444M แต่มี one-time benefits (warranty write-down ~$230M + tariff) ช่วยหนุน FY2025 ทั้งปีรายได้ $94,827M (-3%), Non-GAAP EPS $1.66 (-28%) งบดุลแข็งมาก เงินสด+เงินลงทุน $44,743M สำคัญ: ฝ่ายบริหารยืนยัน FY2026 จะ Free Cash Flow ติดลบทั้งปีเพราะ capex >$25B ในเฟสลงทุน + SBC จาก CEO award ก้อนใหญ่กดกำไร GAAP",
+      "key_points": [
+        "ราคาแพงสุดในวอทช์ลิสต์ — Fwd PE ~200x, ราคาเกิน FV Base ($170) ไป 150% มูลค่าสะท้อนความสำเร็จของ Robotaxi+Optimus ไปแล้วเกือบหมด ถ้า execute พลาด downside ใหญ่",
+        "ปี 2026 เป็นเฟสลงทุนหนัก — FCF ติดลบทั้งปี, capex >$25B (6 production lines ใหม่ + semiconductor fab + AI infrastructure พร้อมกัน) execution risk สูงมาก",
+        "Robotaxi/FSD ขึ้นกับ regulator ที่ Tesla คุมไม่ได้ + Hardware 3 ทำ unsupervised FSD ไม่ได้ ต้องอัป HW = friction ในการขยายฝูง Robotaxi",
+        "Musk key person risk — แบรนด์เสียหายจากประเด็นการเมือง ทำยอดส่งมอบ Q1 ตก + คดี FSD/Autopilot หลายคดี (Benavides $329M อยู่ระหว่างอุทธรณ์)"
+      ]
+    },
+    "warren_easy": [
+      "Warren มองว่า Tesla คือ \"Turnaround\" ที่เดิมพันกับ optionality ของ Robotaxi และ Optimus มากกว่าธุรกิจ EV ปกติ MOAT มาจาก real-world AI data flywheel (FSD เกือบ 10 พันล้านไมล์) + vertical integration ลึก + เครือข่าย Supercharger แต่คะแนนคุณภาพธุรกิจกลางๆ (BQ 6.0) เพราะแบรนด์อ่อนแอลงและการแข่งขันในจีนรุนแรง",
+      "ปัญหาใหญ่สุดคือราคาและความเสี่ยง — ที่ $432 ราคาเกิน FV Base ($170) ไป 150% Fwd PE สูงถึง ~200x จนคำนวณ PEG ไม่ได้ (999) ผลตอบแทนคาดหวัง 5 ปีเท่ากับ 0%/ปี คะแนน Valuation ต่ำสุด (VA 1.5) และคะแนนความเสี่ยงก็ต่ำ (RA 4.5) จาก Musk key person risk + FCF ติดลบทั้งปี + คดีความ ทำให้ WAF รวมเหลือแค่ 4.95 ต่ำสุดในวอทช์ลิสต์",
+      "กลยุทธ์: WATCH/PASS — Warren ไม่ซื้อที่ราคานี้เด็ดขาด conviction ต่ำสุด เพราะราคาวิ่งนำพื้นฐานไปไกลและ Robotaxi ยังไม่สร้างรายได้เชิงพาณิชย์จริง ต้องเห็นหลักฐานว่า optionality กลายเป็นรายได้จริงก่อนถึงจะ revisit"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ตรวจสอบอิสระแล้วยืนยัน \"ห้ามซื้อ\" ตาม Warren — Fwd PE 172.8x, PEG 5.87 ราคาเกิน FV $170 ไปประมาณ 155% และ Robotaxi เชิงพาณิชย์ยังพิสูจน์ไม่ได้จริง ราคาสะท้อนความสำเร็จในอนาคตที่ยังไม่เกิดไปหมดแล้ว",
+        "สิ่งที่ Charlie กังวลและอาจถูกประเมินต่ำไป: timeline ของ Robotaxi ที่อาจล่าช้า, ผลกระทบของแบรนด์ Musk ต่อดีมานด์ (ยอดส่งมอบเคยตก -13% YoY), และการบีบ margin ของธุรกิจรถให้ต่ำกว่า 10% Charlie ยังตั้งข้อสังเกตว่าราคาจริงอาจสูงกว่าที่ Warren ใช้ด้วยซ้ำ ทำให้ MoS แย่ลงไปอีก",
+        "สรุป Charlie's take: เห็นด้วยกับ verdict WATCH — story น่าสนใจแต่ราคาแพงเกินไปและ execution risk สูงสุด สิ่งที่ต้อง monitor คือหลักฐานรายได้ Robotaxi เชิงพาณิชย์, จังหวะ FCF กลับเป็นบวก, และความคืบหน้า Optimus ว่าจะ scale ได้จริงตามที่โฆษณาหรือไม่"
+      ]
+    },
+    "idea_th": "Tesla คือเดิมพันกับ Physical AI — Robotaxi และหุ่นยนต์ Optimus ที่ถ้าสำเร็จจริง upside มหาศาล หนุนด้วย real-world AI data moat และ vertical integration ที่ลึก แต่ราคาปัจจุบันแพงเกินมูลค่าพื้นฐานไป 1.5 เท่า บวก execution risk และ key person risk ที่สูงที่สุดในวอทช์ลิสต์ จึงเป็นหุ้น story ที่ต้องรอหลักฐานรายได้จริง ไม่ใช่ไล่ราคา",
+    "story_gate_th": {
+      "what": "Tesla เป็นบริษัท Physical AI ที่นำ AI สู่โลกจริงผ่าน FSD, Robotaxi และ Optimus มี real-world AI data moat จากรถ 9.2M+ คันวิ่งสะสมเกือบ 10 พันล้านไมล์ + เครือข่าย Supercharger ที่ใหญ่ที่สุด + vertical integration ลึกตั้งแต่แบตเตอรี่ถึงชิป AI",
+      "why": "Robotaxi เปิด pilot จริงแล้วใน Austin/Dallas/Houston และ paid miles เพิ่มเกือบ 2 เท่า QoQ + Optimus เริ่มผลิต H2 2026 (เป้า 1M ตัว/ปี) + FSD ขยาย approval ในยุโรป/จีน + Energy storage ฟื้น — Musk บอกรายได้ Robotaxi จะ material ในปี 2027",
+      "risk": "ถ้า Robotaxi ถูก regulator ปฏิเสธหรือเกิดอุบัติเหตุ thesis พังทันที + แบรนด์ Musk เสียหายจากการเมืองทำ boycott (ยอดส่งมอบ Q1 ตก -13% YoY) + BYD/จีนแย่งตลาด + Optimus เลื่อนซ้ำๆ + Fwd PE ~200x ทำให้ downside ใหญ่มากถ้า option value ไม่เกิดจริง"
+    },
+    "bull_th": [
+      "Optimus เป็น optionality ที่ใหญ่ที่สุด — ถ้า mass production สำเร็จ addressable market เป็นระดับหลายล้านล้านดอลลาร์ Factory 1 รองรับ 1M ตัว/ปี เริ่ม H2 2026",
+      "FSD data flywheel เกือบ 10 พันล้านไมล์ + Cortex AI infrastructure (>130k H100e) สร้าง competitive moat ที่สะสมต่อเนื่องและลอกเลียนยาก",
+      "Robotaxi เปลี่ยน business model จาก hardware → fleet-based recurring revenue — Musk ยืนยันรายได้ material ปี 2027 ซึ่ง transformative",
+      "Services & Other โต +42% YoY = การเปลี่ยนเชิงโครงสร้างสู่รายได้ recurring มาร์จิ้นสูงขึ้น + FSD subscription 1.28M (+51% YoY)",
+      "Vertical integration ในแบตเตอรี่ (4680, LFP, โรงกลั่นลิเทียม) + ชิป AI5 (tapeout เสร็จ) ลดความเสี่ยง supply chain และต้นทุนระยะยาว"
+    ],
+    "risk_th": [
+      "ราคาแพงสุดในวอทช์ลิสต์ — Fwd PE ~200x ราคาเกิน FV Base ($170) ไป 150% มูลค่าสะท้อนความสำเร็จของ Robotaxi+Optimus ไปหมด ถ้าล่าช้า sentiment พังหนัก",
+      "Key person risk จาก Elon Musk — แบรนด์เสียหายจากกิจกรรมการเมือง (DOGE) ทำ boycott + ยอดส่งมอบตก และ Musk บริหารหลายบริษัทพร้อมกัน (SpaceX, xAI, Neuralink)",
+      "FY2026 Free Cash Flow ติดลบทั้งปี (capex >$25B) — 6 production lines ใหม่ + semiconductor fab + AI infrastructure ramp พร้อมกัน execution risk สูงมาก",
+      "FSD/Robotaxi ขึ้นกับ regulator ที่ Tesla คุมไม่ได้ + Hardware 3 ทำ unsupervised FSD ไม่ได้ต้องอัป HW + คดี Benavides ($329M อุทธรณ์) + FSD securities class action",
+      "BYD ครองตลาดจีนเหนือกว่าด้านราคา + Tesla China รายได้ทรงตัว/ลด + OBBBA ยกเลิกเครดิตภาษี EV กระทบดีมานด์สหรัฐ + SBC จาก CEO award ก้อนใหญ่กดกำไร GAAP"
+    ]
   },
   "INTC": {
     "symbol": "INTC",
