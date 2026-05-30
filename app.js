@@ -6,7 +6,7 @@ const THEME_KEY = 'oat-theme';
 function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = saved || (prefersDark ? 'dark' : 'light');
+  const theme = saved || 'dark';
   document.documentElement.setAttribute('data-theme', theme);
   updateThemeBtn(theme);
 }
@@ -78,7 +78,7 @@ function tierBadge(tier) {
 function wafBar(waf) {
   if (!waf) return '<span class="text-muted" style="font-size:.82rem">N/A</span>';
   const pct = Math.min(100, (waf / 10) * 100);
-  const color = waf >= 7 ? '#0ECB81' : waf >= 5.5 ? '#F5C518' : '#F6465D';
+  const color = waf >= 7 ? '#0ECB81' : waf >= 5.5 ? '#FFE94D' : '#F6465D';
   return `
     <div class="waf-bar-wrap">
       <div class="waf-bar-track">

@@ -1,14 +1,14 @@
 /* OAT Investor — Design System */
 /* Notion-inspired warm minimalism + Brand Yellow */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap');
 
 /* ── Variables ─────────────────────────────────────────────────── */
 :root {
-  --yellow: #F5C518;
-  --yellow-hover: #E8B500;
-  --yellow-dim: rgba(245, 197, 24, 0.14);
-  --yellow-text: #92700A;
+  --yellow: #FFE94D;
+  --yellow-hover: #FFE02E;
+  --yellow-dim: rgba(255, 233, 77, 0.14);
+  --yellow-text: #8A7A0A;
 
   --bg-page:    #FEFCF8;
   --bg-surface: #F5F2EB;
@@ -38,8 +38,8 @@
   --purple-bg:  #F5F3FF;
   --purple-text:#6D28D9;
 
-  --font-serif: 'Lora', Georgia, serif;
-  --font-sans:  'Inter', -apple-system, sans-serif;
+  --font-serif: 'Kanit', -apple-system, sans-serif;
+  --font-sans:  'Kanit', -apple-system, sans-serif;
 
   --max-w: 1200px;
   --content-w: 860px;
@@ -57,24 +57,24 @@
 }
 
 [data-theme="dark"] {
-  --bg-page:    #18160F;
-  --bg-surface: #211E16;
-  --bg-card:    #26221A;
-  --border:     #36301F;
-  --border-soft:#2E2A1E;
+  --bg-page:    #2A2A2E;
+  --bg-surface: #2F2F34;
+  --bg-card:    #34343A;
+  --border:     #3F3F47;
+  --border-soft:#37373E;
 
-  --text:   #F2E8D0;
-  --text-2: #B5AA95;
-  --text-3: #7A7060;
-  --text-4: #3D3828;
+  --text:   #F5F5F5;
+  --text-2: #B4B4BC;
+  --text-3: #8A8A93;
+  --text-4: #5A5A62;
 
   --green-bg:   rgba(14,203,129,.13);
   --red-bg:     rgba(246,70,93,.13);
   --amber-bg:   rgba(217,119,6,.13);
   --blue-bg:    rgba(37,99,235,.13);
   --purple-bg:  rgba(124,58,237,.13);
-  --yellow-dim: rgba(245,197,24,.12);
-  --yellow-text: #D4A800;
+  --yellow-dim: rgba(255,233,77,.12);
+  --yellow-text: #FFE94D;
 
   --shadow-sm: 0 1px 3px rgba(0,0,0,.4);
   --shadow:    0 4px 16px rgba(0,0,0,.5);
@@ -98,7 +98,7 @@ ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
 /* ── Typography ─────────────────────────────────────────────────── */
-h1,h2,h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.25; color: var(--text); }
+h1,h2,h3 { font-family: var(--font-serif); font-weight: 700; line-height: 1.25; color: var(--text); }
 h4,h5,h6 { font-family: var(--font-sans); font-weight: 600; line-height: 1.3; color: var(--text); }
 h1 { font-size: clamp(2rem, 4vw, 3rem); }
 h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
@@ -184,9 +184,9 @@ p  { color: var(--text-2); line-height: 1.7; }
 }
 .btn-primary {
   background: var(--yellow); color: #1C1400;
-  box-shadow: 0 1px 3px rgba(245,197,24,.3);
+  box-shadow: 0 1px 3px rgba(255, 233, 77,.3);
 }
-.btn-primary:hover { background: var(--yellow-hover); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(245,197,24,.35); }
+.btn-primary:hover { background: var(--yellow-hover); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255, 233, 77,.35); }
 .btn-secondary {
   background: var(--bg-card); color: var(--text);
   border: 1.5px solid var(--border); box-shadow: var(--shadow-sm);
@@ -227,8 +227,8 @@ p  { color: var(--text-2); line-height: 1.7; }
 
 .badge-green  { background: var(--green-bg);  color: var(--green-text); }
 .badge-red    { background: var(--red-bg);    color: var(--red-text);   }
-.badge-div    { background: rgba(245,197,24,.18); color: #9A7608; }
-[data-theme="dark"] .badge-div { color: #F5C518; }
+.badge-div    { background: rgba(255, 233, 77,.18); color: #9A7608; }
+[data-theme="dark"] .badge-div { color: #FFE94D; }
 .badge-amber  { background: var(--amber-bg);  color: var(--amber-text); }
 .badge-blue   { background: var(--blue-bg);   color: var(--blue-text);  }
 .badge-purple { background: var(--purple-bg); color: var(--purple-text);}
@@ -249,7 +249,7 @@ p  { color: var(--text-2); line-height: 1.7; }
 }
 .waf-bar-fill {
   height: 100%; border-radius: 3px;
-  background: linear-gradient(90deg, #F6465D 0%, #F5C518 45%, #0ECB81 100%);
+  background: linear-gradient(90deg, #F6465D 0%, #FFE94D 45%, #0ECB81 100%);
   transition: width 0.6s ease;
 }
 .waf-score-num { font-size: .85rem; font-weight: 700; min-width: 28px; color: var(--text); }
@@ -289,7 +289,7 @@ tr:hover td { background: var(--bg-surface); }
 /* ── Member Gate ─────────────────────────────────────────────────── */
 .gate-banner {
   background: var(--yellow-dim);
-  border: 1.5px solid rgba(245,197,24,.35);
+  border: 1.5px solid rgba(255, 233, 77,.35);
   border-radius: var(--r-lg);
   padding: 20px 24px;
   display: flex; align-items: center; gap: 16px;
@@ -444,7 +444,7 @@ tr:hover td { background: var(--bg-surface); }
   transition: all var(--ease);
 }
 .filter-btn:hover { border-color: var(--yellow); color: var(--text); }
-.filter-btn.active { background: var(--yellow-dim); border-color: rgba(245,197,24,.5); color: var(--yellow-text); font-weight: 600; }
+.filter-btn.active { background: var(--yellow-dim); border-color: rgba(255, 233, 77,.5); color: var(--yellow-text); font-weight: 600; }
 
 /* ── Valuation Panel ─────────────────────────────────────────────── */
 .val-panel {
@@ -501,7 +501,7 @@ tr:hover td { background: var(--bg-surface); }
   background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-3);
   transition: all var(--ease);
 }
-.period-btn.active { background: var(--yellow-dim); border-color: rgba(245,197,24,.5); color: var(--yellow-text); }
+.period-btn.active { background: var(--yellow-dim); border-color: rgba(255, 233, 77,.5); color: var(--yellow-text); }
 
 /* ── Loading / Skeleton ──────────────────────────────────────────── */
 .skeleton { background: linear-gradient(90deg, var(--bg-surface) 25%, var(--border-soft) 50%, var(--bg-surface) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: var(--r); }
