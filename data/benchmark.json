@@ -1,29 +1,21 @@
 {
-  "dates": [
-    "2026-05-26",
-    "2026-05-27"
-  ],
-  "portfolio": [
-    100.0,
-    100.0
-  ],
-  "voo": [
-    100.0,
-    99.99
-  ],
-  "qqqm": [
-    100.0,
-    99.9
-  ],
-  "deposited": [
-    100.0,
-    100.0
-  ],
-  "summary": {
-    "portfolio_pct": 0.0,
-    "voo_pct": -0.01,
-    "qqqm_pct": -0.1,
-    "total_deposited": 100.0
+  "SPY": {
+    "name": "S&P 500",
+    "return_1y": 29.82,
+    "price": 756.48,
+    "date": "2026-05-29"
   },
-  "generated_at": "2026-05-27T23:59:14Z"
+  "QQQ": {
+    "name": "NASDAQ 100",
+    "return_1y": 42.91,
+    "price": 738.31,
+    "date": "2026-05-29"
+  },
+  "VT": {
+    "name": "Total World",
+    "return_1y": 30.57,
+    "price": 158.12,
+    "date": "2026-05-29"
+  },
+  "generated_at": "2026-05-30T00:15:57Z"
 }
