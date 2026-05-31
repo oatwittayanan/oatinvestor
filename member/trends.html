@@ -9,22 +9,16 @@
     .trends-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 16px;
+      gap: 14px;
       align-items: start;
     }
-    .expand-btn {
-      background: none; border: none; cursor: pointer;
-      font-size: .82rem; color: var(--text-3); font-weight: 500;
-      display: flex; align-items: center; gap: 4px;
-      padding: 4px 0; transition: color var(--ease);
-      font-family: var(--font-sans);
-    }
-    .expand-btn:hover { color: var(--yellow-text); }
-    .expand-icon { transition: transform var(--ease); }
-    .trend-card.expanded .expand-icon { transform: rotate(180deg); }
-    @media (max-width: 600px) {
-      .trends-grid { grid-template-columns: 1fr; }
-    }
+    .trend-card-wrap { text-decoration: none; display: block; color: inherit; }
+    .ticker-pill.action-buy   { background: var(--green-bg);   color: var(--green-text);  border-color: transparent; }
+    .ticker-pill.action-watch { background: var(--amber-bg);   color: var(--amber-text);  border-color: transparent; }
+    .ticker-pill.action-hold  { background: var(--blue-bg);    color: var(--blue-text);   border-color: transparent; }
+    .ticker-pill.action-study { background: var(--bg-surface); color: var(--text-3);      border-color: var(--border); }
+    .ticker-pill.action-sell  { background: var(--red-bg);     color: var(--red-text);    border-color: transparent; }
+    @media (max-width: 600px) { .trends-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -36,6 +30,7 @@
       <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
       <a href="stocks.html">Watchlist</a>
       <a href="trends.html" class="active">Trends</a>
+      <a href="../team.html">About</a>
     </div>
     <div class="nav-actions">
       <button class="theme-btn" id="theme-btn">🌙</button>
@@ -55,8 +50,8 @@
   <!-- Filter -->
   <div class="filter-bar">
     <button class="filter-btn active" data-conv="all">ทั้งหมด</button>
-    <button class="filter-btn" data-conv="high">HIGH Conviction</button>
-    <button class="filter-btn" data-conv="medium">MEDIUM</button>
+    <button class="filter-btn" data-conv="high">HIGH</button>
+    <button class="filter-btn" data-conv="med">MEDIUM</button>
   </div>
 
   <!-- Trends Grid -->
@@ -81,18 +76,27 @@
 <script src="../app.js"></script>
 <script>
 let activeConv = 'all';
+let stockActions = {};
+
+const CONV_CLS = { HIGH: 'badge-high', MED: 'badge-medium', MEDIUM: 'badge-medium', LOW: 'badge-low' };
+const CONV_TAG_STYLE = {
+  HIGH:   'color:var(--green-text)',
+  MED:    'color:var(--yellow-text)',
+  MEDIUM: 'color:var(--yellow-text)',
+  LOW:    'color:var(--text-3)',
+};
 
 function convLabel(c) {
-  const map = { HIGH: 'badge-high', MEDIUM: 'badge-medium', LOW: 'badge-low' };
-  return `<span class="badge ${map[c] || 'badge-medium'}">${c}</span>`;
+  const label = c === 'MED' ? 'MEDIUM' : c;
+  return `<span class="badge ${CONV_CLS[c] || 'badge-medium'}">${label}</span>`;
 }
 
 function renderTrends() {
-  if (!window.TRENDS_DATA) return;
+  if (typeof TRENDS_DATA === 'undefined') return;
   const grid = document.getElementById('trends-grid');
   const filtered = TRENDS_DATA.filter(t => {
     if (activeConv === 'all') return true;
-    return (t.conviction||'').toLowerCase() === activeConv;
+    return (t.conviction||'').toUpperCase() === activeConv.toUpperCase();
   });
 
   document.getElementById('trend-count').textContent = TRENDS_DATA.length;
@@ -102,42 +106,28 @@ function renderTrends() {
     return;
   }
 
-  grid.innerHTML = filtered.map((t, i) => `
-    <div class="trend-card" id="trend-${i}" data-tag="${t.tag}">
-      <div class="trend-card-header">
-        <div class="trend-card-header-left">
-          <div class="trend-tag">${t.tag || ''}</div>
-          <div class="trend-title">${t.title || ''}</div>
-          <div class="trend-subtitle">${t.subtitle || ''}</div>
+  grid.innerHTML = filtered.map((t) => `
+    <a href="trend.html?tag=${encodeURIComponent(t.tag)}" class="trend-card-wrap">
+      <div class="trend-card">
+        <div class="trend-card-header">
+          <div class="trend-card-header-left">
+            <div class="trend-tag" style="${CONV_TAG_STYLE[t.conviction] || ''}">${t.tag || ''}</div>
+            <div class="trend-title">${t.title || ''}</div>
+            <div class="trend-subtitle">${t.subtitle || ''}</div>
+          </div>
         </div>
+        <div class="trend-card-meta">
+          ${convLabel(t.conviction || '')}
+          <span class="trend-date">อัพเดท ${t.last_updated || ''}</span>
+        </div>
+        ${t.summary ? `<p style="font-size:.86rem;color:var(--text-2);line-height:1.65;margin:10px 0 0">${t.summary}</p>` : ''}
+        ${t.tickers && t.tickers.length ? `
+        <div class="ticker-strip" style="margin-top:10px">
+          ${t.tickers.map(tk => { const a = stockActions[tk]; return `<span class="ticker-pill${a ? ' action-'+a : ''}">${tk}</span>`; }).join('')}
+        </div>` : ''}
       </div>
-      <div class="trend-card-meta">
-        ${convLabel(t.conviction || '')}
-        <span class="trend-date">อัพเดท ${t.last_updated || ''}</span>
-      </div>
-      ${t.summary ? `<p style="font-size:.86rem;color:var(--text-2);line-height:1.65;margin:10px 0 0">${t.summary}</p>` : ''}
-      ${t.tickers && t.tickers.length ? `
-      <div class="ticker-strip" style="margin-top:10px">
-        ${t.tickers.map(tk => `<a href="stock.html?t=${tk}" class="ticker-pill">${tk}</a>`).join('')}
-      </div>` : ''}
-      <div style="margin-top:12px">
-        <button class="expand-btn" onclick="toggleTrend(${i})">
-          <span>อ่านวิเคราะห์</span> <span class="expand-icon">▼</span>
-        </button>
-      </div>
-      <div class="trend-content prose" id="trend-content-${i}">
-        ${renderMd(t.content||'')}
-      </div>
-    </div>
+    </a>
   `).join('');
-}
-
-function toggleTrend(i) {
-  const card = document.getElementById(`trend-${i}`);
-  const content = document.getElementById(`trend-content-${i}`);
-  const isExp = card.classList.contains('expanded');
-  card.classList.toggle('expanded', !isExp);
-  content.classList.toggle('show', !isExp);
 }
 
 // Filters
@@ -150,16 +140,15 @@ document.querySelectorAll('.filter-btn[data-conv]').forEach(btn => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const resp = await fetch('../data/stocks.json');
+    const raw = await resp.json();
+    Object.entries(raw).forEach(([sym, s]) => {
+      if (s.action) stockActions[sym] = s.action.toLowerCase();
+    });
+  } catch (_) {}
   renderTrends();
-  // Scroll to anchor if URL has #tag
-  const hash = location.hash.replace('#', '');
-  if (hash) {
-    setTimeout(() => {
-      const el = document.querySelector(`[data-tag="${hash}"]`);
-      if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.style.outline = '2px solid var(--yellow)'; setTimeout(()=>el.style.outline='',2000); }
-    }, 100);
-  }
 });
 </script>
 </body>

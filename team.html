@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Us — oatinvestor</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Nav centered */
+    .nav-inner {
+      justify-content: center;
+      position: relative;
+    }
+    .nav-logo {
+      position: absolute;
+      left: 24px;
+    }
+    .nav-actions {
+      position: absolute;
+      right: 24px;
+    }
+
+    /* Oat hero */
+    .oat-hero {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 48px;
+      align-items: center;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 0 56px;
+    }
+    .oat-photo-wrap {
+      position: relative;
+    }
+    .oat-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      display: block;
+      border: 2px solid var(--border);
+    }
+    .oat-photo-accent {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 2px solid var(--yellow);
+      opacity: .4;
+      pointer-events: none;
+    }
+    .oat-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--yellow-text);
+      background: var(--yellow-dim);
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 14px;
+    }
+    .oat-name {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 4px;
+    }
+    .oat-name-en {
+      font-size: .95rem;
+      color: var(--text-3);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .oat-bio {
+      font-size: .92rem;
+      color: var(--text-2);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .oat-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .oat-tag {
+      font-size: .78rem;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      background: var(--bg-surface);
+    }
+    .oat-socials {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .oat-social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: var(--r);
+      font-size: .82rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      background: var(--bg-surface);
+      transition: all var(--ease);
+      text-decoration: none;
+      cursor: default;
+    }
+    .oat-social-btn:hover {
+      border-color: var(--yellow);
+      color: var(--yellow-text);
+      background: var(--yellow-dim);
+    }
+
+    /* Divider with text */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 860px;
+      margin: 0 auto 48px;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-soft);
+    }
+    .section-divider span {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+
+    /* Team grid */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .team-row-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 576px;
+      margin: 20px auto 0;
+    }
+    .team-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 28px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+      transition: border-color var(--ease), transform var(--ease);
+    }
+    .team-card:hover {
+      border-color: var(--yellow);
+      transform: translateY(-2px);
+    }
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 2px solid var(--border);
+    }
+    .team-name {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+    .team-role-badge {
+      display: inline-block;
+      padding: 3px 11px;
+      border-radius: 20px;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .team-desc {
+      font-size: .82rem;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* Workflow strip */
+    .workflow-strip {
+      max-width: 860px;
+      margin: 56px auto 0;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 24px 28px;
+    }
+    .workflow-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 16px;
+    }
+    .workflow-steps {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .workflow-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+    }
+    .workflow-step img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+    }
+    .workflow-step-oat {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .65rem;
+      font-weight: 800;
+      color: #2A2A2E;
+      flex-shrink: 0;
+    }
+    .workflow-step-name {
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .workflow-step-role {
+      font-size: .68rem;
+      color: var(--text-3);
+    }
+    .workflow-arrow {
+      color: var(--text-3);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .oat-hero { grid-template-columns: 1fr; gap: 32px; padding: 40px 0 32px; }
+      .oat-photo-wrap { max-width: 220px; margin: 0 auto; }
+      .oat-name { font-size: 1.8rem; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .team-row-2 { grid-template-columns: 1fr 1fr; max-width: 100%; }
+      .workflow-steps { gap: 6px; }
+    }
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: 1fr; }
+      .team-row-2 { grid-template-columns: 1fr; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-dot"></span>
+      oatinvestor
+    </a>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+      <a href="team.html" class="active">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn" title="เปลี่ยน Theme">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ── Oat Section ──────────────────────────────────────────── -->
+  <div class="oat-hero">
+
+    <div class="oat-photo-wrap">
+      <img src="images/team/oat.jpeg" alt="โอ๊ต" class="oat-photo">
+      <div class="oat-photo-accent"></div>
+    </div>
+
+    <div>
+      <div class="oat-label">ABOUT US</div>
+      <h1 class="oat-name">โอ๊ต</h1>
+      <p class="oat-name-en">Wittayanan · oatinvestor</p>
+
+      <p class="oat-bio">
+        ชอบการลงทุน มาลงทุนไปด้วยกันนะครับ 😊
+      </p>
+
+      <div class="oat-tags">
+        <span class="oat-tag">📈 Long-term Investor</span>
+      </div>
+
+      <div class="oat-socials">
+        <span class="oat-social-btn">▶ YouTube</span>
+        <span class="oat-social-btn">♪ TikTok</span>
+        <span class="oat-social-btn">◎ Instagram</span>
+        <span class="oat-social-btn">f Facebook</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── AI Team Divider ──────────────────────────────────────── -->
+  <div class="section-divider">
+    <span>ทีม AI ที่อยู่เบื้องหลัง</span>
+  </div>
+
+  <!-- ── Team Grid ────────────────────────────────────────────── -->
+  <div class="team-grid">
+    <div class="team-card">
+      <img src="images/team/kim.png" alt="Kim" class="team-avatar">
+      <div>
+        <p class="team-name">Kim</p>
+        <span class="team-role-badge" style="background:var(--yellow-dim);color:var(--yellow-text);margin-top:6px;display:inline-block">Personal Assistant</span>
+      </div>
+      <p class="team-desc">ผู้ประสานงานหลักของทีม คอยจัดระบบและดูแลให้ทุกอย่างเดินหน้าอย่างมีระเบียบ</p>
+    </div>
+
+    <div class="team-card">
+      <img src="images/team/mark.png" alt="Mark" class="team-avatar">
+      <div>
+        <p class="team-name">Mark</p>
+        <span class="team-role-badge" style="background:var(--blue-bg);color:var(--blue-text);margin-top:6px;display:inline-block">Research Analyst</span>
+      </div>
+      <p class="team-desc">นักวิจัยของทีม อ่านข่าว อ่านงบการเงิน หาข้อมูลดิบมาวางบนโต๊ะ</p>
+    </div>
+
+    <div class="team-card">
+      <img src="images/team/warren.png" alt="Warren" class="team-avatar">
+      <div>
+        <p class="team-name">Warren</p>
+        <span class="team-role-badge" style="background:var(--yellow-dim);color:var(--yellow-text);margin-top:6px;display:inline-block">Portfolio Manager</span>
+      </div>
+      <p class="team-desc">วิเคราะห์ Fair Value คำนวณ WAF Score และตัดสินใจว่าหุ้นตัวไหนควรซื้อในราคาเท่าไหร่</p>
+    </div>
+  </div>
+
+  <div class="team-row-2">
+    <div class="team-card">
+      <img src="images/team/charlie.png" alt="Charlie" class="team-avatar">
+      <div>
+        <p class="team-name">Charlie</p>
+        <span class="team-role-badge" style="background:var(--green-bg);color:var(--green);margin-top:6px;display:inline-block">Independent Auditor</span>
+      </div>
+      <p class="team-desc">นักวิจารณ์อิสระ หน้าที่คือค้านและหาจุดอ่อน ป้องกันการตัดสินใจโดยอคติ</p>
+    </div>
+
+    <div class="team-card">
+      <img src="images/team/pete.png" alt="Pete" class="team-avatar">
+      <div>
+        <p class="team-name">Pete</p>
+        <span class="team-role-badge" style="background:var(--purple-bg);color:var(--purple-text);margin-top:6px;display:inline-block">Content Writer</span>
+      </div>
+      <p class="team-desc">แปลงการวิเคราะห์ที่ซับซ้อนให้เป็นภาษาที่คนทั่วไปเข้าใจและสื่อสารออกไป</p>
+    </div>
+  </div>
+
+  <!-- ── Workflow ──────────────────────────────────────────────── -->
+  <div class="workflow-strip">
+    <div class="workflow-label">กระบวนการลงทุน</div>
+    <div class="workflow-steps">
+      <div class="workflow-step">
+        <img src="images/team/mark.png" alt="Mark">
+        <div>
+          <div class="workflow-step-name">Mark</div>
+          <div class="workflow-step-role">หาข้อมูล</div>
+        </div>
+      </div>
+      <span class="workflow-arrow">→</span>
+      <div class="workflow-step">
+        <img src="images/team/warren.png" alt="Warren">
+        <div>
+          <div class="workflow-step-name">Warren</div>
+          <div class="workflow-step-role">วิเคราะห์</div>
+        </div>
+      </div>
+      <span class="workflow-arrow">→</span>
+      <div class="workflow-step">
+        <img src="images/team/charlie.png" alt="Charlie">
+        <div>
+          <div class="workflow-step-name">Charlie</div>
+          <div class="workflow-step-role">Audit</div>
+        </div>
+      </div>
+      <span class="workflow-arrow">→</span>
+      <div class="workflow-step" style="border-color:rgba(255,233,77,.3);background:var(--yellow-dim)">
+        <img src="images/team/oat.jpeg" alt="โอ๊ต" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top">
+        <div>
+          <div class="workflow-step-name" style="color:var(--yellow-text)">โอ๊ต</div>
+          <div class="workflow-step-role">Approve & ลงทุน</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:.75rem;color:var(--text-3);text-align:center;margin-top:16px;padding-bottom:80px">
+    ทุก Paper ต้องผ่าน Charlie ก่อน — โอ๊ต deploy จริงเป็นขั้นสุดท้ายเท่านั้น · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน
+  </p>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+      <a href="team.html">About</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>

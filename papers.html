@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Warren Papers — oatinvestor</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .waf-bar { height:5px; border-radius:3px; background:var(--border); flex:1; overflow:hidden; min-width:60px; }
+    .waf-bar-fill { height:100%; border-radius:3px; }
+    .waf-bar-fill.g { background:#0ECB81; }
+    .waf-bar-fill.a { background:#f59e0b; }
+    .waf-bar-fill.r { background:#ef4444; }
+    .eyebrow-sm { font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--text-3); }
+    .rec-card { padding:24px; background:var(--bg-card); border-radius:var(--r); border:1px solid var(--border-soft); margin-bottom:14px; }
+    .rec-2col { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:20px; margin-bottom:16px; }
+    .val-row { display:flex; justify-content:space-between; align-items:baseline; font-size:.82rem; padding:5px 0; border-bottom:1px solid var(--border-soft); }
+    .val-row:last-child { border-bottom:none; }
+    .claim-li { display:flex; gap:8px; font-size:.82rem; line-height:1.55; padding:4px 0; }
+    .watch-item { display:flex; gap:10px; font-size:.82rem; line-height:1.55; padding:8px 12px; background:rgba(245,158,11,.06); border-radius:6px; border-left:2px solid rgba(245,158,11,.4); margin-bottom:8px; }
+    .snap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-radius:var(--r); border:1px solid var(--border); overflow:hidden; margin-bottom:24px; }
+    .snap-cell { padding:16px; background:var(--bg-surface); border-right:1px solid var(--border); text-align:center; }
+    .snap-cell:last-child { border-right:none; }
+    .author-chip { display:flex; align-items:center; gap:8px; padding:4px 12px; background:var(--bg-surface); border-radius:20px; border:1px solid var(--border); }
+    @media (max-width:600px) {
+      .snap-grid { grid-template-columns:1fr 1fr; }
+      .rec-2col  { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+      <a href="team.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <!-- Breadcrumb -->
+  <div style="margin-bottom:20px;font-size:.8rem;color:var(--text-3)">
+    <a href="portfolio.html" style="color:var(--text-3);text-decoration:none">พอร์ตโฟลิโอ</a>
+    <span style="margin:0 6px">›</span>
+    <span>Papers</span>
+  </div>
+
+  <!-- Hero -->
+  <div style="margin-bottom:32px">
+    <div class="eyebrow-sm" style="margin-bottom:8px">Warren & Charlie · Investment Decisions</div>
+    <h1 style="margin-bottom:8px;font-size:clamp(20px,3vw,30px)">Paper Archive</h1>
+    <p style="color:var(--text-3);font-size:.88rem;max-width:55ch;line-height:1.65">
+      ทุก Paper คือ formal investment decision ของ Warren — ระบุตัวหุ้น สัดส่วน และ thesis พร้อม audit trail ที่ Charlie ตรวจสอบแล้วก่อน Oat deploy จริง
+    </p>
+  </div>
+
+  <div id="papers-loading" style="text-align:center;padding:60px;color:var(--text-3)">กำลังโหลด...</div>
+
+  <div id="papers-content" style="display:none">
+    <div id="paper-index" style="margin-bottom:32px"></div>
+    <div id="paper-full"></div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="member/stocks.html">Watchlist</a>
+      <a href="member/trends.html">Trends</a>
+      <a href="team.html">About</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+// ── Helpers ───────────────────────────────────────────────────────
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function fmtUSD(v){ return v!=null ? '$'+Number(v).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2}) : '—'; }
+
+function verdictBadge(v) {
+  const s = v==='AGREE'
+    ? 'background:rgba(14,203,129,.12);color:#0ECB81;border:1px solid rgba(14,203,129,.28)'
+    : v==='CAUTION'
+    ? 'background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.28)'
+    : v==='DISAGREE'
+    ? 'background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.28)'
+    : 'background:var(--bg-surface);color:var(--text-3);border:1px solid var(--border)';
+  return `<span style="${s};font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.06em">${esc(v)}</span>`;
+}
+
+function mktBadge(temp) {
+  const t = (temp||'').toUpperCase();
+  const s = t.includes('HOT')
+    ? 'background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.28)'
+    : t.includes('COLD')
+    ? 'background:rgba(59,130,246,.12);color:#3b82f6;border:1px solid rgba(59,130,246,.28)'
+    : 'background:rgba(14,203,129,.1);color:#0ECB81;border:1px solid rgba(14,203,129,.25)';
+  return `<span style="${s};font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.04em">${esc(temp)}</span>`;
+}
+
+function scoreBar(label, score) {
+  if (score == null) return '';
+  const cls = score>=7.5?'g':score>=5?'a':'r';
+  const col = score>=7.5?'#0ECB81':score>=5?'#f59e0b':'#ef4444';
+  return `<div style="display:flex;align-items:center;gap:10px">
+    <span style="font-family:monospace;font-size:.7rem;color:var(--text-3);width:24px;flex-shrink:0">${esc(label)}</span>
+    <div class="waf-bar"><div class="waf-bar-fill ${cls}" style="width:${score*10}%"></div></div>
+    <span style="font-size:.82rem;font-weight:700;color:${col};width:26px;text-align:right;flex-shrink:0">${score}</span>
+  </div>`;
+}
+
+function renderScoreBars(scores) {
+  if (!scores) return '';
+  return `<div>
+    <div class="eyebrow-sm" style="margin-bottom:10px">WAF Sub-scores</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      ${scoreBar('BQ', scores.bq?.score)}
+      ${scoreBar('GP', scores.gp?.score)}
+      ${scoreBar('VA', scores.va?.score)}
+      ${scoreBar('RA', scores.ra?.score)}
+    </div>
+  </div>`;
+}
+
+function renderValuation(va) {
+  if (!va || va.price == null) return '';
+  const rows = [
+    ['ราคา (ณ วันวิเคราะห์)', `<span style="font-family:monospace">${fmtUSD(va.price)}</span>`],
+    ['Fair Value (Base)',      `<span style="font-family:monospace;color:#0ECB81">${fmtUSD(va.fair_value_base)}</span>`],
+    ['Margin of Safety',      `<strong style="color:${va.mos_pct>=15?'#0ECB81':'#ef4444'}">${(+va.mos_pct).toFixed(1)}%</strong>`],
+    va.forward_pe != null && ['Fwd P/E', `<span style="font-family:monospace">${(+va.forward_pe).toFixed(1)}×</span>`],
+    va.peg        != null && ['PEG',     `<span style="font-family:monospace;color:${va.peg<=1.5?'#0ECB81':'#ef4444'}">${(+va.peg).toFixed(2)}</span>`],
+    va.expected_return_5yr_pct != null && ['Expected Return', `<span style="font-family:monospace;color:#0ECB81">+${(+va.expected_return_5yr_pct).toFixed(1)}%/yr</span>`],
+  ].filter(Boolean);
+  return `<div>
+    <div class="eyebrow-sm" style="margin-bottom:10px">Valuation</div>
+    <div>
+      ${rows.map(([lbl,val])=>`<div class="val-row"><span style="color:var(--text-3)">${esc(lbl)}</span>${val}</div>`).join('')}
+    </div>
+  </div>`;
+}
+
+// ── Warren ────────────────────────────────────────────────────────
+const HNAMES = {NVDA:'NVIDIA Corp.',MSFT:'Microsoft Corp.',META:'Meta Platforms',
+  AMZN:'Amazon',GOOGL:'Alphabet',AAPL:'Apple',CASH:'Cash Reserve'};
+const TIER_COLORS = {'🏛️ Inevitable':'#0ECB81','🚀 Pre-Inevitable':'#FFE94D'};
+const CONV_COLORS = {'VERY HIGH':'#FFE94D','HIGH':'#0ECB81','MEDIUM':'#3b82f6','LOW':'#f97316'};
+
+function renderWarrenRec(rec) {
+  const isCash = rec.ticker==='CASH'||rec.ticker==='SGOV';
+  if (isCash) {
+    return `<div class="rec-card" style="opacity:.82;border-style:dashed">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>
+          <div style="font-size:1.05rem;font-weight:800;margin-bottom:3px">${esc(rec.ticker)}</div>
+          <div style="font-size:.8rem;color:var(--text-3)">Dry Powder · Cash Equivalent</div>
+        </div>
+        <div style="text-align:right">
+          <span class="badge badge-green" style="font-size:.7rem">HOLD</span>
+          <div style="font-size:1.1rem;font-weight:800;color:var(--yellow);margin-top:4px">$${rec.amount_usd}</div>
+        </div>
+      </div>
+      ${rec.investment_idea ? `<div style="margin-top:12px;font-size:.82rem;color:var(--text-3);line-height:1.6">${esc(rec.investment_idea)}</div>` : ''}
+    </div>`;
+  }
+
+  const va = rec.scores?.va || {};
+  const tierColor = TIER_COLORS[rec.tier] || '#FFE94D';
+  const convColor = CONV_COLORS[rec.conviction] || '#888';
+  return `<div class="rec-card" style="border-left:3px solid ${tierColor}">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+      <div style="flex:1;min-width:140px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px">
+          <span style="font-size:1.2rem;font-weight:800">${esc(rec.ticker)}</span>
+          <span style="font-size:.75rem;color:var(--text-3)">${esc(HNAMES[rec.ticker]||rec.ticker)}</span>
+          ${rec.waf!=null?`<span style="font-size:.68rem;padding:2px 8px;border-radius:20px;background:var(--bg-surface);border:1px solid var(--border);color:var(--text-2);font-weight:700">WAF ${rec.waf}</span>`:''}
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          ${rec.tier?`<span style="font-size:.68rem;padding:2px 8px;border-radius:20px;background:${tierColor}18;color:${tierColor};border:1px solid ${tierColor}40;font-weight:600">${esc(rec.tier)}</span>`:''}
+          ${rec.conviction?`<span style="font-size:.68rem;padding:2px 8px;border-radius:20px;background:${convColor}18;color:${convColor};border:1px solid ${convColor}40;font-weight:600">${esc(rec.conviction)}</span>`:''}
+        </div>
+      </div>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="badge badge-green" style="font-size:.7rem">${esc(rec.action)}</span>
+        <div style="font-size:1.2rem;font-weight:800;color:var(--yellow);margin-top:4px">$${rec.amount_usd}</div>
+      </div>
+    </div>
+
+    ${rec.investment_idea?`<div style="padding:12px 14px;background:var(--bg-surface);border-radius:var(--r);margin-bottom:14px">
+      <div class="eyebrow-sm" style="margin-bottom:6px">Investment Idea</div>
+      <p style="font-size:.84rem;color:var(--text-2);line-height:1.65;margin:0">${esc(rec.investment_idea)}</p>
+    </div>`:''}
+
+    <div class="rec-2col">
+      ${renderScoreBars(rec.scores)}
+      ${renderValuation(va)}
+    </div>
+
+    ${rec.thesis?`<div style="padding-top:14px;border-top:1px solid var(--border-soft);font-size:.82rem;color:var(--text-2);line-height:1.7">
+      <strong style="color:var(--text)">Thesis:</strong> ${esc(rec.thesis)}
+    </div>`:''}
+    ${rec.thesis_risk?`<div style="margin-top:10px;padding:10px 14px;background:rgba(239,68,68,.05);border-radius:6px;border-left:2px solid rgba(239,68,68,.3);font-size:.8rem;color:var(--text-3);line-height:1.6">
+      ⚠️ <strong style="color:var(--text-2)">Risk:</strong> ${esc(rec.thesis_risk)}
+    </div>`:''}
+  </div>`;
+}
+
+function renderWarren(paper, charlieVerdict) {
+  const ctx  = paper.market_context || {};
+  const snap = paper.portfolio_snapshot || {};
+  const recs = paper.recommendations || [];
+  const regime = ctx.market_temp || ctx.market_regime || 'Normal';
+  const deployedPct = snap.cash_before ? Math.round(snap.deployed/snap.cash_before*100) : '—';
+
+  return `
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px">
+      <div class="author-chip">
+        <img src="images/team/warren.png" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top;border:1px solid var(--border)">
+        <span style="font-size:.78rem;font-weight:600">Warren</span>
+        <span style="font-size:.72rem;color:var(--text-3)">Portfolio Manager</span>
+      </div>
+      ${charlieVerdict?`<button onclick="switchPaperTab(this,'charlie')" style="display:flex;align-items:center;gap:6px;padding:4px 12px;border-radius:20px;cursor:pointer;font-size:.72rem;font-weight:700;background:rgba(14,203,129,.08);color:#0ECB81;border:1px solid rgba(14,203,129,.25)">
+        ✓ Charlie ${esc(charlieVerdict)} · ดู Review →
+      </button>`:''}
+    </div>
+
+    <div style="padding:16px 20px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border);margin-bottom:20px">
+      <div class="eyebrow-sm" style="margin-bottom:10px">🌡 ภาวะตลาด ณ วันลงทุน</div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+        ${mktBadge(regime)}
+        ${ctx.sp500_fwd_pe!=null?`<span style="font-size:.78rem;color:var(--text-3)">S&amp;P Fwd P/E ${ctx.sp500_fwd_pe}× · VIX ${ctx.vix||'—'}</span>`:''}
+        ${ctx.mos_gate_pct!=null?`<span style="font-size:.78rem;color:var(--text-3)">MoS Gate ≥${ctx.mos_gate_pct}% · PEG Cap ≤${ctx.peg_ceiling||1.5}</span>`:''}
+      </div>
+      <p style="font-size:.82rem;color:var(--text-2);line-height:1.65;margin:0">${esc(paper.market_outlook||'')}</p>
+    </div>
+
+    <div class="eyebrow-sm" style="margin-bottom:10px">Portfolio Snapshot</div>
+    <div class="snap-grid">
+      <div class="snap-cell">
+        <div style="font-size:.68rem;color:var(--text-3);margin-bottom:4px">Cash Before</div>
+        <div style="font-size:1.1rem;font-weight:800">${fmtUSD(snap.cash_before)}</div>
+        <div style="font-size:.7rem;color:var(--text-3)">Total deposited</div>
+      </div>
+      <div class="snap-cell">
+        <div style="font-size:.68rem;color:var(--text-3);margin-bottom:4px">Deployed</div>
+        <div style="font-size:1.1rem;font-weight:800;color:#f59e0b">${fmtUSD(snap.deployed)}</div>
+        <div style="font-size:.7rem;color:var(--text-3)">${deployedPct}% deployed</div>
+      </div>
+      <div class="snap-cell">
+        <div style="font-size:.68rem;color:var(--text-3);margin-bottom:4px">Cash After</div>
+        <div style="font-size:1.1rem;font-weight:800;color:#0ECB81">${fmtUSD(snap.cash_after)}</div>
+        <div style="font-size:.7rem;color:var(--text-3)">Dry powder</div>
+      </div>
+    </div>
+
+    <div class="eyebrow-sm" style="margin-bottom:12px">Recommendations · ${recs.length} รายการ</div>
+    ${recs.map(r=>renderWarrenRec(r)).join('')}
+
+    ${(paper.rejected_candidates||[]).length?`
+    <div class="eyebrow-sm" style="margin-top:20px;margin-bottom:10px">หุ้นที่ถูกตัดออก (Rejected Candidates)</div>
+    <div class="card" style="padding:16px 20px">
+      ${(paper.rejected_candidates||[]).map(r=>`
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border-soft)">
+          <span style="font-weight:800;font-family:monospace;min-width:44px;color:var(--text-2)">${esc(r.ticker)}</span>
+          <span style="font-size:.82rem;color:var(--text-3);line-height:1.55;flex:1">${esc(r.reason)}</span>
+        </div>`).join('')}
+    </div>`:''}
+
+    ${paper.retrospective?.bias_patterns?`
+    <div style="margin-top:16px;padding:14px 16px;background:rgba(255,233,77,.05);border-radius:var(--r);border:1px solid rgba(255,233,77,.2);font-size:.8rem;color:var(--text-2);line-height:1.6">
+      📊 <strong>Charlie Bias Monitor:</strong> ${esc(paper.retrospective.bias_patterns)}
+    </div>`:''}
+
+    <div style="margin-top:20px;padding:14px 18px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border)">
+      <p style="font-size:.78rem;color:var(--text-3);margin:0;line-height:1.6">⚠️ ราคาใน Paper นี้คือราคา ณ วันที่วิเคราะห์ ${esc(paper.date)} — ตรวจสอบราคาปัจจุบันก่อนซื้อจริงเสมอ Paper ทุกฉบับต้องผ่าน Charlie Review ก่อน Oat deploy จริง</p>
+    </div>`;
+}
+
+// ── Charlie ───────────────────────────────────────────────────────
+function claimList(items, icon, color) {
+  if (!items || !items.length) return '';
+  return `<div>
+    <div class="eyebrow-sm" style="margin-bottom:10px">${icon} ${color==='green'?'Verified Claims':'Concerns'}</div>
+    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px">
+      ${items.map(pt=>`<li class="claim-li"><span style="color:${color==='green'?'#0ECB81':'#f59e0b'};flex-shrink:0;margin-top:1px">${icon}</span><span>${esc(pt)}</span></li>`).join('')}
+    </ul>
+  </div>`;
+}
+
+function renderCharlieTickerReview(tr) {
+  const verdict = tr.verdict || tr.charlie_verdict || '—';
+  const priceVal = tr.price_at_review ?? tr.yf_price;
+  const fvVal = tr.warren_fv ?? tr.warren_fv_base;
+  const risks = tr.risks || tr.risks_found || [];
+
+  const compareData = [
+    tr.yf_forward_pe != null && ['Fwd P/E (Charlie)', `${tr.yf_forward_pe}×`],
+    tr.yf_peg        != null && ['PEG (Charlie)',      `${tr.yf_peg}`],
+    tr.yf_eps_growth_5y != null && ['EPS Growth 5Y', `${tr.yf_eps_growth_5y}%`],
+    fvVal != null && ['Warren FV', `$${fvVal}`],
+    tr.warren_mos_pct != null && ['Warren MoS', `${(+tr.warren_mos_pct).toFixed(1)}%`],
+  ].filter(Boolean);
+
+  return `<div class="card" style="padding:24px;margin-bottom:14px">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span style="font-size:1.1rem;font-weight:800;font-family:monospace">${esc(tr.ticker)}</span>
+        ${priceVal!=null?`<span style="font-family:monospace;font-size:.84rem;color:var(--text-3)">$${(+priceVal).toFixed(2)}</span>`:''}
+        ${fvVal!=null&&tr.warren_mos_pct!=null?`<span style="font-size:.76rem;color:var(--text-3)">FV $${fvVal} · MoS ${(+tr.warren_mos_pct).toFixed(1)}%</span>`:''}
+      </div>
+      ${verdictBadge('Charlie: '+verdict)}
+    </div>
+
+    ${tr.summary?`<div style="padding:12px 14px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border);font-size:.82rem;color:var(--text-2);line-height:1.65;margin-bottom:14px">${esc(tr.summary)}</div>`:''}
+
+    ${compareData.length?`<div style="display:flex;gap:14px;flex-wrap:wrap;padding:10px 12px;background:var(--bg-surface);border-radius:var(--r);margin-bottom:14px;font-size:.78rem">
+      ${compareData.map(([lbl,val])=>`<div><span style="color:var(--text-3)">${esc(lbl)}: </span><strong>${esc(val)}</strong></div>`).join('')}
+    </div>`:''}
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px">
+      ${claimList(tr.verified_claims||tr.agree_points,'✓','green')}
+      ${claimList(tr.concerns,'⚠','amber')}
+      ${risks.length?`<div>
+        <div class="eyebrow-sm" style="margin-bottom:10px">✗ Additional Risks</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px">
+          ${risks.map(r=>`<li class="claim-li"><span style="color:#ef4444;flex-shrink:0">✗</span><span>${esc(r)}</span></li>`).join('')}
+        </ul>
+      </div>`:''}
+    </div>
+    ${tr.data_source?`<div style="margin-top:12px;font-size:.72rem;color:var(--text-3)">📊 Source: ${esc(tr.data_source)}</div>`:''}
+  </div>`;
+}
+
+function renderCharlie(review) {
+  if (!review) return '<div style="padding:40px;text-align:center;color:var(--text-3)">ยังไม่มี Charlie Review สำหรับ Paper นี้</div>';
+
+  return `
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px">
+      <div class="author-chip">
+        <img src="images/team/charlie.png" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top;border:1px solid var(--border)">
+        <span style="font-size:.78rem;font-weight:600">Charlie</span>
+        <span style="font-size:.72rem;color:var(--text-3)">Investment Auditor</span>
+      </div>
+      ${verdictBadge('OVERALL: '+(review.overall_verdict||''))}
+    </div>
+
+    <div style="padding:16px 20px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border);margin-bottom:24px">
+      <div class="eyebrow-sm" style="margin-bottom:10px">Overall Assessment</div>
+      <p style="font-size:.84rem;color:var(--text-2);line-height:1.7;margin:0">${esc(review.overall_summary||'')}</p>
+    </div>
+
+    <div class="eyebrow-sm" style="margin-bottom:12px">Ticker Reviews · ${(review.ticker_reviews||[]).length} รายการ</div>
+    ${(review.ticker_reviews||[]).map(tr=>renderCharlieTickerReview(tr)).join('')}
+
+    ${(review.watch_out||[]).length?`
+    <div style="padding:18px 20px;border:1px solid rgba(245,158,11,.3);border-radius:var(--r);background:rgba(245,158,11,.04);margin-bottom:20px">
+      <div class="eyebrow-sm" style="color:#f59e0b;margin-bottom:12px">⚠ Watch Out — สิ่งที่ต้องระวัง</div>
+      ${(review.watch_out||[]).map(w=>`<div class="watch-item"><span style="color:#f59e0b;flex-shrink:0">→</span><span>${esc(w)}</span></div>`).join('')}
+    </div>`:''}
+
+    ${(review.points_to_verify||[]).length?`
+    <div class="card" style="padding:18px 20px;margin-bottom:14px">
+      <div class="eyebrow-sm" style="margin-bottom:12px">↗ ต้องติดตามต่อ (Points to Verify)</div>
+      ${(review.points_to_verify||[]).map(pt=>`<div style="font-size:.82rem;color:var(--text-2);padding:6px 0;border-bottom:1px solid var(--border-soft);line-height:1.5">→ ${esc(pt)}</div>`).join('')}
+    </div>`:''}
+
+    ${(review.data_sources||[]).length?`
+    <div class="card" style="padding:16px 20px">
+      <div class="eyebrow-sm" style="margin-bottom:10px">Data Sources</div>
+      ${(review.data_sources||[]).map(ds=>`<div style="font-size:.75rem;color:var(--text-3);padding:3px 0">${esc(ds)}</div>`).join('')}
+      ${review.methodology_note?`<div style="margin-top:10px;font-size:.75rem;color:var(--text-3);padding:8px 12px;background:var(--bg-surface);border-radius:6px;line-height:1.5">${esc(review.methodology_note)}</div>`:''}
+    </div>`:''}`;
+}
+
+// ── Index card ────────────────────────────────────────────────────
+function renderIndexCard(paper, num, charlieVerdict) {
+  const regime = paper.market_context?.market_temp || 'Normal';
+  const snap = paper.portfolio_snapshot || {};
+  const tickers = (paper.recommendations||[]).filter(r=>r.action==='BUY').map(r=>r.ticker+' BUY').join(' · ');
+  return `<div class="card" style="display:flex;align-items:center;gap:16px;padding:18px 22px;margin-bottom:12px;flex-wrap:wrap">
+    <div style="font-family:monospace;font-size:.72rem;color:var(--text-3);min-width:86px">${esc(paper.date)}</div>
+    <div style="flex:1;min-width:180px">
+      <div style="font-weight:700;margin-bottom:3px">Paper #${num} — ${esc(paper.title.replace(/^Paper #\d+ — /,''))}</div>
+      <div style="font-size:.78rem;color:var(--text-3)">Deployed ${fmtUSD(snap.deployed)} · ${esc(tickers)}</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;flex-wrap:wrap">
+      ${mktBadge(regime)}
+      ${charlieVerdict?verdictBadge('Charlie: '+charlieVerdict):''}
+      <a href="#paper-${esc(paper.id)}" style="font-size:.78rem;padding:5px 14px;background:var(--yellow);color:#1a1a1c;border-radius:20px;text-decoration:none;font-weight:700;white-space:nowrap">อ่านเต็ม ↓</a>
+    </div>
+  </div>`;
+}
+
+// ── Full paper (Warren + Charlie tabs) ────────────────────────────
+function renderFullPaper(paper, num, review) {
+  const charlieVerdict = review?.overall_verdict;
+  const regime = paper.market_context?.market_temp || 'Normal';
+  const pid = esc(paper.id);
+
+  return `<div id="paper-${pid}" style="margin-top:40px;padding-top:40px;border-top:1px solid var(--border)">
+    <div style="margin-bottom:24px">
+      <div style="font-family:monospace;font-size:.72rem;color:var(--text-3);margin-bottom:6px">Paper #${num} · ${esc(paper.date)}</div>
+      <h2 style="font-size:clamp(17px,2.5vw,24px);margin-bottom:12px;letter-spacing:-.01em">${esc(paper.title)}</h2>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        ${mktBadge(regime)}
+        ${charlieVerdict?verdictBadge('Charlie: '+charlieVerdict):''}
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-ptab="warren" data-pid="${pid}">📋 Warren Paper</button>
+      <button class="tab-btn"        data-ptab="charlie" data-pid="${pid}">✅ Charlie Review</button>
+    </div>
+
+    <div class="tab-pane active" id="ptab-warren-${pid}" style="padding-top:24px">
+      ${renderWarren(paper, charlieVerdict)}
+    </div>
+    <div class="tab-pane" id="ptab-charlie-${pid}" style="padding-top:24px">
+      ${renderCharlie(review)}
+    </div>
+  </div>`;
+}
+
+// ── switchPaperTab helper (เรียกจาก Warren "ดู Charlie Review" button) ──
+function switchPaperTab(btn, targetTab) {
+  const section = btn.closest('[id^="paper-"]');
+  if (!section) return;
+  const pid = section.id.replace('paper-','');
+  section.querySelectorAll('[data-ptab]').forEach(b => b.classList.remove('active'));
+  section.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  const activeBtn = section.querySelector(`[data-ptab="${targetTab}"]`);
+  const activePane = document.getElementById(`ptab-${targetTab}-${pid}`);
+  if (activeBtn) activeBtn.classList.add('active');
+  if (activePane) activePane.classList.add('active');
+}
+
+// ── Init ──────────────────────────────────────────────────────────
+Promise.all([
+  fetch('data/papers.json').then(r=>r.json()).catch(()=>[]),
+  fetch('data/charlie_reviews.json').then(r=>r.json()).catch(()=>[]),
+]).then(([papers, charlieReviews]) => {
+  const charlieMap = {};
+  (charlieReviews||[]).forEach(cr => { charlieMap[cr.paper_id] = cr; });
+
+  const sorted = (papers||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const total = sorted.length;
+
+  let indexHtml = '', fullHtml = '';
+  sorted.forEach((p, i) => {
+    const num = total - i;
+    const cr = charlieMap[p.id];
+    indexHtml += renderIndexCard(p, num, cr?.overall_verdict);
+    fullHtml  += renderFullPaper(p, num, cr);
+  });
+
+  document.getElementById('paper-index').innerHTML = indexHtml;
+  document.getElementById('paper-full').innerHTML  = fullHtml;
+  document.getElementById('papers-loading').style.display = 'none';
+  document.getElementById('papers-content').style.display = 'block';
+
+  // Paper-level tab switching
+  document.querySelectorAll('[data-ptab][data-pid]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const { ptab, pid } = btn.dataset;
+      const section = document.getElementById('paper-'+pid);
+      if (!section) return;
+      section.querySelectorAll('[data-ptab]').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(`ptab-${ptab}-${pid}`)?.classList.add('active');
+    });
+  });
+
+  // Scroll to anchor (from portfolio.html link)
+  if (window.location.hash) {
+    const el = document.getElementById(window.location.hash.slice(1));
+    if (el) setTimeout(() => el.scrollIntoView({behavior:'smooth'}), 150);
+  }
+}).catch(() => {
+  document.getElementById('papers-loading').innerHTML =
+    '<div style="color:var(--text-3);text-align:center;padding:40px">โหลดข้อมูลไม่ได้ — ลองรันผ่าน local server</div>';
+});
+</script>
+</body>
+</html>

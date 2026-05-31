@@ -42,7 +42,9 @@
       width: 26px; height: 26px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-size: .78rem; font-weight: 800; flex-shrink: 0;
+      border: 1px solid var(--border);
     }
+    img.analyst-avatar { display: block; }
     .analyst-header h4 { font-size: .88rem; font-weight: 700; margin: 0; }
     .analyst-header .analyst-role { font-size: .72rem; color: var(--text-3); margin-left: auto; }
 
@@ -177,6 +179,7 @@
       <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
       <a href="stocks.html" class="active">Watchlist</a>
       <a href="trends.html">Trends</a>
+      <a href="../team.html">About</a>
     </div>
     <div class="nav-actions">
       <button class="theme-btn" id="theme-btn">🌙</button>
@@ -248,7 +251,7 @@ function renderStock(s) {
   const markHTML = (mf || me.one_liner) ? `
     <div class="analyst-card mark-card">
       <div class="analyst-header">
-        <div class="analyst-avatar mark-avatar">M</div>
+        <img src="../images/team/mark.png" class="analyst-avatar" style="object-fit:cover;object-position:top">
         <h4>Mark — นักวิจัย</h4>
         <span class="analyst-role">สรุปอ่านง่าย · ภาษาไทย</span>
       </div>
@@ -283,7 +286,7 @@ function renderStock(s) {
   const warrenHTML = warrenParas.length ? `
     <div class="analyst-card warren-card">
       <div class="analyst-header">
-        <div class="analyst-avatar warren-avatar">W</div>
+        <img src="../images/team/warren.png" class="analyst-avatar" style="object-fit:cover;object-position:top">
         <h4>Warren — Portfolio Manager</h4>
         <span class="analyst-role">มุมมองการลงทุน · ภาษาไทย</span>
       </div>
@@ -300,7 +303,7 @@ function renderStock(s) {
   const charlieEasyHTML = ce ? `
     <div class="analyst-card charlie-easy-card">
       <div class="analyst-header">
-        <div class="analyst-avatar charlie-e-avatar">C</div>
+        <img src="../images/team/charlie.png" class="analyst-avatar" style="object-fit:cover;object-position:top">
         <h4>Charlie — Risk Reviewer</h4>
         <span class="analyst-role">ตรวจสอบอิสระ · ภาษาไทย</span>
       </div>
