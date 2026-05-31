@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trend — oatinvestor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .85rem; color: var(--text-3); margin-bottom: 24px;
+      transition: color var(--ease); text-decoration: none;
+    }
+    .back-link:hover { color: var(--text); }
+
+    /* Hero */
+    .trend-hero {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 28px 28px 24px;
+      margin-bottom: 20px;
+    }
+    .trend-hero-tag {
+      font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--yellow-text);
+      background: var(--yellow-dim);
+      display: inline-block; padding: 3px 12px;
+      border-radius: 99px; margin-bottom: 14px;
+    }
+    .trend-hero h1 {
+      font-size: 1.75rem; line-height: 1.25; margin-bottom: 10px;
+    }
+    .trend-hero .subtitle {
+      font-size: .93rem; color: var(--text-2); line-height: 1.65;
+      font-style: italic; margin-bottom: 20px;
+    }
+    .trend-hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      flex-wrap: wrap; padding-top: 16px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .trend-meta-date { font-size: .8rem; color: var(--text-3); }
+    .trend-meta-sep { color: var(--border); }
+
+    /* Section blocks */
+    .section-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .section-block-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 13px 20px;
+      border-bottom: 1px solid var(--border-soft);
+      font-size: .8rem; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .section-block-head .head-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .section-block-body { padding: 18px 20px; }
+
+    /* Body typography */
+    .section-block-body p {
+      font-size: .9rem; color: var(--text-2); line-height: 1.75; margin: 0 0 10px;
+    }
+    .section-block-body p:last-child { margin-bottom: 0; }
+
+    /* Subsection label (bold-only line) */
+    .sub-label {
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text-3);
+      margin: 18px 0 8px; padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .sub-label:first-child { margin-top: 0; }
+
+    /* Bullet list */
+    .trend-list {
+      list-style: none; padding: 0; margin: 8px 0 12px;
+      display: flex; flex-direction: column; gap: 7px;
+    }
+    .trend-list li {
+      font-size: .88rem; color: var(--text-2);
+      padding-left: 18px; position: relative; line-height: 1.6;
+    }
+    .trend-list.green li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; font-size: .82rem; }
+    .trend-list.red   li::before { content: '!'; position: absolute; left: 2px; color: var(--red); font-weight: 700; font-size: .82rem; }
+    .trend-list.default li::before { content: '›'; position: absolute; left: 1px; color: var(--yellow); font-weight: 700; font-size: 1rem; }
+
+    /* Inline styles inside body */
+    .section-block-body strong { color: var(--text); font-weight: 700; }
+    .section-block-body em { color: var(--text-3); font-style: italic; }
+    .section-block-body code {
+      background: var(--bg-base); border: 1px solid var(--border);
+      border-radius: 4px; padding: 1px 6px; font-size: .84em;
+    }
+    .section-block-body hr { border: none; border-top: 1px solid var(--border-soft); margin: 14px 0; }
+
+    /* Intro block (before first ##) */
+    .intro-block {
+      background: var(--yellow-dim);
+      border: 1px solid rgba(255,233,77,.25);
+      border-radius: var(--r-lg);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: .9rem; color: var(--text); line-height: 1.7;
+    }
+    .intro-block strong { color: var(--yellow-text); }
+
+    /* Section color themes */
+    .section-overview .section-block-head { background: var(--blue-bg);             color: var(--blue-text); }
+    .section-green    .section-block-head { background: rgba(34,197,94,.06);         color: var(--green); }
+    .section-red      .section-block-head { background: rgba(239,68,68,.06);         color: var(--red); }
+    .section-blue     .section-block-head { background: rgba(99,102,241,.07);        color: #818CF8; }
+    .section-yellow   .section-block-head { background: var(--yellow-dim);           color: var(--yellow-text); }
+    .section-default  .section-block-head { background: var(--bg-card); }
+
+    /* Ticker pill colors by action */
+    .ticker-pill.action-buy   { background: var(--green-bg);   color: var(--green-text);  border-color: transparent; }
+    .ticker-pill.action-watch { background: var(--amber-bg);   color: var(--amber-text);  border-color: transparent; }
+    .ticker-pill.action-hold  { background: var(--blue-bg);    color: var(--blue-text);   border-color: transparent; }
+    .ticker-pill.action-study { background: var(--bg-surface); color: var(--text-3);      border-color: var(--border); }
+    .ticker-pill.action-sell  { background: var(--red-bg);     color: var(--red-text);    border-color: transparent; }
+
+    /* Hero tag conviction colors */
+    .trend-hero-tag.conv-high { background: var(--green-bg);   color: var(--green-text); }
+    .trend-hero-tag.conv-med  { background: var(--yellow-dim); color: var(--yellow-text); }
+
+    @media (max-width: 600px) {
+      .trend-hero { padding: 20px 16px; }
+      .section-block-body { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="stocks.html">Watchlist</a>
+      <a href="trends.html" class="active">Trends</a>
+      <a href="../team.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container-sm" style="padding-top:36px;padding-bottom:80px">
+
+  <a href="trends.html" class="back-link">← กลับ Trends</a>
+
+  <div id="trend-body">
+    <div style="text-align:center;padding:80px 0;color:var(--text-3)">กำลังโหลด...</div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="trends.html">← Trends</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="../trends.js"></script>
+<script src="../app.js"></script>
+<script>
+// ── Stock action map (populated async) ────────────────────────────
+let stockActions = {};
+
+// ── Inline text renderer (bold, italic, code, [[TICKER]]) ──────────
+function renderInline(text) {
+  return text
+    .replace(/\*\*\[\[([A-Z0-9]+)\]\]\*\*/g, (_, tk) => tickerPill(tk))
+    .replace(/\[\[([A-Z0-9]+)\]\]/g,          (_, tk) => tickerPill(tk))
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+?)\*/g,  '<em>$1</em>')
+    .replace(/`(.+?)`/g,       '<code>$1</code>');
+}
+
+function tickerPill(tk) {
+  const action = stockActions[tk] || '';
+  const cls = action ? ` action-${action}` : '';
+  return `<a href="stock.html?t=${tk}" class="ticker-pill${cls}">${tk}</a>`;
+}
+
+// ── Determine section color class ─────────────────────────────────
+function sectionClass(title) {
+  const t = title.toLowerCase();
+  if (t.includes('ภาพรวม') || t.includes('overview'))             return 'section-overview';
+  if (t.includes('ได้ประโยชน์') && !t.includes('เสีย'))           return 'section-green';
+  if (t.includes('เสียประโยชน์') || t.includes('ความเสี่ยง') || t.includes('เผชิญ')) return 'section-red';
+  if (t.includes('ระยะยาว') || t.includes('outlook') || t.includes('อนาคต')) return 'section-blue';
+  if (t.includes('น่าสนใจ') || t.includes('ทำไม') || t.includes('โอกาส'))    return 'section-yellow';
+  return 'section-default';
+}
+
+function dotColor(cls) {
+  if (cls === 'section-overview') return 'var(--blue)';
+  if (cls === 'section-green')    return 'var(--green)';
+  if (cls === 'section-red')      return 'var(--red)';
+  if (cls === 'section-blue')     return '#818CF8';
+  if (cls === 'section-yellow')   return 'var(--yellow)';
+  return 'var(--text-3)';
+}
+
+function listClass(cls) {
+  if (cls === 'section-green') return 'green';
+  if (cls === 'section-red')   return 'red';
+  return 'default';
+}
+
+// ── Render a block of body text into HTML ─────────────────────────
+function renderBody(text, secCls) {
+  const lCls = listClass(secCls);
+  const lines = text.split('\n');
+  let html = '';
+  let inList = false;
+
+  for (const raw of lines) {
+    const line = raw.trimEnd();
+
+    // HR
+    if (/^---+$/.test(line)) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += '<hr>';
+      continue;
+    }
+
+    // Bullet list item
+    if (/^- (.+)$/.test(line)) {
+      if (!inList) { html += `<ul class="trend-list ${lCls}">`; inList = true; }
+      html += `<li>${renderInline(line.replace(/^- /, ''))}</li>`;
+      continue;
+    }
+
+    if (inList) { html += '</ul>'; inList = false; }
+
+    // Empty line
+    if (line.trim() === '') continue;
+
+    // Bold-only line = subsection label
+    if (/^\*\*[^*]+\*\*$/.test(line.trim())) {
+      const label = line.trim().replace(/^\*\*|\*\*$/g, '');
+      html += `<div class="sub-label">${renderInline(label)}</div>`;
+      continue;
+    }
+
+    // Normal paragraph
+    html += `<p>${renderInline(line)}</p>`;
+  }
+
+  if (inList) html += '</ul>';
+  return html;
+}
+
+// ── Parse content into section blocks ─────────────────────────────
+function renderContent(content) {
+  const parts = content.split(/\n(?=## )/);
+  let html = '';
+
+  for (const part of parts) {
+    if (part.startsWith('## ')) {
+      const nlIdx = part.indexOf('\n');
+      const title = nlIdx === -1 ? part.slice(3) : part.slice(3, nlIdx);
+      const body = nlIdx === -1 ? '' : part.slice(nlIdx + 1);
+      const cls = sectionClass(title);
+      const dot = dotColor(cls);
+      html += `
+        <div class="section-block ${cls}">
+          <div class="section-block-head">
+            <span class="head-dot" style="background:${dot}"></span>
+            ${title}
+          </div>
+          <div class="section-block-body">${renderBody(body, cls)}</div>
+        </div>`;
+    } else {
+      // Content before first ## (intro metadata lines — skip Warren/Updated lines, show summary-like text)
+      const bodyLines = part.split('\n').filter(l => {
+        const t = l.trim();
+        return t && !t.startsWith('#') && !/^\*\*Warren.s Conviction/.test(t) && !/^\*\*Last Updated/.test(t) && !/^---/.test(t) && !/^\*.*\*$/.test(t);
+      });
+      if (bodyLines.length) {
+        html += `<div class="intro-block">${bodyLines.map(l => `<p>${renderInline(l)}</p>`).join('')}</div>`;
+      }
+    }
+  }
+  return html;
+}
+
+// ── Main ──────────────────────────────────────────────────────────
+const CONV_CLS  = { HIGH: 'badge-high', MED: 'badge-medium', MEDIUM: 'badge-medium', LOW: 'badge-low' };
+const CONV_TAG  = { HIGH: 'conv-high',  MED: 'conv-med',     MEDIUM: 'conv-med' };
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(location.search);
+  const tag = params.get('tag');
+  const body = document.getElementById('trend-body');
+
+  if (!tag || typeof TRENDS_DATA === 'undefined') {
+    body.innerHTML = '<div style="text-align:center;padding:80px 0;color:var(--text-3)">ไม่พบข้อมูล Trend</div>';
+    return;
+  }
+
+  const t = TRENDS_DATA.find(x => x.tag === tag);
+  if (!t) {
+    body.innerHTML = `<div style="text-align:center;padding:80px 0;color:var(--text-3)">ไม่พบ Trend: ${tag}</div>`;
+    return;
+  }
+
+  // Load stock actions for ticker pill coloring
+  try {
+    const resp = await fetch('../data/stocks.json');
+    const raw = await resp.json();
+    Object.entries(raw).forEach(([sym, s]) => {
+      if (s.action) stockActions[sym] = s.action.toLowerCase();
+    });
+  } catch (_) {}
+
+  document.title = (t.title || t.tag) + ' — oatinvestor';
+
+  const conv = (t.conviction || '').toUpperCase();
+  const convCls = CONV_CLS[conv] || 'badge-medium';
+  const convTagCls = CONV_TAG[conv] || '';
+  const convLabel = conv === 'MED' ? 'MEDIUM' : conv;
+
+  const tickersHtml = t.tickers && t.tickers.length
+    ? t.tickers.map(tk => tickerPill(tk)).join('')
+    : '';
+
+  body.innerHTML = `
+    <div class="trend-hero">
+      <div class="trend-hero-tag ${convTagCls}">${t.tag || ''}</div>
+      <h1>${t.title || ''}</h1>
+      <p class="subtitle">${t.subtitle || ''}</p>
+      <div class="trend-hero-meta">
+        <span class="badge ${convCls}">${convLabel}</span>
+        <span class="trend-meta-sep">·</span>
+        <span class="trend-meta-date">อัพเดท ${t.last_updated || ''}</span>
+        ${tickersHtml ? `<span class="trend-meta-sep">·</span><div style="display:flex;gap:6px;flex-wrap:wrap">${tickersHtml}</div>` : ''}
+      </div>
+    </div>
+    ${renderContent(t.content || '')}
+  `;
+});
+</script>
+</body>
+</html>
