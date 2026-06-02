@@ -263,6 +263,7 @@ p  { color: var(--text-2); line-height: 1.7; }
 .stat-change.neg { color: var(--red); }
 .pos { color: var(--green); }
 .neg { color: var(--red); }
+.warn { color: var(--yellow); }
 
 /* ── Tables ──────────────────────────────────────────────────────── */
 .table-wrap { overflow-x: auto; border-radius: var(--r-lg); border: 1px solid var(--border); }

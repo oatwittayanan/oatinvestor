@@ -638,6 +638,8 @@
       "passed": true,
       "status": "PASS",
       "updated": "2026-05-31",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
       "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
       "why": "Consensus sees AWS losing AI race to Azure/GCP and FCF collapsing from CapEx; Warren sees AWS reaccelerating to 28% on $150B run rate with customer-committed CapEx, Trainium saving tens of billions, and retail op margin hitting record 13.1% — none of which is in the 27x forward PE.",
       "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment."
@@ -658,6 +660,7 @@
       "summary": "Warren's core thesis on AWS margin leadership and earnings growth is directionally sound, but the $315 fair value appears optimistic given a PEG of 1.83 and debt/equity of 53.3 that Warren did not flag. The FCF depression risk from $128B CapEx is more serious than Warren's 'monetizable' framing suggests.",
       "review_date": "2026-05-31"
     },
+    "tier": "🏛️ Inevitable",
     "mark_easy": {
       "one_liner": "Amazon คือ 3 บริษัทในบริษัทเดียว — Cloud king (AWS), โรงงานชิป AI (Trainium), และ e-commerce จักรพรรดิ",
       "what": "Amazon ดูเหมือน e-commerce แต่จริงๆ กำไรส่วนใหญ่มาจาก AWS ซึ่งเป็น #1 cloud ของโลก ยิ่งกว่านั้นยังมี Trainium ชิป AI ที่ถูกกว่า NVIDIA 10 เท่า และ Advertising ที่โต +22% ต่อปี สามล้อ engine นี้ช่วยกันขับเคลื่อนบริษัทเดียวกัน",
@@ -1220,6 +1223,8 @@
       "passed": true,
       "status": "PASS",
       "updated": "2026-05-31",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
       "what": "ASML is the sole global producer of EUV lithography systems—the only machines capable of patterning leading-edge transistors—beating competitors via a multi-decade ecosystem moat (Zeiss optics, TRUMPF light sources) that cannot be replicated.",
       "why": "Consensus sees ASML as a cyclical semicap nearing peak with China headwinds; Warren sees High-NA EUV ramp + IBM recurring revenue (+24% YoY) + raised FY2026 guidance (€36-40B) signaling AI-driven multi-year structural demand not yet fully priced.",
       "risk": "A major customer (TSMC or Samsung) delays leading-edge node ramp by 12+ months, or US/EU export restrictions expand to broader DUV categories, breaking the order book."
@@ -1240,6 +1245,7 @@
       "summary": "Warren's core thesis on ASML's monopoly and demand drivers is broadly correct, but the PEG ratio of 2.42 signals the market is pricing in substantial growth that may not materialize if export controls tighten further, and the surprisingly high debt-to-equity of 12.99 was not flagged in Warren's analysis.",
       "review_date": "2026-05-31"
     },
+    "tier": "🏛️ Inevitable",
     "mark_easy": {
       "one_liner": "เจ้าเดียวในโลกที่ผลิตเครื่องพิมพ์ชิประดับ EUV — ไม่มี ASML ก็ไม่มีชิปรุ่นใหม่",
       "what": "ASML คือผู้ผลิตเครื่อง Lithography ที่ใช้ \"วาดลวดลาย\" บนชิปเซมิคอนดักเตอร์ที่เล็กที่สุดที่มนุษย์ทำได้ เครื่อง EUV ของ ASML เป็นเทคโนโลยีที่ไม่มีบริษัทไหนในโลกทำได้อีก — ทุก fab อย่าง TSMC, Samsung, Intel ต้องซื้อจาก ASML เท่านั้น รายได้มาจากสองส่วน คือขายเครื่องใหม่ (~75%) และรายได้บริการ/อัพเกรดเครื่องเก่า (~25%) ที่โตแบบ Recurring",
@@ -1366,6 +1372,8 @@
       "passed": true,
       "status": "PASS",
       "updated": "2026-05-31",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
       "what": "Eaton is an intelligent power management company providing UPS, switchgear, busbar, and modular power enclosures that wins through deep OEM/utility relationships, multi-year backlogs, and integrated grid-to-chip portfolio that hyperscalers can't easily replicate.",
       "why": "Consensus sees ETN as a cyclical industrial riding the AI data center wave; Warren sees a structural power-infrastructure shortage where 228 GW DC backlog (70% AI), +240% DC orders, and Boyd Thermal acquisition position ETN as the dominant pick-and-shovel for liquid-cooled AI factories — with Q4 2026 ramp delivering 50%+ incremental margins not yet in numbers.",
       "risk": "Hyperscaler capex pause or in-housing of power infrastructure collapses the data center backlog and orders."
@@ -1386,6 +1394,7 @@
       "summary": "Warren's AI data center thesis is broadly confirmed by Q1 2026 earnings beats and continued infrastructure demand, but the PEG ratio of 3.02 signals meaningful valuation risk that Warren's 5.5 VA score may still underweight, and the debt_to_equity of 110 is materially elevated post-Boyd acquisition.",
       "review_date": "2026-05-31"
     },
+    "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
       "one_liner": "Eaton คือบริษัทที่จัดการพลังงานไฟฟ้าให้ AI Data Center ตั้งแต่กริดไฟฟ้าจนถึงชิป — เป็นรายเดียวที่ครบวงจร",
       "what": "Eaton ผลิตอุปกรณ์จัดการไฟฟ้าและความเย็นสำหรับ data center เช่น switchgear, UPS, PDU และ liquid cooling รายได้หลักมาจากธุรกิจ Electrical Americas ที่โตเร็วมากจาก AI supercycle หลัง Boyd Thermal เป็นบริษัทเดียวในโลกที่ครอบคลุม power+cooling+switchgear ครบในรายเดียว",
@@ -1662,6 +1671,8 @@
       "passed": true,
       "status": "PASS",
       "updated": "2026-05-31",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
       "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
       "why": "Consensus มอง AMD เป็น 'GPU laggard' ตาม NVIDIA; Warren เห็น MI450 + Helios rack ramp H2 2026, OpenAI/Meta 6GW warrant deals (vest บน shipment = demand lock-in), EPYC Turin >50% mix — rerating จาก 'laggard' → 'indispensable second source' ยังไม่ถูก price เต็ม",
       "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง"
@@ -1682,6 +1693,7 @@
       "summary": "Warren's thesis is directionally sound but the valuation math is stretched — forward P/E of ~40x and current price 10.5% above Fair Value leave no margin of safety. The PEG of 1.24 suggests growth is partially priced in, but debt/equity of 6.0x is a hidden risk Warren underweighted.",
       "review_date": "2026-05-31"
     },
+    "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
       "one_liner": "AMD คือคู่แข่งอันดับ 2 ของ NVIDIA ที่กำลังกลายเป็น 'second platform' ที่ hyperscalers ต้องมีเพื่อความปลอดภัย",
       "what": "AMD ออกแบบ CPU (EPYC สำหรับ server), GPU (Instinct สำหรับ AI), และ FPGA (จาก Xilinx) รายได้หลักตอนนี้ 56% มาจาก Data Center ที่โตระเบิด Meta และ OpenAI เพิ่งเลือก AMD เป็น AI GPU หลักในสัญญาขนาด 6GW แต่ละราย ซึ่งเป็นสัญญาณว่า AMD ไม่ใช่แค่ทางเลือกสำรองอีกต่อไป",
@@ -2692,6 +2704,8 @@
       "passed": true,
       "status": "PASS",
       "updated": "2026-05-31",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
       "what": "ARM owns the dominant CPU ISA (>95% mobile share) and monetizes via licensing + per-chip royalties with near-zero marginal cost, now expanding into datacenter/AI via Compute Subsystems (CSS) and AGI CPU production silicon.",
       "why": "Consensus sees ARM as a mature mobile IP licensor; Warren sees ARMv9 royalty rates 2-3× v8, CSS adoption accelerating custom silicon time-to-market, and datacenter royalty doubling YoY — but this is now largely priced in at 115× forward P/E.",
       "risk": "DOJ/FTC antitrust action forces licensing model change OR RISC-V adoption accelerates at hyperscalers, collapsing royalty growth and triggering multiple compression."
@@ -2713,6 +2727,7 @@
       "summary": "Independent data confirms Warren's core thesis: ARM trades at a stratospheric 115x forward PE with PEG of 3.07, offering zero margin of safety. The 97.5% gross margin confirms moat quality but cannot justify the valuation at current prices.",
       "review_date": "2026-05-31"
     },
+    "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
       "one_liner": "เจ้าของพิมพ์เขียวซีพียูที่อยู่ในชิปเกือบทุกตัวบนโลก เก็บค่าลิขสิทธิ์แทบไม่มีต้นทุน แต่ราคาแพงมหาศาล",
       "what": "ARM ออกแบบสถาปัตยกรรมซีพียู (ISA) แล้วให้บริษัทอื่นเช่าไปใช้ — เก็บทั้งค่า license ตอนนำไปออกแบบ และค่า royalty ทุกครั้งที่ชิปถูกผลิตขายออกไป โทรศัพท์มือถือทั่วโลกกว่า 95% ใช้ ARM และตอนนี้ขยายเข้าดาต้าเซ็นเตอร์ (Amazon Graviton, Google Axion) กับเริ่มทำชิปสำเร็จรูปของตัวเอง (AGI CPU) ด้วย",
