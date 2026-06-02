@@ -208,7 +208,7 @@
 function renderStock(s) {
   const ticker = s.symbol || s.display || '—';
   const mos = s.mos;
-  const mosClass = mos == null ? '' : mos >= 15 ? 'pos' : mos < 0 ? 'neg' : '';
+  const mosClass = mos == null ? '' : mos >= 15 ? 'pos' : mos < 0 ? 'neg' : 'warn';
   const mosText = mos == null ? '—' : (mos >= 0 ? '+' : '') + mos.toFixed(1) + '%';
 
   // Story Gate
