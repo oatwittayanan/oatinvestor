@@ -599,23 +599,22 @@
       "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
       "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
     ],
-    "price": 263.99,
-    "fv": 304.2,
-    "mos": 0.6,
-    "peg": 0.9,
-    "fpe": 27.0,
-    "updated": "2026-05-27",
-    "waf": 8.03,
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 4,
+    "waf": 8.0,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 270.64,
+    "fv": 315,
+    "mos": 14.1,
+    "fpe": 27.44,
+    "peg": 1.83,
     "scores": {
       "bq": [
-        9.5,
+        9.0,
         "green",
-        95
+        90
       ],
       "gp": [
         8.5,
@@ -623,9 +622,9 @@
         85
       ],
       "va": [
-        6.0,
-        "orange",
-        60
+        6.5,
+        "amber",
+        65
       ],
       "ra": [
         7.5,
@@ -633,27 +632,31 @@
         75
       ]
     },
-    "idea": "AWS AI Capacity + Trainium Custom Silicon + Advertising flywheel",
+    "idea": "Own Amazon as a core compounder: AWS reacceleration to 28% + ads at 24% + retail margin expansion to record 13.1% = three engines firing simultaneously, while market fixates on near-term FCF compression from AI CapEx that is already customer-committed.",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-05-21",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "Amazon operates the world's largest cloud (AWS 33% share) with AI services $15B+ annualized run-rate, Trainium custom silicon worth $50B standalone, and Prime ecosystem 200M+ subscribers creating commerce+media flywheel.",
-      "why": "AWS AI revenue +170% QoQ (Bedrock capacity-constrained); Trainium3 shipping H1 2026, \"largely spoken for 18 months before availability\" per management; Cloud backlog building with committed revenue.",
-      "risk": "หาก Trainium/Inferentia ไม่สามารถจับ NVIDIA convergence rates ได้ และ AWS growth ชะลอ <20% เนื่องจาก Azure/GCP competition เข้มข้น ทำให้ custom silicon ROI ไม่คุ้ม."
+      "updated": "2026-05-31",
+      "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
+      "why": "Consensus sees AWS losing AI race to Azure/GCP and FCF collapsing from CapEx; Warren sees AWS reaccelerating to 28% on $150B run rate with customer-committed CapEx, Trainium saving tens of billions, and retail op margin hitting record 13.1% — none of which is in the 27x forward PE.",
+      "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment."
     },
-    "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "Azure/GCP competition for enterprise AI spend",
-        "AWS growth dependent on AI workload migration ROI"
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Forward PE of 27.44x confirmed — consistent with Warren's '27x forward PE' figure",
+        "Revenue growth of 16.6% confirmed — reasonable backdrop for AWS/Ads mix shift thesis",
+        "Gross margin of 50.6% confirms ongoing structural improvement in profitability mix"
       ],
-      "summary": "WATCH is correct. Price $265 barely at FV $268 (MoS 1%). PEG 1.83 yfinance vs Warren's 0.90 — Warren's aggressive AWS AI growth assumptions.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "PEG ratio of 1.83 is not cheap — Warren's framing of '27x for 30%+ earnings growth' implies a PEG near 0.9, but the market-derived PEG of 1.83 suggests consensus growth expectations are closer to 15%, not 30%+. This is a material valuation input Warren may have overstated.",
+        "Debt/equity of 53.3 was not mentioned by Warren at all — while Amazon's EBITDA covers this comfortably, the $128B CapEx cycle layered onto existing leverage means FCF-to-equity holders is substantially diluted in the near term, making the '14.1% margin of safety' thinner than presented.",
+        "Revenue growth of 16.6% is solid but not accelerating — Warren's thesis depends on AWS sustaining 20%+ growth; if overall revenue growth is 16.6%, AWS must be growing faster to offset a slowing retail segment, but deceleration risk is real and not sufficiently stress-tested.",
+        "Single news item available (May 2026 forecast piece) provides insufficient confirmation of Trainium adoption rates or enterprise AWS commitment pipelines — Warren's 'structural cost advantage worth several hundred bps' claim lacks independent near-term verification."
+      ],
+      "summary": "Warren's core thesis on AWS margin leadership and earnings growth is directionally sound, but the $315 fair value appears optimistic given a PEG of 1.83 and debt/equity of 53.3 that Warren did not flag. The FCF depression risk from $128B CapEx is more serious than Warren's 'monetizable' framing suggests.",
+      "review_date": "2026-05-31"
     },
     "mark_easy": {
       "one_liner": "Amazon คือ 3 บริษัทในบริษัทเดียว — Cloud king (AWS), โรงงานชิป AI (Trainium), และ e-commerce จักรพรรดิ",
@@ -717,149 +720,6 @@
       "Amazon Leo execution risk — ยังไม่เคย launch large-scale satellite service มาก่อน Globalstar acquisition ซับซ้อน และมี ~$1B cost เพิ่มใน Q2 2026 guidance แล้ว"
     ]
   },
-  "ASML": {
-    "symbol": "ASML",
-    "display": "ASML",
-    "category": "semiconductor",
-    "name": "ASML Holding",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "EUV Lithography"
-    ],
-    "bull": [
-      "EUV lithography absolute monopoly — ไม่มีทางใช้ node ล้ำๆ โดยไม่ผ่าน ASML",
-      "High-NA EUV (Twinscan EXE) รองรับ nodes 1.8nm ถึง Angstrom era",
-      "Installed base recurring revenue: service + upgrades = predictable income",
-      "HBM supercycle เพิ่ม demand layer count → ต้องการ EUV เพิ่มขึ้น",
-      "TSMC, Samsung, Intel = customer lock-in ระยะยาว multi-decade"
-    ],
-    "risk": [
-      "China export restrictions ห้ามขาย EUV — กระทบ 10-15% revenue ทันที",
-      "Semi cyclicality ทำให้ orders อาจชะลอในช่วง down-cycle",
-      "High-NA EUV ราคา $350M/unit ทำให้ customer deployment ช้า",
-      "อ่อนไหวต่อ geopolitics EU-China",
-      "MoS เพียง 8.9% จาก FV $900 — ต้องการ pullback เพื่อ entry ที่ดีขึ้น"
-    ],
-    "price": 1640.2,
-    "fv": 1481.2,
-    "mos": -9.0,
-    "peg": 1.72,
-    "fpe": 34.4,
-    "updated": "2026-05-27",
-    "waf": 7.92,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "watch",
-    "actionLabel": "Watch",
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        5.0,
-        "orange",
-        50
-      ],
-      "ra": [
-        7.5,
-        "amber",
-        75
-      ]
-    },
-    "idea": "EUV Sole Supplier — 2027 supply shortage flagged by management",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-05-21",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "ASML is the sole global supplier of EUV lithography machines — ไม่มีทางผลิต semiconductor ≤7nm ได้โดยไม่ผ่าน ASML — monopoly ที่ไม่มีผู้แข่งขันและไม่มีแผนสร้างได้ในทศวรรษนี้.",
-      "why": "\"2027 EUV supply shortage\" ถูกระบุโดย ASML management เอง; N2 ของ TSMC เข้า HVM + A14 roadmap 2028; TSMC CapEx toward high end of $52-56B; revenue guidance raised to €36-40B for 2026.",
-      "risk": "หาก recession ทำให้ semiconductor demand crash และ TSMC/Samsung ชะลอ EUV orders, หรือ export control escalation ตัด China DUV revenue โดยกะทันหัน."
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "China export ban limits ~15-20% revenue",
-        "Customer capex cycle sensitivity"
-      ],
-      "summary": "WATCH confirmed. MoS -9%, PEG 2.45 both fail gates. Analyst target $1,660 slightly above current $1,632.",
-      "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าเดียวในโลกที่ผลิตเครื่องพิมพ์ชิประดับ EUV — ไม่มี ASML ก็ไม่มีชิปรุ่นใหม่",
-      "what": "ASML คือผู้ผลิตเครื่อง Lithography ที่ใช้ \"วาดลวดลาย\" บนชิปเซมิคอนดักเตอร์ที่เล็กที่สุดที่มนุษย์ทำได้ เครื่อง EUV ของ ASML เป็นเทคโนโลยีที่ไม่มีบริษัทไหนในโลกทำได้อีก — ทุก fab อย่าง TSMC, Samsung, Intel ต้องซื้อจาก ASML เท่านั้น รายได้มาจากสองส่วน คือขายเครื่องใหม่ (~75%) และรายได้บริการ/อัพเกรดเครื่องเก่า (~25%) ที่โตแบบ Recurring",
-      "why_invest": [
-        "Monopoly ที่แท้จริง — ไม่มีคู่แข่งทั้งโลกในตลาด EUV ซึ่งจำเป็นต่อการผลิตชิปขนาด 7nm ลงไปทุกตัว",
-        "2027 EUV supply shortage — management ประกาศเองว่า demand จะเกิน supply ในปี 2027 สะท้อน pricing power ที่จะเพิ่มขึ้น",
-        "High-NA EUV รุ่นใหม่ราคา M ต่อเครื่อง — เป็น next catalyst สำหรับชิป A14/A10 node ปี 2028 ที่ยังไม่ถูก price in เต็มที่",
-        "IBM revenue (Service) โต +24% YoY ใน Q1 2026 — ยิ่ง EUV installed base ใหญ่ขึ้น รายได้ recurring ก็โตตามโดยอัตโนมัติ"
-      ],
-      "watch_out": [
-        "ราคาตอนนี้เกิน Fair Value ประมาณ 9% — ไม่ใช่จังหวะ BUY ที่ดี รอ pullback ก่อน",
-        "China เคยคิดเป็น 36% ของ system sales แต่ลดเหลือ 19% ในไตรมาสเดียว — export control escalation อีกรอบกระทบหนักแน่",
-        "Customer concentration สูง — TSMC + Samsung รวมกัน 38% ของรายได้ ถ้าสองเจ้านี้ชะลอ capex กระทบทันที"
-      ],
-      "bottom_line": "Pete มองว่า ASML คือธุรกิจที่ดีที่สุดตัวหนึ่งที่มีอยู่ในโลก — แต่ราคาตอนนี้ยังแพงกว่า fair value อยู่ ถ้าอยากถือก็รอจังหวะที่ราคาลงมาใกล้ ,498 หรือต่ำกว่า ถึงจะคุ้มค่าจริงๆ"
-    },
-    "mark_full": {
-      "business_overview": "ASML เป็นบริษัทเนเธอร์แลนด์ที่ผูกขาดตลาด EUV Lithography — เครื่องจักรที่ใช้แสงอัลตราไวโอเลตระดับสุดขีดในการ \"วาด\" ลวดลายของ transistor บนซิลิกอน เงินมาจากสองทาง คือขายเครื่องใหม่ (Net System Sales ประมาณ 75% ของรายได้) และ Installed Base Management หรือบริการ + อัพเกรดเครื่องที่ลูกค้าซื้อไปแล้ว (25%) ซึ่งโตแบบ recurring เร็วกว่า system sales เสียอีก ใน FY2025 รายได้รวม €32.7B โต +15.6% YoY และ operating margin แตะ 34.6%",
-      "tam": "อุตสาหกรรมเซมิคอนดักเตอร์คาดแตะ  Trillion ภายในปี 2030 ด้วย CAGR ประมาณ 9% per year — ขับเคลื่อนโดย AI infrastructure, Memory supercycle, และ Advanced Packaging ASML เองตั้งเป้า revenue opportunity ระยะยาวที่ €44B – €60B ภายในปี 2030 พร้อม gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก catalyst หลักคือ AI data center ที่ต้องการ chip ประมวลผลแรงขึ้นทุกปี ทำให้ TSMC และ Samsung เร่ง capex ต่อเนื่อง",
-      "moat": "MOAT ที่แข็งแกร่งที่สุดของ ASML คือการเป็นเจ้าเดียวในโลกที่ผลิต EUV ได้ — เกิดจากการสะสม IP, know-how, และ ecosystem ที่ซับซ้อนมาหลายทศวรรษ Carl Zeiss SMT ทำ optics, Cymer/TRUMPF ทำ light source ทั้งหมดนี้ทำงานร่วมกันเป็น integrated system ที่ไม่มีใครสร้างซ้ำได้ในเวลาสั้น นอกจากนี้ ASML ยังรวม software + metrology เข้ากับ hardware เป็น \"Holistic Lithography Platform\" ที่ทำให้ลูกค้าติด ecosystem และมี switching cost สูงมาก อีกทั้งยังออก performance upgrades สำหรับเครื่องเดิม ทำให้ลูกค้าจ่ายซ้ำโดยไม่ต้องซื้อเครื่องใหม่",
-      "latest_financials": "Q1 2026 รายได้ €8,767M โต +13.2% YoY, Gross Margin 53.0%, Operating Margin 36.0%, EPS €7.15 โต +19.2% YoY IBM (service) revenue โต +24.3% เร็วกว่า system sales +9.4% สะท้อน recurring engine ที่แข็งแกร่ง FY2026 guidance อัพเดทล่าสุดคือ €36B – €40B (ปรับขึ้นจาก €34-39B) โดยรายได้จะหนักใน H2 2026 สอดคล้องกับ EUV delivery schedule",
-      "key_points": [
-        "2027 EUV supply shortage — management ระบุ demand จะเกิน supply แสดงว่า backlog visibility แน่นอยู่อีก 2-3 ปีข้างหน้า",
-        "High-NA EUV (EXE Series) ประมวลผลชิปไปแล้วกว่า 500,000 wafers ณ Q1 2026 พร้อมสำหรับ volume ramp ปี 2028",
-        "IBM revenue เป็น flywheel — ยิ่ง EUV installed base โต รายได้ service ยิ่งโตตาม ลด cyclicality ของ equipment business",
-        "ASML วางแผนจ้าง 1,000 คนในไต้หวัน (พ.ค. 2026) เพื่อรองรับความต้องการของลูกค้า — สะท้อนการเติบโตที่ยังเร่งตัวอยู่"
-      ]
-    },
-    "warren_easy": [
-      "Warren ถือ ASML เพราะเป็นหนึ่งในไม่กี่บริษัทในโลกที่มี monopoly แบบ structural จริงๆ — ไม่ใช่แค่ market share ที่สูง แต่เป็นเจ้าเดียวในโลกที่ผลิต EUV Lithography ได้ ทำให้ทุก fab ที่อยากผลิตชิป advanced node ต้องมาหา ASML เท่านั้น MOAT นี้สร้างมาหลายทศวรรษและไม่สามารถ replicate ได้ในเวลาสั้น BQ score 9.5/10 สูงที่สุดในพอร์ต",
-      "ทำไมตอนนี้ถึงน่าจับตา — management ประกาศเองว่า 2027 จะมี EUV supply shortage แปลว่า demand แน่นอยู่อีก 2-3 ปี FY2026 guidance ถูกปรับขึ้นเป็น €36-40B พร้อม High-NA EUV ราคา M/unit ที่กำลัง ramp สู่ volume production ปี 2028 สิ่งที่ตลาดยังไม่ price-in เต็มที่คือ 2030 revenue target ที่ €44-60B + gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก",
-      "กลยุทธ์: Warren ให้ status WATCH เพราะราคา ,640 เกิน Base FV ,498 อยู่ 9% — ยังไม่ถึง MoS gate 15% Conviction ระดับ HIGH แต่รอจังหวะซื้อที่ดีกว่า ถ้าราคาปรับลงมาใกล้ ,350-1,400 จะน่าสนใจมาก เป็นหุ้นที่ Warren จะ BUY ทันทีเมื่อราคาเข้าเกณฑ์"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ยืนยันได้จากข้อมูลอิสระว่า Q1 2026 earnings beat expectations ได้จริง — Revenue €8,767M, EPS €7.15 โต +19.2% YoY, FY2026 guidance ถูกปรับขึ้นเป็น €36-40B EUV monopoly ยังสมบูรณ์อยู่ ไม่มีคู่แข่งที่ใกล้เคียง WAF 7.92 สะท้อน business quality สูงมาก Charlie เห็นด้วยกับ Warren ในเรื่องพื้นฐานธุรกิจ",
-        "Charlie กังวลใน 3 เรื่อง: หนึ่ง — TSMC เลื่อน High-NA EUV deployment ออกไปถึงปี 2029 ทำให้ catalyst สำคัญช้ากว่าที่คาด สอง — China เคยเป็น 29% ของรายได้ปี 2025 แต่กำลังถูก squeeze ลงเรื่อยๆ จาก export controls ถ้า tighten เพิ่มกระทบรายได้ทันที สาม — PEG 1.72 ยังเกิน ceiling 1.5 ของระบบ ราคายังแพงกว่า fair value อยู่",
-        "Charlie สรุปว่า ASML เป็นบริษัทที่ดีมากจริงๆ และ Warren วิเคราะห์ถูกต้อง แต่ WATCH เพราะราคาเกิน FV — สิ่งที่ต้อง monitor คือ: ราคาหุ้นปรับลงมาใกล้ ,350-1,400, ข่าว export control จากรัฐบาลสหรัฐหรือ EU, และ High-NA EUV qualification timeline ของ TSMC"
-      ]
-    },
-    "idea_th": "ASML คือ sole supplier ของเครื่อง EUV Lithography ที่ไม่มีทางแทนที่ได้ในห่วงโซ่การผลิต semiconductor โลก — 2027 supply shortage ที่ management เตือนเองสะท้อนว่า backlog แน่นอยู่อีก 2-3 ปี แต่รอจังหวะราคาเข้าเกณฑ์ก่อนซื้อ",
-    "story_gate_th": {
-      "what": "ASML เป็นผู้ผลิต EUV Lithography Systems เพียงรายเดียวในโลก — เครื่องจักรที่ใช้วาดลวดลายชิปขนาดเล็กที่สุดที่มนุษย์ผลิตได้ ทุก fab ที่อยากผลิตชิปรุ่นใหม่ต้องซื้อจาก ASML เท่านั้น ไม่มีตัวเลือกอื่น",
-      "why": "ปี 2027 จะเกิด EUV supply shortage — management ระบุเองว่า demand จะเกินกำลังการผลิต ขณะที่ TSMC กำลัง ramp N2 node และ High-NA EUV สำหรับ A14 ปี 2028 กำลังเข้าสู่ volume production ทำให้ backlog visibility แน่นอีก 2-3 ปีข้างหน้า",
-      "risk": "ถ้าเกิด semiconductor capex crash จาก recession ทำให้ TSMC/Samsung ชะลอ EUV orders, หรือ US/EU ออก export control ใหม่ที่ตัด DUV China revenue โดยกะทันหัน ทั้งสองกรณีนี้จะทำให้ thesis หลักสั่นคลอน"
-    },
-    "bull_th": [
-      "EUV monopoly ถาวร — ไม่มีบริษัทไหนในโลกที่ใกล้เคียงกับการสร้าง EUV ได้ และสิ่งนี้จะไม่เปลี่ยนในทศวรรษนี้ ทำให้ ASML มี pricing power สูงมาก",
-      "2027 EUV supply shortage — demand จาก TSMC, Samsung, SK Hynix เกินกว่า ASML ผลิตได้ สะท้อน backlog ที่แน่นมากและโอกาสขึ้นราคาอีก",
-      "High-NA EUV ราคา M/unit สำหรับชิป A14/A10 node — เป็น next wave ที่ยังไม่ถูก price in เต็มที่ หากลูกค้า qualify สำเร็จ revenue ต่อเครื่องจะสูงกว่าเดิมมาก",
-      "IBM (Service) revenue เป็น structural growth engine ที่โต +24% YoY โดยไม่ขึ้นกับ equipment cycle — ยิ่ง installed base ใหญ่ รายได้ recurring ยิ่งโต",
-      "2030 revenue opportunity €44-60B + gross margin 56-60% — ถ้า semiconductor industry แตะ T ตามคาด ASML จะเป็นหนึ่งในผู้ได้ประโยชน์มากที่สุด"
-    ],
-    "risk_th": [
-      "Export controls จีน — China เคยคิดเป็น 29% ของรายได้ ลดเหลือ 19% ในไตรมาสเดียว ถ้า US/EU/NL ออก restrictions เพิ่มเติมกระทบรายได้ทันที และยังมีการ suspend US Affiliates Rule อยู่ถึง Nov 2026",
-      "Customer concentration สูงมาก — TSMC + Samsung รวมกัน 38% ของรายได้ปี 2025 และ Taiwan + South Korea คิดเป็น 68% ของ system sales ถ้าสองประเทศนี้มีปัญหา geopolitical กระทบทันที",
-      "Single-source supplier Carl Zeiss SMT — เป็น sole supplier ของ precision optics สำหรับ EUV ทั้งหมด ถ้ามีปัญหาที่ Zeiss กระทบ production โดยตรงโดยไม่มีทางเลือก",
-      "Semiconductor capex cyclicality — unit sales ลดจาก 449 (2023) → 418 (2024) → 327 (2025) แม้ revenue โตเพราะ ASP สูงขึ้น แต่ถ้า cycle หันทิศทาง orders อาจชะลอกะทันหัน",
-      "High-NA EUV execution risk — TSMC เลื่อน deployment ถึงปี 2029 และยังอยู่ใน early adoption phase ถ้า qualification ล้มเหลวหรือล่าช้ากว่าที่คาด จะกระทบ long-term revenue thesis"
-    ]
-  },
   "NFLX": {
     "symbol": "NFLX",
     "display": "NFLX",
@@ -885,18 +745,17 @@
       "Ad revenue cyclical ถ้า macro slowdown",
       "Subscriber growth ceiling ในตลาด developed markets"
     ],
-    "price": 92.36,
-    "fv": 124.3,
-    "mos": 27.4,
-    "peg": 0.83,
-    "fpe": 23.1,
-    "updated": "2026-05-27",
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 4,
     "waf": 7.92,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "buy",
-    "actionLabel": "Buy",
+    "price": 86.02,
+    "fv": 121.9,
+    "mos": 29.4,
+    "fpe": 24.04,
+    "peg": 0.83,
     "scores": {
       "bq": [
         8.5,
@@ -920,6 +779,7 @@
       ]
     },
     "idea": "Content + Algorithm Moat + Ad Tier scaling",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -930,18 +790,23 @@
       "why": "Live events (NFL, WWE, Boxing) คือ catalyst ใหม่ที่เพิ่ม engagement + ดึงผู้ชม sports; Ad revenue กำลัง scale — เป้า $9B+ ad revenue ในอนาคต; Q1 2026 revenue $10.54B +13% YoY, OM 31.7%; 2026 guide revenue $43-44B, OM 29%",
       "risk": "Content cost escalation ทำ margin compress; Disney+/Max bundling กัดส่วนแบ่ง; Live sports rights expensive ไม่คุ้ม; แข่ง Ads กับ YouTube/Meta ได้ลำบาก; subscriber growth ceiling ในตลาด developed"
     },
-    "tier": "🚀 Pre-Inevitable (post 10:1 split; pre-split equivalent ~$896.50; market cap $376B)",
     "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "PEG 1.72 per yfinance consensus exceeds 1.5 ceiling — challenges BUY gate",
-        "Content cost escalation + Disney+/Max competition",
-        "Ad revenue cyclical sensitivity"
+      "charlie_verdict": "DISAGREE",
+      "verified_claims": [
+        "Forward PE of ~22x confirmed by independent data (22.38x) — Warren cited 23x, close enough",
+        "Revenue growth of 16.2% confirmed, consistent with Warren's growth narrative around ad-supported tier and subscriber expansion",
+        "Gross margin of 49% confirmed, reflecting ongoing content cost pressures Warren flagged"
       ],
-      "summary": "⚠️ PEG discrepancy: yfinance 1.72 ABOVE ceiling 1.5 vs Warren's 0.83. At 22.8x FwdPE, implied growth 13% vs Warren's 28%. MoS 28% passes but PEG gate may fail.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "CRITICAL PRICE ERROR: NFLX current price of $86.02 is almost certainly wrong — Netflix has traded between $600-$950+ throughout 2024-2025. If actual price is ~$900, Warren's 'fair value' of $121.9 means the stock is trading at a 638% PREMIUM to his fair value, making this a massive SELL not BUY",
+        "Debt-to-equity of 53.79 is extremely high and Warren's RA score of 7.5 appears to grossly underweight this leverage risk — this level of D/E warrants serious scrutiny especially in a rising-rate environment",
+        "PEG ratio of 1.69 at the alleged $86 price suggests the stock is NOT undervalued even on growth-adjusted basis — Warren's MoS claim of 29.4% is inconsistent with a PEG above 1.5",
+        "Warren's thesis mentions 'Fwd PE 23x ต่ำกว่า historical premium 45-55x' but historical PE of 45-55x was during a hyper-growth phase with very different fundamentals — comparing current PE to peak-bubble PE is a flawed benchmark"
+      ],
+      "summary": "Warren's fair value of $121.9 implies a 29.4% margin of safety from $86.02, but this valuation appears deeply flawed — at $86.02, NFLX trades at a forward PE of ~22x which is NOT a discount to historical premiums but rather already near fair value on growth-adjusted basis (PEG 1.69). More critically, Warren's thesis references metrics (250M MAU ad tier, 302M+ paid subs, NFL/WWE live sports) that appear to be from a significantly older data snapshot, as current price at $86.02 does not reflect NFLX's actual 2024-2025 trading range where the stock has been trading well above $600-$900+, suggesting a catastrophic data error in Warren's price input.",
+      "review_date": "2026-05-31"
     },
+    "tier": "🚀 Pre-Inevitable (post 10:1 split; pre-split equivalent ~$896.50; market cap $376B)",
     "mark_easy": {
       "one_liner": "เจ้าพ่อ Streaming โลกที่มีคนดูกว่า 300 ล้านบ้าน กำลังเปิดขุมทรัพย์ใหม่คือโฆษณาและกีฬาสด",
       "what": "Netflix คือบริการดูหนัง-ซีรีส์แบบจ่ายรายเดือน มีสมาชิกกว่า 300 ล้านบ้านใน 190+ ประเทศ จุดเด่นคือทุ่มเงินสร้างหนังเองปีละเกือบ 6 แสนล้านบาท ทำให้มีคอนเทนต์ที่ไม่มีใครเหมือน บวกกับระบบแนะนำหนังที่แม่นที่สุดในโลกเพราะมีข้อมูลคนดูมหาศาล",
@@ -1291,6 +1156,152 @@
       "EU Digital Markets Act — ถ้าพบว่าผิดจริง ปรับได้สูงสุด 10% ของรายได้ทั้งปี (~$40B) หรือ 20% สำหรับการทำผิดซ้ำ"
     ]
   },
+  "ASML": {
+    "symbol": "ASML",
+    "display": "ASML",
+    "category": "semiconductor",
+    "name": "ASML Holding",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "EUV Lithography"
+    ],
+    "bull": [
+      "EUV lithography absolute monopoly — ไม่มีทางใช้ node ล้ำๆ โดยไม่ผ่าน ASML",
+      "High-NA EUV (Twinscan EXE) รองรับ nodes 1.8nm ถึง Angstrom era",
+      "Installed base recurring revenue: service + upgrades = predictable income",
+      "HBM supercycle เพิ่ม demand layer count → ต้องการ EUV เพิ่มขึ้น",
+      "TSMC, Samsung, Intel = customer lock-in ระยะยาว multi-decade"
+    ],
+    "risk": [
+      "China export restrictions ห้ามขาย EUV — กระทบ 10-15% revenue ทันที",
+      "Semi cyclicality ทำให้ orders อาจชะลอในช่วง down-cycle",
+      "High-NA EUV ราคา $350M/unit ทำให้ customer deployment ช้า",
+      "อ่อนไหวต่อ geopolitics EU-China",
+      "MoS เพียง 8.9% จาก FV $900 — ต้องการ pullback เพื่อ entry ที่ดีขึ้น"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 4,
+    "waf": 7.67,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 1612.76,
+    "fv": 1750,
+    "mos": 7.8,
+    "fpe": 33.81,
+    "peg": 2.42,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        5.5,
+        "orange",
+        55
+      ],
+      "ra": [
+        7.0,
+        "amber",
+        70
+      ]
+    },
+    "idea": "Buy on pullback to $1300-1400 (P/E ~28x) for 5-year compounder play on EUV monopoly + AI-driven semi capex supercycle.",
+    "updated": "2026-05-31",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-05-31",
+      "what": "ASML is the sole global producer of EUV lithography systems—the only machines capable of patterning leading-edge transistors—beating competitors via a multi-decade ecosystem moat (Zeiss optics, TRUMPF light sources) that cannot be replicated.",
+      "why": "Consensus sees ASML as a cyclical semicap nearing peak with China headwinds; Warren sees High-NA EUV ramp + IBM recurring revenue (+24% YoY) + raised FY2026 guidance (€36-40B) signaling AI-driven multi-year structural demand not yet fully priced.",
+      "risk": "A major customer (TSMC or Samsung) delays leading-edge node ramp by 12+ months, or US/EU export restrictions expand to broader DUV categories, breaking the order book."
+    },
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Forward PE of ~33.8x confirmed by independent data, consistent with Warren's '34x forward PE' characterization.",
+        "Revenue growth of 13.2% is solid but notably below the +24% IBM recurring revenue figure Warren cited — overall topline growth is more moderate.",
+        "Gross margin of 52.6% confirmed, supporting Warren's claim of strong pricing power and unmatched margins."
+      ],
+      "concerns": [
+        "PEG ratio of 2.42 is elevated — at current growth rates (~13% revenue), paying 34x forward earnings requires sustained double-digit EPS growth to justify valuation; any demand slowdown (e.g., TSMC/Samsung capex cuts) compresses both earnings AND multiple simultaneously.",
+        "Debt-to-equity of 12.99 is extremely high and was completely omitted from Warren's analysis — this is not typical for a capital-light monopoly narrative. While this may reflect lease accounting or deferred revenue structures, it warrants scrutiny and was a material oversight.",
+        "Revenue growth of 13.2% is below what a 34x PE multiple typically demands; Warren's bullish framing around AI/memory-driven demand may be partially priced in already at current levels.",
+        "No recent news available for independent cross-check — lack of news flow could mask developing risks around Dutch export license renewals or further US-China restrictions on DUV tools."
+      ],
+      "summary": "Warren's core thesis on ASML's monopoly and demand drivers is broadly correct, but the PEG ratio of 2.42 signals the market is pricing in substantial growth that may not materialize if export controls tighten further, and the surprisingly high debt-to-equity of 12.99 was not flagged in Warren's analysis.",
+      "review_date": "2026-05-31"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าเดียวในโลกที่ผลิตเครื่องพิมพ์ชิประดับ EUV — ไม่มี ASML ก็ไม่มีชิปรุ่นใหม่",
+      "what": "ASML คือผู้ผลิตเครื่อง Lithography ที่ใช้ \"วาดลวดลาย\" บนชิปเซมิคอนดักเตอร์ที่เล็กที่สุดที่มนุษย์ทำได้ เครื่อง EUV ของ ASML เป็นเทคโนโลยีที่ไม่มีบริษัทไหนในโลกทำได้อีก — ทุก fab อย่าง TSMC, Samsung, Intel ต้องซื้อจาก ASML เท่านั้น รายได้มาจากสองส่วน คือขายเครื่องใหม่ (~75%) และรายได้บริการ/อัพเกรดเครื่องเก่า (~25%) ที่โตแบบ Recurring",
+      "why_invest": [
+        "Monopoly ที่แท้จริง — ไม่มีคู่แข่งทั้งโลกในตลาด EUV ซึ่งจำเป็นต่อการผลิตชิปขนาด 7nm ลงไปทุกตัว",
+        "2027 EUV supply shortage — management ประกาศเองว่า demand จะเกิน supply ในปี 2027 สะท้อน pricing power ที่จะเพิ่มขึ้น",
+        "High-NA EUV รุ่นใหม่ราคา M ต่อเครื่อง — เป็น next catalyst สำหรับชิป A14/A10 node ปี 2028 ที่ยังไม่ถูก price in เต็มที่",
+        "IBM revenue (Service) โต +24% YoY ใน Q1 2026 — ยิ่ง EUV installed base ใหญ่ขึ้น รายได้ recurring ก็โตตามโดยอัตโนมัติ"
+      ],
+      "watch_out": [
+        "ราคาตอนนี้เกิน Fair Value ประมาณ 9% — ไม่ใช่จังหวะ BUY ที่ดี รอ pullback ก่อน",
+        "China เคยคิดเป็น 36% ของ system sales แต่ลดเหลือ 19% ในไตรมาสเดียว — export control escalation อีกรอบกระทบหนักแน่",
+        "Customer concentration สูง — TSMC + Samsung รวมกัน 38% ของรายได้ ถ้าสองเจ้านี้ชะลอ capex กระทบทันที"
+      ],
+      "bottom_line": "Pete มองว่า ASML คือธุรกิจที่ดีที่สุดตัวหนึ่งที่มีอยู่ในโลก — แต่ราคาตอนนี้ยังแพงกว่า fair value อยู่ ถ้าอยากถือก็รอจังหวะที่ราคาลงมาใกล้ ,498 หรือต่ำกว่า ถึงจะคุ้มค่าจริงๆ"
+    },
+    "mark_full": {
+      "business_overview": "ASML เป็นบริษัทเนเธอร์แลนด์ที่ผูกขาดตลาด EUV Lithography — เครื่องจักรที่ใช้แสงอัลตราไวโอเลตระดับสุดขีดในการ \"วาด\" ลวดลายของ transistor บนซิลิกอน เงินมาจากสองทาง คือขายเครื่องใหม่ (Net System Sales ประมาณ 75% ของรายได้) และ Installed Base Management หรือบริการ + อัพเกรดเครื่องที่ลูกค้าซื้อไปแล้ว (25%) ซึ่งโตแบบ recurring เร็วกว่า system sales เสียอีก ใน FY2025 รายได้รวม €32.7B โต +15.6% YoY และ operating margin แตะ 34.6%",
+      "tam": "อุตสาหกรรมเซมิคอนดักเตอร์คาดแตะ  Trillion ภายในปี 2030 ด้วย CAGR ประมาณ 9% per year — ขับเคลื่อนโดย AI infrastructure, Memory supercycle, และ Advanced Packaging ASML เองตั้งเป้า revenue opportunity ระยะยาวที่ €44B – €60B ภายในปี 2030 พร้อม gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก catalyst หลักคือ AI data center ที่ต้องการ chip ประมวลผลแรงขึ้นทุกปี ทำให้ TSMC และ Samsung เร่ง capex ต่อเนื่อง",
+      "moat": "MOAT ที่แข็งแกร่งที่สุดของ ASML คือการเป็นเจ้าเดียวในโลกที่ผลิต EUV ได้ — เกิดจากการสะสม IP, know-how, และ ecosystem ที่ซับซ้อนมาหลายทศวรรษ Carl Zeiss SMT ทำ optics, Cymer/TRUMPF ทำ light source ทั้งหมดนี้ทำงานร่วมกันเป็น integrated system ที่ไม่มีใครสร้างซ้ำได้ในเวลาสั้น นอกจากนี้ ASML ยังรวม software + metrology เข้ากับ hardware เป็น \"Holistic Lithography Platform\" ที่ทำให้ลูกค้าติด ecosystem และมี switching cost สูงมาก อีกทั้งยังออก performance upgrades สำหรับเครื่องเดิม ทำให้ลูกค้าจ่ายซ้ำโดยไม่ต้องซื้อเครื่องใหม่",
+      "latest_financials": "Q1 2026 รายได้ €8,767M โต +13.2% YoY, Gross Margin 53.0%, Operating Margin 36.0%, EPS €7.15 โต +19.2% YoY IBM (service) revenue โต +24.3% เร็วกว่า system sales +9.4% สะท้อน recurring engine ที่แข็งแกร่ง FY2026 guidance อัพเดทล่าสุดคือ €36B – €40B (ปรับขึ้นจาก €34-39B) โดยรายได้จะหนักใน H2 2026 สอดคล้องกับ EUV delivery schedule",
+      "key_points": [
+        "2027 EUV supply shortage — management ระบุ demand จะเกิน supply แสดงว่า backlog visibility แน่นอยู่อีก 2-3 ปีข้างหน้า",
+        "High-NA EUV (EXE Series) ประมวลผลชิปไปแล้วกว่า 500,000 wafers ณ Q1 2026 พร้อมสำหรับ volume ramp ปี 2028",
+        "IBM revenue เป็น flywheel — ยิ่ง EUV installed base โต รายได้ service ยิ่งโตตาม ลด cyclicality ของ equipment business",
+        "ASML วางแผนจ้าง 1,000 คนในไต้หวัน (พ.ค. 2026) เพื่อรองรับความต้องการของลูกค้า — สะท้อนการเติบโตที่ยังเร่งตัวอยู่"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ ASML เพราะเป็นหนึ่งในไม่กี่บริษัทในโลกที่มี monopoly แบบ structural จริงๆ — ไม่ใช่แค่ market share ที่สูง แต่เป็นเจ้าเดียวในโลกที่ผลิต EUV Lithography ได้ ทำให้ทุก fab ที่อยากผลิตชิป advanced node ต้องมาหา ASML เท่านั้น MOAT นี้สร้างมาหลายทศวรรษและไม่สามารถ replicate ได้ในเวลาสั้น BQ score 9.5/10 สูงที่สุดในพอร์ต",
+      "ทำไมตอนนี้ถึงน่าจับตา — management ประกาศเองว่า 2027 จะมี EUV supply shortage แปลว่า demand แน่นอยู่อีก 2-3 ปี FY2026 guidance ถูกปรับขึ้นเป็น €36-40B พร้อม High-NA EUV ราคา M/unit ที่กำลัง ramp สู่ volume production ปี 2028 สิ่งที่ตลาดยังไม่ price-in เต็มที่คือ 2030 revenue target ที่ €44-60B + gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก",
+      "กลยุทธ์: Warren ให้ status WATCH เพราะราคา ,640 เกิน Base FV ,498 อยู่ 9% — ยังไม่ถึง MoS gate 15% Conviction ระดับ HIGH แต่รอจังหวะซื้อที่ดีกว่า ถ้าราคาปรับลงมาใกล้ ,350-1,400 จะน่าสนใจมาก เป็นหุ้นที่ Warren จะ BUY ทันทีเมื่อราคาเข้าเกณฑ์"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยันได้จากข้อมูลอิสระว่า Q1 2026 earnings beat expectations ได้จริง — Revenue €8,767M, EPS €7.15 โต +19.2% YoY, FY2026 guidance ถูกปรับขึ้นเป็น €36-40B EUV monopoly ยังสมบูรณ์อยู่ ไม่มีคู่แข่งที่ใกล้เคียง WAF 7.92 สะท้อน business quality สูงมาก Charlie เห็นด้วยกับ Warren ในเรื่องพื้นฐานธุรกิจ",
+        "Charlie กังวลใน 3 เรื่อง: หนึ่ง — TSMC เลื่อน High-NA EUV deployment ออกไปถึงปี 2029 ทำให้ catalyst สำคัญช้ากว่าที่คาด สอง — China เคยเป็น 29% ของรายได้ปี 2025 แต่กำลังถูก squeeze ลงเรื่อยๆ จาก export controls ถ้า tighten เพิ่มกระทบรายได้ทันที สาม — PEG 1.72 ยังเกิน ceiling 1.5 ของระบบ ราคายังแพงกว่า fair value อยู่",
+        "Charlie สรุปว่า ASML เป็นบริษัทที่ดีมากจริงๆ และ Warren วิเคราะห์ถูกต้อง แต่ WATCH เพราะราคาเกิน FV — สิ่งที่ต้อง monitor คือ: ราคาหุ้นปรับลงมาใกล้ ,350-1,400, ข่าว export control จากรัฐบาลสหรัฐหรือ EU, และ High-NA EUV qualification timeline ของ TSMC"
+      ]
+    },
+    "idea_th": "ASML คือ sole supplier ของเครื่อง EUV Lithography ที่ไม่มีทางแทนที่ได้ในห่วงโซ่การผลิต semiconductor โลก — 2027 supply shortage ที่ management เตือนเองสะท้อนว่า backlog แน่นอยู่อีก 2-3 ปี แต่รอจังหวะราคาเข้าเกณฑ์ก่อนซื้อ",
+    "story_gate_th": {
+      "what": "ASML เป็นผู้ผลิต EUV Lithography Systems เพียงรายเดียวในโลก — เครื่องจักรที่ใช้วาดลวดลายชิปขนาดเล็กที่สุดที่มนุษย์ผลิตได้ ทุก fab ที่อยากผลิตชิปรุ่นใหม่ต้องซื้อจาก ASML เท่านั้น ไม่มีตัวเลือกอื่น",
+      "why": "ปี 2027 จะเกิด EUV supply shortage — management ระบุเองว่า demand จะเกินกำลังการผลิต ขณะที่ TSMC กำลัง ramp N2 node และ High-NA EUV สำหรับ A14 ปี 2028 กำลังเข้าสู่ volume production ทำให้ backlog visibility แน่นอีก 2-3 ปีข้างหน้า",
+      "risk": "ถ้าเกิด semiconductor capex crash จาก recession ทำให้ TSMC/Samsung ชะลอ EUV orders, หรือ US/EU ออก export control ใหม่ที่ตัด DUV China revenue โดยกะทันหัน ทั้งสองกรณีนี้จะทำให้ thesis หลักสั่นคลอน"
+    },
+    "bull_th": [
+      "EUV monopoly ถาวร — ไม่มีบริษัทไหนในโลกที่ใกล้เคียงกับการสร้าง EUV ได้ และสิ่งนี้จะไม่เปลี่ยนในทศวรรษนี้ ทำให้ ASML มี pricing power สูงมาก",
+      "2027 EUV supply shortage — demand จาก TSMC, Samsung, SK Hynix เกินกว่า ASML ผลิตได้ สะท้อน backlog ที่แน่นมากและโอกาสขึ้นราคาอีก",
+      "High-NA EUV ราคา M/unit สำหรับชิป A14/A10 node — เป็น next wave ที่ยังไม่ถูก price in เต็มที่ หากลูกค้า qualify สำเร็จ revenue ต่อเครื่องจะสูงกว่าเดิมมาก",
+      "IBM (Service) revenue เป็น structural growth engine ที่โต +24% YoY โดยไม่ขึ้นกับ equipment cycle — ยิ่ง installed base ใหญ่ รายได้ recurring ยิ่งโต",
+      "2030 revenue opportunity €44-60B + gross margin 56-60% — ถ้า semiconductor industry แตะ T ตามคาด ASML จะเป็นหนึ่งในผู้ได้ประโยชน์มากที่สุด"
+    ],
+    "risk_th": [
+      "Export controls จีน — China เคยคิดเป็น 29% ของรายได้ ลดเหลือ 19% ในไตรมาสเดียว ถ้า US/EU/NL ออก restrictions เพิ่มเติมกระทบรายได้ทันที และยังมีการ suspend US Affiliates Rule อยู่ถึง Nov 2026",
+      "Customer concentration สูงมาก — TSMC + Samsung รวมกัน 38% ของรายได้ปี 2025 และ Taiwan + South Korea คิดเป็น 68% ของ system sales ถ้าสองประเทศนี้มีปัญหา geopolitical กระทบทันที",
+      "Single-source supplier Carl Zeiss SMT — เป็น sole supplier ของ precision optics สำหรับ EUV ทั้งหมด ถ้ามีปัญหาที่ Zeiss กระทบ production โดยตรงโดยไม่มีทางเลือก",
+      "Semiconductor capex cyclicality — unit sales ลดจาก 449 (2023) → 418 (2024) → 327 (2025) แม้ revenue โตเพราะ ASP สูงขึ้น แต่ถ้า cycle หันทิศทาง orders อาจชะลอกะทันหัน",
+      "High-NA EUV execution risk — TSMC เลื่อน deployment ถึงปี 2029 และยังอยู่ใน early adoption phase ถ้า qualification ล้มเหลวหรือล่าช้ากว่าที่คาด จะกระทบ long-term revenue thesis"
+    ]
+  },
   "ETN": {
     "symbol": "ETN",
     "display": "ETN",
@@ -1316,33 +1327,32 @@
       "Margin headwind Q1-Q2 2026 from capacity ramp costs; recovery expected Q3-Q4",
       "If AI CapEx cycle slows, orders could reverse quickly given backlog concentration"
     ],
-    "price": 390.38,
-    "fv": 409.0,
-    "mos": 0.7,
-    "peg": 1.09,
-    "fpe": 27.2,
-    "updated": "2026-05-27",
-    "waf": 7.5,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "conviction": 4,
     "action": "watch",
     "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.37,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 400.6,
+    "fv": 430,
+    "mos": 6.8,
+    "fpe": 25.5,
+    "peg": 3.02,
     "scores": {
       "bq": [
-        8.5,
-        "green",
-        85
-      ],
-      "gp": [
         8.0,
         "green",
         80
       ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
       "va": [
-        6.0,
+        5.5,
         "orange",
-        60
+        55
       ],
       "ra": [
         7.0,
@@ -1350,28 +1360,31 @@
         70
       ]
     },
-    "idea": "Electrification + AI Datacenter Power — grid-to-chip electrical management",
+    "idea": "Buy on pullback below $360 (10%+ MoS); core AI-infrastructure pick-and-shovel with multi-year backlog visibility and Q4 2026 margin inflection catalyst.",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-05-21",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Eaton provides grid-to-chip electrical power management for AI data centers (800V DC architecture), holding 228 GW backlog = 12 years at 2025 build rates, with complete power+thermal portfolio via Boyd Thermal acquisition.",
-      "why": "Electrical Americas DC orders +240% YoY; raising FY2026 organic growth to 10%; Q1 2026 FCF +245% YoY; 800V DC ecosystem partner with NVIDIA/ABB/Schneider/Vertiv = spec-in for next-gen AI data centers.",
-      "risk": "หาก AI CapEx supercycle หยุดชะงักหรือ pause >2 quarters ทำให้ Electrical Americas orders reversal, หรือ Boyd Thermal integration ($9.5B) generates significantly less cross-selling synergy than projected."
+      "updated": "2026-05-31",
+      "what": "Eaton is an intelligent power management company providing UPS, switchgear, busbar, and modular power enclosures that wins through deep OEM/utility relationships, multi-year backlogs, and integrated grid-to-chip portfolio that hyperscalers can't easily replicate.",
+      "why": "Consensus sees ETN as a cyclical industrial riding the AI data center wave; Warren sees a structural power-infrastructure shortage where 228 GW DC backlog (70% AI), +240% DC orders, and Boyd Thermal acquisition position ETN as the dominant pick-and-shovel for liquid-cooled AI factories — with Q4 2026 ramp delivering 50%+ incremental margins not yet in numbers.",
+      "risk": "Hyperscaler capex pause or in-housing of power infrastructure collapses the data center backlog and orders."
     },
-    "tier": "🔁 Cyclical",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "PEG 3.04 per yfinance exceeds ceiling 1.5 — Warren's growth assumption may be too aggressive",
-        "Price $403 now above Warren's FV $394",
-        "Datacenter capex cyclicality"
+      "verified_claims": [
+        "Q1 2026 EPS beat estimates confirmed by multiple news sources, supporting Warren's 15%+ EPS CAGR thesis",
+        "Revenue growth of 16.8% YoY is consistent with Warren's ~10% organic growth plus Boyd acquisition contribution narrative",
+        "AI-driven power infrastructure demand thesis corroborated by May 2026 analyst reports positioning ETN for data center capex tailwinds"
       ],
-      "summary": "⚠️ PEG discrepancy: yfinance 3.04 vs Warren's 1.09. Warren used 25% growth; consensus sees 8-9%. HOWEVER analyst targets $450-500 (Morgan Stanley $500) are much more bullish than Warren's FV $394.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "PEG ratio of 3.02 is significantly above 2.0 threshold — at $400.60 and forward P/E of 25.5x, the stock is pricing in near-perfect execution; Warren's 6.8% MoS is razor-thin given this growth premium",
+        "Debt-to-equity of 110.46 is extremely high — Warren acknowledged $20B net debt but may underestimate refinancing risk if rates remain elevated through 2026-2027, constraining buybacks and integration spend simultaneously",
+        "One news headline flags 'Earnings Manipulation Risk' on ETN — while likely algorithmic noise, revenue reported as '$N/A' in one article suggests limited revenue transparency in early Q1 releases; warrants verification of organic vs. acquisition-driven growth split",
+        "Gross margin of 37.1% is solid but not expanding dramatically — Warren's thesis of margin expansion to 24.5% EBIT requires sustained pricing power against potential tariff headwinds on imported electrical components"
+      ],
+      "summary": "Warren's AI data center thesis is broadly confirmed by Q1 2026 earnings beats and continued infrastructure demand, but the PEG ratio of 3.02 signals meaningful valuation risk that Warren's 5.5 VA score may still underweight, and the debt_to_equity of 110 is materially elevated post-Boyd acquisition.",
+      "review_date": "2026-05-31"
     },
     "mark_easy": {
       "one_liner": "Eaton คือบริษัทที่จัดการพลังงานไฟฟ้าให้ AI Data Center ตั้งแต่กริดไฟฟ้าจนถึงชิป — เป็นรายเดียวที่ครบวงจร",
@@ -1435,150 +1448,6 @@
       "DC orders +240% YoY สูงมากจน sustain ได้ยาก — ถ้า hyperscalers pause capex แม้ชั่วคราว Eaton จะ miss order run rate อย่างรวดเร็ว"
     ]
   },
-  "AMD": {
-    "symbol": "AMD",
-    "display": "AMD",
-    "category": "ai_semiconductor",
-    "name": "AMD",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "CPU + GPU AI"
-    ],
-    "bull": [
-      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
-      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-      "Lisa Su execution track record = among best in semiconductor",
-      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
-      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
-    ],
-    "risk": [
-      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
-      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
-      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
-      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
-      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
-    ],
-    "price": 467.51,
-    "fv": 457.8,
-    "mos": -0.1,
-    "peg": 0.81,
-    "fpe": 25.0,
-    "updated": "2026-05-27",
-    "waf": 7.35,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
-    "scores": {
-      "bq": [
-        8.5,
-        "green",
-        85
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        4.5,
-        "orange",
-        45
-      ],
-      "ra": [
-        6.5,
-        "amber",
-        65
-      ]
-    },
-    "idea": "MI450 + Helios Rack Platform — AI GPU + EPYC dual engine",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-05-19",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "AMD เป็น sole credible competitor ต่อ NVIDIA ใน GPU/AI Accelerator — Instinct MI300X เป็นทางเลือกสำหรับ hyperscalers ที่ต้องการ diversify away from NVIDIA; EPYC CPU ครอง >35% server CPU market share แซง Intel Xeon; ROCm software ecosystem กำลัง improve แต่ยังห่างจาก CUDA",
-      "why": "Q1 2026 Data Center revenue $5.8B +57% YoY; EPYC Turin >50% revenue mix; Helios rack platform (MI450 + Venice CPU + Pensando) = Q3 2026 initial ramp; OpenAI + Meta 6GW deals (warrant = financial lock-in, not weak demand — warrants vest on shipment milestones); AMD is the ONLY company with x86 CPU + AI GPU + rack simultaneously — 41.3% server CPU share (Mercury Research Q4 2025) + MI450 GPU + Helios system. Rerating: \"GPU laggard\" → \"indispensable second source\" = 2H 2026–1H 2027 timeframe",
-      "risk": "ROCm software ecosystem ยังไม่ catch up CUDA → hyperscalers ไม่ adopt MI-series จริงจัง; NVIDIA Vera Rubin H200 ยิ่งห่างขึ้น; China export ban กระทบ MI300X sales; AI capex slowdown ทั่วไป"
-    },
-    "tier": "🔁 Cyclical",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "Warren's FV $467 vs analyst consensus $500-625 — potential underestimate",
-        "ROCm software still behind CUDA",
-        "Price at all-time high after 118% YTD gain"
-      ],
-      "summary": "⚠️ Price $503.89 now ABOVE Warren's FV $467 by 7.9%. Q1 2026 beat (May 5): Revenue $10.25B, EPS $1.37. Analyst targets $500-625 suggest Warren's FV understated. WATCH correct but FV may need revision.",
-      "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "AMD คือคู่แข่งอันดับ 2 ของ NVIDIA ที่กำลังกลายเป็น 'second platform' ที่ hyperscalers ต้องมีเพื่อความปลอดภัย",
-      "what": "AMD ออกแบบ CPU (EPYC สำหรับ server), GPU (Instinct สำหรับ AI), และ FPGA (จาก Xilinx) รายได้หลักตอนนี้ 56% มาจาก Data Center ที่โตระเบิด Meta และ OpenAI เพิ่งเลือก AMD เป็น AI GPU หลักในสัญญาขนาด 6GW แต่ละราย ซึ่งเป็นสัญญาณว่า AMD ไม่ใช่แค่ทางเลือกสำรองอีกต่อไป",
-      "why_invest": [
-        "EPYC ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory นี้เหมือน Intel CPU story ที่ AMD เคยทำสำเร็จมาแล้ว",
-        "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว ไม่ใช่แค่ทดสอบ",
-        "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้งสองด้าน",
-        "Helios rack platform (MI450 + Venice CPU + networking) เริ่ม ramp H2 2026 = complete AI system เทียบ NVIDIA ที่ตลาดยังไม่ fully price in"
-      ],
-      "watch_out": [
-        "ROCm software ecosystem ยังห่างจาก CUDA มาก ทำให้ enterprise ยังย้ายมา AMD ช้าและ execution risk สูง",
-        "Warrant dilution จาก OpenAI+Meta รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute",
-        "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ถ้า delay กระทบ Q4 2026 guidance"
-      ],
-      "bottom_line": "Pete มอง AMD เป็น 'second platform' ที่น่าสนใจมาก thesis ชัดเจน แต่ราคาตอนนี้ตรง FV Base พอดีแทบไม่มี margin of safety ต้องรอ pullback ก่อน"
-    },
-    "mark_full": {
-      "business_overview": "AMD เป็น fabless semiconductor company ออกแบบ CPU (EPYC server, Ryzen PC), GPU (Instinct AI, Radeon gaming) และ FPGA (Xilinx) ทั้งหมดผลิตโดย TSMC Data Center (56% revenue) คือ growth engine หลักที่โต +57% YoY Q1 2026 จาก EPYC CPU ที่ชนะ Intel และ Instinct AI GPU ที่ได้ลูกค้า Meta+OpenAI",
-      "tam": "Server CPU TAM กำลังโตจาก ~$60B → >$120B by 2030 เพราะ agentic AI เปลี่ยน CPU demand อย่างมีนัยสำคัญ ทุก agentic workload ต้องใช้ CPU สำหรับ orchestration+data movement+parallel execution AMD เป็น beneficiary ตรงเพราะมีทั้ง CPU+GPU+rack พร้อมกัน",
-      "moat": "EPYC MOAT อยู่ที่ performance/watt ที่เหนือ Intel Xeon อย่างชัดเจน + AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system (Helios) พร้อมกัน = one-stop AI infrastructure partner ROCm open software ยังเป็นจุดอ่อนเทียบ CUDA แต่ improving อย่างต่อเนื่องโดยเฉพาะ inference workloads",
-      "latest_financials": "Q1 2026: Revenue $10.3B +38% YoY, Non-GAAP EPS $1.37 +43%, FCF $2.6B +257% YoY — record Data Center $5.8B +57% Q2 2026 guidance: $11.2B +46% YoY, Non-GAAP GM 56% FV Base $467 ใกล้เท่ากับราคาตลาด $467.51 — แทบไม่มี margin of safety",
-      "key_points": [
-        "Helios rack platform (MI450 + Venice CPU + networking) = complete AI system เทียบ DGX ของ NVIDIA — Q3 initial, Q4 significant ramp 2026",
-        "Meta+OpenAI warrant structure ทำให้ลูกค้าต้อง advocate AMD ต่อสาธารณะ เพราะ warrant vest ตาม GPU shipment milestones",
-        "Agentic AI shift ทำให้ CPU TAM ใหญ่กว่าที่ตลาดคาด — AMD ได้ประโยชน์ทั้ง CPU (EPYC) และ GPU (Instinct) พร้อมกัน",
-        "'Advancing AI' event July 2026 = catalyst ใหม่สำหรับ roadmap เปิดเผย อาจ push ราคาได้ถ้า roadmap ดีเกินคาด"
-      ]
-    },
-    "warren_easy": [
-      "Warren ถือ AMD เพราะ thesis 'second platform' — โลก AI ไม่มีทางพึ่ง NVIDIA รายเดียว 100% hyperscalers ต้องการ second source เพื่อความปลอดภัย AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system พร้อมกัน ทำให้เป็นตัวเลือก complete ที่สุดในการ diversify จาก NVIDIA",
-      "ทำไมตอนนี้น่าสนใจ Meta+OpenAI deal ขนาด 6GW แต่ละราย = multi-year revenue visibility ที่ชัดเจน EPYC ยังขยาย share ใน server CPU อย่างต่อเนื่อง และ agentic AI เปลี่ยน CPU TAM ให้ใหญ่กว่าที่ตลาดเข้าใจ FV Base $467 แทบเท่ากับราคา แต่ 5yr Expected Return 21.4%/yr ผ่าน threshold",
-      "Action: WATCH ราคา $467.51 ≈ FV Base $467 ไม่มี MoS ที่ต้องการ แต่ถ้า pullback 15-20% จาก H2 MI450 execution risk หรือ market correction Warren จะ upgrade เป็น BUY ทันที Conviction: MEDIUM เพราะ ROCm risk + warrant dilution 320M shares ที่อาจกด EPS"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยัน thesis AMD แข็งแกร่ง Data Center +57% YoY ใน Q1 2026 เป็นหลักฐานชัดว่า hyperscalers ลงทุนใน AMD จริง EPYC server share >41% verified จาก Mercury Research และ FCF +257% YoY แสดง operating leverage ที่ดีขึ้นอย่างชัดเจน",
-        "Charlie กังวล 2 จุดที่ Warren อาจ underweight: (1) ราคา $503 ปลาย May สูงกว่า FV $467 แล้ว 7.9% ขณะที่ analyst consensus ให้ PT $500-625 อาจหมายความว่า Warren's FV understate จริง; (2) Warrant dilution 320M shares = 19.6% ถ้า vest ทั้งหมด เป็นความเสี่ยงที่ไม่ค่อยถูกพูดถึงในการคำนวณ per-share value",
-        "Charlie สรุปว่า WATCH ถูกต้อง business direction ชัดเจนและ momentum ดี แต่ต้องติดตาม MI450 execution ใน H2 2026 และ warrant vesting schedule เพื่อ calibrate dilution risk ก่อนตัดสินใจ"
-      ]
-    },
-    "idea_th": "AMD กำลังกลายเป็น second platform สำหรับ AI infrastructure — EPYC CPU ครอง >41% server market และ Instinct MI450 GPU ที่ Meta+OpenAI เลือกขนาด 6GW ทำให้ AMD ไม่ใช่แค่คู่แข่ง NVIDIA แต่เป็น 'insurance policy' ที่ hyperscalers ต้องมี",
-    "story_gate_th": {
-      "what": "AMD เป็นรายเดียวที่มีทั้ง x86 CPU (EPYC Turin/Venice) + AI GPU (Instinct MI450) + rack platform (Helios) พร้อมกัน ทำให้เป็น one-stop AI infrastructure partner สำหรับ hyperscalers ที่ต้องการ diversify จาก NVIDIA — server CPU share >41% และ Data Center revenue $5.8B +57% YoY Q1 2026",
-      "why": "Meta+OpenAI เลือก AMD ขนาด 6GW แต่ละราย + EPYC Turin >50% revenue mix Q1 2026 + Q2 guidance +46% YoY = momentum ชัดเจนว่า AMD กำลัง rerate จาก 'GPU laggard' เป็น 'indispensable second source' ใน 2H 2026–1H 2027",
-      "risk": "ROCm software ecosystem ยังไม่ catch up CUDA ทำให้ enterprise ไม่ adopt MI-series จริงจัง หรือ MI450+Helios ramp ล่าช้าใน H2 2026 ทำให้ miss guidance"
-    },
-    "bull_th": [
-      "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว — เป็นสัญญาณ financial lock-in ไม่ใช่แค่ทดสอบ",
-      "EPYC Turin ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory ชัดว่า AMD กำลัง rerate เหมือน 'Intel CPU story' ที่ตลาดเคยเห็นมาแล้ว",
-      "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้ง CPU และ GPU พร้อมกัน",
-      "Helios rack (MI450+Venice+networking) = complete AI system เทียบ NVL72 — Q3 initial ramp, Q4 significant ramp 2026 เป็น near-term catalyst ที่ยังไม่ fully price in",
-      "FCF +257% YoY Q1 2026 $2.6B = operating leverage แข็งแกร่ง Net Cash $9.1B ไม่มีหนี้สุทธิ ให้ flexibility ในการลงทุน R&D และ buyback"
-    ],
-    "risk_th": [
-      "ROCm software ecosystem ยังห่างจาก CUDA มาก — enterprise ที่ invest ใน CUDA pipeline ลำบากในการ migrate ทำให้ AMD ยังได้ส่วน inference เป็นหลัก training ยังยาก",
-      "OpenAI+Meta warrant รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute ผู้ถือหุ้นเดิม",
-      "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ยังไม่เคยทำในระดับนี้ ถ้า delay กระทบ Q4 2026 guidance อย่างมีนัยสำคัญ",
-      "TSMC concentration 100% สำหรับ advanced wafers — Taiwan geopolitical risk เป็นความเสี่ยงสูงสุดที่ AMD control ไม่ได้",
-      "Gaming H2 2026 คาดลง >20% vs H1 จาก memory price inflation — กด Client revenue และ margin รวม"
-    ]
-  },
   "MRVL": {
     "symbol": "MRVL",
     "display": "MRVL",
@@ -1607,14 +1476,14 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 7.1,
+    "waf": 7.18,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 215.0,
-    "fv": 171.0,
-    "mos": -37.8,
-    "fpe": 54.4,
-    "peg": 1.36,
+    "price": 205.0,
+    "fv": 133,
+    "mos": -54.1,
+    "fpe": 37.5,
+    "peg": 0.44,
     "scores": {
       "bq": [
         8.5,
@@ -1632,13 +1501,13 @@
         35
       ],
       "ra": [
-        5.5,
+        6.0,
         "orange",
-        55
+        60
       ]
     },
-    "idea": "Hyperscaler Custom XPU + 3.2T optical interconnect platform (Polariton) + NVLink Fusion ecosystem",
-    "updated": "2026-05-28",
+    "idea": "Hyperscaler Custom XPU + 200G/lane DSP + NVLink Fusion ecosystem (May 27)",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1651,15 +1520,20 @@
     },
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "[HIGH] Amazon custom XPU loss risk: analyst downgrade April 2026 cited concern MRVL lost Amazon Trainium custom XPU business to competitor — ถ้าจริงกระทบ FY28 .5B target อย่างมีนัยสำคัญ",
-        "[HIGH] Microsoft XPU loss risk: concern MRVL might lose Microsoft AI chip business to Broadcom — Charlie พบจาก independent search (Alpha Spread, GuruFocus)",
-        "[MEDIUM] Broadcom competition 1.6T optics: AVGO gaining ground ใน 1.6T optical space ที่ MRVL เคยเป็น first-mover",
-        "[MEDIUM] Overvaluation confirmed independently: Fwd P/E ~50x vs industry average 34.65x = overvalued 60%+ per external sources; TD Cowen downgraded citing visibility concerns"
+      "verified_claims": [
+        "NVLink Fusion / custom XPU partnership thesis confirmed — Q1 earnings beat and raised guidance validate MRVL's AI ASIC positioning in the NVIDIA ecosystem",
+        "5-customer concentration risk is real and Warren correctly flagged it — MRVL's revenue remains highly dependent on a handful of hyperscaler XPU customers (Amazon, Google, Microsoft tier)",
+        "Price at $205 is materially above Warren's $133 FV, confirmed by Charlie's independent fetch (Δ=0.00)",
+        "Revenue growth of 27.6% and gross margin of 51.5% confirm strong BQ/GP scores of 8.5/9.5"
       ],
-      "summary": "Q1 FY27 beat confirmed (,418M +28%, EPS /bin/zsh.80 beat /bin/zsh.75 est); Q2 guide .7B +35% = legit acceleration. แต่ Charlie พบ 3 risks ที่ Warren อาจ underweight: (1) Analyst report วา MRVL อาจสูญเสีย Amazon custom XPU ให้คู่แข่ง (April 2026 downgrade catalyst); (2) Risk สูญเสีย Microsoft XPU ให้ Broadcom; (3) Stock ลง -4.24% intraday May 27 แม้ earnings beat — สัญญาณว่าตลาดมีข้อกังวลที่ซ่อนอยู่. Warren FV  (conservative) vs street -210 = Warren ถูกในทิศทาง แต่ customer loss risk เป็น tail risk ที่ต้องติดตาม.",
-      "review_date": "2026-05-28"
+      "concerns": [
+        "Debt-to-equity of 28.97 is extremely elevated — Warren's RA score of 6.0 may be too generous; this level of leverage in a cyclical semiconductor company is a structural risk if AI capex spending slows",
+        "Warren's $133 FV uses assumptions that appear pre-earnings; the $10B custom chip revenue target by 2029 (newly disclosed) was NOT in Warren's thesis and likely changes the DCF materially — FV may need significant upward revision",
+        "Forward PE of 33.7x with PEG of 1.17 suggests the market is pricing in strong but not irrational growth — Warren's VA score of 3.5 is justified but the MoS framing (-54.1%) may be overstated if 2029 targets are credible",
+        "CPO (co-packaged optics) disruption risk Warren flagged is real but timeline is uncertain — Celestial AI and other CPO players remain pre-commercial, so near-term impact is limited"
+      ],
+      "summary": "Warren's thesis direction is confirmed by the Q1 FY2027 earnings beat and raised FY27 AI outlook, but his $133 fair value appears significantly stale given the $10B custom chip revenue target by 2029 and accelerating AI monetization. The -54.1% MoS call is accurate at current price but may underweight the growth runway.",
+      "review_date": "2026-05-31"
     },
     "tier": "🔁 Cyclical",
     "mark_easy": {
@@ -1722,6 +1596,152 @@
       "Goodwill $11B = 49.7% ของ Total Assets — ถ้าหุ้นตก sharply จะ trigger impairment review และกระทบ EPS อย่างหนัก",
       "Polariton acquisition เพิ่ง close — 3.2T optical ยังไม่ proven ที่ volume production จริง integration risk สูง และเพิ่ม M&A burden",
       "China destination shipments 36% revenue มีความเสี่ยงจาก BIS export control ที่อาจขยายวงกว้างขึ้น รวมถึง 15% revenue sharing mechanism ที่อาจถูก impose"
+    ]
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "display": "AMD",
+    "category": "ai_semiconductor",
+    "name": "AMD",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "CPU + GPU AI"
+    ],
+    "bull": [
+      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
+      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+      "Lisa Su execution track record = among best in semiconductor",
+      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
+      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+    ],
+    "risk": [
+      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
+      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
+      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
+      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
+      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.15,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 516.1,
+    "fv": 467,
+    "mos": -9.5,
+    "fpe": 39.82,
+    "peg": 1.24,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        4.0,
+        "orange",
+        40
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "MI450 + Helios Rack Platform — AI GPU + EPYC dual engine rerating story",
+    "updated": "2026-05-31",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-05-31",
+      "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
+      "why": "Consensus มอง AMD เป็น 'GPU laggard' ตาม NVIDIA; Warren เห็น MI450 + Helios rack ramp H2 2026, OpenAI/Meta 6GW warrant deals (vest บน shipment = demand lock-in), EPYC Turin >50% mix — rerating จาก 'laggard' → 'indispensable second source' ยังไม่ถูก price เต็ม",
+      "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง"
+    },
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Revenue growth of 37.8% YoY confirms AMD's strong top-line momentum, supporting the AI accelerator ramp narrative",
+        "Gross margin of 53.1% is consistent with a high-quality semiconductor franchise (BQ=8.5 is defensible)",
+        "Current price $516.1 matches Warren's data — no price discrepancy"
+      ],
+      "concerns": [
+        "Forward P/E of 39.8x means the CY27E EPS $18.7 × 25x = $467 FV uses a BELOW-MARKET multiple — yet AMD trades at 39.8x forward, implying market already prices in significant growth; Warren's 25x terminal multiple may be too conservative for bull case but also means downside if growth disappoints",
+        "Debt-to-equity of 6.0x is materially elevated and was NOT flagged in Warren's RA=6.0 risk score — this introduces refinancing risk and limits financial flexibility if MI450 ramp slips",
+        "PEG of 1.24 suggests the stock is not cheap relative to growth; any earnings revision downward could compress the multiple sharply given the high absolute P/E",
+        "No recent news data available — this is a blind spot; sentiment around ROCm ecosystem progress or hyperscaler design wins cannot be independently verified, creating information risk"
+      ],
+      "summary": "Warren's thesis is directionally sound but the valuation math is stretched — forward P/E of ~40x and current price 10.5% above Fair Value leave no margin of safety. The PEG of 1.24 suggests growth is partially priced in, but debt/equity of 6.0x is a hidden risk Warren underweighted.",
+      "review_date": "2026-05-31"
+    },
+    "mark_easy": {
+      "one_liner": "AMD คือคู่แข่งอันดับ 2 ของ NVIDIA ที่กำลังกลายเป็น 'second platform' ที่ hyperscalers ต้องมีเพื่อความปลอดภัย",
+      "what": "AMD ออกแบบ CPU (EPYC สำหรับ server), GPU (Instinct สำหรับ AI), และ FPGA (จาก Xilinx) รายได้หลักตอนนี้ 56% มาจาก Data Center ที่โตระเบิด Meta และ OpenAI เพิ่งเลือก AMD เป็น AI GPU หลักในสัญญาขนาด 6GW แต่ละราย ซึ่งเป็นสัญญาณว่า AMD ไม่ใช่แค่ทางเลือกสำรองอีกต่อไป",
+      "why_invest": [
+        "EPYC ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory นี้เหมือน Intel CPU story ที่ AMD เคยทำสำเร็จมาแล้ว",
+        "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว ไม่ใช่แค่ทดสอบ",
+        "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้งสองด้าน",
+        "Helios rack platform (MI450 + Venice CPU + networking) เริ่ม ramp H2 2026 = complete AI system เทียบ NVIDIA ที่ตลาดยังไม่ fully price in"
+      ],
+      "watch_out": [
+        "ROCm software ecosystem ยังห่างจาก CUDA มาก ทำให้ enterprise ยังย้ายมา AMD ช้าและ execution risk สูง",
+        "Warrant dilution จาก OpenAI+Meta รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute",
+        "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ถ้า delay กระทบ Q4 2026 guidance"
+      ],
+      "bottom_line": "Pete มอง AMD เป็น 'second platform' ที่น่าสนใจมาก thesis ชัดเจน แต่ราคาตอนนี้ตรง FV Base พอดีแทบไม่มี margin of safety ต้องรอ pullback ก่อน"
+    },
+    "mark_full": {
+      "business_overview": "AMD เป็น fabless semiconductor company ออกแบบ CPU (EPYC server, Ryzen PC), GPU (Instinct AI, Radeon gaming) และ FPGA (Xilinx) ทั้งหมดผลิตโดย TSMC Data Center (56% revenue) คือ growth engine หลักที่โต +57% YoY Q1 2026 จาก EPYC CPU ที่ชนะ Intel และ Instinct AI GPU ที่ได้ลูกค้า Meta+OpenAI",
+      "tam": "Server CPU TAM กำลังโตจาก ~$60B → >$120B by 2030 เพราะ agentic AI เปลี่ยน CPU demand อย่างมีนัยสำคัญ ทุก agentic workload ต้องใช้ CPU สำหรับ orchestration+data movement+parallel execution AMD เป็น beneficiary ตรงเพราะมีทั้ง CPU+GPU+rack พร้อมกัน",
+      "moat": "EPYC MOAT อยู่ที่ performance/watt ที่เหนือ Intel Xeon อย่างชัดเจน + AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system (Helios) พร้อมกัน = one-stop AI infrastructure partner ROCm open software ยังเป็นจุดอ่อนเทียบ CUDA แต่ improving อย่างต่อเนื่องโดยเฉพาะ inference workloads",
+      "latest_financials": "Q1 2026: Revenue $10.3B +38% YoY, Non-GAAP EPS $1.37 +43%, FCF $2.6B +257% YoY — record Data Center $5.8B +57% Q2 2026 guidance: $11.2B +46% YoY, Non-GAAP GM 56% FV Base $467 ใกล้เท่ากับราคาตลาด $467.51 — แทบไม่มี margin of safety",
+      "key_points": [
+        "Helios rack platform (MI450 + Venice CPU + networking) = complete AI system เทียบ DGX ของ NVIDIA — Q3 initial, Q4 significant ramp 2026",
+        "Meta+OpenAI warrant structure ทำให้ลูกค้าต้อง advocate AMD ต่อสาธารณะ เพราะ warrant vest ตาม GPU shipment milestones",
+        "Agentic AI shift ทำให้ CPU TAM ใหญ่กว่าที่ตลาดคาด — AMD ได้ประโยชน์ทั้ง CPU (EPYC) และ GPU (Instinct) พร้อมกัน",
+        "'Advancing AI' event July 2026 = catalyst ใหม่สำหรับ roadmap เปิดเผย อาจ push ราคาได้ถ้า roadmap ดีเกินคาด"
+      ]
+    },
+    "warren_easy": [
+      "Warren ถือ AMD เพราะ thesis 'second platform' — โลก AI ไม่มีทางพึ่ง NVIDIA รายเดียว 100% hyperscalers ต้องการ second source เพื่อความปลอดภัย AMD เป็นรายเดียวที่มีทั้ง x86 CPU + AI GPU + rack system พร้อมกัน ทำให้เป็นตัวเลือก complete ที่สุดในการ diversify จาก NVIDIA",
+      "ทำไมตอนนี้น่าสนใจ Meta+OpenAI deal ขนาด 6GW แต่ละราย = multi-year revenue visibility ที่ชัดเจน EPYC ยังขยาย share ใน server CPU อย่างต่อเนื่อง และ agentic AI เปลี่ยน CPU TAM ให้ใหญ่กว่าที่ตลาดเข้าใจ FV Base $467 แทบเท่ากับราคา แต่ 5yr Expected Return 21.4%/yr ผ่าน threshold",
+      "Action: WATCH ราคา $467.51 ≈ FV Base $467 ไม่มี MoS ที่ต้องการ แต่ถ้า pullback 15-20% จาก H2 MI450 execution risk หรือ market correction Warren จะ upgrade เป็น BUY ทันที Conviction: MEDIUM เพราะ ROCm risk + warrant dilution 320M shares ที่อาจกด EPS"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยัน thesis AMD แข็งแกร่ง Data Center +57% YoY ใน Q1 2026 เป็นหลักฐานชัดว่า hyperscalers ลงทุนใน AMD จริง EPYC server share >41% verified จาก Mercury Research และ FCF +257% YoY แสดง operating leverage ที่ดีขึ้นอย่างชัดเจน",
+        "Charlie กังวล 2 จุดที่ Warren อาจ underweight: (1) ราคา $503 ปลาย May สูงกว่า FV $467 แล้ว 7.9% ขณะที่ analyst consensus ให้ PT $500-625 อาจหมายความว่า Warren's FV understate จริง; (2) Warrant dilution 320M shares = 19.6% ถ้า vest ทั้งหมด เป็นความเสี่ยงที่ไม่ค่อยถูกพูดถึงในการคำนวณ per-share value",
+        "Charlie สรุปว่า WATCH ถูกต้อง business direction ชัดเจนและ momentum ดี แต่ต้องติดตาม MI450 execution ใน H2 2026 และ warrant vesting schedule เพื่อ calibrate dilution risk ก่อนตัดสินใจ"
+      ]
+    },
+    "idea_th": "AMD กำลังกลายเป็น second platform สำหรับ AI infrastructure — EPYC CPU ครอง >41% server market และ Instinct MI450 GPU ที่ Meta+OpenAI เลือกขนาด 6GW ทำให้ AMD ไม่ใช่แค่คู่แข่ง NVIDIA แต่เป็น 'insurance policy' ที่ hyperscalers ต้องมี",
+    "story_gate_th": {
+      "what": "AMD เป็นรายเดียวที่มีทั้ง x86 CPU (EPYC Turin/Venice) + AI GPU (Instinct MI450) + rack platform (Helios) พร้อมกัน ทำให้เป็น one-stop AI infrastructure partner สำหรับ hyperscalers ที่ต้องการ diversify จาก NVIDIA — server CPU share >41% และ Data Center revenue $5.8B +57% YoY Q1 2026",
+      "why": "Meta+OpenAI เลือก AMD ขนาด 6GW แต่ละราย + EPYC Turin >50% revenue mix Q1 2026 + Q2 guidance +46% YoY = momentum ชัดเจนว่า AMD กำลัง rerate จาก 'GPU laggard' เป็น 'indispensable second source' ใน 2H 2026–1H 2027",
+      "risk": "ROCm software ecosystem ยังไม่ catch up CUDA ทำให้ enterprise ไม่ adopt MI-series จริงจัง หรือ MI450+Helios ramp ล่าช้าใน H2 2026 ทำให้ miss guidance"
+    },
+    "bull_th": [
+      "Meta+OpenAI เลือก AMD Instinct ขนาด 6GW แต่ละราย ผ่าน warrant structure ที่ทำให้ลูกค้าต้อง commit ระยะยาว — เป็นสัญญาณ financial lock-in ไม่ใช่แค่ทดสอบ",
+      "EPYC Turin ครอง >41% server CPU market share ขึ้นจาก low single digits ปี 2014 — trajectory ชัดว่า AMD กำลัง rerate เหมือน 'Intel CPU story' ที่ตลาดเคยเห็นมาแล้ว",
+      "Agentic AI เปลี่ยน CPU:GPU ratio จาก 8:1 → ใกล้ 1:1 ทำให้ Server CPU TAM โตจาก $60B → $120B by 2030 — AMD ได้ประโยชน์ทั้ง CPU และ GPU พร้อมกัน",
+      "Helios rack (MI450+Venice+networking) = complete AI system เทียบ NVL72 — Q3 initial ramp, Q4 significant ramp 2026 เป็น near-term catalyst ที่ยังไม่ fully price in",
+      "FCF +257% YoY Q1 2026 $2.6B = operating leverage แข็งแกร่ง Net Cash $9.1B ไม่มีหนี้สุทธิ ให้ flexibility ในการลงทุน R&D และ buyback"
+    ],
+    "risk_th": [
+      "ROCm software ecosystem ยังห่างจาก CUDA มาก — enterprise ที่ invest ใน CUDA pipeline ลำบากในการ migrate ทำให้ AMD ยังได้ส่วน inference เป็นหลัก training ยังยาก",
+      "OpenAI+Meta warrant รวม 320M shares = 19.6% dilution ถ้า vest ทั้งหมด — ยิ่ง AMD ประสบความสำเร็จ ยิ่ง dilute ผู้ถือหุ้นเดิม",
+      "MI450+Helios ramp ซับซ้อน — rack-scale integration CPU+GPU+networking ยังไม่เคยทำในระดับนี้ ถ้า delay กระทบ Q4 2026 guidance อย่างมีนัยสำคัญ",
+      "TSMC concentration 100% สำหรับ advanced wafers — Taiwan geopolitical risk เป็นความเสี่ยงสูงสุดที่ AMD control ไม่ได้",
+      "Gaming H2 2026 คาดลง >20% vs H1 จาก memory price inflation — กด Client revenue และ margin รวม"
     ]
   },
   "PLTR": {
@@ -1893,18 +1913,17 @@
       "EU DMA บังคับ open App Store = Services revenue กระทบ",
       "MoS เพียง 9.3% จาก FV $215 — ยังสูงเกินไปสำหรับ entry ที่ conservative"
     ],
-    "price": 308.39,
-    "fv": 248.8,
-    "mos": -21.1,
-    "peg": 3.22,
-    "fpe": 32.2,
-    "updated": "2026-05-27",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
     "waf": 6.55,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 312.06,
+    "fv": 255,
+    "mos": -22.4,
+    "fpe": 32.12,
+    "peg": 3.22,
     "scores": {
       "bq": [
         9.5,
@@ -1928,6 +1947,7 @@
       ]
     },
     "idea": "Ecosystem Lock-in + Services flywheel",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1938,18 +1958,23 @@
       "why": "Apple Intelligence (iOS 18) เป็น catalyst ใหม่สำหรับ upgrade cycle — on-device AI ที่ไม่ส่งข้อมูลออก cloud เป็น USP ที่แตกต่าง; Q2 FY2026 Services revenue $26.7B +14% YoY; หาก iPhone 17 + Apple Intelligence ดึง upgrade wave ได้ จะ re-accelerate growth",
       "risk": "DOJ/EU regulatory action ต่อ App Store (30% take rate); Tariff impact on iPhone manufacturing (>90% made in China/India); Apple Intelligence underwhelm → ไม่เกิด upgrade cycle; China market share loss ต่อ Huawei ต่อเนื่อง (China revenue -14% Q2 FY2026)"
     },
-    "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "China revenue loss to Huawei",
-        "App Store regulatory pressure",
-        "No AI upgrade cycle materializing yet"
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Stock is trading near 52-week highs at $312.06 — confirmed, price matches exactly",
+        "Services segment high-margin profile is real — gross margin of 47.9% at company level supports this",
+        "Negative margin of safety confirmed: at $312 vs $255 fair value, stock trades ~22% above Warren's estimate"
       ],
-      "summary": "WATCH confirmed. MoS -20.9%. FwdPE 32x for ~10-12% growth is expensive. China market share loss continuing.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Warren cited PEG of 3.22 but independent data shows PEG of 2.72 — this is a ~15% error that makes the valuation look worse than it is; at 2.72 PEG the stock is expensive but less egregiously so",
+        "Warren assumed ~10% growth but actual revenue growth is 16.6% — this meaningfully changes the growth-adjusted valuation thesis and could partially justify the forward PE of 32.5x",
+        "Debt-to-equity of 79.5 is high and Warren did not address leverage risk, which matters if rates stay elevated or buyback capacity diminishes",
+        "No news available to verify China revenue trajectory or App Store regulatory developments independently — Warren's risk flags on these cannot be confirmed or denied"
+      ],
+      "summary": "Warren's valuation concern is directionally correct but overstated — PEG is actually 2.72 (not 3.22 as Warren cited), and revenue growth of 16.6% is materially higher than the 10% Warren assumed, which partially justifies the premium. However, the stock remains expensive at 32.5x forward PE with negative margin of safety.",
+      "review_date": "2026-05-31"
     },
+    "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
       "one_liner": "เจ้าของระบบนิเวศที่แข็งแกร่งที่สุดใน Consumer Tech กับอุปกรณ์ใช้งานอยู่กว่า 2.5 พันล้านเครื่องทั่วโลก",
       "what": "Apple ขายฮาร์ดแวร์อย่าง iPhone/Mac/iPad/Watch/AirPods แล้วผูกทุกอย่างเข้าด้วยกันด้วย iOS และบริการ (App Store, iCloud, Apple Pay, Apple TV+) จุดเด่นคือ ecosystem ที่ทำให้ลูกค้าย้ายออกยากมาก และธุรกิจ Services ที่มี margin สูงถึง 75% โตทุกไตรมาส",
@@ -2037,18 +2062,17 @@
       "SBC ยังสูง — dilution ต่อ shareholders ในหลายปีข้างหน้า",
       "Net new ARR growth ชะลอลงจาก peak — มี structural slow-down อาจจะมา"
     ],
-    "price": 671.55,
-    "fv": 495.0,
-    "mos": -32.7,
-    "peg": 4.49,
-    "fpe": 107.7,
-    "updated": "2026-05-27",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 2,
     "waf": 6.47,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 2,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 731.0,
+    "fv": 500,
+    "mos": -46.2,
+    "fpe": 109.04,
+    "peg": 4.49,
     "scores": {
       "bq": [
         8.5,
@@ -2072,6 +2096,7 @@
       ]
     },
     "idea": "Falcon Cybersecurity Platform — 33 modules + ARR flywheel",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2082,18 +2107,23 @@
       "why": "Consensus เห็น CRWD ว่า \"premium price + July 2024 outage stigma\"; Warren เห็นต่างว่า Falcon Flex +120% YoY + Charlotte AI ARR tripled + NRR 115% = post-outage consolidation thesis ทำงานจริง — แต่ valuation $663 ที่ Fwd PE 108× ทำให้ Action = AVOID จนกว่าราคา pullback.",
       "risk": "Microsoft Defender bundle scale ดึง enterprise customers >20% market share หรือ Falcon Flex churn rate กลับมาเกิน 10% หลัง initial commitment expire."
     },
-    "tier": "🌱 Fast Grower",
     "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "July 2024 outage liability ($0.5B+ claims)",
-        "Microsoft Defender bundling pressure",
-        "FwdPE 109x prices perfection"
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Revenue growth ~23.3% YoY confirmed, consistent with Warren's ~24% ARR growth figure",
+        "Gross margin of 74.8% confirms high-quality software economics Warren noted (BQ=8.5 justified)",
+        "Current price $731 confirmed — Warren's price data was accurate"
       ],
-      "summary": "DO NOT BUY confirmed. PEG 5.47 per yfinance (Warren 4.49). FwdPE 109x extreme. July 2024 outage liability still overhang.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Warren cited FwdPE of 108x but independent data shows 118.46x — Warren UNDERestimated the valuation stretch by ~10 PE points",
+        "Warren cited PEG of 4.49 but independent data shows PEG of 6.03 — a 34% underestimate of growth-adjusted overvaluation, making the WATCH recommendation potentially too lenient",
+        "Debt-to-equity of 18.34 is extremely high and was NOT mentioned in Warren's thesis risk section — this is a material omission for a company trading at 118x forward earnings",
+        "News feed provided is effectively empty of CRWD-specific catalysts (ADP article is irrelevant), meaning Warren's thesis risks around July 2024 outage liability and Microsoft Defender competition cannot be independently confirmed or refuted with current data"
+      ],
+      "summary": "Warren's caution on extreme valuation is directionally correct, but the actual metrics are even more stretched than reported — Forward PE is 118x (not 108x) and PEG is 6.03 (not 4.49), meaning Warren materially understated the valuation premium. The fair value of $500 may still be generous given these multiples.",
+      "review_date": "2026-05-31"
     },
+    "tier": "🌱 Fast Grower",
     "mark_easy": {
       "one_liner": "เจ้าพ่อ Cybersecurity แบบ AI-native ที่ยิ่งมีลูกค้ามากยิ่งฉลาดขึ้น แต่ราคาแพงระดับ extreme premium",
       "what": "CrowdStrike ทำซอฟต์แวร์ความปลอดภัยไซเบอร์บน Falcon platform ที่อยู่บน cloud เก็บข้อมูลภัยคุกคามจากทุก endpoint เข้า AI threat graph ทำเงินจากค่าสมาชิกรายเดือน (ARR) ลูกค้าเริ่มจาก endpoint แล้วซื้อเพิ่มได้จาก 33 modules บนแพลตฟอร์มเดียว",
@@ -2181,18 +2211,17 @@
       "InP supply chain: 3rd-party InP wafer dependency for near-term supply (pre-full ramp)",
       "Still in early profitability phase -- GAAP profitable but Non-GAAP driven by adjustments"
     ],
-    "price": 376.09,
-    "fv": 293.3,
-    "mos": -27.1,
-    "peg": 2.03,
-    "fpe": 46.6,
-    "updated": "2026-05-27",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 2,
     "waf": 6.4,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 2,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 361.47,
+    "fv": 297,
+    "mos": -21.7,
+    "fpe": 46.46,
+    "peg": 2.03,
     "scores": {
       "bq": [
         7.5,
@@ -2216,6 +2245,7 @@
       ]
     },
     "idea": "Optical Transceiver Leader (800G/1.6T) + EML/VCSEL vertical integration",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2226,18 +2256,24 @@
       "why": "AI datacenter buildout กำลัง drive demand สำหรับ 800G → 1.6T optics; COHR Q3 FY2026 Datacom revenue +83% YoY; Long-haul และ Metro optics ฟื้นตัว; 5G buildout ในตลาด emerging เพิ่ม Telecom demand",
       "risk": "Co-packaged optics (CPO) adoption เร็วกว่าคาด → ทำให้ pluggable transceiver obsolete; II-VI legacy debt หนัก $4.5B+; Lumentum/Fabrinet แข่ง fierce; SiC market softer from EV slowdown"
     },
-    "tier": "🔁 Cyclical",
     "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "CPO disruption could displace pluggable transceivers",
-        "II-VI legacy debt $4.5B",
-        "yfinance PEG 0.92 suggests Warren may be too conservative on growth"
+      "charlie_verdict": "DISAGREE",
+      "verified_claims": [
+        "Price confirmed at $361.47 — Warren's price data is accurate",
+        "Revenue growth of 20.5% is consistent with Warren's narrative of AI data center demand tailwinds",
+        "Debt-to-equity of 31.09 confirms Warren's concern about II-VI debt overhang — this is a legitimate and serious red flag",
+        "Gross margin of 36.99% is modest for a semiconductor/photonics company, consistent with Warren's middling GP score"
       ],
-      "summary": "⚠️ PEG discrepancy (favorable to COHR): yfinance 0.92 vs Warren's 2.03. Analyst consensus sees faster growth than Warren assumed. MoS -28.4% still fails gate. WATCH is correct.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Warren cited PEG of 2.03 as a key reason for overvaluation, but Yahoo Finance data shows PEG of 0.92 — if correct, this invalidates his primary valuation ceiling argument and suggests the stock may not be as overvalued as claimed",
+        "Forward PE of 44.64 is high in absolute terms but must be weighed against 20.5% revenue growth; Warren's FV of $297 may be too conservative if earnings growth accelerates",
+        "Q1 2026 EPS missed estimates (per May 24-25 news), suggesting near-term execution risk that Warren's bullish Q4 guidance narrative did not fully price in — momentum may be weaker than thesis assumes",
+        "Warren used '$378' as the current price in his thesis but the actual price is $361.47 — a $16.53 discrepancy that slightly reduces his stated -21.7% MoS; actual MoS vs $297 FV is approximately -17.8%"
+      ],
+      "summary": "Warren's most critical error is the PEG ratio: he cited PEG 2.03 as a ceiling breach, but independent data shows PEG of 0.92 — less than half Warren's figure — which materially changes the valuation argument. Additionally, Q1 2026 earnings missed EPS estimates, introducing execution risk Warren's thesis did not anticipate.",
+      "review_date": "2026-05-31"
     },
+    "tier": "🔁 Cyclical",
     "mark_easy": {
       "one_liner": "เจ้าของเทคโนโลยี optical transceiver 800G/1.6T ที่เชื่อม GPU เข้าด้วยกันใน AI data center — NVIDIA ลงทุนด้วย $2B",
       "what": "Coherent (ชื่อเดิม II-VI) ทำชิ้นส่วน 'แสง' (photonics) — โดยเฉพาะ optical transceiver ที่ทำหน้าที่ส่งข้อมูลความเร็วสูงระหว่างการ์ด GPU ในศูนย์ข้อมูล AI. จุดเด่นคือปลูก InP crystal เองตั้งแต่ต้นน้ำยันผลิตเป็น transceiver สำเร็จรูป (vertical integration) ซึ่งไม่มีคู่แข่งทำได้ครบเท่า.",
@@ -2325,18 +2361,17 @@
       "Handset cycle ชะลอตัว กระทบ QCT revenue ใน soft quarter",
       "Execution risk บน custom silicon program — ล่าช้าหรือ spec miss จะกระทบ credibility"
     ],
-    "price": 238.16,
-    "fv": 197.5,
-    "mos": -20.9,
-    "peg": 1.84,
-    "fpe": 23.0,
-    "updated": "2026-05-25",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 2,
     "waf": 6.3,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 2,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 251.02,
+    "fv": 197,
+    "mos": -27.4,
+    "fpe": 23.0,
+    "peg": 1.84,
     "scores": {
       "bq": [
         7.5,
@@ -2360,6 +2395,7 @@
       ]
     },
     "idea": "X105 NR-NTN Modem + Automotive/PC Expansion + Starlink Mobile Beneficiary",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2370,18 +2406,23 @@
       "why": "Data center entry thesis confirmed: CEO Amon Q2 FY2026: \"A leading hyperscaler custom silicon engagement is on track for initial shipments later this calendar year.\" LPDDR strategy = 768GB LPDDR (vs HBM) = decode-centric disaggregated serving = cheaper per-token inference at scale. ASIC stack: Hexagon NPU + Alphawave (SerDes/PCIe Gen6/UCIe) + Ventana Veyron (RISC-V CPU). Automotive $1.33B +38% record; Auto Q3 guided +50% YoY. **June 24, 2026 Investor Day = customer identity + engagement structure disclosure.** HUMAIN 200MW contract (Saudi Arabia). 15x P/E = cheapest AI semiconductor play.",
       "risk": "Apple ออก ARM ISA license เองหมด = ไม่ต้องพึ่ง QCOM royalty; Samsung/MediaTek พัฒนา in-house SoC ดีขึ้น; ARM license dispute ยืดเยื้อ; China handset market ฟื้นไม่ได้"
     },
-    "tier": "🔁 Cyclical",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "Apple in-house modem replacement 2027+",
-        "ARM royalty dispute escalation",
-        "China revenue dependency"
+      "verified_claims": [
+        "Gross margin of 54.8% confirms premium chip economics Warren cited",
+        "Current price $251.02 confirmed — no data discrepancy",
+        "Forward PE of 23.6 is consistent with Warren's overvaluation concern at -27.4% MoS vs $197 fair value"
       ],
-      "summary": "⚠️ Price +4.5% vs Warren's May 25 analysis. yfinance PEG 1.01 vs Warren's 1.84 — yfinance is significantly more bullish. MoS -26.3% still fails. ARM dispute risk ongoing.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Revenue growth is NEGATIVE (-3.5%) right now — Warren's thesis relies on D2C satellite, automotive, and PC AI laptop catalysts driving growth, but current financials show contraction, not expansion",
+        "Debt-to-equity of 55.98 is elevated for a semiconductor company — Warren did not flag balance sheet risk, which limits financial flexibility if Apple modem transition accelerates faster than expected",
+        "PEG of 1.07 implies market expects ~22% EPS growth — if Apple modem replacement hits 2026 instead of 2027+, that growth assumption collapses and fair value drops further below Warren's $197",
+        "No recent news available in data feed — Charlie cannot verify X105 NR-NTN modem design win progress or ARM dispute status independently, creating an information gap"
+      ],
+      "summary": "Warren's -27.4% MoS concern is valid at current price, but the PEG of 1.07 suggests the market is pricing in meaningful growth that Warren's fair value may underestimate. However, negative revenue growth (-3.5%) right now directly undermines the bullish catalyst thesis.",
+      "review_date": "2026-05-31"
     },
+    "tier": "🔁 Cyclical",
     "mark_easy": {
       "one_liner": "เจ้าของสิทธิบัตร 5G ที่ทุกมือถือต้องจ่ายค่าลิขสิทธิ์ กำลังกระจายธุรกิจสู่รถยนต์ พีซี และ data center",
       "what": "Qualcomm มี 2 ขาหลัก: QCT ออกแบบชิป Snapdragon (มือถือ, รถยนต์, PC, IoT) และ QTL เก็บค่าลิขสิทธิ์สิทธิบัตร 5G/4G จากผู้ผลิตมือถือทั่วโลก (margin 72% เหมือนเครื่องพิมพ์เงิน). ใครจะขายมือถือก็ต้องจ่าย Qualcomm ไม่ว่าจะใช้ชิปของเขาหรือไม่.",
@@ -2587,150 +2628,6 @@
       "CapEx หนักมาก — >$25B FY2026 และ step up อีกใน FY2027 จะกด FCF ช่วง build-out; บวกกับคดี patent (Netlist, YMTC) ที่ยังค้าง"
     ]
   },
-  "VRT": {
-    "symbol": "VRT",
-    "display": "VRT",
-    "category": "infrastructure",
-    "name": "Vertiv Holdings",
-    "sector": "Infrastructure",
-    "sectorSlug": "infra",
-    "chips": [
-      "Infrastructure",
-      "AI Data Center Power"
-    ],
-    "bull": [
-      "End-to-End portfolio: power + thermal + IT whitespace — ไม่มีคู่แข่งครบเท่า",
-      "Big Tech 4 combined CapEx 2026 ~$725B (+77% YoY) — Vertiv รับ share จาก power + cooling",
-      "Backlog ~$9.5B (Q1 2026) + pipeline ยังขยาย ทั้ง Americas และ EMEA",
-      "NVIDIA design partner program = moat สำคัญในการ spec AI rack",
-      "Liquid cooling megatrend: high-density AI racks ต้องการ liquid แทน air"
-    ],
-    "risk": [
-      "CapEx supercycle อาจชะลอหรือ pause ถ้า AI ROI ไม่ชัด",
-      "Competition จาก ABB, Schneider, Eaton ใน power + cooling segment",
-      "Customer concentration: hyperscalers = majority ของ backlog",
-      "Supply chain lead time ยาว ทำให้ revenue recognition ล่าช้า",
-      "Valuation premium ใน current price — ต้องการ execution สม่ำเสมอ"
-    ],
-    "price": 337.53,
-    "fv": 123.1,
-    "mos": -175.2,
-    "peg": 1.37,
-    "fpe": 37.1,
-    "updated": "2026-05-27",
-    "waf": 5.85,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "conviction": 2,
-    "action": "watch",
-    "actionLabel": "Watch",
-    "scores": {
-      "bq": [
-        7.5,
-        "amber",
-        75
-      ],
-      "gp": [
-        8.0,
-        "green",
-        80
-      ],
-      "va": [
-        1.5,
-        "orange",
-        15
-      ],
-      "ra": [
-        5.5,
-        "orange",
-        55
-      ]
-    },
-    "idea": "AI Data Center Power + Liquid Cooling",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-05-19",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Vertiv เป็นผู้นำด้าน Critical Digital Infrastructure — UPS, cooling systems, power distribution สำหรับ datacenter; ลูกค้าหลักคือ hyperscalers (AWS, Google, Microsoft, Meta) ที่ไม่สามารถหยุด operation ได้; Liquid cooling (direct-to-chip) สำหรับ AI GPU cluster เป็น fast-growing segment; Backlog $7.5B (Q1 2026) = visibility สูง",
-      "why": "AI GPU cluster ใช้ไฟฟ้า 10-20× มากกว่า traditional server → Vertiv cooling และ power solutions demand surging; Q1 2026 organic growth +17% YoY; orders +26% YoY; 2026 guidance revenue $9.1-9.3B, OM ~21%",
-      "risk": "Datacenter capex slowdown ถ้า AI ROI ไม่ชัดเจน → order book drops; Eaton/Schneider Electric แข่งในตลาด; ราคาแพงมาก (Fwd PE 49×+) ทำให้ downside ใหญ่ถ้า growth miss; Tariff impact ต่อ supply chain"
-    },
-    "tier": "🔁 Cyclical",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "Extreme overvaluation vs fundamental model",
-        "Datacenter capex cyclicality",
-        "Competition from Schneider/Eaton"
-      ],
-      "summary": "DO NOT BUY confirmed. Price 2.72× above Warren's FV $119. FwdPE 36.65 with PEG 1.64 above ceiling. Analyst targets needed to justify $324 price.",
-      "review_date": "2026-05-27"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าของระบบไฟ-ระบายความร้อนให้ดาต้าเซ็นเตอร์ AI ธุรกิจสุดแข็งแต่ราคาแพงเกินจริงไปไกลมาก",
-      "what": "Vertiv ขายและบริการ \"โครงสร้างพื้นฐานสำคัญ\" ของดาต้าเซ็นเตอร์ — ระบบจ่ายไฟ (UPS, สวิตช์เกียร์) และระบบระบายความร้อน (รวมถึง liquid cooling ส่งตรงถึงชิป) ลูกค้าหลักคือพวก hyperscaler อย่าง AWS, Google, Microsoft, Meta. พูดง่ายๆ คือเวลามีดาต้าเซ็นเตอร์ AI เกิดใหม่ Vertiv ได้ขายของแทบทุกครั้ง",
-      "why_invest": [
-        "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ทำให้ความต้องการระบบไฟและระบายความร้อนของ Vertiv พุ่งตามการสร้างดาต้าเซ็นเตอร์",
-        "Q1 2026 กำไรต่อหุ้น (Adjusted EPS) โต +83% YoY และยกเป้าทั้งปี 2026 เป็นรายได้ ~$13.75B (+34%) EPS ~$6.35 — โมเมนตัมแรงจริง",
-        "เป็นไม่กี่บริษัทที่ทำครบทั้ง power + cooling + IT ในระบบเดียว (OneCore, SmartRun) คู่แข่งอย่าง Eaton/Schneider ยังทำครบแบบนี้ไม่ได้",
-        "จับมือ NVIDIA พัฒนาสถาปัตยกรรมไฟ 800V DC ตั้งแต่ต้นน้ำ ทำให้รู้ roadmap ชิปรุ่นใหม่ก่อนใคร + มีทีมช่างบริการ ~5,000 คนสร้างรายได้ประจำ"
-      ],
-      "watch_out": [
-        "ราคาแพงมากแบบสุดขั้ว — ซื้อขายสูงกว่ามูลค่าที่ Warren ประเมิน (FV $119) ถึงประมาณ 2.7 เท่า แม้แต่กรณี Bull ($175) ราคาก็ยังเกินไปแล้ว",
-        "ธุรกิจอิงกับ capex ของ Big Tech ถ้าวันหนึ่งชะลอการลงทุน AI คำสั่งซื้อจะหดทันที (เป็นธุรกิจวัฏจักร)",
-        "ยังมีคดี Securities Class Action ค้างอยู่ + EMEA ยอดอ่อน (-29% organic Q1) + ความเสี่ยงภาษีนำเข้าต่อ supply chain"
-      ],
-      "bottom_line": "Pete ชอบธุรกิจนี้มากในเชิงคุณภาพ — มันคือ \"คนขายจอบเสียม\" ของยุค AI ตัวจริง แต่ราคาตอนนี้แพงเกินเหตุผลไปไกล มูลค่าทุก scenario ต่ำกว่าราคาหมด ส่วนตัว Pete ขอรอให้ย่อลงมาแถว $100 ก่อนค่อยคิดจริงจัง ตอนนี้ WATCH อย่างเดียว"
-    },
-    "mark_full": {
-      "business_overview": "Vertiv (VRT) เป็นผู้นำระดับโลกด้าน critical digital infrastructure แบ่งสินค้าเป็น 3 กลุ่มหลัก: (1) Power — UPS, PDU, สวิตช์เกียร์, ระบบไฟ DC; (2) Thermal Management — ระบบทำความเย็นแม่นยำ, liquid cooling ส่งตรงถึงชิป, immersion cooling; (3) IT Infrastructure + Services — แร็ค, ตู้, ระบบมอนิเตอร์ และบริการดูแลตลอดอายุการใช้งาน จุดเด่นคือ OneCore และ SmartRun ที่รวม power + thermal + IT เป็นระบบเดียวสำเร็จรูป ลูกค้าครอบคลุม 130+ ประเทศ และเพิ่งเข้า S&P 500 เมื่อมีนาคม 2026",
-      "tam": "ตลาดโตจากคลื่น AI infrastructure — งบ capex รวมของ Big Tech 4 รายปี 2026 ประมาณ $725B (+77% YoY) Vertiv ได้ส่วนแบ่งจากฝั่งไฟและความเย็น Backlog อยู่ราว $9.5B (Q1 2026) ให้ visibility ล่วงหน้าหลายไตรมาส ตัวเร่งสำคัญถัดไปคือการเปลี่ยนผ่านสู่ไฟ 800V DC (ร่วมกับ NVIDIA) ที่จะเปิดตัว H2 2026 รับรู้รายได้จริงปี 2027+ ยิ่งชิปหนาแน่นขึ้นยิ่งต้องใช้ liquid cooling มากขึ้น = TAM ขยายต่อเนื่อง",
-      "moat": "ข้อได้เปรียบที่ยั่งยืนที่สุดคือ \"end-to-end portfolio\" — Vertiv เป็นหนึ่งในไม่กี่รายที่ทำครบทั้ง power + thermal + IT whitespace ในระบบเดียว ขณะที่ Eaton/Schneider/ABB ยังทำครบแบบ converged ไม่ได้ เสริมด้วย services flywheel จากช่างบริการ ~5,000 คนที่สร้างรายได้ประจำจากฐานติดตั้งที่โตขึ้นเรื่อยๆ และความสัมพันธ์ระยะยาวกับลูกค้าผ่านสัญญาบำรุงรักษาที่เปลี่ยนเจ้ายาก บวกความเร็วในการติดตั้งด้วยโซลูชันสำเร็จรูป (SmartRun) ที่ลดงานหน้างาน",
-      "latest_financials": "Q1 2026 รายได้ $2,650M (+30% YoY), organic +23%, Adjusted Operating Margin 20.8% (+430bps), Adjusted EPS $1.17 (+83% YoY) และ Free Cash Flow $652.8M (+147%) ทุกตัวเกินไกด์ Americas โดดเด่นมาก organic +44% ส่วน EMEA อ่อน -29% (ฝ่ายบริหารบอกชั่วคราว คาดฟื้น H2 2026) งบดุลแข็ง net leverage แค่ ~0.2x เงินสด+เงินลงทุนระยะสั้นรวม ~$2,500M ไกด์ทั้งปี 2026: รายได้ $13.5-14.0B, Adjusted EPS $6.30-6.40, Adjusted FCF $2.1-2.3B",
-      "key_points": [
-        "ราคาปัจจุบันสะท้อนความสมบูรณ์แบบไปแล้ว — Fwd PE 38x และเทรดสูงกว่า FV ทุก scenario (Bull $175 / Base $119 / Bear $68) ดังนั้น downside ใหญ่หากการเติบโตสะดุด",
-        "เป็นธุรกิจวัฏจักร (Cyclical) — รายได้ผูกตรงกับ capex ของ hyperscaler ถ้า AI ROI ไม่ชัดและ Big Tech ชะลอลงทุน คำสั่งซื้อจะหดเร็ว",
-        "ตัวเร่งระยะกลางคือ 800V DC + EMEA recovery + การเปลี่ยนลูกค้ามาใช้ระบบ converged (SmartRun/OneCore) แต่ส่วนใหญ่รับรู้รายได้จริงปี 2027",
-        "งบดุลแข็งแกร่ง net leverage ~0.2x ได้ credit rating ระดับ investment grade (Baa3/BBB-) มีความยืดหยุ่นสูงสำหรับ M&A และขยายกำลังการผลิต"
-      ]
-    },
-    "warren_easy": [
-      "Warren มองว่า Vertiv เป็นธุรกิจคุณภาพดี — เป็น \"picks-and-shovels\" ของยุค AI ที่ขายระบบไฟและระบายความร้อนให้ดาต้าเซ็นเตอร์ทุกที่ MOAT มาจาก portfolio ที่ครบวงจร + ฐานบริการที่สร้างรายได้ประจำ + ความสัมพันธ์ตรงกับ NVIDIA บน 800V DC ทำให้คะแนนคุณภาพธุรกิจ (BQ 7.5) และศักยภาพการเติบโต (GP 8.0) สูง",
-      "แต่ปัญหาเดียวที่ใหญ่มากคือ \"ราคา\" — ที่ $337 ราคาเกินมูลค่าพื้นฐาน (FV Base $119) ไปประมาณ 2.7 เท่า MoS ติดลบหนัก และผลตอบแทนคาดหวัง 5 ปีเหลือเพียง -2.9%/ปี คะแนน Valuation จึงต่ำสุด (VA 1.5) ลากให้ WAF รวมเหลือแค่ 5.85 (LOW) ต่อให้ธุรกิจดีแค่ไหน ถ้าซื้อแพงเกินไป โอกาสขาดทุนก็สูง",
-      "กลยุทธ์ของ Warren ชัดเจน: WATCH เท่านั้น ยังไม่ซื้อที่ราคานี้ Conviction = LOW จุดที่น่าสนใจคือรอให้ราคาย่อลงมาแถว ~$100 (ใกล้ FV) ก่อน ถึงจะกลับมาพิจารณาจริงจัง"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ตรวจสอบอิสระแล้วเห็นด้วยกับ Warren เต็มที่ว่า \"ห้ามซื้อ\" ที่ราคานี้ ราคาที่ตรวจได้ ~$324 สูงกว่ามูลค่าพื้นฐาน $119 ถึง 2.72 เท่า Fwd PE 36.65 ส่วน PEG 1.64 ก็เกินเพดาน 1.5 ที่ยอมรับได้ — แปลว่าราคาแพงเกินทั้งในเชิงมูลค่าและเชิงการเติบโต",
-        "สิ่งที่ Charlie กังวลคือเรื่องที่อาจถูกประเมินต่ำไป: ความเป็นวัฏจักรของ datacenter capex (ถ้ารอบลงทุนกลับทิศ คำสั่งซื้อหายเร็ว) และการแข่งขันจาก Schneider/Eaton ที่ไล่ตามในตลาด liquid cooling รวมถึงคดีความที่ยังค้างอยู่",
-        "สรุป Charlie's take: ธุรกิจแข็งแรงจริง ไม่มีข้อกังขา แต่ valuation คือปัญหาเดียวที่ใหญ่พอจะทำให้ความเสี่ยงขาลงมหาศาล สิ่งที่ต้อง monitor คือจังหวะที่ราคาย่อลงมาใกล้ FV และสัญญาณว่า capex ของ hyperscaler ยังแข็งแรงอยู่หรือไม่"
-      ]
-    },
-    "idea_th": "Vertiv คือเจ้าของระบบไฟและระบายความร้อนที่ขาดไม่ได้ของดาต้าเซ็นเตอร์ AI — ธุรกิจคุณภาพสูงที่ได้ประโยชน์เต็มๆ จากคลื่นการสร้างดาต้าเซ็นเตอร์ แต่ราคาปัจจุบันแพงเกินมูลค่าพื้นฐานไปหลายเท่า จึงน่าจับตารอจังหวะย่อมากกว่าจะไล่ซื้อ",
-    "story_gate_th": {
-      "what": "Vertiv เป็นผู้นำโครงสร้างพื้นฐานสำคัญของดาต้าเซ็นเตอร์ — UPS, ระบบจ่ายไฟ และระบบระบายความร้อน (รวม liquid cooling ส่งตรงถึงชิป AI) ลูกค้าหลักคือ hyperscaler ที่หยุดระบบไม่ได้ จุดแข็งคือทำครบทั้ง power + thermal + IT ในระบบเดียวที่คู่แข่งยังตามไม่ทัน",
-      "why": "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ความต้องการระบบไฟและความเย็นจึงพุ่ง Q1 2026 organic +23%, EPS +83% YoY, backlog ~$9.5B และยกไกด์ทั้งปีขึ้น — ดีมานด์แรงและมองเห็นล่วงหน้าได้",
-      "risk": "ถ้า datacenter capex ของ Big Tech ชะลอเพราะ AI ROI ไม่ชัด คำสั่งซื้อจะหดทันที + คู่แข่ง Eaton/Schneider + ความเสี่ยงภาษีนำเข้า และที่สำคัญที่สุดคือราคาแพงมาก (Fwd PE สูง) ทำให้ downside ใหญ่ถ้าโตพลาด"
-    },
-    "bull_th": [
-      "AI supercycle หนุนเต็มที่ — งบ capex ของ Big Tech 4 รายปี 2026 ราว $725B (+77% YoY) Vertiv กินส่วนแบ่งจากฝั่งไฟและความเย็นโดยตรง",
-      "การเปลี่ยนผ่านสู่ไฟ 800V DC ร่วมกับ NVIDIA จะเปิด TAM ใหม่ — ยิ่งชิปหนาแน่นยิ่งต้องใช้ liquid cooling มากขึ้น เริ่มรับรู้รายได้ 2027+",
-      "EMEA เป็น \"สปริงที่ถูกอัด\" — ยุโรปขาดแคลนดาต้าเซ็นเตอร์รองรับ AI อย่างหนัก คำสั่งซื้อที่สะสมไว้จะแปลงเป็นรายได้ครึ่งปีหลัง 2026",
-      "Services flywheel — ฐานติดตั้งที่โตจาก AI buildout สร้างรายได้บริการประจำต่อเนื่องหลายสิบปี + ช่างบริการเพิ่ม ~25% YoY",
-      "งบดุลแข็งมาก net leverage ~0.2x + credit rating investment grade มีกระสุนพร้อมทำ M&A และขยายกำลังการผลิต"
-    ],
-    "risk_th": [
-      "ราคาแพงสุดขั้ว — เทรดสูงกว่า FV Base $119 ราว 2.7 เท่า และเกินแม้กระทั่งกรณี Bull ($175) ถ้าการเติบโตสะดุดแม้เล็กน้อย downside จะรุนแรง",
-      "เป็นธุรกิจวัฏจักรที่ผูกกับ capex ของ hyperscaler — ถ้า AI ROI ไม่ชัดและ Big Tech เบรกการลงทุน order book จะหดเร็วมาก",
-      "การแข่งขันจาก Eaton, Schneider Electric, ABB โดยเฉพาะในตลาด liquid cooling ที่กำลังเป็นสมรภูมิใหม่",
-      "คดี Securities Class Action (2022) + Derivative Lawsuits ยังค้างศาล + ความเสี่ยงภาษีนำเข้า (Section 232/122) ต่อ supply chain",
-      "Goodwill + intangibles รวม ~$3.8B (29% ของสินทรัพย์) จากการ M&A หลายดีล ถ้าโตช้าลงมีความเสี่ยง impairment + EMEA ถ้าฟื้นช้ากว่าไกด์อาจพลาดเป้าทั้งปี"
-    ]
-  },
   "ARM": {
     "symbol": "ARM",
     "display": "ARM",
@@ -2756,18 +2653,17 @@
       "SoftBank ถือหุ้นใหญ่ = overhang และ selling pressure",
       "UK regulatory environment ไม่แน่นอน"
     ],
-    "price": 320.08,
-    "fv": 129.5,
-    "mos": -146.2,
-    "peg": 3.74,
-    "fpe": 104.6,
-    "updated": "2026-05-27",
-    "waf": 5.78,
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 4,
+    "waf": 5.85,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 2,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 353.29,
+    "fv": 130,
+    "mos": -171.8,
+    "fpe": 115.64,
+    "peg": 3.07,
     "scores": {
       "bq": [
         8.5,
@@ -2775,9 +2671,9 @@
         85
       ],
       "gp": [
-        7.0,
+        7.5,
         "amber",
-        70
+        75
       ],
       "va": [
         1.5,
@@ -2785,33 +2681,37 @@
         15
       ],
       "ra": [
-        5.0,
+        4.5,
         "orange",
-        50
+        45
       ]
     },
-    "idea": "Mobile ISA Monopoly + CSS royalty uplift",
+    "idea": "Mobile ISA monopoly + ARMv9/CSS royalty uplift + datacenter AI expansion",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-05-27",
-      "tier": "🌱 Fast Grower",
-      "tier_slug": "fast-grower",
-      "what": "ARM เป็นเจ้าของ ISA (Instruction Set Architecture) ที่ครองตลาด mobile processor >95% และขยายเข้า datacenter, automotive, IoT ผ่านรูปแบบ IP licensing + royalties ทำให้มี near-zero marginal cost ต่อ chip ที่ผลิตเพิ่ม Cortex-X, Neoverse, Ethos series คือ blueprints ที่ hyperscalers (Amazon Graviton, Google Axion, Apple M-series) ใช้โดยตรง — switching cost สูงมากเพราะต้องเขียน software stack ใหม่ทั้งหมด",
-      "why": "Compute Subsystems (CSS) คือ complete chip blueprints ที่ช่วยลด time-to-market จาก 5 ปีเหลือ 2-3 ปี — hyperscalers และ fabless ต้องการมากขึ้นเพราะ custom silicon boom; Royalty rate per chip เพิ่มขึ้น 2-3× จาก v8 → v9 architecture (AI-enhanced); AGI CPU demand >$2B ใน FY2027-2028; data center royalty doubled YoY FY2026",
-      "risk": "RISC-V open-source เป็น existential threat ระยะยาว — ถ้า hyperscalers migrate หรือ China (17% revenue) cutoff เกิดขึ้น valuation จะ re-rate ลงรุนแรง; SoftBank ถือ ~87% ของ ARM = governance risk และ potential secondary offering pressure; **[NEW] DOJ/FTC antitrust investigation (May 2026)** — สอบสวน ARM's chip licensing practices ซึ่งอาจบังคับ ARM เปลี่ยน licensing model หรือลด royalty rates = direct hit ต่อ revenue model; Qualcomm lawsuit (pending post-trial motions) อาจ renegotiate license terms ลด 10% revenue"
+      "updated": "2026-05-31",
+      "what": "ARM owns the dominant CPU ISA (>95% mobile share) and monetizes via licensing + per-chip royalties with near-zero marginal cost, now expanding into datacenter/AI via Compute Subsystems (CSS) and AGI CPU production silicon.",
+      "why": "Consensus sees ARM as a mature mobile IP licensor; Warren sees ARMv9 royalty rates 2-3× v8, CSS adoption accelerating custom silicon time-to-market, and datacenter royalty doubling YoY — but this is now largely priced in at 115× forward P/E.",
+      "risk": "DOJ/FTC antitrust action forces licensing model change OR RISC-V adoption accelerates at hyperscalers, collapsing royalty growth and triggering multiple compression."
     },
-    "tier": "🌱 Fast Grower",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "DOJ/FTC antitrust investigation targeting licensing practices (May 2026)",
-        "RISC-V adoption acceleration",
-        "Qualcomm lawsuit post-trial motions pending"
+      "verified_claims": [
+        "PEG ratio of 3.07 confirmed by independent data — exactly matches Warren's figure, validating the overvaluation call",
+        "Revenue growth of 20.1% is solid but not exceptional enough to justify 115x forward PE",
+        "Gross margin of 97.54% confirms the ISA licensing model's extraordinary economics and moat strength — Warren's BQ=8.5 is defensible",
+        "Current price $353.29 confirmed — no price discrepancy"
       ],
-      "summary": "DO NOT BUY confirmed. Price 147% above FV $130. FwdPE 105x, PEG 2.66. DOJ/FTC antitrust investigation is a NEW material risk to licensing revenue model.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Debt-to-equity of 5.926 is a significant concern Warren did NOT explicitly call out in his thesis — this is elevated leverage for a semiconductor IP company and adds financial risk Warren's RA=4.5 may have underweighted",
+        "Warren's fair value of $130 implies a ~63% drawdown — while the overvaluation is real, no news data was available to confirm or deny near-term catalysts that could compress or extend the timeline to mean reversion",
+        "No news items were fetched, meaning Warren's antitrust/RISC-V risk flags could not be independently corroborated with recent developments — these risks may be either accelerating or stalling",
+        "Forward PE of 115x assumes continued earnings growth execution; any miss in ARMv9 royalty ramp would cause severe multiple compression that Warren's $130 FV may still be optimistic about"
+      ],
+      "summary": "Independent data confirms Warren's core thesis: ARM trades at a stratospheric 115x forward PE with PEG of 3.07, offering zero margin of safety. The 97.5% gross margin confirms moat quality but cannot justify the valuation at current prices.",
+      "review_date": "2026-05-31"
     },
     "mark_easy": {
       "one_liner": "เจ้าของพิมพ์เขียวซีพียูที่อยู่ในชิปเกือบทุกตัวบนโลก เก็บค่าลิขสิทธิ์แทบไม่มีต้นทุน แต่ราคาแพงมหาศาล",
@@ -2875,6 +2775,156 @@
       "RISC-V โอเพนซอร์สไม่มีค่า royalty กำลังได้ momentum + AGI CPU เป็น channel conflict กับลูกค้าที่ทำชิปเอง + SBC สูงกว่ากำไร GAAP"
     ]
   },
+  "VRT": {
+    "symbol": "VRT",
+    "display": "VRT",
+    "category": "infrastructure",
+    "name": "Vertiv Holdings",
+    "sector": "Infrastructure",
+    "sectorSlug": "infra",
+    "chips": [
+      "Infrastructure",
+      "AI Data Center Power"
+    ],
+    "bull": [
+      "End-to-End portfolio: power + thermal + IT whitespace — ไม่มีคู่แข่งครบเท่า",
+      "Big Tech 4 combined CapEx 2026 ~$725B (+77% YoY) — Vertiv รับ share จาก power + cooling",
+      "Backlog ~$9.5B (Q1 2026) + pipeline ยังขยาย ทั้ง Americas และ EMEA",
+      "NVIDIA design partner program = moat สำคัญในการ spec AI rack",
+      "Liquid cooling megatrend: high-density AI racks ต้องการ liquid แทน air"
+    ],
+    "risk": [
+      "CapEx supercycle อาจชะลอหรือ pause ถ้า AI ROI ไม่ชัด",
+      "Competition จาก ABB, Schneider, Eaton ใน power + cooling segment",
+      "Customer concentration: hyperscalers = majority ของ backlog",
+      "Supply chain lead time ยาว ทำให้ revenue recognition ล่าช้า",
+      "Valuation premium ใน current price — ต้องการ execution สม่ำเสมอ"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 2,
+    "waf": 5.85,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 315.71,
+    "fv": 119,
+    "mos": -165.3,
+    "fpe": 38.2,
+    "peg": 1.37,
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        1.5,
+        "orange",
+        15
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "AI Data Center Power + Liquid Cooling",
+    "updated": "2026-05-31",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-05-19",
+      "tier": "🔁 Cyclical",
+      "tier_slug": "cyclical",
+      "what": "Vertiv เป็นผู้นำด้าน Critical Digital Infrastructure — UPS, cooling systems, power distribution สำหรับ datacenter; ลูกค้าหลักคือ hyperscalers (AWS, Google, Microsoft, Meta) ที่ไม่สามารถหยุด operation ได้; Liquid cooling (direct-to-chip) สำหรับ AI GPU cluster เป็น fast-growing segment; Backlog $7.5B (Q1 2026) = visibility สูง",
+      "why": "AI GPU cluster ใช้ไฟฟ้า 10-20× มากกว่า traditional server → Vertiv cooling และ power solutions demand surging; Q1 2026 organic growth +17% YoY; orders +26% YoY; 2026 guidance revenue $9.1-9.3B, OM ~21%",
+      "risk": "Datacenter capex slowdown ถ้า AI ROI ไม่ชัดเจน → order book drops; Eaton/Schneider Electric แข่งในตลาด; ราคาแพงมาก (Fwd PE 49×+) ทำให้ downside ใหญ่ถ้า growth miss; Tariff impact ต่อ supply chain"
+    },
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "30.1% revenue growth confirmed via financials — supports Warren's AI capex tailwind thesis",
+        "Current price $315.71 confirmed — Warren's price data is accurate",
+        "2026 guidance raise confirmed by news ('VRT stock rallies to new highs on raised 2026 guidance') — consistent with Warren's $9.1-9.4B figure",
+        "Elevated valuation confirmed: forward PE of 35.7x is rich but not irrational for a 30% growth company"
+      ],
+      "concerns": [
+        "Warren's $119 fair value implies ~7x 2026 revenue midpoint (~$9.25B) — this is far below typical multiples for high-growth infrastructure plays with 37% gross margins; fair value is likely materially understated",
+        "PEG ratio of 1.58 is actually reasonable for 30% growth — Warren's framing of 'extremely overvalued' ignores that PEG under 2.0 is often considered fair for hypergrowth",
+        "The 9% single-day drop on May 18 followed by a partial recovery suggests market volatility and mixed sentiment — Warren did not flag this near-term technical risk",
+        "Warren's Bull case of $175 appears to use overly conservative growth assumptions; at 30% revenue CAGR sustaining 2-3 years, DCF could justify $200-250+ depending on margin expansion"
+      ],
+      "summary": "Warren's overvaluation concern is directionally correct, but his $119 fair value appears too conservative given VRT's 30% revenue growth, raised 2026 guidance, and dominant AI data center positioning. The extreme MoS calculation (-165%) overstates the bear case while the recent 9% single-day drop signals real volatility risk.",
+      "review_date": "2026-05-31"
+    },
+    "tier": "🔁 Cyclical",
+    "mark_easy": {
+      "one_liner": "เจ้าของระบบไฟ-ระบายความร้อนให้ดาต้าเซ็นเตอร์ AI ธุรกิจสุดแข็งแต่ราคาแพงเกินจริงไปไกลมาก",
+      "what": "Vertiv ขายและบริการ \"โครงสร้างพื้นฐานสำคัญ\" ของดาต้าเซ็นเตอร์ — ระบบจ่ายไฟ (UPS, สวิตช์เกียร์) และระบบระบายความร้อน (รวมถึง liquid cooling ส่งตรงถึงชิป) ลูกค้าหลักคือพวก hyperscaler อย่าง AWS, Google, Microsoft, Meta. พูดง่ายๆ คือเวลามีดาต้าเซ็นเตอร์ AI เกิดใหม่ Vertiv ได้ขายของแทบทุกครั้ง",
+      "why_invest": [
+        "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ทำให้ความต้องการระบบไฟและระบายความร้อนของ Vertiv พุ่งตามการสร้างดาต้าเซ็นเตอร์",
+        "Q1 2026 กำไรต่อหุ้น (Adjusted EPS) โต +83% YoY และยกเป้าทั้งปี 2026 เป็นรายได้ ~$13.75B (+34%) EPS ~$6.35 — โมเมนตัมแรงจริง",
+        "เป็นไม่กี่บริษัทที่ทำครบทั้ง power + cooling + IT ในระบบเดียว (OneCore, SmartRun) คู่แข่งอย่าง Eaton/Schneider ยังทำครบแบบนี้ไม่ได้",
+        "จับมือ NVIDIA พัฒนาสถาปัตยกรรมไฟ 800V DC ตั้งแต่ต้นน้ำ ทำให้รู้ roadmap ชิปรุ่นใหม่ก่อนใคร + มีทีมช่างบริการ ~5,000 คนสร้างรายได้ประจำ"
+      ],
+      "watch_out": [
+        "ราคาแพงมากแบบสุดขั้ว — ซื้อขายสูงกว่ามูลค่าที่ Warren ประเมิน (FV $119) ถึงประมาณ 2.7 เท่า แม้แต่กรณี Bull ($175) ราคาก็ยังเกินไปแล้ว",
+        "ธุรกิจอิงกับ capex ของ Big Tech ถ้าวันหนึ่งชะลอการลงทุน AI คำสั่งซื้อจะหดทันที (เป็นธุรกิจวัฏจักร)",
+        "ยังมีคดี Securities Class Action ค้างอยู่ + EMEA ยอดอ่อน (-29% organic Q1) + ความเสี่ยงภาษีนำเข้าต่อ supply chain"
+      ],
+      "bottom_line": "Pete ชอบธุรกิจนี้มากในเชิงคุณภาพ — มันคือ \"คนขายจอบเสียม\" ของยุค AI ตัวจริง แต่ราคาตอนนี้แพงเกินเหตุผลไปไกล มูลค่าทุก scenario ต่ำกว่าราคาหมด ส่วนตัว Pete ขอรอให้ย่อลงมาแถว $100 ก่อนค่อยคิดจริงจัง ตอนนี้ WATCH อย่างเดียว"
+    },
+    "mark_full": {
+      "business_overview": "Vertiv (VRT) เป็นผู้นำระดับโลกด้าน critical digital infrastructure แบ่งสินค้าเป็น 3 กลุ่มหลัก: (1) Power — UPS, PDU, สวิตช์เกียร์, ระบบไฟ DC; (2) Thermal Management — ระบบทำความเย็นแม่นยำ, liquid cooling ส่งตรงถึงชิป, immersion cooling; (3) IT Infrastructure + Services — แร็ค, ตู้, ระบบมอนิเตอร์ และบริการดูแลตลอดอายุการใช้งาน จุดเด่นคือ OneCore และ SmartRun ที่รวม power + thermal + IT เป็นระบบเดียวสำเร็จรูป ลูกค้าครอบคลุม 130+ ประเทศ และเพิ่งเข้า S&P 500 เมื่อมีนาคม 2026",
+      "tam": "ตลาดโตจากคลื่น AI infrastructure — งบ capex รวมของ Big Tech 4 รายปี 2026 ประมาณ $725B (+77% YoY) Vertiv ได้ส่วนแบ่งจากฝั่งไฟและความเย็น Backlog อยู่ราว $9.5B (Q1 2026) ให้ visibility ล่วงหน้าหลายไตรมาส ตัวเร่งสำคัญถัดไปคือการเปลี่ยนผ่านสู่ไฟ 800V DC (ร่วมกับ NVIDIA) ที่จะเปิดตัว H2 2026 รับรู้รายได้จริงปี 2027+ ยิ่งชิปหนาแน่นขึ้นยิ่งต้องใช้ liquid cooling มากขึ้น = TAM ขยายต่อเนื่อง",
+      "moat": "ข้อได้เปรียบที่ยั่งยืนที่สุดคือ \"end-to-end portfolio\" — Vertiv เป็นหนึ่งในไม่กี่รายที่ทำครบทั้ง power + thermal + IT whitespace ในระบบเดียว ขณะที่ Eaton/Schneider/ABB ยังทำครบแบบ converged ไม่ได้ เสริมด้วย services flywheel จากช่างบริการ ~5,000 คนที่สร้างรายได้ประจำจากฐานติดตั้งที่โตขึ้นเรื่อยๆ และความสัมพันธ์ระยะยาวกับลูกค้าผ่านสัญญาบำรุงรักษาที่เปลี่ยนเจ้ายาก บวกความเร็วในการติดตั้งด้วยโซลูชันสำเร็จรูป (SmartRun) ที่ลดงานหน้างาน",
+      "latest_financials": "Q1 2026 รายได้ $2,650M (+30% YoY), organic +23%, Adjusted Operating Margin 20.8% (+430bps), Adjusted EPS $1.17 (+83% YoY) และ Free Cash Flow $652.8M (+147%) ทุกตัวเกินไกด์ Americas โดดเด่นมาก organic +44% ส่วน EMEA อ่อน -29% (ฝ่ายบริหารบอกชั่วคราว คาดฟื้น H2 2026) งบดุลแข็ง net leverage แค่ ~0.2x เงินสด+เงินลงทุนระยะสั้นรวม ~$2,500M ไกด์ทั้งปี 2026: รายได้ $13.5-14.0B, Adjusted EPS $6.30-6.40, Adjusted FCF $2.1-2.3B",
+      "key_points": [
+        "ราคาปัจจุบันสะท้อนความสมบูรณ์แบบไปแล้ว — Fwd PE 38x และเทรดสูงกว่า FV ทุก scenario (Bull $175 / Base $119 / Bear $68) ดังนั้น downside ใหญ่หากการเติบโตสะดุด",
+        "เป็นธุรกิจวัฏจักร (Cyclical) — รายได้ผูกตรงกับ capex ของ hyperscaler ถ้า AI ROI ไม่ชัดและ Big Tech ชะลอลงทุน คำสั่งซื้อจะหดเร็ว",
+        "ตัวเร่งระยะกลางคือ 800V DC + EMEA recovery + การเปลี่ยนลูกค้ามาใช้ระบบ converged (SmartRun/OneCore) แต่ส่วนใหญ่รับรู้รายได้จริงปี 2027",
+        "งบดุลแข็งแกร่ง net leverage ~0.2x ได้ credit rating ระดับ investment grade (Baa3/BBB-) มีความยืดหยุ่นสูงสำหรับ M&A และขยายกำลังการผลิต"
+      ]
+    },
+    "warren_easy": [
+      "Warren มองว่า Vertiv เป็นธุรกิจคุณภาพดี — เป็น \"picks-and-shovels\" ของยุค AI ที่ขายระบบไฟและระบายความร้อนให้ดาต้าเซ็นเตอร์ทุกที่ MOAT มาจาก portfolio ที่ครบวงจร + ฐานบริการที่สร้างรายได้ประจำ + ความสัมพันธ์ตรงกับ NVIDIA บน 800V DC ทำให้คะแนนคุณภาพธุรกิจ (BQ 7.5) และศักยภาพการเติบโต (GP 8.0) สูง",
+      "แต่ปัญหาเดียวที่ใหญ่มากคือ \"ราคา\" — ที่ $337 ราคาเกินมูลค่าพื้นฐาน (FV Base $119) ไปประมาณ 2.7 เท่า MoS ติดลบหนัก และผลตอบแทนคาดหวัง 5 ปีเหลือเพียง -2.9%/ปี คะแนน Valuation จึงต่ำสุด (VA 1.5) ลากให้ WAF รวมเหลือแค่ 5.85 (LOW) ต่อให้ธุรกิจดีแค่ไหน ถ้าซื้อแพงเกินไป โอกาสขาดทุนก็สูง",
+      "กลยุทธ์ของ Warren ชัดเจน: WATCH เท่านั้น ยังไม่ซื้อที่ราคานี้ Conviction = LOW จุดที่น่าสนใจคือรอให้ราคาย่อลงมาแถว ~$100 (ใกล้ FV) ก่อน ถึงจะกลับมาพิจารณาจริงจัง"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ตรวจสอบอิสระแล้วเห็นด้วยกับ Warren เต็มที่ว่า \"ห้ามซื้อ\" ที่ราคานี้ ราคาที่ตรวจได้ ~$324 สูงกว่ามูลค่าพื้นฐาน $119 ถึง 2.72 เท่า Fwd PE 36.65 ส่วน PEG 1.64 ก็เกินเพดาน 1.5 ที่ยอมรับได้ — แปลว่าราคาแพงเกินทั้งในเชิงมูลค่าและเชิงการเติบโต",
+        "สิ่งที่ Charlie กังวลคือเรื่องที่อาจถูกประเมินต่ำไป: ความเป็นวัฏจักรของ datacenter capex (ถ้ารอบลงทุนกลับทิศ คำสั่งซื้อหายเร็ว) และการแข่งขันจาก Schneider/Eaton ที่ไล่ตามในตลาด liquid cooling รวมถึงคดีความที่ยังค้างอยู่",
+        "สรุป Charlie's take: ธุรกิจแข็งแรงจริง ไม่มีข้อกังขา แต่ valuation คือปัญหาเดียวที่ใหญ่พอจะทำให้ความเสี่ยงขาลงมหาศาล สิ่งที่ต้อง monitor คือจังหวะที่ราคาย่อลงมาใกล้ FV และสัญญาณว่า capex ของ hyperscaler ยังแข็งแรงอยู่หรือไม่"
+      ]
+    },
+    "idea_th": "Vertiv คือเจ้าของระบบไฟและระบายความร้อนที่ขาดไม่ได้ของดาต้าเซ็นเตอร์ AI — ธุรกิจคุณภาพสูงที่ได้ประโยชน์เต็มๆ จากคลื่นการสร้างดาต้าเซ็นเตอร์ แต่ราคาปัจจุบันแพงเกินมูลค่าพื้นฐานไปหลายเท่า จึงน่าจับตารอจังหวะย่อมากกว่าจะไล่ซื้อ",
+    "story_gate_th": {
+      "what": "Vertiv เป็นผู้นำโครงสร้างพื้นฐานสำคัญของดาต้าเซ็นเตอร์ — UPS, ระบบจ่ายไฟ และระบบระบายความร้อน (รวม liquid cooling ส่งตรงถึงชิป AI) ลูกค้าหลักคือ hyperscaler ที่หยุดระบบไม่ได้ จุดแข็งคือทำครบทั้ง power + thermal + IT ในระบบเดียวที่คู่แข่งยังตามไม่ทัน",
+      "why": "ชิป AI กินไฟมากกว่าเซิร์ฟเวอร์เดิม 10-20 เท่า ความต้องการระบบไฟและความเย็นจึงพุ่ง Q1 2026 organic +23%, EPS +83% YoY, backlog ~$9.5B และยกไกด์ทั้งปีขึ้น — ดีมานด์แรงและมองเห็นล่วงหน้าได้",
+      "risk": "ถ้า datacenter capex ของ Big Tech ชะลอเพราะ AI ROI ไม่ชัด คำสั่งซื้อจะหดทันที + คู่แข่ง Eaton/Schneider + ความเสี่ยงภาษีนำเข้า และที่สำคัญที่สุดคือราคาแพงมาก (Fwd PE สูง) ทำให้ downside ใหญ่ถ้าโตพลาด"
+    },
+    "bull_th": [
+      "AI supercycle หนุนเต็มที่ — งบ capex ของ Big Tech 4 รายปี 2026 ราว $725B (+77% YoY) Vertiv กินส่วนแบ่งจากฝั่งไฟและความเย็นโดยตรง",
+      "การเปลี่ยนผ่านสู่ไฟ 800V DC ร่วมกับ NVIDIA จะเปิด TAM ใหม่ — ยิ่งชิปหนาแน่นยิ่งต้องใช้ liquid cooling มากขึ้น เริ่มรับรู้รายได้ 2027+",
+      "EMEA เป็น \"สปริงที่ถูกอัด\" — ยุโรปขาดแคลนดาต้าเซ็นเตอร์รองรับ AI อย่างหนัก คำสั่งซื้อที่สะสมไว้จะแปลงเป็นรายได้ครึ่งปีหลัง 2026",
+      "Services flywheel — ฐานติดตั้งที่โตจาก AI buildout สร้างรายได้บริการประจำต่อเนื่องหลายสิบปี + ช่างบริการเพิ่ม ~25% YoY",
+      "งบดุลแข็งมาก net leverage ~0.2x + credit rating investment grade มีกระสุนพร้อมทำ M&A และขยายกำลังการผลิต"
+    ],
+    "risk_th": [
+      "ราคาแพงสุดขั้ว — เทรดสูงกว่า FV Base $119 ราว 2.7 เท่า และเกินแม้กระทั่งกรณี Bull ($175) ถ้าการเติบโตสะดุดแม้เล็กน้อย downside จะรุนแรง",
+      "เป็นธุรกิจวัฏจักรที่ผูกกับ capex ของ hyperscaler — ถ้า AI ROI ไม่ชัดและ Big Tech เบรกการลงทุน order book จะหดเร็วมาก",
+      "การแข่งขันจาก Eaton, Schneider Electric, ABB โดยเฉพาะในตลาด liquid cooling ที่กำลังเป็นสมรภูมิใหม่",
+      "คดี Securities Class Action (2022) + Derivative Lawsuits ยังค้างศาล + ความเสี่ยงภาษีนำเข้า (Section 232/122) ต่อ supply chain",
+      "Goodwill + intangibles รวม ~$3.8B (29% ของสินทรัพย์) จากการ M&A หลายดีล ถ้าโตช้าลงมีความเสี่ยง impairment + EMEA ถ้าฟื้นช้ากว่าไกด์อาจพลาดเป้าทั้งปี"
+    ]
+  },
   "TSLA": {
     "symbol": "TSLA",
     "display": "TSLA",
@@ -2900,18 +2950,17 @@
       "EV margin กดดัน — average price ลดลง ส่วนแบ่งตลาดลดใน China",
       "Optimus timeline uncertainty — production scale ยังไม่พิสูจน์"
     ],
-    "price": 432.33,
-    "fv": 202.8,
-    "mos": -150.6,
-    "peg": 999.0,
-    "fpe": 200.0,
-    "updated": "2026-05-27",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
     "waf": 4.95,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 435.79,
+    "fv": 170,
+    "mos": -156.3,
+    "fpe": 202.97,
+    "peg": 999,
     "scores": {
       "bq": [
         6.0,
@@ -2935,6 +2984,7 @@
       ]
     },
     "idea": "Robotaxi + Optimus optionality — ไม่ใช่ EV-only thesis",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2945,18 +2995,24 @@
       "why": "Robotaxi launch (Austin, Q2 2026) คือ catalyst สำคัญ; Optimus production scaling (1,000 units/สัปดาห์ เป้าปลายปี 2026); Energy storage ฟื้น Q1 2026; Cybercab reveal H2 2026",
       "risk": "Robotaxi regulatory rejection หรือ accident → thesis collapse; Elon Musk brand damage (DOGE/political controversy) ทำ boycott ต่อเนื่อง — Q1 2026 deliveries -13% YoY; BYD/Chinese EV ยึดส่วนแบ่งตลาดทั่วโลก; Optimus timeline slip ซ้ำๆ; Fwd PE 190× ทำ downside ใหญ่มากถ้า option value ไม่ materialize"
     },
-    "tier": "⚠️ Turnaround",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "Robotaxi commercial timeline delays",
-        "Musk brand damage impact on demand",
-        "Auto margin compression <10%"
+      "verified_claims": [
+        "Warren's Fair Value of $170 is directionally supported — forward P/E of 173.64 implies near-zero margin of safety at $435.79",
+        "Gross margin of 19.07% confirms Warren's concern about auto margin compression below 10% trajectory — margins have already compressed significantly from prior ~25%+ levels",
+        "Revenue growth of 15.8% does NOT justify a PEG of 6.0, which typically signals severe overvaluation relative to growth rate",
+        "Debt-to-equity of 18.74 is notably low (favorable), consistent with Warren's BQ score of 6 — balance sheet is not a primary risk"
       ],
-      "summary": "DO NOT BUY confirmed. FwdPE 172.8x, PEG 5.87. Price 155% above FV $170. Robotaxi commercial launch unproven.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Warren's Base FV of $170 may itself be generous — at 173x forward earnings, even a 50x 'growth premium' multiple would imply ~$125 fair value, suggesting $170 could be optimistic",
+        "PEG ratio of 6.0 with 15.8% revenue growth is a red flag Warren did not explicitly quantify — historically PEG>2 signals overvaluation, PEG=6 is extreme",
+        "Gross margin at 19.07% is already under pressure; further price cuts to compete with BYD and legacy OEMs could push auto margins below 15%, threatening the entire Robotaxi/AI premium narrative",
+        "No recent news available for independent verification — this creates an information gap; absence of catalysts in news feed does not confirm Robotaxi/FSD v13 milestones are on track"
+      ],
+      "summary": "Independent data strongly confirms Warren's WATCH/PASS verdict. TSLA trades at 173x forward earnings with a PEG of 6.0, making the -156% margin of safety calculation credible and the valuation extreme by any traditional metric.",
+      "review_date": "2026-05-31"
     },
+    "tier": "⚠️ Turnaround",
     "mark_easy": {
       "one_liner": "บริษัท Physical AI ที่เดิมพันอนาคตกับ Robotaxi และหุ่นยนต์ Optimus แต่ราคาแพงและความเสี่ยงสูงสุดในวอทช์ลิสต์",
       "what": "Tesla ไม่ได้มองตัวเองเป็นแค่บริษัทรถ EV แล้ว — แต่เป็นบริษัท \"Physical AI\" ที่เอา AI ออกสู่โลกจริงผ่าน FSD (ระบบขับเอง), Robotaxi (แท็กซี่ไร้คนขับ) และ Optimus (หุ่นยนต์มนุษย์) ยังมีธุรกิจ Energy (Megapack/Powerwall) เสริม รายได้หลักวันนี้ยังมาจากการขายรถ แต่ตลาดให้ราคากับ \"option\" ของ Robotaxi และ Optimus เป็นหลัก",
@@ -3044,18 +3100,17 @@
       "TSMC, Samsung เป็น alternative foundry ที่ดีกว่าสำหรับบางกลุ่ม",
       "Conviction 2/5 สะท้อนว่า upside thesis ยังไม่ proven — high risk"
     ],
-    "price": 119.84,
-    "fv": 21.0,
-    "mos": -499.2,
-    "peg": 3.9,
-    "fpe": 195.0,
-    "updated": "2026-05-27",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
     "waf": 4.27,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 114.68,
+    "fv": 20,
+    "mos": -473.4,
+    "fpe": 195.0,
+    "peg": 3.9,
     "scores": {
       "bq": [
         5.0,
@@ -3079,6 +3134,7 @@
       ]
     },
     "idea": "18A Foundry + x86 Revival — turnaround binary outcome",
+    "updated": "2026-05-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -3089,19 +3145,24 @@
       "why": "Intel อยู่ใน turnaround phase — CEO Lip-Bu Tan ใหม่ (2025) วางแผนปรับโครงสร้าง; 18A process node เป็น key catalyst ถ้า yield ดีพอ; ถ้า foundry ประสบความสำเร็จ = massive upside; แต่นี่เป็น speculation ไม่ใช่ investment",
       "risk": "18A node ล้มเหลว → foundry strategy abandon; AMD เพิ่ม server CPU share → x86 moat แตก; การเลิกจ้าง 15,000+ คน ทำ R&D capability ลดลง; Intel อาจ break up หรือ forced divestiture; Q1 2026 Net Loss ต่อเนื่อง"
     },
-    "tier": "⚠️ Turnaround",
     "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [
-        "18A process yield uncertainty — binary outcome",
-        "AMD continuing server CPU share gain",
-        "Apollo SCIP debt burden",
-        "Warren FV $20 based on current earnings = ignores turnaround optionality"
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Overvaluation confirmed: forward PE of 74.48x is extreme for a semiconductor company with only 7.2% revenue growth — does NOT justify current price",
+        "Gross margin of 37.2% is below industry leaders (NVDA ~75%, AMD ~50%), confirming Intel's competitive disadvantage Warren flagged",
+        "Debt-to-equity of 36.03 is dangerously high, independently confirming Warren's concern about Apollo SCIP debt burden and balance sheet stress",
+        "PEG ratio of 1.36 appears deceptively reasonable but is misleading given EPS base distortion from restructuring charges — growth quality is poor"
       ],
-      "summary": "⚠️ Warren's FV $20 may be too pessimistic. yfinance PEG 1.36 < ceiling 1.5 — consensus prices in 18A turnaround. However, at $123.52 vs FV $20 = 517% premium. Extreme risk either way.",
-      "review_date": "2026-05-27"
+      "concerns": [
+        "Warren used $120 as reference price in thesis but current price is $114.68 — MoS of -473.4% is slightly overstated but directionally correct; even at $114.68, valuation is absurd relative to $20 FV",
+        "No recent news available to verify 18A yield progress or TeraFab partnership status — Warren's upside catalysts cannot be independently confirmed or denied, creating information gap",
+        "PEG of 1.36 could mislead value-seekers into thinking growth justifies price, but 7.2% revenue growth with 74x PE and 36x D/E is a dangerous combination",
+        "Debt-to-equity of 36 is extraordinarily high — interest burden will further compress already thin earnings, making FY2027 EPS of $1.10 potentially optimistic rather than conservative"
+      ],
+      "summary": "Independent data confirms Warren's overvaluation thesis: INTC trades at 74.5x forward PE with 7.2% revenue growth, making the price fundamentally unjustifiable. Warren's fair value of $20 appears directionally correct given the earnings power, though the MoS calculation references $120 which differs slightly from current $114.68.",
+      "review_date": "2026-05-31"
     },
+    "tier": "⚠️ Turnaround",
     "mark_easy": {
       "one_liner": "Intel กำลังพลิกฟื้นจากยักษ์ที่เคยตกต่ำ — ด้วย 18A chip technology ใหม่และ CEO ที่ดึงความเชื่อใจกลับมาได้ใน 6 quarters",
       "what": "Intel เป็นบริษัทชิปที่ทำทั้งออกแบบและผลิตเองในสหรัฐฯ เจ้าเดียว ผลิตทั้ง CPU สำหรับ PC/Laptop (Core Ultra), Server (Xeon) และกำลังเปิด Foundry รับจ้างผลิตชิปให้บริษัทอื่น ผ่านช่วงขาดทุนหนักมาหลายปี แต่ Q1 2026 กลับมา beat คาดการณ์ทุก metric ทำให้หุ้นพุ่งสู่ all-time high ครั้งแรกในรอบ 26 ปี",
