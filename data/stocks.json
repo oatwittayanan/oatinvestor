@@ -633,7 +633,7 @@
         60
       ]
     },
-    "idea": "ใกล้ FV (MoS +5%) — STARTER-eligible Tier 🏛️; AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
+    "idea": "ใกล้ FV (MoS +5%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
     "updated": "2026-06-03",
     "story_gate": {
       "passed": true,
@@ -698,7 +698,7 @@
         "ต้อง monitor: customer concentration — verdict ปัจจุบัน AGREE"
       ]
     },
-    "idea_th": "ใกล้ FV (MoS +5%) — STARTER-eligible Tier 🏛️; AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
+    "idea_th": "ใกล้ FV (MoS +5%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
     "story_gate_th": {
       "what": "ครอง node ล้ำสุด (N2/A16) + CoWoS packaging ที่ชิป AI ทุกตัวต้องผ่าน",
       "why": "ประกาศขึ้นราคาท่ามกลาง AI demand + ได้ประโยชน์จาก NVIDIA physical AI wave",
@@ -921,7 +921,7 @@
         65
       ]
     },
-    "idea": "ใกล้ FV (MoS +4%) — STARTER-eligible Tier 🏛️; รอ MoS ขยายหรือเริ่มไม้แรก",
+    "idea": "ใกล้ FV (MoS +4%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); รอ MoS ขยายเข้า Gate",
     "updated": "2026-06-03",
     "story_gate": {
       "passed": true,
@@ -986,7 +986,7 @@
         "ต้อง monitor: AI search disruption — verdict ปัจจุบัน CAUTION"
       ]
     },
-    "idea_th": "ใกล้ FV (MoS +4%) — STARTER-eligible Tier 🏛️; รอ MoS ขยายหรือเริ่มไม้แรก",
+    "idea_th": "ใกล้ FV (MoS +4%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); รอ MoS ขยายเข้า Gate",
     "story_gate_th": {
       "what": "full-stack AI (TPU + Gemini + Vertex + apps) ที่เลียนแบบไม่ได้ + GCP +63%",
       "why": "Cloud Gen AI revenue +800% YoY + PEG 0.8 + Waymo free option",
