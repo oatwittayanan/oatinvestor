@@ -30,9 +30,9 @@
     "waf": 8.75,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 222.82,
+    "price": 218.66,
     "fv": 308,
-    "mos": 27.7,
+    "mos": 29.0,
     "fpe": 17.0,
     "peg": null,
     "scores": {
@@ -58,7 +58,7 @@
       ]
     },
     "idea": "ถือต่อ/สะสม — undervalued ~28% เทียบ FV; AI factory full-stack ยังนำคู่แข่งหลายช่วงตัว",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -72,13 +72,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "export curbs จีน H20 กระทบ revenue ทันที",
-        "customer concentration 2 ราย ~36%",
-        "valuation ต้อง execute perfect"
-      ],
-      "summary": "FV $308 สมเหตุผลที่ Fwd P/E ~17x สำหรับ growth +65%; market price $223 ยัง discount",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -174,9 +170,9 @@
     "waf": 8.55,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 441.31,
+    "price": 428.05,
     "fv": 519,
-    "mos": 15.0,
+    "mos": 17.5,
     "fpe": 21.5,
     "peg": null,
     "scores": {
@@ -202,7 +198,7 @@
       ]
     },
     "idea": "undervalued ~15% — BUY conviction สูงสุด; Azure + Copilot + RPO $627B visibility",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -216,13 +212,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "valuation P/E 32x ถ้า Azure ชะลอ",
-        "OpenAI dependency",
-        "CapEx กด FCF"
-      ],
-      "summary": "MoS +15% + คุณภาพสูงสุด; Azure +29% + RPO $627B visibility แข็ง",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🏛️ Inevitable",
     "mark_easy": {
@@ -318,9 +310,9 @@
     "waf": 8.17,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 597.63,
+    "price": 627.57,
     "fv": 722,
-    "mos": 17.2,
+    "mos": 13.1,
     "fpe": 17.0,
     "peg": null,
     "scores": {
@@ -346,7 +338,7 @@
       ]
     },
     "idea": "undervalued ~17% — BUY; data flywheel + margin record + PEG 0.9",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -360,13 +352,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "CapEx commitment ใหญ่สุด",
-        "Reality Labs ขาดทุน $19B",
-        "FTC antitrust"
-      ],
-      "summary": "MoS +17% มี margin; margin record + PEG 0.9 — แต่ CapEx $125-145B 2x YoY ต้องจับตา",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -462,10 +450,10 @@
     "waf": 8.12,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 256.52,
+    "price": 253.79,
     "fv": 315,
-    "mos": 18.6,
-    "fpe": 27.4,
+    "mos": 19.4,
+    "fpe": 27.1,
     "peg": null,
     "scores": {
       "bq": [
@@ -489,12 +477,12 @@
         75
       ]
     },
-    "idea": "undervalued ~19% — BUY; AWS เร่งตัวเร็วสุดใน 15 ไตรมาส = catalyst ยืนยัน thesis",
-    "updated": "2026-06-03",
+    "idea": "⭐ Top pick — MoS +19% ✓ ผ่าน gate ตัวเดียวในกลุ่ม; UBS PT $333 AWS 2026 $175.9B (+36%) เหนือ consensus + Bedrock backlog $35B; ครองอันดับ 1 Fortune 500; ราคาย่อ = entry ดี",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
+      "updated": "2026-06-05",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
@@ -505,74 +493,75 @@
       "charlie_verdict": "AGREE",
       "verified_claims": [],
       "concerns": [
-        "regulatory EU+US",
-        "CapEx AI กด FCF",
-        "retail margin macro-sensitive"
+        "FCF −95% YoY = show-me story",
+        "AWS +28% ตาม GCP +63%",
+        "OpenAI dual-role partner+competitor",
+        "CapEx AI กด FCF near-term"
       ],
-      "summary": "FV $315 vs price $257 = MoS +19% มี margin จริง; AWS accel ยืนยัน thesis",
-      "review_date": "2026-06-03"
+      "summary": "UBS Buy PT $333 (+17.8% independent) > Warren FV $315 ยืนยัน undervalued; AWS เร่งตัว $175.9B 2026 (+36%) + Bedrock backlog $35B; ราคาย่อจาก 52wH $278→$254 = entry ดีจริง — BUY มีเหตุผล",
+      "review_date": "2026-06-05"
     },
     "tier": "🏛️ Inevitable",
     "mark_easy": {
-      "one_liner": "เจ้าของ AWS ที่เร่งตัวแรงสุดใน 15 ไตรมาส — ราคายังมี upside",
-      "what": "Amazon ทำ cloud (AWS), อีคอมเมิร์ซ, โฆษณา และลงทุน AI (Trainium + Anthropic)",
+      "one_liner": "ยักษ์ e-commerce บวก AWS ที่กำลังเร่งตัวจาก AI — ตัวที่ undervalued สุดในกลุ่ม",
+      "what": "Amazon ครอง e-commerce บวก AWS cloud บวกโฆษณาดิจิทัล โดย AWS เป็นเครื่องยนต์กำไรหลักที่กำลังเร่งตัวจาก AI",
       "why_invest": [
-        "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
-        "Anthropic partnership + Trainium chips = AI infrastructure play",
-        "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
-        "Advertising business $60B+ ARR กำลัง accelerate"
+        "AWS เร่งตัวเร็วสุดใน 15 ไตรมาส — โต 28% สู่ 37-44% ครึ่งหลังปี",
+        "Bedrock backlog 35 พันล้านดอลลาร์ บวกดีล OpenAI และ Anthropic",
+        "Trainium ชิป AI ของตัวเองประหยัดต้นทุนหลายหมื่นล้าน",
+        "retail op margin ทำสถิติ 13.1%"
       ],
       "watch_out": [
-        "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
-        "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
-        "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น"
+        "FCF ติดลบ 95% YoY = ต้องพิสูจน์ว่า CapEx จะแปลงเป็นรายได้",
+        "AWS โต 28% ยังตามหลัง GCP ที่โต 63%",
+        "ดีล OpenAI เป็นทั้งพาร์ทเนอร์และคู่แข่ง"
       ],
-      "bottom_line": "AWS เร่งตัวยืนยัน thesis + ราคาย่อให้ MoS +19% — เป็น BUY ที่น่าสนใจ"
+      "bottom_line": "Pete มองว่านี่คือตัวที่ดีที่สุดในกลุ่มรอบนี้ — undervalued ราว 19% (ผ่าน gate ตัวเดียว) AWS เร่งตัวจริง UBS ให้ Buy PT 333 ราคาย่อ = entry ดี"
     },
     "mark_full": {
-      "business_overview": "AWS เป็นกำไรหลัก ส่วน retail margin บางแต่สร้าง scale; ads โตเร็วมาร์จิ้นสูง",
-      "tam": "cloud + ads + AI infrastructure รวมกันมหาศาล AWS ยังนำ hyperscaler",
-      "moat": "AWS scale + Prime ecosystem 200M + logistics network ที่เลียนแบบยาก",
-      "latest_financials": "AWS เร่งตัวเร็วสุด 15 ไตรมาส; ads $60B+ ARR; CapEx AI สูงกด FCF ระยะสั้น",
+      "business_overview": "Amazon สร้างรายได้จาก 3 ขา: e-commerce, AWS cloud และโฆษณาดิจิทัล โดย AWS เป็นเครื่องยนต์กำไรหลัก รอบนี้ AWS เร่งตัวเร็วสุดใน 15 ไตรมาส และ retail margin ทำสถิติ 13.1%",
+      "tam": "AI กำลัง reinvent ทุกธุรกิจของ Amazon — AWS เร่งจาก 28% สู่ 37-44% ครึ่งหลังปี UBS โมเดล AWS ปี 2026 ที่ 175.9 พันล้านดอลลาร์ (โต 36%) สูงกว่า consensus AI เป็น 10% ของ AWS วันนี้สู่ 26% สิ้นปี",
+      "moat": "logistics scale ที่ไม่มีใครเทียบ บวก cloud portfolio กว้างที่สุด บวก custom silicon (Trainium) ที่ให้ความได้เปรียบต้นทุนเชิงโครงสร้าง Graviton ใช้โดย 98% ของลูกค้า EC2 top 1,000",
+      "latest_financials": "Q1 2026 รายได้ 181.5 พันล้านดอลลาร์ โต 17%, AWS โต 28% (เร็วสุด 15 ไตรมาส), op margin สถิติ 13.1%, Anthropic gain 16.8 พันล้าน Bedrock backlog ราว 35 พันล้าน บวก AWS จะเพิ่ม backlog ใหม่ราว 350 พันล้านในปี 2026",
       "key_points": [
-        "Anthropic partnership + Trainium chips = AI infrastructure play",
-        "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
-        "Advertising business $60B+ ARR กำลัง accelerate",
-        "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
+        "AWS backlog ใหญ่จาก OpenAI (PO 38 พันล้าน) บวก Anthropic (ราวแสนล้าน)",
+        "Trainium2 ประหยัด 30% เทียบ GPU, แทบ sold out",
+        "retail op margin สถิติ 13.1%",
+        "valuation 18 เท่า 2027 EPS = discount เทียบ premium asset"
       ]
     },
     "warren_easy": [
-      "Amazon มี flywheel ครบ — AWS (กำไรหลัก), commerce, ads $60B และลงทุน AI ผ่าน Trainium/Anthropic",
-      "AWS เร่งตัวเร็วสุดใน 15 ไตรมาสยืนยัน thesis และราคาย่อมาที่ ~$257 ให้ MoS +19% เทียบ Fair Value $315",
-      "BUY — entry ดีจากราคาย่อ + catalyst AWS ชัด"
+      "Amazon คือตัวที่ผมชอบที่สุดในกลุ่มรอบนี้ — เป็นเจ้าของ moat 3 ชั้น: logistics ที่ไม่มีใครเทียบ, AWS cloud ที่ portfolio กว้างที่สุด และ custom silicon (Trainium) ที่ให้ความได้เปรียบต้นทุน ตลาดยังกังวลว่า AWS แพ้ AI race และ FCF ทรุด แต่ภาพจริงต่างออกไป",
+      "AWS กำลังเร่งตัวเร็วสุดใน 15 ไตรมาส โต 28% และจะเร่งสู่ 37-44% ครึ่งหลังปีจาก capacity ใหม่ที่ทยอยมา บวก Bedrock backlog 35 พันล้าน บวก Trainium ที่ประหยัดต้นทุนหลายหมื่นล้าน บวก retail margin ที่ทำสถิติ 13.1% — ทั้งหมดนี้ยังไม่ถูก price-in ใน PE 27 เท่า",
+      "ที่ราคา 254 ดอลลาร์ undervalued ราว 19% เทียบ Fair Value 315 ของผม เป็นตัวเดียวในกลุ่มที่ผ่าน Margin of Safety gate บวก UBS ก็ให้ Buy PT 333 (สูงกว่า FV ผมอีก) ที่ราคาย่อลงมาเป็น entry ที่ดี ผมจึงให้ BUY"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: FV $315 vs price $257 = MoS +19% มี margin จริง; AWS accel ยืนยัน thesis",
-        "จุดที่ Charlie กังวล: regulatory EU+US; CapEx AI กด FCF",
-        "ต้อง monitor: retail margin macro-sensitive — verdict ปัจจุบัน AGREE"
+        "ข้อมูลอิสระสนับสนุนแข็งแรง — UBS ให้ Buy PT 333 ดอลลาร์ (excess return บวก 17.8%) ซึ่งสูงกว่า Fair Value 315 ของ Warren ด้วยซ้ำ ยืนยันว่า undervalued AWS โมเดลปี 2026 ที่ 175.9 พันล้าน (โต 36%) สูงกว่า consensus บวก Bedrock backlog 35 พันล้าน",
+        "สิ่งที่ผมระวัง: FCF ติดลบ 95% YoY เป็น show-me story ว่า CapEx จะแปลงเป็นรายได้, AWS โต 28% ยังตามหลัง GCP 63%, และดีล OpenAI ที่เป็นทั้งพาร์ทเนอร์และคู่แข่ง",
+        "ผมเห็นด้วยกับ action BUY ของ Warren — เป็นตัวที่ risk/reward ดีที่สุดในกลุ่ม ราคาย่อจากจุดสูงสุด 52 สัปดาห์ 279 ลงมา 254 = entry ที่ดี ต้อง monitor ว่า FCF จะฟื้นตามรายได้ไหม"
       ]
     },
-    "idea_th": "undervalued ~19% — BUY; AWS เร่งตัวเร็วสุดใน 15 ไตรมาส = catalyst ยืนยัน thesis",
+    "idea_th": "Amazon เป็นตัวที่ดีที่สุดในกลุ่มรอบนี้ — undervalued ราว 19% (ผ่าน MoS gate ตัวเดียว) AWS เร่งตัวเร็วสุด 15 ไตรมาส บวก Bedrock backlog 35 พันล้าน UBS ให้ Buy PT 333 ราคาย่อ = entry ดี",
     "story_gate_th": {
-      "what": "AWS เติบโตเร็วสุดใน 15 ไตรมาส + Trainium + ads $60B",
-      "why": "AWS growth เร่งตัว + ราคาย่อจาก $270 ให้ entry ดี",
-      "risk": "regulatory EU+US + CapEx AI กด FCF ระยะสั้น"
+      "what": "ครอง e-commerce บวก AWS cloud บวกโฆษณา ด้วย logistics scale ที่ไม่มีใครเทียบ บวก cloud portfolio กว้างสุด บวก custom silicon (Trainium) ที่ให้ความได้เปรียบต้นทุน",
+      "why": "ตลาดมอง AWS แพ้ AI race และ FCF ทรุด แต่ Warren เห็น AWS เร่งสู่ 28% บน run rate 150 พันล้าน บวก Trainium ประหยัดหลายหมื่นล้าน บวก retail margin สถิติ 13.1% — ยังไม่ price-in ใน PE 27 เท่า",
+      "risk": "ถ้า AWS โตต่ำกว่า 20% เพราะ Azure/GCP แย่ง AI workload พิสูจน์ว่า CapEx surge เป็น malinvestment"
     },
     "bull_th": [
-      "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
-      "Anthropic partnership + Trainium chips = AI infrastructure play",
-      "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
-      "Advertising business $60B+ ARR กำลัง accelerate",
-      "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
+      "AWS เร่งตัวเร็วสุด 15 ไตรมาส โต 28% สู่ 37-44% ครึ่งหลังปี",
+      "Bedrock backlog 35 พันล้าน บวกดีล OpenAI และ Anthropic",
+      "Trainium ประหยัดต้นทุนหลายหมื่นล้าน, Graviton ใช้โดย 98% ของ top 1,000",
+      "retail op margin ทำสถิติ 13.1%",
+      "valuation 18 เท่า 2027 EPS = discount เทียบ premium asset"
     ],
     "risk_th": [
-      "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
-      "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
-      "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น",
-      "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
-      "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
+      "FCF ติดลบ 95% YoY = show-me story",
+      "AWS โต 28% ยังตามหลัง GCP 63%",
+      "ดีล OpenAI เป็นทั้งพาร์ทเนอร์และคู่แข่ง",
+      "CapEx AI กด FCF ระยะใกล้",
+      "retail margin sensitive ต่อ macro บวก tariff"
     ]
   },
   "TSM": {
@@ -602,14 +591,14 @@
     ],
     "action": "watch",
     "actionLabel": "Watch",
-    "conviction": 4,
+    "conviction": 5,
     "waf": 8.1,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 446.69,
+    "price": 444.92,
     "fv": 470,
-    "mos": 5.0,
-    "fpe": 20.7,
+    "mos": 5.3,
+    "fpe": 20.6,
     "peg": null,
     "scores": {
       "bq": [
@@ -633,12 +622,12 @@
         60
       ]
     },
-    "idea": "ใกล้ FV (MoS +5%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
-    "updated": "2026-06-03",
+    "idea": "NVIDIA ร่วมมือนำ AI เข้ากระบวนการผลิตชิป + Bernstein/BofA ยืนยัน advanced-node leadership; franchise แกร่งขึ้น แต่ MoS บาง ~5% ER ~1%/ปี — คุณภาพสูงสุดแต่ราคาเต็ม",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
+      "updated": "2026-06-05",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) used in all leading AI chips globally — ไม่มีทางผลิต AI chip ระดับ top-tier โดยไม่ผ่าน TSMC.",
@@ -649,74 +638,75 @@
       "charlie_verdict": "AGREE",
       "verified_claims": [],
       "concerns": [
-        "Taiwan Strait geopolitics",
-        "overseas fab margin pressure",
-        "customer concentration"
+        "ใกล้ 52wH — margin บาง",
+        "Taiwan geopolitical discount",
+        "Apple+NVIDIA = 36% concentration",
+        "N2+overseas fab กด margin H2 2026"
       ],
-      "summary": "คุณภาพสูง near fair value; price hike + AI demand จริง แต่ upside จำกัดที่ราคานี้",
-      "review_date": "2026-06-03"
+      "summary": "Irreplaceable AI chip foundry จริง (NVIDIA collab + analyst บวก); แต่ราคา $445 ชน 52wH $450 = MoS บาง +5%; Warren FV $470 สมเหตุผล action WATCH ถูก",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
-      "one_liner": "โรงงานผลิตชิปที่เก่งที่สุดในโลก ราคาตอนนี้ใกล้มูลค่าจริงพอดี",
-      "what": "TSMC รับจ้างผลิตชิปขั้นสูงให้ทุกเจ้า (NVIDIA, Apple, AMD) ครองเทคโนโลยีการผลิตที่ล้ำที่สุด",
+      "one_liner": "โรงงานผลิตชิป AI ของโลก — ชิป AI ระดับท็อปทุกตัวต้องผ่าน TSMC",
+      "what": "TSMC เป็นโรงงานรับจ้างผลิตชิปที่ใหญ่และล้ำที่สุดในโลก ชิป AI ทุกตัว (NVIDIA, Apple, Google TPU, AMD) ผลิตที่นี่",
       "why_invest": [
-        "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
-        "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
-        "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
-        "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance"
+        "เป็นกระดูกสันหลังของการผลิตชิป AI ทั้งโลก — ขาดไม่ได้",
+        "CoWoS advanced packaging เกือบผูกขาด = คอขวด = pricing power",
+        "FY2026 มั่นใจโตเกิน 30% บวก CAGR 5 ปีราว 25%",
+        "N2 เข้าสู่การผลิตจริงด้วย yield ดี = execution แกร่ง"
       ],
       "watch_out": [
-        "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
-        "US tariff + trade policy uncertainty กระทบ supply chain",
-        "Customer concentration: Apple + NVIDIA + AMD = top 3"
+        "ความเสี่ยงภูมิรัฐศาสตร์ไต้หวัน = discount ที่ตลาดให้สม่ำเสมอ",
+        "ลูกค้ากระจุก: Apple บวก NVIDIA = ราว 36% ของรายได้",
+        "N2 บวกโรงงานต่างประเทศกด margin ครึ่งหลังปี 2026"
       ],
-      "bottom_line": "หุ้นคุณภาพเยี่ยม ราคาแฟร์ (MoS +5%) — STARTER เริ่มสะสมไม้แรกได้สำหรับคนใจเย็น"
+      "bottom_line": "คุณภาพสูงสุดของจริงและ franchise แกร่งขึ้นจาก NVIDIA collab แต่ราคาใกล้จุดสูงสุด margin บาง — Pete ให้ WATCH รอจังหวะ"
     },
     "mark_full": {
-      "business_overview": "รายได้จากการรับจ้างผลิต (foundry) node ขั้นสูงคิดเป็นสัดส่วนกำไรหลัก ลูกค้าคือ NVIDIA/Apple/AMD",
-      "tam": "ทุกชิป AI ขั้นสูงต้องผ่าน TSMC — demand visibility ยาวจาก backlog AI accelerator",
-      "moat": "Process leadership นำ Intel/Samsung หลายปี + CoWoS chokepoint + customer lock-in ระยะยาว",
-      "latest_financials": "Q1 2026 รายได้ +41% YoY, Gross Margin 66%; PEG ~0.75 ถูกเทียบ growth",
+      "business_overview": "TSMC เป็น foundry รับจ้างผลิตชิปที่ครองตลาด node ขั้นสูง (N3, N2, A16) ชิป AI ระดับท็อปทุกตัวผลิตที่นี่ รายได้มาจากการผลิตให้ NVIDIA, Apple, Google, AMD และอื่นๆ โดย AI เป็นเครื่องยนต์โตหลัก",
+      "tam": "ทุกชิป AI ระดับท็อปต้องผ่าน TSMC ทำให้ได้ประโยชน์จากทั้งวัฏจักร AI CoWoS advanced packaging เป็นคอขวดเกือบผูกขาด supply ตึงถึงปี 2027 ตาม C.C. Wei",
+      "moat": "เป็นผู้ผลิต node ขั้นสูงรายเดียวที่ผลิตปริมาณมากได้ด้วย yield ดี — คู่แข่งสร้างไม่ได้ในทศวรรษ บวก CoWoS ที่เกือบผูกขาด ทำให้มี pricing power และลูกค้า lock-in",
+      "latest_financials": "FY2026 มั่นใจโตเกิน 30% บวก CapEx 52-56 พันล้านดอลลาร์สร้าง moat ที่คู่แข่งตามไม่ทัน N2 เข้า HVM ด้วย yield ดี รอบนี้ NVIDIA ร่วมมือนำ AI เข้ากระบวนการผลิตชิป บวก Bernstein/BofA ยืนยันมุมมองบวก",
       "key_points": [
-        "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
-        "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
-        "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
-        "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
+        "N2 เข้าสู่การผลิตจริง yield ดี",
+        "CoWoS เกือบผูกขาด supply ตึงถึง 2027",
+        "GIGAFAB Arizona กระจายความเสี่ยงภูมิรัฐศาสตร์",
+        "ลูกค้ากระจุก Apple บวก NVIDIA ราว 36%"
       ]
     },
     "warren_easy": [
-      "TSMC คือคอขวดของ AI ทั้งโลก — ไม่มีใครผลิต node ล้ำๆ ได้โดยไม่ผ่านมือ TSMC และ CoWoS ก็ผูกขาดเช่นกัน",
-      "ที่ ~$447 ใกล้ Fair Value $470 (MoS +5%) — คุณภาพระดับ Inevitable ที่ราคาสมเหตุผล",
-      "WATCH/STARTER — เริ่มสะสมไม้แรกได้ ทยอยเพิ่มเมื่อย่อ"
+      "TSMC คือ franchise ที่ขาดไม่ได้ของยุค AI — ชิป AI ระดับท็อปทุกตัว ไม่ว่าจะ NVIDIA, Apple, Google TPU หรือ AMD ล้วนผลิตที่นี่ บวก CoWoS advanced packaging ที่เกือบผูกขาดเป็นคอขวดสำคัญ ทำให้มี pricing power และลูกค้าหนีไม่ได้",
+      "รอบนี้ข่าว NVIDIA ร่วมมือนำ AI เข้ากระบวนการผลิตและนักวิเคราะห์ยืนยัน leadership ใน advanced node ยิ่งตอกย้ำ franchise — แต่ไม่ได้เปลี่ยน Fair Value ของผมที่ 470 ดอลลาร์ ที่ราคา 445 ดอลลาร์ Margin of Safety บางอยู่ราว 5%",
+      "WAF ของ TSMC สูงถึง 8.1 สะท้อนคุณภาพและการเติบโตชั้นยอด แต่ด้วย margin ที่บางและ Expected Return ราว 1% ต่อปีตอนนี้ ผมจึงให้ WATCH — คุณภาพสูงสุดแต่อยากได้ราคาที่ดีกว่านี้"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: คุณภาพสูง near fair value; price hike + AI demand จริง แต่ upside จำกัดที่ราคานี้",
-        "จุดที่ Charlie กังวล: Taiwan Strait geopolitics; overseas fab margin pressure",
-        "ต้อง monitor: customer concentration — verdict ปัจจุบัน AGREE"
+        "ข้อมูลอิสระยืนยัน franchise ที่แข็งแกร่ง — NVIDIA collab, นักวิเคราะห์ Bernstein/BofA บวก, N2 yield ดี TSMC เป็น foundry ที่ขาดไม่ได้จริง",
+        "สิ่งที่ผมระวัง: ราคา 445 ดอลลาร์ใกล้จุดสูงสุด 52 สัปดาห์ 450 = margin บาง บวกความเสี่ยงภูมิรัฐศาสตร์ไต้หวันที่เป็น structural discount และลูกค้ากระจุก Apple บวก NVIDIA 36%",
+        "ผมเห็นด้วยกับ WATCH ของ Warren — คุณภาพสูงสุดแต่ราคาเต็ม FV 470 ให้ margin แค่ราว 5% ควรรอจังหวะที่ดีกว่า"
       ]
     },
-    "idea_th": "ใกล้ FV (MoS +5%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); AI pricing power + price hike 2026 = FV uplift จาก $440→$470",
+    "idea_th": "TSMC เป็น foundry ที่ชิป AI ทุกตัวต้องผ่าน คุณภาพสูงสุดและ franchise แกร่งขึ้นจาก NVIDIA collab แต่ราคาใกล้จุดสูงสุด margin บางราว 5% ให้ WATCH รอจังหวะ",
     "story_gate_th": {
-      "what": "ครอง node ล้ำสุด (N2/A16) + CoWoS packaging ที่ชิป AI ทุกตัวต้องผ่าน",
-      "why": "ประกาศขึ้นราคาท่ามกลาง AI demand + ได้ประโยชน์จาก NVIDIA physical AI wave",
-      "risk": "ความเสี่ยงภูมิรัฐศาสตร์ช่องแคบไต้หวัน + margin จาก fab ต่างประเทศ"
+      "what": "ผู้ผลิตชิปขั้นสูง (N3, N2, A16) ปริมาณมากรายเดียวที่ใช้ในชิป AI ระดับท็อปทุกตัว — ไม่มีทางผลิต AI chip ระดับสูงโดยไม่ผ่าน TSMC",
+      "why": "N2 เข้า HVM yield ดี บวก FY2026 โตเกิน 30% บวก supply ตึงถึง 2027 บวก CapEx 52-56 พันล้านสร้าง moat ที่คู่แข่งตามไม่ทัน",
+      "risk": "ถ้าความตึงเครียดไต้หวันบานปลายถึงขั้นจีนดำเนินการทางทหาร หรือ Apple บวก NVIDIA ลด volume ไป Samsung/Intel เกิน 30%"
     },
     "bull_th": [
-      "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
-      "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
-      "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
-      "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
-      "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
+      "เป็นกระดูกสันหลังการผลิตชิป AI ทั้งโลก — ขาดไม่ได้",
+      "CoWoS เกือบผูกขาด = pricing power บวก lock-in",
+      "FY2026 โตเกิน 30% บวก CAGR 5 ปีราว 25%",
+      "GIGAFAB Arizona กระจายความเสี่ยงภูมิรัฐศาสตร์",
+      "N2 เข้า HVM yield ดี = execution แกร่ง"
     ],
     "risk_th": [
-      "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
-      "US tariff + trade policy uncertainty กระทบ supply chain",
-      "Customer concentration: Apple + NVIDIA + AMD = top 3",
-      "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
-      "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
+      "ความเสี่ยงภูมิรัฐศาสตร์ไต้หวัน = discount ถาวร",
+      "ลูกค้ากระจุก Apple บวก NVIDIA ราว 36%",
+      "N2 บวกโรงงานต่างประเทศกด margin ครึ่งหลัง 2026",
+      "ราคาใกล้จุดสูงสุด 52 สัปดาห์ — margin บาง",
+      "ความเสี่ยง export control (สอบสวน chip diversion)"
     ]
   },
   "NFLX": {
@@ -750,9 +740,9 @@
     "waf": 7.92,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 83.33,
+    "price": 81.56,
     "fv": 121.9,
-    "mos": 31.6,
+    "mos": 33.1,
     "fpe": 24.0,
     "peg": null,
     "scores": {
@@ -778,7 +768,7 @@
       ]
     },
     "idea": "undervalued ~32% — BUY; ราคาย่อจาก $92→$83 (post 10:1 split) เปิด entry ดี",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -792,13 +782,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "content cost inflation",
-        "Disney+/Prime competition",
-        "ad cyclical"
-      ],
-      "summary": "MoS +32% ดีสุดในกลุ่ม (post 10:1 split price $83); password crackdown + ads tier ขับเคลื่อนจริง",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -863,6 +849,151 @@
       "Subscriber growth ceiling ในตลาด developed markets"
     ]
   },
+  "AVGO": {
+    "symbol": "AVGO",
+    "display": "AVGO",
+    "category": "semiconductor",
+    "name": "Broadcom Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "Custom AI Chips + Networking"
+    ],
+    "bull": [
+      "Custom XPU: GXPU (Google), MTIA (Meta), OpenAI XPU = exclusive partnerships",
+      "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
+      "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
+      "VMware integration $8B+ revenue synergy กำลัง materialize",
+      "Dividend + buyback = total return play ที่แข็งแกร่ง"
+    ],
+    "risk": [
+      "ราคาปัจจุบันเกิน Fair Value $350 — รอ pullback ก่อน entry",
+      "Custom XPU customers อาจพัฒนา in-house ลดความ dependency ระยะยาว",
+      "VMware debt overhang จาก acquisition $69B",
+      "Semiconductor cyclicality ใน Enterprise networking",
+      "Hock Tan succession planning ระยะยาว"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 4,
+    "waf": 7.9,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 418.91,
+    "fv": 420,
+    "mos": 0.3,
+    "fpe": 19.7,
+    "peg": null,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        5.5,
+        "orange",
+        55
+      ],
+      "ra": [
+        6.5,
+        "amber",
+        65
+      ]
+    },
+    "idea": "Q2 record AI rev $10.8B (+143%) + Q3 guide $29.4B เหนือ consensus + FY27 AI >$100B — แต่ราคาร่วง -13% จาก software miss + ไม่ raise guidance (supply ไม่ใช่ demand) → thesis แข็งขึ้น แต่ MoS ~0 ยังไม่ใช่จุดเข้า รอย่อสู่ $380",
+    "updated": "2026-06-05",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-06-05",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Broadcom delivers exclusive custom AI accelerators (XPU) for 6 hyperscalers (Google, Anthropic, OpenAI, Meta + 2 unnamed) and near-monopoly Ethernet networking (Tomahawk 100T/Jericho), creating locked-in AI infrastructure revenue — Q2 FY26 AI rev $10.8B (+143% YoY).",
+      "why": "Q2 FY26 รายงาน rev $22.2B (+48%, record) + AI $10.8B (+143%); Q3 guide $29.4B (+84%) **เหนือ** consensus $28.53B, AI ~$16B (+200%); FY26 AI reaffirmed $56B, FY27 line-of-sight >$100B; ราคาร่วง -13% หลัง earnings มาจาก software (VMware) miss + ไม่ raise guidance (supply-constrained) — เป็น sentiment ไม่ใช่ thesis break.",
+      "risk": "หาก Google/Meta scale up in-house chip design teams และลด AVGO XPU dependency >50% ระยะยาว หรือ VMware integration generates significantly less synergy than $8B+ projected."
+    },
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [
+        "ไม่ raise FY26/27 AI guidance ขณะ peers raise = back-end supply ตึง",
+        "COT/share risk: GCP เพิ่ม MediaTek/MRVL เป็น XPU vendor",
+        "$68B debt + $3.2B/yr interest",
+        "ใกล้ 52wH $495 — momentum หุ้น"
+      ],
+      "summary": "Q2 FY26 record AI rev $10.8B (+143%) + Q3 guide $29.4B เหนือ consensus ยืนยัน thesis; การร่วง −13% มาจาก software miss + ไม่ raise guidance ไม่ใช่ demand — Warren FV $420 ที่ราคา = วินัยถูกต้อง รอ margin",
+      "review_date": "2026-06-05"
+    },
+    "tier": "🏛️ Inevitable",
+    "mark_easy": {
+      "one_liner": "ราชาชิป AI แบบสั่งทำ (custom XPU) ให้ยักษ์ใหญ่คลาวด์ + เครือข่าย Ethernet เกือบผูกขาด",
+      "what": "Broadcom ออกแบบชิป AI แบบ custom (XPU) ให้ Google, Meta, OpenAI, Anthropic และทำชิปเครือข่าย Tomahawk ที่เร็วที่สุดในโลก รวมถึงซอฟต์แวร์ VMware",
+      "why_invest": [
+        "รายได้ AI ไตรมาสล่าสุด 10.8 พันล้านดอลลาร์ โต 143% และมีลูกค้า hyperscaler ลึกถึง 6 ราย",
+        "Guidance ไตรมาสหน้า 29.4 พันล้านดอลลาร์ สูงกว่าที่ตลาดคาด — FY27 มองเห็นรายได้ AI เกินแสนล้าน",
+        "Tomahawk เป็นสวิตช์ 100 Tbps รายเดียวในตลาด = เครือข่าย AI ขาดไม่ได้",
+        "กระแสเงินสดมหาศาล + ขึ้นปันผล 15 ปีติด"
+      ],
+      "watch_out": [
+        "รอบนี้ไม่ขึ้น guidance AI ขณะคู่แข่งขึ้น = ติดคอขวดฝั่ง supply ไม่ใช่ demand",
+        "ลูกค้าอย่าง Google เริ่มหา vendor เพิ่ม (MediaTek) = เสี่ยงเสีย share",
+        "หนี้ก้อนโต 68 พันล้านดอลลาร์ จากดีล VMware"
+      ],
+      "bottom_line": "ธุรกิจชั้นยอด หุ้นร่วง 13% หลังงบเพราะ software miss ไม่ใช่ AI พัง — Pete มองว่าใกล้มูลค่าจริงแล้ว แต่ยังไม่มี margin รอย่อหน่อยน่าสนใจ"
+    },
+    "mark_full": {
+      "business_overview": "Broadcom มี 2 ขาหลัก: Semiconductor (58%) ที่โตจากชิป AI แบบ custom (XPU) บวกเครือข่าย Ethernet และ Infrastructure Software (42%) จาก VMware/Symantec ขา AI คือเครื่องยนต์โต — ไตรมาสล่าสุดชิป AI ทำรายได้ 10.8 พันล้านดอลลาร์ โต 143% YoY",
+      "tam": "ตลาดชิป AI แบบ custom กำลังโตระเบิดเมื่อ hyperscaler ต้องการชิปเฉพาะทางสำหรับ LLM ของตัวเอง Broadcom ตั้งเป้ารายได้ AI 56 พันล้านดอลลาร์ปีนี้ และมองเห็นทางเกินแสนล้านใน FY27 จากการ deploy compute ราว 10 GW",
+      "moat": "จุดแข็งที่สุดคือการฝังตัวลึกในการออกแบบชิปของลูกค้า — เปลี่ยน vendor เท่ากับออกแบบใหม่ทั้งหมด เสียเวลาเป็นปี บวกกับ Tomahawk ที่เป็นสวิตช์ 100 Tbps รายเดียว ทำให้คุมทั้งชิปคำนวณและเครือข่าย",
+      "latest_financials": "Q2 FY26 รายได้ 22.2 พันล้านดอลลาร์ โต 48% (สถิติใหม่), GM ราว 77%, EPS 2.44 ดอลลาร์ Guidance Q3 29.4 พันล้านโต 84% สูงกว่า consensus — แต่บริษัทเลือกไม่ขึ้นเป้า AI ทั้งปีเพราะติด supply ฝั่ง back-end ไม่ใช่ demand",
+      "key_points": [
+        "ลูกค้า XPU 6 ราย: Google, Anthropic, OpenAI, Meta บวก 2 รายไม่เปิดชื่อ (PO 6 พันล้าน)",
+        "AI SPV ร่วม Apollo และ Blackstone จัด compute เกิน 20GW ถึงปี 2028",
+        "VMware ARR โต 19% เป็น compounder ที่ AI แทนไม่ได้",
+        "หนี้ 68 พันล้าน บวกดอกเบี้ย 3.2 พันล้านต่อปี เป็นข้อจำกัด"
+      ]
+    },
+    "warren_easy": [
+      "Broadcom คือหนึ่งใน franchise ที่ผมชอบที่สุดในกลุ่ม AI infrastructure — เขาเป็นเกือบผูกขาดทั้งชิป AI แบบ custom ที่ออกแบบให้ hyperscaler รายใหญ่ และชิปเครือข่าย Tomahawk ที่เร็วที่สุด ลูกค้าฝังตัวลึกจนเปลี่ยนยาก",
+      "งบ Q2 ยืนยัน thesis ชัด — AI โต 143% guidance ไตรมาสหน้าเหนือตลาด และมองเห็นรายได้ AI เกินแสนล้านใน FY27 ที่หุ้นร่วง 13% มาจาก software miss บวกตลาดผิดหวังที่ไม่ขึ้นเป้า (ซึ่งจริงๆ ติด supply ไม่ใช่ demand) ผมเลยปรับ Fair Value ขึ้นจาก 380 เป็น 420 ตาม Q3 ที่เร่งตัวจริง",
+      "แต่ที่ราคา 419 ดอลลาร์ Margin of Safety แทบเป็นศูนย์ ผมจึงยังให้ WATCH ถ้าย่อกลับมาแถว 380 จะเป็นจุดเข้าที่มี margin — และต้องจับตา GCP ที่เริ่มหา vendor เพิ่มซึ่งเป็นความเสี่ยงระยะกลาง"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "จากข้อมูลอิสระ งบ Q2 ยืนยันของจริง: AI รายได้ 10.8 พันล้าน โต 143%, Q3 guide เหนือ consensus, FY27 มองเห็นทางเกินแสนล้าน การที่หุ้นร่วง 13% มาจาก software miss บวก profit-taking ไม่ใช่ demand AI พัง — UBS ยังคง Buy PT 485",
+        "สิ่งที่ผมกังวล: บริษัทไม่ขึ้นเป้า AI ขณะคู่แข่งขึ้น = ติด supply back-end จริง และมีสัญญาณว่า Google กำลัง ramp vendor เพิ่ม (MediaTek หรืออาจรวม Marvell) ซึ่งเป็น COT risk ต่อตำแหน่ง Anthropic-TPU ของ Broadcom",
+        "สรุป ผมเห็นด้วยกับ WATCH ของ Warren — FV 420 ที่ราคาให้ margin แทบเป็นศูนย์ ต้องจับตาว่าจะย่อให้เข้าได้ไหม และ track ว่า hyperscaler หา vendor ทางเลือกเร็วแค่ไหน"
+      ]
+    },
+    "idea_th": "Broadcom เป็นเกือบผูกขาดชิป AI แบบ custom บวกเครือข่าย Tomahawk ที่ลูกค้าฝังตัวลึก งบ Q2 ยืนยัน AI โต 143% และ FY27 เห็นทางเกินแสนล้าน แต่ราคาหลังร่วง 13% ยังไม่มี margin ของความปลอดภัย รอย่อ",
+    "story_gate_th": {
+      "what": "ออกแบบชิป AI แบบ custom (XPU) ให้ 6 hyperscaler บวกชิปเครือข่าย Tomahawk 100T รายเดียวในตลาด สร้างรายได้ AI ที่ล็อกไว้ยาว",
+      "why": "Q2 รายได้ AI 10.8 พันล้าน (โต 143%), Q3 guide เหนือ consensus, FY26 AI 56 พันล้าน สู่ FY27 เกินแสนล้าน การร่วง 13% หลังงบมาจาก software miss ไม่ใช่ thesis พัง",
+      "risk": "ถ้า Google หรือ Meta สร้างทีมชิปในบ้านจนลดพึ่ง Broadcom เกิน 50% หรือ VMware synergy น้อยกว่าคาดมาก"
+    },
+    "bull_th": [
+      "ชิป AI แบบ custom โครงสร้างเปลี่ยนถาวร — hyperscaler ต้องการชิปเฉพาะทาง Broadcom เป็นผู้ได้ประโยชน์หลัก",
+      "มองเห็นรายได้ชัด: backlog ราว 45 พันล้าน บวก FY27 AI เกินแสนล้าน",
+      "Tomahawk 6 เป็นสวิตช์ 100T รายเดียว บวกเป็นเจ้าเดียวที่ทำ DSP optical 1.6T",
+      "VMware เป็น compounder: ARR โต 19%, AI แทนที่ไม่ได้",
+      "กระแสเงินสดมหาศาล บวกปันผลขึ้น 15 ปีติด บวก buyback 10 พันล้าน"
+    ],
+    "risk_th": [
+      "รอบนี้ไม่ขึ้นเป้า AI = ติดคอขวด supply ฝั่ง back-end",
+      "Google เริ่มหา vendor เพิ่ม (MediaTek) = เสี่ยงเสีย share ระยะกลาง",
+      "หนี้ 68 พันล้าน บวกดอกเบี้ย 3.2 พันล้านต่อปี จำกัดความยืดหยุ่น",
+      "Global minimum tax กด EPS FY26",
+      "ลูกค้ากระจุก — single distributor 42% ของรายได้"
+    ]
+  },
   "GOOGL": {
     "symbol": "GOOGL",
     "display": "GOOGL",
@@ -894,9 +1025,9 @@
     "waf": 7.75,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 361.85,
+    "price": 372.19,
     "fv": 376,
-    "mos": 3.8,
+    "mos": 1.0,
     "fpe": 26.5,
     "peg": null,
     "scores": {
@@ -922,7 +1053,7 @@
       ]
     },
     "idea": "ใกล้ FV (MoS +4%) — คุณภาพสูง Tier 🏛️ (ยังไม่เข้า STARTER band — MoS ขาด Gate >7 จุด); รอ MoS ขยายเข้า Gate",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -934,15 +1065,11 @@
       "risk": "หาก DOJ Search remedy บังคับยกเลิก Apple TAC deal (~$18-20B revenue สูญเสีย) และ DOJ Ad Tech divestiture เกิดขึ้นพร้อมกัน ทำให้ business model หลักเสียหายถาวร."
     },
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "DOJ antitrust remedy",
-        "CapEx $180-190B",
-        "AI search disruption"
-      ],
-      "summary": "near fair value แต่ DOJ antitrust (Chrome/Android divest) เป็น overhang ที่ market อาจ underprice",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🏛️ Inevitable",
     "mark_easy": {
@@ -1035,14 +1162,14 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 4,
-    "waf": 7.67,
+    "waf": 7.55,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 1705.37,
+    "price": 1757.47,
     "fv": 1750,
-    "mos": 2.6,
-    "fpe": 33.81,
-    "peg": 2.42,
+    "mos": -0.4,
+    "fpe": 36.8,
+    "peg": null,
     "scores": {
       "bq": [
         9.5,
@@ -1055,9 +1182,9 @@
         80
       ],
       "va": [
-        5.5,
+        5.0,
         "orange",
-        55
+        50
       ],
       "ra": [
         7.0,
@@ -1065,12 +1192,12 @@
         70
       ]
     },
-    "idea": "Buy on pullback to $1300-1400 (P/E ~28x) for 5-year compounder play on EUV monopoly + AI-driven semi capex supercycle.",
-    "updated": "2026-06-03",
+    "idea": "กลายเป็นหุ้นมูลค่าสูงสุดในยุโรปท่ามกลาง AI boom — แต่ราคา +9% ลบ MoS เกือบหมด (อยู่ที่ Base FV $1750 พอดี); Warren รอ pullback $1300-1400 (P/E ~28x)",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-05-31",
+      "updated": "2026-06-05",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "ASML is the sole global producer of EUV lithography systems—the only machines capable of patterning leading-edge transistors—beating competitors via a multi-decade ecosystem moat (Zeiss optics, TRUMPF light sources) that cannot be replicated.",
@@ -1078,77 +1205,78 @@
       "risk": "A major customer (TSMC or Samsung) delays leading-edge node ramp by 12+ months, or US/EU export restrictions expand to broader DUV categories, breaking the order book."
     },
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "CAUTION",
       "verified_claims": [],
       "concerns": [
-        "China export controls",
-        "semi cyclicality",
-        "High-NA deployment ช้า"
+        "ราคาที่ all-time high, forward PE ~37×",
+        "China 36%→19% เร็ว",
+        "node delay ที่ TSMC/Samsung จะกระทบ order book",
+        "sentiment-driven (หุ้นมูลค่าสูงสุดยุโรป)"
       ],
-      "summary": "near fair value (FV $1750 vs $1705); EUV monopoly แข็ง แต่ entry ที่ราคานี้ upside จำกัด",
-      "review_date": "2026-06-03"
+      "summary": "EUV monopoly คุณภาพสูงสุดจริง แต่ราคา $1757 ชน 52wH $1779 (all-time high) + +9% รอบเดียว = MoS หมด; Warren FV $1750 ตรงราคาพอดี — รอ pullback ถูกต้อง",
+      "review_date": "2026-06-05"
     },
     "tier": "🏛️ Inevitable",
     "mark_easy": {
-      "one_liner": "เจ้าเดียวในโลกที่ผลิตเครื่องพิมพ์ชิประดับ EUV — ไม่มี ASML ก็ไม่มีชิปรุ่นใหม่",
-      "what": "ASML คือผู้ผลิตเครื่อง Lithography ที่ใช้ \"วาดลวดลาย\" บนชิปเซมิคอนดักเตอร์ที่เล็กที่สุดที่มนุษย์ทำได้ เครื่อง EUV ของ ASML เป็นเทคโนโลยีที่ไม่มีบริษัทไหนในโลกทำได้อีก — ทุก fab อย่าง TSMC, Samsung, Intel ต้องซื้อจาก ASML เท่านั้น รายได้มาจากสองส่วน คือขายเครื่องใหม่ (~75%) และรายได้บริการ/อัพเกรดเครื่องเก่า (~25%) ที่โตแบบ Recurring",
+      "one_liner": "ผู้ผลิตเครื่อง EUV รายเดียวในโลก — ขาดไม่ได้สำหรับชิปขั้นสูงทุกตัว",
+      "what": "ASML เป็นผู้ผลิตเครื่อง lithography EUV รายเดียวในโลก เครื่องที่จำเป็นต้องใช้ในการผลิตชิปขั้นสูงทุกตัว ไม่มีใครทำแทนได้",
       "why_invest": [
-        "Monopoly ที่แท้จริง — ไม่มีคู่แข่งทั้งโลกในตลาด EUV ซึ่งจำเป็นต่อการผลิตชิปขนาด 7nm ลงไปทุกตัว",
-        "2027 EUV supply shortage — management ประกาศเองว่า demand จะเกิน supply ในปี 2027 สะท้อน pricing power ที่จะเพิ่มขึ้น",
-        "High-NA EUV รุ่นใหม่ราคา M ต่อเครื่อง — เป็น next catalyst สำหรับชิป A14/A10 node ปี 2028 ที่ยังไม่ถูก price in เต็มที่",
-        "IBM revenue (Service) โต +24% YoY ใน Q1 2026 — ยิ่ง EUV installed base ใหญ่ขึ้น รายได้ recurring ก็โตตามโดยอัตโนมัติ"
+        "ผูกขาด EUV 100% — ลูกค้าที่ต้องการ node ขั้นสูงไม่มีทางเลือกอื่น",
+        "guidance ปี 2026 ปรับขึ้นเป็น 36-40 พันล้านยูโร",
+        "วัฏจักร AI infrastructure จะอยู่ถึงปี 2028-2030 อย่างน้อย",
+        "รายได้ service (IBM) เป็นเครื่องยนต์โตที่แยกจากวัฏจักรเครื่องจักร"
       ],
       "watch_out": [
-        "ราคาตอนนี้เกิน Fair Value ประมาณ 9% — ไม่ใช่จังหวะ BUY ที่ดี รอ pullback ก่อน",
-        "China เคยคิดเป็น 36% ของ system sales แต่ลดเหลือ 19% ในไตรมาสเดียว — export control escalation อีกรอบกระทบหนักแน่",
-        "Customer concentration สูง — TSMC + Samsung รวมกัน 38% ของรายได้ ถ้าสองเจ้านี้ชะลอ capex กระทบทันที"
+        "ราคาแตะจุดสูงสุดตลอดกาล บวกขึ้น 9% รอบเดียว = margin หมด",
+        "ความเสี่ยงจีน — สัดส่วนยอดขายลดจาก 36% เหลือ 19% เร็วมาก",
+        "การกระจุกตัวเชิงภูมิรัฐศาสตร์ใน Taiwan บวก Korea 68%"
       ],
-      "bottom_line": "Pete มองว่า ASML คือธุรกิจที่ดีที่สุดตัวหนึ่งที่มีอยู่ในโลก — แต่ราคาตอนนี้ยังแพงกว่า fair value อยู่ ถ้าอยากถือก็รอจังหวะที่ราคาลงมาใกล้ ,498 หรือต่ำกว่า ถึงจะคุ้มค่าจริงๆ"
+      "bottom_line": "ผูกขาดคุณภาพสูงสุดของจริง แต่ราคาวิ่งชนจุดสูงสุดตลอดกาลจน margin หมด — Pete มองว่ารอย่อกลับมาแถว 1,300-1,400 น่าสนใจกว่า"
     },
     "mark_full": {
-      "business_overview": "ASML เป็นบริษัทเนเธอร์แลนด์ที่ผูกขาดตลาด EUV Lithography — เครื่องจักรที่ใช้แสงอัลตราไวโอเลตระดับสุดขีดในการ \"วาด\" ลวดลายของ transistor บนซิลิกอน เงินมาจากสองทาง คือขายเครื่องใหม่ (Net System Sales ประมาณ 75% ของรายได้) และ Installed Base Management หรือบริการ + อัพเกรดเครื่องที่ลูกค้าซื้อไปแล้ว (25%) ซึ่งโตแบบ recurring เร็วกว่า system sales เสียอีก ใน FY2025 รายได้รวม €32.7B โต +15.6% YoY และ operating margin แตะ 34.6%",
-      "tam": "อุตสาหกรรมเซมิคอนดักเตอร์คาดแตะ  Trillion ภายในปี 2030 ด้วย CAGR ประมาณ 9% per year — ขับเคลื่อนโดย AI infrastructure, Memory supercycle, และ Advanced Packaging ASML เองตั้งเป้า revenue opportunity ระยะยาวที่ €44B – €60B ภายในปี 2030 พร้อม gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก catalyst หลักคือ AI data center ที่ต้องการ chip ประมวลผลแรงขึ้นทุกปี ทำให้ TSMC และ Samsung เร่ง capex ต่อเนื่อง",
-      "moat": "MOAT ที่แข็งแกร่งที่สุดของ ASML คือการเป็นเจ้าเดียวในโลกที่ผลิต EUV ได้ — เกิดจากการสะสม IP, know-how, และ ecosystem ที่ซับซ้อนมาหลายทศวรรษ Carl Zeiss SMT ทำ optics, Cymer/TRUMPF ทำ light source ทั้งหมดนี้ทำงานร่วมกันเป็น integrated system ที่ไม่มีใครสร้างซ้ำได้ในเวลาสั้น นอกจากนี้ ASML ยังรวม software + metrology เข้ากับ hardware เป็น \"Holistic Lithography Platform\" ที่ทำให้ลูกค้าติด ecosystem และมี switching cost สูงมาก อีกทั้งยังออก performance upgrades สำหรับเครื่องเดิม ทำให้ลูกค้าจ่ายซ้ำโดยไม่ต้องซื้อเครื่องใหม่",
-      "latest_financials": "Q1 2026 รายได้ €8,767M โต +13.2% YoY, Gross Margin 53.0%, Operating Margin 36.0%, EPS €7.15 โต +19.2% YoY IBM (service) revenue โต +24.3% เร็วกว่า system sales +9.4% สะท้อน recurring engine ที่แข็งแกร่ง FY2026 guidance อัพเดทล่าสุดคือ €36B – €40B (ปรับขึ้นจาก €34-39B) โดยรายได้จะหนักใน H2 2026 สอดคล้องกับ EUV delivery schedule",
+      "business_overview": "ASML เป็นผู้ผลิตเครื่อง lithography ที่ขาดไม่ได้ในการผลิตเซมิคอนดักเตอร์ โดยเฉพาะเครื่อง EUV ที่เป็นผู้ผลิตรายเดียวในโลก รายได้มาจากการขายเครื่องบวกรายได้ service (IBM) ที่เป็น recurring",
+      "tam": "ทุกชิปขั้นสูง (AI, memory) ต้องผ่านเครื่อง ASML วัฏจักร AI ดันดีมานด์ทั้ง EUV และ DUV โอกาสรายได้ปี 2030 อยู่ที่ 44-60 พันล้านยูโร บวก gross margin 56-60%",
+      "moat": "ผูกขาด EUV จาก ecosystem moat หลายทศวรรษ (เลนส์ Zeiss, แหล่งกำเนิดแสง TRUMPF) ที่ลอกเลียนไม่ได้ — ไม่มีทางเลือกอื่นสำหรับ node ขั้นสูง",
+      "latest_financials": "guidance ปี 2026 ปรับขึ้นเป็น 36-40 พันล้านยูโร สะท้อนดีมานด์แข็งทั้ง EUV และ DUV รายได้ IBM โต 24% YoY เป็น structural growth ROE 52% บวก operating margin 36% สะท้อน pricing power",
       "key_points": [
-        "2027 EUV supply shortage — management ระบุ demand จะเกิน supply แสดงว่า backlog visibility แน่นอยู่อีก 2-3 ปีข้างหน้า",
-        "High-NA EUV (EXE Series) ประมวลผลชิปไปแล้วกว่า 500,000 wafers ณ Q1 2026 พร้อมสำหรับ volume ramp ปี 2028",
-        "IBM revenue เป็น flywheel — ยิ่ง EUV installed base โต รายได้ service ยิ่งโตตาม ลด cyclicality ของ equipment business",
-        "ASML วางแผนจ้าง 1,000 คนในไต้หวัน (พ.ค. 2026) เพื่อรองรับความต้องการของลูกค้า — สะท้อนการเติบโตที่ยังเร่งตัวอยู่"
+        "2027 มีการ flag EUV supply shortage ชัดเจน = pricing power เพิ่ม",
+        "High-NA EUV ramp เป็น catalyst รุ่นถัดไป",
+        "เพิ่งกลายเป็นหุ้นมูลค่าสูงสุดในยุโรปประวัติการณ์",
+        "China ลดจาก 36% เหลือ 19% ใน 1 ไตรมาส"
       ]
     },
     "warren_easy": [
-      "Warren ถือ ASML เพราะเป็นหนึ่งในไม่กี่บริษัทในโลกที่มี monopoly แบบ structural จริงๆ — ไม่ใช่แค่ market share ที่สูง แต่เป็นเจ้าเดียวในโลกที่ผลิต EUV Lithography ได้ ทำให้ทุก fab ที่อยากผลิตชิป advanced node ต้องมาหา ASML เท่านั้น MOAT นี้สร้างมาหลายทศวรรษและไม่สามารถ replicate ได้ในเวลาสั้น BQ score 9.5/10 สูงที่สุดในพอร์ต",
-      "ทำไมตอนนี้ถึงน่าจับตา — management ประกาศเองว่า 2027 จะมี EUV supply shortage แปลว่า demand แน่นอยู่อีก 2-3 ปี FY2026 guidance ถูกปรับขึ้นเป็น €36-40B พร้อม High-NA EUV ราคา M/unit ที่กำลัง ramp สู่ volume production ปี 2028 สิ่งที่ตลาดยังไม่ price-in เต็มที่คือ 2030 revenue target ที่ €44-60B + gross margin 56-60% ซึ่งสูงกว่าระดับปัจจุบันมาก",
-      "กลยุทธ์: Warren ให้ status WATCH เพราะราคา ,640 เกิน Base FV ,498 อยู่ 9% — ยังไม่ถึง MoS gate 15% Conviction ระดับ HIGH แต่รอจังหวะซื้อที่ดีกว่า ถ้าราคาปรับลงมาใกล้ ,350-1,400 จะน่าสนใจมาก เป็นหุ้นที่ Warren จะ BUY ทันทีเมื่อราคาเข้าเกณฑ์"
+      "ASML คือธุรกิจ Inevitable แบบที่ผมชอบที่สุด — เป็นผู้ผลิตเครื่อง EUV รายเดียวในโลก เครื่องที่ชิปขั้นสูงทุกตัวขาดไม่ได้ ecosystem moat หลายทศวรรษทำให้ไม่มีใครลอกเลียนได้ ROE 52% สะท้อน pricing power ที่ไร้คู่แข่ง",
+      "ปัญหาตอนนี้ไม่ใช่ธุรกิจ แต่เป็นราคา — หุ้นเพิ่งกลายเป็นมูลค่าสูงสุดในยุโรปและวิ่งขึ้น 9% รอบเดียวจนแตะจุดสูงสุดตลอดกาล ทำให้ Margin of Safety แทบหมด ราคา 1,757 ดอลลาร์อยู่ที่ Fair Value Base 1,750 พอดี",
+      "ผมจึงคงวินัยรอ pullback — จุดเข้าที่ผมอยากได้คือแถว 1,300-1,400 ดอลลาร์ (PE ราว 28 เท่า) ซึ่งจะให้ margin ที่เหมาะกับ compounder 5 ปี ตอนนี้ให้ WATCH"
     ],
     "charlie_easy": {
-      "verdict": "AGREE",
+      "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยันได้จากข้อมูลอิสระว่า Q1 2026 earnings beat expectations ได้จริง — Revenue €8,767M, EPS €7.15 โต +19.2% YoY, FY2026 guidance ถูกปรับขึ้นเป็น €36-40B EUV monopoly ยังสมบูรณ์อยู่ ไม่มีคู่แข่งที่ใกล้เคียง WAF 7.92 สะท้อน business quality สูงมาก Charlie เห็นด้วยกับ Warren ในเรื่องพื้นฐานธุรกิจ",
-        "Charlie กังวลใน 3 เรื่อง: หนึ่ง — TSMC เลื่อน High-NA EUV deployment ออกไปถึงปี 2029 ทำให้ catalyst สำคัญช้ากว่าที่คาด สอง — China เคยเป็น 29% ของรายได้ปี 2025 แต่กำลังถูก squeeze ลงเรื่อยๆ จาก export controls ถ้า tighten เพิ่มกระทบรายได้ทันที สาม — PEG 1.72 ยังเกิน ceiling 1.5 ของระบบ ราคายังแพงกว่า fair value อยู่",
-        "Charlie สรุปว่า ASML เป็นบริษัทที่ดีมากจริงๆ และ Warren วิเคราะห์ถูกต้อง แต่ WATCH เพราะราคาเกิน FV — สิ่งที่ต้อง monitor คือ: ราคาหุ้นปรับลงมาใกล้ ,350-1,400, ข่าว export control จากรัฐบาลสหรัฐหรือ EU, และ High-NA EUV qualification timeline ของ TSMC"
+        "ผมยืนยันได้ว่า EUV monopoly เป็นของจริงและคุณภาพสูงสุด — IBM โต 24%, guidance ปรับขึ้น, 2027 EUV shortage flagged แต่ราคา 1,757 ดอลลาร์ชนจุดสูงสุดตลอดกาล 1,779 และวิ่ง 9% รอบเดียว = Margin of Safety หายไปหมด",
+        "สิ่งที่ผมกังวล: นี่เป็น sentiment-driven re-rate (ข่าวหุ้นมูลค่าสูงสุดยุโรป) ไม่ใช่พื้นฐานเปลี่ยน forward PE ราว 37 เท่า บวกความเสี่ยงจีนที่ลดเร็วและการกระจุก Taiwan/Korea 68%",
+        "ผมให้ CAUTION — เห็นด้วยว่าธุรกิจเยี่ยมและ Warren ตั้ง WATCH ถูก แต่ที่ราคานี้ไม่มี margin ของความปลอดภัยเลย ต้องรอ pullback จริงๆ"
       ]
     },
-    "idea_th": "ASML คือ sole supplier ของเครื่อง EUV Lithography ที่ไม่มีทางแทนที่ได้ในห่วงโซ่การผลิต semiconductor โลก — 2027 supply shortage ที่ management เตือนเองสะท้อนว่า backlog แน่นอยู่อีก 2-3 ปี แต่รอจังหวะราคาเข้าเกณฑ์ก่อนซื้อ",
+    "idea_th": "ASML ผูกขาดเครื่อง EUV รายเดียวในโลกที่ชิปขั้นสูงทุกตัวขาดไม่ได้ คุณภาพสูงสุด แต่ราคาวิ่งชนจุดสูงสุดตลอดกาลจน margin หมด รอย่อกลับมาแถว 1,300-1,400 น่าสนใจกว่า",
     "story_gate_th": {
-      "what": "ASML เป็นผู้ผลิต EUV Lithography Systems เพียงรายเดียวในโลก — เครื่องจักรที่ใช้วาดลวดลายชิปขนาดเล็กที่สุดที่มนุษย์ผลิตได้ ทุก fab ที่อยากผลิตชิปรุ่นใหม่ต้องซื้อจาก ASML เท่านั้น ไม่มีตัวเลือกอื่น",
-      "why": "ปี 2027 จะเกิด EUV supply shortage — management ระบุเองว่า demand จะเกินกำลังการผลิต ขณะที่ TSMC กำลัง ramp N2 node และ High-NA EUV สำหรับ A14 ปี 2028 กำลังเข้าสู่ volume production ทำให้ backlog visibility แน่นอีก 2-3 ปีข้างหน้า",
-      "risk": "ถ้าเกิด semiconductor capex crash จาก recession ทำให้ TSMC/Samsung ชะลอ EUV orders, หรือ US/EU ออก export control ใหม่ที่ตัด DUV China revenue โดยกะทันหัน ทั้งสองกรณีนี้จะทำให้ thesis หลักสั่นคลอน"
+      "what": "ผู้ผลิตเครื่อง EUV รายเดียวในโลก — เครื่องเดียวที่ทำ transistor ขั้นสูงได้ ด้วย ecosystem moat (Zeiss, TRUMPF) ที่ลอกไม่ได้",
+      "why": "ตลาดมองเป็น semicap ใกล้พีค แต่ Warren เห็น High-NA EUV ramp บวก IBM recurring โต 24% บวก guidance ปรับขึ้น = ดีมานด์ structural จาก AI ที่ยังไม่ price-in เต็ม",
+      "risk": "ถ้าลูกค้าใหญ่ (TSMC/Samsung) เลื่อน node ขั้นสูง 12 เดือนขึ้นไป หรือ export restriction ขยายสู่ DUV วงกว้าง"
     },
     "bull_th": [
-      "EUV monopoly ถาวร — ไม่มีบริษัทไหนในโลกที่ใกล้เคียงกับการสร้าง EUV ได้ และสิ่งนี้จะไม่เปลี่ยนในทศวรรษนี้ ทำให้ ASML มี pricing power สูงมาก",
-      "2027 EUV supply shortage — demand จาก TSMC, Samsung, SK Hynix เกินกว่า ASML ผลิตได้ สะท้อน backlog ที่แน่นมากและโอกาสขึ้นราคาอีก",
-      "High-NA EUV ราคา M/unit สำหรับชิป A14/A10 node — เป็น next wave ที่ยังไม่ถูก price in เต็มที่ หากลูกค้า qualify สำเร็จ revenue ต่อเครื่องจะสูงกว่าเดิมมาก",
-      "IBM (Service) revenue เป็น structural growth engine ที่โต +24% YoY โดยไม่ขึ้นกับ equipment cycle — ยิ่ง installed base ใหญ่ รายได้ recurring ยิ่งโต",
-      "2030 revenue opportunity €44-60B + gross margin 56-60% — ถ้า semiconductor industry แตะ T ตามคาด ASML จะเป็นหนึ่งในผู้ได้ประโยชน์มากที่สุด"
+      "ผูกขาด EUV — ไม่มีทางเลือกอื่นสำหรับ node ขั้นสูง",
+      "guidance 2026 ปรับขึ้น 36-40 พันล้านยูโร = ดีมานด์แข็ง",
+      "วัฏจักร AI ถึง 2028-2030 อย่างน้อย",
+      "2027 EUV shortage = pricing power เพิ่ม",
+      "IBM revenue เป็น structural growth แยกจากวัฏจักรเครื่อง"
     ],
     "risk_th": [
-      "Export controls จีน — China เคยคิดเป็น 29% ของรายได้ ลดเหลือ 19% ในไตรมาสเดียว ถ้า US/EU/NL ออก restrictions เพิ่มเติมกระทบรายได้ทันที และยังมีการ suspend US Affiliates Rule อยู่ถึง Nov 2026",
-      "Customer concentration สูงมาก — TSMC + Samsung รวมกัน 38% ของรายได้ปี 2025 และ Taiwan + South Korea คิดเป็น 68% ของ system sales ถ้าสองประเทศนี้มีปัญหา geopolitical กระทบทันที",
-      "Single-source supplier Carl Zeiss SMT — เป็น sole supplier ของ precision optics สำหรับ EUV ทั้งหมด ถ้ามีปัญหาที่ Zeiss กระทบ production โดยตรงโดยไม่มีทางเลือก",
-      "Semiconductor capex cyclicality — unit sales ลดจาก 449 (2023) → 418 (2024) → 327 (2025) แม้ revenue โตเพราะ ASP สูงขึ้น แต่ถ้า cycle หันทิศทาง orders อาจชะลอกะทันหัน",
-      "High-NA EUV execution risk — TSMC เลื่อน deployment ถึงปี 2029 และยังอยู่ใน early adoption phase ถ้า qualification ล้มเหลวหรือล่าช้ากว่าที่คาด จะกระทบ long-term revenue thesis"
+      "ราคาชนจุดสูงสุดตลอดกาล, forward PE ราว 37 เท่า",
+      "China ลดจาก 36% เหลือ 19% เร็ว — regulatory เข้มขึ้น",
+      "การกระจุก Taiwan บวก Korea 68% ของยอดขาย",
+      "node delay ที่ TSMC/Samsung จะกระทบ order book",
+      "gross margin แปรผันตาม product mix"
     ]
   },
   "ETN": {
@@ -1182,9 +1310,9 @@
     "waf": 7.37,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 417.62,
+    "price": 418.61,
     "fv": 430,
-    "mos": 2.9,
+    "mos": 2.6,
     "fpe": 25.5,
     "peg": 3.02,
     "scores": {
@@ -1210,7 +1338,7 @@
       ]
     },
     "idea": "Buy on pullback below $360 (10%+ MoS); core AI-infrastructure pick-and-shovel with multi-year backlog visibility and Q4 2026 margin inflection catalyst.",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1224,13 +1352,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "post-Boyd net debt $20B",
-        "DC capex concentration",
-        "margin ramp cost ระยะสั้น"
-      ],
-      "summary": "near fair value (FV $430 vs $418); AI power backlog แกร่ง แต่ post-Boyd debt $20B ลด flexibility",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -1295,150 +1419,6 @@
       "DC orders +240% YoY สูงมากจน sustain ได้ยาก — ถ้า hyperscalers pause capex แม้ชั่วคราว Eaton จะ miss order run rate อย่างรวดเร็ว"
     ]
   },
-  "AVGO": {
-    "symbol": "AVGO",
-    "display": "AVGO",
-    "category": "semiconductor",
-    "name": "Broadcom Inc.",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "Custom AI Chips + Networking"
-    ],
-    "bull": [
-      "Custom XPU: GXPU (Google), MTIA (Meta), OpenAI XPU = exclusive partnerships",
-      "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
-      "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
-      "VMware integration $8B+ revenue synergy กำลัง materialize",
-      "Dividend + buyback = total return play ที่แข็งแกร่ง"
-    ],
-    "risk": [
-      "ราคาปัจจุบันเกิน Fair Value $350 — รอ pullback ก่อน entry",
-      "Custom XPU customers อาจพัฒนา in-house ลดความ dependency ระยะยาว",
-      "VMware debt overhang จาก acquisition $69B",
-      "Semiconductor cyclicality ใน Enterprise networking",
-      "Hock Tan succession planning ระยะยาว"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 4,
-    "waf": 7.2,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 481.57,
-    "fv": 380,
-    "mos": -26.7,
-    "fpe": 22.7,
-    "peg": null,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        3.0,
-        "orange",
-        30
-      ],
-      "ra": [
-        7.0,
-        "amber",
-        70
-      ]
-    },
-    "idea": "ราคาเกิน FV ~27% — รอ pullback; Citi top pick + custom XPU momentum แต่ valuation ตึง",
-    "updated": "2026-06-03",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-06-03",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Broadcom delivers exclusive custom AI accelerators (XPU) for hyperscalers (Google GXPU, Meta MTIA, OpenAI, Apple, 6th customer) and near-monopoly Ethernet networking (Tomahawk/Jericho), creating locked-in AI infrastructure revenue growing 106% YoY.",
-      "why": "Custom XPU revenue targeting $15B by FY2028 from $6.1B FY2025 (+146%); Q2 FY2026 guidance $22B (+11% QoQ); VMware $8B+ synergies materializing; 6th XPU customer (likely Microsoft) announced.",
-      "risk": "หาก Google/Meta scale up in-house chip design teams และลด AVGO XPU dependency >50% ระยะยาว หรือ VMware integration generates significantly less synergy than $8B+ projected."
-    },
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [
-        "custom XPU customers อาจ in-house",
-        "VMware debt",
-        "cyclicality"
-      ],
-      "summary": "ธุรกิจแกร่ง (custom XPU + Ethernet) แต่ market $482 เกิน FV $380 ~27% — priced for perfection",
-      "review_date": "2026-06-03"
-    },
-    "tier": "🔁 Cyclical",
-    "mark_easy": {
-      "one_liner": "ราชาชิป custom ของ hyperscaler — ธุรกิจแกร่งแต่ราคาแพงไปแล้ว",
-      "what": "Broadcom ออกแบบชิป custom AI (XPU) ให้ Google/Meta/OpenAI + ครอง networking chip สำหรับ AI cluster",
-      "why_invest": [
-        "Custom XPU: GXPU (Google), MTIA (Meta), OpenAI XPU = exclusive partnerships",
-        "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
-        "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
-        "VMware integration $8B+ revenue synergy กำลัง materialize"
-      ],
-      "watch_out": [
-        "ราคาปัจจุบันเกิน Fair Value $350 — รอ pullback ก่อน entry",
-        "Custom XPU customers อาจพัฒนา in-house ลดความ dependency ระยะยาว",
-        "VMware debt overhang จาก acquisition $69B"
-      ],
-      "bottom_line": "ธุรกิจ custom silicon ดีเยี่ยมแต่ราคาเกินมูลค่า ~27% — รอ pullback"
-    },
-    "mark_full": {
-      "business_overview": "รายได้จาก Semiconductor (custom XPU + networking) + Software (VMware) ที่สร้าง recurring",
-      "tam": "ตลาด custom AI silicon โต 3x AVGO + MRVL รวมกัน targeting $30B+ ภายใน FY2028",
-      "moat": "ความสัมพันธ์ exclusive กับ hyperscaler + Ethernet AI near-monopoly + R&D scale",
-      "latest_financials": "AI revenue FY2025 $12.2B +106% YoY; VMware synergy $8B+ กำลัง materialize",
-      "key_points": [
-        "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
-        "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
-        "VMware integration $8B+ revenue synergy กำลัง materialize",
-        "Dividend + buyback = total return play ที่แข็งแกร่ง"
-      ]
-    },
-    "warren_easy": [
-      "Broadcom คือคู่หูลับของ hyperscaler — ออกแบบชิป custom ให้ Google/Meta/OpenAI และครอง Ethernet ของ AI cluster",
-      "ที่ ~$482 เกิน Fair Value $380 ราว 27% — priced for perfection รอย่อ",
-      "WATCH — รอราคาย่อก่อน ของดีแต่จ่ายแพงไป"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: ธุรกิจแกร่ง (custom XPU + Ethernet) แต่ market $482 เกิน FV $380 ~27% — priced for perfection",
-        "จุดที่ Charlie กังวล: custom XPU customers อาจ in-house; VMware debt",
-        "ต้อง monitor: cyclicality — verdict ปัจจุบัน AGREE"
-      ]
-    },
-    "idea_th": "ราคาเกิน FV ~27% — รอ pullback; Citi top pick + custom XPU momentum แต่ valuation ตึง",
-    "story_gate_th": {
-      "what": "Custom XPU ให้ hyperscaler รายใหญ่ + Tomahawk/Jericho Ethernet near-monopoly",
-      "why": "AI revenue +106% YoY + ถูกเลือกเป็น top semiconductor pick",
-      "risk": "ลูกค้า custom XPU อาจพัฒนา in-house + VMware debt overhang"
-    },
-    "bull_th": [
-      "Custom XPU: GXPU (Google), MTIA (Meta), OpenAI XPU = exclusive partnerships",
-      "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
-      "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
-      "VMware integration $8B+ revenue synergy กำลัง materialize",
-      "Dividend + buyback = total return play ที่แข็งแกร่ง"
-    ],
-    "risk_th": [
-      "ราคาปัจจุบันเกิน Fair Value $350 — รอ pullback ก่อน entry",
-      "Custom XPU customers อาจพัฒนา in-house ลดความ dependency ระยะยาว",
-      "VMware debt overhang จาก acquisition $69B",
-      "Semiconductor cyclicality ใน Enterprise networking",
-      "Hock Tan succession planning ระยะยาว"
-    ]
-  },
   "AMD": {
     "symbol": "AMD",
     "display": "AMD",
@@ -1470,9 +1450,9 @@
     "waf": 7.03,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 521.54,
+    "price": 523.2,
     "fv": 467,
-    "mos": -11.7,
+    "mos": -12.0,
     "fpe": 39.8,
     "peg": null,
     "scores": {
@@ -1498,7 +1478,7 @@
       ]
     },
     "idea": "ราคาเกิน FV ~12% — รอ pullback; Venice EPYC ramp + $10B Taiwan เป็น catalyst ระยะกลาง",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1512,13 +1492,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "ROCm ตาม CUDA หลายปี",
-        "AI GPU rev gap vs NVDA ใหญ่",
-        "ราคา momentum-driven"
-      ],
-      "summary": "market price $522 เกิน Warren FV $467 ~12% — overvalued จริง, ควรรอ; Venice ramp เป็น positive แต่ priced-in",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -1583,6 +1559,146 @@
       "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
     ]
   },
+  "SPCX": {
+    "symbol": "SPCX",
+    "display": "SPCX",
+    "category": "pre_ipo",
+    "name": "Space Exploration Technologies Corp.",
+    "sector": "Space & AI",
+    "sectorSlug": "space",
+    "chips": [
+      "Space & AI",
+      "Pre-IPO"
+    ],
+    "bull": [
+      "Starlink 10.3M subscribers (Q1 2026, +105% YoY) + Connectivity Adj EBITDA $7.2B (63% margin) = cash machine",
+      "Falcon 9 ครอง global commercial launches — 170 missions ใน 2025, launch cost moat แทบ replicate ไม่ได้",
+      "Revenue $18.7B (+33% YoY 2025); Connectivity Op Income $4.4B พิสูจน์ว่าธุรกิจกำไรได้จริง",
+      "Starship reusability ถ้าสำเร็จ = launch cost revolution + unlock Lunar/Mars/mega-constellation TAM",
+      "IPO S-1 filed May 20, 2026 — SPCX บน Nasdaq; xAI (Grok) + X รวมใน entity เดียวกัน"
+    ],
+    "risk": [
+      "AI segment (xAI/X) เผาเงิน $(6.4B) op loss + $12.7B CapEx ใน 2025 = drag ต่อ consolidated P&L",
+      "Starlink ARPU declining structurally: $99→$91→$81→$66 — pricing pressure รุนแรง",
+      "Elon Musk key person risk: CEO Tesla + SpaceX + xAI + DOGE พร้อมกัน",
+      "Dual-class voting (Class B = 10 votes) = Elon ควบคุม 100% — Class A IPO investors มี governance น้อยมาก",
+      "Starship commercialization ยังไม่เกิด — $3B R&D burn ต่อปี; FAA approvals และ timeline ไม่แน่นอน"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 4,
+    "waf": 7.0,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": null,
+    "fv": null,
+    "mos": null,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        3.0,
+        "orange",
+        30
+      ],
+      "ra": [
+        4.5,
+        "orange",
+        45
+      ]
+    },
+    "idea": "SpaceX IPO — Nasdaq SPCX, pricing June 11, listing June 12, 2026. ธุรกิจ world-class (Starlink $7.2B Adj EBITDA 2025, 63% margin) แต่ IPO ราคา $1.75T premium ไม่มี MoS",
+    "updated": "2026-06-05",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-05-25",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 business ในตัวเดียว: (1) Space — Falcon 9 ครอง majority ของ global commercial launches, (2) Connectivity — Starlink global broadband ที่มี 10.3M subscribers, Adj EBITDA Margin 63% = cash machine ที่ทรงพลัง, (3) AI — xAI (Grok) + X (social media + advertising) ที่รวม asset เข้ามาใน Feb 2026; Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้",
+      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิดภายใต้ ticker SPCX บน Nasdaq; Connectivity 2025 Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA $7.2B; Starlink subscribers 10.3M (Mar 2026, +105% YoY จาก 5.0M); Starship full reusability จะ unlock ต้นทุน launch ที่ต่ำลงอย่างมีนัยสำคัญ",
+      "risk": "AI segment เผาเงิน $(6.4B) operating loss ใน 2025 + $12.7B CapEx = drag ต่อ consolidated P&L; Starlink ARPU กำลัง decline structurally ($99→$91→$81→$66); Elon Musk overextended ทำให้ execution risk สูง; Starship commercialization ยังไม่เกิด"
+    },
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "mark_easy": {
+      "one_liner": "SpaceX กำลัง IPO — Starlink คือ cash machine ที่ไม่มีคู่แข่ง Falcon 9 ครองอวกาศ และ AI via Grok กำลังเติบโต",
+      "what": "SpaceX เป็นบริษัทที่ทำธุรกิจใหญ่ 3 อย่างในองค์กรเดียว: ส่งจรวดขึ้นอวกาศ (Falcon 9 ครอง 82% ของ commercial launches ทั่วโลก), ให้ internet ผ่านดาวเทียม Starlink (10.3M subscribers), และ AI ผ่าน xAI (Grok) + X (Twitter) ที่รวมเข้ามาในปี 2026 เพิ่งยื่น S-1 ต่อ SEC เพื่อ IPO บน Nasdaq ภายใต้ ticker SPCX",
+      "why_invest": [
+        "Starlink เป็น cash machine ระดับโลก — Revenue $11.4B (+50% YoY), Adj EBITDA $7.2B, margin 63% จาก 10.3M subscribers ที่โต +102% YoY ไม่มีคู่แข่งที่ใกล้เคียงในอีก 5 ปีข้างหน้า",
+        "Falcon 9 reusability สร้าง cost moat ที่แทบ replicate ไม่ได้ — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ทำให้ Starlink deployment ถูกลงเรื่อยๆ แบบ flywheel",
+        "Revenue $18.7B (+33% YoY 2025) กระจายใน 3 segment ที่แตกต่างกัน — Backlog $28.4B แสดง revenue visibility ที่ดีมาก",
+        "Starship ถ้าสำเร็จ = revolution ในต้นทุน launch ลดลงอีก 10-100x เปิด TAM ใหม่ทั้ง Lunar/Mars/mega-constellation ที่ไม่มีใครเคยทำได้"
+      ],
+      "watch_out": [
+        "AI segment เผาเงินหนักมาก — xAI/X มี Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ดึง consolidated P&L ให้ Net Loss $(4.9B) ทั้งที่ Starlink กำไรดีมาก",
+        "Elon Musk key person risk ขั้นสูงสุด — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน หากเกิดเหตุหรือ focus แตก ทุกบริษัทจะได้รับผลกระทบพร้อมกัน",
+        "IPO investors แทบไม่มีสิทธิ์ควบคุม — Class B (10 votes) ของ Elon ทำให้เขา control board ฝ่ายเดียว IPO investors ซื้อแค่ economic exposure ไม่มี governance power"
+      ],
+      "bottom_line": "SpaceX คือ IPO ที่น่าตื่นเต้นที่สุดแห่งทศวรรษ — Starlink เป็น world-class business แต่ valuation $1.75T ต้องการ AI + Starship future ที่ยังไม่แน่นอน รอดูราคา IPO ก่อนตัดสินใจ"
+    },
+    "mark_full": {
+      "business_overview": "SpaceX ก่อตั้งปี 2002 โดย Elon Musk สำนักงานใหญ่ที่ Starbase, Texas แบ่งธุรกิจเป็น 3 segment: Space (Falcon 9/Heavy + Dragon + Starship R&D) Revenue $4.1B ยังขาดทุนจาก Starship R&D $3B/ปี, Connectivity (Starlink) Revenue $11.4B Op Income $4.4B เป็น cash engine หลัก, และ AI (xAI/Grok + X/Twitter) Revenue $3.2B แต่ขาดทุน $(6.4B) หลัง merge xAI (Feb 2026) entity นี้กลายเป็น Space + Internet + AI ในหน้าเดียว",
+      "tam": "Starlink TAM ยังใหญ่มาก — 10.3M subscribers จาก potential 50M+ ใน 5-7 ปี บวก Starlink Mobile ที่กำลัง partner กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ตลาด Space launch TAM จะโตตาม demand จาก Amazon Kuiper (FCC deadline Jul 2026), SDA Tranche 3 และ commercial constellations ต่างๆ ส่วน AI/Grok TAM ยังใหม่แต่ถ้า scale ได้จะยิ่งใหญ่กว่าทั้งสองอย่างรวมกัน",
+      "moat": "MOAT มีหลายชั้น: Falcon 9 reusability flywheel ที่ cost ต่ำกว่าคู่แข่ง 5-10x ทำให้แข่งได้ยากมาก, Starlink constellation 10,300+ satellites ที่สร้างมาหลายปีไม่สามารถ replicate ได้รวดเร็ว, Vertical integration ที่ผลิต rocket engine/avionics/terminals เองทำให้ต้นทุนต่ำและ supply chain เป็นอิสระ, และ 82% global commercial launch share ที่สร้าง pricing power ต่อเนื่อง",
+      "latest_financials": "FY2025: Revenue $18.7B (+33%), Connectivity Op Income $4.4B, Adj EBITDA $6.6B แต่ Net Loss $(4.9B) เพราะ AI drag Q1 2026: Revenue $4.7B (+15%), Starlink 10.3M subs (+105% YoY), Adj EBITDA $1.1B แต่ Net Loss $(4.3B) เพราะ AI CapEx $7.7B ใน Q1 เดียว Backlog $28.4B (53% delivery ใน 2027-2028) แสดง revenue visibility ที่ดีมาก",
+      "key_points": [
+        "Starlink ARPU declining: $99 (2023) → $81 (2025) → $66 (Q1 2026) — มาจากการขยายสู่ตลาดที่จ่ายน้อยกว่า subscriber growth +105% YoY ยังชดเชยได้ แต่ต้องติดตามว่า ARPU จะ stabilize ที่ไหน",
+        "xAI 1 GW compute cluster Q1 2026 — CapEx $7.7B ใน Q1 เดียวแสดง scaling AI อย่างรวดเร็วมาก แต่ monetization ยังไม่ชัดเจน",
+        "IPO target $1.75T valuation / $75B raise — Roadshow June 4, Pricing June 11, Listing June 12, 2026 ตามข่าว นับเป็น largest IPO in history",
+        "TeraFab กับ Intel 14A + in-house FOPLP semiconductor manufacturing — SpaceX กำลังลด dependency ต่อ suppliers ระยะยาว ซึ่งอาจลดต้นทุน Starlink terminal ได้อีก"
+      ]
+    },
+    "warren_easy": [
+      "Warren ยังไม่ได้ประเมิน WAF สำหรับ SPCX เพราะยังเป็น Pre-IPO — ไม่มีราคาหุ้น public ที่จะเปรียบเทียบกับ Fair Value ได้ แต่ถ้า Warren ดู Connectivity segment อย่างเดียว Adj EBITDA $7.2B × 20x = ~$144B เป็น conservative floor ที่ไม่ต้องการ Starship หรือ AI ให้ประสบความสำเร็จเลย Starlink เพียงอย่างเดียวพิสูจน์แล้วว่าเป็น world-class cash machine",
+      "ปัญหาหลักที่ Warren จะมองคือ AI segment เผาเงิน $(6.4B) Op Loss + CapEx $12.7B ในปี 2025 เพียงปีเดียว ทำให้ consolidated เป็นขาดทุนทั้งที่ Starlink กำไรดี IPO target $1.75T หมายความว่าตลาดต้องเชื่อใน Starship optionality + AI scaling ที่ยังไม่ proven — ซึ่งเป็น speculation ไม่ใช่ fundamental value ตามหลักการของ Warren",
+      "กลยุทธ์ WATCH IPO price ก่อนตัดสินใจ — ถ้า IPO ที่ conservative Starlink valuation ~$300B (Connectivity-only floor) จะ risk/reward ดีกว่า IPO ที่ $1.75T ซึ่ง price-in AI + Starship future แบบเต็มๆ หลัง IPO หากมี pullback จาก hype และ AI แสดง path toward profitability = จะน่าสนใจมากขึ้น"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันข้อมูลจาก S-1 ที่ยื่น SEC โดยตรงว่า Connectivity segment แข็งแกร่งจริง — Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA Margin 63%, subscriber growth +102% YoY ใน 2025 Falcon 9 launch cadence 170/year เป็น fact ที่ independent sources ยืนยันตรงกัน Backlog $28.4B แสดง revenue visibility ที่น่าเชื่อถือ",
+        "Charlie ออก CAUTION เพราะ consolidated financials มีหลาย red flags: AI segment ขาดทุน $(6.4B) Op Loss + CapEx $7.7B เพียง Q1 2026 เดียว ยังไม่มี clear path to breakeven Starlink ARPU declining structurally $99→$66 ใน 3 ปี และ Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก",
+        "Charlie แนะนำ WATCH IPO price และ S-1 amendments — monitor 3 สิ่ง: (1) IPO valuation ที่ fair ควรอิง Connectivity $144B+ เป็น floor ไม่ใช่ $1.75T full AI optionality (2) xAI path to profitability ใน 2027-2028 ต้องเห็น revenue ramp ชัดเจน (3) Starlink ARPU stabilization ที่ $60-65 ถ้า ARPU ยังลงต่อแสดงว่า pricing power กำลังหาย"
+      ]
+    },
+    "idea_th": "SpaceX กำลัง IPO ครั้งแรกภายใต้ SPCX โดยรวม Starlink (cash machine $7.2B Adj EBITDA, 63% margin) + Falcon 9 (82% global commercial launches) + xAI/Grok ไว้ในองค์กรเดียว — thesis หลักคือ Starlink จะเติบโตสู่ 50M+ subscribers ขณะที่ Starship จะปฏิวัติต้นทุน launch ลงอีก 10-100x",
+    "story_gate_th": {
+      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครอง 82% commercial launches ทั่วโลก), Connectivity (Starlink 10.3M subscribers Adj EBITDA margin 63%) และ AI (xAI Grok + X Twitter ที่รวมเข้ามา 2026) Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้และเป็นพื้นฐานของ flywheel ทั้งหมด",
+      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิด SPCX บน Nasdaq Starlink Revenue $11.4B (+50% YoY) Op Income $4.4B Adj EBITDA $7.2B — ตัวเลขพิสูจน์ว่าธุรกิจกำไรได้จริง subscribers 10.3M ยังเป็นส่วนน้อยของ potential market ถ้า Starship full reusability สำเร็จ = launch cost revolution unlock TAM ใหม่ทั้งหมด",
+      "risk": "AI segment เผาเงิน $(6.4B) Op Loss + $12.7B CapEx ยังไม่มี path to profitability ชัดเจน Starlink ARPU declining structurally $99→$66 ใน 3 ปี Elon Musk overextended (CEO ของ 4 บริษัทพร้อมกัน) และ Starship commercialization ยังไม่เกิด — ถ้า AI drag ยืดออกและ ARPU ลงต่อ thesis จะอ่อนแอลงมาก"
+    },
+    "bull_th": [
+      "Starlink cash machine ที่ไม่มีคู่แข่ง — Revenue $11.4B (+50%), Adj EBITDA $7.2B margin 63% จาก 10.3M subscribers Amazon Kuiper ช้ากว่า 5+ ปี ทำให้ Starlink มีเวลาสร้าง lock-in ก่อนที่คู่แข่งจะพร้อม",
+      "Falcon 9 reusability flywheel — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ไม่มีคู่แข่งใกล้เคียง เป็น moat ที่ใช้เวลาและเงินมหาศาลจะ replicate",
+      "Starlink Mobile D2D — partnership กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ถ้า TAM นี้แม้แต่ 10% ก็คือ 300M subscribers เพิ่มเติม",
+      "Starship commercialization Q4 2026 target — ถ้าสำเร็จ launch cost ลดลงอีก 10-100x เปิด Lunar/Mars/mega-constellation และ businesses ใหม่ที่ไม่มีใครเคยทำได้",
+      "TeraFab + in-house FOPLP semiconductor manufacturing — SpaceX กำลังสร้าง vertical integration ใน chip supply chain เพื่อลดต้นทุน Starlink terminal และลด external dependency ระยะยาว"
+    ],
+    "risk_th": [
+      "AI segment เผาเงินหนักมาก — xAI/X Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ถ้า xAI ไม่สามารถ monetize ได้ใน 2-3 ปี จะกัดกร่อน Starlink profits ทั้งหมด",
+      "Elon Musk key person risk — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน ถ้า focus แตกหรือเกิดเหตุส่วนตัว ทุกบริษัทจะได้รับผลกระทบพร้อมกันทันที",
+      "Starlink ARPU declining structurally: $99→$81→$66 — pricing pressure รุนแรง ถ้า ARPU ไม่ stabilize revenue growth จะช้าลงแม้ subscribers โตต่อ",
+      "Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก — Elon ควบคุม board ฝ่ายเดียว ถ้า allocate capital ไป AI/Starship มากเกินไป shareholders มีอำนาจน้อยมากในการ object",
+      "Starship commercialization ยังไม่เกิด — R&D burn $3B/ปี FAA approvals ล่าช้า timeline ยืดออกเรื่อยๆ ถ้า commercial operation ล้มเหลวทำให้ Starlink constellation replenishment ยังต้องใช้ Falcon 9 ที่แพงกว่า"
+    ]
+  },
   "MU": {
     "symbol": "MU",
     "display": "MU",
@@ -1614,10 +1730,10 @@
     "waf": 6.8,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 1064.1,
+    "price": 996.0,
     "fv": 1100,
-    "mos": 3.3,
-    "fpe": 6.9,
+    "mos": 9.5,
+    "fpe": 7.2,
     "peg": null,
     "scores": {
       "bq": [
@@ -1641,12 +1757,12 @@
         50
       ]
     },
-    "idea": "เข้า $1T market cap club — Warren ใช้ normalized mid-cycle EPS (ไม่ใช่ peak); FV ปรับลง $2000→$1100 ตามกฎ cyclical, MoS เหลือ ~3%",
-    "updated": "2026-06-03",
+    "idea": "HBM sold-out ทั้งปี 2026 (binding LTA) + UBS PT $1,625 — แต่ตั้งบน peak C2029E EPS = สัญญาณ Lynch peak; Warren ใช้ normalized mid-cycle, FV $1100; ราคาย่อ -6% → MoS +9.5% บวกขึ้นแต่ ER ต่ำ",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
+      "updated": "2026-06-05",
       "tier": "🔁 Cyclical",
       "tier_slug": "cyclical",
       "what": "Micron is the sole US-based HBM memory supplier for NVIDIA Vera Rubin/GB200 AI systems, with entire calendar-2026 HBM supply priced & committed through LTA contracts, benefiting from agentic AI's KV-cache problem that drives structural HBM+NAND demand simultaneously.",
@@ -1654,77 +1770,78 @@
       "risk": "Samsung/SK Hynix HBM capacity ramp faster than LTA buffer absorbs, forcing price capitulation; OR AI hyperscaler CapEx decelerates materially."
     },
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [],
       "concerns": [
-        "memory cyclical pricing",
-        "SK Hynix/Samsung HBM capacity แข่ง",
-        "CapEx heavy"
+        "Memory cyclical — ราคาตกเร็วและแรง",
+        "analyst upgrade รัวๆ ($1,100-1,625) = euphoria/sell signal",
+        "Samsung/SK Hynix HBM ramp กดราคา",
+        "CapEx >$25B กด FCF"
       ],
-      "summary": "เห็นด้วยกับ cyclical correction — $1T market cap = euphoria; memory ±14%/เดือน ยืนยันยัง cyclical, FV $1100 normalized เหมาะสม",
-      "review_date": "2026-06-03"
+      "summary": "HBM sold-out 2026 จริง แต่เป็น cyclical ที่ peak (52wL $103→$996 = +866%); UBS PT $1,625 ตั้งบน peak C2029E EPS = สัญญาณ Lynch peak — Warren ใช้ normalized FV $1100 = ถูกต้องตามกฎ cyclical",
+      "review_date": "2026-06-05"
     },
     "tier": "🔁 Cyclical",
     "mark_easy": {
-      "one_liner": "ผู้ผลิตหน่วยความจำ HBM ที่เพิ่งแตะ $1T — แต่ระวังกับดักวงจรขาขึ้น",
-      "what": "Micron ผลิตหน่วยความจำ DRAM/NAND และ HBM3E ที่จำเป็นสำหรับชิป AI ของ NVIDIA",
+      "one_liner": "ผู้ผลิตหน่วยความจำ HBM รายเดียวของสหรัฐ — หัวใจของ AI memory supercycle",
+      "what": "Micron ผลิตหน่วยความจำ DRAM และ NAND โดยเฉพาะ HBM ที่เป็นหัวใจของชิป AI ของ NVIDIA และเป็นผู้ผลิตรายเดียวในสหรัฐ",
       "why_invest": [
-        "HBM3E สำหรับ NVIDIA GB200 = sole US supplier, margin สูง 5-6x vs DRAM ปกติ",
-        "Fwd P/E 8x = cheapest valuation ในกลุ่ม AI semiconductor ทั้งหมด",
-        "CHIPS Act $6.1B grant สำหรับ Boise + Singapore fab expansion",
-        "AI memory demand structural ไม่ใช่ cyclical ระยะสั้น"
+        "HBM ทั้งปี 2026 ขายหมดแล้วภายใต้สัญญาผูกพัน (binding LTA) = มองเห็นรายได้ชัด",
+        "เป็นผู้ผลิต HBM รายเดียวของสหรัฐ = pricing power บวกการสนับสนุนจากรัฐ",
+        "เทคโนโลยีนำคู่แข่ง 4 generation ใน DRAM",
+        "งบล่าสุดทำสถิติทุกบรรทัด รายได้ บวก margin บวก FCF"
       ],
       "watch_out": [
-        "Memory highly cyclical — DRAM/NAND pricing volatile มาก",
-        "SK Hynix และ Samsung ทุ่มทุนสร้าง HBM capacity แข่ง",
-        "CapEx heavy business ต้องลงทุนต่อเนื่อง กด FCF"
+        "เป็นหุ้น cyclical ที่อยู่ใกล้จุดพีค — ราคาหน่วยความจำตกได้เร็วและแรง",
+        "นักวิเคราะห์แห่ขึ้นเป้าราคา (1,100 ถึง 1,625) = สัญญาณ euphoria",
+        "Samsung และ SK Hynix เร่งกำลังผลิต HBM มากดราคา"
       ],
-      "bottom_line": "demand AI memory จริง แต่ $1T market cap = euphoria — Warren ใช้กำไร mid-cycle (ไม่ใช่ peak) ปรับเป็น WATCH"
+      "bottom_line": "ดีมานด์ HBM จริง แต่นี่คือ cyclical ที่จุดพีค — Pete (และ Warren) ใช้กำไรกลางวัฏจักรไม่ใช่กำไรพีคในการตีมูลค่า จึงยังให้รอ"
     },
     "mark_full": {
-      "business_overview": "รายได้จาก DRAM + NAND + HBM โดย HBM เป็นตัวขับมาร์จิ้นในรอบ AI นี้",
-      "tam": "AI memory demand structural (HBM + DRAM context layer + NAND KV cache) แต่ pricing ยังผันผวน",
-      "moat": "หนึ่งในสามผู้ผลิต HBM ของโลก + sole US supplier แต่ SK Hynix/Samsung ทุ่ม capacity แข่ง",
-      "latest_financials": "Fwd P/E ~7x; HBM3E margin สูง; แต่ราคาแกว่งแรง ±14%/เดือน",
+      "business_overview": "Micron ผลิตหน่วยความจำ DRAM และ NAND โดย HBM (high-bandwidth memory) เป็นพระเอกของรอบนี้ — เป็น memory ที่ชิป AI ขาดไม่ได้ บริษัทเป็นผู้ผลิต HBM รายเดียวของสหรัฐ ทำให้ได้ทั้ง pricing power และการสนับสนุนเชิงนโยบาย",
+      "tam": "ตลาด HBM คาดโตถึงราวแสนล้านดอลลาร์ภายในปี 2028 (CAGR ราว 40%) เร็วกว่าที่เคยคาด 2 ปี ดีมานด์มาจากทั้ง AI training และปัญหา KV-cache ของ agentic AI ที่ดัน HBM บวก NAND พร้อมกัน",
+      "moat": "ความนำด้านเทคโนโลยี (DRAM นำ 4 node, NAND นำ 3 node) บวกการเป็น first-mover ใน EUV ทำให้ช่องว่างกับคู่แข่งกว้างขึ้น และการเป็นผู้ผลิตสหรัฐรายเดียวให้ความได้เปรียบเชิงยุทธศาสตร์",
+      "latest_financials": "FQ2 FY26 รายได้ 23.9 พันล้านดอลลาร์ โต 196% YoY, GM ราว 75%, EPS 12.20 ดอลลาร์ FQ3 guidance 33.5 พันล้าน/EPS 19.15 — รายได้ไตรมาสเดียวแซงรายได้ทั้งปีของทุกปีในประวัติศาสตร์ก่อนหน้า",
       "key_points": [
-        "Fwd P/E 8x = cheapest valuation ในกลุ่ม AI semiconductor ทั้งหมด",
-        "CHIPS Act $6.1B grant สำหรับ Boise + Singapore fab expansion",
-        "AI memory demand structural ไม่ใช่ cyclical ระยะสั้น",
-        "PEG 0.4 = exceptional value ถ้า growth estimate ถูกต้อง"
+        "HBM ทั้งปี 2026 ขายหมด ราคาล็อกแล้วภายใต้ LTA",
+        "Net cash บวก 6.5 พันล้าน หลังเร่งใช้หนี้",
+        "FCF สถิติ 6.9 พันล้านใน FQ2 (29% ของรายได้)",
+        "งบ FQ3 จริง 24 มิ.ย. = catalyst สำคัญ"
       ]
     },
     "warren_easy": [
-      "Micron ได้ประโยชน์จาก AI memory จริง โดยเฉพาะ HBM3E ที่เป็น sole US supplier ให้ NVIDIA",
-      "แต่การแตะ $1T คือสัญญาณ euphoria — memory ยังเป็นวงจร Warren จึงใช้กำไร normalized mid-cycle ปรับ Fair Value ลงเหลือ $1100 (MoS เหลือ ~3%) ไม่ใช้กำไร peak",
-      "WATCH — ลดจาก BUY เพราะวินัย cyclical ระวังซื้อตอนกำไรพีค"
+      "Micron อยู่ในจุดที่ดีของ AI memory supercycle — เป็นผู้ผลิต HBM รายเดียวของสหรัฐ ดีมานด์จริงและ HBM ทั้งปี 2026 ขายหมดแล้วภายใต้สัญญาผูกพัน นี่เป็นภาพที่ฟังดูน่าตื่นเต้นมาก",
+      "แต่สิ่งที่ผมระวังคือ Micron ยังเป็นหุ้น cyclical และตอนนี้อยู่ใกล้จุดพีคของวัฏจักร นักวิเคราะห์อย่าง UBS ตั้งเป้า 1,625 ดอลลาร์โดยอิงกำไรพีค C2029 ซึ่งเป็นรูปแบบ peak-EPS คูณ multiple ที่อันตราย ผมจึงใช้กำไรกลางวัฏจักร (normalized) ในการตีมูลค่า ได้ Fair Value 1,100 ดอลลาร์",
+      "ที่ราคาย่อลงมา 996 ดอลลาร์ Margin of Safety บวกขึ้นมาราว 9.5% แต่ Expected Return ยังต่ำ และสัญญาณ Lynch peak ครบทั้ง 3 ข้อ (นักวิเคราะห์แห่ขึ้นเป้า บวกเรื่อง AI Memory Boom เป็น cover narrative บวก PE ต่ำจากกำไรพีค) ผมจึงให้ WATCH ด้วยวินัย cyclical"
     ],
     "charlie_easy": {
-      "verdict": "CAUTION",
+      "verdict": "AGREE",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: เห็นด้วยกับ cyclical correction — $1T market cap = euphoria; memory ±14%/เดือน ยืนยันยัง cyclical, FV $1100 normalized เหมาะสม",
-        "จุดที่ Charlie กังวล: memory cyclical pricing; SK Hynix/Samsung HBM capacity แข่ง",
-        "ต้อง monitor: CapEx heavy — verdict ปัจจุบัน CAUTION"
+        "ข้อมูลอิสระยืนยันว่า HBM sold-out ปี 2026 จริง และงบล่าสุดทำสถิติ — แต่ราคาวิ่งจาก 52-week low 103 เป็น 996 (โต 866% ในปีเดียว) ภาพชัดเจนว่าเป็น cyclical ที่จุดพีค",
+        "สิ่งที่ผมกังวล: UBS PT 1,625 ตั้งบนกำไรพีค C2029 ซึ่งเป็นกับดักคลาสสิกของหุ้น cyclical — analyst upgrade แห่กันมา (1,100 ถึง 1,625) มักเป็นสัญญาณขายไม่ใช่ซื้อ บวก Samsung/SK Hynix ที่เร่ง HBM",
+        "ผมเห็นด้วยกับ Warren ที่ใช้กำไรกลางวัฏจักร FV 1,100 แทนการ extrapolate กำไรพีค — เป็นวินัยที่ถูกต้องตามบทเรียน cyclical ต้อง monitor สัญญาณ cycle turn"
       ]
     },
-    "idea_th": "เข้า $1T market cap club — Warren ใช้ normalized mid-cycle EPS (ไม่ใช่ peak); FV ปรับลง $2000→$1100 ตามกฎ cyclical, MoS เหลือ ~3%",
+    "idea_th": "Micron เป็นผู้ผลิต HBM รายเดียวของสหรัฐที่ HBM ปี 2026 ขายหมดแล้ว แต่เป็น cyclical ที่จุดพีค — ใช้กำไรกลางวัฏจักรตีมูลค่าได้ FV 1,100 ราคาย่อทำให้ MoS บวกเล็กน้อยแต่ยังรอด้วยวินัย",
     "story_gate_th": {
-      "what": "HBM3E sole US supplier ให้ NVIDIA GB200 margin สูง 5-6 เท่า DRAM ปกติ",
-      "why": "เข้า $1 trillion market cap club จาก AI memory demand surge",
-      "risk": "memory ยัง cyclical — ราคาแกว่ง ±14% ในเดือนเดียว, peak EPS ห้าม extrapolate"
+      "what": "ผู้ผลิต HBM รายเดียวของสหรัฐสำหรับระบบ AI ของ NVIDIA โดย HBM ทั้งปี 2026 ราคาล็อกแล้วภายใต้สัญญา LTA",
+      "why": "งบ FQ2 ทุบสถิติ บวก guidance FQ3 แรง พิสูจน์ supercycle — แต่ Warren มองต่าง: ราคา price-in กำไรพีคเป็นถาวร PE ต่ำจากกำไรพีคคือสัญญาณ Lynch peak",
+      "risk": "ถ้า Samsung/SK Hynix เร่งกำลังผลิต HBM เร็วกว่าที่ LTA รองรับจนราคาทรุด หรือ AI capex ของ hyperscaler ชะลอแรง"
     },
     "bull_th": [
-      "HBM3E สำหรับ NVIDIA GB200 = sole US supplier, margin สูง 5-6x vs DRAM ปกติ",
-      "Fwd P/E 8x = cheapest valuation ในกลุ่ม AI semiconductor ทั้งหมด",
-      "CHIPS Act $6.1B grant สำหรับ Boise + Singapore fab expansion",
-      "AI memory demand structural ไม่ใช่ cyclical ระยะสั้น",
-      "PEG 0.4 = exceptional value ถ้า growth estimate ถูกต้อง"
+      "HBM ขาดแคลนรุนแรง บวก Micron เป็นผู้ผลิตสหรัฐรายเดียว = pricing power",
+      "เทคโนโลยีนำคู่แข่ง 4 node DRAM, 3 node NAND",
+      "HBM TAM สู่แสนล้านปี 2028 มาเร็วกว่าคาด 2 ปี",
+      "visibility สูงมาก — HBM ทั้งปี 2026 ราคาล็อกแล้ว",
+      "Net cash บวก บวก FCF เร่งตัว"
     ],
     "risk_th": [
-      "Memory highly cyclical — DRAM/NAND pricing volatile มาก",
-      "SK Hynix และ Samsung ทุ่มทุนสร้าง HBM capacity แข่ง",
-      "CapEx heavy business ต้องลงทุนต่อเนื่อง กด FCF",
-      "China revenue risk ถ้า US-China trade war escalate",
-      "FY2025 non-HBM division ขาดทุน drag on valuation"
+      "memory เป็น cyclical — ราคาตกได้เร็วและแรงมาก",
+      "analyst upgrade แห่กัน = สัญญาณ euphoria/sell",
+      "Samsung/SK Hynix เร่ง HBM กดราคา",
+      "CapEx เกิน 25 พันล้าน กด FCF ช่วง build-out",
+      "China CAC ban เสี่ยงเสียตลาดจีน"
     ]
   },
   "MRVL": {
@@ -1758,16 +1875,16 @@
     "waf": 6.6,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 290.79,
-    "fv": 180,
-    "mos": -61.6,
-    "fpe": 37.5,
+    "price": 316.43,
+    "fv": 200,
+    "mos": -58.2,
+    "fpe": 41.0,
     "peg": null,
     "scores": {
       "bq": [
-        8.5,
+        9.0,
         "green",
-        85
+        90
       ],
       "gp": [
         9.5,
@@ -1775,9 +1892,9 @@
         95
       ],
       "va": [
-        1.5,
+        1.0,
         "orange",
-        15
+        10
       ],
       "ra": [
         5.5,
@@ -1785,90 +1902,91 @@
         55
       ]
     },
-    "idea": "ราคาวิ่ง +35% สัปดาห์เดียว — Warren disciplined ไม่ไล่; FV uplift $133→$180 จาก record growth แต่ยังเกินมูลค่า 62%",
-    "updated": "2026-06-03",
+    "idea": "Jensen Huang เรียก \"trillion-dollar รายต่อไป\" ที่ COMPUTEX (06-02) + NVIDIA ลงทุน $2B — story validation แรง แต่ราคาวิ่งจาก ~$215→$316 บนคำพูดเดียว = euphoria zone; Warren disciplined ไม่ไล่",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Marvell provides custom AI accelerators (XPU) to 5 US hyperscalers + end-to-end optical interconnect (800G/1.6T PAM DSP → 3.2T+ via Polariton acquisition) — the only company with scale-out + scale-across + scale-up + switching + CXL + photonics in one platform, deeply embedded in hyperscaler multi-year silicon roadmaps.",
+      "updated": "2026-06-05",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Marvell provides custom AI accelerators (XPU) to 5 US hyperscalers + end-to-end optical interconnect (800G/1.6T PAM DSP → 3.2T+ via Polariton acquisition) — the only company with scale-out + scale-across + scale-up + switching + CXL + photonics in one platform, deeply embedded in hyperscaler multi-year silicon roadmaps. **(06-02: Jensen Huang เรียกเป็น \"next trillion-dollar company\" ที่ COMPUTEX + NVIDIA ลงทุน $2B strategic stake.)**",
       "why": "Consensus รู้ว่า MRVL เป็น AI beneficiary แต่ยัง underprice 4 จุด: (1) **Polariton acquisition (Apr 22, 2026)** ทำให้ MRVL ก้าวข้าม 1.6T → 3.2T+ optical DSP ก่อน competitor ทุกราย; (2) **FY28 raised $1.5B to $16.5B** — magnitude ของ upgrade ที่ตลาดยัง underdiscuss; (3) **Q2 FY27 Non-GAAP EPS guidance $0.93** (+16% QoQ jump) acceleration แรงกว่าที่ price in; (4) **NVIDIA Strategic Partnership (May 27, 2026)** — 3 pillars (silicon photonics co-development, NVLink Fusion, AI RAN) เปิด TAM ใหม่นอกเหนือ 5 US hyperscalers และทำให้ MRVL custom chips ทำงานใน NVIDIA ecosystem — expand addressable market อย่างมีนัยสำคัญ.",
       "risk": "ถ้า hyperscalers pause/cut AI capex (macro shock หรือ LLM efficiency breakthrough ลด compute demand), หรือ Polariton integration ล่าช้า/แพงเกินทำให้ 3.2T timeline slip >18 เดือน, หรือ custom XPU program ถูก in-house โดย hyperscaler รายใหญ่."
     },
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [],
       "concerns": [
-        "mean reversion หลัง hype",
+        "⚠️ Endorsement-driven spike — forward PE ~41× บน sentiment",
         "hyperscaler concentration 80%+",
-        "valuation P/E สูง"
+        "NVIDIA $2B stake ดี แต่ราคา price-in เกินจริง",
+        "design wins อาจถูก in-house"
       ],
-      "summary": "market price $291 vs Warren FV $180 — +35%/สัปดาห์ จาก Jensen hype = euphoria risk; Warren discipline ถูกที่ไม่ไล่",
-      "review_date": "2026-06-03"
+      "summary": "ราคาวิ่งจาก 52wL $61→$316 (+415% ปี) + prevClose $205→$316 บน Jensen endorsement เดียว = euphoria ชัดเจน; Warren ไม่ไล่ราคา FV $200 = วินัยถูกต้องเด็ดขาด",
+      "review_date": "2026-06-05"
     },
-    "tier": "🔁 Cyclical",
+    "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
-      "one_liner": "ดาวรุ่ง optical/custom silicon ที่ Jensen เชียร์ — แต่ราคาวิ่งแรงเกินพื้นฐาน",
-      "what": "Marvell ทำชิป custom + optical interconnect สำหรับ AI data center เป็นคู่แข่งตรงของ Broadcom",
+      "one_liner": "เจ้าพ่อ connectivity ใน data center AI — Jensen ยกเป็นบริษัททริลเลียนดอลลาร์รายต่อไป",
+      "what": "Marvell ออกแบบชิปเชื่อมต่อความเร็วสูงใน data center — optical DSP, สวิตช์, และชิป AI แบบ custom ให้ hyperscaler",
       "why_invest": [
-        "PAM DSP leadership — first-to-productize 200G/lane สำหรับ 1.6T transition",
-        "Custom XPU design wins 20+ sockets ฝังลึกใน hyperscaler roadmaps",
-        "End-to-End Data Center portfolio: scale-out + scale-across + scale-up + switching",
-        "DCI to all 5 US hyperscalers ใน FY27 = TAM expansion significant"
+        "Data center = 75% ของรายได้และโตเร็วมาก",
+        "NVIDIA ลงทุน 2 พันล้านดอลลาร์ บวกร่วมพัฒนา silicon photonics และ NVLink Fusion",
+        "connectivity กำลังเป็นคอขวดถัดไปของ AI — Marvell อยู่ตรงจุดนั้นพอดี",
+        "custom silicon ตั้งเป้าหมื่นล้านดอลลาร์ใน FY29 จากดีลกับ hyperscaler หลายราย"
       ],
       "watch_out": [
-        "Revenue concentration: top hyperscalers = 80%+ ของรายได้",
-        "Custom silicon design wins อาจถูก in-house ถ้า hyperscaler scale up ทีม",
-        "Optical interconnect competitive: Intel, Coherent, Lumentum แข่ง"
+        "ราคาวิ่งจากราว 215 เป็น 316 ในไม่กี่วันบนคำพูดของ Jensen = ร้อนแรงเกินพื้นฐาน",
+        "รายได้กระจุกที่ hyperscaler ไม่กี่ราย เกิน 80%",
+        "งานออกแบบอาจถูกลูกค้าดึงกลับไปทำเอง"
       ],
-      "bottom_line": "story แกร่งขึ้นจริง (Jensen เชียร์ + switch 102.4T) แต่ราคา +35% ในสัปดาห์เดียว = ร้อนเกินไป รอเย็นลง"
+      "bottom_line": "ธุรกิจแกร่งขึ้นจริงจาก NVIDIA partnership แต่ราคา re-rate เร็วเกินไปบน sentiment — Pete มองว่ารอให้เย็นลงก่อนดีกว่า"
     },
     "mark_full": {
-      "business_overview": "รายได้ 74% จาก data center (custom silicon + optical + switching) ที่โตเร็ว",
-      "tam": "optical interconnect + custom silicon เป็นคอขวดใหม่ของ AI MRVL ตั้งเป้า FY2028 $15B",
-      "moat": "PAM DSP leadership + design win ฝังใน roadmap hyperscaler + Celestial AI photonic fabric",
-      "latest_financials": "FY2026 รายได้ $8.2B all-time high; Q1 +28% record; NVIDIA ลงทุน $2B",
+      "business_overview": "Marvell เป็น fabless ที่โฟกัส data center — 3 ขา: Interconnect (optical DSP 800G/1.6T สู่ 3.2T), Switching (สวิตช์ 12.8T ถึง 100T) และ Custom Silicon (XPU ให้ hyperscaler) Data center คือ 75% ของรายได้และเป็นเครื่องยนต์โต",
+      "tam": "AI ทำให้ connectivity เป็นคอขวดใหม่ — เมื่อ compute กระจายข้ามชิปนับพัน การเชื่อมต่อเร็วกลายเป็นข้อจำกัด Marvell ครอง DSP ราว 60-70% ของตลาด 1.6T และ custom ตั้งเป้าหมื่นล้าน FY29 จาก TAM 55 พันล้าน",
+      "moat": "SerDes IP เป็น switching cost ที่ลึก — hyperscaler ที่ออกแบบชิปบน SerDes ของ Marvell ถ้าจะเปลี่ยน vendor ต้องออกแบบใหม่ทั้งหมด บวก optical DSP ที่นำหน้าคู่แข่งและดีล NVIDIA ที่เปิด TAM ใหม่",
+      "latest_financials": "FY26 รายได้ 8.2 พันล้านดอลลาร์ โต 42% (สถิติใหม่), data center เกิน 6 พันล้าน Q2 FY27 guide 2.70 พันล้าน/EPS 0.93 โต 16% QoQ บริษัทยก FY28 outlook interconnect เป็นโต 70% YoY",
       "key_points": [
-        "Custom XPU design wins 20+ sockets ฝังลึกใน hyperscaler roadmaps",
-        "End-to-End Data Center portfolio: scale-out + scale-across + scale-up + switching",
-        "DCI to all 5 US hyperscalers ใน FY27 = TAM expansion significant",
-        "Celestial AI CPO scale-up — CEO คาด could exceed $10B by 2030"
+        "NVIDIA partnership 3 เสา: silicon photonics, NVLink Fusion, AI RAN บวกลงทุน 2 พันล้าน",
+        "custom silicon FY29 หมื่นล้าน on track (TAM 55 พันล้าน คูณ share 20%+)",
+        "สวิตช์ 100T live, roadmap ถึง 200T",
+        "Celestial AI photonic fabric = optionality ระยะยาว"
       ]
     },
     "warren_easy": [
-      "Marvell เป็นดาวรุ่ง optical/custom silicon ที่ NVIDIA ลงทุนและ Jensen ออกปากเชียร์ — story กลุ่ม connectivity แกร่งจริง",
-      "แต่ราคา ~$291 พุ่ง +35% ในสัปดาห์เดียวจากกระแส ทำให้ห่าง Fair Value $180 มาก Warren ไม่ไล่ราคา (กันซื้อแพงตอนข่าวร้อน)",
-      "WATCH — รอกระแสเย็นลงและราคาย่อก่อน"
+      "Marvell เป็นบริษัทคุณภาพที่อยู่ตรงจุดสำคัญของ AI — connectivity เมื่อ compute กระจายข้ามชิปนับพันตัว การเชื่อมต่อความเร็วสูงกลายเป็นคอขวด และ Marvell ครองทั้ง optical DSP, สวิตช์ และ custom silicon ที่ฝังลึกใน roadmap ของ hyperscaler",
+      "ที่ Jensen Huang ยก Marvell เป็นทริลเลียนดอลลาร์รายต่อไปที่ COMPUTEX บวก NVIDIA ลงทุน 2 พันล้าน เป็น validation ที่จริง — แต่ปัญหาคือราคาวิ่งจากราว 215 เป็น 316 ในไม่กี่วันบนคำพูดเดียว ผมปรับ Fair Value ขึ้นเล็กน้อยจาก 180 เป็น 200 ตาม equity stake แต่ราคายังเกินมูลค่า 58%",
+      "หลักการของผมคือไม่ไล่ราคาที่วิ่งนำพื้นฐาน — นี่เป็น euphoria zone แบบคลาสสิก ผมจึงให้ WATCH รอให้ความตื่นเต้นเย็นลงและราคากลับมาใกล้มูลค่าจริงก่อน"
     ],
     "charlie_easy": {
-      "verdict": "CAUTION",
+      "verdict": "AGREE",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: market price $291 vs Warren FV $180 — +35%/สัปดาห์ จาก Jensen hype = euphoria risk; Warren discipline ถูกที่ไม่ไล่",
-        "จุดที่ Charlie กังวล: mean reversion หลัง hype; hyperscaler concentration 80%+",
-        "ต้อง monitor: valuation P/E สูง — verdict ปัจจุบัน CAUTION"
+        "ข้อมูลอิสระยืนยันว่าธุรกิจแกร่งจริง — data center 75% ของรายได้, NVIDIA 2 พันล้าน stake, custom หมื่นล้าน FY29 แต่สิ่งที่เด่นชัดคือราคาวิ่งจาก 52-week low 61 เป็น 316 (โต 415% ในปีเดียว) และพุ่งราว 54% จาก prevClose บน endorsement ของ Jensen",
+        "สิ่งที่ผมกังวลที่สุดคือ valuation — forward PE ราว 41 เท่าบน sentiment ล้วน รายได้กระจุก hyperscaler เกิน 80% และ endorsement-driven spike แบบนี้คือสัญญาณ euphoria ที่ต้องระวัง",
+        "ผมเห็นด้วยเต็มที่กับวินัยของ Warren ที่ไม่ไล่ราคา FV 200 เทียบราคา 316 = ส่วนต่างใหญ่ ต้อง monitor ว่าพื้นฐาน (custom ramp, optical share) จะตามราคาทันไหม"
       ]
     },
-    "idea_th": "ราคาวิ่ง +35% สัปดาห์เดียว — Warren disciplined ไม่ไล่; FV uplift $133→$180 จาก record growth แต่ยังเกินมูลค่า 62%",
+    "idea_th": "Marvell ครอง connectivity ใน data center AI ที่กำลังเป็นคอขวดถัดไป บวก NVIDIA ลงทุน 2 พันล้าน แต่ราคาวิ่งจาก 215 เป็น 316 บนคำพูดของ Jensen = ร้อนแรงเกินพื้นฐาน รอเย็นลงก่อน",
     "story_gate_th": {
-      "what": "ผู้นำ PAM DSP + custom XPU design win 20+ socket ฝังลึกใน hyperscaler",
-      "why": "Jensen ยกเป็น \"trillion-dollar รายต่อไป\" + เปิด switch 102.4 Tbps + Q1 +28% record",
-      "risk": "ราคา re-rate เร็วเกิน fundamentals + พึ่ง hyperscaler 80%+"
+      "what": "ออกแบบชิป custom AI ให้ 5 hyperscaler บวก optical interconnect ครบวงจร (800G/1.6T สู่ 3.2T) เป็นเจ้าเดียวที่มีครบทุกชั้นใน data center",
+      "why": "06-02 Jensen ยกเป็นทริลเลียนดอลลาร์รายต่อไป บวก NVIDIA ลงทุน 2 พันล้าน บวก partnership 3 เสาเปิด TAM ใหม่; FY28 outlook ยกขึ้นแรง",
+      "risk": "ถ้า hyperscaler หยุดหรือลด AI capex หรือ Polariton integration ช้า หรือ custom program ถูกดึงกลับไปทำเอง"
     },
     "bull_th": [
-      "PAM DSP leadership — first-to-productize 200G/lane สำหรับ 1.6T transition",
-      "Custom XPU design wins 20+ sockets ฝังลึกใน hyperscaler roadmaps",
-      "End-to-End Data Center portfolio: scale-out + scale-across + scale-up + switching",
-      "DCI to all 5 US hyperscalers ใน FY27 = TAM expansion significant",
-      "Celestial AI CPO scale-up — CEO คาด could exceed $10B by 2030"
+      "Data center 75% ของรายได้ โตเร็วมากจาก optical บวก custom",
+      "NVIDIA partnership บวก 2 พันล้าน stake เปิด TAM นอก 5 hyperscaler",
+      "connectivity = คอขวดถัดไปของ AI, Marvell อยู่ตรงจุด",
+      "custom silicon หมื่นล้าน FY29 on track",
+      "SerDes IP = switching cost ที่ลึก เปลี่ยน vendor ยาก"
     ],
     "risk_th": [
-      "Revenue concentration: top hyperscalers = 80%+ ของรายได้",
-      "Custom silicon design wins อาจถูก in-house ถ้า hyperscaler scale up ทีม",
-      "Optical interconnect competitive: Intel, Coherent, Lumentum แข่ง",
-      "FY2026 guidance อ่อนแอกว่า consensus — near-term execution risk",
-      "Valuation P/E สูงในบริบท fabless semiconductor cyclicality"
+      "ราคา re-rate เร็วเกินพื้นฐาน — forward PE ราว 41 เท่าบน sentiment",
+      "รายได้กระจุก hyperscaler เกิน 80%",
+      "งานออกแบบอาจถูกลูกค้าดึงกลับไปทำเอง",
+      "Polariton integration อาจช้าหรือแพงทำให้ 3.2T เลื่อน",
+      "endorsement-driven spike = euphoria signal"
     ]
   },
   "PLTR": {
@@ -1902,9 +2020,9 @@
     "waf": 6.6,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 152.17,
+    "price": 141.7,
     "fv": 100,
-    "mos": -52.2,
+    "mos": -41.7,
     "fpe": 66.0,
     "peg": null,
     "scores": {
@@ -1930,7 +2048,7 @@
       ]
     },
     "idea": "ราคาแพงมาก เกิน FV ~52% — รอ pullback ลึก; Dell AI Factory beat ดันหุ้น +10%",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1944,13 +2062,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "valuation ต้อง perfect ทุกไตรมาส",
-        "gov contract concentration",
-        "SBC สูง"
-      ],
-      "summary": "P/E ~66x market $152 ห่าง FV $100 ~52% — overvalued ชัด; ธุรกิจดีแต่ไม่มี margin of safety",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🌱 Fast Grower",
     "mark_easy": {
@@ -2046,10 +2160,10 @@
     "waf": 6.55,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 315.2,
+    "price": 311.23,
     "fv": 255,
-    "mos": -23.6,
-    "fpe": 32.1,
+    "mos": -22.1,
+    "fpe": 31.7,
     "peg": null,
     "scores": {
       "bq": [
@@ -2073,12 +2187,12 @@
         85
       ]
     },
-    "idea": "ราคาเกิน FV ~24% — รอ; คุณภาพสูงสุดแต่ AI growth ช้ากว่า peers",
-    "updated": "2026-06-03",
+    "idea": "WWDC 8 มิ.ย. = catalyst แต่ UBS Neutral PT $296 มอง software-only ไม่ใช่ demand driver; Apple สร้าง Siri ใหม่บน Google Gemini (~$1B/ปี) = ยอมรับ AI lag; ราคาเกิน FV ~22% → รอ",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
+      "updated": "2026-06-05",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Apple Ecosystem Lock-in คือ Competitive Advantage ที่แข็งแกร่งที่สุดใน Consumer Tech — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกันเป็น seamless ทำให้ switching cost สูง; Services (App Store, iCloud, Apple TV+, Apple Pay) margin 73%+ และ recurring revenue $100B+/ปี; Apple Silicon (M-series) ทำให้ Mac มี performance/watt นำหน้า x86",
@@ -2089,74 +2203,75 @@
       "charlie_verdict": "AGREE",
       "verified_claims": [],
       "concerns": [
-        "CEO transition ก.ย. 2026",
-        "China 18% exposure",
-        "EU DMA"
+        "AI lag — พึ่ง Gemini ของคู่แข่ง",
+        "WWDC 8 มิ.ย. อาจ underwhelm",
+        "App Store growth ช้าลง (UBS เตือน)",
+        "China 18% + Huawei + EU DMA"
       ],
-      "summary": "market $315 เกิน FV $255 ~24%; คุณภาพสูงแต่ AI lag + growth ช้า = WATCH ถูก",
-      "review_date": "2026-06-03"
+      "summary": "UBS Neutral PT $296 (independent) ยืนยัน overvalued; WWDC software-only + Siri พึ่ง Google Gemini ($1B/ปี) = AI lag จริง; ราคา $311 ใกล้ 52wH $317 — Warren FV $255 action WATCH ถูก",
+      "review_date": "2026-06-05"
     },
     "tier": "🏛️ Inevitable",
     "mark_easy": {
-      "one_liner": "บริษัทคุณภาพสูงสุด แต่ราคาแพงและ AI ตามหลังคู่แข่ง",
-      "what": "Apple ขาย iPhone + อุปกรณ์ และ Services (App Store, iCloud) ที่มาร์จิ้นสูง ผูกผู้ใช้ 2.5 พันล้านเครื่อง",
+      "one_liner": "ecosystem ที่แข็งที่สุดใน consumer tech แต่ตามหลังเรื่อง AI",
+      "what": "Apple ทำ iPhone, Mac, iPad, Watch, AirPods ที่ทำงานร่วมกันเป็น ecosystem บวกธุรกิจ Services (App Store, iCloud) margin สูง",
       "why_invest": [
-        "Services segment $108B ARR growing 14%+ YoY, GM 75% = margin engine",
-        "2.5B+ installed base สร้าง ecosystem lock-in ที่แทบเป็นไปไม่ได้จะออก",
-        "Apple Silicon M-series = performance/efficiency gap ยังกว้างขึ้น",
-        "Apple Intelligence on-device AI = privacy differentiator vs cloud AI"
+        "Ecosystem lock-in แข็งที่สุดใน consumer tech — switching cost สูง",
+        "Services margin 73%+ บวก recurring revenue เกินแสนล้านต่อปี",
+        "ฐานอุปกรณ์ active 2.5 พันล้านเครื่อง",
+        "Apple Silicon (M-series) นำหน้า x86 ด้าน performance ต่อ watt"
       ],
       "watch_out": [
-        "CEO transition: Cook → Ternus ก.ย. 2026 = key person risk ระยะสั้น",
-        "China revenue 18% ของ total — BYD/Huawei competition + trade war risk",
-        "iPhone cycle maturity — upgrades ช้าลงทุกปี"
+        "ตามหลังเรื่อง AI — ต้องสร้าง Siri ใหม่บน Google Gemini (จ่ายราวพันล้านต่อปี)",
+        "WWDC 8 มิ.ย. UBS มองเป็น software-only ไม่ใช่ตัวกระตุ้นดีมานด์",
+        "ราคาแพงเทียบกับอัตราการเติบโตที่มี"
       ],
-      "bottom_line": "ธุรกิจดีมากแต่ราคาเกินมูลค่า ~24% + AI ช้ากว่าคู่แข่ง — รอย่อ"
+      "bottom_line": "คุณภาพธุรกิจสูงสุดแต่ AI lag จริง บวกราคาเกินมูลค่าราว 22% — Pete ให้ WATCH รอจังหวะที่ดีกว่า"
     },
     "mark_full": {
-      "business_overview": "รายได้จาก Products (iPhone หลัก) + Services ที่โตเร็วกว่าและมาร์จิ้นสูงกว่ามาก",
-      "tam": "installed base ใหญ่ + Services monetization แต่ iPhone cycle เริ่มอิ่มตัว",
-      "moat": "Ecosystem + brand + Apple Silicon ทำให้ switching cost สูงมาก",
-      "latest_financials": "Services $108B ARR +14% GM 75%; buyback $110B+/ปี; China 18% ของรายได้",
+      "business_overview": "Apple สร้างรายได้จาก hardware (iPhone เป็นหลัก) บวก Services (App Store, iCloud, Apple Pay) ที่ margin 73%+ และ recurring จุดแข็งคือ ecosystem ที่อุปกรณ์ทำงานร่วมกันเป็น seamless ทำให้ switching cost สูง",
+      "tam": "ฐานอุปกรณ์ active 2.5 พันล้านเครื่องเป็นเครื่องยนต์ให้ Services โตทุกไตรมาส India เป็น growth engine ถัดไป แต่ AI เป็นจุดที่ Apple ยังตามหลังและต้องพึ่งโมเดล Gemini ของ Google",
+      "moat": "Ecosystem lock-in คือ moat ที่แข็งที่สุดใน consumer tech — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกัน บวก Apple Silicon ที่นำหน้า แต่ moat ด้าน AI อ่อนเพราะต้องพึ่งโมเดลของคู่แข่ง",
+      "latest_financials": "Q2 FY2026 Services revenue 26.7 พันล้านดอลลาร์ โต 14% YoY แต่ App Store growth เริ่มช้าลง (UBS เตือน) UBS ให้ Neutral PT 296 ดอลลาร์ มองว่า WWDC จะไม่กระตุ้นดีมานด์",
       "key_points": [
-        "2.5B+ installed base สร้าง ecosystem lock-in ที่แทบเป็นไปไม่ได้จะออก",
-        "Apple Silicon M-series = performance/efficiency gap ยังกว้างขึ้น",
-        "Apple Intelligence on-device AI = privacy differentiator vs cloud AI",
-        "Buyback $110B+ per year = EPS accretion ต่อเนื่อง"
+        "WWDC 8 มิ.ย. เป็น catalyst แต่คาดเป็น software-only",
+        "สร้าง Siri ใหม่บน Google Gemini จ่ายราวพันล้านต่อปี = ยอมรับ AI lag",
+        "Services เป็น compounder margin 75%",
+        "CEO transition Cook สู่ Ternus ก.ย. 2026"
       ]
     },
     "warren_easy": [
-      "Apple มี ecosystem ที่แข็งที่สุดในโลก + Services ARR $108B มาร์จิ้น 75% เป็นเครื่องจักรกำไร",
-      "แต่ราคา ~$315 เกิน Fair Value $255 ราว 24% และ AI ยังตามหลัง ทำให้ growth จำกัด",
-      "WATCH — คุณภาพสูงแต่รอราคาที่ conservative กว่านี้"
+      "Apple มี moat ที่ผมยกย่อง — ecosystem lock-in ที่แข็งที่สุดใน consumer tech ฐานอุปกรณ์ 2.5 พันล้านเครื่อง บวก Services ที่ margin 75% และ recurring revenue เกินแสนล้านต่อปี เป็นธุรกิจคุณภาพสูงสุดจริง",
+      "แต่จุดที่ผมกังวลคือ Apple ตามหลังเรื่อง AI อย่างชัดเจน — ขนาดต้องสร้าง Siri ใหม่บนโมเดล Gemini ของ Google โดยจ่ายราวพันล้านดอลลาร์ต่อปี UBS ให้ Neutral มอง WWDC 8 มิ.ย. เป็น software-only ที่ไม่กระตุ้นดีมานด์ บวก App Store growth ที่เริ่มช้าลง",
+      "ที่ราคา 311 ดอลลาร์เกิน Fair Value ของผมที่ 255 ราว 22% growth ที่ช้ากว่า peer ทำให้ผมไม่อยากจ่ายแพง ผมจึงให้ WATCH — คุณภาพสูงแต่ราคายังไม่น่าสนใจ"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: market $315 เกิน FV $255 ~24%; คุณภาพสูงแต่ AI lag + growth ช้า = WATCH ถูก",
-        "จุดที่ Charlie กังวล: CEO transition ก.ย. 2026; China 18% exposure",
-        "ต้อง monitor: EU DMA — verdict ปัจจุบัน AGREE"
+        "ข้อมูลอิสระยืนยันมุมมองระวัง — UBS ให้ Neutral PT 296 ดอลลาร์ (ต่ำกว่าราคา) มอง WWDC software-only ไม่กระตุ้นดีมานด์ และที่สำคัญ Apple ต้องสร้าง Siri บน Gemini ของ Google = ยอมรับ AI lag ชัดเจน",
+        "สิ่งที่ผมกังวล: ราคา 311 ดอลลาร์ใกล้จุดสูงสุด 52 สัปดาห์ 317 บวก App Store growth ช้าลง บวก China 18% ที่เจอ Huawei บวกความเสี่ยง EU DMA",
+        "ผมเห็นด้วยกับ WATCH ของ Warren — ธุรกิจเยี่ยมแต่ราคาเกินมูลค่าเทียบ growth ที่ช้า ควรรอจังหวะที่ราคาสะท้อน AI lag มากกว่านี้"
       ]
     },
-    "idea_th": "ราคาเกิน FV ~24% — รอ; คุณภาพสูงสุดแต่ AI growth ช้ากว่า peers",
+    "idea_th": "Apple มี ecosystem moat แข็งที่สุดใน consumer tech แต่ตามหลังเรื่อง AI (ต้องพึ่ง Gemini ของ Google) บวกราคาเกินมูลค่าราว 22% growth ช้ากว่า peer ให้ WATCH รอจังหวะ",
     "story_gate_th": {
-      "what": "Ecosystem lock-in 2.5 พันล้านเครื่อง + Services มาร์จิ้น 75%",
-      "why": "Apple Intelligence on-device + Services โตต่อเนื่อง",
-      "risk": "CEO transition ก.ย. 2026 + China 18% + AI ตามหลัง"
+      "what": "Ecosystem lock-in ที่แข็งที่สุดใน consumer tech — iPhone/Mac/iPad/Watch ทำงานร่วมกัน บวก Services margin 73%+ recurring เกินแสนล้านต่อปี",
+      "why": "WWDC 8 มิ.ย. เป็น catalyst — แต่ UBS มองเป็น software-only ไม่กระตุ้นดีมานด์ บวก Apple ต้องพึ่ง Gemini = AI lag จริง",
+      "risk": "ถ้า DOJ/EU action ต่อ App Store, tariff กระทบการผลิต iPhone, Apple Intelligence underwhelm จนไม่เกิด upgrade cycle, หรือเสีย share ในจีน"
     },
     "bull_th": [
-      "Services segment $108B ARR growing 14%+ YoY, GM 75% = margin engine",
-      "2.5B+ installed base สร้าง ecosystem lock-in ที่แทบเป็นไปไม่ได้จะออก",
-      "Apple Silicon M-series = performance/efficiency gap ยังกว้างขึ้น",
-      "Apple Intelligence on-device AI = privacy differentiator vs cloud AI",
-      "Buyback $110B+ per year = EPS accretion ต่อเนื่อง"
+      "Ecosystem lock-in แข็งที่สุดใน consumer tech — switching cost สูง",
+      "Services margin 73%+ บวก recurring เกินแสนล้านต่อปี",
+      "ฐานอุปกรณ์ active 2.5 พันล้านเครื่อง",
+      "Apple Silicon นำหน้า x86 ด้าน performance ต่อ watt",
+      "India เป็น growth engine ถัดไป"
     ],
     "risk_th": [
-      "CEO transition: Cook → Ternus ก.ย. 2026 = key person risk ระยะสั้น",
-      "China revenue 18% ของ total — BYD/Huawei competition + trade war risk",
-      "iPhone cycle maturity — upgrades ช้าลงทุกปี",
-      "EU DMA บังคับ open App Store = Services revenue กระทบ",
-      "MoS เพียง 9.3% จาก FV $215 — ยังสูงเกินไปสำหรับ entry ที่ conservative"
+      "AI lag — ต้องพึ่งโมเดล Gemini ของคู่แข่ง",
+      "WWDC อาจ underwhelm บวก App Store growth ช้าลง",
+      "CEO transition Cook สู่ Ternus ก.ย. 2026",
+      "China 18% เจอ Huawei บวก EU DMA",
+      "ราคาเกินมูลค่าราว 22% เทียบ growth ที่ช้า"
     ]
   },
   "QCOM": {
@@ -2190,9 +2305,9 @@
     "waf": 6.3,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 240.84,
+    "price": 242.57,
     "fv": 197,
-    "mos": -22.3,
+    "mos": -23.1,
     "fpe": 23.0,
     "peg": null,
     "scores": {
@@ -2218,7 +2333,7 @@
       ]
     },
     "idea": "ราคาเกิน FV ~22% — รอ; DC custom silicon ship ธ.ค. 2026 เป็น growth vector ใหม่",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2230,15 +2345,11 @@
       "risk": "Apple ออก ARM ISA license เองหมด = ไม่ต้องพึ่ง QCOM royalty; Samsung/MediaTek พัฒนา in-house SoC ดีขึ้น; ARM license dispute ยืดเยื้อ; China handset market ฟื้นไม่ได้"
     },
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "Apple ลด modem dependency",
-        "Samsung/MediaTek แข่ง",
-        "handset cycle ชะลอ"
-      ],
-      "summary": "market $241 เกิน FV $197 ~22%; DC custom silicon เป็น optionality แต่ Apple modem dependency เป็น structural risk",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -2334,9 +2445,9 @@
     "waf": 6.22,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 768.95,
+    "price": 719.09,
     "fv": 500,
-    "mos": -53.8,
+    "mos": -43.8,
     "fpe": 109.0,
     "peg": null,
     "scores": {
@@ -2362,7 +2473,7 @@
       ]
     },
     "idea": "Fwd P/E 109x PEG 4.5 เกิน ceiling หลายเท่า — รอ; ราคา +14% ยิ่งตึง",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2376,13 +2487,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "valuation extreme",
-        "MSFT Defender bundling",
-        "outage legacy + SBC"
-      ],
-      "summary": "Fwd P/E 109x PEG 4.5 เกิน ceiling หลายเท่า; market $769 ห่าง FV $500 มาก = overvalued",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🌱 Fast Grower",
     "mark_easy": {
@@ -2478,9 +2585,9 @@
     "waf": 6.03,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 426.89,
+    "price": 421.9,
     "fv": 330,
-    "mos": -29.4,
+    "mos": -27.8,
     "fpe": 46.5,
     "peg": null,
     "scores": {
@@ -2506,7 +2613,7 @@
       ]
     },
     "idea": "ราคา +14% เกิน FV ~29% — รอ; DC revenue +40% YoY ดี แต่ valuation ตึง, FV uplift $297→$330",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2518,15 +2625,11 @@
       "risk": "Co-packaged optics (CPO) adoption เร็วกว่าคาด → ทำให้ pluggable transceiver obsolete; II-VI legacy debt หนัก $4.5B+; Lumentum/Fabrinet แข่ง fierce; SiC market softer from EV slowdown"
     },
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "heavy CapEx กด FCF",
-        "hyperscaler concentration",
-        "CPO execution risk"
-      ],
-      "summary": "DC rev +40% จริงแต่ market $427 เกิน FV $330 ~29%; +14%/สัปดาห์ momentum + heavy CapEx + early profitability",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -2622,9 +2725,9 @@
     "waf": 5.73,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 334.49,
+    "price": 323.92,
     "fv": 130,
-    "mos": -157.3,
+    "mos": -149.2,
     "fpe": 38.2,
     "peg": null,
     "scores": {
@@ -2650,7 +2753,7 @@
       ]
     },
     "idea": "ราคาเกิน FV มาก — รอ pullback ลึก; AI data center power demand จริงแต่ priced-in เต็ม",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2664,13 +2767,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "CapEx supercycle อาจ pause",
-        "ABB/Schneider/Eaton แข่ง",
-        "hyperscaler concentration"
-      ],
-      "summary": "market $334 ห่าง FV $130 มาก; AI power demand จริงแต่ priced-in เต็มที่",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "🚀 Pre-Inevitable",
     "mark_easy": {
@@ -2766,9 +2865,9 @@
     "waf": 5.65,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 402.71,
+    "price": 393.44,
     "fv": 130,
-    "mos": -209.8,
+    "mos": -202.6,
     "fpe": 115.6,
     "peg": null,
     "scores": {
@@ -2794,7 +2893,7 @@
       ]
     },
     "idea": "ราคาแพงสุดขั้ว P/E 115x — หลีกเลี่ยง; NVIDIA RTX Spark AI PC ดันหุ้น +18% แต่ valuation ไม่ support",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2808,13 +2907,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "FTC antitrust สอบ licensing (พ.ค.)",
-        "RISC-V threat",
-        "SoftBank overhang"
-      ],
-      "summary": "P/E ~115x + market price $403 ห่าง FV $130 มหาศาล; RTX Spark pop เป็น sentiment ไม่ใช่ fundamentals",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "⚠️ Watch-Only",
     "mark_easy": {
@@ -2910,9 +3005,9 @@
     "waf": 4.83,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 423.74,
+    "price": 418.45,
     "fv": 170,
-    "mos": -149.3,
+    "mos": -146.1,
     "fpe": 203.0,
     "peg": null,
     "scores": {
@@ -2938,7 +3033,7 @@
       ]
     },
     "idea": "P/E 200x+ ราคา assume ทุกอย่างสำเร็จ — PASS; Optimus/FSD optionality ยังไม่ priced เป็นมูลค่า",
-    "updated": "2026-06-03",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2952,13 +3047,9 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [],
-      "concerns": [
-        "valuation zero margin",
-        "Musk distraction",
-        "BYD competition + EV margin"
-      ],
-      "summary": "P/E 200x+ market $424 ห่าง FV $170 มาก — PASS ถูกต้อง, optionality ไม่มี margin of safety",
-      "review_date": "2026-06-03"
+      "concerns": [],
+      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
+      "review_date": "2026-06-05"
     },
     "tier": "⚠️ Speculative",
     "mark_easy": {
@@ -3048,16 +3139,16 @@
       "TSMC, Samsung เป็น alternative foundry ที่ดีกว่าสำหรับบางกลุ่ม",
       "Conviction 2/5 สะท้อนว่า upside thesis ยังไม่ proven — high risk"
     ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 2,
     "waf": 4.15,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 107.93,
+    "price": 111.78,
     "fv": 20,
-    "mos": -439.7,
-    "fpe": 195.0,
+    "mos": -458.9,
+    "fpe": 202.0,
     "peg": null,
     "scores": {
       "bq": [
@@ -3081,12 +3172,12 @@
         40
       ]
     },
-    "idea": "Turnaround ยังไม่ proven — PASS; ราคาเกิน intrinsic มากตาม Warren's bear FV",
-    "updated": "2026-06-03",
+    "idea": "Foxconn partnership AI infrastructure ที่ Computex (+4.4%) = optionality เชิงบวก แต่ไม่มี financial terms; turnaround ยังไม่ proven, ราคาเกิน intrinsic มหาศาล → PASS/STUDY",
+    "updated": "2026-06-05",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-06-03",
+      "updated": "2026-06-05",
       "tier": "⚠️ Turnaround",
       "tier_slug": "turnaround",
       "what": "Intel มี x86 ISA ecosystem lock-in ที่ยังคงอยู่ใน enterprise legacy — แต่ competitive moat กำลังถูก erode; Intel Foundry Services (IFS) คือ attempt ใหม่ที่จะแข่ง TSMC แต่ยัง loss-making; Gaudi AI accelerator เป็นทางเลือก budget ต่อ NVIDIA แต่ยังไม่ได้รับการยืนยันจากตลาด",
@@ -3097,174 +3188,75 @@
       "charlie_verdict": "CAUTION",
       "verified_claims": [],
       "concerns": [
-        "18A yield execution risk",
-        "GAAP loss ยาว",
-        "foundry external customer ยังไม่ชัด"
+        "Foxconn deal ไม่มี financial terms = sentiment",
+        "52wL $19→$112 = +489% turnaround rally เปราะ",
+        "prevClose $121→$112 = −7.5% วันเดียว = volatile",
+        "GAAP loss ต่อเนื่อง"
       ],
-      "summary": "Warren FV $20 อาจ bearish เกินไป แต่ PASS ถูกต้อง — turnaround ยังไม่ proven, market price $108 sentiment-driven",
-      "review_date": "2026-06-03"
+      "summary": "เห็นด้วยว่า overvalued + turnaround ยังไม่ proven (PASS ถูก) — แต่ FV base $20 (forward PE 202×) อาจ punitive เกินไป; Foxconn partnership + 18A = optionality ที่ไม่เป็นศูนย์",
+      "review_date": "2026-06-05"
     },
     "tier": "⚠️ Turnaround",
     "mark_easy": {
-      "one_liner": "เดิมพัน turnaround ที่ยังไม่พิสูจน์ — ความเสี่ยงสูง",
-      "what": "Intel ทำทั้ง CPU x86 และพยายามเป็น foundry รับจ้างผลิต กำลัง turnaround ครั้งใหญ่ด้วย node 18A",
+      "one_liner": "หุ้น turnaround ที่ยังไม่พิสูจน์ตัว — เดิมพันที่ foundry และ 18A",
+      "what": "Intel เคยเป็นเจ้าตลาด CPU แต่ตอนนี้อยู่ในช่วง turnaround พยายามสร้างธุรกิจ foundry แข่ง TSMC และผลักดัน node 18A",
       "why_invest": [
-        "18A RibbonFET + PowerVia backside power delivery = technical innovation จริง",
-        "CHIPS Act $8.5B grant + DOE $11B loan = government backstop",
-        "Intel Foundry Services ลูกค้าใหม่ (Microsoft, Amazon rumored)",
-        "x86 server market share ยังสูง แม้ AMD กำลัง gain share"
+        "มี x86 ecosystem lock-in ใน enterprise legacy ที่ยังเหลืออยู่",
+        "18A process node เป็น key catalyst ถ้า yield ดีพอ",
+        "เพิ่งจับมือ Foxconn พัฒนา AI infrastructure ที่ Computex",
+        "CHIPS Act เป็น backstop ทางการเงิน"
       ],
       "watch_out": [
-        "GAAP loss ยาว — turnaround multi-year ไม่รู้ว่าจะสำเร็จไหม",
-        "18A execution risk สูงมาก — ประวัติ miss yield target ก่อนหน้านี้",
-        "AMD EPYC กำลัง erode x86 server market share ต่อเนื่อง"
+        "ยังขาดทุน GAAP ต่อเนื่อง — turnaround ยังไม่พิสูจน์",
+        "ดีล Foxconn ไม่มีรายละเอียดการเงิน = แค่ sentiment",
+        "ราคาเกินมูลค่าพื้นฐานมหาศาล (PE กว่า 200 เท่า)"
       ],
-      "bottom_line": "เรื่องราว turnaround น่าสนใจแต่ยังไม่ proven — conviction ต่ำ ดูห่างๆ ไปก่อน"
+      "bottom_line": "Pete มองว่ายังเป็น speculation ไม่ใช่ investment — Foxconn deal เป็น optionality ที่ดีแต่ยังไม่พอ ราคาแพงเกินพื้นฐานมาก จึงให้ PASS"
     },
     "mark_full": {
-      "business_overview": "รายได้หลักจาก CPU (DCAI + Client) ส่วน Foundry ยังขาดทุนระหว่างสร้างฐานลูกค้า",
-      "tam": "ตลาด server CPU + foundry ใหญ่มาก แต่ Intel ต้องแย่ง share กลับจาก AMD และดึงลูกค้า foundry ใหม่",
-      "moat": "เคยแข็งจาก x86 + fab แต่ตอนนี้ moat สึกหรอ — AMD แย่ง share, foundry ยังตาม TSMC",
-      "latest_financials": "Q1 2026 รายได้ $13.6B (+22% DCAI); GAAP ยังขาดทุน; 18A กำลัง ramp",
+      "business_overview": "Intel เคยครองตลาด CPU x86 แต่ moat กำลังถูกกัดเซาะ ธุรกิจมี 2 ส่วน: ผลิตภัณฑ์ (CPU/GPU) และ Intel Foundry Services (IFS) ที่พยายามแข่ง TSMC แต่ยังขาดทุน บริษัทอยู่ในช่วง turnaround ภายใต้ CEO Lip-Bu Tan",
+      "tam": "ตลาด foundry บวก AI accelerator ใหญ่มาก แต่ Intel ต้องพิสูจน์ว่าทำ 18A ได้ yield ดีก่อน ถ้า foundry สำเร็จจะเป็น upside มหาศาล แต่ตอนนี้ยังเป็น speculation",
+      "moat": "x86 ISA ecosystem lock-in ใน enterprise legacy ยังเหลืออยู่ แต่กำลังถูก erode จาก AMD บวก ARM — moat ที่แท้จริงตอนนี้อ่อนแอ การเดิมพันคือ foundry comeback ที่ยังไม่พิสูจน์",
+      "latest_financials": "ยังขาดทุน GAAP ต่อเนื่อง forward PE สูงกว่า 200 เท่า สะท้อนกำไรที่ถูกกดต่ำ รอบนี้จับมือ Foxconn พัฒนา AI infrastructure ที่ Computex (หุ้นบวก 4.4%) แต่ไม่มีรายละเอียดการเงิน",
       "key_points": [
-        "CHIPS Act $8.5B grant + DOE $11B loan = government backstop",
-        "Intel Foundry Services ลูกค้าใหม่ (Microsoft, Amazon rumored)",
-        "x86 server market share ยังสูง แม้ AMD กำลัง gain share",
-        "ราคาหุ้น beaten down = upside ถ้า turnaround สำเร็จ"
+        "18A RibbonFET เป็น key catalyst — yield risk สูง",
+        "Foxconn partnership = optionality แต่ไม่มี financial terms",
+        "CHIPS Act เป็น backstop",
+        "เลิกจ้าง 15,000+ คน กระทบ R&D capability"
       ]
     },
     "warren_easy": [
-      "Intel มี optionality จาก 18A + packaging + เงินหนุนรัฐบาล แต่ทั้งหมดยัง \"ถ้าสำเร็จ\"",
-      "ราคา ~$108 สะท้อนความหวัง turnaround ไปมากแล้ว ขณะที่พื้นฐานยังขาดทุน — ไม่มี margin of safety",
-      "PASS — รอเห็นหลักฐาน 18A มีลูกค้านอกจริงก่อน"
+      "Intel เป็นกรณีที่ยากสำหรับผม — เคยเป็นเจ้าตลาด CPU แต่ moat กำลังถูกกัดเซาะ ธุรกิจ foundry (IFS) ที่พยายามแข่ง TSMC ยังขาดทุน และบริษัทยังขาดทุน GAAP ต่อเนื่อง นี่คือ turnaround ที่ยังไม่พิสูจน์ตัว",
+      "รอบนี้ข่าวจับมือ Foxconn พัฒนา AI infrastructure เป็น optionality เชิงบวก แต่ไม่มีรายละเอียดการเงิน เป็นแค่ sentiment ที่ดันหุ้นบวก 4.4% ไม่ได้เปลี่ยนพื้นฐาน Fair Value ของผมที่ 20 ดอลลาร์ยังสะท้อนว่าราคาปัจจุบันเกินมูลค่าพื้นฐานมหาศาล",
+      "ผมจึงให้ PASS — นี่ยังเป็น speculation ไม่ใช่ investment ถ้า 18A พิสูจน์ตัวได้จริงด้วย yield ดีค่อยกลับมาดูใหม่ ตอนนี้ความเสี่ยงสูงเกินไปเทียบกับโอกาส"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: Warren FV $20 อาจ bearish เกินไป แต่ PASS ถูกต้อง — turnaround ยังไม่ proven, market price $108 sentiment-driven",
-        "จุดที่ Charlie กังวล: 18A yield execution risk; GAAP loss ยาว",
-        "ต้อง monitor: foundry external customer ยังไม่ชัด — verdict ปัจจุบัน CAUTION"
+        "ผมเห็นด้วยว่า Intel overvalued และ turnaround ยังไม่พิสูจน์ — ยังขาดทุน GAAP, forward PE กว่า 200 เท่า ดีล Foxconn ไม่มี financial terms เป็นแค่ sentiment (หุ้นบวก 4.4%)",
+        "แต่ผมมีข้อสังเกต: Fair Value 20 ดอลลาร์ของ Warren อาจ punitive เกินไป — Foxconn partnership บวก 18A บวก CHIPS Act เป็น optionality ที่ไม่เป็นศูนย์ ราคาวิ่งจาก 52-week low 19 เป็น 112 (turnaround rally) แต่ก็ผันผวนมาก (prevClose 121 ลงมา 112 ในวันเดียว)",
+        "ผมให้ CAUTION — เห็นด้วยกับ action PASS แต่อยากเตือนว่า turnaround optionality ไม่ควรตีเป็นศูนย์ ต้อง monitor yield ของ 18A เป็นหลัก"
       ]
     },
-    "idea_th": "Turnaround ยังไม่ proven — PASS; ราคาเกิน intrinsic มากตาม Warren's bear FV",
+    "idea_th": "Intel เป็น turnaround ที่ยังไม่พิสูจน์ตัว — Foxconn deal เป็น optionality ที่ดีแต่ไม่มีรายละเอียดการเงิน ราคาเกินมูลค่าพื้นฐานมหาศาล (PE กว่า 200 เท่า) ยังขาดทุน GAAP จึงให้ PASS",
     "story_gate_th": {
-      "what": "บริษัทเดียวที่มีทั้ง CPU + โรงงาน + advanced packaging (EMIB/Foveros)",
-      "why": "18A RibbonFET + เงินหนุนรัฐ (CHIPS Act) เป็น optionality",
-      "risk": "18A yield ยังเสี่ยง + ขาดทุน GAAP ยาว + ลูกค้า foundry ภายนอกยังไม่ชัด"
+      "what": "มี x86 ISA ecosystem lock-in ใน enterprise legacy ที่ยังเหลือ แต่ moat ถูก erode; Intel Foundry เป็นความพยายามใหม่แข่ง TSMC แต่ยังขาดทุน",
+      "why": "อยู่ในช่วง turnaround ภายใต้ CEO ใหม่ 18A เป็น key catalyst ถ้า yield ดีพอ บวก Foxconn deal เป็น optionality — แต่นี่คือ speculation ไม่ใช่ investment",
+      "risk": "ถ้า 18A ล้มเหลว foundry strategy ต้องเลิก, AMD เพิ่ม server share จน x86 moat แตก, หรือถูก break up"
     },
     "bull_th": [
-      "18A RibbonFET + PowerVia backside power delivery = technical innovation จริง",
-      "CHIPS Act $8.5B grant + DOE $11B loan = government backstop",
-      "Intel Foundry Services ลูกค้าใหม่ (Microsoft, Amazon rumored)",
-      "x86 server market share ยังสูง แม้ AMD กำลัง gain share",
-      "ราคาหุ้น beaten down = upside ถ้า turnaround สำเร็จ"
+      "x86 ecosystem lock-in ใน enterprise legacy ยังเหลือ",
+      "18A RibbonFET เป็น catalyst ถ้า yield ดี",
+      "Foxconn partnership = optionality ใหม่ใน AI infrastructure",
+      "CHIPS Act เป็น backstop ทางการเงิน",
+      "ถ้า foundry สำเร็จ = upside มหาศาล"
     ],
     "risk_th": [
-      "GAAP loss ยาว — turnaround multi-year ไม่รู้ว่าจะสำเร็จไหม",
-      "18A execution risk สูงมาก — ประวัติ miss yield target ก่อนหน้านี้",
-      "AMD EPYC กำลัง erode x86 server market share ต่อเนื่อง",
-      "TSMC, Samsung เป็น alternative foundry ที่ดีกว่าสำหรับบางกลุ่ม",
-      "Conviction 2/5 สะท้อนว่า upside thesis ยังไม่ proven — high risk"
-    ]
-  },
-  "SPCX": {
-    "symbol": "SPCX",
-    "display": "SPCX",
-    "category": "pre_ipo",
-    "name": "Space Exploration Technologies Corp.",
-    "sector": "Space & AI",
-    "sectorSlug": "space",
-    "chips": [
-      "Space & AI",
-      "Pre-IPO"
-    ],
-    "bull": [
-      "Starlink 10.3M subscribers (Q1 2026, +105% YoY) + Connectivity Adj EBITDA $7.2B (63% margin) = cash machine",
-      "Falcon 9 ครอง global commercial launches — 170 missions ใน 2025, launch cost moat แทบ replicate ไม่ได้",
-      "Revenue $18.7B (+33% YoY 2025); Connectivity Op Income $4.4B พิสูจน์ว่าธุรกิจกำไรได้จริง",
-      "Starship reusability ถ้าสำเร็จ = launch cost revolution + unlock Lunar/Mars/mega-constellation TAM",
-      "IPO S-1 filed May 20, 2026 — SPCX บน Nasdaq; xAI (Grok) + X รวมใน entity เดียวกัน"
-    ],
-    "risk": [
-      "AI segment (xAI/X) เผาเงิน $(6.4B) op loss + $12.7B CapEx ใน 2025 = drag ต่อ consolidated P&L",
-      "Starlink ARPU declining structurally: $99→$91→$81→$66 — pricing pressure รุนแรง",
-      "Elon Musk key person risk: CEO Tesla + SpaceX + xAI + DOGE พร้อมกัน",
-      "Dual-class voting (Class B = 10 votes) = Elon ควบคุม 100% — Class A IPO investors มี governance น้อยมาก",
-      "Starship commercialization ยังไม่เกิด — $3B R&D burn ต่อปี; FAA approvals และ timeline ไม่แน่นอน"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-05-25",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 business ในตัวเดียว: (1) Space — Falcon 9 ครอง majority ของ global commercial launches, (2) Connectivity — Starlink global broadband ที่มี 10.3M subscribers, Adj EBITDA Margin 63% = cash machine ที่ทรงพลัง, (3) AI — xAI (Grok) + X (social media + advertising) ที่รวม asset เข้ามาใน Feb 2026; Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้",
-      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิดภายใต้ ticker SPCX บน Nasdaq; Connectivity 2025 Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA $7.2B; Starlink subscribers 10.3M (Mar 2026, +105% YoY จาก 5.0M); Starship full reusability จะ unlock ต้นทุน launch ที่ต่ำลงอย่างมีนัยสำคัญ",
-      "risk": "AI segment เผาเงิน $(6.4B) operating loss ใน 2025 + $12.7B CapEx = drag ต่อ consolidated P&L; Starlink ARPU กำลัง decline structurally ($99→$91→$81→$66); Elon Musk overextended ทำให้ execution risk สูง; Starship commercialization ยังไม่เกิด"
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "mark_easy": {
-      "one_liner": "SpaceX กำลัง IPO — Starlink คือ cash machine ที่ไม่มีคู่แข่ง Falcon 9 ครองอวกาศ และ AI via Grok กำลังเติบโต",
-      "what": "SpaceX เป็นบริษัทที่ทำธุรกิจใหญ่ 3 อย่างในองค์กรเดียว: ส่งจรวดขึ้นอวกาศ (Falcon 9 ครอง 82% ของ commercial launches ทั่วโลก), ให้ internet ผ่านดาวเทียม Starlink (10.3M subscribers), และ AI ผ่าน xAI (Grok) + X (Twitter) ที่รวมเข้ามาในปี 2026 เพิ่งยื่น S-1 ต่อ SEC เพื่อ IPO บน Nasdaq ภายใต้ ticker SPCX",
-      "why_invest": [
-        "Starlink เป็น cash machine ระดับโลก — Revenue $11.4B (+50% YoY), Adj EBITDA $7.2B, margin 63% จาก 10.3M subscribers ที่โต +102% YoY ไม่มีคู่แข่งที่ใกล้เคียงในอีก 5 ปีข้างหน้า",
-        "Falcon 9 reusability สร้าง cost moat ที่แทบ replicate ไม่ได้ — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ทำให้ Starlink deployment ถูกลงเรื่อยๆ แบบ flywheel",
-        "Revenue $18.7B (+33% YoY 2025) กระจายใน 3 segment ที่แตกต่างกัน — Backlog $28.4B แสดง revenue visibility ที่ดีมาก",
-        "Starship ถ้าสำเร็จ = revolution ในต้นทุน launch ลดลงอีก 10-100x เปิด TAM ใหม่ทั้ง Lunar/Mars/mega-constellation ที่ไม่มีใครเคยทำได้"
-      ],
-      "watch_out": [
-        "AI segment เผาเงินหนักมาก — xAI/X มี Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ดึง consolidated P&L ให้ Net Loss $(4.9B) ทั้งที่ Starlink กำไรดีมาก",
-        "Elon Musk key person risk ขั้นสูงสุด — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน หากเกิดเหตุหรือ focus แตก ทุกบริษัทจะได้รับผลกระทบพร้อมกัน",
-        "IPO investors แทบไม่มีสิทธิ์ควบคุม — Class B (10 votes) ของ Elon ทำให้เขา control board ฝ่ายเดียว IPO investors ซื้อแค่ economic exposure ไม่มี governance power"
-      ],
-      "bottom_line": "SpaceX คือ IPO ที่น่าตื่นเต้นที่สุดแห่งทศวรรษ — Starlink เป็น world-class business แต่ valuation $1.75T ต้องการ AI + Starship future ที่ยังไม่แน่นอน รอดูราคา IPO ก่อนตัดสินใจ"
-    },
-    "mark_full": {
-      "business_overview": "SpaceX ก่อตั้งปี 2002 โดย Elon Musk สำนักงานใหญ่ที่ Starbase, Texas แบ่งธุรกิจเป็น 3 segment: Space (Falcon 9/Heavy + Dragon + Starship R&D) Revenue $4.1B ยังขาดทุนจาก Starship R&D $3B/ปี, Connectivity (Starlink) Revenue $11.4B Op Income $4.4B เป็น cash engine หลัก, และ AI (xAI/Grok + X/Twitter) Revenue $3.2B แต่ขาดทุน $(6.4B) หลัง merge xAI (Feb 2026) entity นี้กลายเป็น Space + Internet + AI ในหน้าเดียว",
-      "tam": "Starlink TAM ยังใหญ่มาก — 10.3M subscribers จาก potential 50M+ ใน 5-7 ปี บวก Starlink Mobile ที่กำลัง partner กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ตลาด Space launch TAM จะโตตาม demand จาก Amazon Kuiper (FCC deadline Jul 2026), SDA Tranche 3 และ commercial constellations ต่างๆ ส่วน AI/Grok TAM ยังใหม่แต่ถ้า scale ได้จะยิ่งใหญ่กว่าทั้งสองอย่างรวมกัน",
-      "moat": "MOAT มีหลายชั้น: Falcon 9 reusability flywheel ที่ cost ต่ำกว่าคู่แข่ง 5-10x ทำให้แข่งได้ยากมาก, Starlink constellation 10,300+ satellites ที่สร้างมาหลายปีไม่สามารถ replicate ได้รวดเร็ว, Vertical integration ที่ผลิต rocket engine/avionics/terminals เองทำให้ต้นทุนต่ำและ supply chain เป็นอิสระ, และ 82% global commercial launch share ที่สร้าง pricing power ต่อเนื่อง",
-      "latest_financials": "FY2025: Revenue $18.7B (+33%), Connectivity Op Income $4.4B, Adj EBITDA $6.6B แต่ Net Loss $(4.9B) เพราะ AI drag Q1 2026: Revenue $4.7B (+15%), Starlink 10.3M subs (+105% YoY), Adj EBITDA $1.1B แต่ Net Loss $(4.3B) เพราะ AI CapEx $7.7B ใน Q1 เดียว Backlog $28.4B (53% delivery ใน 2027-2028) แสดง revenue visibility ที่ดีมาก",
-      "key_points": [
-        "Starlink ARPU declining: $99 (2023) → $81 (2025) → $66 (Q1 2026) — มาจากการขยายสู่ตลาดที่จ่ายน้อยกว่า subscriber growth +105% YoY ยังชดเชยได้ แต่ต้องติดตามว่า ARPU จะ stabilize ที่ไหน",
-        "xAI 1 GW compute cluster Q1 2026 — CapEx $7.7B ใน Q1 เดียวแสดง scaling AI อย่างรวดเร็วมาก แต่ monetization ยังไม่ชัดเจน",
-        "IPO target $1.75T valuation / $75B raise — Roadshow June 4, Pricing June 11, Listing June 12, 2026 ตามข่าว นับเป็น largest IPO in history",
-        "TeraFab กับ Intel 14A + in-house FOPLP semiconductor manufacturing — SpaceX กำลังลด dependency ต่อ suppliers ระยะยาว ซึ่งอาจลดต้นทุน Starlink terminal ได้อีก"
-      ]
-    },
-    "warren_easy": [
-      "Warren ยังไม่ได้ประเมิน WAF สำหรับ SPCX เพราะยังเป็น Pre-IPO — ไม่มีราคาหุ้น public ที่จะเปรียบเทียบกับ Fair Value ได้ แต่ถ้า Warren ดู Connectivity segment อย่างเดียว Adj EBITDA $7.2B × 20x = ~$144B เป็น conservative floor ที่ไม่ต้องการ Starship หรือ AI ให้ประสบความสำเร็จเลย Starlink เพียงอย่างเดียวพิสูจน์แล้วว่าเป็น world-class cash machine",
-      "ปัญหาหลักที่ Warren จะมองคือ AI segment เผาเงิน $(6.4B) Op Loss + CapEx $12.7B ในปี 2025 เพียงปีเดียว ทำให้ consolidated เป็นขาดทุนทั้งที่ Starlink กำไรดี IPO target $1.75T หมายความว่าตลาดต้องเชื่อใน Starship optionality + AI scaling ที่ยังไม่ proven — ซึ่งเป็น speculation ไม่ใช่ fundamental value ตามหลักการของ Warren",
-      "กลยุทธ์ WATCH IPO price ก่อนตัดสินใจ — ถ้า IPO ที่ conservative Starlink valuation ~$300B (Connectivity-only floor) จะ risk/reward ดีกว่า IPO ที่ $1.75T ซึ่ง price-in AI + Starship future แบบเต็มๆ หลัง IPO หากมี pullback จาก hype และ AI แสดง path toward profitability = จะน่าสนใจมากขึ้น"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยันข้อมูลจาก S-1 ที่ยื่น SEC โดยตรงว่า Connectivity segment แข็งแกร่งจริง — Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA Margin 63%, subscriber growth +102% YoY ใน 2025 Falcon 9 launch cadence 170/year เป็น fact ที่ independent sources ยืนยันตรงกัน Backlog $28.4B แสดง revenue visibility ที่น่าเชื่อถือ",
-        "Charlie ออก CAUTION เพราะ consolidated financials มีหลาย red flags: AI segment ขาดทุน $(6.4B) Op Loss + CapEx $7.7B เพียง Q1 2026 เดียว ยังไม่มี clear path to breakeven Starlink ARPU declining structurally $99→$66 ใน 3 ปี และ Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก",
-        "Charlie แนะนำ WATCH IPO price และ S-1 amendments — monitor 3 สิ่ง: (1) IPO valuation ที่ fair ควรอิง Connectivity $144B+ เป็น floor ไม่ใช่ $1.75T full AI optionality (2) xAI path to profitability ใน 2027-2028 ต้องเห็น revenue ramp ชัดเจน (3) Starlink ARPU stabilization ที่ $60-65 ถ้า ARPU ยังลงต่อแสดงว่า pricing power กำลังหาย"
-      ]
-    },
-    "idea_th": "SpaceX กำลัง IPO ครั้งแรกภายใต้ SPCX โดยรวม Starlink (cash machine $7.2B Adj EBITDA, 63% margin) + Falcon 9 (82% global commercial launches) + xAI/Grok ไว้ในองค์กรเดียว — thesis หลักคือ Starlink จะเติบโตสู่ 50M+ subscribers ขณะที่ Starship จะปฏิวัติต้นทุน launch ลงอีก 10-100x",
-    "story_gate_th": {
-      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครอง 82% commercial launches ทั่วโลก), Connectivity (Starlink 10.3M subscribers Adj EBITDA margin 63%) และ AI (xAI Grok + X Twitter ที่รวมเข้ามา 2026) Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้และเป็นพื้นฐานของ flywheel ทั้งหมด",
-      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิด SPCX บน Nasdaq Starlink Revenue $11.4B (+50% YoY) Op Income $4.4B Adj EBITDA $7.2B — ตัวเลขพิสูจน์ว่าธุรกิจกำไรได้จริง subscribers 10.3M ยังเป็นส่วนน้อยของ potential market ถ้า Starship full reusability สำเร็จ = launch cost revolution unlock TAM ใหม่ทั้งหมด",
-      "risk": "AI segment เผาเงิน $(6.4B) Op Loss + $12.7B CapEx ยังไม่มี path to profitability ชัดเจน Starlink ARPU declining structurally $99→$66 ใน 3 ปี Elon Musk overextended (CEO ของ 4 บริษัทพร้อมกัน) และ Starship commercialization ยังไม่เกิด — ถ้า AI drag ยืดออกและ ARPU ลงต่อ thesis จะอ่อนแอลงมาก"
-    },
-    "bull_th": [
-      "Starlink cash machine ที่ไม่มีคู่แข่ง — Revenue $11.4B (+50%), Adj EBITDA $7.2B margin 63% จาก 10.3M subscribers Amazon Kuiper ช้ากว่า 5+ ปี ทำให้ Starlink มีเวลาสร้าง lock-in ก่อนที่คู่แข่งจะพร้อม",
-      "Falcon 9 reusability flywheel — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ไม่มีคู่แข่งใกล้เคียง เป็น moat ที่ใช้เวลาและเงินมหาศาลจะ replicate",
-      "Starlink Mobile D2D — partnership กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ถ้า TAM นี้แม้แต่ 10% ก็คือ 300M subscribers เพิ่มเติม",
-      "Starship commercialization Q4 2026 target — ถ้าสำเร็จ launch cost ลดลงอีก 10-100x เปิด Lunar/Mars/mega-constellation และ businesses ใหม่ที่ไม่มีใครเคยทำได้",
-      "TeraFab + in-house FOPLP semiconductor manufacturing — SpaceX กำลังสร้าง vertical integration ใน chip supply chain เพื่อลดต้นทุน Starlink terminal และลด external dependency ระยะยาว"
-    ],
-    "risk_th": [
-      "AI segment เผาเงินหนักมาก — xAI/X Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ถ้า xAI ไม่สามารถ monetize ได้ใน 2-3 ปี จะกัดกร่อน Starlink profits ทั้งหมด",
-      "Elon Musk key person risk — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน ถ้า focus แตกหรือเกิดเหตุส่วนตัว ทุกบริษัทจะได้รับผลกระทบพร้อมกันทันที",
-      "Starlink ARPU declining structurally: $99→$81→$66 — pricing pressure รุนแรง ถ้า ARPU ไม่ stabilize revenue growth จะช้าลงแม้ subscribers โตต่อ",
-      "Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก — Elon ควบคุม board ฝ่ายเดียว ถ้า allocate capital ไป AI/Starship มากเกินไป shareholders มีอำนาจน้อยมากในการ object",
-      "Starship commercialization ยังไม่เกิด — R&D burn $3B/ปี FAA approvals ล่าช้า timeline ยืดออกเรื่อยๆ ถ้า commercial operation ล้มเหลวทำให้ Starlink constellation replenishment ยังต้องใช้ Falcon 9 ที่แพงกว่า"
+      "ยังขาดทุน GAAP ต่อเนื่อง — turnaround ยังไม่พิสูจน์",
+      "18A execution risk สูง — yield risk",
+      "AMD EPYC กัดกิน server share ทำ x86 moat แตก",
+      "ราคา forward PE กว่า 200 เท่า — เกินมูลค่ามหาศาล",
+      "เลิกจ้าง 15,000+ คน กระทบ R&D"
     ]
   }
 }
