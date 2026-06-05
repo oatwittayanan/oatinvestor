@@ -1988,146 +1988,6 @@
       "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
     ]
   },
-  "SPCX": {
-    "symbol": "SPCX",
-    "display": "SPCX",
-    "category": "pre_ipo",
-    "name": "Space Exploration Technologies Corp.",
-    "sector": "Space & AI",
-    "sectorSlug": "space",
-    "chips": [
-      "Space & AI",
-      "Pre-IPO"
-    ],
-    "bull": [
-      "Starlink 10.3M subscribers (Q1 2026, +105% YoY) + Connectivity Adj EBITDA $7.2B (63% margin) = cash machine",
-      "Falcon 9 ครอง global commercial launches — 170 missions ใน 2025, launch cost moat แทบ replicate ไม่ได้",
-      "Revenue $18.7B (+33% YoY 2025); Connectivity Op Income $4.4B พิสูจน์ว่าธุรกิจกำไรได้จริง",
-      "Starship reusability ถ้าสำเร็จ = launch cost revolution + unlock Lunar/Mars/mega-constellation TAM",
-      "IPO S-1 filed May 20, 2026 — SPCX บน Nasdaq; xAI (Grok) + X รวมใน entity เดียวกัน"
-    ],
-    "risk": [
-      "AI segment (xAI/X) เผาเงิน $(6.4B) op loss + $12.7B CapEx ใน 2025 = drag ต่อ consolidated P&L",
-      "Starlink ARPU declining structurally: $99→$91→$81→$66 — pricing pressure รุนแรง",
-      "Elon Musk key person risk: CEO Tesla + SpaceX + xAI + DOGE พร้อมกัน",
-      "Dual-class voting (Class B = 10 votes) = Elon ควบคุม 100% — Class A IPO investors มี governance น้อยมาก",
-      "Starship commercialization ยังไม่เกิด — $3B R&D burn ต่อปี; FAA approvals และ timeline ไม่แน่นอน"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 4,
-    "waf": 7.0,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": null,
-    "fv": null,
-    "mos": null,
-    "fpe": null,
-    "peg": null,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.5,
-        "green",
-        95
-      ],
-      "va": [
-        3.0,
-        "orange",
-        30
-      ],
-      "ra": [
-        4.5,
-        "orange",
-        45
-      ]
-    },
-    "idea": "SpaceX IPO — Nasdaq SPCX, pricing June 11, listing June 12, 2026. ธุรกิจ world-class (Starlink $7.2B Adj EBITDA 2025, 63% margin) แต่ IPO ราคา $1.75T premium ไม่มี MoS",
-    "updated": "2026-06-05",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-05-25",
-      "tier": "⚠️ Speculative",
-      "tier_slug": "speculative",
-      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 business ในตัวเดียว: (1) Space — Falcon 9 ครอง majority ของ global commercial launches, (2) Connectivity — Starlink global broadband ที่มี 10.3M subscribers, Adj EBITDA Margin 63% = cash machine ที่ทรงพลัง, (3) AI — xAI (Grok) + X (social media + advertising) ที่รวม asset เข้ามาใน Feb 2026; Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้",
-      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิดภายใต้ ticker SPCX บน Nasdaq; Connectivity 2025 Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA $7.2B; Starlink subscribers 10.3M (Mar 2026, +105% YoY จาก 5.0M); Starship full reusability จะ unlock ต้นทุน launch ที่ต่ำลงอย่างมีนัยสำคัญ",
-      "risk": "AI segment เผาเงิน $(6.4B) operating loss ใน 2025 + $12.7B CapEx = drag ต่อ consolidated P&L; Starlink ARPU กำลัง decline structurally ($99→$91→$81→$66); Elon Musk overextended ทำให้ execution risk สูง; Starship commercialization ยังไม่เกิด"
-    },
-    "tier": "⚠️ Speculative",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "SKIP รอบนี้ (ไม่มีข่าว/ราคาขยับ ≤10%) — carry-forward valuation เดิม, อัพเดทเฉพาะราคา",
-      "review_date": "2026-06-05"
-    },
-    "mark_easy": {
-      "one_liner": "SpaceX กำลัง IPO — Starlink คือ cash machine ที่ไม่มีคู่แข่ง Falcon 9 ครองอวกาศ และ AI via Grok กำลังเติบโต",
-      "what": "SpaceX เป็นบริษัทที่ทำธุรกิจใหญ่ 3 อย่างในองค์กรเดียว: ส่งจรวดขึ้นอวกาศ (Falcon 9 ครอง 82% ของ commercial launches ทั่วโลก), ให้ internet ผ่านดาวเทียม Starlink (10.3M subscribers), และ AI ผ่าน xAI (Grok) + X (Twitter) ที่รวมเข้ามาในปี 2026 เพิ่งยื่น S-1 ต่อ SEC เพื่อ IPO บน Nasdaq ภายใต้ ticker SPCX",
-      "why_invest": [
-        "Starlink เป็น cash machine ระดับโลก — Revenue $11.4B (+50% YoY), Adj EBITDA $7.2B, margin 63% จาก 10.3M subscribers ที่โต +102% YoY ไม่มีคู่แข่งที่ใกล้เคียงในอีก 5 ปีข้างหน้า",
-        "Falcon 9 reusability สร้าง cost moat ที่แทบ replicate ไม่ได้ — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ทำให้ Starlink deployment ถูกลงเรื่อยๆ แบบ flywheel",
-        "Revenue $18.7B (+33% YoY 2025) กระจายใน 3 segment ที่แตกต่างกัน — Backlog $28.4B แสดง revenue visibility ที่ดีมาก",
-        "Starship ถ้าสำเร็จ = revolution ในต้นทุน launch ลดลงอีก 10-100x เปิด TAM ใหม่ทั้ง Lunar/Mars/mega-constellation ที่ไม่มีใครเคยทำได้"
-      ],
-      "watch_out": [
-        "AI segment เผาเงินหนักมาก — xAI/X มี Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ดึง consolidated P&L ให้ Net Loss $(4.9B) ทั้งที่ Starlink กำไรดีมาก",
-        "Elon Musk key person risk ขั้นสูงสุด — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน หากเกิดเหตุหรือ focus แตก ทุกบริษัทจะได้รับผลกระทบพร้อมกัน",
-        "IPO investors แทบไม่มีสิทธิ์ควบคุม — Class B (10 votes) ของ Elon ทำให้เขา control board ฝ่ายเดียว IPO investors ซื้อแค่ economic exposure ไม่มี governance power"
-      ],
-      "bottom_line": "SpaceX คือ IPO ที่น่าตื่นเต้นที่สุดแห่งทศวรรษ — Starlink เป็น world-class business แต่ valuation $1.75T ต้องการ AI + Starship future ที่ยังไม่แน่นอน รอดูราคา IPO ก่อนตัดสินใจ"
-    },
-    "mark_full": {
-      "business_overview": "SpaceX ก่อตั้งปี 2002 โดย Elon Musk สำนักงานใหญ่ที่ Starbase, Texas แบ่งธุรกิจเป็น 3 segment: Space (Falcon 9/Heavy + Dragon + Starship R&D) Revenue $4.1B ยังขาดทุนจาก Starship R&D $3B/ปี, Connectivity (Starlink) Revenue $11.4B Op Income $4.4B เป็น cash engine หลัก, และ AI (xAI/Grok + X/Twitter) Revenue $3.2B แต่ขาดทุน $(6.4B) หลัง merge xAI (Feb 2026) entity นี้กลายเป็น Space + Internet + AI ในหน้าเดียว",
-      "tam": "Starlink TAM ยังใหญ่มาก — 10.3M subscribers จาก potential 50M+ ใน 5-7 ปี บวก Starlink Mobile ที่กำลัง partner กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ตลาด Space launch TAM จะโตตาม demand จาก Amazon Kuiper (FCC deadline Jul 2026), SDA Tranche 3 และ commercial constellations ต่างๆ ส่วน AI/Grok TAM ยังใหม่แต่ถ้า scale ได้จะยิ่งใหญ่กว่าทั้งสองอย่างรวมกัน",
-      "moat": "MOAT มีหลายชั้น: Falcon 9 reusability flywheel ที่ cost ต่ำกว่าคู่แข่ง 5-10x ทำให้แข่งได้ยากมาก, Starlink constellation 10,300+ satellites ที่สร้างมาหลายปีไม่สามารถ replicate ได้รวดเร็ว, Vertical integration ที่ผลิต rocket engine/avionics/terminals เองทำให้ต้นทุนต่ำและ supply chain เป็นอิสระ, และ 82% global commercial launch share ที่สร้าง pricing power ต่อเนื่อง",
-      "latest_financials": "FY2025: Revenue $18.7B (+33%), Connectivity Op Income $4.4B, Adj EBITDA $6.6B แต่ Net Loss $(4.9B) เพราะ AI drag Q1 2026: Revenue $4.7B (+15%), Starlink 10.3M subs (+105% YoY), Adj EBITDA $1.1B แต่ Net Loss $(4.3B) เพราะ AI CapEx $7.7B ใน Q1 เดียว Backlog $28.4B (53% delivery ใน 2027-2028) แสดง revenue visibility ที่ดีมาก",
-      "key_points": [
-        "Starlink ARPU declining: $99 (2023) → $81 (2025) → $66 (Q1 2026) — มาจากการขยายสู่ตลาดที่จ่ายน้อยกว่า subscriber growth +105% YoY ยังชดเชยได้ แต่ต้องติดตามว่า ARPU จะ stabilize ที่ไหน",
-        "xAI 1 GW compute cluster Q1 2026 — CapEx $7.7B ใน Q1 เดียวแสดง scaling AI อย่างรวดเร็วมาก แต่ monetization ยังไม่ชัดเจน",
-        "IPO target $1.75T valuation / $75B raise — Roadshow June 4, Pricing June 11, Listing June 12, 2026 ตามข่าว นับเป็น largest IPO in history",
-        "TeraFab กับ Intel 14A + in-house FOPLP semiconductor manufacturing — SpaceX กำลังลด dependency ต่อ suppliers ระยะยาว ซึ่งอาจลดต้นทุน Starlink terminal ได้อีก"
-      ]
-    },
-    "warren_easy": [
-      "Warren ยังไม่ได้ประเมิน WAF สำหรับ SPCX เพราะยังเป็น Pre-IPO — ไม่มีราคาหุ้น public ที่จะเปรียบเทียบกับ Fair Value ได้ แต่ถ้า Warren ดู Connectivity segment อย่างเดียว Adj EBITDA $7.2B × 20x = ~$144B เป็น conservative floor ที่ไม่ต้องการ Starship หรือ AI ให้ประสบความสำเร็จเลย Starlink เพียงอย่างเดียวพิสูจน์แล้วว่าเป็น world-class cash machine",
-      "ปัญหาหลักที่ Warren จะมองคือ AI segment เผาเงิน $(6.4B) Op Loss + CapEx $12.7B ในปี 2025 เพียงปีเดียว ทำให้ consolidated เป็นขาดทุนทั้งที่ Starlink กำไรดี IPO target $1.75T หมายความว่าตลาดต้องเชื่อใน Starship optionality + AI scaling ที่ยังไม่ proven — ซึ่งเป็น speculation ไม่ใช่ fundamental value ตามหลักการของ Warren",
-      "กลยุทธ์ WATCH IPO price ก่อนตัดสินใจ — ถ้า IPO ที่ conservative Starlink valuation ~$300B (Connectivity-only floor) จะ risk/reward ดีกว่า IPO ที่ $1.75T ซึ่ง price-in AI + Starship future แบบเต็มๆ หลัง IPO หากมี pullback จาก hype และ AI แสดง path toward profitability = จะน่าสนใจมากขึ้น"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยันข้อมูลจาก S-1 ที่ยื่น SEC โดยตรงว่า Connectivity segment แข็งแกร่งจริง — Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA Margin 63%, subscriber growth +102% YoY ใน 2025 Falcon 9 launch cadence 170/year เป็น fact ที่ independent sources ยืนยันตรงกัน Backlog $28.4B แสดง revenue visibility ที่น่าเชื่อถือ",
-        "Charlie ออก CAUTION เพราะ consolidated financials มีหลาย red flags: AI segment ขาดทุน $(6.4B) Op Loss + CapEx $7.7B เพียง Q1 2026 เดียว ยังไม่มี clear path to breakeven Starlink ARPU declining structurally $99→$66 ใน 3 ปี และ Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก",
-        "Charlie แนะนำ WATCH IPO price และ S-1 amendments — monitor 3 สิ่ง: (1) IPO valuation ที่ fair ควรอิง Connectivity $144B+ เป็น floor ไม่ใช่ $1.75T full AI optionality (2) xAI path to profitability ใน 2027-2028 ต้องเห็น revenue ramp ชัดเจน (3) Starlink ARPU stabilization ที่ $60-65 ถ้า ARPU ยังลงต่อแสดงว่า pricing power กำลังหาย"
-      ]
-    },
-    "idea_th": "SpaceX กำลัง IPO ครั้งแรกภายใต้ SPCX โดยรวม Starlink (cash machine $7.2B Adj EBITDA, 63% margin) + Falcon 9 (82% global commercial launches) + xAI/Grok ไว้ในองค์กรเดียว — thesis หลักคือ Starlink จะเติบโตสู่ 50M+ subscribers ขณะที่ Starship จะปฏิวัติต้นทุน launch ลงอีก 10-100x",
-    "story_gate_th": {
-      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครอง 82% commercial launches ทั่วโลก), Connectivity (Starlink 10.3M subscribers Adj EBITDA margin 63%) และ AI (xAI Grok + X Twitter ที่รวมเข้ามา 2026) Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้และเป็นพื้นฐานของ flywheel ทั้งหมด",
-      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิด SPCX บน Nasdaq Starlink Revenue $11.4B (+50% YoY) Op Income $4.4B Adj EBITDA $7.2B — ตัวเลขพิสูจน์ว่าธุรกิจกำไรได้จริง subscribers 10.3M ยังเป็นส่วนน้อยของ potential market ถ้า Starship full reusability สำเร็จ = launch cost revolution unlock TAM ใหม่ทั้งหมด",
-      "risk": "AI segment เผาเงิน $(6.4B) Op Loss + $12.7B CapEx ยังไม่มี path to profitability ชัดเจน Starlink ARPU declining structurally $99→$66 ใน 3 ปี Elon Musk overextended (CEO ของ 4 บริษัทพร้อมกัน) และ Starship commercialization ยังไม่เกิด — ถ้า AI drag ยืดออกและ ARPU ลงต่อ thesis จะอ่อนแอลงมาก"
-    },
-    "bull_th": [
-      "Starlink cash machine ที่ไม่มีคู่แข่ง — Revenue $11.4B (+50%), Adj EBITDA $7.2B margin 63% จาก 10.3M subscribers Amazon Kuiper ช้ากว่า 5+ ปี ทำให้ Starlink มีเวลาสร้าง lock-in ก่อนที่คู่แข่งจะพร้อม",
-      "Falcon 9 reusability flywheel — 170 launches ใน 2025 ต้นทุนต่อ kg ต่ำที่สุดในโลก ไม่มีคู่แข่งใกล้เคียง เป็น moat ที่ใช้เวลาและเงินมหาศาลจะ replicate",
-      "Starlink Mobile D2D — partnership กับ T-Mobile/KDDI/Optus เพื่อเข้าถึง 3B+ คนที่ไม่มี internet ถ้า TAM นี้แม้แต่ 10% ก็คือ 300M subscribers เพิ่มเติม",
-      "Starship commercialization Q4 2026 target — ถ้าสำเร็จ launch cost ลดลงอีก 10-100x เปิด Lunar/Mars/mega-constellation และ businesses ใหม่ที่ไม่มีใครเคยทำได้",
-      "TeraFab + in-house FOPLP semiconductor manufacturing — SpaceX กำลังสร้าง vertical integration ใน chip supply chain เพื่อลดต้นทุน Starlink terminal และลด external dependency ระยะยาว"
-    ],
-    "risk_th": [
-      "AI segment เผาเงินหนักมาก — xAI/X Op Loss $(6.4B) + CapEx $12.7B ในปี 2025 เดียว ถ้า xAI ไม่สามารถ monetize ได้ใน 2-3 ปี จะกัดกร่อน Starlink profits ทั้งหมด",
-      "Elon Musk key person risk — CEO Tesla + SpaceX + xAI + X + DOGE พร้อมกัน ถ้า focus แตกหรือเกิดเหตุส่วนตัว ทุกบริษัทจะได้รับผลกระทบพร้อมกันทันที",
-      "Starlink ARPU declining structurally: $99→$81→$66 — pricing pressure รุนแรง ถ้า ARPU ไม่ stabilize revenue growth จะช้าลงแม้ subscribers โตต่อ",
-      "Dual-class voting ทำให้ IPO investors มี governance power น้อยมาก — Elon ควบคุม board ฝ่ายเดียว ถ้า allocate capital ไป AI/Starship มากเกินไป shareholders มีอำนาจน้อยมากในการ object",
-      "Starship commercialization ยังไม่เกิด — R&D burn $3B/ปี FAA approvals ล่าช้า timeline ยืดออกเรื่อยๆ ถ้า commercial operation ล้มเหลวทำให้ Starlink constellation replenishment ยังต้องใช้ Falcon 9 ที่แพงกว่า"
-    ]
-  },
   "TER": {
     "symbol": "TER",
     "display": "TER",
@@ -3827,6 +3687,151 @@
       "BYD competition ใน China และ global EV market เข้มข้นมาก",
       "EV margin กดดัน — average price ลดลง ส่วนแบ่งตลาดลดใน China",
       "Optimus timeline uncertainty — production scale ยังไม่พิสูจน์"
+    ]
+  },
+  "SPCX": {
+    "symbol": "SPCX",
+    "display": "SPCX",
+    "category": "pre_ipo",
+    "name": "Space Exploration Technologies Corp.",
+    "sector": "Space & AI",
+    "sectorSlug": "space",
+    "chips": [
+      "Space & AI",
+      "Pre-IPO"
+    ],
+    "bull": [
+      "Starlink 10.3M subscribers (Q1 2026, +105% YoY) + Connectivity Adj EBITDA $7.2B (63% margin) = cash machine",
+      "Falcon 9 ครอง global commercial launches — 170 missions ใน 2025, launch cost moat แทบ replicate ไม่ได้",
+      "Revenue $18.7B (+33% YoY 2025); Connectivity Op Income $4.4B พิสูจน์ว่าธุรกิจกำไรได้จริง",
+      "Starship reusability ถ้าสำเร็จ = launch cost revolution + unlock Lunar/Mars/mega-constellation TAM",
+      "IPO S-1 filed May 20, 2026 — SPCX บน Nasdaq; xAI (Grok) + X รวมใน entity เดียวกัน"
+    ],
+    "risk": [
+      "AI segment (xAI/X) เผาเงิน $(6.4B) op loss + $12.7B CapEx ใน 2025 = drag ต่อ consolidated P&L",
+      "Starlink ARPU declining structurally: $99→$91→$81→$66 — pricing pressure รุนแรง",
+      "Elon Musk key person risk: CEO Tesla + SpaceX + xAI + DOGE พร้อมกัน",
+      "Dual-class voting (Class B = 10 votes) = Elon ควบคุม 100% — Class A IPO investors มี governance น้อยมาก",
+      "Starship commercialization ยังไม่เกิด — $3B R&D burn ต่อปี; FAA approvals และ timeline ไม่แน่นอน"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 2,
+    "waf": 4.35,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 135.0,
+    "fv": 114.0,
+    "mos": -15.5,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        3.5,
+        "orange",
+        35
+      ],
+      "ra": [
+        3.5,
+        "orange",
+        35
+      ]
+    },
+    "idea": "IPO $135 ($1.77T) สูงกว่า analyst bull SOTP ($1.49T) — ไม่มี MoS วันเปิดเทรด; WATCH ไม่ไล่ราคา",
+    "updated": "2026-06-05",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-06-05",
+      "tier": "⚠️ Speculative",
+      "tier_slug": "speculative",
+      "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 business ในตัวเดียว: (1) Space — Falcon 9 ครอง majority ของ global commercial launches, (2) Connectivity — Starlink global broadband ที่มี 10.3M subscribers, Adj EBITDA Margin 63% = cash machine ที่ทรงพลัง, (3) AI — xAI (Grok) + X (social media + advertising) ที่รวม asset เข้ามาใน Feb 2026; Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้",
+      "why": "S-1 filed SEC May 20, 2026 = IPO กำลังจะเกิดภายใต้ ticker SPCX บน Nasdaq; Connectivity 2025 Revenue $11.4B (+50% YoY), Op Income $4.4B, Adj EBITDA $7.2B; Starlink subscribers 10.3M (Mar 2026, +105% YoY จาก 5.0M); Starship full reusability จะ unlock ต้นทุน launch ที่ต่ำลงอย่างมีนัยสำคัญ",
+      "risk": "AI segment เผาเงิน $(6.4B) operating loss ใน 2025 + $12.7B CapEx = drag ต่อ consolidated P&L; Starlink ARPU กำลัง decline structurally ($99→$91→$81→$66); Elon Musk overextended ทำให้ execution risk สูง; Starship commercialization ยังไม่เกิด"
+    },
+    "tier": "⚠️ Speculative",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [
+        "Morningstar ประเมิน FV $780B = ต่ำกว่าราคา IPO ~48% (ต่ำกว่า bear case Warren $990B) — \"ซื้อหลัง IPO ได้ถูกกว่า\"",
+        "67x sales = 3 เท่าของ Nvidia = multiple แพงสุดขั้วในตลาด",
+        "Net loss $4.9B (2025) + $4.3B (Q1 2026) — ยังไม่มี path to profitability ชัดเจน",
+        "Musk voting >82% no-sunset → unilateral M&A/capital raise/comp; AkademikerPension ขึ้นบัญชีดำ \"catastrophic governance\""
+      ],
+      "summary": "เห็นด้วยกับ WATCH ของ Warren (ไม่ไล่ราคา IPO) — ข้อมูลอิสระยืนยัน IPO $135/$1.77T แพงเกิน; downside อาจมากกว่า bear case ของ Warren ด้วยซ้ำ",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "SpaceX บริษัทอวกาศของ Elon Musk กำลัง IPO ใหญ่สุดในประวัติศาสตร์ — ของจริงแต่ราคาแพงมาก",
+      "what": "SpaceX รวม 3 ธุรกิจในตัวเดียว: ปล่อยจรวด (Falcon 9), เน็ตดาวเทียม Starlink (สมาชิก 10.3 ล้าน), และ AI (xAI/Grok + X) ที่เพิ่งควบรวมเข้ามาต้นปี 2026 กำลังเข้าตลาด Nasdaq ใช้ชื่อ SPCX ราคา IPO $135/หุ้น",
+      "why_invest": [
+        "Starlink คือเครื่องพิมพ์เงิน — กำไร EBITDA margin 63% สมาชิกโต 105% ต่อปี ครองตลาดเน็ตดาวเทียมโลก",
+        "Falcon 9 ครองตลาดปล่อยจรวดเชิงพาณิชย์โลก 82% — คู่แข่งตามแทบไม่ทันเพราะใช้จรวดซ้ำได้ ต้นทุนต่อกิโลต่ำสุดในโลก",
+        "TAM มหาศาล — Starlink ต่อมือถือ (Direct-to-Cell), Starship ที่จะลดต้นทุนปล่อยจรวดอีก 10-100 เท่า, และ AI compute ในอวกาศ",
+        "ระดมทุน $75 พันล้าน (IPO ใหญ่สุดในประวัติศาสตร์) ไปขยาย AI + จรวด + ดาวเทียม"
+      ],
+      "watch_out": [
+        "ราคา IPO $135 = มูลค่า $1.77 ล้านล้าน ซึ่งแพงกว่าที่นักวิเคราะห์ประเมินกรณีดีสุด — Morningstar ให้แค่ $780 พันล้าน (ถูกกว่าครึ่งหนึ่ง)",
+        "ธุรกิจ AI เผาเงินหนัก — ขาดทุน $6.4 พันล้านปี 2025 และทั้งบริษัทขาดทุนสุทธิ $4.9 พันล้าน",
+        "Elon Musk คุมเสียงโหวต 82% แบบไม่มีวันหมดอายุ — ตัดสินใจอะไรก็ได้คนเดียว นักลงทุนรายย่อยแทบไม่มีสิทธิ์"
+      ],
+      "bottom_line": "Starlink เจ๋งจริงระดับโลก แต่วันเปิดเทรดราคามันแพงเกินไปแล้ว — ดูไว้ก่อน อย่ารีบไล่ซื้อ ของดีไม่ต้องรีบ"
+    },
+    "mark_full": {
+      "business_overview": "SpaceX หาเงินจาก 3 ส่วน: Connectivity (Starlink) คือตัวทำเงินหลัก รายได้ $11.4 พันล้านปี 2025 กำไรดี; Space (ปล่อยจรวด Falcon/Dragon/Starship) รายได้ $4.1 พันล้านแต่ยังลงทุน Starship หนัก; และ AI (xAI + X) รายได้ $3.2 พันล้านแต่ขาดทุนมหาศาล รวมทั้งบริษัทรายได้ $18.7 พันล้าน (+33%) แต่ขาดทุนสุทธิ $4.9 พันล้าน",
+      "tam": "ตลาดมหาศาลหลายชั้น — เน็ตดาวเทียมที่ยังเข้าถึงคน 3 พันล้านที่ไม่มีอินเทอร์เน็ต, Starlink ต่อมือถือตรง (DTC) ที่มี 7.4 ล้านอุปกรณ์ใช้แล้ว, Starship ที่จะปฏิวัติต้นทุนปล่อยจรวด, และ AI compute ในอวกาศที่เลี่ยงข้อจำกัดไฟฟ้า/ระบายความร้อนบนโลก",
+      "moat": "ข้อได้เปรียบที่ลอกเลียนยากสุดคือจรวดใช้ซ้ำได้ของ Falcon 9 ที่ทำให้ต้นทุนต่อกิโลต่ำสุดในโลก + ผลิตทุกอย่างเอง (vertical integration) ตั้งแต่เครื่องยนต์จรวดถึงจานรับ Starlink + ดาวเทียมกว่า 10,300 ดวงที่สร้าง network ครอบคลุมทั่วโลก คู่แข่งอย่าง Amazon Kuiper ตามหลังอยู่ 5 ปีขึ้นไป",
+      "latest_financials": "ไตรมาส 1/2026 รายได้ $4,694 ล้าน (+15%) แต่ขาดทุนจากการดำเนินงาน $1,943 ล้าน และขาดทุนสุทธิ $4,276 ล้าน เพราะลงทุน AI compute หนักมาก ($7,723 ล้านไตรมาสเดียว) เงินสดเหลือ $15,852 ล้าน ลดจาก $24.7 พันล้าน — Starlink ทำกำไรได้แล้วแต่ถูกธุรกิจ AI ถ่วง",
+      "key_points": [
+        "ราคา IPO $135 = $1.77 ล้านล้าน หรือ 67 เท่าของยอดขาย = แพงกว่า Nvidia 3 เท่า",
+        "ARPU (รายได้ต่อสมาชิก) ของ Starlink ร่วงต่อเนื่อง $99 → $66 ต่อเดือน เพราะขยายไปกลุ่มที่จ่ายน้อยลง",
+        "ดีล Anthropic $45 พันล้าน 3 ปี ทำให้ AI กลายเป็นธุรกิจขายพลังคำนวณ แต่ยกเลิกได้ใน 90 วัน",
+        "แพ็กเกจค่าตอบแทน Musk ผูกกับเป้าสุดโต่ง — สร้างอาณานิคมดาวอังคาร 1 ล้านคน + ดาต้าเซ็นเตอร์นอกโลก 100 เทระวัตต์/ปี"
+      ]
+    },
+    "warren_easy": [
+      "Warren มอง SpaceX ว่ามีธุรกิจแกนที่ยอดเยี่ยมจริง — Starlink เป็นเครื่องพิมพ์เงินด้วย margin 63% และ Falcon 9 ครองตลาดปล่อยจรวดโลก 82% เป็น moat ที่ลอกเลียนยากมาก ปัญหาไม่ใช่คุณภาพธุรกิจ แต่เป็นราคา",
+      "ที่ราคา IPO $135 มูลค่าบริษัทพุ่งไป $1.77 ล้านล้าน ซึ่งสูงกว่าที่นักวิเคราะห์ประเมินกรณีดีสุด (sum-of-parts ราว $1.49 ล้านล้าน) ไปแล้ว — แปลว่าราคา IPO บวก 'ความฝัน' ทั้งหมด (Starship, AI, ดาวอังคาร) เข้าไปครบตั้งแต่ก่อนพิสูจน์ จึงไม่มีส่วนเผื่อความปลอดภัย (margin of safety) เลย Fair Value ฐานของ Warren อยู่แค่ $114 ต่ำกว่าราคา IPO 16%",
+      "กลยุทธ์ของ Warren คือ WATCH — ไม่ไล่ราคาวันเปิดเทรด เพราะ WAF แค่ 4.35 (ต่ำ) และจัดเป็น Speculative ถ้าจะมีติดพอร์ตจริงควรไม่เกิน 3% และทยอยซื้อ รอราคากลับเข้าหา $114 หรือต่ำกว่า หรือรอจุดพิสูจน์ เช่น Starship V3 บินเชิงพาณิชย์ / AI เริ่มเห็นทางทำกำไร"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ตรวจสอบอิสระจากข่าวภายนอก ยืนยันตัวเลข IPO ตรงกับเอกสาร SEC ทุกอย่าง — ราคา $135, มูลค่า $1.77 ล้านล้าน, ระดมทุน $75 พันล้าน, เข้า Nasdaq วันที่ 12 มิ.ย. 2026 และ Starlink เป็นธุรกิจที่แข็งแกร่งจริง",
+        "สิ่งที่ Charlie กังวลคือราคา — Morningstar ประเมินมูลค่าที่เหมาะสมแค่ $780 พันล้าน ต่ำกว่าราคา IPO ถึง 48% (ต่ำกว่ากรณีแย่สุดของ Warren ที่ $990 พันล้านด้วยซ้ำ) และระบุตรงๆ ว่า 'นักลงทุนจะมีโอกาสซื้อในราคาดีกว่านี้หลัง IPO' — 67 เท่าของยอดขายคือแพงกว่า Nvidia 3 เท่า ขณะที่บริษัทยังขาดทุน",
+        "Charlie เห็นด้วยกับ Warren ว่าควร WATCH ไม่ไล่ราคา — เพิ่มเติมว่าเรื่องธรรมาภิบาลน่ากังวล Musk คุมเสียงโหวตเกิน 82% แบบไม่มีวันหมดอายุ จนกองทุนเดนมาร์ก AkademikerPension ขึ้นบัญชีดำว่า 'governance หายนะ' สิ่งที่ต้องจับตาคือราคาหลังเปิดเทรดจะย่อลงหามูลค่าจริงไหม และ AI จะหยุดเผาเงินได้เมื่อไหร่"
+      ]
+    },
+    "idea_th": "SpaceX เป็นบริษัทอวกาศระดับโลกที่มี Starlink เป็นเครื่องพิมพ์เงินและครองตลาดปล่อยจรวด แต่ราคา IPO $135 ($1.77 ล้านล้าน) แพงเกินมูลค่าจริงไปมาก จึงควรดูไว้ก่อนรอราคาที่สมเหตุผลกว่า ไม่ไล่ซื้อวันเปิดเทรด",
+    "story_gate_th": {
+      "what": "SpaceX คุม 3 ธุรกิจในตัวเดียว: Starlink เน็ตดาวเทียม (เครื่องพิมพ์เงิน margin 63%), Falcon 9 ปล่อยจรวดครองตลาดโลก 82%, และ AI (xAI/Grok + X) จุดแข็งคือจรวดใช้ซ้ำได้ที่ทำให้ต้นทุนต่ำสุดในโลก",
+      "why": "กำลัง IPO ใหญ่สุดในประวัติศาสตร์ที่ $135/หุ้น ระดมทุน $75 พันล้าน เข้า Nasdaq 12 มิ.ย. 2026 — Starlink สมาชิก 10.3 ล้านโต 105% ต่อปี และ Starship ที่จะปฏิวัติต้นทุนปล่อยจรวด",
+      "risk": "ราคา IPO แพงกว่ามูลค่าจริงมาก (Morningstar ให้แค่ครึ่งเดียว) + AI เผาเงินปีละ 6 พันล้าน + Musk คุมเสียงโหวต 82% คนเดียว ถ้า Starship/AI ทำไม่ได้ตามฝัน ราคาจะร่วงแรง"
+    },
+    "bull_th": [
+      "Starlink เป็นเครื่องพิมพ์เงิน — margin EBITDA 63% สมาชิกโต 105% ต่อปี ครองตลาดเน็ตดาวเทียมโลก และเริ่มสร้างกระแสเงินสดเลี้ยงตัวเองได้",
+      "Falcon 9 ครองตลาดปล่อยจรวดเชิงพาณิชย์โลก 82% ด้วยเทคโนโลยีจรวดใช้ซ้ำ — ต้นทุนต่อกิโลต่ำสุดในโลก คู่แข่งตามไม่ทัน",
+      "Starship ถ้าสำเร็จจะลดต้นทุนปล่อยจรวดอีก 10-100 เท่า ปลดล็อกการขนส่งอวกาศขนาดใหญ่ + ปล่อยดาวเทียมจำนวนมหาศาล",
+      "ดีล Anthropic $45 พันล้าน เปลี่ยน AI จากต้นทุนภายในเป็นธุรกิจขายพลังคำนวณให้ภายนอก",
+      "Direct-to-Cell (Starlink ต่อมือถือตรง) มี 7.4 ล้านอุปกรณ์ใช้แล้วใน 30 ประเทศ ขยาย TAM ไปทั่วโลก"
+    ],
+    "risk_th": [
+      "ราคา IPO $135 ($1.77 ล้านล้าน) สูงกว่ามูลค่าจริง — Morningstar ประเมินแค่ $780 พันล้าน ต่ำกว่าราคา IPO 48% ไม่มีส่วนเผื่อความปลอดภัย",
+      "ธุรกิจ AI เผาเงินหนัก — ขาดทุน $6.4 พันล้านปี 2025 ทั้งบริษัทขาดทุนสุทธิ $4.9 พันล้าน ยังไม่เห็นทางทำกำไรชัดเจน",
+      "Elon Musk คุมเสียงโหวต 82% แบบไม่มีวันหมดอายุ ตัดสินใจ M&A/เพิ่มทุน/ค่าตอบแทนเองได้ จนกองทุนใหญ่ขึ้นบัญชีดำเรื่อง governance",
+      "ARPU ของ Starlink ร่วงต่อเนื่อง $99 → $66 ต่อเดือน สะท้อนแรงกดดันด้านราคาเมื่อขยายสู่กลุ่มที่จ่ายน้อยลง",
+      "Starship ยังอยู่ขั้นทดสอบ ลงทุน R&D หนักแต่ยังไม่เริ่มเชิงพาณิชย์ — ถ้าล่าช้าจะกระทบ thesis หลักทั้งหมด"
     ]
   },
   "INTC": {
