@@ -75,7 +75,7 @@ function tierBadge(tier) {
   else if (t.includes('turnaround')) cls = 'tier-turnaround';
   else if (t.includes('speculative')) cls = 'tier-cyclical';   // amber caution
   else if (t.includes('avoid')) cls = 'tier-turnaround';       // red — true avoid only
-  // "watch-only" / unknown → tier-avoid (neutral gray)
+  // unknown tier → tier-avoid (neutral gray). NB: "Watch-Only" deprecated — use action=WATCH
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
