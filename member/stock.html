@@ -331,7 +331,7 @@ function renderStock(s) {
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
           ${actionBadge(s.action||'study')}
           ${convictionBadge(s.conviction||'')}
-          ${tierBadge(s.tier||s.wafBadge||'')}
+          ${tierBadge(s.tier||'')}
           ${(s.chips||[]).slice(0,2).map(c=>`<span class="badge badge-blue" style="font-size:.72rem">${c}</span>`).join('')}
         </div>
         ${(s.trend_tags||[]).length ? `

@@ -63,14 +63,19 @@ function convictionBadge(conv) {
 
 function tierBadge(tier) {
   if (!tier) return '';
+  // Guard: ignore raw CSS-class leftovers (e.g. "waf-low"/"waf-mid") that are not real tiers
+  if (/^waf-/.test(tier.trim())) return '';
   const t = tier.toLowerCase();
   const label = tier.replace(/\s*\(.*\)\s*$/, '').trim();
-  let cls = 'tier-avoid';
+  let cls = 'tier-avoid';  // neutral gray default for any unrecognized tier
   if (t.includes('inevitable') && !t.includes('pre')) cls = 'tier-inevitable';
   else if (t.includes('pre')) cls = 'tier-pre-inev';
   else if (t.includes('fast')) cls = 'tier-fast';
   else if (t.includes('cyclical')) cls = 'tier-cyclical';
   else if (t.includes('turnaround')) cls = 'tier-turnaround';
+  else if (t.includes('speculative')) cls = 'tier-cyclical';   // amber caution
+  else if (t.includes('avoid')) cls = 'tier-turnaround';       // red — true avoid only
+  // "watch-only" / unknown → tier-avoid (neutral gray)
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
