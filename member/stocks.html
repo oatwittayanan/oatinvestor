@@ -128,7 +128,7 @@ function renderGrid() {
             <div class="stock-ticker">${s.symbol}</div>
             <div class="stock-name">${s.name || ''}</div>
             <div class="stock-meta" style="margin-top:6px">
-              ${tierBadge(s.tier || s.wafBadge || '')}
+              ${tierBadge(s.tier || '')}
             </div>
           </div>
           ${actionBadge(action)}
