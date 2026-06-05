@@ -709,6 +709,138 @@
       "ความเสี่ยง export control (สอบสวน chip diversion)"
     ]
   },
+  "LITE": {
+    "symbol": "LITE",
+    "display": "LITE",
+    "category": "ai_semiconductor",
+    "name": "Lumentum Holdings",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Optical/Photonics",
+      "AI Infrastructure"
+    ],
+    "bull": [
+      "รายได้ Q3 FY26 record $808M +90% YoY จาก AI/cloud optical demand",
+      "NVIDIA ลงทุน $2B (Series A preferred) + EMLs/pump lasers sold out >30% imbalance",
+      "CPO laser chips = growth driver ใหญ่สุด, Greensboro fab อาจเพิ่มรายได้ >$5B",
+      "vertical integration InP fabs = margin + supply security"
+    ],
+    "risk": [
+      "ราคาวิ่งแรงมาก (52wL $80 → $945) = optical group euphoria",
+      "forward PE สูงมากบน sentiment",
+      "convertible notes $3.2B + dilution risk",
+      "optical demand เป็น supply story — laser bottleneck"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 4,
+    "waf": 8.0,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 945.08,
+    "fv": 1100,
+    "mos": 14.1,
+    "fpe": 56,
+    "peg": null,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        6.5,
+        "amber",
+        65
+      ]
+    },
+    "idea": "Optical/laser leader ที่ AI ดันรายได้ Q3 FY26 record $808M (+90% YoY); NVIDIA ลงทุน $2B + EMLs/pump lasers sold out >30%; CPO laser chips = growth driver ใหญ่สุด + Greensboro fab อาจเพิ่มรายได้ >$5B (ยังไม่อยู่ใน guidance)",
+    "updated": "2026-06-05",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [
+        "forward PE สูงมากบน sentiment",
+        "optical group euphoria (NVIDIA endorsement effect)",
+        "convertible notes $3.2B + dilution risk",
+        "optical = supply story, laser bottleneck"
+      ],
+      "summary": "รายได้ Q3 record $808M (+90%) + NVIDIA $2B จริง แต่ราคาวิ่งจาก 52wL $80 เป็น $945 (+1075% ปีเดียว) = optical euphoria ชัด; FV $1100 ให้ MoS +14% แต่ run เร็วเกินพื้นฐาน",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B — หัวใจการเชื่อมต่อด้วยแสงใน AI data center",
+      "what": "Lumentum ผลิตชิปเลเซอร์และส่วนประกอบออปติคอลที่ใช้เชื่อมต่อความเร็วสูงใน data center AI รวมถึง transceiver, OCS และเลเซอร์สำหรับ CPO",
+      "why_invest": [
+        "รายได้ไตรมาสล่าสุดทำสถิติ 808 ล้านดอลลาร์ โต 90% YoY จากดีมานด์ AI/cloud",
+        "NVIDIA ลงทุน 2 พันล้านดอลลาร์ (preferred) บวก EML/pump laser ขายหมด supply ขาดเกิน 30%",
+        "เลเซอร์สำหรับ CPO เป็น growth driver ใหญ่สุด บวกโรงงาน Greensboro อาจเพิ่มรายได้เกิน 5 พันล้าน",
+        "vertical integration โรงงาน InP ของตัวเอง = margin บวก supply security"
+      ],
+      "watch_out": [
+        "ราคาวิ่งแรงมาก (52 สัปดาห์ต่ำสุด 80 ดอลลาร์ สู่ 945) = optical group euphoria",
+        "forward PE สูงมากบน sentiment",
+        "หนี้ convertible 3.2 พันล้าน บวกความเสี่ยง dilution"
+      ],
+      "bottom_line": "ธุรกิจโตจริงและ NVIDIA ลงทุนเป็น validation แต่ราคาร้อนแรงตามกลุ่ม optical — Pete มองว่ารอจังหวะ"
+    },
+    "mark_full": {
+      "business_overview": "Lumentum ผลิตชิปออปติคอล/โฟโตนิก — เลเซอร์, EML, pump laser, transceiver (800G/1.6T), OCS โดยขาย Components 66% บวก Systems 34% ลูกค้าหลักคือผู้ให้บริการ cloud/AI infrastructure",
+      "tam": "AI/cloud ดันดีมานด์ transceiver บวก laser chip โต บริษัทตั้งเป้ารายได้ 2 พันล้านดอลลาร์ต่อไตรมาส (จาก guide 985 ล้าน) โดย CPO (co-packaged optics) เป็น growth driver ใหญ่สุดที่ยังอยู่ในช่วงเริ่มต้น",
+      "moat": "vertical integration ในเลเซอร์ — โรงงาน InP ของตัวเอง บวก laser-chip leadership (EML record, pump laser โต 80%) บวก OCS/MEMS leadership ที่ลอกเลียนยาก ทำให้คุม margin และ supply",
+      "latest_financials": "Q3 FY26 รายได้ 808 ล้านดอลลาร์ (สถิติ +90% YoY), non-GAAP GM 47.9%, non-GAAP EPS 2.37 ดอลลาร์ Q4 guide 985 ล้าน/EPS 2.85-3.05 margin ขยายแรง (non-GAAP op margin 32% บวก 700bps QoQ)",
+      "key_points": [
+        "NVIDIA ลงทุน 2 พันล้าน preferred ที่ 695 ดอลลาร์ต่อหุ้น",
+        "EML/pump laser sold out, supply ขาดเกิน 30%",
+        "Greensboro fab (InP ที่ 5) อาจเพิ่มรายได้เกิน 5 พันล้าน (ยังไม่อยู่ใน guide)",
+        "path to 2 พันล้านดอลลาร์ต่อไตรมาส"
+      ]
+    },
+    "warren_easy": [
+      "Lumentum อยู่ตรงจุดสำคัญของ AI — การเชื่อมต่อด้วยแสง เป็นผู้นำชิปเลเซอร์และส่วนประกอบออปติคอลที่ data center AI ขาดไม่ได้ บวก vertical integration โรงงาน InP ที่คุม supply และ margin ได้เอง",
+      "ที่ NVIDIA ลงทุน 2 พันล้านดอลลาร์เป็น preferred บวก EML กับ pump laser ที่ขายหมด supply ขาดเกิน 30% ยืนยันดีมานด์จริง รายได้ไตรมาสล่าสุดโต 90% และบริษัทมองทางสู่ 2 พันล้านต่อไตรมาส ผมให้ Fair Value 1,100 ดอลลาร์ ที่ราคา 945 ให้ Margin of Safety ราว 14%",
+      "แต่สิ่งที่ผมระวังคือราคาวิ่งจาก 80 ดอลลาร์เป็น 945 ในปีเดียว กลุ่ม optical ทั้งกลุ่มอยู่ในโซน euphoria จาก NVIDIA effect ผมจึงให้ WATCH — ธุรกิจดีจริงแต่รอให้ราคาเย็นลงจะปลอดภัยกว่า"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยันธุรกิจแกร่ง — รายได้ Q3 record 808 ล้าน (โต 90%), NVIDIA ลงทุน 2 พันล้าน, EML sold out แต่ราคาวิ่งจาก 52-week low 80 ดอลลาร์เป็น 945 (โต 1,075% ในปีเดียว) คือ optical euphoria ที่ชัดเจน",
+        "สิ่งที่ผมกังวล: forward PE สูงมากบน sentiment, หนี้ convertible 3.2 พันล้านบวกความเสี่ยง dilution และ optical เป็น supply story (laser bottleneck) ไม่ใช่ demand story ล้วน",
+        "ผมให้ CAUTION — ธุรกิจคุณภาพและ growth จริง FV 1,100 ให้ margin 14% แต่ราคา run เร็วเกินพื้นฐาน ต้อง monitor ว่า CPO ramp จะตามทันราคาไหม"
+      ]
+    },
+    "idea_th": "Lumentum เป็นผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน 2 พันล้าน รายได้โต 90% จาก AI แต่ราคาวิ่งจาก 80 เป็น 945 ในปีเดียว = optical euphoria FV 1,100 ให้ margin 14% แต่รอจังหวะ",
+    "story_gate_th": {
+      "what": "ผู้นำชิปเลเซอร์/ออปติคอลสำหรับการเชื่อมต่อใน data center AI บวก vertical integration โรงงาน InP ของตัวเอง",
+      "why": "รายได้ Q3 record โต 90% บวก NVIDIA ลงทุน 2 พันล้าน บวก EML/pump sold out บวก CPO เป็น growth driver ใหญ่สุดที่ยังเริ่มต้น",
+      "risk": "ถ้า CPO timeline เลื่อน, NVIDIA concentration เป็น single-customer risk, หรือ optical oversupply จากคู่แข่งเร่งกำลังผลิต"
+    },
+    "bull_th": [
+      "รายได้ Q3 record 808 ล้าน โต 90% จาก AI/cloud optical",
+      "NVIDIA ลงทุน 2 พันล้าน preferred บวก EML/pump sold out",
+      "CPO laser chips = growth driver ใหญ่สุด",
+      "Greensboro fab อาจเพิ่มรายได้เกิน 5 พันล้าน",
+      "vertical integration InP = margin บวก supply security"
+    ],
+    "risk_th": [
+      "ราคาวิ่งแรงมาก (52wL 80 สู่ 945) = optical euphoria",
+      "forward PE สูงบน sentiment",
+      "convertible notes 3.2 พันล้าน บวก dilution",
+      "optical = supply story (laser bottleneck)",
+      "NVIDIA concentration = single-customer risk"
+    ]
+  },
   "NFLX": {
     "symbol": "NFLX",
     "display": "NFLX",
@@ -1279,6 +1411,270 @@
       "gross margin แปรผันตาม product mix"
     ]
   },
+  "SOLS": {
+    "symbol": "SOLS",
+    "display": "SOLS",
+    "category": "materials",
+    "name": "Solstice Advanced Materials",
+    "sector": "Materials",
+    "sectorSlug": "materials",
+    "chips": [
+      "Specialty Materials",
+      "Nuclear/AI/Defense"
+    ],
+    "bull": [
+      "ConverDyn = โรงงาน UF6 nuclear conversion เจ้าเดียวในสหรัฐ, backlog $2.2B ถึง 2030",
+      "Electronic Materials (sputtering targets) +21% จาก AI/semi demand",
+      "spin-off จาก Honeywell ต.ค. 2025 — FY26 EBITDA $975M-1.025B",
+      "Spectra UHMWPE armor fibers + defense exposure"
+    ],
+    "risk": [
+      "standalone public-company costs กด margin",
+      "Building Solutions cyclical (construction-exposed)",
+      "refrigerant HFO transition mix pressure",
+      "ยังใหม่ในตลาด — track record สั้น"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.4,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 84.13,
+    "fv": 88,
+    "mos": 4.4,
+    "fpe": 32.4,
+    "peg": null,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        7.5,
+        "amber",
+        75
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "Specialty materials หลากหลาย spin-off จาก Honeywell (ต.ค. 2025) — ConverDyn = UF6 nuclear conversion เจ้าเดียวในสหรัฐ (backlog $2.2B ถึง 2030) + Electronic Materials (sputtering targets) +21% จาก AI/semi; FY26 EBITDA $975M-1.025B",
+    "updated": "2026-06-05",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [
+        "track record standalone สั้น (ไตรมาสแรก)",
+        "standalone costs กด margin",
+        "Building Solutions cyclical",
+        "HFO refrigerant transition mix pressure"
+      ],
+      "summary": "Honeywell spin-off (ต.ค. 2025) ธุรกิจกระจาย + nuclear UF6 monopoly (ConverDyn) + AI/semi materials; FY26 EBITDA ~$1B, EV/EBITDA ~15x = สมเหตุผล; Warren เติม FV $88 จาก card จริงเหมาะสม MoS +4%",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "specialty materials แยกตัวจาก Honeywell — เจ้าของโรงงานแปลงเชื้อเพลิงนิวเคลียร์รายเดียวในสหรัฐ",
+      "what": "Solstice ผลิตวัสดุพิเศษหลากหลาย — สารทำความเย็น HFO, แปลงเชื้อเพลิงนิวเคลียร์ (UF6), วัสดุอิเล็กทรอนิกส์สำหรับชิป และเส้นใยเกราะ",
+      "why_invest": [
+        "ConverDyn = โรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึงปี 2030",
+        "วัสดุอิเล็กทรอนิกส์ (sputtering targets) โต 21% จากดีมานด์ AI/semi",
+        "แยกตัวจาก Honeywell ต.ค. 2025 — FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
+        "เส้นใยเกราะ Spectra บวก exposure ด้านกลาโหม"
+      ],
+      "watch_out": [
+        "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
+        "ธุรกิจ Building Solutions เป็น cyclical (ผูกก่อสร้าง)",
+        "ยังใหม่ในตลาด track record สั้น (ไตรมาส standalone แรก)"
+      ],
+      "bottom_line": "ธุรกิจกระจายดีบวกมี nuclear monopoly แต่ยังใหม่และราคาใกล้มูลค่าจริง — Pete ให้ WATCH รอดูผลงานต่อเนื่อง"
+    },
+    "mark_full": {
+      "business_overview": "Solstice แยกตัวจาก Honeywell (ต.ค. 2025) เป็นบริษัทวัสดุพิเศษบนสาย fluorine — 2 segment: Refrigerants & Applied Solutions (สารทำความเย็น HFO, นิวเคลียร์ UF6) และ Electronic & Specialty Materials (sputtering targets, เส้นใยเกราะ Spectra) ลูกค้า 3,000+ ราย 5,700+ สิทธิบัตร",
+      "tam": "อยู่ที่จุดตัดของเทรนด์ใหญ่หลายตัว: AI/data center cooling, semiconductor materials, nuclear energy (จ่ายไฟ AI), defense FY26 ตั้งเป้ายอดขาย 3.9-4.1 พันล้าน EBITDA ราว 1 พันล้าน",
+      "moat": "ConverDyn (JV กับ General Atomics) เป็นโรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ — ถูกอ้างใน Executive Order ว่าสำคัญต่อความมั่นคงพลังงาน backlog ถึง 2030 บวก copper-manganese sputtering target ที่เป็น preferred solution สำหรับ node ขั้นสูง",
+      "latest_financials": "Q1 2026 (ไตรมาส standalone แรก) ยอดขาย 991 ล้านดอลลาร์ โต 10%, Adj EBITDA 249 ล้าน (margin 25.1%), Adj EPS 0.63 ดอลลาร์ FY26 guide ยอดขาย 3.9-4.1 พันล้าน, Adj EPS 2.45-2.75 บวก FCF 124 ล้านใน Q1",
+      "key_points": [
+        "Nuclear (AES) backlog 2.2 พันล้านถึง 2030",
+        "Electronic Materials โต 21% จาก AI/semi",
+        "ลงทุน 200 ล้านที่ Spokane เพิ่มกำลัง sputtering target เท่าตัว",
+        "ปันผล 0.075 ดอลลาร์ต่อไตรมาส"
+      ]
+    },
+    "warren_easy": [
+      "Solstice เป็นกรณีน่าสนใจ — เป็นบริษัทวัสดุพิเศษที่เพิ่งแยกตัวจาก Honeywell มีธุรกิจกระจายดีและจุดเด่นคือ ConverDyn ที่เป็นโรงงานแปลงเชื้อเพลิงนิวเคลียร์ UF6 เจ้าเดียวในสหรัฐ ซึ่งมี backlog ผูกพันถึงปี 2030 เป็น moat เชิงกฎระเบียบที่ลอกเลียนแทบไม่ได้",
+      "นอกจากนิวเคลียร์ บริษัทยังได้ประโยชน์จาก AI ผ่านวัสดุอิเล็กทรอนิกส์ (sputtering targets โต 21%) บวกสารทำความเย็นสำหรับ data center บวกเส้นใยเกราะด้านกลาโหม ผมตั้ง Fair Value 88 ดอลลาร์จากข้อมูล card จริง (EV/EBITDA ราว 15 เท่าบน EBITDA 1 พันล้าน) ที่ราคา 84 ให้ margin บางราว 4%",
+      "ผมให้ WATCH — ธุรกิจคุณภาพและมี moat แต่ยังเป็นบริษัทใหม่ที่ track record สั้นเพียงไตรมาสเดียว บวกราคาใกล้มูลค่าจริง ผมอยากเห็นผลงานต่อเนื่องอีกสักระยะก่อน"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยันธุรกิจมีคุณภาพ — Honeywell spin-off ที่กระจายดี, nuclear UF6 monopoly (ConverDyn) จริง, AI/semi materials โต FY26 EBITDA ราว 1 พันล้าน, EV/EBITDA ราว 15 เท่า = สมเหตุผล Warren เติม Fair Value 88 ดอลลาร์จาก card จริงเหมาะสม",
+        "สิ่งที่ผมระวัง: track record standalone สั้นเพียงไตรมาสเดียว, ต้นทุนบริษัทมหาชนกด margin (corporate 52 ล้านจาก 32 ล้าน), Building Solutions ที่ cyclical และ HFO refrigerant transition mix pressure",
+        "ผมเห็นด้วยกับ WATCH ของ Warren — Margin of Safety บางราว 4% บวกบริษัทใหม่ ควรดูผลงานต่อเนื่องก่อน"
+      ]
+    },
+    "idea_th": "Solstice เป็น specialty materials ที่แยกจาก Honeywell มี nuclear UF6 monopoly บวก AI/semi materials FV 88 ดอลลาร์จากข้อมูล card (EV/EBITDA ราว 15 เท่า) MoS บางราว 4% บริษัทใหม่ track record สั้น ให้ WATCH",
+    "story_gate_th": {
+      "what": "บริษัทวัสดุพิเศษกระจายตัว — nuclear UF6 conversion เจ้าเดียวในสหรัฐ บวกวัสดุอิเล็กทรอนิกส์ AI/semi บวกสารทำความเย็น HFO บวกเส้นใยเกราะ",
+      "why": "อยู่จุดตัดเทรนด์ AI/data center/nuclear/defense บวก backlog นิวเคลียร์ 2.2 พันล้านถึง 2030 บวก Electronic Materials โต 21% — แต่ยังเป็นบริษัทใหม่ track record สั้น",
+      "risk": "ถ้านโยบายนิวเคลียร์พลิก, contract repricing ช้ากว่าคาด, หรือต้นทุน standalone กด margin มากกว่าคาด"
+    },
+    "bull_th": [
+      "ConverDyn = UF6 nuclear conversion เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึง 2030",
+      "Electronic Materials (sputtering targets) โต 21% จาก AI/semi",
+      "FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
+      "Spectra UHMWPE armor fibers บวก defense exposure",
+      "fluorine value-chain integration บวก 5,700 สิทธิบัตร"
+    ],
+    "risk_th": [
+      "track record standalone สั้น (ไตรมาสแรก)",
+      "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
+      "Building Solutions cyclical (ผูกก่อสร้าง)",
+      "HFO refrigerant transition mix pressure",
+      "MoS บางราว 4% — ราคาใกล้มูลค่าจริง"
+    ]
+  },
+  "MTRN": {
+    "symbol": "MTRN",
+    "display": "MTRN",
+    "category": "materials",
+    "name": "Materion Corporation",
+    "sector": "Materials",
+    "sectorSlug": "materials",
+    "chips": [
+      "Advanced Materials",
+      "Defense/AI"
+    ],
+    "bull": [
+      "เจ้าของเหมือง bertrandite ใหญ่สุดในโลก = ผู้ผลิต beryllium integrated เจ้าเดียวในสหรัฐ",
+      "Defense orders +50% YoY, open RFQs >$300M = defense supercycle",
+      "Electronic Materials margin record 28.3%, semi +40% (ex-China)",
+      "FY26 adj EPS $6.00-6.50, midterm EBITDA margin target 23%"
+    ],
+    "risk": [
+      "ราคา forward PE ~35x แพงสำหรับ specialty materials",
+      "Performance Materials -13% จาก clad strip volume",
+      "China semi headwind ต่อเนื่อง",
+      "Konasol contribution มาช้า (2027-28)"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.4,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 227.44,
+    "fv": 290,
+    "mos": 21.6,
+    "fpe": 35.5,
+    "peg": null,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        7.5,
+        "amber",
+        75
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        6.5,
+        "amber",
+        65
+      ]
+    },
+    "idea": "เจ้าของเหมือง bertrandite ใหญ่สุดในโลก = beryllium integrated เจ้าเดียวในสหรัฐ + defense supercycle (orders +50% YoY, RFQs $100M→>$300M); FY26 adj EPS $6.00-6.50; FV ปรับลง $380→$290 (วินัย multiple — เดิม preliminary aggressive)",
+    "updated": "2026-06-05",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [
+        "forward PE ~35x แพงสำหรับ specialty materials",
+        "Performance Materials VA -13% (clad strip)",
+        "China semi headwind",
+        "Konasol contribution มาช้า 2027-28"
+      ],
+      "summary": "Beryllium monopoly (integrated เจ้าเดียวในสหรัฐ) + defense supercycle (orders +50%, RFQs >$300M) จริง; Warren trim FV $380→$290 เป็นวินัยที่ถูกต้อง (materials multiple), MoS +21.6% ยังน่าสนใจ",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของเหมือง beryllium รายเดียวในสหรัฐ — ได้ทั้ง defense supercycle และ AI materials",
+      "what": "Materion ผลิตวัสดุขั้นสูง — beryllium alloys, sputtering targets สำหรับชิป และ optical coatings ป้อนกลาโหม, semiconductor และ data center",
+      "why_invest": [
+        "เจ้าของเหมือง bertrandite ใหญ่สุดในโลก = ผู้ผลิต beryllium integrated เจ้าเดียวในสหรัฐ",
+        "Defense orders โต 50% YoY, open RFQs เกิน 300 ล้าน = defense supercycle",
+        "Electronic Materials margin ทำสถิติ 28.3%, semi โต 40% (ไม่รวมจีน)",
+        "FY26 adj EPS 6.00-6.50, midterm EBITDA margin เป้า 23%"
+      ],
+      "watch_out": [
+        "ราคา forward PE ราว 35 เท่า แพงสำหรับ specialty materials",
+        "Performance Materials หดตัว 13% จาก clad strip",
+        "China semi เป็น headwind ต่อเนื่อง"
+      ],
+      "bottom_line": "beryllium monopoly บวก defense supercycle จริง MoS ยังบวกราว 22% — Pete มองว่าน่าสนใจแต่ราคาเริ่มแพง รอจังหวะ"
+    },
+    "mark_full": {
+      "business_overview": "Materion เป็นผู้นำวัสดุขั้นสูงเกือบ 100 ปี — 3 segment: Performance Materials (beryllium alloys ป้อน defense/aerospace/energy), Electronic Materials (sputtering targets สำหรับชิป), Precision Optics (optical coatings) รายงาน value-added sales เป็นตัวหลัก (หักโลหะ pass-through)",
+      "tam": "อยู่จุดตัด defense supercycle บวก AI/semiconductor — defense orders โต 50% YoY, RFQs เปิดเกิน 300 ล้าน (จากราว 100 ล้านเมื่อ 2-3 ไตรมาสก่อน), semiconductor materials โตจาก high-performance memory บวก advanced node",
+      "moat": "เป็นเจ้าของเหมือง bertrandite ใหญ่สุดในโลกที่ Utah บวกโรงถลุง = ผู้ผลิต beryllium แบบ vertically integrated เจ้าเดียวในสหรัฐ (ผลิตมา 75 ปี) บวก qualification barrier 18-24 เดือนใน Electronic Materials ทำให้ลูกค้าเปลี่ยน supplier ยาก",
+      "latest_financials": "Q1 2026 value-added sales 262 ล้านดอลลาร์ (+10% ไม่รวม clad strip), Adj EPS 1.27 (+12%), Adj EBITDA margin ทำสถิติ 20.2% Electronic Materials margin record 28.3% (+1,000bps) FY26 guide adj EPS 6.00-6.50 (มั่นใจปลายช่วงบน)",
+      "key_points": [
+        "Defense orders +50% YoY, RFQs เปิดเกิน 300 ล้าน",
+        "semiconductor +16% (+40% ไม่รวมจีน), high-performance memory +47%",
+        "record backlog +20% YoY",
+        "ลูกค้าจ่าย 65 ล้านขยายกำลัง beryllium"
+      ]
+    },
+    "warren_easy": [
+      "Materion เป็นธุรกิจคุณภาพที่ผมชอบ moat — เป็นเจ้าของเหมือง beryllium ใหญ่สุดในโลกและเป็นผู้ผลิตแบบครบวงจรเจ้าเดียวในสหรัฐ ผลิตมา 75 ปี beryllium เป็น sticky business ที่เปลี่ยนยากและมี pricing power สูง บวก Electronic Materials ที่ได้ประโยชน์จาก AI/semi โดยตรง",
+      "ตอนนี้ Materion ได้ tailwind สองชั้น: defense supercycle (orders โต 50% RFQs เปิดเกิน 300 ล้าน) บวก AI semiconductor materials ที่ margin ทำสถิติ 28.3% ผมปรับ Fair Value ลงจาก 380 เป็น 290 ดอลลาร์ด้วยวินัย — เพราะรอบก่อนเป็นการประเมินเบื้องต้นก่อนมี card ตอนนี้เห็นว่า multiple ที่ 380 แพงเกินสำหรับ materials",
+      "ที่ราคา 227 ดอลลาร์เทียบ FV 290 ยังมี Margin of Safety ราว 22% ซึ่งน่าสนใจ แต่ forward PE ราว 35 เท่าก็เริ่มแพงสำหรับ materials ผมจึงให้ WATCH — ของดีแต่อยากได้ราคาที่มี margin มากกว่านี้"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยัน moat แข็ง — beryllium integrated เจ้าเดียวในสหรัฐ บวก defense supercycle (orders +50%, RFQs เกิน 300 ล้าน) จริง บวก Electronic Materials margin record 28.3% จาก AI/semi",
+        "ผมเห็นด้วยที่ Warren ปรับ Fair Value ลงจาก 380 เป็น 290 ดอลลาร์ — เป็นวินัยที่ถูกต้องเพราะ multiple ที่ 380 แพงเกินสำหรับ specialty materials Performance Materials ก็ยังหดตัว 13% จาก clad strip บวก China semi headwind",
+        "ผมให้ AGREE — MoS ราว 22% ยังน่าสนใจ defense supercycle real แต่ต้อง monitor ว่า EPS จะ ramp ตาม backlog ไหม และ forward PE 35x ก็ไม่ถูก"
+      ]
+    },
+    "idea_th": "Materion เป็น beryllium monopoly บวก defense supercycle (orders +50%) บวก AI semi materials Warren trim FV 380 เป็น 290 ด้วยวินัย MoS ยังราว 22% น่าสนใจแต่ forward PE 35x เริ่มแพง ให้ WATCH",
+    "story_gate_th": {
+      "what": "ผู้ผลิต beryllium integrated เจ้าเดียวในสหรัฐ (เจ้าของเหมือง bertrandite ใหญ่สุดในโลก) บวกวัสดุอิเล็กทรอนิกส์ AI/semi บวก optical coatings",
+      "why": "defense supercycle (orders +50% YoY, RFQs เกิน 300 ล้าน) บวก AI/semi materials margin record 28.3% บวก record backlog — tailwind สองชั้น",
+      "risk": "ถ้า defense spending ชะลอ, China semi headwind แรงขึ้น, หรือ EPS ไม่ ramp ตาม backlog ทำให้ valuation 35x แพงเกิน"
+    },
+    "bull_th": [
+      "เจ้าของเหมือง bertrandite ใหญ่สุดในโลก = beryllium integrated เจ้าเดียวในสหรัฐ",
+      "Defense orders +50% YoY, RFQs เกิน 300 ล้าน = supercycle",
+      "Electronic Materials margin record 28.3%, semi +40% (ไม่รวมจีน)",
+      "FY26 adj EPS 6.00-6.50, midterm EBITDA margin เป้า 23%",
+      "qualification barrier 18-24 เดือน = ลูกค้าเปลี่ยนยาก"
+    ],
+    "risk_th": [
+      "ราคา forward PE ราว 35 เท่า แพงสำหรับ specialty materials",
+      "Performance Materials VA หดตัว 13% (clad strip)",
+      "China semi headwind ต่อเนื่อง",
+      "Konasol contribution มาช้า (2027-28)",
+      "EPS ต้อง ramp ตาม backlog เพื่อ justify valuation"
+    ]
+  },
   "ETN": {
     "symbol": "ETN",
     "display": "ETN",
@@ -1699,6 +2095,138 @@
       "Starship commercialization ยังไม่เกิด — R&D burn $3B/ปี FAA approvals ล่าช้า timeline ยืดออกเรื่อยๆ ถ้า commercial operation ล้มเหลวทำให้ Starlink constellation replenishment ยังต้องใช้ Falcon 9 ที่แพงกว่า"
     ]
   },
+  "TER": {
+    "symbol": "TER",
+    "display": "TER",
+    "category": "ai_semiconductor",
+    "name": "Teradyne",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Test Equipment (ATE)",
+      "AI/Memory/Robotics"
+    ],
+    "bull": [
+      "ATE duopoly (Teradyne+Advantest), ~70% รายได้ผูก AI demand",
+      "Q1 record rev $1.28B +87%, op margin 37.5% สูงสุดตลอดกาล",
+      "Memory supercycle (HBM test) + merchant GPU test order ใหม่",
+      "Photon 100 SiPho/CPO test TAM $300-700M"
+    ],
+    "risk": [
+      "Q2 guide ลดจาก Q1 peak — lumpy growth + one-time benefits",
+      "customer concentration hyperscaler/foundry = peaks & valleys",
+      "Advantest แข่งหนักใน memory test",
+      "full-year target $6B EPS $9.50-11 ต้อง execute"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.9,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 406.86,
+    "fv": 420,
+    "mos": 3.1,
+    "fpe": 39.7,
+    "peg": null,
+    "scores": {
+      "bq": [
+        8.0,
+        "green",
+        80
+      ],
+      "gp": [
+        7.5,
+        "amber",
+        75
+      ],
+      "va": [
+        5.5,
+        "orange",
+        55
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "ATE duopoly (Teradyne+Advantest), ~70% รายได้ผูก AI; Q1 record rev $1.28B (+87%) op margin 37.5% สูงสุด — แต่ Q2 guide ลด (normalize + one-time benefits); FV ปรับลง $480→$420 (วินัย — Q1 มี one-time)",
+    "updated": "2026-06-05",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [
+        "Q1 record มี one-time benefits ไม่ใช่ run-rate",
+        "Q2 guide ลด — lumpy growth",
+        "customer concentration = peaks & valleys",
+        "valuation ~40x forward"
+      ],
+      "summary": "ATE duopoly คุณภาพดี + Q1 record $1.28B (+87%) — แต่ Q1 มี one-time benefits และ Q2 guide ลด = normalization risk; MoS เหลือ +3% บาง; lumpy growth ต้องระวัง extrapolate peak",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "หนึ่งในสองเจ้าตลาดเครื่องทดสอบชิป (ATE) — 70% รายได้ผูกกับ AI",
+      "what": "Teradyne ทำเครื่องทดสอบเซมิคอนดักเตอร์ (ATE) บวกหุ่นยนต์ cobot กลยุทธ์ wafer-to-AI-data-center ครอบคลุมการทดสอบทั้งห่วงโซ่",
+      "why_invest": [
+        "ATE duopoly (Teradyne บวก Advantest), ราว 70% รายได้ผูก AI demand",
+        "Q1 ทำสถิติรายได้ 1.28 พันล้าน โต 87%, op margin 37.5% สูงสุดตลอดกาล",
+        "memory supercycle (HBM test) บวก order ทดสอบ merchant GPU ใหม่",
+        "Photon 100 ทดสอบ silicon photonics/CPO TAM 300-700 ล้านต่อปี"
+      ],
+      "watch_out": [
+        "Q2 guide ลดจาก Q1 peak — Q1 มี one-time benefits = lumpy growth",
+        "ลูกค้ากระจุก hyperscaler/foundry = peaks & valleys",
+        "Advantest แข่งหนักใน memory test"
+      ],
+      "bottom_line": "ATE duopoly คุณภาพดีบวก AI exposure แต่ Q1 มี one-time + Q2 ลด margin บาง — Pete ให้ WATCH"
+    },
+    "mark_full": {
+      "business_overview": "Teradyne ทำ Automated Test Equipment (ATE) — Semiconductor Test ราว 87% ของรายได้ (SoC, Memory/HBM, IST) บวก Product Test บวก Robotics (Universal Robots cobot, MiR AMR) ราว 70% ของรายได้ผูกกับ AI demand",
+      "tam": "AI เป็น 3 คลื่นซ้อนกัน: data center buildout, inference silicon, edge/physical AI memory supercycle (HBM test) บวก merchant GPU test บวก Photon 100 ทดสอบ silicon photonics/CPO (TAM 300-700 ล้านต่อปี) เป็น growth driver",
+      "moat": "ATE duopoly กับ Advantest — barrier สูงด้าน R&D บวกความสัมพันธ์ลูกค้า บวก high switching cost (tester ถูก qualify เข้า production flow เปลี่ยนยาก) บวก portfolio breadth (เจ้าเดียวที่มี Semi Test + Product Test + Robotics)",
+      "latest_financials": "Q1 2026 ทำสถิติ รายได้ 1.28 พันล้านดอลลาร์ (+87% YoY), non-GAAP EPS 2.56 (+241%), op margin 37.5% สูงสุดตลอดกาล — แต่มี one-time benefits บางส่วน Q2 guide ลดเป็น 1.15-1.25 พันล้าน (normalize) full-year target รายได้ 6 พันล้าน/EPS 9.50-11",
+      "key_points": [
+        "merchant GPU test order แรก (~50 ล้านปีนี้)",
+        "memory supercycle — Magnum 7 tester ramp",
+        "Photon 100 ทดสอบ SiPho/CPO (TAM 300-700 ล้าน)",
+        "Q1 record มี one-time benefits = ไม่ใช่ run-rate"
+      ]
+    },
+    "warren_easy": [
+      "Teradyne อยู่ในตำแหน่งที่ดี — เป็นหนึ่งในสองเจ้าตลาดเครื่องทดสอบชิป (ATE) ร่วมกับ Advantest มี moat จาก switching cost สูงเพราะเครื่องทดสอบถูก qualify เข้า production flow ของลูกค้าแล้วเปลี่ยนยาก บวกราว 70% ของรายได้ผูกกับ AI",
+      "ไตรมาสล่าสุดทำสถิติทุกบรรทัด รายได้โต 87% op margin 37.5% สูงสุดตลอดกาล แต่ผมระวังว่า Q1 มี one-time benefits บางส่วนและ Q2 guide ปรับลง สะท้อนว่าธุรกิจนี้ lumpy ผมปรับ Fair Value ลงจาก 480 เป็น 420 ดอลลาร์ด้วยวินัย (รอบก่อนเป็นการประเมินเบื้องต้นก่อนมี card)",
+      "ที่ราคา 407 ดอลลาร์เทียบ FV 420 Margin of Safety บางเพียงราว 3% ผมจึงให้ WATCH — ของดีแต่ราคาเต็มและต้องระวังไม่ extrapolate ผลงาน peak ของ Q1"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยัน ATE duopoly คุณภาพดีบวก AI exposure 70% — Q1 record รายได้ 1.28 พันล้าน โต 87% แต่จุดสำคัญคือ Q1 มี one-time benefits และ Q2 guide ปรับลง สะท้อน normalization",
+        "สิ่งที่ผมกังวล: lumpy growth จาก customer concentration (hyperscaler/foundry) = peaks & valleys, Advantest แข่งหนักใน memory test และ valuation ราว 40 เท่า forward",
+        "ผมให้ CAUTION — เห็นด้วยกับ WATCH ของ Warren ที่ปรับ FV ลงเป็น 420 MoS เหลือบางราว 3% ควรระวังการ extrapolate ผลงาน Q1 ที่มี one-time"
+      ]
+    },
+    "idea_th": "Teradyne เป็น ATE duopoly บวก 70% รายได้ผูก AI Q1 record แต่มี one-time + Q2 guide ลด Warren trim FV 480 เป็น 420 ด้วยวินัย MoS บางราว 3% ให้ WATCH ระวัง extrapolate peak",
+    "story_gate_th": {
+      "what": "หนึ่งในสองเจ้าตลาดเครื่องทดสอบชิป (ATE duopoly กับ Advantest) ครอบคลุม wafer-to-data-center บวก Robotics ราว 70% รายได้ผูก AI",
+      "why": "memory supercycle (HBM test) บวก merchant GPU test order ใหม่ บวก Photon 100 ทดสอบ SiPho/CPO (TAM 300-700 ล้าน) — แต่ Q1 มี one-time + lumpy growth",
+      "risk": "ถ้า AI capex ชะลอทำ test demand ลด, customer concentration ทำรายได้ผันผวน, หรือ Advantest แย่ง memory test share"
+    },
+    "bull_th": [
+      "ATE duopoly บวก ~70% รายได้ผูก AI demand",
+      "Q1 record รายได้ 1.28 พันล้าน, op margin 37.5% สูงสุด",
+      "memory supercycle (HBM test) บวก merchant GPU test ใหม่",
+      "Photon 100 ทดสอบ SiPho/CPO TAM 300-700 ล้าน",
+      "switching cost สูง — tester qualify เข้า production"
+    ],
+    "risk_th": [
+      "Q1 record มี one-time benefits = ไม่ใช่ run-rate",
+      "Q2 guide ลด — lumpy growth",
+      "customer concentration = peaks & valleys",
+      "Advantest แข่งหนัก memory test",
+      "valuation ราว 40 เท่า forward"
+    ]
+  },
   "MU": {
     "symbol": "MU",
     "display": "MU",
@@ -1842,6 +2370,138 @@
       "Samsung/SK Hynix เร่ง HBM กดราคา",
       "CapEx เกิน 25 พันล้าน กด FCF ช่วง build-out",
       "China CAC ban เสี่ยงเสียตลาดจีน"
+    ]
+  },
+  "LASR": {
+    "symbol": "LASR",
+    "display": "LASR",
+    "category": "defense",
+    "name": "nLIGHT Inc.",
+    "sector": "Defense",
+    "sectorSlug": "defense",
+    "chips": [
+      "High-Power Lasers",
+      "Directed Energy"
+    ],
+    "bull": [
+      "ผู้นำ directed energy (อาวุธเลเซอร์) + Coherent Beam Combining leadership",
+      "Q1 record rev $80.2M +55%, A&D +69%, Products GM record 43.6%",
+      "vertically integrated US-based = ได้เปรียบสัญญารัฐ",
+      "backlog $161.6M + SWaP leadership"
+    ],
+    "risk": [
+      "barely profitable GAAP (EPS $0.01) + SBC สูง $10.9M",
+      "Development revenue margin ต่ำ/ผันผวน",
+      "ราคาวิ่งแรง (52wL $17 → $75) บน defense theme",
+      "small-cap = volatility สูง"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.8,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 74.89,
+    "fv": 82,
+    "mos": 8.7,
+    "fpe": 83,
+    "peg": null,
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        5.0,
+        "orange",
+        50
+      ],
+      "ra": [
+        5.0,
+        "orange",
+        50
+      ]
+    },
+    "idea": "ผู้นำ directed energy (อาวุธเลเซอร์) + Coherent Beam Combining leadership; Q1 record rev $80.2M (+55%), A&D +69%, Products GM record 43.6%; FV ปรับลง $90→$82 (วินัย — barely profitable + SBC สูง)",
+    "updated": "2026-06-05",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [
+        "barely profitable + SBC สูงบดบังกำไรจริง",
+        "valuation ~83x = speculative",
+        "Development revenue margin ต่ำ/ผันผวน",
+        "small-cap volatility สูง"
+      ],
+      "summary": "Directed energy leader + Q1 record rev (+55%) จริง แต่ barely profitable GAAP (EPS $0.01) + SBC $10.9M > net income; valuation ~83x non-GAAP priced on future adoption; 52wL $17→$75 = run แรง",
+      "review_date": "2026-06-05"
+    },
+    "mark_easy": {
+      "one_liner": "ผู้นำเลเซอร์พลังสูงสำหรับอาวุธ directed energy — เดิมพัน defense laser ramp",
+      "what": "nLIGHT ทำเลเซอร์พลังสูงสำหรับ 3 ตลาด: อาวุธเลเซอร์ป้องกันประเทศ, laser sensing และ advanced manufacturing",
+      "why_invest": [
+        "ผู้นำ directed energy บวก Coherent Beam Combining (CBC) leadership",
+        "Q1 ทำสถิติรายได้ 80.2 ล้าน โต 55%, A&D โต 69%, Products GM record 43.6%",
+        "vertically integrated ผลิตในสหรัฐ = ได้เปรียบสัญญารัฐ",
+        "backlog 161.6 ล้าน บวก SWaP leadership (เล็ก เบา ประหยัดพลังงาน)"
+      ],
+      "watch_out": [
+        "แทบไม่มีกำไร GAAP (EPS 0.01) บวก SBC สูง 10.9 ล้านบดบังกำไรจริง",
+        "valuation ราว 83 เท่า = ราคาตั้งบนการ adoption ในอนาคต",
+        "small-cap volatility สูง"
+      ],
+      "bottom_line": "เทคโนโลยีเป็นผู้นำและ directed energy เป็น optionality ใหญ่ แต่ valuation แพงและกำไรยังบาง — Pete ให้ WATCH"
+    },
+    "mark_full": {
+      "business_overview": "nLIGHT ทำเลเซอร์พลังสูง — Products (เลเซอร์/ระบบ margin 40%+) บวก Development (สัญญาวิจัย directed energy กับรัฐ) 3 end market: Aerospace & Defense 69% ของรายได้, Microfabrication, Industrial vertically integrated ตั้งแต่ laser diode ถึง system",
+      "tam": "directed energy (อาวุธเลเซอร์) เป็น growth driver ใหญ่ — งบกลาโหมเพิ่มหนุน A&D ramp บวก laser sensing บวก advanced manufacturing เทคโนโลยีลงทุนมา 2 ทศวรรษ",
+      "moat": "Coherent Beam Combining (CBC) leadership — ทางเดียวที่ scale ไปพลังสูงพร้อมคง beam quality บวก SWaP leadership (form factor เล็กกว่าคู่แข่ง integrate เข้า platform ทหารได้หลากหลาย) บวก vertically integrated US-based = ได้เปรียบสัญญารัฐ",
+      "latest_financials": "Q1 2026 ทำสถิติ รายได้ 80.2 ล้านดอลลาร์ (+55% YoY), A&D 55.1 ล้าน (+69%), Products GM record 43.6%, Adj EBITDA record 13.8 ล้าน — แต่ GAAP net income แค่ 0.6 ล้าน (EPS 0.01) เพราะ SBC 10.9 ล้าน Q2 guide รายได้ 75-81 ล้าน",
+      "key_points": [
+        "A&D product revenue record 33.1 ล้าน (+98% YoY)",
+        "backlog 161.6 ล้าน เติมเต็มใน 24 เดือน",
+        "operating cash flow บวก 3 ไตรมาสติด",
+        "SBC 10.9 ล้าน > GAAP net income มาก"
+      ]
+    },
+    "warren_easy": [
+      "nLIGHT เป็นผู้นำเทคโนโลยีในตลาดที่น่าสนใจ — เลเซอร์พลังสูงสำหรับอาวุธ directed energy โดยมี Coherent Beam Combining leadership ซึ่งเป็นทางเดียวที่ scale ไปพลังสูงพร้อมคง beam quality บวก vertically integrated ผลิตในสหรัฐที่ได้เปรียบในสัญญารัฐ",
+      "ไตรมาสล่าสุดทำสถิติ รายได้โต 55% A&D โต 69% และ Products margin record 43.6% แต่สิ่งที่ผมระวังคือบริษัทแทบไม่มีกำไร GAAP (EPS 0.01) เพราะ stock-based comp สูงถึง 10.9 ล้านซึ่งมากกว่ากำไรจริง บวกราคาที่ราว 83 เท่ากำไร non-GAAP สะท้อนความคาดหวัง adoption ในอนาคต ผมปรับ Fair Value ลงจาก 90 เป็น 82 ดอลลาร์ด้วยวินัย",
+      "ที่ราคา 75 ดอลลาร์เทียบ FV 82 Margin of Safety ราว 9% ผมให้ WATCH — เทคโนโลยีเป็นผู้นำและ directed energy เป็น optionality ใหญ่ แต่ valuation แพงและกำไรยังบาง เป็น story ที่ต้องติดตามการ execute"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยันว่า nLIGHT เป็นผู้นำ directed energy จริง บวก Q1 record รายได้ (+55%) — แต่ที่สำคัญคือบริษัทแทบไม่มีกำไร GAAP (EPS 0.01) เพราะ SBC 10.9 ล้านที่มากกว่า net income บดบังกำไรจริง",
+        "สิ่งที่ผมกังวล: valuation ราว 83 เท่า non-GAAP = ราคาตั้งบนการ adoption ในอนาคต, Development revenue margin ต่ำและผันผวน, บวกราคาวิ่งจาก 52-week low 17 เป็น 75 = run แรง บวก small-cap volatility",
+        "ผมให้ CAUTION — เห็นด้วยกับ WATCH ของ Warren ที่ปรับ FV ลงเป็น 82 เป็นเดิมพัน directed energy ที่ต้อง monitor ว่ากำไรจริงจะ ramp ตามรายได้ไหม"
+      ]
+    },
+    "idea_th": "nLIGHT เป็นผู้นำเลเซอร์ directed energy บวก CBC leadership Q1 record +55% แต่แทบไม่มีกำไร GAAP บวก SBC สูง valuation ราว 83x Warren trim FV 90 เป็น 82 MoS ราว 9% ให้ WATCH",
+    "story_gate_th": {
+      "what": "ผู้นำเลเซอร์พลังสูงสำหรับอาวุธ directed energy บวก Coherent Beam Combining leadership บวก vertically integrated ผลิตในสหรัฐ",
+      "why": "งบกลาโหมเพิ่มหนุน A&D ramp (Q1 A&D +69%) บวก Products margin record 43.6% บวก backlog 161.6 ล้าน — directed energy เป็น optionality ใหญ่",
+      "risk": "ถ้า directed energy adoption ช้ากว่าคาด, กำไรจริงไม่ ramp เพราะ SBC สูง, หรือ Development contract timing ผันผวน"
+    },
+    "bull_th": [
+      "ผู้นำ directed energy บวก Coherent Beam Combining leadership",
+      "Q1 record รายได้ 80.2 ล้าน +55%, A&D +69%, Products GM record 43.6%",
+      "vertically integrated US-based = ได้เปรียบสัญญารัฐ",
+      "backlog 161.6 ล้าน บวก SWaP leadership",
+      "Adj EBITDA record 13.8 ล้าน บวก OCF บวก 3 ไตรมาสติด"
+    ],
+    "risk_th": [
+      "แทบไม่มีกำไร GAAP (EPS 0.01) บวก SBC สูง 10.9 ล้าน",
+      "valuation ราว 83 เท่า = speculative",
+      "Development revenue margin ต่ำ/ผันผวน",
+      "ราคาวิ่งแรง (52wL 17 สู่ 75)",
+      "small-cap volatility สูง"
     ]
   },
   "MRVL": {
