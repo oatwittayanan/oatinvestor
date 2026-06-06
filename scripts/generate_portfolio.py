@@ -329,6 +329,14 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
                     bv = bm_shares[bm] * float(px)
             bm_vals[bm].append(round(bv, 4))
 
+    # Drop benchmarks whose price fetch failed (all-zero series). Emitting a
+    # zero array makes the chart draw a bogus -100% flat line, so omit it and
+    # let the frontend simply skip that benchmark.
+    valid_bms = [bm for bm in benchmark_tickers if any(v > 0 for v in bm_vals[bm])]
+    for bm in benchmark_tickers:
+        if bm not in valid_bms:
+            print(f"  [history] ⚠️ benchmark {bm}: no price data fetched — omitting (would show -100%)")
+
     # Summary — return based on total deployed capital
     def _pct(vals, dep):
         last = next((v for v in reversed(vals) if v > 0), 0)
@@ -336,7 +344,7 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
 
     dep = total_deployed
     summary = {"portfolio_pct": _pct(port_vals, dep)}
-    for bm in benchmark_tickers:
+    for bm in valid_bms:
         key = bm.lower() + "_pct"
         summary[key] = _pct(bm_vals[bm], dep)
     summary["total_deposited"] = round(dep, 2)
@@ -347,7 +355,7 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
         "deposited": dep_totals,
         "summary":   summary,
     }
-    for bm in benchmark_tickers:
+    for bm in valid_bms:
         result[bm.lower()] = bm_vals[bm]
 
     return result
