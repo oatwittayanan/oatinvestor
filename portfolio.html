@@ -56,6 +56,21 @@
       .tx-row { grid-template-columns: 80px 1fr auto auto; font-size: .78rem; }
       .tx-price-col { display: none; }
     }
+    /* Savings goal progress */
+    .savings-goal { background: linear-gradient(135deg, var(--bg-surface), var(--bg-card)); }
+    .sg-top   { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+    .sg-label { font-size: .82rem; color: var(--text-3); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+    .sg-value { font-size: 1.9rem; font-weight: 800; line-height: 1; }
+    .sg-goal  { font-size: 1rem; font-weight: 600; color: var(--text-3); }
+    .sg-pct-wrap { text-align: right; }
+    .sg-pct   { font-size: 1.5rem; font-weight: 800; color: var(--yellow); line-height: 1; }
+    .sg-remain { font-size: .76rem; color: var(--text-3); margin-top: 6px; }
+    .sg-bar   { height: 14px; border-radius: 8px; background: var(--border); overflow: hidden; }
+    .sg-bar-fill { height: 100%; border-radius: 8px; background: linear-gradient(90deg, #ffd60a, var(--yellow)); transition: width 1.1s cubic-bezier(.22,.61,.36,1); }
+    @media (max-width: 600px) {
+      .sg-value { font-size: 1.5rem; }
+      .sg-pct   { font-size: 1.2rem; }
+    }
   </style>
 </head>
 <body>
@@ -77,9 +92,24 @@
 
 <div class="container" style="padding-top:40px;padding-bottom:80px">
 
-  <div style="margin-bottom:32px">
+  <div style="margin-bottom:24px">
     <h1 style="margin-bottom:6px">พอร์ตโฟลิโอสาธิต</h1>
     <p>ออมเงินสร้างพอร์ตจริง — ดูข้อมูล Real-time เทียบ Benchmark</p>
+  </div>
+
+  <!-- Savings Goal Progress (รวมทั้ง 2 พอร์ต) -->
+  <div class="card savings-goal" id="savings-goal" style="margin-bottom:28px;padding:22px 24px">
+    <div class="sg-top">
+      <div>
+        <div class="sg-label">🎯 เงินลงทุนสะสม</div>
+        <div class="sg-value"><span id="sg-current">—</span><span class="sg-goal"> / $1,000,000</span></div>
+      </div>
+      <div class="sg-pct-wrap">
+        <div class="sg-pct" id="sg-pct">—</div>
+        <div class="sg-remain" id="sg-remain"></div>
+      </div>
+    </div>
+    <div class="sg-bar"><div class="sg-bar-fill" id="sg-bar-fill" style="width:0"></div></div>
   </div>
 
   <!-- Tabs -->
@@ -830,6 +860,18 @@ function renderPapers(papers, charlieReviews) {
   </div>`;
 }
 
+// ── Savings goal progress ─────────────────────────────────────────
+function renderSavingsGoal(total) {
+  const GOAL = 1_000_000;
+  const pct  = total / GOAL * 100;
+  const usd  = (n, dp) => '$' + n.toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp });
+  document.getElementById('sg-current').textContent = usd(total, 2);
+  document.getElementById('sg-pct').textContent     = (pct < 0.01 ? pct.toFixed(4) : pct < 1 ? pct.toFixed(2) : pct.toFixed(1)) + '%';
+  document.getElementById('sg-remain').textContent  = 'เหลืออีก ' + usd(Math.max(GOAL - total, 0), 0);
+  // กว้างขั้นต่ำ 6px เพื่อให้เห็นว่าแถบเริ่มแล้ว แม้ % จะน้อยมาก
+  document.getElementById('sg-bar-fill').style.width = total > 0 ? `max(${Math.min(pct, 100)}%, 6px)` : '0';
+}
+
 // ── Load & Init ───────────────────────────────────────────────────
 Promise.all([
   fetch('data/portfolio.json').then(r => r.json()),
@@ -838,6 +880,7 @@ Promise.all([
 ]).then(([data, papers, charlieReviews]) => {
   renderAI(data.ai_port);
   renderSP(data.sp500_port);
+  renderSavingsGoal((data.ai_port?.total_value || 0) + (data.sp500_port?.total_value || 0));
   renderPapers(papers, charlieReviews);
 }).catch(err => {
   ['ai','sp'].forEach(k => {
