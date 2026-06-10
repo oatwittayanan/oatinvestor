@@ -84,17 +84,17 @@
     },
     "mark_easy": {
       "one_liner": "เจ้าของแพลตฟอร์ม AI factory ที่ทั้งโลกต้องพึ่ง — ราคา $208 ยังถูกกว่า FV $308 ราว 32%",
-      "what": "NVIDIA ขายทั้งระบบ AI ครบวงจร (ชิป GPU + Vera CPU + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ดาต้าเซ็นเตอร์ทั่วโลก รายได้ 92% มาจาก Data Center",
+      "what": "NVIDIA ขายทั้งระบบ AI ครบวงจร (ชิป GPU + Vera CPU + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ datacenter ทั่วโลก รายได้ 92% มาจาก Data Center",
       "why_invest": [
         "Q1 FY27 รายได้ $81.6B +85% YoY; Q2 guide $91B = การเติบโตยังไม่หยุด",
         "CUDA ecosystem 7.5M นักพัฒนา = ผูกลูกค้าจนย้ายแทบไม่ได้",
         "Vera Rubin (H2 2026) = 35x throughput vs Blackwell — catalyst ใหม่ยังมาไม่ถึง",
-        "Vera CPU $200B TAM ใหม่ทั้งหมด — ตลาดที่ NVIDIA ยังไม่เคยทำมาก่อน"
+        "Vera CPU $200B TAM ใหม่ทั้งหมด — standalone $20B visibility ปีนี้แล้ว"
       ],
       "watch_out": [
         "Supply commitment $119B non-cancellable — ถ้า demand ชะลอกระทบหนัก",
-        "China DC revenue หายไปแล้ว จาก export controls",
-        "Vera Rubin delay 2 เดือน จาก thermal ปัญหา — monitor ต่อ"
+        "China DC revenue หายไปแล้วจาก export controls",
+        "Vera Rubin delay 2 เดือน จาก thermal ปัญหา — ยังต้องติดตาม"
       ],
       "bottom_line": "หุ้นคุณภาพดีที่สุดใน AI และ Fwd P/E แค่ 16.5x — ราคา $208 เป็น entry ดีสุดในรอบปีนี้"
     },
@@ -118,31 +118,31 @@
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยัน FV $308 สมเหตุผล Fwd P/E 16.5x สำหรับ growth +85%; price $208 discount 32%",
-        "Red flags ใหม่: Jensen ปฏิเสธ Senate testimony (06-08) — regulatory overhang; Vera Rubin delay 2 เดือน จาก thermal ปัญหา",
+        "Charlie ยืนยัน FV $308 สมเหตุผล Fwd P/E 16.5x สำหรับ growth +85%; price $208 discount 32% ผ่าน gate",
+        "Red flags ใหม่: Jensen ปฏิเสธ Senate testimony (06-08) เรื่อง chip diversion $160M — regulatory overhang เพิ่ม; Vera Rubin delay 2 เดือน จาก thermal ปัญหา",
         "CAUTION (ไม่ใช่ AVOID) — thesis แข็งแกร่ง แต่ monitor execution risk Vera Rubin + Senate dynamic ต่อ"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "BUY — ราคา $208 เปิด MoS 32.4%; Vera CPU TAM $200B + buyback $80B ยังไม่ถูก price-in; Elon chip claim ยังไม่มี product จริง",
+    "idea_th": "BUY — ราคา $208 เปิด MoS 32.4%; CUDA monopoly + Vera CPU $200B TAM ที่ยังไม่ถูก price-in; Elon Musk chip claim ยังไม่มี product จริง",
     "story_gate_th": {
-      "what": "ขายแพลตฟอร์ม AI factory ครบวงจร (GPU + Vera CPU + Networking + CUDA) ผูกลูกค้าด้วย ecosystem 7.5M developers ที่ย้ายไม่ได้ บวก TAM ใหม่ Vera CPU $200B",
-      "why": "Q1 FY27 revenue $81.6B +85% YoY beat; Q2 guide $91B; Vera Rubin 35x inference throughput vs Blackwell เริ่ม ship H2 2026; $145B supply commitment = ความเชื่อมั่นของ management",
-      "risk": "Vera Rubin ramp ช้ากว่ากำหนด >1 ไตรมาส; hyperscaler ตัด CapEx >30%; Musk/xAI chip จริงเมื่อไหร่คือ risk ที่ต้องติดตาม"
+      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร (GPU Blackwell + Vera Rubin + Vera CPU + Networking CUDA) ให้ datacenter ทั่วโลก — รายได้ 92% มาจาก Data Center; CUDA ecosystem 7.5M นักพัฒนาผูกลูกค้าจนย้ายแทบไม่ได้",
+      "why": "Q1 FY27 revenue $81.6B +85% YoY; Q2 guide $91B; Vera Rubin (H2 2026) = 35x throughput vs Blackwell เป็น catalyst ใหม่; Vera CPU TAM $200B ยังไม่ถูก price-in; ราคา $208 ต่ำกว่า FV $308 ราว 32% — entry ดีสุดในรอบปี",
+      "risk": "Vera Rubin delay >1 ไตรมาส; hyperscaler ตัด CapEx >30%; Musk/xAI chip จริงเมื่อไหร่คือ risk ต้องติดตาม; Jensen ปฏิเสธ Senate testimony (06-08) = regulatory overhang"
     },
     "bull_th": [
-      "Q1 FY27 รายได้ $81.6B +85% YoY สร้าง record ครั้งที่ 14 ติดต่อกัน",
-      "Vera Rubin เริ่ม ship H2 2026 — 35x throughput vs Blackwell เป็น catalyst ใหม่",
-      "Vera CPU เปิด TAM $200B ใหม่ที่ยังไม่เคยแตะ — standalone $20B visibility ปีนี้",
-      "CUDA 7.5M developers + 1.5M AI models = switching cost ที่แทบเป็นไปไม่ได้จะ migrate",
-      "FCF $96.6B FY26 + buyback ใหม่ $80B = capital return ที่แข็งแกร่ง"
+      "Q1 FY27 revenue $81.6B +85% YoY สร้าง record ครั้งที่ 14 ติดต่อกัน — demand ไม่มีสัญญาณชะลอ",
+      "Vera Rubin เริ่ม ship H2 2026 — 35x inference throughput vs Blackwell = upgrade cycle ใหม่ทันที",
+      "Vera CPU $200B TAM ใหม่ทั้งหมดที่ NVIDIA ไม่เคยทำมาก่อน — $20B visibility ปีนี้แล้ว",
+      "CUDA 7.5M devs + 1.5M AI models = switching cost ที่แทบเป็นไปไม่ได้จะย้าย ทำให้ margin 75% ยั่งยืน",
+      "FCF $96.6B FY26 + buyback ใหม่ $80B + dividend +25x = capital return ระดับ record"
     ],
     "risk_th": [
-      "Supply commitment $119B non-cancellable — ถ้า demand ชะลอ ต้องตั้ง provision ใหญ่",
-      "China DC revenue = $0 หลัง export controls — ตลาดใหญ่ที่หายไปแล้ว",
-      "Customer concentration: 2 ราย = 36% ของ Data Center revenue",
-      "Vera Rubin production delay ~2 เดือน จาก thermal/cooling ปัญหา (Tech Taiwan report)",
-      "Securities class action class-certified มีนาคม 2026 — litigation risk"
+      "Supply commitment $119B non-cancellable — ถ้า demand ชะลอกะทันหัน ต้องตั้ง provision ขนาดใหญ่",
+      "China DC revenue = $0 หลัง export controls — ตลาดใหญ่ที่หายไปแล้ว ยังไม่รู้ว่าจะกลับมาได้ไหม",
+      "Customer concentration: 2 รายใหญ่ = 36% ของ Data Center revenue — ถ้าหนึ่งในนั้นลด CapEx กระทบหนัก",
+      "Vera Rubin delay ~2 เดือน จาก thermal/cooling ปัญหา (Tech Taiwan report 05-29) — ยังต้องติดตาม",
+      "Jensen ปฏิเสธ Senate testimony (06-08) เรื่อง chip diversion — Washington DC risk เพิ่มขึ้น"
     ]
   },
   "MSFT": {
@@ -228,20 +228,20 @@
       "review_date": "2026-06-10"
     },
     "mark_easy": {
-      "one_liner": "หุ้น AI enterprise คุณภาพสูงสุด ราคา $403 ยังมี margin of safety 22%",
-      "what": "Microsoft ทำ Cloud (Azure ที่โต +40%), Software (M365 + Copilot 20M+ seats) และ OpenAI partnership — แทบทุกบริษัทในโลกใช้ Microsoft อยู่แล้ว",
+      "one_liner": "ผู้นำ AI ภาคธุรกิจที่มี backlog $627B ล็อกไว้แล้ว — ราคา $403 ยังต่ำกว่า FV $519",
+      "what": "Microsoft หาเงินจาก 3 เส้นหลัก: Azure cloud (AI + enterprise), M365 Copilot (AI สำหรับทีมงาน), GitHub Copilot (AI สำหรับนักพัฒนา) — ฝังลึกในองค์กรทั่วโลกมา 30+ ปี",
       "why_invest": [
-        "Azure +40% YoY; AI ARR $37B +123% — growth ที่ accelerate ไม่ใช่ชะลอ",
-        "RPO $627B+ = รายได้ถูก lock ไว้หลายปี ให้ visibility สูงสุดในกลุ่ม",
-        "NHS 500K Copilot = enterprise adoption ยืนยันจาก public sector แล้ว",
-        "Custom silicon Maia 200 ลด NVIDIA dependency และช่วย margin ระยะยาว"
+        "Azure +29% YoY ติด capacity = demand จริงยืนยันแล้ว; AI ARR $37B +123% YoY",
+        "NHS 500K Copilot seats (06-10) = enterprise AI adoption เข้า public sector แล้ว",
+        "GitHub Copilot 15M+ paid seats = fastest-growing product ใน Microsoft history",
+        "RPO $627B = รายได้ที่ lock ไว้แล้ว 2.5 ปีข้างหน้า"
       ],
       "watch_out": [
-        "CapEx $190B ปีนี้กด FCF ระยะสั้น — รอดู ROI ที่ชัดเจน",
-        "OpenAI เริ่มใช้ AWS บางส่วน — exclusive relationship ลดลง",
-        "IRS $28.9B dispute เป็น wildcard ที่ยังไม่จบ"
+        "CapEx $190B ปี 2026 กด FCF ระยะสั้น — ต้องรอดู ROI",
+        "IRS dispute $28.9B ยังค้าง — ถ้าแพ้กระทบหนัก",
+        "OpenAI เริ่มกระจาย compute ออกจาก Azure บ้าง"
       ],
-      "bottom_line": "Enterprise AI platform แข็งแกร่งที่สุด — ราคา $403 ให้ entry ที่ดีสุดในรอบนี้"
+      "bottom_line": "Enterprise AI platform ที่แน่นที่สุด + backlog $627B + ราคา $403 MoS 22% = BUY"
     },
     "mark_full": {
       "business_overview": "Microsoft แบ่งธุรกิจ 3 ส่วน: Intelligent Cloud ($34.7B/Q, +30% YoY), Productivity & Business Processes ($35B/Q, +17%) และ More Personal Computing ($13.2B/Q, -1%) — รายได้รวม $82.9B Q3 FY26 +18% YoY",
@@ -256,38 +256,38 @@
       ]
     },
     "warren_easy": [
-      "Microsoft มีทุกอย่าง — Azure โต +40%, Copilot 20M seats, RPO $627B และ OpenAI exclusivity ถึง 2032",
-      "ราคา $403 ต่ำกว่า FV $519 ราว 22% — คุณภาพ+growth+moat แกร่งที่ราคามี margin ดี",
-      "BUY — NHS 500K Copilot ยืนยัน WHY NOW; entry ดีสุดในรอบนี้"
+      "Microsoft เป็นทั้ง infrastructure + software AI ที่แน่นที่สุด — Azure + Copilot + RPO $627B = visibility สูงสุดใน Big Tech",
+      "ที่ราคา $403 ต่ำกว่า FV $519 ราว 22%; NHS 500K Copilot = WHY NOW validated ใหม่",
+      "BUY — Azure +39% ยังไม่ถึง inflection; Copilot 15M seats ขยาย ARPU; CapEx กด FCF ชั่วคราวเท่านั้น"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "MoS 22.3% ผ่าน gate; FV $519 สมเหตุผลที่ Fwd P/E 20.8x สำหรับ Azure +40% + AI ARR $37B",
-        "Charlie ยืนยัน NHS Copilot rollout 500K = WHY NOW validated; Azure demand constraint = real",
-        "BUY confirmed — monitor: OpenAI AWS deal ลด exclusivity; IRS $28.9B wildcard"
+        "Charlie ยืนยัน Azure +39% YoY + NHS 500K Copilot = real enterprise adoption; fwdPE 20.9x, PEG 1.27 < ceiling 1.5 ✓",
+        "CapEx $190B 2026 (+61% YoY) เป็น near-term FCF risk แต่ Warren รับรู้แล้วใน model; โครงสร้างหนี้และ RPO $627B ยืนยัน thesis",
+        "AGREE — thesis แข็งแกร่ง NHS WHY NOW validated; ราคา $403 = 72.6% ของ 52wH $555 เปิด MoS กว้าง"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "BUY — MoS 22.3%; Azure +40% guide Q4 FY26; NHS 500K Copilot rollout ยืนยัน enterprise adoption จริง; ราคา $403 ลดจาก $441",
+    "idea_th": "BUY — MoS 22.3% ดีขึ้นมาก; NHS 500K Copilot seats ยืนยัน WHY NOW; ราคา $403 เป็น entry ที่ดีที่สุดในรอบนี้",
     "story_gate_th": {
-      "what": "Microsoft monetize AI ผ่าน Azure (+40% CC), GitHub Copilot (20M+ paid seats), M365 Copilot (300M+ enterprise users) — enterprise software ecosystem ที่ฝังลึกที่สุดในโลก",
-      "why": "RPO $627B+ = demand ถูก lock ไว้หลายปี; NHS 500K Copilot (06-10) = WHY NOW ยืนยัน; Azure capacity-constrained แสดงว่าเป็น real demand ไม่ใช่ hype",
-      "risk": "Azure growth ชะลอ <15% สองไตรมาสติดกัน; OpenAI ลด exclusivity; CapEx $190B กด FCF"
+      "what": "Microsoft monetize AI ผ่าน Azure (+29% YoY ติด capacity) + GitHub Copilot (15M+ paid seats) + M365 Copilot สำหรับ 300M+ enterprise users — เป็น enterprise software ecosystem ที่ฝังลึกที่สุดในโลก RPO $627B คือ backlog ที่ lock ไว้แล้ว",
+      "why": "NHS ปล่อย M365 Copilot ให้พนักงาน 500K+ คน (06-10) = enterprise AI adoption เข้าสู่ภาครัฐ WHY NOW ยืนยัน; Azure growth +39-40% ยังไม่หยุด; AI ARR $37B +123% YoY; ราคา $403 ลงจาก $441 เปิด MoS 22.3%",
+      "risk": "หาก Azure growth ชะลอ <15% เป็น 2 ไตรมาสติดกัน หรือ OpenAI พัฒนา platform ตัวเองและลด exclusivity ใน Azure; IRS dispute $28.9B ยังค้างอยู่"
     },
     "bull_th": [
-      "Azure +40% YoY (Q4 FY26 guide); AI ARR $37B +123% YoY — acceleration ชัด",
-      "GitHub Copilot 20M+ paid seats +250% YoY — fastest-growing enterprise product ในประวัติ MSFT",
-      "RPO $627B+ = revenue ถูก lock ไว้หลายปี ไม่ขึ้นกับ economy cycle",
-      "NHS 500K Copilot rollout (06-10) = enterprise AI adoption เข้าสู่ public sector",
-      "Custom silicon Maia 200: +30% tokens/$ vs third-party — margin improvement กำลังมา"
+      "Azure +39-40% YoY ติด capacity-constrained = demand จริง ไม่ใช่ hype; Q4 guide ยังโตต่อ",
+      "NHS 500K+ Copilot seats (06-10) = WHY NOW ยืนยัน enterprise AI adoption เข้าสู่ public sector แล้ว",
+      "AI ARR $37B +123% YoY; GitHub Copilot 15M+ paid seats = revenue model ขยายเร็ว",
+      "Commercial RPO $627B = visibility รายได้สูงสุดใน Big Tech ทั้งหมด",
+      "Custom silicon Maia 200 +30% tokens/dollar = gross margin ปรับดีขึ้น multi-year"
     ],
     "risk_th": [
-      "IRS tax dispute $28.9B+ = uncertainty ทางการเงินระยะยาว",
-      "CapEx CY2026 ~$190B กด FCF Q3 -22% YoY — \"show me ROI\" ต้องมาเร็วๆ นี้",
+      "CapEx CY2026 ~$190B กด FCF ระยะสั้น — Q3 FY26 FCF ลง -22% YoY จาก CapEx surge",
+      "Azure capacity-constrained — demand ล้น แต่ถ้า delivery ช้า margin squeeze ได้",
+      "IRS tax dispute $28.9B ค้างอยู่ — ถ้าแพ้กระทบ FCF อย่างมาก",
       "OpenAI เริ่มใช้ AWS บางส่วน — Azure captive demand ลดลงระยะยาว",
-      "Q4 FY26 มี one-time costs $900M + COGS +22-23% — margin pressure ระยะสั้น",
-      "Azure growth deceleration risk ถ้า enterprise ชะลอ AI adoption"
+      "Q4 FY26 มี one-time costs $900M จาก voluntary retirement program"
     ]
   },
   "META": {
@@ -374,20 +374,20 @@
       "review_date": "2026-06-10"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของ super app ที่คน 3.56 พันล้านใช้ทุกวัน — ราคา $584 ยังถูกกว่า FV $722",
-      "what": "Meta ทำเงินจากโฆษณาบน Facebook/Instagram/WhatsApp โดยใช้ AI ทำให้โฆษณาแม่นขึ้นเรื่อยๆ รายได้ $56B/ไตรมาส กำไรขั้นต้น 97.6% จากโฆษณา",
+      "one_liner": "เจ้าของ 3.56 พันล้านคน/วัน ที่ AI กำลังเปลี่ยนโฆษณาให้แม่นขึ้นทุกไตรมาส — ราคา $585 ยังต่ำกว่า FV $722",
+      "what": "Meta หาเงินจากโฆษณาใน Facebook, Instagram, WhatsApp, Threads สำหรับผู้ใช้งาน 3.56 พันล้านคนต่อวัน — รายได้ 97.6% มาจากโฆษณา; Reality Labs (AR/VR) ยังขาดทุนอยู่",
       "why_invest": [
-        "AI flywheel ทำงานจริง — ad impressions +19% + ราคา/โฆษณา +12% พร้อมกัน",
-        "Q1 2026 revenue +33% YoY; operating margin 41% record",
-        "Fwd P/E 17x = ถูกที่สุดใน Big Tech ทั้งที่ growth เร็วที่สุด",
-        "Muse Spark AI model + Social Commerce = optionality ที่ยังไม่ถูก price-in"
+        "AI flywheel ยืนยันด้วยตัวเลข: Q1 2026 impressions +19% + price +12% พร้อมกัน = combination ที่ดีที่สุด",
+        "OM 41% record; FCF $12.4B/ไตรมาส; revenue +33% YoY ที่ scale $56B",
+        "Fwd PE 16.2x ถูกสุดใน Big Tech ขณะที่โตเร็วสุด — market over-pricing legal risk",
+        "Muse Spark + social commerce unlock เป็น optionality ที่ยังไม่ถูก price-in"
       ],
       "watch_out": [
-        "FTC อุทธรณ์คดี antitrust — ถ้าแพ้ต้องขาย Instagram/WhatsApp",
-        "CapEx $125-145B ปีนี้กด FCF ระยะสั้น",
-        "IRS + EU ปรับรวมกันอาจเกิน $25B"
+        "FTC appeal บังคับขาย Instagram/WhatsApp — ถ้าเกิดขึ้น thesis ล่มสลาย",
+        "CapEx $125-145B ปีนี้ กด FCF; MoS 19% ใกล้ gate 15%",
+        "AI feature delays (06-09) บ่งบอก execution ช้ากว่าที่ควร"
       ],
-      "bottom_line": "Network effect ไม่มีใครเลียนแบบได้ + AI ที่วัดผลได้ + ราคาถูกสุดใน Big Tech = BUY"
+      "bottom_line": "Network effect ที่แน่นสุดในโลก + AI flywheel + PE ถูกสุด = BUY แม้ legal risk ยังอยู่"
     },
     "mark_full": {
       "business_overview": "Meta แบ่งธุรกิจ 2 ส่วน: Family of Apps (FB+IG+WA+Threads, 99.3% รายได้) ที่ได้เงินจากโฆษณา และ Reality Labs (AR/VR) ที่ขาดทุน $19B/ปี; Q1 2026 total revenue $56.3B +33% YoY",
@@ -402,38 +402,38 @@
       ]
     },
     "warren_easy": [
-      "Meta คือ network effect ที่ใหญ่ที่สุดในโลก — 3.56B คน/วัน ไม่มีใครสร้างขึ้นมาใหม่ได้",
-      "ราคา $584 ต่ำกว่า FV $722 ราว 19%; Fwd P/E 17x = cheapest Big Tech; PEG <1 = cheap มาก",
-      "BUY — FTC risk RESOLVED แล้ว; AI flywheel วัดผลได้จริงทุกไตรมาส"
+      "Meta คือ advertising flywheel ที่ AI กำลังเร่งให้แรงขึ้น — DAP 3.56B คน/วันไม่มีใครทัดเทียม; OM 41% record",
+      "ราคา $585 ต่ำกว่า FV $722 ราว 19%; Fwd PE 16.2x ถูกที่สุดใน Big Tech — market กังวล legal มากเกินจริง",
+      "BUY — AI flywheel มีตัวเลขยืนยัน; legal risk ยังอยู่แต่ไม่เปลี่ยน ad thesis; delay (06-09) minor concern"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "MoS 19% ผ่าน gate (15%); FV $722 สมเหตุผล; AI flywheel deliver ได้จริง (impressions+19% + price+12%)",
-        "Scale AI $14.3B acqui-hire (06-2026) = antitrust scrutiny เพิ่มใหม่; AI feature delays (06-09) vs Google/Apple = execution risk",
-        "CAUTION — thesis แข็ง แต่ FTC อุทธรณ์ Jan 2026 ยังค้าง; CapEx $125-145B กด FCF; MoS 19% ใกล้ gate ถ้าราคาขึ้นอีก 4%"
+        "Advertising thesis ยังแข็ง (FCF $12.4B/Q, fwdPE 16.2x ถูกสุด Big Tech); MoS 18.4% ผ่าน gate 15%",
+        "Red flags: Scale AI $14.3B acqui-hire (06-2026) = antitrust scrutiny เพิ่ม; AI feature delay (06-09) = execution risk; CapEx $125-145B 2x YoY กด FCF อย่างมาก",
+        "CAUTION — thesis ยังดี แต่ MoS บางแค่ 19%; monitor FTC appeal + CapEx ROI ต่อ"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "BUY — MoS 19%; Q1 2026 revenue $56.3B +33% YoY; AI flywheel วัดผลได้จริง (impressions +19% + price +12% พร้อมกัน); Fwd P/E 17x = cheapest Big Tech",
+    "idea_th": "BUY — Fwd PE 16.2x ถูกที่สุดใน Big Tech; AI flywheel ส่ง impressions +19% + price +12% พร้อมกัน; MoS 19% ผ่าน gate; ราคาย่อจาก $627 เป็น entry ดีขึ้น",
     "story_gate_th": {
-      "what": "Meta monetize คน 3.56B คน/วัน ผ่าน AI-enhanced advertising; network effect ที่ไม่มีใครแทนได้; เพิ่ม AI Lab (Muse Spark) + Social Commerce optionality",
-      "why": "AI flywheel deliver measurable results ทุกไตรมาส; Q1 OpMargin 41% record + Rev +33% = compounding ที่วัดได้; FTC risk RESOLVED แล้ว (Boasberg Nov 2025)",
-      "risk": "FTC อุทธรณ์ Jan 2026 — ถ้าแพ้ต้องขาย Instagram/WhatsApp; IRS $15.89B + DSA $12B + CapEx $125-145B = FCF squeeze"
+      "what": "Meta monetize คน 3.56 พันล้านคน/วัน ผ่านโฆษณาที่ AI ปรับแต่งได้แม่นขึ้นเรื่อยๆ — Q1 2026 OM 41% record; revenue +33% YoY; FCF $12.4B/ไตรมาส",
+      "why": "AI flywheel ส่งผล measurable: ad impressions +19% + price per ad +12% พร้อมกันใน Q1 2026 = combination ที่ดีที่สุดในประวัติ; Fwd PE 16.2x = ถูกที่สุดใน Big Tech ขณะที่โตเร็วที่สุด; ราคา $585 ต่ำกว่า FV $722 ราว 19%",
+      "risk": "FTC อุทธรณ์ (ม.ค. 2026) ขอ force divestiture Instagram/WhatsApp — ยังไม่ตัดสิน; IRS $15.89B; CapEx $125-145B ปี 2026 กด FCF อย่างมาก"
     },
     "bull_th": [
-      "DAP 3.56B คน/วัน + AI flywheel: impressions +19% + price/ad +12% พร้อมกัน = healthiest ad combo",
-      "Q1 2026 revenue $56.3B +33% YoY; OpMargin 41% record; Business AI 10M/week (10x ใน 1 ไตรมาส)",
-      "Muse Spark: closed-source frontier model + shopping mode — AI Lab value ยัง priced at zero",
-      "Fwd P/E 17x = cheapest Big Tech ทั้งที่ growth สูงสุด; PEG <1 = cheap มาก",
-      "Social Commerce optionality $100B+ addressable — platform เดียวที่มีทั้ง user graph + purchase data"
+      "DAP 3.56B คน/วัน = network effect ที่ไม่มีใครทัดเทียม — ผู้ใช้อยู่เพราะทุกคนอยู่ที่นี่",
+      "AI flywheel มีตัวเลขจริง: Q1 2026 impressions +19% + price per ad +12% พร้อมกัน = healthiest combination",
+      "OM 41% record ใน Q1 2026; FCF $12.4B/ไตรมาส; revenue +33% YoY ที่ scale $56B",
+      "Fwd PE 16.2x = ถูกที่สุดใน Big Tech ขณะที่โตเร็วสุด — มีส่วนต่างกับ PE ที่สมเหตุผล",
+      "Muse Spark AI model + social commerce unlock ยังไม่ถูก price-in"
     ],
     "risk_th": [
-      "FTC appeal Jan 2026 — ถ้าแพ้ต้องขาย Instagram+WhatsApp = thesis collapse",
-      "IRS $15.89B + EU DSA $12B + youth litigation \"หลักสิบ billion\" — aggregate legal exposure สูง",
-      "CapEx FY2026 $125-145B = FCF compression ระยะสั้น (Q1 FCF $12.4B vs CapEx $19.8B)",
-      "Reality Labs ขาดทุน ~$19B/ปี — ยังไม่รู้ break-even เมื่อไหร่",
-      "DAP growth deceleration: +7% → +4% YoY = mature platform signal"
+      "FTC อุทธรณ์ (ม.ค. 2026) ขอ force divestiture Instagram/WhatsApp — ถ้าแพ้ thesis ล่มสลาย",
+      "Scale AI acqui-hire $14.3B (มิ.ย. 2026) — Sen. Warren + FTC กำลัง scrutinize เพิ่ม",
+      "CapEx $125-145B ปี 2026 (+2x YoY) — FCF Q1 2026 $12.4B ต่ำกว่า CapEx $19.8B",
+      "IRS transfer pricing $15.89B + EU DSA ~$12B = legal tail risk รวมสูงมาก",
+      "AI feature delays (06-09) = execution risk เล็กน้อย แต่บ่งบอก speed ช้ากว่าคู่แข่ง"
     ]
   },
   "AMZN": {
@@ -520,20 +520,20 @@
       "review_date": "2026-06-10"
     },
     "mark_easy": {
-      "one_liner": "ยักษ์ e-commerce บวก AWS ที่กำลังเร่งตัวจาก AI — ตัวที่ undervalued สุดในกลุ่ม",
-      "what": "Amazon ครอง e-commerce บวก AWS cloud บวกโฆษณาดิจิทัล โดย AWS เป็นเครื่องยนต์กำไรหลักที่กำลังเร่งตัวจาก AI",
+      "one_liner": "Cloud #1 ที่กลับมาเร่งตัว + e-commerce + ads ในบริษัทเดียว — ราคา $244 ต่ำกว่า FV $315",
+      "what": "Amazon หาเงินจาก 3 เส้น: AWS (cloud AI = profit engine), e-commerce (logistics network ที่ใหญ่ที่สุดในโลก), Amazon Ads (high-margin กำลังโต) — AWS สร้าง 59% ของกำไรทั้งบริษัทแม้รายได้แค่ 21%",
       "why_invest": [
-        "AWS เร่งตัวเร็วสุดใน 15 ไตรมาส — โต 28% สู่ 37-44% ครึ่งหลังปี",
-        "Bedrock backlog 35 พันล้านดอลลาร์ บวกดีล OpenAI และ Anthropic",
-        "Trainium ชิป AI ของตัวเองประหยัดต้นทุนหลายหมื่นล้าน",
-        "retail op margin ทำสถิติ 13.1%"
+        "AWS +28% YoY เร็วสุดใน 15 ไตรมาส; Anthropic+OpenAI commit $200B+ บน Bedrock = locked demand",
+        "Trainium ถูกกว่า Nvidia B200 ถึง 10x — ลด CapEx หลายสิบพันล้าน$/ปีในอนาคต",
+        "Amazon Ads $17.2B Q1 2026 +24% = stream ที่ margin สูงกำลังเติบใหญ่",
+        "ราคา $244 MoS 22.5% — market กังวล FCF ชั่วคราวมากเกินไป"
       ],
       "watch_out": [
-        "FCF ติดลบ 95% YoY = ต้องพิสูจน์ว่า CapEx จะแปลงเป็นรายได้",
-        "AWS โต 28% ยังตามหลัง GCP ที่โต 63%",
-        "ดีล OpenAI เป็นทั้งพาร์ทเนอร์และคู่แข่ง"
+        "FCF เหลือแค่ $1.2B TTM จาก CapEx $200B — ต้องรอดู ROI",
+        "GCP/Azure โตเร็วกว่า AWS — AWS market share ค่อยๆ ลด",
+        "PEG 1.83 เกิน ceiling 1.5 = valuation stretch ถ้า growth ชะลอ"
       ],
-      "bottom_line": "Pete มองว่านี่คือตัวที่ดีที่สุดในกลุ่มรอบนี้ — undervalued ราว 19% (ผ่าน gate ตัวเดียว) AWS เร่งตัวจริง UBS ให้ Buy PT 333 ราคาย่อ = entry ดี"
+      "bottom_line": "AWS reacceleration + Trainium cost advantage + Ads growth = BUY แม้ FCF กด short-term"
     },
     "mark_full": {
       "business_overview": "Amazon สร้างรายได้จาก 3 ขา: e-commerce, AWS cloud และโฆษณาดิจิทัล โดย AWS เป็นเครื่องยนต์กำไรหลัก รอบนี้ AWS เร่งตัวเร็วสุดใน 15 ไตรมาส และ retail margin ทำสถิติ 13.1%",
@@ -548,38 +548,38 @@
       ]
     },
     "warren_easy": [
-      "Amazon คือตัวที่ผมชอบที่สุดในกลุ่มรอบนี้ — เป็นเจ้าของ moat 3 ชั้น: logistics ที่ไม่มีใครเทียบ, AWS cloud ที่ portfolio กว้างที่สุด และ custom silicon (Trainium) ที่ให้ความได้เปรียบต้นทุน ตลาดยังกังวลว่า AWS แพ้ AI race และ FCF ทรุด แต่ภาพจริงต่างออกไป",
-      "AWS กำลังเร่งตัวเร็วสุดใน 15 ไตรมาส โต 28% และจะเร่งสู่ 37-44% ครึ่งหลังปีจาก capacity ใหม่ที่ทยอยมา บวก Bedrock backlog 35 พันล้าน บวก Trainium ที่ประหยัดต้นทุนหลายหมื่นล้าน บวก retail margin ที่ทำสถิติ 13.1% — ทั้งหมดนี้ยังไม่ถูก price-in ใน PE 27 เท่า",
-      "ที่ราคา 254 ดอลลาร์ undervalued ราว 19% เทียบ Fair Value 315 ของผม เป็นตัวเดียวในกลุ่มที่ผ่าน Margin of Safety gate บวก UBS ก็ให้ Buy PT 333 (สูงกว่า FV ผมอีก) ที่ราคาย่อลงมาเป็น entry ที่ดี ผมจึงให้ BUY"
+      "Amazon คือ cloud + e-commerce + ads ในบริษัทเดียว — AWS กำลังเร่งตัวกลับมา และ Trainium จะลด CapEx อย่างมีนัยสำคัญ",
+      "ราคา $244 ต่ำกว่า FV $315 ราว 22%; Fwd PE 26x สมเหตุผลสำหรับ AWS ที่กำลัง reaccelerate",
+      "BUY — FCF ลดชั่วคราวจาก CapEx; customer committed 'substantial portion' = ลงทุนแล้วมีลูกค้ารองรับ"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "AWS +28% YoY strong; Anthropic $100B pledge = multi-year visibility; MoS 22.5% ผ่าน gate; FV $315 สมเหตุผล",
-        "⚠️ PEG 1.83 เกิน ceiling 1.5x อย่างมีนัย; FCF negative ปี 2026 ($200B capex > operating CF) = ผิดปกติสำหรับ mature company",
-        "CAUTION — AWS thesis ถูก แต่ GCP +63% vs AWS +28% = competition เพิ่ม; monitor FCF recovery H2 2026"
+        "AWS +28% เร็วสุดใน 15 ไตรมาส ✓; Anthropic $100B pledge = multi-year visibility ✓; ราคา $244 MoS 22.5% ✓",
+        "⚠️ Red flags: PEG 1.83 เกิน ceiling 1.5x; FCF -95% YoY = negative ปี 2026 จาก $200B CapEx; GCP +63% โตเร็วกว่า AWS",
+        "CAUTION — thesis ดี แต่ PEG เกิน ceiling และ FCF negative ต้องติดตาม AWS growth ไม่ให้ชะลอก่อนที่ CapEx จะ peak"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "Amazon เป็นตัวที่ดีที่สุดในกลุ่มรอบนี้ — undervalued ราว 19% (ผ่าน MoS gate ตัวเดียว) AWS เร่งตัวเร็วสุด 15 ไตรมาส บวก Bedrock backlog 35 พันล้าน UBS ให้ Buy PT 333 ราคาย่อ = entry ดี",
+    "idea_th": "BUY — AWS เร่งตัวเร็วสุดใน 15 ไตรมาส; Trainium ประหยัด CapEx \"หลายสิบพันล้าน$/ปี\"; ราคา $244 เปิด MoS 22.5%",
     "story_gate_th": {
-      "what": "ครอง e-commerce บวก AWS cloud บวกโฆษณา ด้วย logistics scale ที่ไม่มีใครเทียบ บวก cloud portfolio กว้างสุด บวก custom silicon (Trainium) ที่ให้ความได้เปรียบต้นทุน",
-      "why": "ตลาดมอง AWS แพ้ AI race และ FCF ทรุด แต่ Warren เห็น AWS เร่งสู่ 28% บน run rate 150 พันล้าน บวก Trainium ประหยัดหลายหมื่นล้าน บวก retail margin สถิติ 13.1% — ยังไม่ price-in ใน PE 27 เท่า",
-      "risk": "ถ้า AWS โตต่ำกว่า 20% เพราะ Azure/GCP แย่ง AI workload พิสูจน์ว่า CapEx surge เป็น malinvestment"
+      "what": "Amazon ครองสามธุรกิจพร้อมกัน: AWS #1 Cloud ($150B ARR +28% YoY), e-commerce #1 US + logistics network ที่ใหญ่ที่สุดในโลก, และ Amazon Ads $70B+ TTM — กำไรหลักมาจาก AWS ที่สร้าง 59% ของ operating income",
+      "why": "AWS กลับมาเร่งตัวเร็วสุดใน 15 ไตรมาส (06-02) + Trainium custom chip ถูกกว่า Nvidia B200 ถึง 10x + Bedrock backlog $35B (+300% YoY); ราคา $244 ต่ำกว่า FV $315 ราว 22% — market มองข้าม AWS reacceleration",
+      "risk": "FCF -95% YoY จาก CapEx $200B+ ปี 2026; AWS growth ชะลอ <20% ถ้า Azure/GCP ดึง AI workload ไปมากกว่านี้"
     },
     "bull_th": [
-      "AWS เร่งตัวเร็วสุด 15 ไตรมาส โต 28% สู่ 37-44% ครึ่งหลังปี",
-      "Bedrock backlog 35 พันล้าน บวกดีล OpenAI และ Anthropic",
-      "Trainium ประหยัดต้นทุนหลายหมื่นล้าน, Graviton ใช้โดย 98% ของ top 1,000",
-      "retail op margin ทำสถิติ 13.1%",
-      "valuation 18 เท่า 2027 EPS = discount เทียบ premium asset"
+      "AWS $150B ARR +28% YoY เร็วสุดใน 15 ไตรมาส — Anthropic $100B + OpenAI $100B+ pledge บน Bedrock = multi-year locked",
+      "Trainium custom chip ถูกกว่า Nvidia B200 ถึง 10x — จะประหยัด CapEx 'หลายสิบพันล้าน$/ปี' และ margin +หลายร้อย bps",
+      "Amazon Ads $17.2B Q1 2026 +24% YoY = high-margin stream ที่โตเร็ว",
+      "Retail op margin record 13.1% ใน Q1 2026; same-day delivery >1B items ในปี 2026",
+      "Bedrock 125,000+ customers, 80% Fortune 100, token ใน Q1 2026 เกินทุกปีที่ผ่านมารวมกัน"
     ],
     "risk_th": [
-      "FCF ติดลบ 95% YoY = show-me story",
-      "AWS โต 28% ยังตามหลัง GCP 63%",
-      "ดีล OpenAI เป็นทั้งพาร์ทเนอร์และคู่แข่ง",
-      "CapEx AI กด FCF ระยะใกล้",
-      "retail margin sensitive ต่อ macro บวก tariff"
+      "FCF TTM เหลือแค่ $1.2B จาก CapEx $200B+ — ถ้า AWS growth ชะลอก่อน CapEx peak FCF ติดลบ",
+      "GCP +63%, Azure +39% โตเร็วกว่า AWS +28% — AWS market share ค่อยๆ ลดจาก ~33% → ~30%",
+      "OpenAI dual-role: ทั้ง partner บน Bedrock และ competitor ผ่าน Microsoft — conflict uncertainty",
+      "FTC/Antitrust lawsuits หลายคดีในสหรัฐ + EU GDPR €746M fine + Italy €752M",
+      "PEG 1.83 เกิน ceiling 1.5x — valuation ใช้ growth assumption สูงมาก"
     ]
   },
   "TSM": {
@@ -607,8 +607,8 @@
       "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
       "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
     ],
-    "action": "hold",
-    "actionLabel": "Hold",
+    "action": "starter",
+    "actionLabel": "Starter",
     "conviction": 5,
     "waf": 8.1,
     "wafBadge": "waf-mid",
@@ -666,20 +666,20 @@
       "review_date": "2026-06-10"
     },
     "mark_easy": {
-      "one_liner": "โรงงานชิปที่ดีที่สุดในโลก — ทุก AI chip ไม่ว่า NVIDIA/Apple/AMD ต้องมาผลิตที่นี่",
-      "what": "TSMC รับจ้างผลิตชิปตามที่ลูกค้าออกแบบ ไม่มีชิปของตัวเอง (ไม่แข่งกับลูกค้า) จึงได้ความไว้ใจสูงสุด; technology นำหน้า Samsung/Intel 2+ ปี",
+      "one_liner": "โรงงานชิป AI เดียวในโลกที่ผลิตได้จริง — ราคา $428 เข้า STARTER band; NVIDIA partnership ยิ่งแน่น",
+      "what": "TSMC รับจ้างผลิตชิปตามแบบของลูกค้า (NVIDIA, Apple, AMD, Google ฯลฯ) โดยไม่ออกแบบชิปเอง ทำให้ทุกคนไว้วางใจส่ง IP ลับมาผลิต; เป็น sole HVM ของ N2/A16 = AI chip ทุกตัวต้องผ่านที่นี่",
       "why_invest": [
-        "Revenue $35.9B Q1 2026 +40.6% YoY; FY26 guide >30% growth",
-        "AI accelerator demand CAGR high-50s% = structural growth ไม่ใช่ cyclical",
-        "Advanced packaging CoWoS monopoly = chokepoint ที่ competitors ทำไม่ได้",
-        "N2 (2nm) เข้า HVM แล้ว — technology roadmap แน่นถึง A14 (2028)"
+        "Sole HVM N2/A16 = ไม่มีทางผลิต AI chip ระดับ top-tier โดยไม่ผ่าน TSMC",
+        "NVIDIA-TSMC partnership ใหม่ (06-08) = co-development lock-in ระยะยาว",
+        "Q1 2026 revenue +40.6% YoY; GM 66.2% record; FY2026 >30% growth confirmed",
+        "CoWoS advanced packaging near-monopoly = chokepoint AI infrastructure"
       ],
       "watch_out": [
-        "Taiwan geopolitical tension = systemic risk ที่ประกันไม่ได้",
-        "Arizona cost overruns กดดัน margin",
-        "MoS 8.9% ยังต่ำกว่า gate 15% — ยังไม่ถึง entry zone เต็ม"
+        "Taiwan geopolitical risk = structural discount ที่ตลาดให้เสมอ",
+        "MoS 8.9% บาง — ถ้าราคาขึ้นอีก 4% หลุด STARTER band",
+        "Overseas fab margin dilution 2-4% ที่กำลังเกิดขึ้นใน H2 2026"
       ],
-      "bottom_line": "Foundry monopoly ที่ดีที่สุดในโลก — ราคายังต้องรอ pullback เล็กน้อยก่อน BUY เต็ม"
+      "bottom_line": "คุณภาพสูงสุดในกลุ่ม Foundry; MoS 8.9% = STARTER ⅓ ของ target position"
     },
     "mark_full": {
       "business_overview": "TSMC (pure-play foundry) revenue: HPC 61% (AI+server), Smartphone 26%, IoT 6%, Auto 4%; technology: advanced ≤7nm = 74%; FY2025 revenue $122.4B +36% YoY",
@@ -694,38 +694,38 @@
       ]
     },
     "warren_easy": [
-      "TSMC คือ foundry monopoly — ไม่มีใคร trust ได้เท่าในระดับ advanced node; technology gap vs Samsung/Intel ยังกว้าง 2+ ปี",
-      "ราคา $428 ใกล้ FV $470 (MoS 8.9%) — ใกล้จะเข้า buy zone; STARTER action = position เล็กก่อน",
-      "STARTER — geopolitical risk คือข้อจำกัดหลัก; ถ้าราคาลงถึง $400 หรือ tension ลดลง = สะสมเพิ่ม"
+      "TSMC คือ foundry ที่ AI chip ทั้งโลกต้องพึ่งพา — CoWoS near-monopoly + N2/A16 sole HVM = moat ที่แทบไม่มีทางแตก",
+      "Q1 2026 GM 66.2% record; FY26 >30% growth confirmed; NVIDIA partnership ยิ่งล็อคความสัมพันธ์ระยะยาว",
+      "STARTER — MoS 8.9% เข้า band [8-15%]; คุณภาพสูงสุดใน Foundry; เริ่ม ⅓ ของ target position ก่อน"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Business fundamentals แน่นมาก; Q1 2026 +40.6% YoY; CoWoS monopoly = real moat; N2 ramp on track",
-        "⚠️ MoS 8.9% บางมาก (gate 15%); ราคา 95.1% ของ 52wH $450; overseas fab margin dilution 2-4% H2 2026",
-        "CAUTION — STARTER action ถูกต้อง; รอราคา pullback เพิ่ม MoS; monitor geopolitical tension Taiwan"
+        "Business fundamentals แน่น (CoWoS near-monopoly, GM 66.2% record, FY2026 >30% growth); PEG 1.33 < ceiling ✓",
+        "⚠️ yfinance fwdPE 21.9x vs Warren 19.8x ต่างกัน 2.1x; ราคา 95.1% ของ 52wH = MoS บางมาก; overseas fab margin dilution 2-4% กำลังเกิดจริง H2 2026",
+        "CAUTION — thesis แน่น แต่ MoS 8.9% บางมาก = STARTER ⅓ เท่านั้น; monitor overseas fab overhead + Taiwan geopolitics"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "STARTER — MoS 8.9% (ต่ำกว่า gate 15%); ราคา $428 ใกล้จะผ่าน gate; Q1 2026 revenue $35.9B +40.6% YoY; FY26 guide >30% growth; pure-play foundry moat ไม่มีใครเทียบได้",
+    "idea_th": "STARTER — MoS 8.9% เข้า band [8-15%]; NVIDIA-TSMC AI factory partnership ยิ่งล็อคความสัมพันธ์ระยะยาว; คุณภาพสูงสุดใน Foundry tier; เริ่ม ⅓ ของ target position",
     "story_gate_th": {
-      "what": "TSMC คือ foundry สำหรับทุก AI chip ในโลก — NVIDIA, Apple, AMD, Broadcom, Google ต่างมาผลิตที่นี่; technology gap vs Samsung/Intel ยังกว้าง; Advanced node 74% ของ revenue",
-      "why": "AI accelerator CAGR high-50s% through 2029; N2 (2nm) เข้า HVM Q4 2025 ramp เร็ว; CoWoS advanced packaging ~10% rev FY26; Arizona GIGAFAB cluster กำลังสร้าง",
-      "risk": "Taiwan geopolitical tension = systemic risk; Arizona cost overruns; FX NTD แข็งค่า กด USD revenue"
+      "what": "TSMC คือ foundry เดียวในโลกที่ผลิต AI chip ระดับ top-tier ในปริมาณสูง (High Volume Manufacturing) — ทุกชิปที่ NVIDIA, Apple, AMD, Google, Amazon ใช้ต้องผ่าน TSMC; N2 HVM + CoWoS packaging = chokepoint ของ AI infrastructure โลก",
+      "why": "NVIDIA-TSMC AI factory efficiency partnership (06-08) = co-development lock-in ระดับใหม่; N2 เข้า HVM ยืนยันแล้ว FY2026 >30% revenue growth; supply tight ถึงปี 2027; ราคา $428 ลดจาก $445 เปิด MoS 8.9% เข้า STARTER band",
+      "risk": "Taiwan geopolitics = structural discount ที่ตลาดให้เสมอ; overseas fab margin dilution 2-4%; Apple+NVIDIA = 36% concentration"
     },
     "bull_th": [
-      "Q1 2026 revenue $35.9B +40.6% YoY; FY26 guide >30% USD growth; Q2 guide $39-40.2B",
-      "Advanced nodes 74% ของ revenue: 3nm 25%, 5nm 36% — technology leadership ไม่มีใครแซง",
-      "AI accelerator revenue CAGR high-50s% 2024-2029 per management",
-      "CoWoS advanced packaging = chokepoint ของ AI GPU assembly; monopoly",
-      "CapEx $52-56B FY26 = barrier to entry ที่ competitors สร้างในระยะสั้นไม่ได้"
+      "Sole HVM N2/A16 = ไม่มี AI chip ระดับ top-tier ที่ไม่ต้องผ่าน TSMC; technology gap vs Samsung/Intel กว้างมาก",
+      "NVIDIA-TSMC AI factory partnership (06-08) = co-development ที่ยิ่งล็อคความสัมพันธ์ระยะยาว",
+      "Q1 2026 revenue $35.9B +40.6% YoY; GM 66.2% record; FY2026 guidance >30% growth",
+      "CoWoS advanced packaging near-monopoly = chokepoint ที่คู่แข่งสร้างทดแทนไม่ได้ในระยะสั้น",
+      "5-year revenue CAGR ~25% target + GM 56%+ through the cycle = visibility ยาวนาน"
     ],
     "risk_th": [
-      "Taiwan geopolitical risk — China-Taiwan tension = systemic risk ต่อ 74% advanced node revenue",
-      "Arizona fab cost overruns กดดัน margin FY27+ (Q1 2026 GM 66.2% vs Arizona lower)",
-      "FX risk: NTD แข็งค่า NTD 31.6/USD → กระทบ USD revenue conversion",
-      "Samsung + Intel ได้ CHIPS Act support — gap อาจแคบลงในระยะยาว",
-      "Top 2 customers = 38% ของ revenue — customer concentration risk"
+      "Taiwan geopolitical risk = structural discount ที่ตลาดให้เสมอ — ไม่หายไปเร็วๆ นี้",
+      "Apple + NVIDIA = 36% concentration — ถ้าหนึ่งรายลดคำสั่งซื้อกระทบหนัก",
+      "Overseas fab (Arizona/Japan/Germany) margin dilution 2-4% ที่กำลังเกิดจริง H2 2026",
+      "MoS 8.9% บางมาก — ถ้าราคาขึ้นอีก 4% หลุด BUY zone",
+      "N2 ramp + overseas overhead อาจกด margin ช่วง H2 2026 ก่อน pricing catch up"
     ]
   },
   "LITE": {
@@ -953,20 +953,20 @@
       "review_date": "2026-06-10"
     },
     "mark_easy": {
-      "one_liner": "Netflix post 10:1 split ที่ราคา $81 ให้ MoS 33% — จาก $122 FV; content moat + algorithm ที่แกร่ง",
-      "what": "Netflix ให้บริการ streaming 325M+ คน ทั่วโลก; จ่ายค่า content $17-18B/ปีสร้าง library ที่ competitors ทำไม่ทัน; รายได้จาก subscription + โฆษณาที่กำลังเติบโต",
+      "one_liner": "Netflix post 10:1 split ที่ราคา $81 ให้ MoS 33% — content moat + algorithm + live sports catalyst ใหม่",
+      "what": "Netflix ให้บริการ streaming 325M+ คน ทั่วโลก; ลงทุน content $17-18B/ปีสร้าง library ที่ competitors ทำไม่ทัน; รายได้จาก subscription + โฆษณา (ad tier 250M MAU) + live events",
       "why_invest": [
-        "ราคา $81 ต่ำกว่า FV $121.9 ราว 33% = entry ที่ดีหลัง 10:1 split",
+        "ราคา $81 ต่ำกว่า FV $121.9 ราว 33% — MoS ดีสุดในกลุ่ม",
         "Q1 2026: Revenue +16%; OM 32.3% เหนือ guidance; FCF $5.1B",
-        "Live events (NFL) = catalyst ใหม่ที่เพิ่ม engagement ได้จริง",
-        "Ad tier growing = revenue per user ขยาย; ad revenue on track >$9B"
+        "Ad tier 250M MAU (05-23) = revenue stream กำลัง scale หลัง 4 ปีลงทุน",
+        "Live events (NFL/WWE) เพิ่ม engagement จริงและยากต้อง cancel"
       ],
       "watch_out": [
-        "Content cost inflation: live sports rights แพงและ ROI ไม่แน่ใจ",
-        "PEG 1.72 เกิน ceiling 1.5 = ตาม consensus growth ค่อนข้าง stretch",
-        "Competition Disney+/Prime ยังแข่งหนักอยู่"
+        "Content cost inflation จาก live sports rights แพงมาก ROI ไม่แน่ใจ",
+        "PEG 1.62 เกิน ceiling 1.5 — growth assumption สูงกว่า consensus",
+        "Competition Disney+/Prime ยังหนัก; UCAN/EMEA เริ่มอิ่มตัว"
       ],
-      "bottom_line": "Content + algorithm moat + 325M subscribers + ราคา $81 MoS 33% = BUY ขนาดเล็ก"
+      "bottom_line": "Content moat + 325M subscribers + ราคา $81 MoS 33% = BUY ขนาดเล็ก"
     },
     "mark_full": {
       "business_overview": "Netflix 1 operating segment (Streaming); Revenue Q1 2026: UCAN $5.2B +14%, EMEA $4B +17%, LATAM $1.5B +19%, APAC $1.5B +20%; หยุดรายงาน member count ตั้งแต่ 2025",
@@ -981,38 +981,38 @@
       ]
     },
     "warren_easy": [
-      "Netflix = content + algorithm moat ที่แข็งแกร่ง; 325M subscribers; OM 32% = scale ที่ถึง inflection",
-      "ราคา $81 ต่ำกว่า FV $121.9 ราว 33%; Fwd P/E 24× เหมาะสม — BUY ขนาดเล็ก",
-      "BUY — Live events เป็น catalyst ใหม่; password crackdown เสร็จ = base growth unlocked"
+      "Netflix = content + algorithm moat ที่แข็งแกร่ง + 325M subscribers; OM 32.3% ถึง inflection point แล้ว",
+      "ราคา $81 ต่ำกว่า FV $121.9 ราว 33%; Ad tier 250M MAU + FCF $12.5B FY26 guide — ดีที่สุดในกลุ่ม",
+      "BUY — Live events catalyst ใหม่; password crackdown เสร็จ = base growth unlocked; PEG เกิน ceiling แต่ thesis ยังดี"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "MoS 33.2% ผ่าน gate; FV $121.9 สมเหตุผล; content moat + 325M subscribers = real; Q1 OM 32.3%",
-        "⚠️ PEG 1.62 เกิน ceiling 1.5x (Warren ใช้ higher growth assumption) — ควรทบทวน VA score; RevGrowth +16.2% ชะลอจากระดับสูง",
-        "CAUTION — ราคาลง 39% จาก 52wH $134; gaming/advertising ยังไม่ proven profitable; monitor PEG ceiling"
+        "MoS 33.2% ผ่าน gate; FV $121.9 สมเหตุผล; content moat + 325M subscribers + OM 32.3% ยืนยัน quality",
+        "⚠️ PEG 1.62 เกิน ceiling 1.5x — Warren ใช้ growth assumption สูงกว่า consensus; revenue growth ชะลอสู่ 12-14% จาก 17%; gaming/ads ยังไม่ proven profitable",
+        "CAUTION — ราคาลง 39% จาก 52wH $134; monitor PEG ceiling + content cost + guild negotiations"
       ],
       "review_date": "2026-06-10"
     },
-    "idea_th": "BUY — MoS 33.2%; ราคา $81 ต่ำกว่า FV $121.9 ราว 33%; Q1 2026 revenue $12.3B +16%; operating margin 32.3%; post-10:1 split deep value",
+    "idea_th": "BUY — MoS 33.2% สูงสุดในกลุ่ม; password crackdown เสร็จแล้ว; ad tier 250M MAU ✓; live sports NFL/WWE เป็น catalyst ใหม่; ราคา $81 เป็น entry ที่ดีหลัง 10:1 split",
     "story_gate_th": {
-      "what": "Netflix ขาย subscription ให้ 325M+ สมาชิก ใน 190+ ประเทศ; Content Library + Algorithm Moat ที่ competitors replicate ไม่ได้ทัน; password crackdown เสร็จแล้วปลดล็อก growth",
-      "why": "Live sports (NFL/WWE) เป็น catalyst ใหม่; Ad revenue กำลัง scale; 2026 revenue guide $43-44B; OM 29%; Q1 2026 OM 32.3% = เหนือ guidance",
-      "risk": "Content cost escalation; PEG 1.72 (yfinance consensus) เกิน ceiling 1.5; Disney+/Max bundling competition"
+      "what": "Netflix ให้บริการ streaming 325M+ subscribers ใน 190+ ประเทศ รายได้จาก subscription + โฆษณาที่กำลังเติบโต; content library + recommendation algorithm ที่ competitors ทำไม่ทัน; OM ขยายต่อเนื่อง 20.6% (2023) → 29.5% (2025) → 31.5% target (2026)",
+      "why": "Password crackdown เสร็จ = subscriber base ที่จ่ายเงินจริง; Ad tier 250M MAU (05-23); Live events (NFL, WWE, boxing) เป็น catalyst ใหม่; FY26 FCF guidance $12.5B = cash machine; ราคา $81 ต่ำกว่า FV $121.9 ราว 33% — MoS ดีสุดในกลุ่ม",
+      "risk": "Content cost inflation จาก live sports rights; PEG 1.62 เกิน ceiling 1.5 ตาม consensus growth; Disney+/Amazon Prime competition ยังหนัก; subscriber growth ceiling ใน UCAN"
     },
     "bull_th": [
-      "Q1 2026: Revenue $12.3B +16%; OM 32.3% — เหนือ guidance ทุก metric",
-      "FY26 guide: Revenue $43-44B +16%; OM 29% = margin expansion ต่อเนื่อง",
-      "325M+ subscribers ใน 190 ประเทศ; password crackdown เสร็จ = growth unlocked",
-      "Live events (NFL/WWE) เพิ่ม engagement + ดึง subscriber ใหม่",
-      "Ad-supported tier $7.99 = TAM expansion ไปกลุ่มที่เคยแพงเกินไป"
+      "Q1 2026 revenue $12.25B +16%; OM 32.3% เหนือ guidance; FCF $5.1B = cash machine ที่แข็งแกร่ง",
+      "Ad-supported tier ข้าม 250M MAU (05-23); ad revenue $3B target ปี 2026 = revenue stream ใหม่กำลัง scale",
+      "Live events: NFL Christmas, World Baseball Classic (31.4M viewers ในญี่ปุ่น), Joshua vs Paul = engagement เพิ่มจริง",
+      "FY26 guidance: revenue $50.7-51.7B +12-14%; OM 31.5%; FCF $12.5B — trajectory ชัดเจน",
+      "ราคา $81 ต่ำกว่า FV $121.9 ราว 33% = MoS ดีสุดในกลุ่ม Big Tech ทั้งหมด"
     ],
     "risk_th": [
-      "Content cost inflation: live sports rights (NFL, WWE, Boxing) แพงมากและไม่แน่ใจ ROI",
-      "PEG 1.72 (yfinance consensus) เกิน ceiling 1.5 = valuation stretch ตาม consensus growth",
-      "Disney+/Max bundling + YouTube/Amazon Prime competition",
-      "Ad revenue ต้องแข่งกับ YouTube/Meta ที่มี targeting เหนือกว่า",
-      "Subscriber growth ceiling ในตลาด developed (UCAN penetration สูงแล้ว)"
+      "Content cost inflation: live sports rights (NFL/WWE/Boxing) แพงมากและ ROI ยังไม่แน่ใจ",
+      "PEG 1.62 เกิน ceiling 1.5x (ตาม consensus) — Warren ใช้ growth assumption สูงกว่า consensus",
+      "Revenue growth ชะลอจาก +17% (H2 2025) → 12-14% (2026) — UCAN/EMEA เริ่มอิ่มตัว",
+      "Disney+/Amazon Prime ยังแข่งหนัก; YouTube/TikTok ดึงเวลาโดยไม่เสียค่าใช้จ่าย",
+      "Guild agreements (WGA/SAG-AFTRA) หมดอายุ 2026 — ถ้า strike ซ้ำ production delay"
     ]
   },
   "AVGO": {
