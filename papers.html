@@ -94,14 +94,15 @@ function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
 function fmtUSD(v){ return v!=null ? '$'+Number(v).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2}) : '—'; }
 
 function verdictBadge(v) {
-  const s = v==='AGREE'
-    ? 'background:rgba(14,203,129,.12);color:#0ECB81;border:1px solid rgba(14,203,129,.28)'
-    : v==='CAUTION'
-    ? 'background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.28)'
-    : v==='DISAGREE'
-    ? 'background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.28)'
+  const u = (v||'').toUpperCase();
+  const s = u.includes('AGREE') && !u.includes('DIS')
+    ? 'background:rgba(14,203,129,.22);color:#0ECB81;border:1.5px solid rgba(14,203,129,.6)'
+    : u.includes('CAUTION')
+    ? 'background:rgba(245,158,11,.22);color:#f59e0b;border:1.5px solid rgba(245,158,11,.6)'
+    : u.includes('DISAGREE')
+    ? 'background:rgba(239,68,68,.22);color:#ef4444;border:1.5px solid rgba(239,68,68,.6)'
     : 'background:var(--bg-surface);color:var(--text-3);border:1px solid var(--border)';
-  return `<span style="${s};font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.06em">${esc(v)}</span>`;
+  return `<span style="${s};font-size:.72rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.07em">${esc(v)}</span>`;
 }
 
 function mktBadge(temp) {
@@ -295,10 +296,15 @@ function renderWarren(paper, charlieVerdict) {
 // ── Charlie ───────────────────────────────────────────────────────
 function claimList(items, icon, color) {
   if (!items || !items.length) return '';
+  const isGreen = color==='green';
+  const col  = isGreen ? '#0ECB81' : '#f59e0b';
+  const bg   = isGreen ? 'rgba(14,203,129,.18)'  : 'rgba(245,158,11,.18)';
+  const bdr  = isGreen ? 'rgba(14,203,129,.55)'  : 'rgba(245,158,11,.55)';
+  const label = isGreen ? '✓ Verified Claims' : '⚠ Concerns';
   return `<div>
-    <div class="eyebrow-sm" style="margin-bottom:10px">${icon} ${color==='green'?'Verified Claims':'Concerns'}</div>
+    <div style="display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:3px 10px;border-radius:20px;background:${bg};color:${col};border:1.5px solid ${bdr};margin-bottom:10px">${label}</div>
     <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px">
-      ${items.map(pt=>`<li class="claim-li"><span style="color:${color==='green'?'#0ECB81':'#f59e0b'};flex-shrink:0;margin-top:1px">${icon}</span><span>${esc(pt)}</span></li>`).join('')}
+      ${items.map(pt=>`<li class="claim-li"><span style="color:${col};flex-shrink:0;margin-top:1px">${icon}</span><span>${esc(pt)}</span></li>`).join('')}
     </ul>
   </div>`;
 }
