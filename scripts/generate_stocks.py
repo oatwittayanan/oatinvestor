@@ -29,6 +29,9 @@ KNOW_PORTFOLIO  = OAT_OS / "oat-investment-knowledge" / "portfolio"   # git mirr
 MIRROR_FILES    = ["charlie_watchlist_reviews.json", "watchlist_valuations.json",
                    "papers.json", "pipeline_log.json"]
 
+# Portfolio files that must be synced to oat-investor/data/ for papers.html
+PORTFOLIO_SYNC  = ["papers.json", "charlie_reviews.json"]
+
 
 def warn_consistency():
     """เตือนถ้า card sections ไม่ consistent + wikilink broken (ผ่าน pipeline_status.py)."""
@@ -155,6 +158,18 @@ def restore_pete_fields(stocks: dict, pete_saved: dict) -> dict:
     return stocks
 
 
+def sync_portfolio_data():
+    """Sync papers.json + charlie_reviews.json → oat-investor/data/ for papers.html."""
+    synced = 0
+    for fn in PORTFOLIO_SYNC:
+        src = CRED_DIR / fn
+        dst = ROOT / "data" / fn
+        if src.exists():
+            shutil.copy2(src, dst)
+            synced += 1
+    print(f"  ✅ synced {synced} portfolio data files → oat-investor/data/")
+
+
 # ── Step 3: Write output ──────────────────────────────────────────────────────
 def main():
     print("📦 generate_stocks.py\n")
@@ -181,6 +196,9 @@ def main():
     has_tier    = sum(1 for v in stocks.values() if v.get("tier"))
     has_charlie = sum(1 for v in stocks.values() if v.get("charlie"))
     print(f"  ✅ {len(stocks)} tickers | tier: {has_tier} | charlie: {has_charlie}")
+
+    # Sync portfolio files (papers + charlie_reviews) → oat-investor/data/
+    sync_portfolio_data()
 
     # Guards: consistency warning + git mirror of canonical portfolio state
     warn_consistency()
