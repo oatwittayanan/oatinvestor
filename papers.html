@@ -305,9 +305,17 @@ function claimList(items, icon, color) {
 
 function renderCharlieTickerReview(tr) {
   const verdict = tr.verdict || tr.charlie_verdict || '—';
-  const priceVal = tr.price_at_review ?? tr.yf_price;
+  const priceVal = tr.price_at_review ?? tr.yf_price ?? tr.price_check?.charlie_current;
   const fvVal = tr.warren_fv ?? tr.warren_fv_base;
-  const risks = tr.risks || tr.risks_found || [];
+  const risks = tr.risks || tr.risks_found || tr.red_flags || [];
+  const verifyItems = tr.verify_further || [];
+
+  const accentColor = verdict==='AGREE' ? '#0ECB81'
+    : verdict==='CAUTION' ? '#f59e0b'
+    : verdict==='DISAGREE' ? '#ef4444' : 'var(--border)';
+  const bgTint = verdict==='AGREE' ? 'rgba(14,203,129,.04)'
+    : verdict==='CAUTION' ? 'rgba(245,158,11,.04)'
+    : verdict==='DISAGREE' ? 'rgba(239,68,68,.04)' : 'transparent';
 
   const compareData = [
     tr.yf_forward_pe != null && ['Fwd P/E (Charlie)', `${tr.yf_forward_pe}×`],
@@ -317,7 +325,7 @@ function renderCharlieTickerReview(tr) {
     tr.warren_mos_pct != null && ['Warren MoS', `${(+tr.warren_mos_pct).toFixed(1)}%`],
   ].filter(Boolean);
 
-  return `<div class="card" style="padding:24px;margin-bottom:14px">
+  return `<div class="card" style="padding:24px;margin-bottom:14px;border-left:3px solid ${accentColor};background:${bgTint}">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
         <span style="font-size:1.1rem;font-weight:800;font-family:monospace">${esc(tr.ticker)}</span>
@@ -337,12 +345,18 @@ function renderCharlieTickerReview(tr) {
       ${claimList(tr.verified_claims||tr.agree_points,'✓','green')}
       ${claimList(tr.concerns,'⚠','amber')}
       ${risks.length?`<div>
-        <div class="eyebrow-sm" style="margin-bottom:10px">✗ Additional Risks</div>
+        <div class="eyebrow-sm" style="margin-bottom:10px">🚩 Red Flags</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px">
           ${risks.map(r=>`<li class="claim-li"><span style="color:#ef4444;flex-shrink:0">✗</span><span>${esc(r)}</span></li>`).join('')}
         </ul>
       </div>`:''}
     </div>
+
+    ${verifyItems.length?`<div style="margin-top:14px;padding:10px 14px;border-radius:var(--r);border:1px solid rgba(99,102,241,.25);background:rgba(99,102,241,.04)">
+      <div class="eyebrow-sm" style="margin-bottom:8px;color:#818cf8">↗ ติดตามต่อ</div>
+      ${verifyItems.map(v=>`<div style="font-size:.78rem;color:var(--text-2);padding:3px 0;line-height:1.5">→ ${esc(v)}</div>`).join('')}
+    </div>`:''}
+
     ${tr.data_source?`<div style="margin-top:12px;font-size:.72rem;color:var(--text-3)">📊 Source: ${esc(tr.data_source)}</div>`:''}
   </div>`;
 }
