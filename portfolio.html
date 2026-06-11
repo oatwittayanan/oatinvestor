@@ -543,7 +543,7 @@ function buildPeriodBtns(id, hist, portKey) {
 
 function selectPeriod(portKey, p) {
   activePeriod[portKey] = p;
-  if (portKey === 'ai' && window._aiHist) renderChart('ai-chart', window._aiHist, portKey, ['voo','qqqm'], false);
+  if (portKey === 'ai' && window._aiHist) renderChart('ai-chart', window._aiHist, portKey, ['voo','qqqm'], true);
   if (portKey === 'sp' && window._spHist) renderChart('sp-chart', window._spHist, portKey, ['qqqm'], true);
   buildPeriodBtns(`${portKey}-period-btns`, portKey === 'ai' ? window._aiHist : window._spHist, portKey);
 }
@@ -616,7 +616,7 @@ function renderAI(p) {
   const chartCard = document.getElementById('ai-chart').closest('.card');
   if (hist.dates && hist.dates.length >= 2) {
     buildPeriodBtns('ai-period-btns', hist, 'ai');
-    renderChart('ai-chart', hist, 'ai', ['voo','qqqm'], false);
+    renderChart('ai-chart', hist, 'ai', ['voo','qqqm'], true);
     const bms = [];
     if (s.voo_pct  != null) bms.push(legendItem(COLORS.voo,  'VOO',  pctStr(s.voo_pct),  pctClass(s.voo_pct)));
     if (s.qqqm_pct != null) bms.push(legendItem(COLORS.qqqm, 'QQQM', pctStr(s.qqqm_pct), pctClass(s.qqqm_pct)));
@@ -898,7 +898,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
 // Re-render charts on theme change
 new MutationObserver(() => {
-  if (window._aiHist) renderChart('ai-chart', window._aiHist, 'ai', ['voo','qqqm'], false);
+  if (window._aiHist) renderChart('ai-chart', window._aiHist, 'ai', ['voo','qqqm'], true);
   if (window._spHist) renderChart('sp-chart', window._spHist, 'sp', ['qqqm'], true);
   if (window._aiSorted) renderAllocChart('ai-alloc-chart', 'ai-alloc-total', window._aiSorted, window._aiTotal, window._aiColors);
   if (window._spSorted) renderAllocChart('sp-alloc-chart', 'sp-alloc-total', window._spSorted, window._spTotal, window._spColors);
