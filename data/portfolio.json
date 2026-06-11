@@ -2,10 +2,10 @@
   "ai_port": {
     "name": "ลงทุนกับ AI",
     "tab": "AI PORT",
-    "total_cost": 100.01,
-    "total_value": 96.0,
-    "pl_usd": -4.01,
-    "pl_pct": -4.01,
+    "total_cost": 190.01,
+    "total_value": 182.63,
+    "pl_usd": -7.39,
+    "pl_pct": -3.89,
     "total_dividends": 0,
     "holdings": [
       {
@@ -17,40 +17,73 @@
         "price": 10.0,
         "pl_usd": 0.0,
         "pl_pct": 0.0,
-        "pos_pct": 10.42
+        "pos_pct": 5.48
       },
       {
         "ticker": "NVDA",
-        "shares": 0.1877885,
-        "avg_cost": 213.02,
-        "cost": 40.0,
-        "value": 39.1,
-        "price": 208.19,
-        "pl_usd": -0.91,
-        "pl_pct": -2.27,
-        "pos_pct": 40.73
+        "shares": 0.2860917,
+        "avg_cost": 209.73,
+        "cost": 60.0,
+        "value": 57.34,
+        "price": 200.42,
+        "pl_usd": -2.66,
+        "pl_pct": -4.44,
+        "pos_pct": 31.4
       },
       {
         "ticker": "MSFT",
-        "shares": 0.0705901,
-        "avg_cost": 425.04,
-        "cost": 30.0,
-        "value": 28.48,
-        "price": 403.41,
-        "pl_usd": -1.53,
-        "pl_pct": -5.09,
-        "pos_pct": 29.66
+        "shares": 0.0953395,
+        "avg_cost": 419.6,
+        "cost": 40.0,
+        "value": 37.88,
+        "price": 397.36,
+        "pl_usd": -2.12,
+        "pl_pct": -5.3,
+        "pos_pct": 20.74
       },
       {
         "ticker": "META",
-        "shares": 0.0315197,
-        "avg_cost": 634.59,
+        "shares": 0.0487371,
+        "avg_cost": 615.61,
+        "cost": 30.0,
+        "value": 27.83,
+        "price": 570.98,
+        "pl_usd": -2.18,
+        "pl_pct": -7.25,
+        "pos_pct": 15.24
+      },
+      {
+        "ticker": "AMZN",
+        "shares": 0.0832007,
+        "avg_cost": 240.4,
         "cost": 20.0,
-        "value": 18.43,
-        "price": 584.59,
-        "pl_usd": -1.58,
-        "pl_pct": -7.88,
-        "pos_pct": 19.19
+        "value": 19.8,
+        "price": 238.0,
+        "pl_usd": -0.2,
+        "pl_pct": -1.0,
+        "pos_pct": 10.84
+      },
+      {
+        "ticker": "NFLX",
+        "shares": 0.2419198,
+        "avg_cost": 82.67,
+        "cost": 20.0,
+        "value": 19.84,
+        "price": 82.0,
+        "pl_usd": -0.16,
+        "pl_pct": -0.81,
+        "pos_pct": 10.86
+      },
+      {
+        "ticker": "TSM",
+        "shares": 0.0243135,
+        "avg_cost": 411.35,
+        "cost": 10.0,
+        "value": 9.94,
+        "price": 408.75,
+        "pl_usd": -0.06,
+        "pl_pct": -0.63,
+        "pos_pct": 5.44
       }
     ],
     "transactions": [
@@ -85,6 +118,54 @@
         "shares": 0.03152,
         "price": 633.57,
         "total": 20.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "NVDA",
+        "type": "BUY",
+        "shares": 0.0983,
+        "price": 203.45,
+        "total": 20.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "MSFT",
+        "type": "BUY",
+        "shares": 0.02475,
+        "price": 403.24,
+        "total": 10.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "META",
+        "type": "BUY",
+        "shares": 0.01722,
+        "price": 579.64,
+        "total": 10.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "AMZN",
+        "type": "BUY",
+        "shares": 0.0832,
+        "price": 240.02,
+        "total": 20.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "NFLX",
+        "type": "BUY",
+        "shares": 0.24192,
+        "price": 82.54,
+        "total": 20.0
+      },
+      {
+        "date": "2026-06-10",
+        "ticker": "TSM",
+        "type": "BUY",
+        "shares": 0.02431,
+        "price": 410.47,
+        "total": 10.0
       }
     ],
     "history": {
@@ -97,7 +178,8 @@
         "2026-06-04",
         "2026-06-05",
         "2026-06-08",
-        "2026-06-09"
+        "2026-06-09",
+        "2026-06-10"
       ],
       "portfolio": [
         100.3527,
@@ -108,7 +190,8 @@
         101.0592,
         96.6198,
         96.6967,
-        95.999
+        95.999,
+        182.6278
       ],
       "deposited": [
         100.0,
@@ -119,13 +202,14 @@
         100.0,
         100.0,
         100.0,
-        100.0
+        100.0,
+        190.0
       ],
       "summary": {
-        "portfolio_pct": -4.0,
-        "voo_pct": -2.34,
-        "qqqm_pct": -3.74,
-        "total_deposited": 100.0
+        "portfolio_pct": -3.88,
+        "voo_pct": -2.04,
+        "qqqm_pct": -2.94,
+        "total_deposited": 190.0
       },
       "voo": [
         100.0,
@@ -136,7 +220,8 @@
         100.3098,
         97.7072,
         97.9493,
-        97.664
+        97.664,
+        186.1292
       ],
       "qqqm": [
         100.0,
@@ -147,7 +232,8 @@
         100.6901,
         95.8725,
         97.3452,
-        96.2589
+        96.2589,
+        184.4098
       ]
     }
   },
@@ -155,9 +241,9 @@
     "name": "พอร์ตออม S&P500",
     "tab": "DCA S&P500",
     "total_cost": 156.05,
-    "total_value": 164.13,
-    "pl_usd": 8.08,
-    "pl_pct": 5.18,
+    "total_value": 161.55,
+    "pl_usd": 5.5,
+    "pl_pct": 3.53,
     "total_dividends": 0.28,
     "holdings": [
       {
@@ -165,10 +251,10 @@
         "shares": 0.24218952,
         "avg_cost": 644.32,
         "cost": 156.05,
-        "value": 164.13,
-        "price": 677.7,
-        "pl_usd": 8.08,
-        "pl_pct": 5.18,
+        "value": 161.55,
+        "price": 667.05,
+        "pl_usd": 5.5,
+        "pl_pct": 3.53,
         "pos_pct": 100.0
       }
     ],
@@ -316,7 +402,8 @@
         "2026-06-04",
         "2026-06-05",
         "2026-06-08",
-        "2026-06-09"
+        "2026-06-09",
+        "2026-06-10"
       ],
       "portfolio": [
         31.9481,
@@ -411,7 +498,8 @@
         168.5857,
         164.2116,
         164.6185,
-        164.1389
+        164.1389,
+        161.5595
       ],
       "deposited": [
         32.07,
@@ -506,11 +594,12 @@
         156.05,
         156.05,
         156.05,
+        156.05,
         156.05
       ],
       "summary": {
-        "portfolio_pct": 5.18,
-        "qqqm_pct": 11.2,
+        "portfolio_pct": 3.53,
+        "qqqm_pct": 9.06,
         "total_deposited": 156.05
       },
       "qqqm": [
@@ -606,9 +695,10 @@
         181.5081,
         172.8238,
         175.4785,
-        173.5202
+        173.5202,
+        170.187
       ]
     }
   },
-  "generated_at": "2026-06-10T00:11:54Z"
+  "generated_at": "2026-06-11T00:13:30Z"
 }
