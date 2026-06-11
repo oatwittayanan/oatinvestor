@@ -227,7 +227,8 @@ function renderWarren(paper, charlieVerdict) {
   const snap = paper.portfolio_snapshot || {};
   const recs = paper.recommendations || [];
   const regime = ctx.market_temp || ctx.market_regime || 'Normal';
-  const deployedPct = snap.cash_before ? Math.round(snap.deployed/snap.cash_before*100) : '—';
+  const deployedAmt = snap.deployed_this_paper ?? snap.deployed;
+  const deployedPct = snap.cash_before ? Math.round(deployedAmt/snap.cash_before*100) : '—';
 
   return `
     <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px">
@@ -260,7 +261,7 @@ function renderWarren(paper, charlieVerdict) {
       </div>
       <div class="snap-cell">
         <div style="font-size:.68rem;color:var(--text-3);margin-bottom:4px">Deployed</div>
-        <div style="font-size:1.1rem;font-weight:800;color:#f59e0b">${fmtUSD(snap.deployed)}</div>
+        <div style="font-size:1.1rem;font-weight:800;color:#f59e0b">${fmtUSD(deployedAmt)}</div>
         <div style="font-size:.7rem;color:var(--text-3)">${deployedPct}% deployed</div>
       </div>
       <div class="snap-cell">
@@ -412,12 +413,13 @@ function renderCharlie(review) {
 function renderIndexCard(paper, num, charlieVerdict) {
   const regime = paper.market_context?.market_temp || 'Normal';
   const snap = paper.portfolio_snapshot || {};
-  const tickers = (paper.recommendations||[]).filter(r=>r.action==='BUY').map(r=>r.ticker+' BUY').join(' · ');
+  const snapD = snap.deployed_this_paper ?? snap.deployed;
+  const tickers = (paper.recommendations||[]).filter(r=>r.action==='BUY'||r.action==='STARTER').map(r=>r.ticker+' '+r.action).join(' · ');
   return `<div class="card" style="display:flex;align-items:center;gap:16px;padding:18px 22px;margin-bottom:12px;flex-wrap:wrap">
     <div style="font-family:monospace;font-size:.72rem;color:var(--text-3);min-width:86px">${esc(paper.date)}</div>
     <div style="flex:1;min-width:180px">
       <div style="font-weight:700;margin-bottom:3px">Paper #${num} — ${esc(paper.title.replace(/^Paper #\d+ — /,''))}</div>
-      <div style="font-size:.78rem;color:var(--text-3)">Deployed ${fmtUSD(snap.deployed)} · ${esc(tickers)}</div>
+      <div style="font-size:.78rem;color:var(--text-3)">Deployed ${fmtUSD(snapD)} · ${esc(tickers)}</div>
     </div>
     <div style="display:flex;gap:8px;align-items:center;flex-shrink:0;flex-wrap:wrap">
       ${mktBadge(regime)}
