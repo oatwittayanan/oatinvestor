@@ -553,12 +553,14 @@ function renderChart(canvasId, hist, portKey, benchmarks, depositNorm=false) {
   const sliced = slicePeriod(hist, activePeriod[portKey]);
   const cc = getChartColors();
 
-  // depositNorm=true → normalize by deposited capital (ignores DCA cash inflows)
+  // depositNorm=true → normalize by deposited capital, then shift so day-1 = 100 exactly
   // depositNorm=false → rebase from first data point
   const norm = (arr) => {
     if (depositNorm && sliced.deposited && sliced.deposited.length) {
-      return arr.map((v, i) => sliced.deposited[i] > 0
+      const raw = arr.map((v, i) => sliced.deposited[i] > 0
         ? +((v / sliced.deposited[i]) * 100).toFixed(4) : 100);
+      const offset = (raw[0] || 100) - 100;
+      return offset ? raw.map(v => +(v - offset).toFixed(4)) : raw;
     }
     return rebase(arr);
   };
