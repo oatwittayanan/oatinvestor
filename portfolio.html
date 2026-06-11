@@ -830,7 +830,7 @@ function renderPapers(papers, charlieReviews) {
     const cr = charlieMap[p.id];
     const regime = p.market_context?.market_temp || 'Normal';
     const snap = p.portfolio_snapshot || {};
-    const buys = (p.recommendations||[]).filter(r=>r.action==='BUY');
+    const buys = (p.recommendations||[]).filter(r=>r.action==='BUY'||r.action==='STARTER');
     const tickers = buys.map(r=>`<span style="font-weight:700">${r.ticker}</span> $${r.amount_usd}`).join(' · ');
 
     return `<div class="card" style="margin-bottom:12px;padding:20px 22px">
@@ -838,7 +838,7 @@ function renderPapers(papers, charlieReviews) {
         <div style="flex:1;min-width:200px">
           <div style="font-size:.7rem;color:var(--text-3);font-family:monospace;margin-bottom:4px">${p.date}</div>
           <div style="font-weight:700;font-size:.95rem;margin-bottom:6px">Paper #${num} — ${p.title.replace(/^Paper #\d+ — /,'')}</div>
-          <div style="font-size:.8rem;color:var(--text-3);margin-bottom:10px">Deployed $${snap.deployed||0} · ${tickers}</div>
+          <div style="font-size:.8rem;color:var(--text-3);margin-bottom:10px">Deployed $${snap.deployed_this_paper??snap.deployed??0} · ${tickers}</div>
           <div style="display:flex;gap:6px;flex-wrap:wrap">
             ${mktBadge(regime)}
             ${cr?.overall_verdict ? verdictBadge('Charlie: '+cr.overall_verdict) : ''}
