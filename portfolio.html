@@ -553,14 +553,15 @@ function renderChart(canvasId, hist, portKey, benchmarks, depositNorm=false) {
   const sliced = slicePeriod(hist, activePeriod[portKey]);
   const cc = getChartColors();
 
-  // depositNorm=true → normalize by deposited capital, then shift so day-1 = 100 exactly
+  // depositNorm=true → normalize by deposited capital (100 = เท่าทุน)
+  //   ไม่ shift ให้วันแรก = 100 เป๊ะ เพราะ shift จะลากทั้งเส้นเพี้ยน ทำให้ปลายเส้น
+  //   ไม่ตรงกับกำไร/ขาดทุนจริง (pl_pct). ปล่อยให้ค่าสะท้อนผลตอบแทนจริงทุกจุด
+  //   → ปลายเส้น = P/L จริงเสมอ, ตรงกับ legend และการ์ดด้านบน
   // depositNorm=false → rebase from first data point
   const norm = (arr) => {
     if (depositNorm && sliced.deposited && sliced.deposited.length) {
-      const raw = arr.map((v, i) => sliced.deposited[i] > 0
+      return arr.map((v, i) => sliced.deposited[i] > 0
         ? +((v / sliced.deposited[i]) * 100).toFixed(4) : 100);
-      const offset = (raw[0] || 100) - 100;
-      return offset ? raw.map(v => +(v - offset).toFixed(4)) : raw;
     }
     return rebase(arr);
   };
