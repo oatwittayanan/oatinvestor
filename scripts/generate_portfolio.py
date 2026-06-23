@@ -219,12 +219,16 @@ def fetch_prices(tickers: list[str], start: date) -> pd.DataFrame:
     return pd.DataFrame()
 
 # ── Build history ─────────────────────────────────────────────────
-def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0.0) -> dict:
+def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0.0,
+                  holdings: list | None = None) -> dict:
     """
     Build daily portfolio value vs benchmarks.
     - Starts from first non-CASH transaction date (fully invested day).
     - CASH transactions pre-load portfolio cash AND invest in benchmarks.
     - benchmark_tickers[0] is primary, rest secondary.
+    - holdings (optional): current holdings used as a price fallback so a
+      transient price-fetch failure for one ticker can't silently drop that
+      position to $0 while its deployed capital still counts (phantom loss bug).
     """
     if not transactions:
         return {"dates": [], "portfolio": [], "summary": {}}
@@ -252,6 +256,29 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
     if prices.empty:
         print("  [history] no price data")
         return {"dates": [], "portfolio": [], "summary": {}}
+
+    # Guard against phantom-loss bug: if a held stock's price history failed to
+    # download, it would contribute $0 to portfolio value while its deployed
+    # capital still counts in `deposited` → fake loss. Fall back to the holding's
+    # current price (flat series) so the position is always valued.
+    cur_price = {}
+    if holdings:
+        cur_price = {h["ticker"].upper(): h["price"]
+                     for h in holdings if h.get("price")}
+    unpriceable: set[str] = set()
+    for tk in stock_tickers:
+        has_px = tk in prices.columns and not prices[tk].dropna().empty
+        if not has_px:
+            if cur_price.get(tk):
+                prices[tk] = float(cur_price[tk])
+                print(f"  [history] ⚠️ {tk}: price history missing — "
+                      f"fallback to current price ${cur_price[tk]:.2f} (flat line)")
+            else:
+                # No price AND no fallback → don't let its capital count, or the
+                # chart shows a phantom loss. Drop its deployed capital instead.
+                unpriceable.add(tk)
+                print(f"  [history] ⚠️ {tk}: no price and no fallback — "
+                      f"excluding its deployed capital to avoid phantom loss")
 
     bm_shares: dict[str, float] = {bm: 0.0 for bm in benchmark_tickers}
     port_shares: dict[str, float] = {}
@@ -290,6 +317,10 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
             total  = tx["total"]
 
             if typ == "BUY":
+                # Skip positions we cannot value at all — counting their capital
+                # while contributing $0 value would create a phantom loss.
+                if tk in unpriceable:
+                    continue
                 # Each stock buy is new capital deployed (Sheet model: independent allocations)
                 port_shares[tk] = port_shares.get(tk, 0.0) + shares
                 total_deployed += total
@@ -375,7 +406,7 @@ def main():
 
     ai_history = {}
     if ai_txs:
-        ai_history = build_history(ai_txs, ["VOO", "QQQM"])
+        ai_history = build_history(ai_txs, ["VOO", "QQQM"], holdings=ai_holdings)
     ai_dividends = round(sum(t["total"] for t in ai_txs if t["type"] == "DIV"), 2)
     print(f"  dividends received: ${ai_dividends:.2f}")
 
@@ -389,7 +420,7 @@ def main():
 
     sp_history = {}
     if sp_txs:
-        sp_history = build_history(sp_txs, ["QQQM"])
+        sp_history = build_history(sp_txs, ["QQQM"], holdings=sp_holdings)
     sp_dividends = round(sum(t["total"] for t in sp_txs if t["type"] == "DIV"), 2)
     print(f"  dividends received: ${sp_dividends:.2f}")
 
