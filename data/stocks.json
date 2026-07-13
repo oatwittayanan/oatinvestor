@@ -172,6 +172,7 @@
       "Antitrust สอบสวนจากหลายประเทศเรื่อง GPU supply allocation"
     ],
     "price": 210.96,
+    "fv": 308.0,
     "mos": 33.6,
     "fpe": 16.1,
     "updated": "2026-07-11",
@@ -319,6 +320,7 @@
       "EU Digital Markets Act ลด targeting effectiveness"
     ],
     "price": 669.21,
+    "fv": 722.0,
     "mos": 24.4,
     "updated": "2026-07-11",
     "waf": 8.24,
@@ -889,6 +891,7 @@
       "China revenue = zero = missed market ขนาดใหญ่"
     ],
     "price": 357.18,
+    "fv": 376.0,
     "mos": 10.5,
     "updated": "2026-07-11",
     "waf": 7.8,
@@ -1357,7 +1360,7 @@
       "why": "Consensus เห็น ad revenue คาดโต 2x ในปี 2026 (จาก $1.5B+ ปี 2025) เป็นทิศทางที่รู้กันแล้ว; Warren เห็นต่างเล็กน้อยว่า Q1 2026 results ดีกว่า guide (revenue +16%, OI +18%) แม้ guidance ปี 2026 คงเดิม ($50.7-51.7B, OM 31.5%) — ราคาที่ร่วงลงมาเปิด MoS ที่ดีขึ้นโดยไม่มีอะไรในพื้นฐานที่แย่ลง",
       "risk": "Content cost escalation ทำ margin compress; Disney+/Max bundling กัดส่วนแบ่ง; Live sports rights expensive ไม่คุ้ม; แข่ง Ads กับ YouTube/Meta ได้ลำบาก; subscriber growth ceiling ในตลาด developed"
     },
-    "tier": "🚀 Pre-Inevitable",
+    "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
@@ -1859,6 +1862,7 @@
       "Nuclear"
     ],
     "price": 61.3,
+    "fv": 88.0,
     "mos": 3.3,
     "updated": "2026-07-11",
     "waf": 7.28,
@@ -2414,6 +2418,7 @@
       "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
     ],
     "price": 557.89,
+    "fv": 467.0,
     "mos": -9.7,
     "updated": "2026-07-11",
     "waf": 7.03,
@@ -2670,6 +2675,7 @@
       "Beryllium"
     ],
     "price": 257.66,
+    "fv": 290.0,
     "mos": 9.0,
     "updated": "2026-07-11",
     "waf": 6.78,
@@ -3087,6 +3093,7 @@
       "HBM"
     ],
     "price": 979.3,
+    "fv": 1150.0,
     "mos": -8.7,
     "updated": "2026-07-11",
     "waf": 6.66,
@@ -3930,6 +3937,7 @@
       "Robotics"
     ],
     "price": 359.6,
+    "fv": 420.0,
     "mos": -9.8,
     "updated": "2026-07-11",
     "waf": 6.18,
