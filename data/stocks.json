@@ -171,40 +171,41 @@
       "AMD MI455X competition ใน memory bandwidth — ROCm กำลังตามทัน",
       "Antitrust สอบสวนจากหลายประเทศเรื่อง GPU supply allocation"
     ],
-    "price": 210.96,
-    "fv": 308.0,
-    "mos": 33.6,
-    "fpe": 16.1,
-    "updated": "2026-07-11",
-    "waf": 8.75,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "conviction": 5,
     "action": "buy",
     "actionLabel": "Buy",
+    "conviction": 3,
+    "waf": 8.6,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 210.96,
+    "fv": 308,
+    "mos": 31.5,
+    "fpe": 16.1,
+    "peg": null,
     "scores": {
       "bq": [
-        9.5,
-        "green",
-        95
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        9.5,
-        "green",
-        95
+        0.0,
+        "amber",
+        0
       ],
       "va": [
-        8.0,
-        "green",
-        80
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        7.0,
+        0.0,
         "amber",
-        70
+        0
       ]
     },
-    "idea": "BUY — ราคา $204.65 (ลงต่อจาก $208 รอบก่อน) เปิด MoS 33.6%; $25B bond oversubscribed 3.4x = confirmation จาก fixed-income market ว่า AI capex cycle ยาว; entry ยังดีต่อเนื่อง",
+    "idea": "AI factory platform + CUDA lock-in; $25B bond oversubscribed 3.4x confirms multi-yr capex durability",
+    "updated": "2026-07-11",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -319,39 +320,41 @@
       "Revenue 99%+ จาก advertising = cyclical risk สูงถ้า macro อ่อนแอ",
       "EU Digital Markets Act ลด targeting effectiveness"
     ],
-    "price": 669.21,
-    "fv": 722.0,
-    "mos": 24.4,
-    "updated": "2026-07-11",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
     "waf": 8.24,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "buy",
-    "actionLabel": "Buy",
+    "price": 669.21,
+    "fv": 722,
+    "mos": 7.3,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        9.0,
-        "green",
-        90
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        9.0,
-        "green",
-        90
+        0.0,
+        "amber",
+        0
       ],
       "va": [
-        8.2,
-        "green",
-        82
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        5.3,
-        "orange",
-        53
+        0.0,
+        "amber",
+        0
       ]
     },
-    "idea": "ราคาร่วงต่อเนื่อง ($568→$546) ดัน MoS เป็น 24.4% — ดีที่สุดใน Big Tech ตอนนี้; Fwd PE ~15.5x ยังถูกสุดเทียบ flywheel growth; Crusoe compute deal ช่วย diversify infra cost; legal+regulatory overhang (FTC + Llama suit + AI safety-review pressure) เป็น headline risk ที่ยังไม่เปลี่ยน core thesis",
+    "idea": "AI monetization (ads) + Llama + Reality Labs optionality",
+    "updated": "2026-07-11",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -744,38 +747,41 @@
       "Semiconductor cyclicality ใน Enterprise networking",
       "Hock Tan succession planning ระยะยาว"
     ],
-    "price": 392.9,
-    "fv": 450.0,
-    "updated": "2026-07-11",
+    "action": "starter",
+    "actionLabel": "Starter",
+    "conviction": 3,
     "waf": 7.83,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 399.97,
+    "fv": 450,
+    "mos": 11.1,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        8.5,
-        "green",
-        85
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        9.5,
-        "green",
-        95
+        0.0,
+        "amber",
+        0
       ],
       "va": [
-        6.0,
-        "orange",
-        60
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        6.0,
-        "orange",
-        60
+        0.0,
+        "amber",
+        0
       ]
     },
-    "idea": "Q2 FY26 actual results matched guidance exactly (rev $22.2B, AI $10.8B) — confirms thesis durability, no fundamental change. ราคาฟื้นตัวเล็กน้อยจาก $389.75→$392.90 ทำให้ MoS แคบลงจาก 13.4%→12.69% (ยังอยู่ใน STARTER band 8-15% แต่ ER ยังไม่ผ่าน 15% gate) → คง WATCH ต่อ ไม่เลื่อนเป็น STARTER เพราะ ER Gate เป็น hard requirement ของ near-miss band ด้วย ไม่ใช่แค่ MoS",
+    "idea": "Custom XPU สำหรับ 6 hyperscalers + Ethernet networking near-monopoly",
+    "updated": "2026-07-11",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -890,39 +896,41 @@
       "Wiz acquisition compress Cloud margin 2026",
       "China revenue = zero = missed market ขนาดใหญ่"
     ],
-    "price": 357.18,
-    "fv": 376.0,
-    "mos": 10.5,
-    "updated": "2026-07-11",
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
     "waf": 7.8,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "conviction": 4,
-    "action": "hold",
-    "actionLabel": "Hold",
+    "price": 357.18,
+    "fv": 376,
+    "mos": 5.0,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        9.5,
-        "green",
-        95
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        8.5,
-        "green",
-        85
+        0.0,
+        "amber",
+        0
       ],
       "va": [
-        6.0,
-        "orange",
-        60
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        6.0,
-        "orange",
-        60
+        0.0,
+        "amber",
+        0
       ]
     },
-    "idea": "ราคาร่วงต่อเนื่องเกินปัจจัยพื้นฐาน ($363.79→$336.41) ดัน MoS เข้า STARTER band เป็นครั้งแรก (10.5%, ขาด gate 15% เพียง 4.5 จุด ≤7 จุดตามกฎ) — คุณภาพสูงสุดใน watchlist (WAF 7.80 HIGH, PEG ~0.88 ผ่าน effective cap 1.5) ผ่านเกณฑ์ STARTER ครบ (Tier Inevitable + WAF≥6.5 + PEG ผ่าน); Samsung TPU supply diversification (06-17) เป็นสัญญาณบวกที่ยังไม่ priced-in — เริ่มไม้แรก $10 แทนรอเฉยๆ",
+    "idea": "Search+YouTube+Cloud+Gemini; TPU vertical integration",
+    "updated": "2026-07-11",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -1712,6 +1720,143 @@
       "GAAP EPS ผันผวนแรงจาก equity revaluation (-$1.5B Q1); debt ~$10.6B + accumulated deficit $10.4B; DoorDash+Prosus บุกยุโรป"
     ]
   },
+  "MELI": {
+    "symbol": "MELI",
+    "display": "MELI",
+    "category": "consumer",
+    "name": "MercadoLibre",
+    "sector": "Consumer",
+    "sectorSlug": "consumer",
+    "chips": [
+      "Consumer",
+      "LatAm E-commerce + Fintech"
+    ],
+    "bull": [
+      "Revenue $8,845M +49% YoY (เร็วสุดในรอบ ~4 ปี); TPV $87.2B +50%, GMV $19.0B +42%",
+      "Fintech MAU +29%, AUM +77%, credit card TPV +90%",
+      "Brazil GMV +38%, items sold +56%"
+    ],
+    "risk": [
+      "Brazil withholding-tax dispute $592M (probable loss, ยังอุทธรณ์) + อีก $513M reasonably-possible ที่ยังไม่ accrue",
+      "Provision for doubtful accounts +106.5% YoY (14.1% ของรายได้) เร็วกว่า revenue growth 49%",
+      "10-K เพิ่ม risk ใหม่ปี 2025: Asian e-commerce platform (Shopee/Temu/Shein-type) แย่ง market share",
+      "Operating margin หด -600bps YoY แม้ revenue โต"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.42,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 1852.22,
+    "fv": 1824,
+    "mos": -1.5,
+    "fpe": 42.9,
+    "peg": 1.43,
+    "scores": {
+      "bq": [
+        0.0,
+        "amber",
+        0
+      ],
+      "gp": [
+        0.0,
+        "amber",
+        0
+      ],
+      "va": [
+        0.0,
+        "amber",
+        0
+      ],
+      "ra": [
+        0.0,
+        "amber",
+        0
+      ]
+    },
+    "idea": "LatAm ecommerce+fintech+logistics flywheel",
+    "updated": "2026-07-11",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-11",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "MercadoLibre ครองตลาด e-commerce + fintech ในลาตินอเมริกาผ่าน ecosystem flywheel (marketplace → payments → credit → logistics) — ชนะด้วย scale + proprietary credit risk model ที่เข้าถึงกลุ่ม underserved/unbanked",
+      "why": "Consensus เห็นว่า MELI คือ \"LatAm e-commerce leader ที่กำลังถูก Asian competitor (Shopee/Temu/Shein) แย่งตลาด\" — Warren เห็นต่างว่าตลาดมองข้ามว่า management กำลัง **เลือก** compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil free-shipping moat ก่อนคู่แข่งตามทัน ซึ่งเป็นการลงทุนรุกที่ไม่ใช่สัญญาณว่าธุรกิจอ่อนแอ — GMV Brazil เร่งขึ้นเป็น +38% YoY และ unique buyer growth เร็วสุดใน 5 ปี ยืนยันว่า strategy นี้ทำงาน",
+      "risk": "ถ้า margin ไม่ฟื้นกลับมาตามที่ thesis การลงทุนคาดไว้ภายใน 2-3 ปี (deliberate margin compression กลายเป็น permanent structural problem) หรือ Asian e-commerce competitor แย่ง market share ได้ต่อเนื่องแม้ MELI ลงทุนป้องกันแล้ว"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-06-18"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าตลาด e-commerce + fintech ลาตินอเมริกา — กำลัง 'เลือก' compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil moat; MoS 10.5% เข้า STARTER band",
+      "what": "MercadoLibre เป็นผู้นำ e-commerce + fintech ในลาตินอเมริกา ผ่าน ecosystem flywheel (marketplace → Mercado Pago payments → credit → Mercado Envios logistics) ครอบคลุม 18 ประเทศ",
+      "why_invest": [
+        "Q1 2026 รายได้ $8.845B (+49% YoY) — growth เร็วสุดตั้งแต่ Q2 2022",
+        "GMV $18.95B (+42%), TPV $87.2B (+50%), credit portfolio $14.6B (+87%)",
+        "Brazil GMV +38% YoY + unique buyer growth เร็วสุดใน 5 ปี = strategy ทำงาน"
+      ],
+      "watch_out": [
+        "Operating margin ลด 12.9%→6.9% (deliberate investment) + EPS miss consensus ($8.23 vs $8.75)",
+        "Provision for doubtful accounts +106.5% YoY — ถ้า credit quality เสื่อมต่อจะกด EPS",
+        "คู่แข่งเอเชีย (Shopee/Temu/Shein) + Brazil tax dispute $592M"
+      ],
+      "bottom_line": "Warren ให้ STARTER — WAF 7.42, Tier Pre-Inevitable, MoS 10.5% เข้า band; ลง ⅓ ของ target ก้อนแรก ทยอย 3 ไม้"
+    },
+    "mark_full": {
+      "business_overview": "MercadoLibre (ก่อตั้ง 1999, IPO 2007) เป็นผู้นำ e-commerce + fintech ecosystem ในลาตินอเมริกา — marketplace ครอบคลุม 18 ประเทศ + Mercado Pago (8 ประเทศ) + Mercado Envios logistics + Mercado Ads",
+      "tam": "LatAm e-commerce + fintech ที่ยัง underpenetrated — MELI เป็นผู้นำ GMV ในภูมิภาค + ผู้นำ fintech MAU ใน Argentina/Chile/Mexico; ads ยังเล็ก (traditional channels ครอง 50% ของ ad budget LatAm)",
+      "moat": "Scale + network effect + proprietary credit risk models (ML บนข้อมูล marketplace, ปล่อยกู้กลุ่ม underserved/unbanked) + fulfillment network (50+ facilities, cost per shipment ลด 17% YoY) + cross-sell flywheel (commerce → fintech)",
+      "latest_financials": "Q1 2026: Net revenues $8.845B (+49% YoY), Operating margin 6.9% (-600bps deliberate), Net income $417M (-15.6%), EPS $8.23 (miss vs $8.75), Adj EBITDA $857M; GMV $18.95B (+42%), TPV $87.2B (+50%), AUM ~$20B (+77%)",
+      "key_points": [
+        "Margin compression (12.9%→6.9%) เป็นการ 'เลือก' ลงทุนรุก ไม่ใช่สัญญาณอ่อนแอ (CFO: 'won't change the dial')",
+        "Brazil free-shipping moat — GMV Brazil +38% YoY, unique buyer growth เร็วสุดใน 5 ปี",
+        "Provision for doubtful accounts +106.5% YoY (ขยาย credit portfolio)",
+        "EPS estimate ($38 FY26E) เป็น Warren extrapolation จากไตรมาสที่ miss consensus — ไม่ใช่ guided number"
+      ]
+    },
+    "warren_easy": [
+      "MercadoLibre Tier 🚀 Pre-Inevitable (WAF 7.42, BQ 8.0 GP 8.5) — dual flywheel (commerce+fintech) ที่หายากในตลาด emerging",
+      "ที่ราคา $1,631 MoS 10.5% (FV $1,824) เข้า STARTER band พอดี; PEG 1.43 ผ่าน Pre-Inevitable cap (1.5)",
+      "STARTER — ลง ⅓ ของ target ($10-20 ก้อนแรก) ทยอย 3 ไม้ตามกฎ Staged Entry"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยัน STARTER — MoS 10.5% คำนวณซ้ำตรงเป๊ะ อยู่ใน STARTER band (8-15%)",
+        "ตรวจสอบอิสระแล้ว: Q1 2026 EPS miss consensus ($8.23 vs ~$8.47-8.75) จริง + margin compression (12.9%→6.9%) เป็น deliberate choice ที่ CFO ยืนยันกับ Goldman ('dial will not change')",
+        "ข้อควรรู้: FV อิง EPS estimate ($38 FY26E) ที่ Warren extrapolate จากไตรมาสที่ miss — สมเหตุสมผลแต่ MELI ไม่ให้ EPS guidance — AGREE"
+      ],
+      "review_date": "2026-06-18"
+    },
+    "idea_th": "STARTER — WAF 7.42, Tier Pre-Inevitable, MoS 10.5% เข้า band, PEG 1.43 ผ่าน cap; ลง ⅓ ของ target ก้อนแรก ทยอย 3 ไม้",
+    "story_gate_th": {
+      "what": "MercadoLibre ครองตลาด e-commerce + fintech ในลาตินอเมริกาผ่าน ecosystem flywheel (marketplace → payments → credit → logistics) — ชนะด้วย scale + proprietary credit risk model ที่เข้าถึงกลุ่ม underserved/unbanked",
+      "why": "Consensus มองว่า 'LatAm leader ที่กำลังถูก Asian competitor (Shopee/Temu/Shein) แย่งตลาด' แต่ Warren เห็นต่างว่า management กำลัง 'เลือก' compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil free-shipping moat ก่อนคู่แข่งตามทัน — เป็นการลงทุนรุกไม่ใช่อ่อนแอ (GMV Brazil +38% YoY, unique buyer growth เร็วสุดใน 5 ปี ยืนยัน)",
+      "risk": "Margin ไม่ฟื้นภายใน 2-3 ปี (deliberate compression กลายเป็น permanent structural problem) หรือ Asian competitor แย่ง market share ต่อเนื่องแม้ MELI ลงทุนป้องกันแล้ว"
+    },
+    "bull_th": [
+      "Q1 2026 รายได้ $8.845B (+49% YoY) — growth เร็วสุดตั้งแต่ Q2 2022",
+      "GMV $18.95B (+42%), TPV $87.2B (+50%), AUM ~$20B (+77%), credit portfolio $14.6B (+87%)",
+      "Brazil GMV +38% YoY + unique buyer growth เร็วสุดใน 5 ปี (free-shipping moat ทำงาน)",
+      "Mercado Ads +63% YoY FX-neutral (โตเร็วกว่าตลาด 4x), cross-border GMV +68%",
+      "ผ่าน Argentina hyperinflation/FX crisis มาหลายรอบ (Crisis Survival proven)"
+    ],
+    "risk_th": [
+      "Operating margin ลด 12.9%→6.9% (deliberate) — ถ้าไม่ฟื้นภายใน 2-3 ปีกลายเป็น structural",
+      "Provision for doubtful accounts +106.5% YoY — credit quality เสี่ยงกด EPS",
+      "EPS miss consensus Q1 2026 ($8.23 vs ~$8.75)",
+      "คู่แข่งเอเชีย (Shopee/Temu/Shein) เข้ามาแข่งราคาต่ำในปี 2025",
+      "Brazil tax dispute (~$592M probable loss) + FX/hyperinflation risk เป็น structural"
+    ]
+  },
   "SNPS": {
     "symbol": "SNPS",
     "display": "SNPS",
@@ -1723,8 +1868,8 @@
       "EDA",
       "Chip Design Software"
     ],
-    "action": "hold",
-    "actionLabel": "Hold",
+    "action": "starter",
+    "actionLabel": "Starter",
     "conviction": 3,
     "waf": 7.35,
     "wafBadge": "waf-low",
@@ -1848,142 +1993,6 @@
       "GAAP EPS $0.09 vs non-GAAP $3.35 — คุณภาพกำไรต้องมองผ่าน FCF; dilution 23% ยังย่อยไม่หมด",
       "จีน 10% ของรายได้ -22% YoY จาก export control; จีนกำลังสร้าง EDA ทดแทน",
       "organic growth แค่ 3-4%; PEG ~1.7 เกิน cap → ราคายังไม่ให้ full BUY"
-    ]
-  },
-  "SOLS": {
-    "symbol": "SOLS",
-    "display": "SOLS",
-    "category": "materials",
-    "name": "Solstice Advanced Materials",
-    "sector": "Materials",
-    "sectorSlug": "materials",
-    "chips": [
-      "Advanced Materials",
-      "Nuclear"
-    ],
-    "price": 61.3,
-    "fv": 88.0,
-    "mos": 3.3,
-    "updated": "2026-07-11",
-    "waf": 7.28,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        7.5,
-        "amber",
-        75
-      ],
-      "va": [
-        6.0,
-        "orange",
-        60
-      ],
-      "ra": [
-        5.5,
-        "orange",
-        55
-      ]
-    },
-    "idea": "ราคาทรงตัวใกล้เดิม ไม่มีข่าวใหม่ — MoS ยังไม่ผ่าน Gate (3.3% vs 15%); รอ catalyst ใหม่หรือราคาย่อเพื่อเข้า gate",
-    "bull": [
-      "ConverDyn UF6 monopoly + nuclear backlog $2.2B + Electronic Materials AI/semi growth; thesis คงเดิมจากรอบก่อน ไม่มีข้อมูลใหม่"
-    ],
-    "risk": [
-      "Nuclear policy reversal; contract repricing delay; standalone public-company cost drag; Building Solutions exposure"
-    ],
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-11",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "Solstice ครอง ConverDyn (Metropolis Works) = UF6 nuclear conversion เจ้าเดียวในสหรัฐ + specialty materials กระจาย (refrigerants HFO, electronic materials AI/semi, Spectra armor) บนสาย fluorine",
-      "why": "ไม่มีข่าวใหม่ที่มีนัยสำคัญตั้งแต่ gate ก่อน (06-05) — thesis คงเดิม: nuclear backlog $2.2B ราคาล็อกถึง 2030 + Electronic Materials +21% จาก AI/semi; ราคาทรงตัวใกล้เคียงเดิม ($84.13→$85.14) ไม่มีอะไรเปลี่ยนทิศทาง",
-      "risk": "หาก nuclear policy พลิก, contract repricing ช้ากว่าคาด, standalone public-company costs กด margin มากกว่าคาด หรือ Building Solutions (construction-exposed) ฉุดยาว"
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "DISAGREE",
-      "verified_claims": [
-        "Price $61.30 cross-checked Nasdaq $61.30 — confirmed"
-      ],
-      "concerns": [
-        "THESIS-BREAKING NEWS Warren's FV predates: SOLS announced $14.5B cash-and-stock acquisition of Element Solutions (ESI) on Jul 7 2026 — stock fell ~15% on DILUTION (new-share issuance). The -28% collapse Warren flagged as 'no news in card' is fully explained by this deal (TIKR, Yahoo, GuruFocus Jul 2026)",
-        "The deal transforms SOLS from a pure-play UF6 nuclear-conversion monopoly into a broad specialty-chemicals combine — Warren's FV $88 and Pre-Inevitable tier are based on the OLD story and are now STALE",
-        "Charlie conservative FV ~$61 = current price; Warren $88 (+43%) not supportable until post-deal pro-forma EPS/share count is known"
-      ],
-      "summary": "",
-      "review_date": "2026-07-11"
-    },
-    "mark_easy": {
-      "one_liner": "specialty materials แยกตัวจาก Honeywell — เจ้าของโรงงานแปลงเชื้อเพลิงนิวเคลียร์รายเดียวในสหรัฐ",
-      "what": "Solstice ผลิตวัสดุพิเศษหลากหลาย — สารทำความเย็น HFO, แปลงเชื้อเพลิงนิวเคลียร์ (UF6), วัสดุอิเล็กทรอนิกส์สำหรับชิป และเส้นใยเกราะ",
-      "why_invest": [
-        "ConverDyn = โรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึงปี 2030",
-        "วัสดุอิเล็กทรอนิกส์ (sputtering targets) โต 21% จากดีมานด์ AI/semi",
-        "แยกตัวจาก Honeywell ต.ค. 2025 — FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
-        "เส้นใยเกราะ Spectra บวก exposure ด้านกลาโหม"
-      ],
-      "watch_out": [
-        "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
-        "ธุรกิจ Building Solutions เป็น cyclical (ผูกก่อสร้าง)",
-        "ยังใหม่ในตลาด track record สั้น (ไตรมาส standalone แรก)"
-      ],
-      "bottom_line": "ธุรกิจกระจายดีบวกมี nuclear monopoly แต่ยังใหม่และราคาใกล้มูลค่าจริง — Pete ให้ WATCH รอดูผลงานต่อเนื่อง"
-    },
-    "mark_full": {
-      "business_overview": "Solstice แยกตัวจาก Honeywell (ต.ค. 2025) เป็นบริษัทวัสดุพิเศษบนสาย fluorine — 2 segment: Refrigerants & Applied Solutions (สารทำความเย็น HFO, นิวเคลียร์ UF6) และ Electronic & Specialty Materials (sputtering targets, เส้นใยเกราะ Spectra) ลูกค้า 3,000+ ราย 5,700+ สิทธิบัตร",
-      "tam": "อยู่ที่จุดตัดของเทรนด์ใหญ่หลายตัว: AI/data center cooling, semiconductor materials, nuclear energy (จ่ายไฟ AI), defense FY26 ตั้งเป้ายอดขาย 3.9-4.1 พันล้าน EBITDA ราว 1 พันล้าน",
-      "moat": "ConverDyn (JV กับ General Atomics) เป็นโรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ — ถูกอ้างใน Executive Order ว่าสำคัญต่อความมั่นคงพลังงาน backlog ถึง 2030 บวก copper-manganese sputtering target ที่เป็น preferred solution สำหรับ node ขั้นสูง",
-      "latest_financials": "Q1 2026 (ไตรมาส standalone แรก) ยอดขาย 991 ล้านดอลลาร์ โต 10%, Adj EBITDA 249 ล้าน (margin 25.1%), Adj EPS 0.63 ดอลลาร์ FY26 guide ยอดขาย 3.9-4.1 พันล้าน, Adj EPS 2.45-2.75 บวก FCF 124 ล้านใน Q1",
-      "key_points": [
-        "Nuclear (AES) backlog 2.2 พันล้านถึง 2030",
-        "Electronic Materials โต 21% จาก AI/semi",
-        "ลงทุน 200 ล้านที่ Spokane เพิ่มกำลัง sputtering target เท่าตัว",
-        "ปันผล 0.075 ดอลลาร์ต่อไตรมาส"
-      ]
-    },
-    "warren_easy": [
-      "Solstice เป็นกรณีน่าสนใจ — เป็นบริษัทวัสดุพิเศษที่เพิ่งแยกตัวจาก Honeywell มีธุรกิจกระจายดีและจุดเด่นคือ ConverDyn ที่เป็นโรงงานแปลงเชื้อเพลิงนิวเคลียร์ UF6 เจ้าเดียวในสหรัฐ ซึ่งมี backlog ผูกพันถึงปี 2030 เป็น moat เชิงกฎระเบียบที่ลอกเลียนแทบไม่ได้",
-      "นอกจากนิวเคลียร์ บริษัทยังได้ประโยชน์จาก AI ผ่านวัสดุอิเล็กทรอนิกส์ (sputtering targets โต 21%) บวกสารทำความเย็นสำหรับ data center บวกเส้นใยเกราะด้านกลาโหม ผมตั้ง Fair Value 88 ดอลลาร์จากข้อมูล card จริง (EV/EBITDA ราว 15 เท่าบน EBITDA 1 พันล้าน) ที่ราคา 84 ให้ margin บางราว 4%",
-      "ผมให้ WATCH — ธุรกิจคุณภาพและมี moat แต่ยังเป็นบริษัทใหม่ที่ track record สั้นเพียงไตรมาสเดียว บวกราคาใกล้มูลค่าจริง ผมอยากเห็นผลงานต่อเนื่องอีกสักระยะก่อน"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "ข้อมูลอิสระยืนยันธุรกิจมีคุณภาพ — Honeywell spin-off ที่กระจายดี, nuclear UF6 monopoly (ConverDyn) จริง, AI/semi materials โต FY26 EBITDA ราว 1 พันล้าน, EV/EBITDA ราว 15 เท่า = สมเหตุผล Warren เติม Fair Value 88 ดอลลาร์จาก card จริงเหมาะสม",
-        "สิ่งที่ผมระวัง: track record standalone สั้นเพียงไตรมาสเดียว, ต้นทุนบริษัทมหาชนกด margin (corporate 52 ล้านจาก 32 ล้าน), Building Solutions ที่ cyclical และ HFO refrigerant transition mix pressure",
-        "ผมเห็นด้วยกับ WATCH ของ Warren — Margin of Safety บางราว 4% บวกบริษัทใหม่ ควรดูผลงานต่อเนื่องก่อน"
-      ]
-    },
-    "idea_th": "Solstice เป็น specialty materials ที่แยกจาก Honeywell มี nuclear UF6 monopoly บวก AI/semi materials FV 88 ดอลลาร์จากข้อมูล card (EV/EBITDA ราว 15 เท่า) MoS บางราว 4% บริษัทใหม่ track record สั้น ให้ WATCH",
-    "story_gate_th": {
-      "what": "บริษัทวัสดุพิเศษกระจายตัว — nuclear UF6 conversion เจ้าเดียวในสหรัฐ บวกวัสดุอิเล็กทรอนิกส์ AI/semi บวกสารทำความเย็น HFO บวกเส้นใยเกราะ",
-      "why": "อยู่จุดตัดเทรนด์ AI/data center/nuclear/defense บวก backlog นิวเคลียร์ 2.2 พันล้านถึง 2030 บวก Electronic Materials โต 21% — แต่ยังเป็นบริษัทใหม่ track record สั้น",
-      "risk": "ถ้านโยบายนิวเคลียร์พลิก, contract repricing ช้ากว่าคาด, หรือต้นทุน standalone กด margin มากกว่าคาด"
-    },
-    "bull_th": [
-      "ConverDyn = UF6 nuclear conversion เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึง 2030",
-      "Electronic Materials (sputtering targets) โต 21% จาก AI/semi",
-      "FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
-      "Spectra UHMWPE armor fibers บวก defense exposure",
-      "fluorine value-chain integration บวก 5,700 สิทธิบัตร"
-    ],
-    "risk_th": [
-      "track record standalone สั้น (ไตรมาสแรก)",
-      "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
-      "Building Solutions cyclical (ผูกก่อสร้าง)",
-      "HFO refrigerant transition mix pressure",
-      "MoS บางราว 4% — ราคาใกล้มูลค่าจริง"
     ]
   },
   "CDNS": {
@@ -2118,6 +2127,144 @@
       "จีน 13% ของรายได้ + export control พิสูจน์แล้วว่ากระทบจริง (รายได้จีนเคยตกทันทีก่อนถูกยกเลิก)",
       "Hexagon integration: เงินสดหาย $1.6B ใน 1 ไตรมาส, EPS dilute $0.28, margin ธุรกิจที่ซื้อมาแค่ 5-10%",
       "MoS -6.7% + PEG ~2.9 = แพงชัด ไม่มี safety net; DSO ไต่ 44→67 วัน"
+    ]
+  },
+  "SOLS": {
+    "symbol": "SOLS",
+    "display": "SOLS",
+    "category": "materials",
+    "name": "Solstice Advanced Materials",
+    "sector": "Materials",
+    "sectorSlug": "materials",
+    "chips": [
+      "Advanced Materials",
+      "Nuclear"
+    ],
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 3,
+    "waf": 7.2,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 61.3,
+    "fv": 88,
+    "mos": 30.3,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        0.0,
+        "amber",
+        0
+      ],
+      "gp": [
+        0.0,
+        "amber",
+        0
+      ],
+      "va": [
+        0.0,
+        "amber",
+        0
+      ],
+      "ra": [
+        0.0,
+        "amber",
+        0
+      ]
+    },
+    "idea": "UF6 nuclear conversion monopoly (ConverDyn) + specialty materials",
+    "updated": "2026-07-11",
+    "risk": [
+      "Partial-monopoly (nuclear 11% rev), spin-off <2yr track"
+    ],
+    "bull": [
+      "ConverDyn UF6 monopoly + nuclear backlog $2.2B + Electronic Materials AI/semi growth; thesis คงเดิมจากรอบก่อน ไม่มีข้อมูลใหม่"
+    ],
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-11",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Solstice ครอง ConverDyn (Metropolis Works) = UF6 nuclear conversion เจ้าเดียวในสหรัฐ + specialty materials กระจาย (refrigerants HFO, electronic materials AI/semi, Spectra armor) บนสาย fluorine",
+      "why": "ไม่มีข่าวใหม่ที่มีนัยสำคัญตั้งแต่ gate ก่อน (06-05) — thesis คงเดิม: nuclear backlog $2.2B ราคาล็อกถึง 2030 + Electronic Materials +21% จาก AI/semi; ราคาทรงตัวใกล้เคียงเดิม ($84.13→$85.14) ไม่มีอะไรเปลี่ยนทิศทาง",
+      "risk": "หาก nuclear policy พลิก, contract repricing ช้ากว่าคาด, standalone public-company costs กด margin มากกว่าคาด หรือ Building Solutions (construction-exposed) ฉุดยาว"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "DISAGREE",
+      "verified_claims": [
+        "Price $61.30 cross-checked Nasdaq $61.30 — confirmed"
+      ],
+      "concerns": [
+        "THESIS-BREAKING NEWS Warren's FV predates: SOLS announced $14.5B cash-and-stock acquisition of Element Solutions (ESI) on Jul 7 2026 — stock fell ~15% on DILUTION (new-share issuance). The -28% collapse Warren flagged as 'no news in card' is fully explained by this deal (TIKR, Yahoo, GuruFocus Jul 2026)",
+        "The deal transforms SOLS from a pure-play UF6 nuclear-conversion monopoly into a broad specialty-chemicals combine — Warren's FV $88 and Pre-Inevitable tier are based on the OLD story and are now STALE",
+        "Charlie conservative FV ~$61 = current price; Warren $88 (+43%) not supportable until post-deal pro-forma EPS/share count is known"
+      ],
+      "summary": "",
+      "review_date": "2026-07-11"
+    },
+    "mark_easy": {
+      "one_liner": "specialty materials แยกตัวจาก Honeywell — เจ้าของโรงงานแปลงเชื้อเพลิงนิวเคลียร์รายเดียวในสหรัฐ",
+      "what": "Solstice ผลิตวัสดุพิเศษหลากหลาย — สารทำความเย็น HFO, แปลงเชื้อเพลิงนิวเคลียร์ (UF6), วัสดุอิเล็กทรอนิกส์สำหรับชิป และเส้นใยเกราะ",
+      "why_invest": [
+        "ConverDyn = โรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึงปี 2030",
+        "วัสดุอิเล็กทรอนิกส์ (sputtering targets) โต 21% จากดีมานด์ AI/semi",
+        "แยกตัวจาก Honeywell ต.ค. 2025 — FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
+        "เส้นใยเกราะ Spectra บวก exposure ด้านกลาโหม"
+      ],
+      "watch_out": [
+        "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
+        "ธุรกิจ Building Solutions เป็น cyclical (ผูกก่อสร้าง)",
+        "ยังใหม่ในตลาด track record สั้น (ไตรมาส standalone แรก)"
+      ],
+      "bottom_line": "ธุรกิจกระจายดีบวกมี nuclear monopoly แต่ยังใหม่และราคาใกล้มูลค่าจริง — Pete ให้ WATCH รอดูผลงานต่อเนื่อง"
+    },
+    "mark_full": {
+      "business_overview": "Solstice แยกตัวจาก Honeywell (ต.ค. 2025) เป็นบริษัทวัสดุพิเศษบนสาย fluorine — 2 segment: Refrigerants & Applied Solutions (สารทำความเย็น HFO, นิวเคลียร์ UF6) และ Electronic & Specialty Materials (sputtering targets, เส้นใยเกราะ Spectra) ลูกค้า 3,000+ ราย 5,700+ สิทธิบัตร",
+      "tam": "อยู่ที่จุดตัดของเทรนด์ใหญ่หลายตัว: AI/data center cooling, semiconductor materials, nuclear energy (จ่ายไฟ AI), defense FY26 ตั้งเป้ายอดขาย 3.9-4.1 พันล้าน EBITDA ราว 1 พันล้าน",
+      "moat": "ConverDyn (JV กับ General Atomics) เป็นโรงงานแปลง UF6 นิวเคลียร์เจ้าเดียวในสหรัฐ — ถูกอ้างใน Executive Order ว่าสำคัญต่อความมั่นคงพลังงาน backlog ถึง 2030 บวก copper-manganese sputtering target ที่เป็น preferred solution สำหรับ node ขั้นสูง",
+      "latest_financials": "Q1 2026 (ไตรมาส standalone แรก) ยอดขาย 991 ล้านดอลลาร์ โต 10%, Adj EBITDA 249 ล้าน (margin 25.1%), Adj EPS 0.63 ดอลลาร์ FY26 guide ยอดขาย 3.9-4.1 พันล้าน, Adj EPS 2.45-2.75 บวก FCF 124 ล้านใน Q1",
+      "key_points": [
+        "Nuclear (AES) backlog 2.2 พันล้านถึง 2030",
+        "Electronic Materials โต 21% จาก AI/semi",
+        "ลงทุน 200 ล้านที่ Spokane เพิ่มกำลัง sputtering target เท่าตัว",
+        "ปันผล 0.075 ดอลลาร์ต่อไตรมาส"
+      ]
+    },
+    "warren_easy": [
+      "Solstice เป็นกรณีน่าสนใจ — เป็นบริษัทวัสดุพิเศษที่เพิ่งแยกตัวจาก Honeywell มีธุรกิจกระจายดีและจุดเด่นคือ ConverDyn ที่เป็นโรงงานแปลงเชื้อเพลิงนิวเคลียร์ UF6 เจ้าเดียวในสหรัฐ ซึ่งมี backlog ผูกพันถึงปี 2030 เป็น moat เชิงกฎระเบียบที่ลอกเลียนแทบไม่ได้",
+      "นอกจากนิวเคลียร์ บริษัทยังได้ประโยชน์จาก AI ผ่านวัสดุอิเล็กทรอนิกส์ (sputtering targets โต 21%) บวกสารทำความเย็นสำหรับ data center บวกเส้นใยเกราะด้านกลาโหม ผมตั้ง Fair Value 88 ดอลลาร์จากข้อมูล card จริง (EV/EBITDA ราว 15 เท่าบน EBITDA 1 พันล้าน) ที่ราคา 84 ให้ margin บางราว 4%",
+      "ผมให้ WATCH — ธุรกิจคุณภาพและมี moat แต่ยังเป็นบริษัทใหม่ที่ track record สั้นเพียงไตรมาสเดียว บวกราคาใกล้มูลค่าจริง ผมอยากเห็นผลงานต่อเนื่องอีกสักระยะก่อน"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "ข้อมูลอิสระยืนยันธุรกิจมีคุณภาพ — Honeywell spin-off ที่กระจายดี, nuclear UF6 monopoly (ConverDyn) จริง, AI/semi materials โต FY26 EBITDA ราว 1 พันล้าน, EV/EBITDA ราว 15 เท่า = สมเหตุผล Warren เติม Fair Value 88 ดอลลาร์จาก card จริงเหมาะสม",
+        "สิ่งที่ผมระวัง: track record standalone สั้นเพียงไตรมาสเดียว, ต้นทุนบริษัทมหาชนกด margin (corporate 52 ล้านจาก 32 ล้าน), Building Solutions ที่ cyclical และ HFO refrigerant transition mix pressure",
+        "ผมเห็นด้วยกับ WATCH ของ Warren — Margin of Safety บางราว 4% บวกบริษัทใหม่ ควรดูผลงานต่อเนื่องก่อน"
+      ]
+    },
+    "idea_th": "Solstice เป็น specialty materials ที่แยกจาก Honeywell มี nuclear UF6 monopoly บวก AI/semi materials FV 88 ดอลลาร์จากข้อมูล card (EV/EBITDA ราว 15 เท่า) MoS บางราว 4% บริษัทใหม่ track record สั้น ให้ WATCH",
+    "story_gate_th": {
+      "what": "บริษัทวัสดุพิเศษกระจายตัว — nuclear UF6 conversion เจ้าเดียวในสหรัฐ บวกวัสดุอิเล็กทรอนิกส์ AI/semi บวกสารทำความเย็น HFO บวกเส้นใยเกราะ",
+      "why": "อยู่จุดตัดเทรนด์ AI/data center/nuclear/defense บวก backlog นิวเคลียร์ 2.2 พันล้านถึง 2030 บวก Electronic Materials โต 21% — แต่ยังเป็นบริษัทใหม่ track record สั้น",
+      "risk": "ถ้านโยบายนิวเคลียร์พลิก, contract repricing ช้ากว่าคาด, หรือต้นทุน standalone กด margin มากกว่าคาด"
+    },
+    "bull_th": [
+      "ConverDyn = UF6 nuclear conversion เจ้าเดียวในสหรัฐ backlog 2.2 พันล้านถึง 2030",
+      "Electronic Materials (sputtering targets) โต 21% จาก AI/semi",
+      "FY26 EBITDA 975 ล้าน ถึง 1.025 พันล้าน",
+      "Spectra UHMWPE armor fibers บวก defense exposure",
+      "fluorine value-chain integration บวก 5,700 สิทธิบัตร"
+    ],
+    "risk_th": [
+      "track record standalone สั้น (ไตรมาสแรก)",
+      "ต้นทุนบริษัทมหาชนแบบ standalone กด margin",
+      "Building Solutions cyclical (ผูกก่อสร้าง)",
+      "HFO refrigerant transition mix pressure",
+      "MoS บางราว 4% — ราคาใกล้มูลค่าจริง"
     ]
   },
   "ASML": {
@@ -2392,137 +2539,6 @@
       "China supply chain dependency + litigation overhang หลายคดี (self-insured product liability)"
     ]
   },
-  "AMD": {
-    "symbol": "AMD",
-    "display": "AMD",
-    "category": "ai_semiconductor",
-    "name": "AMD",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "CPU + GPU AI"
-    ],
-    "bull": [
-      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
-      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-      "Lisa Su execution track record = among best in semiconductor",
-      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
-      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
-    ],
-    "risk": [
-      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
-      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
-      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
-      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
-      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
-    ],
-    "price": 557.89,
-    "fv": 467.0,
-    "mos": -9.7,
-    "updated": "2026-07-11",
-    "waf": 7.03,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
-    "scores": {
-      "bq": [
-        8.5,
-        "green",
-        85
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        3.5,
-        "orange",
-        35
-      ],
-      "ra": [
-        6.0,
-        "orange",
-        60
-      ]
-    },
-    "idea": "ราคาเกิน FV ~9% — รอ pullback; BofA \"top CPU pick\" + TAM raise $170B ยืนยัน thesis แต่ทำให้ edge เดิมกลายเป็น consensus มากขึ้น — ไม่ chase ตาม rally",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-11",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
-      "why": "Consensus (BofA, Wells Fargo, Mizuho) ตอนนี้เห็นด้วยกับ \"agentic AI CPU\" thesis แล้ว — raise TAM เป็น $170B และเรียก AMD \"top CPU pick\"; Warren เห็นว่านี่คือสัญญาณว่า edge เดิม (rerating จาก 'laggard' → 'second source') **กำลังกลายเป็น consensus** ไม่ใช่ edge ที่ยังไม่ priced-in อีกแล้ว — second-level thinking บอกว่าต้องระวังไม่ chase ราคาที่วิ่งขึ้นจาก sentiment เดียวกันกับที่ตลาดเพิ่งรู้",
-      "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง — หรือ ถ้า \"agentic CPU\" consensus narrative พิสูจน์ว่า overhype (TAM ไม่ materialize ตามที่ BofA project) ราคาจะ de-rate เร็ว"
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "mark_easy": {
-      "one_liner": "เบอร์สองที่ไล่ตาม NVIDIA จริงจัง แต่ราคาตอนนี้แพงกว่ามูลค่าแล้ว",
-      "what": "AMD ทำทั้ง CPU (EPYC) และ GPU (MI series) สำหรับดาต้าเซ็นเตอร์ เป็นทางเลือกที่ 2 นอกจาก NVIDIA",
-      "why_invest": [
-        "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
-        "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-        "Lisa Su execution track record = among best in semiconductor",
-        "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt"
-      ],
-      "watch_out": [
-        "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
-        "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
-        "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก"
-      ],
-      "bottom_line": "ธุรกิจกำลังมาแต่ราคาวิ่งเกินมูลค่า ~12% แล้ว — รอย่อก่อนค่อยพิจารณา"
-    },
-    "mark_full": {
-      "business_overview": "รายได้จาก Data Center (EPYC + Instinct GPU) โตเร็วสุด เสริม Client (Ryzen) และ Gaming/Embedded",
-      "tam": "ตลาด AI accelerator + server CPU รวมกันหลายแสนล้าน AMD ตั้งเป้าแย่ง share ทั้งสองฝั่งต่อเนื่อง",
-      "moat": "Lisa Su execution ระดับท็อป + x86 server share ขยายต่อเนื่อง แต่ moat ฝั่ง GPU ยังอ่อนเพราะ ROCm ตาม CUDA หลายปี",
-      "latest_financials": "AI GPU revenue $7B+ FY2025; EPYC server share ~41%; Venice (Zen6) 256 cores เข้าผลิต",
-      "key_points": [
-        "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-        "Lisa Su execution track record = among best in semiconductor",
-        "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
-        "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
-      ]
-    },
-    "warren_easy": [
-      "AMD เดินเกมแบบเดียวกับที่เคยแซง Intel — ค่อยๆ กลายเป็น \"ทางเลือกที่ขาดไม่ได้\" ทั้ง CPU และ GPU",
-      "ราคา ~$522 เกิน Fair Value $467 ราว 12% — ของดีแต่จ่ายแพงไป รอ pullback",
-      "WATCH — รอราคาย่อกลับเข้าเขตมี margin of safety ก่อน"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "จากข้อมูลตลาดอิสระ: market price $522 เกิน Warren FV $467 ~12% — overvalued จริง, ควรรอ; Venice ramp เป็น positive แต่ priced-in",
-        "จุดที่ Charlie กังวล: ROCm ตาม CUDA หลายปี; AI GPU rev gap vs NVDA ใหญ่",
-        "ต้อง monitor: ราคา momentum-driven — verdict ปัจจุบัน AGREE"
-      ]
-    },
-    "idea_th": "ราคาเกิน FV ~12% — รอ pullback; Venice EPYC ramp + $10B Taiwan เป็น catalyst ระยะกลาง",
-    "story_gate_th": {
-      "what": "ผู้เล่นเดียวที่มีทั้ง CPU + GPU ระดับ scale แข่งได้ทั้งสองสนาม",
-      "why": "Venice EPYC เข้า production ramp + ลงทุน $10B ในไต้หวัน = roadmap ชัด",
-      "risk": "ROCm ตาม CUDA ไม่ทัน หรือ MI ramp ช้า ทำให้ gap กับ NVIDIA ไม่แคบลง"
-    },
-    "bull_th": [
-      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
-      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-      "Lisa Su execution track record = among best in semiconductor",
-      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
-      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
-    ],
-    "risk_th": [
-      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
-      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
-      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
-      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
-      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
-    ]
-  },
   "SHOP": {
     "symbol": "SHOP",
     "display": "SHOP",
@@ -2674,44 +2690,46 @@
       "Advanced Materials",
       "Beryllium"
     ],
-    "price": 257.66,
-    "fv": 290.0,
-    "mos": 9.0,
-    "updated": "2026-07-11",
-    "waf": 6.78,
+    "action": "starter",
+    "actionLabel": "Starter",
+    "conviction": 3,
+    "waf": 6.8,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 257.66,
+    "fv": 290,
+    "mos": 11.2,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        8.5,
-        "green",
-        85
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        7.5,
+        0.0,
         "amber",
-        75
+        0
       ],
       "va": [
-        4.0,
-        "orange",
-        40
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        6.5,
+        0.0,
         "amber",
-        65
+        0
       ]
     },
-    "idea": "ราคาวิ่งขึ้น 16% จาก analyst initiation/PT raise ทำ MoS หลุดจาก Gate (21.6%→9.0%) — defense thesis ยังจริงแต่ตลาด price-in เร็วกว่า fundamental เปลี่ยน รอ pullback กลับเข้า gate",
+    "idea": "Beryllium vertical-integrated monopoly US + electronic materials",
+    "updated": "2026-07-11",
+    "risk": [
+      "ROIC 8-12% <15%, defense timeline 2028"
+    ],
     "bull": [
       "Beryllium monopoly + defense supercycle orders +50% YoY + Electronic Materials AI/semi growth; thesis แกร่งแต่ราคาวิ่งนำไปแล้ว"
-    ],
-    "risk": [
-      "Defense spending slowdown; China semi headwind; Performance Materials drag; EPS ramp ช้ากว่า backlog"
     ],
     "story_gate": {
       "passed": true,
@@ -3092,44 +3110,46 @@
       "Memory",
       "HBM"
     ],
-    "price": 979.3,
-    "fv": 1150.0,
-    "mos": -8.7,
-    "updated": "2026-07-11",
+    "action": "starter",
+    "actionLabel": "Starter",
+    "conviction": 3,
     "waf": 6.66,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "conviction": 3,
-    "action": "watch",
-    "actionLabel": "Watch",
+    "price": 979.3,
+    "fv": 1150,
+    "mos": 14.8,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        7.5,
+        0.0,
         "amber",
-        75
+        0
       ],
       "gp": [
-        9.0,
-        "green",
-        90
+        0.0,
+        "amber",
+        0
       ],
       "va": [
-        3.5,
-        "orange",
-        35
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        5.5,
-        "orange",
-        55
+        0.0,
+        "amber",
+        0
       ]
     },
-    "idea": "FQ3 earnings beat massively (rev $41.5B/+345.7% YoY, EPS $25.11 vs cons $20.28) + FQ4 guide $50B/$31 + 16 SCAs ~$100B contracted (06-24) — real structural evidence, raised FV Base modestly (+4.5%, $1,100→$1,150) to reflect the de-risked floor, NOT the peak quarterly print; price ran up faster (+19.8%) than the disciplined FV move → MoS flipped negative (-8.7%) from prior +5.2%; still WATCH, not BUY, despite the genuinely strong quarter",
+    "idea": "DRAM/HBM สำหรับ AI (HBM3E sold out) — memory upcycle",
+    "updated": "2026-07-11",
+    "risk": [
+      "Cyclical peak, HBM competition SK Hynix/Samsung"
+    ],
     "bull": [
       "HBM sole-US-supplier margin สูง + AI memory demand จริง structural (KV-cache, agentic AI) + ตอนนี้มี SCA ~$100B เป็น floor ใหม่ — แต่ราคาวิ่งนำ FV เร็วกว่าเดิม; cyclical peak EPS ห้าม extrapolate (feedback 05-29) แม้ earnings จะ beat จริงและใหญ่ก็ตาม"
-    ],
-    "risk": [
-      "Memory highly cyclical; SK Hynix/Samsung HBM capacity แข่งและ parity share ~40% ทั้งคู่ภายใน 2027 (MU เหลือ ~20-25%); CapEx heavy ($25B FY26, step-up FY27) กด FCF; Netlist/YMTC patent litigation overhang; SCA floor ลด downside แต่ไม่ได้ทำให้ cyclical หายไป"
     ],
     "story_gate": {
       "passed": true,
@@ -3359,6 +3379,139 @@
       "July 2024 outage legacy: residual class actions + customer trust ฟื้นช้า",
       "SBC ยังสูง — dilution ต่อ shareholders ในหลายปีข้างหน้า",
       "Net new ARR growth ชะลอลงจาก peak — มี structural slow-down อาจจะมา"
+    ]
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "display": "AMD",
+    "category": "ai_semiconductor",
+    "name": "AMD",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "CPU + GPU AI"
+    ],
+    "bull": [
+      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
+      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+      "Lisa Su execution track record = among best in semiconductor",
+      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
+      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+    ],
+    "risk": [
+      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
+      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
+      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
+      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
+      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.55,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 557.89,
+    "fv": 467,
+    "mos": -19.5,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        0.0,
+        "amber",
+        0
+      ],
+      "gp": [
+        0.0,
+        "amber",
+        0
+      ],
+      "va": [
+        0.0,
+        "amber",
+        0
+      ],
+      "ra": [
+        0.0,
+        "amber",
+        0
+      ]
+    },
+    "idea": "Sole #2 AI accelerator + >40% server CPU (EPYC) + full x86+GPU+rack stack",
+    "updated": "2026-07-11",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-11",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
+      "why": "Consensus (BofA, Wells Fargo, Mizuho) ตอนนี้เห็นด้วยกับ \"agentic AI CPU\" thesis แล้ว — raise TAM เป็น $170B และเรียก AMD \"top CPU pick\"; Warren เห็นว่านี่คือสัญญาณว่า edge เดิม (rerating จาก 'laggard' → 'second source') **กำลังกลายเป็น consensus** ไม่ใช่ edge ที่ยังไม่ priced-in อีกแล้ว — second-level thinking บอกว่าต้องระวังไม่ chase ราคาที่วิ่งขึ้นจาก sentiment เดียวกันกับที่ตลาดเพิ่งรู้",
+      "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง — หรือ ถ้า \"agentic CPU\" consensus narrative พิสูจน์ว่า overhype (TAM ไม่ materialize ตามที่ BofA project) ราคาจะ de-rate เร็ว"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "mark_easy": {
+      "one_liner": "เบอร์สองที่ไล่ตาม NVIDIA จริงจัง แต่ราคาตอนนี้แพงกว่ามูลค่าแล้ว",
+      "what": "AMD ทำทั้ง CPU (EPYC) และ GPU (MI series) สำหรับดาต้าเซ็นเตอร์ เป็นทางเลือกที่ 2 นอกจาก NVIDIA",
+      "why_invest": [
+        "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
+        "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+        "Lisa Su execution track record = among best in semiconductor",
+        "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt"
+      ],
+      "watch_out": [
+        "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
+        "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
+        "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก"
+      ],
+      "bottom_line": "ธุรกิจกำลังมาแต่ราคาวิ่งเกินมูลค่า ~12% แล้ว — รอย่อก่อนค่อยพิจารณา"
+    },
+    "mark_full": {
+      "business_overview": "รายได้จาก Data Center (EPYC + Instinct GPU) โตเร็วสุด เสริม Client (Ryzen) และ Gaming/Embedded",
+      "tam": "ตลาด AI accelerator + server CPU รวมกันหลายแสนล้าน AMD ตั้งเป้าแย่ง share ทั้งสองฝั่งต่อเนื่อง",
+      "moat": "Lisa Su execution ระดับท็อป + x86 server share ขยายต่อเนื่อง แต่ moat ฝั่ง GPU ยังอ่อนเพราะ ROCm ตาม CUDA หลายปี",
+      "latest_financials": "AI GPU revenue $7B+ FY2025; EPYC server share ~41%; Venice (Zen6) 256 cores เข้าผลิต",
+      "key_points": [
+        "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+        "Lisa Su execution track record = among best in semiconductor",
+        "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
+        "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+      ]
+    },
+    "warren_easy": [
+      "AMD เดินเกมแบบเดียวกับที่เคยแซง Intel — ค่อยๆ กลายเป็น \"ทางเลือกที่ขาดไม่ได้\" ทั้ง CPU และ GPU",
+      "ราคา ~$522 เกิน Fair Value $467 ราว 12% — ของดีแต่จ่ายแพงไป รอ pullback",
+      "WATCH — รอราคาย่อกลับเข้าเขตมี margin of safety ก่อน"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "จากข้อมูลตลาดอิสระ: market price $522 เกิน Warren FV $467 ~12% — overvalued จริง, ควรรอ; Venice ramp เป็น positive แต่ priced-in",
+        "จุดที่ Charlie กังวล: ROCm ตาม CUDA หลายปี; AI GPU rev gap vs NVDA ใหญ่",
+        "ต้อง monitor: ราคา momentum-driven — verdict ปัจจุบัน AGREE"
+      ]
+    },
+    "idea_th": "ราคาเกิน FV ~12% — รอ pullback; Venice EPYC ramp + $10B Taiwan เป็น catalyst ระยะกลาง",
+    "story_gate_th": {
+      "what": "ผู้เล่นเดียวที่มีทั้ง CPU + GPU ระดับ scale แข่งได้ทั้งสองสนาม",
+      "why": "Venice EPYC เข้า production ramp + ลงทุน $10B ในไต้หวัน = roadmap ชัด",
+      "risk": "ROCm ตาม CUDA ไม่ทัน หรือ MI ramp ช้า ทำให้ gap กับ NVIDIA ไม่แคบลง"
+    },
+    "bull_th": [
+      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
+      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+      "Lisa Su execution track record = among best in semiconductor",
+      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
+      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+    ],
+    "risk_th": [
+      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
+      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
+      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
+      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
+      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
     ]
   },
   "LASR": {
@@ -3936,43 +4089,46 @@
       "Semiconductor Test",
       "Robotics"
     ],
-    "price": 359.6,
-    "fv": 420.0,
-    "mos": -9.8,
-    "updated": "2026-07-11",
+    "action": "starter",
+    "actionLabel": "Starter",
+    "conviction": 3,
     "waf": 6.18,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "action": "hold",
-    "actionLabel": "Hold",
+    "price": 359.6,
+    "fv": 420,
+    "mos": 14.4,
+    "fpe": null,
+    "peg": null,
     "scores": {
       "bq": [
-        8.0,
-        "green",
-        80
+        0.0,
+        "amber",
+        0
       ],
       "gp": [
-        7.5,
+        0.0,
         "amber",
-        75
+        0
       ],
       "va": [
-        2.5,
-        "orange",
-        25
+        0.0,
+        "amber",
+        0
       ],
       "ra": [
-        6.5,
+        0.0,
         "amber",
-        65
+        0
       ]
     },
-    "idea": "ราคาวิ่งขึ้น +12.8% จาก Nasdaq-100 inclusion (passive flow) + analyst upgrade — แต่ FV ไม่เปลี่ยน (ไม่มี earnings ใหม่) → MoS พลิกจาก +2.7% เป็น -9.8%, WAF ร่วงจาก 6.88→6.18 (หลุด Medium threshold); นี่คือกรณี classic ของราคาวิ่งนำ fundamentals จาก technical/flow catalyst — ห้ามไล่ราคา",
+    "idea": "ATE semiconductor test + AI compute test demand",
+    "updated": "2026-07-11",
+    "risk": [
+      "Cyclical semi test, customer concentration"
+    ],
     "bull": [
       "ATE duopoly + AI test demand 70% of business + Tokyo Electron JV + Air Force defense diversification; thesis ธุรกิจยังแกร่งเหมือนเดิม แต่ราคาวิ่งไปไกลกว่าที่ MoS รองรับได้จาก index-inclusion rally"
-    ],
-    "risk": [
-      "AI capex slowdown; customer concentration lumpy revenue; Q1 one-time benefits risk; Advantest competition; index-flow reversal risk (เมื่อ passive buying หมด ราคาอาจ mean-revert)"
     ],
     "story_gate": {
       "passed": true,
@@ -4736,116 +4892,6 @@
       "AI segment เผาเงินหนัก (op loss $6.4B 2025); ARPU Starlink ร่วง $99→$66 เชิงโครงสร้าง",
       "$20B bond leverage-up + lockup unlock (เริ่ม ก.ค.-ส.ค. 2026) = supply overhang กดราคาต่อ",
       "Musk key-man + voting 82.4% no-sunset; Starship ยังไม่ commercialize; track record standalone <1 ไตรมาส"
-    ]
-  },
-  "MELI": {
-    "symbol": "MELI",
-    "display": "MELI",
-    "category": "consumer",
-    "name": "MercadoLibre",
-    "sector": "Consumer",
-    "sectorSlug": "consumer",
-    "chips": [
-      "Consumer",
-      "LatAm E-commerce + Fintech"
-    ],
-    "bull": [
-      "Revenue $8,845M +49% YoY (เร็วสุดในรอบ ~4 ปี); TPV $87.2B +50%, GMV $19.0B +42%",
-      "Fintech MAU +29%, AUM +77%, credit card TPV +90%",
-      "Brazil GMV +38%, items sold +56%"
-    ],
-    "risk": [
-      "Brazil withholding-tax dispute $592M (probable loss, ยังอุทธรณ์) + อีก $513M reasonably-possible ที่ยังไม่ accrue",
-      "Provision for doubtful accounts +106.5% YoY (14.1% ของรายได้) เร็วกว่า revenue growth 49%",
-      "10-K เพิ่ม risk ใหม่ปี 2025: Asian e-commerce platform (Shopee/Temu/Shein-type) แย่ง market share",
-      "Operating margin หด -600bps YoY แม้ revenue โต"
-    ],
-    "price": 1631.82,
-    "fv": 1824.0,
-    "mos": 10.5,
-    "peg": 1.43,
-    "fpe": 42.9,
-    "updated": "2026-07-11",
-    "action": "hold",
-    "actionLabel": "Hold",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-11",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "MercadoLibre ครองตลาด e-commerce + fintech ในลาตินอเมริกาผ่าน ecosystem flywheel (marketplace → payments → credit → logistics) — ชนะด้วย scale + proprietary credit risk model ที่เข้าถึงกลุ่ม underserved/unbanked",
-      "why": "Consensus เห็นว่า MELI คือ \"LatAm e-commerce leader ที่กำลังถูก Asian competitor (Shopee/Temu/Shein) แย่งตลาด\" — Warren เห็นต่างว่าตลาดมองข้ามว่า management กำลัง **เลือก** compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil free-shipping moat ก่อนคู่แข่งตามทัน ซึ่งเป็นการลงทุนรุกที่ไม่ใช่สัญญาณว่าธุรกิจอ่อนแอ — GMV Brazil เร่งขึ้นเป็น +38% YoY และ unique buyer growth เร็วสุดใน 5 ปี ยืนยันว่า strategy นี้ทำงาน",
-      "risk": "ถ้า margin ไม่ฟื้นกลับมาตามที่ thesis การลงทุนคาดไว้ภายใน 2-3 ปี (deliberate margin compression กลายเป็น permanent structural problem) หรือ Asian e-commerce competitor แย่ง market share ได้ต่อเนื่องแม้ MELI ลงทุนป้องกันแล้ว"
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-06-18"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าตลาด e-commerce + fintech ลาตินอเมริกา — กำลัง 'เลือก' compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil moat; MoS 10.5% เข้า STARTER band",
-      "what": "MercadoLibre เป็นผู้นำ e-commerce + fintech ในลาตินอเมริกา ผ่าน ecosystem flywheel (marketplace → Mercado Pago payments → credit → Mercado Envios logistics) ครอบคลุม 18 ประเทศ",
-      "why_invest": [
-        "Q1 2026 รายได้ $8.845B (+49% YoY) — growth เร็วสุดตั้งแต่ Q2 2022",
-        "GMV $18.95B (+42%), TPV $87.2B (+50%), credit portfolio $14.6B (+87%)",
-        "Brazil GMV +38% YoY + unique buyer growth เร็วสุดใน 5 ปี = strategy ทำงาน"
-      ],
-      "watch_out": [
-        "Operating margin ลด 12.9%→6.9% (deliberate investment) + EPS miss consensus ($8.23 vs $8.75)",
-        "Provision for doubtful accounts +106.5% YoY — ถ้า credit quality เสื่อมต่อจะกด EPS",
-        "คู่แข่งเอเชีย (Shopee/Temu/Shein) + Brazil tax dispute $592M"
-      ],
-      "bottom_line": "Warren ให้ STARTER — WAF 7.42, Tier Pre-Inevitable, MoS 10.5% เข้า band; ลง ⅓ ของ target ก้อนแรก ทยอย 3 ไม้"
-    },
-    "mark_full": {
-      "business_overview": "MercadoLibre (ก่อตั้ง 1999, IPO 2007) เป็นผู้นำ e-commerce + fintech ecosystem ในลาตินอเมริกา — marketplace ครอบคลุม 18 ประเทศ + Mercado Pago (8 ประเทศ) + Mercado Envios logistics + Mercado Ads",
-      "tam": "LatAm e-commerce + fintech ที่ยัง underpenetrated — MELI เป็นผู้นำ GMV ในภูมิภาค + ผู้นำ fintech MAU ใน Argentina/Chile/Mexico; ads ยังเล็ก (traditional channels ครอง 50% ของ ad budget LatAm)",
-      "moat": "Scale + network effect + proprietary credit risk models (ML บนข้อมูล marketplace, ปล่อยกู้กลุ่ม underserved/unbanked) + fulfillment network (50+ facilities, cost per shipment ลด 17% YoY) + cross-sell flywheel (commerce → fintech)",
-      "latest_financials": "Q1 2026: Net revenues $8.845B (+49% YoY), Operating margin 6.9% (-600bps deliberate), Net income $417M (-15.6%), EPS $8.23 (miss vs $8.75), Adj EBITDA $857M; GMV $18.95B (+42%), TPV $87.2B (+50%), AUM ~$20B (+77%)",
-      "key_points": [
-        "Margin compression (12.9%→6.9%) เป็นการ 'เลือก' ลงทุนรุก ไม่ใช่สัญญาณอ่อนแอ (CFO: 'won't change the dial')",
-        "Brazil free-shipping moat — GMV Brazil +38% YoY, unique buyer growth เร็วสุดใน 5 ปี",
-        "Provision for doubtful accounts +106.5% YoY (ขยาย credit portfolio)",
-        "EPS estimate ($38 FY26E) เป็น Warren extrapolation จากไตรมาสที่ miss consensus — ไม่ใช่ guided number"
-      ]
-    },
-    "warren_easy": [
-      "MercadoLibre Tier 🚀 Pre-Inevitable (WAF 7.42, BQ 8.0 GP 8.5) — dual flywheel (commerce+fintech) ที่หายากในตลาด emerging",
-      "ที่ราคา $1,631 MoS 10.5% (FV $1,824) เข้า STARTER band พอดี; PEG 1.43 ผ่าน Pre-Inevitable cap (1.5)",
-      "STARTER — ลง ⅓ ของ target ($10-20 ก้อนแรก) ทยอย 3 ไม้ตามกฎ Staged Entry"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ยืนยัน STARTER — MoS 10.5% คำนวณซ้ำตรงเป๊ะ อยู่ใน STARTER band (8-15%)",
-        "ตรวจสอบอิสระแล้ว: Q1 2026 EPS miss consensus ($8.23 vs ~$8.47-8.75) จริง + margin compression (12.9%→6.9%) เป็น deliberate choice ที่ CFO ยืนยันกับ Goldman ('dial will not change')",
-        "ข้อควรรู้: FV อิง EPS estimate ($38 FY26E) ที่ Warren extrapolate จากไตรมาสที่ miss — สมเหตุสมผลแต่ MELI ไม่ให้ EPS guidance — AGREE"
-      ],
-      "review_date": "2026-06-18"
-    },
-    "idea_th": "STARTER — WAF 7.42, Tier Pre-Inevitable, MoS 10.5% เข้า band, PEG 1.43 ผ่าน cap; ลง ⅓ ของ target ก้อนแรก ทยอย 3 ไม้",
-    "story_gate_th": {
-      "what": "MercadoLibre ครองตลาด e-commerce + fintech ในลาตินอเมริกาผ่าน ecosystem flywheel (marketplace → payments → credit → logistics) — ชนะด้วย scale + proprietary credit risk model ที่เข้าถึงกลุ่ม underserved/unbanked",
-      "why": "Consensus มองว่า 'LatAm leader ที่กำลังถูก Asian competitor (Shopee/Temu/Shein) แย่งตลาด' แต่ Warren เห็นต่างว่า management กำลัง 'เลือก' compress margin (12.9%→6.9%) เพื่อปักหมุด Brazil free-shipping moat ก่อนคู่แข่งตามทัน — เป็นการลงทุนรุกไม่ใช่อ่อนแอ (GMV Brazil +38% YoY, unique buyer growth เร็วสุดใน 5 ปี ยืนยัน)",
-      "risk": "Margin ไม่ฟื้นภายใน 2-3 ปี (deliberate compression กลายเป็น permanent structural problem) หรือ Asian competitor แย่ง market share ต่อเนื่องแม้ MELI ลงทุนป้องกันแล้ว"
-    },
-    "bull_th": [
-      "Q1 2026 รายได้ $8.845B (+49% YoY) — growth เร็วสุดตั้งแต่ Q2 2022",
-      "GMV $18.95B (+42%), TPV $87.2B (+50%), AUM ~$20B (+77%), credit portfolio $14.6B (+87%)",
-      "Brazil GMV +38% YoY + unique buyer growth เร็วสุดใน 5 ปี (free-shipping moat ทำงาน)",
-      "Mercado Ads +63% YoY FX-neutral (โตเร็วกว่าตลาด 4x), cross-border GMV +68%",
-      "ผ่าน Argentina hyperinflation/FX crisis มาหลายรอบ (Crisis Survival proven)"
-    ],
-    "risk_th": [
-      "Operating margin ลด 12.9%→6.9% (deliberate) — ถ้าไม่ฟื้นภายใน 2-3 ปีกลายเป็น structural",
-      "Provision for doubtful accounts +106.5% YoY — credit quality เสี่ยงกด EPS",
-      "EPS miss consensus Q1 2026 ($8.23 vs ~$8.75)",
-      "คู่แข่งเอเชีย (Shopee/Temu/Shein) เข้ามาแข่งราคาต่ำในปี 2025",
-      "Brazil tax dispute (~$592M probable loss) + FX/hyperinflation risk เป็น structural"
     ]
   }
 }
