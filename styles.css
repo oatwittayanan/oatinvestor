@@ -222,6 +222,7 @@ p  { color: var(--text-2); line-height: 1.7; }
 .badge-sell   { background: var(--red-bg);    color: var(--red-text);   }
 .badge-starter{ background: rgba(255, 233, 77,.18); color: #9A7608; }
 [data-theme="dark"] .badge-starter { color: #FFE94D; }
+.badge-avoid  { background: var(--red-bg);    color: var(--red-text);   }
 
 .badge-high   { background: var(--green-bg);   color: var(--green-text);  }
 .badge-medium { background: var(--yellow-dim); color: var(--yellow-text); }
