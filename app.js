@@ -40,7 +40,8 @@ function actionBadge(action) {
   const map = {
     buy: ['badge-buy','BUY'], watch: ['badge-watch','WATCH'],
     hold: ['badge-hold','HOLD'], study: ['badge-study','STUDY'],
-    sell: ['badge-sell','SELL'], starter: ['badge-starter','STARTER']
+    sell: ['badge-sell','SELL'], starter: ['badge-starter','STARTER'],
+    avoid: ['badge-avoid','AVOID']
   };
   const [cls, label] = map[(action||'').toLowerCase()] || ['badge-study', action || '—'];
   return `<span class="badge ${cls}">${label}</span>`;
