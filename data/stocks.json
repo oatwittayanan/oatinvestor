@@ -4059,6 +4059,127 @@
       "Advantest competition ใน memory test; index-flow reversal risk เมื่อ passive buying หมด"
     ]
   },
+  "SKHYV": {
+    "symbol": "SKHYV",
+    "display": "SK Hynix",
+    "category": "semiconductor",
+    "name": "SK hynix Inc. ADR (When Issued)",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Memory",
+      "HBM Leader"
+    ],
+    "price": 168.01,
+    "fv": 100.0,
+    "mos": -40.5,
+    "updated": "2026-07-12",
+    "waf": 6.1,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "conviction": 2,
+    "action": "hold",
+    "actionLabel": "Hold",
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
+      "va": [
+        2.5,
+        "orange",
+        25
+      ],
+      "ra": [
+        4.5,
+        "orange",
+        45
+      ]
+    },
+    "idea": "Franchise ระดับโลก (HBM #1) แต่ราคา ADR $168 = ตลาด price peak-cycle earnings ราวกับ memory หยุด cyclical — บน normalized mid-cycle earnings ($52B net) หุ้นแพงเกิน ~40%; ยัง trade +18.2% เหนือหุ้นแม่ KOSPI (when-issued froth); ไม่ไล่ซื้อ cyclical ที่ peak",
+    "bull": [
+      "HBM leadership + AI memory demand จริง structural — แต่ Q1 net ถูกดันด้วย finance income $11.2B, operating margin 71% = peak ไม่ยั่งยืน; normalized earnings ต่ำกว่า peak ~50%; Samsung/CXMT HBM parity + memory ยังเป็น cyclical แม้ narrative \"de-cycled\""
+    ],
+    "risk": [
+      "ถ้า de-cycling เป็นจริง (LTA floors ยืน + margin >50% ต่อเนื่อง 2+ ปี) → normalized earnings ใกล้ peak → FV base ผิด, ราคา justified; upside risk ถ้า HBM4E premium สูงกว่าคาด"
+    ],
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-12",
+      "tier": "🔁 Cyclical",
+      "tier_slug": "cyclical",
+      "what": "SK hynix เป็นผู้นำ HBM อันดับ 1 โลก (56.4% share) ผลิต advanced memory (DRAM/HBM/NAND) ซึ่งเป็นหัวใจของ AI compute — ชนะด้วย HBM technology lead (HBM4 industry-first) + qualification switching cost + scale/vertical packaging.",
+      "why": "Consensus มองว่า memory \"de-cycled\" แล้ว (LTA lock floor, HBM mandatory) จึงยอมจ่ายราคาที่สะท้อน **peak earnings ถาวร** — ณ $168/ADS ตลาด price บน peak Q1-annualized net ~$106B (P/E เพียง ~11–12× บน peak) ราวกับ cycle หายไป. Warren เห็นต่างว่ากำไร Q1 ถูกดันด้วย finance income $11.2B + operating margin 71% คือ cycle peak ที่ไม่ยั่งยืน + Samsung/CXMT HBM parity กำลังมา → normalized mid-cycle earnings ต่ำกว่า peak มาก → ราคาแพงเกินบน normalized basis (edge = ไม่ไล่ราคา peak ของ cyclical, รอ cycle ย่อ).",
+      "risk": "ถ้า de-cycling เป็นจริง — operating margin ยืน >50% ต่อเนื่อง 2+ ปีแม้ capacity ใหม่ (M15X/Yongin) ramp เต็ม + LTA floors ยืนไม่มี oversupply price crash — แปลว่า normalized earnings อยู่ใกล้ระดับ peak จริง, FV base ผิด, และราคา $168 justified."
+    },
+    "tier": "🔁 Cyclical",
+    "mark_easy": {
+      "one_liner": "เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) เพิ่ง IPO ADR เข้า Nasdaq — ธุรกิจแกร่งจริง แต่ราคา $168 แพงกว่าหุ้นแม่ที่เกาหลี +18.2% แถมตลาด price บน peak earnings",
+      "what": "SK hynix ผลิต memory chip ครบวงจร (DRAM, HBM, NAND) ที่อยู่ในแทบทุกอุปกรณ์ — จุดขายคือ HBM ที่ติดบน AI GPU ซึ่งครองอันดับ 1 โลก 56.4%; ADR เพิ่งเข้า Nasdaq ที่ $149 (SKHYV = ticker ชั่วคราวช่วง when-issued จะเปลี่ยนเป็น SKHY; 1 ADS = 1/10 หุ้นแม่บน KOSPI '000660')",
+      "why_invest": [
+        "HBM #1 โลก 56.4% share — เจ้าแรกที่ mass-produce HBM3E และพัฒนา HBM4; qualification barrier สูง ลูกค้าเปลี่ยน supplier ยาก",
+        "FY2025 รายได้โต +46.8% YoY (W97.1T) พลิกจากขาดทุน FY2023; Q1 2026 gross margin 79.3%",
+        "กำลังผลิตใหม่เพียบ: M15X ramping, Yongin fab (Q1 2027), P&T7 + Indiana packaging (2027–28) + เงิน IPO ~$26.2B",
+        "AI infrastructure demand เป็น driver เชิงโครงสร้างของ HBM/server DRAM/eSSD"
+      ],
+      "watch_out": [
+        "Q1 2026 net profit $26.5B ถูกดันด้วย finance income $11.2B (FX/valuation gains — ไม่ใช่กำไรจากธุรกิจล้วน)",
+        "ADR $168.01 แพงกว่าหุ้นแม่บน KOSPI +18.2% (~$142.13/ADS-equiv) — when-issued froth, free float แค่ 2.5%",
+        "Memory ยังเป็น cyclical: FY2023 ขาดทุน W9.1T → FY2025 กำไร W42.9T; คำเคลม 'de-cycled' ของผู้บริหารยังไม่พิสูจน์ข้าม down-cycle"
+      ],
+      "bottom_line": "Franchise ระดับโลกจริง แต่ Warren ให้ WATCH — MoS −40.5% ราคา price บน peak earnings + ADR premium; ไม่ไล่ซื้อ cyclical ที่ peak"
+    },
+    "mark_full": {
+      "business_overview": "Revenue mix Q1 2026: DRAM 77.3% + NAND 22.0%; อันดับโลก: HBM #1 (56.4%), DRAM #2 (29.1%), NAND #2 (18.5% รวม Solidigm ที่ซื้อจาก Intel $8.8B); ลูกค้า US 64.7% + จีน 24.3%; fabs เกาหลี (Icheon/Cheongju) + จีน (Wuxi/Dalian) + foundry ลูก 2 บริษัท",
+      "tam": "AI infrastructure buildout เป็น driver หลักของ HBM/server DRAM/eSSD; โครงสร้างตลาด = oligopoly 3 ราย (Samsung, SK hynix, Micron) barrier to entry สูงมาก (capex หลายหมื่นล้าน + know-how); FY2025 revenue +46.8% YoY สะท้อน upcycle แรง",
+      "moat": "HBM #1 (เจ้าแรก mass-produce HBM3/HBM3E, HBM4 industry-first) + qualification switching cost + vertical advanced packaging (TSV stacking) + portfolio ครบ DDR5/LPDDR5T/GDDR7/eSSD; ลูกค้า HBM ต้อง co-develop ทำให้เปลี่ยน supplier ยาก",
+      "latest_financials": "Q1 2026: Revenue W52.6T (+198% YoY), gross margin 79.3%, net W40.3T (~$26.5B แต่มี finance income $11.2B ปน — operating profit derived ~$24.7B); FY2025: Revenue W97.1T +46.8%, net W42.9T; Equity ~$108B leverage ต่ำ; CapEx ~$18B/yr; ปันผล yield ~0.14%",
+      "key_points": [
+        "IPO 2026-07-09: 177.9M ADSs @ $149 = gross ~$26.5B; Cornerstone Baillie Gifford/Coatue/Situational Awareness สูงสุด $7B (ไม่ผูกมัด)",
+        "SK square ถือ 20.5% (ต้องคง ≥20% ตามกฎหมายเกาหลี) → offering แค่ 2.5% ของหุ้นทั้งหมด = free float ต่ำมาก",
+        "ลูกค้ารายใหญ่สุด = 23.9% ของ revenue FY2025 (น่าจะ Nvidia); 2 รายใหญ่รวม 27.2% ของ Q1 2026",
+        "Warren ใช้ normalized mid-cycle net ~$52B/yr เป็นฐาน FV (ไม่ใช่ peak run-rate ~$106B) ตามกฎ cyclical peak-EPS bias"
+      ]
+    },
+    "warren_easy": [
+      "SKHYV เป็น Cyclical tier — HBM #1 โลก + AI memory demand จริงเชิงโครงสร้าง แต่ core DRAM/NAND ยังเป็น commodity cycle (FY2023 ขาดทุน W9.1T → FY2025 กำไร W42.9T = EPS swing รุนแรง)",
+      "FV Base $100 จาก normalized mid-cycle net ~$52B × 14× — Warren ไม่ใช้ peak Q1-annualized (~$106B) ที่ถูกดันด้วย finance income $11.2B; ราคา $168.01 → MoS −40.5% + ADR ยัง trade +18.2% เหนือหุ้นแม่ KOSPI",
+      "👀 WATCH (WAF 6.10 LOW) — ไม่ผ่าน gate ทั้ง MoS (−40.5% vs 15%) และ Expected Return (−9.9%/yr vs 15%); รอ cycle ย่อ / ADR converge กับหุ้นแม่ / หลักฐาน de-cycling ยืนข้าม down-leg จริง"
+    ],
+    "charlie_easy": {
+      "verdict": "PENDING",
+      "paragraphs": [
+        "Charlie ยังไม่ได้ review SKHYV — Warren วิเคราะห์ตัวนี้เป็น single-ticker deep-dive (2026-07-12) ไม่ได้ผ่านรอบ watchlist batch จึงยังไม่มี independent review",
+        "รอรอบ /warren watchlist + /charlie ถัดไป แล้วส่วนนี้จะอัพเดทอัตโนมัติ"
+      ],
+      "review_date": null
+    },
+    "idea_th": "WATCH — HBM #1 โลก franchise แกร่งจริง แต่ ADR $168 = ตลาด price peak-cycle earnings ราวกับ memory เลิก cyclical; บน normalized earnings ($52B net) หุ้นแพงเกิน ~40% (MoS −40.5%) แถม trade แพงกว่าหุ้นแม่ KOSPI +18.2% — ไม่ไล่ซื้อ cyclical ที่ peak",
+    "story_gate_th": {
+      "what": "SK hynix คือผู้นำ HBM อันดับ 1 โลก (56.4% share) — memory ที่เป็นหัวใจของ AI GPU ทุกตัว; ชนะด้วยเทคโนโลยีนำ (HBM4 เจ้าแรกของอุตสาหกรรม) + qualification switching cost ที่ทำให้ลูกค้าเปลี่ยน supplier ยาก + scale/advanced packaging ครบวงจร",
+      "why": "ตลาดเชื่อว่า memory 'de-cycled' แล้ว (LTA lock ราคา floor, HBM คือของจำเป็น) เลยยอมจ่ายราคาที่สะท้อน peak earnings ถาวร — แต่ Warren เห็นต่าง: กำไร Q1 ถูกดันด้วย finance income $11.2B + operating margin 71% คือ cycle peak ที่ไม่ยั่งยืน + Samsung/CXMT กำลังไล่ตาม → edge คือไม่ไล่ราคา peak ของ cyclical รอ cycle ย่อ",
+      "risk": "ถ้า de-cycling เป็นจริง — operating margin ยืน >50% ต่อเนื่อง 2+ ปีแม้ capacity ใหม่ ramp เต็ม + LTA floors ไม่พัง — แปลว่า normalized earnings ใกล้ระดับ peak จริง, FV $100 ต่ำไป และราคา $168 justified"
+    },
+    "bull_th": [
+      "HBM #1 โลก 56.4% share — เป็น bottleneck ของ AI GPU ทุกตัว, qualification barrier สูง ลูกค้าเปลี่ยน supplier ยาก = structural pricing power",
+      "Memory-Supercycle thesis (HIGH conviction): LTA lock ราคา floor 80–100% เหนือ baseline เดิม → ลด downside cyclicality แบบเก่า; NAND KV-cache เป็น demand vector ใหม่",
+      "FY2025 revenue +46.8% YoY + operating margin Q1 2026 ~71% — franchise economics แข็งแรงมากในช่วง up-cycle",
+      "Capacity ใหม่รองรับ HBM4/HBM4E: M15X ramping, Yongin fab (Q1 2027), P&T7 + Indiana packaging (2027–28) + เงิน IPO ~$26.2B หนุน capex"
+    ],
+    "risk_th": [
+      "Cyclicality รุนแรง: FY2023 ขาดทุน W9.1T → FY2025 กำไร W42.9T; คำเคลม 'memory ไม่ cyclical แล้ว' ยังไม่เคยพิสูจน์ข้าม down-cycle จริง",
+      "กำไร Q1 2026 ถูกดันด้วย finance income $11.2B (FX/valuation gains) — 'record earnings' ไม่ใช่พลัง operating ล้วน",
+      "ADR trade +18.2% เหนือหุ้นแม่ KOSPI + free float แค่ 2.5% + when-issued ticker — froth และสภาพคล่องบาง",
+      "Samsung HBM parity + CXMT (จีน) กำลังพัฒนา HBM → margin compression risk; ลูกค้าใหญ่สุด 23.9% ของ revenue; fabs ในจีน = geopolitical/export-control risk"
+    ]
+  },
   "TSLA": {
     "symbol": "TSLA",
     "display": "TSLA",
@@ -4725,18 +4846,6 @@
       "EPS miss consensus Q1 2026 ($8.23 vs ~$8.75)",
       "คู่แข่งเอเชีย (Shopee/Temu/Shein) เข้ามาแข่งราคาต่ำในปี 2025",
       "Brazil tax dispute (~$592M probable loss) + FX/hyperinflation risk เป็น structural"
-    ]
-  },
-  "000660.KS": {
-    "symbol": "000660.KS",
-    "display": "SK Hynix",
-    "category": "semiconductor",
-    "name": "SK Hynix",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Memory",
-      "HBM Leader"
     ]
   }
 }
