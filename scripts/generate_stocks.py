@@ -108,7 +108,9 @@ def _normalize_charlie(raw: dict, review_date: str | None) -> dict:
         "verified_claims": claims[:4],
         "concerns":        concerns[:4],
         "summary":         raw.get("summary") or "",
-        "review_date":     review_date or "",
+        # honor per-ticker data_date so carried-forward entries ใน sync batch
+        # แสดงวันที่ตรวจจริง ไม่ใช่วันที่ batch (sync batch = mix ของหลายวัน)
+        "review_date":     raw.get("data_date") or review_date or "",
     }
 
 

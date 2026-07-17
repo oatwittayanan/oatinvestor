@@ -1541,16 +1541,19 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Price cross-check Nasdaq+CNBC (0% drift): $73.68 vs Warren's $73.53 — 0.2% variance, clean match; confirmed near 52-week low (only 4.96% above the $70.86 floor of a $70.86-$127.75 range)",
-        "Q2 earnings report today (07-16, ~1pm PT — after this review's data snapshot) confirmed as the swing catalyst Warren flagged; consensus expects $12.57B revenue (+13.5% YoY), EPS $0.79, operating margin 32.6%"
+        "ราคา post-earnings after-hours $67.62 (-9.05%) ✓ CNBC ExtendedMktQuote ตรงกับ Nasdaq API และตรงกับที่ Warren ระบุ $67.64 (<1% diff)",
+        "Q2 revenue $12.56B +13.4% YoY in-line ✓ ยืนยันจาก Variant/Yahoo/Investing.com หลายแหล่ง; EPS beat",
+        "Q3 guide revenue growth 12% (ลงจาก Q2 ~13.4%) = ไตรมาสที่ 2 ติดต่อกันที่ growth ชะลอ ✓ ยืนยันหลายแหล่ง (Yahoo, Variety); FY26 guide แคบลง $51.0-51.4B ✓",
+        "Analyst PT ก่อนงบถูกหั่นทั้งแถบ: Oppenheimer $120→$100, KeyBanc $115→$92, Morgan Stanley $115→$90, Barclays $110→$85, Citi/Bernstein →$100 (TipRanks) — เฉลี่ย ~$93; ยังไม่มี PT cut รอบใหม่ index หลังงบ 07-16 ให้เห็นตอนนี้"
       ],
       "concerns": [
-        "GROWTH RATE MISMATCH: Warren used 24.9% consensus EPS growth. THREE independent sources disagree materially: stockanalysis.com shows next-year (2026→2027) EPS growth of only ~7.1-7.2% ($3.57→$3.83 / $3.66→$3.92), and SimplyWall.st's stated long-term forecast annual EPS growth is 13.16%. None approach Warren's 24.9% — gap ranges 11.7-17.7pp, well past the 5pp mandatory-flag threshold in §2.6, and no variant_view/rationale is recorded on the card for using a figure meaningfully above consensus. This materially inflates the reported ER: using the independently-sourced growth rate (~13%) with Warren's own convergence term (10.6%, formula-verified) gives Charlie ER ≈ 23.6%/yr, vs Warren's stated 35.5%/yr",
-        "MANDATORY FV CHECK (§2.5): Charlie FV = FY+1 consensus EPS (~$3.85, 2027) × current forward PE (21.1, Warren's own figure) ≈ $81 vs Warren's FV base $121.9 → gap 50.5%, more than double the 20% mandatory threshold. This corroborates the growth-rate finding — Warren's $121.9 FV appears to bake in further-out (2028+) EPS with a sustained/expanded multiple rather than near-term convergence",
-        "Content-cost inflation and Disney+/Prime competitive pressure already flagged in Warren's own thesis_risk — unchanged, still valid"
+        "Charlie fresh independent FV = FY2027 consensus EPS $3.92 (avg, range $3.46-4.32, จาก analyst forecast aggregator) × current forward P/E ~20.4x (post-drop price/feps) = ~$80 — ต่ำกว่า FV $98 ที่ Warren carry มาจาก Charlie's own prior review (28x × FY27 $3.49) อยู่ 22.5% (> เกณฑ์ 20% inflation flag) เพราะ current fwd PE ยุบจาก ~28x เหลือ 20.4x หลังราคาร่วงเพิ่ม",
+        "MoS ที่ FV อิสระใหม่ $80 vs ราคา $67.6 = ~15.5% พอดีเฉียดเส้น Gate 15% ไม่มี buffer — sensitive สูงต่อ consensus EPS range: ถ้าใช้ low-end $3.46 → FV $70.6, MoS เหลือ ~4% เท่านั้น",
+        "Engagement erosion มีหลักฐานอิสระต่อเนื่อง: Nielsen streaming-time share 21%→17% ใน 2 ปี, US TV viewership share ลงมา 7.8% (ต่ำสุดรอบ 20 เดือน) — สอดคล้องกับ Q3 guide ที่ชะลอเป็นไตรมาสที่ 2",
+        "Post-earnings analyst PT reset ยังไม่ปรากฏใน search index (มีแต่ pre-earnings cuts) — โอกาสสูงที่ PT จะถูกหั่นเพิ่มสัปดาห์นี้ตาม weak Q3 guide + engagement disclosure ที่ลดลง ซึ่งจะกดดัน FV ต่อ"
       ],
       "summary": "",
-      "review_date": "2026-07-16"
+      "review_date": "2026-07-17"
     },
     "mark_easy": {
       "one_liner": "Netflix เจ้าตลาด streaming โลก — หลังงบ Q2 ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% ยังน่าสนใจ แต่ Charlie เตือนเรื่องยอดการรับชมที่เริ่มชะลอ",
@@ -4845,20 +4848,20 @@
     },
     "tier": "🔁 Cyclical",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price cross-checked Nasdaq API + CNBC (0% drift vs yfinance): $342.12 — but stock fell -3.15% just today (worst single session of this whole review), part of an active downtrend: 6 of the last 8 trading sessions down",
-        "Independent Nasdaq historical price pull confirms the crash narrative directionally: actual closing peak was $483.84 on 2026-06-30 (not the $460.98 Warren cited, which appears to be an intraday/index-effective-date print around 06-22's $457.00 close) — true peak-to-trough is -29.3%, LARGER than Warren's -25.8% figure. Warren's core narrative (index-inclusion rally + sector-wide memory-oversupply selloff, no earnings miss) is independently corroborated (TIKR, GuruFocus, Yahoo Finance all describe the same mechanical index-flow-driven round trip), but the magnitude/timing detail is slightly off and the decline has NOT visibly stabilized yet as of today's print",
-        "Consensus growth cross-check (Nasdaq): FY26 EPS $7.20 → FY27 $9.43 = +31.0% YoY vs Warren's 35.0% (FY27 YoY, stockanalysis.com) — 4.0pp gap, at the edge of but within the ±5pp tolerance",
-        "⚠️ Charlie's independent FV (§2.5): FY+1 (FY27) consensus EPS $9.43 × min(5yr median PE, current forward PE). Independently-sourced 5yr avg PE for TER = 30.7-33.55x (public.com, fullratio), 10yr avg = 27.28x — both well BELOW the current forward PE (~35-47x depending on EPS-period basis, vs Warren's own stated 46.9x). Using the 5yr band (~30-33x) as the conservative multiple: Charlie FV ≈ $283-311 (call it ~$300) — a 40% gap below Warren's $420 base, well past the mandatory 20% CAUTION threshold. Even post-crash, TER's multiple has not fully reverted to its own historical norm; a third-party source (TIKR) separately confirms the peak multiple hit 56-64x, i.e. this was a genuine passive-flow valuation excursion, but the 'fair' landing zone per TER's own history looks lower than where Warren's FV puts it"
+        "ราคา $322.30 (07-16 close) ✓ CNBC quote API + Nasdaq api.quote/info ตรงกันเป๊ะ (<1% diff) — เป็นวันที่ร่วง -5.79% จาก $342.12",
+        "52W range $88.60-$487.91 ✓ ทั้ง 2 แหล่งตรงกัน — ราคาปัจจุบันต่ำกว่า high 34% แล้ว (correction เริ่มแล้วก่อนงบ)",
+        "Earnings 07-28/2026 4:30pm ET ✓ ยืนยันจาก StockTitan/Intellectia — consensus คาด EPS +258% YoY, revenue +86% YoY (priced-for-perfection)",
+        "Insider selling ต่อเนื่อง: CEO Gregory Smith ขาย 4,000 หุ้น (07-15), Director Marilyn Matz ขาย 1,200 หุ้น (07-15), รวม 3 เดือน sold $6.7M / ซื้อ $0 (Motley Fool/MarketBeat) — ภายใต้ 10b5-1 plan แต่ zero-buy pattern ยังเป็น soft red flag"
       ],
       "concerns": [
-        "❗ Mandatory CAUTION trigger: Charlie FV gap (40%) is double the 20% mandatory threshold — per §2.5 this forces at least CAUTION regardless of how sound the directional narrative is",
-        "Tier: TER's own PE has swung 23.11x (Q1'25) → 54.19x (Q1'26) → 56-64x (index peak) → ~35-47x now — a >2x swing inside 18 months, tightly tracking the broader semi-capex/AI-test cycle. This fits the §4.5 🔁 Cyclical check (PE/earnings swing >2x peak-trough, margin volatility tied to a capex cycle) better than 🚀 Pre-Inevitable — recommend downgrading tier, which would also shrink the position-size ceiling for this BUY",
-        "Timing: this is a live, still-falling knife (-3.15% today, 6 of 8 sessions down) with Q2 earnings 12 days out (07-28) and guidance explicitly unconfirmed per Warren's own thesis_risk — the mechanical 4-gate BUY pass is real but rests on a price that has not shown signs of stabilizing yet"
+        "Independent normalized FV ~$200 = feps consensus $6.94 (ไม่ normalize สำหรับ cycle) × conservative multiple 29x (blend 10yr avg PE 27.28x + 5yr avg PE 30.73x จาก fullratio/macrotrends) — ต่ำกว่าราคาปัจจุบัน $322.30 ถึง ~61% แม้ใช้ peak-consensus EPS ยังไม่ normalize ลงเป็น mid-cycle จริง (ซึ่งจะทำให้ FV ต่ำกว่านี้อีก) → ยืนยันชัดว่านี่คือ late-cycle valuation profile ตามกฎ Cyclical Peak EPS Bias",
+        "Current fwd P/E 46.45x และ trailing P/E 59.65-91.99x (ต่างแหล่งรายงานต่างกัน แต่ทั้งคู่สูงกว่า 10yr avg 27.28x มาก) — ไม่มี multiple compression ใดที่ทำให้ราคานี้สมเหตุสมผลสำหรับ tier Cyclical",
+        "Earnings 07-28 เป็น binary catalyst ที่ expectations สูงมาก (+258% EPS YoY) — ถ้าพลาดแม้เล็กน้อย downside risk สูงกว่าฝั่ง upside ที่ราคานี้"
       ],
       "summary": "",
-      "review_date": "2026-07-16"
+      "review_date": "2026-07-17"
     },
     "mark_easy": {
       "one_liner": "หนึ่งในสองผู้ผลิตเครื่องทดสอบชิป (ATE) รายใหญ่ของโลก — ธุรกิจยังแข็งแรง แต่หลังทบทวนใหม่จัดเป็นหุ้น Cyclical และราคายังแพงกว่ามูลค่าปกติมาก จึง 'รอ' ก่อน",
