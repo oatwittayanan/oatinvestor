@@ -24,17 +24,17 @@
       "EU antitrust investigation Teams bundling ยังดำเนินอยู่",
       "CapEx AI infrastructure กด FCF ระยะสั้น 2026-2027"
     ],
-    "action": "hold",
-    "actionLabel": "Hold",
+    "action": "buy",
+    "actionLabel": "Buy",
     "conviction": 3,
-    "waf": 8.6,
+    "waf": 8.7,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 393.82,
-    "fv": 459,
-    "mos": 14.2,
-    "fpe": 20.58,
-    "peg": 1.85,
+    "price": 395.5,
+    "fv": 519,
+    "mos": 23.8,
+    "fpe": 20.4,
+    "peg": 1.07,
     "scores": {
       "bq": [
         9.5,
@@ -52,17 +52,17 @@
         81
       ],
       "ra": [
-        8.0,
+        8.5,
         "green",
-        80
+        85
       ]
     },
-    "idea": "Enterprise AI Stack — Azure + Copilot + RPO $627B; layoff 4,800 ตำแหน่ง + Cybersecurity unit reorg (07-16) อ่านเป็นวินัยต้นทุนสไตล์ Fisher ไม่ใช่ demand อ่อน",
-    "updated": "2026-07-23",
+    "idea": "Layoff (4,800 positions) coverage continues + new Cybersecurity unit reorg (07-16, AI-threat response + monetizable products) reinforces existing Fisher-discipline-positive thesis. No FV change. Price up +2.7% narrows MoS slightly but still clears all 4 gates comfortably.",
+    "updated": "2026-07-16",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-23",
+      "updated": "2026-07-16",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Microsoft monetizes enterprise AI through Azure (+29% YoY, capacity-constrained), GitHub Copilot (15M+ paid seats), and M365 Copilot ($30/seat across 300M+ enterprise users) — the most deeply embedded enterprise software ecosystem globally.",
@@ -146,155 +146,6 @@
       "MoS แคบลงจาก 25.8% เหลือ 23.8% รอบนี้จากราคาขึ้น +2.7% — ยังกว้างสุดในกลุ่มแต่ margin เริ่มแคบลง"
     ]
   },
-  "NVDA": {
-    "symbol": "NVDA",
-    "display": "NVDA",
-    "category": "ai_semiconductor",
-    "name": "NVIDIA Corporation",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "AI Infrastructure"
-    ],
-    "bull": [
-      "CUDA ecosystem 7.5M developers = switching cost ที่แทบเป็นไปไม่ได้จะ migrate",
-      "Blackwell architecture รัน majority ของ Data Center revenue แล้ว",
-      "FY2026 Revenue $215.9B +65% YoY, FCF $96.6B = cash machine",
-      "Q1 FY2027 guidance $78B = growth ยังไม่หยุด",
-      "Full-stack AI factory: GPU + Networking + Software (CUDA/NIM)"
-    ],
-    "risk": [
-      "Valuation สูง — ต้องการ execution perfect หลายปีต่อเนื่อง",
-      "US export restrictions ต่อ China H20 chips กระทบ revenue ทันที",
-      "Customer concentration: 2 ลูกค้าแรก = 36% ของ revenue ทั้งหมด",
-      "AMD MI455X competition ใน memory bandwidth — ROCm กำลังตามทัน",
-      "Antitrust สอบสวนจากหลายประเทศเรื่อง GPU supply allocation"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 8.4,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 202.81,
-    "fv": 292,
-    "mos": 30.5,
-    "fpe": 16.69,
-    "peg": 0.89,
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        9.5,
-        "green",
-        95
-      ],
-      "va": [
-        7.8,
-        "amber",
-        78
-      ],
-      "ra": [
-        6.0,
-        "orange",
-        60
-      ]
-    },
-    "idea": "AI Factory Platform — CUDA monopoly + Blackwell/Vera Rubin roadmap + $200B CPU TAM ใหม่ (bet เดิม) — FV recalibrated Paper #3.1: แก้ EPS ผิดปี fiscal (FY27 $9.34 → forward-year FY28 consensus $12.15) ยก FV $233→$292, MoS ~30% ที่ราคาปัจจุบัน (เคสกลับ: FV_TOO_LOW ไม่ใช่ TOO_HIGH)",
-    "updated": "2026-07-23",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-23",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
-      "why": "Consensus is treating the July 2026 AI/semiconductor selloff (SK Hynix HBM deceleration reports, Fed hawkish under new Chair Kevin Warsh, AI-capex-ROI doubt) as a sector-wide re-rating that should hit NVDA equally; Warren sees NVDA's Asia buyer-list tightening as company-specific compliance friction on an already-priced risk category, not demand destruction — Q1 FY27 fundamentals (Vera CPU $20B revenue visibility, $145B total supply, $25B bond 3.4x oversubscribed) are unchanged and MoS at $211.80 is still 31%+; market is repricing the AI-semi basket without differentiating NVDA's contracted backlog visibility from names with genuine demand questions (SK Hynix).",
-      "risk": "Vera Rubin ramp slips >1 quarter, OR hyperscaler CapEx cuts >30%, OR a genuine competitive GPU ships at scale (Musk/xAI claim still unproven)."
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price cross-check Nasdaq+CNBC (0% drift): $212.50 vs Warren's $211.80 — 0.33% variance, clean match",
-        "Consensus EPS growth for the forward window independently estimated ~20-24%/yr (SimplyWall.st: 22.3% earnings/24.9% revenue per annum, also cited 23.5%/annum elsewhere) — Warren's implied growth term (back-calculated: ER 26.5% minus convergence 7.78% [=(FV/price)^(1/5)-1, formula cross-verified against MU/META/MSFT/NFLX where it matches Warren's own disclosed convergence numbers exactly] ≈ 18.7%) sits within ~4-5pp of independent figures — close, not the main issue here",
-        "Tier correction (Inevitable→Pre-Inevitable) is well-justified and independently verified — Jensen Huang is founder-CEO with no announced successor, so the 'survived a CEO transition' Inevitable criterion genuinely doesn't apply yet; correct downgrade",
-        "Export control news confirmed accurate and current: NVIDIA has more than halved its authorized Asia customer whitelist as of 07-14 amid new China export rules targeting Blackwell-class chips — matches Warren's thesis_risk exactly, no new development beyond what's already flagged"
-      ],
-      "concerns": [
-        "DATA DISCREPANCY: Warren's card states forward_pe: 13.8, but TWO independent sources both show forward PE ≈ 21.3x (stockanalysis.com: 21.32; back-calculated from price $211.8 ÷ consensus next-FY EPS ~$9.9-9.94: 21.3-22.7x) — a >50% variance, well outside any reasonable tolerance. Warren's reported PEG of 0.74 (=13.8/growth) is therefore also understated; using the correct ~21.3x forward PE, PEG is closer to ~1.0-1.15 (likely still under the 1.5 cap, so probably doesn't flip STARTER/BUY eligibility, but the reported number is wrong and should be corrected)",
-        "MANDATORY FV CHECK (§2.5): Using the corrected forward PE and FY+1-from-now (FY2028) consensus EPS (~$11.92, corroborated by both an independent single-analyst FY2028 estimate and by growing the NTM ~$9.9 figure at ~20%), Charlie FV ≈ $254 vs Warren's FV base $308 → gap 21.3%, just over the 20% mandatory threshold — driven by the same forward-PE data issue above, not a separate finding"
-      ],
-      "summary": "",
-      "review_date": "2026-07-16"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ที่ทั้งโลกต้องพึ่ง — ราคา $208 ยังถูกกว่า FV $308 ราว 32%",
-      "what": "NVIDIA ขายทั้งระบบ AI ครบวงจร (ชิป GPU + Vera CPU + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ datacenter ทั่วโลก รายได้ 92% มาจาก Data Center",
-      "why_invest": [
-        "Q1 FY27 รายได้ $81.6B +85% YoY; Q2 guide $91B = การเติบโตยังไม่หยุด",
-        "CUDA ecosystem 7.5M นักพัฒนา = ผูกลูกค้าจนย้ายแทบไม่ได้",
-        "Vera Rubin (H2 2026) = 35x throughput vs Blackwell — catalyst ใหม่ยังมาไม่ถึง",
-        "Vera CPU $200B TAM ใหม่ทั้งหมด — standalone $20B visibility ปีนี้แล้ว"
-      ],
-      "watch_out": [
-        "Supply commitment $119B non-cancellable — ถ้า demand ชะลอกระทบหนัก",
-        "China DC revenue หายไปแล้วจาก export controls",
-        "Vera Rubin delay 2 เดือน จาก thermal ปัญหา — ยังต้องติดตาม"
-      ],
-      "bottom_line": "หุ้นคุณภาพดีที่สุดใน AI และ Fwd P/E แค่ 16.5x — ราคา $208 เป็น entry ดีสุดในรอบปีนี้"
-    },
-    "mark_full": {
-      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company รายได้หลักจาก Data Center (GPU Blackwell + Vera Rubin + networking Spectrum-X) คิดเป็น 92% ส่วน Gaming/Edge 8% กำไรขั้นต้น 75% สะท้อน CUDA premium ที่ซ่อนอยู่ในราคา GPU",
-      "tam": "AI Factory infrastructure คาด $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU → CPU ($200B TAM) + Networking + Physical AI ($9B/ปี) + Sovereign AI 40 ประเทศ",
-      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Libraries (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% vs NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง",
-      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 full year Revenue $215.9B, FCF $96.6B",
-      "key_points": [
-        "Vera Rubin (H2 2026) = 35x inference throughput vs Blackwell = catalyst ใหม่",
-        "Vera CPU $200B TAM standalone — เริ่มมี $20B visibility ปีนี้",
-        "Dividend +25x ($0.01→$0.25) + $80B buyback ใหม่ = capital allocation เชิงรุก",
-        "Supply commitment $145B = Jensen มั่นใจ demand ยาว 2+ ปี"
-      ]
-    },
-    "warren_easy": [
-      "NVIDIA คือแกนกลางของ AI ทั้งระบบ — CUDA ecosystem 7.5M devs + full-stack GPU+CPU+Networking+Software; tier ถูกแก้เป็น Pre-Inevitable (Jensen ยังไม่มีผู้สืบทอด)",
-      "MoS 31.2% ผ่าน gate สบาย — แต่ Charlie พบว่า forward P/E ที่ใช้คำนวณ (13.8x) ผิดจากตัวเลขจริง (~21.3x) ต้องแก้ไขรอบหน้า",
-      "BUY (holding เดิม = ADD signal) — thesis หลักยังแข็ง เป็น data-input error ที่ต้องแก้ ไม่ใช่ thesis พัง"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยันราคาตรงเป๊ะ ($212.50≈$211.80); tier correction (Inevitable→Pre-Inevitable) ถูกต้อง — Jensen founder-CEO ไม่มีผู้สืบทอด; export control news ตรงกับ thesis เดิมไม่มีอะไรใหม่ที่แย่กว่า",
-        "🚩 พบ DATA DISCREPANCY: การ์ด Warren ระบุ forward P/E 13.8x แต่ 2 แหล่งอิสระ (stockanalysis.com 21.32x + back-calculate จาก consensus EPS) ชี้ ~21.3-22.7x ต่างกันเกิน 50% — ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ที่ถูกต้องควรอยู่ราว 1.0-1.15 ยังผ่านเพดาน 1.5); MANDATORY FV CHECK: ด้วย PE ที่แก้ไข Charlie FV ≈$254 vs Warren $308 → ห่างกัน 21.3% เกิน threshold บังคับ 20%",
-        "CAUTION — thesis หลักยังแข็งแรง (5/5 Crystallization Signals ผ่าน) นี่คือ data input ผิดพลาดที่ต้องแก้ในรอบหน้า ไม่ใช่ปัญหาเชิง fundamental"
-      ],
-      "review_date": "2026-07-16"
-    },
-    "idea_th": "BUY (ตามการ์ด Warren) — MoS 31.2% ผ่าน gate สบาย แต่ Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) คลาดเคลื่อนจากตัวเลขจริง (~21.3x) เกิน 50% ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ควรอยู่ราว 1.0-1.15) — ยังผ่านเพดาน 1.5 แต่ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren $308) ธุรกิจ/thesis หลักยังแข็งแรง เป็น data-input error ไม่ใช่ thesis พัง",
-    "story_gate_th": {
-      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — GPU Blackwell + Vera Rubin (H2 2026) + Vera CPU ($200B TAM ใหม่) + Networking + CUDA ecosystem 7.5M นักพัฒนา",
-      "why": "MoS 31.2% ผ่าน gate สบาย, tier ถูกแก้เป็น Pre-Inevitable (จาก Inevitable) อย่างถูกต้อง — Jensen ยังเป็น founder-CEO ไม่มีผู้สืบทอดที่ประกาศ; export control (halved Asia buyer list 07-14) ยืนยันตรงกับ thesis เดิม ไม่ใช่ข่าวใหม่",
-      "risk": "Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) ผิดจากตัวเลขจริง (~21.3x) เกิน 50% — ทำให้ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren FV $308); Musk/xAI competitive chip claim ยังไม่มี product จริง; export curbs ทวีความเข้ม; customer concentration"
-    },
-    "bull_th": [
-      "MoS 31.2%, WAF 8.8 (คะแนนคุณภาพสูงสุดในกลุ่ม) ทุก gate ผ่านสบายแม้จะแก้ PE",
-      "Tier correction (Inevitable→Pre-Inevitable) ยืนยันถูกต้องโดย Charlie — Jensen เป็น founder-CEO ไม่มีผู้สืบทอดประกาศ ไม่ใช่ downgrade คุณภาพ",
-      "Consensus growth ที่ Warren implied (~18.7%) ใกล้เคียงตัวเลขอิสระ (~20-24%) ห่างกันแค่ 4-5pp — ไม่ใช่ปัญหาหลัก",
-      "CUDA ecosystem 7.5M developers + full-stack platform ยังเป็น moat หลักที่ไม่เปลี่ยน",
-      "Export control news ยืนยันตรงกับสิ่งที่ Warren ระบุไว้แล้ว — ไม่มีอะไรใหม่ที่แย่กว่าเดิม"
-    ],
-    "risk_th": [
-      "Charlie พบ forward P/E ที่การ์ดใช้ผิดพลาด (13.8x บนการ์ด vs ~21.3x จริง จาก 2 แหล่งอิสระ) เกิน 50% — ต้องแก้ไขในรอบหน้า แม้ PEG ที่ถูกต้อง (~1.0-1.15) ยังผ่านเพดาน 1.5",
-      "Mandatory FV-gap 21.3% (Charlie FV $254 vs Warren FV $308) เกิน threshold 20% — ผลจาก forward PE ที่ผิดพลาดข้างต้นโดยตรง",
-      "Export curbs ทวีความเข้ม — halved Asia buyer whitelist (07-14)",
-      "Customer concentration — 2 ลูกค้าใหญ่ = 36% ของ Data Center revenue",
-      "Musk/xAI competitive chip claim ยังไม่มี product จริง แต่ต้องติดตาม"
-    ]
-  },
   "TSM": {
     "symbol": "TSM",
     "display": "TSMC",
@@ -320,17 +171,17 @@
       "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
       "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
     ],
-    "action": "hold",
-    "actionLabel": "Hold",
+    "action": "buy",
+    "actionLabel": "Buy",
     "conviction": 3,
-    "waf": 8.4,
+    "waf": 8.66,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
     "price": 398.37,
-    "fv": 412,
-    "mos": 3.3,
-    "fpe": 19.33,
-    "peg": 0.74,
+    "fv": 485,
+    "mos": 17.9,
+    "fpe": 19.0,
+    "peg": 0.7,
     "scores": {
       "bq": [
         9.5,
@@ -338,27 +189,27 @@
         95
       ],
       "gp": [
-        9.5,
+        9.7,
         "green",
-        95
+        97
       ],
       "va": [
-        7.5,
-        "amber",
-        75
+        8.0,
+        "green",
+        80
       ],
       "ra": [
-        5.5,
+        6.0,
         "orange",
-        55
+        60
       ]
     },
-    "idea": "AI Foundry Monopoly — Q2 beat จริง (revenue record $40.2B +36% YoY) + FY26 guide ยกจาก >30%→>40% resolve earnings-pending blocker เดิม MoS ข้าม gate 15% พอดี (thin margin) — เติมไม้ 2 ต่อจาก STARTER เดิม",
-    "updated": "2026-07-23",
+    "idea": "07-17 '77% earnings beat' headline restates the confirmed Q2 beat + >40% FY26 guide already captured 07-16 (no new info). -3.2% price drop ($411.63→$398.37) widens MoS 15.1%→17.9% — BUY (existing holding = ADD) now clears gate more comfortably. PEG 0.70, ER 31.0%/yr.",
+    "updated": "2026-07-18",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-23",
+      "updated": "2026-07-18",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
@@ -507,7 +358,7 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-16",
+      "updated": "2026-07-18",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "ASML is the sole global producer of EUV lithography systems—the only machines capable of patterning leading-edge transistors—beating competitors via a multi-decade ecosystem moat (Zeiss optics, TRUMPF light sources) that cannot be replicated.",
@@ -554,7 +405,7 @@
       "key_points": [
         "China system sales ลดจาก 36%→19% ใน 1 ไตรมาส (export control กระทบเร็ว)",
         "top 2 ลูกค้า (TSMC/Samsung) = 38% ของรายได้ปี 2025",
-        "งบ Q2 2026 ออกจริงแล้ว (07-16): ดีกว่าคาดทุกตัวเลข พร้อมปรับเป้าปีขึ้นเป็นรอบ 2 ของปี ",
+        "งบ Q2 2026 ออกจริงแล้ว (07-16): ดีกว่าคาดทุกตัวเลข พร้อมปรับเป้าปีขึ้นเป็นรอบ 2 ของปี — นักวิเคราะห์หลายสำนักปรับเป้าราคาขึ้นทันทีเป็น $2,200-2,623",
         "Intel นำ High-NA EUV ไปใช้ใน Core Ultra 3 รุ่นใหม่ ยืนยันการนำเทคโนโลยีเข้าสู่ mainstream"
       ]
     },
@@ -590,6 +441,155 @@
       "MoS 16.8% ผ่านเกณฑ์บนราคา แต่ endpoint FV ยังไม่ verify แบบ bottom-up",
       "export control ไปจีน + MATCH Act เสี่ยงตัดรายได้ 19-20%",
       "ลูกค้าหลัก TSMC + Samsung กระจุกตัวสูงในรายได้"
+    ]
+  },
+  "NVDA": {
+    "symbol": "NVDA",
+    "display": "NVDA",
+    "category": "ai_semiconductor",
+    "name": "NVIDIA Corporation",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "AI Infrastructure"
+    ],
+    "bull": [
+      "CUDA ecosystem 7.5M developers = switching cost ที่แทบเป็นไปไม่ได้จะ migrate",
+      "Blackwell architecture รัน majority ของ Data Center revenue แล้ว",
+      "FY2026 Revenue $215.9B +65% YoY, FCF $96.6B = cash machine",
+      "Q1 FY2027 guidance $78B = growth ยังไม่หยุด",
+      "Full-stack AI factory: GPU + Networking + Software (CUDA/NIM)"
+    ],
+    "risk": [
+      "Valuation สูง — ต้องการ execution perfect หลายปีต่อเนื่อง",
+      "US export restrictions ต่อ China H20 chips กระทบ revenue ทันที",
+      "Customer concentration: 2 ลูกค้าแรก = 36% ของ revenue ทั้งหมด",
+      "AMD MI455X competition ใน memory bandwidth — ROCm กำลังตามทัน",
+      "Antitrust สอบสวนจากหลายประเทศเรื่อง GPU supply allocation"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 3,
+    "waf": 8.23,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 205.96,
+    "fv": 233,
+    "mos": 11.6,
+    "fpe": 22.0,
+    "peg": 0.8,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "AI Factory Platform — CUDA monopoly + Blackwell/Vera Rubin + $200B CPU TAM. FV แก้จาก data error (EPS mislabel FY29→FY27): FV $308→$233, MoS 11.6% ต่ำกว่า gate → HOLD.",
+    "updated": "2026-07-17",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-17",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
+      "why": "Consensus is treating the July 2026 AI/semiconductor selloff (SK Hynix HBM deceleration reports, Fed hawkish under new Chair Kevin Warsh, AI-capex-ROI doubt) as a sector-wide re-rating that should hit NVDA equally; Warren sees NVDA's Asia buyer-list tightening as company-specific compliance friction on an already-priced risk category, not demand destruction — Q1 FY27 fundamentals (Vera CPU $20B revenue visibility, $145B total supply, $25B bond 3.4x oversubscribed) are unchanged and MoS at $211.80 is still 31%+; market is repricing the AI-semi basket without differentiating NVDA's contracted backlog visibility from names with genuine demand questions (SK Hynix).",
+      "risk": "Vera Rubin ramp slips >1 quarter, OR hyperscaler CapEx cuts >30%, OR a genuine competitive GPU ships at scale (Musk/xAI claim still unproven)."
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price cross-check Nasdaq+CNBC (0% drift): $212.50 vs Warren's $211.80 — 0.33% variance, clean match",
+        "Consensus EPS growth for the forward window independently estimated ~20-24%/yr (SimplyWall.st: 22.3% earnings/24.9% revenue per annum, also cited 23.5%/annum elsewhere) — Warren's implied growth term (back-calculated: ER 26.5% minus convergence 7.78% [=(FV/price)^(1/5)-1, formula cross-verified against MU/META/MSFT/NFLX where it matches Warren's own disclosed convergence numbers exactly] ≈ 18.7%) sits within ~4-5pp of independent figures — close, not the main issue here",
+        "Tier correction (Inevitable→Pre-Inevitable) is well-justified and independently verified — Jensen Huang is founder-CEO with no announced successor, so the 'survived a CEO transition' Inevitable criterion genuinely doesn't apply yet; correct downgrade",
+        "Export control news confirmed accurate and current: NVIDIA has more than halved its authorized Asia customer whitelist as of 07-14 amid new China export rules targeting Blackwell-class chips — matches Warren's thesis_risk exactly, no new development beyond what's already flagged"
+      ],
+      "concerns": [
+        "DATA DISCREPANCY: Warren's card states forward_pe: 13.8, but TWO independent sources both show forward PE ≈ 21.3x (stockanalysis.com: 21.32; back-calculated from price $211.8 ÷ consensus next-FY EPS ~$9.9-9.94: 21.3-22.7x) — a >50% variance, well outside any reasonable tolerance. Warren's reported PEG of 0.74 (=13.8/growth) is therefore also understated; using the correct ~21.3x forward PE, PEG is closer to ~1.0-1.15 (likely still under the 1.5 cap, so probably doesn't flip STARTER/BUY eligibility, but the reported number is wrong and should be corrected)",
+        "MANDATORY FV CHECK (§2.5): Using the corrected forward PE and FY+1-from-now (FY2028) consensus EPS (~$11.92, corroborated by both an independent single-analyst FY2028 estimate and by growing the NTM ~$9.9 figure at ~20%), Charlie FV ≈ $254 vs Warren's FV base $308 → gap 21.3%, just over the 20% mandatory threshold — driven by the same forward-PE data issue above, not a separate finding"
+      ],
+      "summary": "",
+      "review_date": "2026-07-16"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ที่ทั้งโลกต้องพึ่ง — ราคา $208 ยังถูกกว่า FV $308 ราว 32%",
+      "what": "NVIDIA ขายทั้งระบบ AI ครบวงจร (ชิป GPU + Vera CPU + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ datacenter ทั่วโลก รายได้ 92% มาจาก Data Center",
+      "why_invest": [
+        "Q1 FY27 รายได้ $81.6B +85% YoY; Q2 guide $91B = การเติบโตยังไม่หยุด",
+        "CUDA ecosystem 7.5M นักพัฒนา = ผูกลูกค้าจนย้ายแทบไม่ได้",
+        "Vera Rubin (H2 2026) = 35x throughput vs Blackwell — catalyst ใหม่ยังมาไม่ถึง",
+        "Vera CPU $200B TAM ใหม่ทั้งหมด — standalone $20B visibility ปีนี้แล้ว"
+      ],
+      "watch_out": [
+        "Supply commitment $119B non-cancellable — ถ้า demand ชะลอกระทบหนัก",
+        "China DC revenue หายไปแล้วจาก export controls",
+        "Vera Rubin delay 2 เดือน จาก thermal ปัญหา — ยังต้องติดตาม"
+      ],
+      "bottom_line": "หุ้นคุณภาพดีที่สุดใน AI และ Fwd P/E แค่ 16.5x — ราคา $208 เป็น entry ดีสุดในรอบปีนี้"
+    },
+    "mark_full": {
+      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company รายได้หลักจาก Data Center (GPU Blackwell + Vera Rubin + networking Spectrum-X) คิดเป็น 92% ส่วน Gaming/Edge 8% กำไรขั้นต้น 75% สะท้อน CUDA premium ที่ซ่อนอยู่ในราคา GPU",
+      "tam": "AI Factory infrastructure คาด $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU → CPU ($200B TAM) + Networking + Physical AI ($9B/ปี) + Sovereign AI 40 ประเทศ",
+      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Libraries (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% vs NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง",
+      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 full year Revenue $215.9B, FCF $96.6B",
+      "key_points": [
+        "Vera Rubin (H2 2026) = 35x inference throughput vs Blackwell = catalyst ใหม่",
+        "Vera CPU $200B TAM standalone — เริ่มมี $20B visibility ปีนี้",
+        "Dividend +25x ($0.01→$0.25) + $80B buyback ใหม่ = capital allocation เชิงรุก",
+        "Supply commitment $145B = Jensen มั่นใจ demand ยาว 2+ ปี"
+      ]
+    },
+    "warren_easy": [
+      "NVIDIA คือแกนกลางของ AI ทั้งระบบ — CUDA ecosystem 7.5M devs + full-stack GPU+CPU+Networking+Software; tier ถูกแก้เป็น Pre-Inevitable (Jensen ยังไม่มีผู้สืบทอด)",
+      "MoS 31.2% ผ่าน gate สบาย — แต่ Charlie พบว่า forward P/E ที่ใช้คำนวณ (13.8x) ผิดจากตัวเลขจริง (~21.3x) ต้องแก้ไขรอบหน้า",
+      "BUY (holding เดิม = ADD signal) — thesis หลักยังแข็ง เป็น data-input error ที่ต้องแก้ ไม่ใช่ thesis พัง"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันราคาตรงเป๊ะ ($212.50≈$211.80); tier correction (Inevitable→Pre-Inevitable) ถูกต้อง — Jensen founder-CEO ไม่มีผู้สืบทอด; export control news ตรงกับ thesis เดิมไม่มีอะไรใหม่ที่แย่กว่า",
+        "🚩 พบ DATA DISCREPANCY: การ์ด Warren ระบุ forward P/E 13.8x แต่ 2 แหล่งอิสระ (stockanalysis.com 21.32x + back-calculate จาก consensus EPS) ชี้ ~21.3-22.7x ต่างกันเกิน 50% — ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ที่ถูกต้องควรอยู่ราว 1.0-1.15 ยังผ่านเพดาน 1.5); MANDATORY FV CHECK: ด้วย PE ที่แก้ไข Charlie FV ≈$254 vs Warren $308 → ห่างกัน 21.3% เกิน threshold บังคับ 20%",
+        "CAUTION — thesis หลักยังแข็งแรง (5/5 Crystallization Signals ผ่าน) นี่คือ data input ผิดพลาดที่ต้องแก้ในรอบหน้า ไม่ใช่ปัญหาเชิง fundamental"
+      ],
+      "review_date": "2026-07-16"
+    },
+    "idea_th": "BUY (ตามการ์ด Warren) — MoS 31.2% ผ่าน gate สบาย แต่ Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) คลาดเคลื่อนจากตัวเลขจริง (~21.3x) เกิน 50% ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ควรอยู่ราว 1.0-1.15) — ยังผ่านเพดาน 1.5 แต่ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren $308) ธุรกิจ/thesis หลักยังแข็งแรง เป็น data-input error ไม่ใช่ thesis พัง",
+    "story_gate_th": {
+      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — GPU Blackwell + Vera Rubin (H2 2026) + Vera CPU ($200B TAM ใหม่) + Networking + CUDA ecosystem 7.5M นักพัฒนา",
+      "why": "MoS 31.2% ผ่าน gate สบาย, tier ถูกแก้เป็น Pre-Inevitable (จาก Inevitable) อย่างถูกต้อง — Jensen ยังเป็น founder-CEO ไม่มีผู้สืบทอดที่ประกาศ; export control (halved Asia buyer list 07-14) ยืนยันตรงกับ thesis เดิม ไม่ใช่ข่าวใหม่",
+      "risk": "Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) ผิดจากตัวเลขจริง (~21.3x) เกิน 50% — ทำให้ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren FV $308); Musk/xAI competitive chip claim ยังไม่มี product จริง; export curbs ทวีความเข้ม; customer concentration"
+    },
+    "bull_th": [
+      "MoS 31.2%, WAF 8.8 (คะแนนคุณภาพสูงสุดในกลุ่ม) ทุก gate ผ่านสบายแม้จะแก้ PE",
+      "Tier correction (Inevitable→Pre-Inevitable) ยืนยันถูกต้องโดย Charlie — Jensen เป็น founder-CEO ไม่มีผู้สืบทอดประกาศ ไม่ใช่ downgrade คุณภาพ",
+      "Consensus growth ที่ Warren implied (~18.7%) ใกล้เคียงตัวเลขอิสระ (~20-24%) ห่างกันแค่ 4-5pp — ไม่ใช่ปัญหาหลัก",
+      "CUDA ecosystem 7.5M developers + full-stack platform ยังเป็น moat หลักที่ไม่เปลี่ยน",
+      "Export control news ยืนยันตรงกับสิ่งที่ Warren ระบุไว้แล้ว — ไม่มีอะไรใหม่ที่แย่กว่าเดิม"
+    ],
+    "risk_th": [
+      "Charlie พบ forward P/E ที่การ์ดใช้ผิดพลาด (13.8x บนการ์ด vs ~21.3x จริง จาก 2 แหล่งอิสระ) เกิน 50% — ต้องแก้ไขในรอบหน้า แม้ PEG ที่ถูกต้อง (~1.0-1.15) ยังผ่านเพดาน 1.5",
+      "Mandatory FV-gap 21.3% (Charlie FV $254 vs Warren FV $308) เกิน threshold 20% — ผลจาก forward PE ที่ผิดพลาดข้างต้นโดยตรง",
+      "Export curbs ทวีความเข้ม — halved Asia buyer whitelist (07-14)",
+      "Customer concentration — 2 ลูกค้าใหญ่ = 36% ของ Data Center revenue",
+      "Musk/xAI competitive chip claim ยังไม่มี product จริง แต่ต้องติดตาม"
     ]
   },
   "AVGO": {
@@ -912,17 +912,17 @@
       "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
       "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
     ],
-    "action": "hold",
-    "actionLabel": "Hold",
+    "action": "buy",
+    "actionLabel": "Buy",
     "conviction": 3,
-    "waf": 7.9,
+    "waf": 8.05,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 247.23,
-    "fv": 287,
-    "mos": 13.9,
-    "fpe": 24.95,
-    "peg": 1.61,
+    "price": 247.49,
+    "fv": 315,
+    "mos": 21.4,
+    "fpe": 26.5,
+    "peg": 1.26,
     "scores": {
       "bq": [
         9.0,
@@ -935,9 +935,9 @@
         85
       ],
       "va": [
-        7.2,
+        7.3,
         "amber",
-        72
+        73
       ],
       "ra": [
         6.5,
@@ -945,12 +945,12 @@
         65
       ]
     },
-    "idea": "Cloud + Retail + Ads Trifecta — AWS +36% fastest growth ใน 15 ไตรมาส + Trainium/Anthropic AI compute hedge",
-    "updated": "2026-07-23",
+    "idea": "All 4 gates pass cleanly (MoS 21.4%, PEG 1.26, ER 25.9%, WAF 8.05 HIGH) — no override needed anymore. Existing holding ($20 total invested) — ADD signal, not fresh Opportunity Cost Gate case.",
+    "updated": "2026-07-15",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-23",
+      "updated": "2026-07-15",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
@@ -1244,7 +1244,7 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-15",
+      "updated": "2026-07-18",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "Meta monetizes 3.56B daily active people through AI-enhanced advertising (impressions +19% + price +12% simultaneously), creating an irreplaceable network effect flywheel no competitor can replicate at scale.",
@@ -1530,7 +1530,7 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-15",
+      "updated": "2026-07-18",
       "tier": "🌱 Fast Grower",
       "tier_slug": "fast-grower",
       "what": "Coherent เป็นผู้ผลิต 800G/1.6T transceiver และ EML/VCSEL laser ชั้นนำที่ใช้ใน AI datacenter interconnect — ลูกค้าหลักคือ hyperscalers; Vertical integration (ผลิต InP crystal/laser chip เอง) ทำให้ต้นทุนต่ำและ margin สูงกว่า competitors; Silicon Carbide (SiC) สำหรับ EV เป็น diversification ที่ลด cyclicality",
@@ -1614,6 +1614,157 @@
       "hyperscaler concentration + CapEx หนักกด FCF ให้ติดลบ",
       "Q4 FY2026 (~ส.ค.) ต้องยืนยัน selloff เป็น profit-taking ไม่ใช่ demand air-pocket",
       "หนี้ ~$3.2B + BIS/Huawei inquiry ยังค้าง"
+    ]
+  },
+  "NFLX": {
+    "symbol": "NFLX",
+    "display": "NFLX",
+    "category": "entertainment",
+    "name": "Netflix Inc.",
+    "sector": "Consumer",
+    "sectorSlug": "consumer",
+    "chips": [
+      "Consumer",
+      "Streaming Media"
+    ],
+    "bull": [
+      "Password sharing crackdown สำเร็จ = 300M+ paid subscribers เติบโตต่อ",
+      "Ads-supported tier growing fast = pricing power + margin expansion",
+      "Live Sports (NFL Christmas, WWE Raw) = retention + acquisition",
+      "Content flywheel = cost per hour ลดทุกปีเมื่อ scale ใหญ่ขึ้น",
+      "Games expansion ฟรีสำหรับ subscribers = engagement เพิ่ม"
+    ],
+    "risk": [
+      "MoS 4.5% ต่ำมาก — ราคา $1,080 แทบไม่มี safety net",
+      "Content cost inflation ถ้า Hollywood guild ขอเพิ่มค่าจ้าง",
+      "Disney+/Prime/Max competition ยังไม่ยอมแพ้",
+      "Ad revenue cyclical ถ้า macro slowdown",
+      "Subscriber growth ceiling ในตลาด developed markets"
+    ],
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 3,
+    "waf": 7.4,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 67.64,
+    "fv": 98,
+    "mos": 31.0,
+    "fpe": 19.4,
+    "peg": 1.29,
+    "scores": {
+      "bq": [
+        8.2,
+        "green",
+        82
+      ],
+      "gp": [
+        6.8,
+        "amber",
+        68
+      ],
+      "va": [
+        7.8,
+        "amber",
+        78
+      ],
+      "ra": [
+        6.5,
+        "amber",
+        65
+      ]
+    },
+    "idea": "Content + Algorithm Moat + Ad Tier Scale — Q2 ยืนยัน EPS beat/margin in-line; ราคาร่วง post-earnings ทำ MoS ถ่าง. FV แก้ formula error $121.9→$98 (28x×$3.49).",
+    "updated": "2026-07-17",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-15",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Netflix มี Content Library + Algorithm Moat — ทุ่มลงทุน $17-18B/ปีสร้าง Original Content ที่ competitors ไม่สามารถ replicate ได้ทันที; 325M+ paid subscribers ทั่วโลก = data flywheel; Password sharing crackdown ปลดล็อก growth ในตลาด penetration ต่ำ; Ad-supported tier ขยาย TAM",
+      "why": "Consensus แบ่งเป็น 2 ฝั่งก่อน Q2 earnings (07-16 พรุ่งนี้): \"engagement เสียส่วนแบ่งให้ YouTube\" (ราคาไหลลงใกล้ 52-week low $70.86) vs \"ad monetization กำลังเร่ง\" (ad revenue จะโต 2x เป็น ~$3B ปี 2569); ราคาตอนนี้ $73.53 ใกล้จุดต่ำสุดรอบปี ก่อนผลประกอบการ Warren เห็นต่างว่า pullback รอบนี้สะท้อน sentiment/engagement-narrative de-rating มากกว่าความเสื่อมพื้นฐานที่ยืนยันแล้ว (ไม่มี guidance cut, Q1 ยัง beat) — ตรงกับหลัก Marks \"de-rate จาก sentiment ≠ สัญญาณขาย\"; ผู้บริหารยังฉวยโอกาสซื้อทรัพย์สินถูก (Radford Studio Center ~$400M เทียบราคาขายปี 2564 ที่ $1.85B) ขณะที่ WSJ ปฏิเสธข่าวลือ NBCUniversal takeover ลดความเสี่ยง capital misallocation — Mr. Market กำลังเสนอราคาที่ดีขึ้นบนธุรกิจที่ไม่เปลี่ยน (หรือดีขึ้นเล็กน้อยจาก M&A ฉลาด) ไม่ใช่ข้อมูลใหม่เรื่อง moat เสื่อม",
+      "risk": "Q2 earnings (07-16) ยืนยัน engagement เสื่อมจริง (ไม่ใช่ noise ระยะสั้น) พร้อม guidance cut, หรือ content cost inflation กด margin ต่ำกว่า guided 31.5-32.6%, หรือมี M&A ขนาดใหญ่ (ระดับ NBCUniversal) เกิดขึ้นจริงในราคาที่ทำลาย capital discipline"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "ราคา post-earnings after-hours $67.62 (-9.05%) ✓ CNBC ExtendedMktQuote ตรงกับ Nasdaq API และตรงกับที่ Warren ระบุ $67.64 (<1% diff)",
+        "Q2 revenue $12.56B +13.4% YoY in-line ✓ ยืนยันจาก Variant/Yahoo/Investing.com หลายแหล่ง; EPS beat",
+        "Q3 guide revenue growth 12% (ลงจาก Q2 ~13.4%) = ไตรมาสที่ 2 ติดต่อกันที่ growth ชะลอ ✓ ยืนยันหลายแหล่ง (Yahoo, Variety); FY26 guide แคบลง $51.0-51.4B ✓",
+        "Analyst PT ก่อนงบถูกหั่นทั้งแถบ: Oppenheimer $120→$100, KeyBanc $115→$92, Morgan Stanley $115→$90, Barclays $110→$85, Citi/Bernstein →$100 (TipRanks) — เฉลี่ย ~$93; ยังไม่มี PT cut รอบใหม่ index หลังงบ 07-16 ให้เห็นตอนนี้"
+      ],
+      "concerns": [
+        "Charlie fresh independent FV = FY2027 consensus EPS $3.92 (avg, range $3.46-4.32, จาก analyst forecast aggregator) × current forward P/E ~20.4x (post-drop price/feps) = ~$80 — ต่ำกว่า FV $98 ที่ Warren carry มาจาก Charlie's own prior review (28x × FY27 $3.49) อยู่ 22.5% (> เกณฑ์ 20% inflation flag) เพราะ current fwd PE ยุบจาก ~28x เหลือ 20.4x หลังราคาร่วงเพิ่ม",
+        "MoS ที่ FV อิสระใหม่ $80 vs ราคา $67.6 = ~15.5% พอดีเฉียดเส้น Gate 15% ไม่มี buffer — sensitive สูงต่อ consensus EPS range: ถ้าใช้ low-end $3.46 → FV $70.6, MoS เหลือ ~4% เท่านั้น",
+        "Engagement erosion มีหลักฐานอิสระต่อเนื่อง: Nielsen streaming-time share 21%→17% ใน 2 ปี, US TV viewership share ลงมา 7.8% (ต่ำสุดรอบ 20 เดือน) — สอดคล้องกับ Q3 guide ที่ชะลอเป็นไตรมาสที่ 2",
+        "Post-earnings analyst PT reset ยังไม่ปรากฏใน search index (มีแต่ pre-earnings cuts) — โอกาสสูงที่ PT จะถูกหั่นเพิ่มสัปดาห์นี้ตาม weak Q3 guide + engagement disclosure ที่ลดลง ซึ่งจะกดดัน FV ต่อ"
+      ],
+      "summary": "",
+      "review_date": "2026-07-17"
+    },
+    "mark_easy": {
+      "one_liner": "Netflix เจ้าตลาด streaming โลก — หลังงบ Q2 ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% ยังน่าสนใจ แต่ Charlie เตือนเรื่องยอดการรับชมที่เริ่มชะลอ",
+      "what": "Netflix ให้บริการ streaming ทั่วโลก; ลงทุน content ปีละหลายหมื่นล้านดอลลาร์สร้าง library ที่คู่แข่งทำตามไม่ทัน; รายได้จาก subscription + โฆษณา (ad tier กำลัง scale) + live events",
+      "why_invest": [
+        "หลังงบ Q2 ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% (FV base $98 หลังแก้สูตรคำนวณ)",
+        "Content library + algorithm แนะนำ = moat ที่คู่แข่งตามไม่ทัน; ยิ่งคนดูเยอะ อัลกอริทึมยิ่งแม่น",
+        "Ad tier กำลัง scale เป็น revenue stream ใหม่หลังลงทุนมาหลายปี",
+        "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก"
+      ],
+      "watch_out": [
+        "⚠️ Charlie ให้ CAUTION — ยอดเวลาการรับชม (engagement) เริ่มชะลอ: ส่วนแบ่งเวลาดู Nielsen ลดจาก 21% เหลือ 17% ใน 2 ปี",
+        "Q3 บริษัทไกด์การเติบโตชะลอลงเป็นไตรมาสที่ 2 ติดต่อกัน; นักวิเคราะห์หั่นเป้าราคาลงมาโซน $90-100",
+        "Netflix จะลดความถี่รายงานข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 — ลดความโปร่งใสตรงจุดที่ตลาดกังวลที่สุด"
+      ],
+      "bottom_line": "ตัวเลขยังผ่านเกณฑ์ BUY (MoS 31%) และ moat แข็งแรง แต่ Charlie เตือนว่า margin of safety เมื่อคำนวณอิสระเหลือแค่ ~15.5% เฉียดเส้น + สัญญาณ engagement ชะลอ — เหมาะซื้อไม้เล็ก $10 ขั้นต่ำ ยังไม่ควรเติมหนัก"
+    },
+    "mark_full": {
+      "business_overview": "Netflix ดำเนินธุรกิจ streaming เป็นหลัก รายได้กระจายทั่วโลก (UCAN, EMEA, LATAM, APAC); โมเดลรายได้ = subscription + โฆษณา (ad tier) + live events; หยุดรายงานจำนวนสมาชิกรายไตรมาสตั้งแต่ 2025",
+      "tam": "ตลาด streaming/entertainment ทั่วโลกขนาดใหญ่มาก; รายได้โฆษณาเป็น TAM ใหม่ที่กำลังขยาย; live events เป็น TAM ใหม่ที่ยังไม่ถูก capture เต็ม; gaming ยังเริ่มต้น",
+      "moat": "Content library ที่สร้างจากงบลงทุนปีละหลายหมื่นล้าน = กำแพงการแข่งขัน; algorithm flywheel จากฐานผู้ใช้จำนวนมาก = ระบบแนะนำที่แม่นขึ้นเรื่อยๆ; แต่ moat ด้าน engagement เริ่มถูกท้าทาย (YouTube/แพลตฟอร์มวิดีโอสั้น)",
+      "latest_financials": "Q2 ยืนยัน EPS beat และ operating margin เป็นไปตามไกด์ (revenue $12.56B +13.4% YoY in-line); แต่ Q3 ไกด์การเติบโตชะลอลงเหลือ ~12% เป็นไตรมาสที่ 2 ติดต่อกัน; หลังงบราคาปรับลง ทำให้ margin of safety ถ่างขึ้น",
+      "key_points": [
+        "Q2 revenue $12.56B +13.4% YoY (in-line), EPS beat — งบไม่พลาดเป้า",
+        "Q3 guide การเติบโตชะลอเป็นไตรมาสที่ 2 ติดต่อกัน = ประเด็นหลักที่ตลาดกังวล",
+        "Ad-supported tier กำลังเติบโต เป็น revenue stream ใหม่ระยะยาว",
+        "⚠️ Netflix ประกาศลดความถี่รายงาน engagement ('What We Watched') เหลือปีละครั้งตั้งแต่ 2027 — Charlie มองเป็น red flag ด้านความโปร่งใส"
+      ]
+    },
+    "warren_easy": [
+      "Warren ให้ WAF 7.40 tier 🚀 Pre-Inevitable — content + algorithm moat + ad tier ที่กำลัง scale; ไม่เปลี่ยน tier รอบนี้",
+      "หลังงบ Q2 (ยืนยัน EPS beat/margin ตามไกด์) ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% — และ Warren แก้ข้อผิดพลาดสูตรคำนวณ FV จาก $121.9 เหลือ FV base $98 (กำไร $3.49 × 28 เท่า)",
+      "Action = BUY ไม้เล็ก $10 ขั้นต่ำ — แต่ Charlie ยัง CAUTION เพราะเมื่อคำนวณ margin of safety อิสระเหลือ ~15.5% เฉียดเส้นเกณฑ์ ยังไม่ควรเติมหนัก"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยืนยันราคาและตัวเลขงบ Q2 ตรงกัน (revenue $12.56B +13.4% in-line, EPS beat) แต่ให้ CAUTION",
+        "⚠️ Charlie คำนวณมูลค่าที่แท้จริงอิสระเองได้ราว $80 (ใช้กำไรคาดการณ์ปี 2027 $3.92 × P/E ปัจจุบันหลังราคาร่วง 20.4 เท่า) ต่ำกว่า FV $98 ที่ Warren ใช้อยู่ 22.5% เกินเกณฑ์เตือน 20% — และที่มูลค่า $80 นี้ margin of safety จริงเหลือแค่ ~15.5% เฉียดเส้นเกณฑ์พอดี ไม่มี buffer เผื่อถ้าประมาณการกำไรถูกหั่นเพิ่ม",
+        "หลักฐานอิสระชี้ engagement ชะลอต่อเนื่อง (ส่วนแบ่งเวลาดู Nielsen 21%→17% ใน 2 ปี) สอดคล้องกับ Q3 ไกด์ที่ชะลอเป็นไตรมาสที่ 2 — บวกกับที่ Netflix จะลดความถี่เปิดเผยข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 Charlie มองเป็น red flag ด้านความโปร่งใส แนะนำรอเป้าราคานักวิเคราะห์ปรับใหม่หลังงบก่อนเติมเกิน $10"
+      ],
+      "review_date": "2026-07-17"
+    },
+    "idea_th": "BUY ไม้เล็ก — หลังงบ Q2 (EPS beat, margin ตามไกด์) ราคาปรับลงทำให้ margin of safety ถ่างขึ้นเป็น 31% (FV base $98 หลังแก้สูตรคำนวณจาก $121.9); moat content+algorithm+ad tier ยังแข็ง แต่ Charlie CAUTION เพราะคำนวณอิสระได้ MoS เหลือ ~15.5% เฉียดเส้น + engagement เริ่มชะลอ — เหมาะซื้อ $10 ขั้นต่ำ ยังไม่ควรเติมหนัก",
+    "story_gate_th": {
+      "what": "Netflix ให้บริการ streaming ทั่วโลก รายได้จาก subscription + โฆษณา (ad tier) + live events; content library + algorithm ที่คู่แข่งตามไม่ทัน — ยิ่งมีคนดูมาก ระบบแนะนำยิ่งแม่น",
+      "why": "งบ Q2 ยืนยันแล้วว่า EPS beat และ operating margin เป็นไปตามไกด์ (revenue +13.4% in-line) — ธุรกิจไม่ได้พัง หลังงบราคาปรับลงจึงทำให้ margin of safety ถ่างขึ้นเป็น 31% Warren มองเป็นโอกาสซื้อไม้เล็ก และได้แก้ข้อผิดพลาดสูตรคำนวณ FV จาก $121.9 เหลือ $98 (กำไร $3.49 × 28 เท่า) ให้สมเหตุสมผลขึ้น",
+      "risk": "ยอดเวลาการรับชม (engagement) เริ่มชะลอ (ส่วนแบ่ง Nielsen 21%→17%); Q3 ไกด์การเติบโตชะลอเป็นไตรมาสที่ 2 ติดต่อกัน; Netflix ลดความถี่เปิดเผยข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 (candor red flag); นักวิเคราะห์หั่นเป้าราคาลงมาโซน $90-100; Charlie คำนวณ MoS อิสระเหลือแค่ ~15.5% เฉียดเส้น"
+    },
+    "bull_th": [
+      "หลังงบ Q2 (EPS beat, margin ตามไกด์) ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% — FV base $98",
+      "Content library + recommendation algorithm ยังเป็น moat ที่คู่แข่งตามไม่ทัน",
+      "Ad-supported tier กำลัง scale เป็น revenue stream ใหม่หลังลงทุนมาหลายปี",
+      "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก = ตัวยึดสมาชิก",
+      "Forward P/E 19.4x, PEG 1.29 — ไม่แพงเทียบการเติบโต ถ้า growth เป็นไปตามคาด (ER ~22.7%/ปี)"
+    ],
+    "risk_th": [
+      "⚠️ Charlie CAUTION — คำนวณมูลค่าอิสระได้ ~$80 ต่ำกว่า FV $98 ที่ Warren ใช้ 22.5% (เกินเกณฑ์เตือน 20%); ที่มูลค่านี้ margin of safety เหลือแค่ ~15.5% เฉียดเส้น ไม่มี buffer",
+      "ยอดเวลาการรับชม (engagement) ชะลอต่อเนื่อง: ส่วนแบ่ง Nielsen ลดจาก 21% เหลือ 17% ใน 2 ปี — สอดคล้องกับ Q3 ไกด์ที่ชะลอ",
+      "Q3 ไกด์การเติบโตชะลอลงเป็นไตรมาสที่ 2 ติดต่อกัน; นักวิเคราะห์หั่นเป้าราคาลงมาโซน $90-100",
+      "⚠️ Netflix จะลดความถี่รายงานข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 — ลดความโปร่งใสตรงจุดที่ตลาดกังวลที่สุด (candor red flag)",
+      "Content cost inflation จาก live sports rights (NFL/WWE) ROI ยังไม่ชัด; การแข่งขันจาก Disney+/Prime และวิดีโอสั้น"
     ]
   },
   "SNPS": {
@@ -1811,7 +1962,7 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-15",
+      "updated": "2026-07-18",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Cadence เป็นอีกครึ่งของ EDA duopoly — computational software + accelerated hardware (Palladium emulation lead ~10ปี) + silicon IP; วิสัยทัศน์ 3-layer cake (compute → simulation → agentic AI) ขยายสู่ Physical AI ผ่าน Hexagon D&E.",
@@ -1820,14 +1971,13 @@
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price $330.11 cross-checked Nasdaq ($330.11) + CNBC ($330.11) — 0% drift; -9.47% broad AI/semi selloff confirmed",
         "WATCH is the correct action — PEG 2.52 fails the 1.5 cap → NOT STARTER-eligible even though MoS crossed into the band on price. Warren correctly does not buy",
         "Consensus EPS (Nasdaq): FY2026 $6.23, FY2027 $7.46"
       ],
       "concerns": [
-        "⚖️ FV gap 21.1% เกินเกณฑ์บังคับ 20% (§2.5) → verdict ต้องเป็น CAUTION ขั้นต่ำ",
         "Warren's eps_used $7.9 (FY2026) is +27% above consensus $6.23. On consensus, Charlie FV = $6.23 × 45.57x ≈ $284 — BELOW price $330, i.e. overvalued on consensus. The +8.3% MoS is an artifact of the above-consensus EPS; true MoS is negative. Low stakes since action is WATCH",
         "PEG is the binding block (47.7x ÷ ~16.6% growth); Inevitable-grade quality intact but valuation rich"
       ],
@@ -1960,14 +2110,13 @@
     },
     "tier": "🔁 Cyclical",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price cross-checked Nasdaq ($872.39) + CNBC ($871.01) vs Warren's $876.74 — within 0.7%, confirms the further -10.8% day move as real, cumulative pullback from ATH now material",
         "CXMT $8.5B IPO news independently confirmed via 247wallst, TradingKey, FX Leaders, ts2.tech: Chinese DRAM maker's market share roughly tripled YoY to ~8% (still well behind Micron's ~22%), IPO raising $8.5B at ~$85.5B implied cap — matches Warren's framing exactly, genuine market-moving news not exaggerated",
         "Cyclical Peak EPS Bias methodology (mean-reverting growth vs raw near-term consensus) independently confirmed appropriate and consistent with house policy — not a miscalibration"
       ],
       "concerns": [
-        "⚖️ FV gap 21.1% เกินเกณฑ์บังคับ 20% (§2.5) → verdict ต้องเป็น CAUTION ขั้นต่ำ",
         "FV gap 21.1% would exceed the mandatory threshold if this were a BUY action, but MU is WATCH so the mandatory rule doesn't apply — noting for awareness since gap is nontrivial even on Cyclical-adjusted basis"
       ],
       "summary": "",
@@ -2036,157 +2185,6 @@
       "FQ4 earnings (~ก.ย. 2026) เป็นบททดสอบจริงว่า guide $50B/$31 ทำได้จริงไหม — ไม่ถือว่าการร่วงรอบนี้เป็นสัญญาณซื้อ"
     ]
   },
-  "NFLX": {
-    "symbol": "NFLX",
-    "display": "NFLX",
-    "category": "entertainment",
-    "name": "Netflix Inc.",
-    "sector": "Consumer",
-    "sectorSlug": "consumer",
-    "chips": [
-      "Consumer",
-      "Streaming Media"
-    ],
-    "bull": [
-      "Password sharing crackdown สำเร็จ = 300M+ paid subscribers เติบโตต่อ",
-      "Ads-supported tier growing fast = pricing power + margin expansion",
-      "Live Sports (NFL Christmas, WWE Raw) = retention + acquisition",
-      "Content flywheel = cost per hour ลดทุกปีเมื่อ scale ใหญ่ขึ้น",
-      "Games expansion ฟรีสำหรับ subscribers = engagement เพิ่ม"
-    ],
-    "risk": [
-      "MoS 4.5% ต่ำมาก — ราคา $1,080 แทบไม่มี safety net",
-      "Content cost inflation ถ้า Hollywood guild ขอเพิ่มค่าจ้าง",
-      "Disney+/Prime/Max competition ยังไม่ยอมแพ้",
-      "Ad revenue cyclical ถ้า macro slowdown",
-      "Subscriber growth ceiling ในตลาด developed markets"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 7.3,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 68.95,
-    "fv": 84,
-    "mos": 17.9,
-    "fpe": 17.96,
-    "peg": 1.47,
-    "scores": {
-      "bq": [
-        8.2,
-        "green",
-        82
-      ],
-      "gp": [
-        6.8,
-        "amber",
-        68
-      ],
-      "va": [
-        7.4,
-        "amber",
-        74
-      ],
-      "ra": [
-        6.5,
-        "amber",
-        65
-      ]
-    },
-    "idea": "Content + Algorithm Moat + Ad Tier Scale — Q2 ยืนยัน EPS beat/margin in-line/no subscriber miss แต่ recheck พบ Warren FV เดิม $121.9 ผิดสูตรตัวเอง (28x × EPS $3.49 = $97.7 ไม่ใช่ $121.9 — ใช้ multiple จริง ~35x โดยไม่ได้ตั้งใจ) + มีสัญญาณ engagement erosion จริงที่ยังไม่ fire IF WRONG เต็มรูป — แก้ FV ตรงสูตร ($98) + ลดขนาดไม้ลงครึ่งหนึ่งสะท้อนความไม่แน่นอนที่เพิ่มขึ้น",
-    "updated": "2026-07-23",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-23",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "Netflix มี Content Library + Algorithm Moat — ทุ่มลงทุน $17-18B/ปีสร้าง Original Content ที่ competitors ไม่สามารถ replicate ได้ทันที; 325M+ paid subscribers ทั่วโลก = data flywheel; Password sharing crackdown ปลดล็อก growth ในตลาด penetration ต่ำ; Ad-supported tier ขยาย TAM",
-      "why": "Consensus แบ่งเป็น 2 ฝั่งก่อน Q2 earnings (07-16 พรุ่งนี้): \"engagement เสียส่วนแบ่งให้ YouTube\" (ราคาไหลลงใกล้ 52-week low $70.86) vs \"ad monetization กำลังเร่ง\" (ad revenue จะโต 2x เป็น ~$3B ปี 2569); ราคาตอนนี้ $73.53 ใกล้จุดต่ำสุดรอบปี ก่อนผลประกอบการ Warren เห็นต่างว่า pullback รอบนี้สะท้อน sentiment/engagement-narrative de-rating มากกว่าความเสื่อมพื้นฐานที่ยืนยันแล้ว (ไม่มี guidance cut, Q1 ยัง beat) — ตรงกับหลัก Marks \"de-rate จาก sentiment ≠ สัญญาณขาย\"; ผู้บริหารยังฉวยโอกาสซื้อทรัพย์สินถูก (Radford Studio Center ~$400M เทียบราคาขายปี 2564 ที่ $1.85B) ขณะที่ WSJ ปฏิเสธข่าวลือ NBCUniversal takeover ลดความเสี่ยง capital misallocation — Mr. Market กำลังเสนอราคาที่ดีขึ้นบนธุรกิจที่ไม่เปลี่ยน (หรือดีขึ้นเล็กน้อยจาก M&A ฉลาด) ไม่ใช่ข้อมูลใหม่เรื่อง moat เสื่อม",
-      "risk": "Q2 earnings (07-16) ยืนยัน engagement เสื่อมจริง (ไม่ใช่ noise ระยะสั้น) พร้อม guidance cut, หรือ content cost inflation กด margin ต่ำกว่า guided 31.5-32.6%, หรือมี M&A ขนาดใหญ่ (ระดับ NBCUniversal) เกิดขึ้นจริงในราคาที่ทำลาย capital discipline"
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "ราคา post-earnings after-hours $67.62 (-9.05%) ✓ CNBC ExtendedMktQuote ตรงกับ Nasdaq API และตรงกับที่ Warren ระบุ $67.64 (<1% diff)",
-        "Q2 revenue $12.56B +13.4% YoY in-line ✓ ยืนยันจาก Variant/Yahoo/Investing.com หลายแหล่ง; EPS beat",
-        "Q3 guide revenue growth 12% (ลงจาก Q2 ~13.4%) = ไตรมาสที่ 2 ติดต่อกันที่ growth ชะลอ ✓ ยืนยันหลายแหล่ง (Yahoo, Variety); FY26 guide แคบลง $51.0-51.4B ✓",
-        "Analyst PT ก่อนงบถูกหั่นทั้งแถบ: Oppenheimer $120→$100, KeyBanc $115→$92, Morgan Stanley $115→$90, Barclays $110→$85, Citi/Bernstein →$100 (TipRanks) — เฉลี่ย ~$93; ยังไม่มี PT cut รอบใหม่ index หลังงบ 07-16 ให้เห็นตอนนี้"
-      ],
-      "concerns": [
-        "Charlie fresh independent FV = FY2027 consensus EPS $3.92 (avg, range $3.46-4.32, จาก analyst forecast aggregator) × current forward P/E ~20.4x (post-drop price/feps) = ~$80 — ต่ำกว่า FV $98 ที่ Warren carry มาจาก Charlie's own prior review (28x × FY27 $3.49) อยู่ 22.5% (> เกณฑ์ 20% inflation flag) เพราะ current fwd PE ยุบจาก ~28x เหลือ 20.4x หลังราคาร่วงเพิ่ม",
-        "MoS ที่ FV อิสระใหม่ $80 vs ราคา $67.6 = ~15.5% พอดีเฉียดเส้น Gate 15% ไม่มี buffer — sensitive สูงต่อ consensus EPS range: ถ้าใช้ low-end $3.46 → FV $70.6, MoS เหลือ ~4% เท่านั้น",
-        "Engagement erosion มีหลักฐานอิสระต่อเนื่อง: Nielsen streaming-time share 21%→17% ใน 2 ปี, US TV viewership share ลงมา 7.8% (ต่ำสุดรอบ 20 เดือน) — สอดคล้องกับ Q3 guide ที่ชะลอเป็นไตรมาสที่ 2",
-        "Post-earnings analyst PT reset ยังไม่ปรากฏใน search index (มีแต่ pre-earnings cuts) — โอกาสสูงที่ PT จะถูกหั่นเพิ่มสัปดาห์นี้ตาม weak Q3 guide + engagement disclosure ที่ลดลง ซึ่งจะกดดัน FV ต่อ"
-      ],
-      "summary": "",
-      "review_date": "2026-07-17"
-    },
-    "mark_easy": {
-      "one_liner": "Netflix เจ้าตลาด streaming โลก — หลังงบ Q2 ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% ยังน่าสนใจ แต่ Charlie เตือนเรื่องยอดการรับชมที่เริ่มชะลอ",
-      "what": "Netflix ให้บริการ streaming ทั่วโลก; ลงทุน content ปีละหลายหมื่นล้านดอลลาร์สร้าง library ที่คู่แข่งทำตามไม่ทัน; รายได้จาก subscription + โฆษณา (ad tier กำลัง scale) + live events",
-      "why_invest": [
-        "หลังงบ Q2 ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% (FV base $98 หลังแก้สูตรคำนวณ)",
-        "Content library + algorithm แนะนำ = moat ที่คู่แข่งตามไม่ทัน; ยิ่งคนดูเยอะ อัลกอริทึมยิ่งแม่น",
-        "Ad tier กำลัง scale เป็น revenue stream ใหม่หลังลงทุนมาหลายปี",
-        "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก"
-      ],
-      "watch_out": [
-        "⚠️ Charlie ให้ CAUTION — ยอดเวลาการรับชม (engagement) เริ่มชะลอ: ส่วนแบ่งเวลาดู Nielsen ลดจาก 21% เหลือ 17% ใน 2 ปี",
-        "Q3 บริษัทไกด์การเติบโตชะลอลงเป็นไตรมาสที่ 2 ติดต่อกัน",
-        "Netflix จะลดความถี่รายงานข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 — ลดความโปร่งใสตรงจุดที่ตลาดกังวลที่สุด"
-      ],
-      "bottom_line": "ตัวเลขยังผ่านเกณฑ์ BUY (MoS 31%) และ moat แข็งแรง แต่ Charlie เตือนว่า margin of safety เมื่อคำนวณอิสระเหลือแค่ ~15.5% เฉียดเส้น + สัญญาณ engagement ชะลอ — เหมาะซื้อไม้เล็ก $10 ขั้นต่ำ ยังไม่ควรเติมหนัก"
-    },
-    "mark_full": {
-      "business_overview": "Netflix ดำเนินธุรกิจ streaming เป็นหลัก รายได้กระจายทั่วโลก (UCAN, EMEA, LATAM, APAC); โมเดลรายได้ = subscription + โฆษณา (ad tier) + live events; หยุดรายงานจำนวนสมาชิกรายไตรมาสตั้งแต่ 2025",
-      "tam": "ตลาด streaming/entertainment ทั่วโลกขนาดใหญ่มาก; รายได้โฆษณาเป็น TAM ใหม่ที่กำลังขยาย; live events เป็น TAM ใหม่ที่ยังไม่ถูก capture เต็ม; gaming ยังเริ่มต้น",
-      "moat": "Content library ที่สร้างจากงบลงทุนปีละหลายหมื่นล้าน = กำแพงการแข่งขัน; algorithm flywheel จากฐานผู้ใช้จำนวนมาก = ระบบแนะนำที่แม่นขึ้นเรื่อยๆ; แต่ moat ด้าน engagement เริ่มถูกท้าทาย (YouTube/แพลตฟอร์มวิดีโอสั้น)",
-      "latest_financials": "Q2 ยืนยัน EPS beat และ operating margin เป็นไปตามไกด์ (revenue $12.56B +13.4% YoY in-line); แต่ Q3 ไกด์การเติบโตชะลอลงเหลือ ~12% เป็นไตรมาสที่ 2 ติดต่อกัน; หลังงบราคาปรับลง ทำให้ margin of safety ถ่างขึ้น",
-      "key_points": [
-        "Q2 revenue $12.56B +13.4% YoY (in-line), EPS beat — งบไม่พลาดเป้า",
-        "Q3 guide การเติบโตชะลอเป็นไตรมาสที่ 2 ติดต่อกัน = ประเด็นหลักที่ตลาดกังวล",
-        "Ad-supported tier กำลังเติบโต เป็น revenue stream ใหม่ระยะยาว",
-        "⚠️ Netflix ประกาศลดความถี่รายงาน engagement ('What We Watched') เหลือปีละครั้งตั้งแต่ 2027 — Charlie มองเป็น red flag ด้านความโปร่งใส"
-      ]
-    },
-    "warren_easy": [
-      "Warren ให้ WAF 7.40 tier 🚀 Pre-Inevitable — content + algorithm moat + ad tier ที่กำลัง scale; ไม่เปลี่ยน tier รอบนี้",
-      "หลังงบ Q2 (ยืนยัน EPS beat/margin ตามไกด์) ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% — และ Warren แก้ข้อผิดพลาดสูตรคำนวณ FV จาก $121.9 เหลือ FV base $98 (กำไร $3.49 × 28 เท่า)",
-      "Action = BUY ไม้เล็ก $10 ขั้นต่ำ — แต่ Charlie ยัง CAUTION เพราะเมื่อคำนวณ margin of safety อิสระเหลือ ~15.5% เฉียดเส้นเกณฑ์ ยังไม่ควรเติมหนัก"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยันราคาและตัวเลขงบ Q2 ตรงกัน (revenue $12.56B +13.4% in-line, EPS beat) แต่ให้ CAUTION",
-        "⚠️ Charlie คำนวณมูลค่าที่แท้จริงอิสระเองได้ราว $80 (ใช้กำไรคาดการณ์ปี 2027 $3.92 × P/E ปัจจุบันหลังราคาร่วง 20.4 เท่า) ต่ำกว่า FV $98 ที่ Warren ใช้อยู่ 22.5% เกินเกณฑ์เตือน 20% — และที่มูลค่า $80 นี้ margin of safety จริงเหลือแค่ ~15.5% เฉียดเส้นเกณฑ์พอดี ไม่มี buffer เผื่อถ้าประมาณการกำไรถูกหั่นเพิ่ม",
-        "หลักฐานอิสระชี้ engagement ชะลอต่อเนื่อง (ส่วนแบ่งเวลาดู Nielsen 21%→17% ใน 2 ปี) สอดคล้องกับ Q3 ไกด์ที่ชะลอเป็นไตรมาสที่ 2 — บวกกับที่ Netflix จะลดความถี่เปิดเผยข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 Charlie มองเป็น red flag ด้านความโปร่งใส แนะนำรอดูงบก่อนเติมเกิน $10"
-      ],
-      "review_date": "2026-07-17"
-    },
-    "idea_th": "BUY ไม้เล็ก — หลังงบ Q2 (EPS beat, margin ตามไกด์) ราคาปรับลงทำให้ margin of safety ถ่างขึ้นเป็น 31% (FV base $98 หลังแก้สูตรคำนวณจาก $121.9); moat content+algorithm+ad tier ยังแข็ง แต่ Charlie CAUTION เพราะคำนวณอิสระได้ MoS เหลือ ~15.5% เฉียดเส้น + engagement เริ่มชะลอ — เหมาะซื้อ $10 ขั้นต่ำ ยังไม่ควรเติมหนัก",
-    "story_gate_th": {
-      "what": "Netflix ให้บริการ streaming ทั่วโลก รายได้จาก subscription + โฆษณา (ad tier) + live events; content library + algorithm ที่คู่แข่งตามไม่ทัน — ยิ่งมีคนดูมาก ระบบแนะนำยิ่งแม่น",
-      "why": "งบ Q2 ยืนยันแล้วว่า EPS beat และ operating margin เป็นไปตามไกด์ (revenue +13.4% in-line) — ธุรกิจไม่ได้พัง หลังงบราคาปรับลงจึงทำให้ margin of safety ถ่างขึ้นเป็น 31% Warren มองเป็นโอกาสซื้อไม้เล็ก และได้แก้ข้อผิดพลาดสูตรคำนวณ FV จาก $121.9 เหลือ $98 (กำไร $3.49 × 28 เท่า) ให้สมเหตุสมผลขึ้น",
-      "risk": "ยอดเวลาการรับชม (engagement) เริ่มชะลอ (ส่วนแบ่ง Nielsen 21%→17%); Q3 ไกด์การเติบโตชะลอเป็นไตรมาสที่ 2 ติดต่อกัน; Netflix ลดความถี่เปิดเผยข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 (candor red flag); Charlie คำนวณ MoS อิสระเหลือแค่ ~15.5% เฉียดเส้น"
-    },
-    "bull_th": [
-      "หลังงบ Q2 (EPS beat, margin ตามไกด์) ราคาปรับลง ทำให้ margin of safety ถ่างขึ้นเป็น 31% — FV base $98",
-      "Content library + recommendation algorithm ยังเป็น moat ที่คู่แข่งตามไม่ทัน",
-      "Ad-supported tier กำลัง scale เป็น revenue stream ใหม่หลังลงทุนมาหลายปี",
-      "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก = ตัวยึดสมาชิก",
-      "Forward P/E 19.4x, PEG 1.29 — ไม่แพงเทียบการเติบโต ถ้า growth เป็นไปตามคาด (ER ~22.7%/ปี)"
-    ],
-    "risk_th": [
-      "⚠️ Charlie CAUTION — คำนวณมูลค่าอิสระได้ ~$80 ต่ำกว่า FV $98 ที่ Warren ใช้ 22.5% (เกินเกณฑ์เตือน 20%); ที่มูลค่านี้ margin of safety เหลือแค่ ~15.5% เฉียดเส้น ไม่มี buffer",
-      "ยอดเวลาการรับชม (engagement) ชะลอต่อเนื่อง: ส่วนแบ่ง Nielsen ลดจาก 21% เหลือ 17% ใน 2 ปี — สอดคล้องกับ Q3 ไกด์ที่ชะลอ",
-      "Q3 ไกด์การเติบโตชะลอลงเป็นไตรมาสที่ 2 ติดต่อกัน",
-      "⚠️ Netflix จะลดความถี่รายงานข้อมูล engagement เหลือปีละครั้งตั้งแต่ 2027 — ลดความโปร่งใสตรงจุดที่ตลาดกังวลที่สุด (candor red flag)",
-      "Content cost inflation จาก live sports rights (NFL/WWE) ROI ยังไม่ชัด; การแข่งขันจาก Disney+/Prime และวิดีโอสั้น"
-    ]
-  },
   "UBER": {
     "symbol": "UBER",
     "display": "UBER",
@@ -2242,11 +2240,11 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-15",
+      "updated": "2026-07-18",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "Uber เป็น global mobility+delivery marketplace ที่ใหญ่ที่สุด (70+ ประเทศ) — network effect + cross-platform flywheel (dual-user สร้าง GB 3x) + Uber One membership lock-in; asset-light FCF machine ที่ scaling earnings เร็วกว่า topline 2 เท่า.",
-      "why": "Consensus กังวล AV จะ disrupt Uber (Waymo/Tesla) + AI personal-agent จะ abstract แพลตฟอร์มออกจากลูกค้า; Warren เห็นต่างว่า Uber เป็น **AV demand-aggregator** (utilization/ revenue-per-vehicle สูงกว่า 1P network → พาร์ทเนอร์ AV เลือก Uber) + capital-light AV (Santander/Hertz financing) — AV เป็น tailwind ไม่ใช่ threat; FCF inflection ($9.76B run-rate) + buyback record $3B/Q ยังไม่ถูก price in เต็มที่แม้ราคาร่วงลงเพิ่มเติม -3.3% รอบนี้ (ส่วนหนึ่งของ broad market pullback ไม่ใช่ UBER-specific).",
+      "why": "Consensus กังวล AV จะ disrupt Uber (Waymo/Tesla) + AI personal-agent จะ abstract แพลตฟอร์มออกจากลูกค้า; Warren เห็นต่างว่า Uber เป็น **AV demand-aggregator** (utilization/ revenue-per-vehicle สูงกว่า 1P network → พาร์ทเนอร์ AV เลือก Uber) + capital-light AV (Santander/Hertz financing) — AV เป็น tailwind ไม่ใช่ threat. **⚠️ อัพเดท 07-18:** ประกาศซื้อ **Delivery Hero $14.8B (cash)** (07-16/17) — deal ใหญ่เงินสดของธุรกิจ quick-commerce margin ต่ำ/แข่งสูง สวนกับเสาหลัก \"capital-light FCF machine\" ของ thesis โดยตรง → BUY→WATCH (judgment override แบบเดียวกับ SOLS ตอน deal $14.5B) รอเปิดเผย financing/leverage/accretion/buyback impact + antitrust path; FV $98 สร้างบน standalone thesis re-estimate ไม่ได้จนกว่าจะมี pro-forma (Q2 call ปลาย ก.ค.).",
       "risk": "AV players (Waymo/Tesla) bypass Uber ไปหาผู้บริโภคเองที่ scale, หรือ driver reclassification (California AG) พลิก unit economics ทั้งโมเดล, หรือ AI personal-agent disintermediate demand-generation moat จริง."
     },
     "tier": "🚀 Pre-Inevitable",
@@ -2678,7 +2676,7 @@
       "tier": "🌱 Fast Grower",
       "tier_slug": "fast-grower",
       "what": "Duolingo คือแอปเรียนภาษาที่ใหญ่ที่สุดในโลกแบบ freemium — ชนะด้วย data flywheel (ผู้ใช้ทำแบบฝึกหัด ~2 พันล้านครั้ง/วัน) และ organic brand growth ที่ทำให้ CAC ต่ำกว่าคู่แข่งมาก",
-      "why": "Consensus เห็นว่า Duolingo คือ \"EdTech growth stock ที่ราคาแพงไปแล้ว/ถูก GenAI disrupt ได้\" (sentiment ตลาดฝั่ง Hold) — Warren เห็นต่างว่าตลาดยัง underweight ว่า Duolingo เองคือผู้ใช้ AI เร่ง content scale ได้เร็วกว่าใคร (20,500 course units/ไตรมาส จาก 1,800 เมื่อ 2 ปีก่อน = 10x+) ทำให้ moat ด้าน content breadth ขยายเร็วกว่าที่ผู้เล่นหน้าใหม่ GenAI-native จะตามทัน ขณะที่หุ้นร่วงจาก ATH $468 (2025) มาเหลือ ~$128 (de-rate จาก sentiment ล้วนๆ ไม่ใช่พื้นฐานพัง — FCF margin ยังขยายต่อเนื่อง) ทำให้ forward P/E เหลือแค่ ~19x จาก 5-yr average ~33x — ราคาปัจจุบันไม่ได้ price-in คุณภาพการเงินที่ยังดีขึ้นเรื่อยๆ",
+      "why": "Consensus เห็นว่า Duolingo คือ \"EdTech growth stock ที่ราคาแพงไปแล้ว/ถูก GenAI disrupt ได้\" (analyst consensus price target $108 เป็น \"Hold\" — ต่ำกว่าราคาตลาด) — Warren เห็นต่างว่าตลาดยัง underweight ว่า Duolingo เองคือผู้ใช้ AI เร่ง content scale ได้เร็วกว่าใคร (20,500 course units/ไตรมาส จาก 1,800 เมื่อ 2 ปีก่อน = 10x+) ทำให้ moat ด้าน content breadth ขยายเร็วกว่าที่ผู้เล่นหน้าใหม่ GenAI-native จะตามทัน ขณะที่หุ้นร่วงจาก ATH $468 (2025) มาเหลือ ~$128 (de-rate จาก sentiment ล้วนๆ ไม่ใช่พื้นฐานพัง — FCF margin ยังขยายต่อเนื่อง) ทำให้ forward P/E เหลือแค่ ~19x จาก 5-yr average ~33x — ราคาปัจจุบันไม่ได้ price-in คุณภาพการเงินที่ยังดีขึ้นเรื่อยๆ",
       "risk": "ถ้า MAU growth ที่ชะลอเหลือ +6% (เทียบ DAU +21%) ไม่ฟื้นภายใน 2-3 ไตรมาส (ยังไม่มีข้อมูล Q2 ใหม่ — earnings 5 ส.ค. 2026) — แสดงว่า top-of-funnel ใหม่หมดแรงจริง ไม่ใช่แค่ noise ชั่วคราว และ DAU growth ที่เหลือจาก retention อย่างเดียวจะ plateau ในที่สุด"
     },
     "tier": "🌱 Fast Grower",
@@ -3699,7 +3697,7 @@
     },
     "tier": "🌱 Fast Grower",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price cross-checked Nasdaq API + CNBC (0% drift): $206.77, -1.88% today — MoS improves marginally from -40.5% to ~-37.9%, still deeply negative",
         "Consensus growth 28.1%/yr (finbox median 5-yr) — exact match to Warren's 28.1% growth-term input, no gap",
@@ -3707,7 +3705,6 @@
         "Valuation extreme confirmed independently: FY2026 forward P/E ~97x (stockanalysis, non-GAAP basis) to 132x (Warren's basis) depending on EPS convention — both readings agree the stock is priced for perfection"
       ],
       "concerns": [
-        "⚖️ FV gap 120.6% เกินเกณฑ์บังคับ 20% (§2.5) → verdict ต้องเป็น CAUTION ขั้นต่ำ",
         "Charlie's independent EPS-multiple FV ($68, using consensus FY+1 non-GAAP EPS $1.23 × a conservative ~55x cap) sits far below even Warren's already-bearish $150 base — this is a known methodology limitation for hyper-growth, GAAP-thin SaaS names (low reported EPS understates the true earnings-power multiple base) rather than a contradiction of Warren's thesis; both approaches agree the stock is significantly overvalued at $206.77, so this reinforces rather than undermines the WATCH call",
         "Could not independently re-confirm or refute Warren's cited UBS survey finding (Charlotte AI NTM intent -3pt) this cycle — no new data either way",
         "Fast Grower tier PEG<1.0 criterion fails badly (4.7) — again a valuation-timing symptom, not a business misclassification; 28%+ growth and platform consolidation trend both intact"
@@ -4270,7 +4267,7 @@
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-16",
+      "updated": "2026-07-18",
       "tier": "🔁 Cyclical",
       "tier_slug": "cyclical",
       "what": "Sandisk เป็นผู้นำ NAND flash technology (BiCS8 = gold standard) ผ่าน Flash Ventures JV กับ Kioxia — spin-off จาก WDC ก.พ. 2025; วางตัวเป็น NAND partner สำหรับ AI inference (KV cache/RAG) + สร้าง New Business Model (สัญญา multi-year ลด cyclicality).",
@@ -4316,7 +4313,7 @@
         "⚠️ margin 78.4% คือจุดพีคของวงจรราคา — Warren ใช้กำไรแบบ normalized mid-cycle ไม่ใช่ peak EPS ตามกฎของหุ้น cyclical",
         "NBM: เซ็นแล้ว 5 สัญญา ครอบคลุม >1/3 ของ bits ปี 2027 (ตั้งเป้าเกินครึ่ง); RPO $41.6B",
         "QLC Stargate เริ่ม ship รายได้ไตรมาส 4 FY26 (สำหรับ AI datacenter ความจุสูง)",
-        "ความเสี่ยงใหม่: นักวิเคราะห์เริ่มปรับมุมมองว่า NAND ASP จะร่วงเร็วกว่าที่เคยประเมิน (oversupply มาเร็วกว่าคาด)"
+        "ความเสี่ยงใหม่: นักวิเคราะห์เริ่มปรับมุมมองว่า NAND ASP จะร่วงเร็วกว่าที่เคยประเมิน (oversupply มาเร็วกว่าคาด) แม้ Goldman Sachs ยังปรับเป้าราคาขึ้นเป็น $2,200 (มุมมอง bullish สวนทาง)"
       ]
     },
     "warren_easy": [
@@ -4565,7 +4562,7 @@
     },
     "tier": "🌱 Fast Grower",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price cross-checked Nasdaq API + CNBC (0% drift): $264.46, -2.32% today — MoS improves marginally from -44.8% to ~-41.4%, still deeply negative",
         "Consensus growth 28.6%/yr (Simply Wall St) — matches Warren's own cited corroborating figure (28.6%) exactly; Warren's 26% base input sits 2.6pp below this, within the 5pp tolerance, no gap flag",
@@ -4573,7 +4570,6 @@
         "Named Gartner Magic Quadrant Leader for Observability for the 6th consecutive year (07-15) — supports the platform-durability side of the thesis"
       ],
       "concerns": [
-        "⚖️ FV gap 43.8% เกินเกณฑ์บังคับ 20% (§2.5) → verdict ต้องเป็น CAUTION ขั้นต่ำ",
         "Charlie's independent EPS-multiple FV ($130, consensus FY+1 non-GAAP EPS $2.88 × ~45x conservative cap) sits well below Warren's $187 base — same hyper-growth/thin-GAAP-EPS methodology limitation noted for CRWD; both readings still conclude the stock is overvalued at $264.46, so this reinforces rather than contradicts the WATCH call",
         "Trailing GAAP P/E cited at 667x independently — extreme by any measure, consistent with Warren's fwd PE 112.8 flag",
         "Fast Grower tier PEG<1.0 criterion fails badly (4.34) — valuation-timing symptom, not business misclassification"
@@ -4853,7 +4849,7 @@
     },
     "tier": "🔁 Cyclical",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "ราคา $322.30 (07-16 close) ✓ CNBC quote API + Nasdaq api.quote/info ตรงกันเป๊ะ (<1% diff) — เป็นวันที่ร่วง -5.79% จาก $342.12",
         "52W range $88.60-$487.91 ✓ ทั้ง 2 แหล่งตรงกัน — ราคาปัจจุบันต่ำกว่า high 34% แล้ว (correction เริ่มแล้วก่อนงบ)",
@@ -4861,7 +4857,6 @@
         "Insider selling ต่อเนื่อง: CEO Gregory Smith ขาย 4,000 หุ้น (07-15), Director Marilyn Matz ขาย 1,200 หุ้น (07-15), รวม 3 เดือน sold $6.7M / ซื้อ $0 (Motley Fool/MarketBeat) — ภายใต้ 10b5-1 plan แต่ zero-buy pattern ยังเป็น soft red flag"
       ],
       "concerns": [
-        "⚖️ FV gap 100.0% เกินเกณฑ์บังคับ 20% (§2.5) → verdict ต้องเป็น CAUTION ขั้นต่ำ",
         "Independent normalized FV ~$200 = feps consensus $6.94 (ไม่ normalize สำหรับ cycle) × conservative multiple 29x (blend 10yr avg PE 27.28x + 5yr avg PE 30.73x จาก fullratio/macrotrends) — ต่ำกว่าราคาปัจจุบัน $322.30 ถึง ~61% แม้ใช้ peak-consensus EPS ยังไม่ normalize ลงเป็น mid-cycle จริง (ซึ่งจะทำให้ FV ต่ำกว่านี้อีก) → ยืนยันชัดว่านี่คือ late-cycle valuation profile ตามกฎ Cyclical Peak EPS Bias",
         "Current fwd P/E 46.45x และ trailing P/E 59.65-91.99x (ต่างแหล่งรายงานต่างกัน แต่ทั้งคู่สูงกว่า 10yr avg 27.28x มาก) — ไม่มี multiple compression ใดที่ทำให้ราคานี้สมเหตุสมผลสำหรับ tier Cyclical",
         "Earnings 07-28 เป็น binary catalyst ที่ expectations สูงมาก (+258% EPS YoY) — ถ้าพลาดแม้เล็กน้อย downside risk สูงกว่าฝั่ง upside ที่ราคานี้"
