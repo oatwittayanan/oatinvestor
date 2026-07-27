@@ -88,20 +88,20 @@
       "review_date": "2026-07-27"
     },
     "mark_easy": {
-      "one_liner": "ผู้นำ AI ภาคธุรกิจที่มี backlog $627B ล็อกไว้แล้ว — ราคา $393.82 ให้ MoS 14.2% (Base FV $459); held name เชิงมูลค่าใกล้เต็ม HOLD",
+      "one_liner": "ผู้นำ AI ภาคธุรกิจที่มี backlog $627B ล็อกไว้แล้ว — ราคาย่อลง $393.82→$381.70 ทำให้ MoS ขยับขึ้นเป็น 16.84% (Base FV $459) ผ่าน gate 15% แล้ว; Charlie ยังกังวลเรื่อง multiple (CAUTION, gap 15.9%)",
       "what": "Microsoft หาเงิน 3 เส้นหลัก: Azure cloud (AI + enterprise), M365 Copilot (AI สำหรับทีมงาน), GitHub Copilot (AI สำหรับนักพัฒนา) — ฝังลึกในองค์กรทั่วโลกมา 30+ ปี",
       "why_invest": [
         "Azure +40% YoY ติด capacity = demand จริง; AI ARR $37B +123% YoY",
         "RPO $627B = รายได้ที่ lock ไว้แล้วหลายปี",
-        "consensus EPS $19.28 ≈ Warren $19.14 — ตัวเลขตรง ไม่เฟ้อ",
+        "ราคาย่อลง 3.1% (ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ดีขึ้นจาก 14.2%→16.84% ผ่าน gate 15% แล้ว",
         "layoff 4,800 + Cybersecurity reorg = วินัยต้นทุนแบบ Fisher ไม่ใช่ demand อ่อน"
       ],
       "watch_out": [
-        "Charlie CAUTION: gap 15.9% จาก multiple (Warren 24x FV $459 vs Charlie 20x FV $386)",
-        "MoS 14.2% (Base FV $459) — held name เชิงมูลค่าใกล้เต็ม",
-        "CapEx ~$190B ปี 2026 กด FCF; Azure ถ้าชะลอ <15% 2 ไตรมาสติด = thesis สั่น; OpenAI exclusivity erosion"
+        "Charlie ยังให้ CAUTION: gap 15.9% จาก multiple (Warren 24x FV $459 vs Charlie min-rule 20x FV $386) — MoS ที่ดีขึ้นมาจากราคาล้วนๆ ไม่ใช่ Charlie ยอมรับ multiple 24x",
+        "มีการฟ้องกลุ่ม (securities class action, ยื่น 24 ก.ค.) หลังหุ้นอ่อนตัว YTD — เป็น routine filing ไม่กระทบสาระ แต่ต้องติดตาม",
+        "งบ Q4 FY26 ออก 29 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงต่อราคาและ FV รอบหน้า; CapEx ~$190B ปี 2026 กด FCF"
       ],
-      "bottom_line": "Enterprise AI platform แน่นสุด + backlog $627B — แต่ราคา $393.82 ให้ MoS แค่ 14.2% และ Charlie flag gap multiple; held name ถือต่อได้ ไม่เติมหนักที่ราคานี้. HOLD"
+      "bottom_line": "Enterprise AI platform แน่นสุด + backlog $627B — ราคาที่ย่อลงมาทำให้ MoS ดีขึ้นเป็น 16.84% ผ่าน gate 15% แล้ว แต่ Charlie ยังกังวลเรื่อง multiple (CAUTION, gap 15.9%) และงบ Q4 FY26 ใกล้เข้ามา (29 ก.ค.) เป็นตัวแปรสำคัญรอบหน้า; held name ถือต่อได้ ไม่จำเป็นต้องเติมหนักตอนนี้. HOLD"
     },
     "mark_full": {
       "business_overview": "Microsoft แบ่งธุรกิจ 3 ส่วน: Intelligent Cloud ($34.7B/Q, +30% YoY), Productivity & Business Processes ($35B/Q, +17%) และ More Personal Computing ($13.2B/Q, -1%) — รายได้รวม $82.9B Q3 FY26 +18% YoY",
@@ -112,41 +112,41 @@
         "Azure AI capacity-constrained → demand จริง ไม่ใช่ hype",
         "M365 Copilot 20M+ paid seats — fastest-growing enterprise product ในประวัติ MSFT",
         "RPO $627B+ (รวม OpenAI $250B Azure commitment) = demand lock-in multi-year",
-        "Charlie CAUTION: EPS ตรง consensus แต่ gap 15.9% จาก multiple (24x vs min-rule 20x); Capex ~$190B กด FCF"
+        "Charlie CAUTION: EPS ตรง consensus แต่ gap 15.9% จาก multiple (24x vs min-rule 20x); Capex ~$190B กด FCF; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst ก่อน Charlie รอบหน้า"
       ]
     },
     "warren_easy": [
-      "MSFT tier Inevitable WAF 8.6 (VERY HIGH) — Azure + Copilot + AI ARR $37B +123% YoY; RPO $627B lock demand",
-      "ราคา $393.82 ให้ MoS 14.2% (Base FV $459 = 24x FY27 consensus $19.14) — held name เชิงมูลค่าใกล้เต็ม, ผ่าน gate เชิงกลไก",
-      "HOLD — ถือต่อ ไม่จำเป็นต้องเติมหนักที่ราคานี้"
+      "MSFT tier Inevitable WAF 8.70 (VERY HIGH) — Azure + Copilot + AI ARR $37B +123% YoY; RPO $627B lock demand",
+      "ราคาย่อ $393.82→$381.70 (-3.1%, ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ขยับขึ้น 14.2%→16.84% (Base FV $459 = 24x FY27 consensus $19.14) — ผ่าน gate 15% แล้ว",
+      "HOLD — ถือต่อ ไม่จำเป็นต้องเติมหนักที่ราคานี้ (thesis เดิมไม่เปลี่ยน เป็นแค่ price refresh)"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY27 $19.28 (Nasdaq, 19 analysts) ใกล้ Warren $19.14 มาก — ตัวเลข EPS ไม่มีปัญหา; ประเด็นอยู่ที่ multiple",
-        "Charlie ใช้ min-rule multiple 20x (current fwd P/E 19.8x ต่ำกว่า 5yr median ~30x จึงใช้ ~20x) → FV $386 vs Warren 24x = $459 (gap 15.9% เกิน threshold) → CAUTION; แต่ HOLD anyway เพราะเป็น held name และ business สะอาด",
-        "ราคา cross-check: Nasdaq $381.70 (Jul 23) ต่ำกว่าการ์ด $393.82 ~3% → Warren ใช้ราคา conservative; Capex CY2026 ~$190B กด FCF/margin near-term; งบ Q4 FY26 ปลาย ก.ค."
+        "Charlie ยืนยัน consensus EPS FY27 $19.28 (Nasdaq, 19 analysts) ใกล้ Warren $19.14 มาก — ตัวเลข EPS ไม่มีปัญหา; ประเด็นอยู่ที่ multiple เหมือนเดิม",
+        "Charlie ใช้ min-rule multiple 20x (fwd P/E ~19.9x ต่ำกว่า 5yr median ~30x) → FV $386 vs Warren 24x = $459 (gap 15.9% ยังเกิน threshold แม้ MoS ดีขึ้นจากราคาที่ย่อลง) → คง CAUTION; แต่ HOLD anyway เพราะเป็น held name และธุรกิจสะอาด",
+        "ของใหม่รอบนี้: มีการฟ้องกลุ่ม (securities class action, Bleichmar Fonti & Auld, ยื่น 24 ก.ค.) หลังหุ้นอ่อนตัว — Charlie ระบุว่าเป็น routine filing หลังราคาตก ไม่กระทบสาระการเงิน แต่การ์ด Warren ยังไม่พูดถึง ต้องติดตามเนื้อหาคดี; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst ก่อน Charlie รอบหน้า"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
-    "idea_th": "HOLD — Enterprise AI Stack: Azure + Copilot + RPO $627B. ราคา $393.82 ให้ MoS 14.2% (Base FV $459) — held name เชิงมูลค่าใกล้เต็ม; layoff 4,800 ตำแหน่ง + Cybersecurity unit reorg (07-16) อ่านเป็นวินัยต้นทุนแบบ Fisher ไม่ใช่ demand อ่อน. ⚠️ Charlie CAUTION: consensus EPS $19.28 ≈ Warren $19.14 (ตัวเลขตรง) แต่ Charlie ใช้ multiple 20x (min-rule: fwd 19.8x < median 30x) → FV $386 vs Warren 24x $459 (gap 15.9%). HOLD anyway. Capex CY26 ~$190B กด FCF; งบ Q4 FY26 ปลาย ก.ค.",
+    "idea_th": "HOLD — Enterprise AI Stack: Azure + Copilot + RPO $627B (bet เดิมไม่เปลี่ยน). ราคาย่อ $393.82→$381.70 (-3.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ขยับดีขึ้น 14.2%→16.84% (Base FV $459) — ผ่าน gate 15% แล้ว. ⚠️ Charlie ยังให้ CAUTION: consensus EPS $19.28 ≈ Warren $19.14 (ตัวเลขตรง) แต่ Charlie ใช้ multiple 20x (min-rule) → FV $386 vs Warren 24x $459 (gap 15.9%) — MoS ที่ดีขึ้นมาจากราคา ไม่ใช่ Charlie ยอมรับ multiple สูงขึ้น. มีการฟ้องกลุ่ม (ยื่น 24 ก.ค., routine filing) และงบ Q4 FY26 ออก 29 ก.ค. เป็นตัวแปรสำคัญรอบหน้า. HOLD ต่อ",
     "story_gate_th": {
       "what": "Microsoft monetize enterprise AI ผ่าน Azure + M365/GitHub Copilot + AI ARR run-rate $37B +123% YoY; ฝังลึกในองค์กร 30+ ปี, RPO $627B lock demand หลายปี",
-      "why": "ราคา $393.82 ให้ MoS 14.2% (Base FV $459) — held name เชิงมูลค่าใกล้เต็ม. Charlie flag ว่า gap มาจาก multiple: Warren 24x vs Charlie 20x (min-rule) → FV $386 (gap 15.9%); EPS ตรงกัน ($19.28 ≈ $19.14) ไม่ใช่ประเด็น data ผิด แต่เป็นสมมติฐาน multiple",
-      "risk": "Azure growth ชะลอ <15% 2 ไตรมาสติด; OpenAI ลด Copilot exclusivity; Capex CY2026 ~$190B (สูงกว่า consensus, ส่วนหนึ่งจาก component price inflation) กด FCF/margin near-term"
+      "why": "ราคาย่อลง $393.82→$381.70 ทำให้ MoS ขยับขึ้นเป็น 16.84% (Base FV $459) — ผ่าน gate 15% แล้ว จากราคาที่ถูกลง ไม่ใช่ FV เปลี่ยน. Charlie ยัง flag gap multiple เดิม: Warren 24x vs Charlie 20x (min-rule) → FV $386 (gap 15.9%); EPS ตรงกัน ไม่ใช่ประเด็น data ผิด แต่เป็นสมมติฐาน multiple ที่ยังไม่ตรงกัน",
+      "risk": "Azure growth ชะลอ <15% 2 ไตรมาสติด; OpenAI ลด Copilot exclusivity; Capex CY2026 ~$190B กด FCF/margin; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst เสี่ยงรอบหน้า; ฟ้องกลุ่ม securities class action ยื่นใหม่ 24 ก.ค. (routine แต่ต้องติดตาม)"
     },
     "bull_th": [
       "Azure/cloud +40% YoY (capacity-constrained = demand จริง); AI ARR run-rate $37B +123% YoY",
       "RPO $627B = รายได้ที่ lock ไว้แล้วหลายปี",
-      "consensus EPS $19.28 ≈ Warren $19.14 — ตัวเลขตรง ไม่เฟ้อ",
+      "ราคาย่อลง 3.1% ทำให้ MoS ดีขึ้นเป็น 16.84% ผ่าน gate 15% แล้ว (FV ไม่เปลี่ยน)",
       "layoff 4,800 ตำแหน่ง + Cybersecurity unit reorg = วินัยต้นทุนแบบ Fisher ไม่ใช่ demand อ่อน"
     ],
     "risk_th": [
       "Charlie CAUTION: gap 15.9% จาก multiple (Warren 24x FV $459 vs Charlie min-rule 20x FV $386) — EPS ตรงกันแต่สมมติฐาน multiple ต่าง",
-      "MoS 14.2% (Base FV $459) — held name เชิงมูลค่าใกล้เต็ม",
+      "งบ Q4 FY26 ออก 29 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงต่อราคาและ FV รอบหน้า",
       "Azure growth ถ้าชะลอ <15% 2 ไตรมาสติด = thesis เริ่มสั่น",
       "OpenAI ลด Copilot exclusivity ระยะยาว = captive demand ลดลง",
-      "Capex CY2026 ~$190B กด FCF ต่อเนื่อง"
+      "Capex CY2026 ~$190B กด FCF ต่อเนื่อง + ฟ้องกลุ่ม securities class action ใหม่ (routine, ยื่น 24 ก.ค.)"
     ]
   },
   "NVDA": {
@@ -835,20 +835,20 @@
       "review_date": "2026-07-27"
     },
     "mark_easy": {
-      "one_liner": "AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge — ราคา $247.23 ให้ MoS 13.9% (Base FV $287), Charlie AGREE ตัวเลขสะอาด; held name ถือต่อได้",
+      "one_liner": "AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge — ราคาย่อ $247.23→$232.11 ทำให้ MoS ขยับขึ้นเป็น 19.13% (Base FV $287), Charlie AGREE ตัวเลขสะอาด; held name ถือต่อได้",
       "what": "Amazon มี 3 ธุรกิจหลัก: e-commerce+โฆษณา (North America/International) และ AWS cloud ที่สร้างกำไรหลักของบริษัท",
       "why_invest": [
         "AWS +36% เร็วสุดใน 15 ไตรมาส backlog $364B",
         "Trainium chip ต้นทุนถูกกว่า NVIDIA GPU มาก — สัญญา OpenAI/Anthropic รวม $200B+",
         "Amazon Ads $70B+ TTM run-rate margin สูง โต +22% YoY",
-        "Charlie FV อิสระ $283 ใกล้ Warren $287 (gap 1.4%) — ตัวเลขสะอาด"
+        "ราคาย่อลง 6.1% (ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ดีขึ้นจาก 13.9%→19.13%; Charlie FV อิสระ $283 ใกล้ Warren $287 (gap 1.4%) — ตัวเลขสะอาด"
       ],
       "watch_out": [
         "FCF ร่วงจาก capex AI ~$200B ปี 2026",
         "FTC ad-pricing case + probe ใหม่เรื่อง Anthropic investment",
-        "MoS 13.9% ผ่าน gate เชิงกลไกแต่ไม่กว้าง — ไม่ใช่ entry ที่ถูกมาก"
+        "งบ Q2 FY26 ออก 30 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงราคา/FV รอบหน้า"
       ],
-      "bottom_line": "ธุรกิจหลักแข็งแรง ตัวเลขสะอาด (Charlie AGREE gap 1.4%) MoS 13.9% ผ่าน gate — held name ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้. HOLD"
+      "bottom_line": "ธุรกิจหลักแข็งแรง ตัวเลขสะอาด (Charlie AGREE gap 1.4%) ราคาที่ย่อลงมาทำให้ MoS ดีขึ้นเป็น 19.13% — held name ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้ แต่จับตางบ Q2 FY26 (30 ก.ค.). HOLD"
     },
     "mark_full": {
       "business_overview": "Amazon แบ่ง 3 segment: North America (retail+ads), International (retail+ads), AWS (cloud) — AWS สร้างรายได้แค่ 21% แต่สร้าง operating income 59% ของทั้งบริษัท",
@@ -863,36 +863,36 @@
       ]
     },
     "warren_easy": [
-      "AMZN tier Inevitable WAF 7.9 — AWS +36% (backlog $364B) + Trainium/Anthropic $200B+ compute hedge + Amazon Ads $70B+ run-rate",
-      "MoS 13.9% (Base FV $287) — held name เชิงมูลค่าใกล้เต็ม, ผ่าน gate เชิงกลไกแต่ไม่กว้าง",
-      "HOLD — ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้"
+      "AMZN tier Inevitable WAF 8.13 — AWS +36% (backlog $364B) + Trainium/Anthropic $200B+ compute hedge + Amazon Ads $70B+ run-rate",
+      "ราคาย่อ $247.23→$232.11 (-6.1%, ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ขยับขึ้น 13.9%→19.13% (Base FV $287 ไม่เปลี่ยน)",
+      "HOLD — ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้ (thesis เดิมไม่เปลี่ยน)"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
         "Charlie ยืนยัน consensus EPS FY27 $10.11 (Nasdaq, 18 analysts) ใกล้ Warren $9.91 มาก และคำนวณ FV อิสระ $10.11 × 28x = $283 ใกล้ Warren $287 (gap แค่ 1.4%) — ไม่มีประเด็น EPS/multiple เฟ้อ",
-        "หมายเหตุราคา: Nasdaq $232.11 (Jul 23) ต่ำกว่าการ์ด Warren $247.23 ~6% → Warren ใช้ราคาที่ conservative กว่าสำหรับ MoS; MoS จริงอาจดีกว่าที่รายงาน",
-        "ความเสี่ยงหลักคือ Capex กด FCF + FTC ad-pricing case — ไม่ใช่เรื่องมูลค่า; HOLD/ถือต่อเหมาะสม"
+        "ราคาล่าสุด $232.11 ตรงกับการ์ด Warren เป๊ะ (ย่อลงจาก $247.23 เดิม -6.1%) — ที่ Charlie FV $283 คิดเป็น MoS +17.98% (ดีขึ้นจาก +12.64% ที่ราคาเดิม) ยืนยันว่าราคาที่ถูกลงทำให้ margin of safety กว้างขึ้นจริง",
+        "ข้อสังเกตเดียว: ra_ex_valuation (6.5) เท่ากับ scores.ra (6.5) พอดี — Charlie flag ให้ Warren ยืนยัน methodology รอบหน้า (ไม่ใช่ปัญหาเชิงมูลค่า); ความเสี่ยงหลักคือ Capex กด FCF + FTC ad-pricing case + งบ Q2 FY26 ออก 30 ก.ค. — ไม่ใช่เรื่องมูลค่า; HOLD เหมาะสม"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
-    "idea_th": "HOLD — Cloud + Retail + Ads trifecta: AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge. ราคา $247.23 ให้ MoS 13.9% (Base FV $287) — held name เชิงมูลค่าใกล้เต็ม. Charlie AGREE: consensus EPS $10.11 ≈ Warren $9.91, คำนวณ FV อิสระได้ $283 ใกล้ Warren มาก (gap แค่ 1.4%) — ตัวเลขสะอาด. Capex กด FCF + FTC ad-pricing case เป็นความเสี่ยงหลัก. ถือต่อได้ ไม่ต้องเติมหนักที่ราคานี้.",
+    "idea_th": "HOLD — Cloud + Retail + Ads trifecta: AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge (bet เดิมไม่เปลี่ยน). ราคาย่อ $247.23→$232.11 (-6.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ขยับดีขึ้น 13.9%→19.13% (Base FV $287 ไม่เปลี่ยน). Charlie AGREE: consensus EPS $10.11 ≈ Warren $9.91, คำนวณ FV อิสระได้ $283 ใกล้ Warren มาก (gap แค่ 1.4%) — ตัวเลขสะอาด. Capex กด FCF + FTC ad-pricing case + งบ Q2 FY26 (30 ก.ค.) เป็นความเสี่ยง/ตัวแปรหลักรอบหน้า. ถือต่อได้ ไม่ต้องเติมหนักที่ราคานี้.",
     "story_gate_th": {
       "what": "Amazon มี 3 ธุรกิจ: e-commerce + โฆษณา + AWS cloud ที่สร้าง operating income ~59% ของบริษัท; AWS +36% เร็วสุดใน 15 ไตรมาส, Trainium ต้นทุนถูกกว่า NVIDIA GPU มาก",
-      "why": "ราคา $247.23 ให้ MoS 13.9% (Base FV $287) — เป็น held name ที่มูลค่ายังพอมี upside. Charlie คำนวณ FV อิสระ $283 (consensus $10.11 × 28x) ใกล้ Warren $287 gap แค่ 1.4% — ตัวเลขสะอาด ไม่มีประเด็น EPS เฟ้อ",
-      "risk": "FTC ad-pricing case ยกระดับเป็น structural remedy; AWS growth ชะลอ <20%; Capex AI ~$200B กด FCF; FY27 EPS $9.91 อิง single-source ต้องระวัง"
+      "why": "ราคาย่อลง $247.23→$232.11 (-6.1%) ทำให้ MoS ขยับขึ้นเป็น 19.13% (Base FV $287 ไม่เปลี่ยน) — margin of safety กว้างขึ้นจากราคา. Charlie คำนวณ FV อิสระ $283 (consensus $10.11 × 28x) ใกล้ Warren $287 gap แค่ 1.4% — ตัวเลขสะอาด ไม่มีประเด็น EPS เฟ้อ",
+      "risk": "FTC ad-pricing case ยกระดับเป็น structural remedy; AWS growth ชะลอ <20%; Capex AI ~$200B กด FCF; งบ Q2 FY26 ออก 30 ก.ค. เป็น catalyst เสี่ยงรอบหน้า; FY27 EPS $9.91 อิง single-source ต้องระวัง"
     },
     "bull_th": [
       "AWS +36% เร็วสุดใน 15 ไตรมาส, backlog $364B (ไม่รวม Anthropic $100B+)",
       "Trainium chip ต้นทุนถูกกว่า NVIDIA GPU มาก — สัญญา OpenAI/Anthropic รวม $200B+",
       "Amazon Ads $70B+ TTM run-rate margin สูง โต +22% YoY",
-      "Charlie FV อิสระ $283 ใกล้ Warren $287 — ตัวเลขสะอาด ผ่าน gate"
+      "ราคาย่อลง 6.1% ทำให้ MoS ดีขึ้นเป็น 19.13%; Charlie FV อิสระ $283 ใกล้ Warren $287 — ตัวเลขสะอาด ผ่าน gate ชัดเจน"
     ],
     "risk_th": [
       "FCF ร่วงจาก capex AI ~$200B ปี 2026",
       "FTC ad-pricing case + probe เรื่อง Anthropic investment (ข้อหา stealth merger)",
       "AWS growth +36% ยังต้องรักษาระดับ — ถ้าชะลอ <20% thesis สั่น",
-      "MoS 13.9% ผ่าน gate เชิงกลไกแต่ไม่กว้าง (Base FV $287)"
+      "งบ Q2 FY26 ออก 30 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงราคา/FV รอบหน้า"
     ]
   },
   "LITE": {
