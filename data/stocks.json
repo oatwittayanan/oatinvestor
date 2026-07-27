@@ -965,15 +965,16 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY27 consensus EPS $16.67 (Nasdaq, 7 analysts); FY26 $6.42",
-        "Price $762.99 confirmed"
+        "Price $762.99 independently re-confirmed via Nasdaq quote API 2026-07-27 (exact match) — no price move since 07-25 gate confirmed",
+        "FY27 consensus EPS $16.67 (Nasdaq, 7 analysts) unchanged from 07-25",
+        "WebSearch 2026-07-27: no LITE-specific news found for Jul 25-27 — confirms Warren's note that the card's Recent News section has no entries since gate_date 07-25; next catalyst is FQ4 earnings 2026-08-11"
       ],
       "concerns": [
-        "⚠️ Warren multiple 60.5x สูงมาก (current fwd PE 45.8x); Charlie 40x x $16.67 = $667 vs Warren $1100",
+        "⚠️ Warren multiple 60.5x สูงมาก (current fwd PE 45.8x); Charlie 40x x $16.67 = $667 vs Warren $1100 (unchanged from 07-25 — re-verified independently)",
         "gap 39% > 20% → CAUTION; PEG fail (Warren เอง 1.14); NVIDIA single-customer concentration"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B — ราคา $762.99 ให้ MoS 30.6% ผ่านสบาย แต่ PEG ยังติด cap + Charlie เตือนว่า multiple 60.5x สูงเกินไป (FV อิสระ $667)",
@@ -1984,15 +1985,17 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Dec2027 consensus EPS = $11.56 (19 analysts, Nasdaq); Dec2028 = $15.75",
-        "Price $521.95 confirmed Nasdaq"
+        "Price $521.95 independently re-confirmed via Nasdaq quote API 2026-07-27 (exact match to Warren's card/prices_cache) — no price move since 07-25 gate confirmed",
+        "Dec2027 consensus EPS = $11.56 (19 analysts, Nasdaq) — unchanged from 07-25 review; Warren's $18.7 (CY2027) still ~62% above Street consensus",
+        "WebSearch 2026-07-27: no material news since 07-25 gate — Advancing AI event (OpenAI/Meta 1GW deployments), BofA PT $620 raise, and Anthropic $5B deal all dated Jul 23-24, already reflected in the 07-25 gate/investment_idea. BofA PT explicitly excluded from this review per house rule."
       ],
       "concerns": [
         "⚠️ Warren eps_used $18.7 (CY2027) สูงกว่า Street consensus $11.56 ถึง ~62% — และเกิน Dec2028 consensus $15.75 ด้วย; FV $467 จึงเฟ้อ. Charlie FV บน consensus = $312 (gap 33%)",
-        "gap 33% > 20% → CAUTION บังคับ"
+        "gap 33% > 20% → CAUTION บังคับ (unchanged from 07-25 — re-verified independently, not just carried)",
+        "TQR: ra_ex_valuation (6.0) == scores.ra (6.0) exactly — isolated to AMD only (AAPL/LITE this batch both differ from their scores.ra), so not a batch-wide copy pattern, but flagged for Warren to confirm the ex-valuation adjustment was actually applied to AMD's RA"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "อันดับ 2 ที่แข็งแกร่งสุดในตลาด AI GPU + ครอง server CPU >40% แต่ราคา $521.95 ยังแพงเหนือมูลค่า (MoS -11.8%) และ Charlie เตือนว่า EPS ที่ใช้คำนวณ FV สูงกว่า consensus ถึง 62%",
@@ -2130,14 +2133,15 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price $333.02 cross-checked Nasdaq (Jul 23) — matches Warren card",
-        "TTM actual EPS $8.27 vs FY27 consensus $9.57 (Nasdaq) — Warren FV EPS $9.83 slightly above consensus"
+        "Price $333.02 independently re-confirmed via Nasdaq quote API 2026-07-27 (exact match) — no price move since 07-25 gate confirmed",
+        "TTM actual EPS $8.27 vs FY27 consensus $9.57 (Nasdaq) unchanged — Warren FV EPS $9.83 still only slightly above consensus",
+        "WebSearch 2026-07-27: no material news since 07-25 gate — brief App Store/services outage (07-25) fully restored by 07-26 (non-material, operational), Q3 FY26 earnings still pending (07-30), foldable-share forecast is industry-level noise, not company-specific catalyst"
       ],
       "concerns": [
-        "ราคาเหนือ FV ทุกฝั่ง ~30% — WATCH ถูกต้อง ไม่ chase"
+        "ราคาเหนือ FV ทุกฝั่ง ~30% — WATCH ถูกต้อง ไม่ chase (unchanged from 07-25 — re-verified independently)"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "คุณภาพสูงสุดในโลกแต่ราคา ($333.02) ยังยืนแพงเหนือมูลค่าทุกฝั่ง (Base FV $255 / Bull $300) โดยไม่มีงบใหม่รองรับ — MoS -30.6%, WAF ตกเป็น LOW",
