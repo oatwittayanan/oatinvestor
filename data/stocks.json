@@ -73,15 +73,19 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY27 consensus EPS $19.28 (Nasdaq, 19 analysts) ≈ Warren $19.14",
-        "⚠️ Price cross-check: Nasdaq $381.70 (Jul 23) ต่ำกว่า Warren card $393.82 ~3% — ใช้ Warren price (conservative)"
+        "Price $381.70 cross-checked Nasdaq + CNBC quote API (both exact match, Jul 24 close) — matches Warren card exactly",
+        "FY27 (Jun2027) consensus EPS $19.28 (Nasdaq, 19 analysts) — exact match to Warren eps_used $19.14→$19.28 basis, no drift",
+        "TQR centrality/resilience notes contain no price language (\"ถูก/แพง/discount/upside\") — contamination check clean",
+        "ra_ex_valuation 7.5 vs scores.ra 8.0 — differ, not a blanket copy"
       ],
       "concerns": [
-        "Charlie FV $386 (min-rule 20x) ต่ำกว่า Warren $459 (24x) — gap 16% → CAUTION; HOLD anyway",
-        "Capex CY2026 ~$190B กด FCF/margin near-term"
+        "Charlie FV $386 (20x min-rule multiple) vs Warren $459 (24x) — gap 15.9%, still above the 15% full-worksheet line even though price drop improved MoS (14.2%→16.84%); Warren's 24x assumes a re-rate this review doesn't grant",
+        "New: securities class action filed 2026-07-24 (Bleichmar Fonti & Auld LLP) following the stock's YTD weakness — routine post-decline litigation, financially immaterial, but Warren's card doesn't mention it; track for substance",
+        "Capex CY2026 ~$190B continues to pressure FCF/margin near-term",
+        "Q4 FY26 earnings due 2026-07-29 (3 trading days after this review) — real catalyst risk to both price and FV inputs before next Charlie pass"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "ผู้นำ AI ภาคธุรกิจที่มี backlog $627B ล็อกไว้แล้ว — ราคา $393.82 ให้ MoS 14.2% (Base FV $459); held name เชิงมูลค่าใกล้เต็ม HOLD",
@@ -811,14 +815,19 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "FY27 consensus EPS $10.11 (Nasdaq, 18 analysts) ≈ Warren $9.91",
-        "⚠️ Price cross-check: Nasdaq $232.11 (Jul 23) ต่ำกว่า Warren card $247.23 ~6% — ใช้ Warren price (conservative กว่าสำหรับ MoS); MoS จริงอาจดีกว่าที่ Warren รายงาน"
+        "Price $232.11 cross-checked Nasdaq + CNBC quote API (both exact match, Jul 24 close) — matches Warren card exactly",
+        "FY27 (Dec2027) consensus EPS $10.11 (Nasdaq, 18 analysts) — exact match to Warren eps_used",
+        "TQR centrality/resilience notes (Trainium commitments, AWS capacity) contain no price language — contamination check clean",
+        "TQR band Strong (8.25, within 7.0-8.5) with ceiling_pct 25 — consistent with band table"
       ],
       "concerns": [
-        "Capex กด FCF; FTC ad-pricing case"
+        "ra_ex_valuation (6.5) is identical to scores.ra (6.5) for this ticker — the only one of the three where the two values match exactly; not itself disqualifying (valuation risk may genuinely be a small RA component for AMZN given MoS is already comfortably positive), but flagging per the RA* copy-suspicion check for Warren to confirm methodology next round",
+        "FTC ad-pricing case could escalate to structural remedy",
+        "AWS growth deceleration below ~20% would materially change the growth case",
+        "Q2 FY26 earnings due 2026-07-30 (3 trading days after this review) — catalyst risk before next pass"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge — ราคา $247.23 ให้ MoS 13.9% (Base FV $287), Charlie AGREE ตัวเลขสะอาด; held name ถือต่อได้",
@@ -1245,15 +1254,18 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Dec2026 consensus EPS $14.34 / Dec2027 $14.93 (Nasdaq) — สูงกว่า Warren cleaned EPS $11.53 (Warren ตัด one-time equity gains ออก)",
-        "Q2 FY26 reported 07-22: Cloud +82%, backlog $514B; แต่ CapEx guide $195-205B + FCF margin 21%→9.2%"
+        "Price $319.74 cross-checked Nasdaq + CNBC quote API (both exact match, Jul 24 close) — identical to Warren card, no change this round",
+        "Dec2026 consensus EPS $14.34 (Nasdaq, 16 analysts) — exact match to Warren eps_used",
+        "TQR centrality/resilience notes (vertically-integrated TPU stack, Search/YouTube base) contain no price language — contamination check clean",
+        "ra_ex_valuation 6.5 vs scores.ra 5.8 — differ, not a blanket copy"
       ],
       "concerns": [
-        "Charlie FV $301 ≈ price $320 → fairly-to-slightly-rich, ตรงกับ Warren WATCH",
-        "DOJ Search remedy + Ad-Tech divestiture overhang; equity-raise dilution + buyback halt"
+        "Charlie FV $301 vs price $320 — fairly-to-slightly-rich, consistent with Warren's own WATCH (not BUY)",
+        "New: EU hit Alphabet with a ~$1B DMA fine on Play Store + Search (2026-07-24) — financially immaterial at Alphabet's scale but adds a second concurrent regulatory front alongside the US DOJ Search remedy / Ad-Tech divestiture already in Warren's thesis_risk",
+        "CapEx guide raised to $195-205B + negative FCF quarter (-$5.9B) remains the dominant valuation drag, unchanged from 07-25 review"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) แต่หุ้น -11% จาก capex/FCF-negative shock — FV rebased $376→$311 (ตัด GAAP EPS ที่เฟ้อ), ที่ราคา $319.74 MoS -2.8% → WATCH",
