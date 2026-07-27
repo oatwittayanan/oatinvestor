@@ -709,7 +709,8 @@
         "Apple ขยายสัญญาซื้อชิป ASIC ถึงปี 2031 มูลค่ากว่า $30B (~20% ของรายได้ต่อปี)",
         "ข่าวลูกค้า AI รายใหญ่อาจย้ายไป MediaTek — ความเสี่ยง COT (customer-owned tooling)",
         "หนี้รวม ~$68B ส่วนใหญ่มาจากดีล VMware",
-        "Hock Tan (CEO) อายุ 74 ไม่มี employment contract = key-man risk"
+        "Hock Tan (CEO) อายุ 74 ไม่มี employment contract = key-man risk",
+        "ดีลใหม่กับ Samsung มูลค่า $200B (memory+foundry+packaging ถึงปี 2030, ประกาศ 25 ก.ค. 2026) — กระจายฐานซัพพลายเชน/พันธมิตรเพิ่มจาก 6-customer XPU roster เดิม"
       ]
     },
     "warren_easy": [
@@ -722,9 +723,10 @@
       "paragraphs": [
         "Charlie ชี้ว่าจุดเฟ้อคือ multiple: Warren ใช้ 55x ซึ่งสูงกว่า current forward P/E 37x มาก (ที่น่าสนใจคือ eps ที่ Warren ใช้ $8.18 กลับ conservative กว่า consensus FY26 $10.24)",
         "Charlie คำนวณ FV อิสระบน consensus $10.24 × 35x = $358 — ห่างจาก Warren $450 ถึง 20.4% เกิน threshold 20% → CAUTION; บน FV $358 ราคา $381.92 ให้ MoS -6.7% → conservative NO-BUY",
-        "PEG ผ่านฉิวเฉียด (1.42 vs cap 1.5); Google/Meta in-house XPU = COT risk ที่ต้องจับตา; Q3 FY26 ต้นก.ย. เป็น catalyst"
+        "PEG ผ่านฉิวเฉียด (1.42 vs cap 1.5); Google/Meta in-house XPU = COT risk ที่ต้องจับตา; Q3 FY26 ต้นก.ย. เป็น catalyst",
+        "ของใหม่ที่ Charlie เจอวันนี้: การ์ด Warren บอกว่า \"ไม่มีข่าวใหม่ตั้งแต่ 07-09\" แต่ Charlie ไปเช็คอิสระเจอว่า Broadcom เพิ่งเซ็นดีลกับ Samsung มูลค่า $200B ครอบคลุม memory+foundry+packaging ยาวถึงปี 2030 (ประกาศจริง 25 ก.ค. 2026, ยืนยันตรงกันหลายสำนักข่าว) — เป็นข่าวดีเชิงกระจายฐานลูกค้า/ซัพพลายเชนที่การ์ดยังไม่ได้ใส่ ไม่ได้เปลี่ยนคำตัดสิน (เพราะ CAUTION มาจากเรื่อง valuation ไม่ใช่ thesis) แต่เป็นข้อมูลที่ควรรู้ไว้"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "STARTER (staged) — หัวหอก custom AI chip (XPU) ให้ 6 hyperscaler. ราคา $381.92 ดัน MoS 15.13% แตะเส้น gate 15% พอดี (เกินแค่ 0.13pt) พร้อม ER 36.24%/ปี + WAF 8.18. ⚠️ Charlie CAUTION: Warren ใช้ multiple 55x สูงกว่า current fwd P/E 37x มาก = จุดเฟ้อ (eps $8.18 กลับ conservative กว่า consensus $10.24). Charlie 35x × consensus = FV $358 → บน FV นั้นราคาปัจจุบัน MoS -6.7% (gap 20.4% เกิน 20% CAUTION). STARTER แบบ staged ไม่ full BUY — flag Kim/Charlie ก่อน execute + Opportunity Cost Gate.",
     "story_gate_th": {
@@ -736,7 +738,8 @@
       "XPU near-monopoly กับ 6 hyperscaler customer สัญญาหลายปี",
       "Tomahawk 6 เป็น switch 100 Tbps เดียวในตลาด + RPO ~$45B revenue visibility",
       "FY2027 target AI chip revenue >$100B จาก 10GW compute deployment",
-      "ราคาย่อดัน MoS 13.53%→15.13% แตะเส้น gate + ER 36.24%/ปี + WAF 8.18"
+      "ราคาย่อดัน MoS 13.53%→15.13% แตะเส้น gate + ER 36.24%/ปี + WAF 8.18",
+      "ดีล Samsung $200B ใหม่ (memory+foundry+packaging ถึงปี 2030, ประกาศ 25 ก.ค.) เสริมความแข็งแกร่งซัพพลายเชน/พันธมิตร"
     ],
     "risk_th": [
       "⚠️ Charlie: Warren ใช้ multiple 55x สูงกว่า fwd 37x มาก → FV $450 เฟ้อ; Charlie FV บน 35x × consensus = $358 (gap 20.4% เกิน 20%) → MoS -6.7%",
@@ -1167,7 +1170,7 @@
         "ราคาย่อทำให้ MoS ทะลุ gate 15% (17.56%) แต่เป็น held name → HOLD ไม่เติมไม้; FV Charlie $649 ยังสูงกว่าราคา $595.19 พอควร ยืนยัน downside protection",
         "ความเสี่ยงหลัก: FTC appeal + IRS $15.89B overhang + CapEx 2x YoY; Q2 2026 earnings 29 ก.ค. เป็น catalyst ระยะสั้นที่ต้องยืนยัน growth"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "HOLD — เจ้าของผู้ใช้ 3.56 พันล้านคน/วัน ที่ AI ทำโฆษณาแม่นขึ้นทุกไตรมาส. ราคาย่อเป็น $595.19 ดัน MoS 10.5%→17.56% ทะลุ gate 15% ครั้งแรกตั้งแต่ราคาวิ่งแรงต้นเดือน; ทั้ง 4 ด่านผ่านเชิงกลไก (PEG 1.35, ER 17.74%/ปี, WAF 7.82) — แต่ META เป็น holding ที่ถืออยู่ Holdings Return Recheck คุม: ER 17.74% อยู่ใน band 15-20% = HOLD (ยังชนะ QQQM) ไม่ใช่ >20% ADD. Charlie AGREE FV $649 (gap 10%), consensus $29.49 ≈ Warren $31.94. Q2 29 ก.ค. เป็น catalyst.",
     "story_gate_th": {
@@ -2479,7 +2482,7 @@
         "Charlie คำนวณ FV อิสระบน consensus $1.99 × 55x (hypergrowth premium, ยังสูง) = $110 — ราคา $260.01 ยังสูงกว่าราว 2.4 เท่า; EPS ฐานต่ำมากทำให้ FV sensitive ต่อ multiple แต่ทุกกรณีชี้ว่าแพง",
         "AVOID ถูกต้อง — ธุรกิจดีแต่ตลาดให้ราคาสูงเกินมูลค่าพื้นฐานมาก"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "AVOID — ราคา $260.01 ยังแพงกว่ามูลค่าพื้นฐานราว 2 เท่า: MoS -100% (Base FV $130), market forward P/E 74x บน EPS เดียวกับที่ Warren ใช้คิด fair 37x, PEG 3.7 (~2.5x cap 1.5). Charlie AGREE: แม้ eps_used ของ Warren $3.51 (FY28) สูงกว่า consensus $1.99 ~76% แต่ผลลัพธ์เหมือนกัน — Charlie คำนวณอิสระได้ FV $110 (consensus $1.99 × 55x) ยังต่ำกว่าราคา ~2.4 เท่า. ธุรกิจ royalty คุณภาพดี แต่ราคาสูงเกินจริงมาก.",
     "story_gate_th": {
