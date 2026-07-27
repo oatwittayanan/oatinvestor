@@ -668,16 +668,19 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY26 consensus EPS $10.24 / FY27 $17.53 (Nasdaq, 13 analysts)",
-        "Price $381.92 confirmed"
+        "Price $381.92 independently re-pulled today via Nasdaq quote API + CNBC quote-html-webservice API (both exact match, Jul 24 close) — no drift vs 07-25 review",
+        "FY26 (Oct2026) consensus EPS $10.24 (Nasdaq analyst earnings-forecast, 13 analysts) re-pulled today — exact match to prior eps_used, no revision since 07-25",
+        "TQR block (new this round): centrality_note (\"Custom ASIC duopoly...ขยาย customer roster เป็น 6 ราย\") and resilience_note (\"VMware/broadband/networking นอก AI ~40-50%\") contain no price language — contamination check clean",
+        "ra_ex_valuation 5.5 vs scores.ra 6.0 — differ, not a blanket copy"
       ],
       "concerns": [
-        "⚠️ Warren ใช้ multiple 55x (สูงกว่า current fwd PE 37x มาก) — นี่คือจุดเฟ้อ (Warren eps $8.18 กลับ conservative กว่า consensus $10.24). Charlie 35x x consensus = $358",
-        "gap 20.4% > 20% → CAUTION บังคับ; STARTER: MoS บน $358 ที่ราคา $382 = -6.7% → conservative NO-BUY",
-        "PEG ผ่านฉิวเฉียด (Warren 1.42); Google/Meta in-house XPU = COT risk"
+        "Warren ใช้ multiple 55x (สูงกว่า current fwd PE 37.3x มาก) — จุดเฟ้อเดิมจากรอบ 07-25 ยังอยู่ (Warren eps $8.18 ยัง conservative กว่า consensus $10.24 แต่ multiple ชดเชยเกิน). Charlie 35x x consensus $10.24 = $358",
+        "gap 20.4% > 20% → CAUTION บังคับต่อเนื่อง; STARTER ที่ราคา $382 บน min(FV) $358 → MoS conservative -6.7% ไม่ผ่าน gate = conservative NO-BUY (เหมือนรอบ 07-25)",
+        "⚠️ ใหม่: Warren's carry-forward note อ้างว่า \"AVGO last news 07-09\" (ไม่มีข่าวใหม่) — แต่ independent WebSearch วันนี้พบ Samsung-Broadcom เซ็นดีล AI chip มูลค่า $200B ครอบคลุม memory+foundry+packaging ถึงปี 2030 ประกาศจริง 2026-07-25 (CNBC, TheNextWeb, Benzinga ตรงกัน) — เป็นข้อเท็จจริงเชิงธุรกิจที่ควรถูกพิจารณาใน centrality_note รอบหน้า (customer/ecosystem diversification เพิ่มเติมจาก 6-customer roster ที่ note พูดถึงอยู่แล้ว) ไม่ใช่ CAUTION-worsening แต่เป็น omission ที่ Warren ควรใส่เพิ่ม",
+        "PEG ผ่านฉิวเฉียด (Warren 1.42); Google/Meta in-house XPU = COT risk ยังอยู่"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคา $381.92 ดัน MoS 15.13% แตะเส้น gate พอดี พลิกเป็น STARTER แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358)",
@@ -1108,15 +1111,18 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "FY26 consensus EPS $29.49 (Nasdaq, 11 analysts) ≈ Warren $31.94",
-        "Price $595.19 confirmed"
+        "Price $595.19 independently re-pulled today via Nasdaq quote API + CNBC quote-html-webservice API (both exact match, Jul 24 close) — no drift vs 07-25 review",
+        "FY26 (Dec2026) consensus EPS $29.49 (Nasdaq analyst earnings-forecast, 11 analysts) re-pulled today — exact match to prior eps_used, no revision since 07-25",
+        "TQR block (new this round): centrality_note (\"Capex leader...เป็นลูกค้าไม่ใช่ผู้ขาย compute\") and resilience_note (\"ads engine ไม่พึ่ง AI capex โดยตรง\") contain no price language (ถูก/แพง/discount/upside) — contamination check clean",
+        "ra_ex_valuation 6.0 vs scores.ra 5.3 — differ, not a blanket copy"
       ],
       "concerns": [
-        "Charlie FV $649 vs Warren $722 (gap 10%) — HOLD; ไม่เติมไม้",
-        "FTC appeal + IRS $15.89B overhang"
+        "Charlie FV $649 vs Warren $722 (gap 10.1%, ≤15% line) — HOLD correct, no add warranted",
+        "FTC appeal (IG/WhatsApp divestiture) + IRS $15.89B + EU DSA + Tennessee youth-addiction suit (07-21) overhang unchanged",
+        "Q2 2026 earnings 2026-07-29 (2 trading days after this review) — real catalyst risk to FV inputs before next pass; market chatter (Motley Fool) speculating a beat, but that's sentiment not fact and was excluded from this review"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "เจ้าของผู้ใช้ 3.56 พันล้านคน/วัน ที่ AI ทำโฆษณาแม่นขึ้นทุกไตรมาส — ราคาย่อเป็น $595.19 ดัน MoS ทะลุ gate เป็น 17.56%; เป็น holding เดิม HOLD ไม่เติมไม้ใหม่",
@@ -2406,15 +2412,18 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Mar2028 consensus EPS $1.99 (Nasdaq); Mar2029 $2.76",
-        "Price $260.01 confirmed"
+        "Price $260.01 independently re-pulled today via Nasdaq quote API + CNBC quote-html-webservice API (both exact match, Jul 24 close) — no drift vs 07-25 review",
+        "FY28 (Mar2028) consensus EPS $1.99 (Nasdaq analyst earnings-forecast, 4 analysts) re-pulled today — exact match to prior eps_used, no revision since 07-25",
+        "TQR block (new this round): centrality_note (royalty moat regardless of ISA winner, AGI CPU $2B+ demand) and resilience_note (royalty base diversified smartphone/IoT/auto) contain no price language — contamination check clean; note investment_idea text explicitly separates TQR-quality from price-AVOID, which is the intended TQR/price separation, not contamination",
+        "ra_ex_valuation 5.0 vs scores.ra 4.0 — differ, not a blanket copy"
       ],
       "concerns": [
-        "⚠️ Warren eps_used $3.51 (FY2028) สูงกว่า consensus $1.99 ~76%; แต่ผลลัพธ์เหมือนกัน — overvalued ~2x ทั้งสองฝั่ง",
-        "AVOID ถูกต้อง; ราคา ~2.4x เหนือ FV แม้ใช้ 55x"
+        "Warren eps_used $3.51 (FY2028) สูงกว่า consensus $1.99 ~76%; แต่ผลลัพธ์เหมือนกัน — overvalued ~2x ทั้งสองฝั่ง ไม่ว่าจะใช้เลขไหน",
+        "AVOID ถูกต้อง; ราคา ~2.4x เหนือ Charlie FV แม้ใช้ multiple สูงถึง 55x (hypergrowth premium)",
+        "1 new MONITOR-grade news item today (backlog $2B) — below Warren's ≥3-item re-analyze threshold, correctly not triggering a re-score; excluded any analyst-rating-change commentary from this review per house rule (no PT/rating opinions recorded)"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "เจ้าของสถาปัตยกรรม CPU ที่ครองมือถือ >95% ของโลก แต่ราคา $260.01 แพงกว่ามูลค่าพื้นฐานราว 2 เท่า (MoS -100%, PEG 3.7) แม้ร่วงต่อเนื่อง 2 รอบติด",
