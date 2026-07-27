@@ -520,16 +520,18 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY26 consensus EPS $43.6 / FY27 $57.42 / FY28 $80.04 (Nasdaq, 7 analysts)",
-        "Price $1757.09 confirmed"
+        "Price $1757.09 independently re-confirmed via Nasdaq + CNBC quote APIs 2026-07-27 (exact 2-source match, no move since 07-25 gate)",
+        "FY26 consensus EPS $43.6 / FY27 $57.42 / FY28 $80.04 (Nasdaq analyst earnings-forecast API, 7 analysts) — unchanged from 07-25 review, re-verified today",
+        "WebSearch 2026-07-27: no material news since 07-25 gate — only a routine dividend ex-date announcement (EUR1.88 ex-date Jul 27, $2.151 ADR ex-date Jul 28); prior 07-17/21/23 items (retention bonus, EUR13B expansion) already reflected in Warren's card"
       ],
       "concerns": [
-        "🚩 Warren eps_used $70 (label FY2026) สูงกว่า FY2026 consensus $43.6 ถึง ~60% และเกิน FY2027 consensus $57.42 ด้วย — Warren เองก็ flag ว่าเป็น proportional estimate ไม่ใช่ bottom-up. FV $2100 จึงเฟ้อ",
-        "Charlie FV บน FY27 consensus x 30x = $1723 → ที่ราคา $1757 MoS ≈ -2% (ไม่มี margin of safety) — ต่างจาก Warren MoS +16.3%",
-        "gap 18% > 15% + BUY → เข้า FV-Gap Conservative Rule: MoS บน min(FV) ติดลบ → NO-BUY อัตโนมัติ"
+        "Warren eps_used $70 (labeled FY2026) is ~60% above FY2026 consensus $43.6 and even above FY2027 consensus $57.42 — Warren's own note flags this as a same-day proportional estimate, not bottom-up. FV $2100 is inflated as a result",
+        "Charlie FV on FY27 consensus $57.42 x 30x = $1723 -> at price $1757.09, MoS on Charlie's own FV is -1.98% (no margin of safety), vs Warren's stated +16.33%",
+        "gap 18.0% > 15% threshold + action=BUY -> triggers FV-Gap Conservative Rule: MoS on min(FV_warren, charlie_fv)=$1723 is -1.98%, fails the 15% gate -> automatic NO-BUY pending Kim's enforcement",
+        "TQR: ra_ex_valuation (6.5) == scores.ra (6.5) exactly — flagged for Warren to confirm the ex-valuation adjustment was actually applied (not a batch-wide pattern — SPCX's differ: 2.5 vs 3.0)"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต EUV lithography รายเดียวในโลก — Q2 2026 beat-and-raise + ปรับเป้าปีขึ้นรอบ 2 บวกราคา $1757.09 ให้ MoS 16.33% ผ่าน gate พลิกเป็น BUY แต่ Charlie ติดใจว่า EPS ที่ใช้คำนวณ FV สูงกว่า consensus ~60%",
@@ -1843,15 +1845,17 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY26 consensus EPS -$0.66, FY27 $0.54, FY28 $3.0 (Nasdaq, 8-10 analysts)",
-        "Price $115.07 confirmed — BELOW IPO $135, ~AT Warren Base FV $114"
+        "Price $115.07 independently re-confirmed via Nasdaq + CNBC quote APIs 2026-07-27 (exact 2-source match, no move since 07-25 gate) — still below IPO $135, ~at Warren's Base FV $114",
+        "FY26 consensus EPS -$0.66, FY27 $0.54, FY28 $3.0 (Nasdaq analyst earnings-forecast API, 8-10 analysts) — unchanged from 07-25 review, re-verified today",
+        "WebSearch 2026-07-27: no material news since 07-25 gate — coverage this week is earnings preview (first public quarterly report Aug 4), Starship Flight 13 pending, ~Aug 6 lockup expiration; all already known/priced per Warren's card. HSBC initiated hold rating with a $115 target this week — excluded per house PT rule (not recorded as charlie_fv)"
       ],
       "concerns": [
-        "Charlie FV $96 vs Warren $114 (gap 16%) → CAUTION; Speculative tier = no pay-up, no STARTER",
-        "Lockup unlock late-July→Oct overhang; AI segment burn; Musk key-man dual-class"
+        "Charlie FV $96 vs Warren $114 (gap 15.8%, just over the 15% full-work threshold) — Speculative tier means no pay-up allowed regardless",
+        "Lockup-unlock overhang (~Aug 6) + AI segment burn ($6.4B op loss 2025) + Musk key-man/dual-class risk unchanged",
+        "TQR ra_ex_valuation (2.5) differs from scores.ra (3.0) — properly distinct, no copy-suspicion flag needed for SPCX"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI) — ราคาไหลลงเป็น $115.07 ต่ำกว่า IPO ($135) และแตะ Base FV ($114) พอดี ตาม lockup-unlock ที่ชัดเจนแล้ว ยังไม่ใช่ปัญหาพื้นฐาน",
