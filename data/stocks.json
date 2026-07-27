@@ -370,16 +370,16 @@
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Price $403.41 cross-checked Nasdaq API + CNBC quote — 0% drift, exact match to Warren's card",
-        "Q2 2026 beat independently confirmed: record revenue $40.2B (+33.7% YoY), GM 67.7%, FY26 growth guide raised to 'slightly above 40%', CapEx raised to $60-64B (Investing.com earnings call transcript, BigGo Finance, Forbes — Jul 2026) — matches Warren's card exactly",
-        "07-27 headline independently confirmed as a duplicate re-report of the same Q2 print (no new figures found in WebSearch) — Warren's staleness-flag disposition (no FV/EPS change) is correct",
-        "FY27 (Dec2027) consensus EPS: Nasdaq $20.75 (8 analysts) vs Warren's $21.0 — within 1.2%, not inflated"
+        "Single-Variable Correction ยังถูกต้อง: Warren คง 20x เดิม ไม่ดัน multiple ชดเชย EPS ที่ขยับขึ้นหลัง Q2 beat",
+        "07-27 'ข่าว' ที่ Warren อ้างว่าเป็น duplicate re-report ตรวจสอบผ่าน web search แล้ว — ไม่พบข่าวใหม่ material ลงวันที่ 07-27 จริง มีแต่ price-hike talks (07-21, Bloomberg) และ capex raise (07-16) ที่รู้อยู่แล้ว",
+        "FV Warren ($420) ยังต่ำกว่า Charlie ($463) — ทิศทางอนุรักษ์เหมือนเดิม ไม่ใช่สัญญาณเฟ้อ"
       ],
       "concerns": [
-        "MoS razor-thin on both FVs (Warren 3.95%, Charlie 7.5%) — lowest in the reviewed portfolio; correctly HOLD, not BUY, on either measure",
-        "Charlie's conservative FV ($436) is actually slightly ABOVE Warren's ($420, gap 3.8%) — Warren is not inflating this name; if anything Warren's multiple (20.0x) is a touch conservative vs both 5yr median (~23x, fullratio-style estimate) and current NTM forward PE (20.98x, CNBC)"
+        "🔴 ใช้ราคา cross-check ที่ conservative กว่า ($411.90, Nasdaq, ต่างจาก cache 2.11% เกิน threshold) → MoS ที่ FV ของ Warren เองเหลือแค่ +1.9% ไม่ใช่ +3.95% ที่รายงาน — แทบไม่มี margin of safety จริง",
+        "Q3'26 GM guide 65-67% (ต่ำกว่า Q2 67.7%) ยืนยัน N2 dilution 3-4pp จริงตาม guidance ไม่ใช่สมมติฐาน",
+        "ข่าวขึ้นราคาชิป 5-10% ปี 2027 (Bloomberg 07-21) อาจช่วยชดเชย margin แต่ก็สะท้อน capacity-tight/customer-pushback risk ที่ยังไม่ได้ใส่ใน RA score ชัดเจน"
       ],
       "summary": "",
       "review_date": "2026-07-27"
@@ -418,11 +418,11 @@
       "HOLD — held name ไม่ forced sell (Fisher) แต่ MoS บางเกินเติม; ER de-inflated 27.7%→20.8%"
     ],
     "charlie_easy": {
-      "verdict": "AGREE",
+      "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยัน consensus EPS ปี FY27 อยู่ที่ $20.75 (Nasdaq, 8 นักวิเคราะห์) ใกล้เคียง Warren $21.0 มาก (ห่างแค่ 1.2%) และงบ Q2 beat-and-raise (รายได้ $40.2B +33.7%, GM 67.7%, ปรับเป้าปีขึ้นเป็น slightly above 40%) ตรงกับการ์ดของ Warren ทุกตัวเลข — Charlie ยังคง AGREE",
-        "Charlie คำนวณ FV อิสระด้วย forward P/E ปัจจุบัน 21 เท่า ($20.75 × 21 = $436) — จริงๆ แล้ว FV ของ Charlie สูงกว่า Warren ($420) เล็กน้อย (ห่างกันแค่ 3.8%) แปลว่า Warren ไม่ได้ประเมินสูงเกินจริงแต่อย่างใด ถ้าจะว่าไป multiple ที่ Warren ใช้ (20 เท่า) ยังอนุรักษ์นิยมกว่าค่าเฉลี่ย 5 ปี (~23 เท่า) และ forward P/E ตลาดปัจจุบัน (20.98 เท่า) ด้วยซ้ำ",
-        "MoS ยังบางมากทั้งสองมุมมอง (Warren 3.95%, Charlie 7.5%) — ต่ำสุดในกลุ่มที่ติดตามอยู่ ถูกต้องแล้วที่เป็น HOLD ไม่ใช่ BUY ไม่ว่าจะดูมูลค่าจากฝั่งไหน"
+        "ตอนตรวจสอบ Charlie เจอว่าราคาจริงบน Nasdaq ($411.90) ต่างจากราคาที่ใช้คำนวณตอนแรก ($403.41) อยู่ 2.11% ซึ่งเกินเกณฑ์ที่ยอมรับได้ — พอใช้ราคาจริงที่อนุรักษ์กว่านี้แทน margin of safety ที่มูลค่าของ Warren เอง ($420) เหลือแค่ +1.9% เท่านั้น ไม่ใช่ +3.95% ที่รายงานไว้ในเปเปอร์เดิม",
+        "พูดง่ายๆ คือตอนนี้ราคาแทบจะเท่ากับมูลค่าที่แท้จริงพอดี แทบไม่มี cushion เหลือให้กันความผิดพลาดเลย",
+        "ปัจจัยพื้นฐานยังไม่เปลี่ยนแปลง งบ Q2 ที่ออกมาดีกว่าคาดและปรับเป้าขึ้นก็ยังยืนตามเดิม ไม่ใช่ thesis break แค่ margin of safety บางกว่าที่คิดไว้เดิม ต้องระวังมากขึ้นในการเติมพอร์ต"
       ],
       "review_date": "2026-07-27"
     },
@@ -1115,17 +1115,15 @@
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Price $595.19 independently re-pulled today via Nasdaq quote API + CNBC quote-html-webservice API (both exact match, Jul 24 close) — no drift vs 07-25 review",
-        "FY26 (Dec2026) consensus EPS $29.49 (Nasdaq analyst earnings-forecast, 11 analysts) re-pulled today — exact match to prior eps_used, no revision since 07-25",
-        "TQR block (new this round): centrality_note (\"Capex leader...เป็นลูกค้าไม่ใช่ผู้ขาย compute\") and resilience_note (\"ads engine ไม่พึ่ง AI capex โดยตรง\") contain no price language (ถูก/แพง/discount/upside) — contamination check clean",
-        "ra_ex_valuation 6.0 vs scores.ra 5.3 — differ, not a blanket copy"
+        "ราคา $595.19 cross-check ผ่าน Nasdaq (605.71, Δ1.77%, ในเกณฑ์)",
+        "ไม่พบข่าวลบใหม่ที่ material — FTC case ยังอยู่ชั้นอุทธรณ์ ไม่มีการยกระดับ, ไม่มี Reality Labs event ใหม่"
       ],
       "concerns": [
-        "Charlie FV $649 vs Warren $722 (gap 10.1%, ≤15% line) — HOLD correct, no add warranted",
-        "FTC appeal (IG/WhatsApp divestiture) + IRS $15.89B + EU DSA + Tennessee youth-addiction suit (07-21) overhang unchanged",
-        "Q2 2026 earnings 2026-07-29 (2 trading days after this review) — real catalyst risk to FV inputs before next pass; market chatter (Motley Fool) speculating a beat, but that's sentiment not fact and was excluded from this review"
+        "🔴 EPS mismatch: Warren ใช้ $31.94 สำหรับ 'FY2026' สูงกว่า Nasdaq consensus สด $29.49 (Dec 2026, 11 est) อยู่ 8.3% — Single-Variable correction (คง 22.6x, แก้แค่ EPS) ทำให้ FV ตก $722→$667",
+        "Q2 earnings 2026-07-29 (อีก 2 วัน) — ควร re-verify EPS/FV ทันทีหลังงบ แทนที่จะแบก $722 ต่อไปอีกรอบ",
+        "22.6x ยังสูงกว่า current NTM forward PE จริง (~19.4x) — pattern 'median เหนือ forward' แบบเดียวกับ MSFT"
       ],
       "summary": "",
       "review_date": "2026-07-27"
@@ -1164,11 +1162,11 @@
       "HOLD (ไม่ใช่ BUY/ADD) — held name, Holdings Return Recheck: ER 17.74% ใน band 15-20% = ถือต่อ ไม่เติมไม้ใหม่ที่ราคานี้"
     ],
     "charlie_easy": {
-      "verdict": "AGREE",
+      "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY26 $29.49 (Nasdaq, 11 analysts) ใกล้ Warren $31.94 และคำนวณ FV อิสระ $29.49 × 22x (≈ 5yr median) = $649 ใกล้ Warren $722 (gap 10%) — ตัวเลขไม่เฟ้อผิดปกติ",
-        "ราคาย่อทำให้ MoS ทะลุ gate 15% (17.56%) แต่เป็น held name → HOLD ไม่เติมไม้; FV Charlie $649 ยังสูงกว่าราคา $595.19 พอควร ยืนยัน downside protection",
-        "ความเสี่ยงหลัก: FTC appeal + IRS $15.89B overhang + CapEx 2x YoY; Q2 2026 earnings 29 ก.ค. เป็น catalyst ระยะสั้นที่ต้องยืนยัน growth"
+        "Charlie เจอจุดที่ต้องแก้: Warren ใช้ EPS $31.94 สำหรับปี FY2026 แต่พอเช็ค consensus สดจาก Nasdaq ตอนนี้อยู่ที่ $29.49 เท่านั้น สูงกว่ากันถึง 8.3% — ใช้วิธีแก้แบบ Single-Variable (คงตัวคูณ 22.6x เดิมไว้ แก้แค่ตัว EPS ตัวเดียว) แล้วมูลค่าที่แท้จริงจะลดจาก $722 เหลือ $667",
+        "จังหวะดีคืองบ Q2 จะออกวันที่ 29 ก.ค. นี้ อีกแค่ 2 วัน ควรรอดูตัวเลขจริงแล้วมาเช็ค EPS/FV ใหม่ทันที แทนที่จะยึดตัวเลข $722 เดิมต่อไปทั้งที่รู้อยู่ว่ามันสูงเกินจริง",
+        "อีกจุดคือตัวคูณ 22.6x เท่าที่ใช้ ก็ยังสูงกว่า forward P/E จริงในตลาดตอนนี้ (~19.4x) อยู่ดี เป็น pattern เดียวกับที่เจอใน MSFT — ไม่ใช่ว่าธุรกิจมีปัญหา แค่ตัวเลขที่ใช้คำนวณต้องปรับให้ตรงกับความจริงมากขึ้น"
       ],
       "review_date": "2026-07-27"
     },
@@ -1560,17 +1558,18 @@
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "FY27 consensus EPS $3.85 (Nasdaq, 14 analysts) ≈ Warren $3.84 (post-split basis)",
-        "Price $70.09 confirmed"
+        "ไม่พบข่าว material ใหม่ตั้งแต่ 07-23 gate — genuinely carry, ราคาขยับ <3% เท่านั้น",
+        "EPS 3.84 (Warren) ≈ consensus สด 3.85"
       ],
       "concerns": [
-        "Charlie FV $77 vs Warren $84 (gap 8%) — HOLD",
-        "OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% + ลดการเปิดเผย engagement — จับตา structural"
+        "22x ของ Warren ยังสูงกว่า forward จริง 19.15x (premium +15%)",
+        "MoS ฝั่งอนุรักษ์เหลือ 5.3% — บางลงอีกจากราคาที่ขึ้นเล็กน้อย",
+        "OM หด YoY + FCF -33% (คุณภาพเริ่มแผ่ว) — ยังไม่มีสัญญาณกลับตัว"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "Netflix เจ้าตลาด streaming โลก — งบ Q2 in-line ราคา $70.09 ให้ MoS 16.6% (Base FV $84) ผ่าน gate; held name HOLD ไม่เติม, Charlie เตือนเรื่อง OM/engagement ที่เริ่มชะลอ",
@@ -1606,13 +1605,13 @@
       "HOLD — held name, ER 18.7% ใน band 15-20% = ถือต่อ ไม่เติม"
     ],
     "charlie_easy": {
-      "verdict": "AGREE",
+      "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY27 $3.85 (Nasdaq, 14 analysts) ใกล้ Warren $3.84 (post-split basis) และคำนวณ FV อิสระ $3.85 × 20x (conservative จาก OM contraction) = $77 ใกล้ Warren $84 (gap 8%) — ตัวเลขสะอาด",
-        "จุดที่ต้องจับตา: OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% + Netlix ลดความถี่เปิดเผย engagement — Charlie เตือนว่าถ้า OM contraction กลายเป็น structural (opex โตเกินรายได้ 2+ ไตรมาส) จะกระทบ premium",
-        "held name MoS 16.6% ผ่าน gate, ER 18.7% ใน band HOLD → ถือต่อได้ ไม่เติมหนัก; Q3 guide decel (+12%) เป็นสิ่งที่ต้องติดตาม"
+        "ฝั่งข่าวไม่มีอะไรใหม่ตั้งแต่เช็ครอบ 23 ก.ค. ราคาก็ขยับไม่ถึง 3% ถือเป็น carry ตามปกติ ไม่ได้มีเหตุการณ์ผิดปกติ",
+        "แต่จุดที่ต้องระวังคือ margin of safety ฝั่งอนุรักษ์เหลือแค่ 5.3% เท่านั้น (FV ของ Charlie $74 เทียบราคา $70.09) เพราะตัวคูณ 22x ที่ Warren ใช้ ยังสูงกว่า forward P/E จริงที่ตลาดให้อยู่ 19.15x ถึง 15%",
+        "คุณภาพเริ่มมีสัญญาณแผ่วลง — กำไรจากการดำเนินงาน (operating margin) หดตัวเมื่อเทียบปีก่อน และกระแสเงินสดอิสระลดลงถึง 33% ยังไม่ถึงขั้นเป็นสัญญาณอันตราย แต่เป็นจุดที่ต้องจับตาต่อ รอดูงบไตรมาสหน้าว่าจะฟื้นตัวหรือแย่ลงกว่านี้"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "HOLD — เจ้าตลาด streaming โลก. งบ Q2'26 revenue $12.56B +13% in-line แต่มี 2 จุดลบ: OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% + ลดความถี่เปิดเผย What-We-Watched. ราคา $70.09 (post-split) ให้ MoS 16.6% (Base FV $84 = 22x FY27 consensus $3.84) ผ่าน gate; held name ER 18.7% (band 15-20%) = HOLD ไม่เติม. Charlie AGREE FV $77 (gap 8%), consensus $3.85 ≈ Warren $3.84. จับตา OM หดว่าจะ structural ไหม.",
     "story_gate_th": {
