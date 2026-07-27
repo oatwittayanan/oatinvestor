@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Theme Playbook — oatinvestor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .85rem; color: var(--text-3); margin-bottom: 24px;
+      transition: color var(--ease); text-decoration: none;
+    }
+    .back-link:hover { color: var(--text); }
+
+    /* Hero */
+    .theme-hero {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 28px 28px 24px;
+      margin-bottom: 20px;
+    }
+    .theme-hero-tag {
+      font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--yellow-text);
+      background: var(--yellow-dim);
+      display: inline-block; padding: 3px 12px;
+      border-radius: 99px; margin-bottom: 14px;
+    }
+    .theme-hero h1 { font-size: 1.75rem; line-height: 1.25; margin-bottom: 14px; }
+    .theme-hero-meta {
+      display: flex; align-items: center; gap: 10px;
+      flex-wrap: wrap; padding-top: 16px; padding-bottom: 16px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .theme-meta-date { font-size: .8rem; color: var(--text-3); }
+    .theme-meta-sep { color: var(--border); }
+    .subtrend-strip { display: flex; gap: 6px; flex-wrap: wrap; }
+    .subtrend-chip {
+      padding: 3px 10px; border-radius: 99px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      font-size: .75rem; font-weight: 600; color: var(--text-2);
+      transition: all var(--ease);
+    }
+    .subtrend-chip:hover { background: var(--yellow-dim); border-color: var(--yellow); color: var(--yellow-text); }
+
+    /* Section blocks (shared with trend.html pattern) */
+    .section-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .section-block-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 13px 20px;
+      border-bottom: 1px solid var(--border-soft);
+      font-size: .8rem; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .section-block-head .head-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: var(--yellow); }
+    .section-block-body { padding: 18px 20px; }
+
+    .section-block-body p { font-size: .9rem; color: var(--text-2); line-height: 1.75; margin: 0 0 10px; }
+    .section-block-body p:last-child { margin-bottom: 0; }
+
+    .sub-label {
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text-3);
+      margin: 18px 0 8px; padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .sub-label:first-child { margin-top: 0; }
+
+    .trend-list { list-style: none; padding: 0; margin: 8px 0 12px; display: flex; flex-direction: column; gap: 7px; }
+    .trend-list li { font-size: .88rem; color: var(--text-2); padding-left: 18px; position: relative; line-height: 1.6; }
+    .trend-list.default li::before { content: '›'; position: absolute; left: 1px; color: var(--yellow); font-weight: 700; font-size: 1rem; }
+    ol.trend-list { counter-reset: item; }
+    ol.trend-list li { counter-increment: item; padding-left: 22px; }
+    ol.trend-list li::before { content: counter(item) '.'; position: absolute; left: 0; color: var(--yellow); font-weight: 700; font-size: .82rem; }
+
+    .section-block-body strong { color: var(--text); font-weight: 700; }
+    .section-block-body em { color: var(--text-3); font-style: italic; }
+    .section-block-body code { background: var(--bg-base); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: .84em; }
+    .section-block-body hr { border: none; border-top: 1px solid var(--border-soft); margin: 14px 0; }
+
+    /* Tables inside sections */
+    .section-block-body .table-wrap { margin: 10px 0 14px; }
+    .section-block-body table { font-size: .82rem; }
+    .section-block-body th { white-space: nowrap; }
+    .section-block-body td { vertical-align: top; }
+
+    /* TQR band badges */
+    .badge-tqr-core    { background: var(--green-bg);  color: var(--green-text); }
+    .badge-tqr-strong  { background: var(--blue-bg);    color: var(--blue-text); }
+    .badge-tqr-peripheral { background: var(--amber-bg); color: var(--amber-text); }
+
+    /* Ticker pill colors by action */
+    .ticker-pill.action-buy   { background: var(--green-bg);   color: var(--green-text);  border-color: transparent; }
+    .ticker-pill.action-watch { background: var(--amber-bg);   color: var(--amber-text);  border-color: transparent; }
+    .ticker-pill.action-hold  { background: var(--blue-bg);    color: var(--blue-text);   border-color: transparent; }
+    .ticker-pill.action-study { background: var(--bg-surface); color: var(--text-3);      border-color: var(--border); }
+    .ticker-pill.action-sell  { background: var(--red-bg);     color: var(--red-text);    border-color: transparent; }
+
+    .theme-hero-tag.conv-high { background: var(--green-bg);   color: var(--green-text); }
+    .theme-hero-tag.conv-med  { background: var(--yellow-dim); color: var(--yellow-text); }
+
+    .kpi-note {
+      background: var(--yellow-dim);
+      border: 1px solid rgba(255,233,77,.25);
+      border-radius: var(--r-lg);
+      padding: 14px 18px;
+      font-size: .87rem; color: var(--text); line-height: 1.65;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .theme-hero { padding: 20px 16px; }
+      .section-block-body { padding: 14px 16px; }
+      .section-block-body table { font-size: .78rem; }
+      .section-block-body th, .section-block-body td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-dot"></span>oatinvestor</a>
+    <div class="nav-links">
+      <a href="../index.html">หน้าแรก</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+      <a href="stocks.html">Watchlist</a>
+      <a href="trends.html">Trends</a>
+      <a href="theme.html" class="active">Theme</a>
+      <a href="../team.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container-sm" style="padding-top:36px;padding-bottom:80px">
+
+  <a href="../index.html" class="back-link">← กลับหน้าแรก</a>
+
+  <div id="theme-body">
+    <div style="text-align:center;padding:80px 0;color:var(--text-3)">กำลังโหลด...</div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">oatinvestor</div>
+    <div class="footer-links">
+      <a href="trends.html">Trends</a>
+      <a href="../portfolio.html">พอร์ตโฟลิโอ</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
+</footer>
+
+<script src="../theme.js"></script>
+<script src="../app.js"></script>
+<script>
+// ── Stock action map (populated async) ────────────────────────────
+let stockActions = {};
+
+// ── Inline text renderer (bold, italic, code, [[TICKER]], TQR bands) ──
+function renderInline(text) {
+  return text
+    .replace(/🥇\s*Core/g,       '<span class="badge badge-tqr-core">🥇 Core</span>')
+    .replace(/🥈\s*Strong/g,     '<span class="badge badge-tqr-strong">🥈 Strong</span>')
+    .replace(/🥉\s*Peripheral/g, '<span class="badge badge-tqr-peripheral">🥉 Peripheral</span>')
+    .replace(/\*\*\[\[([A-Z0-9]+)\]\]\*\*/g, (_, tk) => tickerPill(tk))
+    .replace(/\[\[([A-Z0-9]+)\]\]/g,          (_, tk) => tickerPill(tk))
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+?)\*/g,  '<em>$1</em>')
+    .replace(/`(.+?)`/g,       '<code>$1</code>');
+}
+
+function tickerPill(tk) {
+  const action = stockActions[tk] || '';
+  const cls = action ? ` action-${action}` : '';
+  return `<a href="stock.html?t=${tk}" class="ticker-pill${cls}">${tk}</a>`;
+}
+
+function sectionTitle(part) {
+  const nlIdx = part.indexOf('\n');
+  return nlIdx === -1 ? part.slice(part.indexOf(' ') + 1) : part.slice(part.indexOf(' ') + 1, nlIdx);
+}
+
+// ── Markdown table → HTML ──────────────────────────────────────────
+function renderTable(rows) {
+  if (rows.length < 2) return '';
+  const parseRow = r => r.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+  const header = parseRow(rows[0]);
+  const bodyRows = rows.slice(2).map(parseRow); // rows[1] = separator, skip
+
+  let html = '<div class="table-wrap"><table><thead><tr>';
+  header.forEach(h => { html += `<th>${renderInline(h)}</th>`; });
+  html += '</tr></thead><tbody>';
+  bodyRows.forEach(cells => {
+    html += '<tr>';
+    cells.forEach(c => { html += `<td>${renderInline(c)}</td>`; });
+    html += '</tr>';
+  });
+  html += '</tbody></table></div>';
+  return html;
+}
+
+// ── Render a block of body text into HTML (paragraphs/lists/tables) ──
+function renderBody(text) {
+  const lines = text.split('\n');
+  let html = '';
+  let mode = null; // 'ul' | 'ol' | 'table'
+  let tableRows = [];
+
+  function closeList() {
+    if (mode === 'ul') html += '</ul>';
+    if (mode === 'ol') html += '</ol>';
+    if (mode === 'ul' || mode === 'ol') mode = null;
+  }
+  function closeTable() {
+    if (mode === 'table') {
+      html += renderTable(tableRows);
+      tableRows = [];
+      mode = null;
+    }
+  }
+
+  for (const raw of lines) {
+    const line = raw.trimEnd();
+    const trimmed = line.trim();
+
+    // Table row
+    if (/^\|.*\|$/.test(trimmed)) {
+      if (mode !== 'table') { closeList(); mode = 'table'; tableRows = []; }
+      tableRows.push(trimmed);
+      continue;
+    } else if (mode === 'table') {
+      closeTable();
+    }
+
+    // HR
+    if (/^---+$/.test(trimmed)) {
+      closeList();
+      html += '<hr>';
+      continue;
+    }
+
+    // Numbered list item
+    let m = trimmed.match(/^\d+\.\s+(.+)$/);
+    if (m) {
+      if (mode !== 'ol') { closeList(); html += '<ol class="trend-list default">'; mode = 'ol'; }
+      html += `<li>${renderInline(m[1])}</li>`;
+      continue;
+    }
+
+    // Bullet list item
+    m = trimmed.match(/^-\s+(.+)$/);
+    if (m) {
+      if (mode !== 'ul') { closeList(); html += '<ul class="trend-list default">'; mode = 'ul'; }
+      html += `<li>${renderInline(m[1])}</li>`;
+      continue;
+    }
+
+    closeList();
+
+    if (trimmed === '') continue;
+
+    // Bold-only line = subsection label
+    if (/^\*\*[^*]+\*\*$/.test(trimmed)) {
+      const label = trimmed.replace(/^\*\*|\*\*$/g, '');
+      html += `<div class="sub-label">${renderInline(label)}</div>`;
+      continue;
+    }
+
+    // Italic-only line
+    if (/^\*[^*]+\*$/.test(trimmed)) {
+      html += `<p><em>${renderInline(trimmed.slice(1, -1))}</em></p>`;
+      continue;
+    }
+
+    html += `<p>${renderInline(line)}</p>`;
+  }
+
+  closeList();
+  closeTable();
+  return html;
+}
+
+// ── Parse content into section blocks ─────────────────────────────
+function renderContent(content) {
+  const parts = content.split(/\n(?=## )/);
+  let html = '';
+
+  for (const part of parts) {
+    if (!part.trim().startsWith('## ')) continue;
+    const nlIdx = part.indexOf('\n');
+    const title = nlIdx === -1 ? part.slice(3).trim() : part.slice(3, nlIdx).trim();
+    const body = nlIdx === -1 ? '' : part.slice(nlIdx + 1);
+    html += `
+      <div class="section-block">
+        <div class="section-block-head">
+          <span class="head-dot"></span>
+          ${title}
+        </div>
+        <div class="section-block-body">${renderBody(body)}</div>
+      </div>`;
+  }
+  return html;
+}
+
+// ── Main ──────────────────────────────────────────────────────────
+const CONV_CLS = { HIGH: 'badge-high', MED: 'badge-medium', MEDIUM: 'badge-medium', LOW: 'badge-low' };
+const CONV_TAG = { HIGH: 'conv-high', MED: 'conv-med', MEDIUM: 'conv-med' };
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(location.search);
+  const tag = params.get('tag') || (typeof THEMES_DATA !== 'undefined' && THEMES_DATA[0] && THEMES_DATA[0].tag);
+  const body = document.getElementById('theme-body');
+
+  if (!tag || typeof THEMES_DATA === 'undefined') {
+    body.innerHTML = '<div style="text-align:center;padding:80px 0;color:var(--text-3)">ไม่พบข้อมูล Theme</div>';
+    return;
+  }
+
+  const t = THEMES_DATA.find(x => x.tag === tag);
+  if (!t) {
+    body.innerHTML = `<div style="text-align:center;padding:80px 0;color:var(--text-3)">ไม่พบ Theme: ${tag}</div>`;
+    return;
+  }
+
+  try {
+    const resp = await fetch('../data/stocks.json');
+    const raw = await resp.json();
+    Object.entries(raw).forEach(([sym, s]) => {
+      if (s.action) stockActions[sym] = s.action.toLowerCase();
+    });
+  } catch (_) {}
+
+  document.title = (t.title || t.tag) + ' — Theme Playbook — oatinvestor';
+
+  const conv = (t.conviction || '').toUpperCase();
+  const convCls = CONV_CLS[conv] || 'badge-medium';
+  const convTagCls = CONV_TAG[conv] || '';
+  const convLabel = conv === 'MED' ? 'MEDIUM' : conv;
+
+  const subTrendsHtml = (t.sub_trends || [])
+    .map(st => `<a href="trend.html?tag=${st}" class="subtrend-chip">${st.replace(/-/g, ' ')}</a>`)
+    .join('');
+
+  const tickersHtml = (t.tickers || []).map(tk => tickerPill(tk)).join('');
+
+  const kpiBreach = parseInt(t.kpi_breach_count, 10) || 0;
+  const kpiNoteHtml = kpiBreach > 0
+    ? `<div class="kpi-note">⚠️ KPI breach count: <strong>${kpiBreach}</strong> — มีตัวชี้วัดที่ "แตก" เส้น falsifier แล้วรอบล่าสุด</div>`
+    : '';
+
+  body.innerHTML = `
+    <div class="theme-hero">
+      <div class="theme-hero-tag ${convTagCls}">🎯 THEME PLAYBOOK</div>
+      <h1>${t.title || ''}</h1>
+      <div class="theme-hero-meta">
+        <span class="badge ${convCls}">${convLabel}</span>
+        <span class="theme-meta-sep">·</span>
+        <span class="badge badge-blue">${t.stage || ''}</span>
+        <span class="theme-meta-sep">·</span>
+        <span class="theme-meta-date">รีวิวล่าสุด ${t.last_review || ''} · รอบหน้า ${t.next_review_due || ''}</span>
+      </div>
+      ${tickersHtml ? `<div style="display:flex;gap:6px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--border-soft)">${tickersHtml}</div>` : ''}
+      <div style="padding-top:14px">
+        <div class="sub-label" style="margin-top:0">Sub-trends ในธีมนี้</div>
+        <div class="subtrend-strip">${subTrendsHtml}</div>
+      </div>
+    </div>
+    ${kpiNoteHtml}
+    ${renderContent(t.content || '')}
+  `;
+});
+</script>
+</body>
+</html>
