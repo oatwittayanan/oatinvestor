@@ -86,66 +86,66 @@
       "review_date": "2026-07-27"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ที่ทั้งโลกต้องพึ่ง — ราคา $208 ยังถูกกว่า FV $308 ราว 32%",
-      "what": "NVIDIA ขายทั้งระบบ AI ครบวงจร (ชิป GPU + Vera CPU + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ datacenter ทั่วโลก รายได้ 92% มาจาก Data Center",
+      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่ทั้งโลกต้องพึ่ง — ราคา $206.84 ยังต่ำกว่า FV $292 ราว 29% แถมเพิ่งล็อกซัพพลาย HBM ระยะยาวกับ SK Hynix",
+      "what": "NVIDIA ขายระบบ AI ครบวงจร (ชิป GPU Blackwell/Vera Rubin + ชิป Vera CPU ตัวใหม่ + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ดาต้าเซ็นเตอร์ทั่วโลก รายได้ 92% มาจากฝั่ง Data Center",
       "why_invest": [
         "Q1 FY27 รายได้ $81.6B +85% YoY; Q2 guide $91B = การเติบโตยังไม่หยุด",
+        "07-25: เซ็นดีลซัพพลาย HBM ระยะยาวมูลค่า $500B กับ SK Hynix (HBM3E วันนี้ + HBM4 สำหรับ Vera Rubin) — ตัดความเสี่ยงเรื่องขาดแคลนหน่วยความจำที่ตลาดกังวลไปได้ตรงจุด",
         "CUDA ecosystem 7.5M นักพัฒนา = ผูกลูกค้าจนย้ายแทบไม่ได้",
-        "Vera Rubin (H2 2026) = 35x throughput vs Blackwell — catalyst ใหม่ยังมาไม่ถึง",
-        "Vera CPU $200B TAM ใหม่ทั้งหมด — standalone $20B visibility ปีนี้แล้ว"
+        "Vera Rubin (H2 2026) = 35x throughput เทียบ Blackwell; Vera CPU เปิดตลาดใหม่ทั้งหมด $200B"
       ],
       "watch_out": [
-        "Supply commitment $119B non-cancellable — ถ้า demand ชะลอกระทบหนัก",
-        "China DC revenue หายไปแล้วจาก export controls",
-        "Vera Rubin delay 2 เดือน จาก thermal ปัญหา — ยังต้องติดตาม"
+        "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก — ถ้า demand ชะลอกระทบหนัก",
+        "China Data Center revenue เหลือ $0 แล้วจาก export controls",
+        "ดีล SK Hynix ยังอยู่ขั้น LOI/MOU ยังไม่ใช่สัญญาผูกพันเต็มรูปแบบ ต้องรอดูว่าจะแปลงเป็นสัญญาจริง"
       ],
-      "bottom_line": "หุ้นคุณภาพดีที่สุดใน AI และ Fwd P/E แค่ 16.5x — ราคา $208 เป็น entry ดีสุดในรอบปีนี้"
+      "bottom_line": "MoS 29.2% ยังเป็นจังหวะซื้อที่น่าสนใจ Charlie ตรวจสอบอิสระแล้วเห็นด้วย (FV อนุรักษ์นิยม $255 ห่างจาก Warren แค่ 12.7%) — HOLD ถือต่อ"
     },
     "mark_full": {
-      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company รายได้หลักจาก Data Center (GPU Blackwell + Vera Rubin + networking Spectrum-X) คิดเป็น 92% ส่วน Gaming/Edge 8% กำไรขั้นต้น 75% สะท้อน CUDA premium ที่ซ่อนอยู่ในราคา GPU",
-      "tam": "AI Factory infrastructure คาด $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU → CPU ($200B TAM) + Networking + Physical AI ($9B/ปี) + Sovereign AI 40 ประเทศ",
-      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Libraries (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% vs NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง",
-      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 full year Revenue $215.9B, FCF $96.6B",
+      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company มี 2 Market Platform หลัก: Data Center ($75.2B ใน Q1 FY27 +92% YoY คิดเป็น 92% ของรายได้) และ Edge Computing ($6.4B +29% YoY) กำไรขั้นต้น 75% สะท้อน CUDA premium ที่ซ่อนอยู่ในราคา GPU",
+      "tam": "AI Factory infrastructure คาดโต $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU ไป CPU (ตลาดใหม่ $200B ที่ไม่เคยแตะมาก่อน) + Physical AI ($9B+ ใน 12 เดือน) + Sovereign AI ใน ~40 ประเทศ",
+      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Library (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% เทียบ NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง — แม้ปีนี้ทั้งสามชั้นเริ่มถูกท้าทายพร้อมกันเป็นครั้งแรก (ASIC ของ Google/AWS/Meta, China ย้ายไป Huawei) แต่ moat ยังไม่หายไป แค่เปลี่ยนจาก lock-in เชิงโครงสร้างเป็น friction เชิงเวลา",
+      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 เต็มปี Revenue $215.9B, FCF $96.6B",
       "key_points": [
-        "Vera Rubin (H2 2026) = 35x inference throughput vs Blackwell = catalyst ใหม่",
-        "Vera CPU $200B TAM standalone — เริ่มมี $20B visibility ปีนี้",
-        "Dividend +25x ($0.01→$0.25) + $80B buyback ใหม่ = capital allocation เชิงรุก",
-        "Supply commitment $145B = Jensen มั่นใจ demand ยาว 2+ ปี"
+        "07-25: ดีลซัพพลาย HBM ระยะยาว $500B กับ SK Hynix — ล็อก HBM3E/HBM4 สำหรับ Vera Rubin ตัดความเสี่ยง memory bottleneck ที่ตลาดใช้กดราคาช่วง sell-off เดือน ก.ค.",
+        "Vera Rubin (H2 2026) = 35x inference throughput + 10x AI factory revenue เทียบ Blackwell = catalyst ใหม่ยังไม่มาถึง",
+        "Vera CPU เปิดตลาดใหม่ $200B ทั้งหมด — เริ่มมี $20B revenue visibility แล้วปีนี้",
+        "Capital return เชิงรุก: dividend ขึ้น 25 เท่า ($0.01→$0.25) + buyback authorization รวม $118.5B"
       ]
     },
     "warren_easy": [
-      "NVIDIA คือแกนกลางของ AI ทั้งระบบ — CUDA ecosystem 7.5M devs + full-stack GPU+CPU+Networking+Software; tier ถูกแก้เป็น Pre-Inevitable (Jensen ยังไม่มีผู้สืบทอด)",
-      "MoS 31.2% ผ่าน gate สบาย — แต่ Charlie พบว่า forward P/E ที่ใช้คำนวณ (13.8x) ผิดจากตัวเลขจริง (~21.3x) ต้องแก้ไขรอบหน้า",
-      "BUY (holding เดิม = ADD signal) — thesis หลักยังแข็ง เป็น data-input error ที่ต้องแก้ ไม่ใช่ thesis พัง"
+      "NVDA ยังเป็นแกนกลางของ AI Factory ทั้งระบบ — MoS 29.2% ราคา $206.84 ยังต่ำกว่า FV $292 ที่คำนวณได้ราว 29%",
+      "ข่าวใหญ่ 07-25: NVDA เซ็นดีลซัพพลาย HBM ระยะยาวมูลค่า $500B กับ SK Hynix (HBM3E วันนี้ + HBM4 สำหรับ Vera Rubin) — ตัดความเสี่ยงเรื่อง memory bottleneck ที่ตลาดใช้กดราคาช่วง sell-off เดือนก.ค.ได้ตรงจุด ทำให้คะแนนความเสี่ยง (RA) ขยับ 6.0→6.3 และ WAF รวมขึ้นเป็น 8.60",
+      "HOLD (ถือของเดิม ไม่ใช่จังหวะขาย) — thesis หลักยังแข็งแรง ไม่มีการเปลี่ยน tier ต้องติดตามว่าดีล SK Hynix จะแปลงเป็นสัญญาผูกพันจริงในไตรมาสหน้าหรือไม่"
     ],
     "charlie_easy": {
-      "verdict": "CAUTION",
+      "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ยืนยันราคาตรงเป๊ะ ($212.50≈$211.80); tier correction (Inevitable→Pre-Inevitable) ถูกต้อง — Jensen founder-CEO ไม่มีผู้สืบทอด; export control news ตรงกับ thesis เดิมไม่มีอะไรใหม่ที่แย่กว่า",
-        "🚩 พบ DATA DISCREPANCY: การ์ด Warren ระบุ forward P/E 13.8x แต่ 2 แหล่งอิสระ (stockanalysis.com 21.32x + back-calculate จาก consensus EPS) ชี้ ~21.3-22.7x ต่างกันเกิน 50% — ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ที่ถูกต้องควรอยู่ราว 1.0-1.15 ยังผ่านเพดาน 1.5); MANDATORY FV CHECK: ด้วย PE ที่แก้ไข Charlie FV ≈$254 vs Warren $308 → ห่างกัน 21.3% เกิน threshold บังคับ 20%",
-        "CAUTION — thesis หลักยังแข็งแรง (5/5 Crystallization Signals ผ่าน) นี่คือ data input ผิดพลาดที่ต้องแก้ในรอบหน้า ไม่ใช่ปัญหาเชิง fundamental"
+        "Charlie ตรวจสอบราคาตรงเป๊ะ ($206.84) และ EPS ปี FY28 (Nasdaq consensus $12.12 ใกล้เคียง Warren $12.15) พร้อมยืนยันดีล SK Hynix $500B เป็นเรื่องจริง จากหลายแหล่งอิสระ (CNBC, SK Hynix Newsroom, HotHardware) — ครอบคลุมทั้ง HBM4/HBM3E supply และดาต้าเซ็นเตอร์ Vera Rubin ขนาด 2GW ร่วมกับ SK Telecom",
+        "Charlie คำนวณ FV อิสระโดยใช้ forward P/E ปัจจุบัน 21 เท่า (ไม่ใช้ค่าเฉลี่ย 5 ปีที่บิดเบือนจากยุค hypergrowth เก่า) ได้ FV $255 — ต่ำกว่า Warren ($292) อยู่ 12.7% ซึ่งยังอยู่ในเกณฑ์ยอมรับได้ ความต่างหลักคือมุมมอง multiple: Warren ให้ re-rating เล็กน้อยเป็น 24 เท่า ส่วน Charlie คงที่ระดับตลาดปัจจุบัน 21 เท่า ถือเป็นความเห็นต่างที่สมเหตุสมผล ไม่ใช่สัญญาณเตือน",
+        "ข้อควรระวัง: ดีล SK Hynix ยังอยู่ขั้น LOI/MOU (บันทึกความเข้าใจ) ยังไม่ใช่สัญญาผูกพันเต็มรูปแบบ — เป็นสัญญาณบวกจริง แต่ต้องติดตามว่าจะแปลงเป็นสัญญาจัดซื้อจริงภายใน 1-2 ไตรมาสข้างหน้าหรือไม่"
       ],
-      "review_date": "2026-07-16"
+      "review_date": "2026-07-27"
     },
-    "idea_th": "BUY (ตามการ์ด Warren) — MoS 31.2% ผ่าน gate สบาย แต่ Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) คลาดเคลื่อนจากตัวเลขจริง (~21.3x) เกิน 50% ทำให้ PEG ที่รายงาน (0.74) ต่ำกว่าจริง (ควรอยู่ราว 1.0-1.15) — ยังผ่านเพดาน 1.5 แต่ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren $308) ธุรกิจ/thesis หลักยังแข็งแรง เป็น data-input error ไม่ใช่ thesis พัง",
+    "idea_th": "AI Factory Platform ที่ครบวงจรที่สุดในตลาด — CUDA ผูกขาด + roadmap Blackwell→Vera Rubin + ตลาดใหม่ Vera CPU $200B (bet เดิมที่ยังไม่เปลี่ยน). ข่าวใหญ่ 07-25: NVDA เซ็นดีลซัพพลาย HBM ระยะยาวมูลค่า $500B กับ SK Hynix (HBM3E วันนี้ + HBM4 สำหรับ Vera Rubin) — ตัดความเสี่ยงเรื่อง memory bottleneck ที่ตลาดใช้กดราคาช่วง sell-off เดือนก.ค.ได้ตรงจุด ทำให้คะแนนความเสี่ยงขยับขึ้น และ WAF รวมขึ้นเป็น 8.60. ราคา $206.84 ยังต่ำกว่า FV $292 ราว 29% — Charlie ตรวจสอบอิสระแล้วเห็นด้วย (FV อนุรักษ์นิยม $255 ห่างกันแค่ 12.7% ยังอยู่ในเกณฑ์) → HOLD ถือต่อ ไม่ใช่จังหวะขาย",
     "story_gate_th": {
-      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — GPU Blackwell + Vera Rubin (H2 2026) + Vera CPU ($200B TAM ใหม่) + Networking + CUDA ecosystem 7.5M นักพัฒนา",
-      "why": "MoS 31.2% ผ่าน gate สบาย, tier ถูกแก้เป็น Pre-Inevitable (จาก Inevitable) อย่างถูกต้อง — Jensen ยังเป็น founder-CEO ไม่มีผู้สืบทอดที่ประกาศ; export control (halved Asia buyer list 07-14) ยืนยันตรงกับ thesis เดิม ไม่ใช่ข่าวใหม่",
-      "risk": "Charlie พบ forward P/E ที่การ์ดใช้ (13.8x) ผิดจากตัวเลขจริง (~21.3x) เกิน 50% — ทำให้ FV gap เกิน mandatory 20% (Charlie FV $254 vs Warren FV $308); Musk/xAI competitive chip claim ยังไม่มี product จริง; export curbs ทวีความเข้ม; customer concentration"
+      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — GPU Blackwell→Vera Rubin (H2 2026) + Vera CPU (ตลาดใหม่ $200B) + เครือข่าย Spectrum-X/InfiniBand + ระบบนิเวศซอฟต์แวร์ CUDA ที่มีนักพัฒนา 7.5 ล้านคน",
+      "why": "ตลาดเคยกังวลว่า sell-off ของกลุ่ม AI/semiconductor เดือนก.ค. (ข่าวการชะลอตัวของ HBM จาก SK Hynix + Fed สายเหยี่ยว + ข้อสงสัยเรื่องผลตอบแทนการลงทุน AI) จะกระทบ NVDA เท่าๆ กับหุ้นอื่นในกลุ่ม — แต่ 07-25 NVDA กลับเซ็นดีลซัพพลาย HBM ระยะยาว $500B กับ SK Hynix เอง (รวม HBM4 สำหรับ Vera Rubin) ทำให้ความกังวลเรื่อง memory bottleneck กลายเป็นข้อได้เปรียบแทน — NVDA ล็อกซัพพลายไว้ก่อนคู่แข่ง ASIC/hyperscaler ที่ยังไม่มีดีลลักษณะนี้",
+      "risk": "ถ้า Vera Rubin เลื่อนเกิน 1 ไตรมาส หรือ hyperscaler ลด CapEx เกิน 30% หรือมีชิปคู่แข่งจริงจาก Musk/xAI ที่ยังไม่เกิดขึ้นจริง — ยังไม่มีสัญญาณเหล่านี้ในรอบนี้ ดีล SK Hynix เป็นข่าวดีเสริมฝั่ง supply ไม่ใช่การเปลี่ยน thesis หลัก"
     },
     "bull_th": [
-      "MoS 31.2%, WAF 8.8 (คะแนนคุณภาพสูงสุดในกลุ่ม) ทุก gate ผ่านสบายแม้จะแก้ PE",
-      "Tier correction (Inevitable→Pre-Inevitable) ยืนยันถูกต้องโดย Charlie — Jensen เป็น founder-CEO ไม่มีผู้สืบทอดประกาศ ไม่ใช่ downgrade คุณภาพ",
-      "Consensus growth ที่ Warren implied (~18.7%) ใกล้เคียงตัวเลขอิสระ (~20-24%) ห่างกันแค่ 4-5pp — ไม่ใช่ปัญหาหลัก",
-      "CUDA ecosystem 7.5M developers + full-stack platform ยังเป็น moat หลักที่ไม่เปลี่ยน",
-      "Export control news ยืนยันตรงกับสิ่งที่ Warren ระบุไว้แล้ว — ไม่มีอะไรใหม่ที่แย่กว่าเดิม"
+      "MoS 29.2%, WAF 8.6 (VERY HIGH) — คุณภาพสูงสุดในกลุ่มที่ติดตาม ราคายังต่ำกว่ามูลค่าที่คำนวณได้ชัดเจน",
+      "ดีล SK Hynix $500B (07-25) ล็อกซัพพลาย HBM3E/HBM4 ระยะยาว — ตัดความเสี่ยง memory bottleneck ที่ตลาดกังวลได้ตรงจุด",
+      "Vera Rubin (H2 2026) = 35x inference throughput + 10x AI factory revenue เทียบ Blackwell — catalyst ใหม่ยังไม่มาถึง",
+      "Vera CPU เปิดตลาดใหม่ทั้งหมด $200B ที่ NVDA ไม่เคยแตะมาก่อน — เริ่มมี revenue visibility $20B แล้วปีนี้",
+      "Charlie ตรวจสอบอิสระแล้วตัวเลขสะอาด (ราคา, EPS ตรงกัน) และเห็นด้วยกับทิศทาง (AGREE, ห่างกันแค่ 12.7%)"
     ],
     "risk_th": [
-      "Charlie พบ forward P/E ที่การ์ดใช้ผิดพลาด (13.8x บนการ์ด vs ~21.3x จริง จาก 2 แหล่งอิสระ) เกิน 50% — ต้องแก้ไขในรอบหน้า แม้ PEG ที่ถูกต้อง (~1.0-1.15) ยังผ่านเพดาน 1.5",
-      "Mandatory FV-gap 21.3% (Charlie FV $254 vs Warren FV $308) เกิน threshold 20% — ผลจาก forward PE ที่ผิดพลาดข้างต้นโดยตรง",
-      "Export curbs ทวีความเข้ม — halved Asia buyer whitelist (07-14)",
-      "Customer concentration — 2 ลูกค้าใหญ่ = 36% ของ Data Center revenue",
-      "Musk/xAI competitive chip claim ยังไม่มี product จริง แต่ต้องติดตาม"
+      "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก — ถ้า demand ชะลอกระทบหนัก",
+      "China Data Center revenue เหลือ $0 แล้วจาก export controls (เทียบ $4.6B เมื่อปีก่อน)",
+      "คดีความแบบกลุ่ม (securities class action) ถูกศาล certify แล้วเมื่อ 25 มี.ค. 2026 — รอผลอุทธรณ์",
+      "CUDA moat กำลังถูกท้าทายพร้อมกันสามชั้นเป็นครั้งแรก (ecosystem/library/compiler) — พรีเมียมอาจแคบลงในระยะยาว แม้ moat จะยังไม่หายไปทันที",
+      "ดีล SK Hynix ยังอยู่ขั้น LOI/MOU ไม่ใช่สัญญาผูกพันเต็มรูปแบบ — ต้องติดตามว่าจะแปลงเป็นสัญญาจริง"
     ]
   },
   "MSFT": {
@@ -391,7 +391,7 @@
       ],
       "watch_out": [
         "ราคา $403.41 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต) — ซื้อเกือบเต็มมูลค่า → HOLD ไม่เติม",
-        "Charlie AGREE FV $374 (18x × $20.75) vs Warren $420 (gap 11%); N2 ramp GM dilution 3-4pp",
+        "Charlie AGREE FV $436 (21x × $20.75) เทียบ Warren $420 (ห่างกันแค่ 3.8%, Charlie สูงกว่าด้วยซ้ำ); N2 ramp GM dilution 3-4pp",
         "Taiwan geopolitics + customer concentration Apple+NVIDIA ~36%"
       ],
       "bottom_line": "คุณภาพระดับ Inevitable + งบ Q2 ยืนยันการเติบโตเร่งตัวจริง + Charlie กลับมา AGREE (ตัวเลขสะอาด) — แต่ราคา $403.41 ให้ MoS แค่ 3.95% ต่ำสุดในพอร์ต ซื้อเกือบเต็มมูลค่า. HOLD ถือต่อ ไม่เติมที่ราคานี้"
@@ -405,7 +405,7 @@
         "โหนด N2 เข้าสู่การผลิตปริมาณมากด้วย yield ดี — เร่งการใช้งานปี 2026",
         "งบ Q2'26 beat-and-raise + ปรับเป้าปีขึ้นเป็น slightly above 40% เป็นรอบที่ 2 ติดต่อกัน",
         "supply ตึงถึง 2029-30; ปรับขึ้นราคา (12 มิ.ย.) ยืนยันอำนาจต่อรอง",
-        "Charlie กลับมา AGREE: consensus $20.75 ≈ Warren $21.0, FV $374 (gap 11%); MoS 3.95% บาง → HOLD"
+        "Charlie ยืนยัน AGREE: consensus $20.75 ≈ Warren $21.0, FV $436 (ห่างกันแค่ 3.8%, Charlie สูงกว่า Warren ด้วยซ้ำ); MoS 3.95% บาง → HOLD"
       ]
     },
     "warren_easy": [
@@ -416,16 +416,16 @@
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY27 $20.75 (Nasdaq, 8 analysts) ใกล้ Warren $21.0 มาก และงบ Q2 beat-raise (rev $40.2B +33.7%, GM 67.7%, FY26 guide slightly above 40%) — Charlie กลับมา AGREE (จาก CAUTION รอบก่อน)",
-        "Charlie คำนวณ FV อิสระ $20.75 × 18x (min-rule: 5yr median ~18x <= current fwd 19.4x) = $374 — ต่ำกว่า Warren $420 gap 11% (ต่ำกว่า threshold 20%); MoS บาง (ซื้อเกือบเต็มมูลค่า) → HOLD",
-        "ความเสี่ยง: N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%) + Taiwan geopolitics; ตัวเลขสะอาด ไม่มีประเด็น EPS เฟ้อ"
+        "Charlie ยืนยัน consensus EPS ปี FY27 อยู่ที่ $20.75 (Nasdaq, 8 นักวิเคราะห์) ใกล้เคียง Warren $21.0 มาก (ห่างแค่ 1.2%) และงบ Q2 beat-and-raise (รายได้ $40.2B +33.7%, GM 67.7%, ปรับเป้าปีขึ้นเป็น slightly above 40%) ตรงกับการ์ดของ Warren ทุกตัวเลข — Charlie ยังคง AGREE",
+        "Charlie คำนวณ FV อิสระด้วย forward P/E ปัจจุบัน 21 เท่า ($20.75 × 21 = $436) — จริงๆ แล้ว FV ของ Charlie สูงกว่า Warren ($420) เล็กน้อย (ห่างกันแค่ 3.8%) แปลว่า Warren ไม่ได้ประเมินสูงเกินจริงแต่อย่างใด ถ้าจะว่าไป multiple ที่ Warren ใช้ (20 เท่า) ยังอนุรักษ์นิยมกว่าค่าเฉลี่ย 5 ปี (~23 เท่า) และ forward P/E ตลาดปัจจุบัน (20.98 เท่า) ด้วยซ้ำ",
+        "MoS ยังบางมากทั้งสองมุมมอง (Warren 3.95%, Charlie 7.5%) — ต่ำสุดในกลุ่มที่ติดตามอยู่ ถูกต้องแล้วที่เป็น HOLD ไม่ใช่ BUY ไม่ว่าจะดูมูลค่าจากฝั่งไหน"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
-    "idea_th": "HOLD — ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก. งบ Q2'26 beat-and-raise: record rev $40.2B +33.7% USD, GM 67.7%, net +77.4%, ปรับเป้าปีขึ้นรอบ 2 เป็น slightly above 40%, CapEx $60-64B, Arizona +$100B. FV ขยับ $412→$420 (FY27 consensus $21.0 × 20x conservative). แต่ราคา $403.41 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต, ซื้อเกือบเต็มมูลค่า) → HOLD ไม่เติม. Charlie AGREE FV $374 (gap 11%), consensus $20.75 ≈ Warren $21.0 — ตัวเลขสะอาด.",
+    "idea_th": "HOLD — ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก. งบ Q2'26 beat-and-raise: record rev $40.2B +33.7% USD, GM 67.7%, net +77.4%, ปรับเป้าปีขึ้นรอบ 2 เป็น slightly above 40%, CapEx $60-64B, Arizona +$100B. FV ขยับ $412→$420 (FY27 consensus $21.0 × 20x conservative). แต่ราคา $403.41 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต, ซื้อเกือบเต็มมูลค่า) → HOLD ไม่เติม. Charlie AGREE FV $436 (ห่างกันแค่ 3.8%, Charlie สูงกว่า Warren ด้วยซ้ำ), consensus $20.75 ≈ Warren $21.0 — ตัวเลขสะอาด.",
     "story_gate_th": {
       "what": "TSMC เป็น pure-play foundry (ไม่แข่งกับลูกค้า) ผูกขาดโหนดขั้นสูง N2/A16 + คอขวด CoWoS advanced packaging; HPC (AI/server/PC) 61% ของรายได้",
-      "why": "งบ Q2 beat-and-raise ยืนยัน demand เร่งจริง (rev $40.2B +33.7%, ปรับเป้าปี slightly above 40%). FV ขยับ $412→$420 — แต่ราคา $403.41 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต) = ซื้อเกือบเต็มมูลค่า → HOLD ไม่เติม. Charlie AGREE FV $374 (gap 11%), ตัวเลขสะอาด",
+      "why": "งบ Q2 beat-and-raise ยืนยัน demand เร่งจริง (rev $40.2B +33.7%, ปรับเป้าปี slightly above 40%). FV ขยับ $412→$420 — แต่ราคา $403.41 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต) = ซื้อเกือบเต็มมูลค่า → HOLD ไม่เติม. Charlie AGREE FV $436 (ห่างกันแค่ 3.8%, Charlie สูงกว่า Warren ด้วยซ้ำ), ตัวเลขสะอาด",
       "risk": "Taiwan geopolitics; N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%); CapEx $60-64B กด near-term FCF; customer concentration Apple+NVIDIA 36%; ถ้า H2 margin compression ลึกกว่า guide → FV $420 ต้องปรับลง"
     },
     "bull_th": [
