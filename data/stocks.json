@@ -1466,7 +1466,7 @@
         "Charlie คำนวณ FV อิสระบน consensus $7.61 × 30x = $228 — ห่างจาก Warren $330 ถึง 31% เกิน threshold 20% → CAUTION; สอดคล้องกับที่ Charlie flag ไว้ตั้งแต่ 07-18 ว่า growth aggressive ขัด backward DCF",
         "MoS 14.43% ที่ผ่าน/ไม่ผ่าน gate พึ่ง EPS ที่เกิน consensus ทั้งหมด; hyperscaler concentration ~75%; รอ Q4 FY26 (~ส.ค.) ยืนยัน demand"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B. ราคาเด้งขึ้นเป็น $282.39 ทำให้ MoS 15.9%→14.43% ย่อลงใต้ gate 15% (ขาด 0.57pt) → BUY→WATCH; PEG 0.83 + ER 40.2%/ปี ยังผ่านสบายแต่ Fast Grower ห้าม STARTER. ⚠️ Charlie CAUTION: eps_used ของ Warren $9.22 (FY27) สูงกว่า consensus $7.61 ~21% → FV $330 เฟ้อ; Charlie FV = $228 (gap 31%). ราคาย่อ ~1% กลับเข้า BUY, รอ Q4 FY26 (~ส.ค.) ยืนยัน.",
     "story_gate_th": {
@@ -1752,7 +1752,7 @@
         "ที่ราคา $920.95 vs normalized FV $936 (Charlie) ตลาด price-in mid-cycle earnings เกือบเต็มมูลค่าแล้ว; TTM actual EPS $44.44 × 13 = ~$578 เป็น trough-ish floor",
         "ความเสี่ยง: Lynch peak signals ครบ, CXMT (จีน DRAM #4) competitive-supply, Burry short; FQ4 ~ก.ย. 2026 คือ real cyclical test — ถ้า de-cycling จริง normalized จะใกล้ peak และ FV สูงขึ้น"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — ผู้ผลิต HBM รายเดียวใน US ที่ NVIDIA ต้องพึ่ง. ราคาเด้ง +5% เป็น $920.95 ทำให้ MoS 23.8%→19.9% บน FV $1,150 (normalized mid-cycle EPS $76.67 × 15x — ไม่ใช่ peak). ⚠️ Charlie CAUTION FV $936 (normalized $72 × 13x) vs Warren $1,150 (gap 18.6%). WATCH ไม่ใช่ BUY เพราะ: (1) Cyclical ถูก STARTER-excluded; (2) ER ยังติดลบหนัก (-5.9%/ปี); (3) Lynch peak signals ครบ + CXMT (จีน DRAM #4) + Burry short. FQ4 ~ก.ย. คือ real test.",
     "story_gate_th": {
@@ -2333,7 +2333,7 @@
         "Charlie ระบุว่าคำนวณ FV เป็นตัวเลขอิสระไม่ได้ (Korean ADR: ไม่มี clean USD/ADS consensus EPS + ไม่มี 5yr median P/E ที่เชื่อถือได้ผ่าน API, normalized ต้องใช้ multi-year data ที่สร้างอิสระไม่ได้) — แต่ทิศทางชัดว่าราคา > normalized FV จึง directional AGREE-on-WATCH",
         "ความเสี่ยง: ถ้า de-cycling เป็นจริง (LTA floors ยืน + margin >50% ต่อเนื่อง) normalized จะใกล้ peak และ FV สูงขึ้น; ถ้าไม่จริง cycle down-leg จะกด earnings — free float 2.5% ทำให้ราคาผันผวนแรง"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) ผ่าน ADR บน Nasdaq. แม้ราคาร่วง -20.3% เป็น $154.57 (froth deflate เข้าหาหุ้นแม่ KOSPI) ก็ยัง price peak-cycle earnings: บน normalized mid-cycle net ~$52B ($7.13/ADS × 14x) หุ้นยังแพงเกิน ~55% (MoS -54.6%). Charlie AGREE-on-WATCH (คำนวณ FV ตัวเลขไม่ได้เพราะเป็น Korean ADR ไม่มี clean USD consensus แต่เห็นตรงว่าราคา > normalized FV $100 ชัดเจน). Cyclical ที่ peak ไม่ไล่ซื้อ.",
     "story_gate_th": {
