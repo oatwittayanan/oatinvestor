@@ -1021,7 +1021,7 @@
         "Charlie คำนวณ FV อิสระบน FY27 consensus EPS $16.67 × 40x = $667 — ห่างจาก Warren $1,100 ถึง 39% เกิน threshold 20% → CAUTION; PEG fail (Warren เอง 1.14 > cap 1.0)",
         "sensitivity: ถ้าใช้ undecayed consensus growth 54-60% FV จะสูงขึ้นและ PEG อาจพลิกผ่าน — Charlie เตือนให้ตรวจสมมติฐาน growth-decay; NVIDIA single-customer concentration + convertible debt $3.2B เป็นความเสี่ยงเชิงโครงสร้าง"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B. ราคา $762.99 (ฟื้น +4.8% จาก selloff มิ.ย.) ให้ MoS 30.6% (Base FV $1,100) ผ่านสบาย + ER 44.6%/ปี + WAF 8.13 — แต่ PEG 1.14 ยัง fail Fast Grower cap 1.0. ⚠️ Charlie CAUTION: Warren ใช้ multiple 60.5x สูงมาก (current fwd P/E 45.8x); Charlie 40x × consensus $16.67 = FV $667 vs Warren $1,100 (gap 39%). MoS/ER ผ่านแต่ PEG fail + FV เฟ้อ → WATCH.",
     "story_gate_th": {
@@ -2048,7 +2048,7 @@
         "Charlie คำนวณ FV อิสระบน consensus $11.56 × 27x (conservative vs current fwd 45x) = $312 — ห่างจาก Warren $467 ถึง 33% เกิน threshold บังคับ 20% → CAUTION. บน FV Charlie ราคาปัจจุบัน $521.95 ยิ่งแพง",
         "verify ต่อ: ตรวจว่า EPS $18.7 มาจาก non-GAAP basis ที่ต่างจาก Street หรือ inflated; งบ 4 ส.ค. 2026 จะ re-estimate FV หลังตัวเลขจริงออก"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — ราคา $521.95 ยังแพงเหนือ Base FV $467 (MoS -11.8%) แม้ย่อลงจาก broad semi pullback; ดีล Anthropic $5B GPU (07-23) + Azure Helios (07-21) ตอกย้ำ customer diversification (customer #3 หลัง OpenAI/Meta) thesis แข็งขึ้น. ⚠️ แต่ Charlie ให้ CAUTION: eps_used ของ Warren $18.7 (CY2027) สูงกว่า Street consensus $11.56 ถึง ~62% ทำให้ FV $467 เฟ้อ — Charlie คำนวณบน consensus ได้ FV $312 (gap 33% เกิน 20% บังคับ CAUTION). งบ 4 ส.ค. จะ re-estimate FV. ไม่ไล่ซื้อ.",
     "story_gate_th": {
@@ -2194,7 +2194,7 @@
         "ทั้งสองมุมมองสรุปตรงกัน: ราคายืนเหนือ FV ทุกฝั่ง ~30% ไม่มี margin of safety → WATCH ถูกต้อง ไม่ไล่ซื้อ. เป้าเข้าเชิงมูลค่าคือช่วง ~$230-255 (ยังไม่รวม floor จาก TTM EPS $8.27 × 24x = $198)",
         "จุดต้องติดตาม: Q3 FY26 ปลาย ก.ค. — ถ้า Services/margin ยังแข็งอาจ re-rate แต่ที่ราคาปัจจุบันความเสี่ยงด้านราคาเกินความน่าสนใจของคุณภาพ"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — ราคา $333.02 ยังยืนแพงเหนือมูลค่าทุกฝั่ง (Base FV $255 / Bull $300) ทำ MoS -30.6% และ ER แค่ 6.7%/ปี ไม่ผ่านเกณฑ์ 15%; ยังไม่มีงบใหม่ (Q3 FY26 ปลาย ก.ค.). คุณภาพธุรกิจสูงสุด (BQ 9.5) แต่ราคาไล่เกินมูลค่ามาต่อเนื่อง. Charlie เห็นด้วย (AGREE): คำนวณ FV อิสระบน consensus EPS $9.57 × 24x = $230 ใกล้ Warren $255 (gap แค่ 9.8%) — ยืนยันว่าราคาแพงจริงทั้งสองมุมมอง ไม่ไล่ซื้อ รอย่อสู่ ~$230-255.",
     "story_gate_th": {
