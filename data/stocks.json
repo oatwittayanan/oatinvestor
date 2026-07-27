@@ -573,7 +573,7 @@
         "Charlie คำนวณ FV อิสระบน FY27 consensus $57.42 × 30x (conservative) = $1723 — ที่ราคา $1757.09 MoS เหลือ ~-2% ไม่มี margin of safety; gap Warren-Charlie 18% เกิน 15% + action BUY → เข้า FV-Gap Conservative Rule → NO-BUY อัตโนมัติ",
         "แนะนำ: ยืนยัน EPS basis ก่อน — ถ้ามี management guidance จริงรองรับ $70 ให้ทบทวน; ถ้าไม่มีใช้ consensus. ธุรกิจคุณภาพสูงสุด (BQ 9.5) และงบดีจริง แต่ต้อง verify FV ก่อนลงเงินจริง"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "BUY (แต่ต้อง verify FV ก่อน deploy เต็ม) — ผู้ผลิต EUV รายเดียวในโลก; Q2 2026 beat-and-raise (ปรับเป้าปีขึ้นรอบ 2) + retention bonus 2027-30 + EUR13B expansion = demand structural. ราคา $1757.09 ให้ MoS 16.33% ผ่าน gate + PEG 1.32 + ER 22.6%/ปี + WAF 8.25. ⚠️ Charlie CAUTION: eps_used ของ Warren $70 (label FY2026) สูงกว่า consensus FY26 $43.6 ถึง ~60% (เกิน FY27 $57.42 ด้วย) — Warren เองก็ระบุว่าเป็น proportional estimate ไม่ใช่ bottom-up. บน consensus FY27 × 30x = Charlie FV $1723 → ที่ราคานี้ MoS ~-2% เข้า FV-Gap Conservative Rule (gap 18% + BUY → NO-BUY อัตโนมัติ). ต้อง verify FV ก่อนลงเงินจริง.",
     "story_gate_th": {
@@ -1900,7 +1900,7 @@
         "ที่ราคา $115.07 ตลาด price-in profitability ramp สู่ ~$3 EPS ภายใน FY2028 + AI/Starship optionality ซึ่ง aggressive; Speculative tier = no pay-up, no STARTER ไม่ว่า MoS จะดีขึ้นแค่ไหน (ต้องราคา <=~$97 ถึงผ่าน gate 15%)",
         "lockup unlock ปลาย ก.ค.→ต.ค. เป็น supply overhang; ถ้า dump ราคาต่ำกว่า $96 มากโดยไม่มี fundamental เปลี่ยน = โอกาส ไม่ใช่ thesis พัง"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "idea_th": "WATCH — บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI). ราคาไหลลงต่อ -15.4% เป็น $115.07 ต่ำกว่าราคา IPO ($135) และแตะ Base FV ($114) พอดี — lockup-unlock overhang (เริ่มปลด ~ปลาย ก.ค.→ต.ค.) กำลังเล่นตัว ไม่ใช่ปัญหาพื้นฐาน (Starlink 63% EBITDA margin + Anthropic deal ยัง intact). MoS vs Base FV ดีขึ้นมาก (-0.9%) แต่ยัง fail gate 15%. Charlie CAUTION FV $96 (gap 16%) — Speculative tier = no pay-up, no STARTER.",
     "story_gate_th": {
