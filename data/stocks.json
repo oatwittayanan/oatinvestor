@@ -1410,14 +1410,16 @@
       "charlie_verdict": "CAUTION",
       "verified_claims": [
         "FY27 consensus EPS $7.61 (Nasdaq, 9 analysts); FY26 $4.70",
-        "Price $282.39 confirmed"
+        "Price $282.39 confirmed",
+        "07-27 independent re-check: Nasdaq API price $282.39 ตรงกับการ์ด (no move); ไม่พบข่าว material ใหม่ (earnings date 8/12 confirmed, ไม่ใช่ข่าวใหม่เชิงเนื้อหา)"
       ],
       "concerns": [
         "⚠️ Warren eps_used $9.22 (FY27) สูงกว่า consensus $7.61 ~21%; FV $330 เฟ้อ. Charlie FV = $228",
-        "gap 31% > 20% → CAUTION; สอดคล้อง Charlie 07-18 flag (growth aggressive ขัด backward DCF)"
+        "gap 31% > 20% → CAUTION; สอดคล้อง Charlie 07-18 flag (growth aggressive ขัด backward DCF)",
+        "TQR sync 07-27: ceiling 10% (Peripheral, score 6.88) — sizing N/A (action=WATCH, no position proposed). Contamination check: centrality/resilience notes อ้าง moat/share/diversification เท่านั้น ไม่มีภาษาราคา → CLEAN. Note: ra_ex_valuation=6.0 เท่ากับ scores.ra=6.0 เป๊ะ (ตาม playbook v1 static reference, ไม่ใช่คำนวณสดรอบนี้) — ไม่ contaminated เชิงเนื้อหา แต่บันทึกไว้เพื่อความโปร่งใส"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ราคาเด้งเป็น $282.39 ทำให้ MoS ย่อใต้ gate เหลือ 14.43% พลิก BUY→WATCH; Charlie เตือนว่า growth ที่ใช้สูงกว่า consensus ~21% (FV อิสระ $228)",
@@ -1694,14 +1696,16 @@
       "charlie_verdict": "CAUTION",
       "verified_claims": [
         "Aug2026 consensus $72.93, Aug2027 $158 (peak) — Charlie ใช้ normalized ~$72 ไม่ extrapolate peak",
-        "Price $920.95 confirmed; TTM actual EPS $44.44"
+        "Price $920.95 confirmed; TTM actual EPS $44.44",
+        "07-27 independent re-check: Nasdaq API price $920.95 ตรงกับการ์ด (no move); web search ยืนยันไม่มีข่าว material ใหม่เกิน 07-24 monitor item ที่สะท้อนในการ์ดแล้ว"
       ],
       "concerns": [
         "Charlie FV $936 vs Warren $1150 (gap 18.6%) → CAUTION",
-        "Cyclical STARTER-excluded; ER -5.9%/yr; Lynch peak signals; CXMT China supply risk; Burry short"
+        "Cyclical STARTER-excluded; ER -5.9%/yr; Lynch peak signals; CXMT China supply risk; Burry short",
+        "TQR sync 07-27: ceiling 10% (Peripheral, score 6.55) — sizing N/A (action=WATCH). Contamination check: centrality/resilience notes อ้าง bit-share/diversification เท่านั้น → CLEAN. Note: ra_ex_valuation=5.0 เท่ากับ scores.ra=5.0 เป๊ะ (playbook v1 static reference) — บันทึกไว้เพื่อความโปร่งใส เช่นเดียวกับ COHR/SKHY"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต HBM รายเดียวใน US ที่ NVIDIA ต้องพึ่ง — ราคาเด้ง +5% เป็น $920.95 ทำ MoS ย่อเหลือ 19.9% บน FV normalized mid-cycle $1,150; ER ยังติดลบเพราะเป็น cyclical",
@@ -2272,13 +2276,15 @@
       "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price $154.57 confirmed Nasdaq (SK Hynix ADR)",
-        "Warren normalized mid-cycle $7.13 x 14x = $100; price $154.57 = peak-cycle pricing"
+        "Warren normalized mid-cycle $7.13 x 14x = $100; price $154.57 = peak-cycle pricing",
+        "07-27 independent re-check: Nasdaq API price $154.57 ตรงกับการ์ด (no move); SK Hynix-Nvidia partnership news (07-25) เป็นการยืนยัน HBM leadership เดิม ไม่ใช่ catalyst ใหม่ที่เปลี่ยน normalized-earnings thesis"
       ],
       "concerns": [
-        "ทั้ง Warren และ Charlie เห็นตรงกัน: หุ้น price peak-cycle earnings, overvalued ~55% vs normalized — WATCH ถูกต้อง"
+        "ทั้ง Warren และ Charlie เห็นตรงกัน: หุ้น price peak-cycle earnings, overvalued ~55% vs normalized — WATCH ถูกต้อง",
+        "TQR sync 07-27: ceiling 10% (Peripheral, score 6.5) — sizing N/A (action=WATCH). Contamination check: centrality/resilience notes อ้าง HBM share/business-mix เท่านั้น → CLEAN. Note: ra_ex_valuation=4.5 เท่ากับ scores.ra=4.5 เป๊ะ (playbook v1 static reference) — บันทึกไว้เพื่อความโปร่งใส"
       ],
       "summary": "",
-      "review_date": "2026-07-25"
+      "review_date": "2026-07-27"
     },
     "mark_easy": {
       "one_liner": "เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) ผ่าน ADR บน Nasdaq — ธุรกิจแกร่งจริง แต่ราคา $154.57 ยัง price บน peak earnings หุ้นแพงเกิน normalized ~55% (MoS -54.6%)",
