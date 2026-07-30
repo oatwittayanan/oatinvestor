@@ -1,154 +1,4 @@
 {
-  "MSFT": {
-    "symbol": "MSFT",
-    "display": "MSFT",
-    "category": "big_tech",
-    "name": "Microsoft",
-    "sector": "Big Tech",
-    "sectorSlug": "bigtech",
-    "chips": [
-      "Big Tech",
-      "Cloud + AI + Productivity"
-    ],
-    "bull": [
-      "Azure +29% YoY Q3 FY2026, AI revenue accelerating — RPO backlog $627B+",
-      "GitHub Copilot 15M+ paid seats = AI productivity เข้าสู่ enterprise mainstream",
-      "M365 Copilot adoption inflect — per-seat $30/mo licensing scalable",
-      "Cloud Margins expanding = operating leverage แข็งแกร่ง",
-      "OpenAI partnership = first-mover ใน enterprise AI tooling"
-    ],
-    "risk": [
-      "Valuation P/E 32x เริ่มเกิน fair value ถ้า Azure growth ชะลอ",
-      "OpenAI dependency — ถ้า OpenAI เปลี่ยน strategy กระทบ MSFT",
-      "Gaming segment อ่อนแอ Activision integration cost สูง",
-      "EU antitrust investigation Teams bundling ยังดำเนินอยู่",
-      "CapEx AI infrastructure กด FCF ระยะสั้น 2026-2027"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 8.7,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 381.7,
-    "fv": 459,
-    "mos": 16.84,
-    "fpe": 19.94,
-    "peg": 1.53,
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        8.5,
-        "green",
-        85
-      ],
-      "va": [
-        8.4,
-        "green",
-        84
-      ],
-      "ra": [
-        8.0,
-        "green",
-        80
-      ]
-    },
-    "idea": "Enterprise AI Stack — Azure + Copilot + RPO $627B (bet เดิมไม่เปลี่ยน). ราคาย่อ $393.82→$381.70 (-3.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23 — เจอแค่ 🟡MONITOR Mistral partnership 07-24) ทำให้ MoS ขยับดีขึ้น 14.2%→16.84% (พ้น gate 15% แล้ว), ER 16.1%→16.76%.",
-    "updated": "2026-07-27",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-27",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "Microsoft monetizes enterprise AI through Azure (+29% YoY, capacity-constrained), GitHub Copilot (15M+ paid seats), and M365 Copilot ($30/seat across 300M+ enterprise users) — the most deeply embedded enterprise software ecosystem globally.",
-      "why": "Consensus เห็นข่าว layoff 4,800 ตำแหน่ง (2.1-2.9% ของพนักงาน, ประกาศ 07-06 ยังถูกรายงาน/วิเคราะห์ต่อเนื่องถึง 07-16) เป็นสัญญาณลบ — cost pressure จาก AI capex ที่พุ่งสูง; Warren เห็นต่างว่านี่คือ **Fisher-style rational capital allocation** ตัวอย่างชัด: การตัดที่ Xbox/Windows sales/consulting (ธุรกิจโตช้า) พร้อมย้ำว่า \"ไม่มีตำแหน่งไหนถูกแทนที่ด้วย AI โดยตรง\"; ล่าสุด (07-16) MSFT ปรับโครงสร้าง Cybersecurity unit เพื่อรองรับภัยคุกคาม AI ใหม่ + เพิ่มผลิตภัณฑ์ที่เก็บเงินได้ — เป็นหลักฐานเพิ่มเติมว่า capital/headcount กำลังไหลเข้า high-growth adjacent categories ไม่ใช่แค่ cost-cutting เฉยๆ วินัยด้านต้นทุนขณะที่ AI ARR โต 123% YoY คือสัญญาณบวกของ management quality ไม่ใช่ความเสื่อม",
-      "risk": "หาก Azure growth ชะลอ <15% เป็น 2 quarters ติดต่อกัน หรือ OpenAI พัฒนา platform ของตัวเองและลด exclusivity จนกระทบ Copilot ecosystem จริง"
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $381.70 cross-checked Nasdaq + CNBC quote API (both exact match, Jul 24 close) — matches Warren card exactly",
-        "FY27 (Jun2027) consensus EPS $19.28 (Nasdaq, 19 analysts) — exact match to Warren eps_used $19.14→$19.28 basis, no drift",
-        "TQR centrality/resilience notes contain no price language (\"ถูก/แพง/discount/upside\") — contamination check clean",
-        "ra_ex_valuation 7.5 vs scores.ra 8.0 — differ, not a blanket copy"
-      ],
-      "concerns": [
-        "Charlie FV $386 (20x min-rule multiple) vs Warren $459 (24x) — gap 15.9%, still above the 15% full-worksheet line even though price drop improved MoS (14.2%→16.84%); Warren's 24x assumes a re-rate this review doesn't grant",
-        "New: securities class action filed 2026-07-24 (Bleichmar Fonti & Auld LLP) following the stock's YTD weakness — routine post-decline litigation, financially immaterial, but Warren's card doesn't mention it; track for substance",
-        "Capex CY2026 ~$190B continues to pressure FCF/margin near-term",
-        "Q4 FY26 earnings due 2026-07-29 (3 trading days after this review) — real catalyst risk to both price and FV inputs before next Charlie pass"
-      ],
-      "summary": "",
-      "review_date": "2026-07-27"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้นำ AI ภาคธุรกิจที่มี backlog $627B ล็อกไว้แล้ว — ราคาย่อลง $393.82→$381.70 ทำให้ MoS ขยับขึ้นเป็น 16.84% (Base FV $459) ผ่าน gate 15% แล้ว; Charlie ยังกังวลเรื่อง multiple (CAUTION, gap 15.9%)",
-      "what": "Microsoft หาเงิน 3 เส้นหลัก: Azure cloud (AI + enterprise), M365 Copilot (AI สำหรับทีมงาน), GitHub Copilot (AI สำหรับนักพัฒนา) — ฝังลึกในองค์กรทั่วโลกมา 30+ ปี",
-      "why_invest": [
-        "Azure +40% YoY ติด capacity = demand จริง; AI ARR $37B +123% YoY",
-        "RPO $627B = รายได้ที่ lock ไว้แล้วหลายปี",
-        "ราคาย่อลง 3.1% (ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ดีขึ้นจาก 14.2%→16.84% ผ่าน gate 15% แล้ว",
-        "layoff 4,800 + Cybersecurity reorg = วินัยต้นทุนแบบ Fisher ไม่ใช่ demand อ่อน"
-      ],
-      "watch_out": [
-        "Charlie ยังให้ CAUTION: gap 15.9% จาก multiple (Warren 24x FV $459 vs Charlie min-rule 20x FV $386) — MoS ที่ดีขึ้นมาจากราคาล้วนๆ ไม่ใช่ Charlie ยอมรับ multiple 24x",
-        "มีการฟ้องกลุ่ม (securities class action, ยื่น 24 ก.ค.) หลังหุ้นอ่อนตัว YTD — เป็น routine filing ไม่กระทบสาระ แต่ต้องติดตาม",
-        "งบ Q4 FY26 ออก 29 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงต่อราคาและ FV รอบหน้า; CapEx ~$190B ปี 2026 กด FCF"
-      ],
-      "bottom_line": "Enterprise AI platform แน่นสุด + backlog $627B — ราคาที่ย่อลงมาทำให้ MoS ดีขึ้นเป็น 16.84% ผ่าน gate 15% แล้ว แต่ Charlie ยังกังวลเรื่อง multiple (CAUTION, gap 15.9%) และงบ Q4 FY26 ใกล้เข้ามา (29 ก.ค.) เป็นตัวแปรสำคัญรอบหน้า; held name ถือต่อได้ ไม่จำเป็นต้องเติมหนักตอนนี้. HOLD"
-    },
-    "mark_full": {
-      "business_overview": "Microsoft แบ่งธุรกิจ 3 ส่วน: Intelligent Cloud ($34.7B/Q, +30% YoY), Productivity & Business Processes ($35B/Q, +17%) และ More Personal Computing ($13.2B/Q, -1%) — รายได้รวม $82.9B Q3 FY26 +18% YoY",
-      "tam": "Enterprise AI คาด TAM หลายแสนล้าน; MSFT address ได้ทุก layer: infrastructure (Azure), development (GitHub), productivity (M365 Copilot), data (Fabric) — น้อยกลุ่มที่ cross-sell ได้ครบขนาดนี้",
-      "moat": "Enterprise Data Lock-in คือ moat ตัวจริง — M365 เก็บ corporate memory (email/meeting/doc) ทั้งหมด; GitHub 180M+ developers; OpenAI partnership 2032 + RPO $627B; switching cost สูงมาก",
-      "latest_financials": "Q3 FY26: Revenue $82.9B +18%; Op Margin 46% +1pt; EPS $4.27 +23%; AI ARR $37B +123%; Azure +40%; Q4 FY26 guide Azure +39-40% CC; CY26 CapEx ~$190B; consensus EPS FY27 $19.28 ≈ Warren $19.14",
-      "key_points": [
-        "Azure AI capacity-constrained → demand จริง ไม่ใช่ hype",
-        "M365 Copilot 20M+ paid seats — fastest-growing enterprise product ในประวัติ MSFT",
-        "RPO $627B+ (รวม OpenAI $250B Azure commitment) = demand lock-in multi-year",
-        "Charlie CAUTION: EPS ตรง consensus แต่ gap 15.9% จาก multiple (24x vs min-rule 20x); Capex ~$190B กด FCF; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst ก่อน Charlie รอบหน้า"
-      ]
-    },
-    "warren_easy": [
-      "MSFT tier Inevitable WAF 8.70 (VERY HIGH) — Azure + Copilot + AI ARR $37B +123% YoY; RPO $627B lock demand",
-      "ราคาย่อ $393.82→$381.70 (-3.1%, ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ขยับขึ้น 14.2%→16.84% (Base FV $459 = 24x FY27 consensus $19.14) — ผ่าน gate 15% แล้ว",
-      "HOLD — ถือต่อ ไม่จำเป็นต้องเติมหนักที่ราคานี้ (thesis เดิมไม่เปลี่ยน เป็นแค่ price refresh)"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY27 $19.28 (Nasdaq, 19 analysts) ใกล้ Warren $19.14 มาก — ตัวเลข EPS ไม่มีปัญหา; ประเด็นอยู่ที่ multiple เหมือนเดิม",
-        "Charlie ใช้ min-rule multiple 20x (fwd P/E ~19.9x ต่ำกว่า 5yr median ~30x) → FV $386 vs Warren 24x = $459 (gap 15.9% ยังเกิน threshold แม้ MoS ดีขึ้นจากราคาที่ย่อลง) → คง CAUTION; แต่ HOLD anyway เพราะเป็น held name และธุรกิจสะอาด",
-        "ของใหม่รอบนี้: มีการฟ้องกลุ่ม (securities class action, Bleichmar Fonti & Auld, ยื่น 24 ก.ค.) หลังหุ้นอ่อนตัว — Charlie ระบุว่าเป็น routine filing หลังราคาตก ไม่กระทบสาระการเงิน แต่การ์ด Warren ยังไม่พูดถึง ต้องติดตามเนื้อหาคดี; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst ก่อน Charlie รอบหน้า"
-      ],
-      "review_date": "2026-07-27"
-    },
-    "idea_th": "HOLD — Enterprise AI Stack: Azure + Copilot + RPO $627B (bet เดิมไม่เปลี่ยน). ราคาย่อ $393.82→$381.70 (-3.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ขยับดีขึ้น 14.2%→16.84% (Base FV $459) — ผ่าน gate 15% แล้ว. ⚠️ Charlie ยังให้ CAUTION: consensus EPS $19.28 ≈ Warren $19.14 (ตัวเลขตรง) แต่ Charlie ใช้ multiple 20x (min-rule) → FV $386 vs Warren 24x $459 (gap 15.9%) — MoS ที่ดีขึ้นมาจากราคา ไม่ใช่ Charlie ยอมรับ multiple สูงขึ้น. มีการฟ้องกลุ่ม (ยื่น 24 ก.ค., routine filing) และงบ Q4 FY26 ออก 29 ก.ค. เป็นตัวแปรสำคัญรอบหน้า. HOLD ต่อ",
-    "story_gate_th": {
-      "what": "Microsoft monetize enterprise AI ผ่าน Azure + M365/GitHub Copilot + AI ARR run-rate $37B +123% YoY; ฝังลึกในองค์กร 30+ ปี, RPO $627B lock demand หลายปี",
-      "why": "ราคาย่อลง $393.82→$381.70 ทำให้ MoS ขยับขึ้นเป็น 16.84% (Base FV $459) — ผ่าน gate 15% แล้ว จากราคาที่ถูกลง ไม่ใช่ FV เปลี่ยน. Charlie ยัง flag gap multiple เดิม: Warren 24x vs Charlie 20x (min-rule) → FV $386 (gap 15.9%); EPS ตรงกัน ไม่ใช่ประเด็น data ผิด แต่เป็นสมมติฐาน multiple ที่ยังไม่ตรงกัน",
-      "risk": "Azure growth ชะลอ <15% 2 ไตรมาสติด; OpenAI ลด Copilot exclusivity; Capex CY2026 ~$190B กด FCF/margin; งบ Q4 FY26 ออก 29 ก.ค. เป็น catalyst เสี่ยงรอบหน้า; ฟ้องกลุ่ม securities class action ยื่นใหม่ 24 ก.ค. (routine แต่ต้องติดตาม)"
-    },
-    "bull_th": [
-      "Azure/cloud +40% YoY (capacity-constrained = demand จริง); AI ARR run-rate $37B +123% YoY",
-      "RPO $627B = รายได้ที่ lock ไว้แล้วหลายปี",
-      "ราคาย่อลง 3.1% ทำให้ MoS ดีขึ้นเป็น 16.84% ผ่าน gate 15% แล้ว (FV ไม่เปลี่ยน)",
-      "layoff 4,800 ตำแหน่ง + Cybersecurity unit reorg = วินัยต้นทุนแบบ Fisher ไม่ใช่ demand อ่อน"
-    ],
-    "risk_th": [
-      "Charlie CAUTION: gap 15.9% จาก multiple (Warren 24x FV $459 vs Charlie min-rule 20x FV $386) — EPS ตรงกันแต่สมมติฐาน multiple ต่าง",
-      "งบ Q4 FY26 ออก 29 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงต่อราคาและ FV รอบหน้า",
-      "Azure growth ถ้าชะลอ <15% 2 ไตรมาสติด = thesis เริ่มสั่น",
-      "OpenAI ลด Copilot exclusivity ระยะยาว = captive demand ลดลง",
-      "Capex CY2026 ~$190B กด FCF ต่อเนื่อง + ฟ้องกลุ่ม securities class action ใหม่ (routine, ยื่น 24 ก.ค.)"
-    ]
-  },
   "NVDA": {
     "symbol": "NVDA",
     "display": "NVDA",
@@ -742,6 +592,155 @@
       "CapEx $60-64B กด near-term FCF; ถ้า H2 margin compression ลึกกว่า guide → FV $420 ต้องปรับลง"
     ]
   },
+  "MSFT": {
+    "symbol": "MSFT",
+    "display": "MSFT",
+    "category": "big_tech",
+    "name": "Microsoft",
+    "sector": "Big Tech",
+    "sectorSlug": "bigtech",
+    "chips": [
+      "Big Tech",
+      "Cloud + AI + Productivity"
+    ],
+    "bull": [
+      "Azure +29% YoY Q3 FY2026, AI revenue accelerating — RPO backlog $627B+",
+      "GitHub Copilot 15M+ paid seats = AI productivity เข้าสู่ enterprise mainstream",
+      "M365 Copilot adoption inflect — per-seat $30/mo licensing scalable",
+      "Cloud Margins expanding = operating leverage แข็งแกร่ง",
+      "OpenAI partnership = first-mover ใน enterprise AI tooling"
+    ],
+    "risk": [
+      "Valuation P/E 32x เริ่มเกิน fair value ถ้า Azure growth ชะลอ",
+      "OpenAI dependency — ถ้า OpenAI เปลี่ยน strategy กระทบ MSFT",
+      "Gaming segment อ่อนแอ Activision integration cost สูง",
+      "EU antitrust investigation Teams bundling ยังดำเนินอยู่",
+      "CapEx AI infrastructure กด FCF ระยะสั้น 2026-2027"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 4,
+    "waf": 8.2,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 420.8,
+    "fv": 459,
+    "mos": 8.32,
+    "fpe": 21.99,
+    "peg": 1.69,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        7.0,
+        "amber",
+        70
+      ]
+    },
+    "idea": "Enterprise AI Stack thesis confirmed stronger by actual Q4 FY2026 results (Azure accelerating, Copilot 30M+ seats, RPO $678B +84%) -- not just projection anymore. But price ran up +7.24% after-hours on the beat before analyst FY27 EPS consensus had a chance to catch up, pushing MoS below the 15% gate (8.32%) and ER into the 10-15% Flag band (14.75%). Holdings Return Recheck governs existing holdings: ER 14.75%/yr = HOLD + Flag (re-estimate Fair Value next round), not SELL -- per Return Decay rule, price rose because of genuine earnings growth (not sentiment), so Fair Value likely needs to rise too once FY27 consensus updates post-earnings.",
+    "updated": "2026-07-30",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-30",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Microsoft monetizes enterprise AI through Azure (+43% YoY Q4 FY2026, FY Azure surpassed $100B first time), GitHub Copilot (50M users), and M365 Copilot (30M+ paid seats across enterprise) — the most deeply embedded enterprise software ecosystem globally.",
+      "why": "Consensus เห็นข่าว layoff 4,800 ตำแหน่ง + CapEx surge เป็นสัญญาณ cost pressure ต่อเนื่องมาตั้งแต่ก่อนงบ — Warren เห็นต่างว่า Q4 FY2026 คือหลักฐานชัดเจนว่า CapEx กำลังแปลงเป็นรายได้จริง ไม่ใช่ capex เปล่าไร้ผลตอบแทน: Azure เร่งตัว (39%→43%→guided ~45%), RPO +84%, Copilot net seat adds 2x QoQ — ราคาตอบรับทันที +7.24% after-hours สะท้อนว่าตลาดเริ่ม price-in edge นี้แล้วบางส่วน (MoS หดจาก 16.84%→8.32% จากราคาที่วิ่งไปก่อน FV) แต่ consensus FY27 EPS ยังไม่ตามทันตัวเลขจริง — ช่องว่างนี้ยังไม่ถูก price-in เต็มที่",
+      "risk": "หาก Azure growth ชะลอ <15% เป็น 2 quarters ติดต่อกัน หรือ OpenAI พัฒนา platform ของตัวเองและลด exclusivity จนกระทบ Copilot ecosystem จริง หรือ contractual obligations $743.8B เริ่มกด FCF ต่อเนื่องเกิน 3 ไตรมาสโดยไม่มีสัญญาณ ROIC ตามทัน"
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price $420.80 cross-checked independently via CNBC post-market extended quote ($425.21, +8.88% after-hours) — Δ1.05%, within 2% tolerance; confirms Warren's manual verified post-Q4-FY2026-earnings price",
+        "Revenue $90.01B vs ~$87.6B expected, +18% YoY confirmed (CNBC/MarketScreener Q4 FY2026 release)",
+        "Azure accelerating 39%->43%->guided ~45% Q1 FY27 confirmed, Azure surpassed $100B annual for first time confirmed",
+        "Copilot 30M+ paid seats confirmed"
+      ],
+      "concerns": [
+        "Charlie's independent FV ($421, min-rule: current fwd PE 21.8x since it's below the 5yr median ~30x) sits almost exactly at today's price -- MoS ~0.05%, essentially zero margin of safety, versus Warren's stated 8.32% MoS which depends entirely on holding the 24x multiple. That 24x is above both the current market-implied fwd PE (21.8x) and is only earned if Azure re-rating continues -- same core multiple disagreement as the last two batches (07-25/07-27), still unresolved.",
+        "Gap narrowed from 15.9% (07-27) to 8.28% this batch -- but this improvement is purely mechanical (price rose, pulling the min-rule fwd-PE multiple up with it), not because Warren corrected anything. Worth noting the trend isn't a resolved disagreement, just a temporarily smaller one.",
+        "Warren's own note explicitly flags this as HOLD+Flag pending FY27 consensus revision next round -- Warren himself agrees the FV needs re-estimating; until then, treat the 8.32% MoS as unconfirmed rather than a clean pass"
+      ],
+      "summary": "",
+      "review_date": "2026-07-30"
+    },
+    "mark_easy": {
+      "one_liner": "งบ Q4 FY2026 ออกมาดีมาก (Azure เร่งเป็น 43%, Copilot ทะลุ 30 ล้าน seat) แต่ราคาวิ่งขึ้น +7.24% ไปก่อน FV ทัน ดัน MoS หลุด gate เหลือ 8.32% — Charlie เตือนว่า MoS จริงใกล้ศูนย์ ถ้าตัด multiple ที่ยังไม่ยืนยันออก",
+      "what": "Microsoft หาเงิน 3 เส้นหลัก: Azure cloud (AI + enterprise), M365 Copilot (AI สำหรับทีมงาน), GitHub Copilot (AI สำหรับนักพัฒนา) — ฝังลึกในองค์กรทั่วโลกมา 30+ ปี",
+      "why_invest": [
+        "Azure เร่งจริง 39%→43%→คาด ~45% ไตรมาสหน้า ไม่ใช่แค่คงตัว; Azure ทั้งปีทะลุ $100B ครั้งแรก",
+        "Copilot 30M+ paid seats (เพิ่มขึ้น 2 เท่าใน 1 ไตรมาส) เร็วที่สุดในประวัติบริษัท",
+        "RPO $678B (+84%) = รายได้ที่ล็อกไว้แล้วมากที่สุดในกลุ่ม Big Tech",
+        "ราคาวิ่งขึ้นเพราะกำไรโตจริง ไม่ใช่แค่ sentiment — ตามกฎ Return Decay อาจแปลว่า FV ต้องปรับขึ้นตามเมื่อ consensus อัพเดท"
+      ],
+      "watch_out": [
+        "ราคาวิ่งไปก่อน FV: MoS หลุด gate 15% เหลือ 8.32%, ER เข้า Flag band 14.75%/yr",
+        "Charlie CAUTION หนักกว่าที่ตัวเลข Warren บอก: ถ้าใช้ forward P/E ที่ตลาดให้จริงตอนนี้ (~21.8x แทน 24x ของ Warren) FV จะเท่ากับราคาปัจจุบันพอดี = MoS เหลือเกือบ 0% ไม่ใช่ 8.32%",
+        "ภาระผูกพันตามสัญญาทั้งหมดพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี) ทำให้ CapEx headline ดูลดลงทั้งที่ลงทุนจริงเท่าเดิม"
+      ],
+      "bottom_line": "ธุรกิจดีขึ้นจริงจากงบ แต่ราคาวิ่งไปก่อน FV แล้ว — HOLD + Flag (ไม่ใช่ SELL เพราะกำไรโตจริง) รอ consensus FY27 ปรับขึ้นก่อนค่อยประเมิน FV ใหม่รอบหน้า; Charlie เตือนว่า MoS จริงบางกว่าที่การ์ดบอกมาก"
+    },
+    "mark_full": {
+      "business_overview": "Microsoft แบ่งธุรกิจ 3 ส่วน: Productivity & Business Processes, Intelligent Cloud (Azure), More Personal Computing — Q4 FY2026 total revenue $90.0B +18% YoY, Microsoft Cloud revenue $59.3B +27%",
+      "tam": "Enterprise AI คาด TAM หลายแสนล้าน; MSFT address ได้ทุก layer: infrastructure (Azure), development (GitHub), productivity (M365 Copilot), data (Fabric) — น้อยกลุ่มที่ cross-sell ได้ครบขนาดนี้",
+      "moat": "Enterprise Data Lock-in คือ moat ตัวจริง — M365/Work IQ เก็บ corporate memory ทั้งหมด; GitHub 225M users, Copilot 50M users; OpenAI partnership ถึง 2032 + RPO $678B; switching cost สูงมาก",
+      "latest_financials": "Q4 FY2026 (ปิด 30 มิ.ย. 2026): Revenue $90.0B +18%; Op Margin 45% flat; EPS GAAP $4.81 +32% (รวม gain $3.2B จากการลงทุน Anthropic); FCF $19.6B -23%; CapEx $41.0B +70%; Azure +43% ทั้งปีทะลุ $100B; ราคาวิ่งขึ้น +7.24% AH สู่ $420.80 หลังงบ",
+      "key_points": [
+        "Azure เร่งตัวจริง 39%→43%→guided ~45%; RPO $678B (+84%) ใหญ่สุดในกลุ่ม; Copilot 30M+ seats",
+        "ราคาวิ่งไปก่อน FV: MoS หลุด gate เหลือ 8.32%, ER เข้า flag band 14.75%/yr — HOLD+Flag รอ consensus ปรับ",
+        "Charlie CAUTION: ใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren → FV ≈ ราคาปัจจุบันพอดี (MoS ~0%) หนักกว่าที่การ์ดบอก",
+        "ภาระผูกพันตามสัญญาพุ่งเกือบเท่าตัว ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25 ปี) ต้องติดตามเทียบ peer"
+      ]
+    },
+    "warren_easy": [
+      "MSFT tier Inevitable WAF 8.20 (HIGH, ลงจาก 8.70) — ธุรกิจดีขึ้นจริงจากงบ Q4 FY2026 (Azure เร่ง, RPO +84%, Copilot 30M+) แต่ valuation ตึงขึ้น",
+      "ราคาวิ่งขึ้น +7.24% AH สู่ $420.80 ไปก่อน FV ที่ยังไม่ปรับ ดัน MoS 16.84%→8.32% หลุด gate 15%, ER เข้า flag band 14.75%/yr",
+      "HOLD + Flag (position เดิม $70) — ไม่ใช่ SELL เพราะราคาขึ้นจากกำไรโตจริง รอ consensus FY27 ปรับก่อนประเมิน FV ใหม่"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "Charlie ยัง CAUTION เหมือน 2 รอบก่อน แต่ประเด็นรอบนี้หนักกว่าที่ตัวเลขในการ์ดบอก: ถ้าคำนวณ FV ด้วยตัวคูณที่ตลาดให้จริงตอนนี้ (forward P/E ~21.8x ซึ่งต่ำกว่าค่ามัธยฐาน 5 ปีที่ ~30x) แทนตัวคูณ 24x ที่ Warren ใช้ จะได้ FV = $421 ซึ่งเท่ากับราคาปัจจุบัน ($420.80) พอดี — แปลว่า margin of safety จริงอยู่ที่ประมาณ 0% ไม่ใช่ 8.32% ตามที่ Warren รายงาน",
+        "ช่องว่างระหว่าง Warren กับ Charlie แคบลงจาก 15.9% (รอบ 07-27) เหลือ 8.28% รอบนี้ก็จริง แต่ Charlie ชี้ว่าเป็นผลจากราคาที่วิ่งขึ้นไปดันตัวคูณ min-rule ให้สูงตาม ไม่ใช่เพราะ Warren แก้ไขอะไร — เป็นความคลาดเคลื่อนเดิมที่แค่เล็กลงชั่วคราว ไม่ใช่ปัญหาที่คลี่คลายแล้ว",
+        "Warren เองก็ยอมรับในการ์ดว่าต้องรอ consensus FY27 อัพเดทก่อนประเมิน FV ใหม่ (HOLD+Flag) — Charlie บอกว่าระหว่างที่ยังไม่มีตัวเลขใหม่ ควรมอง MoS 8.32% เป็นตัวเลขที่ยัง 'ยืนยันไม่ได้' มากกว่าจะถือว่าผ่านเกณฑ์แล้วจริงๆ"
+      ],
+      "review_date": "2026-07-30"
+    },
+    "idea_th": "HOLD + Flag ⚠️ (position เดิม $70) — งบ Q4 FY2026 ยืนยัน thesis แข็งขึ้นจริง (Azure เร่ง 39%→43%→guided 45%, Copilot 30M+ seats, RPO $678B +84%) แต่ราคาวิ่งรับข่าวไปมากแล้ว (+7.24% after-hours) ก่อนที่ consensus FY27 EPS จะปรับตาม ทำให้ MoS หลุด gate (16.84%→8.32%) และ ER เข้า flag band (14.75%/yr) — ไม่ใช่สัญญาณขาย เพราะราคาขึ้นจากกำไรโตจริงตามกฎ Return Decay รอ consensus ปรับก่อนประเมิน FV รอบหน้า. ⚠️ Charlie ยัง CAUTION และชี้ว่าสถานการณ์จริงหนักกว่าตัวเลขในการ์ด: ถ้าใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren, FV จะเท่ากับราคาปัจจุบันพอดี — MoS จริงใกล้ 0% ไม่ใช่ 8.32%.",
+    "story_gate_th": {
+      "what": "Microsoft หาเงินจาก Azure (คลาวด์+AI, +43% YoY Q4 FY2026), GitHub Copilot (50M users) และ M365 Copilot (30M+ paid seats) — ระบบนิเวศซอฟต์แวร์องค์กรที่ฝังลึกที่สุดในโลก",
+      "why": "ตลาดเห็นข่าวเลิกจ้าง 4,800 ตำแหน่ง + CapEx พุ่งเป็นสัญญาณ cost pressure มาก่อนงบ — แต่ Warren มองว่างบ Q4 FY2026 พิสูจน์ว่า CapEx กำลังแปลงเป็นรายได้จริง (Azure เร่งตัว, RPO +84%, Copilot net seat เพิ่ม 2 เท่าต่อไตรมาส) ราคาตอบรับ +7.24% ทันที สะท้อนว่าตลาดเริ่ม price-in ไปบางส่วนแล้ว (MoS หดจาก 16.84%→8.32%) แต่ consensus FY27 EPS ยังตามไม่ทันตัวเลขจริง",
+      "risk": "ถ้า Azure โตช้าลงต่ำกว่า 15% สองไตรมาสติด หรือ OpenAI ลด exclusivity การใช้ Azure จนกระทบ Copilot ecosystem จริง หรือภาระผูกพันตามสัญญา $743.8B เริ่มกด FCF ต่อเนื่องเกิน 3 ไตรมาสโดยไม่มีสัญญาณ ROIC ตามทัน"
+    },
+    "bull_th": [
+      "Azure เร่งจริง 39%→43%→คาด ~45% ไตรมาสหน้า; Azure ทั้งปีทะลุ $100B ครั้งแรก (+41%)",
+      "Copilot 30M+ paid seats (เพิ่ม 2 เท่าใน 1 ไตรมาส) เร็วที่สุดในประวัติบริษัท",
+      "RPO $678B (+84%) ใหญ่สุดในกลุ่ม Big Tech = รายได้ล็อกไว้แล้วหลายปี",
+      "ราคาขึ้นเพราะกำไรโตจริง (Azure/Copilot/RPO เร่งตัว) ไม่ใช่แค่ sentiment"
+    ],
+    "risk_th": [
+      "ราคาวิ่งไปก่อน FV: MoS หลุด gate 15% เหลือ 8.32%, ER เข้า flag band 14.75%/yr",
+      "Charlie CAUTION: ใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren → FV ≈ ราคาปัจจุบันพอดี (MoS จริงใกล้ 0% ไม่ใช่ 8.32%)",
+      "ภาระผูกพันตามสัญญาพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี) ลดความโปร่งใสของกำไร",
+      "FCF -23% YoY ต่อเนื่อง; Azure ยัง capacity-constrained",
+      "รอ consensus FY27 EPS อัพเดทหลังงบก่อนยืนยัน FV ใหม่"
+    ]
+  },
   "AVGO": {
     "symbol": "AVGO",
     "display": "AVGO",
@@ -1071,15 +1070,15 @@
     ],
     "action": "hold",
     "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 7.82,
+    "conviction": 4,
+    "waf": 8.0,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 595.19,
+    "price": 544.9,
     "fv": 722,
-    "mos": 17.56,
-    "fpe": 18.63,
-    "peg": 1.35,
+    "mos": 24.53,
+    "fpe": 17.06,
+    "peg": 1.24,
     "scores": {
       "bq": [
         9.0,
@@ -1092,103 +1091,105 @@
         90
       ],
       "va": [
-        6.5,
+        7.5,
         "amber",
-        65
+        75
       ],
       "ra": [
-        5.3,
+        4.8,
         "orange",
-        53
+        48
       ]
     },
-    "idea": "ราคาย่อ $646.01(07-18)→$595.19 (-7.9%) ดัน MoS 10.5%→17.56% ทะลุ full gate 15% ครั้งแรกตั้งแต่ราคาวิ่งขึ้นแรงต้นเดือน; FV Base คงที่ $722 (Q2 2026 รอ 29 ก.ค.). ทั้ง 4 ด่านผ่านเชิงกลไก — แต่ META เป็น holding ที่ถืออยู่ → Holdings Return Recheck คุม: ER 17.74% อยู่ใน band 15-20% = HOLD ไม่ใช่ >20% ADD. ไม่มีข้อมูลใหม่รอบนี้ (batch นี้ = TQR sync เท่านั้น, ราคา/scores carry จาก 07-25 authoritative repair batch #3 ตรงตัว)",
-    "updated": "2026-07-27",
+    "idea": "Q2 2026 print showed clear negative headlines (FCF -91%, Op Margin 43%->31%, EPS -13%) that dropped price -7.17% after-hours to $544.90 — but underlying revenue (+28%) and ad-AI metrics improved, and management quantified margin compression as overwhelmingly one-time (legal $2.4B + severance $1.18B), not earnings-power deterioration. MoS widened 17.56%->24.53% with FV Base unchanged -- best entry since mid-2026. Held name -> Holdings Return Recheck governs: ER 19.59%/yr sits at the top of the 15-20% HOLD band (just under 20% ADD threshold) -> HOLD, strongest conviction entry point this year for this holding.",
+    "updated": "2026-07-30",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-25",
+      "updated": "2026-07-30",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
-      "what": "Meta monetizes 3.56B daily active people through AI-enhanced advertising (impressions +19% + price +12% simultaneously), creating an irreplaceable network effect flywheel no competitor can replicate at scale.",
-      "why": "Consensus เห็น META expensive จาก legal + regulatory overhang (FTC appeal + IRS + DSA + Llama copyright suit + Tennessee youth-addiction suit 07-21 + AI safety-review standoff) เป็นความเสี่ยงสูง; Warren เห็นต่างว่าข่าว 07-17..07-23 ($50B data-center bet, own AI chips เพื่อลด NVDA dependence, Anthropic sellability review) เป็นการ restate ของ Samsung $6.5B / custom-silicon / Meta Compute diversification เดิม (07-06/07-10) ไม่ใช่ thesis change ใหม่; **อัพเดท 07-25:** ราคาย่อจาก $646.01 (07-18) → **$595.19** = **-7.9%** โดย FV Base คงที่ $722 (Q2 2026 ยังไม่ประกาศ—รอ 29 ก.ค.) → MoS ฟื้นจาก 10.5%→**17.6% ทะลุ full gate 15% เป็นครั้งแรก** ตั้งแต่ราคาวิ่งขึ้นแรงต้นเดือน; entry เข้ามาในโซนที่ margin of safety กลับมาจริง (ราคาย่อ ไม่ใช่ FV ขึ้น)",
-      "risk": "FTC appeals court forces Instagram/WhatsApp divestiture (thesis collapse), or IRS $15.89B + EU DSA $12B simultaneously drain FCF and force CapEx cuts — หรือ Llama copyright class action ขยายเป็น liability ระดับ billions ที่กระทบ AI roadmap — หรือ Tennessee/youth-litigation aggregate exposure ลุกลาม — หรือ Q2 earnings 29 ก.ค. ไม่ยืนยัน growth momentum ที่ราคา price-in ทำให้ FV Base $722 ต้องปรับลง"
+      "what": "Meta monetizes 3.6B daily active people through AI-enhanced advertising (Q2 2026: ad clicks +8.3%, conversion +15.7% on Facebook via GEM/user-understanding models), creating an irreplaceable network effect flywheel no competitor can replicate at scale.",
+      "why": "Consensus โฟกัสที่ headline ลบของ Q2 2026 print — FCF ร่วง -91% เหลือ $784M, Op Margin หด 43%→31% YoY, GAAP EPS -13% YoY — ราคาตอบรับทันที -7.17% after-hours สู่ $544.90; Warren เห็นต่างว่า headline เหล่านี้ส่วนใหญ่เป็น **one-time/timing ไม่ใช่ deterioration เชิงโครงสร้าง**: (1) margin compression มาจาก $2.40B legal charges + $1.18B severance เป็นหลัก — ex-items operating income โต **+9% YoY** ตามที่ Susan Li ระบุเอง ไม่ใช่ -8% ตามตัวเลขที่รายงานดิบ (2) FCF crash มาจาก CapEx timing ($31.08B ในไตรมาสเดียว, +83% YoY) ไม่ใช่ operating cash flow อ่อนแอ — revenue ยังโต **+28%** เร่งขึ้นจาก +27% cc รอบก่อน และ ad-AI metrics (clicks/conversion) ดีขึ้นกว่าทุกรอบที่ผ่านมาจริง ไม่ใช่แค่ story (3) ตลาดยังไม่ price-in ว่าราคาที่ร่วงลงมาพร้อม FV Base ที่ยังไม่เปลี่ยน ดัน MoS จาก 17.6%→**24.5%** — จุดเข้าที่ดีที่สุดตั้งแต่กลางปี 2026",
+      "risk": "ถ้า Q3/Q4 2026 operating margin ไม่ฟื้นกลับสู่ 40%+ ตามที่ guidance บอก (\"expect operating income this year above 2025\") → พิสูจน์ว่า cost inflation ไม่ใช่แค่ one-time; หรือ EU less-personalized-ads เริ่มกัดกร่อน revenue ต่อเนื่องหลายไตรมาส (Q3 guide $61-64B เป็นสัญญาณแรก ไม่ใช่แค่ lapping effect); หรือ legal charges ระดับ $2B+ เกิดซ้ำใน Q3 (พิสูจน์ว่าไม่ใช่ one-time); หรือ FTC appeals court บังคับขาย Instagram/WhatsApp, หรือ youth-litigation ภาษา \"material loss\" ที่ CFO เริ่มใช้ (07-30 guidance) กลายเป็นคำตัดสินจริงระดับหลักสิบ billion — thesis พัง"
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "ราคา $595.19 cross-check ผ่าน Nasdaq (605.71, Δ1.77%, ในเกณฑ์)",
-        "ไม่พบข่าวลบใหม่ที่ material — FTC case ยังอยู่ชั้นอุทธรณ์ ไม่มีการยกระดับ, ไม่มี Reality Labs event ใหม่"
+        "Price $544.90 cross-checked independently via CNBC post-market extended quote ($542.00, -7.45% after-hours) — Δ0.53%, within 2% tolerance; confirms Warren's manual verified post-Q2-earnings price is not fabricated/stale",
+        "Revenue +28% YoY to $60.8B confirmed (StockTitan/TechTimes Q2 2026 release)",
+        "Diluted EPS $6.18, -13% YoY confirmed — matches Warren's 'EPS -13%' claim exactly",
+        "FCF $784M confirmed exact match to Warren's figure (down from $10.9B in Q2 2024, consistent with -91% framing)"
       ],
       "concerns": [
-        "🔴 EPS mismatch: Warren ใช้ $31.94 สำหรับ 'FY2026' สูงกว่า Nasdaq consensus สด $29.49 (Dec 2026, 11 est) อยู่ 8.3% — Single-Variable correction (คง 22.6x, แก้แค่ EPS) ทำให้ FV ตก $722→$667",
-        "Q2 earnings 2026-07-29 (อีก 2 วัน) — ควร re-verify EPS/FV ทันทีหลังงบ แทนที่จะแบก $722 ต่อไปอีกรอบ",
-        "22.6x ยังสูงกว่า current NTM forward PE จริง (~19.4x) — pattern 'median เหนือ forward' แบบเดียวกับ MSFT"
+        "🔴 UNRESOLVED (2nd batch running): Warren's EPS $31.94 for 'FY2026' is 8.7% above fresh Nasdaq consensus for Dec2026 ($29.40, 11 est, pulled live 2026-07-30) — identical issue Charlie flagged in the 07-27 review (then $31.94 vs $29.49, Δ8.3%). Warren has carried the same disputed $31.94 figure into this new post-earnings batch without reconciling against Nasdaq consensus.",
+        "NEW: growth-term mismatch compounds the EPS-level issue — Warren's stated growth 13.8%/yr (from his own $31.94→$36.33) diverges from what fresh Nasdaq FY26→FY27 consensus actually implies (29.40→35.15 = +19.6%/yr). The two disputed EPS anchors don't just shift the FV level, they also distort the growth rate feeding Warren's ER calc.",
+        "Warren's EPS source (stockanalysis.com Non-GAAP, 59 analysts) sits persistently above Nasdaq's own consensus feed without a declared Variant View + primary-source evidence (per §4.6, an above-consensus number used silently, not flagged as a thesis-driven variant) — should either reconcile to Nasdaq consensus or explicitly declare+justify as Variant View"
       ],
       "summary": "",
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-30"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของผู้ใช้ 3.56 พันล้านคน/วัน ที่ AI ทำโฆษณาแม่นขึ้นทุกไตรมาส — ราคาย่อเป็น $595.19 ดัน MoS ทะลุ gate เป็น 17.56%; เป็น holding เดิม HOLD ไม่เติมไม้ใหม่",
-      "what": "Meta หาเงินจากโฆษณาใน Facebook/Instagram/WhatsApp/Threads สำหรับผู้ใช้ 3.56 พันล้านคน/วัน — รายได้ ~97.6% จากโฆษณา; Reality Labs (AR/VR) ยังขาดทุน",
+      "one_liner": "Q2 2026 headline ดูน่ากลัว (FCF หด 91%, มาร์จิ้นหด 43%→31%) แต่ราคาร่วง -7.17% สู่ $544.90 ดัน MoS พุ่งเป็น 24.53% — held name ถือต่อ HOLD แข็งแกร่งที่สุดในรอบหลายเดือน",
+      "what": "Meta หาเงินจากโฆษณาใน Facebook/Instagram/WhatsApp/Threads สำหรับผู้ใช้ 3.6 พันล้านคน/วัน (~97.6% ของรายได้); Reality Labs (AR/VR) ยังขาดทุน; AI ทำโฆษณาแม่นขึ้นวัดผลได้จริงทุกไตรมาส",
       "why_invest": [
-        "Network effect 3.56B DAP + AI flywheel data 20 ปี — แกนธุรกิจที่แทนที่ไม่ได้ระยะสั้น",
-        "Fwd P/E 18.63x ยังถูกในกลุ่ม Big Tech ขณะ consensus EPS ยังโต",
-        "ทุ่ม data-center + เดินหน้าทำชิป AI เอง ลดการพึ่ง NVIDIA",
-        "AI flywheel: impressions + price/ad ขึ้นพร้อมกัน = สัญญาณ health ที่ดี"
+        "Network effect 3.6B DAP + AI flywheel ที่วัดผลได้จริงดีที่สุดเท่าที่เคยมี — ad clicks +8.3%/conversion +15.7% บน Facebook (Q2 2026)",
+        "Revenue Q2 2026 โต +28% เร่งขึ้นจากไตรมาสก่อน แม้ headline กำไรดูแย่",
+        "ราคาร่วงหลังงบดัน MoS จาก 17.56%→24.53% — จุดเข้าดีที่สุดตั้งแต่กลางปี 2026",
+        "management ยืนยันว่ากำไรหดเพราะ one-time (legal charge $2.4B + severance $1.18B) ไม่ใช่ธุรกิจแย่ลง — ตัด one-time ออกกำไรจากดำเนินงานโตจริง +9%"
       ],
       "watch_out": [
-        "MoS 17.56% ทะลุ gate แล้ว แต่เป็น held name — Holdings Return Recheck: ER 17.74% ใน band 15-20% = HOLD ไม่เติม",
-        "Charlie AGREE FV $649 (consensus $29.49 × 22x) vs Warren $722 — MoS จริงแคบกว่าการ์ด",
-        "CapEx $125-145B (2x YoY) + Reality Labs -$19B + FTC/IRS/Llama ยังค้าง; Q2 29 ก.ค. ต้องยืนยัน"
+        "FCF เหลือ $784M (-91%) ใกล้ศูนย์ครั้งแรก + กู้หนี้เพิ่ม $24.91B ในไตรมาสเดียว",
+        "Charlie ยัง CAUTION: EPS ที่ Warren ใช้ ($31.94) สูงกว่า consensus สดของ Nasdaq ($29.40) อยู่ ~8.7% — ปัญหาเดิมค้างมาจากรอบก่อนยังไม่แก้ ถ้าปรับตาม Charlie FV จะเหลือ ~$664 (จาก $722) แต่ MoS ยังผ่าน gate สบายๆ (~17.9%)",
+        "Youth-litigation ภาษาที่ CFO ใช้เข้มขึ้นเป็น \"อาจเกิด material loss\" ครั้งแรก + FTC appeal + EU DSA/IRS ยังค้าง"
       ],
-      "bottom_line": "Network effect แน่นสุด + AI flywheel ยังเป็นแกน MoS ทะลุ gate แล้ว — แต่เป็น holding เดิมและ ER อยู่ใน band 15-20% = HOLD ถือของเดิมได้ ไม่เติมไม้ใหม่ รอ Q2 29 ก.ค. ยืนยัน"
+      "bottom_line": "ถืออยู่แล้ว HOLD ต่อ — ธุรกิจไม่ได้แย่ลงจริงตามที่ราคาสะท้อน แต่ Charlie เตือนว่า EPS ที่ใช้คำนวณ FV ยังสูงกว่า consensus จริง 2 รอบติดแล้วยังไม่แก้ ต้องรอ 10-Q ยืนยัน breakdown"
     },
     "mark_full": {
-      "business_overview": "Meta แบ่งธุรกิจ 2 ส่วน: Family of Apps (FB+IG+WA+Threads, 99.3% รายได้) ที่ได้เงินจากโฆษณา และ Reality Labs (AR/VR) ที่ขาดทุน $19B/ปี; Q1 2026 total revenue $56.3B +33% YoY",
+      "business_overview": "Meta แบ่งธุรกิจ 2 ส่วน: Family of Apps (โฆษณา 97.6% ของรายได้) และ Reality Labs (AR/VR ขาดทุนสะสม ~$19B/ปี); Q2 2026 total revenue $60.80B +28% YoY เร่งขึ้นจาก +27% cc ไตรมาสก่อน",
       "tam": "Digital ad market หลายแสนล้าน; Social Commerce (US $30B+/ปี vs จีน $1T+ = gap ใหญ่มาก) + AI Lab optionality $200-300B standalone value ที่ยัง priced at zero",
-      "moat": "Network effect 3.56B DAP = ไม่มีใครแทนที่ได้ระยะสั้น; AI flywheel data ที่สะสมมา 20 ปี; vertical integration (Muse Spark + custom silicon) เพิ่ม moat ขึ้น",
-      "latest_financials": "Q1 2026: Revenue $56.3B +33%; Op Margin 41%; FCF $12.4B; CapEx $19.8B; FY26 CapEx guide $125-145B (raised); consensus EPS FY26 $29.49 ≈ Warren $31.94; Q2 2026 earnings 29 ก.ค. เป็น catalyst",
+      "moat": "Network effect 3.6B DAP = ไม่มีใครแทนที่ได้ระยะสั้น; AI flywheel data สะสม 20 ปี — Q2 2026 ตัวเลขดีที่สุดเท่าที่เคยวัด (clicks +8.3%/conversion +15.7%); vertical integration (Muse Spark + custom silicon) เพิ่ม moat",
+      "latest_financials": "Q2 2026: Revenue $60.80B +28%; Op Margin หด 43%→31% (ส่วนใหญ่จาก legal charge $2.4B + severance $1.18B, ex-items op income โต +9%); FCF $784M (-91%, ใกล้ศูนย์ครั้งแรก); CapEx $31.08B (+83%); หนี้เพิ่ม $24.91B ในไตรมาสเดียว; ราคาร่วง -7.17% AH สู่ $544.90 หลังงบ",
       "key_points": [
-        "AI flywheel: impressions + price/ad ขึ้นพร้อมกัน = สัญญาณ health ที่ดีที่สุด",
-        "Business AI บน WhatsApp โตเร็ว; Muse Spark (closed-source) AI Index ระดับ frontier",
-        "MoS ทะลุ gate 15% ครั้งแรก (17.56%) แต่ held name → HOLD; Charlie FV $649 ≈ Warren $722 (gap 10%)",
-        "CapEx 2x YoY + Reality Labs -$19B/ปี + FTC/IRS/Llama เป็น overhang; Q2 29 ก.ค. ต้องยืนยัน growth"
+        "AI flywheel ดีที่สุดเท่าที่เคยวัด: ad clicks +8.3%, conversion +15.7% (Facebook)",
+        "ราคาร่วงหลังงบดัน MoS 17.56%→24.53%, ER 19.59%/yr เกือบแตะ 20% ADD-threshold",
+        "Charlie CAUTION: EPS dispute ค้างมา 2 รอบ ($31.94 vs Nasdaq consensus $29.40) — MoS จริงยังผ่าน gate (~18%) แต่ input ต้องแก้",
+        "FCF ใกล้ศูนย์ + หนี้เพิ่มเยอะ + youth-litigation ภาษาเข้มขึ้น เป็นความเสี่ยงใหม่ที่ต้องติดตาม"
       ]
     },
     "warren_easy": [
-      "META tier Pre-Inevitable WAF 7.82 (HIGH) — network effect 3.56B DAP + AI flywheel data 20 ปี; Fwd P/E 18.63x ยังถูกในกลุ่ม Big Tech",
-      "ราคาย่อดัน MoS 10.5%→17.56% ทะลุ gate 15% ครั้งแรก; ผ่าน 4 ด่านเชิงกลไก (PEG 1.35, ER 17.74%, WAF 7.82)",
-      "HOLD (ไม่ใช่ BUY/ADD) — held name, Holdings Return Recheck: ER 17.74% ใน band 15-20% = ถือต่อ ไม่เติมไม้ใหม่ที่ราคานี้"
+      "META tier Pre-Inevitable WAF 8.00 (HIGH, ขึ้นจาก 7.82) — Q2 2026 ad-AI flywheel แข็งแกร่งที่สุดเท่าที่เคยมี (clicks +8.3%/conversion +15.7%)",
+      "ราคาร่วง -7.17% AH หลังงบ สู่ $544.90 ดัน MoS 17.56%→24.53%, ER 19.59%/yr เกือบแตะ 20% ADD-threshold",
+      "HOLD (held name) — Holdings Return Recheck: ER อยู่ขอบบนของ band 15-20% ยังไม่ถึงเกณฑ์ ADD แต่เป็นจุดที่แข็งแกร่งที่สุดในรอบหลายเดือน"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie เจอจุดที่ต้องแก้: Warren ใช้ EPS $31.94 สำหรับปี FY2026 แต่พอเช็ค consensus สดจาก Nasdaq ตอนนี้อยู่ที่ $29.49 เท่านั้น สูงกว่ากันถึง 8.3% — ใช้วิธีแก้แบบ Single-Variable (คงตัวคูณ 22.6x เดิมไว้ แก้แค่ตัว EPS ตัวเดียว) แล้วมูลค่าที่แท้จริงจะลดจาก $722 เหลือ $667",
-        "จังหวะดีคืองบ Q2 จะออกวันที่ 29 ก.ค. นี้ อีกแค่ 2 วัน ควรรอดูตัวเลขจริงแล้วมาเช็ค EPS/FV ใหม่ทันที แทนที่จะยึดตัวเลข $722 เดิมต่อไปทั้งที่รู้อยู่ว่ามันสูงเกินจริง",
-        "อีกจุดคือตัวคูณ 22.6x เท่าที่ใช้ ก็ยังสูงกว่า forward P/E จริงในตลาดตอนนี้ (~19.4x) อยู่ดี เป็น pattern เดียวกับที่เจอใน MSFT — ไม่ใช่ว่าธุรกิจมีปัญหา แค่ตัวเลขที่ใช้คำนวณต้องปรับให้ตรงกับความจริงมากขึ้น"
+        "Charlie ยัง CAUTION เหมือน 2 รอบก่อน: EPS ที่ Warren ใช้ ($31.94 สำหรับ FY2026) สูงกว่า consensus สดที่ดึงจาก Nasdaq ตรงๆ ($29.40) อยู่ 8.7% — เป็นปัญหาเดิมที่ยกมาตั้งแต่รอบ 07-27 (ตอนนั้นต่าง 8.3%) แล้ว Warren ยังไม่ได้แก้ไข ยังใช้เลขเดิมต่อในรอบ post-earnings นี้",
+        "ที่แย่กว่านั้น อัตราการโต 13.8%/ปีที่ Warren ใช้ก็คลาดเคลื่อนตามไปด้วย — ถ้าคำนวณจาก consensus จริงของ Nasdaq (29.40→35.15) อัตราการโตจะเป็น 19.6%/ปี ไม่ใช่ 13.8% ตามที่การ์ดบอก แปลว่าทั้ง Fair Value และ Expected Return ที่ใช้ตัดสินใจคลาดเคลื่อนไปพร้อมกัน",
+        "ข่าวดีคือถึงจะแก้ตาม Charlie (ใช้ EPS $29.40 × ตัวคูณเดิม 22.6x) FV จะได้ ~$664 แทน $722 — MoS ที่ราคาปัจจุบันยังเหลือ ~17.9% ผ่าน gate 15% สบายๆ ข้อสรุป HOLD จึงไม่เปลี่ยน แต่ Warren ควรกลับไปแก้ที่มาของตัวเลข EPS ให้ตรงกับ consensus จริงหรือประกาศเป็น Variant View ให้ชัดเจน"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-30"
     },
-    "idea_th": "HOLD — เจ้าของผู้ใช้ 3.56 พันล้านคน/วัน ที่ AI ทำโฆษณาแม่นขึ้นทุกไตรมาส. ราคาย่อเป็น $595.19 ดัน MoS 10.5%→17.56% ทะลุ gate 15% ครั้งแรกตั้งแต่ราคาวิ่งแรงต้นเดือน; ทั้ง 4 ด่านผ่านเชิงกลไก (PEG 1.35, ER 17.74%/ปี, WAF 7.82) — แต่ META เป็น holding ที่ถืออยู่ Holdings Return Recheck คุม: ER 17.74% อยู่ใน band 15-20% = HOLD (ยังชนะ QQQM) ไม่ใช่ >20% ADD. Charlie AGREE FV $649 (gap 10%), consensus $29.49 ≈ Warren $31.94. Q2 29 ก.ค. เป็น catalyst.",
+    "idea_th": "HOLD (held name) — Q2 2026 ออกมาดูน่ากลัวที่ headline (FCF หด 91% เหลือ $784M, Op Margin หด 43%→31%, EPS -13%) กดราคาร่วง -7.17% after-hours สู่ $544.90 แต่ตัวเลขจริงที่ underlying (revenue +28%, ad-AI flywheel ดีที่สุดเท่าที่เคยมี) ยืนยันว่าปัญหาส่วนใหญ่เป็น one-time (legal charge $2.4B + severance $1.18B) ไม่ใช่ธุรกิจแย่ลง — MoS ขยายจาก 17.56%→24.53%. ⚠️ Charlie ยัง CAUTION: EPS ที่ใช้ ($31.94) สูงกว่า consensus จริงของ Nasdaq ($29.40) มา 2 รอบติดยังไม่แก้ — ถ้าปรับตาม Charlie FV จะเหลือ ~$664 (จาก $722) แต่ MoS ยังผ่าน gate สบายๆ (~17.9%) HOLD จึงยังยืนได้. รอ 10-Q ยืนยัน breakdown ค่าใช้จ่ายพิเศษ.",
     "story_gate_th": {
-      "what": "Meta หาเงินจากโฆษณาใน Facebook/Instagram/WhatsApp/Threads บนผู้ใช้ 3.56 พันล้านคน/วัน (~97.6% ของรายได้); Reality Labs (AR/VR) ยังขาดทุน; AI flywheel ทำโฆษณาแม่นขึ้น",
-      "why": "ราคาย่อดัน MoS ทะลุ gate 15% ครั้งแรก (17.56%) และผ่าน 4 ด่านเชิงกลไก — แต่เป็น held name, Holdings Return Recheck: ER 17.74% ใน band 15-20% = HOLD ไม่เติมไม้ใหม่. Charlie AGREE FV $649 (consensus $29.49 × 22x) ใกล้ Warren $722 gap 10%",
-      "risk": "FTC appeal (Instagram/WhatsApp divestiture); IRS $15.89B + EU DSA overhang; Llama copyright suit; CapEx $125-145B (2x YoY) + Reality Labs -$19B; Q2 29 ก.ค. ถ้าไม่ยืนยัน growth → FV $722 ต้องปรับลง"
+      "what": "Meta หาเงินจากโฆษณาบน Facebook/Instagram/WhatsApp/Threads จากผู้ใช้ 3.6 พันล้านคน/วัน (~97.6% ของรายได้) — Q2 2026 AI ช่วยให้โฆษณาแม่นขึ้นวัดผลได้จริง (คลิก +8.3%, conversion +15.7% บน Facebook)",
+      "why": "ตลาดตกใจกับตัวเลข headline ของ Q2 2026 (FCF ร่วง 91%, มาร์จิ้นหด, EPS ลด) กดราคาร่วง -7.17% แต่ Warren มองว่าเป็น one-time (ค่าใช้จ่ายกฎหมาย+เลิกจ้าง) ไม่ใช่ปัญหาเชิงโครงสร้าง — ตัด one-time ออกกำไรจากดำเนินงานโตจริง +9%; ราคาที่ร่วงพร้อม FV เดิมทำให้ MoS ดีขึ้นเป็น 24.53% จุดเข้าดีที่สุดในรอบหลายเดือน",
+      "risk": "ถ้ามาร์จิ้นไม่ฟื้นกลับสู่ 40%+ ใน Q3/Q4 หรือ EU less-personalized-ads เริ่มกัดกร่อนรายได้ต่อเนื่อง หรือค่าใช้จ่ายกฎหมาย $2B+ เกิดซ้ำ หรือ FTC บังคับขาย Instagram/WhatsApp หรือคดี youth-litigation ที่ CFO เริ่มพูดถึง \"material loss\" กลายเป็นคำตัดสินจริงระดับหลักสิบพันล้าน — thesis พัง"
     },
     "bull_th": [
-      "Network effect 3.56B DAP + AI flywheel data 20 ปี — แกนธุรกิจที่แทนที่ไม่ได้ระยะสั้น",
-      "Fwd P/E 18.63x ยังถูกในกลุ่ม Big Tech ขณะ consensus EPS ยังโต",
-      "AI flywheel: impressions + price/ad ขึ้นพร้อมกัน = สัญญาณ health",
-      "ราคาย่อดัน MoS ทะลุ gate 15% ครั้งแรก (17.56%); Charlie FV $649 > ราคา"
+      "Network effect 3.6B DAP + AI flywheel ที่วัดผลได้จริงดีที่สุดเท่าที่เคยมี (คลิก +8.3%/conversion +15.7%)",
+      "Revenue Q2 2026 โต +28% เร่งขึ้น แม้ headline กำไรดูแย่",
+      "ราคาร่วงหลังงบดัน MoS 17.56%→24.53% — จุดเข้าดีที่สุดตั้งแต่กลางปี 2026",
+      "management ยืนยันกำไรหดเพราะ one-time ไม่ใช่ธุรกิจแย่ลง (ex-item op income +9%)"
     ],
     "risk_th": [
-      "held name — ER 17.74% ใน band 15-20% = HOLD ไม่เติมไม้ใหม่ (ไม่ใช่ ADD)",
-      "Charlie FV $649 vs Warren $722 (gap 10%) — MoS จริงบน consensus แคบกว่าที่การ์ดแสดง",
-      "FTC appeal (Instagram/WhatsApp divestiture) + IRS $15.89B + EU DSA overhang",
-      "CapEx $125-145B (2x YoY) + Reality Labs -$19B/ปี กด FCF",
-      "Q2 29 ก.ค. ถ้าไม่ยืนยัน growth momentum → FV $722 ต้องปรับลง"
+      "FCF เหลือ $784M (-91%) ใกล้ศูนย์ครั้งแรก + หนี้เพิ่ม $24.91B ในไตรมาสเดียว",
+      "Charlie CAUTION: EPS ที่ใช้คำนวณ FV ($31.94) สูงกว่า consensus จริง ($29.40) มา 2 รอบติดยังไม่แก้ — ปรับตามจะเหลือ FV ~$664 (MoS ยังผ่าน gate)",
+      "Youth-litigation ภาษาเข้มขึ้นเป็น \"material loss\" ครั้งแรก + FTC appeal + EU DSA/IRS overhang",
+      "CapEx $130-145B ทวีความรุนแรง + FCF ใกล้ศูนย์ อาจต้องพึ่งหนี้เพิ่ม",
+      "รอ 10-Q Q2 2026 ยืนยัน breakdown legal charge + debt terms"
     ]
   },
   "COHR": {
