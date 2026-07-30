@@ -39,6 +39,11 @@
       font-size: .68rem; font-weight: 800; color: var(--text-2);
     }
     .holding-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .holding-src {
+      font-size: .66rem; font-weight: 700; padding: 1px 7px; border-radius: 10px;
+      background: var(--bg-surface); border: 1px solid var(--border-soft); color: var(--text-3);
+      margin-left: 6px; white-space: nowrap;
+    }
     @media (max-width: 700px) {
       .holdings-split { grid-template-columns: 1fr; gap: 20px; }
     }
@@ -117,6 +122,7 @@
   <div class="tabs">
     <button class="tab-btn active" data-tab="tab-ai">🤖 ลงทุนกับ AI</button>
     <button class="tab-btn" data-tab="tab-sp500">📦 พอร์ตออม S&P500</button>
+    <button class="tab-btn" data-tab="tab-combined">📊 รวมทั้งพอร์ต</button>
   </div>
 
   <!-- ── Tab AI PORT ─────────────────────────────────────── -->
@@ -212,6 +218,34 @@
           <div id="sp-transactions"></div>
         </div>
         <div id="sp-dca-summary" style="margin-top:16px;padding:14px;background:var(--bg-surface);border-radius:var(--r);border:1px solid var(--border-soft)"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Tab COMBINED (AI + S&P500 รวมกัน) ─────────────────── -->
+  <div class="tab-pane" id="tab-combined">
+    <div id="combined-loading" style="text-align:center;padding:48px;color:var(--text-3)">กำลังโหลด...</div>
+    <div id="combined-content" style="display:none">
+
+      <!-- Stats -->
+      <div class="perf-grid" id="combined-stats"></div>
+
+      <!-- Holdings -->
+      <div class="card" style="margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <h4 style="font-family:var(--font-serif)">การถือครองรวม</h4>
+          <span style="font-size:.78rem;color:var(--text-3)">🤖 AI + 📦 S&P500</span>
+        </div>
+        <div class="holdings-split" style="margin-top:-28px">
+          <div class="holdings-chart-wrap">
+            <canvas id="combined-alloc-chart"></canvas>
+            <div class="holdings-chart-center">
+              <div class="hc-label">มูลค่ารวม</div>
+              <div class="hc-value" id="combined-alloc-total">—</div>
+            </div>
+          </div>
+          <div id="combined-holdings"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -675,7 +709,7 @@ function renderAI(p) {
             <div class="holding-name">${hMap[h.ticker] || h.ticker}</div>
           </div>
         </div>
-        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%"></div></div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${colorMap[h.ticker]}"></div></div>
         <div class="holding-numbers">
           <div class="holding-value">$${h.value.toFixed(2)}</div>
           <div class="holding-pl">
@@ -760,7 +794,7 @@ function renderSP(p) {
             <div class="holding-name">${spNames[h.ticker] || h.ticker}</div>
           </div>
         </div>
-        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%"></div></div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${spColors[h.ticker]}"></div></div>
         <div class="holding-numbers">
           <div class="holding-value">$${h.value.toFixed(2)}</div>
           <div class="holding-pl">
@@ -799,6 +833,86 @@ function renderSP(p) {
 
   document.getElementById('sp-loading').style.display = 'none';
   document.getElementById('sp-content').style.display = 'block';
+}
+
+// ── Render COMBINED (AI + S&P500 รวมกัน) ───────────────────────────
+function mergeHoldings(aiHoldings, spHoldings) {
+  const map = {};
+  const add = (h, src) => {
+    if (!map[h.ticker]) map[h.ticker] = { ticker: h.ticker, shares: 0, cost: 0, value: 0, pl_usd: 0, sources: [] };
+    const m = map[h.ticker];
+    m.shares += h.shares;
+    m.cost   += h.cost;
+    m.value  += h.value;
+    m.pl_usd += h.pl_usd;
+    if (!m.sources.includes(src)) m.sources.push(src);
+  };
+  aiHoldings.forEach(h => add(h, 'AI'));
+  spHoldings.forEach(h => add(h, 'S&P500'));
+  return Object.values(map).map(m => ({
+    ...m,
+    avg_cost: m.shares > 0 ? m.cost / m.shares : 0,
+    pl_pct: m.cost > 0 ? (m.pl_usd / m.cost * 100) : 0,
+  }));
+}
+
+function renderCombined(aiPort, spPort) {
+  const totalValue = (aiPort.total_value || 0) + (spPort.total_value || 0);
+  const totalCost  = (aiPort.total_cost  || 0) + (spPort.total_cost  || 0);
+  const plUsd = totalValue - totalCost;
+  const plPct = totalCost > 0 ? (plUsd / totalCost * 100) : 0;
+  const totalDiv = (aiPort.total_dividends || 0) + (spPort.total_dividends || 0);
+
+  document.getElementById('combined-stats').innerHTML = [
+    statCard('มูลค่ารวมทั้งหมด', '$' + totalValue.toFixed(2)),
+    statCard('ต้นทุนรวมทั้งหมด', '$' + totalCost.toFixed(2)),
+    statCard('กำไร/ขาดทุนรวม', usdStr(plUsd), pctClass(plUsd), pctStr(plPct), pctClass(plUsd)),
+    statCard('ปันผลสะสมรวม', '+$' + totalDiv.toFixed(2), totalDiv > 0 ? 'pos' : '', 'ทั้ง 2 พอร์ต'),
+  ].join('');
+
+  const nameMap = { CASH:'เงินสด', NVDA:'NVIDIA', MSFT:'Microsoft', META:'Meta', AMZN:'Amazon', GOOGL:'Alphabet', AAPL:'Apple', VOO:'Vanguard S&P 500 ETF' };
+  const merged = mergeHoldings(aiPort.holdings, spPort.holdings)
+    .filter(h => h.ticker !== 'CASH' || h.value > 0)
+    .sort((a, b) => {
+      if (a.ticker === 'CASH') return 1;
+      if (b.ticker === 'CASH') return -1;
+      return b.value - a.value;
+    });
+
+  const colorMap = assignColors(merged);
+  window._combinedSorted = merged;
+  window._combinedTotal  = totalValue;
+  window._combinedColors = colorMap;
+  renderAllocChart('combined-alloc-chart', 'combined-alloc-total', merged, totalValue, colorMap);
+
+  document.getElementById('combined-holdings').innerHTML = merged
+    .map(h => {
+      const pct = (h.value / totalValue * 100);
+      const srcLabel = h.sources.length === 2 ? 'AI+S&P500' : (h.sources[0] === 'AI' ? 'AI' : 'S&P500');
+      return `<div class="holding-row">
+        <div style="display:flex;align-items:center;gap:10px;width:200px;flex-shrink:0">
+          ${logoHTML(h.ticker)}
+          <div>
+            <div class="holding-ticker" style="display:flex;align-items:center;gap:6px">
+              <span class="holding-dot" style="background:${colorMap[h.ticker]}"></span>${h.ticker}
+              <span class="holding-src">${srcLabel}</span>
+            </div>
+            <div class="holding-name">${nameMap[h.ticker] || h.ticker}</div>
+          </div>
+        </div>
+        <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${colorMap[h.ticker]}"></div></div>
+        <div class="holding-numbers">
+          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-pl">
+            <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
+            <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+
+  document.getElementById('combined-loading').style.display = 'none';
+  document.getElementById('combined-content').style.display = 'block';
 }
 
 // ── Warren & Charlie Papers index (link to papers.html) ──────────
@@ -884,6 +998,7 @@ Promise.all([
 ]).then(([data, papers, charlieReviews]) => {
   renderAI(data.ai_port);
   renderSP(data.sp500_port);
+  renderCombined(data.ai_port, data.sp500_port);
   renderSavingsGoal((data.ai_port?.total_value || 0) + (data.sp500_port?.total_value || 0));
   renderPapers(papers, charlieReviews);
 }).catch(err => {
@@ -906,6 +1021,7 @@ new MutationObserver(() => {
   if (window._spHist) renderChart('sp-chart', window._spHist, 'sp', ['qqqm'], true);
   if (window._aiSorted) renderAllocChart('ai-alloc-chart', 'ai-alloc-total', window._aiSorted, window._aiTotal, window._aiColors);
   if (window._spSorted) renderAllocChart('sp-alloc-chart', 'sp-alloc-total', window._spSorted, window._spTotal, window._spColors);
+  if (window._combinedSorted) renderAllocChart('combined-alloc-chart', 'combined-alloc-total', window._combinedSorted, window._combinedTotal, window._combinedColors);
 }).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
 </script>
 </body>
