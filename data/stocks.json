@@ -894,155 +894,6 @@
       "MoS 15.13% แตะเส้น gate พอดี + PEG 1.42 ฉิวเฉียด — improvement เป็น price-driven"
     ]
   },
-  "AMZN": {
-    "symbol": "AMZN",
-    "display": "AMZN",
-    "category": "big_tech",
-    "name": "Amazon",
-    "sector": "Big Tech",
-    "sectorSlug": "bigtech",
-    "chips": [
-      "Big Tech",
-      "Cloud + Commerce + AI"
-    ],
-    "bull": [
-      "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
-      "Anthropic partnership + Trainium chips = AI infrastructure play",
-      "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
-      "Advertising business $60B+ ARR กำลัง accelerate",
-      "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
-    ],
-    "risk": [
-      "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
-      "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
-      "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น",
-      "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
-      "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 8.13,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 232.11,
-    "fv": 287,
-    "mos": 19.13,
-    "fpe": 23.42,
-    "peg": 1.3,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        8.5,
-        "green",
-        85
-      ],
-      "va": [
-        7.6,
-        "amber",
-        76
-      ],
-      "ra": [
-        6.5,
-        "amber",
-        65
-      ]
-    },
-    "idea": "Cloud + Retail + Ads Trifecta — AWS +36% fastest growth ใน 15 ไตรมาส + Trainium/Anthropic AI compute hedge (bet เดิมไม่เปลี่ยน). ราคาย่อ $247.23→$232.11 (-6.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ขยับดีขึ้น 13.9%→19.13% (พ้น gate 15% ชัดเจน), ER 21.0%→22.34%.",
-    "updated": "2026-07-27",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-27",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
-      "why": "Consensus ยังมองข่าว FTC ad-pricing probe เป็นความเสี่ยงระดับ \"billions\" (ล่าสุด FTC ร่าง draft complaint แล้วแต่ยังไม่ยื่นฟ้องจริง ณ 07-15 — อาจจบเป็น settlement ช่วงซัมเมอร์นี้ตามรายงาน) กดราคาหุ้นเป็นระยะ; Warren เห็นต่างว่าตลาดยัง over-discount headline risk ของ portion เล็กของ ad revenue ไม่ใช่ AWS/Retail core — Prime Day มิ.ย. ทำยอด $26.4B (+9% YoY) ยืนยัน demand ฝั่ง retail/ads แข็งแรง; Amazon เพิ่งออกพันธบัตร $25B (07-08/09) เพื่อขยาย AI infrastructure ต่อเนื่อง + ลงทุน $1B จ้างวิศวกร AI ประจำลูกค้าองค์กร (07-01) เป็นสัญญาณเร่ง AWS AI monetization ที่ยังไม่ priced-in เต็มเทียบกับ legal overhang ที่ราคาตอบสนองมากเกินจริงเป็นระยะ ๆ",
-      "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment — หรือ FTC ad-pricing case ลงเอยเป็น structural remedy (ไม่ใช่แค่ค่าปรับ) ที่บังคับเปลี่ยน ad auction model กระทบ revenue stream ถาวร"
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price $232.11 cross-checked Nasdaq + CNBC quote API (both exact match, Jul 24 close) — matches Warren card exactly",
-        "FY27 (Dec2027) consensus EPS $10.11 (Nasdaq, 18 analysts) — exact match to Warren eps_used",
-        "TQR centrality/resilience notes (Trainium commitments, AWS capacity) contain no price language — contamination check clean",
-        "TQR band Strong (8.25, within 7.0-8.5) with ceiling_pct 25 — consistent with band table"
-      ],
-      "concerns": [
-        "ra_ex_valuation (6.5) is identical to scores.ra (6.5) for this ticker — the only one of the three where the two values match exactly; not itself disqualifying (valuation risk may genuinely be a small RA component for AMZN given MoS is already comfortably positive), but flagging per the RA* copy-suspicion check for Warren to confirm methodology next round",
-        "FTC ad-pricing case could escalate to structural remedy",
-        "AWS growth deceleration below ~20% would materially change the growth case",
-        "Q2 FY26 earnings due 2026-07-30 (3 trading days after this review) — catalyst risk before next pass"
-      ],
-      "summary": "",
-      "review_date": "2026-07-27"
-    },
-    "mark_easy": {
-      "one_liner": "AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge — ราคาย่อ $247.23→$232.11 ทำให้ MoS ขยับขึ้นเป็น 19.13% (Base FV $287), Charlie AGREE ตัวเลขสะอาด; held name ถือต่อได้",
-      "what": "Amazon มี 3 ธุรกิจหลัก: e-commerce+โฆษณา (North America/International) และ AWS cloud ที่สร้างกำไรหลักของบริษัท",
-      "why_invest": [
-        "AWS +36% เร็วสุดใน 15 ไตรมาส backlog $364B",
-        "Trainium chip ต้นทุนถูกกว่า NVIDIA GPU มาก — สัญญา OpenAI/Anthropic รวม $200B+",
-        "Amazon Ads $70B+ TTM run-rate margin สูง โต +22% YoY",
-        "ราคาย่อลง 6.1% (ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ดีขึ้นจาก 13.9%→19.13%; Charlie FV อิสระ $283 ใกล้ Warren $287 (gap 1.4%) — ตัวเลขสะอาด"
-      ],
-      "watch_out": [
-        "FCF ร่วงจาก capex AI ~$200B ปี 2026",
-        "FTC ad-pricing case + probe ใหม่เรื่อง Anthropic investment",
-        "งบ Q2 FY26 ออก 30 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงราคา/FV รอบหน้า"
-      ],
-      "bottom_line": "ธุรกิจหลักแข็งแรง ตัวเลขสะอาด (Charlie AGREE gap 1.4%) ราคาที่ย่อลงมาทำให้ MoS ดีขึ้นเป็น 19.13% — held name ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้ แต่จับตางบ Q2 FY26 (30 ก.ค.). HOLD"
-    },
-    "mark_full": {
-      "business_overview": "Amazon แบ่ง 3 segment: North America (retail+ads), International (retail+ads), AWS (cloud) — AWS สร้างรายได้แค่ 21% แต่สร้าง operating income 59% ของทั้งบริษัท",
-      "tam": "AWS $150B ARR โต +28%; Trainium revenue commitment $225B+; Amazon Ads TTM run rate >$70B",
-      "moat": "AWS #1 cloud broadest portfolio, custom silicon (Graviton/Trainium) ต้นทุนถูกกว่า x86/NVIDIA มาก, logistics network ใหญ่ที่สุดในโลก, Prime ecosystem stickiness",
-      "latest_financials": "Q1 2026: Revenue $181.5B +17%, AWS $37.6B +28%, op margin 13.1% (record), TTM revenue $742.8B +14%",
-      "key_points": [
-        "AWS backlog $364B (ไม่รวม Anthropic $100B+ deal ใหม่)",
-        "Bedrock 125,000+ customers, 80% ของ Fortune 100",
-        "FTC + UK CMA ขยายสอบสวนไปที่การลงทุนใน Anthropic (นอกเหนือจากคดี ad-pricing เดิม)",
-        "ออกพันธบัตร $25B (07-08/09) + ลงทุน $1B จ้างวิศวกร AI เร่ง AWS AI monetization"
-      ]
-    },
-    "warren_easy": [
-      "AMZN tier Inevitable WAF 8.13 — AWS +36% (backlog $364B) + Trainium/Anthropic $200B+ compute hedge + Amazon Ads $70B+ run-rate",
-      "ราคาย่อ $247.23→$232.11 (-6.1%, ไม่มีข่าว MATERIAL ใหม่) ทำให้ MoS ขยับขึ้น 13.9%→19.13% (Base FV $287 ไม่เปลี่ยน)",
-      "HOLD — ถือต่อได้ ไม่จำเป็นต้องเติมหนักที่ราคานี้ (thesis เดิมไม่เปลี่ยน)"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ยืนยัน consensus EPS FY27 $10.11 (Nasdaq, 18 analysts) ใกล้ Warren $9.91 มาก และคำนวณ FV อิสระ $10.11 × 28x = $283 ใกล้ Warren $287 (gap แค่ 1.4%) — ไม่มีประเด็น EPS/multiple เฟ้อ",
-        "ราคาล่าสุด $232.11 ตรงกับการ์ด Warren เป๊ะ (ย่อลงจาก $247.23 เดิม -6.1%) — ที่ Charlie FV $283 คิดเป็น MoS +17.98% (ดีขึ้นจาก +12.64% ที่ราคาเดิม) ยืนยันว่าราคาที่ถูกลงทำให้ margin of safety กว้างขึ้นจริง",
-        "ข้อสังเกตเดียว: ra_ex_valuation (6.5) เท่ากับ scores.ra (6.5) พอดี — Charlie flag ให้ Warren ยืนยัน methodology รอบหน้า (ไม่ใช่ปัญหาเชิงมูลค่า); ความเสี่ยงหลักคือ Capex กด FCF + FTC ad-pricing case + งบ Q2 FY26 ออก 30 ก.ค. — ไม่ใช่เรื่องมูลค่า; HOLD เหมาะสม"
-      ],
-      "review_date": "2026-07-27"
-    },
-    "idea_th": "HOLD — Cloud + Retail + Ads trifecta: AWS +36% เร็วสุดใน 15 ไตรมาส + Trainium/Anthropic compute hedge (bet เดิมไม่เปลี่ยน). ราคาย่อ $247.23→$232.11 (-6.1%, ไม่มีข่าว MATERIAL ใหม่หลัง gate 07-23) ทำให้ MoS ขยับดีขึ้น 13.9%→19.13% (Base FV $287 ไม่เปลี่ยน). Charlie AGREE: consensus EPS $10.11 ≈ Warren $9.91, คำนวณ FV อิสระได้ $283 ใกล้ Warren มาก (gap แค่ 1.4%) — ตัวเลขสะอาด. Capex กด FCF + FTC ad-pricing case + งบ Q2 FY26 (30 ก.ค.) เป็นความเสี่ยง/ตัวแปรหลักรอบหน้า. ถือต่อได้ ไม่ต้องเติมหนักที่ราคานี้.",
-    "story_gate_th": {
-      "what": "Amazon มี 3 ธุรกิจ: e-commerce + โฆษณา + AWS cloud ที่สร้าง operating income ~59% ของบริษัท; AWS +36% เร็วสุดใน 15 ไตรมาส, Trainium ต้นทุนถูกกว่า NVIDIA GPU มาก",
-      "why": "ราคาย่อลง $247.23→$232.11 (-6.1%) ทำให้ MoS ขยับขึ้นเป็น 19.13% (Base FV $287 ไม่เปลี่ยน) — margin of safety กว้างขึ้นจากราคา. Charlie คำนวณ FV อิสระ $283 (consensus $10.11 × 28x) ใกล้ Warren $287 gap แค่ 1.4% — ตัวเลขสะอาด ไม่มีประเด็น EPS เฟ้อ",
-      "risk": "FTC ad-pricing case ยกระดับเป็น structural remedy; AWS growth ชะลอ <20%; Capex AI ~$200B กด FCF; งบ Q2 FY26 ออก 30 ก.ค. เป็น catalyst เสี่ยงรอบหน้า; FY27 EPS $9.91 อิง single-source ต้องระวัง"
-    },
-    "bull_th": [
-      "AWS +36% เร็วสุดใน 15 ไตรมาส, backlog $364B (ไม่รวม Anthropic $100B+)",
-      "Trainium chip ต้นทุนถูกกว่า NVIDIA GPU มาก — สัญญา OpenAI/Anthropic รวม $200B+",
-      "Amazon Ads $70B+ TTM run-rate margin สูง โต +22% YoY",
-      "ราคาย่อลง 6.1% ทำให้ MoS ดีขึ้นเป็น 19.13%; Charlie FV อิสระ $283 ใกล้ Warren $287 — ตัวเลขสะอาด ผ่าน gate ชัดเจน"
-    ],
-    "risk_th": [
-      "FCF ร่วงจาก capex AI ~$200B ปี 2026",
-      "FTC ad-pricing case + probe เรื่อง Anthropic investment (ข้อหา stealth merger)",
-      "AWS growth +36% ยังต้องรักษาระดับ — ถ้าชะลอ <20% thesis สั่น",
-      "งบ Q2 FY26 ออก 30 ก.ค. (อีก 3 วันทำการ) เป็น catalyst เสี่ยงราคา/FV รอบหน้า"
-    ]
-  },
   "META": {
     "symbol": "META",
     "display": "META",
@@ -1190,6 +1041,157 @@
       "Youth-litigation ภาษาเข้มขึ้นเป็น \"material loss\" ครั้งแรก + FTC appeal + EU DSA/IRS overhang",
       "CapEx $130-145B ทวีความรุนแรง + FCF ใกล้ศูนย์ อาจต้องพึ่งหนี้เพิ่ม",
       "รอ 10-Q Q2 2026 ยืนยัน breakdown legal charge + debt terms"
+    ]
+  },
+  "AMZN": {
+    "symbol": "AMZN",
+    "display": "AMZN",
+    "category": "big_tech",
+    "name": "Amazon",
+    "sector": "Big Tech",
+    "sectorSlug": "bigtech",
+    "chips": [
+      "Big Tech",
+      "Cloud + Commerce + AI"
+    ],
+    "bull": [
+      "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
+      "Anthropic partnership + Trainium chips = AI infrastructure play",
+      "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
+      "Advertising business $60B+ ARR กำลัง accelerate",
+      "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
+    ],
+    "risk": [
+      "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
+      "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
+      "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น",
+      "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
+      "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 4,
+    "waf": 7.97,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 259.52,
+    "fv": 287,
+    "mos": 9.57,
+    "fpe": 26.19,
+    "peg": 1.45,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        6.8,
+        "amber",
+        68
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "Cloud + Retail + Ads Trifecta thesis confirmed stronger by actual Q2 2026 results (AWS accelerating to fastest-in-18-quarters, backlog +36% QoQ to $496B, Operating Income beat guide top-end by a wide margin) — not just projection anymore. But price ran up +11.8% on the beat (mostly driven by AWS acceleration + Anthropic mark-to-market optics) before FY27 EPS consensus had a chance to catch up, pushing MoS below the 15% gate (9.57%) even though ER stays ~20%/yr. Holdings Return Recheck governs this existing holding: price rose because of genuine operating-income growth (not sentiment/hype), so Fair Value plausibly needs to rise too once FY27 consensus updates — but Warren won't assume that without evidence (Consensus-as-Base rule). Action = HOLD, no ADD this batch; Flag to re-estimate FV next round.",
+    "updated": "2026-07-31",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-31",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
+      "why": "ตลาดตอบรับ +10.20% After Hours ให้กับ headline EPS $5.75 (+245%) ซึ่งส่วนใหญ่มาจาก non-cash mark-to-market gain ของ Anthropic ($53.4B) — Warren เห็นต่างว่าเหตุผลที่แท้จริงที่ควร re-rate คือ **Operating Income $27.5B (+43%) ที่บีตท็อปเอนด์ guidance เองล้วนๆ** และ AWS เร่งเป็น +36.7% (เร็วสุดใน 18 ไตรมาส) + backlog กระโดด $364B→$496B ใน 1 ไตรมาส — เป็นสัญญาณ demand จริงที่ consensus ยังไม่ทันปรับ FY27 EPS ตาม (single-source estimate เดิมยังไม่ถูก revise); ในขณะเดียวกันตลาดยังไม่ได้ price-in ความเสี่ยงใหม่คู่กัน — FCF TTM ติดลบครั้งแรก (-$7.6B) และ CapEx guide ถูกปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว ($200B→$220B จาก memory cost inflation)",
+      "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment — หรือ FTC ad-pricing case ลงเอยเป็น structural remedy (ไม่ใช่แค่ค่าปรับ) ที่บังคับเปลี่ยน ad auction model กระทบ revenue stream ถาวร — หรือ FCF ยังติดลบต่อเนื่องหลายไตรมาสโดยไม่มี timeline ฟื้นตัวชัดเจน พิสูจน์ว่า CapEx cycle framework ของ management ผิด"
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Q2 2026 results confirmed via WebSearch (CNBC/tradingview/geekwire/tikr/businesswire 2026-07-29/30): net sales $200.6B +20%, AWS $42.2B +37% (fastest in 18 quarters), operating income $27.5B (+43% YoY from $19.2B) -- matches Warren's figures exactly",
+        "GAAP EPS $5.75 (net income $62.6B) confirmed to include $53.4B pre-tax non-operating other income 'primarily from investments in Anthropic' -- independently quantified: this is ~85% of pretax net income, i.e. the vast majority of the EPS beat is a non-cash mark-to-market gain, not operating profit. Warren correctly excluded this from FV inputs (did not use raw GAAP EPS to inflate valuation) -- verified Warren did NOT make the mistake this review exists to catch",
+        "FCF (TTM) confirmed negative -$7.6B (from +$18.2B/+$1.2B range a year/quarter earlier) -- matches Warren's RA-score writeup",
+        "CapEx guidance raise confirmed: $200B -> $220B for 2026, explicitly attributed by Jassy to memory-chip cost inflation, not demand -- matches Warren verbatim"
+      ],
+      "concerns": [
+        "TTM EPS on a raw/reported GAAP basis is now badly distorted by the one-time Anthropic gain (CNBC trailing-EPS field shows $12.43, vs a Charlie-normalized ~$7.36 backing out the gain) -- if anyone downstream uses the raw reported TTM EPS for a Floor/PE calc without adjustment, it would produce a nonsensical inflated Floor (e.g. 12.43 x 28 = $348, which would exceed even the Bull FV) -- flagging this explicitly as a data-quality trap for future batches",
+        "MoS narrowly fails the 15% gate on both Warren's numbers (9.57%) and Charlie's independent numbers (7.0% at charlie_fv $284) -- directionally consistent (HOLD, no ADD), but this is close enough to the line that a modest FY27 consensus EPS revision (likely upward per Warren's own note) could flip it either way next round",
+        "FV inputs (both Warren's $9.91 and this review's $10.16 Nasdaq consensus for FY27/Dec2027) are pre-earnings numbers not yet revised for the Q2 beat -- expected to move up, re-run once analysts update",
+        "TQR block is MISSING from this fresh batch entirely (present in the 07-27 carry-forward batch: score 8.25/Strong/ceiling 25%, but absent from Warren's 07-31 single-ticker update) -- this is a data-completeness gap, not a contamination issue; flagging so the website badge doesn't silently lose TQR data for AMZN. Recommend Warren re-attach the 07-27 TQR block (carried_from note) next round, same pattern used for AAPL/ARM in this same update"
+      ],
+      "summary": "",
+      "review_date": "2026-07-31"
+    },
+    "mark_easy": {
+      "one_liner": "Amazon งบ Q2 2026 บีตใหญ่ AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส แต่ EPS ที่ดูพุ่งกระฉูดส่วนใหญ่มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจริงจากการลงทุนใน Anthropic",
+      "what": "Amazon มี 3 ธุรกิจหลัก: e-commerce+โฆษณา (North America/International) และ AWS cloud ที่ทำกำไรหลักของบริษัททั้งที่รายได้แค่ 21% ของทั้งหมด",
+      "why_invest": [
+        "AWS โต +37% เร็วสุดใน 18 ไตรมาส เร่งตัวต่อเนื่อง 5 ไตรมาสติด backlog กระโดดจาก $364B เป็น $496B ในไตรมาสเดียว",
+        "Operating Income $27.5B +43% บีตเป้าที่บริษัทเองตั้งไว้แบบขาดลอย — เป็นกำไรจากธุรกิจจริง ไม่ใช่ตัวเลขทางบัญชี",
+        "Amazon Ads โต +26% margin สูง เป็นอีกขาธุรกิจที่โตเร่งขึ้นเรื่อยๆ",
+        "Custom chip (Trainium/Graviton) กำลังเป็นทางเลือกต้นทุนถูกกว่า NVIDIA ที่ลูกค้าใหญ่ๆ เริ่มใช้จริง"
+      ],
+      "watch_out": [
+        "EPS ที่รายงาน $5.75 (+245%) ส่วนใหญ่ราว 85% มาจากกำไรทางบัญชีที่ไม่ใช่เงินสด (mark-to-market) จากการลงทุนใน Anthropic ไม่ใช่กำไรจากการดำเนินธุรกิจจริง — ต้องดูที่ Operating Income แทน",
+        "กระแสเงินสดอิสระ (FCF) 12 เดือนย้อนหลังติดลบครั้งแรกในประวัติศาสตร์บริษัท (-$7.6B) จากการเร่งลงทุน AI Infrastructure",
+        "งบลงทุน (CapEx) ปี 2026 ถูกปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว จาก $200B เป็น $220B เพราะต้นทุนชิปหน่วยความจำแพงขึ้น",
+        "หนี้ระยะยาวเพิ่มขึ้นเกือบเท่าตัวใน 6 เดือน ($65.6B→$128.9B) เพื่อระดมทุนไปลงทุน AI"
+      ],
+      "bottom_line": "ธุรกิจหลักแข็งแรงขึ้นจริงจากตัวเลขที่เกิดขึ้นแล้ว ไม่ใช่แค่คาดการณ์ (AWS เร่งตัว, backlog พุ่ง) แต่ราคาที่วิ่งขึ้นแรงกว่าที่มูลค่าจะตามทัน ทำให้ margin of safety แคบลง (9.57%) ผ่านเกณฑ์แค่เฉียดๆ. HOLD ถือต่อได้ไม่ต้องเติมหนักตอนนี้ รอดูตัวเลข consensus ปรับ EPS ตามงบใหม่ก่อน"
+    },
+    "mark_full": {
+      "business_overview": "Amazon แบ่ง 3 segment: North America (retail+ads) รายได้ $116.2B +16%, International $42.2B +15%, AWS (cloud) $42.2B +37% — AWS สร้างรายได้แค่ 21% แต่สร้าง operating income ถึง 61% ของทั้งบริษัท",
+      "tam": "AWS annualized run rate $169B โต +36.7%; AI revenue run rate ทะลุ $25B โตสามหลัก%; Amazon Ads run rate ~$74B โต +26%; Andy Jassy มองว่า AWS อาจโตถึงระดับ 1 ล้านล้านดอลลาร์ต่อปีในอนาคต",
+      "moat": "AWS #1 cloud broadest portfolio ครองใจองค์กรใหญ่/รัฐบาล; custom silicon (Graviton5/Trainium) ต้นทุนถูกกว่า x86/NVIDIA มาก ลูกค้าใช้เพิ่มขึ้นเรื่อยๆ; logistics network ใหญ่ที่สุดในโลก; Prime ecosystem stickiness สูง",
+      "latest_financials": "Q2 2026: รายได้ $200.6B +20%, Operating Income $27.5B +43% (margin สูงสุดเป็นประวัติการณ์ 13.7%), AWS $42.2B +37% margin 39.4%; FCF (TTM) พลิกติดลบครั้งแรก -$7.6B",
+      "key_points": [
+        "AWS backlog พุ่งจาก $364B เป็น $496B ในไตรมาสเดียว — สัญญาณ demand จริงที่ consensus ยังปรับตัวเลขไม่ทัน",
+        "EPS ที่รายงานสูงผิดปกติเพราะรวมกำไรทางบัญชี (ไม่ใช่เงินสด) $53.4B จากการลงทุนใน Anthropic — ต้องแยกออกจากการวิเคราะห์กำไรจริง",
+        "CapEx ปี 2026 ปรับขึ้นเป็น $220B (จาก $200B เดิม) เพราะต้นทุนหน่วยความจำแพงขึ้น ไม่ใช่เพราะ demand เปลี่ยน",
+        "Graviton5 เปิดตัวเต็มรูปแบบ — ลูกค้าสั่งจองเพิ่มเกือบ 3 เท่าเทียบไตรมาสก่อน"
+      ]
+    },
+    "warren_easy": [
+      "AMZN tier Inevitable WAF 7.97 (HIGH) — AWS เร่งเป็น +36.7% เร็วสุดใน 18 ไตรมาส backlog พุ่งเป็น $496B ยืนยันด้วยตัวเลขจริงไม่ใช่แค่คาดการณ์",
+      "ราคาวิ่งขึ้น +11.8% จากงบ (ส่วนหนึ่งเพราะมุมมองบวกต่อ AWS ส่วนหนึ่งเพราะกำไรทางบัญชีจาก Anthropic) เร็วกว่าที่ consensus EPS จะปรับตาม ทำให้ MoS แคบลงเหลือ 9.57% ผ่านเกณฑ์แค่เฉียดๆ",
+      "HOLD — ธุรกิจหลักแข็งแรงขึ้นจริง (ไม่ใช่ hype) แต่ราคาที่ราคานี้ margin of safety แคบไป ไม่เพิ่มเงินใหม่ตอนนี้ รอ consensus ปรับ EPS ตามงบ"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "⚠️ Charlie ยกธงเตือนเรื่องคุณภาพกำไร ไม่ใช่เรื่องตัวเลขมูลค่าไม่ตรงกัน — ตัวเลข FV ของ Charlie ($284) ใกล้เคียง Warren ($287) มาก (ห่างกันแค่ 1%) ทั้งคู่เห็นตรงกันว่า HOLD ถือต่อได้ ไม่ใช่ปัญหาการคำนวณ",
+        "สิ่งที่ Charlie เตือนคือ: ตัวเลข EPS ที่ประกาศออกมา $5.75 (พุ่ง +245%) ราว 85% มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจากการลงทุนใน Anthropic ไม่ใช่กำไรจากธุรกิจจริง — ถ้าใครเอาตัวเลข EPS ดิบไปคำนวณมูลค่าต่อโดยไม่ปรับ จะได้มูลค่าที่สูงเกินจริงไปมาก Charlie จึงคำนวณ EPS ที่ปรับกำไรพิเศษออกแล้วแทน",
+        "นอกจากนี้ FCF ติดลบครั้งแรกในประวัติศาสตร์บริษัท + งบลงทุนถูกปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว + หนี้เพิ่มเกือบเท่าตัวใน 6 เดือน เป็นความเสี่ยงใหม่ที่จริงและสำคัญพอจะแยกยกธง แม้จะไม่เปลี่ยนคำแนะนำ HOLD (ธุรกิจหลัก AWS ยังโตแข็งแรงจริงตามตัวเลข ไม่ใช่แค่ narrative)"
+      ],
+      "review_date": "2026-07-31"
+    },
+    "idea_th": "HOLD — Cloud + Retail + Ads ยังเป็น 3 เครื่องยนต์หลักที่ทำงานได้ดีขึ้นจริงจากตัวเลข ไม่ใช่แค่คาดการณ์: AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส backlog พุ่งเป็น $496B, Operating Income บีตเป้าขาดลอย. แต่ราคาวิ่งขึ้นแรงกว่าที่มูลค่าจะตามทัน ทำให้ margin of safety แคบเหลือ 9.57% ผ่านเกณฑ์แค่เฉียดๆ. ⚠️ Charlie ยกธง CAUTION เรื่องคุณภาพกำไร — EPS ที่ดูพุ่งกระฉูด ($5.75) ราว 85% มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจากการลงทุนใน Anthropic ไม่ใช่กำไรจากธุรกิจจริง บวกกับ FCF ติดลบครั้งแรก + งบลงทุนถูกปรับขึ้นต่อเนื่อง + หนี้เพิ่มเกือบเท่าตัว เป็นความเสี่ยงที่ต้องจับตา แต่ยังไม่เปลี่ยนคำแนะนำ (ธุรกิจหลักยังแข็งแรงจริง). ถือต่อได้ ไม่เพิ่มเงินใหม่ตอนนี้ รอ consensus ปรับ EPS ตามงบก่อน.",
+    "story_gate_th": {
+      "what": "Amazon มี 3 ธุรกิจ: e-commerce + โฆษณา + AWS cloud ที่สร้าง operating income ~61% ของบริษัททั้งที่รายได้แค่ 21%; AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส",
+      "why": "งบ Q2 2026 บีตใหญ่ทุกด้าน AWS backlog พุ่งเป็น $496B เป็นสัญญาณ demand จริงที่ตัวเลขมูลค่ายังปรับไม่ทัน — แต่ราคาวิ่งขึ้นเร็วกว่ามูลค่าที่คำนวณได้ ทำให้ margin of safety แคบลงเหลือ 9.57% ผ่านเกณฑ์ 15% แค่เฉียดๆ ในเวลาเดียวกันก็มีความเสี่ยงใหม่ที่ตลาดยังไม่ได้ price-in เต็มที่: FCF ติดลบครั้งแรก + งบลงทุนถูกปรับขึ้นต่อเนื่อง",
+      "risk": "AWS ชะลอตัวต่ำกว่า 20% หากคู่แข่ง Azure/GCP แย่งงาน AI ไปมาก; คดี FTC เรื่องราคาโฆษณาลงเอยเป็นการเปลี่ยนโมเดลถาวร; FCF ติดลบต่อเนื่องหลายไตรมาสโดยไม่มีสัญญาณฟื้นตัวชัดเจน; กำไรทางบัญชีจาก Anthropic อาจพลิกเป็นขาดทุนได้ถ้ามูลค่าการลงทุนถูกปรับลง"
+    },
+    "bull_th": [
+      "AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส backlog พุ่งจาก $364B เป็น $496B ในไตรมาสเดียว",
+      "Operating Income $27.5B +43% บีตเป้าที่บริษัทตั้งไว้แบบขาดลอย เป็นกำไรจากธุรกิจจริง",
+      "Amazon Ads โต +26% margin สูง เป็นอีกขาธุรกิจที่โตเร่งขึ้น",
+      "Custom chip Graviton5/Trainium ต้นทุนถูกกว่า NVIDIA ลูกค้าใหญ่เริ่มใช้จริงเพิ่มขึ้น"
+    ],
+    "risk_th": [
+      "EPS ที่รายงาน $5.75 ราว 85% มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจาก Anthropic — ไม่ใช่กำไรจากธุรกิจจริง (Charlie ยกธง CAUTION)",
+      "กระแสเงินสดอิสระ (FCF) ติดลบครั้งแรกในประวัติศาสตร์บริษัท (-$7.6B) จากการเร่งลงทุน AI",
+      "งบลงทุน (CapEx) ปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว ($200B→$220B) จากต้นทุนหน่วยความจำแพงขึ้น",
+      "หนี้ระยะยาวเพิ่มเกือบเท่าตัวใน 6 เดือน ($65.6B→$128.9B)",
+      "ราคาที่วิ่งขึ้นแรงหลังงบทำให้ margin of safety แคบเหลือ 9.57% ผ่านเกณฑ์แค่เฉียดๆ"
     ]
   },
   "COHR": {
@@ -2243,13 +2245,13 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 6.3,
+    "waf": 6.38,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 333.02,
-    "fv": 255,
-    "mos": -30.6,
-    "fpe": 33.88,
+    "price": 312.33,
+    "fv": 244,
+    "mos": -28.0,
+    "fpe": 33.23,
     "peg": null,
     "scores": {
       "bq": [
@@ -2258,9 +2260,9 @@
         95
       ],
       "gp": [
-        6.0,
-        "orange",
-        60
+        6.5,
+        "amber",
+        65
       ],
       "va": [
         1.5,
@@ -2268,97 +2270,100 @@
         15
       ],
       "ra": [
-        8.5,
+        8.0,
         "green",
-        85
+        80
       ]
     },
-    "idea": "Price ran to $333.02 (จาก $328.23, +1.5%), now +11% เหนือ Bull FV ($300). MoS แย่ลง -28.7%→-30.6%; ER 6.7%/yr fail 15% gate. ไม่มี earnings ใหม่ (Q3 FY26 due ~end July). 07-23 MacBook/iMac AI-refresh = 🟡MONITOR ไม่ใช่ thesis change. BQ top-tier (9.5) แต่ราคา chase ต่อเนื่อง — do not chase; รอ pullback สู่ ~$255 Base FV.",
-    "updated": "2026-07-27",
+    "idea": "Q3 FY2026 beat (rev +16.4%, EPS +28.7% incl $0.11 one-time tariff benefit) but stock fell -6.3% AH ($333.43->$312.33) on Q4 FY2026 guide deceleration (rev +9-11%, GM 47-48% vs Q3's 50.1%, supply constraint capping iPhone/Mac/iPad, memory cost \"100-year flood\" no peak in sight). MoS barely moved (-30.6%->-28.0%) because FV also came down with the guide. Price still above even Bull FV ($290, +7.7%). Not a buy-the-dip setup on fundamentals despite the pullback.",
+    "updated": "2026-07-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-25",
+      "updated": "2026-07-31",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
-      "what": "Apple Ecosystem Lock-in คือ Competitive Advantage ที่แข็งแกร่งที่สุดใน Consumer Tech — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกันเป็น seamless ทำให้ switching cost สูง; Services (App Store, iCloud, Apple TV+, Apple Pay) margin 73%+ และ recurring revenue $100B+/ปี; Apple Silicon (M-series) ทำให้ Mac มี performance/watt นำหน้า x86",
-      "why": "Consensus (07-16) มอง Apple ไล่ซื้อบริษัท AI chip startup (Baltra server ASIC ล่าช้า, ยังต้องพึ่ง NVIDIA chips ใน Google Cloud สำหรับ Gemini-powered Siri) เป็นสัญญาณเชิงรุกที่ดี — Warren เห็นต่างว่านี่คือการ**ยืนยัน bear case เดิม** ไม่ใช่ edge ใหม่: การที่ Apple ต้องไปซื้อ (ไม่ใช่ build organically สำเร็จ) พิสูจน์ว่า in-house AI silicon program ล้าหลังจริงและ Siri ยัง critical-dependent บน NVIDIA/Google infrastructure ของคู่แข่ง — same \"AI lag\" thesis ที่เคยยืนยันจากคดี OpenAI (07-10) เพียงแต่คราวนี้เป็น M&A scramble ไม่ใช่ lawsuit; ในขณะเดียวกันราคาหุ้นวิ่งขึ้นต่อเนื่องอีก $328.23→$333.02 (+1.5%) วิ่งไกลเกิน Bull-case FV เดิม ($300) ไปอีก (+11% เหนือ Bull) โดยไม่มี earnings ใหม่รองรับ (Q3 FY2026 ยังไม่ประกาศ) — ยืนยันว่าตลาด \"chase\" ต่อเนื่อง ไม่ใช่ re-rate ตามเหตุผล",
-      "risk": "DOJ/EU regulatory action ต่อ App Store (30% take rate); Tariff impact on iPhone manufacturing (>90% made in China/India); Apple Intelligence underwhelm → ไม่เกิด upgrade cycle; China market share loss ต่อ Huawei ต่อเนื่อง; memory cost supercycle ลากยาวเกินคาด → margin guidance ปรับลงต่อแม้ขึ้นราคาแล้ว; AI chip acquisition ล้มเหลว/ล่าช้าต่อ → AI infrastructure dependency บนคู่แข่ง (NVIDIA/Google) ยืดเยื้อ"
+      "what": "Apple Ecosystem Lock-in คือ Competitive Advantage ที่แข็งแกร่งที่สุดใน Consumer Tech — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกันเป็น seamless ทำให้ switching cost สูง; Services (App Store, iCloud, Apple TV+, Apple Pay) margin 75%+ และ recurring revenue $109B+/ปี; Apple Silicon (M-series) ทำให้ Mac มี performance/watt นำหน้า x86",
+      "why": "Q3 FY2026 (ประกาศ 30 ก.ค.) beat ทั้ง revenue (+16.4% YoY) และ EPS (+28.7%, รวม one-time tariff-refund $0.11) — แต่หุ้นร่วง -6.3% After Hours เพราะ Q4 FY2026 guide บอกชะลอตัวชัด: revenue +9-11% YoY (จาก +16.4%), GM 47-48% (จาก 50.1%, ที่มี one-time benefit ~2pp ปนอยู่ — underlying แบนราบถึงลง), supply constraint (จาก demand เกินคาด ไม่ใช่ปัญหา supply chain) จำกัด upside Q4 ทั้ง iPhone/Mac/iPad, memory cost \"100-year flood\" (คำ Tim Cook เอง) ยังไม่เห็นจุดพีค — Consensus อาจอ่านการร่วงว่า overreact กับไตรมาสที่ beat จริง ควรรับจังหวะย่อ — Warren เห็นต่างว่า **นี่คือ repricing ที่ถูกทิศทาง** เพราะ Q4 guide เป็นหลักฐาน primary-document ว่า growth กำลังชะลอจริง (ไม่ใช่แค่ sentiment) แต่**แม้ร่วงแล้วราคายังสูงกว่า Fair Value มาก** (Base ~$244 = MoS -28%, ยังสูงกว่า Bull ~$290 อีก ~8%) — จึงยังไม่ใช่จังหวะซื้อบน fundamentals แม้ narrative จะดูเหมือนเป็นโอกาส; AI-lag thesis เดิมยังไม่เปลี่ยน — Siri AI reception เป็นบวกจริง (ข้อมูลใช้งานจริง ไม่ใช่ roadmap) แต่ foundation model ยังพึ่ง Google Gemini/NVIDIA infra, Baltra chip ยังล่าช้า, ดีล AI chip acquisition (07-16) ยังไม่ปิด; CEO transition **ใกล้เข้ามาจริงแล้ว** — call นี้คือ call สุดท้ายของ Cook ที่ยืนยันแล้ว, Ternus รับช่วง 1 ก.ย., Q4 call (~ปลาย ต.ค.) จะเป็น test window จริงของความเสี่ยงนี้ ไม่ใช่เรื่องไกลตัวอีกต่อไป",
+      "risk": "DOJ/EU regulatory action ต่อ App Store (30% take rate); Tariff impact on iPhone manufacturing (>90% made in China/India); China market share loss ต่อ Huawei ต่อเนื่อง; memory cost supercycle ลากยาวเกินคาดเข้า FY2027 → margin ต่ำกว่า guide แม้ปรับราคาแล้ว; supply constraint พิสูจน์ว่าเป็นสัญญาณ demand ชะลอจริง (ไม่ใช่แค่ capacity cap) → Q4 revenue ต่ำกว่า guide; AI chip acquisition ล้มเหลว/ล่าช้าต่อ → AI infrastructure dependency บนคู่แข่ง (NVIDIA/Google) ยืดเยื้อ; Q4 call แรกของ Ternus (~ปลาย ต.ค. 2026) ส่งสัญญาณ Services strategy/China navigation อ่อนแอ → CEO transition risk fire"
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price $333.02 independently re-confirmed via Nasdaq quote API 2026-07-27 (exact match) — no price move since 07-25 gate confirmed",
-        "TTM actual EPS $8.27 vs FY27 consensus $9.57 (Nasdaq) unchanged — Warren FV EPS $9.83 still only slightly above consensus",
-        "WebSearch 2026-07-27: no material news since 07-25 gate — brief App Store/services outage (07-25) fully restored by 07-26 (non-material, operational), Q3 FY26 earnings still pending (07-30), foldable-share forecast is industry-level noise, not company-specific catalyst"
+        "Q3 FY2026 results confirmed via WebSearch (macobserver/iclarified/moomoo/CNBC 2026-07-30): rev $109.4B +16% YoY, diluted EPS $2.02 +29% YoY, incl. $0.11/sh tariff-refund benefit — matches Warren's figures exactly",
+        "Q4 FY2026 guide confirmed: rev +9-11% YoY, GM 47-48% (down from Q3's 50.1%), FX headwind 2.5pp, supply constraint on iPhone/Mac/iPad — matches Warren verbatim",
+        "Price cross-checked 2 sources: Nasdaq quote API real-time premarket 2026-07-31 05:15ET = $310.20 (-6.97% net change) vs Warren's derived AH $312.33 (-6.33%) — same direction/magnitude, Nasdaq's live premarket print used as more current (2nd source: CNBC/Yahoo regular close $333.43 matches Warren's pre-move baseline exactly)",
+        "FY27 (Sep2027) consensus EPS $9.57 re-pulled live via Nasdaq analyst earnings-forecast API (13 analysts, unrevised since 07-27) — Warren's own eps_used ($9.40) is actually slightly BELOW live consensus, i.e. Warren's number is the more conservative one here, not inflated"
       ],
       "concerns": [
-        "ราคาเหนือ FV ทุกฝั่ง ~30% — WATCH ถูกต้อง ไม่ chase (unchanged from 07-25 — re-verified independently)"
+        "Price still above even Bull-case FV ($290 Warren / $281 Charlie) — not a buy-the-dip setup despite -6.97% post-earnings drop",
+        "CEO transition Cook→Ternus (Sep 1) now imminent, first full quarter under new CEO is the Oct Q4 call — genuine near-term uncertainty, correctly reflected in Warren's RA score cut"
       ],
       "summary": "",
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-31"
     },
     "mark_easy": {
-      "one_liner": "คุณภาพสูงสุดในโลกแต่ราคา ($333.02) ยังยืนแพงเหนือมูลค่าทุกฝั่ง (Base FV $255 / Bull $300) โดยไม่มีงบใหม่รองรับ — MoS -30.6%, WAF ตกเป็น LOW",
-      "what": "Apple ขาย iPhone/Mac/iPad + บริการ iCloud/App Store/Apple Pay ที่ margin สูง 75%+ มีลูกค้าติดใน ecosystem 2.5 พันล้านเครื่องทั่วโลก",
+      "one_liner": "Apple งบ Q3 FY2026 ทำสถิติใหม่ทั้งรายได้กำไร แต่หุ้นร่วง -6.3% หลังตลาดปิดเพราะ guide ไตรมาสหน้าบอกชัดว่ากำลังจะชะลอตัว",
+      "what": "Apple ขาย iPhone/Mac/iPad/Wearables พ่วง Services (App Store, iCloud, Apple TV+, Apple Pay) ที่ margin สูงลิ่ว 75%+ บน ecosystem 2.5 พันล้านเครื่องทั่วโลก",
       "why_invest": [
-        "Services segment $109B ARR margin 75%+ โต +14% YoY ต่อเนื่อง",
-        "Ecosystem lock-in 2.5B devices = switching cost สูงมาก",
-        "pricing power ผ่านการทดสอบจริงจาก iPhone 18 price hike ที่ไม่กระทบ demand",
-        "FCF มหาศาล + buyback $100B+/ปี = shareholder return ระดับโลก"
+        "Services เป็น growth engine หลัก โต +12.1% YoY ทำสถิติทุกไตรมาส แถม margin 75.6%",
+        "Mac โต +28.7% เร็วสุดในกลุ่มผลิตภัณฑ์ทั้งหมด — สัญญาณว่า AI-PC refresh cycle มาจริง",
+        "Ecosystem lock-in 2.5 พันล้านเครื่อง switching cost สูงมาก ลูกค้าไม่ค่อยย้ายค่าย",
+        "งบดุลแข็งแรง cash สุทธิเกือบ $62B พร้อม buyback ต่อเนื่อง"
       ],
       "watch_out": [
-        "ราคา $333.02 แซง Bull FV ($300) และเหนือ Base FV ($255) ไปแล้ว MoS -30.6%, ER 6.7%/ปี fail gate 15% — WAF ตกเป็น LOW",
-        "Charlie คำนวณ FV อิสระได้แค่ $230 (consensus EPS $9.57 × 24x) ยิ่งยืนยันว่าราคาแพงจริง",
-        "AI lag: Siri พึ่ง Gemini/NVIDIA, ชิป Baltra ล่าช้า; CEO transition Cook→Ternus ก.ย. 2026 ยังไม่พิสูจน์"
+        "แม้หุ้นร่วง -6.3% หลังงบ ราคายังแพงกว่ามูลค่าที่ Warren คำนวณอยู่มาก (MoS -28%) และยังสูงกว่ากรณีที่ดีที่สุด (Bull case) อีกด้วย — ยังไม่ใช่จังหวะ buy the dip",
+        "งบไตรมาสหน้า (Q4 FY2026) บอกชะลอตัวชัด: รายได้จะโตแค่ 9-11% (จาก 16.4%) และ margin จะลดลงจากต้นทุนหน่วยความจำที่ Tim Cook เรียกเองว่า \"น้ำท่วมรอบร้อยปี\"",
+        "การเปลี่ยน CEO จาก Tim Cook ไป John Ternus (1 ก.ย. นี้) ใกล้เข้ามาจริงแล้ว — งบนี้คืองบสุดท้ายที่ Cook พูดเอง",
+        "เรื่อง AI ยังตามหลังคู่แข่ง Siri ยังต้องพึ่ง Google Gemini ไม่ได้ทำโมเดลเอง"
       ],
-      "bottom_line": "คุณภาพ 10/10 แต่ราคาไล่จนแซง Bull FV MoS -30.6% — Charlie AGREE ว่าแพงจริง (FV อิสระ $230) รอ pullback สู่ ~$230-255 หรือรอ Q3 FY26 ปลาย ก.ค. ก่อนพิจารณาใหม่. WATCH"
+      "bottom_line": "ธุรกิจคุณภาพสูงสุดยังไม่เปลี่ยน (BQ 9.5) แต่ราคาแม้ร่วงแล้วก็ยังแพงกว่ามูลค่าจริงมาก Charlie เห็นด้วยว่าแพง (คำนวณอิสระได้ FV ราว $230) รอราคาลงมาใกล้โซน $230-244 หรือรอดูงบไตรมาสหน้าที่จะเป็นงบแรกของ CEO คนใหม่ก่อน. WATCH"
     },
     "mark_full": {
-      "business_overview": "Apple มีรายได้ 5 หมวด: iPhone ($209.6B FY25 +4%), Mac ($33.7B +12%), iPad ($28B +5%), Wearables ($35.7B -4%), Services ($109.2B +14%) — Services คือ growth engine และ margin engine หลัก",
-      "tam": "Services TAM ยังขยาย (App Store, iCloud, Apple TV+, Apple Pay); India เป็นตลาดสมาร์ทโฟนอันดับ 2 ของโลกที่ยังโตสองหลัก; Apple Intelligence เป็น potential upgrade wave",
-      "moat": "Ecosystem lock-in: iPhone→AirPods→Watch→iCloud→App Store→Apple Pay ออกยากมาก; Services GM 75%+ สร้าง recurring cash flow ที่คู่แข่งเลียนแบบไม่ได้; Apple Silicon ควบคุม roadmap เองทั้งหมด",
-      "latest_financials": "FY2025: Revenue $416.2B +6.4%, FCF $98.8B; Q1 FY26: $143.8B +16% (all-time record); Q2 FY26: $111.2B +17%, Services $31.0B +16%; Greater China Q1/Q2 +38%/+28%",
+      "business_overview": "Apple มี 5 กลุ่มรายได้หลัก: iPhone (โต +21.7% สถิติไตรมาส), Mac (+28.7% เร็วสุด), iPad, Wearables/Home/Accessories, และ Services (App Store/iCloud/Apple TV+/Apple Pay ฯลฯ) ที่โต +12.1% margin สูงถึง 75.6% — Services กลายเป็นเครื่องจักรทำกำไรหลักของบริษัทไปแล้ว",
+      "tam": "ตลาด Services ยังขยายต่อเนื่อง สมาชิกจ่ายเงินทะลุ 1.5 พันล้านราย ทุกหมวดทำสถิติใหม่ (cloud, payment, advertising, App Store, AppleCare, Apple Music, Apple TV+) — ฝั่งฮาร์ดแวร์กำลังเจอ upgrade cycle ใหม่จาก AI-refresh (Mac โตเร็วสุด)",
+      "moat": "Ecosystem lock-in ยังเป็นเกราะป้องกันที่แข็งแกร่งที่สุด — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกันไร้รอยต่อ ทำให้ลูกค้าย้ายค่ายยาก; Apple Silicon (M-series) ควบคุม roadmap เองได้ 100%; Services margin 75%+ เป็น recurring revenue ที่คู่แข่งเลียนแบบยาก",
+      "latest_financials": "Q3 FY2026 (เม.ย.-มิ.ย. 2026): รายได้ $109.4B +16.4% (สถิติไตรมาสมิ.ย.), EPS $2.02 +28.7% (รวม one-time tariff refund $0.11), Gross Margin 50.1% (รวม benefit ชั่วคราวจาก tariff refund ~2pp) — ไตรมาสหน้า guide รายได้โตแค่ 9-11% margin ลงมาที่ 47-48%",
       "key_points": [
-        "Services $109B ARR กำลังเป็น growth engine หลักแซง Products",
-        "Apple ฟ้อง OpenAI (07-10/13) ข้อหาขโมย trade secret ด้าน AI hardware — สะท้อนว่า Apple เล่นเกมตั้งรับด้าน AI มากกว่านำ",
-        "ข่าวใหม่ (07-16): Apple ไล่ซื้อ AI chip startup เพราะชิป Baltra (server AI) ในบ้านล่าช้า ยังต้องพึ่ง NVIDIA ผ่าน Google Cloud สำหรับ Siri/Gemini — ยืนยัน AI lag thesis เพิ่มเติม",
-        "CEO transition Cook→Ternus (ก.ย. 2026) ยังต้องติดตามใกล้ชิด"
+        "Q4 FY2026 guide บอกชะลอตัวชัด: rev +9-11% (จาก 16.4%), เกิดจาก supply constraint (demand เกินคาด ไม่ใช่ปัญหา supply chain) + ต้นทุนหน่วยความจำที่ยังไม่เห็นจุดพีค",
+        "Mac +28.7% เร็วสุดในกลุ่มผลิตภัณฑ์ — สัญญาณ AI-PC refresh cycle เข้าจริง",
+        "Greater China โต +22.4% (สถิติ, เท่ากับ Europe เป็นภูมิภาคโตเร็วสุด)",
+        "CEO transition Cook→Ternus 1 ก.ย. 2026 — นี่คืองบสุดท้ายของ Cook อย่างเป็นทางการแล้ว"
       ]
     },
     "warren_easy": [
-      "AAPL คุณภาพสูงสุด (BQ 9.5) — ecosystem 2.5B devices, Services margin 75%+, pricing power ผ่านการทดสอบจริงจาก iPhone 18",
-      "แต่ WAF ตกเป็น 6.3 (LOW) เพราะราคา $333.02 แซงมูลค่าทุกฝั่ง: MoS -30.6% (Base FV $255), ER 6.7%/ปี fail 15% gate — ไม่ผ่าน STARTER band ด้วยซ้ำ",
-      "WATCH — do not chase; รอ pullback สู่ ~$230-255 ก่อน หรือรอ Q3 FY26 ปลาย ก.ค."
+      "AAPL คุณภาพธุรกิจสูงสุด (BQ 9.5) — Q3 FY2026 beat ทั้งรายได้ (+16.4%) และ EPS (+28.7%) แต่หุ้นร่วง -6.3% หลังตลาดปิดเพราะ guide ไตรมาสหน้าชะลอตัวชัดเจน (rev +9-11%, margin ลง)",
+      "แม้ร่วงแล้วราคายังแพงกว่ามูลค่าจริงมาก MoS -28% ยังสูงกว่าแม้กระทั่ง Bull case (FV $290) — WAF ยังอยู่โซน LOW ที่ 6.38",
+      "WATCH — ยังไม่ใช่จังหวะไล่ซื้อบน fundamentals แม้ narrative ราคาร่วงหลังงบจะดูน่าสนใจ รอราคาเข้าใกล้ Base FV ~$244 หรือรอดูงบแรกของ CEO คนใหม่ (ปลาย ต.ค.)"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ตรวจราคาอิสระ $333.02 ตรงกับ Nasdaq (Jul 23) และคำนวณ FV ของตัวเองบน consensus EPS FY27 $9.57 (Nasdaq, ต่ำกว่า eps ที่ Warren ใช้ $9.83 เล็กน้อย) × 24x (ต่ำกว่า median 5 ปี ~26x เผื่อความเสี่ยง China/AI-lag) = $230 — ใกล้ Warren $255 gap แค่ 9.8%",
-        "ทั้งสองมุมมองสรุปตรงกัน: ราคายืนเหนือ FV ทุกฝั่ง ~30% ไม่มี margin of safety → WATCH ถูกต้อง ไม่ไล่ซื้อ. เป้าเข้าเชิงมูลค่าคือช่วง ~$230-255 (ยังไม่รวม floor จาก TTM EPS $8.27 × 24x = $198)",
-        "จุดต้องติดตาม: Q3 FY26 ปลาย ก.ค. — ถ้า Services/margin ยังแข็งอาจ re-rate แต่ที่ราคาปัจจุบันความเสี่ยงด้านราคาเกินความน่าสนใจของคุณภาพ"
+        "Charlie ตรวจสอบตัวเลขงบ Q3 FY2026 ตรงกับ Warren เป๊ะ (รายได้ $109.4B, EPS $2.02) และคำนวณ FV อิสระด้วย consensus EPS ปีหน้า $9.57 × 24x (ระมัดระวังกว่าค่ากลาง 5 ปีที่ ~26x เผื่อความเสี่ยงจีน+ตามหลังเรื่อง AI) = $230 — ใกล้เคียงกับตัวเลขของ Warren $244 มาก (ห่างกันแค่ 5.7%)",
+        "จุดที่น่าสนใจ: eps_used ของ Warren ($9.40) ยังต่ำกว่า consensus จริงที่ Charlie ดึงมา ($9.57) เสียอีก — แปลว่า Warren ไม่ได้เดาตัวเลขเกินจริงเลยรอบนี้ ยิ่งตอกย้ำว่าเหตุผลที่ราคายังแพงไม่ใช่เพราะ FV ถูกประเมินต่ำเกินไป",
+        "สรุปตรงกัน: ราคาแม้ร่วงหลังงบก็ยังยืนเหนือ Bull-case FV ทั้งสองฝั่ง (Warren $290 / Charlie $281) — ไม่ใช่จังหวะซื้อบน fundamentals จุดที่ต้องติดตามคือ Q4 call ปลาย ต.ค. ที่จะเป็นงบแรกของ CEO คนใหม่"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-31"
     },
-    "idea_th": "WATCH — ราคา $333.02 ยังยืนแพงเหนือมูลค่าทุกฝั่ง (Base FV $255 / Bull $300) ทำ MoS -30.6% และ ER แค่ 6.7%/ปี ไม่ผ่านเกณฑ์ 15%; ยังไม่มีงบใหม่ (Q3 FY26 ปลาย ก.ค.). คุณภาพธุรกิจสูงสุด (BQ 9.5) แต่ราคาไล่เกินมูลค่ามาต่อเนื่อง. Charlie เห็นด้วย (AGREE): คำนวณ FV อิสระบน consensus EPS $9.57 × 24x = $230 ใกล้ Warren $255 (gap แค่ 9.8%) — ยืนยันว่าราคาแพงจริงทั้งสองมุมมอง ไม่ไล่ซื้อ รอย่อสู่ ~$230-255.",
+    "idea_th": "WATCH — Q3 FY2026 beat ทั้งรายได้ (+16.4%) และ EPS (+28.7%) แต่หุ้นร่วง -6.3% หลังตลาดปิด เพราะ guide ไตรมาสหน้าชะลอตัวชัดเจน (รายได้โตแค่ 9-11% จาก 16.4%, margin ลงจากต้นทุนหน่วยความจำที่ยังไม่เห็นจุดพีค). แม้ราคาร่วงแล้ว MoS ยังติดลบ -28% และยังแพงกว่าแม้กระทั่ง Bull-case FV — ยังไม่ใช่จังหวะไล่ซื้อบน fundamentals. Charlie เห็นด้วย (AGREE) คำนวณ FV อิสระได้ $230 ใกล้เคียง Warren $244 (ห่างกันแค่ 5.7%) — สรุปตรงกันว่าราคายังแพง คุณภาพธุรกิจยังสูงสุด (BQ 9.5) รอราคาย่อเข้าใกล้โซนมูลค่าจริง หรือรอดูงบแรกของ CEO คนใหม่ (ปลาย ต.ค.) ก่อนพิจารณาใหม่.",
     "story_gate_th": {
-      "what": "Apple ขายฮาร์ดแวร์ (iPhone/Mac/iPad/Wearables) พ่วง Services margin 75%+ (App Store/iCloud/Apple Pay) บน ecosystem 2.5 พันล้านเครื่อง — ธุรกิจคุณภาพสูงสุดในโลก",
-      "why": "ปัญหาไม่ใช่คุณภาพ แต่เป็นราคา: $333.02 แพงเหนือ Base FV $255 และ Bull FV $300 → MoS -30.6%, ER 6.7%/ปี fail gate 15%. Charlie คำนวณอิสระได้ FV $230 (consensus EPS $9.57 × 24x) ยิ่งต่ำกว่า — สรุปตรงกันว่าไม่มี margin of safety ที่ราคานี้",
-      "risk": "CEO transition Cook→Ternus ก.ย. 2026; China 18% + Huawei; EU DMA + DOJ antitrust; Google Search TAC risk; AI lag (Siri พึ่ง Gemini/NVIDIA); memory cost supercycle กด margin"
+      "what": "Apple ขายฮาร์ดแวร์ (iPhone/Mac/iPad/Wearables) พ่วง Services margin 75%+ (App Store/iCloud/Apple Pay) บน ecosystem 2.5 พันล้านเครื่อง — ธุรกิจคุณภาพสูงสุดในโลกที่ยังไม่เปลี่ยน",
+      "why": "Q3 FY2026 beat จริงทั้งรายได้และกำไร แต่ guide ไตรมาสหน้าบอกชะลอตัวชัดเจน (รายได้ 9-11% margin ลดลง) ทำให้หุ้นร่วง -6.3% หลังตลาดปิด — ปัญหาไม่ใช่คุณภาพธุรกิจ แต่เป็นราคา: แม้ร่วงแล้วยังยืนเหนือมูลค่าที่คำนวณได้มาก (MoS -28%) และยังแพงกว่าแม้ Bull-case ด้วยซ้ำ Charlie คำนวณอิสระได้ FV ใกล้เคียงกัน ($230) ยิ่งยืนยันว่าไม่มี margin of safety ที่ราคานี้",
+      "risk": "การเปลี่ยน CEO Cook→Ternus 1 ก.ย. 2026 ใกล้เข้ามาจริงแล้ว (งบนี้เป็นงบสุดท้ายของ Cook); จีน 18% ของรายได้ + คู่แข่ง Huawei; กฎหมาย EU DMA และคดี DOJ antitrust; ต้นทุนหน่วยความจำที่ยังไม่เห็นจุดพีค; ปัญหา supply constraint ที่อาจสะท้อน demand ชะลอตัวจริงมากกว่าที่ guide บอก"
     },
     "bull_th": [
-      "คุณภาพธุรกิจสูงสุด BQ 9.5 — Services $109B ARR margin 75%+ โต +14% YoY เป็น growth engine หลัก",
-      "Ecosystem lock-in 2.5B devices + pricing power (iPhone 18 ขึ้นราคาไม่กระทบ demand)",
-      "FCF มหาศาล + buyback $100B+/ปี = shareholder return ระดับโลก",
-      "Greater China Q1/Q2 FY26 +38%/+28% ฟื้นตัวดีกว่าที่กังวล"
+      "Services เป็นเครื่องจักรทำกำไรหลัก โต +12.1% margin 75.6% ทำสถิติทุกไตรมาส",
+      "Mac โต +28.7% เร็วสุดในกลุ่มผลิตภัณฑ์ — สัญญาณ AI-PC refresh cycle เข้าจริง",
+      "Ecosystem lock-in 2.5 พันล้านเครื่อง switching cost สูงมาก",
+      "งบดุลแข็งแรง cash สุทธิเกือบ $62B พร้อม buyback ต่อเนื่อง"
     ],
     "risk_th": [
-      "ราคา $333.02 แพงเหนือมูลค่าทุกฝั่ง — MoS -30.6% (Base FV $255), ER 6.7%/ปี fail gate 15%; Charlie FV อิสระ $230 ยิ่งต่ำกว่า",
-      "AI lag: Siri พึ่ง Gemini/NVIDIA, ชิป Baltra ในบ้านล่าช้าจนต้องไล่ซื้อ startup — เป็น monitor ไม่ใช่ catalyst บวก",
-      "China 18% ของรายได้ + Huawei แข่งดุ",
-      "EU DMA + DOJ antitrust + Google Search TAC risk",
-      "CEO transition Cook→Ternus ก.ย. 2026 ยังไม่พิสูจน์"
+      "ราคาแม้ร่วงหลังงบ -6.3% ก็ยังแพงกว่ามูลค่าจริงมาก MoS -28% ยังสูงกว่าแม้ Bull-case FV",
+      "guide ไตรมาสหน้าชะลอตัวชัดเจน (รายได้ 9-11% จาก 16.4%) จากต้นทุนหน่วยความจำและ supply constraint",
+      "การเปลี่ยน CEO Cook→Ternus ใกล้เข้ามาจริง — งบไตรมาสหน้าจะเป็นบทพิสูจน์แรกของ CEO คนใหม่",
+      "เรื่อง AI ยังตามหลัง Siri พึ่ง Google Gemini ยังไม่ได้ทำโมเดลเอง",
+      "จีน 18% ของรายได้ + คดี antitrust ทั้ง EU/DOJ ที่ยังไม่จบ"
     ]
   },
   "ARM": {
@@ -2388,126 +2393,127 @@
     ],
     "action": "avoid",
     "actionLabel": "Avoid",
-    "conviction": 3,
-    "waf": 5.775,
+    "conviction": 2,
+    "waf": 5.575,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 260.01,
-    "fv": 130,
-    "mos": -100.0,
-    "fpe": 74.08,
-    "peg": 3.7,
+    "price": 246.59,
+    "fv": 96,
+    "mos": -156.86,
+    "fpe": 94.84,
+    "peg": 4.74,
     "scores": {
       "bq": [
-        8.5,
+        8.0,
         "green",
-        85
+        80
       ],
       "gp": [
-        7.5,
-        "amber",
-        75
+        8.0,
+        "green",
+        80
       ],
       "va": [
-        1.5,
+        1.0,
         "orange",
-        15
+        10
       ],
       "ra": [
-        4.0,
+        3.5,
         "orange",
-        40
+        35
       ]
     },
-    "idea": "ราคา $260.01 ยังคง ~2x แพงเกินมูลค่าพื้นฐาน (forward_pe 74x บน EPS เดียวกับ FV vs Warren fair 37x, PEG 3.7 ~2.5x cap 1.5) — คง AVOID. หมายเหตุ: TQR (คุณภาพ) = 🥈 Strong 7.33 (สูงกว่า WAF LOW มาก) เพราะ TQR ตัดผลราคาออก — สะท้อนว่า ARM เป็นธุรกิจคุณภาพดี (royalty moat) แต่ **ราคาไม่ผ่าน gate** เท่านั้น (แยกแกนคุณภาพ vs ราคาตามหลัก TQR). ไม่มีข้อมูลใหม่รอบนี้ (batch นี้ = TQR sync เท่านั้น, scores carry จาก 07-25 authoritative repair batch ตรงตัว)",
-    "updated": "2026-07-27",
+    "idea": "Q1 FY2027 was a genuine two-sided quarter -- clean beat on revenue ($1.289B +22% YoY record Q1)/EPS ($0.45 beat top of guide)/opex, but royalty growth guide cut (~20%->high-teens) on broadening mobile BOM inflation, and a crystallized Qualcomm/Nuvia court loss (appeal pending). Offsetting: AGI CPU demand now exceeds $2B, CFO reframed Cloud AI CPU TAM to ~$220B-equivalent, and the customer/ecosystem base (NVDA Vera full production, AWS-Meta Graviton5 deal, even Qualcomm building an Arm-based DC chip) is genuinely broadening. Re-deriving Fair Value on a documented EPS basis (replacing an unsourced $3.51 figure with stockanalysis.com's $2.17 FY2027 consensus grown 20%/yr) drops FV Base to $96 -- MoS worsens to -155.9%, PEG to ~4.7, ER to ~2.9%/yr, all catastrophically failing gates. The AGI CPU/TAM upside is real but belongs in the Bull case ($132), not Base -- the stock still trades above even that Bull scenario. Continue to avoid.",
+    "updated": "2026-07-31",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-25",
+      "updated": "2026-07-31",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "ARM owns the dominant CPU ISA (>95% mobile share) and monetizes via licensing + per-chip royalties with near-zero marginal cost, now expanding into datacenter/AI via Compute Subsystems (CSS) and AGI CPU production silicon.",
-      "why": "Consensus continues repricing ARM down alongside the broad July AI/semi selloff (profit-taking on elevated multiples, SK Hynix HBM deceleration spillover) — even after a further -7.5% drop this batch, sell-side (BofA Neutral $335 PT) still can't justify the current price; Warren has almost no differentiated edge here — the royalty thesis (Armv9 2-3x, data center doubling, Oracle/agentic-AI CPU expansion 07-02) is real and intact, but price still requires re-rating far beyond what fundamentals support even post-selloff.",
-      "risk": "DOJ/FTC antitrust action forces licensing model change OR RISC-V adoption accelerates at hyperscalers, collapsing royalty growth and triggering multiple compression."
+      "why": "Consensus is digesting a two-sided Q1 FY2027 print (clean beat on revenue/EPS but a royalty-growth guide cut on mobile BOM inflation, plus a crystallized Qualcomm/Nuvia court loss) alongside a genuine TAM reframe (AGI CPU Cloud AI CPU TAM $100B→$220B-equivalent, demand backlog >$2B) — Warren's edge is that even after reconciling the valuation to defensible (not just optimistic) consensus EPS, the stock trades at ~95x forward earnings on the re-derived base, i.e. the AGI CPU optionality is being priced as if it's already Base case when it still belongs in Bull; that gap is real but the market isn't pricing it as a gap.",
+      "risk": "DOJ/FTC antitrust action forces licensing model change, OR RISC-V adoption accelerates at hyperscalers, OR the 3rd Circuit appeal against Qualcomm also fails (removing the ~10%-of-revenue Qualcomm relationship from Arm's control) — any of these collapses royalty growth and triggers multiple compression."
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price $260.01 independently re-pulled today via Nasdaq quote API + CNBC quote-html-webservice API (both exact match, Jul 24 close) — no drift vs 07-25 review",
-        "FY28 (Mar2028) consensus EPS $1.99 (Nasdaq analyst earnings-forecast, 4 analysts) re-pulled today — exact match to prior eps_used, no revision since 07-25",
-        "TQR block (new this round): centrality_note (royalty moat regardless of ISA winner, AGI CPU $2B+ demand) and resilience_note (royalty base diversified smartphone/IoT/auto) contain no price language — contamination check clean; note investment_idea text explicitly separates TQR-quality from price-AVOID, which is the intended TQR/price separation, not contamination",
-        "ra_ex_valuation 5.0 vs scores.ra 4.0 — differ, not a blanket copy"
+        "Q1 FY2027 results confirmed via WebSearch (techtimes/yahoo/tradingview/newsroom.arm.com 2026-07-29/30): revenue $1.289B +22% YoY record Q1, royalty revenue $715M +22%, licensing revenue $574M +23%, FCF $665M (+343% YoY) -- matches Warren's figures",
+        "Royalty growth guide cut confirmed: full-year outlook lowered from ~20% to 'high teens' on smartphone weakness + elevated memory (BOM) costs -- matches Warren verbatim",
+        "Qualcomm/Nuvia ruling confirmed: district court judgment in Qualcomm's favor stands (Arm's own breach claim rejected), Arm has appealed to the 3rd Circuit -- matches Warren verbatim",
+        "FY2026 (year ended Mar-2026) actual full-year revenue confirmed $4.92B (+23%), non-GAAP diluted EPS $1.77 (from $1.63) -- used to build independent TTM revenue base"
       ],
       "concerns": [
-        "Warren eps_used $3.51 (FY2028) สูงกว่า consensus $1.99 ~76%; แต่ผลลัพธ์เหมือนกัน — overvalued ~2x ทั้งสองฝั่ง ไม่ว่าจะใช้เลขไหน",
-        "AVOID ถูกต้อง; ราคา ~2.4x เหนือ Charlie FV แม้ใช้ multiple สูงถึง 55x (hypergrowth premium)",
-        "1 new MONITOR-grade news item today (backlog $2B) — below Warren's ≥3-item re-analyze threshold, correctly not triggering a re-score; excluded any analyst-rating-change commentary from this review per house rule (no PT/rating opinions recorded)"
+        "METHODOLOGY CORRECTION: both Warren's FV work and the prior 3 Charlie batches (07-25/07-27, carried through 07-30) used a P/E-multiple method for ARM despite forward P/E already exceeding 80x (Warren's own forward_pe = 94.84) -- CHARLIE.md §2.5 explicitly bars P/E method above this threshold and requires switching to FCF or EV/Sales. This review switches to EV/Sales for the first time; the resulting FV ($105 Base) lands close to Warren's P/E-based $96 (gap 9.4%), which is a reassuring cross-method convergence, but the P/E method should stop being used for ARM going forward per house rule",
+        "TQR block carried forward unchanged from 07-27 (not recomputed this round, per Warren's design that TQR only updates via /warren theme) -- but two genuinely new BQ/GP-relevant facts landed THIS quarter (crystallized Qualcomm/Nuvia court loss, royalty growth guide cut) that mirror the exact changes Warren made to the main BQ/GP scores this batch (8.5->8.0, 7.5->8.0). Recommend refreshing TQR centrality/resilience notes at the next /warren theme run so the TQR badge doesn't go stale on facts already acknowledged elsewhere in the same card",
+        "Every method (Warren's P/E-based $96, Charlie's EV/Sales-based $105) places fair value at roughly 40% of the current price -- AVOID is well-supported by method triangulation, not just a single fragile calculation"
       ],
       "summary": "",
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-31"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของสถาปัตยกรรม CPU ที่ครองมือถือ >95% ของโลก แต่ราคา $260.01 แพงกว่ามูลค่าพื้นฐานราว 2 เท่า (MoS -100%, PEG 3.7) แม้ร่วงต่อเนื่อง 2 รอบติด",
-      "what": "ARM ไม่ผลิตชิปเอง แต่ให้เช่า license สถาปัตยกรรม CPU แล้วเก็บค่า royalty ทุกชิปที่ผลิต — กำลังขยายสู่ data center/AI ผ่าน AGI CPU สำเร็จรูปตัวแรก",
+      "one_liner": "ARM งบ Q1 FY2027 บีตสะอาดทุกตัวเลข แต่ตัวชี้วัดสำคัญ (การเติบโตค่า royalty) ถูกปรับลง พร้อมแพ้คดีความสำคัญกับ Qualcomm — ราคายังแพงกว่ามูลค่าจริงมากแม้ปรับวิธีคิดใหม่แล้ว",
+      "what": "ARM ไม่ผลิตชิปเอง แต่ให้เช่า license สถาปัตยกรรม CPU แล้วเก็บค่า royalty ทุกชิปที่ผลิต — กำลังขยายสู่ data center/AI ผ่าน AGI CPU ชิปสำเร็จรูปตัวแรกของบริษัท",
       "why_invest": [
-        "ecosystem lock-in 22M+ developers, 350B+ ชิปสะสม",
-        "royalty rate เพิ่มทุก cycle จาก Armv9/CSS แม้ unit ไม่โต",
-        "data center royalty double YoY จาก AWS/Google/Microsoft/NVIDIA ใช้ Arm core",
-        "AGI CPU backlog เพิ่มเป็น $2B ใน 6 สัปดาห์นับจากเปิดตัว"
+        "ecosystem lock-in นักพัฒนา 22 ล้านคนทั่วโลก ชิปสะสมกว่า 350,000 ล้านตัว",
+        "ค่า royalty ต่อชิปเพิ่มขึ้นทุก cycle จาก Armv9/CSS แม้จำนวนชิปไม่โต",
+        "ความต้องการ AGI CPU (ชิปสำเร็จรูปใหม่) ทะลุ $2,000 ล้านแล้ว และบริษัทขยายมุมมองตลาดที่จะเข้าถึงได้ใหญ่ขึ้นมาก",
+        "ลูกค้าใหม่ขยายวงกว้างขึ้นจริง — NVIDIA Vera เข้าสู่การผลิตเต็มรูปแบบ, AWS จับมือ Meta ใช้ชิป Graviton5"
       ],
       "watch_out": [
-        "ราคา $260.01 แพงกว่า Base FV $130 ~2 เท่า MoS -100%, PEG 3.7, forward P/E 74x",
-        "Charlie AGREE — คำนวณ FV อิสระได้ $110 (consensus $1.99 × 55x) ยังต่ำกว่าราคา ~2.4 เท่า",
-        "คดี Qualcomm/Nuvia ยังไม่จบ; RISC-V threat ระยะยาว; SoftBank ถือ >87%"
+        "คำแนะนำการเติบโตของรายได้ค่า royalty ทั้งปีถูกปรับลงจากราว 20% เหลือ \"high teens\" เพราะต้นทุนหน่วยความจำที่แพงขึ้นกระทบยอดขายมือถือกว้างกว่าที่คาด",
+        "แพ้คดีความกับ Qualcomm เรื่องสัญญา license อย่างเป็นทางการแล้ว (แม้ยังอุทธรณ์อยู่) — กระทบความมั่นใจต่อรายได้จากลูกค้ารายนี้ที่คิดเป็นราว 10% ของรายได้รวม",
+        "แม้ปรับวิธีคำนวณมูลค่าใหม่ให้อิงตัวเลขที่ตรวจสอบได้จริง ราคาหุ้นก็ยังแพงกว่ามูลค่าที่คำนวณได้เกือบ 2.5 เท่า",
+        "SoftBank ถือหุ้นกว่า 87% เป็นความเสี่ยงเชิง governance ระยะยาว"
       ],
-      "bottom_line": "ธุรกิจ royalty คุณภาพดีจริง แต่ตลาดให้ราคาสูงเกินมูลค่าพื้นฐานมาก — ทั้ง Warren และ Charlie คำนวณ FV ได้ราว $110-130 ต่ำกว่าราคาปัจจุบัน ~2 เท่า. AVOID"
+      "bottom_line": "ธุรกิจ royalty คุณภาพดีจริงและมีโอกาสใหม่จาก AGI CPU ที่ตลาดกำลังโตขึ้นเรื่อยๆ แต่ราคาหุ้นสะท้อนความคาดหวังไปไกลเกินมูลค่าจริงมาก ทั้ง Warren และ Charlie (ซึ่งใช้วิธีคำนวณคนละแบบ) ต่างได้ผลลัพธ์ตรงกันว่าแพงกว่ามูลค่าจริงเกือบ 2.5 เท่า. AVOID"
     },
     "mark_full": {
-      "business_overview": "ARM มีรายได้ 2 ประเภท: Royalty 53% (+21% YoY) + License & Other 47% (+25% YoY) รวม FY2026 $4.92B (+23%)",
-      "tam": "Cloud AI (data center) royalty >100% YoY, Edge AI (มือถือ/IoT) >99% market share, Physical AI (automotive/robotics) โตสองหลัก",
-      "moat": "ecosystem lock-in 22M+ developers, performance-per-watt leadership, asset-light IP licensing model GM 98%+, Armv9+CSS royalty rate เพิ่มทุก cycle",
-      "latest_financials": "FY2026: Revenue $4.92B +23%, Non-GAAP EPS $1.77 +9%, FCF $882M +791%",
+      "business_overview": "ARM มีรายได้ 2 ประเภท: ค่า Royalty 53% ของรายได้ (+21% YoY) และ License & Other 47% (+25% YoY) รวมปีงบ 2026 ที่ $4.92 พันล้านดอลลาร์ (+23%) — ล่าสุดขยายสู่ Arm AGI CPU ชิปสำเร็จรูปตัวแรกของบริษัทสำหรับ data center",
+      "tam": "Cloud AI (data center) ค่า royalty โตกว่าเท่าตัวต่อปี เร็วที่สุดในกลุ่ม; Edge AI (มือถือ/IoT) ครองส่วนแบ่งกว่า 99%; บริษัทขยายมุมมองขนาดตลาด Cloud AI CPU จากเดิมประเมินไว้ให้ใหญ่ขึ้นมาก จากความต้องการ AGI CPU ที่มาจริง",
+      "moat": "ecosystem lock-in นักพัฒนา 22 ล้านคนทั่วโลก, ประสิทธิภาพต่อพลังงานที่เหนือกว่า x86, โมเดลธุรกิจ asset-light (ไม่ต้องแบกโรงงาน) margin สูงถึง 98%+, ค่า royalty ต่อชิปเพิ่มขึ้นทุก cycle จาก Armv9/CSS",
+      "latest_financials": "Q1 FY2027 (เม.ย.-มิ.ย. 2026): รายได้ $1,289 ล้าน +22% (สถิติไตรมาสแรก), กำไรต่อหุ้น (Non-GAAP) $0.45 +29% (บีตเป้าบนสุดที่บริษัทตั้งไว้), กระแสเงินสดอิสระ $665 ล้าน +343% YoY",
       "key_points": [
-        "AGI CPU (ชิปสำเร็จรูปตัวแรกของ ARM) backlog เพิ่มเป็น $2B ใน 6 สัปดาห์ แต่ supply-constrained (TSMC N3 utilization 150%)",
-        "คดี Qualcomm/Nuvia lawsuit ยังไม่จบ + คดีใหม่ (trial) กำหนดขึ้นศาลปลายปี 2026",
-        "SoftBank ถือหุ้น >87% ยืนยันไม่ขายหุ้นแม้แต่หุ้นเดียว = governance/overhang risk",
-        "FY2031 target revenue $25B ต้องโตเฉลี่ย ~40% CAGR — ราคาปัจจุบัน price-in ความสำเร็จนี้ไปมากแล้ว"
+        "คำแนะนำการเติบโตค่า royalty ทั้งปีถูกปรับลงจากราว 20% เหลือ \"high teens\" เพราะต้นทุนหน่วยความจำกระทบยอดขายมือถือกว้างขึ้น",
+        "แพ้คดี Qualcomm/Nuvia อย่างเป็นทางการ (ศาลตัดสินให้ Qualcomm ชนะ) แม้ ARM จะยื่นอุทธรณ์ต่อ",
+        "ความต้องการ AGI CPU ทะลุ $2,000 ล้านแล้ว ผู้บริหารมั่นใจเรื่อง supply เพิ่มขึ้นในช่วง 3 เดือนที่ผ่านมา",
+        "NVIDIA Vera เข้าสู่การผลิตเต็มรูปแบบบนสถาปัตยกรรม Arm, AWS จับมือ Meta ใช้ชิป Graviton5 หลายปี"
       ]
     },
     "warren_easy": [
-      "ARM ธุรกิจคุณภาพ (royalty model, ecosystem 22M+ devs, GM 98%+) tier Pre-Inevitable แต่ WAF 5.775 LOW",
-      "ราคา $260.01 แพงกว่า Base FV $130 ~2 เท่า: MoS -100%, PEG 3.7, ER 7.1%/ปี fail gate — VA 1.5 catastrophic",
-      "AVOID — ราคายังไม่กลับหามูลค่า, gate ตัดสินถูกต้อง"
+      "ARM ธุรกิจคุณภาพดี (royalty model, ecosystem 22 ล้าน devs, margin 98%+) แต่งบ Q1 FY2027 เป็นไตรมาสสองด้าน: บีตตัวเลขสะอาด แต่คำแนะนำการเติบโตค่า royalty ถูกปรับลง พร้อมแพ้คดี Qualcomm อย่างเป็นทางการ",
+      "แม้ปรับวิธีคำนวณมูลค่าใหม่ให้อิงตัวเลข consensus ที่ตรวจสอบได้จริง (แทนตัวเลขเดิมที่หาที่มาไม่ได้) ราคาก็ยังแพงกว่ามูลค่าที่คำนวณได้มาก — MoS -156.9%, WAF 5.575 ยังอยู่โซน LOW",
+      "AVOID — โอกาสใหม่จาก AGI CPU เป็นเรื่องจริง แต่ยังเป็นโอกาสในกรณีที่ดีที่สุด (Bull case) ไม่ใช่ฐานปกติ ราคาปัจจุบันสูงกว่าแม้กระทั่ง Bull case"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ตั้งข้อสังเกตว่า Warren ใช้ eps_used $3.51 (FY28) สูงกว่า consensus Mar2028 $1.99 ถึง ~76% — แต่ข้อสรุปเหมือนกันเพราะราคาแพงเกินไปทั้งสองฐาน",
-        "Charlie คำนวณ FV อิสระบน consensus $1.99 × 55x (hypergrowth premium, ยังสูง) = $110 — ราคา $260.01 ยังสูงกว่าราว 2.4 เท่า; EPS ฐานต่ำมากทำให้ FV sensitive ต่อ multiple แต่ทุกกรณีชี้ว่าแพง",
-        "AVOID ถูกต้อง — ธุรกิจดีแต่ตลาดให้ราคาสูงเกินมูลค่าพื้นฐานมาก"
+        "Charlie แก้ไขวิธีคำนวณมูลค่าให้ ARM รอบนี้ — เพราะ forward P/E ของหุ้นสูงเกิน 80 เท่าไปแล้ว การใช้ตัว P/E คำนวณมูลค่าจึงไม่มีความหมายอีกต่อไป (ตามกฎภายในของ Charlie) จึงเปลี่ยนไปใช้วิธี EV/Sales (มูลค่ากิจการเทียบยอดขาย) แทน",
+        "ผลลัพธ์จากวิธีใหม่ ($105) ใกล้เคียงกับตัวเลขของ Warren ที่ใช้วิธี P/E ($96) มาก (ห่างกันแค่ 9.4%) — เป็นการยืนยันไขว้ที่น่าเชื่อถือว่าราคาแพงจริง ไม่ได้ขึ้นอยู่กับวิธีคำนวณแบบใดแบบหนึ่งเท่านั้น",
+        "ทุกวิธีคำนวณ (ทั้งของ Warren และ Charlie) ล้วนชี้ว่ามูลค่าจริงอยู่ราว 40% ของราคาปัจจุบันเท่านั้น — AVOID มีหลักฐานสนับสนุนหนักแน่น ไม่ใช่ข้อสรุปจากการคำนวณแบบเดียวที่เปราะบาง"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-07-31"
     },
-    "idea_th": "AVOID — ราคา $260.01 ยังแพงกว่ามูลค่าพื้นฐานราว 2 เท่า: MoS -100% (Base FV $130), market forward P/E 74x บน EPS เดียวกับที่ Warren ใช้คิด fair 37x, PEG 3.7 (~2.5x cap 1.5). Charlie AGREE: แม้ eps_used ของ Warren $3.51 (FY28) สูงกว่า consensus $1.99 ~76% แต่ผลลัพธ์เหมือนกัน — Charlie คำนวณอิสระได้ FV $110 (consensus $1.99 × 55x) ยังต่ำกว่าราคา ~2.4 เท่า. ธุรกิจ royalty คุณภาพดี แต่ราคาสูงเกินจริงมาก.",
+    "idea_th": "AVOID — งบ Q1 FY2027 เป็นไตรมาสสองด้านจริง: บีตตัวเลขสะอาดทั้งรายได้/กำไร/ต้นทุน แต่คำแนะนำการเติบโตค่า royalty ทั้งปีถูกปรับลง (จากราว 20% เหลือ \"high teens\") จากต้นทุนหน่วยความจำที่กระทบยอดขายมือถือกว้างขึ้น พร้อมแพ้คดี Qualcomm/Nuvia อย่างเป็นทางการแล้ว (แม้ยังอุทธรณ์). ด้านบวก: ความต้องการชิป AGI CPU ใหม่ทะลุ $2,000 ล้าน และฐานลูกค้าขยายกว้างขึ้นจริง (NVIDIA, AWS-Meta). Charlie เห็นด้วย (AGREE) แต่เปลี่ยนวิธีคำนวณเป็น EV/Sales เพราะ P/E สูงเกินจะใช้ได้ ผลลัพธ์ใกล้เคียงกัน ($105 vs Warren $96) — ยืนยันว่าราคาแพงกว่ามูลค่าจริงเกือบ 2.5 เท่าไม่ว่าจะคำนวณด้วยวิธีไหน. โอกาส AGI CPU เป็นเรื่องจริงแต่ยังอยู่แค่ในกรณีที่ดีที่สุด ราคาปัจจุบันแพงกว่าแม้กระทั่งกรณีนั้น.",
     "story_gate_th": {
-      "what": "ARM ให้เช่า license สถาปัตยกรรม CPU แล้วเก็บ royalty ทุกชิปที่ผลิต (มือถือ >95% ของโลก) — asset-light GM 98%+, กำลังขยายสู่ data center/AI ผ่าน AGI CPU",
-      "why": "ปัญหาคือราคา: $260.01 แพงกว่า Base FV $130 ~2 เท่า (MoS -100%), forward P/E 74x, PEG 3.7. Charlie คำนวณอิสระบน consensus $1.99 × 55x (hypergrowth premium) ได้ $110 ยังต่ำกว่าราคา ~2.4 เท่า — สรุปตรงกันว่าแพงเกินจริงมาก แม้ให้ premium สูง",
-      "risk": "FTC antitrust; RISC-V threat (ไม่มีค่า license); SoftBank ถือ >87% overhang; SBC > Net Income; Qualcomm/Nuvia lawsuit; Q4 FY26 ACV decel (+22% จาก +28%)"
+      "what": "ARM ให้เช่า license สถาปัตยกรรม CPU แล้วเก็บค่า royalty ทุกชิปที่ผลิต (ครองส่วนแบ่งมือถือกว่า 95% ทั่วโลก) โมเดลธุรกิจ asset-light margin สูงถึง 98%+ กำลังขยายสู่ data center/AI ผ่านชิป AGI CPU",
+      "why": "งบ Q1 FY2027 บีตตัวเลขสะอาด แต่คำแนะนำการเติบโตค่า royalty ถูกปรับลงจากต้นทุนหน่วยความจำที่กระทบยอดขายมือถือ พร้อมแพ้คดี Qualcomm อย่างเป็นทางการ — ด้านบวกคือความต้องการชิป AGI CPU ใหม่ทะลุ $2,000 ล้านและตลาดที่บริษัทมองว่าเข้าถึงได้ใหญ่ขึ้นมาก แต่แม้ปรับวิธีคำนวณมูลค่าให้อิงตัวเลขที่ตรวจสอบได้จริงแล้ว ราคาหุ้นก็ยังแพงกว่ามูลค่าจริงเกือบ 2.5 เท่า",
+      "risk": "คดีอุทธรณ์กับ Qualcomm อาจแพ้ซ้ำ (กระทบรายได้ราว 10% จากลูกค้ารายนี้); การสอบสวนด้าน antitrust ของ FTC; RISC-V เทคโนโลยีทางเลือกฟรีที่อาจได้รับความนิยมเพิ่ม; SoftBank ถือหุ้นกว่า 87% เป็นความเสี่ยงเชิง governance; การชะลอตัวของค่า royalty มือถืออาจเป็นปัญหาเชิงโครงสร้างไม่ใช่แค่ชั่วคราว"
     },
     "bull_th": [
-      "ecosystem lock-in 22M+ developers, 350B+ ชิปสะสม, asset-light GM 98%+",
-      "royalty rate เพิ่มทุก cycle จาก Armv9/CSS แม้ unit ไม่โต",
-      "data center royalty double YoY จาก AWS/Google/Microsoft/NVIDIA ใช้ Arm core",
-      "AGI CPU backlog เพิ่มเป็น $2B ใน 6 สัปดาห์นับจากเปิดตัว"
+      "ecosystem lock-in นักพัฒนา 22 ล้านคน ชิปสะสมกว่า 350,000 ล้านตัว โมเดลธุรกิจ margin สูงถึง 98%+",
+      "ค่า royalty ต่อชิปเพิ่มขึ้นทุก cycle จาก Armv9/CSS แม้จำนวนชิปไม่โต",
+      "ความต้องการ AGI CPU ใหม่ทะลุ $2,000 ล้าน ลูกค้าขยายวงกว้างขึ้นจริง (NVIDIA, AWS-Meta)",
+      "ตลาด Cloud AI CPU ที่บริษัทมองว่าเข้าถึงได้ ถูกขยายกรอบให้ใหญ่ขึ้นมากจากปีก่อน"
     ],
     "risk_th": [
-      "ราคา $260.01 แพงกว่า Base FV $130 ~2 เท่า: MoS -100%, PEG 3.7, forward P/E 74x; Charlie FV อิสระ $110 ยิ่งต่ำ",
-      "คดี Qualcomm/Nuvia + คดีใหม่ขึ้นศาลปลายปี 2026 อาจกระทบ ~10% ของรายได้",
-      "RISC-V เป็นภัยระยะยาว (ไม่มีค่า license)",
-      "SoftBank ถือ >87% = governance risk; SBC > Net Income",
-      "Q4 FY26 ACV decel (+22% จาก +28%)"
+      "ราคาแพงกว่ามูลค่าจริงเกือบ 2.5 เท่า ไม่ว่าจะคำนวณด้วยวิธีไหน (ของ Warren หรือ Charlie)",
+      "คำแนะนำการเติบโตค่า royalty ทั้งปีถูกปรับลงจากต้นทุนหน่วยความจำที่กระทบยอดขายมือถือกว้างขึ้น",
+      "แพ้คดี Qualcomm/Nuvia อย่างเป็นทางการแล้ว แม้ยังอุทธรณ์อยู่ — กระทบราว 10% ของรายได้",
+      "RISC-V เทคโนโลยีทางเลือกฟรีที่อาจได้รับความนิยมเพิ่มในระยะยาว",
+      "SoftBank ถือหุ้นกว่า 87% เป็นความเสี่ยงเชิง governance"
     ]
   },
   "TSLA": {
