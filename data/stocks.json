@@ -535,7 +535,7 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคา $381.92 ดัน MoS 15.13% แตะเส้น gate พอดี พลิกเป็น STARTER แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358)",
+      "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคาขยับขึ้นมา $389.28 (ไม่มีข่าวใหม่) ดัน MoS ลงเหลือ 13.49% ยังอยู่ใน STARTER band แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358) และ MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7%",
       "what": "Broadcom ทำชิป AI แบบ custom (XPU) ให้ Google/Meta/Anthropic/OpenAI และเป็นผู้นำ networking switch สำหรับ data center AI (Tomahawk) พ่วงกับซอฟต์แวร์ VMware",
       "why_invest": [
         "XPU near-monopoly กับ 6 hyperscaler customer สัญญาหลายปี",
@@ -544,11 +544,11 @@
         "FY2027 target AI chip revenue >$100B จาก 10GW compute deployment"
       ],
       "watch_out": [
-        "Charlie CAUTION: Warren ใช้ multiple 55x สูงกว่า fwd P/E 37x มาก → FV $450 เฟ้อ; Charlie FV บน consensus × 35x = $358 (gap 20.4%)",
-        "บน FV Charlie $358 ราคา $381.92 ให้ MoS -6.7% → conservative NO-BUY",
-        "Google/Meta พัฒนาชิปในบ้านเอง (COT risk); หนี้ VMware $68B; PEG 1.42 ฉิวเฉียด"
+        "Charlie CAUTION ต่อเนื่อง: Warren ใช้ multiple 55x สูงกว่า fwd P/E จริง ~38x มาก → FV $450 เฟ้อ; Charlie FV บน consensus $10.24 × 35x = $358 (gap 20.4%)",
+        "บน FV Charlie $358 ราคา $389.28 ให้ MoS -8.7% (ลึกขึ้นจาก -6.7% รอบก่อนล้วนๆ จากราคาที่ขยับขึ้น) → conservative NO-BUY",
+        "Google/Meta พัฒนาชิปในบ้านเอง (COT risk); หนี้ VMware $68B; PEG 1.45 ฉิวเฉียด; ยังไม่ถือ ต้องผ่าน Opportunity Cost Gate ก่อน"
       ],
-      "bottom_line": "ธุรกิจ AI custom silicon แข็งแกร่งมาก ราคาแตะเส้น STARTER พอดี — แต่ Charlie ชี้ว่า multiple 55x สูงเกินไป (FV อิสระ $358) STARTER แบบ staged เท่านั้น + ต้องผ่าน Opportunity Cost Gate ก่อน execute"
+      "bottom_line": "ธุรกิจ AI custom silicon แข็งแกร่งมาก ราคาขยับขึ้นเล็กน้อยแต่ยังอยู่ใน STARTER band (ไม่มีข่าวใหม่ รอ Q3 FY26 ต้น ก.ย.) — Charlie ยังชี้ว่า multiple 55x สูงเกินไป (FV อิสระ $358) MoS อนุรักษ์นิยมติดลบลึกขึ้น STARTER แบบ staged เท่านั้น + ต้องผ่าน Opportunity Cost Gate ก่อน execute"
     },
     "mark_full": {
       "business_overview": "Broadcom มี 2 ธุรกิจหลัก: Semiconductor Solutions 58% (custom XPU + networking) และ Infrastructure Software 42% (VMware)",
@@ -556,47 +556,47 @@
       "moat": "custom XPU co-design relationship switching cost near-zero substitutability, Tomahawk networking sole-supplier, VMware VCF ARR +19% YoY ไม่ถูก disintermediate จาก AI",
       "latest_financials": "Q1 FY2026: Revenue $19.3B +29%, AI semi $8.4B +106%, FCF $8.0B (41% margin)",
       "key_points": [
-        "Apple ขยายสัญญาซื้อชิป ASIC ถึงปี 2031 มูลค่ากว่า $30B (~20% ของรายได้ต่อปี)",
+        "Apple เซ็นสัญญาซื้อชิป custom ระยะยาวกับ Broadcom มูลค่ากว่า $30B (ประกาศ 30 ก.ค. 2026) — ลูกค้ารายใหญ่ใหม่นอกเหนือ 6-customer XPU roster เดิม เสริมความหลากหลายฐานลูกค้า",
+        "ดีลกับ Samsung มูลค่า $200B (memory+foundry+packaging ถึงปี 2030, ประกาศ 25 ก.ค. 2026) — กระจายฐานซัพพลายเชน/พันธมิตรเพิ่มเติม",
         "ข่าวลูกค้า AI รายใหญ่อาจย้ายไป MediaTek — ความเสี่ยง COT (customer-owned tooling)",
         "หนี้รวม ~$68B ส่วนใหญ่มาจากดีล VMware",
-        "Hock Tan (CEO) อายุ 74 ไม่มี employment contract = key-man risk",
-        "ดีลใหม่กับ Samsung มูลค่า $200B (memory+foundry+packaging ถึงปี 2030, ประกาศ 25 ก.ค. 2026) — กระจายฐานซัพพลายเชน/พันธมิตรเพิ่มจาก 6-customer XPU roster เดิม"
+        "Hock Tan (CEO) อายุ 74 ไม่มี employment contract = key-man risk"
       ]
     },
     "warren_easy": [
-      "AVGO tier Pre-Inevitable WAF 8.18 (VERY HIGH) — XPU near-monopoly 6 hyperscaler + Tomahawk networking + FY27 AI chip target >$100B",
-      "ราคา $381.92 ดัน MoS 15.13% แตะเส้น gate 15% พอดี (razor-thin, เกินแค่ 0.13pt) + PEG 1.42 + ER 36.24%/ปี",
-      "STARTER (staged) ไม่ full BUY เพราะ improvement เป็น price-driven + margins razor-thin + ยังไม่ถือ — flag Kim รัน Opportunity Cost Gate ก่อน"
+      "AVGO tier Pre-Inevitable WAF 8.12 (VERY HIGH, แทบไม่เปลี่ยน) — XPU near-monopoly 6 hyperscaler + Tomahawk networking + FY27 AI chip target >$100B",
+      "ราคาขยับขึ้น $381.92→$389.28 (+1.9%, ไม่มีข่าวใหม่ รอ Q3 FY26 ~ก.ย.) ดัน MoS 15.13%→13.49% ยังอยู่ใน STARTER near-miss band [8,15); PEG 1.446 ยังผ่านฉิวเฉียด, ER 35.84%/ปี ยังแข็งแรงมาก",
+      "STARTER (staged) ไม่ full BUY — improvement เป็น price-driven ยังไม่ถือ ต้องรัน Opportunity Cost Gate (Rule #11) ก่อน execute"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ชี้ว่าจุดเฟ้อคือ multiple: Warren ใช้ 55x ซึ่งสูงกว่า current forward P/E 37x มาก (ที่น่าสนใจคือ eps ที่ Warren ใช้ $8.18 กลับ conservative กว่า consensus FY26 $10.24)",
-        "Charlie คำนวณ FV อิสระบน consensus $10.24 × 35x = $358 — ห่างจาก Warren $450 ถึง 20.4% เกิน threshold 20% → CAUTION; บน FV $358 ราคา $381.92 ให้ MoS -6.7% → conservative NO-BUY",
-        "PEG ผ่านฉิวเฉียด (1.42 vs cap 1.5); Google/Meta in-house XPU = COT risk ที่ต้องจับตา; Q3 FY26 ต้นก.ย. เป็น catalyst",
-        "ของใหม่ที่ Charlie เจอวันนี้: การ์ด Warren บอกว่า \"ไม่มีข่าวใหม่ตั้งแต่ 07-09\" แต่ Charlie ไปเช็คอิสระเจอว่า Broadcom เพิ่งเซ็นดีลกับ Samsung มูลค่า $200B ครอบคลุม memory+foundry+packaging ยาวถึงปี 2030 (ประกาศจริง 25 ก.ค. 2026, ยืนยันตรงกันหลายสำนักข่าว) — เป็นข่าวดีเชิงกระจายฐานลูกค้า/ซัพพลายเชนที่การ์ดยังไม่ได้ใส่ ไม่ได้เปลี่ยนคำตัดสิน (เพราะ CAUTION มาจากเรื่อง valuation ไม่ใช่ thesis) แต่เป็นข้อมูลที่ควรรู้ไว้"
+        "Charlie ยัง CAUTION ต่อเนื่อง (รอบที่ 6 ติดต่อกัน): จุดเฟ้อยังเป็นเรื่อง multiple — Warren ใช้ 55x บน consensus FY26 EPS $10.24 เดียวกัน แต่ Charlie ใช้ 35x (conservative, ต่ำกว่า current fwd P/E ตลาดจริง 38x ด้วยซ้ำ) ได้ FV $358 ห่างจาก Warren $450 ถึง 20.4% เกิน threshold 20% → CAUTION",
+        "บน FV Charlie $358 ราคาที่ขยับขึ้นเป็น $389.28 ทำให้ MoS อนุรักษ์นิยมติดลบลึกขึ้นจาก -6.7% เป็น -8.7% (ล้วนมาจากราคาขยับขึ้น ไม่ใช่ FV เปลี่ยน) → conservative NO-BUY ยังใช้ต่อเนื่อง",
+        "Reverse DCF ที่น่าสนใจ: บน multiple อนุรักษ์นิยม 35x ของ Charlie เอง ธุรกิจต้องการแค่ ~6.6%/ปี EPS growth ก็พอ justify ราคาวันนี้แล้ว (ต่ำกว่า growth ที่ consensus ฝังไว้แล้วมาก FY26→FY27 +71%) — สรุปว่าปัญหาไม่ใช่ growth story เกินจริง แต่เป็นตัวคูณที่ Warren ใช้สูงเกินไปทั้งหมด",
+        "ของใหม่ที่ Charlie เจอ: Apple เพิ่งเซ็นสัญญาซื้อชิปกับ Broadcom มูลค่า >$30B (30 ก.ค. 2026) — เป็นข่าวดีเชิงกระจายฐานลูกค้ารายที่ 2 ต่อจากดีล Samsung $200B (25 ก.ค.) ที่การ์ด Warren ยังไม่ได้ใส่ทั้งคู่ ไม่เปลี่ยนคำตัดสิน (CAUTION มาจาก valuation ไม่ใช่ thesis) แต่ควรอัพเดทการ์ดรอบหน้า"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "STARTER (staged) — หัวหอก custom AI chip (XPU) ให้ 6 hyperscaler. ราคา $381.92 ดัน MoS 15.13% แตะเส้น gate 15% พอดี (เกินแค่ 0.13pt) พร้อม ER 36.24%/ปี + WAF 8.18. ⚠️ Charlie CAUTION: Warren ใช้ multiple 55x สูงกว่า current fwd P/E 37x มาก = จุดเฟ้อ (eps $8.18 กลับ conservative กว่า consensus $10.24). Charlie 35x × consensus = FV $358 → บน FV นั้นราคาปัจจุบัน MoS -6.7% (gap 20.4% เกิน 20% CAUTION). STARTER แบบ staged ไม่ full BUY — flag Kim/Charlie ก่อน execute + Opportunity Cost Gate.",
+    "idea_th": "STARTER (staged) — หัวหอก custom AI chip (XPU) ให้ 6 hyperscaler. ราคาขยับขึ้นเล็กน้อย $381.92→$389.28 (ไม่มีข่าวใหม่ รอ Q3 FY26 ~ก.ย.) ดัน MoS 15.13%→13.49% ยังอยู่ใน STARTER band พร้อม ER 35.84%/ปี + WAF 8.12. ⚠️ Charlie CAUTION ต่อเนื่อง (รอบที่ 6): multiple 55x ของ Warren สูงกว่า fwd P/E จริง ~38x มาก = จุดเฟ้อ. Charlie 35x × consensus $10.24 = FV $358 (gap 20.4% เกิน 20% CAUTION) → บน FV นั้น MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7% (จาก -6.7%). พบข่าวใหม่ 2 เรื่องที่การ์ดยังไม่ใส่: ดีล Apple $30B (30 ก.ค.) + ดีล Samsung $200B (25 ก.ค.) — กระจายฐานลูกค้า ไม่เปลี่ยนคำตัดสิน. STARTER แบบ staged ไม่ full BUY — ยังไม่ถือ ต้องผ่าน Opportunity Cost Gate ก่อน",
     "story_gate_th": {
       "what": "Broadcom ทำ custom AI chip (XPU) ให้ Google/Meta/Anthropic/OpenAI + เป็นผู้นำ networking switch (Tomahawk) + ซอฟต์แวร์ VMware; RPO ~$45B ให้ revenue visibility สูง",
-      "why": "ราคา $381.92 ให้ MoS 15.13% แตะเส้น gate พอดี (razor-thin) + ER 36.24%/ปี + WAF 8.18 VERY HIGH. แต่ Charlie ชี้ว่าจุดเฟ้อคือ multiple 55x (สูงกว่า fwd 37x มาก); บน 35x × consensus $10.24 FV = $358 ทำให้ MoS ติดลบ",
-      "risk": "Google/Meta พัฒนา XPU ในบ้านเอง (COT/share risk); หนี้ VMware $68B; Global Minimum Tax; Hock Tan (74) ไม่มี contract = key-man; PEG ผ่านฉิวเฉียด (1.42 vs 1.5)"
+      "why": "ราคาขยับขึ้นเล็กน้อยเป็น $389.28 (ไม่มีข่าวใหม่) ให้ MoS 13.49% ยังอยู่ใน STARTER band + ER 35.84%/ปี + WAF 8.12 VERY HIGH. Charlie ยังชี้ว่าจุดเฟ้อคือ multiple 55x (สูงกว่า fwd จริง ~38x มาก); บน 35x × consensus $10.24 FV = $358 ทำให้ MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7%",
+      "risk": "Google/Meta พัฒนา XPU ในบ้านเอง (COT/share risk); หนี้ VMware $68B; Global Minimum Tax; Hock Tan (74) ไม่มี contract = key-man; PEG ผ่านฉิวเฉียด (1.45 vs 1.5)"
     },
     "bull_th": [
       "XPU near-monopoly กับ 6 hyperscaler customer สัญญาหลายปี",
       "Tomahawk 6 เป็น switch 100 Tbps เดียวในตลาด + RPO ~$45B revenue visibility",
       "FY2027 target AI chip revenue >$100B จาก 10GW compute deployment",
-      "ราคาย่อดัน MoS 13.53%→15.13% แตะเส้น gate + ER 36.24%/ปี + WAF 8.18",
-      "ดีล Samsung $200B ใหม่ (memory+foundry+packaging ถึงปี 2030, ประกาศ 25 ก.ค.) เสริมความแข็งแกร่งซัพพลายเชน/พันธมิตร"
+      "ดีลลูกค้าใหม่ 2 รายในสัปดาห์เดียวกัน: Apple $30B (30 ก.ค.) + Samsung $200B (25 ก.ค.) เสริมความแข็งแกร่งซัพพลายเชน/พันธมิตร",
+      "MoS ยังอยู่ใน STARTER band ที่ 13.49% + ER 35.84%/ปี + WAF 8.12 VERY HIGH"
     ],
     "risk_th": [
-      "⚠️ Charlie: Warren ใช้ multiple 55x สูงกว่า fwd 37x มาก → FV $450 เฟ้อ; Charlie FV บน 35x × consensus = $358 (gap 20.4% เกิน 20%) → MoS -6.7%",
+      "⚠️ Charlie: multiple 55x ของ Warren สูงกว่า fwd P/E จริง ~38x มาก → FV $450 เฟ้อ; Charlie FV บน 35x × consensus = $358 (gap 20.4% เกิน 20%) → MoS อนุรักษ์นิยม -8.7% (ลึกขึ้นจาก -6.7%)",
       "Google/Meta พัฒนา XPU ในบ้านเอง = COT/share risk",
       "หนี้ VMware $68B; Global Minimum Tax headwind",
       "Hock Tan (74) ไม่มี employment contract = key-man risk",
-      "MoS 15.13% แตะเส้น gate พอดี + PEG 1.42 ฉิวเฉียด — improvement เป็น price-driven"
+      "MoS 13.49% อยู่ใน near-miss band + PEG 1.45 ฉิวเฉียด — improvement เป็น price-driven ไม่ใช่ business-driven"
     ]
   },
   "META": {
@@ -1134,65 +1134,67 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "งบ Q4 FY2026 ออกมาดีมาก (Azure เร่งเป็น 43%, Copilot ทะลุ 30 ล้าน seat) แต่ราคาวิ่งขึ้น +7.24% ไปก่อน FV ทัน ดัน MoS หลุด gate เหลือ 8.32% — Charlie เตือนว่า MoS จริงใกล้ศูนย์ ถ้าตัด multiple ที่ยังไม่ยืนยันออก",
+      "one_liner": "งบ Q4 FY2026 แข็งแรง (Azure เร่งเป็น 43%, Copilot ทะลุ 30 ล้าน seat) — ราคาวิ่งต่อขึ้นเป็น $464.72 (+10.4% ใน 3 วัน) จนแซง FV $459 ไปแล้ว MoS พลิกติดลบ -1.25% + เจอคดีความใหม่ (securities class-action, deadline 11 ส.ค.)",
       "what": "Microsoft หาเงิน 3 เส้นหลัก: Azure cloud (AI + enterprise), M365 Copilot (AI สำหรับทีมงาน), GitHub Copilot (AI สำหรับนักพัฒนา) — ฝังลึกในองค์กรทั่วโลกมา 30+ ปี",
       "why_invest": [
         "Azure เร่งจริง 39%→43%→คาด ~45% ไตรมาสหน้า ไม่ใช่แค่คงตัว; Azure ทั้งปีทะลุ $100B ครั้งแรก",
         "Copilot 30M+ paid seats (เพิ่มขึ้น 2 เท่าใน 1 ไตรมาส) เร็วที่สุดในประวัติบริษัท",
         "RPO $678B (+84%) = รายได้ที่ล็อกไว้แล้วมากที่สุดในกลุ่ม Big Tech",
-        "ราคาวิ่งขึ้นเพราะกำไรโตจริง ไม่ใช่แค่ sentiment — ตามกฎ Return Decay อาจแปลว่า FV ต้องปรับขึ้นตามเมื่อ consensus อัพเดท"
+        "consensus FY27 EPS เริ่มปรับขึ้นตามงบจริง (+0.8% รอบนี้) ยืนยันว่าราคาที่ขึ้นมาจากกำไรโตจริง"
       ],
       "watch_out": [
-        "ราคาวิ่งไปก่อน FV: MoS หลุด gate 15% เหลือ 8.32%, ER เข้า Flag band 14.75%/yr",
-        "Charlie CAUTION หนักกว่าที่ตัวเลข Warren บอก: ถ้าใช้ forward P/E ที่ตลาดให้จริงตอนนี้ (~21.8x แทน 24x ของ Warren) FV จะเท่ากับราคาปัจจุบันพอดี = MoS เหลือเกือบ 0% ไม่ใช่ 8.32%",
-        "ภาระผูกพันตามสัญญาทั้งหมดพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี) ทำให้ CapEx headline ดูลดลงทั้งที่ลงทุนจริงเท่าเดิม"
+        "ราคาวิ่งต่อจนแซง FV แล้ว: MoS พลิกติดลบ -1.25% (จาก +8.32% รอบก่อน), PEG 1.87 เกิน cap, ER เหลือ 12.75%/ปี",
+        "⚠️ ใหม่: securities class-action lawsuit (deadline ยื่นคำร้อง 11 ส.ค. 2026) กล่าวหาข้อความเข้าใจผิดเรื่อง AI/Copilot/Azure ช่วง พ.ค. 2025-ม.ค. 2026 — ยังเป็นขั้นตอนกระบวนการ ไม่ใช่คำตัดสิน แต่เป็นสัญญาณต้องจับตา",
+        "Charlie CAUTION FV คำนวณอิสระ $465 (แทบเท่าราคาปัจจุบันพอดี) — convergence เกิดจากตัวคูณที่ขยับตามราคา ไม่ใช่เพราะแก้สมมติฐาน",
+        "ภาระผูกพันตามสัญญาทั้งหมดพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี)"
       ],
-      "bottom_line": "ธุรกิจดีขึ้นจริงจากงบ แต่ราคาวิ่งไปก่อน FV แล้ว — HOLD + Flag (ไม่ใช่ SELL เพราะกำไรโตจริง) รอ consensus FY27 ปรับขึ้นก่อนค่อยประเมิน FV ใหม่รอบหน้า; Charlie เตือนว่า MoS จริงบางกว่าที่การ์ดบอกมาก"
+      "bottom_line": "ธุรกิจดีขึ้นจริงจากงบและราคาวิ่งขึ้นต่อเนื่องจนแซง FV ไปแล้ว MoS พลิกติดลบเล็กน้อย (-1.25%) — HOLD + Flag ยังไม่ใช่ SELL เพราะกำไรโตจริง แต่ต้องจับตาคดีความใหม่ (deadline 11 ส.ค.) และรอ consensus FY27 ปรับต่อก่อนประเมิน FV รอบหน้า"
     },
     "mark_full": {
       "business_overview": "Microsoft แบ่งธุรกิจ 3 ส่วน: Productivity & Business Processes, Intelligent Cloud (Azure), More Personal Computing — Q4 FY2026 total revenue $90.0B +18% YoY, Microsoft Cloud revenue $59.3B +27%",
       "tam": "Enterprise AI คาด TAM หลายแสนล้าน; MSFT address ได้ทุก layer: infrastructure (Azure), development (GitHub), productivity (M365 Copilot), data (Fabric) — น้อยกลุ่มที่ cross-sell ได้ครบขนาดนี้",
       "moat": "Enterprise Data Lock-in คือ moat ตัวจริง — M365/Work IQ เก็บ corporate memory ทั้งหมด; GitHub 225M users, Copilot 50M users; OpenAI partnership ถึง 2032 + RPO $678B; switching cost สูงมาก",
-      "latest_financials": "Q4 FY2026 (ปิด 30 มิ.ย. 2026): Revenue $90.0B +18%; Op Margin 45% flat; EPS GAAP $4.81 +32% (รวม gain $3.2B จากการลงทุน Anthropic); FCF $19.6B -23%; CapEx $41.0B +70%; Azure +43% ทั้งปีทะลุ $100B; ราคาวิ่งขึ้น +7.24% AH สู่ $420.80 หลังงบ",
+      "latest_financials": "Q4 FY2026 (ปิด 30 มิ.ย. 2026): Revenue $90.0B +18%; Op Margin 45% flat; EPS GAAP $4.81 +32% (รวม gain $3.2B จากการลงทุน Anthropic); FCF $19.6B -23%; CapEx $41.0B +70%; Azure +43% ทั้งปีทะลุ $100B",
       "key_points": [
         "Azure เร่งตัวจริง 39%→43%→guided ~45%; RPO $678B (+84%) ใหญ่สุดในกลุ่ม; Copilot 30M+ seats",
-        "ราคาวิ่งไปก่อน FV: MoS หลุด gate เหลือ 8.32%, ER เข้า flag band 14.75%/yr — HOLD+Flag รอ consensus ปรับ",
-        "Charlie CAUTION: ใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren → FV ≈ ราคาปัจจุบันพอดี (MoS ~0%) หนักกว่าที่การ์ดบอก",
+        "ราคาวิ่งต่อเนื่อง +10.4% ใน 3 วันหลังงบ จนแซง FV — MoS พลิกติดลบ -1.25%, ER เข้า flag band 12.75%/yr",
+        "⚠️ securities class-action lawsuit ใหม่ (deadline 11 ส.ค. 2026) กล่าวหาข้อความ AI/Copilot/Azure เข้าใจผิด — ยังเป็นขั้นตอนกระบวนการ",
+        "Charlie CAUTION: FV อิสระ $465 convergence กับ Warren $459 เพราะตัวคูณขยับตามราคา ไม่ใช่แก้สมมติฐาน",
         "ภาระผูกพันตามสัญญาพุ่งเกือบเท่าตัว ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25 ปี) ต้องติดตามเทียบ peer"
       ]
     },
     "warren_easy": [
-      "MSFT tier Inevitable WAF 8.20 (HIGH, ลงจาก 8.70) — ธุรกิจดีขึ้นจริงจากงบ Q4 FY2026 (Azure เร่ง, RPO +84%, Copilot 30M+) แต่ valuation ตึงขึ้น",
-      "ราคาวิ่งขึ้น +7.24% AH สู่ $420.80 ไปก่อน FV ที่ยังไม่ปรับ ดัน MoS 16.84%→8.32% หลุด gate 15%, ER เข้า flag band 14.75%/yr",
-      "HOLD + Flag (position เดิม $70) — ไม่ใช่ SELL เพราะราคาขึ้นจากกำไรโตจริง รอ consensus FY27 ปรับก่อนประเมิน FV ใหม่"
+      "MSFT tier Inevitable WAF 7.92 (HIGH) — ธุรกิจดีขึ้นจริงจากงบ Q4 FY2026 (Azure เร่ง, RPO +84%, Copilot 30M+) consensus FY27 EPS เริ่มขยับตาม (+0.8%)",
+      "ราคาวิ่งต่อเนื่อง $420.80→$464.72 (+10.4% ใน 3 วัน) ไม่มีข่าวใหม่ (pure momentum หลังงบ) แซง FV $459 ไปแล้ว MoS พลิกติดลบ -1.25% (จาก +8.32%), ER เหลือ 12.75%/ปี",
+      "HOLD + Flag (position เดิม $70) — ไม่ใช่ SELL เพราะราคาขึ้นจากกำไรโตจริง รอ consensus FY27 ปรับเต็มก่อนประเมิน FV ใหม่"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยัง CAUTION เหมือน 2 รอบก่อน แต่ประเด็นรอบนี้หนักกว่าที่ตัวเลขในการ์ดบอก: ถ้าคำนวณ FV ด้วยตัวคูณที่ตลาดให้จริงตอนนี้ (forward P/E ~21.8x ซึ่งต่ำกว่าค่ามัธยฐาน 5 ปีที่ ~30x) แทนตัวคูณ 24x ที่ Warren ใช้ จะได้ FV = $421 ซึ่งเท่ากับราคาปัจจุบัน ($420.80) พอดี — แปลว่า margin of safety จริงอยู่ที่ประมาณ 0% ไม่ใช่ 8.32% ตามที่ Warren รายงาน",
-        "ช่องว่างระหว่าง Warren กับ Charlie แคบลงจาก 15.9% (รอบ 07-27) เหลือ 8.28% รอบนี้ก็จริง แต่ Charlie ชี้ว่าเป็นผลจากราคาที่วิ่งขึ้นไปดันตัวคูณ min-rule ให้สูงตาม ไม่ใช่เพราะ Warren แก้ไขอะไร — เป็นความคลาดเคลื่อนเดิมที่แค่เล็กลงชั่วคราว ไม่ใช่ปัญหาที่คลี่คลายแล้ว",
-        "Warren เองก็ยอมรับในการ์ดว่าต้องรอ consensus FY27 อัพเดทก่อนประเมิน FV ใหม่ (HOLD+Flag) — Charlie บอกว่าระหว่างที่ยังไม่มีตัวเลขใหม่ ควรมอง MoS 8.32% เป็นตัวเลขที่ยัง 'ยืนยันไม่ได้' มากกว่าจะถือว่าผ่านเกณฑ์แล้วจริงๆ"
+        "Charlie ยัง CAUTION ต่อเนื่อง แต่รอบนี้ FV ที่ Charlie คำนวณอิสระ ($465 บนตัวคูณ 23.89x ซึ่งยังต่ำกว่าค่ามัธยฐาน 5 ปี ~30x) แทบเท่ากับ FV ของ Warren ($459) พอดี — ช่องว่างที่เคยห่าง 15.9% หดลงมาเหลือแค่ 1.3% ใน 3 รอบ",
+        "แต่ Charlie เตือนว่า convergence นี้เกิดเพราะตัวคูณขยับตามราคาที่วิ่งขึ้น ไม่ใช่เพราะฝ่ายใดแก้สมมติฐาน — MoS ที่คำนวณจาก FV ของ Charlie เองอยู่ที่ +0.06% แทบเป็นศูนย์ เหมือนเดิมไม่ได้ดีขึ้นจริง",
+        "⚠️ ของใหม่ที่ Charlie เจอ: มีคดี securities class-action ใหม่ (deadline ยื่นคำร้อง 11 ส.ค. 2026) กล่าวหาว่า Microsoft ให้ข้อมูลเข้าใจผิดเรื่อง AI/Copilot/Azure ช่วง พ.ค. 2025-ม.ค. 2026 — ยังเป็นขั้นตอนกระบวนการ ไม่ใช่คำตัดสิน แต่เป็นสัญญาณด้าน governance ที่การ์ด Warren ยังไม่มี ควรติดตามต่อ"
       ],
-      "review_date": "2026-07-30"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "HOLD + Flag ⚠️ (position เดิม $70) — งบ Q4 FY2026 ยืนยัน thesis แข็งขึ้นจริง (Azure เร่ง 39%→43%→guided 45%, Copilot 30M+ seats, RPO $678B +84%) แต่ราคาวิ่งรับข่าวไปมากแล้ว (+7.24% after-hours) ก่อนที่ consensus FY27 EPS จะปรับตาม ทำให้ MoS หลุด gate (16.84%→8.32%) และ ER เข้า flag band (14.75%/yr) — ไม่ใช่สัญญาณขาย เพราะราคาขึ้นจากกำไรโตจริงตามกฎ Return Decay รอ consensus ปรับก่อนประเมิน FV รอบหน้า. ⚠️ Charlie ยัง CAUTION และชี้ว่าสถานการณ์จริงหนักกว่าตัวเลขในการ์ด: ถ้าใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren, FV จะเท่ากับราคาปัจจุบันพอดี — MoS จริงใกล้ 0% ไม่ใช่ 8.32%.",
+    "idea_th": "HOLD + Flag ⚠️ (position เดิม $70) — งบ Q4 FY2026 ยืนยัน thesis แข็งขึ้นจริง (Azure เร่ง 39%→43%→guided 45%, Copilot 30M+ seats, RPO $678B +84%) ราคาวิ่งรับข่าวต่อเนื่อง (+10.4% ใน 3 วัน หลัง +7.24% after-hours ก่อนหน้า) แซง FV $459 ไปแล้ว ทำให้ MoS พลิกติดลบ -1.25% (จาก +8.32%) และ ER เหลือ 12.75%/ปี — ไม่ใช่สัญญาณขาย เพราะราคาขึ้นจากกำไรโตจริง (consensus FY27 EPS เริ่มขยับตาม +0.8%) รอ consensus ปรับเต็มก่อนประเมิน FV รอบหน้า. ⚠️ Charlie ยัง CAUTION: FV อิสระ $465 convergence กับ Warren แต่เตือนว่าเป็นผลจากราคาดันตัวคูณ ไม่ใช่แก้สมมติฐาน + พบคดี securities class-action ใหม่ (deadline 11 ส.ค.) ที่การ์ดยังไม่มี",
     "story_gate_th": {
       "what": "Microsoft หาเงินจาก Azure (คลาวด์+AI, +43% YoY Q4 FY2026), GitHub Copilot (50M users) และ M365 Copilot (30M+ paid seats) — ระบบนิเวศซอฟต์แวร์องค์กรที่ฝังลึกที่สุดในโลก",
-      "why": "ตลาดเห็นข่าวเลิกจ้าง 4,800 ตำแหน่ง + CapEx พุ่งเป็นสัญญาณ cost pressure มาก่อนงบ — แต่ Warren มองว่างบ Q4 FY2026 พิสูจน์ว่า CapEx กำลังแปลงเป็นรายได้จริง (Azure เร่งตัว, RPO +84%, Copilot net seat เพิ่ม 2 เท่าต่อไตรมาส) ราคาตอบรับ +7.24% ทันที สะท้อนว่าตลาดเริ่ม price-in ไปบางส่วนแล้ว (MoS หดจาก 16.84%→8.32%) แต่ consensus FY27 EPS ยังตามไม่ทันตัวเลขจริง",
-      "risk": "ถ้า Azure โตช้าลงต่ำกว่า 15% สองไตรมาสติด หรือ OpenAI ลด exclusivity การใช้ Azure จนกระทบ Copilot ecosystem จริง หรือภาระผูกพันตามสัญญา $743.8B เริ่มกด FCF ต่อเนื่องเกิน 3 ไตรมาสโดยไม่มีสัญญาณ ROIC ตามทัน"
+      "why": "งบ Q4 FY2026 พิสูจน์ว่า CapEx กำลังแปลงเป็นรายได้จริง (Azure เร่งตัว, RPO +84%, Copilot net seat เพิ่ม 2 เท่าต่อไตรมาส) ราคาวิ่งรับข่าวต่อเนื่อง +10.4% ใน 3 วัน จนแซง FV $459 ไปแล้ว MoS พลิกติดลบ -1.25% แต่ consensus FY27 EPS เริ่มปรับตามจริง (+0.8%)",
+      "risk": "ถ้า Azure โตช้าลงต่ำกว่า 15% สองไตรมาสติด หรือ OpenAI ลด exclusivity การใช้ Azure จนกระทบ Copilot ecosystem จริง หรือภาระผูกพันตามสัญญา $743.8B เริ่มกด FCF ต่อเนื่อง หรือคดี securities class-action (deadline 11 ส.ค.) ลุกลามเป็นความเสี่ยงทางการเงินจริง"
     },
     "bull_th": [
       "Azure เร่งจริง 39%→43%→คาด ~45% ไตรมาสหน้า; Azure ทั้งปีทะลุ $100B ครั้งแรก (+41%)",
       "Copilot 30M+ paid seats (เพิ่ม 2 เท่าใน 1 ไตรมาส) เร็วที่สุดในประวัติบริษัท",
       "RPO $678B (+84%) ใหญ่สุดในกลุ่ม Big Tech = รายได้ล็อกไว้แล้วหลายปี",
-      "ราคาขึ้นเพราะกำไรโตจริง (Azure/Copilot/RPO เร่งตัว) ไม่ใช่แค่ sentiment"
+      "ราคาขึ้นเพราะกำไรโตจริง — consensus FY27 EPS เริ่มปรับตาม (+0.8% รอบนี้)"
     ],
     "risk_th": [
-      "ราคาวิ่งไปก่อน FV: MoS หลุด gate 15% เหลือ 8.32%, ER เข้า flag band 14.75%/yr",
-      "Charlie CAUTION: ใช้ forward P/E ตลาดจริง (21.8x) แทน 24x ของ Warren → FV ≈ ราคาปัจจุบันพอดี (MoS จริงใกล้ 0% ไม่ใช่ 8.32%)",
+      "ราคาวิ่งต่อเนื่องแซง FV แล้ว: MoS พลิกติดลบ -1.25% (จาก +8.32%), ER เหลือ 12.75%/ปี",
+      "⚠️ ใหม่: securities class-action lawsuit (deadline 11 ส.ค. 2026) กล่าวหาข้อความ AI/Copilot/Azure เข้าใจผิด",
       "ภาระผูกพันตามสัญญาพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี) ลดความโปร่งใสของกำไร",
       "FCF -23% YoY ต่อเนื่อง; Azure ยัง capacity-constrained",
-      "รอ consensus FY27 EPS อัพเดทหลังงบก่อนยืนยัน FV ใหม่"
+      "Charlie CAUTION: FV อิสระ convergence กับ Warren แต่เป็นผลจากราคาดันตัวคูณ ไม่ใช่ปัจจัยพื้นฐานเปลี่ยน"
     ]
   },
   "COHR": {
@@ -1283,66 +1285,68 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ราคาร่วง -17.0% มาที่ $234.43 ตาม Corning สาเหตุเดียวกับ LITE ทำให้ MoS ผ่าน gate พลิก WATCH→BUY แต่ Charlie ชี้ว่านี่คือกรณีรุนแรงที่สุด — บน FV อนุรักษ์ราคาแทบพอดีเป๊ะ ไม่มี margin of safety เหลือเลย",
+      "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ราคาฟื้นตัวต่อเนื่องเป็น $262.89 (+12.1% จากจุดต่ำสุด) ดัน MoS ฝั่ง Warren ลดเหลือ 20.34% แต่ ⚠️ Charlie ชี้ว่าฝั่งอนุรักษ์นิยมกลับแย่ลง — จาก MoS เกือบศูนย์เป็นติดลบ -15.3% เพราะราคาวิ่งเร็วกว่า FV",
       "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
       "why_invest": [
         "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
         "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
         "ธุรกิจ non-AI (industrial laser, telecom, materials) ช่วยกระจายความเสี่ยงมากกว่า LITE",
-        "ราคาที่ร่วงมาให้ MoS ผ่าน gate ที่ 28.96% + PEG 0.69 + ER 44.08%/ปี"
+        "ราคายังให้ MoS ผ่าน gate ที่ 20.34% (ฝั่ง Warren) + PEG 0.77 + ER 41.65%/ปี"
       ],
       "watch_out": [
-        "⚠️ Charlie ชี้ว่านี่คือกรณีรุนแรงสุดของ 2 ตัวที่พลิก BUY: บน Charlie FV อิสระ $228 (consensus × 30x) ที่ราคาปัจจุบันแทบเท่ากันเป๊ะ conservative MoS เหลือแค่ +0.04% — ไม่มี margin of safety เหลือเลย",
-        "gap 30.9% เกิน 15% + action BUY เข้า FV-Gap Conservative Rule → แนะนำ NO-BUY อัตโนมัติ ไม่ใช่กรณีก้ำกึ่ง",
-        "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus $7.61 ราว 21% — ราคาที่ตกอย่างเดียวไม่พอปิด gap นี้; hyperscaler concentration ~75% + CapEx หนักกดดัน FCF"
+        "⚠️ ข้อค้นพบสำคัญรอบนี้: บน Charlie FV อิสระ $228 (ไม่เปลี่ยนจากรอบก่อน เพราะยังไม่มีงบใหม่) ราคาที่วิ่งขึ้นต่อทำให้ MoS อนุรักษ์นิยม แย่ลงจากใกล้ศูนย์ (+0.04%) เป็นติดลบ -15.3% — BUY case อ่อนลงจริงบนมุมมองอิสระ แม้ MoS ฝั่ง Warren ยังดูดี",
+        "gap 30.9% (คงเดิม) + action BUY เข้า FV-Gap Conservative Rule → แนะนำ Kim บังคับ NO-BUY อัตโนมัติ หนักกว่ารอบก่อน ไม่ใช่กรณีก้ำกึ่งแล้ว",
+        "Warren FV $330 ยังพึ่ง EPS $9.22 สูงกว่า consensus $7.61 ราว 21% (ปัญหาค้างตั้งแต่ 18 ก.ค.) — ราคาวิ่งขึ้นยิ่งทำให้ gap นี้สำคัญมากขึ้น",
+        "Q4 FY2026 earnings ยืนยันแล้วว่าจะประกาศ 12 ส.ค. 2026 — จะเป็นบทพิสูจน์ว่า growth ตามทันสมมติฐาน Warren ไหม"
       ],
-      "bottom_line": "ธุรกิจดีจริงแต่ BUY รอบนี้เป็นกรณีอันตรายที่สุดในบรรดา 2 ตัวที่พลิก — Charlie คำนวณ conservative MoS ได้แค่ +0.04% (แทบเป็นศูนย์) แปลว่าราคาปัจจุบัน 'พอดีเป๊ะ' กับมูลค่าที่ควรเป็นแบบอนุรักษ์นิยม ไม่ใช่ถูก แนะนำรอ Q4 FY26 earnings ยืนยัน growth ก่อนไล่ซื้อ"
+      "bottom_line": "ธุรกิจดีจริงแต่ BUY รอบนี้ยิ่งเสี่ยงขึ้น — Charlie ชี้ว่า conservative MoS พลิกจากใกล้ศูนย์เป็นติดลบ -15.3% เพราะราคาวิ่งไปไกลกว่า FV อิสระที่ยังไม่ขยับ แนะนำ NO-BUY รอ Q4 FY26 earnings (12 ส.ค.) ยืนยัน growth ก่อนไล่ซื้อ"
     },
     "mark_full": {
       "business_overview": "รายได้หลักจาก Datacenter & Communications (75%, transceiver 800G/1.6T + CPO) และ Industrial (25%, laser สำหรับ EV/semiconductor) — fiscal year สิ้นสุด 30 มิ.ย.",
       "tam": "optical interconnect demand จาก AI datacenter เปลี่ยนผ่าน 800G→1.6T + CPO ระยะเริ่มต้น; OCS TAM ยกขึ้นเป็น $4B+",
       "moat": "vertical integration InP (ปลูก crystal เอง) + NVIDIA partnership + 3,100+ patents ทั่วโลก",
-      "latest_financials": "Q3 FY26 รายได้ $1,806M +21% YoY, Non-GAAP EPS $1.41 +55%, Non-GAAP op margin 20.3%; 9 เดือน CapEx $547M +77% กด FCF ติดลบชั่วคราว",
+      "latest_financials": "Q3 FY26 รายได้ $1,806M +21% YoY, Non-GAAP EPS $1.41 +55%, Non-GAAP op margin 20.3%; 9 เดือน CapEx $547M +77% กด FCF ติดลบชั่วคราว; Q4 FY2026 earnings นัดประกาศ 12 ส.ค. 2026",
       "key_points": [
         "NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
         "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน วางแผนเพิ่มอีกรอบภายในสิ้นปี 2027",
-        "Charlie flag: FV $330 พึ่ง eps_used $9.22 ที่สูงกว่า consensus $7.61 ~21% (FV อิสระ $228)",
-        "หนี้ ~$3.2B + BIS/Huawei inquiry ยังไม่จบ เป็นความเสี่ยงที่ต้องติดตาม"
+        "ราคาฟื้นตัวต่อเนื่อง +12.1% จากจุดต่ำ ทำให้ MoS อนุรักษ์นิยม (Charlie FV $228) พลิกจากใกล้ศูนย์เป็นติดลบ -15.3%",
+        "Charlie flag: FV $330 พึ่ง eps_used $9.22 ที่สูงกว่า consensus $7.61 ~21% (FV อิสระ $228 ไม่เปลี่ยน)",
+        "TTM GAAP EPS จริง $2.11 vs ฐาน adjusted $3.99 ที่ใช้คำนวณ floor — ยังไม่ reconcile"
       ]
     },
     "warren_easy": [
-      "COHR tier Fast Grower WAF 7.725 — Corning พลาดเป้ารายได้ Q3 (07-28) ลากราคา COHR ร่วง -17.0% มาที่ $234.43 (สาเหตุเดียวกับ LITE) ไม่ใช่ข่าวลบ COHR เฉพาะ",
-      "MoS กระโดดจาก near-miss 14.43% เป็นผ่าน gate ชัดเจนที่ 28.96%; PEG ดีขึ้นเป็น 0.69, ER 44.08%/ปี — flag เดิมจาก 07-25 ('ราคาย่อ ~1% จะกลับเข้า BUY') ถูก resolve เพราะราคาตกมากกว่านั้นเยอะ",
-      "พลิก WATCH→BUY — MoS ผ่าน gate ด้วยระยะห่างพอสมควร (จาก near-miss เดิม)"
+      "COHR tier Fast Grower WAF 7.62 — ราคาฟื้นตัวต่อเนื่อง $234.43→$262.89 (+12.1%) จาก selloff คลี่คลาย ไม่มีข่าวเฉพาะตัวใหม่",
+      "MoS ลดลงจาก 28.96% เหลือ 20.34% (ยังผ่าน gate สบาย); PEG ดีขึ้นเป็น 0.77 (ยังต่ำกว่า cap 1.0), ER 41.65%/ปี ยังแข็งแรงมาก",
+      "BUY (คงเดิม) — 4 gate ยังผ่านทั้งหมดด้วยระยะห่าง แม้ margin จะแคบลงจากราคาที่วิ่งขึ้น"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "⚠️ ข้อค้นพบสำคัญ: นี่คือกรณีที่รุนแรงที่สุดในบรรดา BUY flip ทั้ง 2 ตัว (LITE/COHR) — บน Charlie FV อิสระ $228 (consensus EPS $7.61 × 30x) ที่ราคาปัจจุบัน $227.92 แทบเท่ากันเป๊ะ conservative MoS เหลือแค่ +0.04% ไม่มี margin of safety เหลือเลย",
-        "gap 30.9% เกิน 15% + action BUY → FV-Gap Conservative Rule ใช้ทันที แนะนำ NO-BUY อัตโนมัติ — นี่ไม่ใช่กรณีก้ำกึ่งเหมือนรอบก่อน แต่เป็นกรณีชัดเจนที่สุด",
-        "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus $7.61 ราว 21% — ปัญหาเดิมที่ค้างมาตั้งแต่ 18 ก.ค. ราคาที่ตกอย่างเดียวไม่พอปิด gap นี้ ต้องรอ Q4 FY2026 earnings (~ส.ค.) พิสูจน์ growth จริง"
+        "⚠️ ข้อค้นพบสำคัญรอบนี้: บน Charlie FV อิสระ $228 (ไม่เปลี่ยน เพราะยังไม่มีงบใหม่มายืนยัน) ราคาที่ขยับขึ้นต่อเนื่องเป็น $262.89 ทำให้ MoS อนุรักษ์นิยมพลิกจากใกล้ศูนย์ (+0.04% รอบก่อน) เป็นติดลบ -15.3% — BUY case อ่อนลงจริงบนมุมมองอิสระ แม้ตัวเลข MoS ฝั่ง Warren (20.34%) จะยังดูสบาย",
+        "gap 30.9% (คงเดิม) + action BUY → เข้า FV-Gap Conservative Rule ทันที แนะนำ NO-BUY อัตโนมัติ หนักกว่ารอบก่อนเพราะราคาวิ่งไปไกลขึ้นแต่ FV ยังไม่ขยับตาม",
+        "Warren FV $330 ยังพึ่ง EPS $9.22 สูงกว่า consensus FY27 $7.61 ราว 21% (ปัญหาค้างตั้งแต่ 18 ก.ค.) — ราคาที่ขึ้นอย่างเดียวไม่พอปิด gap นี้ ต้องรอ Q4 FY2026 earnings (ยืนยันแล้วว่าประกาศ 12 ส.ค. 2026) พิสูจน์ growth จริงก่อน"
       ],
-      "review_date": "2026-07-29"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "⚠️ BUY (แต่ Charlie เตือนหนักสุด — conservative MoS แทบเป็นศูนย์ แนะนำ NO-BUY) — ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ Corning พลาดเป้ารายได้ Q3 (07-28) ลากราคา COHR ร่วง -17.0% มาที่ $234.43 สาเหตุเดียวกับ LITE ไม่ใช่ข่าวลบ COHR เฉพาะ ราคาที่ตกทำให้ MoS กระโดดจาก near-miss 14.43% เป็นผ่าน gate ชัดเจนที่ 28.96% PEG 0.69 + ER 44.08%/ปี ผ่านสบาย พลิกจาก WATCH เป็น BUY ⚠️ Charlie ชี้ว่านี่คือกรณีรุนแรงที่สุดในบรรดา 2 ตัวที่พลิก BUY วันนี้: บน Charlie FV อิสระ $228 (consensus EPS $7.61 × 30x) ที่ราคาปัจจุบัน conservative MoS เหลือแค่ +0.04% แทบเป็นศูนย์ — ไม่มี margin of safety เหลือเลย gap 30.9% เกิน 15% เข้า FV-Gap Conservative Rule แนะนำ NO-BUY อัตโนมัติ Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus 21% ราคาที่ตกอย่างเดียวไม่พอปิด gap นี้ รอ Q4 FY2026 earnings (~ส.ค.) พิสูจน์ growth ก่อน",
+    "idea_th": "⚠️ BUY (แต่ Charlie เตือนหนักขึ้นกว่ารอบก่อน — แนะนำ NO-BUY) — ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ ราคาฟื้นตัวต่อเนื่อง $234.43→$262.89 (+12.1%) จาก selloff คลี่คลาย ไม่มีข่าวเฉพาะตัวใหม่ ดัน MoS ฝั่ง Warren ลดจาก 28.96% เหลือ 20.34% (ยังผ่าน gate) PEG 0.77 + ER 41.65%/ปี ยังผ่านสบาย ⚠️ แต่ Charlie ชี้ว่าบน FV อิสระ $228 (ไม่เปลี่ยน) MoS อนุรักษ์นิยมพลิกจากใกล้ศูนย์เป็นติดลบ -15.3% — BUY case อ่อนลงจริง gap 30.9% เข้า FV-Gap Conservative Rule แนะนำ NO-BUY อัตโนมัติ Warren FV $330 พึ่ง EPS สูงกว่า consensus 21% รอ Q4 FY2026 earnings (12 ส.ค.) พิสูจน์ growth ก่อน",
     "story_gate_th": {
       "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
-      "why": "Corning พลาดเป้ารายได้ Q3 ลากราคา COHR ตกเหมือน LITE ทำให้ MoS พลิกผ่าน gate เป็น BUY แต่ Charlie ชี้ว่านี่เป็นกรณีที่ conservative MoS แทบเป็นศูนย์ — ราคาปัจจุบันพอดีเป๊ะกับมูลค่าอนุรักษ์นิยม ไม่ใช่ถูก",
-      "risk": "Heavy CapEx pressures FCF; hyperscaler concentration ~75%; CPO adoption-speed/execution risk; concurrent multi-site fab buildout risk; FV $330 พึ่ง growth ~37%/ปีที่ aggressive (Charlie เคย flag ว่าขัดกับ backward DCF $67-84); ต้องรอ Q4 FY2026 earnings (~ส.ค.) ยืนยันว่า selloff เป็นแค่ profit-taking ไม่ใช่ demand air-pocket จริง"
+      "why": "ราคาฟื้นตัวต่อเนื่องจาก selloff (+12.1%) ทำให้ MoS ฝั่ง Warren ลดลงมาที่ 20.34% (ยังผ่าน gate) แต่ Charlie ชี้ว่าบน FV อิสระที่ยังไม่ขยับ MoS อนุรักษ์นิยมพลิกเป็นติดลบ -15.3% แล้ว — ราคาวิ่งไปไกลกว่ามูลค่าอนุรักษ์นิยมมากขึ้น",
+      "risk": "Heavy CapEx pressures FCF; hyperscaler concentration ~75%; CPO adoption-speed/execution risk; concurrent multi-site fab buildout risk; FV $330 พึ่ง growth ~37%/ปีที่ aggressive สูงกว่า consensus 21%; ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐานไหม"
     },
     "bull_th": [
       "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
       "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
       "ธุรกิจ non-AI (industrial laser, telecom, materials) กระจายความเสี่ยงมากกว่า LITE",
-      "MoS กระโดดจาก near-miss เป็นผ่าน gate ชัดเจนที่ 28.96% + PEG 0.69 + ER 44.08%/ปี",
+      "MoS ฝั่ง Warren ยังผ่าน gate ที่ 20.34% + PEG 0.77 + ER 41.65%/ปี",
       "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน"
     ],
     "risk_th": [
-      "⚠️ Charlie: กรณีรุนแรงสุด — conservative MoS เหลือแค่ +0.04% แทบเป็นศูนย์ ไม่มี margin of safety",
+      "⚠️ Charlie: MoS อนุรักษ์นิยมพลิกจากใกล้ศูนย์เป็นติดลบ -15.3% (ราคาวิ่งไปไกลกว่า FV อิสระที่ยังไม่ขยับ)",
       "gap 30.9% เกิน 15% เข้า FV-Gap Conservative Rule แนะนำ NO-BUY",
-      "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus 21% — ปัญหาค้างตั้งแต่ 18 ก.ค.",
+      "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus 21% — ปัญหาค้างตั้งแต่ 18 ก.ค. ยิ่งสำคัญขึ้นเมื่อราคาวิ่ง",
       "hyperscaler concentration ~75%; CapEx หนักกดดัน FCF",
-      "ต้องรอ Q4 FY2026 earnings ยืนยันว่า selloff เป็น profit-taking ไม่ใช่ demand จริงที่แย่ลง"
+      "ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐาน Warren ไหม"
     ]
   },
   "MU": {
@@ -1723,65 +1727,67 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "Netflix เจ้าตลาด streaming โลก — งบ Q2 in-line ราคา $70.09 ให้ MoS 16.6% (Base FV $84) ผ่าน gate; held name HOLD ไม่เติม, Charlie เตือนเรื่อง OM/engagement ที่เริ่มชะลอ",
+      "one_liner": "Netflix เจ้าตลาด streaming โลก — ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ไม่มีข่าวใหม่ MoS ลดลงเหลือ 14.63% (held name ยังผ่านเกณฑ์ ER); Charlie CAUTION ยังแนะนำจับตา downgrade tier เพราะ margin ยังไม่ฟื้น",
       "what": "Netflix ให้บริการ streaming ทั่วโลก; ลงทุน content ปีละหลายหมื่นล้านดอลลาร์สร้าง library ที่คู่แข่งทำตามไม่ทัน; รายได้จาก subscription + โฆษณา (ad tier กำลัง scale) + live events",
       "why_invest": [
-        "ราคา $70.09 ให้ MoS 16.6% (Base FV $84 = 22x FY27 consensus $3.84) ผ่าน gate",
+        "ราคา $71.71 ให้ MoS 14.63% (Base FV $84 = 22x FY27 consensus $3.83, แทบไม่เปลี่ยนจากรอบก่อน)",
         "Content library + algorithm flywheel = moat ที่คู่แข่งตามไม่ทัน",
         "Ad tier กำลัง scale เป็น revenue stream ใหม่",
         "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก"
       ],
       "watch_out": [
-        "Charlie AGREE FV $77 (gap 8%) แต่เตือน: OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33%",
-        "Netflix ลดความถี่รายงาน engagement เหลือปีละครั้งจาก 2027 — ลดความโปร่งใสตรงจุดที่ตลาดกังวล",
-        "Q3 guide decel (+12%) เป็นไตรมาสที่ 2 ติดต่อกัน"
+        "Charlie CAUTION ต่อเนื่อง: FV อิสระ $73 (consensus $3.83 × 19.15x) ใกล้เคียง Warren $84 (gap 13.1%) MoS อิสระเหลือแค่ +1.8% บางมาก",
+        "tier_verdict SUGGEST_DOWNGRADE ยังคงอยู่ — Pre-Inevitable ต้องมีสัญญาณ margin ขยาย ซึ่งยังไม่เห็นรอบนี้",
+        "OM หด YoY + FCF -33% (flag ตั้งแต่ 07-25) ยังไม่มีข้อมูลใหม่ยืนยันว่าฟื้นหรือแย่ลง",
+        "⚠️ TTM GAAP EPS จริง $3.17 ยังเฟ้อกว่าฐาน clean ที่ใช้คำนวณ floor ($2.65) ราว 20% — ยังไม่ reconcile"
       ],
-      "bottom_line": "ตัวเลขผ่านเกณฑ์ (MoS 16.6%) และ moat แข็ง แต่ held name ER 18.7% band HOLD + Charlie เตือน OM/engagement เริ่มชะลอ — ถือต่อได้ ไม่เติมหนัก จับตา OM ว่าจะ structural ไหม"
+      "bottom_line": "ตัวเลขยังผ่านเกณฑ์ (MoS 14.63%, ER อยู่ใน band HOLD) และ moat แข็ง แต่ Charlie ยัง CAUTION + แนะนำจับตา tier downgrade เพราะ margin ยังไม่ฟื้นตัวชัดเจน — ถือต่อได้ ไม่เติมหนัก รอ Q3 2026 ยืนยัน"
     },
     "mark_full": {
       "business_overview": "Netflix ดำเนินธุรกิจ streaming เป็นหลัก รายได้กระจายทั่วโลก (UCAN, EMEA, LATAM, APAC); โมเดลรายได้ = subscription + โฆษณา (ad tier) + live events; หยุดรายงานจำนวนสมาชิกรายไตรมาสตั้งแต่ 2025",
       "tam": "ตลาด streaming/entertainment ทั่วโลกขนาดใหญ่มาก; รายได้โฆษณาเป็น TAM ใหม่ที่กำลังขยาย; live events เป็น TAM ใหม่ที่ยังไม่ถูก capture เต็ม; gaming ยังเริ่มต้น",
       "moat": "Content library ที่สร้างจากงบลงทุนปีละหลายหมื่นล้าน = กำแพงการแข่งขัน; algorithm flywheel จากฐานผู้ใช้จำนวนมาก = ระบบแนะนำที่แม่นขึ้นเรื่อยๆ; แต่ moat ด้าน engagement เริ่มถูกท้าทาย (YouTube/แพลตฟอร์มวิดีโอสั้น)",
-      "latest_financials": "Q2'26: revenue $12.56B +13.4% YoY (in-line), EPS beat; แต่ OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33%; full-year OM guide 31.5% ยัง > FY25 29.5%; Q3 guide decel ~12% เป็นไตรมาสที่ 2 ติดต่อกัน; FV Base $84 = 22x × FY27 consensus $3.84",
+      "latest_financials": "Q2'26: revenue $12.56B +13.4% YoY (in-line); OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33%; full-year OM guide 31.5% ยัง > FY25 29.5%; FV Base $84 = 22x × FY27 consensus $3.83 (แทบไม่เปลี่ยนตั้งแต่ 07-25)",
       "key_points": [
-        "Q2 revenue $12.56B +13.4% (in-line), EPS beat — งบไม่พลาดเป้า",
-        "OM หด YoY ครั้งแรก + FCF -33% = จุดลบใหม่ที่ต้องจับตา structural",
+        "ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ไม่มีข่าวใหม่ตั้งแต่รอบ 07-25 — consensus FY27 EPS ทรงตัว ($3.83 vs $3.84)",
+        "OM หด YoY + FCF -33% = จุดที่ยังไม่คลี่คลาย ต้องรอ Q3 2026 ยืนยัน",
         "Ad-supported tier กำลังเติบโต เป็น revenue stream ใหม่ระยะยาว",
-        "Netflix ลดความถี่รายงาน engagement เหลือปีละครั้งจาก 2027 — Charlie มองเป็น red flag ความโปร่งใส"
+        "Charlie: tier_verdict SUGGEST_DOWNGRADE ยังคงอยู่ (ต้องมีสัญญาณ margin ขยายก่อนจะยืนยัน Pre-Inevitable)",
+        "TTM GAAP EPS $3.17 ยังเฟ้อกว่าฐาน clean $2.65 ราว 20% — reconciliation ยังค้าง"
       ]
     },
     "warren_easy": [
-      "NFLX tier Pre-Inevitable WAF 7.3 — content library + algorithm flywheel + ad tier scaling + live events (NFL/WWE)",
-      "ราคา $70.09 ให้ MoS 16.6% (Base FV $84 = 22x FY27 consensus $3.84) ผ่าน gate; full-year OM guide 31.5% > FY25 29.5% ยังขยายทั้งปี → premium 22x มีเหตุผล",
-      "HOLD — held name, ER 18.7% ใน band 15-20% = ถือต่อ ไม่เติม"
+      "NFLX tier Pre-Inevitable WAF 7.22 — content library + algorithm flywheel + ad tier scaling + live events (NFL/WWE), ไม่มีข่าวใหม่ตั้งแต่ 07-25",
+      "ราคาขยับขึ้นเล็กน้อยเป็น $71.71 (+2.3%) ให้ MoS 14.63% (Base FV $84 = 22x FY27 consensus $3.83 แทบไม่เปลี่ยน) — ต่ำกว่าเกณฑ์ new-buy 15% ไปเล็กน้อย แต่เป็น held name",
+      "HOLD — held name governance (ER band + WAF≥5) คุมแทน MoS new-buy gate, ER 18.17%/ปี อยู่ใน band ถือต่อ"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "ฝั่งข่าวไม่มีอะไรใหม่ตั้งแต่เช็ครอบ 23 ก.ค. ราคาก็ขยับไม่ถึง 3% ถือเป็น carry ตามปกติ ไม่ได้มีเหตุการณ์ผิดปกติ",
-        "แต่จุดที่ต้องระวังคือ margin of safety ฝั่งอนุรักษ์เหลือแค่ 5.3% เท่านั้น (FV ของ Charlie $74 เทียบราคา $70.09) เพราะตัวคูณ 22x ที่ Warren ใช้ ยังสูงกว่า forward P/E จริงที่ตลาดให้อยู่ 19.15x ถึง 15%",
-        "คุณภาพเริ่มมีสัญญาณแผ่วลง — กำไรจากการดำเนินงาน (operating margin) หดตัวเมื่อเทียบปีก่อน และกระแสเงินสดอิสระลดลงถึง 33% ยังไม่ถึงขั้นเป็นสัญญาณอันตราย แต่เป็นจุดที่ต้องจับตาต่อ รอดูงบไตรมาสหน้าว่าจะฟื้นตัวหรือแย่ลงกว่านี้"
+        "ฝั่งข่าวไม่มีอะไรใหม่ตั้งแต่รอบ 07-25 ราคาก็ขยับขึ้นแค่ +2.3% ถือเป็น carry ปกติ ไม่มีเหตุการณ์ผิดปกติ consensus FY27 EPS ทรงตัว ($3.83 แทบเท่าเดิม)",
+        "จุดที่ยังต้องระวัง: margin of safety ฝั่งอนุรักษ์บางมาก — FV ของ Charlie $73 (consensus $3.83 × 19.15x ตัวคูณที่ใกล้ fwd P/E จริง 18.72x) เทียบราคา $71.71 ให้ MoS แค่ +1.8% เกือบเป็นศูนย์",
+        "tier_verdict SUGGEST_DOWNGRADE ยังคงยืนยันซ้ำ — Pre-Inevitable ต้องการสัญญาณ margin ขยาย ซึ่งยังไม่เห็นรอบนี้ OM หดตัว YoY + FCF -33% ยังไม่มีข้อมูลใหม่ชี้ว่าฟื้นหรือแย่ลง ต้องรอ Q3 2026 เป็นบทพิสูจน์จริง"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "HOLD — เจ้าตลาด streaming โลก. งบ Q2'26 revenue $12.56B +13% in-line แต่มี 2 จุดลบ: OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% + ลดความถี่เปิดเผย What-We-Watched. ราคา $70.09 (post-split) ให้ MoS 16.6% (Base FV $84 = 22x FY27 consensus $3.84) ผ่าน gate; held name ER 18.7% (band 15-20%) = HOLD ไม่เติม. Charlie AGREE FV $77 (gap 8%), consensus $3.85 ≈ Warren $3.84. จับตา OM หดว่าจะ structural ไหม.",
+    "idea_th": "HOLD — เจ้าตลาด streaming โลก. ไม่มีข่าวใหม่ตั้งแต่รอบ 07-25 ราคาขยับขึ้นเล็กน้อย $70.09→$71.71 (+2.3%) FV Base ยังคง $84 (22x × FY27 consensus $3.83 แทบไม่เปลี่ยน) ให้ MoS 14.63% (ลดจาก 16.6%) — ต่ำกว่าเกณฑ์ new-buy 15% เล็กน้อยแต่เป็น held name ยังถือด้วย ER 18.17%/ปี ในเกณฑ์. Charlie CAUTION ต่อเนื่อง: FV อิสระ $73 (gap 13.1%) MoS อิสระบางมากแค่ +1.8%; tier_verdict SUGGEST_DOWNGRADE ยืนยันซ้ำเพราะ margin ยังไม่ฟื้น. รอ Q3 2026 ยืนยัน OM ว่าเป็น structural ไหม",
     "story_gate_th": {
       "what": "Netflix ให้บริการ streaming ทั่วโลก + ad tier กำลัง scale + live events; content library + algorithm flywheel = moat ที่คู่แข่งตามไม่ทัน",
-      "why": "ราคา $70.09 (post-split) ให้ MoS 16.6% บน Base FV $84 (22x × FY27 consensus $3.84) ผ่าน gate; held name ER 18.7% ใน band 15-20% = HOLD. Charlie AGREE FV $77 (gap 8%) — ตัวเลขสะอาด แต่เตือนเรื่อง OM/engagement",
-      "risk": "OM contraction กลายเป็น structural (opex โตเกินรายได้ 2+ ไตรมาส); Q3 guide decel (+12%); consensus FY27 $3.84 down-rev; engagement erosion; content cost inflation; ลดความโปร่งใส disclosure"
+      "why": "ไม่มีข่าวใหม่ ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ให้ MoS 14.63% บน Base FV $84 (22x × FY27 consensus $3.83) — ต่ำกว่าเกณฑ์ new-buy เล็กน้อยแต่เป็น held name ถือต่อได้ตาม ER band. Charlie CAUTION FV $73 (gap 13.1%) MoS อิสระบางมาก + tier_verdict SUGGEST_DOWNGRADE",
+      "risk": "OM contraction กลายเป็น structural (opex โตเกินรายได้ 2+ ไตรมาส); consensus FY27 $3.83 down-rev pattern (5up/8down); engagement erosion; content cost inflation; ลดความโปร่งใส disclosure; TTM GAAP EPS เฟ้อกว่าฐาน clean ~20% ยังไม่ reconcile"
     },
     "bull_th": [
       "Content library + algorithm flywheel = moat ที่คู่แข่งตามไม่ทัน; ยิ่งคนดูเยอะยิ่งแม่น",
       "Ad tier กำลัง scale เป็น revenue stream ใหม่หลังลงทุนหลายปี",
       "Live events (NFL/WWE) เพิ่ม engagement จริงและยกเลิกยาก",
-      "full-year OM guide 31.5% > FY25 29.5% = ยังขยายทั้งปี; Charlie FV $77 ≈ Warren $84"
+      "consensus FY27 EPS ทรงตัว ($3.83) — ไม่มีสัญญาณ downside ใหม่รอบนี้"
     ],
     "risk_th": [
-      "OM หด YoY ครั้งแรก (33.4% vs 34.1%) — ถ้า structural (opex โตเกินรายได้ 2+ ไตรมาส) จะกระทบ premium 22x",
-      "Q3 guide decel (+12%) ต่อเนื่อง; FCF -33%",
-      "Netflix ลดความถี่รายงาน engagement (What-We-Watched) เหลือปีละครั้งจาก 2027 = ลดความโปร่งใส",
-      "consensus FY27 $3.84 down-rev + one-off FY26 contamination",
-      "held name — ER 18.7% ใน band 15-20% = HOLD ไม่เติม"
+      "MoS ลดลงเหลือ 14.63% — ต่ำกว่าเกณฑ์ new-buy 15% เล็กน้อย (ยังถือได้เพราะเป็น held name)",
+      "Charlie: MoS อิสระบางมากแค่ +1.8%; tier_verdict SUGGEST_DOWNGRADE ยืนยันซ้ำ (margin ยังไม่ฟื้น)",
+      "OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% — ยังไม่คลี่คลาย รอ Q3 2026",
+      "TTM GAAP EPS $3.17 เฟ้อกว่าฐาน clean $2.65 ราว 20% — ยังไม่ reconcile",
+      "Netflix ลดความถี่รายงาน engagement (What-We-Watched) เหลือปีละครั้งจาก 2027 = ลดความโปร่งใส"
     ]
   },
   "SPCX": {
@@ -1872,65 +1878,67 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI) — ราคาไหลลงเป็น $115.07 ต่ำกว่า IPO ($135) และแตะ Base FV ($114) พอดี ตาม lockup-unlock ที่ชัดเจนแล้ว ยังไม่ใช่ปัญหาพื้นฐาน",
+      "one_liner": "บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI) — ราคาไหลต่อเนื่องเป็น $108.37 ต่ำกว่า Base FV ($114) ครั้งแรก MoS พลิกเป็นบวก +4.94%; consensus EPS ปรับขึ้น +16.7% ทำให้ Charlie FV ขยับตามเป็น $112 (gap เหลือแค่ 1.8%) — แต่มี 2 เหตุการณ์สำคัญรออยู่ใน 2-4 วันข้างหน้า: งบไตรมาสแรกในฐานะบริษัทมหาชน (4 ส.ค.) + lockup ปลดล็อกก้อนแรก (~$123B, 6 ส.ค.)",
       "what": "SpaceX รวม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครองส่วนแบ่งการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink สมาชิก 10.3 ล้านราย, margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok + X + Cursor)",
       "why_invest": [
-        "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก (+105% YoY), Connectivity Adj EBITDA margin 63%",
-        "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้ (~82% การปล่อยยานเชิงพาณิชย์โลก)",
-        "ราคาไหลลงแตะ Base FV $114 — MoS ดีขึ้นชัดเจนจากรอบก่อน",
-        "Optionality: Starship + AI compute วงโคจร + direct-to-cell"
+        "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก, Connectivity Adj EBITDA margin 63%",
+        "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้",
+        "ราคาต่ำกว่า Base FV ($114) เป็นครั้งแรก — MoS พลิกเป็นบวก +4.94%",
+        "consensus EPS FY28 (ปีแรกกำไร) ปรับขึ้น +16.7% ($3.00→$3.50) ทำให้ Charlie FV ขยับตามใกล้ Warren มากขึ้น (gap เหลือ 1.8%)"
       ],
       "watch_out": [
-        "MoS -0.9% แตะ Base FV แล้วแต่ยัง fail gate 15% (ต้อง <=~$97); Speculative tier ไม่ไล่ราคา ไม่ STARTER",
-        "Charlie CAUTION FV $96 (FY28 first-profit $3 × 32x) ต่ำกว่า Warren $114 (gap 16%)",
-        "AI ขาดทุนหนัก ($6.4B op loss 2025); lockup unlock ปลาย ก.ค.→ต.ค.; Musk voting 82.4%"
+        "⚠️ 2 เหตุการณ์สำคัญพร้อมกันใน 2-4 วันข้างหน้า: SpaceX รายงานงบไตรมาสแรกในฐานะบริษัทมหาชน 4 ส.ค. 2026 + วันที่นี้เป็นตัวจุดชนวนให้หุ้นล็อกก้อนแรก (~911.5M หุ้น ~$123B) เริ่มขายได้ตั้งแต่ 6 ส.ค. — เหตุการณ์ binary ที่อาจแกว่งราคาแรงทั้ง 2 ทาง",
+        "MoS +4.94% ยังไม่ถึงเกณฑ์ gate 15%; Speculative tier ห้ามไล่ราคา ไม่ STARTER ไม่ว่า MoS จะดีขึ้นแค่ไหน",
+        "Charlie CAUTION รอบนี้ไม่ใช่เรื่อง valuation แล้ว (gap ปิดเกือบหมด) แต่เป็นเรื่อง event risk ระยะสั้นล้วนๆ",
+        "AI segment ยังขาดทุนหนัก ($6.4B op loss 2025); Musk voting 82.4%"
       ],
-      "bottom_line": "ธุรกิจน่าติดตามจริง (Starlink margin 63%) แต่ยัง Speculative tier ไม่ไล่ราคา — ราคาแตะ Base FV แต่ยัง fail gate + Charlie FV $96 ต่ำกว่า. WATCH รอผ่านช่วงปลด lockup รอบแรก/ราคาเข้าใกล้ ~$96 ก่อน"
+      "bottom_line": "ธุรกิจน่าติดตามจริง (Starlink margin 63%) ราคาลงมาต่ำกว่า FV ครั้งแรกและ consensus EPS ปรับขึ้นจริง ทำให้ทั้ง Warren/Charlie เห็นตรงกันเรื่องมูลค่าแล้ว (gap แค่ 1.8%) — แต่ WATCH ต่อ เพราะมี 2 catalyst ใหญ่ (งบแรก + lockup unlock) รออยู่ใน 2-4 วัน ที่จะกำหนดทิศทางราคาชัดเจนกว่าตัวเลข valuation วันนี้"
     },
     "mark_full": {
-      "business_overview": "SpaceX เป็นบริษัทควบคุม 3 ธุรกิจครบวงจร: Space ($4.09B ปี 2025), Connectivity/Starlink ($11.39B, Adj EBITDA margin 63% = เครื่องจักรทำเงิน), AI/xAI+X ($3.20B, ขาดทุนจากดำเนินงาน $6.36B) — รายได้รวมปี 2025 $18.67B +33% YoY; เข้า IPO 12 มิ.ย. 2026 ที่ราคา $135 (IPO ใหญ่ที่สุดในประวัติศาสตร์)",
-      "tam": "ตลาด Starlink ใหญ่มาก (สมาชิก 10.3 ล้านราย มีเป้าหมาย 50 ล้าน+); direct-to-cell ขยายไปถึงกลุ่มคนกว่า 3 พันล้านคนที่ยังไม่มีอินเทอร์เน็ต; Starship ถ้าสำเร็จจะลดต้นทุนการปล่อยยานลง 10-100 เท่า; AI compute วงโคจรเป็น optionality ระยะยาว 5-10+ ปี",
-      "moat": "Falcon 9 นำกลับมาใช้ซ้ำได้ = ต้นทุนต่อกิโลกรัมสู่วงโคจรต่ำที่สุดในโลก (คู่แข่งตามไม่ทัน); Starlink มีดาวเทียมกว่า 10,300 ดวง = กลุ่มดาวเทียมเอกชนใหญ่ที่สุดในประวัติศาสตร์; ควบคุม supply chain เองทั้งหมด (ผลิตเครื่องยนต์/ดาวเทียม/อุปกรณ์รับสัญญาณเอง); ปล่อยยานราว 170 ครั้งต่อปี = ส่วนใหญ่ของการปล่อยยานเชิงพาณิชย์ทั่วโลก",
-      "latest_financials": "Q1 2026: รายได้ $4.69B +15%; ขาดทุนสุทธิ $(4.28)B (งบลงทุน AI กดหนัก); Starlink 10.3M สมาชิก ARPU ~$66/เดือน; เงินสด $15.85B; ราคาไหลลงเป็น $115.07 ต่ำกว่า IPO $135 และแตะ Base FV $114 จาก lockup-unlock; FY26 consensus EPS -$0.66, FY28 (ปีแรกกำไร) $3.0",
+      "business_overview": "SpaceX เป็นบริษัทควบคุม 3 ธุรกิจครบวงจร: Space, Connectivity/Starlink (Adj EBITDA margin 63% = เครื่องจักรทำเงิน), AI/xAI+X — เข้า IPO 12 มิ.ย. 2026 ที่ราคา $135 (IPO ใหญ่ที่สุดในประวัติศาสตร์)",
+      "tam": "ตลาด Starlink ใหญ่มาก (สมาชิก 10.3 ล้านราย มีเป้าหมาย 50 ล้าน+); direct-to-cell ขยายไปถึงกลุ่มคนกว่า 3 พันล้านคนที่ยังไม่มีอินเทอร์เน็ต; Starship ถ้าสำเร็จจะลดต้นทุนการปล่อยยานลง 10-100 เท่า; AI compute วงโคจรเป็น optionality ระยะยาว",
+      "moat": "Falcon 9 นำกลับมาใช้ซ้ำได้ = ต้นทุนต่อกิโลกรัมสู่วงโคจรต่ำที่สุดในโลก; Starlink มีดาวเทียมกว่า 10,300 ดวง = กลุ่มดาวเทียมเอกชนใหญ่ที่สุดในประวัติศาสตร์; ควบคุม supply chain เองทั้งหมด",
+      "latest_financials": "ราคาไหลต่อเนื่องเป็น $108.37 (-5.8% จากรอบก่อน) ต่ำกว่า Base FV $114 ครั้งแรก; consensus FY28 (ปีแรกกำไร) EPS ปรับขึ้น +16.7% เป็น $3.50 (จาก $3.00); SpaceX นัดรายงานงบไตรมาสแรกในฐานะบริษัทมหาชน 4 ส.ค. 2026",
       "key_points": [
         "Connectivity/Starlink = เครื่องจักรทำเงิน (Adj EBITDA margin 63%)",
-        "ARPU ลดเชิงโครงสร้าง $99→$66 (ชดเชยด้วย scale + ต้นทุนต่อหน่วยที่ลดลง)",
-        "lockup-unlock (เริ่มปลาย ก.ค.→ต.ค.) = supply overhang ระยะสั้น; Charlie FV $96 (gap 16%)",
+        "ราคาต่ำกว่า Base FV เป็นครั้งแรก + consensus EPS ปรับขึ้นจริง +16.7% — Charlie FV ขยับตามเป็น $112 (gap เหลือ 1.8%)",
+        "⚠️ งบไตรมาสแรกในฐานะบริษัทมหาชน 4 ส.ค. 2026 เป็นตัวจุดชนวน lockup ก้อนแรก (~911.5M หุ้น ~$123B) เริ่มขายได้ 6 ส.ค. 2026 — 2 catalyst binary ใน 2-4 วัน",
         "Musk ควบคุมเสียงโหวต 82.4% + Speculative tier = no pay-up, no STARTER"
       ]
     },
     "warren_easy": [
-      "SPCX tier Speculative WAF 7.03 — Starlink เครื่องจักรทำเงิน (10.3M สมาชิก, EBITDA margin 63%) + Falcon 9 reuse ต้นทุนต่ำ (~82% การปล่อยยานเชิงพาณิชย์)",
-      "ราคาไหลลง -15.4% แตะ Base FV $114 พอดี — MoS -0.9% ดีขึ้นมากแต่ยัง fail gate 15% (vs Bull FV $191 MoS +39.8%)",
-      "WATCH — Speculative tier ไม่ไล่ราคา ไม่ STARTER; lockup dump ถ้าราคา << $96 = Mr. Market opportunity"
+      "SPCX tier Speculative WAF 7.10 — Starlink เครื่องจักรทำเงิน (10.3M สมาชิก, EBITDA margin 63%) + Falcon 9 reuse ต้นทุนต่ำ, ไม่มีข่าว fundamental ใหม่",
+      "ราคาไหลต่อเนื่อง -5.8% เป็น $108.37 ต่ำกว่า Base FV $114 ครั้งแรก — MoS พลิกเป็นบวก +4.94% (จาก -0.9%) แต่ยัง fail gate 15%",
+      "WATCH — Speculative tier ไม่ไล่ราคา ไม่ STARTER; งบแรกในฐานะบริษัทมหาชน (4 ส.ค.) + lockup unlock ก้อนแรก (6 ส.ค.) เป็น catalyst ใกล้มาก"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie: SPCX pre-profit (FY26 consensus EPS -$0.66) จึงคำนวณ FV บน first-profitable FY2028 consensus $3.0 × 32x growth premium = $96 — ต่ำกว่า Warren Base FV $114 (gap 16%) → CAUTION",
-        "ที่ราคา $115.07 ตลาด price-in profitability ramp สู่ ~$3 EPS ภายใน FY2028 + AI/Starship optionality ซึ่ง aggressive; Speculative tier = no pay-up, no STARTER ไม่ว่า MoS จะดีขึ้นแค่ไหน (ต้องราคา <=~$97 ถึงผ่าน gate 15%)",
-        "lockup unlock ปลาย ก.ค.→ต.ค. เป็น supply overhang; ถ้า dump ราคาต่ำกว่า $96 มากโดยไม่มี fundamental เปลี่ยน = โอกาส ไม่ใช่ thesis พัง"
+        "Charlie: gap ระหว่าง FV ของ Warren ($114) กับ Charlie ($112) ปิดลงเหลือแค่ 1.8% (จาก 15.8% รอบก่อน) เพราะ consensus EPS FY28 (ปีแรกกำไร) ปรับขึ้นจริง +16.7% ($3.00→$3.50) — ตอนนี้ทั้งสองฝ่ายเห็นตรงกันเรื่องมูลค่าเป็นส่วนใหญ่แล้ว ไม่ใช่ความเห็นต่างด้าน valuation อีกต่อไป",
+        "⚠️ CAUTION รอบนี้ไม่ได้มาจาก valuation แต่มาจาก 2 เหตุการณ์ binary ที่ใกล้เข้ามามาก: SpaceX จะรายงานงบไตรมาสแรกในฐานะบริษัทมหาชน 4 ส.ค. 2026 (อีก 2 วัน) และวันนี้เป็นตัวจุดชนวนให้หุ้นล็อกก้อนแรก (~911.5M หุ้น ~20% ของหุ้นที่ถูกล็อก มูลค่า ~$123B ที่ราคาปัจจุบัน) เริ่มขายได้ตั้งแต่ 6 ส.ค. (อีก 4 วัน) — ทั้งสองเหตุการณ์เคยรู้อยู่แล้วเชิงหลักการ แต่ตอนนี้ใกล้จริงและอาจแกว่งราคาแรงได้ทั้ง 2 ทาง",
+        "Speculative tier ยังห้ามไล่ราคา/STARTER อยู่ดี ไม่ว่า MoS จะดีขึ้นแค่ไหน (ประเด็นนี้ moot รอบนี้เพราะ action ยังเป็น WATCH ทั้งคู่)"
       ],
-      "review_date": "2026-07-27"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "WATCH — บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI). ราคาไหลลงต่อ -15.4% เป็น $115.07 ต่ำกว่าราคา IPO ($135) และแตะ Base FV ($114) พอดี — lockup-unlock overhang (เริ่มปลด ~ปลาย ก.ค.→ต.ค.) กำลังเล่นตัว ไม่ใช่ปัญหาพื้นฐาน (Starlink 63% EBITDA margin + Anthropic deal ยัง intact). MoS vs Base FV ดีขึ้นมาก (-0.9%) แต่ยัง fail gate 15%. Charlie CAUTION FV $96 (gap 16%) — Speculative tier = no pay-up, no STARTER.",
+    "idea_th": "WATCH — บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI). ราคาไหลต่อเนื่อง -5.8% เป็น $108.37 ต่ำกว่า Base FV $114 เป็นครั้งแรก MoS พลิกเป็นบวก +4.94% (จาก -0.9%) แต่ยัง fail gate 15%. consensus EPS FY28 (ปีแรกกำไร) ปรับขึ้นจริง +16.7% ($3.00→$3.50) ทำให้ Charlie FV ขยับตามเป็น $112 — gap กับ Warren ปิดเหลือแค่ 1.8% ทั้งคู่เห็นตรงกันเรื่องมูลค่าแล้ว. ⚠️ แต่ CAUTION รอบนี้มาจาก event risk ไม่ใช่ valuation: SpaceX รายงานงบไตรมาสแรกในฐานะบริษัทมหาชน 4 ส.ค. + lockup ปลดล็อกก้อนแรก (~$123B) เริ่ม 6 ส.ค. — 2 catalyst binary ใกล้มาก. Speculative tier = no pay-up, no STARTER",
     "story_gate_th": {
       "what": "SpaceX รวม 3 ธุรกิจ: Space (Falcon 9 ครองการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink 10.3M สมาชิก, margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok)",
-      "why": "ราคา $115.07 ต่ำกว่า IPO $135 และแตะ Base FV $114 พอดี — MoS -0.9% ดีขึ้นมากจากรอบก่อนแต่ยัง fail gate 15% (ต้อง <=~$97). Charlie FV $96 (FY28 first-profit $3 × 32x) ต่ำกว่า Warren $114 gap 16%. Speculative tier = ไม่ไล่ราคา ไม่ STARTER แม้ MoS จะดีขึ้น",
-      "risk": "AI segment burn ($6.4B op loss 2025); Starship ยังไม่ commercialized; หนี้พันธบัตร $20B+; lockup unlock overhang (ปลาย ก.ค.→ต.ค.); Musk key-man + dual-class 82.4% voting; ARPU ลด $99→$66"
+      "why": "ราคาไหลต่อเนื่องเป็น $108.37 ต่ำกว่า Base FV $114 ครั้งแรก MoS พลิกเป็นบวก +4.94% consensus EPS FY28 ปรับขึ้นจริง +16.7% ทำให้ Charlie FV ขยับตามเป็น $112 (gap เหลือ 1.8%) ทั้งคู่เห็นตรงกันเรื่องมูลค่าแล้ว — แต่ยังไม่ผ่านเกณฑ์ 15% และ Speculative tier ไม่ไล่ราคา",
+      "risk": "AI segment burn ($6.4B op loss 2025); Starship ยังไม่ commercialized; หนี้พันธบัตร $20B+; ⚠️ 2 catalyst binary ใกล้มาก: งบไตรมาสแรกในฐานะบริษัทมหาชน (4 ส.ค.) + lockup unlock ก้อนแรก ~$123B (6 ส.ค.); Musk key-man + dual-class 82.4% voting; ARPU ลด $99→$66"
     },
     "bull_th": [
-      "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก (+105% YoY), Connectivity Adj EBITDA margin 63%",
-      "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้ (~82% การปล่อยยานเชิงพาณิชย์โลก)",
-      "ราคาไหลลงแตะ Base FV $114 — MoS ดีขึ้นชัดจากรอบก่อน (-19.4%→-0.9%)",
-      "Optionality: Starship + AI compute วงโคจร + direct-to-cell (7.4M อุปกรณ์)"
+      "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก, Connectivity Adj EBITDA margin 63%",
+      "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้",
+      "ราคาต่ำกว่า Base FV เป็นครั้งแรก — MoS พลิกเป็นบวก +4.94% (จาก -0.9%)",
+      "consensus EPS FY28 ปรับขึ้นจริง +16.7% — Charlie FV ขยับตามใกล้ Warren มากขึ้น (gap เหลือ 1.8%)",
+      "Optionality: Starship + AI compute วงโคจร + direct-to-cell"
     ],
     "risk_th": [
-      "Speculative tier = no pay-up, no STARTER; MoS -0.9% ยัง fail gate 15% (ต้อง <=~$97)",
-      "Charlie FV $96 (FY28 first-profit $3 × 32x) ต่ำกว่า Warren $114 (gap 16%)",
-      "lockup-unlock overhang (ปลาย ก.ค.→ต.ค.) = แรงกดปริมาณหุ้น",
+      "⚠️ 2 catalyst binary ใกล้มาก: งบไตรมาสแรกในฐานะบริษัทมหาชน (4 ส.ค.) + lockup unlock ก้อนแรก ~$123B (6 ส.ค.) — อาจแกว่งราคาแรงทั้ง 2 ทาง",
+      "Speculative tier = no pay-up, no STARTER; MoS +4.94% ยัง fail gate 15%",
       "AI segment burn ($6.4B op loss 2025); Starship ยังไม่ commercialized; หนี้ $20B+",
-      "Musk key-man + dual-class 82.4% voting; ARPU ลด $99→$66"
+      "Musk key-man + dual-class 82.4% voting; ARPU ลด $99→$66",
+      "lockup unlock ต่อเนื่องถึง ต.ค. 2026 = แรงกดปริมาณหุ้นระยะยาว"
     ]
   },
   "GOOGL": {
@@ -2021,7 +2029,7 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) แต่หุ้น -11% จาก capex/FCF-negative shock — FV rebased $376→$311 (ตัด GAAP EPS ที่เฟ้อ), ที่ราคา $319.74 MoS -2.8% → WATCH",
+      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
       "what": "Alphabet ทำ Search + YouTube + Google Cloud + AI (Gemini, TPU) + Waymo — รายได้หลักจากโฆษณา + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
       "why_invest": [
         "Cloud +82% YoY + backlog $514B = Cloud re-accelerate จริง",
@@ -2029,43 +2037,45 @@
         "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA — revenue stream ใหม่"
       ],
       "watch_out": [
-        "งบ Q2 (07-22): CapEx guide $195-205B + FCF margin 21%→9.2% (FCF ติดลบครั้งแรก -$5.9B) + $811B commitments + $49.6B equity raise + buyback halt",
-        "FV rebased $376→$311 (เดิมใช้ GAAP EPS ~$13.9 ที่เฟ้อจาก equity gains → clean FY27 consensus $11.53 × 27x); ที่ราคา $319.74 MoS -2.8%",
+        "ราคาวิ่งขึ้น $319.74→$356.13 (+11.4%) ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว (broad mega-cap rally) ขณะ FV Base $311 ยังไม่ขยับ ดัน MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
+        "PEG 2.81 (เกิน cap 1.5 ไปมาก), ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10% — แพ้ QQQM ธรรมดา",
+        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20 ต่างกัน 10.4%) เลือกใช้ตัวต่ำกว่าแบบ conservative — FV อิสระ $277 (gap 10.9%), MoS อิสระ -28.6% ลึกกว่า Warren อีก",
         "DOJ Search + Ad Tech antitrust ยังไม่จบ"
       ],
-      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — แต่ Q2 ยืนยัน capital-intensity shock ทำให้ FV rebased ลงและราคาแซง MoS แล้ว (MoS -2.8%). Charlie AGREE FV $301. WATCH รอ pullback หรือ FCF ฟื้น"
+      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — แต่ราคาวิ่งไปไกลกว่า FV มากขึ้นเรื่อยๆ โดยไม่มีปัจจัยพื้นฐานใหม่รองรับ MoS ทรุดลึกทั้งฝั่ง Warren (-14.51%) และ Charlie (-28.6%) Charlie AGREE ทิศทาง WATCH ต่อเนื่อง รอ pullback หรือ EPS consensus ยืนยันก่อน"
     },
     "mark_full": {
       "business_overview": "รายได้หลักจากโฆษณา (Search + YouTube) + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
       "tam": "Search + cloud + AI + TPU compute สาธารณะใหม่ + autonomous (Waymo) เป็น optionality หลายชั้น",
-      "moat": "data + distribution + full-stack AI + Cloud backlog $460B+ visibility",
-      "latest_financials": "Q2 FY2026 (07-22): revenue $119.8B +24% (beat), Google Cloud $24.8B +82%, backlog $514B (+$50B QoQ); แต่ CapEx guide ยกเป็น $195-205B, FCF margin ยุบ 21%→9.2% (ไตรมาส FCF ติดลบครั้งแรก -$5.9B), $811B purchase commitments, $49.6B equity raise, buyback halted",
+      "moat": "data + distribution + full-stack AI + Cloud backlog $514B+ visibility",
+      "latest_financials": "Q2 FY2026 (07-22): revenue $119.8B +24% (beat), Google Cloud $24.8B +82%, backlog $514B (+$50B QoQ); CapEx guide ยกเป็น $195-205B, FCF -47% YoY",
       "key_points": [
         "Cloud +82% + backlog $514B = Cloud re-accelerate จริง; TPU เป็นธุรกิจ compute สาธารณะ",
-        "capital-intensity shock: CapEx >$200B + FCF ติดลบชั่วคราว + $811B commitments ยกเลิกยาก",
-        "FV rebased $376→$311: เดิมใช้ GAAP EPS ~$13.9 ที่เฟ้อจาก one-time equity gains → clean FY27 consensus $11.53 × 27x",
+        "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally, ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกลงเรื่อยๆ",
+        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) ยังไม่ reconcile",
+        "capital-intensity shock: CapEx >$200B + FCF ติดลบ + $811B commitments ยกเลิกยาก",
         "DOJ Search + Ad Tech antitrust + equity-raise dilution + buyback halt เป็น overhang"
       ]
     },
     "warren_easy": [
-      "GOOGL tier Inevitable WAF 7.4 — Search 90%, Cloud +82% (backlog $514B), TPU full-stack; moat ยังครบ",
-      "REVISE รอบใหญ่หลัง Q2: FV rebased $376→$311 (ตัด GAAP EPS ที่เฟ้อจาก one-time equity gains, คิดใหม่บน clean FY27 consensus $11.53 × 27x); RA/VA ลดจาก FCF-negative + capex shock",
-      "WATCH — ที่ราคา $319.74 MoS -2.8%, ER 10.45%/ปี ต่ำกว่า gate 15%"
+      "GOOGL tier Inevitable WAF 7.02 — Search 90%, Cloud +82% (backlog $514B), TPU full-stack; moat ยังครบ ไม่มีข่าวเฉพาะตัวรอบนี้",
+      "ราคาวิ่งต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ล้วนๆ ขณะ FV Base ยังคง $311 (ไม่มี consensus ใหม่มายืนยันให้ปรับขึ้น) → MoS ทรุดจาก -2.81% เป็น -14.51%, PEG 2.81, ER เหลือ 8.33%/ปี",
+      "WATCH ต่อเนื่อง — ไม่ถือ, ธุรกิจดีแต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ยืนยันการ rebase FV: consensus Dec2026 $14.34 / Dec2027 $14.93 สูงกว่า Warren cleaned EPS $11.53 (เพราะ Warren ตัด one-time equity gains ออก — conservative กว่า). Charlie FV บน near-yr consensus $14.34 × 21x (conservative จาก capex/FCF-negative shock) = $301 ใกล้ Warren $311 (gap 3.2%)",
-        "งบ Q2 (07-22): Cloud +82%, backlog $514B แข็ง แต่ CapEx guide $195-205B + FCF margin 21%→9.2% ยืนยัน capital-intensity shock; Charlie FV $301 ≈ ราคา $320 → fairly-to-slightly-rich ตรงกับ Warren WATCH",
-        "ความเสี่ยงหลัก: DOJ Search remedy + Ad-Tech divestiture overhang + equity-raise dilution + buyback halt; FCF ติดลบเป็น capex-cycle choice ไม่ใช่ structural break — moat ยังครบ"
+        "Charlie เห็นด้วยทิศทาง WATCH — ยืนยันงบ Q2 (07-22): revenue $119.8B +24% beat, Cloud +82%, CapEx guide $195-205B, FCF -47% YoY ล้วนตรงกับที่ Warren รายงาน ไม่มีข้อเท็จจริงใหม่นอกจากค่าปรับ EU DMA ที่รู้อยู่แล้ว",
+        "จุดที่ Charlie เจอใหม่: ตัวเลข EPS คาดการณ์จาก 2 แหล่งไม่ตรงกัน — Nasdaq consensus Dec2027 $14.73 vs CNBC forward EPS $13.20 ต่างกันถึง 10.4% (เกิน tolerance 2%) เลือกใช้ตัวที่ต่ำกว่า ($13.20) ตามกฎ conservative ได้ FV อิสระ $277 × 21x = ห่างจาก Warren $311 อยู่ 10.9%",
+        "บน FV Charlie $277 ราคา $356.13 ให้ MoS -28.6% ลึกกว่าตัวเลข Warren เองอีก (-14.51%) — สรุปตรงกันทั้งคู่ว่ายังแพงไป ไม่ใช่จังหวะซื้อ ต้องรอ EPS consensus reconcile ก่อนถึงจะพิจารณาใหม่"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "WATCH — full re-analysis หลังงบ Q2 FY26 (07-22): revenue $119.8B +24% beat, Cloud +82%, backlog $514B — แต่หุ้น -11% เพราะ CapEx guide ยกเป็น $195-205B + FCF margin ยุบ 21%→9.2% (ไตรมาส FCF ติดลบครั้งแรก -$5.9B) + $811B purchase commitments + $49.6B equity raise (dilution) + buyback halt. FV rebased $376→$311 (เดิมใช้ GAAP EPS ~$13.9 ที่เฟ้อจาก one-time equity gains → คิดใหม่บน clean FY27 consensus $11.53 × 27x). ที่ราคา $319.74 MoS -2.8%, ER 10.45%/ปี ต่ำกว่า gate 15% → WATCH. Charlie AGREE FV $301 (gap 3.2%).",
+    "idea_th": "WATCH ต่อเนื่อง — ราคาวิ่งขึ้นต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ไม่มีข่าวเฉพาะตัว GOOGL ขณะที่ FV Base ยังคง $311 (ยังไม่มี consensus ใหม่มายืนยันให้ปรับ) ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 (เกิน cap มาก), ER เหลือ 8.33%/ปี (ต่ำกว่าเกณฑ์ 10%). Charlie AGREE ทิศทาง พบ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20) เลือกใช้ตัวต่ำกว่าแบบอนุรักษ์นิยม ได้ FV อิสระ $277 (gap 10.9%) MoS อิสระ -28.6% ลึกกว่า Warren อีก — ธุรกิจยังดี (Cloud +82%, backlog $514B) แต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ ไม่ใช่จังหวะซื้อ",
     "story_gate_th": {
       "what": "Alphabet = Search 90% + YouTube + Google Cloud (+82%, backlog $514B) + full-stack AI (Gemini/TPU) + Waymo; moat Inevitable ยังครบ",
-      "why": "งบ Q2 beat แต่ตลาด repricing capital intensity: CapEx $195-205B, FCF margin 21%→9.2% (ติดลบครั้งแรก -$5.9B), $811B commitments, $49.6B equity raise, buyback halt. FV rebased $376→$311 (ตัด GAAP EPS ที่เฟ้อจาก equity gains ออก คิดใหม่บน clean consensus). ที่ราคา $319.74 MoS -2.8% → fairly-to-slightly-rich",
-      "risk": "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture; capital-intensity shock (FCF ติดลบ, CapEx >$200B, $811B commitments ยกเลิกยากถ้า AI monetization ช้า); equity-raise dilution + buyback halt; AI-search disruption"
+      "why": "งบ Q2 beat จริง (revenue +24%, Cloud +82%) แต่ราคาวิ่งขึ้นต่อ +11.4% ในรอบสัปดาห์จาก broad AI rally ไม่ใช่ข่าวเฉพาะตัว ขณะ FV Base ยังคง $311 ไม่มี consensus ใหม่มายืนยัน ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 เกิน cap, ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
+      "risk": "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture; capital-intensity shock (FCF ติดลบ, CapEx >$200B, $811B commitments); equity-raise dilution + buyback halt; EPS คาดการณ์ 2 แหล่งไม่ตรงกันยังไม่ reconcile"
     },
     "bull_th": [
       "Cloud +82% YoY + backlog $514B (+$50B QoQ) = Cloud re-accelerate จริง",
@@ -2074,11 +2084,11 @@
       "Search 90% + revenue $119.8B +24% beat"
     ],
     "risk_th": [
-      "Capital-intensity shock: CapEx $195-205B + FCF margin 21%→9.2% (ไตรมาส FCF ติดลบครั้งแรก -$5.9B) + $811B purchase commitments",
-      "$49.6B equity raise = dilution + buyback halt",
-      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang",
-      "ที่ราคา $319.74 MoS -2.8%, ER 10.45%/ปี ต่ำกว่า gate 15%",
-      "GAAP EPS ผันผวนจาก equity gains — ต้องใช้ clean consensus ประเมิน"
+      "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
+      "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) — FV อิสระ $277 ให้ MoS -28.6% ลึกกว่า Warren อีก",
+      "PEG 2.81 เกิน cap 1.5 มาก; ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
+      "Capital-intensity shock: CapEx $195-205B + FCF -47% YoY + $811B purchase commitments",
+      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang"
     ]
   },
   "AAPL": {
@@ -2609,7 +2619,7 @@
       "review_date": "2026-08-02"
     },
     "mark_easy": {
-      "one_liner": "รถ EV + พลังงาน + AI + หุ่นยนต์ — งบ Q2 2026 (22 ก.ค.) ยืนยัน bear thesis: op margin เหลือ 1.4%, กำไรอุ้มด้วย SpaceX related-party gain; ราคา $313.03 ยัง fail MoS -84%",
+      "one_liner": "รถ EV + พลังงาน + AI + หุ่นยนต์ — ราคาแทบทรงตัว $311.21 แต่ consensus EPS FY27 ถูกหั่นลง -20.7% (ของใหม่รอบนี้) ทำให้ Charlie FV อิสระร่วงจาก $104 เหลือ $83 ช่องว่างกับ Warren ถ่างจาก 39% เป็น 51.2%",
       "what": "Tesla มี 2 กลุ่มธุรกิจหลัก: Automotive (รถยนต์ไฟฟ้า Model 3/Y/S/X/Cybertruck + บริการ Robotaxi + FSD subscription) และ Energy (Megapack/Powerwall/Solar) — กำลังเปลี่ยนตัวเองเป็นบริษัท 'Physical AI' ผ่าน FSD, Robotaxi, และหุ่นยนต์ Optimus",
       "why_invest": [
         "Services & Other โต +42% YoY = สัดส่วนรายได้ margin สูงกำลังเพิ่มขึ้น",
@@ -2618,55 +2628,57 @@
         "เครือข่าย Supercharger ใหญ่สุดในโลก (มาตรฐาน NACS)"
       ],
       "watch_out": [
-        "งบ Q2 2026 ยืนยันคุณภาพกำไรตก: op income -57%, op margin 1.4%, auto GM ex-credit 16.3%, FCF -$1.1B",
-        "GAAP NI $1.1B ถูกอุ้มด้วย SpaceX related-party unrealized gain $1.0B (หักออกเหลือ ~ศูนย์)",
-        "Charlie CAUTION FV $104 (gap 39%); Fwd P/E ~146-180x แทบไม่มี margin for error"
+        "⚠️ ใหม่รอบนี้: consensus FY27 EPS ถูกหั่นลง -20.7% ($1.74→$1.38, 7 down/2 up) — เป็นการปรับประมาณการจริง ไม่ใช่ noise",
+        "Charlie FV อิสระร่วงตามจาก $104 เหลือ $83 (แม้ใช้ multiple 60x เดิม); gap กับ Warren $170 ถ่างจาก 39% เป็น 51.2%",
+        "แม้บน multiple 60x ที่ generous ของ Charlie เอง MoS ก็ยัง -274.9% — ไม่ใช่กรณีก้ำกึ่ง",
+        "fwd P/E ขยับขึ้นเป็น ~225x บน EPS ใหม่ที่ต่ำลง — valuation support แย่ลงเรื่อยๆ สวนทางกับ re-rating thesis"
       ],
-      "bottom_line": "งบ Q2 2026 ยืนยัน bear thesis คุณภาพกำไรตกชัด (op margin 1.4%, กำไรอุ้มด้วย related-party gain) — ราคายัง fail MoS -84% ลึกมาก, Charlie FV $104 ต่ำกว่าราคา ~3 เท่า. WATCH ราคาแพงเทียบกำไรจริงมาก"
+      "bottom_line": "ราคาทรงตัวแต่พื้นฐานแย่ลงจริงรอบนี้ — consensus ปรับ EPS ลง -20.7% ยืนยัน bear thesis ต่อ ราคายัง fail MoS ลึกมาก (-83%), Charlie FV ยิ่งต่ำลงเหลือ $83. WATCH ราคาแพงเทียบกำไรจริงมาก"
     },
     "mark_full": {
-      "business_overview": "Tesla รายงาน 2 กลุ่มธุรกิจ: Automotive (รถยนต์ไฟฟ้า Model 3/Y/S/X/Cybertruck, บริการ Robotaxi เปิดตัว มิ.ย. 2025, FSD subscription) และ Energy Generation and Storage (Megapack, Powerwall, Solar) Q1 2026 รายได้รวม $22.4B +16% YoY นำโดย Automotive +16% และ Services & Other +42%",
+      "business_overview": "Tesla รายงาน 2 กลุ่มธุรกิจ: Automotive (รถยนต์ไฟฟ้า Model 3/Y/S/X/Cybertruck, บริการ Robotaxi เปิดตัว มิ.ย. 2025, FSD subscription) และ Energy Generation and Storage (Megapack, Powerwall, Solar)",
       "tam": "Robotaxi และ Optimus เป็นโอกาสตลาดขนาดใหญ่มากที่ยังไม่พิสูจน์ — Musk เชื่อว่า 90% ของระยะทางที่คนขับมีคนนั่งแค่ 1-2 คน ทำให้ Cybercab จะเป็นยานพาหนะหลักระยะยาว; Optimus มีโรงงาน 2 แห่งกำลังสร้างกำลังผลิตรวมถึง 11 ล้านตัว/ปี",
-      "moat": "ข้อมูลการขับขี่จริงจากฝูงรถกว่า 9.2 ล้านคันทั่วโลกฝึกโครงข่ายประสาทเทียมต่อเนื่อง (real-world AI data flywheel); ควบคุมการผลิตเองลึกกว่าคู่แข่ง (แบตเตอรี่ 4680, ชิป AI4/AI5, โรงกลั่นลิเธียม); เครือข่าย Supercharger ใหญ่ที่สุดในโลก (8,463 สถานี) ที่ผู้ผลิตรถรายอื่นเริ่มใช้มาตรฐาน NACS ร่วมด้วย",
-      "latest_financials": "Q2 2026 (22 ก.ค.): op income -57% YoY เหลือ $398M (op margin 1.4%); GAAP NI $1.1B (อุ้มด้วย SpaceX related-party unrealized gain $1.0B); reg credits -67% YoY; FCF -$1.1B; auto GM ex-credit 19.2%→16.3%; CapEx >$25B + กู้ถึง $30B; FY27 consensus EPS $1.74 (TTM actual $0.90)",
+      "moat": "ข้อมูลการขับขี่จริงจากฝูงรถหลายล้านคันทั่วโลกฝึกโครงข่ายประสาทเทียมต่อเนื่อง (real-world AI data flywheel); ควบคุมการผลิตเองลึกกว่าคู่แข่ง (แบตเตอรี่ 4680, ชิป AI4/AI5); เครือข่าย Supercharger ใหญ่ที่สุดในโลกที่ผู้ผลิตรถรายอื่นเริ่มใช้มาตรฐาน NACS ร่วมด้วย",
+      "latest_financials": "Q2 2026 (22 ก.ค.): op income -57% YoY (op margin 1.4%); GAAP NI อุ้มด้วย SpaceX related-party unrealized gain $1.0B; FCF -$1.1B; auto GM ex-credit 19.2%→16.3%; consensus FY27 EPS ถูกหั่นลง -20.7% รอบนี้เหลือ $1.38 (TTM actual $1.00)",
       "key_points": [
         "งบ Q2 2026 (22 ก.ค.) ยืนยัน bear thesis: op margin 1.4%, auto GM ex-credit ตกเหลือ 16.3%",
+        "⚠️ consensus FY27 EPS ถูกหั่นลง -20.7% รอบนี้ (7 down/2 up) — genuine negative revision ไม่ใช่ noise",
         "GAAP NI ถูกอุ้มด้วย SpaceX related-party unrealized gain $1.0B — earnings quality poor",
         "Robotaxi ขยายหลายเมืองแต่ยังมีคนคุมความปลอดภัย/จำกัดพื้นที่",
-        "Charlie FV $104 (consensus $1.74 × 60x) ต่ำกว่า Warren $170 (gap 39%) และต่ำกว่าราคามาก"
+        "Charlie FV ร่วงตาม consensus ที่ลดลง เหลือ $83 (เดิม $104) ห่างจาก Warren $170 มากขึ้นเป็น 51.2%"
       ]
     },
     "warren_easy": [
-      "TSLA tier Speculative WAF 4.73 (<LOW) — งบ Q2 2026 ยืนยัน bear thesis: op income -57%, op margin 1.4%, auto GM ex-credit 19.2%→16.3%",
-      "ราคา $313.03 fail ลึก MoS -84.14% (Base FV $170, fwd P/E 146x); BQ 6.0→5.5, RA 4.5→4.0 จากคุณภาพกำไรตก",
-      "WATCH — ER +17.4% ผ่านเชิงกลไกแต่ไม่น่าเชื่อถือ (growth 28.9% เฟ้อจากฐานต่ำ); ใช้ MoS/WAF ตัดสิน"
+      "TSLA tier Speculative WAF 4.72 (<LOW, ไม่เปลี่ยน) — ราคาแทบทรงตัว $313.03→$311.21 (-0.6%) ไม่มีข่าวใหม่เฉพาะตัว",
+      "MoS ยัง fail ลึก -83.06% (Base FV $170, fwd P/E 145x); ER คำนวณได้ 17.51%/ปี แต่ไม่น่าเชื่อถือ (growth เฟ้อจากฐานต่ำ + Q2 ยืนยัน margin หด) ตามกฎไม่ให้ ER มา override MoS ที่ fail",
+      "WATCH ต่อเนื่อง — ใช้ MoS/WAF ตัดสินไม่ใช่ ER"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยันงบ Q2 2026: op income -57% YoY, op margin 1.4%, FCF -$1.1B, auto GM ex-credit 19.2%→16.3% — และชี้ว่า GAAP NI $1.1B ถูกอุ้มด้วย SpaceX related-party unrealized gain $1.0B (หักออก pretax ~ศูนย์) = earnings quality poor",
-        "Charlie คำนวณ FV อิสระบน consensus FY27 $1.74 × 60x (growth premium, ยัง generous สำหรับ auto ที่ margin หด) = $104 — ต่ำกว่า Warren $170 (gap 39%) และต่ำกว่าราคา $313.03 มาก; Warren เองก็ generous (implies ~98x on FY27 EPS)",
-        "Fwd P/E ~146-180x แทบไม่มี margin for error; robotaxi/Optimus optionality ไม่รวมใน FV — ที่ราคานี้ตลาด price-in ความสำเร็จไปมากแล้ว"
+        "⚠️ ของใหม่จริงรอบนี้ (ไม่ใช่แค่ carry): consensus FY27 EPS ถูกหั่นลง -20.7% จาก $1.74 เหลือ $1.38 (15 นักวิเคราะห์, 7 ปรับลง/2 ปรับขึ้น) — เป็นการปรับประมาณการเชิงลบชัดเจน สอดคล้องกับงบ Q2 ที่ op income -57%, op margin เหลือ 1.4%, auto GM ex-credit ร่วงเหลือ 16.3%",
+        "Charlie คำนวณ FV อิสระใหม่บน consensus ที่ต่ำลง: $1.38 × 60x (multiple generous เดิม) = $83 (จากเดิม $104) — gap กับ Warren $170 ถ่างจาก 38.8% เป็น 51.2%; ทั้งคู่ต่ำกว่าราคา $311.21 มาก",
+        "Reverse DCF: แม้ใช้ multiple 60x ของ Charlie เอง ตลาดต้องการ ~14.3%/ปี EPS growth ต่อเนื่อง 10 ปีถึงจะ justify ราคาวันนี้ — เป็นเกณฑ์ที่หนักมากสำหรับบริษัทที่เพิ่งโดนหั่น estimate ลงและ margin กำลังหดตัว"
       ],
-      "review_date": "2026-07-25"
+      "review_date": "2026-08-02"
     },
-    "idea_th": "WATCH — รถ EV + พลังงาน + AI + หุ่นยนต์. งบ Q2 2026 (22 ก.ค.) ยืนยัน bear thesis: op income -57% YoY เหลือ $398M (op margin 1.4%), GAAP NI $1.1B อุ้มด้วย SpaceX related-party unrealized gain $1.0B (หักออกเหลือ ~ศูนย์), reg credits -67%, FCF -$1.1B, auto GM ex-credit 19.2%→16.3%. ราคา $313.03 ยัง fail ลึก MoS -84% (Base FV $170, fwd P/E 146x). Charlie CAUTION FV $104 (gap 39%) — คุณภาพกำไรตกชัด, BQ/RA ลดลง. ราคาแพงเทียบกำไรจริงมาก.",
+    "idea_th": "WATCH — รถ EV + พลังงาน + AI + หุ่นยนต์. ราคาแทบทรงตัว $313.03→$311.21 (-0.6%) ไม่มีข่าวใหม่เฉพาะตัว แต่ ⚠️ consensus FY27 EPS ถูกหั่นลง -20.7% รอบนี้ ($1.74→$1.38) สอดคล้องกับ Q2 ที่ op income -57%, op margin 1.4%, auto GM ex-credit ร่วงเหลือ 16.3%. ราคายัง fail ลึก MoS -83.06% (Base FV $170). Charlie FV อิสระร่วงตามเหลือ $83 (จาก $104) — gap กับ Warren ถ่างจาก 39% เป็น 51.2%, แม้บน multiple 60x ของ Charlie เอง MoS ก็ยัง -274.9% ไม่ใช่กรณีก้ำกึ่ง. ราคาแพงเทียบกำไรจริงมาก",
     "story_gate_th": {
       "what": "Tesla มี 2 กลุ่ม: Automotive (EV Model 3/Y/S/X/Cybertruck + Robotaxi + FSD) และ Energy (Megapack/Powerwall); กำลังเปลี่ยนเป็น Physical AI ผ่าน FSD/Robotaxi/Optimus",
-      "why": "งบ Q2 2026 ยืนยันคุณภาพกำไรตก: op income -57%, op margin 1.4%, GAAP NI อุ้มด้วย SpaceX related-party gain, auto GM ex-credit ลดเหลือ 16.3%. ราคา $313.03 ยัง fail MoS -84% (Base FV $170); Charlie FV $104 ยิ่งต่ำ — ราคาแพงเทียบกำไรจริงมาก (fwd P/E 146x)",
-      "risk": "Fwd P/E ~146-180x แทบไม่มี margin for error; core auto profitability พึ่ง discount; earnings quality พึ่ง related-party SpaceX mark-up; FCF ติดลบ 2-3 ปี + leverage เพิ่ม; Musk key-man; robotaxi/Optimus ยัง sub-scale"
+      "why": "ราคาทรงตัวแต่พื้นฐานแย่ลง: consensus FY27 EPS ถูกหั่นลง -20.7% รอบนี้ สอดคล้องกับ Q2 op margin เหลือ 1.4%, auto GM ex-credit 16.3%. ราคา $311.21 ยัง fail MoS -83% (Base FV $170); Charlie FV ร่วงตามเหลือ $83 — ราคาแพงเทียบกำไรจริงมาก (fwd P/E ~225x)",
+      "risk": "Fwd P/E ~225x แทบไม่มี margin for error; core auto profitability พึ่ง discount; earnings quality พึ่ง related-party SpaceX mark-up; FCF ติดลบต่อเนื่อง; consensus EPS ถูกหั่นลงต่อเนื่อง (-20.7% รอบนี้); Musk key-man; robotaxi/Optimus ยัง sub-scale"
     },
     "bull_th": [
-      "ยอดส่งมอบยังโตและ Services & Other โต +42% YoY = สัดส่วนรายได้ margin สูงเพิ่มขึ้น",
+      "Services & Other โต +42% YoY = สัดส่วนรายได้ margin สูงเพิ่มขึ้น",
       "Optimus + Robotaxi เป็น optionality ขนาดใหญ่ถ้าสำเร็จ",
       "ข้อมูลการขับขี่จริงสะสมหลายพันล้านไมล์ = ความได้เปรียบด้าน AI data",
       "เครือข่าย Supercharger ใหญ่สุดในโลก (มาตรฐาน NACS)"
     ],
     "risk_th": [
+      "⚠️ consensus FY27 EPS ถูกหั่นลง -20.7% รอบนี้ ($1.74→$1.38) — ปรับประมาณการเชิงลบจริง ไม่ใช่ noise",
       "งบ Q2 2026 ยืนยัน bear thesis: op income -57%, op margin 1.4%, FCF -$1.1B, auto GM ex-credit 16.3%",
-      "GAAP NI อุ้มด้วย SpaceX related-party unrealized gain $1.0B — earnings quality poor",
-      "ราคา $313.03 fail MoS -84% (Base FV $170); Charlie FV $104 (gap 39%); fwd P/E ~146-180x",
-      "reg credits -67% YoY; CapEx >$25B + กู้ถึง $30B; FCF ติดลบ 2-3 ปี",
+      "ราคา $311.21 fail MoS -83% (Base FV $170); Charlie FV ร่วงตามเหลือ $83 (gap 51.2%, ถ่างจาก 39%)",
+      "fwd P/E ~225x บน EPS ที่ต่ำลง — valuation support แย่ลงสวนทาง re-rating thesis",
       "Musk key-man; robotaxi/Optimus ยัง sub-scale"
     ]
   }
