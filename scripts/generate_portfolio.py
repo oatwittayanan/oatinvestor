@@ -75,24 +75,26 @@ def get_sheets_service():
     return build("sheets", "v4", credentials=creds)
 
 def read_tab(svc, tab: str) -> list[list[str]]:
+    # Read through AN: deposit log lives in AI:AL, past the old Z cutoff.
     res = svc.spreadsheets().values().get(
-        spreadsheetId=SHEET_ID, range=f"'{tab}'!A1:Z100"
+        spreadsheetId=SHEET_ID, range=f"'{tab}'!A1:AN100"
     ).execute()
     rows = res.get("values", [])
     out = []
     for row in rows:
         padded = [clean(c) for c in row]
-        while len(padded) < 26:
+        while len(padded) < 40:
             padded.append("")
         out.append(padded)
     return out
 
 # ── Parse sheet ───────────────────────────────────────────────────
-def parse_holdings(rows: list) -> tuple[dict, list, list]:
-    """Returns (summary, holdings, transactions)."""
+def parse_holdings(rows: list) -> tuple[dict, list, list, list]:
+    """Returns (summary, holdings, transactions, deposits)."""
     summary = {}
     holdings = []
     transactions = []
+    deposits = []
 
     # Row 2 (index 1): summary totals
     if len(rows) > 1:
@@ -153,11 +155,26 @@ def parse_holdings(rows: list) -> tuple[dict, list, list]:
                     "total":  tx_total  or 0.0,
                 })
 
+        # Deposit log (col AI = index 34): date, USD, THB, rate
+        dep_date_raw = clean(row[34])
+        dep_usd      = to_float(row[35])
+        if dep_date_raw and dep_usd:
+            dd = parse_thai_date(dep_date_raw)
+            if dd:
+                deposits.append({
+                    "date": dd.isoformat(),
+                    "usd":  dep_usd,
+                    "thb":  to_float(row[36]) or 0.0,
+                    "rate": to_float(row[37]) or 0.0,
+                })
+
     transactions.sort(key=lambda x: x["date"])
-    return summary, holdings, transactions
+    deposits.sort(key=lambda x: x["date"])
+    return summary, holdings, transactions, deposits
 
 # ── Prices ────────────────────────────────────────────────────────
-def _fetch_prices_http(tickers: list[str], start: date) -> dict[str, dict[str, float]]:
+def _fetch_prices_http(tickers: list[str], start: date,
+                       adjusted: bool = True) -> dict[str, dict[str, float]]:
     """Yahoo Finance v8 direct HTTP — no yfinance dependency."""
     import time as _time
     import requests as _req
@@ -174,6 +191,10 @@ def _fetch_prices_http(tickers: list[str], start: date) -> dict[str, dict[str, f
                 data = r.json()
                 chart = data.get("chart", {}).get("result", [{}])[0]
                 closes = chart.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+                if adjusted:
+                    adj = chart.get("indicators", {}).get("adjclose", [{}])[0].get("adjclose", [])
+                    if adj:
+                        closes = adj
                 ts_list = chart.get("timestamp", [])
                 for ts_val, c in zip(ts_list, closes):
                     if c is not None and not (isinstance(c, float) and c != c):
@@ -186,11 +207,19 @@ def _fetch_prices_http(tickers: list[str], start: date) -> dict[str, dict[str, f
                 print(f"  [prices-http] {sym} {base}: {ex}")
     return result
 
-def fetch_prices(tickers: list[str], start: date) -> pd.DataFrame:
-    print(f"  [prices] {tickers} from {start}")
+def fetch_prices(tickers: list[str], start: date, adjusted: bool = True) -> pd.DataFrame:
+    """
+    adjusted=True  → total-return prices (dividends folded into the price).
+                     Used for VOO/QQQM benchmarks = dividends auto-reinvested.
+    adjusted=False → raw market prices. Used for the portfolio's own holdings,
+                     because their dividends are already counted as received
+                     cash (DIV rows); adjusted prices would double-count them.
+    """
+    kind = "adjusted" if adjusted else "raw"
+    print(f"  [prices/{kind}] {tickers} from {start}")
     # Try 1: yfinance
     try:
-        raw = yf.download(tickers, start=str(start), progress=False, auto_adjust=True)
+        raw = yf.download(tickers, start=str(start), progress=False, auto_adjust=adjusted)
         prices = raw["Close"] if "Close" in raw.columns else raw
         if isinstance(prices, pd.Series):
             prices = prices.to_frame(name=tickers[0])
@@ -203,7 +232,7 @@ def fetch_prices(tickers: list[str], start: date) -> pd.DataFrame:
         print(f"  [prices] yfinance failed ({e}), trying HTTP …")
 
     # Try 2: Yahoo v8 direct HTTP
-    http_data = _fetch_prices_http(tickers, start)
+    http_data = _fetch_prices_http(tickers, start, adjusted=adjusted)
     all_dates = sorted(set(dt for sym in http_data.values() for dt in sym.keys()))
     if all_dates:
         idx = pd.to_datetime(all_dates)
@@ -219,143 +248,151 @@ def fetch_prices(tickers: list[str], start: date) -> pd.DataFrame:
     return pd.DataFrame()
 
 # ── Build history ─────────────────────────────────────────────────
-def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0.0,
+def build_history(transactions: list, benchmark_tickers: list[str],
+                  deposits: list | None = None,
                   holdings: list | None = None) -> dict:
     """
-    Build daily portfolio value vs benchmarks.
-    - Starts from first non-CASH transaction date (fully invested day).
-    - CASH transactions pre-load portfolio cash AND invest in benchmarks.
-    - benchmark_tickers[0] is primary, rest secondary.
+    Total-portfolio model. Both sides answer the same question:
+    "every dollar transferred in — what is it worth today?"
+
+      portfolio(t) = Σ(shares × raw market price) + cash(t)
+      cash(t)      = deposits≤t − buys≤t + sells≤t + dividends received≤t
+      benchmark(t) = each deposit mirrored into VOO/QQQM on its own transfer
+                     date, priced total-return (dividends reinvested)
+
+    So idle cash, SGOV and received dividends all count on the portfolio side
+    with no special-casing — SGOV is simply another holding.
+
+    Portfolio holdings use RAW prices because their dividends are already
+    counted as received cash; adjusted prices would double-count them.
+
     - holdings (optional): current holdings used as a price fallback so a
       transient price-fetch failure for one ticker can't silently drop that
       position to $0 while its deployed capital still counts (phantom loss bug).
     """
-    if not transactions:
-        return {"dates": [], "portfolio": [], "summary": {}}
-
-    # Separate CASH deposits from stock/div transactions
-    cash_txs  = [t for t in transactions if t["ticker"] == "CASH"]
+    deposits = list(deposits or [])
+    # CASH rows in the transaction log are a running *balance*, not a cash flow.
+    # Cash is derived from deposits/buys/sells/divs here, so skip them entirely.
     stock_txs = [t for t in transactions if t["ticker"] != "CASH"]
 
-    if not stock_txs:
+    # Tabs without a deposit log fall back to the old proxy: treat each BUY as
+    # money arriving that day. Less accurate (idle cash is invisible) but keeps
+    # the chart working.
+    if not deposits:
+        print("  [history] ⚠️ no deposit log — falling back to BUY-as-deposit proxy")
+        deposits = [{"date": t["date"], "usd": t["total"]}
+                    for t in stock_txs if t["type"] == "BUY"]
+    if not deposits:
         return {"dates": [], "portfolio": [], "summary": {}}
 
-    # Start from first actual BUY (not DIV) — fair comparison baseline
-    first_buy = next((t for t in stock_txs if t["type"] == "BUY"), None)
-    if not first_buy:
-        return {"dates": [], "portfolio": [], "summary": {}}
-    first_stock_date = date.fromisoformat(first_buy["date"])
-
-    # Pre-load cash into portfolio (and invest in benchmarks on first stock date)
-    initial_cash = extra_cash + sum(t["total"] for t in cash_txs)
+    deposits.sort(key=lambda d: d["date"])
+    start_date = date.fromisoformat(deposits[0]["date"])
 
     stock_tickers = list(dict.fromkeys([t["ticker"] for t in stock_txs]))
-    all_tickers   = list(dict.fromkeys(stock_tickers + benchmark_tickers))
 
-    prices = fetch_prices(all_tickers, first_stock_date)
-    if prices.empty:
+    # Two price sets: raw for what Oat actually holds, total-return for benchmarks.
+    px_stock = fetch_prices(stock_tickers, start_date, adjusted=False) if stock_tickers else pd.DataFrame()
+    px_bm    = fetch_prices(benchmark_tickers, start_date, adjusted=True) if benchmark_tickers else pd.DataFrame()
+
+    if px_stock.empty and px_bm.empty:
         print("  [history] no price data")
         return {"dates": [], "portfolio": [], "summary": {}}
 
-    # Guard against phantom-loss bug: if a held stock's price history failed to
-    # download, it would contribute $0 to portfolio value while its deployed
-    # capital still counts in `deposited` → fake loss. Fall back to the holding's
-    # current price (flat series) so the position is always valued.
+    # Align both onto one trading calendar
+    if not px_stock.empty and not px_bm.empty:
+        idx = px_stock.index.union(px_bm.index)
+    else:
+        idx = px_stock.index if not px_stock.empty else px_bm.index
+    if not px_stock.empty:
+        px_stock = px_stock.reindex(idx).ffill()
+    if not px_bm.empty:
+        px_bm = px_bm.reindex(idx).ffill()
+
+    # Guard against phantom-loss bug: a held stock whose price history failed to
+    # download would contribute $0 while its capital still counts as deposited.
     cur_price = {}
     if holdings:
         cur_price = {h["ticker"].upper(): h["price"]
                      for h in holdings if h.get("price")}
-    unpriceable: set[str] = set()
+    frozen: set[str] = set()   # valued at cost instead of market
     for tk in stock_tickers:
-        has_px = tk in prices.columns and not prices[tk].dropna().empty
+        has_px = tk in px_stock.columns and not px_stock[tk].dropna().empty
         if not has_px:
             if cur_price.get(tk):
-                prices[tk] = float(cur_price[tk])
+                px_stock[tk] = float(cur_price[tk])
                 print(f"  [history] ⚠️ {tk}: price history missing — "
                       f"fallback to current price ${cur_price[tk]:.2f} (flat line)")
             else:
-                # No price AND no fallback → don't let its capital count, or the
-                # chart shows a phantom loss. Drop its deployed capital instead.
-                unpriceable.add(tk)
+                frozen.add(tk)
                 print(f"  [history] ⚠️ {tk}: no price and no fallback — "
-                      f"excluding its deployed capital to avoid phantom loss")
+                      f"holding it at cost to avoid phantom loss")
 
     bm_shares: dict[str, float] = {bm: 0.0 for bm in benchmark_tickers}
     port_shares: dict[str, float] = {}
-    # port_cash = CASH position (stays fixed, not depleted by stock buys)
-    port_cash = initial_cash
-    # total_deployed = all capital allocated (cash + stocks) = fair benchmark baseline
-    total_deployed = initial_cash
-    applied = set()
+    cash = 0.0           # uninvested cash inside the portfolio
+    frozen_value = 0.0   # cost basis of positions we cannot price
+    total_deposited = 0.0
 
     dates_out, port_vals = [], []
     bm_vals: dict[str, list] = {bm: [] for bm in benchmark_tickers}
     dep_totals = []
+    dep_i, applied = 0, set()
 
-    # Pre-invest initial cash in benchmarks at first-day price (fair comparison)
-    if initial_cash > 0 and not prices.empty:
-        for bm in benchmark_tickers:
-            if bm in prices.columns:
-                first_bm_px = prices[bm].dropna()
-                if not first_bm_px.empty:
-                    px = float(first_bm_px.iloc[0])
-                    if px > 0:
-                        bm_shares[bm] += initial_cash / px
+    for trade_date in idx:
+        # Money transferred in on/before today → lands as cash, and mirrors into
+        # each benchmark at that transfer date's own price.
+        while dep_i < len(deposits) and pd.Timestamp(deposits[dep_i]["date"]) <= trade_date:
+            dp = deposits[dep_i]
+            dep_i += 1
+            cash            += dp["usd"]
+            total_deposited += dp["usd"]
+            for bm in benchmark_tickers:
+                if bm in px_bm.columns:
+                    s = px_bm[bm].dropna()
+                    s = s[s.index >= pd.Timestamp(dp["date"])]
+                    if not s.empty and float(s.iloc[0]) > 0:
+                        bm_shares[bm] += dp["usd"] / float(s.iloc[0])
 
-    for trade_date in prices.index:
-        # Apply pending stock transactions
+        # Apply pending transactions — these move money *within* the portfolio
         for i, tx in enumerate(stock_txs):
-            if i in applied:
-                continue
-            tx_d = pd.Timestamp(tx["date"])
-            if tx_d > trade_date:
+            if i in applied or pd.Timestamp(tx["date"]) > trade_date:
                 continue
             applied.add(i)
-            tk     = tx["ticker"]
-            typ    = tx["type"]
-            shares = tx["shares"]
-            total  = tx["total"]
+            tk, typ, total = tx["ticker"], tx["type"], tx["total"]
 
             if typ == "BUY":
-                # Skip positions we cannot value at all — counting their capital
-                # while contributing $0 value would create a phantom loss.
-                if tk in unpriceable:
-                    continue
-                # Each stock buy is new capital deployed (Sheet model: independent allocations)
-                port_shares[tk] = port_shares.get(tk, 0.0) + shares
-                total_deployed += total
-                # Mirror: invest same $ in benchmark at same-day price
-                for bm in benchmark_tickers:
-                    if bm in prices.columns:
-                        bm_px_series = prices[bm].dropna()
-                        bm_px_series = bm_px_series[bm_px_series.index >= tx_d]
-                        if not bm_px_series.empty:
-                            px = float(bm_px_series.iloc[0])
-                            if px > 0:
-                                bm_shares[bm] += total / px
+                cash -= total
+                if tk in frozen:
+                    frozen_value += total
+                else:
+                    port_shares[tk] = port_shares.get(tk, 0.0) + tx["shares"]
             elif typ == "SELL":
-                port_shares[tk] = max(0.0, port_shares.get(tk, 0.0) - shares)
+                cash += total
+                if tk in frozen:
+                    frozen_value = max(0.0, frozen_value - total)
+                else:
+                    port_shares[tk] = max(0.0, port_shares.get(tk, 0.0) - tx["shares"])
+            elif typ == "DIV":
+                cash += total   # received dividends stay in the portfolio
 
-        # Only record days after at least one stock position is open
-        if not port_shares:
+        if total_deposited <= 0:
             continue
 
-        # Portfolio value today = CASH position + all stock positions at market price
-        pv = port_cash
+        pv = cash + frozen_value
         for tk, sh in port_shares.items():
-            if sh > 0 and tk in prices.columns:
-                px = prices[tk].get(trade_date)
+            if sh > 0 and tk in px_stock.columns:
+                px = px_stock[tk].get(trade_date)
                 if px is not None and not pd.isna(px):
                     pv += sh * float(px)
 
         port_vals.append(round(pv, 4))
-        dep_totals.append(round(total_deployed, 2))
+        dep_totals.append(round(total_deposited, 2))
         dates_out.append(trade_date.strftime("%Y-%m-%d"))
 
         for bm in benchmark_tickers:
             bv = 0.0
-            if bm in prices.columns:
-                px = prices[bm].get(trade_date)
+            if bm in px_bm.columns:
+                px = px_bm[bm].get(trade_date)
                 if px is not None and not pd.isna(px):
                     bv = bm_shares[bm] * float(px)
             bm_vals[bm].append(round(bv, 4))
@@ -368,12 +405,12 @@ def build_history(transactions: list, benchmark_tickers: list[str], extra_cash=0
         if bm not in valid_bms:
             print(f"  [history] ⚠️ benchmark {bm}: no price data fetched — omitting (would show -100%)")
 
-    # Summary — return based on total deployed capital
+    # Summary — return measured against every dollar transferred in
     def _pct(vals, dep):
         last = next((v for v in reversed(vals) if v > 0), 0)
         return round((last / dep - 1) * 100, 2) if dep else 0.0
 
-    dep = total_deployed
+    dep = total_deposited
     summary = {"portfolio_pct": _pct(port_vals, dep)}
     for bm in valid_bms:
         key = bm.lower() + "_pct"
@@ -399,28 +436,32 @@ def main():
     # ── AI PORT ──────────────────────────────────────────────────
     print("\n[1/2] AI PORT tab")
     ai_rows = read_tab(svc, "AI PORT")
-    ai_summary, ai_holdings, ai_txs = parse_holdings(ai_rows)
+    ai_summary, ai_holdings, ai_txs, ai_deposits = parse_holdings(ai_rows)
     print(f"  holdings: {[h['ticker'] for h in ai_holdings]}")
     print(f"  transactions: {len(ai_txs)}")
+    print(f"  deposits: {len(ai_deposits)} = ${sum(d['usd'] for d in ai_deposits):.2f}")
     print(f"  total cost: ${ai_summary.get('total_cost',0):.2f}, value: ${ai_summary.get('total_value',0):.2f}")
 
     ai_history = {}
     if ai_txs:
-        ai_history = build_history(ai_txs, ["VOO", "QQQM"], holdings=ai_holdings)
+        ai_history = build_history(ai_txs, ["VOO", "QQQM"],
+                                   deposits=ai_deposits, holdings=ai_holdings)
     ai_dividends = round(sum(t["total"] for t in ai_txs if t["type"] == "DIV"), 2)
     print(f"  dividends received: ${ai_dividends:.2f}")
 
     # ── DCA S&P500 ────────────────────────────────────────────────
     print("\n[2/2] DCA S&P500 tab")
     sp_rows = read_tab(svc, "DCA S&P500")
-    sp_summary, sp_holdings, sp_txs = parse_holdings(sp_rows)
+    sp_summary, sp_holdings, sp_txs, sp_deposits = parse_holdings(sp_rows)
     print(f"  holdings: {[h['ticker'] for h in sp_holdings]}")
     print(f"  transactions: {len(sp_txs)}")
+    print(f"  deposits: {len(sp_deposits)} = ${sum(d['usd'] for d in sp_deposits):.2f}")
     print(f"  total cost: ${sp_summary.get('total_cost',0):.2f}, value: ${sp_summary.get('total_value',0):.2f}")
 
     sp_history = {}
     if sp_txs:
-        sp_history = build_history(sp_txs, ["QQQM"], holdings=sp_holdings)
+        sp_history = build_history(sp_txs, ["QQQM"],
+                                   deposits=sp_deposits, holdings=sp_holdings)
     sp_dividends = round(sum(t["total"] for t in sp_txs if t["type"] == "DIV"), 2)
     print(f"  dividends received: ${sp_dividends:.2f}")
 
