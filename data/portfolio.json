@@ -486,12 +486,23 @@
   "sp500_port": {
     "name": "พอร์ตออม S&P500",
     "tab": "DCA S&P500",
-    "total_cost": 215.5,
-    "total_value": 229.73,
+    "total_cost": 216.26,
+    "total_value": 230.49,
     "pl_usd": 14.23,
-    "pl_pct": 6.6,
+    "pl_pct": 6.58,
     "total_dividends": 0.76,
     "holdings": [
+      {
+        "ticker": "CASH",
+        "shares": 1.0,
+        "avg_cost": 0.76,
+        "cost": 0.76,
+        "value": 0.76,
+        "price": 0.76,
+        "pl_usd": 0.0,
+        "pl_pct": 0.0,
+        "pos_pct": 0.33
+      },
       {
         "ticker": "VOO",
         "shares": 0.32987722,
@@ -501,7 +512,7 @@
         "price": 696.4,
         "pl_usd": 14.23,
         "pl_pct": 6.6,
-        "pos_pct": 100.0
+        "pos_pct": 99.67
       }
     ],
     "transactions": [
@@ -576,6 +587,14 @@
         "shares": 0.0434,
         "price": 682.2,
         "total": 29.62
+      },
+      {
+        "date": "2026-08-04",
+        "ticker": "CASH",
+        "type": "BUY",
+        "shares": 1.0,
+        "price": 0.76,
+        "total": 0.76
       }
     ],
     "history": {
@@ -1114,5 +1133,5 @@
       ]
     }
   },
-  "generated_at": "2026-08-04T01:26:13Z"
+  "generated_at": "2026-08-04T02:16:52Z"
 }
