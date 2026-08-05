@@ -1273,80 +1273,81 @@
     "charlie": {
       "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Price $484.64 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, essentially flat (-0.15%) vs 07-31, confirms Warren's 'pre-earnings lull' framing",
-        "Dec2027 consensus EPS $11.85 (Nasdaq, 18 analysts) re-pulled fresh — unchanged since 07-29, confirms no revision ahead of tonight's print",
-        "Independently confirmed AMD-Anthropic deal (WSJ/Reuters coverage, signed 2026-07-22): up to 2GW MI450 chip supply (~$30B+ hardware commitment) + AMD investing up to $5B in Anthropic — real and material, but already ~2 weeks old, NOT new this round, and consensus EPS has not moved since it was signed, suggesting the Street hasn't fully modeled it yet",
-        "Q2 FY2026 earnings independently confirmed for tonight, Aug 4 after close, 5pm ET call — guide revenue $11.2B+/-$300M, Street consensus EPS ~$1.61-1.62 — the real fundamental test, not yet in hand at time of this review"
+        "Price cross-checked 2-source (Nasdaq api/quote/info primaryData pre-market $477.87 @ 7:41am ET 08-05 vs CNBC ExtendedMktQuote PRE_MKT $477.89 @ 7:41am EDT) -- 0.004% drift, exact match; both confirm the post-earnings drop continuing into pre-market (-7.85% from the Aug4 regular close $518.58) -- vs Warren's AH snapshot $472.94, price has drifted +1.0% overnight, normal timing noise not a data error",
+        "yfinance flagged STALE: currentPrice returns $518.58 (the pre-earnings regular-session close), not the post-earnings print -- confirms Warren's own stale-price flag; do not use yfinance price for AMD today",
+        "Q2 FY2026 results independently confirmed via press coverage of the 8-K/press release: revenue $11.5B (+50% YoY) beat $11.31B consensus; non-GAAP EPS $1.66 beat $1.62 consensus (GAAP EPS $1.38); Data Center revenue $6.7B (+107% YoY, 58% of mix -- matches Warren's 58% exactly); Q3 guide $12.7-13.3B (mid $13B, +41% YoY) vs $12.5B consensus -- all match Warren's investment_idea claims",
+        "Server CPU TAM raise to $220B by 2030 (from $120B) and DC AI accelerator TAM ~$1.4T by 2030 (+45%/yr) independently confirmed via WebSearch (traced to AMD's Jul-23 Advancing AI event, reiterated on this call) -- real management guidance (Tier 2), not fabricated"
       ],
       "concerns": [
-        "gap 31.5% > 20% -> CAUTION mandatory (unchanged in magnitude from 07-27 through 08-04) — driven by Warren's EPS input ($18.7 CY2027, still ~58% above Street's $11.85), not the multiple",
-        "MoS at Charlie's own FV -51.5%, essentially unchanged from -51.7% on 07-31 (price flat)",
-        "Aug 4 earnings TONIGHT (hours after this review) is the real catalyst that could move both sides' EPS anchors materially — CAUTION reflects the pre-earnings gap, not a prediction of the print",
-        "ra_ex_valuation==scores.ra exact match persists — recommend Warren re-verify valuation-risk exclusion is genuinely applied in the TQR pipeline, not copied"
+        "gap 31.5% > 20% -> CAUTION mandatory (unchanged in magnitude from 07-27 through today) -- still driven entirely by Warren's EPS input ($18.7 CY2027, labeled eps_basis_type='consensus_forward' but actually 57.8% above the real Nasdaq consensus $11.85, and above even the $16.81 high estimate) -- this mislabeling has now persisted unresolved across 6+ consecutive batches (07-27 -> 08-05)",
+        "MoS at Charlie's own FV -49.3% (vs -51.5% on 08-04) -- gap not closing; charlie_fv held flat at $320 since the underlying consensus EPS hasn't moved yet post-earnings",
+        "SpaceX's exclusive-Nvidia commitment (see verified_claims) is a concrete new competitive data point behind Warren's existing 'AI GPU revenue gap vs NVDA still large' thesis_risk -- not thesis-breaking (SpaceX is not a disclosed top AMD DC customer) but reinforces that AMD's second-source AI-accelerator positioning is still being actively contested for major AI-infra buyers",
+        "ER cross-check (2.6): Warren's 34.8% expected_return_5yr_pct implies a growth term of ~35.0% -- in line with the previously-verified 35.1%/yr Street long-term figure, so not newly inflated -- but combined with the $467 vs $320 FV gap, Charlie's own ER computes to ~27%, a ~7.5pp gap over the 5pp threshold, driven by the same FV/EPS disagreement above, not a new growth-term issue"
       ],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-05"
     },
     "mark_easy": {
-      "one_liner": "อันดับ 2 ในตลาด AI GPU + ครอง server CPU >40% — ราคาแทบทรงตัวที่ $484.64 (-0.15%) ก่อนงบ Q2 FY2026 คืนนี้ (4 ส.ค. หลังตลาดปิด) MoS ยัง fail เล็กน้อยที่ -3.78% เกือบไม่เปลี่ยนจากรอบก่อน รองบเป็น catalyst จริงที่จะขยับ FV เอง",
+      "one_liner": "อันดับ 2 ในตลาด AI GPU ที่แข็งแกร่งขึ้นเรื่อยๆ + ครอง server CPU >40% — งบ Q2 FY2026 (4 ส.ค.) beat ทั้งรายได้กำไร ประกาศ TAM ใหม่ก้อนใหญ่ แต่ Charlie เตือนหนัก: ตัวเลข EPS ที่ Warren ใช้คำนวณมูลค่าสูงกว่า consensus จริงเกือบ 60% ต่อเนื่องมา 6 รอบ ยังคง WATCH",
       "what": "AMD ออกแบบชิป CPU (EPYC), GPU AI (Instinct) และ rack-scale platform (Helios) — รายเดียวที่มีครบทั้ง CPU+GPU+Networking ในมือ",
       "why_invest": [
-        "EPYC ครอง server CPU share >40% โต +50%+ YoY",
-        "agentic AI ดัน CPU:GPU ratio เป็นบวกต่อ AMD — TAM ปรับขึ้นเป็น $120-170B by 2030",
-        "customer diversification: Anthropic $5B + Microsoft Azure Helios (ลูกค้ารายที่ 3 ต่อจาก OpenAI/Meta) + ดีล OpenAI 6GW",
-        "ROCm software ไล่ตาม CUDA เร็วขึ้นด้วย open-source ecosystem"
+        "งบ Q2 FY2026 beat ทั้งรายได้ ($11.5B +50% YoY) และกำไร ($1.66 ต่อหุ้น เหนือ consensus $1.61) — Data Center revenue โต +107% YoY กลายเป็น 58% ของรายได้รวม (จาก 42% เมื่อปีก่อน)",
+        "ผู้บริหารปรับ TAM ขึ้นเองครั้งใหญ่: server CPU จาก $120B เป็น $220B by 2030, ตลาด AI accelerator ทั้งหมดเป็น $1.4T by 2030 — เป็นตัวเลขจากบริษัทเอง ไม่ใช่แค่นักวิเคราะห์คาดการณ์",
+        "Anthropic เข้ามาเป็นลูกค้า anchor รายที่ 3 ต่อจาก OpenAI/Meta — สูงสุด 2GW MI450 พร้อม AMD ลงทุนตรงใน Anthropic $5B",
+        "Q3 guide $13B (+41% YoY) แข็งแรงต่อเนื่อง server CPU ทำสถิติรายได้สูงสุดติดต่อกัน 5 ไตรมาส"
       ],
       "watch_out": [
-        "MoS พลิกกลับติดลบ -3.94% (จาก +6.1% แค่ 2 วันก่อน) — ราคาแกว่งข้าม/ใต้ FV ($467) ไปมาภายในไม่กี่วันทำการโดยไม่มีข้อมูลพื้นฐานใหม่ ไม่ควรไล่ราคาตามอารมณ์ตลาด",
-        "Charlie ยัง CAUTION หนักขึ้น: FV อิสระ $320 (บน consensus EPS $11.85 × 27x) เทียบราคาปัจจุบันให้ MoS ติดลบถึง -51.7% (จาก -35.1%) — gap 31.5% เกิน 20% เข้า CAUTION บังคับต่อเนื่อง",
-        "งบ 4 ส.ค. 2026 (ใกล้มาก) คือ catalyst จริงที่จะขยับทั้ง FV และราคา"
+        "⚠️ Charlie ยัง CAUTION หนัก: ตัวเลข EPS ที่ Warren ใช้คำนวณ Fair Value ($18.7 ต่อหุ้นปี 2027) ติดป้ายว่าเป็น 'consensus' แต่จริงๆ สูงกว่า consensus ตัวจริงจาก Nasdaq ($11.85) ถึง 57.8% — ปัญหานี้ค้างมาแล้ว 6 รอบติดต่อกันโดยยังไม่ reconcile",
+        "ด้วย consensus EPS ตัวจริง Charlie คำนวณมูลค่าได้ที่ $320 เทียบกับ Warren ที่ $467 — ต่างกันถึง 31.5% เกินเกณฑ์ที่ยอมรับได้ (20%)",
+        "ตลาดตอบรับงบแบบ 'sell the news' — วิ่งขึ้นระหว่างวันก่อนงบออก แล้วร่วงทันทีหลังผลจริงประกาศ สะท้อนว่าความคาดหวังถูก baked-in ไว้สูงเกินกว่าที่ผลดีจะพอ",
+        "พันธะผูกพันเงินสดล่วงหน้า (คำสั่งซื้อ wafer + สัญญาเช่า data center) พุ่งขึ้น $4.6 พันล้านในไตรมาสเดียว — ต้องติดตามว่าลงทุนล่วงหน้าอย่างมีเหตุผลหรือเร่งเกินตัว"
       ],
-      "bottom_line": "WATCH — MoS พลิกกลับติดลบเป็นรอบที่ 2 ในสัปดาห์เดียวกัน ล้วนจากอารมณ์ตลาดไม่ใช่ปัจจัยพื้นฐาน ธุรกิจ (customer diversification) ยังดีขึ้นจริง แต่ Charlie เตือนหนักเรื่อง valuation รองบ 4 ส.ค. เป็นตัวตัดสิน"
+      "bottom_line": "WATCH (ไม่เปลี่ยนจากรอบก่อน) — ธุรกิจแข็งแรงขึ้นจริงจากงบ Q2 และ TAM ใหม่ แต่ Fair Value ที่ Warren ใช้ยังพึ่งตัวเลข EPS ที่สูงผิดปกติเทียบ consensus จริง จน Charlie ต้องออก CAUTION ต่อเนื่อง — รอ reconcile ตัวเลขนี้ก่อนถึงจะเชื่อมั่นได้เต็มที่"
     },
     "mark_full": {
-      "business_overview": "AMD มี 3 segment: Data Center 56% (EPYC CPU + Instinct AI GPU), Client & Gaming 35% (Ryzen + Radeon + PS5/Xbox chip), Embedded 9% (FPGA จาก Xilinx)",
-      "tam": "Server CPU TAM ปรับขึ้นจาก ~$60B (18% CAGR) เป็น >$120B by 2030 (>35% CAGR) เพราะ agentic AI เปลี่ยน GPU:CPU ratio จาก 8:1 เข้าใกล้ 1:1",
-      "moat": "EPYC CPU leadership กำลังกว้างขึ้น (Turin >50% revenue mix), Instinct GPU scaling (MI450+Helios rack-scale), ROCm open software anti-CUDA moat, Adaptive Computing (FPGA) จาก Xilinx",
-      "latest_financials": "Q1 2026: Revenue $10.3B +38%, Data Center $5.775B +57%, FCF $2.6B +257%; Q2 2026 guide ~$11.2B +46%; งบ Q2 2026 จริงจะประกาศ 4 ส.ค. 2026",
+      "business_overview": "AMD มี 3 segment (Q2 2026 mix): Data Center 58% (EPYC CPU + Instinct AI GPU) โตแรงสุดจาก 42% เมื่อปีก่อน, Client & Gaming 33% (Ryzen + Radeon + ชิปใน PS5/Xbox), Embedded 9% (FPGA จาก Xilinx)",
+      "tam": "บริษัทปรับ TAM ขึ้นเองสองรอบใน 2 ไตรมาส: server CPU จาก $120B (ไตรมาสก่อน) เป็น $220B by 2030 (CAGR กว่า 50%), ตลาด AI accelerator ทั้งหมดปรับเป็น $1.4T by 2030 (CAGR กว่า 45%) — driver หลักคือ agentic AI ที่ต้องใช้ CPU ควบคู่กับ GPU มากขึ้น",
+      "moat": "EPYC CPU ครองส่วนแบ่งเพิ่มต่อเนื่อง (server CPU ทำสถิติรายได้สูงสุด 5 ไตรมาสติด), Instinct GPU + Helios rack-scale platform เริ่ม ship จริงไตรมาส 3 นี้, ROCm software พยายามไล่ตาม CUDA ด้วย ecosystem แบบ open-source, ธุรกิจ FPGA จาก Xilinx เป็นรายได้ sticky ในกลุ่ม defense/industrial",
+      "latest_financials": "Q2 FY2026: รายได้ $11.5B (+50% YoY) เหนือ guide, Non-GAAP EPS $1.66 (เหนือ consensus $1.61), Data Center revenue $6.7B (+107% YoY) — Q3 guide ต่อที่ $13B (+41% YoY) แข็งแรงต่อเนื่อง",
       "key_points": [
-        "Server CPU revenue +50%+ YoY จาก Turin (5th Gen) upgrade cycle",
-        "Meta (6GW) + OpenAI (6GW) warrant deal ผูกสัญญา GPU purchase หลายปี + Anthropic $5B + Microsoft Azure Helios",
-        "MI450+Helios rack-scale platform ramp H2 2026",
-        "ราคารีบาวด์ +10.7% ($438.52→$485.39) ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม พลิก MoS กลับติดลบ -3.94% (จาก +6.1% เมื่อ 2 วันก่อน) — งบ 4 ส.ค. 2026 คือ catalyst ถัดไป"
+        "Data Center revenue โตเท่าตัว (+107% YoY) กลายเป็นสัดส่วนใหญ่สุดของบริษัทแล้ว (58%)",
+        "Anthropic เซ็นเป็นลูกค้า anchor รายที่ 3 (MI450 สูงสุด 2GW) ต่อจาก OpenAI/Meta พร้อม AMD ลงทุนตรง $5B",
+        "TAM ใหม่ที่ผู้บริหารปรับขึ้นเองใหญ่มาก แต่ราคาหุ้นตอบรับแบบ sell-the-news หลังงบออก",
+        "⚠️ Charlie flag: EPS ที่ Warren ใช้คำนวณ Fair Value สูงกว่า consensus จริงเกือบ 60% ค้างมา 6 รอบ — ยังไม่ reconcile"
       ]
     },
     "warren_easy": [
-      "AMD tier Pre-Inevitable WAF 7.275 (ไม่เปลี่ยน) — ราคาแทบทรงตัว $485.39→$484.64 (-0.15%) ก่อนงบ Q2 FY2026 คืนนี้ (4 ส.ค. 5 โมงเย็น ET, guide revenue $11.2B±$300M, consensus EPS ~$1.61) ไม่มีข้อมูลใหม่เฉพาะ AMD",
-      "MoS -3.78% แทบไม่เปลี่ยนจาก -3.94% ยังไม่ผ่าน gate แต่ ER 34.3%/ปี และ PEG 0.74 ยังผ่านสบาย — MoS เป็นด่านหลักที่ fail",
-      "WATCH — ธุรกิจ (customer diversification, TAM $170B) ยังดีขึ้นจริง แต่ต้องรองบคืนนี้เป็นตัวขยับ FV จริง ไม่ใช่ไล่ราคาก่อนงบ"
+      "AMD tier Pre-Inevitable, WAF ขยับขึ้นเป็น 7.415 (จาก 7.275) — งบ Q2 FY2026 beat ทั้งรายได้และกำไร, Data Center โต +107% YoY, บวก TAM ใหม่ที่ผู้บริหารปรับขึ้นเอง (server CPU $220B, AI accelerator $1.4T by 2030) และ Anthropic เข้ามาเป็นลูกค้า anchor รายที่ 3",
+      "MoS ดีขึ้นมากจาก -3.78% เป็น -1.27% (ใกล้ผ่านเกณฑ์ที่สุดใน 4 รอบ) แต่ยังไม่ผ่านเกณฑ์ 15% — Expected Return 34.8%/ปี และ PEG 0.72 ผ่านสบาย แต่ MoS เป็นด่านหลักที่ยัง fail",
+      "WATCH (ไม่เปลี่ยน) — ธุรกิจดีขึ้นจริงจากงบ แต่ราคายังไม่ถูกพอเทียบมูลค่าที่คำนวณได้ ต้อง reconcile ตัวเลข EPS consensus ใหม่รอบหน้าเมื่อนักวิเคราะห์ปรับประมาณการหลังงบ"
     ],
     "charlie_easy": {
       "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยัง flag เดิม: eps_used ของ Warren ($18.7 CY2027) ยังสูงกว่า Street consensus ($11.85) เท่าเดิม (~58%) — ยังไม่มีการยืนยันว่าเป็น guidance จริงหรือตัวเลขที่ Warren ประเมินเอง แม้ผ่านมาแล้วหลายรอบ",
-        "Charlie ยืนยันอิสระ: ดีล AMD-Anthropic (เซ็นจริง 22 ก.ค. 2026 — MI450 สูงสุด 2GW + AMD ลงทุนใน Anthropic สูงสุด $5B) เป็นเรื่องจริงและมีนัยสำคัญ แต่เก่าไปแล้ว ~2 สัปดาห์ ไม่ใช่ข่าวใหม่รอบนี้ และ Street ยังไม่ได้ปรับ consensus EPS รองรับดีลนี้เลย",
-        "งบ Q2 FY2026 คืนนี้ (อีกไม่กี่ชั่วโมงหลังรีวิวนี้) คือบททดสอบจริงที่จะขยับทั้งสอง FV anchor ได้ — CAUTION วันนี้สะท้อน gap ก่อนงบ ไม่ใช่การทำนายผลงบ"
+        "Charlie ยัง CAUTION หนักขึ้น: ตัวเลข EPS ที่ Warren ใช้คำนวณ Fair Value ($18.7 ปี 2027 ติดป้ายว่าเป็น 'consensus') จริงๆ สูงกว่า consensus ตัวจริงจาก Nasdaq ($11.85) ถึง 57.8% — ปัญหานี้เกิดซ้ำต่อเนื่องมาแล้ว 6 รอบติดต่อกัน (27 ก.ค. ถึง 5 ส.ค.) โดยยังไม่มีคำอธิบายว่าตัวเลขนี้มาจากไหน",
+        "ด้วย consensus EPS ตัวจริง ($11.85) Charlie คำนวณมูลค่าได้ที่ $320 เทียบกับ Warren ที่ $467 — ต่างกัน 31.5% ซึ่งเกินเกณฑ์ที่ยอมรับได้ (20%) เข้าเงื่อนไข CAUTION บังคับอัตโนมัติ",
+        "Charlie ยืนยันอิสระว่าตัวเลขงบ Q2 (รายได้ กำไร Data Center growth, TAM ใหม่) เป็นเรื่องจริงตรงกับที่ Warren รายงาน แต่เตือนเพิ่มเรื่อง SpaceX ประกาศใช้ชิป NVIDIA รุ่นใหม่ (Vera Rubin) แทนที่จะใช้ AMD — สัญญาณว่าตำแหน่ง AI GPU ของ AMD ยังถูกท้าทายในลูกค้ารายใหญ่ Action ยังคงเป็น WATCH เหมือน Warren"
       ],
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-05"
     },
-    "idea_th": "WATCH — อันดับ 2 ที่แข็งแกร่งขึ้นเรื่อยๆ ในตลาด AI GPU + ครอง server CPU >40% ราคาแทบทรงตัว $485.39→$484.64 (-0.15%) ในช่วง pre-earnings lull ก่อนงบ Q2 FY2026 คืนนี้ (4 ส.ค. หลังตลาดปิด 5 โมงเย็น ET, guide revenue $11.2B±$300M, consensus EPS ~$1.61) MoS -3.78% แทบไม่เปลี่ยน ยังไม่ผ่าน gate แต่ ER 34.3%/ปีและ PEG 0.74 ผ่านสบาย ⚠️ Charlie CAUTION ต่อเนื่อง: eps_used ของ Warren $18.7 สูงกว่า consensus $11.85 ถึง ~58% — บน consensus × 27x conservative Charlie FV แค่ $320 (ไม่เปลี่ยน) gap 31.5% เกิน 20% เข้า CAUTION บังคับ ยืนยันดีล AMD-Anthropic (เซ็นจริง 22 ก.ค.) เป็นเรื่องจริงแต่ Street ยังไม่ปรับ consensus รองรับ งบคืนนี้คือ catalyst จริงที่จะขยับทั้ง FV และราคา",
+    "idea_th": "WATCH (ไม่เปลี่ยน) — AMD รายงานงบ Q2 FY2026 (4 ส.ค.) beat ทั้งรายได้ ($11.5B +50% YoY) และกำไร ($1.66 เหนือ consensus $1.61) ธุรกิจ Data Center โตเท่าตัว (+107% YoY) กลายเป็น 58% ของรายได้รวม พร้อมประกาศ TAM ใหม่ก้อนใหญ่ที่ผู้บริหารปรับขึ้นเอง (server CPU $220B, AI accelerator ทั้งตลาด $1.4T by 2030) และ Anthropic เข้ามาเป็นลูกค้า anchor รายที่ 3 ต่อจาก OpenAI/Meta MoS ดีขึ้นมากเป็น -1.27% (ใกล้ผ่านเกณฑ์ที่สุดใน 4 รอบ) แต่ยังไม่ผ่าน ⚠️ Charlie ยัง CAUTION ต่อเนื่อง: ตัวเลข EPS ที่ Warren ใช้คำนวณมูลค่า สูงกว่า consensus ตัวจริงเกือบ 60% ค้างมา 6 รอบติดต่อกันโดยยังไม่ reconcile — ด้วยตัวเลขจริง Charlie คำนวณมูลค่าได้แค่ $320 เทียบ Warren ที่ $467 ต่างกัน 31.5% เกินเกณฑ์ที่ยอมรับได้",
     "story_gate_th": {
       "what": "AMD ออกแบบชิป CPU (EPYC), GPU AI (Instinct) และ rack-scale platform (Helios) — รายเดียวที่มีครบทั้ง CPU+GPU+Networking ในมือ แข่งกับ Intel ใน CPU และ NVIDIA ใน AI GPU",
-      "why": "ราคาแทบทรงตัว -0.15% ในช่วง pre-earnings lull ก่อนงบ Q2 FY2026 คืนนี้ (4 ส.ค. หลังตลาดปิด) ไม่มีข้อมูลใหม่เฉพาะ AMD MoS -3.78% แทบไม่เปลี่ยนจากรอบก่อน — ธุรกิจ (customer diversification, ดีล Anthropic ที่เซ็นจริงแล้ว) ยังดีขึ้นแต่ Street ยังไม่ปรับ consensus รองรับ ราคาแกว่งรอผลงบเป็นตัวตัดสินจริง",
-      "risk": "ROCm ตาม CUDA ~5 ปี; AI GPU revenue gap vs NVDA ยังใหญ่; MoS ค้าง fail ต่อเนื่องหลายรอบ; 'agentic CPU' thesis กลายเป็น consensus แล้ว → edge หด; งบ Q2 FY2026 คืนนี้ (4 ส.ค.) = catalyst ใกล้ตัวที่สุด; PEG 0.74 optically ต่ำเพราะ EPS basis = CY2027E ที่ ramp-heavy"
+      "why": "งบ Q2 FY2026 beat ทั้งรายได้และกำไร Data Center โตเท่าตัว TAM ใหม่ที่ผู้บริหารปรับขึ้นเองใหญ่มาก และมีลูกค้า anchor รายที่ 3 (Anthropic) เข้ามาเพิ่ม — ยืนยันว่าตำแหน่งเบอร์ 2 ของ AMD กำลังแข็งแรงขึ้นจริงในตัวเลขที่ส่งมอบแล้ว ไม่ใช่แค่ guidance",
+      "risk": "ROCm ยังตาม CUDA ราว 5 ปี; ช่องว่างรายได้ AI GPU เทียบ NVIDIA ยังใหญ่มาก; ⚠️ ตัวเลข EPS ที่ใช้คำนวณ Fair Value สูงกว่า consensus จริงเกือบ 60% ค้างมา 6 รอบ ทำให้ Charlie ยัง CAUTION; พันธะผูกพันเงินสดล่วงหน้าพุ่งเร็วกว่ารายได้; SpaceX ประกาศเลือกใช้ชิป NVIDIA แทน เป็นสัญญาณว่าตำแหน่ง AMD ในลูกค้ารายใหญ่ยังถูกท้าทาย"
     },
     "bull_th": [
-      "EPYC ครอง server CPU share >40% โต +50%+ YoY",
-      "agentic AI ดัน CPU:GPU ratio เป็นบวกต่อ AMD — TAM ปรับขึ้นเป็น $120-170B by 2030",
-      "customer diversification: ดีล Anthropic เซ็นจริงแล้ว (22 ก.ค. 2026) MI450 สูงสุด 2GW + AMD ลงทุนใน Anthropic สูงสุด $5B, บวก Microsoft Azure Helios + OpenAI 6GW",
-      "ROCm software ไล่ตาม CUDA เร็วขึ้นด้วย open-source ecosystem"
+      "Data Center revenue โต +107% YoY กลายเป็น 58% ของรายได้รวม — เร่งขึ้นชัดเจนจากไตรมาสก่อน",
+      "ผู้บริหารปรับ TAM ขึ้นเองครั้งใหญ่: server CPU $220B by 2030, AI accelerator ทั้งตลาด $1.4T by 2030",
+      "Anthropic เข้ามาเป็นลูกค้า anchor รายที่ 3 (MI450 สูงสุด 2GW) พร้อม AMD ลงทุนตรง $5B ต่อจาก OpenAI/Meta",
+      "Q3 guide $13B (+41% YoY) แข็งแรงต่อเนื่อง server CPU ทำสถิติรายได้สูงสุดติดต่อกัน 5 ไตรมาส"
     ],
     "risk_th": [
-      "MoS ยัง fail ต่อเนื่องที่ -3.78% แทบไม่เปลี่ยนจากรอบก่อน — รอผลงบคืนนี้เป็นตัวขยับจริง",
-      "⚠️ Charlie CAUTION ต่อเนื่อง: eps_used $18.7 (CY2027) สูงกว่า consensus $11.85 ~58% → Charlie FV อิสระ $320 (ไม่เปลี่ยน) MoS ติดลบหนัก -51.5%; gap 31.5% เกิน 20%",
-      "ROCm ecosystem ยังตาม CUDA ~5 ปี",
-      "'agentic CPU' thesis กลายเป็น consensus แล้ว edge อาจหด",
-      "งบ Q2 FY2026 คืนนี้ (4 ส.ค. หลังตลาดปิด) = catalyst risk ทั้งราคาและ FV inputs"
+      "⚠️ Charlie CAUTION ต่อเนื่อง 6 รอบ: EPS ที่ Warren ใช้คำนวณมูลค่า ($18.7) สูงกว่า consensus ตัวจริง ($11.85) ถึง 57.8% — Charlie คำนวณมูลค่าได้แค่ $320 เทียบ Warren $467 ต่างกัน 31.5%",
+      "ROCm ecosystem ยังตาม CUDA ~5 ปี ช่องว่างรายได้ AI GPU เทียบ NVIDIA ยังใหญ่",
+      "พันธะผูกพันเงินสดล่วงหน้าพุ่งขึ้นเร็ว (+$4.6 พันล้านในไตรมาสเดียว) บวก inventory/ลูกหนี้โตเร็วกว่ารายได้ — ต้องติดตามว่าลงทุนล่วงหน้าอย่างมีเหตุผลหรือเร่งเกินตัว",
+      "SpaceX ประกาศใช้ชิป NVIDIA รุ่นใหม่ (Vera Rubin) แทนการใช้ AMD — สัญญาณว่าตำแหน่งของ AMD ในลูกค้า AI รายใหญ่ยังถูกท้าทาย",
+      "ตลาดตอบรับงบแบบ sell-the-news — ความคาดหวังที่ baked-in ไว้สูงเกินกว่าที่แม้ผลงบจะดีก็ยังไม่พอ"
     ]
   },
   "MU": {
