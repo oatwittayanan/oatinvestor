@@ -1842,6 +1842,18 @@
       ],
       "bottom_line": "งบดีจริง ธุรกิจแข็งแกร่งขึ้นจริง (คุณภาพสูงขึ้น ไม่ใช่แค่ hype) แต่ราคาวิ่งนำหน้าตัวเลขไปไกลมาก จนกลายเป็นหุ้นที่ MoS แย่ที่สุดในพอร์ตทั้งหมด (-70.31%) ทั้ง Warren และ Charlie เห็นตรงกันว่า WATCH ไม่ใช่ BUY — งบดี แต่ราคาแพงลงเรื่อยๆ"
     },
+    "mark_full": {
+      "business_overview": "Palantir ก่อตั้งปี 2003 สำนักงานใหญ่ Aventura, FL จดทะเบียน Nasdaq (PLTR) ทำซอฟต์แวร์ 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow, bootcamp 5 วันจากศูนย์ถึง production), Gotham (ป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่รวม air-gapped) รายได้แบ่ง Government 54% / Commercial 46%, US 74% / International 26% (FY2025)",
+      "tam": "Q2 2026 มีการเปลี่ยน framing จาก 'AIP bootcamp speed' เป็น 'AI Sovereignty' — ลูกค้าเป็นเจ้าของ/ควบคุม data, weights, models เองแทนที่จะส่งข้อมูลลับให้ frontier lab ภายนอก ตลาด enterprise decision infrastructure ยังอยู่ในช่วงต้นของการนำ agentic AI ไปใช้จริงในองค์กรขนาดใหญ่และภาครัฐ",
+      "moat": "Ontology-based data architecture ที่ยากจะลอกเลียนเพราะฝังลึกในกระบวนการทำงานของลูกค้าแต่ละราย (ไม่ใช่แค่โมเดล AI); Forward Deployed Engineers ที่ทำงานหน้างานกับลูกค้าโดยตรงเป็นความได้เปรียบด้าน execution ที่ hyperscaler ไม่มี; ในฝั่งภาครัฐ Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community switching cost สูงมาก CEO Karp ย้ำว่า 'ไม่แข่งกับ hyperscaler แต่วิ่งอยู่บนนั้น'",
+      "latest_financials": "Q2 2026: รายได้ $1,935.5M +93% YoY (US Commercial +149%, US Government +90%), Adj. Op Margin 62%, Adj. FCF margin 63%, Rule of 40 = 155% (สถิติใหม่ 12 ไตรมาสติด), NDR 157%, FY2026 guidance ยกเป็น $8.15-8.16B (+82% YoY) — การยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัทตามคำผู้บริหาร; ข่าว 08-06/08-07 ยืนยันเป็นการพูดซ้ำตัวเลขเดิม ไม่มีข้อมูลใหม่",
+      "key_points": [
+        "US Commercial RDV (remaining deal value) $6.238B +124% YoY — revenue visibility ระยะยาวชัดเจนขึ้นมาก",
+        "ดีลปิด ≥$1M ถึง 220 ดีลในไตรมาสเดียว (สถิติใหม่) ยืนยัน AIP bootcamp model ได้ผลจริง",
+        "🔴 ราคาวิ่งนำหน้าตัวเลขไปไกล — MoS -70.31% แย่ที่สุดในพอร์ตทั้งหมด (จาก -61.05% เมื่อรอบก่อน)",
+        "⚠️ Charlie: Warren ใช้ EPS คำนวณเองแทน consensus ที่หาได้ฟรี ($2.41 vs consensus $1.80) — ยังไม่แก้"
+      ]
+    },
     "warren_easy": [
       "PLTR tier Fast Grower WAF 6.59 (แทบไม่เปลี่ยนจาก 6.61) — ข่าว 08-06/08-07 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 2026 เดิมที่วิเคราะห์ไปแล้ว 08-05 (รายได้ +93%, Commercial +149-150%, guidance ยกเป็น $8.15-8.16B) ไม่มีข้อมูลใหม่",
       "ราคาวิ่งต่ออีก +5.75% เป็น $172.01 ดัน MoS ที่แย่อยู่แล้วให้แย่ลงไปอีกเป็น -70.31% (จาก -61.05%) — งบดีขึ้น แต่ราคาแพงขึ้นเร็วกว่ามาก",
@@ -1875,19 +1887,7 @@
       "Valuation แพงมาก (~71x forward P/E) ต้องการ execution perfect ต่อเนื่องหลายปี",
       "SBC โตเร็วกว่ารายได้ (14% ของ Q2 revenue); คดี Cupat securities class action รอคำตัดสินชั้นอุทธรณ์ 10th Circuit",
       "Dual-class share structure (Karp/Thiel/Cohen) = governance control อยู่ในมือผู้ก่อตั้งกลุ่มเล็ก; competition จาก hyperscaler AI platforms ระยะยาว"
-    ],
-    "mark_full": {
-      "business_overview": "Palantir ก่อตั้งปี 2003 สำนักงานใหญ่ Aventura, FL จดทะเบียน Nasdaq (PLTR) ทำซอฟต์แวร์ 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow, bootcamp 5 วันจากศูนย์ถึง production), Gotham (ป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่รวม air-gapped) รายได้แบ่ง Government 54% / Commercial 46%, US 74% / International 26% (FY2025)",
-      "tam": "Q2 2026 มีการเปลี่ยน framing จาก 'AIP bootcamp speed' เป็น 'AI Sovereignty' — ลูกค้าเป็นเจ้าของ/ควบคุม data, weights, models เองแทนที่จะส่งข้อมูลลับให้ frontier lab ภายนอก ตลาด enterprise decision infrastructure ยังอยู่ในช่วงต้นของการนำ agentic AI ไปใช้จริงในองค์กรขนาดใหญ่และภาครัฐ",
-      "moat": "Ontology-based data architecture ที่ยากจะลอกเลียนเพราะฝังลึกในกระบวนการทำงานของลูกค้าแต่ละราย (ไม่ใช่แค่โมเดล AI); Forward Deployed Engineers ที่ทำงานหน้างานกับลูกค้าโดยตรงเป็นความได้เปรียบด้าน execution ที่ hyperscaler ไม่มี; ในฝั่งภาครัฐ Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community switching cost สูงมาก CEO Karp ย้ำว่า 'ไม่แข่งกับ hyperscaler แต่วิ่งอยู่บนนั้น'",
-      "latest_financials": "Q2 2026: รายได้ $1,935.5M +93% YoY (US Commercial +149%, US Government +90%), Adj. Op Margin 62%, Adj. FCF margin 63%, Rule of 40 = 155% (สถิติใหม่ 12 ไตรมาสติด), NDR 157%, FY2026 guidance ยกเป็น $8.15-8.16B (+82% YoY) — การยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัทตามคำผู้บริหาร; ข่าว 08-06/08-07 ยืนยันเป็นการพูดซ้ำตัวเลขเดิม ไม่มีข้อมูลใหม่",
-      "key_points": [
-        "US Commercial RDV (remaining deal value) $6.238B +124% YoY — revenue visibility ระยะยาวชัดเจนขึ้นมาก",
-        "ดีลปิด ≥$1M ถึง 220 ดีลในไตรมาสเดียว (สถิติใหม่) ยืนยัน AIP bootcamp model ได้ผลจริง",
-        "🔴 ราคาวิ่งนำหน้าตัวเลขไปไกล — MoS -70.31% แย่ที่สุดในพอร์ตทั้งหมด (จาก -61.05% เมื่อรอบก่อน)",
-        "⚠️ Charlie: Warren ใช้ EPS คำนวณเองแทน consensus ที่หาได้ฟรี ($2.41 vs consensus $1.80) — ยังไม่แก้"
-      ]
-    }
+    ]
   },
   "AMD": {
     "symbol": "AMD",
