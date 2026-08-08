@@ -148,147 +148,6 @@
       "MoS ที่ FV ของ Charlie เองก็แคบลงเหลือ +12.0% (จาก +16.9%)"
     ]
   },
-  "TSM": {
-    "symbol": "TSM",
-    "display": "TSMC",
-    "category": "semiconductor",
-    "name": "Taiwan Semiconductor",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "Advanced Foundry"
-    ],
-    "bull": [
-      "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
-      "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
-      "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
-      "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
-      "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
-    ],
-    "risk": [
-      "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
-      "US tariff + trade policy uncertainty กระทบ supply chain",
-      "Customer concentration: Apple + NVIDIA + AMD = top 3",
-      "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
-      "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 3,
-    "waf": 8.15,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 417.17,
-    "fv": 420,
-    "mos": 0.67,
-    "fpe": 19.87,
-    "peg": 0.994,
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        9.5,
-        "green",
-        95
-      ],
-      "va": [
-        6.3,
-        "orange",
-        63
-      ],
-      "ra": [
-        5.5,
-        "orange",
-        55
-      ]
-    },
-    "idea": "Price +3.4% ($403.31->$417.17). 08-05 🔴MATERIAL news (\"$100B Arizona investment\") verified as the 4th re-syndication of the same 07-16 Q2 earnings call detail already fully analyzed 07-25/07-27/07-31 — zero new data points. FV carried $420 (Q2 beat-and-raise re-value). MoS compresses from an already-thin 3.95% to essentially zero (0.67%) — lowest margin of safety in the entire portfolio, flag for Oat.",
-    "updated": "2026-08-05",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-05",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
-      "why": "Consensus อ่าน Q2 print ว่า \"ดีแต่ priced-in, จับตา margin/capex\" — Warren เห็น second-level signal ที่ FY2026 growth guidance ขึ้นเป็น **ครั้งที่สองของปี** (>30%→\"slightly above 40%\") + CapEx ขึ้นเป็น $60–64B + Arizona +$100B + demand \"stronger and stronger\" และ supply ตึงถึง 2029–2030 = demand เร่งจริง ไม่ใช่แค่ทรงตัว. แต่หลัง FV recalibration ใช้ consensus EPS (ไม่ใช้ peak-year) FV base ขยับเป็น ~$420 และราคา $403.41 → **MoS เหลือ ~4% เท่านั้น** = ซื้อเกือบเต็มมูลค่า. edge จึงไม่ใช่ \"ราคาถูก\" แต่คือ \"คุณภาพหายากระดับ Inevitable ที่ควรถือ ไม่เติมจนกว่าจะมี buffer\".",
-      "risk": "US-Taiwan geopolitical escalates to military action, OR Apple+NVIDIA shift >30% of volume to Samsung/Intel Foundry simultaneously, OR the guided H2 margin compression (N2 ramp −3–4pp GM) proves deeper/longer than management indicated."
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-08-07"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก — ราคาขึ้นต่อ +3.4% เป็น $417.17 ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่ MoS บีบแคบลงเหลือ 0.67% — บางที่สุดในพอร์ตทั้งหมด แทบไม่เหลือ margin of safety",
-      "what": "TSMC เป็นโรงงานรับจ้างผลิตชิปแบบ pure-play (ไม่ออกแบบหรือขายชิปเอง) — ทำให้ไม่แข่งกับลูกค้าเลย ลูกค้าจึงไว้ใจส่ง IP มาให้ผลิต รายได้หลักมาจากชิปประสิทธิภาพสูง (AI/server/PC) 66% ของรายได้ไตรมาสล่าสุด",
-      "why_invest": [
-        "ผูกขาด N2/A16 + คอขวด CoWoS + พันธมิตร NVIDIA ระยะยาว",
-        "งบ Q2'26 record rev $40.2B +33.7%, GM 67.7%, net +77.4% + ปรับเป้าปีขึ้นรอบ 2 (slightly above 40%)",
-        "PEG 0.99 + ER 20.1%/ปี ผ่านเกณฑ์; Charlie คำนวณ EPS consensus FY27 $20.83 ใกล้เคียง Warren $21.0 มาก",
-        "CapEx $60-64B + Arizona +$100B ยืนยัน demand structural"
-      ],
-      "watch_out": [
-        "⚠️ ราคา $417.17 ให้ MoS แค่ 0.67% เท่านั้น (บางที่สุดในพอร์ตทั้งหมด, ลงจาก 3.95% รอบก่อน) — ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด",
-        "ข่าว '$100B Arizona investment' 08-05 ตรวจสอบแล้วเป็นการพูดซ้ำรายละเอียดจากงบ Q2 (ก.ค. 2026) เดิมรอบที่ 4 ไม่มีข้อมูลใหม่จริง",
-        "Charlie คำนวณ FV อิสระ $465 (สูงกว่า Warren $420 ด้วยซ้ำ 10.7%) แต่ MoS ที่ FV ของ Charlie เองก็บางลงเหลือ +10.3% (จาก +13.3%) เช่นกัน — ไม่มีพื้นที่รองรับถ้า N2 margin dilution ลึกกว่าคาด",
-        "Taiwan geopolitics + customer concentration Apple+NVIDIA ~36%"
-      ],
-      "bottom_line": "คุณภาพระดับ Inevitable ไม่เปลี่ยน แต่ราคาที่วิ่งขึ้นต่อเนื่องบีบ MoS เหลือ 0.67% — บางที่สุดในพอร์ต ไม่เหลือ margin of safety รองรับความผิดพลาดเลย Charlie ยืนยัน AGREE (FV อิสระสูงกว่า Warren ด้วยซ้ำ) แต่ MoS ทั้งสองฝั่งบางลงพร้อมกัน HOLD ถือต่อ ไม่เติมที่ราคานี้เด็ดขาด"
-    },
-    "mark_full": {
-      "business_overview": "TSMC ก่อตั้งปี 1987 โดย Dr. Morris Chang เป็นผู้บุกเบิกโมเดล pure-play foundry — รับจ้างผลิตชิปตามดีไซน์ลูกค้าโดยไม่แข่งกับลูกค้าเอง FY2025 มีลูกค้า 534 ราย เทคโนโลยีการผลิต 305 แบบ ส่วนแบ่งตลาด foundry ราว 40%",
-      "tam": "รายได้ HPC (AI + server + PC) คิดเป็น 66% ของรายได้ไตรมาสล่าสุด — ผู้บริหารมองว่า Agentic AI ต้องการ compute มากกว่า generative AI ทำให้ดีมานด์เป็นเชิงโครงสร้างไม่ใช่วัฏจักร คาด CAGR รายได้จากชิป AI ปี 2024-2029 อยู่ราว 50-60% ต่อปี",
-      "moat": "โมเดล pure-play foundry ทำให้ลูกค้าอย่าง Apple, NVIDIA, AMD, Google ไว้ใจส่ง IP ลับให้ผลิต (ต่างจาก Samsung/Intel ที่มีชิปของตัวเอง); เป็นผู้นำเทคโนโลยีการผลิตขั้นสูง (77% ของรายได้มาจากโหนด ≤7nm); ระบบนิเวศพันธมิตร EDA+IP+อุปกรณ์ที่สร้างมาหลายทศวรรษทำให้ลูกค้าออกแบบชิปบน TSMC ได้เร็วและถูกกว่า; ผูกขาด CoWoS (advanced packaging) ซึ่งเป็นคอขวดหลักของการประกอบชิป AI GPU",
-      "latest_financials": "Q2 2026 (beat-and-raise): record revenue $40.2B +33.7% USD, GM 67.7%, operating margin สูง, net +77.4% YoY; ปรับเป้าการเติบโตทั้งปีขึ้นเป็น slightly above 40% (จาก >30%) เป็นรอบที่ 2; CapEx $60-64B + Arizona +$100B; Q3 GM guide 65-67% (N2 dilution); FV Base คงที่ $420 (FY27 consensus $20.83 × 22.31x)",
-      "key_points": [
-        "โหนด N2 เข้าสู่การผลิตปริมาณมากด้วย yield ดี — เร่งการใช้งานปี 2026",
-        "ข่าว '$100B Arizona investment' 08-05 ตรวจสอบแล้วเป็นการพูดซ้ำรายละเอียดจากงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่",
-        "supply ตึงถึง 2029-30; ปรับขึ้นราคา (12 มิ.ย.) ยืนยันอำนาจต่อรอง",
-        "⚠️ MoS ของ Warren บีบแคบลงเหลือ 0.67% (จาก 3.95%) — บางที่สุดในพอร์ตทั้งหมด, ราคาซื้อเกือบเต็มมูลค่าเป๊ะๆ ไม่ควรเติมที่ราคานี้"
-      ]
-    },
-    "warren_easy": [
-      "TSM tier Inevitable WAF 8.15 (จาก 8.40) — ราคาขึ้นต่อ +3.4% เป็น $417.17, ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่",
-      "FV คงที่ $420 (FY27 consensus $21.0 × 20x conservative) — ราคา $417.17 ให้ MoS บีบแคบลงเหลือแค่ 0.67% (จาก 3.95%) บางที่สุดในพอร์ตทั้งหมด",
-      "HOLD — held name ไม่ forced sell (Fisher) แต่ MoS บางเกินกว่าจะเติม ⚠️ แจ้งโอ๊ต: อย่าเติมที่ราคานี้"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ตรวจสอบราคาข้ามแหล่งอิสระ (Nasdaq + CNBC) ตรงกันเป๊ะที่ $417.17 และดึง consensus EPS FY27 ใหม่ ($20.83) ตรงกับรอบก่อนเป๊ะ ไม่มีการปรับ — ยืนยันว่าข่าว Arizona 08-05 เป็นการพูดซ้ำจริง ไม่มีข้อมูลใหม่",
-        "Charlie คำนวณ FV อิสระด้วย consensus EPS FY27 $20.83 × 22.31x = $465 — ยังสูงกว่า Warren เองที่ $420 ด้วยซ้ำ (Warren อนุรักษ์นิยมกว่า) ส่วนต่างคงที่ 10.7% เท่าเดิม",
-        "🔴 ทั้งสองฝั่งยืนยันตรงกันว่า margin of safety บางลงพร้อมกันรอบนี้: Warren เหลือแค่ 0.67% (จาก 3.95%), Charlie เองที่ FV ตนก็เหลือ +10.3% (จาก +13.3%) — ไม่มีพื้นที่รองรับถ้า N2 margin dilution หรือ CapEx $60-64B ทำให้ผิดหวัง"
-      ],
-      "review_date": "2026-08-05"
-    },
-    "idea_th": "HOLD — ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก. งบ Q2'26 beat-and-raise: record rev $40.2B +33.7% USD, GM 67.7%, net +77.4%, ปรับเป้าปีขึ้นรอบ 2 เป็น slightly above 40%, CapEx $60-64B, Arizona +$100B. FV คงที่ $420 (FY27 consensus $20.83 × 22.31x). ราคาขึ้นต่อ +3.4% เป็น $417.17 บีบ MoS เหลือแค่ 0.67% (จาก 3.95%) — บางที่สุดในพอร์ตทั้งหมด ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด. ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่. Charlie ยืนยัน AGREE: FV อิสระ $465 สูงกว่า Warren เองด้วยซ้ำ (gap 10.7% เท่าเดิม) แต่ MoS ที่ FV ของ Charlie เองก็บางลงเหลือ +10.3% (จาก +13.3%) เช่นกัน — ทั้งสองฝั่งไม่เหลือ margin of safety มากพอรองรับความผิดพลาด",
-    "story_gate_th": {
-      "what": "TSMC เป็น pure-play foundry (ไม่แข่งกับลูกค้า) ผูกขาดโหนดขั้นสูง N2/A16 + คอขวด CoWoS advanced packaging; HPC (AI/server/PC) 66% ของรายได้",
-      "why": "งบ Q2 beat-and-raise ยืนยัน demand เร่งจริง (rev $40.2B +33.7%, ปรับเป้าปี slightly above 40%). FV คงที่ $420 — แต่ราคา $403.31 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต) = ซื้อเกือบเต็มมูลค่า → HOLD ไม่เติม. Charlie เปลี่ยนกลับมา AGREE เต็มที่: FV อิสระ $465 สูงกว่า Warren เองด้วยซ้ำ (gap 10.7%) หลังปัญหาราคาไม่ตรงกันจากรอบก่อนแก้หายแล้ว",
-      "risk": "Taiwan geopolitics; N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%); CapEx $60-64B กด near-term FCF; customer concentration Apple+NVIDIA 36%; margin of safety บางทั้งสองฝั่ง (Warren 3.95%, Charlie 13.3%) ไม่มีพื้นที่รองรับความผิดพลาด"
-    },
-    "bull_th": [
-      "งบ Q2'26 record rev $40.2B +33.7% USD, GM 67.7%, net +77.4% YoY + ปรับเป้าปีขึ้นรอบ 2 (slightly above 40%)",
-      "ผูกขาดโหนด N2/A16 + คอขวด CoWoS + พันธมิตร NVIDIA ระยะยาว; supply ตึงถึง 2029-30",
-      "PEG 0.99 + ER 20.1%/ปี ผ่านเกณฑ์; Charlie ตรวจสอบอิสระแล้ว FV $465 สูงกว่า Warren เองด้วยซ้ำ",
-      "CapEx $60-64B + Arizona +$100B ยืนยัน demand structural"
-    ],
-    "risk_th": [
-      "🔴 ราคา $417.17 ให้ MoS แค่ 0.67% (บางที่สุดในพอร์ต, ลงจาก 3.95%) — ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด",
-      "N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%)",
-      "Taiwan geopolitics เป็นความเสี่ยงเชิงโครงสร้าง",
-      "customer concentration Apple+NVIDIA ~36% ของรายได้",
-      "margin of safety บางลงพร้อมกันทั้งสองฝั่ง (Warren 0.67%, Charlie เอง +10.3%) — ไม่มีพื้นที่รองรับถ้า CapEx/margin dilution ทำให้ผิดหวัง"
-    ]
-  },
   "AVGO": {
     "symbol": "AVGO",
     "display": "AVGO",
@@ -365,7 +224,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคาขยับขึ้นมา $389.28 (ไม่มีข่าวใหม่) ดัน MoS ลงเหลือ 13.49% ยังอยู่ใน STARTER band แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358) และ MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7%",
@@ -432,6 +291,156 @@
       "MoS 13.49% อยู่ใน near-miss band + PEG 1.45 ฉิวเฉียด — improvement เป็น price-driven ไม่ใช่ business-driven"
     ]
   },
+  "TSM": {
+    "symbol": "TSM",
+    "display": "TSMC",
+    "category": "semiconductor",
+    "name": "Taiwan Semiconductor",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "Advanced Foundry"
+    ],
+    "bull": [
+      "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
+      "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
+      "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
+      "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
+      "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
+    ],
+    "risk": [
+      "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
+      "US tariff + trade policy uncertainty กระทบ supply chain",
+      "Customer concentration: Apple + NVIDIA + AMD = top 3",
+      "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
+      "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 3,
+    "waf": 8.05,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 420.04,
+    "fv": 420,
+    "mos": -0.01,
+    "fpe": 20.0,
+    "peg": 1.0,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        6.1,
+        "orange",
+        61
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "5th duplicate re-syndication of the guidance-raise story (08-07, verified via WebSearch) — no new EPS/FV data beyond a minor positive 3nm early-ramp supply detail. Price +0.69% closes MoS to essentially zero (-0.01%) — lowest in the portfolio. HOLD, no ADD.",
+    "updated": "2026-08-08",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-08",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
+      "why": "Consensus อ่าน Q2 print ว่า \"ดีแต่ priced-in, จับตา margin/capex\" — Warren เห็น second-level signal ที่ FY2026 growth guidance ขึ้นเป็น **ครั้งที่สองของปี** (>30%→\"slightly above 40%\") + CapEx ขึ้นเป็น $60–64B + Arizona +$100B + demand \"stronger and stronger\" และ supply ตึงถึง 2029–2030 = demand เร่งจริง ไม่ใช่แค่ทรงตัว. แต่หลัง FV recalibration ใช้ consensus EPS (ไม่ใช้ peak-year) FV base ขยับเป็น ~$420 และราคา $403.41 → **MoS เหลือ ~4% เท่านั้น** = ซื้อเกือบเต็มมูลค่า. edge จึงไม่ใช่ \"ราคาถูก\" แต่คือ \"คุณภาพหายากระดับ Inevitable ที่ควรถือ ไม่เติมจนกว่าจะมี buffer\".",
+      "risk": "US-Taiwan geopolitical escalates to military action, OR Apple+NVIDIA shift >30% of volume to Samsung/Intel Foundry simultaneously, OR the guided H2 margin compression (N2 ramp −3–4pp GM) proves deeper/longer than management indicated."
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price $420.04 cross-checked 2-source (Nasdaq quote/info API + CNBC quote-html-webservice), fetched 2026-08-08 -- exact match on both price ($420.04) and day change (+0.44%), 0% drift",
+        "FY2027 (Dec2027) consensus EPS re-pulled fresh: $20.83 (Nasdaq, 8 analysts, 7up/0down) -- exact match to 08-05, zero revision this round, confirms Warren's own eps_used ($21.0) sits within 0.8% of consensus (immaterial, not an input-discipline issue)",
+        "TTM actual EPS $13.75 (CNBC trailing EPS field) -- unchanged since 08-05",
+        "WebSearch confirms no material TSM-specific news 08-05->08-08 beyond continued digestion of the mid-July Q2 print (Arizona $100B, N2 dilution, capex) already fully priced since 07-25 -- Warren's '5th duplicate re-syndication' characterization independently confirmed accurate"
+      ],
+      "concerns": [
+        "Warren's own MoS is now essentially zero (+0.67% at 08-05 -> -0.01% today, i.e. price is now marginally above Warren's own FV) -- HOLD remains correct (no forced sell on valuation alone per Fisher discipline) but this is not an entry price by any measure",
+        "At Charlie's independent FV, MoS is a more comfortable +9.7% -- same directional conclusion (not a compelling ADD price), views diverge only on cushion size",
+        "N2 margin dilution (Q3 GM guide 65-67% vs Q2 67.7%) and $60-64B capex overhang remain unhedged against an at-or-below-FV price"
+      ],
+      "summary": "",
+      "review_date": "2026-08-08"
+    },
+    "mark_easy": {
+      "one_liner": "ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก — ราคาขึ้นต่อ +3.4% เป็น $417.17 ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่ MoS บีบแคบลงเหลือ 0.67% — บางที่สุดในพอร์ตทั้งหมด แทบไม่เหลือ margin of safety",
+      "what": "TSMC เป็นโรงงานรับจ้างผลิตชิปแบบ pure-play (ไม่ออกแบบหรือขายชิปเอง) — ทำให้ไม่แข่งกับลูกค้าเลย ลูกค้าจึงไว้ใจส่ง IP มาให้ผลิต รายได้หลักมาจากชิปประสิทธิภาพสูง (AI/server/PC) 66% ของรายได้ไตรมาสล่าสุด",
+      "why_invest": [
+        "ผูกขาด N2/A16 + คอขวด CoWoS + พันธมิตร NVIDIA ระยะยาว",
+        "งบ Q2'26 record rev $40.2B +33.7%, GM 67.7%, net +77.4% + ปรับเป้าปีขึ้นรอบ 2 (slightly above 40%)",
+        "PEG 0.99 + ER 20.1%/ปี ผ่านเกณฑ์; Charlie คำนวณ EPS consensus FY27 $20.83 ใกล้เคียง Warren $21.0 มาก",
+        "CapEx $60-64B + Arizona +$100B ยืนยัน demand structural"
+      ],
+      "watch_out": [
+        "⚠️ ราคา $417.17 ให้ MoS แค่ 0.67% เท่านั้น (บางที่สุดในพอร์ตทั้งหมด, ลงจาก 3.95% รอบก่อน) — ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด",
+        "ข่าว '$100B Arizona investment' 08-05 ตรวจสอบแล้วเป็นการพูดซ้ำรายละเอียดจากงบ Q2 (ก.ค. 2026) เดิมรอบที่ 4 ไม่มีข้อมูลใหม่จริง",
+        "Charlie คำนวณ FV อิสระ $465 (สูงกว่า Warren $420 ด้วยซ้ำ 10.7%) แต่ MoS ที่ FV ของ Charlie เองก็บางลงเหลือ +10.3% (จาก +13.3%) เช่นกัน — ไม่มีพื้นที่รองรับถ้า N2 margin dilution ลึกกว่าคาด",
+        "Taiwan geopolitics + customer concentration Apple+NVIDIA ~36%"
+      ],
+      "bottom_line": "คุณภาพระดับ Inevitable ไม่เปลี่ยน แต่ราคาที่วิ่งขึ้นต่อเนื่องบีบ MoS เหลือ 0.67% — บางที่สุดในพอร์ต ไม่เหลือ margin of safety รองรับความผิดพลาดเลย Charlie ยืนยัน AGREE (FV อิสระสูงกว่า Warren ด้วยซ้ำ) แต่ MoS ทั้งสองฝั่งบางลงพร้อมกัน HOLD ถือต่อ ไม่เติมที่ราคานี้เด็ดขาด"
+    },
+    "mark_full": {
+      "business_overview": "TSMC ก่อตั้งปี 1987 โดย Dr. Morris Chang เป็นผู้บุกเบิกโมเดล pure-play foundry — รับจ้างผลิตชิปตามดีไซน์ลูกค้าโดยไม่แข่งกับลูกค้าเอง FY2025 มีลูกค้า 534 ราย เทคโนโลยีการผลิต 305 แบบ ส่วนแบ่งตลาด foundry ราว 40%",
+      "tam": "รายได้ HPC (AI + server + PC) คิดเป็น 66% ของรายได้ไตรมาสล่าสุด — ผู้บริหารมองว่า Agentic AI ต้องการ compute มากกว่า generative AI ทำให้ดีมานด์เป็นเชิงโครงสร้างไม่ใช่วัฏจักร คาด CAGR รายได้จากชิป AI ปี 2024-2029 อยู่ราว 50-60% ต่อปี",
+      "moat": "โมเดล pure-play foundry ทำให้ลูกค้าอย่าง Apple, NVIDIA, AMD, Google ไว้ใจส่ง IP ลับให้ผลิต (ต่างจาก Samsung/Intel ที่มีชิปของตัวเอง); เป็นผู้นำเทคโนโลยีการผลิตขั้นสูง (77% ของรายได้มาจากโหนด ≤7nm); ระบบนิเวศพันธมิตร EDA+IP+อุปกรณ์ที่สร้างมาหลายทศวรรษทำให้ลูกค้าออกแบบชิปบน TSMC ได้เร็วและถูกกว่า; ผูกขาด CoWoS (advanced packaging) ซึ่งเป็นคอขวดหลักของการประกอบชิป AI GPU",
+      "latest_financials": "Q2 2026 (beat-and-raise): record revenue $40.2B +33.7% USD, GM 67.7%, operating margin สูง, net +77.4% YoY; ปรับเป้าการเติบโตทั้งปีขึ้นเป็น slightly above 40% (จาก >30%) เป็นรอบที่ 2; CapEx $60-64B + Arizona +$100B; Q3 GM guide 65-67% (N2 dilution); FV Base คงที่ $420 (FY27 consensus $20.83 × 22.31x)",
+      "key_points": [
+        "โหนด N2 เข้าสู่การผลิตปริมาณมากด้วย yield ดี — เร่งการใช้งานปี 2026",
+        "ข่าว '$100B Arizona investment' 08-05 ตรวจสอบแล้วเป็นการพูดซ้ำรายละเอียดจากงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่",
+        "supply ตึงถึง 2029-30; ปรับขึ้นราคา (12 มิ.ย.) ยืนยันอำนาจต่อรอง",
+        "⚠️ MoS ของ Warren บีบแคบลงเหลือ 0.67% (จาก 3.95%) — บางที่สุดในพอร์ตทั้งหมด, ราคาซื้อเกือบเต็มมูลค่าเป๊ะๆ ไม่ควรเติมที่ราคานี้"
+      ]
+    },
+    "warren_easy": [
+      "TSM tier Inevitable WAF 8.15 (จาก 8.40) — ราคาขึ้นต่อ +3.4% เป็น $417.17, ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่",
+      "FV คงที่ $420 (FY27 consensus $21.0 × 20x conservative) — ราคา $417.17 ให้ MoS บีบแคบลงเหลือแค่ 0.67% (จาก 3.95%) บางที่สุดในพอร์ตทั้งหมด",
+      "HOLD — held name ไม่ forced sell (Fisher) แต่ MoS บางเกินกว่าจะเติม ⚠️ แจ้งโอ๊ต: อย่าเติมที่ราคานี้"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ตรวจสอบราคาข้ามแหล่งอิสระ (Nasdaq + CNBC) ตรงกันเป๊ะที่ $417.17 และดึง consensus EPS FY27 ใหม่ ($20.83) ตรงกับรอบก่อนเป๊ะ ไม่มีการปรับ — ยืนยันว่าข่าว Arizona 08-05 เป็นการพูดซ้ำจริง ไม่มีข้อมูลใหม่",
+        "Charlie คำนวณ FV อิสระด้วย consensus EPS FY27 $20.83 × 22.31x = $465 — ยังสูงกว่า Warren เองที่ $420 ด้วยซ้ำ (Warren อนุรักษ์นิยมกว่า) ส่วนต่างคงที่ 10.7% เท่าเดิม",
+        "🔴 ทั้งสองฝั่งยืนยันตรงกันว่า margin of safety บางลงพร้อมกันรอบนี้: Warren เหลือแค่ 0.67% (จาก 3.95%), Charlie เองที่ FV ตนก็เหลือ +10.3% (จาก +13.3%) — ไม่มีพื้นที่รองรับถ้า N2 margin dilution หรือ CapEx $60-64B ทำให้ผิดหวัง"
+      ],
+      "review_date": "2026-08-05"
+    },
+    "idea_th": "HOLD — ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก. งบ Q2'26 beat-and-raise: record rev $40.2B +33.7% USD, GM 67.7%, net +77.4%, ปรับเป้าปีขึ้นรอบ 2 เป็น slightly above 40%, CapEx $60-64B, Arizona +$100B. FV คงที่ $420 (FY27 consensus $20.83 × 22.31x). ราคาขึ้นต่อ +3.4% เป็น $417.17 บีบ MoS เหลือแค่ 0.67% (จาก 3.95%) — บางที่สุดในพอร์ตทั้งหมด ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด. ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่. Charlie ยืนยัน AGREE: FV อิสระ $465 สูงกว่า Warren เองด้วยซ้ำ (gap 10.7% เท่าเดิม) แต่ MoS ที่ FV ของ Charlie เองก็บางลงเหลือ +10.3% (จาก +13.3%) เช่นกัน — ทั้งสองฝั่งไม่เหลือ margin of safety มากพอรองรับความผิดพลาด",
+    "story_gate_th": {
+      "what": "TSMC เป็น pure-play foundry (ไม่แข่งกับลูกค้า) ผูกขาดโหนดขั้นสูง N2/A16 + คอขวด CoWoS advanced packaging; HPC (AI/server/PC) 66% ของรายได้",
+      "why": "งบ Q2 beat-and-raise ยืนยัน demand เร่งจริง (rev $40.2B +33.7%, ปรับเป้าปี slightly above 40%). FV คงที่ $420 — แต่ราคา $403.31 ให้ MoS แค่ 3.95% (ต่ำสุดในพอร์ต) = ซื้อเกือบเต็มมูลค่า → HOLD ไม่เติม. Charlie เปลี่ยนกลับมา AGREE เต็มที่: FV อิสระ $465 สูงกว่า Warren เองด้วยซ้ำ (gap 10.7%) หลังปัญหาราคาไม่ตรงกันจากรอบก่อนแก้หายแล้ว",
+      "risk": "Taiwan geopolitics; N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%); CapEx $60-64B กด near-term FCF; customer concentration Apple+NVIDIA 36%; margin of safety บางทั้งสองฝั่ง (Warren 3.95%, Charlie 13.3%) ไม่มีพื้นที่รองรับความผิดพลาด"
+    },
+    "bull_th": [
+      "งบ Q2'26 record rev $40.2B +33.7% USD, GM 67.7%, net +77.4% YoY + ปรับเป้าปีขึ้นรอบ 2 (slightly above 40%)",
+      "ผูกขาดโหนด N2/A16 + คอขวด CoWoS + พันธมิตร NVIDIA ระยะยาว; supply ตึงถึง 2029-30",
+      "PEG 0.99 + ER 20.1%/ปี ผ่านเกณฑ์; Charlie ตรวจสอบอิสระแล้ว FV $465 สูงกว่า Warren เองด้วยซ้ำ",
+      "CapEx $60-64B + Arizona +$100B ยืนยัน demand structural"
+    ],
+    "risk_th": [
+      "🔴 ราคา $417.17 ให้ MoS แค่ 0.67% (บางที่สุดในพอร์ต, ลงจาก 3.95%) — ซื้อเกือบเต็มมูลค่าเป๊ะๆ → HOLD ไม่เติมเด็ดขาด",
+      "N2 ramp GM dilution 3-4pp (Q3 guide 65-67% < Q2 67.7%)",
+      "Taiwan geopolitics เป็นความเสี่ยงเชิงโครงสร้าง",
+      "customer concentration Apple+NVIDIA ~36% ของรายได้",
+      "margin of safety บางลงพร้อมกันทั้งสองฝั่ง (Warren 0.67%, Charlie เอง +10.3%) — ไม่มีพื้นที่รองรับถ้า CapEx/margin dilution ทำให้ผิดหวัง"
+    ]
+  },
   "AMZN": {
     "symbol": "AMZN",
     "display": "AMZN",
@@ -459,15 +468,15 @@
     ],
     "action": "hold",
     "actionLabel": "Hold",
-    "conviction": 4,
-    "waf": 7.97,
+    "conviction": 3,
+    "waf": 7.77,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 259.52,
+    "price": 274.48,
     "fv": 287,
-    "mos": 9.57,
-    "fpe": 26.19,
-    "peg": 1.45,
+    "mos": 4.36,
+    "fpe": 27.7,
+    "peg": 1.539,
     "scores": {
       "bq": [
         9.0,
@@ -480,9 +489,9 @@
         90
       ],
       "va": [
-        6.8,
-        "amber",
-        68
+        6.0,
+        "orange",
+        60
       ],
       "ra": [
         5.8,
@@ -490,12 +499,12 @@
         58
       ]
     },
-    "idea": "Cloud + Retail + Ads Trifecta thesis confirmed stronger by actual Q2 2026 results (AWS accelerating to fastest-in-18-quarters, backlog +36% QoQ to $496B, Operating Income beat guide top-end by a wide margin) — not just projection anymore. But price ran up +11.8% on the beat (mostly driven by AWS acceleration + Anthropic mark-to-market optics) before FY27 EPS consensus had a chance to catch up, pushing MoS below the 15% gate (9.57%) even though ER stays ~20%/yr. Holdings Return Recheck governs this existing holding: price rose because of genuine operating-income growth (not sentiment/hype), so Fair Value plausibly needs to rise too once FY27 consensus updates — but Warren won't assume that without evidence (Consensus-as-Base rule). Action = HOLD, no ADD this batch; Flag to re-estimate FV next round.",
-    "updated": "2026-07-31",
+    "idea": "Time-triggered re-check (8 days since 07-31 gate, no new material news). Price continued running +5.8% ($259.52->$274.48) with FV still pending post-Q2 consensus revision (Consensus-as-Base rule — cannot self-generate a higher number without a sourced update). MoS deteriorates further to 4.36%, PEG now also fails (1.54). HOLD, no ADD, priority flag to re-estimate FV once FY27 consensus updates.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-31",
+      "updated": "2026-08-08",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
@@ -505,10 +514,19 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
+      "verified_claims": [
+        "Price $274.48 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, confirms the further +5.8% run since 07-31 ($259.52->$274.48)",
+        "FY27 (Dec2027) consensus EPS re-pulled fresh: $10.57 (Nasdaq, 17 analysts, 15up/0down) -- UP +4.0% from $10.16 on 07-31, decisively upward (15up/0down) -- this is the predicted post-Q2 upward revision flowing through, exactly as flagged as pending on 07-31",
+        "TTM actual EPS (raw GAAP, CNBC): $12.43 -- still distorted by the Q2 Anthropic mark-to-market gain (unchanged since 07-31, no new quarter reported yet, next earnings ~late Oct 2026). Charlie-normalized TTM held at $7.36 (see 07-31 methodology, unchanged input)",
+        "No new AMZN-specific news found 07-31->08-08 -- consistent with Warren's 'time-triggered, no new material news' framing for this round"
+      ],
+      "concerns": [
+        "🔶 CARRIED (unresolved): raw/reported TTM EPS ($12.43) remains a data-quality trap for any downstream Floor/PE calc that doesn't back out the one-time Anthropic gain -- still flagging every round until a full quarter without the distortion rolls through TTM",
+        "FCF (TTM) still negative (-$7.6B as of Q2), CapEx guided up twice this year ($200B->$220B), long-term debt roughly doubled in 6 months -- all real structural risks Warren's RA score already reflects, but significant enough that Charlie flags CAUTION independently on earnings-quality/balance-sheet grounds, not on the FV-gap math (which is tiny, 3.1%)",
+        "TQR block still absent from Warren's card this round (same gap flagged 07-31) -- website badge risk, not a valuation issue"
+      ],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "Amazon งบ Q2 2026 บีตใหญ่ AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส แต่ EPS ที่ดูพุ่งกระฉูดส่วนใหญ่มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจริงจากการลงทุนใน Anthropic",
@@ -573,144 +591,6 @@
       "ราคาที่วิ่งขึ้นแรงหลังงบทำให้ margin of safety แคบเหลือ 9.57% ผ่านเกณฑ์แค่เฉียดๆ"
     ]
   },
-  "LITE": {
-    "symbol": "LITE",
-    "display": "LITE",
-    "category": "ai_semiconductor",
-    "name": "Lumentum Holdings",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Optical/Photonics",
-      "AI Infrastructure"
-    ],
-    "bull": [
-      "รายได้ Q3 FY26 record $808M +90% YoY จาก AI/cloud optical demand",
-      "NVIDIA ลงทุน $2B (Series A preferred) + EMLs/pump lasers sold out >30% imbalance",
-      "CPO laser chips = growth driver ใหญ่สุด, Greensboro fab อาจเพิ่มรายได้ >$5B",
-      "vertical integration InP fabs = margin + supply security"
-    ],
-    "risk": [
-      "ราคาวิ่งแรงมาก (52wL $80 → $945) = optical group euphoria",
-      "forward PE สูงมากบน sentiment",
-      "convertible notes $3.2B + dilution risk",
-      "optical demand เป็น supply story — laser bottleneck"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 7.9,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 779.89,
-    "fv": 1100,
-    "mos": 29.1,
-    "fpe": 42.92,
-    "peg": 1.16,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        6.7,
-        "amber",
-        67
-      ],
-      "ra": [
-        5.5,
-        "orange",
-        55
-      ]
-    },
-    "idea": "Price ran up another +12.5% ($693.24->$779.89) -- WebSearch confirms broad 'risk-on' rally across optics names (Applied Optoelectronics/Coherent +7%, Lumentum +5%, same coverage), not LITE-specific. 3rd whipsaw in ~1 week (07-29 selloff -> 07-30/31 rally/PEG-fail -> 08-04 further rally/PEG-fail-deeper). FV Base $1,100 unchanged. PEG fails further to 1.16 (vs Fast Grower hard cap 1.0, no exceptions) even as MoS (29.10%) and ER (44.2%/yr) remain strong -- PEG gate is binding, stays WATCH.",
-    "updated": "2026-08-04",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-04",
-      "tier": "🌱 Fast Grower",
-      "tier_slug": "fast-grower",
-      "what": "Lumentum ครอง laser-chip (EML/pump/CW) + optical components + vertical InP fabs สำหรับ connectivity ใน AI data center — laser light source ที่ transceiver/CPO ขาดไม่ได้",
-      "why": "07-29: ราคาร่วง -17.7% ($762.99→$628.21, sector-wide selloff) ดัน PEG พลิกผ่าน gate เป็นครั้งแรก (0.93, cap 1.0) → flag BUY รอ Charlie verify. **2026-07-31 update: การพลิกกลับเกิดขึ้นทันทีในทิศตรงข้าม** — ราคา rebound +10.4% ($628.21→$693.24) บน sector-wide semiconductor rally 07-30 (เดียวกับที่ยก AMD/MU/SOXX +8%) ดัน PEG กลับไป **fail (1.03, เกิน cap 1.0)** บน growth assumption 37% เดิมที่ใช้มาตลอด ไม่มีข่าว card-specific ใหม่ (ไม่มีงบใหม่ตั้งแต่ Q3 FY26; Q4 FY26 ~ต้นส.ค.). นี่ยืนยันว่า BUY call รอบ 07-29 เป็นการข้าม gate แบบบางเพราะ sentiment ล้วนๆ (ไม่ใช่ fundamental re-rate) — ถูกต้องแล้วที่ยังไม่ execute รอ Charlie. **2026-08-04 update:** ราคาวิ่งต่ออีก +12.5% ($693.24→$779.89) — WebSearch ยืนยันเป็น broad \"risk-on\" sentiment ทั่วกลุ่ม optics stocks (Applied Optoelectronics/Coherent +7%, Lumentum +5% ในข่าวเดียวกัน) ไม่ใช่ LITE-specific catalyst; ยังไม่มีงบ Q4 FY26 ใหม่ ดัน PEG แย่ลงต่อเนื่องเป็น 1.16 (ยังเกิน cap 1.0) — whipsaw ครั้งที่ 3 ในรอบ 1 สัปดาห์ ยืนยันว่าราคาแกว่งตาม sector sentiment ล้วนๆ",
-      "risk": "หาก CPO timeline เลื่อน >12 เดือน, NVIDIA single-customer concentration กระทบเมื่อ NVIDIA in-source, optical oversupply จากคู่แข่งเร่งกำลังผลิตจน margin หด, หรือการแข่งขันใน 3D sensing/industrial laser ที่เพิ่งพบกัดกร่อน pricing power เร็วกว่าคาด"
-    },
-    "tier": "🌱 Fast Grower",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-08-07"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B — ราคาวิ่งขึ้นต่อ +12.5% เป็น $779.89 ตามแรง risk-on ทั้งกลุ่ม optics (ไม่ใช่ข่าว LITE เฉพาะ) วิ่งสวนไปมารอบที่ 4 ใน ~2 สัปดาห์ PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0) แม้ MoS/ER ยังผ่าน gate สบาย",
-      "what": "Lumentum ผลิตชิปเลเซอร์และส่วนประกอบออปติคอลที่ใช้เชื่อมต่อความเร็วสูงใน AI data center รวมถึง transceiver, OCS และเลเซอร์สำหรับ CPO",
-      "why_invest": [
-        "รายได้ไตรมาสล่าสุดทำสถิติ $808M โต 90% YoY จากดีมานด์ AI/cloud",
-        "NVIDIA ลงทุน $2B (preferred) + EML/pump laser ขายหมด supply ขาด >30%",
-        "CPO laser chips เป็น growth driver ใหญ่สุด + Greensboro fab อาจเพิ่มรายได้ >$5B",
-        "MoS ยังกว้าง 36.98% + ER 46.7%/ปี ผ่าน gate ทั้งคู่ — เหลือแค่ PEG ที่ fail"
-      ],
-      "watch_out": [
-        "PEG พลิกกลับมา FAIL (1.03 เกิน cap 1.0 ของ Fast Grower) บน growth assumption 37% เดิมที่ใช้มาตลอด — ราคาขึ้น-ลงข้าม gate ภายใน 3 วันทำการ (07-29 PASS → 07-31 FAIL) เป็นสัญญาณว่าใกล้ gate เกินไปจนอารมณ์ตลาดอย่างเดียวดันข้ามไปมาได้",
-        "Charlie: conservative MoS ของตัวเอง (บน FV $667) พลิกเป็นลบ -3.9% แล้ว (จาก +8.3% เมื่อ 2 วันก่อน) — ยืนยันว่าไม่ควรไล่ราคาตอนนี้",
-        "convertible debt $3.2B, NVIDIA customer concentration, Q4 FY26 earnings (~11 ส.ค.) เป็นบททดสอบจริง"
-      ],
-      "bottom_line": "WATCH (ไม่ใช่ BUY แล้ว) — Fast Grower tier ไม่มี STARTER คั่นกลาง แต่ PEG เป็น hard cap ทำให้กลับเป็น WATCH ทันทีที่ fail; ธุรกิจยังโตจริง รอ Q4 FY26 earnings (~11 ส.ค.) เป็นตัวตัดสินจริง"
-    },
-    "mark_full": {
-      "business_overview": "Lumentum ผลิตชิปออปติคอล/โฟโตนิก — เลเซอร์, EML, pump laser, transceiver (800G/1.6T), OCS โดยขาย Components 66% + Systems 34%",
-      "tam": "AI/cloud ดันดีมานด์ transceiver + laser chip โต บริษัทตั้งเป้ารายได้ $2B/ไตรมาส (จาก guide $985M) โดย CPO เป็น growth driver ใหญ่สุดที่ยังเริ่มต้น",
-      "moat": "vertical integration ในเลเซอร์ (โรงงาน InP ของตัวเอง) + laser-chip leadership (EML record, pump laser โต 80%) + OCS/MEMS leadership",
-      "latest_financials": "Q3 FY26 รายได้ $808.4M (สถิติ +90.1% YoY), Non-GAAP GM 47.9%, Non-GAAP EPS $2.37, Q4 guide $985M/EPS $2.85-3.05",
-      "key_points": [
-        "NVIDIA ลงทุน $2B preferred ที่ $695.31/หุ้น",
-        "EML/pump laser sold out, supply ขาด >30%",
-        "Greensboro fab (InP ที่ 5) อาจเพิ่มรายได้ >$5B (ยังไม่อยู่ใน guide)",
-        "ราคารีบาวด์ +10.4% ($628.21→$693.24) ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม พลิก PEG กลับมา FAIL — action เปลี่ยนจาก BUY (07-29) กลับเป็น WATCH; Charlie conservative MoS พลิกลบ -3.9%"
-      ]
-    },
-    "warren_easy": [
-      "LITE tier Fast Grower WAF 7.9 (แทบไม่เปลี่ยนจาก 7.98) — ราคาวิ่งขึ้นต่ออีก +12.5% เป็น $779.89 (จาก $693.24) จากแรง risk-on ทั่วกลุ่ม optics (Applied Optoelectronics/Coherent/Lumentum รีบาวด์ด้วย) ไม่ใช่ข่าว LITE เฉพาะ — วิ่งสวนไปมา 3 รอบใน ~1 สัปดาห์แล้ว",
-      "FV Base $1,100 คงเดิม แต่ PEG fail ลึกขึ้นเป็น 1.16 (เกิน hard cap 1.0 ของ Fast Grower ไม่มีข้อยกเว้น) แม้ MoS (29.1%) และ ER (44.2%/ปี) ยังผ่าน gate สบาย",
-      "WATCH ต่อเนื่อง — PEG gate เป็นตัวตัดสินหลัก ไม่ใช่ MoS; รองบ Q4 FY26 จริงคือ 11 ส.ค. 2026 เป็นบททดสอบว่า demand เป็นของจริงหรือแค่ sentiment"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "⚠️ conservative MoS ของ Charlie เอง (บน FV $667 คงเดิม) พลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9% เมื่อ 07-31) — ล้วนมาจากราคาที่วิ่งขึ้นทั้งกลุ่ม ไม่มีปัจจัยพื้นฐานเปลี่ยนแม้แต่นิดเดียว ยืนยันว่า WATCH (ไม่ใช่ BUY) ถูกต้องยิ่งขึ้น",
-        "gap ระหว่าง Warren-Charlie ยังคงที่ 39.4% เกิน 20% เข้าเกณฑ์ CAUTION บังคับเหมือนเดิม — multiple ของ Warren (60.5x) ยังสูงกว่า forward P/E จริงที่ตลาดให้ (49.2x) มาก",
-        "นี่คือ whipsaw รอบที่ 4 ใน ~2 สัปดาห์ (07-29 selloff → 07-30/31 รีบาวด์/PEG fail → 08-04 รีบาวด์ต่อ/PEG fail ลึกขึ้น) — งบ FQ4 FY26 (~11 ส.ค. 2026, ยืนยันแล้ว) คือบททดสอบจริงว่า demand แข็งแกร่งพอยืนผ่าน gate ถาวรหรือไม่"
-      ],
-      "review_date": "2026-08-04"
-    },
-    "idea_th": "WATCH — ราคาวิ่งขึ้นต่ออีก +12.5% เป็น $779.89 (จาก $693.24) จากแรง risk-on ทั่วกลุ่ม optics ทั้งกลุ่ม (Applied Optoelectronics/Coherent/Lumentum รีบาวด์ด้วย) ไม่ใช่ข่าว LITE เฉพาะ — วิ่งสวนไปมาเป็นรอบที่ 4 ใน ~2 สัปดาห์แล้ว FV Base $1,100 คงเดิม PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0 ของ Fast Grower) แม้ MoS 29.1% + ER 44.2%/ปี ยังผ่าน gate สบาย ⚠️ Charlie ยืนยัน: conservative MoS ของตัวเอง (บน FV $667 คงเดิม) พลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9%) ล้วนจากราคาที่วิ่งขึ้น gap คงที่ 39.4% เกิน 20% CAUTION บังคับ งบ FQ4 FY26 ยืนยันแล้ว 11 ส.ค. 2026 เป็นบททดสอบจริง",
-    "story_gate_th": {
-      "what": "Lumentum ผลิตชิปเลเซอร์และส่วนประกอบออปติคอลที่ใช้เชื่อมต่อความเร็วสูงใน AI data center รวมถึง transceiver, OCS และเลเซอร์สำหรับ CPO",
-      "why": "ราคาวิ่งขึ้นต่ออีก +12.5% ตามแรง risk-on ทั่วกลุ่ม optics ไม่ใช่ข่าว LITE เฉพาะ — PEG fail ลึกขึ้นเป็น 1.16 เป็น whipsaw รอบที่ 4 ใน ~2 สัปดาห์ ยืนยันว่าการพลิกไปมาเป็นแค่อารมณ์ตลาด ไม่ใช่ปัจจัยพื้นฐานเปลี่ยน action ยังเป็น WATCH",
-      "risk": "convertible debt $3.2B; NVIDIA customer concentration; CPO timeline risk; PEG whipsaw 4 รอบใน ~2 สัปดาห์ (fail→เกือบผ่าน→fail→fail ลึกขึ้น) แสดงความอ่อนไหวสูงมากต่ออารมณ์ตลาด; งบ FQ4 FY2026 (11 ส.ค. 2026 ยืนยันแล้ว) เป็นบททดสอบจริงที่ยังไม่มาถึง"
-    },
-    "bull_th": [
-      "รายได้ไตรมาสล่าสุดทำสถิติ $808M โต 90% YoY จากดีมานด์ AI/cloud",
-      "NVIDIA ลงทุน $2B (preferred) + EML/pump laser ขายหมด supply ขาด >30%",
-      "CPO laser chips เป็น growth driver ใหญ่สุด + Greensboro fab อาจเพิ่มรายได้ >$5B",
-      "MoS 29.1% + ER 44.2%/ปี ยังผ่าน gate ทั้งคู่ — ปัญหาแค่ PEG hard cap ตัวเดียว"
-    ],
-    "risk_th": [
-      "PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0) — whipsaw รอบที่ 4 ใน ~2 สัปดาห์ แกว่งตามอารมณ์ตลาดล้วนๆ",
-      "⚠️ Charlie: conservative MoS ของตัวเองพลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9%) — gap คงที่ 39.4% เกิน 20% CAUTION บังคับ",
-      "convertible debt $3.2B; NVIDIA single-customer concentration",
-      "insider selling $39M; CPO timeline risk",
-      "งบ FQ4 FY2026 (11 ส.ค. 2026 ยืนยันแล้ว) ต้องยืนยันว่า demand แข็งแกร่งพอยืนผ่าน gate ถาวรหรือแค่ sentiment ชั่วคราว"
-    ]
-  },
   "META": {
     "symbol": "META",
     "display": "META",
@@ -739,14 +619,14 @@
     "action": "hold",
     "actionLabel": "Hold",
     "conviction": 3,
-    "waf": 7.77,
+    "waf": 7.72,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 590.24,
+    "price": 592.1,
     "fv": 722,
-    "mos": 18.25,
-    "fpe": 18.48,
-    "peg": 1.34,
+    "mos": 17.99,
+    "fpe": 18.54,
+    "peg": 1.343,
     "scores": {
       "bq": [
         9.0,
@@ -759,22 +639,22 @@
         90
       ],
       "va": [
-        6.6,
+        6.5,
         "amber",
-        66
+        65
       ],
       "ra": [
-        4.8,
+        4.6,
         "orange",
-        48
+        46
       ]
     },
-    "idea": "Price continued running +9.5% in 4 trading days ($539.03->$590.24) -- WebSearch confirms broad 'mega-cap tech returns after post-earnings selloff' rotation (08-03 +6.5-6.8% single session) plus minor incrementals (Anthropic compute-rental talks, capex low-end narrowed to $130-145B, Roth cut PT to $750 from $820 still Buy). No new fundamental data beyond the already-analyzed 07-30 Q2 print. FV Base $722 unchanged -> MoS compresses meaningfully 25.34%->18.25% (7pt in 4 days), same Return Decay pattern as MSFT -- still passes 15% gate but cushion cut sharply.",
-    "updated": "2026-08-04",
+    "idea": "08-07 news: court ordered META to pay $567M to a New Mexico teen-mental-health fund — first concrete adjudicated figure for the youth-litigation risk already flagged in Thesis Risk. Scale is small relative to the 'tens of billions' IF WRONG threshold but confirms the risk is materializing, with headline flagging further suits may follow. Price flat (+0.3%). MoS 17.99% still passes gate 15% with a narrow cushion. HOLD continues.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-04",
+      "updated": "2026-08-08",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "Meta monetizes 3.6B daily active people through AI-enhanced advertising (Q2 2026: ad clicks +8.3%, conversion +15.7% on Facebook via GEM/user-understanding models), creating an irreplaceable network effect flywheel no competitor can replicate at scale.",
@@ -784,10 +664,19 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
+      "verified_claims": [
+        "Price $592.10 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, price flat vs 08-04 ($590.24->$592.10, +0.3%), confirms Warren's framing",
+        "Dec2026 consensus EPS re-pulled fresh: $28.84 (Nasdaq, 12 analysts, 3up/7down) -- down slightly from $28.99 on 08-04 (-0.5%), continuing the same net-negative-revision drift (3up/7down, more downgrades than 08-04's 3up/5down)",
+        "TTM actual EPS $28.88 (CNBC) -- unchanged since 08-04",
+        "Independently confirmed via WebSearch (Washington Post, PBS NewsHour, ABC News, The Hill, ClaimsJournal, abqjournal): New Mexico state court (Judge Biedscheid, Santa Fe) ordered Meta on 08-06 to pay $567M into a teen mental-health fund + implement 5-year youth-safety decree (usage limits, notification restrictions, adult-contact controls, chatbot safeguards) -- this is the SECOND New Mexico phase, following a $375M consumer-protection verdict 5 months earlier. Confirmed as a real, concrete, adjudicated figure (not a settlement estimate); scale ($567M) is ~0.3% of TTM revenue, immaterial financially, but establishes legal precedent that further state-level suits could follow"
+      ],
+      "concerns": [
+        "🔴 UNRESOLVED (5th consecutive batch, 07-18->08-08): Warren's EPS input $31.94 for 'FY2026' remains well above fresh Nasdaq Dec2026 consensus ($28.84) -- gap now 10.8% (was 10.2% on 08-04), continuing to widen rather than narrow as consensus keeps drifting down while Warren's figure stays flat. Per house rule, an old unresolved gap does not become acceptable through repetition -- flagging explicitly again, not treating as 'known/stable'",
+        "MoS compression continues on both sides: Warren's own MoS 18.25%->17.99%; Charlie's own MoS 9.9%->9.2% -- price running slightly ahead of a softening consensus",
+        "$567M NM court order is a genuine new fact not yet in Warren's thesis_risk explicitly as a dollar figure (was previously a qualitative 'youth litigation' line item) -- recommend folding the concrete number + the 5-yr operational decree (product-feature mandates, not just a fine) into thesis_risk next update, since the decree materially affects the product for NM users specifically and may become a template plaintiffs elsewhere cite"
+      ],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "Q2 2026 ยัง headline น่ากลัวแต่ราคาวิ่งต่อเนื่อง +9.5% ใน 4 วัน เป็น $590.24 (rotation กลับเข้าเทคใหญ่ทั้งกลุ่มหลัง sell-off) MoS แคบลงมากเหลือ 18.25% (จาก 25.34%) — Charlie ยัง CAUTION ต่อเนื่องรอบที่ 4 เพราะ consensus EPS จริงลดลงสวนทางราคาที่ขึ้น",
@@ -927,7 +816,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "งบ Q4 FY2026 แข็งแรง — ราคาวิ่งต่อเนื่องอีกเป็น $487.65 (+4.9%) แซง FV $459 ไปไกลขึ้น MoS แย่ลงเป็น -6.24% (จาก -1.25%) รอบที่ 4 ติดของ Return Decay + คดี securities class-action เหลือเวลายื่นคำร้องอีกแค่ 7 วัน (11 ส.ค.)",
@@ -991,6 +880,153 @@
       "ภาระผูกพันตามสัญญาพุ่งเกือบเท่าตัวใน 1 ปี ($397B→$743.8B) + เปลี่ยนวิธีคิดค่าเสื่อม (15→25ปี) ลดความโปร่งใสของกำไร",
       "FCF -23% YoY ต่อเนื่อง; Azure ยัง capacity-constrained",
       "Charlie: FV เชิงกลไกขยับแซง Warren แล้ว แต่เป็น methodology artifact จากตัวคูณไล่ตามราคา ไม่ใช่ปัจจัยพื้นฐานเปลี่ยน — MoS ของ Warren เองคือสัญญาณที่แท้จริง"
+    ]
+  },
+  "LITE": {
+    "symbol": "LITE",
+    "display": "LITE",
+    "category": "ai_semiconductor",
+    "name": "Lumentum Holdings",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Optical/Photonics",
+      "AI Infrastructure"
+    ],
+    "bull": [
+      "รายได้ Q3 FY26 record $808M +90% YoY จาก AI/cloud optical demand",
+      "NVIDIA ลงทุน $2B (Series A preferred) + EMLs/pump lasers sold out >30% imbalance",
+      "CPO laser chips = growth driver ใหญ่สุด, Greensboro fab อาจเพิ่มรายได้ >$5B",
+      "vertical integration InP fabs = margin + supply security"
+    ],
+    "risk": [
+      "ราคาวิ่งแรงมาก (52wL $80 → $945) = optical group euphoria",
+      "forward PE สูงมากบน sentiment",
+      "convertible notes $3.2B + dilution risk",
+      "optical demand เป็น supply story — laser bottleneck"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.55,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 890.17,
+    "fv": 1100,
+    "mos": 19.08,
+    "fpe": 48.99,
+    "peg": 1.324,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        5.3,
+        "orange",
+        53
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "Price-triggered re-check (+14.1% since 08-04 gate, no LITE-specific news) — the 4th consecutive sector-wide optics 'risk-on' rally in about 2 weeks. FV Base held $1,100 (no new earnings, Q4 FY26 still pending). MoS narrows to 19.08% (still passes 15% gate) but PEG fails deeper (1.32 vs Fast Grower cap 1.0). All 4 BUY Decision Flow gates must pass together — PEG failing keeps this WATCH.",
+    "updated": "2026-08-08",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-08",
+      "tier": "🌱 Fast Grower",
+      "tier_slug": "fast-grower",
+      "what": "Lumentum ครอง laser-chip (EML/pump/CW) + optical components + vertical InP fabs สำหรับ connectivity ใน AI data center — laser light source ที่ transceiver/CPO ขาดไม่ได้",
+      "why": "07-29: ราคาร่วง -17.7% ($762.99→$628.21, sector-wide selloff) ดัน PEG พลิกผ่าน gate เป็นครั้งแรก (0.93, cap 1.0) → flag BUY รอ Charlie verify. **2026-07-31 update: การพลิกกลับเกิดขึ้นทันทีในทิศตรงข้าม** — ราคา rebound +10.4% ($628.21→$693.24) บน sector-wide semiconductor rally 07-30 (เดียวกับที่ยก AMD/MU/SOXX +8%) ดัน PEG กลับไป **fail (1.03, เกิน cap 1.0)** บน growth assumption 37% เดิมที่ใช้มาตลอด ไม่มีข่าว card-specific ใหม่ (ไม่มีงบใหม่ตั้งแต่ Q3 FY26; Q4 FY26 ~ต้นส.ค.). นี่ยืนยันว่า BUY call รอบ 07-29 เป็นการข้าม gate แบบบางเพราะ sentiment ล้วนๆ (ไม่ใช่ fundamental re-rate) — ถูกต้องแล้วที่ยังไม่ execute รอ Charlie. **2026-08-04 update:** ราคาวิ่งต่ออีก +12.5% ($693.24→$779.89) — WebSearch ยืนยันเป็น broad \"risk-on\" sentiment ทั่วกลุ่ม optics stocks (Applied Optoelectronics/Coherent +7%, Lumentum +5% ในข่าวเดียวกัน) ไม่ใช่ LITE-specific catalyst; ยังไม่มีงบ Q4 FY26 ใหม่ ดัน PEG แย่ลงต่อเนื่องเป็น 1.16 (ยังเกิน cap 1.0) — whipsaw ครั้งที่ 3 ในรอบ 1 สัปดาห์ ยืนยันว่าราคาแกว่งตาม sector sentiment ล้วนๆ",
+      "risk": "หาก CPO timeline เลื่อน >12 เดือน, NVIDIA single-customer concentration กระทบเมื่อ NVIDIA in-source, optical oversupply จากคู่แข่งเร่งกำลังผลิตจน margin หด, หรือการแข่งขันใน 3D sensing/industrial laser ที่เพิ่งพบกัดกร่อน pricing power เร็วกว่าคาด"
+    },
+    "tier": "🌱 Fast Grower",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price $890.17 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, confirms a further +14.1% move since 08-04 (5th consecutive sector-wide optics rally leg in ~2 weeks)",
+        "FY27 (Jun2027) consensus EPS re-pulled fresh: $16.67 (Nasdaq, 7 analysts) -- unchanged since 07-25, confirms Q4 FY26 earnings (2026-08-11, 3 days away) have not yet reported",
+        "WebSearch found no LITE-specific news dated 08-05->08-08 -- confirms continuation of the same sector-sentiment rally (Coherent/Lumentum/Applied Optoelectronics peer group), not a LITE-specific catalyst",
+        "TQR centrality/resilience notes re-checked -- no price language, contamination check clean"
+      ],
+      "concerns": [
+        "⚠️ MoS at Charlie's own unchanged FV ($667) is now -33.5%, down further from -16.9% on 08-04 -- 5th consecutive whipsaw purely on sector sentiment with zero fundamental change",
+        "gap 39.4% (unchanged) > 20% -> CAUTION mandatory",
+        "Warren's own multiple (60.5x) remains far above LITE's current elevated forward P/E (53.4x per CNBC, itself already stretched); Aug 11 earnings is the real fundamental test, 3 days out"
+      ],
+      "summary": "",
+      "review_date": "2026-08-08"
+    },
+    "mark_easy": {
+      "one_liner": "ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B — ราคาวิ่งขึ้นต่อ +12.5% เป็น $779.89 ตามแรง risk-on ทั้งกลุ่ม optics (ไม่ใช่ข่าว LITE เฉพาะ) วิ่งสวนไปมารอบที่ 4 ใน ~2 สัปดาห์ PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0) แม้ MoS/ER ยังผ่าน gate สบาย",
+      "what": "Lumentum ผลิตชิปเลเซอร์และส่วนประกอบออปติคอลที่ใช้เชื่อมต่อความเร็วสูงใน AI data center รวมถึง transceiver, OCS และเลเซอร์สำหรับ CPO",
+      "why_invest": [
+        "รายได้ไตรมาสล่าสุดทำสถิติ $808M โต 90% YoY จากดีมานด์ AI/cloud",
+        "NVIDIA ลงทุน $2B (preferred) + EML/pump laser ขายหมด supply ขาด >30%",
+        "CPO laser chips เป็น growth driver ใหญ่สุด + Greensboro fab อาจเพิ่มรายได้ >$5B",
+        "MoS ยังกว้าง 36.98% + ER 46.7%/ปี ผ่าน gate ทั้งคู่ — เหลือแค่ PEG ที่ fail"
+      ],
+      "watch_out": [
+        "PEG พลิกกลับมา FAIL (1.03 เกิน cap 1.0 ของ Fast Grower) บน growth assumption 37% เดิมที่ใช้มาตลอด — ราคาขึ้น-ลงข้าม gate ภายใน 3 วันทำการ (07-29 PASS → 07-31 FAIL) เป็นสัญญาณว่าใกล้ gate เกินไปจนอารมณ์ตลาดอย่างเดียวดันข้ามไปมาได้",
+        "Charlie: conservative MoS ของตัวเอง (บน FV $667) พลิกเป็นลบ -3.9% แล้ว (จาก +8.3% เมื่อ 2 วันก่อน) — ยืนยันว่าไม่ควรไล่ราคาตอนนี้",
+        "convertible debt $3.2B, NVIDIA customer concentration, Q4 FY26 earnings (~11 ส.ค.) เป็นบททดสอบจริง"
+      ],
+      "bottom_line": "WATCH (ไม่ใช่ BUY แล้ว) — Fast Grower tier ไม่มี STARTER คั่นกลาง แต่ PEG เป็น hard cap ทำให้กลับเป็น WATCH ทันทีที่ fail; ธุรกิจยังโตจริง รอ Q4 FY26 earnings (~11 ส.ค.) เป็นตัวตัดสินจริง"
+    },
+    "mark_full": {
+      "business_overview": "Lumentum ผลิตชิปออปติคอล/โฟโตนิก — เลเซอร์, EML, pump laser, transceiver (800G/1.6T), OCS โดยขาย Components 66% + Systems 34%",
+      "tam": "AI/cloud ดันดีมานด์ transceiver + laser chip โต บริษัทตั้งเป้ารายได้ $2B/ไตรมาส (จาก guide $985M) โดย CPO เป็น growth driver ใหญ่สุดที่ยังเริ่มต้น",
+      "moat": "vertical integration ในเลเซอร์ (โรงงาน InP ของตัวเอง) + laser-chip leadership (EML record, pump laser โต 80%) + OCS/MEMS leadership",
+      "latest_financials": "Q3 FY26 รายได้ $808.4M (สถิติ +90.1% YoY), Non-GAAP GM 47.9%, Non-GAAP EPS $2.37, Q4 guide $985M/EPS $2.85-3.05",
+      "key_points": [
+        "NVIDIA ลงทุน $2B preferred ที่ $695.31/หุ้น",
+        "EML/pump laser sold out, supply ขาด >30%",
+        "Greensboro fab (InP ที่ 5) อาจเพิ่มรายได้ >$5B (ยังไม่อยู่ใน guide)",
+        "ราคารีบาวด์ +10.4% ($628.21→$693.24) ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม พลิก PEG กลับมา FAIL — action เปลี่ยนจาก BUY (07-29) กลับเป็น WATCH; Charlie conservative MoS พลิกลบ -3.9%"
+      ]
+    },
+    "warren_easy": [
+      "LITE tier Fast Grower WAF 7.9 (แทบไม่เปลี่ยนจาก 7.98) — ราคาวิ่งขึ้นต่ออีก +12.5% เป็น $779.89 (จาก $693.24) จากแรง risk-on ทั่วกลุ่ม optics (Applied Optoelectronics/Coherent/Lumentum รีบาวด์ด้วย) ไม่ใช่ข่าว LITE เฉพาะ — วิ่งสวนไปมา 3 รอบใน ~1 สัปดาห์แล้ว",
+      "FV Base $1,100 คงเดิม แต่ PEG fail ลึกขึ้นเป็น 1.16 (เกิน hard cap 1.0 ของ Fast Grower ไม่มีข้อยกเว้น) แม้ MoS (29.1%) และ ER (44.2%/ปี) ยังผ่าน gate สบาย",
+      "WATCH ต่อเนื่อง — PEG gate เป็นตัวตัดสินหลัก ไม่ใช่ MoS; รองบ Q4 FY26 จริงคือ 11 ส.ค. 2026 เป็นบททดสอบว่า demand เป็นของจริงหรือแค่ sentiment"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "paragraphs": [
+        "⚠️ conservative MoS ของ Charlie เอง (บน FV $667 คงเดิม) พลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9% เมื่อ 07-31) — ล้วนมาจากราคาที่วิ่งขึ้นทั้งกลุ่ม ไม่มีปัจจัยพื้นฐานเปลี่ยนแม้แต่นิดเดียว ยืนยันว่า WATCH (ไม่ใช่ BUY) ถูกต้องยิ่งขึ้น",
+        "gap ระหว่าง Warren-Charlie ยังคงที่ 39.4% เกิน 20% เข้าเกณฑ์ CAUTION บังคับเหมือนเดิม — multiple ของ Warren (60.5x) ยังสูงกว่า forward P/E จริงที่ตลาดให้ (49.2x) มาก",
+        "นี่คือ whipsaw รอบที่ 4 ใน ~2 สัปดาห์ (07-29 selloff → 07-30/31 รีบาวด์/PEG fail → 08-04 รีบาวด์ต่อ/PEG fail ลึกขึ้น) — งบ FQ4 FY26 (~11 ส.ค. 2026, ยืนยันแล้ว) คือบททดสอบจริงว่า demand แข็งแกร่งพอยืนผ่าน gate ถาวรหรือไม่"
+      ],
+      "review_date": "2026-08-04"
+    },
+    "idea_th": "WATCH — ราคาวิ่งขึ้นต่ออีก +12.5% เป็น $779.89 (จาก $693.24) จากแรง risk-on ทั่วกลุ่ม optics ทั้งกลุ่ม (Applied Optoelectronics/Coherent/Lumentum รีบาวด์ด้วย) ไม่ใช่ข่าว LITE เฉพาะ — วิ่งสวนไปมาเป็นรอบที่ 4 ใน ~2 สัปดาห์แล้ว FV Base $1,100 คงเดิม PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0 ของ Fast Grower) แม้ MoS 29.1% + ER 44.2%/ปี ยังผ่าน gate สบาย ⚠️ Charlie ยืนยัน: conservative MoS ของตัวเอง (บน FV $667 คงเดิม) พลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9%) ล้วนจากราคาที่วิ่งขึ้น gap คงที่ 39.4% เกิน 20% CAUTION บังคับ งบ FQ4 FY26 ยืนยันแล้ว 11 ส.ค. 2026 เป็นบททดสอบจริง",
+    "story_gate_th": {
+      "what": "Lumentum ผลิตชิปเลเซอร์และส่วนประกอบออปติคอลที่ใช้เชื่อมต่อความเร็วสูงใน AI data center รวมถึง transceiver, OCS และเลเซอร์สำหรับ CPO",
+      "why": "ราคาวิ่งขึ้นต่ออีก +12.5% ตามแรง risk-on ทั่วกลุ่ม optics ไม่ใช่ข่าว LITE เฉพาะ — PEG fail ลึกขึ้นเป็น 1.16 เป็น whipsaw รอบที่ 4 ใน ~2 สัปดาห์ ยืนยันว่าการพลิกไปมาเป็นแค่อารมณ์ตลาด ไม่ใช่ปัจจัยพื้นฐานเปลี่ยน action ยังเป็น WATCH",
+      "risk": "convertible debt $3.2B; NVIDIA customer concentration; CPO timeline risk; PEG whipsaw 4 รอบใน ~2 สัปดาห์ (fail→เกือบผ่าน→fail→fail ลึกขึ้น) แสดงความอ่อนไหวสูงมากต่ออารมณ์ตลาด; งบ FQ4 FY2026 (11 ส.ค. 2026 ยืนยันแล้ว) เป็นบททดสอบจริงที่ยังไม่มาถึง"
+    },
+    "bull_th": [
+      "รายได้ไตรมาสล่าสุดทำสถิติ $808M โต 90% YoY จากดีมานด์ AI/cloud",
+      "NVIDIA ลงทุน $2B (preferred) + EML/pump laser ขายหมด supply ขาด >30%",
+      "CPO laser chips เป็น growth driver ใหญ่สุด + Greensboro fab อาจเพิ่มรายได้ >$5B",
+      "MoS 29.1% + ER 44.2%/ปี ยังผ่าน gate ทั้งคู่ — ปัญหาแค่ PEG hard cap ตัวเดียว"
+    ],
+    "risk_th": [
+      "PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0) — whipsaw รอบที่ 4 ใน ~2 สัปดาห์ แกว่งตามอารมณ์ตลาดล้วนๆ",
+      "⚠️ Charlie: conservative MoS ของตัวเองพลิกลบหนักขึ้นเป็น -16.9% (จาก -3.9%) — gap คงที่ 39.4% เกิน 20% CAUTION บังคับ",
+      "convertible debt $3.2B; NVIDIA single-customer concentration",
+      "insider selling $39M; CPO timeline risk",
+      "งบ FQ4 FY2026 (11 ส.ค. 2026 ยืนยันแล้ว) ต้องยืนยันว่า demand แข็งแกร่งพอยืนผ่าน gate ถาวรหรือแค่ sentiment ชั่วคราว"
     ]
   },
   "ASML": {
@@ -1069,7 +1105,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต EUV lithography รายเดียวในโลก — ราคาวิ่งขึ้นต่อ +6.08% เป็น $1,642.52 จาก Bernstein 'Top Q3 Pick' + Goldman Conviction List MoS แคบลงเหลือ 21.78% (จาก 26.27%) ยังผ่าน gate แต่ Charlie ยังกังวลหนักขึ้นว่า EPS ที่ Warren ใช้ ($70) สูงกว่า consensus จริงมาก (ค้าง 10 รอบยังไม่แก้)",
@@ -1202,7 +1238,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต HBM รายเดียวใน US ที่ NVIDIA ต้องพึ่ง — ราคาย่อลง -5.2% เป็น $829.50 ตามแรงเทขายกลุ่มชิปทั้งกลุ่ม (ไม่ใช่ข่าว MU เฉพาะ) MoS กว้างขึ้นเป็น 27.87% (จาก 23.94%) แม้ sell-side หันมาบวกขึ้น Warren ยังไม่ไล่ตามมุมมองนักวิเคราะห์ตามวินัยเดิม",
@@ -1342,7 +1378,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "Netflix เจ้าตลาด streaming โลก — ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ไม่มีข่าวใหม่ MoS ลดลงเหลือ 14.63% (held name ยังผ่านเกณฑ์ ER); Charlie CAUTION ยังแนะนำจับตา downgrade tier เพราะ margin ยังไม่ฟื้น",
@@ -1484,7 +1520,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
@@ -1728,14 +1764,14 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 6.66,
+    "waf": 6.59,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 162.66,
+    "price": 172.01,
     "fv": 101,
-    "mos": -61.05,
-    "fpe": 67.5,
-    "peg": 1.5,
+    "mos": -70.31,
+    "fpe": 71.37,
+    "peg": 1.586,
     "scores": {
       "bq": [
         9.0,
@@ -1748,9 +1784,9 @@
         93
       ],
       "va": [
-        1.2,
+        0.9,
         "orange",
-        12
+        9
       ],
       "ra": [
         5.8,
@@ -1758,12 +1794,12 @@
         58
       ]
     },
-    "idea": "First full re-analysis since re-add (Mark refreshed card today with fresh Q2 2026 primary docs). Q2 2026 beat-and-raise: revenue $1.9355B (+93% YoY) vs ~$1.81B consensus, Adj EPS $0.41 vs ~$0.35 consensus (+~30% beat); FY2026 guidance raised to $8.150-8.158B (+82% YoY, largest-ever raise per mgmt) from $7.65-7.662B (+71%) at Q1; NDR 157% (up from 150%); Rule of 40 = 155%, 12th straight quarter expanding; GAAP profitable every quarter, zero debt, $9.4B cash. FV re-derived (old $100 was pre-print): stockanalysis.com free-tier only shows FY2026 EPS consensus $1.47 (stale, pre-beat -- H1 2026 actual EPS alone is $0.75, tracking well above that pace with a stronger H2 guided). Bottom-up from actuals+guidance: FY2026E Adj EPS ~$1.66; FY2027E EPS ~$2.41 (45%/yr growth assumption, conservative vs both current 93% YoY revenue growth and this year's ~120%+ implied EPS growth -- Warren judgment call per SPCX-style capped-growth precedent, documented for audit). FV_base = 42x x $2.41 = $101 (multiple set to keep PEG 0.93, under Fast Grower's 1.0x cap). Price $162.66 vs FV $101 -> MoS -61.05%, worse than pre-print -33.7% because price (+21.6%) outran the FV increase (+1%).",
-    "updated": "2026-08-05",
+    "idea": "08-06/08-07 news confirmed via comparison as re-syndication of the same Q2 2026 print already fully analyzed 08-05 (revenue +93%, commercial +149-150%, guidance raise to $8.15-8.16B) — identical figures, no new data. Price continued running +5.75% further ($162.66->$172.01), pushing an already-failing MoS (-61.05%) to a badly-failing -70.31%. Great quarter, worse entry point, getting worse still. WATCH, not BUY.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-05",
+      "updated": "2026-08-08",
       "tier": "🌱 Fast Grower",
       "tier_slug": "fast-grower",
       "what": "Palantir's AIP platform + Ontology converts enterprise/government data into production AI decisions within days — a capability hyperscalers (MSFT/GOOGL/AMZN) cannot replicate because they lack operational context and workflow depth. Q2 2026 adds an \"AI Sovereignty\" framing: customers own the weights/models/data instead of feeding frontier-lab APIs.",
@@ -1773,153 +1809,20 @@
     "tier": "🌱 Fast Grower",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
+      "verified_claims": [
+        "Price $172.01 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, confirms the further +5.75% run since 08-05 ($162.66->$172.01)",
+        "Dec2027 consensus EPS re-pulled fresh via the same free Nasdaq analyst earnings-forecast API used 08-05: $1.80 (12 analysts, 6up/0down) -- UP +8.4% from $1.66 on 08-05, a decisively positive revision (6up/0down, vs 1up/0down previously) consistent with the strong Q2 print flowing through consensus",
+        "Dec2026 consensus $1.24 (12 analysts, 7up/0down) -- also up from prior checks, confirms broad-based positive revision across both fiscal years",
+        "⚠️ EVIDENCE HIERARCHY finding carried from 08-05: Warren's FY2027E EPS of $2.41 remains self-derived (bottom-up, 45%/yr growth assumption) rather than sourced from this freely-accessible Nasdaq consensus -- gap to consensus narrowed somewhat (was 45.2% above $1.66, now 33.9% above $1.80) but the sourcing issue itself is unchanged: a Tier-3 consensus figure was available and not used"
+      ],
+      "concerns": [
+        "🔴 Warren's $101 FV still rests on an EPS 33.9% above the freely-available Nasdaq consensus (narrowed from 45.2% on 08-05, but not resolved) -- variant_view_verdict remains WEAK_EVIDENCE pending Warren re-sourcing from the Nasdaq API",
+        "gap narrowed to 19.8% (from 30.7%) -- real narrowing, driven by the genuine +8.4% consensus EPS upgrade, not by any change in Charlie's methodology. Still above the 15% full-work threshold, now just under the 20% mandatory-CAUTION trigger, but CAUTION is maintained independently for the unresolved evidence-sourcing issue",
+        "On Charlie's consensus-anchored FV ($81), MoS is -112.4%, still materially worse than Warren's own -70.31% -- both agree WATCH/no-BUY is correct, magnitude of overvaluation is understated using Warren's EPS basis"
+      ],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     }
-  },
-  "COHR": {
-    "symbol": "COHR",
-    "display": "COHR",
-    "category": "semiconductor",
-    "name": "Coherent Corp.",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "Optical Interconnect"
-    ],
-    "bull": [
-      "NVIDIA $2B equity investment + multiyear CPO supply agreement = strategic lock-in",
-      "InP laser vertical integration: controls crystal growth, wafer fab, chip design, packaging",
-      "1.6T transceiver ramp with healthy pricing; OCS TAM raised to $4B+",
-      "InP capacity doubling ahead of schedule; tripling by end 2027",
-      "Record backlog; LTAs extending through end of decade with upfront customer commitments"
-    ],
-    "risk": [
-      "Heavy CapEx cycle for capacity expansion pressures near-term FCF",
-      "Revenue concentration in hyperscalers -- top customers = majority of revenue",
-      "CPO timeline execution risk; competing platforms from Lumentum and Intel Photonics",
-      "InP supply chain: 3rd-party InP wafer dependency for near-term supply (pre-full ramp)",
-      "Still in early profitability phase -- GAAP profitable but Non-GAAP driven by adjustments"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 6.55,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 323.73,
-    "fv": 330,
-    "mos": 1.9,
-    "fpe": 35.11,
-    "peg": 0.949,
-    "scores": {
-      "bq": [
-        7.5,
-        "amber",
-        75
-      ],
-      "gp": [
-        8.0,
-        "green",
-        80
-      ],
-      "va": [
-        4.0,
-        "orange",
-        40
-      ],
-      "ra": [
-        6.0,
-        "orange",
-        60
-      ]
-    },
-    "idea": "Price +23.1% ($262.89->$323.73), price-triggered ANALYZE (large partial-recovery continuation from the 07-29 sector selloff low). 08-04 news is 🟡MONITOR-grade (generic large semiconductor-customer laser-tool contract, no quantified detail, not COHR-specific enough to move FV). No new earnings (Q4 FY2026 ~Aug 2026 still pending). FV carried $330. MoS FLIPS from a comfortable 20.34% PASS to a bare 1.90% FAIL — the rally has fully round-tripped past fair value.",
-    "updated": "2026-08-05",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-05",
-      "tier": "🌱 Fast Grower",
-      "tier_slug": "fast-grower",
-      "what": "Coherent เป็นผู้ผลิต 800G/1.6T transceiver และ EML/VCSEL laser ชั้นนำที่ใช้ใน AI datacenter interconnect — ลูกค้าหลักคือ hyperscalers; Vertical integration (ผลิต InP crystal/laser chip เอง) ทำให้ต้นทุนต่ำและ margin สูงกว่า competitors; Silicon Carbide (SiC) สำหรับ EV เป็น diversification ที่ลด cyclicality",
-      "why": "Consensus อธิบายการร่วง -25% จาก ATH ($426.89, 06-02) ว่ามาจาก sector-wide AI-photonics profit-taking/de-rating session (Lumentum -10%, Applied Optoelectronics -17% วันเดียวกัน) ไม่ใช่ปัญหาเฉพาะตัว COHR — insider selling ยังอยู่ในระดับต่ำ ($2.2M/3เดือน ไม่มี escalation) และไม่มีข่าวลบเฉพาะบริษัท Warren เห็นตรงกับ consensus ในสาเหตุ แต่เห็นต่างเรื่องนัยของมัน: นี่คือรูปแบบ Marks \"de-rate จาก sentiment พื้นฐานไม่เปลี่ยน\" แบบตำราเรียน — NVIDIA $2B equity + multiyear CPO supply agreement, InP capacity ramp, Texas fab execution ยังเดินตามแผนทั้งหมด การเคลื่อนไหวของราคาเป็นการ reprice multiple ล้วนๆ ไม่ใช่ earnings power ที่เปลี่ยน ทำให้ MoS สวิงจากติดลบลึก (-25.5%) มาใกล้บวก (+5.8%) โดยไม่มีอะไรเปลี่ยนในธุรกิจจริง — นี่คือสัญญาณ entry ที่ดีที่สุดที่ COHR เคยให้มาตั้งแต่ Warren เริ่ม track",
-      "risk": "Co-packaged optics (CPO) adoption เร็วกว่าคาดจนทำให้ pluggable transceiver obsolete เร็วกว่าที่ประเมินไว้; หรือ photonics selloff กลายเป็นจุดเริ่มต้นของ demand air-pocket จริง (ไม่ใช่แค่ profit-taking) ซึ่งจะยืนยันหรือหักล้างที่ Q4 FY2026 earnings (~ส.ค. 2026)"
-    },
-    "tier": "🌱 Fast Grower",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-08-07"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ⚠️ ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 (จาก $262.89) วิ่งแซง FV ของ Warren เองไปแล้ว MoS ล้มจาก PASS สบาย 20.34% เหลือแค่ 1.9% เกือบเป็นศูนย์ — Warren พลิก action จาก BUY เป็น WATCH รอบนี้",
-      "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
-      "why_invest": [
-        "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
-        "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
-        "ธุรกิจ non-AI (industrial laser, telecom, materials) ช่วยกระจายความเสี่ยงมากกว่า LITE",
-        "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน วางแผนเพิ่มอีกรอบภายในสิ้นปี 2027"
-      ],
-      "watch_out": [
-        "⚠️ ACTION FLIP รอบนี้: BUY → WATCH — ราคาวิ่งขึ้น +23.1% ในไม่กี่วัน ทำให้ MoS ฝั่ง Warren ล้มจาก PASS สบาย (20.34%) เหลือแค่ 1.9% แทบไม่มี margin of safety เหลือ ไม่ผ่าน gate อีกต่อไป",
-        "บน Charlie FV อิสระ $228 (ไม่เปลี่ยนมา 3 สัปดาห์) MoS แย่ลงเรื่อยๆ จากใกล้ศูนย์ (07-29) → -15.3% (08-02) → -42.0% วันนี้ — ราคาวิ่งไปไกลกว่ามูลค่าอนุรักษ์นิยมมากขึ้นทุกรอบ",
-        "Warren FV $330 ยังพึ่ง EPS $9.22 สูงกว่า consensus FY27 $7.61 ราว 21% (ปัญหาค้างตั้งแต่ 18 ก.ค.) — ยิ่งสำคัญขึ้นเมื่อ MoS เหลือแทบศูนย์",
-        "Q4 FY2026 earnings ยืนยันแล้วว่าจะประกาศ 12 ส.ค. 2026 (อีกไม่กี่วัน) — บทพิสูจน์จริงว่า growth ตามทันสมมติฐานของ Warren ไหม"
-      ],
-      "bottom_line": "ธุรกิจดีจริงแต่ราคาวิ่งไปไกลเกินมูลค่าแล้วรอบนี้ — Warren เองพลิก action จาก BUY เป็น WATCH เพราะ MoS ล้ม gate ที่ 1.9% ส่วน Charlie ก็ยืนยัน CAUTION ต่อเนื่อง (MoS อิสระ -42.0%) รอ Q4 FY26 earnings (12 ส.ค.) ยืนยัน growth ก่อนพิจารณาใหม่"
-    },
-    "mark_full": {
-      "business_overview": "รายได้หลักจาก Datacenter & Communications (75%, transceiver 800G/1.6T + CPO) และ Industrial (25%, laser สำหรับ EV/semiconductor) — fiscal year สิ้นสุด 30 มิ.ย.",
-      "tam": "optical interconnect demand จาก AI datacenter เปลี่ยนผ่าน 800G→1.6T + CPO ระยะเริ่มต้น; OCS TAM ยกขึ้นเป็น $4B+",
-      "moat": "vertical integration InP (ปลูก crystal เอง) + NVIDIA partnership + 3,100+ patents ทั่วโลก",
-      "latest_financials": "Q3 FY26 รายได้ $1,806M +21% YoY, Non-GAAP EPS $1.41 +55%, Non-GAAP op margin 20.3%; 9 เดือน CapEx $547M +77% กด FCF ติดลบชั่วคราว; Q4 FY2026 earnings นัดประกาศ 12 ส.ค. 2026; ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 ในช่วง 3 วันทำการที่ผ่านมา",
-      "key_points": [
-        "NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
-        "⚠️ ACTION FLIP: Warren เปลี่ยนจาก BUY เป็น WATCH รอบนี้ — ราคาพุ่ง +23.1% ทำให้ MoS ล้ม gate จาก 20.34% เหลือ 1.9%",
-        "Charlie FV อิสระ $228 คงที่มา 3 สัปดาห์ ขณะที่ MoS ที่ FV ของ Charlie เองแย่ลงต่อเนื่อง (~0% → -15.3% → -42.0%)",
-        "Charlie flag: FV $330 ของ Warren พึ่ง eps_used $9.22 ที่สูงกว่า consensus $7.61 ~21%",
-        "TTM GAAP EPS จริง $2.11 vs ฐาน adjusted $3.99 ที่ใช้คำนวณ floor — ยังไม่ reconcile"
-      ]
-    },
-    "warren_easy": [
-      "COHR tier Fast Grower WAF 6.55 (จาก 7.62) — ราคาพุ่งต่อเนื่อง $262.89→$323.73 (+23.1%) เป็นการฟื้นตัวต่อจากจุดต่ำ 07-29 ข่าว 08-04 เป็นแค่สัญญาซื้อ laser tool ทั่วไป ไม่กระทบ FV",
-      "⚠️ MoS ล้มจาก 20.34% PASS สบาย เหลือแค่ 1.9% — FV คงที่ $330 (ไม่มีงบใหม่) ราคาที่วิ่งไปไกลทำให้แทบไม่เหลือ margin of safety",
-      "ACTION FLIP: BUY → WATCH — MoS ไม่ผ่าน gate อีกต่อไปแม้ PEG 0.95 จะยังต่ำกว่า cap 1.0 (Fast Grower tier ไม่มี STARTER)"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ตรวจราคาตรงเป๊ะ ($323.73) ยืนยันการพุ่งขึ้นต่อเนื่อง +23.1% เป็นเรื่องจริง ดึง consensus EPS FY27 ใหม่ ($7.61) ตรงกับรอบก่อนเป๊ะ ไม่มีงบใหม่ (Q4 FY2026 ยังไม่ประกาศ นัด 12 ส.ค.) — ยืนยันว่าราคาขึ้นจากอารมณ์ตลาด ไม่ใช่ผลประกอบการ",
-        "⚠️ บน FV อิสระของ Charlie เอง ($228 คงที่ 3 สัปดาห์) MoS แย่ลงต่อเนื่อง 3 รอบติด: ใกล้ศูนย์ (07-29) → -15.3% (08-02) → -42.0% วันนี้ — ราคาวิ่งไปไกลกว่ามูลค่าที่แม้แต่ Charlie เองก็ยังไม่ปรับตาม",
-        "gap 30.9% (คงเดิม) เกินเกณฑ์ 20% → CAUTION บังคับ แต่ action เป็น WATCH อยู่แล้วเพราะ Warren เองพลิกจาก BUY มาก่อน ทำให้กฎ FV-Gap Conservative Rule ไม่มีผลเพิ่มเติมรอบนี้ — Charlie เห็นว่า Warren de-risk ถูกจังหวะ"
-      ],
-      "review_date": "2026-08-05"
-    },
-    "idea_th": "WATCH (พลิกจาก BUY รอบนี้) — ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ. ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 (จาก $262.89) ในไม่กี่วันทำการ ข่าว 08-04 เป็นแค่สัญญาซื้อ laser tool ทั่วไป ไม่กระทบ FV. FV คงที่ $330 (Warren) แต่ MoS ล้มจาก 20.34% PASS สบาย เหลือแค่ 1.9% — Warren เองพลิก action จาก BUY เป็น WATCH รอบนี้. Charlie FV อิสระ $228 คงที่มา 3 สัปดาห์ MoS ที่ FV ของ Charlie เองแย่ลงต่อเนื่อง (~0% → -15.3% → -42.0%) gap 30.9% เกินเกณฑ์ → CAUTION บังคับ. Warren FV ยังพึ่ง EPS $9.22 สูงกว่า consensus 21% — รอ Q4 FY2026 earnings (12 ส.ค. 2026) พิสูจน์ growth ก่อนพิจารณาใหม่",
-    "story_gate_th": {
-      "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
-      "why": "ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 ในไม่กี่วันทำการ (ต่อยอดการฟื้นตัวจากจุดต่ำ 07-29) ทำให้ MoS ฝั่ง Warren ล้มจาก PASS สบาย 20.34% เหลือแค่ 1.9% — Warren เองพลิก action จาก BUY เป็น WATCH รอบนี้ ขณะที่ Charlie ชี้ว่าบน FV อิสระที่ยังไม่ขยับมา 3 สัปดาห์ MoS แย่ลงต่อเนื่องเป็น -42.0% แล้ว",
-      "risk": "Heavy CapEx pressures FCF; hyperscaler concentration ~75%; CPO adoption-speed/execution risk; concurrent multi-site fab buildout risk; FV $330 พึ่ง growth ~37%/ปีที่สูงกว่า consensus 21%; ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐานไหม"
-    },
-    "bull_th": [
-      "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
-      "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
-      "ธุรกิจ non-AI (industrial laser, telecom, materials) กระจายความเสี่ยงมากกว่า LITE",
-      "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน"
-    ],
-    "risk_th": [
-      "⚠️ ACTION FLIP: BUY → WATCH รอบนี้ — ราคาพุ่ง +23.1% ทำให้ MoS ล้ม gate จาก 20.34% เหลือแค่ 1.9%",
-      "Charlie: MoS ที่ FV อิสระของตนเองแย่ลงต่อเนื่อง 3 รอบติด (~0% → -15.3% → -42.0%) ราคาวิ่งไปไกลกว่ามูลค่าที่ยังไม่ขยับ",
-      "gap 30.9% เกินเกณฑ์ 20% → CAUTION บังคับ",
-      "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus 21% — ปัญหาค้างตั้งแต่ 18 ก.ค. ยิ่งสำคัญขึ้นเมื่อ MoS เหลือแทบศูนย์",
-      "ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐาน Warren ไหม"
-    ]
   },
   "AMD": {
     "symbol": "AMD",
@@ -1997,7 +1900,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "อันดับ 2 ในตลาด AI GPU ที่แข็งแกร่งขึ้นเรื่อยๆ + ครอง server CPU >40% — งบ Q2 FY2026 (4 ส.ค.) beat ทั้งรายได้กำไร ประกาศ TAM ใหม่ก้อนใหญ่ แต่ Charlie เตือนหนัก: ตัวเลข EPS ที่ Warren ใช้คำนวณมูลค่าสูงกว่า consensus จริงเกือบ 60% ต่อเนื่องมา 6 รอบ ยังคง WATCH",
@@ -2062,6 +1965,146 @@
       "ตลาดตอบรับงบแบบ sell-the-news — ความคาดหวังที่ baked-in ไว้สูงเกินกว่าที่แม้ผลงบจะดีก็ยังไม่พอ"
     ]
   },
+  "SKHY": {
+    "symbol": "SKHY",
+    "display": "SK Hynix",
+    "category": "semiconductor",
+    "name": "SK hynix Inc. ADR",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Memory",
+      "HBM Leader"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.45,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 137.91,
+    "fv": 110,
+    "mos": -25.37,
+    "fpe": 17.64,
+    "peg": null,
+    "scores": {
+      "bq": [
+        7.8,
+        "amber",
+        78
+      ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
+      "va": [
+        3.3,
+        "orange",
+        33
+      ],
+      "ra": [
+        5.0,
+        "orange",
+        50
+      ]
+    },
+    "idea": "08-06 news: SK hynix launched 375-layer NAND with 2.5x power efficiency — a genuine new product data point (not re-syndication), but NAND is only ~22% of revenue mix and there's no quantified revenue/margin figure yet to feed the normalized mid-cycle earnings estimate. BQ/GP held unchanged pending Q3 numbers. Price pulled back -7.44% on sector-wide sentiment, narrowing the MoS fail from -35.5% to -25.37% (still a clear fail — cyclical discipline unchanged, this is a price move toward FV, not new de-cycling evidence).",
+    "updated": "2026-08-08",
+    "risk": [
+      "If de-cycling proves real (LTA floors hold + margin >50% sustained across a down-cycle) normalized earnings could be too low; downside if Samsung/CXMT HBM parity compresses margin as forecast, or if the DRAM ASP mix-timing miss (Daiwa flag) becomes a real demand issue in Q3 rather than timing."
+    ],
+    "bull": [
+      "HBM leadership + AI memory demand จริง structural — Q2 actuals add the first concrete (not just narrative) de-cycling evidence (LTAs, ~10 customers) + margin still rising (71%→76%), but net profit headline (118% margin) remains distorted by a one-off Kioxia gain; normalized earnings still meaningfully below the Q2-annualized peak run-rate; Samsung/CXMT HBM parity risk + genuine cyclicality remain even as the \"de-cycled\" narrative gathers real (if early) evidence; 07-31 price rebound (sector sentiment) has moved SKHY further from, not closer to, a genuine entry point."
+    ],
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-08",
+      "tier": "🔁 Cyclical",
+      "tier_slug": "cyclical",
+      "what": "SK hynix เป็นผู้นำ HBM อันดับ 1 โลก (56.4% share) ผลิต advanced memory (DRAM/HBM/NAND) ซึ่งเป็นหัวใจของ AI compute — ชนะด้วย HBM technology lead (HBM4 industry-first) + qualification switching cost + scale/vertical packaging.",
+      "why": "Q2 FY2026 actuals (first quarterly print since IPO, released 2026-07-29) landed: operating profit W60.54T at a **record 76% margin** (up from Q1's 71%) + concluded **LTAs with ~10 customers** — the first concrete contractual evidence for de-cycling, not just management rhetoric. Market reaction (07-29) framed this as \"profit +557% YoY but below expectations\" and the stock fell -15.0% to $131.41. Warren integrated the new data with a modest, evidence-linked upward revision to normalized mid-cycle earnings ($52B→$57B, same treatment as MU's SCA-confirmation adjustment) — **not** a re-rate to the peak run-rate, since SKHY still has zero down-cycle track record as a standalone public print. **2026-07-31 update:** 07-30/07-31 news confirmed (WebSearch) as re-syndication of the same 07-29 Q2 print — no new data. Price then **rebounded +13.4% to $149.00** on the broader 07-30 sector-wide semiconductor rally (not SKHY-specific), pushing MoS from -19.5% to a **deeper fail of -35.5%** — the rally moves SKHY further above normalized mid-cycle FV, the opposite direction of the AMD/LITE gate-narrowing effect from the same rally. Edge unchanged: don't chase a cyclical priced above normalized earnings; wait for the cycle to prove itself across a down-leg.",
+      "risk": "ถ้า de-cycling เป็นจริง — operating margin ยืน >50% ต่อเนื่อง 2+ ปีแม้ capacity ใหม่ (M15X/Yongin) ramp เต็ม + LTA floors ยืนไม่มี oversupply price crash — แปลว่า normalized earnings อยู่ใกล้ระดับ peak จริง, FV base ผิด, และราคาปัจจุบัน justified. Two consecutive quarters of rising (not falling) operating margin (71%→76%) is itself a data point in that direction — watch closely."
+    },
+    "tier": "🔁 Cyclical",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price $137.91 cross-checked 2 sources 2026-08-08: Nasdaq API $137.91 (-3.92% day change) + CNBC quote API $137.91 -- exact match",
+        "Price move (-7.44% since 08-05's $149.00) independently confirmed as a genuine pullback within the same sector-sentiment rally/pullback pattern seen across COHR/LITE this batch -- no SKHY-specific negative news found",
+        "Independently confirmed via WebSearch (TechSpot, SK hynix Newsroom, PRNewswire, StockTitan, wccftech, digitalcitizen.life): SK hynix publicly unveiled its 10th-gen (V10) 375-layer 4D NAND at FMS 2026 in early August (specifically detailed 08-06 in some coverage) -- 2.5x performance-per-watt improvement, molybdenum replacing tungsten in the word-line structure, mass production targeted for late 2026 in existing fabs. This is a genuine, real product-roadmap announcement (not overstated), correctly assessed by Warren as immaterial to the current valuation: NAND is only ~22% of SK hynix's revenue mix and there is no quantified revenue/margin figure attached to this announcement yet",
+        "Warren's normalized-earnings basis (eps_used $7.82 x 14x = $110) independently re-confirmed as internally consistent -- does not rely on the Nasdaq consensus EPS figures"
+      ],
+      "concerns": [
+        "Despite the improved analyst coverage (8 vs 1-2 previously), the consensus EPS figures remain NOT credible for an independent multiple-based FV: implied forward P/E on Dec2026 consensus ($24.91) at today's price is only ~5.5x, and ~4.3x on Dec2027 ($32.17) -- both far too low for an HBM leader mid-upcycle to be taken at face value without further diligence into whether this reflects a genuine anticipated earnings ramp (plausible given the HBM supercycle narrative) or a persisting currency/ADR-basis/one-off-gain distortion in the estimate base. Given the ambiguity, Charlie continues to treat this consensus as unusable for FV purposes this round rather than assume either interpretation",
+        "Price $137.91 is still above Warren's own normalized FV ($110) even after the pullback -- both Warren and Charlie agree directionally this is overvalued on a normalized-earnings basis"
+      ],
+      "summary": "",
+      "review_date": "2026-08-08"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) — ราคาสวนกลับ +13.4% เป็น $149.00 ตามแรงรีบาวด์กลุ่มเซมิคอนดักเตอร์ ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%) เพราะ SKHY วัดมูลค่าด้วยกำไรปกติแบบ mid-cycle ไม่ใช่ตัวคูณ forward — ราคาขึ้นยิ่งแพงขึ้น ไม่เหมือน AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน",
+      "what": "SK hynix ผลิต memory chip ครบวงจร (DRAM, HBM, NAND) ที่อยู่ในแทบทุกอุปกรณ์ — จุดขายคือ HBM ที่ติดบน AI GPU ซึ่งครองอันดับ 1 โลก 56.4%; ซื้อขายผ่าน ADR บน Nasdaq ในชื่อ SKHY (1 ADS = 1/10 หุ้นแม่บน KOSPI '000660')",
+      "why_invest": [
+        "HBM #1 โลก 56.4% share — เจ้าแรก mass-produce HBM3E + เริ่ม mass-production HBM4 ใน Q2 2026 แล้ว",
+        "Q2 FY2026 (งบไตรมาสแรกหลัง IPO): รายได้ +51% QoQ/+257% YoY, operating margin ทำสถิติใหม่ 76% (จาก 71% ใน Q1)",
+        "เซ็นสัญญาระยะยาว (LTA) กับลูกค้า ~10 ราย รวม NVIDIA — หลักฐานชิ้นแรกที่จับต้องได้ของ de-cycling thesis",
+        "AI infrastructure demand เป็น driver เชิงโครงสร้างของ HBM/server DRAM/eSSD"
+      ],
+      "watch_out": [
+        "ราคา $149.00 ยิ่งห่างจาก normalized FV $110 มากกว่าเดิม — ราคารีบาวด์ทำให้ MoS ยิ่งแย่ลง (-35.5% จาก -19.5%) ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากการรีบาวด์เดียวกัน เพราะ SKHY ใช้กำไรปกติ cyclical เป็นฐานไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์ตลาด",
+        "ข่าว 07-30/07-31 (กำไรพุ่ง 557% แต่ยอดขายต่ำกว่าคาด) ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ Q2 ที่วิเคราะห์ไปแล้วเมื่อ 07-29 ไม่มีข้อมูลใหม่",
+        "ยังมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle จริงในฐานะบริษัทมหาชน"
+      ],
+      "bottom_line": "WATCH — ธุรกิจแข็งแกร่ง (margin 76% สถิติใหม่ + LTA หลักฐาน de-cycling) แต่ราคาที่รีบาวด์ล่าสุดทำให้ยิ่งแพงกว่ามูลค่าปกติ (WAF ร่วงกลับเป็น LOW) Charlie ยืนยันวิธีคิดของ Warren ถูกต้อง — ไม่ไล่ซื้อ cyclical ที่ยังพิสูจน์ down-cycle ไม่ได้และตอนนี้ยิ่งแพงขึ้น"
+    },
+    "mark_full": {
+      "business_overview": "Revenue mix Q1 2026: DRAM 77.3% + NAND 22.0%; อันดับโลก: HBM #1 (56.4%), DRAM #2 (29.1%), NAND #2 (18.5% รวม Solidigm ที่ซื้อจาก Intel); ลูกค้า US 64.7% + จีน 24.3%; fabs เกาหลี (Icheon/Cheongju) + จีน (Wuxi/Dalian) + foundry ลูก 2 บริษัท",
+      "tam": "AI infrastructure buildout เป็น driver หลักของ HBM/server DRAM/eSSD; โครงสร้างตลาด = oligopoly 3 ราย (Samsung, SK hynix, Micron) barrier to entry สูงมาก; Q2 FY2026 revenue +51% QoQ/+257% YoY สะท้อน upcycle แรงต่อเนื่อง",
+      "moat": "HBM #1 (เจ้าแรก mass-produce HBM3/HBM3E, เริ่ม mass-production HBM4 แล้วใน Q2 2026) + qualification switching cost + vertical advanced packaging (TSV stacking) + portfolio ครบ DDR5/LPDDR5T/GDDR7/eSSD; ลูกค้า HBM ต้อง co-develop ทำให้เปลี่ยน supplier ยาก; Q2'26 เซ็น LTA กับลูกค้า ~10 ราย เสริม lock-in เพิ่มอีกชั้น",
+      "latest_financials": "Q2 FY2026 (งบไตรมาสแรกหลัง IPO): รายได้ W79.32T (+51% QoQ/+257% YoY, สถิติใหม่), operating profit W60.54T (margin 76% สถิติใหม่ จาก Q1 71%); กำไรสุทธิที่รายงาน W93.92T แต่ ~W63.27T เป็นกำไรพิเศษจากการขายหุ้น Kioxia ไม่ใช่กำไรจากธุรกิจปกติ; ราคา ADR รีบาวด์ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ ทำให้ยิ่งห่างจาก normalized FV $110 มากขึ้น",
+      "key_points": [
+        "IPO 2026-07: ADSs @ US$149; SK square ถือ 20.5% → free float แค่ 2.5% = ผันผวนสูง",
+        "ลูกค้ารายใหญ่สุด ~23.9% ของ revenue FY2025 ยืนยันโดยผู้บริหารเองว่ารวม NVIDIA",
+        "Q2'26 เซ็น LTA (สัญญาระยะยาว ~5 ปี) กับลูกค้า ~10 ราย พร้อมกลไกวางมัดจำ — หลักฐาน de-cycling ชิ้นแรกที่จับต้องได้",
+        "07-30/07-31 ข่าว 'กำไร +557% แต่ยอดขายต่ำกว่าคาด' ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ 07-29 — ราคารีบาวด์ทำให้ WAF ร่วงกลับจาก MEDIUM เป็น LOW"
+      ]
+    },
+    "warren_easy": [
+      "SKHY tier Cyclical WAF 6.25 (ลงจาก MEDIUM 6.56 กลับเป็น LOW) — ราคารีบาวด์ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ (ไม่ใช่ข่าว SKHY เฉพาะ) ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%)",
+      "ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน — SKHY ใช้กำไรปกติ mid-cycle (ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์) เป็นฐาน FV จึงยิ่งแพงขึ้นเมื่อราคาขึ้น ไม่ใช่ยิ่งถูกลง",
+      "WATCH — ธุรกิจดีขึ้นจริง (margin 76% สถิติใหม่ + LTA ~10 ราย) แต่ไม่ไล่ซื้อ cyclical ที่ยังไม่พิสูจน์ down-cycle และตอนนี้ยิ่งแพงขึ้น"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie ยืนยันราคาตรงเป๊ะ ($149.00 ทั้ง Nasdaq/CNBC) และตรวจสอบต้นเหตุการรีบาวด์ +13.4% ผ่าน WebSearch พบว่าเป็นเรื่องจริง — Citi ออกบทวิเคราะห์ (07-30) ว่าคู่แข่งจีนยังไม่คุกคามระยะสั้น + Daiwa มองว่าการปรับฐานก่อนหน้านี้รุนแรงเกินไป เป็นมุมมองตลาด ไม่ใช่ปัจจัยพื้นฐานใหม่",
+        "ยืนยันวิธีคิด FV ของ Warren (normalized EPS $7.82 × 14x = $110) ยัง sound — ไม่พึ่ง consensus EPS ของ Nasdaq ที่ยังปนเปื้อนกำไรพิเศษขายหุ้น Kioxia (forward P/E ที่ implied จาก consensus แค่ ~7x ต่ำผิดปกติสำหรับ HBM leader ใช้ไม่ได้)",
+        "ราคา $149.00 ยิ่งห่างจาก FV ปกติของ Warren ($110) มากกว่าเดิม — ทั้ง Warren และ Charlie เห็นตรงกันว่านี่คือ valuation ที่แพงขึ้น ไม่ใช่ fundamental re-rate ทิศทาง AGREE-on-WATCH เดิม"
+      ],
+      "review_date": "2026-07-31"
+    },
+    "idea_th": "WATCH — เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) ราคา ADR สวนกลับ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม (ไม่ใช่ข่าว SKHY เฉพาะ — ข่าว 07-30/07-31 ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ Q2 07-29) ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%) เพราะ SKHY วัดมูลค่าด้วยกำไรปกติแบบ mid-cycle ($110) ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์ — ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน WAF ร่วงกลับจาก MEDIUM (6.56) เป็น LOW (6.25) ✅ Charlie AGREE เต็มที่ — ยืนยันวิธีคิด FV ของ Warren ยัง sound (ไม่พึ่ง consensus EPS ที่ยังปนเปื้อนกำไรพิเศษ Kioxia) และเห็นตรงกันว่าราคาที่รีบาวด์ทำให้แพงขึ้น ไม่ใช่ fundamental re-rate ไม่ไล่ซื้อ cyclical ที่ยังมีข้อมูลสาธารณะแค่ 2 ไตรมาส",
+    "story_gate_th": {
+      "what": "SK hynix ผลิต memory chip ครบวงจร DRAM/HBM/NAND ครองอันดับ 1 โลกใน HBM (56.4% share) — เจ้าแรกที่ mass-produce HBM3E และเพิ่งเริ่ม mass-production HBM4 ใน Q2 2026",
+      "why": "ราคา ADR สวนกลับ +13.4% ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม (ไม่ใช่ข่าว SKHY เฉพาะ) ดัน MoS ยิ่งติดลบลึกขึ้น เพราะ SKHY วัดมูลค่าด้วยกำไรปกติ mid-cycle ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์เหมือน AMD/LITE — ธุรกิจยังแข็งแกร่ง (margin 76% + LTA) แต่ราคาที่ขึ้นทำให้ยิ่งแพงกว่ามูลค่าปกติ",
+      "risk": "ถ้า de-cycling เป็นจริง (LTA floors ยืน + margin >50% ต่อเนื่อง 2+ ปีข้าม down-cycle) normalized earnings ควรใกล้ peak มากกว่านี้ FV base อาจต่ำไป; downside ถ้า Samsung/CXMT HBM parity บีบ margin จริง หรือ DRAM ASP mix-timing miss กลายเป็นปัญหา demand จริงใน Q3; เพิ่งมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle"
+    },
+    "bull_th": [
+      "HBM #1 โลก 56.4% share — เจ้าแรก mass-produce HBM3E + เริ่ม mass-production HBM4 แล้วใน Q2 2026",
+      "Q2 FY2026 operating margin ทำสถิติใหม่ 76% (จาก 71% ใน Q1) รายได้ +51% QoQ/+257% YoY",
+      "เซ็น LTA กับลูกค้า ~10 ราย รวม NVIDIA — หลักฐาน de-cycling ชิ้นแรกที่จับต้องได้ ไม่ใช่แค่คำพูดผู้บริหาร",
+      "AI infrastructure demand เป็น driver เชิงโครงสร้างของ HBM/server DRAM/eSSD"
+    ],
+    "risk_th": [
+      "ราคายิ่งห่างจาก normalized mid-cycle FV $110 มากขึ้น → MoS -35.5% (จาก -19.5%) แย่ลงจากรอบก่อน",
+      "ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์กลุ่มเดียวกัน — SKHY ใช้ฐาน cyclical earnings ไม่ใช่ forward multiple",
+      "เพิ่งมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle ในฐานะบริษัทมหาชน",
+      "Samsung/CXMT ไล่ตาม HBM share; free float แค่ 2.5% ทำให้ราคาผันผวนสูง",
+      "DRAM ASP mix-timing miss (Daiwa flag) ต้องติดตามว่าเกิดซ้ำใน Q3 หรือไม่"
+    ]
+  },
   "AAPL": {
     "symbol": "AAPL",
     "display": "AAPL",
@@ -2093,11 +2136,11 @@
     "waf": 6.38,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 312.33,
+    "price": 313.33,
     "fv": 244,
-    "mos": -28.0,
-    "fpe": 33.23,
-    "peg": null,
+    "mos": -28.41,
+    "fpe": 33.33,
+    "peg": 5.128,
     "scores": {
       "bq": [
         9.5,
@@ -2120,12 +2163,12 @@
         80
       ]
     },
-    "idea": "Q3 FY2026 beat (rev +16.4%, EPS +28.7% incl $0.11 one-time tariff benefit) but stock fell -6.3% AH ($333.43->$312.33) on Q4 FY2026 guide deceleration (rev +9-11%, GM 47-48% vs Q3's 50.1%, supply constraint capping iPhone/Mac/iPad, memory cost \"100-year flood\" no peak in sight). MoS barely moved (-30.6%->-28.0%) because FV also came down with the guide. Price still above even Bull FV ($290, +7.7%). Not a buy-the-dip setup on fundamentals despite the pullback.",
-    "updated": "2026-07-31",
+    "idea": "08-06 news (Apple seeks preliminary injunction against OpenAI in trade-secret case) verified via WebSearch (Bloomberg/JURIST) as a procedural escalation of the existing 07-13 lawsuit — Apple is the plaintiff, so this is not a new risk to AAPL's own thesis. Price essentially flat ($312.33->$313.33). MoS -28.4%, still deep FAIL, far from Bull-case FV. WATCH continues.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-31",
+      "updated": "2026-08-08",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "Apple Ecosystem Lock-in คือ Competitive Advantage ที่แข็งแกร่งที่สุดใน Consumer Tech — iPhone/Mac/iPad/Watch/AirPods ทำงานร่วมกันเป็น seamless ทำให้ switching cost สูง; Services (App Store, iCloud, Apple TV+, Apple Pay) margin 75%+ และ recurring revenue $109B+/ปี; Apple Silicon (M-series) ทำให้ Mac มี performance/watt นำหน้า x86",
@@ -2135,10 +2178,18 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [],
+      "verified_claims": [
+        "Price $313.33 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match both sources, confirms essentially-flat move since 07-31 ($312.33->$313.33, +0.32%)",
+        "FY27 (Sep2027) consensus EPS re-pulled fresh: $9.52 (Nasdaq, 13 analysts, 4up/7down) -- down slightly from $9.57 on 07-31 (-0.5%), more down- than up-revisions but immaterial magnitude; Warren's own eps_used ($9.40) remains slightly below live consensus, i.e. still the conservative side, not inflated",
+        "TTM actual EPS $8.69 (CNBC) -- unchanged since 07-31",
+        "Independently confirmed via WebSearch (9to5Mac, TechBriefly, JURIST, Forbes, ClaimsJournal, macrumors, GovInfoSecurity): Apple's 08-04/08-05 motion for a preliminary injunction against OpenAI is a procedural escalation of the existing 07-10 trade-secret suit -- Apple is the plaintiff seeking to bar two ex-employees and OpenAI from using its confidential info; hearing set for Oct 1 2026. OpenAI publicly rejected the claim same week. Correctly characterized by Warren as immaterial to AAPL's own thesis (Apple is not the defendant)"
+      ],
+      "concerns": [
+        "Price still well above even Bull-case FV ($290 Warren / est. ~$281 Charlie at this multiple) -- not a buy-the-dip setup",
+        "CEO transition Cook->Ternus (Sep 1) now imminent; first full quarter under new CEO is the Oct Q4 call"
+      ],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "Apple งบ Q3 FY2026 ทำสถิติใหม่ทั้งรายได้กำไร แต่หุ้นร่วง -6.3% หลังตลาดปิดเพราะ guide ไตรมาสหน้าบอกชัดว่ากำลังจะชะลอตัว",
@@ -2203,145 +2254,156 @@
       "จีน 18% ของรายได้ + คดี antitrust ทั้ง EU/DOJ ที่ยังไม่จบ"
     ]
   },
-  "SKHY": {
-    "symbol": "SKHY",
-    "display": "SK Hynix",
+  "COHR": {
+    "symbol": "COHR",
+    "display": "COHR",
     "category": "semiconductor",
-    "name": "SK hynix Inc. ADR",
+    "name": "Coherent Corp.",
     "sector": "Semiconductor",
     "sectorSlug": "semi",
     "chips": [
-      "Memory",
-      "HBM Leader"
+      "Semiconductor",
+      "Optical Interconnect"
+    ],
+    "bull": [
+      "NVIDIA $2B equity investment + multiyear CPO supply agreement = strategic lock-in",
+      "InP laser vertical integration: controls crystal growth, wafer fab, chip design, packaging",
+      "1.6T transceiver ramp with healthy pricing; OCS TAM raised to $4B+",
+      "InP capacity doubling ahead of schedule; tripling by end 2027",
+      "Record backlog; LTAs extending through end of decade with upfront customer commitments"
+    ],
+    "risk": [
+      "Heavy CapEx cycle for capacity expansion pressures near-term FCF",
+      "Revenue concentration in hyperscalers -- top customers = majority of revenue",
+      "CPO timeline execution risk; competing platforms from Lumentum and Intel Photonics",
+      "InP supply chain: 3rd-party InP wafer dependency for near-term supply (pre-full ramp)",
+      "Still in early profitability phase -- GAAP profitable but Non-GAAP driven by adjustments"
     ],
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 6.25,
+    "waf": 6.1,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 149.0,
-    "fv": 110,
-    "mos": -35.5,
-    "fpe": null,
-    "peg": null,
+    "price": 379.13,
+    "fv": 330,
+    "mos": -14.89,
+    "fpe": 41.12,
+    "peg": 1.111,
     "scores": {
       "bq": [
-        7.8,
+        7.5,
         "amber",
-        78
+        75
       ],
       "gp": [
-        8.5,
+        8.0,
         "green",
-        85
+        80
       ],
       "va": [
-        2.5,
+        2.2,
         "orange",
-        25
+        22
       ],
       "ra": [
-        5.0,
+        6.0,
         "orange",
-        50
+        60
       ]
     },
-    "idea": "07-30/07-31 MATERIAL news verified via WebSearch as re-syndication of the same 07-29 Q2 print already fully analyzed (op profit W60.54T/76% margin, miss vs consensus on HBM4 shipment timing). Price rebounded +13.4% on the 07-30 sector-wide rally, deepening MoS fail from -19.5% to -35.5% (opposite direction from AMD/LITE's gate-narrowing on the same rally, since SKHY is capped by normalized cyclical earnings).",
-    "updated": "2026-07-31",
-    "risk": [
-      "Samsung/CXMT HBM parity risk; customer concentration; controlled-company/FPI structure; DRAM ASP mix-timing miss; still zero down-cycle track record as standalone public print."
-    ],
-    "bull": [
-      "HBM leadership + AI memory demand จริง structural — Q2 actuals add the first concrete (not just narrative) de-cycling evidence (LTAs, ~10 customers) + margin still rising (71%→76%), but net profit headline (118% margin) remains distorted by a one-off Kioxia gain; normalized earnings still meaningfully below the Q2-annualized peak run-rate; Samsung/CXMT HBM parity risk + genuine cyclicality remain even as the \"de-cycled\" narrative gathers real (if early) evidence; 07-31 price rebound (sector sentiment) has moved SKHY further from, not closer to, a genuine entry point."
-    ],
+    "idea": "Price-triggered re-check (+17.1% since 08-05 gate, no COHR-specific news). Continued sector-wide optics rally pushes price well past the round-trip of the 07-29 selloff. FV Base held $330 (Q4 FY2026 still pending). MoS flips from a bare 1.90% fail to a clear -14.89% fail, and PEG now also fails (1.11 vs Fast Grower cap 1.0) — both binding gates fail together for the first time. WATCH continues, gap widening.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-07-31",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "SK hynix เป็นผู้นำ HBM อันดับ 1 โลก (56.4% share) ผลิต advanced memory (DRAM/HBM/NAND) ซึ่งเป็นหัวใจของ AI compute — ชนะด้วย HBM technology lead (HBM4 industry-first) + qualification switching cost + scale/vertical packaging.",
-      "why": "Q2 FY2026 actuals (first quarterly print since IPO, released 2026-07-29) landed: operating profit W60.54T at a **record 76% margin** (up from Q1's 71%) + concluded **LTAs with ~10 customers** — the first concrete contractual evidence for de-cycling, not just management rhetoric. Market reaction (07-29) framed this as \"profit +557% YoY but below expectations\" and the stock fell -15.0% to $131.41. Warren integrated the new data with a modest, evidence-linked upward revision to normalized mid-cycle earnings ($52B→$57B, same treatment as MU's SCA-confirmation adjustment) — **not** a re-rate to the peak run-rate, since SKHY still has zero down-cycle track record as a standalone public print. **2026-07-31 update:** 07-30/07-31 news confirmed (WebSearch) as re-syndication of the same 07-29 Q2 print — no new data. Price then **rebounded +13.4% to $149.00** on the broader 07-30 sector-wide semiconductor rally (not SKHY-specific), pushing MoS from -19.5% to a **deeper fail of -35.5%** — the rally moves SKHY further above normalized mid-cycle FV, the opposite direction of the AMD/LITE gate-narrowing effect from the same rally. Edge unchanged: don't chase a cyclical priced above normalized earnings; wait for the cycle to prove itself across a down-leg.",
-      "risk": "ถ้า de-cycling เป็นจริง — operating margin ยืน >50% ต่อเนื่อง 2+ ปีแม้ capacity ใหม่ (M15X/Yongin) ramp เต็ม + LTA floors ยืนไม่มี oversupply price crash — แปลว่า normalized earnings อยู่ใกล้ระดับ peak จริง, FV base ผิด, และราคาปัจจุบัน justified. Two consecutive quarters of rising (not falling) operating margin (71%→76%) is itself a data point in that direction — watch closely."
+      "updated": "2026-08-08",
+      "tier": "🌱 Fast Grower",
+      "tier_slug": "fast-grower",
+      "what": "Coherent เป็นผู้ผลิต 800G/1.6T transceiver และ EML/VCSEL laser ชั้นนำที่ใช้ใน AI datacenter interconnect — ลูกค้าหลักคือ hyperscalers; Vertical integration (ผลิต InP crystal/laser chip เอง) ทำให้ต้นทุนต่ำและ margin สูงกว่า competitors; Silicon Carbide (SiC) สำหรับ EV เป็น diversification ที่ลด cyclicality",
+      "why": "Consensus อธิบายการร่วง -25% จาก ATH ($426.89, 06-02) ว่ามาจาก sector-wide AI-photonics profit-taking/de-rating session (Lumentum -10%, Applied Optoelectronics -17% วันเดียวกัน) ไม่ใช่ปัญหาเฉพาะตัว COHR — insider selling ยังอยู่ในระดับต่ำ ($2.2M/3เดือน ไม่มี escalation) และไม่มีข่าวลบเฉพาะบริษัท Warren เห็นตรงกับ consensus ในสาเหตุ แต่เห็นต่างเรื่องนัยของมัน: นี่คือรูปแบบ Marks \"de-rate จาก sentiment พื้นฐานไม่เปลี่ยน\" แบบตำราเรียน — NVIDIA $2B equity + multiyear CPO supply agreement, InP capacity ramp, Texas fab execution ยังเดินตามแผนทั้งหมด การเคลื่อนไหวของราคาเป็นการ reprice multiple ล้วนๆ ไม่ใช่ earnings power ที่เปลี่ยน ทำให้ MoS สวิงจากติดลบลึก (-25.5%) มาใกล้บวก (+5.8%) โดยไม่มีอะไรเปลี่ยนในธุรกิจจริง — นี่คือสัญญาณ entry ที่ดีที่สุดที่ COHR เคยให้มาตั้งแต่ Warren เริ่ม track",
+      "risk": "Co-packaged optics (CPO) adoption เร็วกว่าคาดจนทำให้ pluggable transceiver obsolete เร็วกว่าที่ประเมินไว้; หรือ photonics selloff กลายเป็นจุดเริ่มต้นของ demand air-pocket จริง (ไม่ใช่แค่ profit-taking) ซึ่งจะยืนยันหรือหักล้างที่ Q4 FY2026 earnings (~ส.ค. 2026)"
     },
-    "tier": "🔁 Cyclical",
+    "tier": "🌱 Fast Grower",
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "CAUTION",
       "verified_claims": [
-        "Price $149.00 cross-checked 2 sources 2026-07-31: Nasdaq API secondaryData (closed Jul 30) $149.00 + CNBC quote API $149.00 — exact match",
-        "Price move (+13.4% since 07-29's $131.41) independently confirmed via WebSearch as a genuine, name-specific rally: Citi published a note 2026-07-30 stating Chinese memory makers won't threaten the market short-term and that memory tightness should last until at least 2027; Daiwa separately called the prior correction excessive. Both are supply-demand market-view commentary, not price-based reasoning, cited here only as the factual catalyst for the move, per house rule",
-        "Warren's normalized-earnings basis (eps_used $7.82 x 14x = $110) independently re-confirmed as internally consistent — does not rely on the newly-populated but still-thin Nasdaq consensus",
-        "Nasdaq's earnings-forecast API now also returns a QUARTERLY forecast for SKHY for the first time (Sep2026 $5.87, Dec2026 $6.37 — both n=1 analyst) alongside the yearly Dec2026 $21.26/Dec2027 $30.80 (n=2) figures — even thinner coverage than the 07-29 batch's already-flagged 2-analyst yearly figures; reinforces rather than resolves the prior contamination concern"
+        "Price $379.13 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, confirms a further +17.1% rally since 08-05 (04-day-old $323.73 gate)",
+        "FY27 (Jun2027) consensus EPS re-pulled fresh: $7.61 (Nasdaq, 9 analysts, 2up/1down) -- exact match, unchanged since 07-25 through 08-05, confirms Q4 FY2026 earnings (scheduled 2026-08-12) have not yet reported",
+        "WebSearch found no new COHR-specific news 08-05->08-08 -- confirms this is continuation of the same sector-wide optics/CPO rally already characterized by Warren, not a fresh COHR catalyst",
+        "TQR notes (InP/light-source moat, non-AI diversification) re-checked -- no price language, contamination check clean"
       ],
       "concerns": [
-        "Consensus EPS remains unusable for an independent multiple-based FV: implied forward P/E on Dec2026 consensus ($21.26) at today's price is only ~7.0x — not credible for an HBM leader, still reflects this year's one-off Kioxia stake-sale gain baked into the estimate base, and coverage (1-2 analysts) is too thin to trust regardless",
-        "Price $149.00 is now further above Warren's own normalized FV ($110) than on 07-29 — both Warren and Charlie agree directionally this is overvalued on a normalized-earnings basis, the rally is sentiment/supply-narrative-driven, not a fundamentals re-rate",
-        "Per Carry-Forward rule, this ticker required a fresh (not carried) review this batch since price moved >10% since the last full check — correctly triggered, no shortcut taken"
+        "⚠️ MoS at Charlie's own unchanged FV ($228) has now gone from -42.0% (08-05) to -66.3% today -- price has run far past even Charlie's conservative fair value on zero new fundamental information, purely sector sentiment, for the 4th straight round",
+        "gap 30.9% (unchanged) > 20% -> CAUTION mandatory",
+        "Warren's FV $330 still relies on EPS $9.22 (~21% above FY27 consensus $7.61) -- same unresolved aggressive-EPS gap flagged continuously since 07-18",
+        "TTM EPS reconciliation (GAAP $2.11 fresh CNBC pull vs $3.99 adjusted figure used in the floor calc) remains unresolved -- carried again this round, not silently swapped"
       ],
       "summary": "",
-      "review_date": "2026-07-31"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
-      "one_liner": "เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) — ราคาสวนกลับ +13.4% เป็น $149.00 ตามแรงรีบาวด์กลุ่มเซมิคอนดักเตอร์ ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%) เพราะ SKHY วัดมูลค่าด้วยกำไรปกติแบบ mid-cycle ไม่ใช่ตัวคูณ forward — ราคาขึ้นยิ่งแพงขึ้น ไม่เหมือน AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน",
-      "what": "SK hynix ผลิต memory chip ครบวงจร (DRAM, HBM, NAND) ที่อยู่ในแทบทุกอุปกรณ์ — จุดขายคือ HBM ที่ติดบน AI GPU ซึ่งครองอันดับ 1 โลก 56.4%; ซื้อขายผ่าน ADR บน Nasdaq ในชื่อ SKHY (1 ADS = 1/10 หุ้นแม่บน KOSPI '000660')",
+      "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ⚠️ ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 (จาก $262.89) วิ่งแซง FV ของ Warren เองไปแล้ว MoS ล้มจาก PASS สบาย 20.34% เหลือแค่ 1.9% เกือบเป็นศูนย์ — Warren พลิก action จาก BUY เป็น WATCH รอบนี้",
+      "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
       "why_invest": [
-        "HBM #1 โลก 56.4% share — เจ้าแรก mass-produce HBM3E + เริ่ม mass-production HBM4 ใน Q2 2026 แล้ว",
-        "Q2 FY2026 (งบไตรมาสแรกหลัง IPO): รายได้ +51% QoQ/+257% YoY, operating margin ทำสถิติใหม่ 76% (จาก 71% ใน Q1)",
-        "เซ็นสัญญาระยะยาว (LTA) กับลูกค้า ~10 ราย รวม NVIDIA — หลักฐานชิ้นแรกที่จับต้องได้ของ de-cycling thesis",
-        "AI infrastructure demand เป็น driver เชิงโครงสร้างของ HBM/server DRAM/eSSD"
+        "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
+        "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
+        "ธุรกิจ non-AI (industrial laser, telecom, materials) ช่วยกระจายความเสี่ยงมากกว่า LITE",
+        "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน วางแผนเพิ่มอีกรอบภายในสิ้นปี 2027"
       ],
       "watch_out": [
-        "ราคา $149.00 ยิ่งห่างจาก normalized FV $110 มากกว่าเดิม — ราคารีบาวด์ทำให้ MoS ยิ่งแย่ลง (-35.5% จาก -19.5%) ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากการรีบาวด์เดียวกัน เพราะ SKHY ใช้กำไรปกติ cyclical เป็นฐานไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์ตลาด",
-        "ข่าว 07-30/07-31 (กำไรพุ่ง 557% แต่ยอดขายต่ำกว่าคาด) ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ Q2 ที่วิเคราะห์ไปแล้วเมื่อ 07-29 ไม่มีข้อมูลใหม่",
-        "ยังมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle จริงในฐานะบริษัทมหาชน"
+        "⚠️ ACTION FLIP รอบนี้: BUY → WATCH — ราคาวิ่งขึ้น +23.1% ในไม่กี่วัน ทำให้ MoS ฝั่ง Warren ล้มจาก PASS สบาย (20.34%) เหลือแค่ 1.9% แทบไม่มี margin of safety เหลือ ไม่ผ่าน gate อีกต่อไป",
+        "บน Charlie FV อิสระ $228 (ไม่เปลี่ยนมา 3 สัปดาห์) MoS แย่ลงเรื่อยๆ จากใกล้ศูนย์ (07-29) → -15.3% (08-02) → -42.0% วันนี้ — ราคาวิ่งไปไกลกว่ามูลค่าอนุรักษ์นิยมมากขึ้นทุกรอบ",
+        "Warren FV $330 ยังพึ่ง EPS $9.22 สูงกว่า consensus FY27 $7.61 ราว 21% (ปัญหาค้างตั้งแต่ 18 ก.ค.) — ยิ่งสำคัญขึ้นเมื่อ MoS เหลือแทบศูนย์",
+        "Q4 FY2026 earnings ยืนยันแล้วว่าจะประกาศ 12 ส.ค. 2026 (อีกไม่กี่วัน) — บทพิสูจน์จริงว่า growth ตามทันสมมติฐานของ Warren ไหม"
       ],
-      "bottom_line": "WATCH — ธุรกิจแข็งแกร่ง (margin 76% สถิติใหม่ + LTA หลักฐาน de-cycling) แต่ราคาที่รีบาวด์ล่าสุดทำให้ยิ่งแพงกว่ามูลค่าปกติ (WAF ร่วงกลับเป็น LOW) Charlie ยืนยันวิธีคิดของ Warren ถูกต้อง — ไม่ไล่ซื้อ cyclical ที่ยังพิสูจน์ down-cycle ไม่ได้และตอนนี้ยิ่งแพงขึ้น"
+      "bottom_line": "ธุรกิจดีจริงแต่ราคาวิ่งไปไกลเกินมูลค่าแล้วรอบนี้ — Warren เองพลิก action จาก BUY เป็น WATCH เพราะ MoS ล้ม gate ที่ 1.9% ส่วน Charlie ก็ยืนยัน CAUTION ต่อเนื่อง (MoS อิสระ -42.0%) รอ Q4 FY26 earnings (12 ส.ค.) ยืนยัน growth ก่อนพิจารณาใหม่"
     },
     "mark_full": {
-      "business_overview": "Revenue mix Q1 2026: DRAM 77.3% + NAND 22.0%; อันดับโลก: HBM #1 (56.4%), DRAM #2 (29.1%), NAND #2 (18.5% รวม Solidigm ที่ซื้อจาก Intel); ลูกค้า US 64.7% + จีน 24.3%; fabs เกาหลี (Icheon/Cheongju) + จีน (Wuxi/Dalian) + foundry ลูก 2 บริษัท",
-      "tam": "AI infrastructure buildout เป็น driver หลักของ HBM/server DRAM/eSSD; โครงสร้างตลาด = oligopoly 3 ราย (Samsung, SK hynix, Micron) barrier to entry สูงมาก; Q2 FY2026 revenue +51% QoQ/+257% YoY สะท้อน upcycle แรงต่อเนื่อง",
-      "moat": "HBM #1 (เจ้าแรก mass-produce HBM3/HBM3E, เริ่ม mass-production HBM4 แล้วใน Q2 2026) + qualification switching cost + vertical advanced packaging (TSV stacking) + portfolio ครบ DDR5/LPDDR5T/GDDR7/eSSD; ลูกค้า HBM ต้อง co-develop ทำให้เปลี่ยน supplier ยาก; Q2'26 เซ็น LTA กับลูกค้า ~10 ราย เสริม lock-in เพิ่มอีกชั้น",
-      "latest_financials": "Q2 FY2026 (งบไตรมาสแรกหลัง IPO): รายได้ W79.32T (+51% QoQ/+257% YoY, สถิติใหม่), operating profit W60.54T (margin 76% สถิติใหม่ จาก Q1 71%); กำไรสุทธิที่รายงาน W93.92T แต่ ~W63.27T เป็นกำไรพิเศษจากการขายหุ้น Kioxia ไม่ใช่กำไรจากธุรกิจปกติ; ราคา ADR รีบาวด์ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ ทำให้ยิ่งห่างจาก normalized FV $110 มากขึ้น",
+      "business_overview": "รายได้หลักจาก Datacenter & Communications (75%, transceiver 800G/1.6T + CPO) และ Industrial (25%, laser สำหรับ EV/semiconductor) — fiscal year สิ้นสุด 30 มิ.ย.",
+      "tam": "optical interconnect demand จาก AI datacenter เปลี่ยนผ่าน 800G→1.6T + CPO ระยะเริ่มต้น; OCS TAM ยกขึ้นเป็น $4B+",
+      "moat": "vertical integration InP (ปลูก crystal เอง) + NVIDIA partnership + 3,100+ patents ทั่วโลก",
+      "latest_financials": "Q3 FY26 รายได้ $1,806M +21% YoY, Non-GAAP EPS $1.41 +55%, Non-GAAP op margin 20.3%; 9 เดือน CapEx $547M +77% กด FCF ติดลบชั่วคราว; Q4 FY2026 earnings นัดประกาศ 12 ส.ค. 2026; ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 ในช่วง 3 วันทำการที่ผ่านมา",
       "key_points": [
-        "IPO 2026-07: ADSs @ US$149; SK square ถือ 20.5% → free float แค่ 2.5% = ผันผวนสูง",
-        "ลูกค้ารายใหญ่สุด ~23.9% ของ revenue FY2025 ยืนยันโดยผู้บริหารเองว่ารวม NVIDIA",
-        "Q2'26 เซ็น LTA (สัญญาระยะยาว ~5 ปี) กับลูกค้า ~10 ราย พร้อมกลไกวางมัดจำ — หลักฐาน de-cycling ชิ้นแรกที่จับต้องได้",
-        "07-30/07-31 ข่าว 'กำไร +557% แต่ยอดขายต่ำกว่าคาด' ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ 07-29 — ราคารีบาวด์ทำให้ WAF ร่วงกลับจาก MEDIUM เป็น LOW"
+        "NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
+        "⚠️ ACTION FLIP: Warren เปลี่ยนจาก BUY เป็น WATCH รอบนี้ — ราคาพุ่ง +23.1% ทำให้ MoS ล้ม gate จาก 20.34% เหลือ 1.9%",
+        "Charlie FV อิสระ $228 คงที่มา 3 สัปดาห์ ขณะที่ MoS ที่ FV ของ Charlie เองแย่ลงต่อเนื่อง (~0% → -15.3% → -42.0%)",
+        "Charlie flag: FV $330 ของ Warren พึ่ง eps_used $9.22 ที่สูงกว่า consensus $7.61 ~21%",
+        "TTM GAAP EPS จริง $2.11 vs ฐาน adjusted $3.99 ที่ใช้คำนวณ floor — ยังไม่ reconcile"
       ]
     },
     "warren_easy": [
-      "SKHY tier Cyclical WAF 6.25 (ลงจาก MEDIUM 6.56 กลับเป็น LOW) — ราคารีบาวด์ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ (ไม่ใช่ข่าว SKHY เฉพาะ) ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%)",
-      "ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน — SKHY ใช้กำไรปกติ mid-cycle (ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์) เป็นฐาน FV จึงยิ่งแพงขึ้นเมื่อราคาขึ้น ไม่ใช่ยิ่งถูกลง",
-      "WATCH — ธุรกิจดีขึ้นจริง (margin 76% สถิติใหม่ + LTA ~10 ราย) แต่ไม่ไล่ซื้อ cyclical ที่ยังไม่พิสูจน์ down-cycle และตอนนี้ยิ่งแพงขึ้น"
+      "COHR tier Fast Grower WAF 6.55 (จาก 7.62) — ราคาพุ่งต่อเนื่อง $262.89→$323.73 (+23.1%) เป็นการฟื้นตัวต่อจากจุดต่ำ 07-29 ข่าว 08-04 เป็นแค่สัญญาซื้อ laser tool ทั่วไป ไม่กระทบ FV",
+      "⚠️ MoS ล้มจาก 20.34% PASS สบาย เหลือแค่ 1.9% — FV คงที่ $330 (ไม่มีงบใหม่) ราคาที่วิ่งไปไกลทำให้แทบไม่เหลือ margin of safety",
+      "ACTION FLIP: BUY → WATCH — MoS ไม่ผ่าน gate อีกต่อไปแม้ PEG 0.95 จะยังต่ำกว่า cap 1.0 (Fast Grower tier ไม่มี STARTER)"
     ],
     "charlie_easy": {
-      "verdict": "AGREE",
+      "verdict": "CAUTION",
       "paragraphs": [
-        "Charlie ยืนยันราคาตรงเป๊ะ ($149.00 ทั้ง Nasdaq/CNBC) และตรวจสอบต้นเหตุการรีบาวด์ +13.4% ผ่าน WebSearch พบว่าเป็นเรื่องจริง — Citi ออกบทวิเคราะห์ (07-30) ว่าคู่แข่งจีนยังไม่คุกคามระยะสั้น + Daiwa มองว่าการปรับฐานก่อนหน้านี้รุนแรงเกินไป เป็นมุมมองตลาด ไม่ใช่ปัจจัยพื้นฐานใหม่",
-        "ยืนยันวิธีคิด FV ของ Warren (normalized EPS $7.82 × 14x = $110) ยัง sound — ไม่พึ่ง consensus EPS ของ Nasdaq ที่ยังปนเปื้อนกำไรพิเศษขายหุ้น Kioxia (forward P/E ที่ implied จาก consensus แค่ ~7x ต่ำผิดปกติสำหรับ HBM leader ใช้ไม่ได้)",
-        "ราคา $149.00 ยิ่งห่างจาก FV ปกติของ Warren ($110) มากกว่าเดิม — ทั้ง Warren และ Charlie เห็นตรงกันว่านี่คือ valuation ที่แพงขึ้น ไม่ใช่ fundamental re-rate ทิศทาง AGREE-on-WATCH เดิม"
+        "Charlie ตรวจราคาตรงเป๊ะ ($323.73) ยืนยันการพุ่งขึ้นต่อเนื่อง +23.1% เป็นเรื่องจริง ดึง consensus EPS FY27 ใหม่ ($7.61) ตรงกับรอบก่อนเป๊ะ ไม่มีงบใหม่ (Q4 FY2026 ยังไม่ประกาศ นัด 12 ส.ค.) — ยืนยันว่าราคาขึ้นจากอารมณ์ตลาด ไม่ใช่ผลประกอบการ",
+        "⚠️ บน FV อิสระของ Charlie เอง ($228 คงที่ 3 สัปดาห์) MoS แย่ลงต่อเนื่อง 3 รอบติด: ใกล้ศูนย์ (07-29) → -15.3% (08-02) → -42.0% วันนี้ — ราคาวิ่งไปไกลกว่ามูลค่าที่แม้แต่ Charlie เองก็ยังไม่ปรับตาม",
+        "gap 30.9% (คงเดิม) เกินเกณฑ์ 20% → CAUTION บังคับ แต่ action เป็น WATCH อยู่แล้วเพราะ Warren เองพลิกจาก BUY มาก่อน ทำให้กฎ FV-Gap Conservative Rule ไม่มีผลเพิ่มเติมรอบนี้ — Charlie เห็นว่า Warren de-risk ถูกจังหวะ"
       ],
-      "review_date": "2026-07-31"
+      "review_date": "2026-08-05"
     },
-    "idea_th": "WATCH — เจ้าตลาด HBM อันดับ 1 โลก (56.4% share) ราคา ADR สวนกลับ +13.4% ($131.41→$149.00) ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม (ไม่ใช่ข่าว SKHY เฉพาะ — ข่าว 07-30/07-31 ตรวจแล้วเป็นข่าวเดิมซ้ำของงบ Q2 07-29) ดัน MoS ยิ่งติดลบลึกขึ้นเป็น -35.5% (จาก -19.5%) เพราะ SKHY วัดมูลค่าด้วยกำไรปกติแบบ mid-cycle ($110) ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์ — ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์เดียวกัน WAF ร่วงกลับจาก MEDIUM (6.56) เป็น LOW (6.25) ✅ Charlie AGREE เต็มที่ — ยืนยันวิธีคิด FV ของ Warren ยัง sound (ไม่พึ่ง consensus EPS ที่ยังปนเปื้อนกำไรพิเศษ Kioxia) และเห็นตรงกันว่าราคาที่รีบาวด์ทำให้แพงขึ้น ไม่ใช่ fundamental re-rate ไม่ไล่ซื้อ cyclical ที่ยังมีข้อมูลสาธารณะแค่ 2 ไตรมาส",
+    "idea_th": "WATCH (พลิกจาก BUY รอบนี้) — ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ. ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 (จาก $262.89) ในไม่กี่วันทำการ ข่าว 08-04 เป็นแค่สัญญาซื้อ laser tool ทั่วไป ไม่กระทบ FV. FV คงที่ $330 (Warren) แต่ MoS ล้มจาก 20.34% PASS สบาย เหลือแค่ 1.9% — Warren เองพลิก action จาก BUY เป็น WATCH รอบนี้. Charlie FV อิสระ $228 คงที่มา 3 สัปดาห์ MoS ที่ FV ของ Charlie เองแย่ลงต่อเนื่อง (~0% → -15.3% → -42.0%) gap 30.9% เกินเกณฑ์ → CAUTION บังคับ. Warren FV ยังพึ่ง EPS $9.22 สูงกว่า consensus 21% — รอ Q4 FY2026 earnings (12 ส.ค. 2026) พิสูจน์ growth ก่อนพิจารณาใหม่",
     "story_gate_th": {
-      "what": "SK hynix ผลิต memory chip ครบวงจร DRAM/HBM/NAND ครองอันดับ 1 โลกใน HBM (56.4% share) — เจ้าแรกที่ mass-produce HBM3E และเพิ่งเริ่ม mass-production HBM4 ใน Q2 2026",
-      "why": "ราคา ADR สวนกลับ +13.4% ตามแรงกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม (ไม่ใช่ข่าว SKHY เฉพาะ) ดัน MoS ยิ่งติดลบลึกขึ้น เพราะ SKHY วัดมูลค่าด้วยกำไรปกติ mid-cycle ไม่ใช่ forward multiple ที่ re-rate ตามอารมณ์เหมือน AMD/LITE — ธุรกิจยังแข็งแกร่ง (margin 76% + LTA) แต่ราคาที่ขึ้นทำให้ยิ่งแพงกว่ามูลค่าปกติ",
-      "risk": "ถ้า de-cycling เป็นจริง (LTA floors ยืน + margin >50% ต่อเนื่อง 2+ ปีข้าม down-cycle) normalized earnings ควรใกล้ peak มากกว่านี้ FV base อาจต่ำไป; downside ถ้า Samsung/CXMT HBM parity บีบ margin จริง หรือ DRAM ASP mix-timing miss กลายเป็นปัญหา demand จริงใน Q3; เพิ่งมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle"
+      "what": "Coherent ทำ optical transceiver/laser สำหรับเชื่อม GPU ใน AI datacenter (75% ของรายได้) บวกธุรกิจ industrial laser (25%) ที่ช่วยกระจายความเสี่ยง",
+      "why": "ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 ในไม่กี่วันทำการ (ต่อยอดการฟื้นตัวจากจุดต่ำ 07-29) ทำให้ MoS ฝั่ง Warren ล้มจาก PASS สบาย 20.34% เหลือแค่ 1.9% — Warren เองพลิก action จาก BUY เป็น WATCH รอบนี้ ขณะที่ Charlie ชี้ว่าบน FV อิสระที่ยังไม่ขยับมา 3 สัปดาห์ MoS แย่ลงต่อเนื่องเป็น -42.0% แล้ว",
+      "risk": "Heavy CapEx pressures FCF; hyperscaler concentration ~75%; CPO adoption-speed/execution risk; concurrent multi-site fab buildout risk; FV $330 พึ่ง growth ~37%/ปีที่สูงกว่า consensus 21%; ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐานไหม"
     },
     "bull_th": [
-      "HBM #1 โลก 56.4% share — เจ้าแรก mass-produce HBM3E + เริ่ม mass-production HBM4 แล้วใน Q2 2026",
-      "Q2 FY2026 operating margin ทำสถิติใหม่ 76% (จาก 71% ใน Q1) รายได้ +51% QoQ/+257% YoY",
-      "เซ็น LTA กับลูกค้า ~10 ราย รวม NVIDIA — หลักฐาน de-cycling ชิ้นแรกที่จับต้องได้ ไม่ใช่แค่คำพูดผู้บริหาร",
-      "AI infrastructure demand เป็น driver เชิงโครงสร้างของ HBM/server DRAM/eSSD"
+      "InP vertical integration ครบวงจร + NVIDIA $2B equity + สัญญา CPO supply ยาวถึงปลายทศวรรษ",
+      "1.6T transceiver ramp + OCS TAM ยกเป็น $4B+",
+      "ธุรกิจ non-AI (industrial laser, telecom, materials) กระจายความเสี่ยงมากกว่า LITE",
+      "InP capacity เพิ่ม 2 เท่าเร็วกว่าแผน"
     ],
     "risk_th": [
-      "ราคายิ่งห่างจาก normalized mid-cycle FV $110 มากขึ้น → MoS -35.5% (จาก -19.5%) แย่ลงจากรอบก่อน",
-      "ตรงข้ามกับ AMD/LITE ที่ gate แคบลงจากรีบาวด์กลุ่มเดียวกัน — SKHY ใช้ฐาน cyclical earnings ไม่ใช่ forward multiple",
-      "เพิ่งมีข้อมูลสาธารณะแค่ 2 ไตรมาส ยังไม่เคยผ่าน down-cycle ในฐานะบริษัทมหาชน",
-      "Samsung/CXMT ไล่ตาม HBM share; free float แค่ 2.5% ทำให้ราคาผันผวนสูง",
-      "DRAM ASP mix-timing miss (Daiwa flag) ต้องติดตามว่าเกิดซ้ำใน Q3 หรือไม่"
+      "⚠️ ACTION FLIP: BUY → WATCH รอบนี้ — ราคาพุ่ง +23.1% ทำให้ MoS ล้ม gate จาก 20.34% เหลือแค่ 1.9%",
+      "Charlie: MoS ที่ FV อิสระของตนเองแย่ลงต่อเนื่อง 3 รอบติด (~0% → -15.3% → -42.0%) ราคาวิ่งไปไกลกว่ามูลค่าที่ยังไม่ขยับ",
+      "gap 30.9% เกินเกณฑ์ 20% → CAUTION บังคับ",
+      "Warren FV $330 พึ่ง EPS $9.22 สูงกว่า consensus 21% — ปัญหาค้างตั้งแต่ 18 ก.ค. ยิ่งสำคัญขึ้นเมื่อ MoS เหลือแทบศูนย์",
+      "ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026) ยืนยันว่า growth ตามทันสมมติฐาน Warren ไหม"
     ]
   },
   "ARM": {
@@ -2420,7 +2482,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "ราคาพุ่งต่อ +13.8% เป็น $280.56 (จาก $246.59) ไม่มีข่าวพื้นฐานใหม่เลย — ธุรกิจ royalty คุณภาพดี แต่ตัวชี้วัดเติบโต (การเติบโตค่า royalty) ถูกปรับลงและแพ้คดีกับ Qualcomm ตั้งแต่รอบก่อน ราคาที่วิ่งขึ้นต่อยิ่งตอกย้ำว่าแพงกว่ามูลค่าจริงมากขึ้นไปอีก",
@@ -2513,13 +2575,13 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 4.65,
+    "waf": 4.64,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 327.35,
+    "price": 328.58,
     "fv": 170,
-    "mos": -92.56,
-    "fpe": 152.97,
+    "mos": -93.28,
+    "fpe": 153.54,
     "peg": null,
     "scores": {
       "bq": [
@@ -2533,7 +2595,7 @@
         70
       ],
       "va": [
-        1.2,
+        1.1,
         "orange",
         12
       ],
@@ -2543,12 +2605,12 @@
         40
       ]
     },
-    "idea": "Price +1.6% ($322.08->$327.35). 08-05 🔴MATERIAL news is another analyst cutting 2026 growth targets on competitive/margin pressure -- reinforces, does not introduce, the existing bear thesis (same pattern as Piper Sandler 08-04). FV carried $170 (unchanged since Q2 earnings margin miss). MoS worsens -89.46%->-92.56%.",
-    "updated": "2026-08-05",
+    "idea": "08-07 news: Tesla plans to produce 1M Optimus units/yr + build a large-scale Terafab — a company production-plan announcement, not proof of production. Per Speculative-tier discipline (upside must be in the numbers, not promises), this is not new crystallization evidence. Price +0.4%. MoS -93.28%, still catastrophic FAIL. WATCH continues, no tier change.",
+    "updated": "2026-08-08",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-05",
+      "updated": "2026-08-08",
       "tier": "⚠️ Speculative",
       "tier_slug": "speculative",
       "what": "Tesla ผสมผสาน EV/energy manufacturer ที่ scale แล้วเข้ากับ real-world AI data flywheel (FSD miles, Supercharger network) บวก option ใหญ่ 2 อันที่ยังไม่พิสูจน์ (robotaxi fleet economics, Optimus mass production) ซึ่งตลาดกำลัง price เหมือนเกือบ derisked แล้ว",
@@ -2558,10 +2620,20 @@
     "tier": "⚠️ Speculative",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
+      "verified_claims": [
+        "Price $328.58 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-08 -- exact match, confirms the further +0.4% move since 08-05, +2.83% on the day itself per Nasdaq's intraday change field",
+        "Dec2027 consensus EPS re-pulled fresh: $1.38 (Nasdaq, 15 analysts, 1up/8down) -- unchanged since 08-02/08-04/08-05, confirms the prior estimate cuts have fully settled with zero further revision this round",
+        "TTM actual EPS $1.00 (CNBC) -- unchanged",
+        "Independently confirmed via WebSearch (Electrek, MarketScale, tech-insider.org, RoboHorizon): 08-06 Tesla/SpaceX jointly confirmed 'Terafab' megafab site (Grimes County, TX; ~$16.8B phase-1; >100M sq ft) to supply chips for Optimus, Cybercab, and SpaceX's own compute needs. The 1M-units/yr Optimus target itself was announced earlier (VP Grace Tao, Beijing conference) and explicitly depends on Terafab, which as of 08-06 has only just gotten a site and a phase-1 budget -- construction/ramp timeline not yet disclosed. This is a capital-commitment announcement, not evidence of actual production capability -- correctly treated by Warren as a company promise/plan, not new crystallization evidence, per Speculative-tier discipline"
+      ],
+      "concerns": [
+        "gap 51.2% > 20% -> CAUTION mandatory, unchanged in magnitude since 08-02",
+        "Even at Charlie's own generous 60x growth-premium multiple, MoS is -295.9% -- not a borderline case",
+        "Speculative tier correctly forbids BUY/STARTER regardless of MoS trajectory or Optimus/Terafab headlines -- WATCH is the only available action on both Warren's and Charlie's numbers",
+        "Terafab is a ~$16.8B phase-1 capital commitment with no disclosed completion timeline -- treating it as anything more than an intention/plan (not a revenue-generating asset) is consistent with Warren's IF-WRONG discipline"
+      ],
       "summary": "",
-      "review_date": "2026-08-07"
+      "review_date": "2026-08-08"
     },
     "mark_easy": {
       "one_liner": "รถ EV + พลังงาน + AI + หุ่นยนต์ — ราคาขยับขึ้น +1.6% เป็น $327.35 ข่าว 08-05 คือนักวิเคราะห์อีกรายหั่นเป้าการเติบโตปี 2026 ลง (ซ้ำแพทเทิร์นเดียวกับ 08-04) ตอกย้ำ ไม่ได้เปลี่ยน bear thesis เดิม MoS แย่ลงลึกขึ้นเป็น -92.56% (จาก -89.46%)",
