@@ -27,14 +27,14 @@
     "action": "hold",
     "actionLabel": "Hold",
     "conviction": 3,
-    "waf": 8.5,
+    "waf": 8.45,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 211.94,
+    "price": 224.28,
     "fv": 292,
-    "mos": 27.42,
-    "fpe": 17.44,
-    "peg": 0.652,
+    "mos": 23.19,
+    "fpe": 18.46,
+    "peg": 0.69,
     "scores": {
       "bq": [
         9.5,
@@ -47,9 +47,9 @@
         95
       ],
       "va": [
-        7.7,
+        7.5,
         "amber",
-        77
+        75
       ],
       "ra": [
         5.8,
@@ -57,12 +57,12 @@
         58
       ]
     },
-    "idea": "Price +2.6% ($206.64->$211.94) on 08-05 news: Musk/SpaceX announced SpaceX will use NVDA chips exclusively + build AI servers in space -- bullish demand-vector reinforcement (Physical AI thesis extends to orbital), not a fundamental surprise. No new earnings (next report Aug 26). FV carried $292. MoS narrows 29.2%->27.4%, still comfortably clears 15% gate.",
-    "updated": "2026-08-05",
+    "idea": "AI Factory Platform — CUDA monopoly + Blackwell/Vera Rubin roadmap + $200B CPU TAM (bet เดิม) + SpaceX emerging as new quantified hyperscaler-class demand vector (Q2 2026 earnings call 08-04: $15.8B/qtr AI capex, >2GW by YE2026, ~10GW cumulative by 2027, NVDA-exclusive). FV carried $292 (no new NVDA earnings, next report Aug 26). Price +5.8% ($211.94->$224.28) narrows MoS 27.4%->23.2%, still clears effective 20% gate (VIX Calm +5% adjust) with room.",
+    "updated": "2026-08-07",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-05",
+      "updated": "2026-08-07",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
@@ -73,71 +73,70 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price $211.94 cross-checked 2-source (Nasdaq quote/info secondaryData + CNBC quote API), fetched 2026-08-05 -- exact match to Warren's price and to prices_cache.json, 0% drift; confirms the +2.6% move is a real closed-session print, not a cache artifact",
-        "FY28 (Jan2028) consensus EPS re-pulled fresh: $12.13 (Nasdaq earnings-forecast API, 13 analysts, 3up/0down) -- exact match to 07-31/08-04, zero revision, confirms price move is pure sentiment (SpaceX/NVDA exclusivity headline) not a fundamentals event",
-        "TTM actual EPS $6.53 (CNBC trailing EPS field) -- unchanged since 07-31/08-04",
-        "SpaceX-NVDA 'exclusive chip + orbital AI server' story independently found via WebSearch (same news cycle as SPCX's Q2 earnings coverage 08-04/08-05) -- confirms a real headline exists, consistent with Warren's framing as demand-vector reinforcement rather than a fundamental surprise; next NVDA earnings still Aug 26 2026"
+        "Price cross-checked 2-source live: Nasdaq $223.47 / CNBC $223.46 (agree within $0.01) vs Warren's $224.28 snapshot -- 0.36% drift, both within the same trading session as price kept moving intraday (+2% on day); no override needed (<2% threshold)",
+        "FY28 (Jan2028) consensus EPS re-pulled fresh: $12.13 (Nasdaq, 13 analysts, 3up/0down last 4wk) -- unchanged since 07-16 through today, zero revision across 4+ consecutive review rounds; confirms today's price move is sentiment/demand-signal driven (SpaceX-NVIDIA exclusivity headline), not a fundamentals event -- consistent with Warren's own framing",
+        "TTM actual EPS $6.53 (CNBC trailing EPS field) -- unchanged, confirms no earnings surprise (next report still Aug 26 2026, unreported)",
+        "SpaceX-NVIDIA exclusive GPU/Rubin-orbital partnership independently confirmed via WebSearch (Forbes, IBTimes, earnings-call transcript) -- real news, correctly framed by Warren as a demand-vector reinforcement, not overstated as a guaranteed revenue number"
       ],
       "concerns": [
-        "MoS at Charlie's own FV narrows further to +16.9% (from +19.0% on 08-04) purely on the price rise -- still comfortably clear of the 15% gate but the cushion keeps shrinking on zero EPS revision across 3 straight sessions",
-        "Circular-financing exposure (~$250B lease + ~$350B GPU-purchase financing, OpenAI) remains unresolved talks-stage -- still the single biggest thesis-relevant swing factor if it converts to signed terms",
-        "gap to Warren (12.7%) unchanged -- same 24.0x (Warren) vs 21.0x (Charlie, held since 07-16) multiple choice driving the difference, not a new disagreement"
+        "MoS cushion at Charlie's own FV continues to narrow purely on price: +16.9% (08-05, price $211.94) -> +12.0% (08-07, price $224.28) -- zero EPS revision across the period, so the entire compression is price-driven. Not concerning on its own (still positive), but the trend is worth watching into the Aug 26 earnings print",
+        "Gap to Warren FV (12.7%) unchanged from 08-05 -- same structural driver (Warren 24.0x vs Charlie 21.0x multiple choice), not a new disagreement, flagged for consistency only"
       ],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่ทั้งโลกต้องพึ่ง — ราคาขึ้นต่อ +2.6% เป็น $211.94 (จาก $206.64) หลัง Musk/SpaceX ประกาศจะใช้ชิป NVDA แบบ exclusive ทั้งหมด พร้อมสร้างเซิร์ฟเวอร์ AI ในอวกาศ เป็นข่าวหนุนดีมานด์ ไม่ใช่ผลประกอบการใหม่ (งบถัดไป 26 ส.ค.) MoS แคบลงเหลือ 27.42% (จาก 29.23%) แต่ยังผ่าน gate สบาย",
+      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่ทั้งโลกต้องพึ่ง — ราคาขึ้นต่อ +5.8% เป็น $224.28 (จาก $211.94) หลัง SpaceX ประกาศงบไตรมาส 2 (4 ส.ค.) เปิดเผยตัวเลขจริงว่าดีมานด์ชิป AI ทั้งหมดผูกกับ NVDA เจ้าเดียว เป็นข่าวหนุนดีมานด์เชิงอารมณ์ตลาด ไม่ใช่ผลประกอบการของ NVDA เอง (งบจริงรอ 26 ส.ค.) MoS แคบลงเหลือ 23.19% (จาก 27.42%) แต่ยังผ่าน gate สบาย",
       "what": "NVIDIA ขายระบบ AI ครบวงจร (ชิป GPU Blackwell/Vera Rubin + ชิป Vera CPU ตัวใหม่ + เครือข่าย + ซอฟต์แวร์ CUDA) ให้ดาต้าเซ็นเตอร์ทั่วโลก รายได้ส่วนใหญ่มาจากฝั่ง Data Center",
       "why_invest": [
         "ธุรกิจหลักไม่เปลี่ยน: CUDA lock-in + Vera Rubin เข้าสู่การผลิตเต็มรูปแบบ + Vera CPU เปิดตลาดใหม่ $200B",
-        "ข่าวใหม่ 08-05: SpaceX ประกาศใช้ชิป NVDA แบบ exclusive + สร้าง AI server ในอวกาศ — ขยาย Physical AI thesis ไปถึงวงโคจร (หนุนดีมานด์ ไม่ใช่ผลประกอบการเปลี่ยน)",
-        "CUDA ecosystem 7.5M นักพัฒนา = ผูกลูกค้าจนย้ายแทบไม่ได้",
-        "Vera Rubin เข้าสู่การผลิตเต็มรูปแบบแล้ว (ไม่ใช่แค่ samples) — 35x throughput เทียบ Blackwell"
+        "งบไตรมาส 2 ของ SpaceX (4 ส.ค.) เปิดตัวเลขจริงครั้งแรก: ใช้งบ AI capex $15.8B ในไตรมาสเดียวไปกับชิป NVDA เกือบทั้งหมด ตั้งเป้าเปิดใช้งานเกิน 2GW ภายในสิ้นปี 2026 และสะสมถึง ~10GW ภายในสิ้นปี 2027 — ลูกค้าดีมานด์สูงรายใหม่ต่อยอดจากกลุ่มเดิม (hyperscaler/ACIE/sovereign)",
+        "consensus EPS ปีงบ 2028 อยู่ที่ $12.13 นิ่งมา 4 รอบติดต่อกันแล้ว ยืนยันว่าราคาที่ขึ้นวันนี้มาจากอารมณ์ตลาด ไม่ใช่การอัพเกรดพื้นฐานจริง",
+        "Charlie ตรวจสอบอิสระอีกรอบยืนยัน AGREE ตัวเลขราคา/EPS ตรงเป๊ะ"
       ],
       "watch_out": [
-        "ความเสี่ยงเดิมยังไม่คลี่คลาย: NVDA อยู่ระหว่างเจรจาค้ำประกันวงเงินเช่า data center ให้ OpenAI มูลค่าถึง $250B บวกวงเงินไฟแนนซ์ซื้อ GPU อีก ~$350B (ยังเป็นแค่การเจรจา ยังไม่เซ็นจริง) — จุดชนวนความกังวล 'circular financing'",
-        "Charlie ตรวจสอบอิสระอีกรอบ (08-05) ยืนยันตัวเลขตรงเป๊ะ แต่ MoS ที่ FV ของ Charlie เองก็แคบลงเหลือ +16.9% (จาก +19.0%) จากราคาที่วิ่งขึ้นต่อเนื่อง 3 รอบติดโดย EPS ไม่ขยับเลย",
-        "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก — ถ้า demand ชะลอกระทบหนัก",
-        "China Data Center revenue เหลือ $0 แล้วจาก export controls"
+        "ดีล circular financing เดิมยังไม่คลี่คลาย: NVDA อยู่ระหว่างเจรจาค้ำประกันวงเงินเช่า data center ให้ OpenAI ถึง $250B บวกไฟแนนซ์ซื้อ GPU อีก ~$350B (ยังเป็นแค่การเจรจา ยังไม่เซ็นจริง)",
+        "MoS แคบลงต่อเนื่อง 3 รอบติดจากราคาวิ่งขึ้นล้วนๆ เหลือ 23.19% (จาก 27.42%) โดย EPS ไม่ขยับเลย — cushion บางลงเรื่อยๆ ก่อนงบจริง 26 ส.ค.",
+        "WAF ลดลงเล็กน้อยเหลือ 8.45 (จาก 8.50) ทำให้ conviction ข้ามเกณฑ์จาก VERY HIGH เป็น HIGH — เป็นผลจากราคาขึ้นล้วนๆ ไม่ใช่ธุรกิจแย่ลง",
+        "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก + China Data Center revenue เหลือ $0 แล้วจาก export controls"
       ],
-      "bottom_line": "MoS 27.42% ยังผ่าน gate สบาย (เกณฑ์ 15%) ธุรกิจหลักไม่เปลี่ยนเลย ข่าว SpaceX/NVDA exclusivity เป็นข่าวหนุนดีมานด์ ไม่ใช่ fundamental surprise Charlie ตรวจสอบอิสระอีกรอบ (ราคา+EPS ตรงเป๊ะ) ยืนยัน AGREE gap คงที่ 12.7% — HOLD ต่อเนื่อง รองบครั้งหน้า 26 ส.ค. 2026 เป็นบททดสอบจริงครั้งแรกหลังข่าว circular financing"
+      "bottom_line": "MoS 23.19% ยังผ่าน gate สบาย (เกณฑ์ 15% ปกติ หรือ 20% ตอน VIX ต่ำแบบตอนนี้) ธุรกิจหลักไม่เปลี่ยน ราคาที่ขึ้นมาจากข่าว SpaceX ยืนยันดีมานด์ชิปเพิ่มเติม ไม่ใช่งบ NVDA เอง (รองบจริง 26 ส.ค. 2026) Charlie ตรวจสอบอิสระยืนยัน AGREE เหมือนเดิม gap 12.7% คงที่ — HOLD ต่อเนื่อง"
     },
     "mark_full": {
       "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company มี 2 Market Platform หลัก: Data Center และ Edge Computing กำไรขั้นต้น 75% สะท้อน CUDA premium ที่ซ่อนอยู่ในราคา GPU",
-      "tam": "AI Factory infrastructure คาดโต $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU ไป CPU (ตลาดใหม่ $200B ที่ไม่เคยแตะมาก่อน) + Physical AI ($9B+ ใน 12 เดือน) + Sovereign AI ใน ~40 ประเทศ",
-      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Library (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% เทียบ NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง — moat ยังไม่หายไป แค่เปลี่ยนจาก lock-in เชิงโครงสร้างเป็น friction เชิงเวลา",
-      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 เต็มปี Revenue $215.9B, FCF $96.6B",
+      "tam": "AI Factory infrastructure คาดโต $3-4T/ปีภายในปลายทศวรรษ; NVDA กำลังขยาย envelope จาก GPU ไป CPU (ตลาดใหม่ $200B ที่ไม่เคยแตะมาก่อน) + Physical AI ($9B+ ใน 12 เดือน) + Sovereign AI ใน ~40 ประเทศ — ล่าสุด SpaceX โผล่มาเป็นลูกค้ารายใหม่ระดับ hyperscaler ที่ผูกกับ NVDA เจ้าเดียว",
+      "moat": "CUDA moat 3 ชั้น: Ecosystem (7.5M devs) + Library (cuBLAS/TensorRT) + Compiler (ptxas closed-source); AMD gross margin 57% เทียบ NVDA 75% = ส่วนต่าง 18ppt คือมูลค่า CUDA ที่แท้จริง",
+      "latest_financials": "Q1 FY27: Revenue $81.6B +85% YoY; Non-GAAP EPS $1.87; FCF $48.6B; Q2 FY27 guide $91B ±2%; FY26 เต็มปี Revenue $215.9B, FCF $96.6B — ยังไม่มีงบใหม่รอบนี้ งบจริงถัดไป 26 ส.ค. 2026",
       "key_points": [
-        "ข่าวใหม่ 08-05: Musk/SpaceX ประกาศ SpaceX จะใช้ชิป NVDA แบบ exclusive ทั้งหมด + สร้างเซิร์ฟเวอร์ AI ในอวกาศ — ขยาย Physical AI thesis ไปถึงวงโคจร ไม่ใช่ผลประกอบการเปลี่ยนแปลง",
-        "ความเสี่ยง circular financing (07-27/07-28) ยังไม่คลี่คลาย: เจรจาค้ำประกัน lease $250B + ไฟแนนซ์ซื้อ GPU $350B ให้ OpenAI — Charlie ยืนยันเป็นเรื่องจริง ยังเป็นความเสี่ยง counterparty ใหญ่สุดถ้าพลิกเป็นสัญญาผูกพัน",
+        "งบไตรมาส 2 ของ SpaceX (4 ส.ค.) เปิดตัวเลขจริง: ดีมานด์ชิป AI ของ SpaceX ผูกกับ NVDA เจ้าเดียว ใช้งบ AI capex $15.8B ในไตรมาสเดียว ตั้งเป้าเกิน 2GW ภายในสิ้นปี 2026 และ ~10GW สะสมภายในสิ้นปี 2027 — ดีมานด์รายใหม่ต่อยอดจากกลุ่มเดิม ไม่ได้แทนที่",
+        "ความเสี่ยง circular financing (07-27/07-28) ยังไม่คลี่คลาย: เจรจาค้ำประกัน lease $250B + ไฟแนนซ์ซื้อ GPU $350B ให้ OpenAI — ยังเป็นความเสี่ยง counterparty ใหญ่สุดถ้าพลิกเป็นสัญญาผูกพัน",
         "Vera Rubin เข้าสู่การผลิตเต็มรูปแบบแล้ว = 35x inference throughput + 10x AI factory revenue เทียบ Blackwell",
         "Vera CPU เปิดตลาดใหม่ $200B ทั้งหมด — เริ่มมี $20B revenue visibility แล้วปีนี้"
       ]
     },
     "warren_easy": [
-      "NVDA tier Pre-Inevitable WAF 8.50 (แทบไม่เปลี่ยนจาก 8.55) — ราคาขึ้นต่อ +2.6% เป็น $211.94 (จาก $206.64) จากข่าว Musk/SpaceX ประกาศใช้ชิป NVDA แบบ exclusive + สร้าง AI server ในอวกาศ เป็นข่าวหนุนดีมานด์ ไม่ใช่ fundamental surprise (งบถัดไปยืนยันแล้วคือ 26 ส.ค. 2026)",
-      "MoS แคบลงเป็น 27.42% (จาก 29.23%) เพราะราคาขึ้นล้วนๆ — EPS consensus FY28 ไม่เปลี่ยน (3 รอบติดไม่มีการปรับ) ยืนยันว่าราคาขึ้นจากอารมณ์ตลาด ไม่ใช่การอัพเกรดพื้นฐาน",
-      "HOLD ต่อเนื่อง — MoS ยังกว้างกว่าเกณฑ์ 15% เกือบเท่าตัว ธุรกิจหลัก (Vera Rubin, CUDA) ไม่เปลี่ยน ดีล circular financing กับ OpenAI ยังอยู่ขั้นเจรจา"
+      "NVDA tier Pre-Inevitable WAF 8.45 (ลงจาก 8.50 — conviction ข้ามเกณฑ์ VERY HIGH→HIGH) — ราคาขึ้นต่อ +5.8% เป็น $224.28 (จาก $211.94) จากงบไตรมาส 2 ของ SpaceX (4 ส.ค.) ที่เปิดเผยตัวเลขจริงว่าดีมานด์ชิป AI ทั้งหมดผูกกับ NVDA เจ้าเดียว เป็นข่าวหนุนดีมานด์ ไม่ใช่ผลประกอบการ NVDA เอง (งบจริง 26 ส.ค.)",
+      "MoS แคบลงเหลือ 23.19% (จาก 27.42%) เพราะราคาขึ้นล้วนๆ — EPS consensus FY28 ไม่ขยับเลย 4 รอบติด ยืนยันว่าราคาขึ้นจากอารมณ์ตลาด ไม่ใช่การอัพเกรดพื้นฐาน",
+      "HOLD ต่อเนื่อง — MoS ยังผ่านเกณฑ์สบาย ธุรกิจหลัก (Vera Rubin, CUDA) ไม่เปลี่ยน ดีล circular financing กับ OpenAI ยังอยู่ขั้นเจรจาเหมือนเดิม"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ตรวจราคาตรงเป๊ะ ($211.94 ทั้ง Nasdaq/CNBC) ยืนยันการขึ้น +2.6% เป็นเรื่องจริง และดึง consensus EPS FY28 ใหม่ ($12.13) ตรงกับ 3 รอบก่อนหน้าเป๊ะ (ศูนย์การปรับ) — ยืนยันว่าราคาขึ้นจากอารมณ์ตลาดล้วนๆ ไม่มีการปรับประมาณการรองรับเลย",
-        "FV อิสระของ Charlie ยังคงที่ $255 (EPS $12.13 × 21x ตัวคูณอนุรักษ์คงที่ตั้งแต่ 16 ก.ค. ไม่ไล่ราคา) ต่ำกว่า Warren $292 อยู่ 12.7% เท่าเดิม ไม่ใช่ความเห็นต่างใหม่ — MoS ที่ FV ของ Charlie เองแคบลงเหลือ +16.9% (จาก +19.0% เมื่อ 08-04)",
-        "ดีล circular financing ($250B lease + $350B GPU financing) ยังเป็นความเสี่ยงหลักถ้าพลิกเป็นสัญญาผูกพันจริง — ยังอยู่ขั้นเจรจา งบครั้งหน้า 26 ส.ค. 2026 คือบททดสอบจริงครั้งแรกหลังข่าวนี้ออกมา"
+        "Charlie ตรวจราคาตรงเป๊ะ (Nasdaq $223.47 / CNBC $223.46 เทียบกับ Warren $224.28 ห่างแค่ 0.36%) และดึง consensus EPS ปีงบ 2028 ใหม่ ($12.13) ตรงกับ 4 รอบก่อนหน้าเป๊ะ (ศูนย์การปรับ) — ยืนยันว่าราคาขึ้นวันนี้มาจากข่าว SpaceX-NVDA exclusivity ล้วนๆ ไม่มีการปรับประมาณการรองรับเลย",
+        "FV อิสระของ Charlie คงที่ $255 (EPS $12.13 × 21x ตัวคูณอนุรักษ์คงที่ตั้งแต่ 16 ก.ค. ไม่ไล่ราคา) ต่ำกว่า Warren $292 อยู่ 12.7% เท่าเดิม ไม่ใช่ความเห็นต่างใหม่ — MoS ที่ FV ของ Charlie เองแคบลงเหลือ +12.0% (จาก +16.9%)",
+        "ดีล circular financing ($250B lease + $350B GPU financing) ยังเป็นความเสี่ยงหลักถ้าพลิกเป็นสัญญาผูกพันจริง — งบ 26 ส.ค. 2026 คือบททดสอบจริงครั้งแรกหลังข่าว SpaceX ออกมา"
       ],
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
-    "idea_th": "AI Factory Platform ที่ครบวงจรที่สุดในตลาด — CUDA ผูกขาด + roadmap Blackwell→Vera Rubin (เข้าสู่การผลิตเต็มรูปแบบแล้ว) + ตลาดใหม่ Vera CPU $200B. ราคาขึ้นต่อ +2.6% เป็น $211.94 (จาก $206.64) จากข่าว Musk/SpaceX ประกาศใช้ชิป NVDA แบบ exclusive + สร้าง AI server ในอวกาศ — หนุนดีมานด์ ไม่ใช่ผลประกอบการเปลี่ยน (งบถัดไป 26 ส.ค. 2026). ดีลค้ำประกัน lease $250B + ไฟแนนซ์ซื้อ GPU $350B ให้ OpenAI ('circular financing') ยังอยู่ขั้นเจรจา MoS แคบลงเหลือ 27.42% (จาก 29.23%) แต่ยังกว้างกว่าเกณฑ์เกือบเท่าตัว → HOLD ต่อเนื่อง Charlie ตรวจสอบอิสระอีกรอบยืนยัน AGREE ตัวเลขตรงเป๊ะ gap คงที่ 12.7% เท่าเดิม",
+    "idea_th": "AI Factory Platform ที่ครบวงจรที่สุดในตลาด — CUDA ผูกขาด + roadmap Blackwell→Vera Rubin (เข้าสู่การผลิตเต็มรูปแบบแล้ว) + ตลาดใหม่ Vera CPU $200B. ราคาขึ้นต่อ +5.8% เป็น $224.28 (จาก $211.94) จากงบไตรมาส 2 ของ SpaceX (4 ส.ค.) ที่เปิดตัวเลขจริงว่าดีมานด์ชิป AI ผูกกับ NVDA เจ้าเดียว ใช้งบ AI capex $15.8B ในไตรมาสเดียว — หนุนดีมานด์ ไม่ใช่ผลประกอบการ NVDA เปลี่ยน (งบจริงรอ 26 ส.ค. 2026). ดีลค้ำประกัน lease $250B + ไฟแนนซ์ซื้อ GPU $350B ให้ OpenAI ('circular financing') ยังอยู่ขั้นเจรจา. MoS แคบลงเหลือ 23.19% (จาก 27.42%) แต่ยังผ่านเกณฑ์สบาย → HOLD ต่อเนื่อง Charlie ตรวจสอบอิสระอีกรอบยืนยัน AGREE gap คงที่ 12.7% เท่าเดิม",
     "story_gate_th": {
       "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — GPU Blackwell→Vera Rubin (เข้าสู่การผลิตเต็มรูปแบบ) + Vera CPU (ตลาดใหม่ $200B) + เครือข่าย Spectrum-X/InfiniBand + ระบบนิเวศซอฟต์แวร์ CUDA ที่มีนักพัฒนา 7.5 ล้านคน",
-      "why": "ราคาเด้งกลับ +5.9% เป็น $206.64 (จาก $195.04) จากอารมณ์ตลาดกลับมาเป็นบวก ไม่มีข่าวพื้นฐานใหม่ยืนยัน — EPS consensus, ธุรกิจหลัก (Vera Rubin, CUDA, supply commitment) ไม่เปลี่ยนเลย MoS แคบลงเหลือ 29.23% (จาก 33.2%) เพราะราคาขึ้นล้วนๆ แต่ยังกว้างกว่าเกณฑ์ 15% เกือบเท่าตัว",
-      "risk": "ถ้า Vera Rubin เลื่อนเกิน 1 ไตรมาส หรือ hyperscaler ลด CapEx เกิน 30% หรือมีชิปคู่แข่งจริงจาก Musk/xAI หรือถ้าดีลค้ำประกัน OpenAI ($250B lease + $350B GPU financing) ปิดดีลจริงแล้วคู่สัญญาผิดนัดในอนาคต จะกลายเป็นความเสียหายทางบัญชีจริง ไม่ใช่แค่ narrative risk — งบ 26 ส.ค. 2026 คือบททดสอบจริงครั้งแรกหลังข่าวนี้ออกมา"
+      "why": "งบไตรมาส 2 ของ SpaceX (4 ส.ค.) เปิดตัวเลขจริงครั้งแรกว่าดีมานด์ชิป AI ของ SpaceX ผูกกับ NVDA เจ้าเดียว ใช้งบ AI capex $15.8B ในไตรมาสเดียว ตั้งเป้าเกิน 2GW ภายในสิ้นปี 2026 และ ~10GW สะสมภายในสิ้นปี 2027 — ดีมานด์รายใหม่ระดับ hyperscaler ต่อยอดจากกลุ่มเดิม (hyperscaler/ACIE/sovereign) ไม่ได้แทนที่ ราคาตอบรับ +5.8% เป็น $224.28 แต่เป็นอารมณ์ตลาดล้วนๆ EPS consensus นิ่งมา 4 รอบติดต่อกัน ไม่มีงบ NVDA ใหม่รอบนี้ (งบจริงถัดไป 26 ส.ค. 2026) MoS แคบลงเหลือ 23.19% (จาก 27.42%) แต่ยังผ่านเกณฑ์สบาย",
+      "risk": "ถ้า Vera Rubin เลื่อนเกิน 1 ไตรมาส หรือ hyperscaler ลด CapEx เกิน 30% หรือมีชิปคู่แข่งจริงจาก Musk/xAI หรือถ้าดีลค้ำประกัน OpenAI ($250B lease + $350B GPU financing) ปิดดีลจริงแล้วคู่สัญญาผิดนัดในอนาคต จะกลายเป็นความเสียหายทางบัญชีจริง ไม่ใช่แค่ narrative risk — งบ 26 ส.ค. 2026 คือบททดสอบจริงครั้งแรกหลังข่าว SpaceX ออกมา"
     },
     "bull_th": [
-      "MoS 27.42%, WAF 8.50 (VERY HIGH) — คุณภาพสูงสุดในกลุ่มที่ติดตาม ราคายังต่ำกว่ามูลค่าที่คำนวณได้ชัดเจน",
-      "ข่าว 08-05: SpaceX ประกาศใช้ชิป NVDA แบบ exclusive + สร้าง AI server ในอวกาศ — ขยาย Physical AI demand แม้ยังไม่ใช่ fundamental surprise",
+      "MoS 23.19%, WAF 8.45 (HIGH) — คุณภาพสูงสุดในกลุ่มที่ติดตาม ราคายังต่ำกว่ามูลค่าที่คำนวณได้ชัดเจน",
+      "งบไตรมาส 2 ของ SpaceX (4 ส.ค.) ยืนยันตัวเลขจริง: ใช้งบ AI capex $15.8B ในไตรมาสเดียวไปกับชิป NVDA เกือบทั้งหมด เป็นดีมานด์รายใหม่ต่อยอดจากลูกค้าเดิม",
       "Vera Rubin เข้าสู่การผลิตเต็มรูปแบบแล้ว = 35x inference throughput + 10x AI factory revenue เทียบ Blackwell",
       "Charlie ตรวจสอบอิสระแล้วตัวเลขสะอาด (ราคา, EPS ตรงกัน) และเห็นด้วยกับทิศทาง (AGREE, ห่างกันแค่ 12.7% เท่าเดิม)"
     ],
@@ -145,8 +144,8 @@
       "ดีลค้ำประกัน lease $250B + ไฟแนนซ์ซื้อ GPU $350B ให้ OpenAI ('circular financing') ยังอยู่ขั้นเจรจา ไม่มีข่าวเซ็นสัญญาจริง — ยังเป็นความเสี่ยง counterparty ใหญ่สุดถ้าพลิกเป็นสัญญาผูกพัน",
       "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก — ถ้า demand ชะลอกระทบหนัก",
       "China Data Center revenue เหลือ $0 แล้วจาก export controls (เทียบ $4.6B เมื่อปีก่อน)",
-      "คดีความแบบกลุ่ม (securities class action) ถูกศาล certify แล้วเมื่อ 25 มี.ค. 2026 — รอผลอุทธรณ์",
-      "MoS ที่ FV ของ Charlie เองแคบลงต่อเนื่องเหลือ +16.9% (จาก +19.0%) — cushion หดตัวทุกรอบโดย EPS ไม่ขยับเลย"
+      "MoS แคบลงต่อเนื่อง 3 รอบติดจากราคาวิ่งขึ้นล้วนๆ (27.42%→23.19%) โดย EPS ไม่ขยับเลย — cushion บางลงเรื่อยๆ ก่อนงบจริง 26 ส.ค.",
+      "MoS ที่ FV ของ Charlie เองก็แคบลงเหลือ +12.0% (จาก +16.9%)"
     ]
   },
   "TSM": {
@@ -222,19 +221,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price $417.17 cross-checked 2-source (Nasdaq secondaryData closed 08-04 4pm ET + CNBC), fetched 2026-08-05 -- exact match, 0% drift (resolves and stays clear of the 07-27 cache-staleness issue)",
-        "FY2027 (Dec 2027) consensus EPS re-pulled fresh: $20.83 (Nasdaq, 8 analysts, 7up/0down) -- exact match to 07-31, zero revision this round",
-        "'$100B Arizona investment' 08-05 headline independently WebSearch-verified: announcement traces to TSMC's Q2 2026 earnings conference (~mid-July 2026), i.e. the same 07-16 Q2 call already fully priced into this FV since 07-25/07-27/07-31 -- confirms Warren's '4th re-syndication, zero new data points' characterization is accurate, not an overstatement",
-        "TTM actual EPS $13.75 (CNBC trailing EPS field) -- unchanged since 07-31"
-      ],
-      "concerns": [
-        "🔴 Warren's OWN margin of safety is now essentially zero (+0.67%, down from +3.95% on 07-31) purely from the price move on unchanged FV -- flagged strongly for Oat: this is not a level to be adding at, even though HOLD (not SELL) remains the correct call per Fisher discipline (no forced sell on valuation alone)",
-        "At Charlie's own independent FV, MoS is a more comfortable +10.3% -- the two views diverge on cushion size but agree directionally that this is not a compelling entry price",
-        "N2 margin dilution (Q3 GM guide 65-67% vs Q2 67.7%, confirmed via guidance, not speculation) and the $60-64B capex overhang remain unhedged tail risks against a near-zero-MoS price"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิตชิปขั้นสูงที่แทนที่ไม่ได้ของโลก — ราคาขึ้นต่อ +3.4% เป็น $417.17 ข่าว '$100B Arizona investment' 08-05 ตรวจแล้วเป็นการพูดซ้ำงบ Q2 เดิมรอบที่ 4 ไม่มีข้อมูลใหม่ MoS บีบแคบลงเหลือ 0.67% — บางที่สุดในพอร์ตทั้งหมด แทบไม่เหลือ margin of safety",
@@ -372,20 +362,10 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $389.28 cross-checked 2-source (Nasdaq quote/info + CNBC quote API), fetched 2026-08-02 — exact match, no drift vs Warren's card",
-        "FY26 (Oct2026) consensus EPS $10.24 re-pulled fresh today (Nasdaq, 13 analysts, 1up/0down) — exact match to the 07-25/07-27 figure, confirms Warren's 'no new consensus data' carry-forward note is accurate",
-        "TQR block (centrality_note: 'Custom ASIC duopoly...6 customer roster', resilience_note: 'VMware/broadband/networking non-AI ~40-50%') carries no price language — contamination check clean; ra_ex_valuation 5.5 vs scores.ra 6.0 — differ, no copy-suspicion",
-        "TQR score 7.78 in Strong band (7.0-8.5), ceiling 25% — band/ceiling table consistent"
-      ],
-      "concerns": [
-        "gap 20.4% > 20% mandatory-CAUTION threshold — driven entirely by Warren's 55x multiple vs Charlie's 35x on the same $10.24 consensus EPS (both sides agree on the earnings number, disagree only on what multiple that AI-ASIC growth deserves)",
-        "Price at $389.28 vs Charlie min(FV) $358 → MoS_conservative = -8.7%, fails the 15% gate — conservative NO-BUY continues, deepened slightly from -6.7% (07-25/07-27) purely from the +1.9% price drift",
-        "⚠️ Compounding omission: Apple confirmed a new multi-year supply agreement with Broadcom worth >$30B (2026-07-30, per Apple's own announcement) — a SECOND material customer/business-diversification fact (after the still-unmentioned Samsung $200B deal from 07-25) that Warren's centrality_note has not incorporated across 2 consecutive rounds now. Neither changes the verdict (still valuation-driven), but the note is increasingly stale on the qualitative side",
-        "PEG 1.446 passes narrowly under the 1.5 cap; Google/Meta in-house XPU (COT/share risk) unchanged"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-02"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคาขยับขึ้นมา $389.28 (ไม่มีข่าวใหม่) ดัน MoS ลงเหลือ 13.49% ยังอยู่ใน STARTER band แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358) และ MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7%",
@@ -525,20 +505,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Q2 2026 results confirmed via WebSearch (CNBC/tradingview/geekwire/tikr/businesswire 2026-07-29/30): net sales $200.6B +20%, AWS $42.2B +37% (fastest in 18 quarters), operating income $27.5B (+43% YoY from $19.2B) -- matches Warren's figures exactly",
-        "GAAP EPS $5.75 (net income $62.6B) confirmed to include $53.4B pre-tax non-operating other income 'primarily from investments in Anthropic' -- independently quantified: this is ~85% of pretax net income, i.e. the vast majority of the EPS beat is a non-cash mark-to-market gain, not operating profit. Warren correctly excluded this from FV inputs (did not use raw GAAP EPS to inflate valuation) -- verified Warren did NOT make the mistake this review exists to catch",
-        "FCF (TTM) confirmed negative -$7.6B (from +$18.2B/+$1.2B range a year/quarter earlier) -- matches Warren's RA-score writeup",
-        "CapEx guidance raise confirmed: $200B -> $220B for 2026, explicitly attributed by Jassy to memory-chip cost inflation, not demand -- matches Warren verbatim"
-      ],
-      "concerns": [
-        "TTM EPS on a raw/reported GAAP basis is now badly distorted by the one-time Anthropic gain (CNBC trailing-EPS field shows $12.43, vs a Charlie-normalized ~$7.36 backing out the gain) -- if anyone downstream uses the raw reported TTM EPS for a Floor/PE calc without adjustment, it would produce a nonsensical inflated Floor (e.g. 12.43 x 28 = $348, which would exceed even the Bull FV) -- flagging this explicitly as a data-quality trap for future batches",
-        "MoS narrowly fails the 15% gate on both Warren's numbers (9.57%) and Charlie's independent numbers (7.0% at charlie_fv $284) -- directionally consistent (HOLD, no ADD), but this is close enough to the line that a modest FY27 consensus EPS revision (likely upward per Warren's own note) could flip it either way next round",
-        "FV inputs (both Warren's $9.91 and this review's $10.16 Nasdaq consensus for FY27/Dec2027) are pre-earnings numbers not yet revised for the Q2 beat -- expected to move up, re-run once analysts update",
-        "TQR block is MISSING from this fresh batch entirely (present in the 07-27 carry-forward batch: score 8.25/Strong/ceiling 25%, but absent from Warren's 07-31 single-ticker update) -- this is a data-completeness gap, not a contamination issue; flagging so the website badge doesn't silently lose TQR data for AMZN. Recommend Warren re-attach the 07-27 TQR block (carried_from note) next round, same pattern used for AAPL/ARM in this same update"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-07-31"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "Amazon งบ Q2 2026 บีตใหญ่ AWS เร่งเป็น +37% เร็วสุดใน 18 ไตรมาส แต่ EPS ที่ดูพุ่งกระฉูดส่วนใหญ่มาจากกำไรทางบัญชีที่ไม่ใช่เงินสดจริงจากการลงทุนใน Anthropic",
@@ -674,19 +644,10 @@
     "tier": "🌱 Fast Grower",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $779.89 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, confirms the further +12.5% sector-rally move",
-        "FY27 (Jun2027) consensus EPS re-pulled fresh: $16.67 (Nasdaq, 7 analysts) — unchanged since 07-25, confirms no new LITE-specific earnings (next report Aug 11 2026, independently confirmed)",
-        "WebSearch found no LITE-specific news dated 08-04 beyond stale/cached coverage of an unrelated earlier pullback — confirms Warren's framing that this is pure sector-sentiment continuation (Applied Optoelectronics/Coherent/Lumentum-peer-group rally), not a LITE-specific catalyst",
-        "TQR centrality_note ('center of the CPO universe', NVIDIA dual-source $2B) and resilience_note contain no price language — contamination check clean"
-      ],
-      "concerns": [
-        "⚠️ KEY FINDING: Charlie's own conservative MoS is now decisively negative — (667-779.89)/667 = -16.9%, down from -3.9% on 07-31 — purely from the further sector-wide re-rating, zero fundamental change. 4th whipsaw in ~2 weeks confirms WATCH (not BUY) is correct",
-        "gap 39.4% > 20% -> CAUTION mandatory, unchanged in magnitude",
-        "Warren's own multiple (60.5x) remains far above LITE's current elevated forward P/E (49.2x per CNBC); Aug 11 earnings is the real fundamental test, not sector sentiment"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ผู้นำเลเซอร์/ออปติคอลที่ NVIDIA ลงทุน $2B — ราคาวิ่งขึ้นต่อ +12.5% เป็น $779.89 ตามแรง risk-on ทั้งกลุ่ม optics (ไม่ใช่ข่าว LITE เฉพาะ) วิ่งสวนไปมารอบที่ 4 ใน ~2 สัปดาห์ PEG fail ลึกขึ้นเป็น 1.16 (เกิน cap 1.0) แม้ MoS/ER ยังผ่าน gate สบาย",
@@ -823,19 +784,10 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $590.24 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, confirms the +9.5%-in-4-days rally is real",
-        "Dec2026 consensus EPS re-pulled fresh: $28.99 (Nasdaq, 12 analysts, 3up/5down) vs $29.40 used 07-31 — a modest -1.4% net-negative revision (5 down vs 3 up), the opposite direction of what the price rally would suggest",
-        "Independently confirmed via WebSearch: Meta + BlackRock announced a new $14B strategic venture (07-28) to develop a 1GW data-center campus in El Paso — BlackRock-managed funds own 80%, Meta 20%, with $12.5B of the BlackRock side funded via debt financing; this is a genuine new off-balance-sheet financing structure NOT currently in Warren's thesis_risk",
-        "No new META-specific fact found dated 08-04 itself beyond continued market digestion of the already-analyzed 07-29 Q2 print (per house rule, analyst PT/rating changes without a factual basis are not recorded as reasoning)"
-      ],
-      "concerns": [
-        "🔴 UNRESOLVED (4th consecutive batch): Warren's EPS $31.94 for 'FY2026' is now 10.2% above fresh Nasdaq Dec2026 consensus ($28.99) — the gap widened this round (was 8.6% on 07-31) because consensus moved down while Warren's figure stayed flat",
-        "Return Decay confirmed on both sides: Warren's own MoS compressed 25.34%->18.25%; Charlie's own MoS compressed 18.8%->9.9% — same price-runs-ahead-of-consensus pattern flagged for MSFT",
-        "BlackRock JV is a mixed signal not yet in Warren's risk list: reduces Meta's own balance-sheet capex burden (positive) but commits Meta to new multi-year lease obligations on the venture's capacity (obligation risk) — recommend folding into thesis_risk either way"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "Q2 2026 ยัง headline น่ากลัวแต่ราคาวิ่งต่อเนื่อง +9.5% ใน 4 วัน เป็น $590.24 (rotation กลับเข้าเทคใหญ่ทั้งกลุ่มหลัง sell-off) MoS แคบลงมากเหลือ 18.25% (จาก 25.34%) — Charlie ยัง CAUTION ต่อเนื่องรอบที่ 4 เพราะ consensus EPS จริงลดลงสวนทางราคาที่ขึ้น",
@@ -972,19 +924,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $487.65 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, confirms the further +4.9% run",
-        "Jun2027 consensus EPS re-pulled fresh: $19.53 (Nasdaq, 20 analysts, 11up/5down) vs $19.45 on 08-02 — a modest further +0.4% upward revision, continuing the small post-earnings catch-up",
-        "Microsoft securities class-action lead-plaintiff deadline (Aug 11 2026) independently re-confirmed via multiple fresh press releases (Levi & Korsinsky, SueWallSt, Gross Law Firm, all dated through 08-03) — class period May 2025-Jan 2026, alleges misleading statements on AI/Copilot/Azure adoption and undisclosed diversion of Azure compute to fix Copilot problems; still absent from Warren's thesis_risk and now only 7 days away",
-        "TQR block (backlog $678B centrality_note, core-revenue resilience_note) carries no price language — clean; band Core (8.75), ceiling null — consistent"
-      ],
-      "concerns": [
-        "⚠️ KEY FINDING: Charlie's mechanical 'min-rule' FV has now overtaken Warren's — gap flipped from +1.3% (Charlie below Warren) to -6.3% direction (Charlie now above Warren) purely because the current-forward-PE anchor (24.97x) keeps rising with price while staying under the 30x 5yr-median ceiling; charlie_fv tracks price ~1:1 in this regime, so a 'closed' or 'reopened' gap here is a methodology artifact, NOT a real change in either side's view",
-        "The more meaningful number is Warren's OWN MoS, now solidly negative at -6.24% (worse than -1.25% on 08-02) — 4th consecutive Return Decay round with price running ahead of any consensus EPS confirmation",
-        "Securities class-action deadline is now 7 days out (Aug 11) — a real, verifiable, time-urgent legal fact still not in Warren's risk list"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "งบ Q4 FY2026 แข็งแรง — ราคาวิ่งต่อเนื่องอีกเป็น $487.65 (+4.9%) แซง FV $459 ไปไกลขึ้น MoS แย่ลงเป็น -6.24% (จาก -1.25%) รอบที่ 4 ติดของ Return Decay + คดี securities class-action เหลือเวลายื่นคำร้องอีกแค่ 7 วัน (11 ส.ค.)",
@@ -1123,20 +1066,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $1,642.52 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, confirms Warren's +6.08%-since-07-29 rally is real, NOT a fresh decline — directly contradicts a stale cached search snippet describing an '11% drop on China DUV' that independently checks out as referring to the older 07-28 shock, not today",
-        "FY27 (Dec2027) consensus EPS re-pulled fresh: $58.96 (Nasdaq, 7 analysts, 5up/1down) vs $57.42 used 07-29/07-31 — a genuine +2.7% upward revision, not noise",
-        "China domestic-DUV headline (08-04) independently WebSearched — confirmed as recirculation of the already-assessed 07-28/07-29 SMIC/Hua Hong/CXMT story (first ~5 domestic DUV units in 2026, ramping to ~20 in 2027), not new; ASML's own price action today (+0.83%) is inconsistent with a fresh negative reaction, supporting Warren's 'recirculated, not new' framing",
-        "⚠️ ra_ex_valuation (6.5) exactly equals scores.ra (6.5) this batch — new appearance of the same exact-equality pattern already flagged for AMD/MU/TSM; worth Warren re-checking"
-      ],
-      "concerns": [
-        "🔴 UNRESOLVED, 10th consecutive round: Warren's eps_used $70 (labeled 'FY2026') is now 56.7% above the fresh 08-04 FY2026 Nasdaq consensus ($44.68) and 18.7% above the FY2027 consensus ($58.96) used for Charlie's FV — an increasingly stark, still-unreconciled input gap, not a narrowing one",
-        "gap 15.8% (>15% mandatory-full-work threshold, action=BUY) → FV-Gap Conservative Rule applies: MoS at min(FV_warren, charlie_fv)=$1769 vs price $1642.52 = +7.15% — FAILS the 15% gate (was -2.0%→+10.3%→now +7.15%, still short) → recommend Kim continue enforcing automatic conservative NO-BUY",
-        "TTM actual EPS (CNBC) $30.29 is down from $32.14 cited 07-29 (-5.8%) as the trailing-four-quarter window rolls — worth confirming this is a normal roll and not a data artifact before relying on the floor calc",
-        "ra_ex_valuation==scores.ra exact match — newly flagged for ASML this round, same pattern now present in 3/8 tickers this batch (AMD/ASML/MU)"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต EUV lithography รายเดียวในโลก — ราคาวิ่งขึ้นต่อ +6.08% เป็น $1,642.52 จาก Bernstein 'Top Q3 Pick' + Goldman Conviction List MoS แคบลงเหลือ 21.78% (จาก 26.27%) ยังผ่าน gate แต่ Charlie ยังกังวลหนักขึ้นว่า EPS ที่ Warren ใช้ ($70) สูงกว่า consensus จริงมาก (ค้าง 10 รอบยังไม่แก้)",
@@ -1266,19 +1199,10 @@
     "tier": "🔁 Cyclical",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $829.50 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-04 — exact match, confirms the -5.2% pullback",
-        "Aug2026 consensus EPS $72.93 (Nasdaq, 13 analysts) re-pulled fresh — unchanged from 07-31, confirms the ~$72 normalized mid-cycle basis is stable; Aug2027 peak-cycle consensus ($158.00, unchanged) continues to be correctly EXCLUDED per Cyclical-tier / Peak-EPS-Bias methodology — Warren's normalized-mid-cycle approach is being followed correctly",
-        "WebSearch independently confirms the pullback is sector-wide (Western Digital, Applied Materials, Marvell, AMD, NVDA all down alongside MU) plus specific competitive-narrative headlines: China's DeepSeek reportedly developing its own AI chip to reduce Nvidia/Huawei reliance, and CXMT DRAM-expansion reports — more specific drivers than Warren's 'generic memory demand recovery' framing suggests, though CXMT competition is already in Warren's thesis_risk",
-        "Confirmed Warren correctly declined to chase the sell-side 45-analyst-consensus PT ($1,507 implied) as a valuation input — good discipline, consistent with house rule"
-      ],
-      "concerns": [
-        "Gap to Warren (18.6%) unchanged, persistent since 07-27 — this is a magnitude disagreement, not a directional one (both sides agree WATCH is correct)",
-        "MoS at Charlie's own FV improved to +11.4% (from +6.55%) purely on the price pullback, not fundamentals",
-        "ra_ex_valuation==scores.ra exact-match pattern now recurring across 3 tickers this batch — recommend Warren audit the TQR pipeline's valuation-exclusion step directly rather than per-ticker"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-04"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต HBM รายเดียวใน US ที่ NVIDIA ต้องพึ่ง — ราคาย่อลง -5.2% เป็น $829.50 ตามแรงเทขายกลุ่มชิปทั้งกลุ่ม (ไม่ใช่ข่าว MU เฉพาะ) MoS กว้างขึ้นเป็น 27.87% (จาก 23.94%) แม้ sell-side หันมาบวกขึ้น Warren ยังไม่ไล่ตามมุมมองนักวิเคราะห์ตามวินัยเดิม",
@@ -1415,18 +1339,10 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $71.71 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-02 — exact match, confirms the modest +2.3% drift Warren noted, no new material news since 07-25",
-        "FY27 (Dec2027) consensus EPS re-pulled fresh: $3.83 (Nasdaq, 14 analysts, 5up/8down) vs $3.84 previously — essentially unchanged (-0.3%), confirms genuine carry-eligible stability on the earnings side",
-        "⚠️ TTM actual EPS (CNBC, raw GAAP) $3.17 — matches the previously-flagged 'inflated ~20% by one-off' figure ($3.18) almost exactly, NOT the 'clean' $2.65 basis used for the floor calc. Both figures independently re-confirmed to still coexist; using the clean/adjusted basis for the floor per the 07-27 methodology"
-      ],
-      "concerns": [
-        "22x forward multiple still above the current actual fwd PE (18.72x) by a modest premium; MoS at Charlie's conservative FV thin at +1.8%, barely positive",
-        "OM contraction YoY + FCF -33% (quality concern flagged since 07-25) — no new data this round to confirm recovery or further deterioration; genuinely unresolved, not improving",
-        "tier_verdict SUGGEST_DOWNGRADE reaffirmed (Pre-Inevitable requires margin-expansion signal; still not showing this round)"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-02"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "Netflix เจ้าตลาด streaming โลก — ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ไม่มีข่าวใหม่ MoS ลดลงเหลือ 14.63% (held name ยังผ่านเกณฑ์ ER); Charlie CAUTION ยังแนะนำจับตา downgrade tier เพราะ margin ยังไม่ฟื้น",
@@ -1565,19 +1481,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price $356.13 cross-checked 2-source (Nasdaq + CNBC), fetched 2026-08-02 — exact match, confirms the +11.4% week-over-week rally is real (broad AI/mega-cap read-through, no GOOGL-specific news)",
-        "Q2 2026 earnings (reported 07-22): revenue $119.8B (+24% YoY, beat ~$116.5B est), Google Cloud +82% YoY to $24.8B, FY2026 capex guide raised to $195-205B, FCF -47% YoY — all independently confirmed via CNBC/press coverage, consistent with Warren's existing thesis_risk (no new fundamental fact this round beyond the already-known 07-24 EU DMA fine)",
-        "⚠️ Forward-EPS 2-source divergence found: Nasdaq earnings-forecast Dec2027 consensus $14.73 (18 analysts, fetched fresh 08-02) vs CNBC quote API forward EPS $13.20 — a 10.4% gap, over the 2% cross-check tolerance. Used the LOWER/conservative figure ($13.20) per house rule. Also note Nasdaq's Dec2026 (current-FY) consensus jumped to $20.51 -- almost certainly reflects one-off equity-stake gains already recognized in H1 2026 (matches the TTM actual $19.93 also being gain-inflated), NOT a clean operating-EPS read, so Dec2026 was excluded",
-        "TQR notes (vertically-integrated TPU stack, Search/YouTube base) carry no price language — clean; ra_ex_valuation 6.5 vs scores.ra 5.8 — differ, no copy-suspicion; band Strong (8.43) / ceiling 25% consistent"
-      ],
-      "concerns": [
-        "EPS source divergence (13.20 vs 14.73) unresolved — flagged for reconciliation next round; using the conservative figure only widens Charlie's own gap vs Warren (10.9%), it does not change the conclusion (still WATCH, still expensive)",
-        "CapEx guide $195-205B + FCF -47% YoY remain the dominant valuation drag, unchanged since 07-27",
-        "PEG 2.808 (Warren's own number) is decisively above the 1.5 cap; ER 8.33%/yr per Warren's own card is below the 10% QQQM-beat bar — Warren's own numbers already conclude WATCH, Charlie's independent read (deeper MoS fail, -28.6% at Charlie FV) agrees directionally and more strongly"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-02"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
@@ -1670,19 +1577,19 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 6.78,
+    "waf": 6.72,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 125.33,
+    "price": 129.18,
     "fv": 114,
-    "mos": -9.94,
+    "mos": -13.32,
     "fpe": null,
     "peg": null,
     "scores": {
       "bq": [
-        7.5,
+        7.8,
         "amber",
-        75
+        78
       ],
       "gp": [
         9.0,
@@ -1690,22 +1597,22 @@
         90
       ],
       "va": [
-        5.5,
+        5.2,
         "orange",
-        55
+        52
       ],
       "ra": [
-        3.0,
+        2.5,
         "orange",
-        30
+        25
       ]
     },
-    "idea": "Price +15.7% ($108.37->$125.33), price-triggered ANALYZE. No fundamental news this batch — lockup-unlock overhang continuing per the previously-flagged S-1/A timeline, but this leg is a bounce off the recent lows rather than new supply pressure. FV carried $114 (SOTP method, no P/E basis). Price has moved back ABOVE Base FV -- MoS flips from +4.94% back to -9.94%, though still far inside the Bull case ($191, MoS +52.2%).",
-    "updated": "2026-08-05",
+    "idea": "Price surged +12.4% intraday ($114.92->$129.18) on gradual lockup-tranche release + $16.8B Tesla AI-chip JV announcement + Q2 earnings digestion + analyst upgrades (Citi, Bernstein). First full Warren pass since Q2 2026 actuals (revenue +92% YoY, op loss narrowed 85% YoY, AI segment first positive Adj EBITDA quarter) landed in the card. FV carried $114/$191/$76 (SOTP method) unchanged — operating improvement is real but one quarter is not enough to re-base FV without chasing the rally (Consensus-as-Base discipline).",
+    "updated": "2026-08-07",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-05",
+      "updated": "2026-08-07",
       "tier": "⚠️ Speculative",
       "tier_slug": "speculative",
       "what": "SpaceX เป็น vertically integrated space company ที่ควบคุม 3 business ในตัวเดียว: (1) Space — Falcon 9 ครอง majority ของ global commercial launches, (2) Connectivity — Starlink global broadband ที่มี 10.3M subscribers, Adj EBITDA Margin 63% = cash machine ที่ทรงพลัง, (3) AI — xAI (Grok) + X (social media + advertising) + Cursor (AI coding, acquired 06-16) ที่รวม asset เข้ามาต่อเนื่อง; Falcon 9 reusability สร้าง cost moat ที่คู่แข่งแทบ replicate ไม่ได้",
@@ -1714,83 +1621,83 @@
     },
     "tier": "⚠️ Speculative",
     "charlie": {
-      "charlie_verdict": "DISAGREE",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
-        "🚨 MATERIAL DATA-INTEGRITY FINDING: Warren's 08-05 note states 'No fundamental news this batch -- lockup-unlock overhang continuing... this leg is a bounce off recent lows.' Independent WebSearch confirms this is FACTUALLY WRONG: SpaceX reported its actual Q2 2026 results after market close 08-04 -- its FIRST-EVER public quarterly earnings, the exact catalyst the prior Charlie review (08-02) flagged as imminent 2 days out. Revenue $7.81B beat $6.93B consensus (+92% YoY); loss per share -$0.09 beat -$0.26 expected; net loss narrowed to $541M from $1B. This is not a minor omission -- it is the single most anticipated event for this ticker, missing entirely from Warren's characterization of the price action",
-        "Price $125.33 (regular-session close, +9.43% on the earnings beat) cross-checked 2-source (Nasdaq + CNBC) -- exact match. However, AH the stock fell -8.56% to $114.6 on capex-shock digestion, and premarket 08-05 shows a further ~12% decline (Nasdaq realtime primaryData $111.23 vs secondaryData close $125.33) -- the REAL story this batch is a violent post-earnings/capex-shock reaction, not a 'lockup-driven bounce off lows' as Warren's note frames it",
-        "Capex mix confirmed via primary source (SpaceX Q2 2026 shareholder letter): capex jumped 6x YoY to $18.37B, with $15.83B (86%) directed to AI infrastructure -- this materially updates the TQR resilience_note's claim that 'core Starlink/launch business doesn't depend on AI capex'; the INCREMENTAL capital being deployed is now overwhelmingly AI-capex-linked even if trailing revenue mix is still Starlink-majority",
-        "FY28 (Dec 2028, first-profit year) consensus EPS re-checked: still $3.50 (Nasdaq, 7 analysts, 0up/0down in the last 4 weeks) -- confirms analyst estimates have NOT yet been revised to reflect the 08-04 beat (normal lag for a company's first-ever earnings print, expect revision next round)"
+        "Price cross-checked 2-source live: Nasdaq $129.855 / CNBC $129.88 (agree within 0.02% of each other) vs Warren's $129.18 snapshot -- 0.5% intraday drift on a +13% volatility day, well under the 2% override threshold",
+        "Tesla/SpaceX $16.8B 'Terafab' AI chip fab JV independently confirmed via WebSearch (TechCrunch, Electrek, Yahoo Finance, GuruFocus -- announced 2026-08-06, Grimes County TX, phased to $119B total) -- the catalyst Warren cited for today's move is real, not fabricated/misdated",
+        "NVIDIA-exclusivity for SpaceX's AI compute (Starmind AI1 orbital constellation, Rubin GPUs) independently confirmed via WebSearch (Forbes, IBTimes, earnings-call transcript) -- management quote 'we've decided to build exclusively on NVIDIA' corroborates Warren's RA downgrade rationale (single-source GPU concentration, no disclosed second vendor)",
+        "Cursor/Anysphere acquisition status independently confirmed still PENDING regulatory approval, targeted Q3 2026 close (signed 06-16, not closed) -- Warren's in-batch correction of prior card language is accurate, matches primary 10-Q Note 20 characterization"
       ],
       "concerns": [
-        "This is a data-integrity gap, not a valuation disagreement -- Charlie's own FV ($112) is only 1.8% from Warren's ($114), essentially in agreement on the number. The DISAGREE is about Warren's card mischaracterizing WHY the price is moving (attributed to 'lockup overhang bounce', when the dominant driver is the company's first-ever earnings print plus a heavy AI-capex-shock reaction) -- this matters because it could mislead next-round analysis into treating the AI-capex dependency as unchanged when Q2 actuals show it sharply rising",
-        "Action stays WATCH either way (Speculative tier forbids BUY/STARTER regardless of MoS), so this DISAGREE has no immediate deploy impact -- flagging for the record so Warren's next SPCX pass incorporates the actual Q2 print and updates the AI-capex-dependency framing in thesis_risk/TQR resilience_note",
-        "Two binary catalysts landed almost simultaneously (first earnings 08-04 + lockup unlock 08-06) -- expect continued high volatility into next week; re-run FV once analyst consensus catches up to the beat"
+        "Charlie FV moved from $112 (08-05, pre-revision consensus) to $128 (08-07, revised consensus) purely on the analyst EPS catch-up. Warren's FV stayed flat at $114 by deliberate choice ('one quarter is not enough to re-base FV without chasing the rally'). Gap between Warren and Charlie FV widened from 1.8% to 12.3% as a result -- worth reconciling in Warren's next full SPCX pass rather than carrying $114 indefinitely once consensus has clearly moved",
+        "RA (2.5) and ra_ex_valuation (2.5) are exactly equal this batch for the first time since the two scores were separated 07-27 (previously 3.0/2.5, a real 0.5pt valuation-risk wedge). Warren's note attributes the RA cut to NVDA supply concentration (a business-risk reason, not valuation), which is a defensible explanation -- but the exact-match coincidence trips the TQR contamination heuristic (CHARLIE.md §4.7 pt.2) mechanically, and this same ra==ra_ex_valuation pattern was already flagged as recurring in the 08-04 batch (AMD/ASML/MU). Flagging again for Warren to explicitly re-confirm the ex-valuation component next round rather than let it become systemic",
+        "No second-source GPU vendor disclosed for SpaceX's AI compute buildout, and 86% of the $18.37B Q2 capex went to AI infrastructure (per primary 10-Q/shareholder letter) -- concentration risk is real and growing as a share of incremental capital, consistent with Warren's RA cut"
       ],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
-      "one_liner": "บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI) — ⚠️ DISAGREE: Charlie พบว่าคำอธิบายข่าวของ Warren รอบนี้ผิดพลาด ราคาไม่ได้ขึ้นจาก 'lockup bounce' แต่มาจากงบไตรมาสแรกในฐานะบริษัทมหาชนที่เพิ่งประกาศ (08-04) รายได้บีตคาด แต่ CapEx พุ่ง 6 เท่าทำให้ราคาช็อกร่วงหลังตลาดปิด",
-      "what": "SpaceX รวม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครองส่วนแบ่งการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink สมาชิก 10.3 ล้านราย, margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok + X + Cursor)",
+      "one_liner": "บริษัทอวกาศของ Elon Musk (Starlink + Falcon + xAI) — งบไตรมาส 2 ปี 2026 (4 ส.ค.) รายได้โต +92% YoY และธุรกิจ AI ทำกำไรระดับ EBITDA เป็นครั้งแรกในประวัติศาสตร์บริษัท แต่ดีมานด์ชิป AI ทั้งหมดตอนนี้ผูกกับ NVIDIA เจ้าเดียว ราคาพุ่ง +12.4% เป็น $129.18 ยังเหนือ Base FV ($114) อยู่ ~13% — ยัง WATCH เหมือนเดิม",
+      "what": "SpaceX รวม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครองส่วนแบ่งการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink สมาชิก 12 ล้านราย margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok + X)",
       "why_invest": [
-        "งบไตรมาสแรกในฐานะบริษัทมหาชน (08-04): รายได้ $7.81B +92% YoY บีต consensus $6.93B, ขาดทุนต่อหุ้น -$0.09 ดีกว่าคาด -$0.26, ขาดทุนสุทธิลดลงเหลือ $541M (จาก $1B)",
-        "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก, Connectivity Adj EBITDA margin 63%",
-        "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้",
-        "FV อิสระของ Charlie ($112) ใกล้เคียง Warren ($114) มาก (gap แค่ 1.8%) — ความเห็นต่างรอบนี้เป็นเรื่องการตีความข่าว ไม่ใช่เรื่องมูลค่า"
+        "งบไตรมาส 2 ปี 2026 (4 ส.ค.): รายได้ $7.81B +92% YoY, ขาดทุนจากการดำเนินงานลดลง 85% YoY เหลือแค่ $(143)M เกือบเท่าทุนแล้ว",
+        "ธุรกิจ AI (xAI/Grok/X) ทำกำไรระดับ Adj EBITDA เป็นบวกครั้งแรกในประวัติศาสตร์บริษัท ($1,146M) หลังขาดทุนหนักมาตลอด",
+        "Starlink ยังเป็นเครื่องจักรทำเงินจริง: สมาชิก 12 ล้านราย (เพิ่มขึ้น 1.7 ล้านรายในไตรมาสเดียว มากที่สุดเท่าที่เคยมี) ARPU ทรงตัวที่ $66/เดือน 2 ไตรมาสติดต่อกันแล้ว (หยุดร่วง)",
+        "Backlog สะสม $47.5B, เงินสด+หลักทรัพย์รวม ~$100B — ฐานะการเงินแข็งแรงมาก"
       ],
       "watch_out": [
-        "🚨 DISAGREE — Warren บันทึกว่า 'ไม่มีข่าวพื้นฐานใหม่ ราคาขึ้นจาก lockup bounce' แต่ Charlie ตรวจสอบอิสระพบว่าผิด: ตัวจุดชนวนจริงคืองบไตรมาสแรกในฐานะบริษัทมหาชนที่เพิ่งประกาศ 08-04",
-        "CapEx พุ่ง 6 เท่า YoY เป็น $18.37B โดย 86% ($15.83B) ทุ่มไปที่ AI infrastructure — ราคาปิดตลาดปกติ +9.43% เป็น $125.33 จากงบที่บีต แต่นอกเวลาร่วง -8.56% เหลือ ~$114.6 จากความช็อกเรื่อง CapEx และ premarket 08-05 ร่วงต่ออีกราว 12%",
-        "lockup unlock ก้อนแรก (~911.5M หุ้น, ~$123B) ยังตามกำหนดเดิม 6 ส.ค. 2026 (พรุ่งนี้) — ส่วนนี้ Warren พูดถูก เป็นความเสี่ยงระยะสั้นที่ยังไม่คลี่คลาย",
-        "consensus EPS FY28 (ปีแรกกำไร) ยังไม่ปรับตามงบจริง ($3.50 คงเดิม) เพราะเป็นงบแรกที่เพิ่งประกาศ คาดปรับรอบหน้า"
+        "ความเสี่ยงใหม่: ดีมานด์ชิป AI ทั้งหมดของ SpaceX ตอนนี้ผูกกับ NVIDIA เจ้าเดียว (สถาปัตยกรรม Vera Rubin) ไม่มีซัพพลายเออร์สำรองที่เปิดเผย ขณะที่ต้องแข่งจัดสรร GPU กับ Google/Microsoft/Anthropic ด้วย — ถ้า NVIDIA จัดสรรให้น้อยลงหรือขาดแคลน กระทบแผนขยาย AI segment ตรงๆ",
+        "แก้ไขข้อมูลเดิม: ดีล Cursor (AI coding) ยังไม่ปิดดีลจริง อยู่ระหว่างรอหน่วยงานกำกับดูแลอนุมัติ คาดปิดไตรมาส 3 ปี 2026 (การ์ดเดิมเขียนผิดว่าปิดดีลไปแล้ว)",
+        "ราคาวิ่งขึ้นเร็วกว่ามูลค่าที่คำนวณได้ — MoS เทียบ Base FV ($114) ติดลบ -13.3% ยังไม่ผ่านเกณฑ์ซื้อ 15%",
+        "lockup unlock ยังทยอยปล่อยหุ้นต่อเนื่องถึง ต.ค. 2026 + หนี้พันธบัตร $20B+ + Musk คุมเสียงโหวต 82.4%"
       ],
-      "bottom_line": "DISAGREE รอบนี้เป็นเรื่องข้อมูล/การตีความข่าวผิด ไม่ใช่ความเห็นต่างด้านมูลค่า (FV ใกล้กันมาก gap แค่ 1.8%) และไม่กระทบการตัดสินใจทันทีเพราะ action ยังเป็น WATCH ทั้งคู่ (Speculative tier ห้าม BUY/STARTER) — แต่สำคัญเพราะภาพ CapEx ที่พึ่งพา AI เพิ่มขึ้นมาก (86% ของ CapEx ใหม่) เปลี่ยนความเสี่ยงของธุรกิจจริงๆ ต้องติดตามใกล้ชิดพร้อม lockup unlock พรุ่งนี้"
+      "bottom_line": "งบไตรมาส 2 ดีขึ้นจริง (รายได้โต, AI segment เริ่มทำกำไร) แต่ราคาวิ่งขึ้นเร็วกว่ามูลค่าไปแล้ว (MoS -13.3%) บวกความเสี่ยงใหม่เรื่องพึ่งพา NVIDIA เจ้าเดียว — Speculative tier ไม่ไล่ราคาไม่ว่ากรณีไหน ยัง WATCH ต่อ รอราคาลงมาใกล้ Base FV มากกว่านี้"
     },
     "mark_full": {
-      "business_overview": "SpaceX เป็นบริษัทควบคุม 3 ธุรกิจครบวงจร: Space, Connectivity/Starlink (Adj EBITDA margin 63% = เครื่องจักรทำเงิน), AI/xAI+X — เข้า IPO 12 มิ.ย. 2026 ที่ราคา $135 (IPO ใหญ่ที่สุดในประวัติศาสตร์)",
-      "tam": "ตลาด Starlink ใหญ่มาก (สมาชิก 10.3 ล้านราย มีเป้าหมาย 50 ล้าน+); direct-to-cell ขยายไปถึงกลุ่มคนกว่า 3 พันล้านคนที่ยังไม่มีอินเทอร์เน็ต; Starship ถ้าสำเร็จจะลดต้นทุนการปล่อยยานลง 10-100 เท่า; AI compute วงโคจรเป็น optionality ระยะยาว",
+      "business_overview": "SpaceX เป็นบริษัทควบคุม 3 ธุรกิจครบวงจร: Space, Connectivity/Starlink (Adj EBITDA margin 63% = เครื่องจักรทำเงิน), AI/xAI+X — เข้า IPO 12 มิ.ย. 2026 ที่ราคา $135 (IPO ใหญ่ที่สุดในประวัติศาสตร์) ตอนนี้เป็นบริษัทมหาชนมาแล้วเกือบ 2 เดือน",
+      "tam": "ตลาด Starlink ใหญ่มาก (สมาชิก 12 ล้านราย มีเป้าหมาย 50 ล้าน+); direct-to-cell ขยายไปถึงกลุ่มคนกว่า 3 พันล้านคนที่ยังไม่มีอินเทอร์เน็ต; Starship ถ้าสำเร็จจะลดต้นทุนการปล่อยยานลง 10-100 เท่า; AI compute เริ่มทำกำไรจริงแล้วในไตรมาสนี้",
       "moat": "Falcon 9 นำกลับมาใช้ซ้ำได้ = ต้นทุนต่อกิโลกรัมสู่วงโคจรต่ำที่สุดในโลก; Starlink มีดาวเทียมกว่า 10,300 ดวง = กลุ่มดาวเทียมเอกชนใหญ่ที่สุดในประวัติศาสตร์; ควบคุม supply chain เองทั้งหมด",
-      "latest_financials": "งบไตรมาสแรกในฐานะบริษัทมหาชน (ประกาศ 08-04 หลังตลาดปิด): รายได้ $7.81B +92% YoY บีต consensus $6.93B, ขาดทุนต่อหุ้น -$0.09 ดีกว่าคาด -$0.26, ขาดทุนสุทธิลดลงเหลือ $541M (จาก $1B); CapEx พุ่ง 6 เท่า YoY เป็น $18.37B โดย 86% ($15.83B) ทุ่มไปที่ AI infrastructure; ราคาปิดตลาดปกติ +9.43% เป็น $125.33 แต่นอกเวลาร่วง -8.56% เหลือ ~$114.6 จากความช็อกเรื่อง CapEx และ premarket 08-05 ร่วงต่ออีกราว 12% เหลือ ~$111.23",
+      "latest_financials": "งบไตรมาส 2 ปี 2026 (ประกาศ 4 ส.ค.): รายได้ $7.81B +92% YoY, ขาดทุนจากการดำเนินงานเหลือ $(143)M ดีขึ้น 85% YoY, ขาดทุนสุทธิ $(541)M ดีขึ้น 46% YoY, ธุรกิจ AI ทำกำไร Adj EBITDA บวกครั้งแรก $1,146M, Backlog $47.5B, เงินสด+หลักทรัพย์รวม ~$100B",
       "key_points": [
-        "🚨 DISAGREE: Charlie พบว่า Warren อธิบายข่าวรอบนี้ผิด — ราคาไม่ได้ขึ้นจาก lockup bounce แต่จากงบไตรมาสแรกในฐานะบริษัทมหาชนที่เพิ่งประกาศ 08-04",
-        "งบจริง: รายได้ $7.81B +92% YoY บีต consensus, ขาดทุนต่อหุ้นดีกว่าคาด, ขาดทุนสุทธิลดลงเหลือ $541M (จาก $1B) — เป็นสัญญาณบวกจริง",
-        "CapEx พุ่ง 6 เท่า YoY เป็น $18.37B โดย 86% ทุ่มไปที่ AI infrastructure — เปลี่ยนภาพความเสี่ยงของ Starlink/launch ที่เคยมองว่าไม่พึ่ง AI capex",
-        "lockup unlock ก้อนแรก (~911.5M หุ้น ~$123B) ยังตามกำหนดเดิม 6 ส.ค. 2026 (พรุ่งนี้) — ส่วนนี้ Warren พูดถูก",
-        "consensus EPS FY28 ยังไม่ปรับตามงบจริง ($3.50 คงเดิม) — คาดปรับรอบหน้าเมื่อ analyst ตามทัน"
+        "ความเสี่ยงใหม่: ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียว ไม่มีซัพพลายเออร์สำรอง — ใช้งบ AI capex $15.8B ในไตรมาสเดียว เกือบทั้งหมดไปกับชิป NVDA",
+        "แก้ไขข้อมูลเดิม: ดีล Cursor ยังไม่ปิดจริง รอหน่วยงานกำกับดูแลอนุมัติ คาดปิดไตรมาส 3 ปี 2026 (ไม่ใช่ 'ปิดแล้ว' อย่างที่การ์ดเดิมเขียนผิดไว้)",
+        "ธุรกิจ AI (xAI/Grok/X) ทำกำไรระดับ EBITDA เป็นบวกครั้งแรกในประวัติศาสตร์บริษัท",
+        "ราคาพุ่งขึ้นจากข่าวดีล Tesla-SpaceX ร่วมสร้างโรงงานผลิตชิป AI มูลค่า $16.8B + การปล่อยหุ้น lockup แบบทยอย ไม่ใช่ปล่อยทีเดียว",
+        "ARPU Starlink ทรงตัวที่ $66/เดือน 2 ไตรมาสติดต่อกัน — อาจเป็นสัญญาณหยุดร่วงแล้วจริง"
       ]
     },
     "warren_easy": [
-      "SPCX tier Speculative WAF 6.78 — Warren บันทึกว่าราคาขึ้น +15.7% เป็น $125.33 จาก 'lockup overhang bounce' ไม่มีข่าวพื้นฐานใหม่ ⚠️ Charlie ตรวจสอบอิสระพบว่าคำอธิบายนี้ผิดพลาด — ตัวจุดชนวนจริงคืองบไตรมาสแรกในฐานะบริษัทมหาชนที่ SpaceX เพิ่งประกาศ 08-04",
-      "MoS พลิกเป็นลบ -9.94% (จาก +4.94%) เพราะราคาปิดตลาดปกติวิ่งกลับขึ้นเหนือ Base FV $114 อีกครั้ง — แต่ราคาจริงหลังตลาดปิดร่วงลงไปแล้ว ~-8.56% เหลือ ~$114.6 และ premarket 08-05 ร่วงต่ออีกราว 12%",
-      "WATCH ต่อเนื่อง — Speculative tier ไม่ไล่ราคา ไม่ STARTER อยู่ดี ไม่ว่า MoS จะขึ้นหรือลง; lockup unlock ก้อนแรก (~911.5M หุ้น) ยังตามกำหนด 6 ส.ค. 2026 (พรุ่งนี้)"
+      "SPCX tier Speculative WAF 6.72 (ทรงตัวจาก 6.78) — ราคาพุ่ง +12.4% เป็น $129.18 จากข่าวปล่อยหุ้น lockup แบบทยอย + ดีล Tesla-SpaceX ตั้งโรงงานชิป AI $16.8B + การย่อยงบไตรมาส 2 ต่อเนื่อง",
+      "MoS เทียบ Base FV ($114) แย่ลงเป็น -13.3% (จาก -9.94%) เพราะราคาวิ่งเร็วกว่ามูลค่า — FV ยังคงเดิมทั้ง 3 scenario เพราะงบแค่ไตรมาสเดียวยังไม่พอรีเบส (กันไล่ราคาตามข่าว)",
+      "ความเสี่ยงใหม่: ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียว ไม่มีซัพพลายเออร์สำรอง — WATCH ต่อเนื่อง Speculative tier ไม่ไล่ราคาไม่ว่า MoS จะเป็นเท่าไหร่"
     ],
     "charlie_easy": {
-      "verdict": "DISAGREE",
+      "verdict": "AGREE",
       "paragraphs": [
-        "🚨 Charlie พบข้อผิดพลาดสำคัญด้านข้อมูล: Warren บันทึกว่า 'ไม่มีข่าวพื้นฐานใหม่รอบนี้ ราคาขึ้นจาก lockup overhang bounce' แต่ตรวจสอบอิสระผ่าน WebSearch พบว่าข้อความนี้ผิดจากความจริง — SpaceX เพิ่งประกาศงบไตรมาสแรกในฐานะบริษัทมหาชนเป็นครั้งแรกในประวัติศาสตร์เมื่อ 08-04 หลังตลาดปิด: รายได้ $7.81B บีต consensus $6.93B (+92% YoY), ขาดทุนต่อหุ้น -$0.09 ดีกว่าคาด -$0.26, ขาดทุนสุทธิลดลงเหลือ $541M จาก $1B — เป็นเหตุการณ์ที่ถูกจับตามากที่สุดของหุ้นตัวนี้ แต่หายไปจากคำอธิบายของ Warren ทั้งหมด",
-        "ราคาปิดตลาดปกติ +9.43% เป็น $125.33 จากงบที่บีตคาด แต่นอกเวลาร่วง -8.56% เหลือ ~$114.6 จากความช็อกเรื่อง CapEx (พุ่ง 6 เท่า YoY เป็น $18.37B โดย 86% ทุ่มไปที่ AI infrastructure) และ premarket 08-05 ร่วงต่ออีกราว 12% เหลือ ~$111.23 — เรื่องจริงรอบนี้คือปฏิกิริยารุนแรงหลังงบ+CapEx ช็อก ไม่ใช่ 'lockup bounce' อย่างที่ Warren อธิบาย",
-        "อย่างไรก็ตาม นี่เป็นความเห็นต่างเรื่องข้อมูล/การตีความข่าว ไม่ใช่ความเห็นต่างเรื่องมูลค่า — FV อิสระของ Charlie ($112) ใกล้เคียง Warren ($114) มาก (ห่างกันแค่ 1.8%) และ action ยังเป็น WATCH เหมือนเดิมทั้งคู่ (Speculative tier ห้าม BUY/STARTER อยู่แล้ว) จึงไม่กระทบการตัดสินใจลงทุนทันที แต่ Warren ควรแก้ไขคำอธิบายในรอบหน้าให้ตรงกับงบจริงและอัพเดตความเสี่ยงพึ่งพา AI capex ที่เพิ่มขึ้นมาก"
+        "Charlie ตรวจราคาตรงเป๊ะ (Nasdaq $129.86 / CNBC $129.88 เทียบกับ Warren $129.18 ห่างแค่ 0.5% ในวันที่ผันผวน +13%) และยืนยันข่าวดีล Tesla-SpaceX ตั้งโรงงานชิป AI $16.8B เป็นเรื่องจริง ไม่ใช่ข่าวปลอมหรือวันที่ผิด",
+        "ยืนยันความเสี่ยงใหม่ที่ Warren ปรับลดคะแนนความเสี่ยงลง: ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียวจริง ไม่มีซัพพลายเออร์สำรองที่เปิดเผย ตรวจสอบอิสระผ่านคำพูดผู้บริหารในงบไตรมาส 2 ตรงกัน และยืนยันดีล Cursor ยังไม่ปิดจริง ตรงกับที่แก้ไขในการ์ดรอบนี้",
+        "FV อิสระของ Charlie ปรับขึ้นเป็น $128 (จาก $112) ตาม consensus EPS ที่ปรับขึ้นหลังงบไตรมาส 2 บีตคาด — ห่างจาก Warren ($114) 12.3% (กว้างขึ้นจาก 1.8% เดิม เพราะ Warren ตั้งใจคง FV เดิมไว้ก่อน ไม่ไล่ราคาตามงบแค่ไตรมาสเดียว) ไม่ใช่ความเห็นต่างเรื่องคุณภาพธุรกิจ"
       ],
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
-    "idea_th": "WATCH — ⚠️ DISAGREE: Charlie พบว่าคำอธิบายข่าวของ Warren รอบนี้ผิดพลาดด้านข้อมูล ('ราคาขึ้นจาก lockup bounce ไม่มีข่าวพื้นฐานใหม่') ความจริงคือ SpaceX เพิ่งประกาศงบไตรมาสแรกในฐานะบริษัทมหาชนครั้งแรกในประวัติศาสตร์ (08-04 หลังตลาดปิด): รายได้ $7.81B บีตคาด +92% YoY, ขาดทุนต่อหุ้นดีกว่าคาด, ขาดทุนสุทธิลดลงเหลือ $541M. ราคาปิดตลาดปกติ +9.43% เป็น $125.33 แต่นอกเวลาร่วง -8.56% เหลือ ~$114.6 จากความช็อกเรื่อง CapEx ที่พุ่ง 6 เท่าเป็น $18.37B (86% ทุ่มไปที่ AI infrastructure) พร้อม premarket 08-05 ร่วงต่ออีก ~12%. แม้เป็น DISAGREE เรื่องข้อมูล/การตีความข่าว แต่ FV อิสระของ Charlie ($112) ใกล้เคียง Warren ($114) มาก (gap แค่ 1.8%) ไม่กระทบการตัดสินใจทันที เพราะ action ยังเป็น WATCH ทั้งคู่ (Speculative tier ห้าม BUY/STARTER). lockup unlock ก้อนแรก (~911.5M หุ้น) ยังตามกำหนด 6 ส.ค. 2026 (พรุ่งนี้) — ส่วนนี้ Warren พูดถูก. รอ consensus EPS ปรับตามงบจริงในรอบหน้า",
+    "idea_th": "WATCH — งบไตรมาส 2 ปี 2026 (4 ส.ค.) ดีขึ้นจริง: รายได้ $7.81B +92% YoY, ธุรกิจ AI (xAI/Grok/X) ทำกำไรระดับ Adj EBITDA เป็นบวกครั้งแรกในประวัติศาสตร์บริษัท ($1,146M), Starlink ยังเป็นเครื่องจักรทำเงิน ARPU ทรงตัว $66/เดือน 2 ไตรมาสติด. แต่มีความเสี่ยงใหม่: ดีมานด์ชิป AI ทั้งหมดตอนนี้ผูกกับ NVIDIA เจ้าเดียว ไม่มีซัพพลายเออร์สำรอง ต้องแข่งจัดสรรกับ Google/Microsoft/Anthropic. แก้ไขข้อมูลเดิม: ดีล Cursor ยังไม่ปิดจริง รอหน่วยงานกำกับดูแลอนุมัติ คาดปิดไตรมาส 3 ปี 2026. ราคาพุ่ง +12.4% เป็น $129.18 จากข่าวปล่อยหุ้น lockup แบบทยอย + ดีล Tesla-SpaceX ตั้งโรงงานชิป AI $16.8B — วิ่งเร็วกว่ามูลค่า MoS เทียบ Base FV ($114) ติดลบ -13.3% ยังไม่ผ่านเกณฑ์ซื้อ. Charlie ตรวจสอบอิสระยืนยัน AGREE ตัวเลข/ข่าวตรงกัน FV ใกล้เคียงกันมากขึ้น (gap 12.3%) — Speculative tier ไม่ไล่ราคาไม่ว่า MoS เป็นเท่าไหร่ ยัง WATCH ต่อ",
     "story_gate_th": {
-      "what": "SpaceX รวม 3 ธุรกิจ: Space (Falcon 9 ครองการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink 10.3M สมาชิก, margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok + X + Cursor)",
-      "why": "🚨 DISAGREE: SpaceX ประกาศงบไตรมาสแรกในฐานะบริษัทมหาชนครั้งแรกในประวัติศาสตร์เมื่อ 08-04 หลังตลาดปิด (รายได้ $7.81B +92% YoY บีตคาด, ขาดทุนลดลงเหลือ $541M) — ราคาปิดตลาดปกติ +9.43% เป็น $125.33 แต่นอกเวลาร่วง -8.56% จากความช็อกเรื่อง CapEx ที่พุ่ง 6 เท่าเป็น $18.37B (86% ทุ่มไปที่ AI infrastructure) Charlie ตรวจสอบอิสระพบว่านี่คือตัวขับเคลื่อนราคาจริง ไม่ใช่ 'lockup bounce' ตามที่ Warren บันทึกไว้ FV อิสระ $112 ใกล้เคียง Warren $114 มาก (gap 1.8%)",
-      "risk": "AI segment burn เพิ่มขึ้นมาก (CapEx 86% ไปที่ AI infrastructure); Starship ยังไม่ commercialized; หนี้พันธบัตร $20B+; lockup unlock ก้อนแรก ~$123B ตามกำหนด 6 ส.ค. 2026 (พรุ่งนี้); Musk key-man + dual-class 82.4% voting; consensus EPS FY28 ยังไม่ปรับตามงบจริง คาดผันผวนสูงเมื่อ analyst ปรับประมาณการรอบหน้า"
+      "what": "SpaceX รวม 3 ธุรกิจในตัวเดียว: Space (Falcon 9 ครองส่วนแบ่งการปล่อยยานเชิงพาณิชย์ส่วนใหญ่), Connectivity (Starlink สมาชิก 12 ล้านราย margin 63% = เครื่องจักรทำเงิน), AI (xAI/Grok + X) ที่เพิ่งทำกำไรระดับ EBITDA เป็นบวกครั้งแรก",
+      "why": "งบไตรมาส 2 ปี 2026 (4 ส.ค.) ยืนยันธุรกิจดีขึ้นจริง (รายได้ +92% YoY, AI segment เริ่มทำกำไร, ARPU หยุดร่วง) แต่ราคาพุ่ง +12.4% เป็น $129.18 เร็วกว่ามูลค่าที่คำนวณได้ จากข่าวปล่อยหุ้น lockup แบบทยอย (ไม่ใช่ปล่อยทีเดียว) + ดีล Tesla-SpaceX ตั้งโรงงานชิป AI $16.8B — FV ยังคงเดิมทั้ง 3 scenario เพราะงบแค่ไตรมาสเดียวยังไม่พอรีเบสมูลค่า (กันไล่ราคาตามข่าว) MoS เทียบ Base FV ($114) แย่ลงเป็น -13.3% ยังไม่ผ่านเกณฑ์ 15%. งบไตรมาสนี้ยังเผยความเสี่ยงใหม่: ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียว และแก้ไขข้อมูลเดิมว่าดีล Cursor ยังไม่ปิดจริง",
+      "risk": "AI segment แม้เริ่มทำกำไรแต่ capex ยังพุ่งสูง ($15.8B ในไตรมาสเดียว); ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียวไม่มีซัพพลายเออร์สำรอง; ดีล Cursor ยังไม่ปิดจริง รอหน่วยงานกำกับดูแล; Starship ยังไม่ commercialize; Musk overextended + คุมเสียงโหวต 82.4%; หนี้พันธบัตร $20B+; **ถ้าราคาหลุดต่ำกว่า Base FV ($114) จาก lockup supply ท่วมโดยไม่มี fundamental deterioration = โอกาส ไม่ใช่ thesis break; แต่ถ้า AI segment burn เร่งขึ้นอีก หรือ Starship timeline เลื่อน >12 เดือน หรือ NVIDIA จัดสรร GPU ให้น้อยลงจริง = สัญญาณ thesis พังจริง**"
     },
     "bull_th": [
-      "งบไตรมาสแรกในฐานะบริษัทมหาชน (08-04): รายได้ $7.81B +92% YoY บีต consensus, ขาดทุนต่อหุ้นดีกว่าคาด, ขาดทุนสุทธิลดลงเหลือ $541M (จาก $1B)",
-      "Starlink เครื่องจักรทำเงินจริง: 10.3M สมาชิก, Connectivity Adj EBITDA margin 63%",
-      "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้",
-      "FV อิสระของ Charlie ($112) ใกล้เคียง Warren ($114) มาก (gap แค่ 1.8%) — เห็นตรงกันเรื่องมูลค่า"
+      "งบไตรมาส 2 ปี 2026 บีตคาด: รายได้ $7.81B +92% YoY, ธุรกิจ AI ทำกำไรระดับ EBITDA เป็นบวกครั้งแรกในประวัติศาสตร์ ($1,146M)",
+      "Starlink เครื่องจักรทำเงินจริง: สมาชิก 12 ล้านราย เพิ่ม 1.7 ล้านรายในไตรมาสเดียว (มากสุดเท่าที่เคยมี) ARPU ทรงตัว $66/เดือน 2 ไตรมาสติด",
+      "Falcon 9 reuse = ต้นทุนต่ำที่คู่แข่งแทบเลียนแบบไม่ได้ + backlog สะสม $47.5B, เงินสด+หลักทรัพย์ ~$100B",
+      "Charlie ตรวจสอบอิสระยืนยัน AGREE ตัวเลขราคา/ข่าวตรงกัน FV ใกล้เคียงกันมากขึ้น (gap 12.3%)"
     ],
     "risk_th": [
-      "🚨 DISAGREE: Charlie พบว่าคำอธิบายข่าวของ Warren ผิดพลาด — ตัวขับเคลื่อนราคาจริงคืองบไตรมาสแรก+CapEx ช็อก ไม่ใช่ lockup bounce",
-      "CapEx พุ่ง 6 เท่า YoY เป็น $18.37B โดย 86% ทุ่มไปที่ AI infrastructure — เปลี่ยนภาพความเสี่ยงพึ่งพา AI capex ของธุรกิจ",
-      "ราคานอกเวลาร่วง -8.56% + premarket ร่วงต่ออีก ~12% หลังงบ — ผันผวนสูงต่อเนื่อง",
-      "lockup unlock ก้อนแรก (~911.5M หุ้น ~$123B) ตามกำหนด 6 ส.ค. 2026 (พรุ่งนี้) — แรงกดปริมาณหุ้นระยะสั้น",
-      "Musk key-man + dual-class 82.4% voting; Starship ยังไม่ commercialized"
+      "ความเสี่ยงใหม่: ดีมานด์ชิป AI ผูกกับ NVIDIA เจ้าเดียว ไม่มีซัพพลายเออร์สำรอง ต้องแข่งจัดสรรกับ Google/Microsoft/Anthropic",
+      "ราคาวิ่งเร็วกว่ามูลค่า — MoS เทียบ Base FV ติดลบ -13.3% ยังไม่ผ่านเกณฑ์ซื้อ",
+      "ดีล Cursor ยังไม่ปิดจริง รอหน่วยงานกำกับดูแลอนุมัติ คาดปิดไตรมาส 3 ปี 2026 (แก้ไขจากที่การ์ดเดิมเขียนผิดว่าปิดแล้ว)",
+      "lockup unlock ยังทยอยปล่อยหุ้นต่อเนื่องถึง ต.ค. 2026 + หนี้พันธบัตร $20B+",
+      "Musk คุมเสียงโหวต 82.4% แบบ dual-class + รับผิดชอบพร้อมกันหลายบริษัท (Tesla/SpaceX/xAI) — key-man risk สูง"
     ]
   },
   "PLTR": {
@@ -1866,19 +1773,10 @@
     "tier": "🌱 Fast Grower",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $162.66 cross-checked 2-source (Nasdaq secondaryData + CNBC), fetched 2026-08-05 -- exact match, 0% drift",
-        "Q2 2026 beat-and-raise independently confirmed: revenue $1.9355B (+93% YoY) vs Warren's cited consensus, FY2026 guidance raised to $8.150-8.158B -- figures match Warren's card",
-        "⚠️ EVIDENCE HIERARCHY FINDING: Warren's FY2027E EPS of $2.41 is self-derived (bottom-up from Q2 actuals + a 45%/yr growth assumption) because 'stockanalysis.com FY27/28 consensus Pro-tier paywalled.' Independent check via the FREE Nasdaq analyst earnings-forecast API found this consensus readily available and NOT paywalled: Dec2027 consensus EPS = $1.66 (12 analysts, 1up/0down), Dec2026 = $1.17 (12 analysts), Dec2028 = $2.37 (3 analysts). Warren's self-derived $2.41 sits 45.2% ABOVE the freely-accessible $1.66 consensus for the same fiscal year",
-        "TTM actual EPS: yfinance $1.15 vs CNBC $1.17 (1.7% apart, within tolerance) -- used the lower/conservative $1.15"
-      ],
-      "concerns": [
-        "🔴 Warren's $101 FV rests on an EPS 45% above the freely-available Nasdaq consensus, presented as a forced choice ('Pro-tier paywalled') when a Tier-3 sourced consensus was actually obtainable via a different free API -- this should have been declared as a formal Variant View with evidence, not treated as the only available number; variant_view_verdict=WEAK_EVIDENCE",
-        "gap 30.7% > 20% -> CAUTION mandatory. On Charlie's consensus-anchored FV ($70), MoS is -132.4%, materially worse than Warren's own -61.05% -- both agree WATCH/no-BUY is correct, but the magnitude of overvaluation is understated using Warren's EPS basis",
-        "Action is WATCH (PEG also fails Fast Grower's 1.0x cap on Warren's own numbers, let alone Charlie's more conservative EPS), so no FV-Gap Conservative-Rule deploy impact this round -- but recommend Warren re-source FY27/28 EPS from the Nasdaq API (already used elsewhere in this batch) next round rather than a self-derived bottom-up figure"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     }
   },
   "COHR": {
@@ -1954,19 +1852,10 @@
     "tier": "🌱 Fast Grower",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $323.73 cross-checked 2-source (Nasdaq secondaryData + CNBC), fetched 2026-08-05 -- exact match, 0% drift, confirms the further +23.1% rally since 08-02",
-        "FY27 (Jun2027) consensus EPS re-pulled fresh: $7.61 (Nasdaq, 9 analysts) -- exact match, unchanged since 07-25 through 08-02, confirms no new COHR earnings this batch (Q4 FY2026 report still scheduled 2026-08-12, not yet reported)",
-        "WebSearch confirms the rally driver is a mix of genuine business news (NVIDIA partnership / InP capacity-doubling plan targeting >$20B incremental SAM by 2030) plus a rebound from the 07-29 Corning-selloff low ($222) -- real, but not new EPS-moving information; analyst PT upgrades also circulating this week were noted only to confirm direction, never used as valuation input per CHARLIE.md 2.5",
-        "TQR notes (InP/light-source moat, non-AI diversification) carry no price language -- contamination check clean"
-      ],
-      "concerns": [
-        "⚠️ On Charlie's independent FV ($228, unchanged since 07-25), MoS has gone from ~0% (07-29) to -15.3% (08-02) to -42.0% today -- price has run far past even Charlie's conservative fair value on real-but-not-EPS-moving news, while the FV itself has not moved for 3 weeks",
-        "gap 30.9% (unchanged) > 20% -> CAUTION mandatory; action is WATCH now (Warren already flipped away from BUY on 08-05 itself as MoS failed the gate), so the FV-Gap Conservative-Rule auto-NO-BUY is moot this round -- but worth noting Warren's own de-risking (BUY->WATCH) happened for the right reason",
-        "Warren's FV $330 still relies on EPS $9.22 (~21% above FY27 consensus $7.61) -- the same unresolved aggressive-EPS gap flagged continuously since 07-18"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ผู้นำ optical transceiver ที่ NVIDIA ลงทุน $2B — ⚠️ ราคาพุ่งต่อเนื่อง +23.1% เป็น $323.73 (จาก $262.89) วิ่งแซง FV ของ Warren เองไปแล้ว MoS ล้มจาก PASS สบาย 20.34% เหลือแค่ 1.9% เกือบเป็นศูนย์ — Warren พลิก action จาก BUY เป็น WATCH รอบนี้",
@@ -2105,20 +1994,10 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price cross-checked 2-source (Nasdaq api/quote/info primaryData pre-market $477.87 @ 7:41am ET 08-05 vs CNBC ExtendedMktQuote PRE_MKT $477.89 @ 7:41am EDT) -- 0.004% drift, exact match; both confirm the post-earnings drop continuing into pre-market (-7.85% from the Aug4 regular close $518.58) -- vs Warren's AH snapshot $472.94, price has drifted +1.0% overnight, normal timing noise not a data error",
-        "yfinance flagged STALE: currentPrice returns $518.58 (the pre-earnings regular-session close), not the post-earnings print -- confirms Warren's own stale-price flag; do not use yfinance price for AMD today",
-        "Q2 FY2026 results independently confirmed via press coverage of the 8-K/press release: revenue $11.5B (+50% YoY) beat $11.31B consensus; non-GAAP EPS $1.66 beat $1.62 consensus (GAAP EPS $1.38); Data Center revenue $6.7B (+107% YoY, 58% of mix -- matches Warren's 58% exactly); Q3 guide $12.7-13.3B (mid $13B, +41% YoY) vs $12.5B consensus -- all match Warren's investment_idea claims",
-        "Server CPU TAM raise to $220B by 2030 (from $120B) and DC AI accelerator TAM ~$1.4T by 2030 (+45%/yr) independently confirmed via WebSearch (traced to AMD's Jul-23 Advancing AI event, reiterated on this call) -- real management guidance (Tier 2), not fabricated"
-      ],
-      "concerns": [
-        "gap 31.5% > 20% -> CAUTION mandatory (unchanged in magnitude from 07-27 through today) -- still driven entirely by Warren's EPS input ($18.7 CY2027, labeled eps_basis_type='consensus_forward' but actually 57.8% above the real Nasdaq consensus $11.85, and above even the $16.81 high estimate) -- this mislabeling has now persisted unresolved across 6+ consecutive batches (07-27 -> 08-05)",
-        "MoS at Charlie's own FV -49.3% (vs -51.5% on 08-04) -- gap not closing; charlie_fv held flat at $320 since the underlying consensus EPS hasn't moved yet post-earnings",
-        "SpaceX's exclusive-Nvidia commitment (see verified_claims) is a concrete new competitive data point behind Warren's existing 'AI GPU revenue gap vs NVDA still large' thesis_risk -- not thesis-breaking (SpaceX is not a disclosed top AMD DC customer) but reinforces that AMD's second-source AI-accelerator positioning is still being actively contested for major AI-infra buyers",
-        "ER cross-check (2.6): Warren's 34.8% expected_return_5yr_pct implies a growth term of ~35.0% -- in line with the previously-verified 35.1%/yr Street long-term figure, so not newly inflated -- but combined with the $467 vs $320 FV gap, Charlie's own ER computes to ~27%, a ~7.5pp gap over the 5pp threshold, driven by the same FV/EPS disagreement above, not a new growth-term issue"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "อันดับ 2 ในตลาด AI GPU ที่แข็งแกร่งขึ้นเรื่อยๆ + ครอง server CPU >40% — งบ Q2 FY2026 (4 ส.ค.) beat ทั้งรายได้กำไร ประกาศ TAM ใหม่ก้อนใหญ่ แต่ Charlie เตือนหนัก: ตัวเลข EPS ที่ Warren ใช้คำนวณมูลค่าสูงกว่า consensus จริงเกือบ 60% ต่อเนื่องมา 6 รอบ ยังคง WATCH",
@@ -2256,18 +2135,10 @@
     "tier": "🏛️ Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Q3 FY2026 results confirmed via WebSearch (macobserver/iclarified/moomoo/CNBC 2026-07-30): rev $109.4B +16% YoY, diluted EPS $2.02 +29% YoY, incl. $0.11/sh tariff-refund benefit — matches Warren's figures exactly",
-        "Q4 FY2026 guide confirmed: rev +9-11% YoY, GM 47-48% (down from Q3's 50.1%), FX headwind 2.5pp, supply constraint on iPhone/Mac/iPad — matches Warren verbatim",
-        "Price cross-checked 2 sources: Nasdaq quote API real-time premarket 2026-07-31 05:15ET = $310.20 (-6.97% net change) vs Warren's derived AH $312.33 (-6.33%) — same direction/magnitude, Nasdaq's live premarket print used as more current (2nd source: CNBC/Yahoo regular close $333.43 matches Warren's pre-move baseline exactly)",
-        "FY27 (Sep2027) consensus EPS $9.57 re-pulled live via Nasdaq analyst earnings-forecast API (13 analysts, unrevised since 07-27) — Warren's own eps_used ($9.40) is actually slightly BELOW live consensus, i.e. Warren's number is the more conservative one here, not inflated"
-      ],
-      "concerns": [
-        "Price still above even Bull-case FV ($290 Warren / $281 Charlie) — not a buy-the-dip setup despite -6.97% post-earnings drop",
-        "CEO transition Cook→Ternus (Sep 1) now imminent, first full quarter under new CEO is the Oct Q4 call — genuine near-term uncertainty, correctly reflected in Warren's RA score cut"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-07-31"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "Apple งบ Q3 FY2026 ทำสถิติใหม่ทั้งรายได้กำไร แต่หุ้นร่วง -6.3% หลังตลาดปิดเพราะ guide ไตรมาสหน้าบอกชัดว่ากำลังจะชะลอตัว",
@@ -2546,19 +2417,10 @@
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
       "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price $280.56 cross-checked 2-source (Nasdaq secondaryData closed 08-04 4pm ET + CNBC), fetched 2026-08-05 -- exact match, 0% drift, confirms the +13.8% move is a real closed-session print",
-        "WebSearch found no new ARM-specific fundamental news 08-03 through 08-05 -- most recent substantive item remains the 07-29 Q1 FY2027 print (already fully priced into this FV since 07-31); independently corroborates Warren's 'no new numbers, price-triggered ANALYZE only' framing",
-        "TTM revenue-per-share basis ($4.86) and forward revenue-per-share basis ($5.83) both held unchanged -- no new 10-Q/8-K since 07-31 to update the EV/Sales inputs",
-        "CNBC TTM EPS (GAAP, $0.85) vs yfinance TTM EPS ($1.15) diverge materially -- consistent with the known non-GAAP/GAAP gap already flagged 07-31; not used directly since this ticker runs on EV/Sales, not P/E"
-      ],
-      "concerns": [
-        "Price +13.8% with zero fundamental change pushes Charlie's own MoS from -145.9% (07-31) to -167.2% -- AVOID case strengthens further on pure price action, not a new disagreement",
-        "TQR centrality/resilience notes still carried from 07-27 (per Warren's design, TQR updates only via /warren theme) -- the crystallized Qualcomm/Nuvia court loss and royalty-guide cut are still not reflected in the TQR badge text, same gap flagged 07-31",
-        "Method (EV/Sales, since forward P/E is >80x per CHARLIE.md 2.5 exception) continues to independently corroborate Warren's P/E-based AVOID call -- both land near 60-63% below current price"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "ราคาพุ่งต่อ +13.8% เป็น $280.56 (จาก $246.59) ไม่มีข่าวพื้นฐานใหม่เลย — ธุรกิจ royalty คุณภาพดี แต่ตัวชี้วัดเติบโต (การเติบโตค่า royalty) ถูกปรับลงและแพ้คดีกับ Qualcomm ตั้งแต่รอบก่อน ราคาที่วิ่งขึ้นต่อยิ่งตอกย้ำว่าแพงกว่ามูลค่าจริงมากขึ้นไปอีก",
@@ -2696,19 +2558,10 @@
     "tier": "⚠️ Speculative",
     "charlie": {
       "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price $327.35 cross-checked 2-source (Nasdaq secondaryData + CNBC), fetched 2026-08-05 -- exact match, 0% drift, confirms the +1.6% move",
-        "Dec2027 consensus EPS re-pulled fresh: $1.38 (Nasdaq, 15 analysts, 1up/8down) -- unchanged from 08-02/08-04, confirms the prior cut has fully settled with no further revision",
-        "TTM actual EPS $1.00 (CNBC trailing EPS field) -- unchanged",
-        "No new TSLA-specific financial catalyst found via WebSearch 08-04/08-05 -- consistent with Warren's framing that this is a second analyst estimate-cut reinforcing (not introducing) the existing bear case, not a fresh fundamental event"
-      ],
-      "concerns": [
-        "gap 51.2% > 20% -> CAUTION mandatory, unchanged since 08-02/08-04 -- both Warren's $170 and Charlie's $83 sit far below the $327 price either way",
-        "Even at Charlie's own generous 60x growth-premium multiple, MoS is -294.4% -- not a borderline case",
-        "Speculative tier correctly forbids BUY/STARTER regardless of any MoS trajectory -- WATCH is the only available action, consistent with both Warren's and Charlie's numbers"
-      ],
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-08-05"
+      "review_date": "2026-08-07"
     },
     "mark_easy": {
       "one_liner": "รถ EV + พลังงาน + AI + หุ่นยนต์ — ราคาขยับขึ้น +1.6% เป็น $327.35 ข่าว 08-05 คือนักวิเคราะห์อีกรายหั่นเป้าการเติบโตปี 2026 ลง (ซ้ำแพทเทิร์นเดียวกับ 08-04) ตอกย้ำ ไม่ได้เปลี่ยน bear thesis เดิม MoS แย่ลงลึกขึ้นเป็น -92.56% (จาก -89.46%)",
