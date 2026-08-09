@@ -224,7 +224,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "หัวหอกชิป AI แบบ custom (XPU) ให้ 6 hyperscaler — ราคาขยับขึ้นมา $389.28 (ไม่มีข่าวใหม่) ดัน MoS ลงเหลือ 13.49% ยังอยู่ใน STARTER band แต่ Charlie เตือนว่า multiple 55x สูงเกินไป (FV อิสระ $358) และ MoS อนุรักษ์นิยมติดลบลึกขึ้นเป็น -8.7%",
@@ -817,7 +817,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "งบ Q4 FY2026 แข็งแรง — ราคาวิ่งต่อเนื่องอีกเป็น $487.65 (+4.9%) แซง FV $459 ไปไกลขึ้น MoS แย่ลงเป็น -6.24% (จาก -1.25%) รอบที่ 4 ติดของ Return Decay + คดี securities class-action เหลือเวลายื่นคำร้องอีกแค่ 7 วัน (11 ส.ค.)",
@@ -1107,7 +1107,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต EUV lithography รายเดียวในโลก — ราคาวิ่งขึ้นต่อ +6.08% เป็น $1,642.52 จาก Bernstein 'Top Q3 Pick' + Goldman Conviction List MoS แคบลงเหลือ 21.78% (จาก 26.27%) ยังผ่าน gate แต่ Charlie ยังกังวลหนักขึ้นว่า EPS ที่ Warren ใช้ ($70) สูงกว่า consensus จริงมาก (ค้าง 10 รอบยังไม่แก้)",
@@ -1170,6 +1170,156 @@
       "Export controls ขยายไป DUV + MATCH Act เสี่ยงตัด China rev ~19-20%",
       "China เริ่มผลิต DUV lithography เอง (ข่าว 08-04 ยืนยันเป็นข่าวเก่าเวียนซ้ำ) — ยังไม่กระทบ EUV monopoly แต่กัดกร่อนธุรกิจ DUV ระยะยาว",
       "ลูกค้า TSMC+Samsung กระจุกตัว ~38% ของรายได้"
+    ]
+  },
+  "GOOGL": {
+    "symbol": "GOOGL",
+    "display": "GOOGL",
+    "category": "big_tech",
+    "name": "Alphabet Inc.",
+    "sector": "Big Tech",
+    "sectorSlug": "bigtech",
+    "chips": [
+      "Big Tech",
+      "Search + Cloud + AI"
+    ],
+    "bull": [
+      "GCP +63% YoY fastest-growing hyperscaler — Cloud Gen AI revenue +800% YoY ใน Q1 2026",
+      "Full-stack AI moat ที่เลียนแบบไม่ได้: Ironwood TPU + Gemini + Vertex AI + Applications",
+      "PEG 0.8 — จ่ายน้อยกว่า growth rate จริง หายากมากในกลุ่ม mega-cap",
+      "Cloud Backlog $460B+ = revenue visibility 3-5 ปีชัดเจน",
+      "Waymo 500K+ rides/week = Free Option ที่ตลาดยังไม่ตีราคา"
+    ],
+    "risk": [
+      "DOJ Antitrust ทั้ง Search monopoly + Ad Tech — ถ้าถูกบังคับ divest Chrome/Android กระทบยาว",
+      "CapEx $180-190B FY2026 เพิ่ม ~2x YoY — กด Free Cash Flow ระยะสั้น",
+      "AI-first search behavior — ChatGPT/Perplexity กิน complex queries จริง",
+      "Wiz acquisition compress Cloud margin 2026",
+      "China revenue = zero = missed market ขนาดใหญ่"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.45,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 354.3,
+    "fv": 348,
+    "mos": -1.72,
+    "fpe": 27.47,
+    "peg": 2.5,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
+      "va": [
+        4.7,
+        "orange",
+        47
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "Single-stock deep dive 2026-08-09 triggered by Oat's request to reconcile $311 FV vs. Berkshire Hathaway's $351.81/share private-placement price (Jun 2026, $10B, ~$41B total stake). Root cause: FY27 clean EPS input ($11.53) implicitly assumed flat growth vs FY26 despite +23% YoY organic clean-EPS growth (Q1 $2.76, Q2 $2.85) and $514B backlog. Recalculated bottom-up to $12.90, FV Base $311→$348 (+11.9%). Multiple unchanged (27x, already near +20% ceiling vs historical median). New FV lands within ~1% of Berkshire's price and current market price — read as corroboration of the fix, not derived from it (no-price-target rule respected: recalc done from primary EPS trajectory first).",
+    "updated": "2026-08-09",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-09",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Alphabet dominates global search (90% share), cloud (GCP fastest-growing hyperscaler +82% YoY Q2 FY26, capacity-constrained), and AI with full-stack Gemini+TPU platform — Cloud backlog พุ่งเป็น **$514B** (+$50B QoQ).",
+      "why": "Q2 FY2026 (รายงาน 07-22) — revenue $119.8B (+24%, beat), Cloud +82%, backlog +$50B QoQ = ผลดำเนินงานแกร่งจริง; ราคาวิ่งกลับขึ้นมา $319.74→$354.30 (broad AI rally, no new company news) จน MoS ทางเทคนิคติดลบ — แต่ deep-dive 08-09 (trigger: Oat ถาม reconcile กับ Berkshire private placement $351.81/share) พบว่า **FV เดิม $311 เองก็ conservative เกินจริง**: มันสมมติ clean EPS หยุดโตปี FY27 ทั้งที่ trailing 2 ไตรมาสจริงโต +23% YoY organic และ backlog ล็อครายได้ไว้แล้ว $514B. Second-level: consensus/ตลาดกลัว \"AI capex เผาเงินไม่คุ้ม\" (เหมือนเดิม) — Warren เห็นต่างว่าทั้ง (ก) operating engine แกร่งกว่าที่ FV เดิมสะท้อน และ (ข) ที่ราคาปัจจุบันหลัง recalibrate FV = **~fair value พอดี** (ไม่ใช่ rich อีกต่อไป แต่ก็ไม่มี MoS เหลือให้ซื้อใหม่)",
+      "risk": "หาก DOJ Search remedy บังคับยกเลิก Apple TAC deal (~$18-20B) + DOJ Ad-Tech divestiture พร้อมกัน = business model เสียหายถาวร — หรือ AI monetization ไม่ทันกับ $811B commitments + CapEx >$200B/ปี ทำให้ FCF ติดลบยืดเยื้อและ dilution กัด EPS มากกว่า ROI ที่ได้กลับ — หรือ GAAP EPS ที่พอง (equity gains volatile) กลับทิศเป็นขาดทุน — หรือ clean EPS growth ที่ recalibrate ขึ้นรอบนี้ (+11%) พิสูจน์ว่ายังสูงไป (D&A จาก capex กดแรงกว่าคาด)"
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price $354.30 cross-checked 3-source (yfinance currentPrice, Nasdaq quote/info API lastSalePrice, CNBC quote-html-webservice last) -- exact match all three, 0% drift, fetched 2026-08-09",
+        "Q1 FY26 clean EPS $2.76 independently confirmed via Alphabet's own SEC 8-K Q1 FY26 earnings release: reported GAAP diluted EPS $5.11; gain on equity securities ($36.9B, incl. non-marketable stakes e.g. Waymo/Anthropic) added $2.35/share -> 5.11 - 2.35 = 2.76, EXACT match to Warren's clean EPS figure",
+        "Q2 FY26 clean EPS $2.85 independently confirmed via Alphabet's SEC 8-K Q2 FY26 earnings release: reported GAAP diluted EPS $9.11; gain on equity securities of $99.0B added $6.26/share -> 9.11 - 6.26 = 2.85, EXACT match to Warren's clean EPS figure",
+        "$514B Cloud backlog confirmed -- stated by management on the Q2 FY26 earnings call (2026-07-22); just over half recognized over the next 24 months, per multiple independent news sources (InsiderFinance, BigGo Finance, Investing.com)"
+      ],
+      "concerns": [
+        "Warren's FV Base ($348) sits within $0.20 of the SEC-filed Class C private-placement price ($348.20) -- an unusually tight coincidence worth flagging to Oat even though Charlie's own independent re-derivation (fresh consensus EPS $14.73 x independently-sourced 25.2x multiple = $371, using neither Warren's EPS nor his multiple) lands 6.6% ABOVE Warren's number, not below -- if anything this argues against deliberate anchoring toward the print, but the closeness deserves a second look next full refresh",
+        "Warren's 27x multiple is his own judgment call, described in his own note as 'already near +20% ceiling vs historical median' -- i.e. already elevated; Charlie's independently-sourced 5-yr median multiple (~25.2x, triangulated from GuruFocus + FinanceCharts) is lower, though still in the same neighborhood and below Warren's 27x",
+        "Standard financial-data fields (yfinance PEG 0.96, trailingPE 17.76) are themselves distorted by the same equity-gain-inflated raw GAAP TTM EPS ($19.95) and should not be used at face value for this ticker until the distortion rolls off (roughly Q2 FY27, when the Q2 FY26 equity-gain quarter drops out of the trailing window)"
+      ],
+      "summary": "",
+      "review_date": "2026-08-09"
+    },
+    "mark_easy": {
+      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
+      "what": "Alphabet ทำ Search + YouTube + Google Cloud + AI (Gemini, TPU) + Waymo — รายได้หลักจากโฆษณา + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
+      "why_invest": [
+        "Cloud +82% YoY + backlog $514B = Cloud re-accelerate จริง",
+        "Full-stack AI moat: Ironwood TPU + Gemini + Vertex + แอปทั้งโลก",
+        "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA — revenue stream ใหม่"
+      ],
+      "watch_out": [
+        "ราคาวิ่งขึ้น $319.74→$356.13 (+11.4%) ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว (broad mega-cap rally) ขณะ FV Base $311 ยังไม่ขยับ ดัน MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
+        "PEG 2.81 (เกิน cap 1.5 ไปมาก), ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10% — แพ้ QQQM ธรรมดา",
+        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20 ต่างกัน 10.4%) เลือกใช้ตัวต่ำกว่าแบบ conservative — FV อิสระ $277 (gap 10.9%), MoS อิสระ -28.6% ลึกกว่า Warren อีก",
+        "DOJ Search + Ad Tech antitrust ยังไม่จบ"
+      ],
+      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — แต่ราคาวิ่งไปไกลกว่า FV มากขึ้นเรื่อยๆ โดยไม่มีปัจจัยพื้นฐานใหม่รองรับ MoS ทรุดลึกทั้งฝั่ง Warren (-14.51%) และ Charlie (-28.6%) Charlie AGREE ทิศทาง WATCH ต่อเนื่อง รอ pullback หรือ EPS consensus ยืนยันก่อน"
+    },
+    "mark_full": {
+      "business_overview": "รายได้หลักจากโฆษณา (Search + YouTube) + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
+      "tam": "Search + cloud + AI + TPU compute สาธารณะใหม่ + autonomous (Waymo) เป็น optionality หลายชั้น",
+      "moat": "data + distribution + full-stack AI + Cloud backlog $514B+ visibility",
+      "latest_financials": "Q2 FY2026 (07-22): revenue $119.8B +24% (beat), Google Cloud $24.8B +82%, backlog $514B (+$50B QoQ); CapEx guide ยกเป็น $195-205B, FCF -47% YoY",
+      "key_points": [
+        "Cloud +82% + backlog $514B = Cloud re-accelerate จริง; TPU เป็นธุรกิจ compute สาธารณะ",
+        "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally, ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกลงเรื่อยๆ",
+        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) ยังไม่ reconcile",
+        "capital-intensity shock: CapEx >$200B + FCF ติดลบ + $811B commitments ยกเลิกยาก",
+        "DOJ Search + Ad Tech antitrust + equity-raise dilution + buyback halt เป็น overhang"
+      ]
+    },
+    "warren_easy": [
+      "GOOGL tier Inevitable WAF 7.02 — Search 90%, Cloud +82% (backlog $514B), TPU full-stack; moat ยังครบ ไม่มีข่าวเฉพาะตัวรอบนี้",
+      "ราคาวิ่งต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ล้วนๆ ขณะ FV Base ยังคง $311 (ไม่มี consensus ใหม่มายืนยันให้ปรับขึ้น) → MoS ทรุดจาก -2.81% เป็น -14.51%, PEG 2.81, ER เหลือ 8.33%/ปี",
+      "WATCH ต่อเนื่อง — ไม่ถือ, ธุรกิจดีแต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "paragraphs": [
+        "Charlie เห็นด้วยทิศทาง WATCH — ยืนยันงบ Q2 (07-22): revenue $119.8B +24% beat, Cloud +82%, CapEx guide $195-205B, FCF -47% YoY ล้วนตรงกับที่ Warren รายงาน ไม่มีข้อเท็จจริงใหม่นอกจากค่าปรับ EU DMA ที่รู้อยู่แล้ว",
+        "จุดที่ Charlie เจอใหม่: ตัวเลข EPS คาดการณ์จาก 2 แหล่งไม่ตรงกัน — Nasdaq consensus Dec2027 $14.73 vs CNBC forward EPS $13.20 ต่างกันถึง 10.4% (เกิน tolerance 2%) เลือกใช้ตัวที่ต่ำกว่า ($13.20) ตามกฎ conservative ได้ FV อิสระ $277 × 21x = ห่างจาก Warren $311 อยู่ 10.9%",
+        "บน FV Charlie $277 ราคา $356.13 ให้ MoS -28.6% ลึกกว่าตัวเลข Warren เองอีก (-14.51%) — สรุปตรงกันทั้งคู่ว่ายังแพงไป ไม่ใช่จังหวะซื้อ ต้องรอ EPS consensus reconcile ก่อนถึงจะพิจารณาใหม่"
+      ],
+      "review_date": "2026-08-02"
+    },
+    "idea_th": "WATCH ต่อเนื่อง — ราคาวิ่งขึ้นต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ไม่มีข่าวเฉพาะตัว GOOGL ขณะที่ FV Base ยังคง $311 (ยังไม่มี consensus ใหม่มายืนยันให้ปรับ) ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 (เกิน cap มาก), ER เหลือ 8.33%/ปี (ต่ำกว่าเกณฑ์ 10%). Charlie AGREE ทิศทาง พบ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20) เลือกใช้ตัวต่ำกว่าแบบอนุรักษ์นิยม ได้ FV อิสระ $277 (gap 10.9%) MoS อิสระ -28.6% ลึกกว่า Warren อีก — ธุรกิจยังดี (Cloud +82%, backlog $514B) แต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ ไม่ใช่จังหวะซื้อ",
+    "story_gate_th": {
+      "what": "Alphabet = Search 90% + YouTube + Google Cloud (+82%, backlog $514B) + full-stack AI (Gemini/TPU) + Waymo; moat Inevitable ยังครบ",
+      "why": "งบ Q2 beat จริง (revenue +24%, Cloud +82%) แต่ราคาวิ่งขึ้นต่อ +11.4% ในรอบสัปดาห์จาก broad AI rally ไม่ใช่ข่าวเฉพาะตัว ขณะ FV Base ยังคง $311 ไม่มี consensus ใหม่มายืนยัน ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 เกิน cap, ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
+      "risk": "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture; capital-intensity shock (FCF ติดลบ, CapEx >$200B, $811B commitments); equity-raise dilution + buyback halt; EPS คาดการณ์ 2 แหล่งไม่ตรงกันยังไม่ reconcile"
+    },
+    "bull_th": [
+      "Cloud +82% YoY + backlog $514B (+$50B QoQ) = Cloud re-accelerate จริง",
+      "Full-stack AI moat: Ironwood TPU + Gemini + Vertex + แอปทั้งโลก",
+      "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA = revenue stream ใหม่",
+      "Search 90% + revenue $119.8B +24% beat"
+    ],
+    "risk_th": [
+      "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
+      "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) — FV อิสระ $277 ให้ MoS -28.6% ลึกกว่า Warren อีก",
+      "PEG 2.81 เกิน cap 1.5 มาก; ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
+      "Capital-intensity shock: CapEx $195-205B + FCF -47% YoY + $811B purchase commitments",
+      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang"
     ]
   },
   "MU": {
@@ -1240,7 +1390,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "ผู้ผลิต HBM รายเดียวใน US ที่ NVIDIA ต้องพึ่ง — ราคาย่อลง -5.2% เป็น $829.50 ตามแรงเทขายกลุ่มชิปทั้งกลุ่ม (ไม่ใช่ข่าว MU เฉพาะ) MoS กว้างขึ้นเป็น 27.87% (จาก 23.94%) แม้ sell-side หันมาบวกขึ้น Warren ยังไม่ไล่ตามมุมมองนักวิเคราะห์ตามวินัยเดิม",
@@ -1380,7 +1530,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "Netflix เจ้าตลาด streaming โลก — ราคาขยับขึ้นเล็กน้อยเป็น $71.71 ไม่มีข่าวใหม่ MoS ลดลงเหลือ 14.63% (held name ยังผ่านเกณฑ์ ER); Charlie CAUTION ยังแนะนำจับตา downgrade tier เพราะ margin ยังไม่ฟื้น",
@@ -1444,147 +1594,6 @@
       "OM หด YoY ครั้งแรก (33.4% vs 34.1%) + FCF -33% — ยังไม่คลี่คลาย รอ Q3 2026",
       "TTM GAAP EPS $3.17 เฟ้อกว่าฐาน clean $2.65 ราว 20% — ยังไม่ reconcile",
       "Netflix ลดความถี่รายงาน engagement (What-We-Watched) เหลือปีละครั้งจาก 2027 = ลดความโปร่งใส"
-    ]
-  },
-  "GOOGL": {
-    "symbol": "GOOGL",
-    "display": "GOOGL",
-    "category": "big_tech",
-    "name": "Alphabet Inc.",
-    "sector": "Big Tech",
-    "sectorSlug": "bigtech",
-    "chips": [
-      "Big Tech",
-      "Search + Cloud + AI"
-    ],
-    "bull": [
-      "GCP +63% YoY fastest-growing hyperscaler — Cloud Gen AI revenue +800% YoY ใน Q1 2026",
-      "Full-stack AI moat ที่เลียนแบบไม่ได้: Ironwood TPU + Gemini + Vertex AI + Applications",
-      "PEG 0.8 — จ่ายน้อยกว่า growth rate จริง หายากมากในกลุ่ม mega-cap",
-      "Cloud Backlog $460B+ = revenue visibility 3-5 ปีชัดเจน",
-      "Waymo 500K+ rides/week = Free Option ที่ตลาดยังไม่ตีราคา"
-    ],
-    "risk": [
-      "DOJ Antitrust ทั้ง Search monopoly + Ad Tech — ถ้าถูกบังคับ divest Chrome/Android กระทบยาว",
-      "CapEx $180-190B FY2026 เพิ่ม ~2x YoY — กด Free Cash Flow ระยะสั้น",
-      "AI-first search behavior — ChatGPT/Perplexity กิน complex queries จริง",
-      "Wiz acquisition compress Cloud margin 2026",
-      "China revenue = zero = missed market ขนาดใหญ่"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 7.02,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 356.13,
-    "fv": 311,
-    "mos": -14.51,
-    "fpe": 30.89,
-    "peg": 2.808,
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        8.5,
-        "green",
-        85
-      ],
-      "va": [
-        3.0,
-        "orange",
-        30
-      ],
-      "ra": [
-        5.8,
-        "orange",
-        58
-      ]
-    },
-    "idea": "Price ran up $319.74→$356.13 (+11.4%) in ~1 week with no new company-specific news (broad AI/mega-cap rally read-through) while FV Base holds at $311 (unchanged since 07-27 post-Q2 rebase — no new consensus data to justify moving it). MoS deteriorates -2.81%→-14.51% (deeper FAIL), PEG 2.52→2.81 (further above 1.5 cap), ER collapses to 8.33%/yr (below 10% — clearly loses to QQQM). Not held, so this is a pure WATCH-stays-WATCH call — good business, price simply ran further from fair value.",
-    "updated": "2026-08-02",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-02",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "Alphabet dominates global search (90% share), cloud (GCP fastest-growing hyperscaler +82% YoY Q2 FY26, capacity-constrained), and AI with full-stack Gemini+TPU platform — Cloud backlog พุ่งเป็น **$514B** (+$50B QoQ).",
-      "why": "Q2 FY2026 (รายงาน 07-22) — revenue $119.8B (+24%, beat), Cloud +82%, backlog +$50B QoQ = ผลดำเนินงานแกร่งจริง; แต่หุ้น **ร่วง ~11% ($359.51→$319.74)** เพราะตลาด repricing capital-intensity: CapEx guide ยกเป็น **$195-205B**, FCF margin ทรุด 21%→9.2% (**FCF ติดลบครั้งแรก -$5.9B**), purchase commitments พุ่งเป็น **$811B**, equity raise $49.6B (dilution) + buyback หยุด. Second-level: consensus ตอนนี้กลัว \"AI capex เผาเงินไม่คุ้ม\" — Warren เห็นว่า operating engine ยังแกร่ง (Cloud/backlog) แต่ **ราคาที่ $319.74 = ~fairly-valued-to-slightly-rich บน clean earnings** ไม่มี MoS เหลือแล้ว; ไม่ใช่จังหวะที่ edge จะเกิด — รอให้ FCF/capex-ROI พิสูจน์ตัวก่อน",
-      "risk": "หาก DOJ Search remedy บังคับยกเลิก Apple TAC deal (~$18-20B) + DOJ Ad-Tech divestiture พร้อมกัน = business model เสียหายถาวร — หรือ AI monetization ไม่ทันกับ $811B commitments + CapEx >$200B/ปี ทำให้ FCF ติดลบยืดเยื้อและ dilution กัด EPS มากกว่า ROI ที่ได้กลับ — หรือ GAAP EPS ที่พอง (equity gains volatile) กลับทิศเป็นขาดทุน"
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-08-08"
-    },
-    "mark_easy": {
-      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
-      "what": "Alphabet ทำ Search + YouTube + Google Cloud + AI (Gemini, TPU) + Waymo — รายได้หลักจากโฆษณา + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
-      "why_invest": [
-        "Cloud +82% YoY + backlog $514B = Cloud re-accelerate จริง",
-        "Full-stack AI moat: Ironwood TPU + Gemini + Vertex + แอปทั้งโลก",
-        "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA — revenue stream ใหม่"
-      ],
-      "watch_out": [
-        "ราคาวิ่งขึ้น $319.74→$356.13 (+11.4%) ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว (broad mega-cap rally) ขณะ FV Base $311 ยังไม่ขยับ ดัน MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
-        "PEG 2.81 (เกิน cap 1.5 ไปมาก), ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10% — แพ้ QQQM ธรรมดา",
-        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20 ต่างกัน 10.4%) เลือกใช้ตัวต่ำกว่าแบบ conservative — FV อิสระ $277 (gap 10.9%), MoS อิสระ -28.6% ลึกกว่า Warren อีก",
-        "DOJ Search + Ad Tech antitrust ยังไม่จบ"
-      ],
-      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — แต่ราคาวิ่งไปไกลกว่า FV มากขึ้นเรื่อยๆ โดยไม่มีปัจจัยพื้นฐานใหม่รองรับ MoS ทรุดลึกทั้งฝั่ง Warren (-14.51%) และ Charlie (-28.6%) Charlie AGREE ทิศทาง WATCH ต่อเนื่อง รอ pullback หรือ EPS consensus ยืนยันก่อน"
-    },
-    "mark_full": {
-      "business_overview": "รายได้หลักจากโฆษณา (Search + YouTube) + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
-      "tam": "Search + cloud + AI + TPU compute สาธารณะใหม่ + autonomous (Waymo) เป็น optionality หลายชั้น",
-      "moat": "data + distribution + full-stack AI + Cloud backlog $514B+ visibility",
-      "latest_financials": "Q2 FY2026 (07-22): revenue $119.8B +24% (beat), Google Cloud $24.8B +82%, backlog $514B (+$50B QoQ); CapEx guide ยกเป็น $195-205B, FCF -47% YoY",
-      "key_points": [
-        "Cloud +82% + backlog $514B = Cloud re-accelerate จริง; TPU เป็นธุรกิจ compute สาธารณะ",
-        "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally, ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกลงเรื่อยๆ",
-        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) ยังไม่ reconcile",
-        "capital-intensity shock: CapEx >$200B + FCF ติดลบ + $811B commitments ยกเลิกยาก",
-        "DOJ Search + Ad Tech antitrust + equity-raise dilution + buyback halt เป็น overhang"
-      ]
-    },
-    "warren_easy": [
-      "GOOGL tier Inevitable WAF 7.02 — Search 90%, Cloud +82% (backlog $514B), TPU full-stack; moat ยังครบ ไม่มีข่าวเฉพาะตัวรอบนี้",
-      "ราคาวิ่งต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ล้วนๆ ขณะ FV Base ยังคง $311 (ไม่มี consensus ใหม่มายืนยันให้ปรับขึ้น) → MoS ทรุดจาก -2.81% เป็น -14.51%, PEG 2.81, ER เหลือ 8.33%/ปี",
-      "WATCH ต่อเนื่อง — ไม่ถือ, ธุรกิจดีแต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie เห็นด้วยทิศทาง WATCH — ยืนยันงบ Q2 (07-22): revenue $119.8B +24% beat, Cloud +82%, CapEx guide $195-205B, FCF -47% YoY ล้วนตรงกับที่ Warren รายงาน ไม่มีข้อเท็จจริงใหม่นอกจากค่าปรับ EU DMA ที่รู้อยู่แล้ว",
-        "จุดที่ Charlie เจอใหม่: ตัวเลข EPS คาดการณ์จาก 2 แหล่งไม่ตรงกัน — Nasdaq consensus Dec2027 $14.73 vs CNBC forward EPS $13.20 ต่างกันถึง 10.4% (เกิน tolerance 2%) เลือกใช้ตัวที่ต่ำกว่า ($13.20) ตามกฎ conservative ได้ FV อิสระ $277 × 21x = ห่างจาก Warren $311 อยู่ 10.9%",
-        "บน FV Charlie $277 ราคา $356.13 ให้ MoS -28.6% ลึกกว่าตัวเลข Warren เองอีก (-14.51%) — สรุปตรงกันทั้งคู่ว่ายังแพงไป ไม่ใช่จังหวะซื้อ ต้องรอ EPS consensus reconcile ก่อนถึงจะพิจารณาใหม่"
-      ],
-      "review_date": "2026-08-02"
-    },
-    "idea_th": "WATCH ต่อเนื่อง — ราคาวิ่งขึ้นต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ไม่มีข่าวเฉพาะตัว GOOGL ขณะที่ FV Base ยังคง $311 (ยังไม่มี consensus ใหม่มายืนยันให้ปรับ) ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 (เกิน cap มาก), ER เหลือ 8.33%/ปี (ต่ำกว่าเกณฑ์ 10%). Charlie AGREE ทิศทาง พบ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20) เลือกใช้ตัวต่ำกว่าแบบอนุรักษ์นิยม ได้ FV อิสระ $277 (gap 10.9%) MoS อิสระ -28.6% ลึกกว่า Warren อีก — ธุรกิจยังดี (Cloud +82%, backlog $514B) แต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ ไม่ใช่จังหวะซื้อ",
-    "story_gate_th": {
-      "what": "Alphabet = Search 90% + YouTube + Google Cloud (+82%, backlog $514B) + full-stack AI (Gemini/TPU) + Waymo; moat Inevitable ยังครบ",
-      "why": "งบ Q2 beat จริง (revenue +24%, Cloud +82%) แต่ราคาวิ่งขึ้นต่อ +11.4% ในรอบสัปดาห์จาก broad AI rally ไม่ใช่ข่าวเฉพาะตัว ขณะ FV Base ยังคง $311 ไม่มี consensus ใหม่มายืนยัน ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 เกิน cap, ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
-      "risk": "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture; capital-intensity shock (FCF ติดลบ, CapEx >$200B, $811B commitments); equity-raise dilution + buyback halt; EPS คาดการณ์ 2 แหล่งไม่ตรงกันยังไม่ reconcile"
-    },
-    "bull_th": [
-      "Cloud +82% YoY + backlog $514B (+$50B QoQ) = Cloud re-accelerate จริง",
-      "Full-stack AI moat: Ironwood TPU + Gemini + Vertex + แอปทั้งโลก",
-      "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA = revenue stream ใหม่",
-      "Search 90% + revenue $119.8B +24% beat"
-    ],
-    "risk_th": [
-      "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
-      "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) — FV อิสระ $277 ให้ MoS -28.6% ลึกกว่า Warren อีก",
-      "PEG 2.81 เกิน cap 1.5 มาก; ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
-      "Capital-intensity shock: CapEx $195-205B + FCF -47% YoY + $811B purchase commitments",
-      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang"
     ]
   },
   "SPCX": {
@@ -1965,7 +1974,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "อันดับ 2 ในตลาด AI GPU ที่แข็งแกร่งขึ้นเรื่อยๆ + ครอง server CPU >40% — งบ Q2 FY2026 (4 ส.ค.) beat ทั้งรายได้กำไร ประกาศ TAM ใหม่ก้อนใหญ่ แต่ Charlie เตือนหนัก: ตัวเลข EPS ที่ Warren ใช้คำนวณมูลค่าสูงกว่า consensus จริงเกือบ 60% ต่อเนื่องมา 6 รอบ ยังคง WATCH",
@@ -2547,7 +2556,7 @@
       "verified_claims": [],
       "concerns": [],
       "summary": "",
-      "review_date": "2026-08-08"
+      "review_date": "2026-08-09"
     },
     "mark_easy": {
       "one_liner": "ราคาพุ่งต่อ +13.8% เป็น $280.56 (จาก $246.59) ไม่มีข่าวพื้นฐานใหม่เลย — ธุรกิจ royalty คุณภาพดี แต่ตัวชี้วัดเติบโต (การเติบโตค่า royalty) ถูกปรับลงและแพ้คดีกับ Qualcomm ตั้งแต่รอบก่อน ราคาที่วิ่งขึ้นต่อยิ่งตอกย้ำว่าแพงกว่ามูลค่าจริงมากขึ้นไปอีก",
