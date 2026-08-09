@@ -1260,7 +1260,7 @@
       "review_date": "2026-08-09"
     },
     "mark_easy": {
-      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังคง $311 ดัน MoS ทรุดลึกลงเป็น -14.51% → WATCH ต่อเนื่อง",
+      "one_liner": "full-stack AI ที่งบ Q2 beat (Cloud +82%) — deep-dive 08-09 แก้ FV Base เป็น $348 (EPS input เดิมประเมิน growth ต่ำไป) ทำให้ MoS ดีขึ้นเป็น -1.72% แต่ราคาก็แทบไม่มีส่วนลดเหลือให้ซื้อ → WATCH ต่อเนื่อง",
       "what": "Alphabet ทำ Search + YouTube + Google Cloud + AI (Gemini, TPU) + Waymo — รายได้หลักจากโฆษณา + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
       "why_invest": [
         "Cloud +82% YoY + backlog $514B = Cloud re-accelerate จริง",
@@ -1268,12 +1268,12 @@
         "TPU กลายเป็นธุรกิจ compute สาธารณะแข่ง NVIDIA — revenue stream ใหม่"
       ],
       "watch_out": [
-        "ราคาวิ่งขึ้น $319.74→$356.13 (+11.4%) ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว (broad mega-cap rally) ขณะ FV Base $311 ยังไม่ขยับ ดัน MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
-        "PEG 2.81 (เกิน cap 1.5 ไปมาก), ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10% — แพ้ QQQM ธรรมดา",
-        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20 ต่างกัน 10.4%) เลือกใช้ตัวต่ำกว่าแบบ conservative — FV อิสระ $277 (gap 10.9%), MoS อิสระ -28.6% ลึกกว่า Warren อีก",
+        "Deep-dive 08-09: FV Base ปรับจาก $311→$348 เพราะ EPS input เดิมสมมติ FY27 หยุดโตทั้งที่จริงโต +23% YoY — MoS ดีขึ้นเป็น -1.72% แต่แทบไม่เหลือส่วนลด",
+        "PEG 2.5 ยังเกิน cap 1.5, ER 10.7%/ปี ยัง marginal",
+        "Charlie ตรวจสอบอิสระ AGREE — คำนวณ FV เองได้ $371 (สูงกว่า Warren 6.6%) ยืนยันว่าตัวเลข Warren conservative กว่า Street ด้วยซ้ำ",
         "DOJ Search + Ad Tech antitrust ยังไม่จบ"
       ],
-      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — แต่ราคาวิ่งไปไกลกว่า FV มากขึ้นเรื่อยๆ โดยไม่มีปัจจัยพื้นฐานใหม่รองรับ MoS ทรุดลึกทั้งฝั่ง Warren (-14.51%) และ Charlie (-28.6%) Charlie AGREE ทิศทาง WATCH ต่อเนื่อง รอ pullback หรือ EPS consensus ยืนยันก่อน"
+      "bottom_line": "คุณภาพยังสูงสุดใน watchlist และ moat ยังครบ — รอบนี้เป็นการแก้ input การคำนวณมูลค่า (ไม่ใช่ business เปลี่ยน) ทำให้ FV ขยับขึ้นมาใกล้ราคาตลาดมากขึ้น MoS ดีขึ้นแต่ยังไม่เหลือส่วนลดให้ซื้อใหม่ Charlie ตรวจสอบอิสระ AGREE ยัง WATCH ต่อเนื่อง"
     },
     "mark_full": {
       "business_overview": "รายได้หลักจากโฆษณา (Search + YouTube) + Cloud ที่โตเร็วและเริ่มมีกำไรมากขึ้น",
@@ -1282,31 +1282,31 @@
       "latest_financials": "Q2 FY2026 (07-22): revenue $119.8B +24% (beat), Google Cloud $24.8B +82%, backlog $514B (+$50B QoQ); CapEx guide ยกเป็น $195-205B, FCF -47% YoY",
       "key_points": [
         "Cloud +82% + backlog $514B = Cloud re-accelerate จริง; TPU เป็นธุรกิจ compute สาธารณะ",
-        "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์ (broad AI rally, ไม่มีข่าวเฉพาะตัว) ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกลงเรื่อยๆ",
-        "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) ยังไม่ reconcile",
+        "Deep-dive 08-09 แก้ FV Base $311→$348 (EPS input เดิมประเมิน growth ต่ำไป) — MoS ดีขึ้นเป็น -1.72% แต่ยังไม่เหลือส่วนลดให้ซื้อใหม่",
+        "Charlie ตรวจสอบอิสระ AGREE — FV ของ Charlie เองอยู่ที่ $371 (สูงกว่า Warren 6.6%) ยืนยันว่าเลข Warren conservative กว่า Street",
         "capital-intensity shock: CapEx >$200B + FCF ติดลบ + $811B commitments ยกเลิกยาก",
         "DOJ Search + Ad Tech antitrust + equity-raise dilution + buyback halt เป็น overhang"
       ]
     },
     "warren_easy": [
-      "GOOGL tier Inevitable WAF 7.02 — Search 90%, Cloud +82% (backlog $514B), TPU full-stack; moat ยังครบ ไม่มีข่าวเฉพาะตัวรอบนี้",
-      "ราคาวิ่งต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ล้วนๆ ขณะ FV Base ยังคง $311 (ไม่มี consensus ใหม่มายืนยันให้ปรับขึ้น) → MoS ทรุดจาก -2.81% เป็น -14.51%, PEG 2.81, ER เหลือ 8.33%/ปี",
-      "WATCH ต่อเนื่อง — ไม่ถือ, ธุรกิจดีแต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ"
+      "GOOGL tier Inevitable WAF 7.45 (ขึ้นจาก 7.02) — deep dive เฉพาะตัว 08-09 ทริกเกอร์จากที่โอ๊ตถามเทียบ FV เดิมกับราคาที่ Berkshire Hathaway จ่ายซื้อหุ้นตรงจาก Alphabet $351.81/หุ้น",
+      "เจอว่า FV เดิม $311 ใช้สมมติฐาน EPS ปี FY27 หยุดโต ทั้งที่ clean EPS จริงโต +23% YoY (Q1 $2.76, Q2 $2.85) และมี backlog ล็อครายได้ไว้แล้ว $514B — คำนวณใหม่แบบ bottom-up ได้ FV Base $311→$348 (+11.9%), multiple ไม่เปลี่ยน (27x)",
+      "MoS ดีขึ้นจาก -14.51% เป็น -1.72%, PEG 2.81→2.5, ER 8.33%→10.7%/ปี — WATCH ต่อเนื่อง (แค่แก้ input การคำนวณ ไม่ใช่ thesis เปลี่ยน ราคาปัจจุบัน ~fair value พอดี ไม่มีส่วนลดเหลือให้ซื้อใหม่)"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie เห็นด้วยทิศทาง WATCH — ยืนยันงบ Q2 (07-22): revenue $119.8B +24% beat, Cloud +82%, CapEx guide $195-205B, FCF -47% YoY ล้วนตรงกับที่ Warren รายงาน ไม่มีข้อเท็จจริงใหม่นอกจากค่าปรับ EU DMA ที่รู้อยู่แล้ว",
-        "จุดที่ Charlie เจอใหม่: ตัวเลข EPS คาดการณ์จาก 2 แหล่งไม่ตรงกัน — Nasdaq consensus Dec2027 $14.73 vs CNBC forward EPS $13.20 ต่างกันถึง 10.4% (เกิน tolerance 2%) เลือกใช้ตัวที่ต่ำกว่า ($13.20) ตามกฎ conservative ได้ FV อิสระ $277 × 21x = ห่างจาก Warren $311 อยู่ 10.9%",
-        "บน FV Charlie $277 ราคา $356.13 ให้ MoS -28.6% ลึกกว่าตัวเลข Warren เองอีก (-14.51%) — สรุปตรงกันทั้งคู่ว่ายังแพงไป ไม่ใช่จังหวะซื้อ ต้องรอ EPS consensus reconcile ก่อนถึงจะพิจารณาใหม่"
+        "Charlie ตรวจสอบอิสระ ยืนยัน clean EPS ของ Warren ตรงเป๊ะกับ SEC 8-K ของ Alphabet เอง: Q1 FY26 $2.76, Q2 FY26 $9.11 มี one-time equity gain, Q2 FY26 clean EPS $2.85 (หัก gain ออกแล้ว) — ตรงทุกจุดทศนิยม พร้อมยืนยัน backlog $514B และราคาหุ้น $354.30 ตรง 3 แหล่งไม่มีคลาดเคลื่อน",
+        "Charlie คำนวณ FV อิสระเองได้ $371 (ใช้ consensus EPS ใหม่จาก Nasdaq $14.73 คูณ multiple อิสระ 25.2x ที่ไม่ได้อิงจาก Warren เลย) สูงกว่า Warren $348 อยู่ 6.6% (gap ยังอยู่ในเกณฑ์ AGREE) — สรุปว่าตัวเลข Warren ยัง conservative กว่า Street ด้วยซ้ำ ไม่ได้ inflate ตาม",
+        "ทำ Reverse DCF เพิ่มเพราะ FV กระโดด +11.9% รอบเดียว พบว่าราคาปัจจุบันแฝง growth แค่ ~12%/ปี ต่ำกว่าที่ทำได้จริงตอนนี้ (+23-27% YoY) มาก — ตลาดไม่ได้ price อะไรที่ aggressive เกินจริง; มีข้อสังเกตเดียวคือ FV Warren ($348) ใกล้ราคาที่ Berkshire จ่าย ($348.20) เกินไปหน่อย แต่ Charlie คำนวณเองคนละทางไม่ได้ anchor ตามราคานั้น — verdict AGREE"
       ],
-      "review_date": "2026-08-02"
+      "review_date": "2026-08-09"
     },
-    "idea_th": "WATCH ต่อเนื่อง — ราคาวิ่งขึ้นต่อ $319.74→$356.13 (+11.4% ในรอบสัปดาห์) จาก broad AI/mega-cap rally ไม่มีข่าวเฉพาะตัว GOOGL ขณะที่ FV Base ยังคง $311 (ยังไม่มี consensus ใหม่มายืนยันให้ปรับ) ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 (เกิน cap มาก), ER เหลือ 8.33%/ปี (ต่ำกว่าเกณฑ์ 10%). Charlie AGREE ทิศทาง พบ EPS 2 แหล่งไม่ตรงกัน (Nasdaq $14.73 vs CNBC $13.20) เลือกใช้ตัวต่ำกว่าแบบอนุรักษ์นิยม ได้ FV อิสระ $277 (gap 10.9%) MoS อิสระ -28.6% ลึกกว่า Warren อีก — ธุรกิจยังดี (Cloud +82%, backlog $514B) แต่ราคาวิ่งไกลกว่ามูลค่าที่คำนวณได้มากขึ้นเรื่อยๆ ไม่ใช่จังหวะซื้อ",
+    "idea_th": "WATCH ต่อเนื่อง — deep dive เฉพาะตัว 08-09 ทริกเกอร์จากที่โอ๊ตถามเทียบ FV เดิม $311 กับราคาที่ Berkshire Hathaway จ่ายซื้อหุ้นตรงจาก Alphabet $351.81/หุ้น (private placement มิ.ย. 2026 มูลค่า $10B ถือรวม ~$41B) พบว่า FV เดิมใช้สมมติฐาน EPS ปี FY27 หยุดโต ทั้งที่ clean EPS จริงโต +23% YoY (Q1 $2.76, Q2 $2.85) และมี backlog ล็อคไว้แล้ว $514B — คำนวณใหม่ แบบ bottom-up ได้ FV Base $348 (+11.9% จากเดิม, multiple คงที่ 27x) MoS ดีขึ้นจาก -14.51% เป็น -1.72%, ER ขยับจาก 8.33% เป็น 10.7%/ปี. Charlie ตรวจสอบอิสระ AGREE — คำนวณ FV เองได้ $371 (สูงกว่า Warren 6.6%) ยืนยันว่าตัวเลข Warren ยัง conservative กว่า Street. ธุรกิจยังแกร่งเหมือนเดิม (Cloud +82%, backlog $514B) — นี่คือการแก้ input การคำนวณ ไม่ใช่เปลี่ยน thesis ยัง WATCH เพราะ PEG 2.5 ยังเกิน cap 1.5 และ ER 10.7% ยังไม่ผ่านเกณฑ์ชัดเจน ราคาปัจจุบัน ~fair value พอดี ไม่มีส่วนลดเหลือให้ซื้อใหม่",
     "story_gate_th": {
-      "what": "Alphabet = Search 90% + YouTube + Google Cloud (+82%, backlog $514B) + full-stack AI (Gemini/TPU) + Waymo; moat Inevitable ยังครบ",
-      "why": "งบ Q2 beat จริง (revenue +24%, Cloud +82%) แต่ราคาวิ่งขึ้นต่อ +11.4% ในรอบสัปดาห์จาก broad AI rally ไม่ใช่ข่าวเฉพาะตัว ขณะ FV Base ยังคง $311 ไม่มี consensus ใหม่มายืนยัน ทำให้ MoS ทรุดลึกจาก -2.81% เป็น -14.51%, PEG 2.81 เกิน cap, ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
-      "risk": "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture; capital-intensity shock (FCF ติดลบ, CapEx >$200B, $811B commitments); equity-raise dilution + buyback halt; EPS คาดการณ์ 2 แหล่งไม่ตรงกันยังไม่ reconcile"
+      "what": "Alphabet ครองอันดับ 1 Search (90% share), Cloud โตเร็วสุดในกลุ่ม hyperscaler (+82% YoY Q2 FY26, กำลังผลิตไม่พอ) และมี AI full-stack (Gemini + TPU) ครบวงจร — backlog Cloud พุ่งเป็น $514B (+$50B QoQ)",
+      "why": "งบ Q2 FY2026 (07-22) แกร่งจริง revenue $119.8B +24% (beat), Cloud +82%, backlog +$50B QoQ — ราคาวิ่งขึ้นจาก broad AI rally จน MoS ทางเทคนิคติดลบ แต่ deep-dive 08-09 (ทริกเกอร์จากคำถามโอ๊ตเทียบ Berkshire private placement $351.81) พบว่า FV เดิม $311 เอง conservative เกินจริง เพราะสมมติ EPS หยุดโตทั้งที่จริงโต +23% YoY และมี backlog ล็อครายได้ไว้แล้ว — คำนวณใหม่ได้ FV $348 ราคาปัจจุบัน ~fair value พอดี (ไม่ rich แต่ก็ไม่มี MoS เหลือให้ซื้อใหม่)",
+      "risk": "ถ้า DOJ บังคับยกเลิก Apple TAC deal (~$18-20B) พร้อม Ad-Tech divestiture = กระทบ business model ถาวร หรือ AI monetization ไม่ทันกับ CapEx >$200B/ปี + commitment $811B ทำให้ FCF ติดลบยืดเยื้อ หรือ clean EPS growth ที่ปรับขึ้นรอบนี้ (+11%) พิสูจน์ว่าสูงไปเมื่อ D&A จาก capex เริ่มกดจริง"
     },
     "bull_th": [
       "Cloud +82% YoY + backlog $514B (+$50B QoQ) = Cloud re-accelerate จริง",
@@ -1315,11 +1315,11 @@
       "Search 90% + revenue $119.8B +24% beat"
     ],
     "risk_th": [
-      "ราคาวิ่งต่อ +11.4% ในรอบสัปดาห์โดยไม่มีข่าวเฉพาะตัว ขณะ FV ยังไม่ขยับ — MoS ทรุดลึกจาก -2.81% เป็น -14.51%",
-      "Charlie เจอ EPS 2 แหล่งไม่ตรงกัน (Nasdaq vs CNBC ต่าง 10.4%) — FV อิสระ $277 ให้ MoS -28.6% ลึกกว่า Warren อีก",
-      "PEG 2.81 เกิน cap 1.5 มาก; ER เหลือ 8.33%/ปี ต่ำกว่าเกณฑ์ 10%",
-      "Capital-intensity shock: CapEx $195-205B + FCF -47% YoY + $811B purchase commitments",
-      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang"
+      "Deep-dive 08-09 ปรับ FV Base จาก $311 เป็น $348 (แก้ EPS input ที่เคยประเมิน growth ต่ำไป) — MoS ดีขึ้นจาก -14.51% เป็น -1.72% แต่ก็แปลว่าแทบไม่เหลือส่วนลดให้ซื้อใหม่ ราคาปัจจุบัน ~fair value พอดี",
+      "PEG 2.5 ยังเกิน cap 1.5; ER 10.7%/ปี ยังไม่ผ่านเกณฑ์ 10%+ อย่างชัดเจน (Charlie ใช้ multiple อิสระ 25.2x ต่ำกว่า Warren 27x)",
+      "Capital-intensity shock: CapEx guide $195-205B + FCF ติดลบไตรมาสแรกในประวัติศาสตร์ (-$5.9B Q2) + $811B purchase commitments",
+      "DOJ Search remedy (Apple TAC ~$18-20B) + Ad-Tech divestiture overhang ยังไม่จบ",
+      "clean EPS growth ที่ปรับขึ้นรอบนี้ (+11%) เป็นตัวเลข bottom-up ของ Warren เอง — Charlie ยืนยันแล้วว่า consensus จริงสูงกว่านี้ (Nasdaq $14.73) แต่ยังต้องรอ Q3/Q4 actual มา confirm ต่อเนื่อง"
     ]
   },
   "MU": {
