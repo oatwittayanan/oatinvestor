@@ -1031,6 +1031,95 @@
       "งบ FQ4 FY2026 (11 ส.ค. 2026 ยืนยันแล้ว, อีก 3 วัน) ต้องยืนยันว่า demand แข็งแกร่งพอยืนผ่าน gate ถาวรหรือแค่ sentiment ชั่วคราว"
     ]
   },
+  "CDNS": {
+    "symbol": "CDNS",
+    "display": "CDNS",
+    "category": "semiconductor",
+    "name": "Cadence Design Systems, Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "EDA Software"
+    ],
+    "bull": [
+      "EDA oligopoly เดียวกับ SNPS — R&D depth 10,000 คนใน 15,000 พนักงาน, backlog record $8.1B",
+      "Agentic AI full-flow แรกของอุตสาหกรรม (AgentStack/ChipStack/ViraStack/InnoStack) coupling กับ base tool ที่ลูกค้าทำเองไม่ได้",
+      "IP โตปีที่ 3 ต่อเนื่อง +22% ปิดดีล 2nm กับ foundry ระดับโลก",
+      "Hexagon acquisition เติม physical AI (structural/multibody dynamics) เชื่อม Millennium GPU-accelerated simulation",
+      "Margin ดีที่สุดในกลุ่ม — non-GAAP op margin 44.7% best-in-class"
+    ],
+    "risk": [
+      "MoS ติดลบ (-4.7%) + PEG 2.87 เกิน cap มาก — Warren: WATCH รอ pullback",
+      "DOJ/BIS guilty plea (ก.ค. 2025) — probation 3 ปี, ค่าปรับ $140.6M, จำกัด M&A/export privileges",
+      "China 13% ของรายได้ — BIS เคยบังคับ license EDA ไปจีนแล้วยกเลิก, กฎอาจกลับมาได้ตลอด",
+      "Hexagon integration — เงินสดหาย $1.6B ใน 1 ไตรมาส, EPS dilute $0.28 ปี 2026",
+      "Agentic AI monetization ยังเป็น promise ไม่อยู่ใน guide, ใช้เวลา 2 contract cycles"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.55,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 339.24,
+    "fv": 369,
+    "mos": 8.09,
+    "fpe": 41.88,
+    "peg": 2.24,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        6.5,
+        "amber",
+        65
+      ]
+    },
+    "idea": "Q2 2026 earnings (record backlog $8.1B, 2nd consecutive broad-based guidance raise, Hexagon integration risk downgraded HIGH->MEDIUM) improve quality (WAF 7.225->7.55) and narrow valuation gap (MoS -4.7%->+8.1%, now within 6.9pts of the 15% gate / MoS-only STARTER band). But PEG (2.24) remains the binding constraint, not MoS -- Fwd P/E 41.9x would need to compress to ~28x (price ~$227, -33% from here) to clear the 1.5 Effective PEG Cap at 18.7% consensus growth. STARTER not triggered because it requires ALL gates (incl. PEG) to pass, not just MoS proximity. Action unchanged: WATCH.",
+    "updated": "2026-08-10",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-10",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Cadence เป็นอีกครึ่งของ EDA duopoly — computational software + accelerated hardware (Palladium emulation lead ~10ปี) + silicon IP; วิสัยทัศน์ 3-layer cake (compute → simulation → agentic AI) ขยายสู่ Physical AI ผ่าน Hexagon D&E.",
+      "why": "Consensus มอง CDNS เป็น EDA leader คุณภาพสูงแต่แพง (~42x fwd หลังราคาย่อ 10% จาก selloff) โดนกังวล Hexagon dilution; Warren เห็นต่างว่า agentic AI full-flow ครบ 4 Super Agent แล้ว (AgentStack/ChipStack/ViraStack/AuraStack ใหม่ Q2) ผูกกับ base tool ผ่าน low-level API ที่ลูกค้าทำเองไม่ได้ = TAM ใหม่ subscription+consumption ที่ **ยังไม่อยู่ใน guide** + IP เร่งเป็น >40% YoY (จาก +22% Q1) หนุนดีล Intel 14A multi-year + guidance raise 2 รอบติดกัน broad-based (ทุก product group) — แต่ **ราคายังไม่ให้ MoS เต็ม gate** แม้ MoS ดีขึ้นมากเป็น +8.1% (จาก -4.7%) เพราะ PEG (2.24) ยังเกิน cap หนักกว่า MoS gap มาก — PEG คือด่านที่บล็อกจริง ไม่ใช่ MoS.",
+      "risk": "Agentic AI monetization ช้ากว่า 2 contract cycles / Hexagon integration ยืดเยื้อกด margin (แม้สัญญาณตอนนี้ดีขึ้น), หรือ export-control probation ผิดซ้ำถูกตัด export privileges, หรือ China 15% ถูก restriction กลับมา."
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price cross-checked 2 independent sources: yfinance $339.08, Nasdaq quote API $339.49 (0.12% diff) — both match Warren's $339.24 essentially exactly",
+        "FY26 non-GAAP EPS guidance midpoint $8.10 independently confirmed via SEC 8-K Exhibit 99.1 (2026-07-27) + Benzinga/Investing.com coverage: company raised full-year guidance to $8.05-$8.15 — exact match to Warren's input, correctly sourced from tier-2 evidence (management guidance)",
+        "Record backlog $8.1B confirmed (SEC filing + TIKR coverage); RPO next-12-months $4.2B",
+        "Hexagon D&E integration: confirmed real and dilutive — ~28c non-GAAP EPS dilutive to 2026, accretive 2027 (per acquisition close disclosure); balance sheet as of 6/30/26 shows $2.5B LT debt principal vs $1.44B cash — leverage is real but not alarming; Warren's specific 'revolver repaid' claim not independently confirmed this batch (not a contradiction, just unverified)"
+      ],
+      "concerns": [
+        "Internal inconsistency in Warren's own va block: stated forward_pe = 41.88 (= price $339.24 ÷ eps_used $8.10, i.e. the actual current forward multiple) but multiple_used = 45.6 (higher). If the system rule is multiple_used = min(5yr_median, current_forward_pe), multiple_used should be ≤ 41.88, not above it. Recomputing FV at Warren's own stated forward_pe: 8.10 × 41.88 = $339.2 ≈ today's price (~0% MoS), not +8.1%. This alone would flip the STARTER-proximity narrative — worth a direct reconcile with Warren before treating $369/+8.1% as reliable.",
+        "Charlie's independent multiple (37.5x = avg of yfinance forward PE 35.55x and stockanalysis.com forward PE 39.52x, both independently sourced) is well below Warren's 45.6x and below even Warren's own 41.88x forward_pe field — gap 17.6% vs Warren's FV, under the 20% auto-CAUTION trigger but over the 15% mandatory-Reverse-DCF threshold",
+        "At Charlie's own FV ($304), CDNS is actually MoS-negative today (-11.6%), not the +8.1% Warren shows — does not change the action (WATCH either way, PEG fails badly on any multiple) but changes how 'close to STARTER' the ticker really is",
+        "PEG still fails badly on Charlie's own numbers too: 37.5x ÷ 18.7% growth = 2.00 (still >> 1.5 cap) — confirms PEG, not MoS, is the real gate regardless of whose FV is used"
+      ],
+      "summary": "",
+      "review_date": "2026-08-10"
+    }
+  },
   "ASML": {
     "symbol": "ASML",
     "display": "ASML",
@@ -1453,6 +1542,85 @@
       "Netlist/YMTC patent litigation; Burry short position ~$1,051 strike",
       "memory oversupply ยังเป็นความกังวลหลักของตลาด"
     ]
+  },
+  "SNPS": {
+    "symbol": "SNPS",
+    "display": "SNPS",
+    "category": "semiconductor",
+    "name": "Synopsys, Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "EDA Software"
+    ],
+    "bull": [
+      "EDA oligopoly กับ Cadence/Siemens — switching cost สูงมาก, PCIe 7.0 win rate >90%",
+      "Ansys ขยาย TAM สู่ multiphysics simulation — synergy target $400M→$1B (monetize จริง FY2027)",
+      "Agentic EDA inflection — ลูกค้า 20 รายกำลัง evaluate AI agent 25+ ตัว เปลี่ยนโมเดลเป็น subscription+consumption",
+      "ทุก custom silicon (COT) ของ hyperscaler ต้องพึ่ง Synopsys IP — recurring revenue 83%, backlog $11B",
+      "Elliott Management เข้าบอร์ด ดันโฟกัส margin/monetization"
+    ],
+    "risk": [
+      "PEG 1.89 เกิน cap (1.5) — Warren: WATCH ไม่ใช่ STARTER แม้ MoS เกือบผ่าน (14.8% vs 15%)",
+      "หนี้ ~$10B + Goodwill/Intangibles $38.7B จากดีล Ansys — เสี่ยง impairment ถ้า synergy ไม่มาตามคาด",
+      "China 10% ของรายได้ ตกแล้ว -22% ex-Ansys จาก export control ที่เคยถูกสั่งห้ามชั่วคราว",
+      "Design IP segment ฟื้นไม่เต็มที่ — margin ร่วงจาก 38.3%→24.4%",
+      "GAAP-Non-GAAP gap มหึมา (EPS $0.09 vs $3.35) ต้องดู FCF แทน"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.35,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 425.9,
+    "fv": 500,
+    "mos": 14.8,
+    "fpe": 28.9,
+    "peg": null,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        6.0,
+        "orange",
+        60
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "WATCH, not STARTER — MoS is essentially at the 15% gate (14.8%, 0.2pt miss) but PEG (1.89) fails the Effective PEG Cap (1.5) on the corrected consensus-growth basis. ER passes comfortably (18.6%/yr) but per BUY Decision Flow, PEG failing blocks the STARTER exception. Quality thesis intact.",
+    "updated": "2026-07-15",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-15",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Synopsys เป็นครึ่งหนึ่งของ EDA duopoly (คู่กับ Cadence) + IP portfolio กว้างที่สุดในอุตสาหกรรม — ทุก advanced chip ต้องออกแบบผ่าน tool ของ SNPS และ on-ramp เข้า foundry ใหม่ต้องใช้ foundation IP ของ SNPS; ขยายจากชิปสู่ system-level simulation ผ่าน Ansys.",
+      "why": "Consensus มอง SNPS เป็น EDA compounder นิ่งๆ ที่ ~30x โดนกด near-term EPS จาก dilution ดีล Ansys (share 156M→192M); Warren เห็นต่างว่า **agentic-EDA business-model shift** (25+ AI agent, subscription+consumption ที่ agent ใช้ license มากกว่ามนุษย์) + hyperscaler COT ที่ต้องพึ่ง IP ของ SNPS ทั้งหมด (โมเดลใหม่เซ็นภายในสิ้น FY26) = inflection ที่ยังไม่อยู่ใน guidance และยังไม่ถูก price in — ราคาย่อลงเพิ่มเติม (-4.4% จากรอบก่อน) สอดคล้องกับ broad AI/semi selloff กว้างทั้งกลุ่มช่วง 07-13→07-15 (ไม่ใช่ SNPS-specific news) ไม่ใช่สัญญาณ thesis เปลี่ยน.",
+      "risk": "Ansys synergy ($400M→$1B) ไม่มาตามคาด/goodwill impairment, หรือ China export controls เข้มขึ้นตัด Design IP, หรือ organic growth ค้างที่ 3-4% พิสูจน์ว่า \"AI ดัน EDA demand\" ถูก price in ไปแล้ว."
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-08-09"
+    }
   },
   "NFLX": {
     "symbol": "NFLX",
@@ -2479,6 +2647,94 @@
       "Warren FV $330 ยังพึ่ง EPS $9.22 สูงกว่า consensus 21% — ปัญหาค้างตั้งแต่ 18 ก.ค.",
       "ต้องรอ Q4 FY2026 earnings (12 ส.ค. 2026 อีก 4 วัน) ยืนยันว่า growth ตามทันสมมติฐาน Warren ไหม"
     ]
+  },
+  "TER": {
+    "symbol": "TER",
+    "display": "TER",
+    "category": "semiconductor",
+    "name": "Teradyne, Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "Test Equipment + Robotics"
+    ],
+    "bull": [
+      "ATE Duopoly กับ Advantest — high switching cost, ครอบคลุม Semi Test+Product Test+Robotics ครบวงจร",
+      "AI test intensity เร่งตัว — Semi Test ทะลุ $1.1B, ~70% ของรายได้มาจาก AI",
+      "Photon 100 เปิดตัวใหม่สำหรับ silicon photonics/CPO test — TAM $300-700M/ปีระยะกลาง",
+      "Robotics ทำสถิติไตรมาสแรก $100M+ (+33% YoY) AI เป็น 15% ของยอด Robotics",
+      "Merchant GPU first order + memory supercycle (HBM/DRAM) หนุนดีมานด์"
+    ],
+    "risk": [
+      "Cyclical รุนแรง — normalized mid-cycle EPS ทำ FV ยุบจาก $420→$100, WAF ร่วงจาก 7.50 HIGH เป็น 5.70 LOW",
+      "Warren ถอนคำสั่ง BUY ทั้งหมด — valuation เดิมใช้ peak-year EPS ผิดกฎ Cyclical Exception",
+      "Customer concentration สูง — ลูกค้ารายเดียว 19% ของ Semi Test revenue",
+      "China export control (Huawei/HiSilicon) + retaliatory tariffs",
+      "Q1'26 เป็น record peak มี one-time benefit — ห้าม extrapolate เป็น run-rate"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 5.9,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 382.05,
+    "fv": 127,
+    "mos": -200.8,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        8.0,
+        "green",
+        80
+      ],
+      "gp": [
+        7.5,
+        "amber",
+        75
+      ],
+      "va": [
+        2.0,
+        "orange",
+        20
+      ],
+      "ra": [
+        5.0,
+        "orange",
+        50
+      ]
+    },
+    "idea": "Edge Sleeve candidate (dropped from core watchlist 07-23, still tracked as Bucket A multibagger-screen candidate) — Q2 2026 durability read mixed-but-constructive lifts normalized FY26 EPS input from stale consensus $6.24 to bottom-up $9.00, raising FV Base $100->$127 and WAF 5.70->5.90, but price ran further ahead ($322->$382) so MoS stays deep FAIL (-200.8%). Still Cyclical tier (not reclassified) — Margin Expansion signal explicitly fails this quarter, CEO uncertain on ATE:WFE ratio durability.",
+    "updated": "2026-08-10",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-10",
+      "tier": "🔁 Cyclical",
+      "tier_slug": "cyclical",
+      "what": "Teradyne เป็น ATE duopoly (กับ Advantest) — เครื่องทดสอบ semiconductor ที่ qualify เข้า production flow ลูกค้าแล้วเปลี่ยนยาก; >60% รายได้ผูก AI; กลยุทธ์ wafer-to-AI-data-center + Robotics",
+      "why": "Consensus/ตลาดเทรด TER ราวกับ AI-driven earnings step-change (~$9-11 EPS power) เป็น durable เต็มร้อยแล้ว (fwd P/E ~35-43× บน EPS ใหม่, ราคาวิ่งขึ้นต่อจาก $322→$382 ตั้งแต่ recheck ก่อน) — Warren เห็นต่างว่า Q2 primary docs ให้หลักฐาน **บวกจริงแต่ไม่เต็มร้อย**: 2 ไตรมาส record ติดกัน + ทั้ง 3 business groups โตพร้อมกัน สมควรยกระดับ normalized EPS ขึ้นจริง (bottom-up FY26 ~$9.00 แทนตัวเลข consensus เก่าที่ล้าสมัยและพิสูจน์แล้วว่าต่ำเกินไปจริง $6.24) — **แต่** CEO เองยังตอบไม่ได้ว่า ATE:WFE ratio 8% จะ settle ที่ 7-9% หรือ revert บางส่วนปี 2027 และ margin peak ยืนยันแล้วว่ามี one-time component จริง (ไม่ expand ต่อ) → ยังไม่มีเหตุผลจ่าย premium multiple เพิ่ม (คง 19x anchor) — ผลคือแม้ FV ยกขึ้นจาก EPS update ราคาที่วิ่งนำไปไกลกว่าทำให้ MoS ยังคง fail ลึกเหมือนเดิม",
+      "risk": "หาก 2027 ยืนยันว่า ATE:WFE ratio revert ลงต่ำกว่า 7% อย่างมีนัยสำคัญ, dual-vendor share gain ไม่ materialize ตามแผน, memory test share เสียให้ Advantest ต่อเนื่องหลายไตรมาส, หรือ AI capex hyperscaler ชะลอทำให้ Q3/Q4 guide ผิดหวังชัดเจน — จะยืนยันว่า FY26 เป็น cyclical peak ไม่ใช่ new-normal ตามที่ Bear case ตั้งไว้"
+    },
+    "tier": "🔁 Cyclical",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price cross-checked 2 independent sources: yfinance $374.73, Nasdaq quote API $374.41 (0.09% diff) — both ~1.9% below Warren's $382.05 pre-market snapshot, within tolerance (intraday timing), used own $374.57 avg for independent calc",
+        "Q2 2026 results confirmed: revenue $1.33B +104% YoY, non-GAAP EPS $2.47, GAAP EPS $2.38 (StockTitan/Investing.com/GuruFocus) — matches Warren's 'record #2 consecutive quarter' claim",
+        "Q3 2026 guidance confirmed: revenue $1.2-1.3B, non-GAAP EPS $1.85-$2.15 (midpoint $2.00) — exact match to Warren's bottom-up Q3 guide-midpoint input ($2.00) used to build FY26 EPS $9.00",
+        "Nasdaq FY26 consensus EPS $9.10 (8 analysts) independently corroborates Warren's bottom-up $9.00 — cross-methodology agreement, not a copy"
+      ],
+      "concerns": [
+        "Reverse DCF: at Charlie's independent inputs (normalized EPS $6.27, 20x terminal multiple, 9% discount rate, 10yr), today's price implies ~21.6%/yr sustained EPS growth for a full decade — aggressive for a company whose own CEO is unsure the current elevated ATE:WFE ratio (4%→7%→8% over 3yrs) is structural, not cyclical",
+        "FV Floor ($276 = TTM actual EPS $7.28 × 5yr-median-PE 37.93x) is itself contaminated by the current AI-driven cyclical peak in the TTM numerator — not a genuine 'stop growing today' floor for a Cyclical name (known limitation, flagged not hidden)",
+        "DSO increase (76 days vs 60 YoY, per Warren) not independently re-verified this batch — already correctly flagged by Warren, no new information to add"
+      ],
+      "summary": "",
+      "review_date": "2026-08-10"
+    }
   },
   "ARM": {
     "symbol": "ARM",
