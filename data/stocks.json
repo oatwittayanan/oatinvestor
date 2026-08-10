@@ -1622,6 +1622,94 @@
       "review_date": "2026-08-09"
     }
   },
+  "UBER": {
+    "symbol": "UBER",
+    "display": "UBER",
+    "category": "consumer",
+    "name": "Uber Technologies, Inc.",
+    "sector": "Consumer",
+    "sectorSlug": "consumer",
+    "chips": [
+      "Consumer",
+      "Mobility + Delivery Platform"
+    ],
+    "bull": [
+      "Network effect + cross-platform flywheel — user ที่ใช้ทั้ง Mobility+Delivery สร้าง Gross Bookings มากกว่า 3 เท่าของ single-offering",
+      "Uber One membership ทะลุ 50M (+50% YoY) คิดเป็น >50% ของ Gross Bookings ทั้งหมด",
+      "AV demand-aggregator — 30+ พาร์ทเนอร์ (Waymo, Zoox, NVIDIA ฯลฯ) capital-light financing ผ่าน Santander/Hertz",
+      "FCF inflection ทะลุ $10B TTM ครั้งแรก + buyback record $3B ในไตรมาสเดียว",
+      "Warren: BUY ทุก gate ผ่าน — MoS 32.7%, PEG 1.27, ER 23.2%/yr, WAF 7.39 HIGH"
+    ],
+    "risk": [
+      "Driver classification risk — California AG lawsuit ท้าทายสถานะ independent contractor ทั่วโลก",
+      "AV เป็นดาบสองคม — Waymo/Zoox/Tesla อาจ bypass Uber ไปหาผู้บริโภคเองที่ scale",
+      "AI personal-agent อาจ disintermediate ความสัมพันธ์กับลูกค้า (ถูกถามตรงในคอลล์นักลงทุน)",
+      "Delivery Hero acquisition $14.8B เพิ่ม leverage + integration risk แม้ financing ชัดแล้ว",
+      "Switching cost ต่ำ + DoorDash/Prosus บุกยุโรปหนักขึ้น"
+    ],
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 3,
+    "waf": 7.34,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 75.02,
+    "fv": 94,
+    "mos": 20.2,
+    "fpe": 22.66,
+    "peg": 1.42,
+    "scores": {
+      "bq": [
+        7.8,
+        "amber",
+        78
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        7.0,
+        "amber",
+        70
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "Q2 2026 record quarter (GB +24%, non-GAAP EPS +35%, TTM FCF crossed $10B first time, Delivery Hero financing now executed via signed €14.2B bridge, Blacklane ~$550M bolt-on immaterial). FV Base recalibrated $98->$94 on EPS-consensus correction (avg $3.31 vs prior $3.46 which was the analyst high estimate), multiple held flat ~28.3x. Price ran up faster ($65.94->$75.02, +13.8%) than the corrected FV -> MoS 32.7%->20.2%, PEG 1.27->1.42, ER 23.2%->20.6%/yr -- all 4 gates still pass. WAF 7.34 correctly labeled MEDIUM (band-table fix, not a fresh call). Waymo AV-partner-diversification signal (CEO confirmed on Q2 call) explicitly weighed: read as thesis-reinforcing (multi-partner aggregator moat, mature-market AV share rising YoY) but held RA flat rather than upgrading toward pre-deal 6.0, given real near-term relationship-friction risk. Not currently held -- flag Kim to run Opportunity Cost Gate (Rule #11) before executing; MEDIUM conviction -> size toward lower end of range; out-of-theme ceiling ~10% (Autonomous-Vehicle is Tier-2 MED, not in AI-Revolution Theme Playbook, no TQR).",
+    "updated": "2026-08-10",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-10",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Uber เป็น global mobility+delivery marketplace ที่ใหญ่ที่สุด (70+ ประเทศ) — network effect + cross-platform flywheel (dual-user สร้าง GB 3x) + Uber One membership lock-in; asset-light FCF machine ที่ scaling earnings เร็วกว่า topline 2 เท่า.",
+      "why": "Consensus กังวล AV จะ disrupt Uber (Waymo/Tesla) + AI personal-agent จะ abstract แพลตฟอร์มออกจากลูกค้า; Warren เห็นต่างว่า Uber เป็น **AV demand-aggregator** (utilization/ revenue-per-vehicle สูงกว่า 1P network → พาร์ทเนอร์ AV เลือก Uber) + capital-light AV — AV เป็น tailwind ไม่ใช่ threat; FCF inflection (TTM ทะลุ $10B ครั้งแรก) + buyback ต่อเนื่องยังไม่ถูก price in เต็มที่. **อัพเดท 08-10 (Q2 2026):** record quarter (GB +24%, EPS +35%), Delivery Hero financing เปลี่ยนจาก \"committed\" → **executed** (bridge €14.2B เซ็นแล้ว, leverage <2x ยืนยัน); **CEO ยืนยันกำลัง diversify AV partners ให้พึ่ง Waymo น้อยลง** — ตอบคำถามตรงเรื่องข่าวความตึงเครียด Waymo — Warren อ่านสัญญาณนี้ว่า**เสริม thesis aggregator** (multi-partner 120K คันผูกมัดแล้ว, mature-market AV share ของ Uber สูงขึ้น YoY = AV ขยายตลาดไม่ cannibalize) มากกว่าเป็นสัญญาณว่า thesis กำลังพัง — แต่ยังเป็นจุดที่ต้องจับตาใกล้ที่สุดใน Q3. ราคาวิ่งจาก $65.94→$75.02 (+13.8%) เร็วกว่า FV ที่ปรับ (correction ฐาน EPS consensus $3.46 ซึ่งจริงๆเป็นเลข high estimate ไม่ใช่ average → ใช้ $3.31 แทน) → MoS หดจาก 32.7%→20.2% แต่ยังผ่าน gate.",
+      "risk": "AV players (Waymo/Tesla) bypass Uber ไปหาผู้บริโภคเองที่ scale (จับตา: Waymo ขยาย 1P แทนที่จะพึ่ง Uber มากขึ้นไหม), หรือ driver reclassification (California AG) พลิก unit economics ทั้งโมเดล, หรือ AI personal-agent disintermediate demand-generation moat จริง."
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "⚠️ Price cross-check FAILS the 2% tolerance: yfinance $77.58, Nasdaq quote API $77.68 (0.13% apart, both independently agree with each other) but 3.4-3.5% ABOVE Warren's stated $75.02 snapshot — per Second-Source rule, used the higher/conservative price ($77.63 avg) for Charlie's own MoS calc",
+        "Q2 2026 results confirmed: revenue $14.19B +12% YoY, GAAP diluted EPS $1.17 (vs $0.63 prior year) — consistent with Warren's 'record quarter' framing",
+        "Delivery Hero deal confirmed real: business combination agreement, ~€41.50/share, ~$14.8B equity value (matches Warren's financing-executed claim)",
+        "Q3 2026 bookings guidance $59.25B midpoint came in slightly BELOW the average analyst estimate ($59.33B) — a small (~0.1%) but real deceleration signal not explicitly called out in Warren's note"
+      ],
+      "concerns": [
+        "Charlie's independent FV ($84, FY27 Nasdaq consensus EPS $4.41 × 19x) gives MoS of only 10.7% even at Warren's OWN quoted price ($75.02) — already below the 15% gate before accounting for any price drift. At today's actual live price (~$77.63-77.68), MoS on Charlie's FV compresses further to 7.6%. This is the core finding: the 'all 4 gates pass' claim doesn't survive independent verification on the MoS gate specifically, even setting the price-timing issue aside.",
+        "EPS basis mismatch: Warren's FY26 non-GAAP EPS $3.31 (48 analysts) vs Nasdaq's FY26 consensus $3.08 (14 analysts) — 7% lower, most likely a GAAP-vs-non-GAAP basis difference rather than an error (Uber's real TTM GAAP EPS is itself noisy — $4.56-4.73 — inflated by recurring one-time equity-investment mark-to-market gains, a known data-quality issue flagged in prior Charlie reviews on this ticker; used FY27 forward consensus instead of TTM actual for exactly this reason)",
+        "Quality thesis is NOT in question — GB +24%, non-GAAP EPS +35%, TTM FCF crossed $10B (all independently plausible from Q2 print), Waymo AV-diversification signal read the same way Warren does (thesis-reinforcing, real near-term friction risk). This is a valuation-buffer concern, not a business-quality concern."
+      ],
+      "summary": "",
+      "review_date": "2026-08-10"
+    }
+  },
   "NFLX": {
     "symbol": "NFLX",
     "display": "NFLX",
