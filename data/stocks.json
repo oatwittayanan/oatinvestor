@@ -1323,6 +1323,94 @@
       "ลูกค้า TSMC+Samsung กระจุกตัว ~38% ของรายได้"
     ]
   },
+  "SNPS": {
+    "symbol": "SNPS",
+    "display": "SNPS",
+    "category": "semiconductor",
+    "name": "Synopsys, Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "EDA Software"
+    ],
+    "bull": [
+      "EDA oligopoly กับ Cadence/Siemens — switching cost สูงมาก, PCIe 7.0 win rate >90%",
+      "Ansys ขยาย TAM สู่ multiphysics simulation — synergy target $400M→$1B (monetize จริง FY2027)",
+      "Agentic EDA inflection — ลูกค้า 20 รายกำลัง evaluate AI agent 25+ ตัว เปลี่ยนโมเดลเป็น subscription+consumption",
+      "ทุก custom silicon (COT) ของ hyperscaler ต้องพึ่ง Synopsys IP — recurring revenue 83%, backlog $11B",
+      "Elliott Management เข้าบอร์ด ดันโฟกัส margin/monetization"
+    ],
+    "risk": [
+      "PEG 1.89 เกิน cap (1.5) — Warren: WATCH ไม่ใช่ STARTER แม้ MoS เกือบผ่าน (14.8% vs 15%)",
+      "หนี้ ~$10B + Goodwill/Intangibles $38.7B จากดีล Ansys — เสี่ยง impairment ถ้า synergy ไม่มาตามคาด",
+      "China 10% ของรายได้ ตกแล้ว -22% ex-Ansys จาก export control ที่เคยถูกสั่งห้ามชั่วคราว",
+      "Design IP segment ฟื้นไม่เต็มที่ — margin ร่วงจาก 38.3%→24.4%",
+      "GAAP-Non-GAAP gap มหึมา (EPS $0.09 vs $3.35) ต้องดู FCF แทน"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.48,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 411.68,
+    "fv": 500,
+    "mos": 17.7,
+    "fpe": 27.9,
+    "peg": 1.82,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "Price/market re-check only (no new primary docs; Q3 FY26 reports 2026-08-26). Price $425.90->$411.68 (-3.3%), FV Base $500 unchanged. MoS 14.8%->17.7% now clears the 15% gate outright (was a 0.2pt near-miss last batch), but PEG 1.89->1.82 still FAILS the 1.5 Effective Cap on the same sourced consensus growth (15.3%/yr). ER 18.6%->19.3%/yr, still passes. Per BUY Decision Flow Step 5, STARTER requires PEG/ER/WAF to all pass with only MoS allowed to miss <=7pts -- here PEG is the failing gate, not MoS, so STARTER does not apply. Action stays WATCH, same call as last batch but now PEG-gated rather than MoS-gated. WAF 7.48 (was 7.35) -- also corrects a mislabeled 07-15 conviction band (7.35 tagged HIGH, but 6.5-7.5 = MEDIUM per WAF Score table).",
+    "updated": "2026-08-11",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-11",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Synopsys เป็นครึ่งหนึ่งของ EDA duopoly (คู่กับ Cadence) + IP portfolio กว้างที่สุดในอุตสาหกรรม — ทุก advanced chip ต้องออกแบบผ่าน tool ของ SNPS และ on-ramp เข้า foundry ใหม่ต้องใช้ foundation IP ของ SNPS; ขยายจากชิปสู่ system-level simulation ผ่าน Ansys.",
+      "why": "Consensus มอง SNPS เป็น EDA compounder นิ่งๆ ที่ ~30x โดนกด near-term EPS จาก dilution ดีล Ansys (share 156M→192M); Warren เห็นต่างว่า **agentic-EDA business-model shift** (25+ AI agent, subscription+consumption ที่ agent ใช้ license มากกว่ามนุษย์) + hyperscaler COT ที่ต้องพึ่ง IP ของ SNPS ทั้งหมด (โมเดลใหม่เซ็นภายในสิ้น FY26) = inflection ที่ยังไม่อยู่ใน guidance และยังไม่ถูก price in — ราคาย่อลงเพิ่มเติม (-4.4% จากรอบก่อน) สอดคล้องกับ broad AI/semi selloff กว้างทั้งกลุ่มช่วง 07-13→07-15 (ไม่ใช่ SNPS-specific news) ไม่ใช่สัญญาณ thesis เปลี่ยน.",
+      "risk": "Ansys synergy ($400M→$1B) ไม่มาตามคาด/goodwill impairment, หรือ China export controls เข้มขึ้นตัด Design IP, หรือ organic growth ค้างที่ 3-4% พิสูจน์ว่า \"AI ดัน EDA demand\" ถูก price in ไปแล้ว."
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price cross-check PASSES: yfinance $411.68 = Nasdaq quote API $411.68, exact match, zero drift from Warren's stated snapshot price",
+        "FY2026 non-GAAP EPS guidance $14.76 midpoint independently confirmed via Synopsys' own Q2 FY2026 earnings press release (raised from prior guidance, a $0.34 midpoint increase) -- Tier 2 evidence, matches Warren's eps_used exactly, this is solid ground",
+        "Q3 FY2026 earnings date confirmed NOT yet released -- company reports 2026-08-26 after close, consistent with Warren's note that this batch is a price-only recheck, not a fundamentals refresh",
+        "China export-control revenue drag and Ansys Multiphysics Fusion integration progress both confirmed via recent coverage -- consistent with, not contradicting, Warren's existing thesis_risk framing; no new escalation found in the review window"
+      ],
+      "concerns": [
+        "FV gap is 20.6% (Warren $500 vs Charlie $397), which trips the mandatory-CAUTION threshold. The gap is driven almost entirely by multiple choice, not EPS: both sides use the same $14.76 guidance EPS, but Warren applies 34x while two independent current forward P/E reads average 26.9x (own calc 27.9x = price/guidance EPS; stockanalysis.com 25.94x). Neither independent read assumes any re-rating -- 34x is a meaningfully richer multiple than what the market is currently paying, and the batch note doesn't explain where 34x comes from",
+        "TTM GAAP P/E is 95-97x (yfinance 95.3x, stockanalysis 97.51x, both agree) -- far past the 80x threshold where P/E-based floor math breaks down. This isn't a growth-story premium, it's a GAAP earnings base heavily suppressed by post-Ansys deal-amortization and stock comp; the real swing factor for this ticker is how fast GAAP earnings converge toward the non-GAAP run-rate as those one-time costs roll off, not raw revenue growth",
+        "Real-world stakes are low here: Action stays WATCH regardless of which FV number is used, since Warren's own PEG (1.82) already fails the 1.5 cap on the same consensus growth basis -- this CAUTION is about correcting the number for the record, not a live buy-sizing dispute"
+      ],
+      "summary": "",
+      "review_date": "2026-08-11"
+    }
+  },
   "GOOGL": {
     "symbol": "GOOGL",
     "display": "GOOGL",
@@ -1604,85 +1692,6 @@
       "Netlist/YMTC patent litigation; Burry short position ~$1,051 strike",
       "memory oversupply ยังเป็นความกังวลหลักของตลาด"
     ]
-  },
-  "SNPS": {
-    "symbol": "SNPS",
-    "display": "SNPS",
-    "category": "semiconductor",
-    "name": "Synopsys, Inc.",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "EDA Software"
-    ],
-    "bull": [
-      "EDA oligopoly กับ Cadence/Siemens — switching cost สูงมาก, PCIe 7.0 win rate >90%",
-      "Ansys ขยาย TAM สู่ multiphysics simulation — synergy target $400M→$1B (monetize จริง FY2027)",
-      "Agentic EDA inflection — ลูกค้า 20 รายกำลัง evaluate AI agent 25+ ตัว เปลี่ยนโมเดลเป็น subscription+consumption",
-      "ทุก custom silicon (COT) ของ hyperscaler ต้องพึ่ง Synopsys IP — recurring revenue 83%, backlog $11B",
-      "Elliott Management เข้าบอร์ด ดันโฟกัส margin/monetization"
-    ],
-    "risk": [
-      "PEG 1.89 เกิน cap (1.5) — Warren: WATCH ไม่ใช่ STARTER แม้ MoS เกือบผ่าน (14.8% vs 15%)",
-      "หนี้ ~$10B + Goodwill/Intangibles $38.7B จากดีล Ansys — เสี่ยง impairment ถ้า synergy ไม่มาตามคาด",
-      "China 10% ของรายได้ ตกแล้ว -22% ex-Ansys จาก export control ที่เคยถูกสั่งห้ามชั่วคราว",
-      "Design IP segment ฟื้นไม่เต็มที่ — margin ร่วงจาก 38.3%→24.4%",
-      "GAAP-Non-GAAP gap มหึมา (EPS $0.09 vs $3.35) ต้องดู FCF แทน"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 7.35,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 425.9,
-    "fv": 500,
-    "mos": 14.8,
-    "fpe": 28.9,
-    "peg": null,
-    "scores": {
-      "bq": [
-        8.5,
-        "green",
-        85
-      ],
-      "gp": [
-        8.0,
-        "green",
-        80
-      ],
-      "va": [
-        6.0,
-        "orange",
-        60
-      ],
-      "ra": [
-        6.0,
-        "orange",
-        60
-      ]
-    },
-    "idea": "WATCH, not STARTER — MoS is essentially at the 15% gate (14.8%, 0.2pt miss) but PEG (1.89) fails the Effective PEG Cap (1.5) on the corrected consensus-growth basis. ER passes comfortably (18.6%/yr) but per BUY Decision Flow, PEG failing blocks the STARTER exception. Quality thesis intact.",
-    "updated": "2026-07-15",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-07-15",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "Synopsys เป็นครึ่งหนึ่งของ EDA duopoly (คู่กับ Cadence) + IP portfolio กว้างที่สุดในอุตสาหกรรม — ทุก advanced chip ต้องออกแบบผ่าน tool ของ SNPS และ on-ramp เข้า foundry ใหม่ต้องใช้ foundation IP ของ SNPS; ขยายจากชิปสู่ system-level simulation ผ่าน Ansys.",
-      "why": "Consensus มอง SNPS เป็น EDA compounder นิ่งๆ ที่ ~30x โดนกด near-term EPS จาก dilution ดีล Ansys (share 156M→192M); Warren เห็นต่างว่า **agentic-EDA business-model shift** (25+ AI agent, subscription+consumption ที่ agent ใช้ license มากกว่ามนุษย์) + hyperscaler COT ที่ต้องพึ่ง IP ของ SNPS ทั้งหมด (โมเดลใหม่เซ็นภายในสิ้น FY26) = inflection ที่ยังไม่อยู่ใน guidance และยังไม่ถูก price in — ราคาย่อลงเพิ่มเติม (-4.4% จากรอบก่อน) สอดคล้องกับ broad AI/semi selloff กว้างทั้งกลุ่มช่วง 07-13→07-15 (ไม่ใช่ SNPS-specific news) ไม่ใช่สัญญาณ thesis เปลี่ยน.",
-      "risk": "Ansys synergy ($400M→$1B) ไม่มาตามคาด/goodwill impairment, หรือ China export controls เข้มขึ้นตัด Design IP, หรือ organic growth ค้างที่ 3-4% พิสูจน์ว่า \"AI ดัน EDA demand\" ถูก price in ไปแล้ว."
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [],
-      "concerns": [],
-      "summary": "",
-      "review_date": "2026-08-09"
-    }
   },
   "UBER": {
     "symbol": "UBER",
