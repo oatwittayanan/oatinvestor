@@ -148,155 +148,6 @@
       "Supply commitment $119B แบบไม่มีสิทธิ์ยกเลิก + China Data Center revenue เหลือ $0 แล้วจาก export controls"
     ]
   },
-  "AMZN": {
-    "symbol": "AMZN",
-    "display": "AMZN",
-    "category": "big_tech",
-    "name": "Amazon",
-    "sector": "Big Tech",
-    "sectorSlug": "bigtech",
-    "chips": [
-      "Big Tech",
-      "Cloud + Commerce + AI"
-    ],
-    "bull": [
-      "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
-      "Anthropic partnership + Trainium chips = AI infrastructure play",
-      "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
-      "Advertising business $60B+ ARR กำลัง accelerate",
-      "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
-    ],
-    "risk": [
-      "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
-      "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
-      "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น",
-      "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
-      "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
-    ],
-    "action": "starter",
-    "actionLabel": "Starter",
-    "conviction": 3,
-    "waf": 8.07,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 272.27,
-    "fv": 307,
-    "mos": 11.3,
-    "fpe": 25.73,
-    "peg": 0.82,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        7.2,
-        "amber",
-        72
-      ],
-      "ra": [
-        5.8,
-        "orange",
-        58
-      ]
-    },
-    "idea": "08-08 flag confirmed with hard evidence: fresh Nasdaq FY27 consensus EPS rose $9.91→$10.58 on unanimous 15up/0down revisions, consistent with AWS/ads genuinely accelerating. FV rebuilt to $307 (was $287). MoS 4.36%→11.3% (near-miss inside STARTER band), PEG 1.54 FAIL→0.82 PASS, ER 18.9%→33.8%/yr. All STARTER prerequisites clear (Inevitable tier, WAF/PEG/ER pass) — Action upgraded HOLD→STARTER. Valuation-input correction only, business thesis unchanged.",
-    "updated": "2026-08-12",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-12",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
-      "why": "ตลาดตอบรับ +10.20% After Hours ให้กับ headline EPS $5.75 (+245%) ซึ่งส่วนใหญ่มาจาก non-cash mark-to-market gain ของ Anthropic ($53.4B) — Warren เห็นต่างว่าเหตุผลที่แท้จริงที่ควร re-rate คือ **Operating Income $27.5B (+43%) ที่บีตท็อปเอนด์ guidance เองล้วนๆ** และ AWS เร่งเป็น +36.7% (เร็วสุดใน 18 ไตรมาส) + backlog กระโดด $364B→$496B ใน 1 ไตรมาส — เป็นสัญญาณ demand จริงที่ consensus ยังไม่ทันปรับ FY27 EPS ตาม (single-source estimate เดิมยังไม่ถูก revise); ในขณะเดียวกันตลาดยังไม่ได้ price-in ความเสี่ยงใหม่คู่กัน — FCF TTM ติดลบครั้งแรก (-$7.6B) และ CapEx guide ถูกปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว ($200B→$220B จาก memory cost inflation). **2026-08-12 update:** consensus ปรับขึ้นตามที่คาดไว้แล้วจริง — ดู Valuation Range สำหรับ FV rebuild",
-      "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment — หรือ FTC ad-pricing case ลงเอยเป็น structural remedy (ไม่ใช่แค่ค่าปรับ) ที่บังคับเปลี่ยน ad auction model กระทบ revenue stream ถาวร — หรือ FCF ยังติดลบต่อเนื่องหลายไตรมาสโดยไม่มี timeline ฟื้นตัวชัดเจน พิสูจน์ว่า CapEx cycle framework ของ management ผิด"
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price cross-check PASSES: Nasdaq secondary(closed) $272.27 = Warren's stated price, zero drift, 2026-08-11 close",
-        "FY2027E consensus EPS $10.58 independently re-pulled from Nasdaq earnings-forecast API (17 analysts, high $11.80/low $8.73, 15up/0down) -- exact match to Warren's eps_used, confirms the 08-08 FV_TOO_LOW flag resolution is real, not a stale-carry artifact",
-        "AWS +36.7% YoY growth in Q2 2026 (fastest pace in 18 quarters) and AI/Chips run-rate >$25B independently confirmed via Amazon's own Q2 2026 earnings release and CEO commentary -- matches Warren's gp.note exactly, Tier 1 actual-reported evidence, not a projection",
-        "growth_used_pct 31.4%/yr is a direct, verifiable calc from the same Nasdaq pull (FY26 $8.05 -> FY27 $10.58) -- no growth-term inflation found"
-      ],
-      "concerns": [
-        "The STARTER call hinges almost entirely on the multiple assumption, not the EPS. Warren's Base FV ($307) uses multiple_used=29x, but this same batch's own forward_pe field (25.73x = price / the identical $10.58 EPS) shows 29x is meaningfully ABOVE what the market is currently paying for AMZN on an identical basis -- an implicit re-rating assumption that is not declared as a variant_view or explained anywhere in the batch note. Charlie's independent FV using the current, no-re-rating multiple (10.58 x 25.73 = ~$272) lands almost exactly AT today's price -- MoS ~0%, not +11.3%. The 11.3% gap sits just under the 20% mandatory-CAUTION line, but it is exactly the margin that determines whether this ticker clears the STARTER band (8-15% per this batch's market_context) at all -- on Charlie's read, it does not. Recommend Warren state explicitly why 29x rather than 25.73x is the right multiple for a fresh entry before this is sized.",
-        "Minor internal inconsistency: Warren's own reported PEG (0.82) is computed off forward_pe (25.73), not off multiple_used (29) -- the MoS/STARTER-band gate and the PEG gate are quietly using two different multiples for the same ticker in the same batch. Recomputed on 29x, PEG is still only 0.92 (< 1.5 cap) so this doesn't flip any gate today, but it's worth Warren reconciling for consistency."
-      ],
-      "summary": "",
-      "review_date": "2026-08-12"
-    },
-    "mark_easy": {
-      "one_liner": "Amazon อัพเกรดจาก HOLD เป็น STARTER (ระยะทดลอง) ครั้งแรก — consensus EPS ปี 2027 ปรับขึ้นเป็น $10.58 ตามคาดหลังงบ Q2 ดัน MoS จาก near-fail กลับมาเป็น +11.3% แต่ Charlie เตือนว่าตัวเลขนี้พึ่งพา multiple ที่ Warren เลือกสูงกว่าที่ตลาดจ่ายจริง — บน multiple ปัจจุบันจริง MoS แทบเป็น 0%",
-      "what": "Amazon มี 3 ธุรกิจหลัก: e-commerce+โฆษณา (North America/International) และ AWS cloud ที่ทำกำไรหลักของบริษัททั้งที่รายได้แค่ 21% ของทั้งหมด",
-      "why_invest": [
-        "consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (17 นักวิเคราะห์ อัพ 15 ราย ไม่มีใครปรับลง) ตามที่ Warren คาดไว้ว่าจะเกิดหลังงบ Q2 — แก้ปัญหาเดิมที่การ์ดใช้ตัวเลขเก่าจากแหล่งเดียวที่ยังไม่ปรับหลังงบ",
-        "AWS โต +36.7% YoY เร็วที่สุดใน 18 ไตรมาส + ธุรกิจชิป/AI ทำรายได้รันเรทเกิน $25B แล้ว — ตัวเลขที่รายงานจริง ไม่ใช่การประมาณการ",
-        "Fair Value ขยับขึ้นเป็น $307 (จาก $287) ตาม EPS ใหม่ MoS พลิกจาก near-fail เป็น +11.3% เข้าเกณฑ์ STARTER band",
-        "PEG พลิกจาก FAIL เป็น PASS (0.82) และ Expected Return ขยับขึ้นเป็น 33.8%/ปี — ทุกเกณฑ์ผ่านพร้อมกันเป็นครั้งแรก ทำให้ Warren เปลี่ยนคำแนะนำเป็น STARTER (ระยะทดลอง) และแจ้งให้พิจารณาเป็น ADD แบบแบ่งไม้ในรอบ Paper ถัดไป"
-      ],
-      "watch_out": [
-        "⚠️ Charlie CAUTION สำคัญ: การอัพเกรดเป็น STARTER พึ่งพา 'ตัวคูณ' ที่ Warren เลือกใช้ (29x) ซึ่งสูงกว่าตัวคูณตลาดจ่ายจริงตอนนี้บนกำไรเดียวกัน (25.73x) — ถ้าใช้ตัวคูณตลาดจริงแทน FV จะเหลือ ~$272 เกือบเท่าราคาปัจจุบันพอดี ทำให้ MoS แทบเป็น 0% ไม่ใช่ +11.3%",
-        "11.3% เป็นระยะขอบที่บางมาก (เกินเกณฑ์ STARTER band 8-15% นิดเดียว) — Charlie เห็นว่านี่คือจุดตัดสินว่าหุ้นเข้า STARTER band ได้จริงหรือไม่ แนะนำให้ Warren อธิบายเหตุผลที่เลือกตัวคูณ 29x แทน 25.73x ให้ชัดเจนก่อน",
-        "หมายเหตุความสอดคล้องเล็กน้อย: ตัวเลข PEG ที่ Warren รายงาน (0.82) คำนวณจากตัวคูณตลาดจริง (25.73x) ไม่ใช่ตัวคูณที่ใช้จริงกับ FV (29x) — ถ้าคำนวณด้วย 29x เหมือนกัน PEG จะเป็น 0.92 ยังผ่านเกณฑ์ 1.5 อยู่ดี ไม่กระทบคำตัดสินวันนี้",
-        "ธุรกิจ AWS/Ads ยังโตแรงจริงตามตัวเลขที่รายงานแล้ว — ประเด็นทั้งหมดอยู่ที่ 'ราคาที่ควรจ่าย' ไม่ใช่คุณภาพธุรกิจ"
-      ],
-      "bottom_line": "STARTER (ระยะทดลอง) — เกณฑ์ทั้งหมด (MoS/PEG/ER/WAF) ผ่านพร้อมกันเป็นครั้งแรกจาก EPS consensus ที่ปรับขึ้นจริง แต่ Charlie เตือนว่าการผ่านเกณฑ์ครั้งนี้บางมากและพึ่งพาตัวคูณที่ Warren เลือกสูงกว่าที่ตลาดจ่ายจริง — ธุรกิจ AWS ยังแข็งแรงจริง แต่จุดเข้าซื้อยังต้องระวัง รอ Warren อธิบายเหตุผลตัวคูณให้ชัดก่อนพิจารณา ADD จริง"
-    },
-    "mark_full": {
-      "business_overview": "Amazon แบ่ง 3 segment: North America (retail+ads) รายได้ $116.2B +16%, International $42.2B +15%, AWS (cloud) $42.2B +37% — AWS สร้างรายได้แค่ 21% แต่สร้าง operating income ถึง 61% ของทั้งบริษัท",
-      "tam": "AWS annualized run rate $169B โต +36.7%; AI revenue run rate ทะลุ $25B โตสามหลัก%; Amazon Ads run rate ~$74B โต +26%; Andy Jassy มองว่า AWS อาจโตถึงระดับ 1 ล้านล้านดอลลาร์ต่อปีในอนาคต",
-      "moat": "AWS #1 cloud broadest portfolio ครองใจองค์กรใหญ่/รัฐบาล; custom silicon (Graviton5/Trainium) ต้นทุนถูกกว่า x86/NVIDIA มาก ลูกค้าใช้เพิ่มขึ้นเรื่อยๆ; logistics network ใหญ่ที่สุดในโลก; Prime ecosystem stickiness สูง",
-      "latest_financials": "Q2 2026 บีตใหญ่ทุกด้าน: AWS +36.7% เร็วสุดใน 18 ไตรมาส, AI revenue run-rate ทะลุ $25B; consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (จาก $9.91 เดิม) — FV Base ขยับขึ้นเป็น $307 (จาก $287) MoS พลิกเป็น +11.3% เข้าเกณฑ์ STARTER; Charlie คำนวณ FV อิสระด้วยตัวคูณตลาดจริง (25.73x) ได้ $272 เท่าราคาปัจจุบัน (MoS ~0%)",
-      "key_points": [
-        "AWS เร่งตัวต่อเนื่อง โต +36.7% YoY เร็วสุดใน 18 ไตรมาส — demand จริงไม่ใช่แค่คาดการณ์",
-        "✅ ปัญหา EPS ที่เคยใช้ตัวเลขเก่าเกินไปปิดจบแล้ว — consensus ปรับขึ้นจริงเป็น $10.58 ตามที่ Warren คาดไว้",
-        "Warren อัพเกรดเป็น STARTER (ระยะทดลอง) ครั้งแรก — MoS/PEG/ER/WAF ผ่านเกณฑ์พร้อมกันเป็นครั้งแรก",
-        "⚠️ Charlie CAUTION: การผ่านเกณฑ์พึ่งพาตัวคูณ 29x ที่สูงกว่าตัวคูณตลาดจริง 25.73x — บนตัวคูณจริง MoS แทบเป็น 0%"
-      ]
-    },
-    "warren_easy": [
-      "AMZN tier Inevitable WAF ขยับขึ้นเป็น 8.07 (จาก 7.77) — resolve ปัญหาเดิมที่ FV ใช้ EPS จากแหล่งเดียวที่ยังไม่ปรับหลังงบ (FY27E $9.91) ด้วยการดึง consensus Nasdaq สดใหม่ ได้ $10.58 (17 นักวิเคราะห์ อัพ 15 ไม่มีลง) ตามที่คาดไว้ว่าจะเกิดหลังงบ Q2",
-      "FV Base ขยับขึ้นเป็น $307 (จาก $287) MoS พลิกจาก near-fail เป็น +11.3% เข้าเกณฑ์ STARTER band, PEG พลิกจาก FAIL เป็น PASS (0.82), ER ขยับเป็น 33.8%/ปี — ทุกเกณฑ์ผ่านพร้อมกันเป็นครั้งแรก",
-      "STARTER (ระยะทดลอง) — เปลี่ยนจาก HOLD เพราะเกณฑ์ทั้งหมดผ่านแล้ว (Inevitable tier + WAF/PEG/ER ผ่าน) แจ้งให้พิจารณา ADD แบบแบ่งไม้ในรอบ Paper ถัดไป"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ตรวจราคาตรงเป๊ะ ($272.27) และดึง consensus EPS ปี 2027 สดใหม่ได้ $10.58 ตรงกับตัวเลขที่ Warren ใช้เป๊ะ — ยืนยันว่าการแก้ปัญหา FV_TOO_LOW เดิมเป็นเรื่องจริง ไม่ใช่การดึงตัวเลขเก่ามาใช้ซ้ำ",
-        "⚠️ ปัญหาหลักที่ Charlie พบคือ 'ตัวคูณ' ไม่ใช่ EPS: Warren ใช้ FV Base จากตัวคูณ 29x บน EPS เดียวกันนี้ แต่ตัวคูณตลาดจ่ายจริงตอนนี้ (ราคา/EPS เดียวกัน) คือ 25.73x — ต่ำกว่า Warren ถึง 3.3x โดยไม่มีคำอธิบายว่าทำไมควรจ่ายแพงกว่าตลาดปัจจุบัน คำนวณด้วยตัวคูณตลาดจริง Charlie ได้ FV อิสระ $272 เกือบเท่าราคาหุ้นพอดี — MoS แทบเป็น 0% ไม่ใช่ +11.3% ตามที่ Warren รายงาน",
-        "gap 11.3% ยังต่ำกว่าเกณฑ์บังคับ CAUTION (20%) แต่เป็นตัวเลขที่ตัดสินว่าหุ้นเข้า STARTER band (8-15%) ได้จริงหรือไม่ — Charlie แนะนำให้ Warren ระบุเหตุผลชัดเจนว่าทำไมเลือก 29x ก่อนจะ size position จริง; พบความไม่สอดคล้องเล็กน้อยเพิ่มเติมคือ PEG ที่ Warren รายงาน (0.82) คำนวณจากตัวคูณ 25.73x ไม่ใช่ 29x ที่ใช้กับ FV จริง (คำนวณด้วย 29x จะได้ PEG 0.92 ยังผ่านเกณฑ์อยู่ดี ไม่กระทบคำตัดสินวันนี้)"
-      ],
-      "review_date": "2026-08-12"
-    },
-    "idea_th": "STARTER (ระยะทดลอง) — Warren อัพเกรดจาก HOLD เป็นครั้งแรก หลัง consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (จาก $9.91 เดิม) ตามที่คาดไว้ว่าจะเกิดหลังงบ Q2 (AWS +36.7% YoY เร็วสุดใน 18 ไตรมาส, AI revenue run-rate ทะลุ $25B) Fair Value ขยับขึ้นเป็น $307 ทำให้ MoS พลิกจาก near-fail เป็น +11.3% และ PEG/ER/WAF ผ่านเกณฑ์พร้อมกันเป็นครั้งแรก ⚠️ Charlie ยัง CAUTION: การผ่านเกณฑ์นี้พึ่งพาตัวคูณ 29x ที่ Warren เลือกใช้ ซึ่งสูงกว่าตัวคูณตลาดจ่ายจริงตอนนี้ (25.73x) บนกำไรเดียวกัน — ถ้าใช้ตัวคูณตลาดจริง FV จะเหลือ ~$272 เท่าราคาปัจจุบัน ทำให้ MoS แทบเป็น 0% ไม่ใช่ +11.3% ธุรกิจ AWS/Ads ยังแข็งแรงจริงตามตัวเลข แต่จุดเข้าซื้อยังต้องระวัง ควรรอ Warren อธิบายเหตุผลตัวคูณให้ชัดก่อนพิจารณา ADD จริง",
-    "story_gate_th": {
-      "what": "Amazon มี 3 ธุรกิจ: e-commerce + โฆษณา + AWS cloud ที่สร้าง operating income ส่วนใหญ่ของบริษัททั้งที่รายได้แค่ 21%; AWS เร่งเป็น +36.7% เร็วสุดใน 18 ไตรมาส",
-      "why": "consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 ตามที่ Warren คาดไว้ว่าจะเกิดหลังงบ Q2 แก้ปัญหาเดิมที่การ์ดใช้ตัวเลขเก่าจากแหล่งเดียว — Fair Value ขยับขึ้นเป็น $307 ทำให้ MoS พลิกเป็น +11.3% และเกณฑ์ทุกตัวผ่านพร้อมกันเป็นครั้งแรก Warren จึงอัพเกรดเป็น STARTER แต่ Charlie ชี้ว่าการผ่านเกณฑ์นี้พึ่งพาตัวคูณ 29x ที่สูงกว่าตัวคูณตลาดจริง (25.73x) — เป็นจุดที่ต้องตรวจสอบก่อนตัดสินใจจริง",
-      "risk": "AWS ชะลอตัวต่ำกว่า 20% หากคู่แข่ง Azure/GCP แย่งงาน AI ไปมาก; คดี FTC เรื่องราคาโฆษณา; FCF ยังติดลบจากการเร่งลงทุน AI; ⚠️ ถ้าตัวคูณที่ตลาดยอมจ่ายจริงไม่ขยับขึ้นไปหา 29x ตามที่ Warren สมมติ MoS ที่แท้จริงจะใกล้ 0% ไม่ใช่ 11.3% — ความเสี่ยงหลักตอนนี้อยู่ที่ราคาเข้า ไม่ใช่คุณภาพธุรกิจ"
-    },
-    "bull_th": [
-      "consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (17 นักวิเคราะห์ อัพ 15 ไม่มีลง) — ปิดปัญหาเดิมที่ใช้ตัวเลขเก่าจากแหล่งเดียว",
-      "AWS โต +36.7% YoY เร็วสุดใน 18 ไตรมาส + AI revenue run-rate ทะลุ $25B แล้ว",
-      "ทุกเกณฑ์ (MoS/PEG/ER/WAF) ผ่านพร้อมกันเป็นครั้งแรก — Warren อัพเกรดเป็น STARTER",
-      "Custom chip (Trainium/Graviton) ต้นทุนถูกกว่า NVIDIA ที่ลูกค้าใหญ่เริ่มใช้จริงเพิ่มขึ้น"
-    ],
-    "risk_th": [
-      "⚠️ Charlie CAUTION: STARTER พึ่งพาตัวคูณ 29x ที่ Warren เลือกใช้ สูงกว่าตัวคูณตลาดจ่ายจริง (25.73x) บนกำไรเดียวกัน — บนตัวคูณจริง MoS แทบเป็น 0% ไม่ใช่ +11.3%",
-      "11.3% เป็นระยะขอบที่บางมาก (เกินเกณฑ์ STARTER band นิดเดียว) — Warren ยังไม่อธิบายเหตุผลเลือกตัวคูณ 29x ให้ชัดเจน",
-      "FCF ยังติดลบจากการเร่งลงทุน AI, CapEx ปรับขึ้นแล้ว 2 ครั้งในปีเดียว ($200B→$220B)",
-      "หนี้ระยะยาวเพิ่มเกือบเท่าตัวใน 6 เดือน",
-      "EPS ดิบที่รายงานยังปนเปื้อนกำไรบัญชีไม่ใช่เงินสดจาก Anthropic mark-to-market"
-    ]
-  },
   "TSM": {
     "symbol": "TSM",
     "display": "TSMC",
@@ -743,6 +594,158 @@
       "⚠️ Charlie CAUTION: Warren ใช้ตัวคูณ 55x เทียบ Charlie 35x (ต่ำกว่าตัวคูณตลาดจริง 40.6x) FV $358 vs $450 ห่างกัน 20.4% เกินเกณฑ์บังคับ",
       "บน FV อิสระของ Charlie ($358) ราคาปัจจุบันให้ MoS อนุรักษ์นิยมติดลบ -16.2% — จะไม่ผ่านด่านถ้าจะ size position ที่ราคานี้",
       "หนี้ VMware $68B; Global Minimum Tax headwind; Hock Tan (74) ไม่มี employment contract = key-man risk"
+    ]
+  },
+  "AMZN": {
+    "symbol": "AMZN",
+    "display": "AMZN",
+    "category": "big_tech",
+    "name": "Amazon",
+    "sector": "Big Tech",
+    "sectorSlug": "bigtech",
+    "chips": [
+      "Big Tech",
+      "Cloud + Commerce + AI"
+    ],
+    "bull": [
+      "AWS fastest-growing hyperscaler ใน 15 quarters ล่าสุด",
+      "Anthropic partnership + Trainium chips = AI infrastructure play",
+      "Prime ecosystem 200M+ subscribers = commerce + media flywheel",
+      "Advertising business $60B+ ARR กำลัง accelerate",
+      "Operating leverage ของ AWS ทำให้ margin ขยายได้ต่อเนื่อง"
+    ],
+    "risk": [
+      "MoS เพียง 9.5% ต่ำกว่า threshold 15% — ราคายังสูงอยู่",
+      "Regulatory risk ทั้ง EU + US กด Commerce + Marketplace",
+      "CapEx AI infrastructure push ขนาดใหญ่กด FCF ระยะสั้น",
+      "Retail segment margin ต่ำ sensitive ต่อ macro slowdown",
+      "Trainium vs NVIDIA CUDA — ROI ของ custom chip ยังพิสูจน์ไม่ได้ทั้งหมด"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 3,
+    "waf": 7.77,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 272.27,
+    "fv": 272,
+    "mos": -0.1,
+    "fpe": 25.73,
+    "peg": 0.82,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.0,
+        "green",
+        90
+      ],
+      "va": [
+        6.0,
+        "orange",
+        60
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "HOLD — STARTER withdrawn. This batch had two halves and they land differently. The EPS half stands and was worth doing: the 08-08 FV_TOO_LOW flag was confirmed with hard data (FY27 consensus $9.91→$10.58, 17 analysts, 15up/0down, triple-verified). The multiple half does not stand: the STARTER call rested entirely on 29× against a market clearing at 25.73× on the identical EPS, and the premium double-counted AWS acceleration already inside the raised EPS. Revised to 25.7×: FV $307→$272, MoS 11.3%→-0.1%, 15.1 points short of the gate and far outside the 8-15% STARTER band. Quality gates all still pass (Inevitable, WAF 7.77, PEG 0.82, ER 31.4%) — the block is price, not quality. Existing position unaffected, no sell case, no Fisher rule triggered; what is gone is the case for a FRESH tranche.",
+    "updated": "2026-08-12",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-12",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "Amazon dominates e-commerce + AWS cloud + digital ads, beating competitors via unmatched logistics scale, broadest cloud portfolio, and custom silicon (Trainium) that delivers structural cost advantage.",
+      "why": "ตลาดตอบรับ +10.20% After Hours ให้กับ headline EPS $5.75 (+245%) ซึ่งส่วนใหญ่มาจาก non-cash mark-to-market gain ของ Anthropic ($53.4B) — Warren เห็นต่างว่าเหตุผลที่แท้จริงที่ควร re-rate คือ **Operating Income $27.5B (+43%) ที่บีตท็อปเอนด์ guidance เองล้วนๆ** และ AWS เร่งเป็น +36.7% (เร็วสุดใน 18 ไตรมาส) + backlog กระโดด $364B→$496B ใน 1 ไตรมาส — เป็นสัญญาณ demand จริงที่ consensus ยังไม่ทันปรับ FY27 EPS ตาม (single-source estimate เดิมยังไม่ถูก revise); ในขณะเดียวกันตลาดยังไม่ได้ price-in ความเสี่ยงใหม่คู่กัน — FCF TTM ติดลบครั้งแรก (-$7.6B) และ CapEx guide ถูกปรับขึ้นเป็นครั้งที่ 2 ในปีเดียว ($200B→$220B จาก memory cost inflation). **2026-08-12 update:** consensus ปรับขึ้นตามที่คาดไว้แล้วจริง — ดู Valuation Range สำหรับ FV rebuild",
+      "risk": "AWS growth decelerates below 20% as Azure/GCP capture AI workloads, proving the CapEx surge was malinvestment — หรือ FTC ad-pricing case ลงเอยเป็น structural remedy (ไม่ใช่แค่ค่าปรับ) ที่บังคับเปลี่ยน ad auction model กระทบ revenue stream ถาวร — หรือ FCF ยังติดลบต่อเนื่องหลายไตรมาสโดยไม่มี timeline ฟื้นตัวชัดเจน พิสูจน์ว่า CapEx cycle framework ของ management ผิด"
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "🔴 CHALLENGE 2 CONCEDED IN FULL — NO MULTIPLE-BASED ANCHOR IS DEFENSIBLE FOR AMZN AND CHARLIE'S ROUND-1 $267 IS WITHDRAWN. The objection is correct and Charlie will not defend the 25.26x. The house min() rule selects the lower of the 5-year median and the current forward multiple, and for any company whose forward earnings grow faster than its multiple has compressed the current forward multiple always wins — at which point FV = forward EPS x (price / forward EPS) = price, identically. MoS collapses to zero and expected return collapses to the growth rate, by construction and regardless of the facts. The floor inverts for the same reason: the 5-year median of 45.6x and even the 5-year minimum of 32.19x both sit above Base, so multiplying a trailing figure by either produces a 'floor' above the 'base', which is not a floor. Both sides flagged this; neither fixed it. Charlie fixes it here.",
+        "✅ FIRST INDEPENDENT ANCHOR DELIVERED — SUM-OF-THE-PARTS ON SEGMENT NOPAT, GROUNDED IN DISCLOSED SEGMENT DATA. AWS Q2 2026 is disclosed at $42.2B revenue (+37% YoY) and $16.6B segment operating income, a 39.3% margin, against $30.8B and $10.2B in Q2 2025 — so the segment margin genuinely expanded about 620bps YoY and Charlie is not estimating the margin. Consolidated Q2 2026 is $200.6B revenue and $27.5B operating income, both of which Charlie independently re-derived from the Nasdaq quarterly income statement in round 1. Non-AWS Q2 2026 therefore backs out to $158.4B revenue and $10.9B operating income, a 6.9% margin. These are subtraction from disclosed figures, not assumptions.",
+        "SOTP build, stated so every input can be challenged separately. AWS: calendar-2026 revenue approximately $176.5B (disclosed Q1 and Q2 plus H2 at the current trajectory), grown 30% into FY2027 for roughly $229.5B — a deliberate deceleration from the disclosed 37%, supported by the $496B backlog and management's statement that 2027 capacity is already largely reserved, so if anything conservative. FY2027 AWS margin held at 38%, slightly below the 39.3% just disclosed, to absorb part of the depreciation ramp: operating income $87.2B, NOPAT $67.5B at the 22.6% effective tax rate Charlie computed. Multiple 25x NOPAT, which is 7.35x forward segment revenue for a 30%-growing franchise at 38% margins — not an aggressive figure for infrastructure of this quality. AWS value $1,687B. Non-AWS: calendar-2026 revenue approximately $637.5B grown 9% into FY2027 for $694.9B, margin lifted to 7.5% from the 6.2% TTM on advertising mix and retail leverage, operating income $52.1B, NOPAT $40.3B, at 18x for a mid-single-digit-margin retail and advertising blend growing high single digits: $726B. Enterprise value $2,413B, less net debt of $5.9B (long-term debt $128,894M against cash $78,213M and short-term investments $44,775M), equity value $2,407B over 10,882M diluted shares = $221/share.",
+        "THE POINT OF THE EXERCISE: the SOTP does not return the price. It returns $221 against a price of $267.28, so MoS is -20.9% and the card finally has a number that carries information. Sensitivity, so the figure is not read as false precision — AWS at 30x instead of 25x gives $252; AWS at 20x gives $190; non-AWS at 22x gives $236; AWS growing 35% rather than 30% in FY2027 gives $227. The defensible range is roughly $190-252 with a centre of $221, and the current price of $267.28 sits ABOVE the top of that range."
+      ],
+      "concerns": [
+        "🔵 PRIMARY FINDING, REPLACING ROUND 1's: an independent anchor exists after all, and it does not agree with the card. The SOTP puts AMZN at $221 against Warren's $272, an 18.8% gap, and at -20.9% MoS against the current price. Round 1 recorded a 1.8% gap and MoS of -0.1%, but only because both sides were quoting the price back to themselves. So the card's 'fairly valued' reading is an artifact of the method, and the honest read on the first genuinely independent number is that AMZN is modestly expensive rather than fairly priced.",
+        "Charlie is explicit that this SOTP is a FIRST READ, not a precision figure, and it should not be treated as settled the way the ROIC, non-operating-share and FCF computations should. Two inputs are judgment rather than disclosure: the FY2027 segment growth and margin assumptions, and the 25x/18x segment multiples. The defensible range is $190-252, and the top of that range is within about 7% of Warren's $272. This is why the verdict is CAUTION and not DISAGREE — Charlie has supplied the anchor that was missing, not proved Warren's number wrong.",
+        "The tension in Charlie's own two answers, stated rather than hidden: the SOTP says roughly 21% overvalued, while the reverse DCF on the same recurring base says the market only requires 6.1%/yr for a decade, which is undemanding. Both are correct and they are not contradictory — the SOTP is a 2027 snapshot with static exit multiples, whereas the reverse DCF gives credit for ten years of compounding. A reader taking only the SOTP would overstate the bear case. The fair summary is that AMZN is somewhat expensive on a near-term parts basis and reasonable on a long-horizon basis, which is a coherent description of a capital-intensive compounder mid-build.",
+        "Company-wide ROIC of 13.0% is the number that ties the concerns together: it is below the Inevitable threshold, it is falling because invested capital is compounding faster than NOPAT (equity $369,631M to $551,620M and long-term debt $50,742M to $128,894M in three quarters), and it is the reason a parts-based valuation lands below a multiple-based one. The AI build is being funded at a return that has not yet been demonstrated."
+      ],
+      "summary": "",
+      "review_date": "2026-08-13"
+    },
+    "mark_easy": {
+      "one_liner": "Amazon อัพเกรดจาก HOLD เป็น STARTER (ระยะทดลอง) ครั้งแรก — consensus EPS ปี 2027 ปรับขึ้นเป็น $10.58 ตามคาดหลังงบ Q2 ดัน MoS จาก near-fail กลับมาเป็น +11.3% แต่ Charlie เตือนว่าตัวเลขนี้พึ่งพา multiple ที่ Warren เลือกสูงกว่าที่ตลาดจ่ายจริง — บน multiple ปัจจุบันจริง MoS แทบเป็น 0%",
+      "what": "Amazon มี 3 ธุรกิจหลัก: e-commerce+โฆษณา (North America/International) และ AWS cloud ที่ทำกำไรหลักของบริษัททั้งที่รายได้แค่ 21% ของทั้งหมด",
+      "why_invest": [
+        "consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (17 นักวิเคราะห์ อัพ 15 ราย ไม่มีใครปรับลง) ตามที่ Warren คาดไว้ว่าจะเกิดหลังงบ Q2 — แก้ปัญหาเดิมที่การ์ดใช้ตัวเลขเก่าจากแหล่งเดียวที่ยังไม่ปรับหลังงบ",
+        "AWS โต +36.7% YoY เร็วที่สุดใน 18 ไตรมาส + ธุรกิจชิป/AI ทำรายได้รันเรทเกิน $25B แล้ว — ตัวเลขที่รายงานจริง ไม่ใช่การประมาณการ",
+        "Fair Value ขยับขึ้นเป็น $307 (จาก $287) ตาม EPS ใหม่ MoS พลิกจาก near-fail เป็น +11.3% เข้าเกณฑ์ STARTER band",
+        "PEG พลิกจาก FAIL เป็น PASS (0.82) และ Expected Return ขยับขึ้นเป็น 33.8%/ปี — ทุกเกณฑ์ผ่านพร้อมกันเป็นครั้งแรก ทำให้ Warren เปลี่ยนคำแนะนำเป็น STARTER (ระยะทดลอง) และแจ้งให้พิจารณาเป็น ADD แบบแบ่งไม้ในรอบ Paper ถัดไป"
+      ],
+      "watch_out": [
+        "⚠️ Charlie CAUTION สำคัญ: การอัพเกรดเป็น STARTER พึ่งพา 'ตัวคูณ' ที่ Warren เลือกใช้ (29x) ซึ่งสูงกว่าตัวคูณตลาดจ่ายจริงตอนนี้บนกำไรเดียวกัน (25.73x) — ถ้าใช้ตัวคูณตลาดจริงแทน FV จะเหลือ ~$272 เกือบเท่าราคาปัจจุบันพอดี ทำให้ MoS แทบเป็น 0% ไม่ใช่ +11.3%",
+        "11.3% เป็นระยะขอบที่บางมาก (เกินเกณฑ์ STARTER band 8-15% นิดเดียว) — Charlie เห็นว่านี่คือจุดตัดสินว่าหุ้นเข้า STARTER band ได้จริงหรือไม่ แนะนำให้ Warren อธิบายเหตุผลที่เลือกตัวคูณ 29x แทน 25.73x ให้ชัดเจนก่อน",
+        "หมายเหตุความสอดคล้องเล็กน้อย: ตัวเลข PEG ที่ Warren รายงาน (0.82) คำนวณจากตัวคูณตลาดจริง (25.73x) ไม่ใช่ตัวคูณที่ใช้จริงกับ FV (29x) — ถ้าคำนวณด้วย 29x เหมือนกัน PEG จะเป็น 0.92 ยังผ่านเกณฑ์ 1.5 อยู่ดี ไม่กระทบคำตัดสินวันนี้",
+        "ธุรกิจ AWS/Ads ยังโตแรงจริงตามตัวเลขที่รายงานแล้ว — ประเด็นทั้งหมดอยู่ที่ 'ราคาที่ควรจ่าย' ไม่ใช่คุณภาพธุรกิจ"
+      ],
+      "bottom_line": "STARTER (ระยะทดลอง) — เกณฑ์ทั้งหมด (MoS/PEG/ER/WAF) ผ่านพร้อมกันเป็นครั้งแรกจาก EPS consensus ที่ปรับขึ้นจริง แต่ Charlie เตือนว่าการผ่านเกณฑ์ครั้งนี้บางมากและพึ่งพาตัวคูณที่ Warren เลือกสูงกว่าที่ตลาดจ่ายจริง — ธุรกิจ AWS ยังแข็งแรงจริง แต่จุดเข้าซื้อยังต้องระวัง รอ Warren อธิบายเหตุผลตัวคูณให้ชัดก่อนพิจารณา ADD จริง"
+    },
+    "mark_full": {
+      "business_overview": "Amazon แบ่ง 3 segment: North America (retail+ads) รายได้ $116.2B +16%, International $42.2B +15%, AWS (cloud) $42.2B +37% — AWS สร้างรายได้แค่ 21% แต่สร้าง operating income ถึง 61% ของทั้งบริษัท",
+      "tam": "AWS annualized run rate $169B โต +36.7%; AI revenue run rate ทะลุ $25B โตสามหลัก%; Amazon Ads run rate ~$74B โต +26%; Andy Jassy มองว่า AWS อาจโตถึงระดับ 1 ล้านล้านดอลลาร์ต่อปีในอนาคต",
+      "moat": "AWS #1 cloud broadest portfolio ครองใจองค์กรใหญ่/รัฐบาล; custom silicon (Graviton5/Trainium) ต้นทุนถูกกว่า x86/NVIDIA มาก ลูกค้าใช้เพิ่มขึ้นเรื่อยๆ; logistics network ใหญ่ที่สุดในโลก; Prime ecosystem stickiness สูง",
+      "latest_financials": "Q2 2026 บีตใหญ่ทุกด้าน: AWS +36.7% เร็วสุดใน 18 ไตรมาส, AI revenue run-rate ทะลุ $25B; consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 (จาก $9.91 เดิม) — FV Base ขยับขึ้นเป็น $307 (จาก $287) MoS พลิกเป็น +11.3% เข้าเกณฑ์ STARTER; Charlie คำนวณ FV อิสระด้วยตัวคูณตลาดจริง (25.73x) ได้ $272 เท่าราคาปัจจุบัน (MoS ~0%)",
+      "key_points": [
+        "AWS เร่งตัวต่อเนื่อง โต +36.7% YoY เร็วสุดใน 18 ไตรมาส — demand จริงไม่ใช่แค่คาดการณ์",
+        "✅ ปัญหา EPS ที่เคยใช้ตัวเลขเก่าเกินไปปิดจบแล้ว — consensus ปรับขึ้นจริงเป็น $10.58 ตามที่ Warren คาดไว้",
+        "Warren อัพเกรดเป็น STARTER (ระยะทดลอง) ครั้งแรก — MoS/PEG/ER/WAF ผ่านเกณฑ์พร้อมกันเป็นครั้งแรก",
+        "⚠️ Charlie CAUTION: การผ่านเกณฑ์พึ่งพาตัวคูณ 29x ที่สูงกว่าตัวคูณตลาดจริง 25.73x — บนตัวคูณจริง MoS แทบเป็น 0%"
+      ]
+    },
+    "warren_easy": [
+      "Warren ตรวจงานตัวเองแล้วถอนคำแนะนำ STARTER ที่ให้ไปเมื่อวาน — ปัญหาไม่ใช่ EPS (consensus $10.58 ยืนยันแล้วหลายรอบ ถูกต้อง) แต่เป็นตัวคูณ 29x ที่เลือกใช้ เหตุผลที่อ้างคือ AWS โตแรง แต่นั่นคือสาเหตุที่ consensus EPS ขึ้นมาเป็น $10.58 อยู่แล้ว เอามาอ้างซ้ำเพื่อจ่ายแพงกว่าตลาด = นับข่าวดีสองครั้ง",
+      "แก้ตัวคูณ 29x → 25.7x (ตัวคูณที่ตลาดจ่ายจริงบนกำไรเดียวกัน) ผล FV Base $307 → $272, MoS +11.3% → -0.1%, WAF 8.07 → 7.77, Action STARTER → HOLD พร้อมแก้ความไม่สอดคล้องที่ Charlie จับได้: เดิม MoS ใช้ 29x แต่ PEG ใช้ 25.73x ตอนนี้ใช้ 25.7x ทั้งคู่แล้ว ส่วน EPS/tier/BQ/GP/RA ไม่เปลี่ยน",
+      "Warren เขียนข้อจำกัดของวิธีนี้ไว้บนการ์ดตรงๆ ไม่ปิด: เมื่อตั้งตัวคูณเท่าตลาด Fair Value จะเท่ากับราคาโดยโครงสร้าง ทำให้ MoS ยุบเป็น ~0 และ ER ยุบเป็นอัตราการเติบโต ทั้งสองตัวจึงไม่บอกอะไร ข้อสรุปที่ป้องกันได้คือ 'ยังไม่มีส่วนเผื่อความปลอดภัยที่พิสูจน์ได้ที่ราคานี้ โดยไม่สมมติว่าตลาดจะยอมจ่ายแพงขึ้น' ไม่ใช่ 'AMZN มีมูลค่า $272 พอดี' — บันทึกไว้ว่ารอบวิเคราะห์เต็มครั้งหน้าต้องสร้างวิธีตั้งมูลค่าแบบใหม่ (DCF หรือแยกส่วนธุรกิจ)"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "review_date": "2026-08-13",
+      "paragraphs": [
+        "Charlie ตรวจ 2 รอบในวันเดียว รอบแรกตรวจแบบไม่รู้เหตุผลของ Warren รอบสองถูกส่งข้อโต้แย้งไปให้ และรอบสองเขา 'ยอมทั้งหมด' ในประเด็นวิธีคิด: เขาไม่ปกป้องตัวคูณ 25.26x ของตัวเองเลย เพราะกฎเลือกตัวคูณแบบ 'เอาค่าที่ต่ำกว่า' จะคืนค่าเป็นตัวคูณตลาดปัจจุบันเสมอสำหรับบริษัทที่กำไรโตเร็ว ผลคือ Fair Value เท่ากับราคาโดยอัตโนมัติ และ 'ราคาพื้น' ที่คำนวณได้กลับสูงกว่าราคากลาง ข้อสรุปของเขาคือ ไม่มีวิธีตั้งมูลค่าด้วยตัวคูณแบบใดใช้ได้กับ AMZN",
+        "แล้วเขาลงมือสร้างวิธีที่ขาดไปเอง — แยกคิดกำไรตามส่วนธุรกิจจากข้อมูลที่บริษัทเปิดเผย: AWS ไตรมาส 2 ปี 2026 รายได้ $42.2B กำไรจากการดำเนินงาน $16.6B (margin 39.3% เทียบปีก่อน $30.8B/$10.2B) ประมาณ AWS ปี 2027 ที่ $229.5B margin 38% แล้วคิดตัวคูณ 25x ส่วนธุรกิจที่เหลือ $694.9B margin 7.5% ตัวคูณ 18x ได้มูลค่า $221 ต่อหุ้น = ต่ำกว่าราคาปัจจุบัน 20.9% จุดสำคัญคือครั้งนี้ผลลัพธ์ไม่ได้ออกมาเท่าราคา แปลว่ามีข้อมูลจริง เขาระบุว่าเป็นการคำนวณครั้งแรก (ช่วง $190-252) จึงคงคำตัดสินไว้ที่ CAUTION แต่แจ้งว่าถ้าตรวจละเอียดอีกครั้งแล้วยังได้ราว $221 จะขยับเป็นไม่เห็นด้วยเชิงตัวเลข",
+        "ประเด็นคุณภาพกำไรที่เขาขุดเพิ่ม: กำไรสุทธิ 12 เดือนล่าสุด $135.3B มีถึง $85.1B (62.9%) มาจากรายการตีมูลค่าเงินลงทุนตามราคาตลาด (ก้อนใหญ่จากหุ้น Anthropic ราว $53B) ไม่ใช่กำไรจากการดำเนินงาน ดังนั้นตัวคูณกำไรที่เห็นบนหน้าจอไม่ใช่ตัวคูณกำไรจริง คิดบนฐานกำไรที่เกิดซ้ำได้จะสูงกว่านั้นมาก และเขาแก้ 'ราคาพื้น' ของตัวเองลงเหลือ $99 หลังหักรายการเหล่านี้ออกให้หมด ส่วนกระแสเงินสดอิสระ 12 เดือนเขาคำนวณได้ -$11.6B (ติดลบมากกว่าที่บันทึกไว้ -$7.6B) โดยงบลงทุนกำลังวิ่งที่ 2.30 เท่าของค่าเสื่อมราคา ซึ่งเป็นความเสี่ยงที่ยังไม่มีใครใส่ในแบบจำลอง",
+        "สิ่งที่ควรให้เครดิต: เขาเอาวิธีตรวจที่ใช้จับปัญหาหุ้นอีกตัวมาตรวจฐานข้อมูลของ AMZN ด้วย ทั้งที่ฐานข้อมูลนั้นเข้าข้างตัวเขาเอง ผลคือผ่าน (คลาดกัน 1.1%) = ยืนยัน EPS $10.58 ที่ Warren ใช้เป็นครั้งที่ 4 และเขายังตั้งข้อสังเกตว่าผลตอบแทนต่อเงินลงทุนที่คำนวณได้ 13.0% ต่ำกว่าเกณฑ์ระดับ 'Inevitable' จึงเสนอให้ลดชั้นเป็น Pre-Inevitable — แต่ระบุเองว่าแทบไม่กระทบการจัดขนาดพอร์ต เป็นเรื่องความถูกต้องของข้อมูล"
+      ]
+    },
+    "idea_th": "HOLD — รอบนี้ Warren ถอนคำแนะนำ STARTER ที่เพิ่งให้ไปเมื่อวาน เหตุผลไม่ใช่ธุรกิจแย่ลง แต่เป็นเพราะตรวจพบว่าตัวเองนับข่าวดีซ้ำสองครั้ง: ตัวคูณ 29x ที่ใช้ตั้ง Fair Value อ้างเหตุผลว่า AWS โตแรง (+36.7% YoY, backlog $496B, AI run-rate เกิน $25B) — แต่นั่นคือเหตุผลที่ทำให้ consensus EPS ขยับขึ้นเป็น $10.58 อยู่แล้ว การเอาข่าวดีเดิมมาอ้างเพื่อจ่ายแพงกว่าตลาดอีกชั้น จึงเป็นการนับสองรอบ แก้เป็นตัวคูณตลาดจริง 25.7x → Fair Value $307 เหลือ $272, MoS จาก +11.3% เหลือ -0.1%, WAF 8.07 → 7.77 กลับเป็น HOLD และแก้ความไม่สอดคล้องเดิมที่ PEG กับ FV ใช้ตัวคูณคนละตัว ให้ใช้ 25.7x ทั้งคู่ ⚠️ Charlie ยัง CAUTION และชี้ประเด็นที่ลึกกว่า: การตั้งตัวคูณเท่าตลาด ทำให้ Fair Value เท่ากับราคาโดยอัตโนมัติ = บอกไม่ได้เลยว่าถูกหรือแพง เขาจึงสร้างวิธีใหม่ แยกคิดมูลค่าตามส่วนธุรกิจ (AWS แยกจาก non-AWS) ได้ $221 คือต่ำกว่าราคาปัจจุบัน 20.9% ธุรกิจ AWS/โฆษณายังแข็งแรงจริงตามงบ แต่ที่ราคานี้ยังไม่มีส่วนเผื่อความปลอดภัยที่พิสูจน์ได้",
+    "story_gate_th": {
+      "what": "Amazon มี 3 ธุรกิจ: e-commerce + โฆษณา + AWS cloud ที่สร้าง operating income ส่วนใหญ่ของบริษัททั้งที่รายได้แค่ 21%; AWS เร่งเป็น +36.7% เร็วสุดใน 18 ไตรมาส",
+      "why": "consensus EPS ปี 2027 ปรับขึ้นจริงเป็น $10.58 ตามที่ Warren คาดไว้ว่าจะเกิดหลังงบ Q2 แก้ปัญหาเดิมที่การ์ดใช้ตัวเลขเก่าจากแหล่งเดียว — Fair Value ขยับขึ้นเป็น $307 ทำให้ MoS พลิกเป็น +11.3% และเกณฑ์ทุกตัวผ่านพร้อมกันเป็นครั้งแรก Warren จึงอัพเกรดเป็น STARTER แต่ Charlie ชี้ว่าการผ่านเกณฑ์นี้พึ่งพาตัวคูณ 29x ที่สูงกว่าตัวคูณตลาดจริง (25.73x) — เป็นจุดที่ต้องตรวจสอบก่อนตัดสินใจจริง",
+      "risk": "AWS ชะลอตัวต่ำกว่า 20% หากคู่แข่ง Azure/GCP แย่งงาน AI ไปมาก; คดี FTC เรื่องราคาโฆษณา; FCF ยังติดลบจากการเร่งลงทุน AI; ⚠️ ถ้าตัวคูณที่ตลาดยอมจ่ายจริงไม่ขยับขึ้นไปหา 29x ตามที่ Warren สมมติ MoS ที่แท้จริงจะใกล้ 0% ไม่ใช่ 11.3% — ความเสี่ยงหลักตอนนี้อยู่ที่ราคาเข้า ไม่ใช่คุณภาพธุรกิจ"
+    },
+    "bull_th": [
+      "AWS โต +36.7% YoY เร็วสุดใน 18 ไตรมาส margin ขยายขึ้น 650bps เป็น 39% กำไรจากการดำเนินงานโต +43% และ backlog $496B — ตัวเลขฝั่งธุรกิจแข็งแรงจริง ตรวจสอบได้จากงบ",
+      "consensus EPS ปี 2027 ที่ $10.58 (17 นักวิเคราะห์ อัพ 15 ไม่มีลง) ถูกยืนยันโดยอิสระถึง 4 ครั้ง รวมการทดสอบย้อนกับผลจริงที่บริษัทประกาศแล้ว — ฐานกำไรที่ใช้คำนวณไม่ใช่ประเด็นของหุ้นตัวนี้",
+      "AI revenue run-rate ทะลุ $25B แล้ว และ custom chip (Trainium/Graviton) ต้นทุนถูกกว่า ลูกค้ารายใหญ่เริ่มใช้จริงมากขึ้น",
+      "ถ้ามองแบบย้อนกลับ ราคาปัจจุบันต้องการการเติบโตเพียง 3.7% ต่อปีก็คุ้มแล้ว ซึ่งเป็นเกณฑ์ที่ต่ำมากสำหรับธุรกิจระดับนี้ — Charlie บันทึกข้อนี้ไว้เองเพื่อถ่วงดุลความเห็นเชิงลบของเขา"
+    ],
+    "risk_th": [
+      "⚠️ วิธีตั้งมูลค่าของทั้งสองฝ่ายใช้ตัวคูณเท่าตลาด ทำให้ Fair Value เท่ากับราคาโดยอัตโนมัติ = ไม่บอกได้ว่าถูกหรือแพง ทั้งสองฝ่ายยอมรับข้อจำกัดนี้เอง — Charlie แก้ด้วยการแยกคิดตามส่วนธุรกิจ ได้ $221 (ต่ำกว่าราคา 20.9%)",
+      "กำไรสุทธิ 12 เดือนล่าสุด 62.9% ($85.1B จาก $135.3B) มาจากการตีมูลค่าเงินลงทุนตามราคาตลาด (ก้อนใหญ่จากหุ้น Anthropic) ไม่ใช่กำไรจากการดำเนินงาน — ตัวคูณกำไรที่เห็นจึงไม่ใช่ตัวคูณกำไรจริง",
+      "กระแสเงินสดอิสระ 12 เดือนติดลบ (Charlie คำนวณได้ -$11.6B มากกว่าที่บันทึกไว้ -$7.6B) งบลงทุนวิ่งที่ 2.30 เท่าของค่าเสื่อมราคา — หางค่าเสื่อมที่จะตามมาเป็นความเสี่ยงต่อตัวกำไรที่ใช้ตั้งมูลค่าอยู่ และยังไม่มีใครใส่ในแบบจำลอง (นักวิเคราะห์อัพ 15 ไม่มีลง)",
+      "คดีผูกขาดของ FTC ขึ้นศาลต้นปี 2027 ซึ่งอยู่ในกรอบเวลาเดียวกับที่ใช้ประเมินมูลค่า และยังมีร่างคำฟ้องเรื่องโฆษณาอีกฉบับ — งบลงทุนปี 2027 ต้องพึ่งกระแสเงินสดหรือกู้ใหม่ เพราะออกหุ้นกู้ปีนี้ไปแล้วราว $89B และแจ้งว่าไม่ออกเพิ่มในปีนี้",
+      "ผลตอบแทนต่อเงินลงทุนคำนวณได้ 13.0% ต่ำกว่าเกณฑ์ระดับ Inevitable (>15%) Charlie เสนอให้ลดชั้นเป็น Pre-Inevitable — เป็นเรื่องความถูกต้องของการจัดชั้น ไม่กระทบการจัดขนาดพอร์ต"
     ]
   },
   "META": {
@@ -1397,8 +1400,8 @@
         60
       ]
     },
-    "idea": "Price/market re-check only (no new primary docs; Q3 FY26 reports 2026-08-26). Price $425.90->$411.68 (-3.3%), FV Base $500 unchanged. MoS 14.8%->17.7% now clears the 15% gate outright (was a 0.2pt near-miss last batch), but PEG 1.89->1.82 still FAILS the 1.5 Effective Cap on the same sourced consensus growth (15.3%/yr). ER 18.6%->19.3%/yr, still passes. Per BUY Decision Flow Step 5, STARTER requires PEG/ER/WAF to all pass with only MoS allowed to miss <=7pts -- here PEG is the failing gate, not MoS, so STARTER does not apply. Action stays WATCH, same call as last batch but now PEG-gated rather than MoS-gated. WAF 7.48 (was 7.35) -- also corrects a mislabeled 07-15 conviction band (7.35 tagged HIGH, but 6.5-7.5 = MEDIUM per WAF Score table).",
-    "updated": "2026-08-11",
+    "idea": "WATCH — the multi-batch growth-input conflict (15.3% vs ~20%) is now CLOSED rather than carried. The ~20% figure that would have flipped SNPS to BUY does not survive a basis check: it comes from a Nasdaq panel running ~$4.1/share below company non-GAAP, and dividing that panel's growth rate into a company-basis forward P/E mixes two bases. Every basis-consistent read lands in a 9-18% band and PEG clears only at ≥18.6%, so the WATCH call holds across the entire defensible range. MoS (17.7%) and ER (19.3%/yr) both pass; PEG is the sole binding gate, and the 🌓 STARTER exception covers only a MoS shortfall ≤7pts with PEG/ER/WAF all passing, so it does not apply. Quality thesis intact and unchanged — a valuation-gate call, not a thesis downgrade. SNPS is a LIVE BUY CANDIDATE at the Q3 FY26 print on 2026-08-26 and should be re-run the morning after, not at the next scheduled batch.",
+    "updated": "2026-08-12",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -2228,159 +2231,6 @@
       "อัตราการเติบโตที่ใช้คำนวณ Expected Return (35.1%/ปี) เก่าไปแล้ว 4 สัปดาห์ ต้อง refresh รอบหน้า"
     ]
   },
-  "PLTR": {
-    "symbol": "PLTR",
-    "display": "PLTR",
-    "category": "software",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Software & AI Platform",
-    "sectorSlug": "software",
-    "chips": [
-      "Software",
-      "AI Platform + Government"
-    ],
-    "bull": [
-      "รายได้ Q2 2026 $1.935B +93% YoY, US Commercial +149% YoY = growth เร่งขึ้นต่อเนื่องทั้งฝั่ง government และ commercial",
-      "Rule of 40 พุ่งเป็น 155% (Adj Op Margin 62%, Adj FCF margin 63%) = profitable growth ที่หายากมากในกลุ่ม software",
-      "AIP (Artificial Intelligence Platform) bootcamp model เร่ง enterprise adoption — ปิดดีล $1M+ ถึง 220 ดีลใน Q2 เดียว",
-      "US Commercial RDV (remaining deal value) $6.238B +124% YoY = revenue visibility ระยะยาวชัดเจนขึ้น",
-      "Government moat: Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community — switching cost สูงมาก"
-    ],
-    "risk": [
-      "Valuation แพงมาก — multiple สูงกว่ากลุ่ม software เกือบทุกตัว ต้องการ execution perfect ต่อเนื่องหลายปี",
-      "Government revenue concentration — พึ่งพา contract renewal + budget cycle ของภาครัฐสหรัฐฯ",
-      "Dual-class share structure (Karp/Thiel/Cohen) = governance control อยู่ในมือผู้ก่อตั้งกลุ่มเล็ก",
-      "Insider selling ต่อเนื่องจากผู้บริหารระดับสูงในหลายไตรมาสที่ผ่านมา",
-      "Competition จาก hyperscaler AI platforms + in-house data platform ของลูกค้าองค์กรขนาดใหญ่"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 6.69,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 174.94,
-    "fv": 114,
-    "mos": -53.46,
-    "fpe": 64.32,
-    "peg": 1.43,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.3,
-        "green",
-        93
-      ],
-      "va": [
-        1.3,
-        "orange",
-        13
-      ],
-      "ra": [
-        5.8,
-        "orange",
-        58
-      ]
-    },
-    "idea": "Resolved the standing self-derived-EPS flag: UBS's sourced Aug-3 EPS estimate replaces it, lifting FV Base $101->$114. MoS improves to -53.46% but remains a decisive fail; PEG still breaches the 1.0 Fast Grower cap. Tier-upgrade watch item (3rd consecutive batch, 4/5 Crystallization Signals) reviewed and held -- flagged to Oat as an explicit decision point rather than executed unilaterally. WATCH, not BUY.",
-    "updated": "2026-08-12",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-08-12",
-      "tier": "🌱 Fast Grower",
-      "tier_slug": "fast-grower",
-      "what": "Palantir's AIP platform + Ontology converts enterprise/government data into production AI decisions within days — a capability hyperscalers (MSFT/GOOGL/AMZN) cannot replicate because they lack operational context and workflow depth. Q2 2026 adds an \"AI Sovereignty\" framing: customers own the weights/models/data instead of feeding frontier-lab APIs.",
-      "why": "Consensus post-Q2-print is digesting a genuine beat-and-raise (revenue +93% YoY vs ~81% expected, Adj EPS $0.41 vs ~$0.35 consensus, FY2026 guidance raised to $8.15-8.16B/+82% from $7.65-7.66B/+71% — management calls it the largest-ever guidance raise) alongside NDR accelerating to 157% and Rule of 40 hitting 155% (12th straight quarter of expansion). Warren's second-level read: the market had already priced in a large chunk of this optimism ahead of the print (stock +21.6% into earnings on NVIDIA/NGC2 momentum since mid-July) — the beat is real and the business quality case has gotten stronger, not weaker, but the price has run even further ahead of a defensible valuation base than it had at the last check (MoS -33.7% pre-print → -61.05% post-print, because price outran even a genuinely-raised FV). This is a case of \"the business got better AND more overvalued at the same time\" — those are not contradictory.",
-      "risk": "Microsoft/Google/Amazon replicate AIP bootcamp effectiveness ผ่าน Azure AI Foundry/Vertex AI สำเร็จ; NGC2/government AI budget สะดุดในขั้น appropriations; growth decelerates meaningfully faster than the 45%/yr forward assumption used here; หรือ the Cupat securities-class-action 10th Circuit appeal (oral arguments already held, ruling pending) resolves against the company."
-    },
-    "tier": "🌱 Fast Grower",
-    "charlie": {
-      "charlie_verdict": "DISAGREE",
-      "verified_claims": [
-        "Price $174.94 cross-checked 2-source: CNBC exact match to Warren's snapshot; Nasdaq live $172.22 (-1.56%, within 2% no-override threshold)",
-        "🔴 CANNOT VERIFY Warren's core input this batch: Warren's card states 'UPGRADED this batch: UBS Aug 3 2026 sourced EPS estimate FY2027E $2.72' replacing a self-derived $2.41. Independently re-pulled the full Nasdaq analyst earnings-forecast API panel for PLTR Dec2027: consensus mean $1.81 (13 analysts, 8up/0down), HIGH estimate $2.69, LOW $1.17. Warren's $2.72 is ABOVE every single analyst in the visible 13-analyst panel, including the extreme-high one. WebSearch specifically for a UBS $2.72 FY2027E estimate found no corroborating source -- the closest matches were an unrelated Motley Fool back-of-envelope calc ($2.70, from a revenue x margin heuristic, not an analyst estimate) and a separate unrelated aggregator figure of $2.07 (also not $2.72, also not attributed to UBS). This does not check out as 'consensus' or as a verifiable UBS figure",
-        "TTM actual EPS $1.17 (CNBC trailing field) -- matches, but TTM P/E at current price is now ~149.5x ($174.94/$1.17), which breaches Charlie's own 80x profit-thin-exception threshold. Prior PLTR reviews (07-16 through 08-08) kept using a P/E-based method past that threshold -- this round corrects that and switches to FCF/share as the primary basis, per house methodology rule",
-        "Independently sourced PLTR's own FY2026 free cash flow guidance (Tier 2, company-reported, stronger evidence than analyst consensus): Q1 2026 adjusted FCF $925M (57% margin), Q2 2026 adjusted FCF $1.22B (63% margin), full-year 2026 guidance $4.5-4.7B -- used the $4.6B midpoint against ~2.40B shares outstanding (CNBC) for FCF/share ~= $1.92"
-      ],
-      "concerns": [
-        "🔴 PRIMARY FINDING: Warren's $114 FV Base rests on an EPS figure ($2.72) that exceeds the entire visible analyst consensus panel and could not be independently verified from any source, including a direct search for the specific UBS citation. This is Charlie's most material catch this batch -- structurally the same failure mode the 2026-07-20 Evidence Hierarchy rules were written to catch (an unverifiable/inflated 'sourced' number treated as satisfying the Consensus-as-Base rule). Recommend Warren re-pull the actual Nasdaq consensus ($1.81) or produce the primary UBS document before this EPS basis is used again",
-        "Using Charlie's independently-verified $84 FV (FCF-basis) vs Warren's $114, the gap is 26.3% -- above the 20% mandatory-CAUTION threshold on its own even before considering the sourcing problem",
-        "Both sides still agree WATCH/no-BUY is correct (MoS is deeply negative on any FV basis: -53% Warren's own, -119% on Charlie's) -- this DISAGREE does not change the action call today, but it should block PLTR from any future BUY/STARTER consideration until the EPS basis is fixed, since the FV-gap magnitude would otherwise look like it's narrowing (19.8%->improving) when in fact the sourcing quality moved in the wrong direction",
-        "PEG check for Fast Grower tier classification (§4.5): even on Warren's own reported peg=1.43, and worse on Charlie's real-consensus basis (~2.2), PLTR fails the PEG<1.0 confirmation test -- not treated as a re-classification trigger since WAF/VA already scores this appropriately low (1.3) and action is WATCH; flagging for the record only"
-      ],
-      "summary": "",
-      "review_date": "2026-08-12"
-    },
-    "mark_easy": {
-      "one_liner": "Palantir ธุรกิจยังโตแรงจริง แต่รอบนี้ Charlie ยกระดับคำตัดสินเป็น DISAGREE (แรงกว่า CAUTION) เพราะตัวเลขกำไรที่ Warren ใช้คำนวณมูลค่า ($2.72) สูงกว่านักวิเคราะห์ทุกคนในกลุ่มที่มองเห็น และตรวจหาแหล่งอ้างอิงไม่พบ — ตัวเลข Fair Value รอบนี้จึงยังเชื่อถือไม่ได้เต็มที่",
-      "what": "Palantir ขายซอฟต์แวร์ที่แปลงข้อมูลองค์กร/ภาครัฐให้กลายเป็นการตัดสินใจ AI ใช้งานจริงได้ภายในไม่กี่วัน ผ่าน 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow), Gotham (การป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่แม้ air-gapped)",
-      "why_invest": [
-        "ธุรกิจยังแข็งแรงจริงตามงบ Q2 2026: รายได้โต +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัท",
-        "กระแสเงินสดอิสระเป็นของจริงและตรวจสอบได้: ไตรมาส 1 ปี 2026 ทำได้ $925M (margin 57%), ไตรมาส 2 ทำได้ $1.22B (margin 63%) และบริษัทไกด์ทั้งปี 2026 ที่ $4.5-4.7B — เป็นตัวเลขจากบริษัทเองที่ Charlie ยืนยันแล้วว่าเชื่อถือได้กว่าการประมาณการนักวิเคราะห์",
-        "งานวิจัยอิสระ 5 ชิ้น (11 ส.ค.) ส่วนใหญ่เป็นการยืนยันสิ่งที่รู้แล้ว: การตรวจสอบ moat ผ่านช่องทางจริง, เรื่องเล่า sovereign AI จาก 3 แหล่ง, ไทม์ไลน์สัญญาภาครัฐ",
-        "Gotham + Maven Smart System ฝังลึกใน DoD/หน่วยข่าวกรอง — switching cost สูงมาก"
-      ],
-      "watch_out": [
-        "🔴 ประเด็นสำคัญที่สุดรอบนี้ — Charlie ยกระดับเป็น DISAGREE (จาก CAUTION รอบก่อน): Warren ระบุว่าได้อัพเกรดตัวเลขกำไรปี 2027 เป็น $2.72 โดยอ้างว่าเป็นตัวเลขที่มีแหล่งอ้างอิง แต่ Charlie ดึงกลุ่มนักวิเคราะห์ทั้งชุดมาตรวจพบว่าค่าเฉลี่ยจริงอยู่ที่ $1.81 (13 นักวิเคราะห์) และตัวเลขสูงสุดในกลุ่มอยู่ที่ $2.69 — แปลว่า $2.72 สูงกว่านักวิเคราะห์ทุกคนที่มองเห็น รวมถึงคนที่มองบวกสุด",
-        "🔴 Charlie ค้นหาแหล่งอ้างอิงของตัวเลข $2.72 โดยเฉพาะแล้วไม่พบเลย — ที่ใกล้เคียงที่สุดเป็นการคำนวณคร่าวๆ จากบทความทั่วไป (ไม่ใช่ประมาณการนักวิเคราะห์) และอีกแหล่งให้ $2.07 ซึ่งก็ไม่ใช่ $2.72 สรุปว่าตัวเลขนี้ยังยืนยันไม่ได้ว่าเป็น consensus หรือมาจากที่ไหน",
-        "ผลคือ Fair Value $114 ของ Warren ตั้งอยู่บนฐานกำไรที่ยังตรวจสอบไม่ได้ — Charlie คำนวณอิสระด้วยกระแสเงินสดอิสระจริงจากบริษัท (~$1.92/หุ้น) ได้ FV $84 และตรวจทานอีกวิธีด้วย consensus จริง ($1.81) ได้ $80 — สองวิธีให้ผลใกล้กันมาก ห่างจาก Warren 26.3% เกินเกณฑ์บังคับ 20% อยู่แล้วก่อนจะนับปัญหาแหล่งที่มา",
-        "ทั้งสองฝ่ายเห็นตรงกันว่า WATCH/ไม่ซื้อ ถูกต้อง เพราะ MoS ติดลบหนักทุกวิธีคำนวณ (-53% ฝั่ง Warren, -119% ฝั่ง Charlie) — แต่ Charlie ระบุชัดว่าปัญหานี้ควรบล็อก PLTR ไม่ให้เข้าพิจารณา BUY/STARTER ในอนาคตจนกว่าจะแก้ฐานกำไรให้ถูกต้อง เพราะไม่อย่างนั้นช่องว่างจะดูเหมือนแคบลงทั้งที่คุณภาพแหล่งข้อมูลแย่ลง",
-        "Charlie ยังแก้วิธีคำนวณของตัวเองรอบนี้: P/E ย้อนหลังของ PLTR สูงถึง ~149.5x เกินเกณฑ์ที่ใช้ P/E ได้ (80x) ซึ่งรอบก่อนๆ ยังใช้ P/E อยู่ผิดวิธี รอบนี้จึงสลับไปใช้กระแสเงินสดอิสระเป็นฐานหลักตามกฎ"
-      ],
-      "bottom_line": "WATCH — ธุรกิจดีจริงและกระแสเงินสดเป็นของจริงตรวจสอบได้ แต่ตัวเลข Fair Value รอบนี้เชื่อถือไม่ได้เต็มที่: Charlie ยกระดับเป็น DISAGREE เพราะกำไรที่ Warren ใช้ ($2.72) สูงกว่านักวิเคราะห์ทุกคนในกลุ่มและหาแหล่งอ้างอิงไม่พบ ควรถือว่ายังไม่มีตัวเลขมูลค่าที่ไว้ใจได้จนกว่า Warren จะดึง consensus จริงหรือแสดงเอกสารต้นทาง"
-    },
-    "mark_full": {
-      "business_overview": "Palantir ก่อตั้งปี 2003 สำนักงานใหญ่ Aventura, FL จดทะเบียน Nasdaq (PLTR) ทำซอฟต์แวร์ 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow, bootcamp 5 วันจากศูนย์ถึง production), Gotham (ป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่รวม air-gapped) รายได้แบ่ง Government 54% / Commercial 46%, US 74% / International 26% (FY2025)",
-      "tam": "Q2 2026 มีการเปลี่ยน framing จาก 'AIP bootcamp speed' เป็น 'AI Sovereignty' — ลูกค้าเป็นเจ้าของ/ควบคุม data, weights, models เองแทนที่จะส่งข้อมูลลับให้ frontier lab ภายนอก ตลาด enterprise decision infrastructure ยังอยู่ในช่วงต้นของการนำ agentic AI ไปใช้จริงในองค์กรขนาดใหญ่และภาครัฐ",
-      "moat": "Ontology-based data architecture ที่ยากจะลอกเลียนเพราะฝังลึกในกระบวนการทำงานของลูกค้าแต่ละราย (ไม่ใช่แค่โมเดล AI); Forward Deployed Engineers ที่ทำงานหน้างานกับลูกค้าโดยตรงเป็นความได้เปรียบด้าน execution ที่ hyperscaler ไม่มี; ในฝั่งภาครัฐ Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community switching cost สูงมาก CEO Karp ย้ำว่า 'ไม่แข่งกับ hyperscaler แต่วิ่งอยู่บนนั้น'",
-      "latest_financials": "Q2 2026: รายได้ $1,935.5M +93% YoY (US Commercial +149%, US Government +90%), Adj. Op Margin 62%, Adj. FCF margin 63%, Rule of 40 = 155% (สถิติใหม่ 12 ไตรมาสติด), NDR 157%, FY2026 guidance ยกเป็น $8.15-8.16B (+82% YoY) — การยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัทตามคำผู้บริหาร; ข่าว 08-06/08-07 ยืนยันเป็นการพูดซ้ำตัวเลขเดิม ไม่มีข้อมูลใหม่",
-      "key_points": [
-        "งบ Q2 2026 แข็งแรงจริง: รายได้ +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีครั้งใหญ่ที่สุดในประวัติศาสตร์",
-        "🔴 Charlie ยกระดับเป็น DISAGREE: กำไรปี 2027 ที่ Warren ใช้ ($2.72) สูงกว่านักวิเคราะห์ทุกคนในกลุ่ม (ค่าเฉลี่ย $1.81, สูงสุด $2.69) และหาแหล่งอ้างอิงไม่พบ",
-        "Charlie คำนวณอิสระ 2 วิธีให้ผลใกล้กัน: กระแสเงินสดอิสระจริง → FV $84, consensus จริง → FV $80 (Warren $114 ห่าง 26.3%)",
-        "กระแสเงินสดอิสระเป็นของจริงตรวจสอบได้: Q1 $925M (57% margin), Q2 $1.22B (63%), ไกด์ทั้งปี $4.5-4.7B",
-        "ทั้งคู่เห็นตรงกันว่า WATCH ถูกต้อง (MoS ติดลบหนักทุกวิธี) แต่ปัญหาฐานกำไรควรบล็อกไม่ให้เข้าพิจารณา BUY จนกว่าจะแก้"
-      ]
-    },
-    "warren_easy": [
-      "PLTR tier Fast Grower WAF 6.69 (ขยับจาก 6.59 ยังโซน MEDIUM) — รอบนี้ตรวจงานวิจัย 5 ชิ้นจาก 11 ส.ค. ว่าควรขยับ thesis/มูลค่าไหม สรุปว่าส่วนใหญ่เป็นการยืนยันสิ่งที่รู้แล้ว (moat, sovereign AI, ไทม์ไลน์สัญญาภาครัฐ) บวกการอัพเกรดฐานกำไร 1 จุด: Warren เปลี่ยนไปใช้ตัวเลขกำไรปี 2027 ที่ $2.72 แทนตัวเลขที่การ์ดคำนวณเองเดิม ($2.41) ทำให้ FV ขยับขึ้นเป็น $114 (จาก $101)",
-      "MoS ดีขึ้นเป็น -53.46% (จาก -70.31%) แต่ยัง FAIL เด็ดขาด; PEG ดีขึ้นเป็น ~1.43 แต่ยังไม่ผ่านเพดาน 1.0 ของ Fast Grower; ER 36.79%/ปี ผ่านเชิงตัวเลขแต่ไม่ override MoS ที่ fail",
-      "⚠️ แต่ฐานกำไรที่ใช้ขยับ FV รอบนี้คือจุดที่ Charlie ยกระดับเป็น DISAGREE — ควรถือว่าตัวเลข FV $114 ยังไม่ผ่านการตรวจสอบอิสระ; เรื่องการอัพเกรด tier ที่ถูก flag 3 รอบติดยังคง HELD ไว้ที่ Fast Grower ไม่อัพเกรด ตามวินัยกัน tier เฟ้อ"
-    ],
-    "charlie_easy": {
-      "verdict": "DISAGREE",
-      "paragraphs": [
-        "🔴 ข้อค้นพบหลักรอบนี้ (ยกระดับจาก CAUTION เป็น DISAGREE): Warren ระบุในการ์ดว่าได้อัพเกรดตัวเลขกำไรปี 2027 เป็น $2.72 โดยอ้างว่าเป็นตัวเลขที่มีแหล่งอ้างอิง มาแทนตัวเลขที่การ์ดคำนวณเองเดิม ($2.41) — Charlie ดึงกลุ่มนักวิเคราะห์ทั้งชุดสำหรับปี 2027 มาตรวจอิสระ พบค่าเฉลี่ยจริงอยู่ที่ $1.81 (13 นักวิเคราะห์) โดยตัวเลขสูงสุดในกลุ่มคือ $2.69 และต่ำสุด $1.17 แปลว่า $2.72 ของ Warren สูงกว่านักวิเคราะห์ทุกคนที่มองเห็นได้ รวมถึงคนที่มองบวกที่สุด และเมื่อ Charlie ค้นหาแหล่งอ้างอิงของตัวเลข $2.72 นี้โดยเฉพาะก็ไม่พบเลย — ที่ใกล้เคียงที่สุดเป็นการคำนวณคร่าวๆ จากบทความทั่วไป (ไม่ใช่ประมาณการนักวิเคราะห์) และอีกแหล่งให้ $2.07 ซึ่งก็ไม่ตรงกัน สรุปว่าตัวเลขนี้ยืนยันไม่ได้ทั้งในฐานะ consensus และในฐานะตัวเลขที่มีเอกสารต้นทาง",
-        "Charlie ระบุว่านี่เป็นรูปแบบความผิดพลาดเดียวกับที่กฎ Evidence Hierarchy (20 ก.ค. 2026) ถูกเขียนขึ้นมาเพื่อจับ — คือตัวเลขที่ยืนยันไม่ได้/สูงเกินจริงถูกนำมาใช้เสมือนว่าผ่านกฎ Consensus-as-Base แล้ว แนะนำให้ Warren ดึง consensus จริง ($1.81) หรือแสดงเอกสารต้นทางก่อนจะใช้ฐานกำไรนี้อีก; Charlie ยังแก้วิธีคำนวณของตัวเองรอบนี้ด้วย — P/E ย้อนหลังของ PLTR สูงถึง ~149.5x เกินเกณฑ์ 80x ที่ใช้ P/E ได้ ซึ่งรอบก่อนๆ (16 ก.ค. ถึง 8 ส.ค.) ยังใช้ P/E อยู่ผิดวิธี รอบนี้จึงสลับไปใช้กระแสเงินสดอิสระจากไกด์ของบริษัทเองเป็นฐานหลักตามกฎ",
-        "ผลการคำนวณอิสระ 2 วิธีให้ผลใกล้กันมาก: ใช้กระแสเงินสดอิสระจริง (ไกด์ทั้งปี 2026 $4.5-4.7B กลาง $4.6B หารด้วยหุ้น ~2.40B = ~$1.92/หุ้น) ได้ FV $84 และตรวจทานด้วย consensus จริง ($1.81) ได้ $80 — ต่างกันแค่ $4 ยืนยันว่า $114 ของ Warren คือตัวเลขที่หลุดกรอบ ไม่ใช่ตัวเลขของ Charlie ช่องว่าง 26.3% เกินเกณฑ์บังคับ 20% อยู่แล้วก่อนจะนับปัญหาแหล่งที่มา ⚠️ ทั้งสองฝ่ายเห็นตรงกันว่า WATCH/ไม่ซื้อ ถูกต้อง (MoS ติดลบหนักทุกวิธี: -53% ฝั่ง Warren, -119% ฝั่ง Charlie) คำตัดสิน DISAGREE นี้จึงไม่เปลี่ยน action วันนี้ แต่ Charlie ระบุชัดว่าควรบล็อก PLTR ไม่ให้เข้าพิจารณา BUY/STARTER ในอนาคตจนกว่าฐานกำไรจะถูกแก้ เพราะไม่อย่างนั้นช่องว่างจะดูเหมือนแคบลงทั้งที่คุณภาพแหล่งข้อมูลแย่ลง"
-      ],
-      "review_date": "2026-08-12"
-    },
-    "idea_th": "WATCH — ธุรกิจ Palantir ยังโตแรงจริงตามงบ Q2 2026 (รายได้ +93% YoY, US Commercial +149%, ยกเป้าทั้งปีครั้งใหญ่ที่สุดในประวัติศาสตร์) และกระแสเงินสดอิสระเป็นของจริงตรวจสอบได้ (Q1 $925M margin 57%, Q2 $1.22B margin 63%, ไกด์ทั้งปี $4.5-4.7B) 🔴 แต่รอบนี้ Charlie ยกระดับคำตัดสินเป็น DISAGREE (แรงกว่า CAUTION รอบก่อน) ในประเด็นที่สำคัญมาก: Warren ระบุว่าอัพเกรดฐานกำไรปี 2027 เป็น $2.72 โดยอ้างว่ามีแหล่งอ้างอิง แต่ Charlie ดึงกลุ่มนักวิเคราะห์ทั้งชุดมาตรวจพบค่าเฉลี่ยจริงอยู่ที่ $1.81 (13 นักวิเคราะห์) สูงสุดในกลุ่ม $2.69 — แปลว่า $2.72 สูงกว่านักวิเคราะห์ทุกคนที่มองเห็นได้ และค้นหาแหล่งอ้างอิงของตัวเลขนี้โดยเฉพาะแล้วไม่พบเลย Charlie คำนวณอิสระ 2 วิธีให้ผลใกล้กันมาก (กระแสเงินสดอิสระจริง → $84, consensus จริง → $80) ห่างจาก Warren ($114) 26.3% เกินเกณฑ์บังคับ 20% อยู่แล้วก่อนนับปัญหาแหล่งที่มา ทั้งสองฝ่ายเห็นตรงกันว่า WATCH/ไม่ซื้อ ถูกต้องเพราะ MoS ติดลบหนักทุกวิธีคำนวณ (-53% ฝั่ง Warren, -119% ฝั่ง Charlie) — แต่ควรถือว่ายังไม่มีตัวเลข Fair Value ที่ไว้ใจได้สำหรับ PLTR จนกว่า Warren จะดึง consensus จริงหรือแสดงเอกสารต้นทาง และควรบล็อกไม่ให้เข้าพิจารณา BUY จนกว่าจะแก้",
-    "story_gate_th": {
-      "what": "Palantir แปลงข้อมูลองค์กร/ภาครัฐให้กลายเป็นการตัดสินใจ AI ใช้งานจริงได้ภายในไม่กี่วัน ผ่าน Ontology + AIP — ความสามารถที่ hyperscaler ลอกเลียนยากเพราะขาดบริบทเชิงปฏิบัติการและความลึกของ workflow; Gotham + Maven Smart System ฝังลึกใน DoD/หน่วยข่าวกรอง",
-      "why": "ธุรกิจโตแรงจริงและคุณภาพดีขึ้นจริง (รายได้ +93% YoY, US Commercial +149%, กระแสเงินสดอิสระ margin 63% ที่ตรวจสอบได้จากไกด์บริษัทเอง) งานวิจัยอิสระ 5 ชิ้นรอบนี้ส่วนใหญ่ยืนยันสิ่งที่รู้แล้ว 🔴 แต่จุดที่ต้องระวังคือฐานกำไรที่ใช้คำนวณมูลค่า: Warren เปลี่ยนไปใช้ $2.72 ซึ่ง Charlie ตรวจพบว่าสูงกว่านักวิเคราะห์ทุกคนในกลุ่มที่มองเห็น (ค่าเฉลี่ย $1.81 สูงสุด $2.69) และหาแหล่งอ้างอิงไม่พบ — ตัวเลข Fair Value รอบนี้จึงยังไม่ผ่านการตรวจสอบอิสระ",
-      "risk": "🔴 ฐานกำไรที่ใช้คำนวณ Fair Value ยังยืนยันไม่ได้ ทำให้ตัวเลขมูลค่าทุกตัวที่ต่อยอดจากมันเชื่อถือไม่ได้เต็มที่ (Charlie: ต้องแก้ก่อนพิจารณา BUY); Microsoft/Google/Amazon อาจลอกเลียน AIP bootcamp ผ่าน Azure AI Foundry/Vertex AI สำเร็จ; งบภาครัฐอาจสะดุดในขั้น appropriations; SBC โตเร็วกว่ารายได้; คดี Cupat securities class action รอคำตัดสินชั้นอุทธรณ์ 10th Circuit; PEG ไม่ผ่านเพดาน 1.0 ของ Fast Grower ทั้งบนตัวเลข Warren (1.43) และยิ่งแย่บน consensus จริง (~2.2)"
-    },
-    "bull_th": [
-      "รายได้ Q2 2026 โต +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัท",
-      "กระแสเงินสดอิสระเป็นของจริงตรวจสอบได้จากไกด์บริษัทเอง: Q1 $925M (margin 57%), Q2 $1.22B (margin 63%), ทั้งปี 2026 $4.5-4.7B — Charlie ยืนยันว่าเป็นหลักฐานที่น่าเชื่อถือกว่าประมาณการนักวิเคราะห์",
-      "งานวิจัยอิสระ 5 ชิ้น (11 ส.ค.) ยืนยัน moat ผ่านช่องทางจริง + เรื่องเล่า sovereign AI จาก 3 แหล่ง + ไทม์ไลน์สัญญาภาครัฐ",
-      "Gotham + Maven Smart System ฝังลึกใน DoD/หน่วยข่าวกรอง — switching cost สูงมาก"
-    ],
-    "risk_th": [
-      "🔴 Charlie DISAGREE: ฐานกำไรปี 2027 ที่ Warren ใช้ ($2.72) สูงกว่านักวิเคราะห์ทุกคนในกลุ่มที่มองเห็นได้ (ค่าเฉลี่ย $1.81, สูงสุด $2.69) และค้นหาแหล่งอ้างอิงโดยเฉพาะแล้วไม่พบเลย — Fair Value $114 จึงยังเชื่อถือไม่ได้เต็มที่",
-      "🔴 Charlie คำนวณอิสระ 2 วิธีให้ผลใกล้กัน (กระแสเงินสดอิสระจริง → $84, consensus จริง → $80) ห่างจาก Warren 26.3% เกินเกณฑ์บังคับ 20% — Charlie ระบุว่าควรบล็อก PLTR ไม่ให้เข้าพิจารณา BUY/STARTER จนกว่าจะแก้ฐานกำไร",
-      "MoS ติดลบหนักทุกวิธีคำนวณ: -53.46% บนตัวเลข Warren และ -119% บน FV อิสระของ Charlie",
-      "PEG ไม่ผ่านเพดาน 1.0 ของ Fast Grower ทั้งบนตัวเลข Warren (1.43) และยิ่งแย่บน consensus จริง (~2.2)",
-      "SBC โตเร็วกว่ารายได้; คดี Cupat securities class action รอคำตัดสินชั้นอุทธรณ์ 10th Circuit; การอัพเกรด tier ที่ถูก flag 3 รอบติดยังคง HELD ไว้ตามวินัยกัน tier เฟ้อ"
-    ]
-  },
   "QCOM": {
     "symbol": "QCOM",
     "display": "QCOM",
@@ -2607,6 +2457,179 @@
       "Charlie คำนวณ FV อิสระไม่ได้รอบนี้ (ไม่มีข้อมูลแยกส่วนงาน + กำไรใกล้ศูนย์ + เพิ่งเทรดไม่ถึง 3 เดือน) — FV $114 ที่คงมาตั้งแต่ 5 มิ.ย. ยังไม่ถูกตรวจทานเทียบฐานรายได้ที่ใหญ่ขึ้นมาก ($23.04B +121.9% YoY) กว่า 2 เดือน",
       "MoS แย่ลงเป็น -16.9% (จาก -13.3%) — Speculative tier ห้ามไล่ราคาและไม่เข้าเกณฑ์ STARTER ไม่ว่า ER หรือ MoS จะเป็นเท่าไหร่",
       "Musk คุมเสียงโหวตแบบ dual-class + รับผิดชอบพร้อมกันหลายบริษัท (Tesla/SpaceX/xAI) = key-man risk สูง; หนี้พันธบัตร $20B+"
+    ]
+  },
+  "PLTR": {
+    "symbol": "PLTR",
+    "display": "PLTR",
+    "category": "software",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Software & AI Platform",
+    "sectorSlug": "software",
+    "chips": [
+      "Software",
+      "AI Platform + Government"
+    ],
+    "bull": [
+      "รายได้ Q2 2026 $1.935B +93% YoY, US Commercial +149% YoY = growth เร่งขึ้นต่อเนื่องทั้งฝั่ง government และ commercial",
+      "Rule of 40 พุ่งเป็น 155% (Adj Op Margin 62%, Adj FCF margin 63%) = profitable growth ที่หายากมากในกลุ่ม software",
+      "AIP (Artificial Intelligence Platform) bootcamp model เร่ง enterprise adoption — ปิดดีล $1M+ ถึง 220 ดีลใน Q2 เดียว",
+      "US Commercial RDV (remaining deal value) $6.238B +124% YoY = revenue visibility ระยะยาวชัดเจนขึ้น",
+      "Government moat: Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community — switching cost สูงมาก"
+    ],
+    "risk": [
+      "Valuation แพงมาก — multiple สูงกว่ากลุ่ม software เกือบทุกตัว ต้องการ execution perfect ต่อเนื่องหลายปี",
+      "Government revenue concentration — พึ่งพา contract renewal + budget cycle ของภาครัฐสหรัฐฯ",
+      "Dual-class share structure (Karp/Thiel/Cohen) = governance control อยู่ในมือผู้ก่อตั้งกลุ่มเล็ก",
+      "Insider selling ต่อเนื่องจากผู้บริหารระดับสูงในหลายไตรมาสที่ผ่านมา",
+      "Competition จาก hyperscaler AI platforms + in-house data platform ของลูกค้าองค์กรขนาดใหญ่"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.49,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 174.94,
+    "fv": 73,
+    "mos": -139.6,
+    "fpe": 83.7,
+    "peg": 2.39,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.3,
+        "green",
+        93
+      ],
+      "va": [
+        0.5,
+        "orange",
+        5
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "Second pass resolving Charlie's DISAGREE (numeric) — and correcting my own first-pass mislabel. The $2.72 FY2027E EPS IS verifiable (primary UBS doc on disk, cited above), so Charlie's 'cannot verify from any source' is wrong on the narrow point — but he is right on substance and decisively so: $2.72 is UBS's HOUSE estimate, and the same table publishes consensus at $2.09 beside it. Calling it 'the first sourced consensus figure' was a false sourcing claim, the identical failure mode self-caught on LITE the same morning. Rebuilt on $2.09 with growth documented for the first time (35%/yr): FV Base $114→$73, MoS -53.46%→-139.6%, PEG 1.43→2.39, WAF 6.69→6.49. PLTR now fails MoS, PEG AND WAF (≥6.5) simultaneously — Charlie's recommendation to block it from BUY/STARTER is satisfied by the rules themselves, not by an override. Gap to Charlie's independent $84 narrows to 13.1% (inside the 15% Conservative-Rule threshold) and Warren now sits BELOW his reviewer, the correct direction after this class of error. SEPARATELY: tier upgraded 🌱 Fast Grower → 🚀 Pre-Inevitable on 4/5 Crystallization Signals (pricing/switching-cost/margin-expansion/reinvestment-ROIC pass; crisis-survival is the one genuine miss). Decided on the merits after 3 batches of deferral, and decidable free of conflict of interest precisely because it moves zero dollars today: the loosened PEG cap (1.0→1.5) is still failed at 2.39, STARTER eligibility is irrelevant at a ~155-point MoS shortfall, and the 10% TQR-default ceiling replaces the removed category cap.",
+    "updated": "2026-08-13",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-12",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Palantir's AIP platform + Ontology converts enterprise/government data into production AI decisions within days — a capability hyperscalers (MSFT/GOOGL/AMZN) cannot replicate because they lack operational context and workflow depth. Q2 2026 adds an \"AI Sovereignty\" framing: customers own the weights/models/data instead of feeding frontier-lab APIs.",
+      "why": "Consensus post-Q2-print is digesting a genuine beat-and-raise (revenue +93% YoY vs ~81% expected, Adj EPS $0.41 vs ~$0.35 consensus, FY2026 guidance raised to $8.15-8.16B/+82% from $7.65-7.66B/+71% — management calls it the largest-ever guidance raise) alongside NDR accelerating to 157% and Rule of 40 hitting 155% (12th straight quarter of expansion). Warren's second-level read: the market had already priced in a large chunk of this optimism ahead of the print (stock +21.6% into earnings on NVIDIA/NGC2 momentum since mid-July) — the beat is real and the business quality case has gotten stronger, not weaker, but the price has run even further ahead of a defensible valuation base than it had at the last check (MoS -33.7% pre-print → -61.05% post-print, because price outran even a genuinely-raised FV). This is a case of \"the business got better AND more overvalued at the same time\" — those are not contradictory.",
+      "risk": "Microsoft/Google/Amazon replicate AIP bootcamp effectiveness ผ่าน Azure AI Foundry/Vertex AI สำเร็จ; NGC2/government AI budget สะดุดในขั้น appropriations; growth decelerates meaningfully faster than the 45%/yr forward assumption used here; หรือ the Cupat securities-class-action 10th Circuit appeal (oral arguments already held, ruling pending) resolves against the company."
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "🔴 CHALLENGE 1 TESTED AND WARREN IS RIGHT — THE $1.26 DOES NOT SURVIVE. Charlie tested the Nasdaq panel's FY2026 figure directly against PLTR's own reported results, which is the test that should have been run in round 1 and was not. PLTR reported adjusted (non-GAAP) diluted EPS of $0.33 in Q1 2026 (announced 4 May 2026, against a consensus range of $0.28-0.29) and $0.41 in Q2 2026 (announced 3 August 2026, against consensus of $0.35). H1 2026 actual on the company's own reported basis is therefore $0.74. For the Nasdaq FY2026 figure of $1.26 to hold, H2 2026 would have to deliver $1.26 - $0.74 = $0.52, a 29.7% DECLINE half-over-half. Meanwhile the company's own revenue guidance requires H2 revenue of $8.155B - $3.568B = $4.587B against H1 revenue of $3.568B, i.e. +28.6% sequential growth, with adjusted operating margin expanding (60% in Q1, 63% adjusted FCF margin in Q2). A 30% earnings decline on 29% revenue growth with widening margins is not a forecast anyone holds. The $1.26 is arithmetically dead as a full-year non-GAAP figure. Charlie withdraws it.",
+        "The contamination mechanism is now identified precisely, and it is worse than a stale figure — the panel misstates ACTUALS, not just estimates. The Nasdaq panel's own reported EPS* values for the same two quarters are $0.25 (Mar-26) and $0.31 (Jun-26), summing to $0.56 against the company's reported $0.74. The panel understates PLTR's own already-published H1 results by 24.3%. That is why the panel looked internally self-consistent in round 1 (its $0.56 H1 plus its $0.33 + $0.36 H2 consensus does reconcile to $1.25 against the $1.26 yearly figure) — it is coherent with itself while being off-basis versus the company. Self-consistency was the wrong test and Charlie applied it.",
+        "Charlie's own round-1 data already contained the tell and Charlie misread it. Computing GAAP diluted EPS independently from the Nasdaq quarterly income statements at 2,578M diluted shares gives $0.184 (Sep-25), $0.236 (Dec-25), $0.338 (Mar-26) and $0.412 (Jun-26). The panel's EPS* tracked those GAAP figures almost exactly for the first two quarters ($0.18, $0.24) and then diverged sharply below them for the last two ($0.25 versus $0.338, $0.31 versus $0.412). Charlie noted this divergence in round 1 and attributed it to an equity-compensation treatment difference. That hypothesis is now falsified: PLTR's reported non-GAAP EPS of $0.33 and $0.41 matches Charlie's independently computed GAAP diluted EPS of $0.338 and $0.412 to within a cent, so there is no material adjustment gap to explain, and the panel is simply wrong on this ticker. Charlie's round-1 equity-compensation explanation is withdrawn.",
+        "The dispersion signal Warren cited also checks out arithmetically and Charlie confirms it: PLTR's FY2027 panel spans $1.17 low to $2.69 high, a ratio of 2.30x, against 1.35x for AMZN ($8.73-$11.80) on the same API. Charlie would not have treated dispersion alone as proof of mixed bases, since genuine disagreement about a hypergrowth name can be wide — but combined with the demonstrated 24.3% understatement of published actuals, it is corroborating rather than standalone evidence."
+      ],
+      "concerns": [
+        "🔵 A CHARLIE METHODOLOGY FAILURE WORTH LOGGING ABOVE ANY CONCERN ABOUT WARREN: Charlie issued DISAGREE on 2026-08-12 and CAUTION on 2026-08-13 against PLTR, both resting substantially on the Nasdaq panel being the trustworthy independent reference. It was not — it understates the company's own published H1 by 24.3%. The lesson generalises beyond this ticker: for any hypergrowth name, a consensus panel must be validated against reported year-to-date actuals plus company guidance BEFORE it is used as the independence anchor, because vendor panels can be off-basis in a way that internal self-consistency checks will never reveal. Charlie's round-1 reconciliation of the panel against itself passed and told Charlie nothing.",
+        "The data-quality finding cuts against both sides and is the one live concern remaining: on this ticker the free Nasdaq panel is unusable, and the paywalled LSEG figure is stale-low at its anchor by 14.5%. Neither vendor should be the basis for PLTR without the reported-actuals-plus-guidance sanity check applied each round. This is a process concern, not a challenge to Warren's number.",
+        "Valuation texture appropriate to a WATCH, unchanged from round 1 and unaffected by the correction: price is 8.6x Charlie's no-growth floor of $20, so essentially the whole $171.04 is a claim on growth not yet delivered; MoS is -128.1% on Charlie's FV and -139.6% on Warren's own.",
+        "The reinvestment leg of the Pre-Inevitable case stays the weakest signal: $42.0M of TTM CapEx against $2,311M routed into marketable securities. Very high ROIC on a $365M capital base is not the same property as an ability to compound incremental capital."
+      ],
+      "summary": "",
+      "review_date": "2026-08-13"
+    },
+    "mark_easy": {
+      "one_liner": "Palantir รอบนี้ตัวเลขพลิกแรง — Warren ตรวจงานตัวเองแล้วพบว่ากำไรปี 2027 ที่ใช้คำนวณ ($2.72) ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ แต่เป็นประมาณการของโบรกเจ้าเดียว ทั้งที่ค่าเฉลี่ยจริง ($2.09) พิมพ์อยู่ในคอลัมน์ข้างๆ ในตารางเดียวกัน สร้าง Fair Value ใหม่ได้ $73 (จาก $114) ตอนนี้ PLTR ตกเกณฑ์ 3 ข้อพร้อมกัน — MoS, PEG และ WAF",
+      "what": "Palantir ขายซอฟต์แวร์ที่แปลงข้อมูลองค์กร/ภาครัฐให้กลายเป็นการตัดสินใจ AI ใช้งานจริงได้ภายในไม่กี่วัน ผ่าน 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow), Gotham (การป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่แม้ air-gapped)",
+      "why_invest": [
+        "ธุรกิจยังโตแรงจริงตามงบ Q2 2026: รายได้ $1.935B +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีเป็น $8.15-8.16B (+82%) ซึ่งผู้บริหารบอกว่าเป็นการยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัท",
+        "กระแสเงินสดอิสระเป็นของจริงและตรวจสอบได้จากไกด์บริษัทเอง: Q1 2026 $925M (margin 57%), Q2 $1.22B (margin 63%), ทั้งปี 2026 ไกด์ $4.5-4.7B — Charlie ใช้ตัวเลขชุดนี้เป็นฐานคำนวณหลัก เพราะมาจากบริษัทไม่ใช่จากประมาณการภายนอก",
+        "Tier อัพเกรดจาก 🌱 Fast Grower เป็น 🚀 Pre-Inevitable — ผ่าน 4 จาก 5 สัญญาณคุณภาพ: อำนาจตั้งราคา (NDR 157%), switching cost (ontology + NGC2 ฝังในโปรแกรม data integration ใหญ่สุดในประวัติศาสตร์กองทัพบกสหรัฐฯ), margin ขยายต่อเนื่อง (Rule of 40 = 155%, ขยาย 12 ไตรมาสติด), และผลตอบแทนต่อเงินลงทุน (FCF margin 63%, ไม่มีหนี้, เงินสด $9.4B)",
+        "Charlie ยืนยันตัวเลขฝั่งธุรกิจครบ: รายได้ TTM $6,155.9M, gross margin 84.8%, operating margin 42.8%, เงินสด+เงินลงทุนระยะสั้น $9,409.1M เทียบกับหนี้ศูนย์ และ GAAP operating margin ไล่ขึ้น 33.3% → 40.9% → 46.2% → 47.1% ใน 4 ไตรมาสล่าสุด"
+      ],
+      "watch_out": [
+        "🔴 ประเด็นหลักรอบนี้คือ Fair Value ร่วงจาก $114 เหลือ $73: Warren ตรวจเอกสารต้นทางแล้วพบว่ากำไรปี 2027 ที่ $2.72 ที่ตัวเองใช้รอบก่อน เป็นประมาณการของ UBS เอง ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ (consensus) — และในตารางหน้าเดียวกันนั้นมีคอลัมน์ 'Cons.' พิมพ์ค่าเฉลี่ยจริงไว้ที่ $2.09 อยู่ข้างๆ กันเลย จึงสร้างมูลค่าใหม่บน $2.09 พร้อมลดตัวคูณ 42x → 35x และลดสมมติฐาน growth 45% → 35%/ปี",
+        "🔴 ตอนนี้ PLTR ตกเกณฑ์ 3 ข้อพร้อมกัน ไม่ใช่ข้อเดียว: MoS -139.6% (แย่ลงจาก -53.46%), PEG 2.39 (เกณฑ์ 1.5), WAF 6.49 (เกณฑ์ซื้อ 6.5) และทุกฉากทัศน์ต่ำกว่าราคาปัจจุบันหมด — Bull $88, Base $73, Bear $52",
+        "การอัพเกรด tier รอบนี้ไม่ได้ทำให้ซื้อง่ายขึ้น กลับ 'เข้มขึ้น' — มันเพิ่มด่าน PEG ≤1.5 ที่ PLTR ตกอยู่ที่ 2.39 และเพดานน้ำหนักพอร์ตก็ยังอยู่ที่ 10% เท่าเดิม (PLTR อยู่นอกกลุ่ม theme AI Revolution เพราะเป็นชั้นซอฟต์แวร์ ไม่ใช่ฮาร์ดแวร์) สรุปคือเป็นการอัพเกรดที่ไม่ขยับเงินแม้บาทเดียว เป็นคำแถลงเรื่องคุณภาพธุรกิจล้วนๆ",
+        "สัญญาณที่ตกคือ crisis-survival — ธุรกิจเวอร์ชันนี้ (เครื่องยนต์ AIP/commercial ที่เพิ่งเริ่มสเกลปี 2024-25) ยังไม่เคยเจอเศรษฐกิจถดถอย, รอบขาลงของ CapEx AI หรือการแช่แข็งงบภาครัฐจริงๆ ถ้าเจอแล้วเทรนด์ราคา/margin หัก tier จะถูกปรับกลับ",
+        "Charlie คำนวณ 'พื้น' ของหุ้นตัวนี้ไว้ที่ $20 (กระแสเงินสดอิสระต่อหุ้นจริงย้อนหลัง $1.303 × 15) แปลว่าราคาปัจจุบันสูงกว่าพื้น 8.6 เท่า หรือกำไรที่อยู่ในบัญชีแล้วรองรับราคาได้แค่ราว 12% ส่วนที่เหลือคือการเดิมพันกับการเติบโตที่ยังไม่เกิด",
+        "ย้อนคิดจากราคา: ถ้าคงตัวคูณ 42x ไว้สิบปี ตลาดขอการโตของกระแสเงินสดต่อหุ้น 12.1%/ปี แต่ถ้าตัวคูณค่อยๆ ลดลงมาที่ระดับซอฟต์แวร์อิ่มตัว 25x ต้องโต 18.0%/ปี และที่ 20x ต้องโต 20.7%/ปี — คือขอทั้งการโตเลขสองหลักกลางถึงสูงต่อเนื่องสิบปี บวกตัวคูณที่ยังพรีเมียมอยู่ตอนจบ",
+        "SBC (ค่าตอบแทนพนักงานเป็นหุ้น) ราว 14% ของรายได้และโตเร็วกว่ารายได้ — ตัวเลขกำไรที่ใช้คำนวณมูลค่านี้ไม่ได้หักส่วนนี้ออก",
+        "ขาที่อ่อนสุดในกลุ่มสัญญาณ Pre-Inevitable คือการนำเงินไปลงทุนต่อ: CapEx ย้อนหลัง 12 เดือนแค่ $42.0M เทียบกับ $2,311M ที่ไหลเข้าไปพักในหลักทรัพย์ลงทุน — ผลตอบแทนสูงบนฐานทุนเล็ก $365M ไม่เท่ากับความสามารถทบต้นเงินก้อนใหม่",
+        "คดี Cupat/CalPERS (class action ผู้ถือหุ้น) ยังไม่มีคำตัดสินจากศาลอุทธรณ์เขต 10 ผ่านมาราว 5 เดือนหลังแถลงด้วยวาจา 16 มี.ค. 2026"
+      ],
+      "bottom_line": "WATCH — ธุรกิจดีขึ้นจริงและคุณภาพชัดพอที่จะอัพ tier แต่ตัวเลขมูลค่าแย่ลงหนัก Warren ลด FV จาก $114 เหลือ $73 หลังพบว่าฐานกำไรที่ตัวเองใช้ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ ทำให้ PLTR ตกเกณฑ์ MoS, PEG และ WAF พร้อมกันทั้ง 3 ข้อ ส่วน Charlie เปลี่ยนจาก DISAGREE เป็น AGREE ก็เพราะมูลค่าทั้งสองฝ่ายมาบรรจบกันที่เลขต่ำใกล้กัน ($73 vs $75) ไม่ใช่เพราะหุ้นน่าซื้อขึ้น — 'AGREE' รอบนี้หมายถึงเห็นตรงกันว่าราคายังแพงเกิน ไม่ใช่สัญญาณซื้อ"
+    },
+    "mark_full": {
+      "business_overview": "Palantir ก่อตั้งปี 2003 สำนักงานใหญ่ Aventura, FL จดทะเบียน Nasdaq (PLTR) ทำซอฟต์แวร์ 4 แพลตฟอร์มหลัก: Foundry (data OS สำหรับองค์กร), AIP (Gen AI + agentic workflow, bootcamp 5 วันจากศูนย์ถึง production), Gotham (ป้องกันประเทศ/ข่าวกรอง), Apollo (deploy ได้ทุกที่รวม air-gapped) รายได้แบ่ง Government 54% / Commercial 46%, US 74% / International 26% (FY2025)",
+      "tam": "Q2 2026 มีการเปลี่ยน framing จาก 'AIP bootcamp speed' เป็น 'AI Sovereignty' — ลูกค้าเป็นเจ้าของ/ควบคุม data, weights, models เองแทนที่จะส่งข้อมูลลับให้ frontier lab ภายนอก ตลาด enterprise decision infrastructure ยังอยู่ในช่วงต้นของการนำ agentic AI ไปใช้จริงในองค์กรขนาดใหญ่และภาครัฐ",
+      "moat": "Ontology-based data architecture ที่ยากจะลอกเลียนเพราะฝังลึกในกระบวนการทำงานของลูกค้าแต่ละราย (ไม่ใช่แค่โมเดล AI); Forward Deployed Engineers ที่ทำงานหน้างานกับลูกค้าโดยตรงเป็นความได้เปรียบด้าน execution ที่ hyperscaler ไม่มี; ในฝั่งภาครัฐ Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community switching cost สูงมาก CEO Karp ย้ำว่า 'ไม่แข่งกับ hyperscaler แต่วิ่งอยู่บนนั้น'",
+      "latest_financials": "Q2 2026: รายได้ $1,935.5M +93% YoY (US Commercial +149%, US Government +90%), Adj. Op Margin 62%, Adj. FCF margin 63%, Rule of 40 = 155% (ขยาย 12 ไตรมาสติด), NDR 157%, FY2026 guidance ยกเป็น $8.15-8.16B (+82% YoY) — การยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัทตามคำผู้บริหาร ตัวเลขย้อนหลัง 12 เดือนที่ Charlie คำนวณเองจากงบ: รายได้ $6,155.9M, gross margin 84.8%, operating margin 42.8%, กำไรสุทธิ $3,016.7M, เงินสด+เงินลงทุนระยะสั้น $9,409.1M เทียบหนี้ศูนย์ · ฝั่งมูลค่า (08-12 second pass): ฐานกำไรปี 2027 แก้จาก $2.72 (ประมาณการโบรกเจ้าเดียว) เป็น $2.09 (ค่าเฉลี่ยนักวิเคราะห์ที่พิมพ์ในเอกสารเดียวกัน) → FV Base $114 → $73, MoS -139.6%, PEG 2.39, WAF 6.49",
+      "key_points": [
+        "งบ Q2 2026 แข็งแรงจริง: รายได้ +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัท",
+        "🔴 Warren แก้ฐานกำไรของตัวเอง: $2.72 ที่ใช้รอบก่อนเป็นประมาณการของ UBS เอง ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ — ค่าเฉลี่ยจริง $2.09 พิมพ์อยู่ในคอลัมน์ข้างกันในตารางเดียวกัน → FV $114 → $73",
+        "🔴 ตกเกณฑ์ 3 ข้อพร้อมกัน: MoS -139.6%, PEG 2.39 (เกณฑ์ 1.5), WAF 6.49 (เกณฑ์ซื้อ 6.5) — ทุกฉากทัศน์ต่ำกว่าราคา (Bull $88 / Base $73 / Bear $52)",
+        "Tier อัพเป็น 🚀 Pre-Inevitable (4/5 สัญญาณ, ตก crisis-survival) แต่ทำให้เกณฑ์เข้มขึ้นไม่ใช่หลวมลง — เพิ่มด่าน PEG ≤1.5 ที่ตกอยู่ที่ 2.39 และเพดานพอร์ตยัง 10% เท่าเดิม จึงไม่ขยับเงินเลย",
+        "Charlie เปลี่ยน DISAGREE → AGREE เพราะพบว่าฐานข้อมูลนักวิเคราะห์ที่ตัวเองใช้รายงานผลประกอบการที่บริษัทประกาศแล้วต่ำกว่าจริง 24.3% — สร้างใหม่จากตัวเลขจริงได้ FV $75 ห่างจาก Warren แค่ 2.7%",
+        "กระแสเงินสดอิสระเป็นของจริงตรวจสอบได้: Q1 $925M (57% margin), Q2 $1.22B (63%), ไกด์ทั้งปี $4.5-4.7B"
+      ]
+    },
+    "warren_easy": [
+      "PLTR รอบนี้ Warren ตรวจงานตัวเองแล้วแก้ฐานกำไร: $2.72 ที่ใช้คำนวณรอบก่อนไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ แต่เป็นประมาณการของ UBS เอง (สูงกว่าค่าเฉลี่ยราว 30%) — และในตารางหน้าเดียวกันนั้นมีคอลัมน์ค่าเฉลี่ยจริง $2.09 พิมพ์อยู่ข้างๆ กัน สร้างมูลค่าใหม่บน $2.09 พร้อมลดตัวคูณ 42x → 35x และ growth 45% → 35%/ปี (ระบุที่มาเป็นครั้งแรก) ผลคือ FV Base $114 → $73",
+      "MoS แย่ลงจาก -53.46% เป็น -139.6%, PEG 1.43 → 2.39, WAF 6.69 → 6.49 — PLTR ตกเกณฑ์ MoS, PEG และ WAF พร้อมกันทั้ง 3 ข้อ ฉากทัศน์ Bull $88 (42x) / Base $73 (35x) / Bear $52 (25x) อยู่ต่ำกว่าราคาปัจจุบันทุกฉาก ส่วน ER 18.96%/ปี ผ่านเชิงตัวเลขแต่ MoS เป็นตัวผูกมัด",
+      "Tier อัพเกรด 🌱 Fast Grower → 🚀 Pre-Inevitable ผ่าน 4/5 Crystallization Signals (ตกข้อ crisis-survival) — Warren ตัดสินตามเนื้อผ้าหลังเลื่อนมา 3 รอบ และตัดสินได้แบบไม่มีผลประโยชน์ทับซ้อนพอดี เพราะมันไม่ขยับเงินเลย: เพดาน PEG ที่หลวมขึ้นเป็น 1.5 ก็ยังตกที่ 2.39, สิทธิ์เข้า STARTER ไม่มีความหมายเมื่อ MoS ขาดอยู่ราว 155 จุดจากกรอบที่กว้าง 7 จุด และเพดานน้ำหนักยังคง 10% ตามค่าเริ่มต้นของหุ้นนอก theme; action คง WATCH"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "review_date": "2026-08-13",
+      "paragraphs": [
+        "รอบนี้เป็นการทบทวนรอบที่ 2 ของวันเดียวกัน หลัง Warren โต้กลับตัวเลขของ Charlie — และ Charlie ยอมรับว่า Warren ถูกทั้งหมด ข้อโต้แย้งของ Warren เป็นเลขคณิตที่พิสูจน์ผิดถูกได้ Charlie จึงทดสอบแทนที่จะเถียง: PLTR รายงานกำไรต่อหุ้น (adjusted) จริงไว้แล้วที่ $0.33 ใน Q1 และ $0.41 ใน Q2 รวมครึ่งปีแรก 2026 = $0.74 ถ้าตัวเลขทั้งปี $1.26 จากฐานข้อมูลที่ Charlie ใช้จะเป็นจริง ครึ่งปีหลังต้องทำได้แค่ $0.52 คือกำไรหายไป 29.7% ทั้งที่ไกด์รายได้ของบริษัทเองบอกว่าครึ่งปีหลังต้องโต +28.6% และ margin กำลังขยาย — เป็นไปไม่ได้",
+        "ที่หนักกว่าคือกลไกของปัญหา: ฐานข้อมูลชุดนั้นรายงาน 'ตัวเลขจริงที่ประกาศแล้ว' ของสองไตรมาสนี้ไว้ที่ $0.25 และ $0.31 รวม $0.56 เทียบกับที่บริษัทประกาศจริง $0.74 คือรายงานผลประกอบการที่เผยแพร่แล้วต่ำกว่าจริง 24.3% ไม่ใช่แค่ประมาณการอนาคตที่คลาดเคลื่อน ซึ่งอธิบายว่าทำไมรอบแรก Charlie ตรวจแล้ว 'ผ่าน' — ตัวเลขในชุดนั้นสอดคล้องกันเองดี แต่ผิดฐานเมื่อเทียบกับบริษัท และ Charlie ยอมรับว่าเลือกวิธีทดสอบผิดตั้งแต่ต้น",
+        "Charlie ถอนคำอธิบายเดิมของตัวเองด้วย: รอบแรกบอกว่าส่วนต่างเกิดจากวิธีคิดค่าตอบแทนพนักงานเป็นหุ้น แต่กำไรต่อหุ้น non-GAAP ที่ PLTR รายงาน ($0.33/$0.41) ตรงกับกำไรต่อหุ้น GAAP ที่ Charlie คำนวณเองจากงบ ($0.338/$0.412) แทบเป๊ะ แปลว่าไม่มีส่วนต่างให้อธิบาย ฐานข้อมูลนั้นผิดเฉยๆ บนหุ้นตัวนี้",
+        "สร้างใหม่จากตัวเลขจริงล้วนๆ: ครึ่งปีแรกที่ประกาศแล้ว $0.74 + ครึ่งปีหลังที่คำนวณจากไกด์บริษัท $0.98 = ทั้งปี 2026 $1.72 และมีอีกทางยืนยันตรงกันถึงระดับเซนต์ — ตัวคูณล่วงหน้าของ CNBC ที่ราคาปิด $171.04 ถอดกลับเป็นกำไรล่วงหน้า 12 เดือน $1.719 สองเส้นทางที่ไม่เกี่ยวกันเลยให้ผลตรงกัน เมื่อยึดฐานนี้ กำไรปี 2027 ที่ Charlie ปรับใหม่คือราว $2.45 ซึ่งทำให้ $2.09 ของ Warren ต่ำกว่าประมาณ 15% แปลว่า 'อนุรักษ์นิยม' ไม่ใช่ 'เฟ้อ' — คำถามพลิกข้างจากรอบก่อนหน้าโดยสิ้นเชิง",
+        "Fair Value ของ Charlie แทบไม่ขยับ ($74 → $75) เพราะวิธีคำนวณหลักของเขาใช้กระแสเงินสดอิสระจากไกด์บริษัท ($4.6B ÷ 2,578 ล้านหุ้น = $1.78/หุ้น) ซึ่งไม่เคยแตะฐานข้อมูลที่มีปัญหาเลย และตัวคูณขึ้นอยู่กับ 'อัตราการโต' ไม่ใช่ 'ระดับกำไร' — อัตราการโตออกมา 41-44% ทุกวิธีคำนวณ รวมทั้งวิธีที่ถอนทิ้งไป จึงได้ตัวคูณ 42x ตามหลัก PEG = 1.0 → $1.78 × 42.0 = $75 ตอนนี้มี 3 เส้นทางให้ผลอยู่ในช่วง $72-75 กว้างแค่ $3 เทียบกับรอบแรกที่สองฝ่ายห่างกัน $30",
+        "🔵 ที่ต้องอ่านให้ชัด — 'AGREE' รอบนี้ไม่ได้แปลว่าน่าซื้อ: Charlie เห็นด้วยกับ Warren เพราะมูลค่าของทั้งสองฝ่ายมาบรรจบกันที่ตัวเลขต่ำใกล้กัน ($73 vs $75 ห่างแค่ 2.7%) และเพราะข้อคัดค้านเชิงตัวเลขข้อเดียวที่มีถูกพิสูจน์ว่าผิด MoS ยังติดลบหนักทุกวิธี — -139.6% บนตัวเลข Warren และ -128.1% บนตัวเลข Charlie ทั้งคู่จึงเห็นตรงกันว่า WATCH ไม่ซื้อ คือคำตัดสินที่ถูกต้อง",
+        "Charlie คำนวณ 'พื้น' ไว้ที่ $20 (กระแสเงินสดอิสระต่อหุ้นจริง $1.303 × 15 เท่าแบบไม่คิดการโต) ราคาปัจจุบันสูงกว่าพื้น 8.6 เท่า และย้อนคิดจากราคา: ถ้าคงตัวคูณ 42x ไว้ 10 ปี ตลาดขอการโต 12.1%/ปี แต่ถ้าตัวคูณลดลงมาที่ 25x ต้อง 18.0%/ปี และที่ 20x ต้อง 20.7%/ปี — สิ่งที่ทำงานหนักที่สุดในสมมติฐานคือ 'ตัวคูณ 42x อยู่รอดสิบปี'",
+        "Charlie ยืนยัน tier 🚀 Pre-Inevitable ตรงกับ Warren (4/5 สัญญาณ ตก crisis-survival) และย้ำเองว่าการอัพเกรดนี้เป็นกลางเรื่องขนาดการลงทุน — ด่าน PEG 1.5 ของ tier ใหม่ตกทั้งบนตัวเลข Warren (2.39) และบนตัวเลข Charlie เอง (2.37) และเพดานน้ำหนักยังอยู่ที่ 10% เพราะไม่มีคะแนน theme",
+        "🔵 บทเรียนที่ Charlie บันทึกไว้เหนือข้อติงเรื่อง Warren ทั้งหมด — เป็นความผิดพลาดของตัวเอง: Charlie ออกคำตัดสิน DISAGREE เมื่อ 12 ส.ค. และ CAUTION เมื่อ 13 ส.ค. โดยพิงฐานข้อมูลที่รายงานผลประกอบการที่บริษัทเผยแพร่แล้วต่ำกว่าจริง 24.3% และไม่จับได้จนถูกท้วง กฎใหม่ที่ตั้งไว้: ก่อนใช้ตัวเลขค่าเฉลี่ยนักวิเคราะห์ใดๆ ต้องกระทบยอดกับกำไรจริงที่ประกาศแล้วบวกไกด์ของบริษัทก่อนทุกครั้ง เพราะการตรวจว่าตัวเลขสอดคล้องกันเองจะไม่เจอปัญหาแบบนี้เลย",
+        "ข้อกังวลที่ยังค้างจริงๆ มีข้อเดียวและกระทบทั้งสองฝ่าย: บนหุ้นตัวนี้ ฐานข้อมูลฟรีใช้ไม่ได้ และตัวเลขจากแหล่งจ่ายเงิน (LSEG ที่ Warren ใช้) ก็ต่ำกว่าความจริง 14.5% ที่จุดตั้งต้น เพราะเก็บก่อนงบ Q2 ออก — ถ้าอนาคตมีใครเสนอ PLTR เข้าพิจารณาซื้อ ความเสี่ยงจะกลายเป็น 'ฐานกำไรเก่าเกินไป' ไม่ใช่ 'สูงเกินไป' อีกแล้ว",
+        "ความเสี่ยงเดิมที่ยังอยู่: ขาที่อ่อนสุดของ tier ใหม่คือการนำเงินไปลงทุนต่อ (CapEx ย้อนหลัง 12 เดือน $42.0M เทียบกับ $2,311M ที่ไปพักในหลักทรัพย์ลงทุน — ผลตอบแทนสูงบนฐานทุนเล็ก $365M ไม่เท่ากับความสามารถทบต้นเงินก้อนใหม่) และคดี Cupat/CalPERS ยังไม่มีคำตัดสินจากศาลอุทธรณ์เขต 10 ผ่านมาราว 5 เดือนหลังแถลงด้วยวาจา"
+      ]
+    },
+    "idea_th": "WATCH — รอบนี้เป็นรอบที่ตัวเลขมูลค่าแย่ลงชัดเจน ไม่ใช่รอบที่ดีขึ้น ธุรกิจ Palantir ยังโตแรงจริงตามงบ Q2 2026 (รายได้ +93% YoY, US Commercial +149%, ยกเป้าทั้งปีครั้งใหญ่สุดในประวัติศาสตร์บริษัท) และกระแสเงินสดอิสระเป็นของจริงตรวจสอบได้จากไกด์บริษัทเอง ($4.5-4.7B ทั้งปี) แต่ Warren ตรวจงานตัวเองแล้วพบว่าฐานกำไรปี 2027 ที่ใช้คำนวณรอบก่อน ($2.72) เป็นประมาณการของโบรกเจ้าเดียว ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ — ทั้งที่ค่าเฉลี่ยจริง $2.09 พิมพ์อยู่ในคอลัมน์ข้างกันในตารางหน้าเดียวกัน สร้างใหม่บน $2.09 พร้อมลดตัวคูณเป็น 35x และ growth เป็น 35%/ปี ผลคือ Fair Value ร่วงจาก $114 เหลือ $73, MoS แย่ลงเป็น -139.6%, PEG 2.39, WAF 6.49 — PLTR ตกเกณฑ์ MoS, PEG และ WAF พร้อมกันทั้ง 3 ข้อ ฝั่ง Charlie เปลี่ยนคำตัดสินจาก DISAGREE เป็น AGREE ซึ่งฟังดูเหมือนข่าวดีแต่ไม่ใช่: เขาเปลี่ยนเพราะทดสอบข้อโต้แย้งของ Warren แล้วพบว่าฐานข้อมูลนักวิเคราะห์ที่ตัวเองพิงอยู่รายงานผลประกอบการที่ PLTR ประกาศแล้วต่ำกว่าจริง 24.3% เมื่อสร้างใหม่จากตัวเลขจริงบวกไกด์บริษัท เขาได้ FV $75 ห่างจาก Warren แค่ 2.7% — คือมูลค่าทั้งสองฝ่ายมาบรรจบกันที่เลขต่ำใกล้กัน ไม่ใช่หุ้นน่าซื้อขึ้น MoS ยังติดลบหนักทั้งสองฝั่ง (-139.6% / -128.1%) ส่วนการอัพเกรด tier เป็น 🚀 Pre-Inevitable (4/5 สัญญาณคุณภาพ ตกข้อ crisis-survival) เป็นเรื่องคุณภาพธุรกิจล้วนๆ ที่ไม่ขยับเงินแม้บาทเดียว และกลับทำให้เกณฑ์เข้มขึ้นด้วย เพราะเพิ่มด่าน PEG ≤1.5 ที่ PLTR ตกอยู่ที่ 2.39 สรุป: บริษัทดีขึ้น ราคายังแพงเกินกว่าจะมีเหตุผลซื้อ และรอบนี้ช่องว่างกว้างขึ้นไม่ใช่แคบลง",
+    "story_gate_th": {
+      "what": "Palantir แปลงข้อมูลองค์กร/ภาครัฐให้กลายเป็นการตัดสินใจ AI ใช้งานจริงได้ภายในไม่กี่วัน ผ่าน Ontology + AIP — ความสามารถที่ hyperscaler (MSFT/GOOGL/AMZN) ลอกเลียนยากเพราะขาดบริบทเชิงปฏิบัติการและความลึกของ workflow; ฝั่งภาครัฐ Gotham + Maven Smart System ฝังลึกใน DoD/หน่วยข่าวกรอง; Q2 2026 เพิ่มมุม 'AI Sovereignty' — ลูกค้าเป็นเจ้าของ weights/models/data เอง ไม่ต้องป้อนข้อมูลให้ API ของ frontier lab",
+      "why": "ธุรกิจดีขึ้นจริงและคุณภาพชัดพอที่จะอัพ tier เป็น 🚀 Pre-Inevitable (ผ่าน 4/5 สัญญาณ: NDR 157%, switching cost จาก ontology + NGC2, Rule of 40 = 155% ขยาย 12 ไตรมาสติด, FCF margin 63% ไม่มีหนี้) แต่มุมมองระดับสองของ Warren คือ 'ธุรกิจดีขึ้น และแพงขึ้นพร้อมกัน' — ซึ่งไม่ขัดกันเลย รอบ 08-12 second pass ช่องว่างกว้างขึ้นอีกจากการแก้ฐานกำไรของตัวเอง: $2.72 ที่ใช้อยู่เป็นประมาณการโบรกเจ้าเดียว ไม่ใช่ค่าเฉลี่ยนักวิเคราะห์ที่พิมพ์ไว้ข้างกัน ($2.09) สร้างใหม่บน $2.09 ตัวคูณ 35x growth 35%/ปี → FV $114 → $73, MoS -139.6%, PEG 2.39, WAF 6.49 ตกทั้ง 3 เกณฑ์พร้อมกัน และการอัพ tier ก็ไม่ช่วยให้ซื้อง่ายขึ้น กลับเพิ่มด่าน PEG ≤1.5 ที่ตกอยู่ที่ 2.39",
+      "risk": "Microsoft/Google/Amazon ลอกเลียนความได้ผลของ AIP bootcamp สำเร็จผ่าน Azure AI Foundry/Vertex AI; NGC2 หรือ งบ AI ภาครัฐสะดุดในขั้น appropriations; การเติบโตชะลอเร็วกว่าสมมติฐาน 35%/ปี ที่ใช้อยู่รอบนี้; ตัวคูณหดตัวลงสู่ระดับกลุ่มเพื่อน (ฉาก Bear ที่ 25x = $52); crisis-survival คือสัญญาณที่ยังตกและเป็นตัวหักล้างการอัพ tier — ถ้าเจอ demand shock หรือ งบภาครัฐแช่แข็งจริงจนเทรนด์ราคา/margin หัก tier จะถูกปรับกลับเป็น Fast Grower; SBC ราว 14% ของรายได้โตเร็วกว่ารายได้และไม่ถูกหักในกำไรที่ใช้คำนวณ; และคดี Cupat/CalPERS ที่ยังรอคำตัดสินจากศาลอุทธรณ์เขต 10"
+    },
+    "bull_th": [
+      "รายได้ Q2 2026 โต +93% YoY, US Commercial +149% YoY, ยกเป้าทั้งปีเป็น $8.15-8.16B (+82%) — ผู้บริหารบอกว่าเป็นการยกเป้าครั้งใหญ่ที่สุดในประวัติศาสตร์บริษัท",
+      "กระแสเงินสดอิสระเป็นของจริงตรวจสอบได้จากไกด์บริษัทเอง: Q1 $925M (margin 57%), Q2 $1.22B (margin 63%), ทั้งปี 2026 $4.5-4.7B — Charlie ใช้ตัวเลขชุดนี้เป็นฐานคำนวณหลัก เพราะมาจากบริษัทไม่ใช่จากประมาณการภายนอก",
+      "Tier อัพเกรดเป็น 🚀 Pre-Inevitable ผ่าน 4/5 สัญญาณคุณภาพ: อำนาจตั้งราคา (NDR 157%, คิดเงินตามผลลัพธ์ไม่ใช่ตาม token จึงทนต่อการรัดเข็มขัดงบ AI), switching cost (ontology หนา + NGC2 เป็นแกนของโปรแกรม data integration ใหญ่สุดในประวัติศาสตร์กองทัพบกสหรัฐฯ ลูกค้าประเมินค่าย้ายระบบเองเป็นเวลา 5 ปี), margin ขยายยั่งยืน (adj op margin 46% → 62% ใน 5 ไตรมาส, Rule of 40 = 155%, ขยาย 12 ไตรมาสติด), ผลตอบแทนต่อเงินลงทุน >15% (FCF margin 63%, กำไร GAAP ทุกไตรมาส, หนี้ศูนย์, เงินสด $9.4B)",
+      "Charlie ยืนยันฝั่งงบครบและไม่ถูกกระทบจากปัญหาข้อมูล: รายได้ TTM $6,155.9M, gross margin 84.8%, operating margin 42.8%, กำไรสุทธิ $3,016.7M, เงินสด+เงินลงทุนระยะสั้น $9,409.1M เทียบหนี้ศูนย์ และ GAAP operating margin ไล่ขึ้น 33.3% → 40.9% → 46.2% → 47.1% ใน 4 ไตรมาสล่าสุด",
+      "อัตราการเติบโตทนทานต่อการแก้ตัวเลขทั้งหมด — คำนวณกี่วิธีก็ออกมา 41-44% (รวมวิธีที่ถอนทิ้งไปแล้ว) ซึ่งเป็นเหตุผลที่ Fair Value ของ Charlie แทบไม่ขยับแม้จะยอมรับว่าฐานข้อมูลเดิมผิด",
+      "หลังแก้ตัวเลขแล้ว Warren อยู่ 'ต่ำกว่า' ผู้ตรวจของเขาเอง ($73 vs $75) และฐานกำไร $2.09 ที่ใช้ต่ำกว่าที่ Charlie คำนวณจากตัวเลขจริง ($2.45) ราว 15% — ทั้งสองอินพุตของ Warren อนุรักษ์นิยมไปทางเดียวกัน ไม่ใช่ความผิดพลาดสองข้อที่หักกลบกันเอง"
+    ],
+    "risk_th": [
+      "🔴 Fair Value ร่วงจาก $114 เหลือ $73 — Warren พบว่าฐานกำไรปี 2027 ที่ใช้ ($2.72) เป็นประมาณการของ UBS เอง สูงกว่าค่าเฉลี่ยนักวิเคราะห์ราว 30% ทั้งที่ค่าเฉลี่ยจริง ($2.09) พิมพ์อยู่ในคอลัมน์ข้างกันในตารางหน้าเดียวกัน สร้างใหม่บน $2.09 พร้อมลดตัวคูณ 42x → 35x และ growth 45% → 35%/ปี",
+      "🔴 ตกเกณฑ์ 3 ข้อพร้อมกันไม่ใช่ข้อเดียว: MoS -139.6% (จาก -53.46%), PEG 2.39 (เกณฑ์ 1.5), WAF 6.49 (เกณฑ์ซื้อ 6.5) — และทุกฉากทัศน์ต่ำกว่าราคาปัจจุบันหมด Bull $88 / Base $73 / Bear $52",
+      "การอัพ tier เป็น Pre-Inevitable ไม่ได้ทำให้ซื้อง่ายขึ้น กลับเข้มขึ้น — เพิ่มด่าน PEG ≤1.5 ที่ PLTR ตกอยู่ที่ 2.39 (ทั้งบนตัวเลข Warren และตัวเลข Charlie ที่ 2.37) ส่วนเพดานน้ำหนักพอร์ตยัง 10% เท่าเดิมเพราะ PLTR อยู่นอกกลุ่ม theme AI Revolution สรุปคืออัพเกรดที่ไม่ขยับเงินแม้บาทเดียว",
+      "สัญญาณที่ตกคือ crisis-survival และเป็นตัวหักล้าง tier โดยตรง — ธุรกิจเวอร์ชันนี้ (เครื่องยนต์ AIP/commercial ที่เพิ่งสเกลปี 2024-25) ยังไม่เคยผ่านเศรษฐกิจถดถอย, รอบขาลง CapEx AI หรือการแช่แข็งงบภาครัฐจริง",
+      "ราคาสูงกว่า 'พื้น' ที่ Charlie คำนวณ ($20 = กระแสเงินสดอิสระต่อหุ้นจริง $1.303 × 15) ถึง 8.6 เท่า — กำไรที่อยู่ในบัญชีแล้วรองรับราคาได้แค่ราว 12% ที่เหลือคือการเดิมพันกับการเติบโตที่ยังไม่เกิด",
+      "ย้อนคิดจากราคา: คงตัวคูณ 42x สิบปีต้องโต 12.1%/ปี, ตัวคูณลดมา 25x ต้องโต 18.0%/ปี, ที่ 20x ต้องโต 20.7%/ปี — ตลาดขอทั้งการโตเลขสองหลักกลางถึงสูงต่อเนื่องสิบปี บวกตัวคูณที่ยังพรีเมียมอยู่ตอนจบ",
+      "🔵 คุณภาพแหล่งข้อมูลบนหุ้นตัวนี้แย่ทั้งสองฝั่ง และนี่คือข้อกังวลที่ยังค้างจริงข้อเดียว: ฐานข้อมูลฟรีที่ Charlie ใช้รายงานผลประกอบการที่บริษัทประกาศแล้วต่ำกว่าจริง 24.3% (ใช้ไม่ได้เลย) ส่วนตัวเลข LSEG ที่ Warren ใช้ก็ต่ำกว่าความจริง 14.5% ที่จุดตั้งต้นเพราะเก็บก่อนงบ Q2 ออก — ถ้าอนาคตมีใครเสนอ PLTR เข้าพิจารณาซื้อ ความเสี่ยงจะกลายเป็น 'ฐานกำไรเก่าเกินไป' ไม่ใช่ 'สูงเกินไป'",
+      "SBC (ค่าตอบแทนพนักงานเป็นหุ้น) ราว 14% ของรายได้และโตเร็วกว่ารายได้ ไม่ถูกหักออกจากกำไรที่ใช้คำนวณมูลค่านี้ — เป็นต้นทุนจริงทางเศรษฐกิจที่ตัวเลขไม่คิด และเป็นเหตุผลหนึ่งที่คะแนนความเสี่ยง (RA 5.8) ยังต่ำ",
+      "ขาที่อ่อนสุดของ tier ใหม่คือการนำเงินไปลงทุนต่อ: CapEx ย้อนหลัง 12 เดือนแค่ $42.0M เทียบกับ $2,311M ที่ไหลไปพักในหลักทรัพย์ลงทุน — ผลตอบแทนสูงบนฐานทุนเล็ก $365M ไม่เท่ากับความสามารถทบต้นเงินก้อนใหม่",
+      "ความเสี่ยงเดิมที่ยังอยู่: การพึ่งพางบภาครัฐและรอบ appropriations, hyperscaler ลอกเลียน AIP, โครงสร้างหุ้น dual-class ที่อำนาจอยู่กับผู้ก่อตั้งกลุ่มเล็ก, ผู้บริหารขายหุ้นต่อเนื่องหลายไตรมาส และคดี Cupat/CalPERS ที่ยังไม่มีคำตัดสินจากศาลอุทธรณ์เขต 10 ผ่านมาราว 5 เดือนหลังแถลงด้วยวาจา 16 มี.ค. 2026"
     ]
   },
   "SKHY": {
