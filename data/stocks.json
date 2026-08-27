@@ -27,14 +27,14 @@
     "action": "buy",
     "actionLabel": "Buy",
     "conviction": 5,
-    "waf": 8.63,
+    "waf": 8.81,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 208.48,
-    "fv": 309,
-    "mos": 32.53,
-    "fpe": 16.2,
-    "peg": 0.65,
+    "price": 219.53,
+    "fv": 384,
+    "mos": 42.8,
+    "fpe": 14.3,
+    "peg": 0.48,
     "scores": {
       "bq": [
         9.5,
@@ -42,27 +42,27 @@
         95
       ],
       "gp": [
-        9.5,
+        9.7,
         "green",
-        95
+        97
       ],
       "va": [
-        8.3,
+        9.0,
         "green",
-        83
+        90
       ],
       "ra": [
-        5.7,
+        5.3,
         "orange",
-        57
+        53
       ]
     },
-    "idea": "AI factory platform — CUDA + system-integration moat + Vera Rubin ramp. รอบ 08-14 ทำ full Revenue-as-Base rebuild: revenue consensus $561.51B × normalized margin 55% ÷ 24.0B shares = $12.87 → FV $309 (EPS/multiple คงเดิมรอบนี้ ไม่มี earnings ใหม่). รอบ 08-25 เป็น price/news refresh ล้วน — ราคาลด MoS ขยายเป็น 32.53% พร้อม PEG 0.65 และ ER 33.2% — **ผ่านครบ 4 rules สบายขึ้น**",
-    "updated": "2026-08-25",
+    "idea": "AI factory platform — CUDA + system-integration moat + Vera Rubin ramp (production shipments started, ~20% of Q3 FY27 DC revenue). รอบ 08-27 ทำ full rebuild หลัง Q2 FY27 earnings: FY2027 revenue bridge $400.0B (Q1+Q2 actual + Q3 guide + Q4 estimate) × **management's own +70% YoY FY2028 guide** ÷ margin bottom-up 53.5% ÷ 23.7B shares = $15.35 EPS × 25× = FV Base **$384** (จาก $309 เดิม, +24%). ราคายังไม่ตามทัน (AH +4.71% เทียบ FV +24%) → MoS ขยายกว้างมากเป็น 42.8%",
+    "updated": "2026-08-27",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-08-25",
+      "updated": "2026-08-27",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
@@ -73,75 +73,77 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price $208.48 matches yfinance close and prices_cache.json exactly; Nasdaq API intraday quote $211.29 is within 1.4% (< 2% tolerance, no override needed)",
-        "EPS $12.87 rebuild reproduces Warren's figure exactly using unchanged revenue/margin/shares inputs verified independently on 08-18",
-        "24× multiple corroborated 08-18 via WebSearch against two independent sources (fullratio, gurufocus)"
+        "FY2028 +70% revenue growth guidance ✓ independently confirmed real — CFO Colette Kress, Q2 FY27 earnings call 2026-08-26 (CNBC, Axios, Seeking Alpha, Fortune, Yahoo Finance all independently report it as NVIDIA's first-ever year-ahead guide, well above the ~44% analysts had modeled). This is Tier-1 management guidance — a hard revenue number the company itself committed to, not an analyst's estimate of where the stock will trade.",
+        "GM guidance path ✓ confirmed: Q3 FY27 guided 74.0% (matches Warren exactly), FY28 outlook reset to 72-73% (Seeking Alpha headline, independently corroborates Warren's cited range)",
+        "Q1+Q2 FY27 actuals ✓ confirmed: $81.6B (May 2026) + $96.2B (Aug 2026) — sums with Warren's Q3 guide + Q4 estimate to $400.0B, matching Warren's FY27 base within $0.3B",
+        "RA-side concerns independently verified as real: $105B SB Energy/OpenAI Ohio guarantee confirmed (SEC filing 2026-08-17, CNBC/Axios), DSO extended to 60 days confirmed ('Nvidia is financing its own demand', FXStreet 2026-08-26), AR $63.06B vs $38.47B at FY-year-end (+$24.6B, close to Warren's cited +$22.4B) — plus one incremental data point not in Warren's note: 3 customers = 56% of total AR (23%+19%+14%, per 10-Q disclosure)"
       ],
       "concerns": [
-        "Q2 FY2027 earnings report tomorrow (2026-08-26) — this FV rests on FY2028 EPS build; a weak GM guide or China-revenue disclosure could move the margin assumption materially within days of this review",
-        "Circular-financing story continues to widen (OpenAI Ohio cut is de-escalation, but SpaceX $21B stake + Cerebras entrant are still live threads) — RA 5.7/10 already prices in some of this, not a new concern but not resolved either"
+        "This is the largest single-batch FV revision in months (+24%, $309→$384) — the underlying guidance genuinely checks out as real Tier-1 evidence, but the size of the move still deserves elevated scrutiny; recommend re-underwriting after the Q3 FY27 print (~Nov 2026) confirms the $108.0B guide rather than treating this FV as settled",
+        "Counterparty/customer concentration is more concentrated than Warren's note quantifies in isolation: 3 customers = 56% of a $63B AR balance, layered on top of the $105B SB Energy conditional guarantee — RA 5.3/10 already moves in the right direction for this, but the 56% figure itself is worth adding to the card explicitly",
+        "China Data Center revenue is explicitly excluded from the FY28 guide (per CFO Kress) — disclosed optionality upside not in either FV, not a downside risk, but worth flagging so the FV isn't misread as already crediting a China re-entry catalyst"
       ],
       "summary": "",
-      "review_date": "2026-08-25"
+      "review_date": "2026-08-27"
     },
     "mark_easy": {
-      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่ทั้งโลกต้องพึ่ง — รอบนี้ Warren รื้อวิธีคำนวณมูลค่าใหม่จากฐานรายได้ (Revenue-as-Base) แล้ว NVDA ผ่านครบ 4 เกณฑ์เป็นครั้งแรกนับตั้งแต่เกณฑ์ MoS ขยับเป็น 20%",
-      "what": "NVIDIA ขายระบบ AI ครบวงจร — ชิป GPU (Blackwell กำลังต่อด้วย Vera Rubin) + ชิป Vera CPU ตัวใหม่ + เครือข่าย Spectrum-X/InfiniBand + ซอฟต์แวร์ CUDA ให้ดาต้าเซ็นเตอร์ทั่วโลก รายได้เกือบทั้งหมดมาจากฝั่ง Data Center ที่โต 92% YoY ในไตรมาสล่าสุด",
+      "one_liner": "เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่ทั้งโลกต้องพึ่ง — ไตรมาสนี้ทำสถิติใหม่ต่อเนื่องเป็นไตรมาสที่ 4 พร้อมประกาศเป้ารายได้ล่วงหน้าเต็มปีเป็นครั้งแรกในประวัติศาสตร์บริษัท (+70% ปีหน้า)",
+      "what": "NVIDIA ขายแพลตฟอร์ม AI แบบครบวงจร — ชิป GPU Blackwell ที่กำลังต่อด้วย Vera Rubin (เริ่มส่งมอบจริงแล้วตั้งแต่ต้นเดือนสิงหาคม 2026) ชิป Vera CPU ตัวใหม่ เครือข่าย Spectrum-X/InfiniBand และซอฟต์แวร์ CUDA ที่ผูกนักพัฒนาไว้กว่า 7.5 ล้านคน ไตรมาส 2 ปีงบ 2027 (สิ้นสุด ก.ค. 2026) ทำรายได้รวม $96.2B โต 106% เทียบปีก่อน มาจากฝั่ง Data Center เป็นหลัก ($89.0B +117% YoY)",
       "why_invest": [
-        "CUDA ล็อกลูกค้าไว้แน่น — Gross Margin 75% ทั้งที่ไม่มีรายได้ซอฟต์แวร์แยก เทียบ AMD ที่ GM 57% ส่วนต่าง 18 จุดคือมูลค่า CUDA ที่ซ่อนอยู่ในราคาชิป",
-        "Vera Rubin กำลังเข้าสู่การผลิตจริงช่วงครึ่งหลังปี 2026 — เร็วกว่า Blackwell ถึง 35 เท่าในงาน inference และ Vera CPU เปิดตลาดใหม่มูลค่า $200B ที่ NVDA ไม่เคยแตะมาก่อน",
-        "รอบนี้ผ่านครบ 4 เกณฑ์ (MoS 27.1%, PEG 0.70, ER 31.5%/ปี, WAF 8.5) เป็นครั้งแรกตั้งแต่เกณฑ์ปรับเข้มขึ้นเป็น 20% — Charlie ตรวจสอบอิสระคำนวณ EPS ได้ตรงกับ Warren เป๊ะ"
+        "งบไตรมาสล่าสุดโตเร่งขึ้นติดต่อกันเป็นไตรมาสที่ 4 (รายได้ +106% YoY, Non-GAAP EPS $2.22) พร้อมประกาศเป้ารายได้ปีงบ 2028 ล่วงหน้าเป็นครั้งแรกในประวัติศาสตร์บริษัทที่ +70% YoY — ผู้บริหารระบุว่านี่คือเพดานที่กำลังการผลิตรองรับได้ ดีมานด์จริงสูงกว่านี้มาก",
+        "Vera Rubin เข้าสู่การผลิตจริงแล้ว ได้ออเดอร์จาก hyperscaler/AI cloud/system OEM รายใหญ่ทุกเจ้าแล้ว คาดเป็นสัดส่วนราว 20% ของรายได้ Data Center ในไตรมาสหน้า",
+        "Warren คำนวณมูลค่าที่แท้จริง (FV) รอบนี้ได้ $384 ขึ้นจาก $309 เดิม (+24%) ราคาที่ใช้คำนวณยังไม่ตามทัน ทำให้ส่วนต่างความปลอดภัย (MoS) กว้างถึง 42.8% — Charlie ตรวจสอบอิสระได้ $377 ใกล้เคียงกันมาก (ต่างกันแค่ 1.8%) และเห็นตรงกันว่า BUY"
       ],
       "watch_out": [
-        "Supply commitment แบบไม่มีสิทธิ์ยกเลิกพุ่งไป $119B (+25% จากไตรมาสก่อน) ถ้า demand ชะลอกะทันหันจะเป็นภาระใหญ่",
-        "เรื่อง circular financing ยังลามต่อ ล่าสุดมี MOU มูลค่า $500B กับสถาบันการเงิน 6 แห่ง — Warren คิดความเสี่ยงนี้ไว้ใน RA score แล้วแต่ยังต้องติดตาม",
-        "งบไตรมาสถัดไปออก 26 ส.ค. 2026 (สัปดาห์หน้า) จะเป็นบทพิสูจน์ EPS ปีงบ 2028 ที่ใช้คำนวณมูลค่าทันที"
+        "อัตรากำไรขั้นต้น (Gross Margin) ถูกปรับลดเป้าเป็นครั้งแรกในรอบหลายไตรมาส — ไตรมาสหน้าคาดเหลือ 74.0% (จาก 74.9-75.0% จริงไตรมาสนี้) และจะแตะจุดต่ำสุด 71-72% ในไตรมาส 4 ปีงบ 2027 ก่อนฟื้นตัว สาเหตุคือราคา memory ที่ผู้บริหารบอกเองว่า 'extreme' และจะแพงขึ้นอีกในปีหน้า",
+        "เพิ่งเปิดเผยวงเงินค้ำประกันก้อนใหญ่ที่สุดเท่าที่เคยมี — ดีล SB Energy/OpenAI Ohio ค้ำประกันสูงสุด $105B (รวมของเดิมเป็น exposure ทั้งหมด $108.5B) และ Jensen ยอมรับตรงๆ บนเวทีว่าจะมีคนเรียกดีลนี้ว่า circular financing",
+        "ระยะเวลาเก็บหนี้ลูกค้า (DSO) ยืดจาก 45 เป็น 60 วันในไตรมาสเดียว ลูกหนี้การค้าเพิ่มขึ้น $22.4B — Charlie เสริมว่าลูกค้าแค่ 3 รายคิดเป็น 56% ของยอดลูกหนี้ทั้งหมด $63B ต้องติดตามความเข้มข้นของความเสี่ยงนี้ต่อ"
       ]
     },
     "mark_full": {
-      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company แบ่งเป็น 2 Market Platform หลัก: Data Center ($75.2B ในไตรมาสล่าสุด +92% YoY) และ Edge Computing ($6.4B +29% YoY) สินค้าหลักคือชิป Blackwell/Vera Rubin ชิป Vera CPU ตัวใหม่ เครือข่าย Spectrum-X และซอฟต์แวร์ CUDA ที่ผูกลูกค้าไว้ทั้งระบบ",
-      "tam": "Jensen Huang ยืนยันเป้า Blackwell+Rubin รวม $1 ล้านล้านดอลลาร์สะสมตั้งแต่ปี 2025-2027 และ Vera CPU เปิดตลาดใหม่ $200B ที่ไม่เคยมีใครนับรวมมาก่อน บวกกับ Physical AI ที่ทำรายได้แล้วกว่า $9B ใน 12 เดือนที่ผ่านมา",
-      "moat": "CUDA moat 3 ชั้น (ecosystem 7.5 ล้าน dev, library อย่าง TensorRT, compiler ที่ปิด source) ยังแข็งแรง แม้เริ่มถูกท้าทายจากเครื่องมือ cross-platform อย่าง Triton — Warren ประเมินว่ายังไม่ถึงจุดที่กัดกร่อนโครงสร้างราคา",
-      "latest_financials": "Q1 FY2027: รายได้ $81.6B +85% YoY, Non-GAAP EPS $1.87, FCF $48.6B, guidance ไตรมาสถัดไป $91B ±2% รอบนี้ Warren รื้อฐานคำนวณ EPS ใหม่จากรายได้ consensus ปีงบ 2028 ($561.51B) × margin 55% ÷ หุ้น 24B หุ้น = EPS $12.87 (จากเดิมที่ carry ตัวเลข consensus ตรงๆ $12.15) คูณ multiple 24 เท่าเดิม ได้ FV $309",
+      "business_overview": "NVIDIA เป็น Full-Stack AI Infrastructure Company แบ่งรายงานเป็น 2 Market Platform: Data Center ($89.0B ในไตรมาสล่าสุด +117% YoY, +18% QoQ) และ Edge Computing ($7.2B +27% YoY) รวมรายได้ไตรมาส 2 ปีงบ 2027 ทั้งสิ้น $96.2B +106% YoY ในมุม GAAP segment แบ่งเป็น Compute & Networking $88.3B (+114% YoY) และ Graphics $7.9B (+46% YoY) สินค้าหลักยังเป็นชิป Blackwell/Blackwell Ultra ที่กำลังต่อด้วย Vera Rubin ชิป Vera CPU ตัวใหม่ เครือข่าย Spectrum-X และซอฟต์แวร์ CUDA ที่ผูกลูกค้าไว้ทั้งระบบ",
+      "tam": "Jensen ยืนยันเป้า Blackwell+Rubin รวม $1 ล้านล้านดอลลาร์สะสมช่วงปี 2025-2027 คงเดิม และรอบนี้เปิดเผยเป้าใหม่ — รายได้ปีงบ 2028 คาดโต +70% YoY (เป็นเป้าล่วงหน้าเต็มปีครั้งแรกที่บริษัทเคยให้) โดยระบุชัดว่าเป็นเพดานที่จำกัดด้วย supply ไม่ใช่เพดานดีมานด์ Vera CPU เปิดตลาดใหม่ $200B ที่ไม่เคยมีใครนับรวมมาก่อน และ Physical AI ทำรายได้แล้วกว่า $9B ใน 12 เดือนที่ผ่านมา",
+      "moat": "CUDA moat 3 ชั้น (ecosystem 7.5 ล้าน dev, library, compiler) ยังแข็งแรง — Gross Margin 75% ทั้งที่ไม่มีรายได้ซอฟต์แวร์แยก เทียบ AMD ที่ GM 57% ส่วนต่าง 18 จุดคือมูลค่า CUDA ที่ซ่อนอยู่ในราคาชิป นอกจากนี้ยังมี moat ชั้นใหม่ที่แข็งขึ้นเรื่อยๆ คือการออกแบบทั้งระบบร่วมกัน (chip+optics+software) ที่ทำให้ NVDA รับมือปัญหาขาดแคลน memory ได้ดีกว่าคู่แข่ง — Warren ยังจับตาแรงกดดันจากเครื่องมือ cross-platform อย่าง Triton ที่เริ่มลดต้นทุนแรงงานในการย้ายค่ายจาก CUDA แต่ยังไม่มีข้อมูลรายได้/ส่วนแบ่งตลาดปี 2026 ยืนยันว่ากัดกร่อนจริง",
+      "latest_financials": "Q2 FY2027 (สิ้นสุด ก.ค. 2026): รายได้ $96.2B +106% YoY +18% QoQ, Non-GAAP EPS $2.22 (+120% YoY), GAAP EPS $2.46, FCF $21.3B (ลดจากไตรมาสก่อนเพราะ working capital + ภาษีเงินสดที่สูงขึ้น) guidance ไตรมาสหน้า (Q3 FY27) รายได้ $108.0B ±2% (ไม่รวมรายได้ China Data Center) แต่ Gross Margin ปรับลดเหลือ 74.0% รอบนี้ Warren รื้อฐานคำนวณ EPS ใหม่ทั้งหมด — สร้างสะพานรายได้ปีงบ 2027 จากตัวจริง Q1+Q2 บวก guidance Q3 บวกประมาณการ Q4 เอง = $400.0B คูณเป้าโตปีงบ 2028 ที่ผู้บริหารประกาศ +70% = รายได้ $680.5B หาร margin จากสูตร bottom-up 53.5% หารจำนวนหุ้น 23.7B หุ้น ได้ EPS $15.35 คูณ multiple 25 เท่า ได้ FV Base ใหม่ $384 (จาก $309 เดิม +24%)",
       "key_points": [
-        "รอบนี้เป็น full rebuild ไม่ใช่แค่ปรับราคา — เปลี่ยนวิธีได้ EPS จาก 'รายได้ consensus × margin' แทนการ carry ตัวเลข EPS เดิม ทำให้ FV ขยับจาก $292 เป็น $309",
-        "ผ่านครบ 4 เกณฑ์ (MoS/PEG/ER/WAF) เป็นครั้งแรกตั้งแต่เกณฑ์ MoS ขยับเป็น 20% — เป็นตำแหน่งที่ถืออยู่แล้ว ($60) จึงเป็นตัวเลือกอันดับ 1 ถ้าจะเพิ่มเงินลงทุน",
-        "Charlie ตรวจสอบอิสระคำนวณ EPS ได้ $12.87 ตรงกับ Warren เป๊ะ พร้อมยืนยันราคาและ P/E median จากแหล่งอิสระ",
-        "ความเสี่ยงหลักที่ต้องติดตาม: supply commitment $119B ที่ยกเลิกไม่ได้ + circular financing ที่ยังลามต่อเนื่อง + งบไตรมาสถัดไป 26 ส.ค. 2026"
+        "รอบนี้เป็น full rebuild หลังงบจริง ไม่ใช่แค่ปรับราคา — ตัวขับหลักคือเป้ารายได้ปีงบ 2028 ล่วงหน้าเต็มปีครั้งแรก (+70% YoY) ที่ทำให้มุมมองการเติบโตเปลี่ยนจาก 'ชะลอตัว' เป็น 'โตต่อเนื่องที่ผู้บริหารยืนยันเอง' — ถูกหักลบบางส่วนด้วย Gross Margin ที่ถูกปรับลดจากราคา memory ที่แพงขึ้น",
+        "Charlie ตรวจสอบอิสระได้ FV $377 ใกล้เคียง Warren $384 มาก (ห่างกันแค่ 1.8%) ยืนยันว่าเป้ารายได้ +70% เป็นของจริง ตรวจสอบแล้วจากหลายแหล่งข่าวอิสระ — แต่เตือนว่านี่คือการปรับ FV ครั้งใหญ่ที่สุดในรอบหลายเดือน แนะนำติดตามผลจริงไตรมาส 3 (พ.ย. 2026) ก่อนถือว่าตัวเลขนี้นิ่งแล้ว",
+        "ความเสี่ยงใหม่ที่ต้องติดตาม: วงเงินค้ำประกัน SB Energy/OpenAI Ohio $105B ที่เพิ่งเปิดเผยเป็นตัวเลขจริงบนงบ (จากเดิมเป็นแค่ข่าวลือ), ภาระ supply commitment ที่พุ่งจาก $119B เป็น $279B ในไตรมาสเดียว (ส่วนใหญ่มาจากการจองซื้อ memory ล่วงหน้า), และระยะเวลาเก็บหนี้ลูกค้าที่ยืดออก",
+        "เป็นตำแหน่งที่ถืออยู่แล้ว ยังเป็น ADD candidate อันดับต้นๆ ของพอร์ต ด้วย MoS ที่กว้างขึ้นเป็น 42.8% และ WAF ขยับขึ้นเป็น 8.81 อยู่โซน VERY HIGH"
       ]
     },
     "warren_easy": [
-      "NVDA tier Pre-Inevitable ไม่เปลี่ยน WAF ขยับขึ้นต่อเป็น 8.63 (โซน HIGH) — รอบนี้เป็น price/news refresh ล้วน FV คงเดิมที่ $309 (EPS $12.87 × multiple 24 เท่า ไม่เปลี่ยนจากรอบรื้อฐาน 14 ส.ค. เพราะยังไม่มีงบใหม่)",
-      "ราคาลดลงมาที่ $208.48 เทียบ FV $309 ทำให้ MoS ขยับกว้างขึ้นเป็น 32.53% ผ่านเกณฑ์สบายขึ้นไปอีก พร้อม PEG 0.65 และ Expected Return 33.2%/ปี — ผ่านครบ 4 เกณฑ์ต่อเนื่อง",
-      "Action ยังเป็น BUY — เป็นตำแหน่งที่ถืออยู่แล้ว ยังเป็น ADD candidate อันดับ 1 ข่าวสำคัญหลัง 14 ส.ค. คือดีล OpenAI Ohio ลดขนาดค้ำประกันจาก $250B เหลือ $120B (คลายความเสี่ยง circular financing ไม่ใช่เพิ่ม) ต้องจับตางบไตรมาสถัดไปที่จะออกพรุ่งนี้ (26 ส.ค. 2026) ซึ่งจะทดสอบตัวเลข EPS ที่เพิ่งรื้อใหม่ทันที"
+      "NVDA tier Pre-Inevitable ไม่เปลี่ยน รอบนี้ Warren ทำ full rebuild หลังงบไตรมาส 2 ปีงบ 2027 ออก — FV Base ขยับขึ้นแรงจาก $309 เป็น $384 (+24%) ตัวขับหลักคือเป้ารายได้ปีงบ 2028 ล่วงหน้าเต็มปีครั้งแรกที่ +70% YoY ถูกหักลบบางส่วนด้วย margin ที่ปรับฐาน bottom-up ลงเหลือ 53.5% จากราคา memory ที่แพงขึ้น",
+      "GP ขยับขึ้นเป็น 9.7 (จาก 9.5) จากการโตเร่งขึ้นติดต่อกัน 4 ไตรมาส ส่วน RA ลดลงเหลือ 5.3 (จาก 5.7) เพราะดีลค้ำประกัน SB Energy/OpenAI $105B กลายเป็นตัวเลขจริงบนงบแล้ว บวกกับ supply commitment ที่พุ่งขึ้น 134% และ DSO ที่ยืดออก — WAF รวมขยับขึ้นเป็น 8.81 โซน VERY HIGH",
+      "ราคาที่ใช้คำนวณยังไม่ตามทัน FV ใหม่ ทำให้ MoS กว้างถึง 42.8% พร้อม PEG 0.48 และ Expected Return 41.8%/ปี — ผ่านครบทุกเกณฑ์ Action ยังเป็น BUY เป็นตำแหน่งที่ถืออยู่แล้วและยังเป็น ADD candidate อันดับต้นๆ"
     ],
     "charlie_easy": {
       "verdict": "AGREE",
       "paragraphs": [
-        "Charlie ตรวจสอบอิสระในรอบรีวิว 18 หุ้นล่าสุด (25 ส.ค.) — EPS $12.87 และ multiple 24 เท่า คงเดิมจากรอบ 18 ส.ค. ที่เคย rebuild เองมาแล้ว ไม่มีงบใหม่เข้ามาเปลี่ยนตัวเลข (งบจริงออกพรุ่งนี้ 26 ส.ค.)",
-        "ยืนยันราคาตรงกับ yfinance เป๊ะ ($208.48) เทียบ Nasdaq intraday $211.29 ต่างกันแค่ 1.4% ยังอยู่ในเกณฑ์ที่ยอมรับได้",
-        "ข้อกังวลหลักคือพรุ่งนี้ (26 ส.ค.) NVDA รายงานงบไตรมาส 2 ปีงบ 2027 ซึ่งจะทดสอบสมมติฐาน margin 55% ที่ใช้คำนวณ EPS ปีงบ 2028 ทันที ส่วนเรื่อง circular financing แม้ดีล OpenAI Ohio จะลดขนาดลง (คลายความเสี่ยง) แต่สายสัมพันธ์ SpaceX $21B ที่เพิ่งเปิดเผยและผู้เล่นใหม่ Cerebras ยังเป็นประเด็นที่ต้องติดตามต่อ"
+        "Charlie ตรวจสอบอิสระหลังงบไตรมาส 2 ปีงบ 2027 ออก — สร้างสะพานรายได้เองจากตัวเลขจริง Q1+Q2 บวก guidance Q3 บวกประมาณการ Q4 ของตัวเอง ได้ FV $377 ใกล้เคียง Warren ที่ $384 มาก ห่างกันแค่ 1.8% ยืนยันว่าเป้ารายได้ปีงบ 2028 +70% YoY เป็นของจริง ตรวจสอบข้ามหลายแหล่งข่าวอิสระแล้วตรงกัน",
+        "ยืนยันตัวเลข GM guidance, รายได้ Q1+Q2 จริง, และความเสี่ยงฝั่ง RA ทั้งหมดว่าเป็นของจริง — พร้อมเสริมข้อมูลที่ Warren ยังไม่ระบุ คือลูกค้าแค่ 3 รายคิดเป็น 56% ของยอดลูกหนี้การค้าทั้งหมด $63B (ตามข้อมูลใน 10-Q) ซึ่งทำให้ความเข้มข้นของความเสี่ยงคู่ค้าสูงกว่าที่ตัวเลข RA เดี่ยวๆ สะท้อน",
+        "ข้อกังวลหลัก: นี่คือการปรับ FV ครั้งใหญ่ที่สุดในรอบหลายเดือน (+24%) แม้ข้อมูลอ้างอิงจะตรวจสอบแล้วว่าจริง แต่ยังอิงตัวเลขไตรมาส 4 ที่ยังไม่มี guidance จากผู้บริหาร แนะนำประเมินใหม่หลังงบไตรมาส 3 ออก (ประมาณ พ.ย. 2026) ก่อนถือว่า FV นี้นิ่งแล้ว ส่วนรายได้ China Data Center ที่ไม่รวมอยู่ในเป้าปีงบ 2028 เลย ถือเป็นโอกาสเพิ่มเติมที่ยังไม่ได้ใส่ไว้ใน FV ทั้งสองฝั่ง"
       ],
-      "review_date": "2026-08-25"
+      "review_date": "2026-08-27"
     },
-    "idea_th": "BUY ต่อเนื่อง — เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่สุดในตลาด (CUDA + Blackwell→Vera Rubin + ตลาดใหม่ Vera CPU $200B) รอบนี้เป็น price/news refresh ล้วน (ไม่มีงบใหม่) FV คงเดิมที่ $309 ราคาลดลงมาที่ $208.48 ทำให้ MoS ขยับกว้างขึ้นเป็น 32.53% ผ่านเกณฑ์สบายขึ้นไปอีก พร้อม PEG 0.65 และ Expected Return 33.2%/ปี — ผ่านครบ 4 เกณฑ์ต่อเนื่อง WAF ขยับขึ้นเป็น 8.63 อยู่โซน HIGH สูงสุดในกลุ่มที่ติดตาม Charlie ตรวจสอบอิสระยืนยันตัวเลขตรงกับ Warren เป๊ะ ข่าวสำคัญหลัง 14 ส.ค. คือดีล OpenAI Ohio ลดขนาดค้ำประกันจาก $250B เหลือ $120B ซึ่งคลายความเสี่ยง circular financing ลง ไม่ใช่เพิ่มขึ้น ความเสี่ยงที่ต้องติดตามยังเป็น supply commitment ที่ยกเลิกไม่ได้ สายสัมพันธ์ SpaceX $21B ที่เพิ่งเปิดเผย และงบไตรมาสถัดไปที่จะออกพรุ่งนี้ (26 ส.ค. 2026) ซึ่งจะทดสอบตัวเลข EPS ที่รื้อใหม่ทันที เป็นตำแหน่งที่ถืออยู่แล้วจึงยังเป็น ADD candidate อันดับ 1",
+    "idea_th": "BUY ต่อเนื่อง — เจ้าของแพลตฟอร์ม AI factory ครบวงจรที่สุดในตลาด (CUDA + Blackwell→Vera Rubin + ตลาดใหม่ Vera CPU $200B) รอบนี้ Warren ทำ full rebuild หลังงบไตรมาส 2 ปีงบ 2027 ที่ทำสถิติใหม่ต่อเนื่องเป็นไตรมาสที่ 4 พร้อมประกาศเป้ารายได้ปีงบ 2028 ล่วงหน้าเต็มปีครั้งแรก +70% YoY ทำให้ FV Base ขยับขึ้นแรงจาก $309 เป็น $384 (+24%) ราคาที่ใช้คำนวณยังไม่ตามทัน MoS จึงกว้างถึง 42.8% พร้อม PEG 0.48 และ Expected Return 41.8%/ปี WAF ขยับขึ้นเป็น 8.81 โซน VERY HIGH สูงสุดในกลุ่มที่ติดตาม Charlie ตรวจสอบอิสระได้ FV ใกล้เคียงกันมาก ($377 ห่างกันแค่ 1.8%) และเห็นตรงกันว่า BUY ความเสี่ยงที่ต้องติดตามเพิ่มคือ Gross Margin ที่ถูกปรับลดจากราคา memory ที่แพงขึ้น วงเงินค้ำประกัน SB Energy/OpenAI Ohio $105B ที่เพิ่งเปิดเผยเป็นตัวเลขจริง และระยะเวลาเก็บหนี้ลูกค้าที่ยืดออก — เป็นตำแหน่งที่ถืออยู่แล้วและยังเป็น ADD candidate อันดับต้นๆ ของพอร์ต",
     "story_gate_th": {
-      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — ชิป GPU Blackwell ที่กำลังต่อด้วย Vera Rubin (เข้าสู่การผลิตจริงช่วงครึ่งหลังปี 2026) + ชิป Vera CPU ตัวใหม่เปิดตลาด $200B + เครือข่าย Spectrum-X/InfiniBand + ซอฟต์แวร์ CUDA ที่มีนักพัฒนากว่า 7.5 ล้านคนผูกไว้",
-      "why": "รอบนี้เป็น price/news refresh ล้วน (ไม่มีงบใหม่) FV คงเดิมที่ $309 ราคาลดลงมาที่ $208.48 ทำให้ MoS ขยับกว้างขึ้นเป็น 32.53% ผ่านเกณฑ์สบายขึ้นไปอีก ธุรกิจหลักไม่เปลี่ยน ยังคุณภาพสูงสุดในกลุ่มที่ติดตาม (WAF 8.63 HIGH) ข่าวสำคัญคือดีล OpenAI Ohio ลดขนาดค้ำประกันจาก $250B เหลือ $120B คลายความเสี่ยง circular financing ลง",
-      "risk": "ถ้า Vera Rubin เลื่อนเกิน 1 ไตรมาส หรือ hyperscaler ลด CapEx เกิน 30% หรือมีชิปคู่แข่งที่ผลิตได้จริงในสเกลใหญ่ หรือ supply commitment แบบไม่มีสิทธิ์ยกเลิกกลายเป็นภาระจริงถ้า demand ชะลอกะทันหัน หรือดีลการเงินแบบ circular financing มีคู่สัญญารายใดผิดนัด จะกระทบพื้นฐานธุรกิจโดยตรง — งบพรุ่งนี้ (26 ส.ค. 2026) คือบททดสอบถัดไปทันที"
+      "what": "NVIDIA ขายแพลตฟอร์ม AI factory ครบวงจร — ชิป GPU Blackwell ที่กำลังต่อด้วย Vera Rubin (เข้าสู่การผลิตจริงแล้วตั้งแต่ต้นเดือนสิงหาคม 2026) + ชิป Vera CPU ตัวใหม่เปิดตลาด $200B + เครือข่าย Spectrum-X/InfiniBand + ซอฟต์แวร์ CUDA ที่มีนักพัฒนากว่า 7.5 ล้านคนผูกไว้",
+      "why": "งบไตรมาส 2 ปีงบ 2027 ทำสถิติใหม่ (รายได้ $96.2B +106% YoY, Non-GAAP EPS $2.22) พร้อมประกาศเป้ารายได้ปีงบ 2028 ล่วงหน้าเต็มปีเป็นครั้งแรกในประวัติศาสตร์บริษัทที่ +70% YoY ซึ่งเปลี่ยนมุมมองการเติบโตจาก 'ชะลอตัว' เป็น 'โตต่อเนื่องที่ผู้บริหารยืนยันเอง' Warren รื้อฐานคำนวณมูลค่าใหม่ทั้งหมดโดยใช้เป้านี้เป็นฐาน ทำให้ FV Base ขยับขึ้นจาก $309 เป็น $384 (+24%) ถูกหักลบบางส่วนด้วย Gross Margin ที่ถูกปรับลดจากราคา memory ที่แพงขึ้น และความเสี่ยงใหม่ 3 ข้อที่เปิดเผยพร้อมกัน — วงเงินค้ำประกัน SB Energy/OpenAI Ohio $105B ที่กลายเป็นตัวเลขจริงบนงบ, ภาระ supply commitment ที่พุ่งจาก $119B เป็น $279B ในไตรมาสเดียว, และระยะเวลาเก็บหนี้ลูกค้าที่ยืดจาก 45 เป็น 60 วัน ธุรกิจหลักและ Tier ไม่เปลี่ยน ราคาที่ใช้คำนวณยังไม่ตามทัน FV ใหม่มากนัก ทำให้ MoS กว้างกว่าปกติที่ 42.8%",
+      "risk": "ถ้า Vera Rubin เลื่อนเกิน 1 ไตรมาส หรือ hyperscaler ลด CapEx เกิน 30% หรือมีชิปคู่แข่งที่ผลิตได้จริงในสเกลใหญ่ หรือส่วนแบ่งตลาด GPU ของ AMD ในศูนย์ข้อมูลโตขึ้นจริงตามที่ตลาดคาด ขณะที่ส่วนแบ่งของ NVDA ลดลง (สัญญาณกัดกร่อน CUDA moat) หรือดีลค้ำประกันการเงินอย่าง SB Energy/OpenAI Ohio $105B มีคู่สัญญาผิดนัดจริง จะกระทบพื้นฐานธุรกิจโดยตรง — งบไตรมาส 3 (ประมาณ พ.ย. 2026) คือบททดสอบถัดไปว่าการเติบโตแบบเร่งขึ้นจะต่อเนื่องเป็นไตรมาสที่ 3 หรือไม่"
     },
     "bull_th": [
-      "MoS 32.53%, ER 33.2%/ปี, PEG 0.65, WAF 8.63 (HIGH) — ผ่านเกณฑ์ทุกด่านสบายขึ้นต่อเนื่อง",
-      "Vera Rubin เข้าสู่การผลิตจริงช่วงครึ่งหลังปี 2026 = inference throughput เร็วกว่า Blackwell 35 เท่า + AI factory revenue เพิ่ม 10 เท่า",
-      "Vera CPU เปิดตลาดใหม่มูลค่า $200B ที่ NVDA ไม่เคยแตะมาก่อน คาดเห็นรายได้ราว $20B ปีนี้",
-      "ดีล OpenAI Ohio ลดขนาดค้ำประกันจาก $250B เหลือ $120B (17-18 ส.ค.) = คลายความเสี่ยง circular financing ที่เคยเป็นความกังวลหลัก"
+      "MoS 42.8%, Expected Return 41.8%/ปี, PEG 0.48, WAF 8.81 (VERY HIGH) — ผ่านเกณฑ์ทุกด่านกว้างขึ้นมากหลังงบไตรมาส 2 ปีงบ 2027",
+      "ประกาศเป้ารายได้ปีงบ 2028 ล่วงหน้าเต็มปีเป็นครั้งแรกในประวัติศาสตร์บริษัทที่ +70% YoY โดยระบุชัดว่าเป็นเพดานที่จำกัดด้วย supply ไม่ใช่เพดานดีมานด์จริง",
+      "Vera Rubin เข้าสู่การผลิตจริงแล้ว ได้ออเดอร์จาก hyperscaler/AI cloud/OEM รายใหญ่ทุกเจ้า คาดเป็นสัดส่วนราว 20% ของรายได้ Data Center ในไตรมาสหน้า",
+      "Charlie ตรวจสอบอิสระได้ FV ใกล้เคียง Warren มาก ($377 vs $384 ห่างกันแค่ 1.8%) ยืนยันเป้ารายได้ +70% เป็นของจริง ตรวจสอบข้ามหลายแหล่งข่าวแล้วตรงกัน"
     ],
     "risk_th": [
-      "Supply commitment แบบไม่มีสิทธิ์ยกเลิกยังเป็นภาระใหญ่ถ้า demand ชะลอกะทันหัน",
-      "สายสัมพันธ์ทางการเงินกับ SpaceX ($21B stake) เพิ่งเปิดเผย และมีผู้เล่นใหม่ Cerebras เข้าตลาดชิป — ยังต้องติดตามเรื่อง circular financing แม้ดีล OpenAI Ohio จะคลายลง",
-      "China Data Center revenue เหลือ $0 แล้วจาก export controls และมีการเปิดสอบทานรอบใหม่เรื่อง offshore access",
-      "คดีความ securities class action ได้รับ class certification แล้ว (มี.ค. 2026) ยังอยู่ระหว่างอุทธรณ์",
-      "งบไตรมาสถัดไปออกพรุ่งนี้ (26 ส.ค. 2026) จะเป็นบทพิสูจน์ตัวเลข EPS ที่เพิ่งรื้อใหม่ทันที"
+      "Gross Margin ถูกปรับลดเป็นครั้งแรกในรอบหลายไตรมาส จากราคา memory ที่ผู้บริหารบอกเองว่า 'extreme' และจะแพงขึ้นอีกในปีหน้า คาดแตะจุดต่ำสุด 71-72% ในไตรมาส 4 ปีงบ 2027",
+      "เพิ่งเปิดเผยวงเงินค้ำประกันก้อนใหญ่ที่สุดเท่าที่เคยมี — ดีล SB Energy/OpenAI Ohio ค้ำประกันสูงสุด $105B (exposure รวมทั้งหมด $108.5B) และผู้บริหารยอมรับตรงๆ ว่าจะมีคนเรียกดีลนี้ว่า circular financing",
+      "ภาระ supply commitment แบบไม่มีสิทธิ์ยกเลิกพุ่งจาก $119B เป็น $279B ในไตรมาสเดียว (+134%) ส่วนใหญ่มาจากการจองซื้อ memory ล่วงหน้า ถ้า demand ชะลอกะทันหันจะเป็นภาระใหญ่",
+      "ลูกค้าแค่ 3 รายคิดเป็น 56% ของยอดลูกหนี้การค้าทั้งหมด $63B และระยะเวลาเก็บหนี้ยืดจาก 45 เป็น 60 วัน สะท้อนว่า NVDA เริ่มให้เครดิตลูกค้าโดยตรงมากขึ้น",
+      "คดีความ securities class action ได้รับ class certification แล้ว (มี.ค. 2026) ยังอยู่ระหว่างอุทธรณ์ต่อศาลสูง"
     ]
   },
   "MSFT": {
