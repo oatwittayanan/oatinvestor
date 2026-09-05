@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oatinvestor — วางแผนเกษียณ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+<style>
+  :root {
+    --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
+    --line: #E3DBC6; --line2: #EFE8D6;
+    --green: #1F7A4E; --on-green: #FDFBF3; --red: #BE4438; --gold: #A9812F; --olive: #7A7462;
+    --strip: #1F2218; --strip-ink: #EFE9D8; --strip-muted: #98937F;
+    --shadow: 0 1px 2px rgba(41,35,15,.04), 0 16px 40px -18px rgba(41,35,15,.18);
+  }
+  html[data-theme="dark"] {
+    --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+    --line: #2E3122; --line2: #23261A;
+    --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+    --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]):not([data-theme="dark"]) {
+      --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+      --line: #2E3122; --line2: #23261A;
+      --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+      --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans Thai', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; transition: background-color .35s ease, color .35s ease; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  /* ── Nav (shared with site) ──────────────────────────────────── */
+  .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
+  .oi-nav-inner { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); min-height: 66px; flex-wrap: wrap; row-gap: 0; }
+  .oi-logo { text-decoration: none; display: flex; align-items: baseline; flex: none; }
+  .oi-logo .oat { font-family: 'Trirong', Georgia, serif; font-style: italic; font-weight: 700; font-size: 25px; color: var(--green); }
+  .oi-logo .investor { font-weight: 700; font-size: 22px; color: var(--ink); letter-spacing: -.3px; }
+  .oi-nav-links { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 26px); margin-left: auto; flex-wrap: wrap; padding: 6px 0; }
+  .oi-nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; color: var(--muted); border-bottom: 2px solid transparent; padding: 21px 2px 19px; transition: color .2s; }
+  .oi-nav-links a:hover { color: var(--ink); }
+  .oi-nav-links a.active { font-weight: 600; color: var(--ink); border-bottom-color: var(--green); padding: 10px 2px 8px; }
+  .oi-theme-btn { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; color: var(--ink); transition: border-color .2s, background-color .35s; }
+  .oi-theme-btn:hover { border-color: var(--green); }
+  .oi-theme-btn .icon { font-size: 13px; line-height: 1; }
+  .oi-theme-btn .label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .oi-cta { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 13.5px; font-weight: 600; padding: 9px 18px; border-radius: 999px; flex: none; transition: transform .2s; display: inline-block; }
+  .oi-cta:hover { transform: translateY(-1px); }
+
+  /* ── Header ───────────────────────────────────────────────────── */
+  .rp-header { max-width: 1080px; margin: 0 auto; padding: clamp(28px, 4vw, 44px) clamp(16px, 4vw, 32px) 4px; text-align: center; }
+  .rp-crumb { font-size: 12.5px; color: var(--muted); text-align: left; }
+  .rp-crumb a { color: var(--muted); text-decoration: none; }
+  .rp-crumb a:hover { color: var(--green); }
+  .rp-h1 { margin: 14px 0 10px; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(28px, 5vw, 42px); }
+  .rp-lead { margin: 0 auto; font-size: 15.5px; color: var(--muted); max-width: 62ch; line-height: 1.85; }
+  .rp-jump { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--green); border: 1px solid color-mix(in srgb, var(--green) 40%, var(--line)); padding: 8px 18px; border-radius: 999px; transition: transform .2s; }
+  .rp-jump:hover { transform: translateY(-1px); }
+
+  /* ── Input steps (now first) ──────────────────────────────────── */
+  .rp-layout { max-width: 1240px; margin: 0 auto; padding: 22px clamp(16px, 4vw, 32px) 90px; display: grid; grid-template-columns: 380px 1fr; gap: 26px; align-items: start; }
+  @media (max-width: 900px) { .rp-layout { grid-template-columns: 1fr; } .rp-input-col { position: static !important; } }
+  .rp-input-col { position: sticky; top: 84px; display: flex; flex-direction: column; gap: 18px; scroll-margin-top: 84px; }
+  .rp-steps { display: flex; flex-direction: column; gap: 18px; }
+  .rp-step { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: clamp(20px, 3vw, 26px); box-shadow: var(--shadow); transition: background-color .35s ease, border-color .35s ease; }
+  .rp-step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .rp-step-num { width: 27px; height: 27px; border-radius: 50%; background: var(--green); color: var(--on-green); display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 13px; flex: none; }
+  .rp-step-title { font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 17.5px; }
+  .rp-step-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px 30px; }
+
+  .rp-field { display: flex; flex-direction: column; gap: 9px; }
+  .rp-field-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .rp-field-head label { font-size: 13.5px; font-weight: 600; }
+  .rp-field-input { display: flex; align-items: center; gap: 6px; background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 5px 6px 5px 14px; flex: none; }
+  .rp-field-input input[type=number] { width: 88px; border: none; background: transparent; color: var(--ink); font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; text-align: right; outline: none; }
+  .rp-unit { font-size: 11px; color: var(--muted); white-space: nowrap; background: var(--line2); padding: 3px 9px; border-radius: 999px; }
+  .rp-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: var(--line); cursor: pointer; }
+  .rp-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%; background: var(--green); cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.3); margin-top: -5.5px; }
+  .rp-slider::-moz-range-thumb { width: 17px; height: 17px; border-radius: 50%; background: var(--green); cursor: pointer; border: none; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+  .rp-slider::-moz-range-track { height: 6px; border-radius: 999px; background: var(--line); }
+  .rp-hint { font-size: 11.5px; color: var(--olive); line-height: 1.5; }
+
+  /* ── Results (now below the inputs) ──────────────────────────── */
+  .rp-results { scroll-margin-top: 84px; }
+  .rp-hero { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 4vw, 34px); box-shadow: var(--shadow); transition: background-color .35s ease, border-color .35s ease; }
+  .rp-hero-title { font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(20px, 3.4vw, 26px); line-height: 1.4; }
+  .rp-hero.ok .rp-hero-title { color: var(--green); }
+  .rp-hero.warn .rp-hero-title { color: var(--red); }
+  .rp-hero-sub { margin-top: 6px; font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+  .rp-lifebar { margin-top: 42px; }
+  .rp-lifebar-track { position: relative; height: 12px; border-radius: 999px; background: var(--line2); display: flex; overflow: visible; }
+  .rp-lifebar-seg { height: 100%; }
+  .rp-lifebar-seg:first-child { border-radius: 999px 0 0 999px; }
+  .rp-lifebar-seg.acc { background: var(--green); }
+  .rp-lifebar-seg.draw { background: var(--gold); }
+  .rp-lifebar-seg.gone { background: var(--red); opacity: .5; }
+  .rp-lifebar-seg.gone:last-child, .rp-lifebar-seg.draw:last-child { border-radius: 0 999px 999px 0; }
+  .rp-lifebar-pin { position: absolute; left: 0; top: 0; transform: translate(-50%, -100%); display: flex; flex-direction: column; align-items: center; pointer-events: none; }
+  .rp-lifebar-pin .tag { font-size: 10.5px; font-weight: 700; color: var(--on-green); background: var(--gold); padding: 3px 11px; border-radius: 999px; white-space: nowrap; box-shadow: 0 2px 6px rgba(0,0,0,.18); }
+  .rp-lifebar-pin .stem { width: 2px; height: 9px; background: var(--gold); margin: 2px 0 0; }
+  .rp-lifebar-ends { display: flex; justify-content: space-between; margin-top: 8px; }
+  .rp-lifebar-ends span { font-size: 11.5px; color: var(--muted); }
+
+  .rp-stats3 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 22px; }
+  @media (max-width: 520px) { .rp-stats3 { grid-template-columns: 1fr; } }
+  .rp-stat-card { background: var(--bg); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 5px; }
+  .rp-stat-label { font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase; }
+  .rp-stat-value { font-family: 'IBM Plex Mono', monospace; font-size: 20px; font-weight: 600; line-height: 1.25; word-break: break-word; }
+  .rp-stat-sub { font-size: 11.5px; color: var(--muted); line-height: 1.55; }
+
+  .rp-chart-card { margin-top: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 24px clamp(14px, 2vw, 26px); box-shadow: var(--shadow); transition: background-color .35s ease, border-color .35s ease; }
+  .rp-chart-head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+  .rp-chart-title { font-size: 15px; font-weight: 700; }
+  .rp-chart-hint { font-size: 12px; color: var(--muted); }
+  .rp-legend { display: flex; gap: 16px; margin-left: auto; flex-wrap: wrap; }
+  .rp-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+  .rp-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+  .rp-chart-svg-wrap { position: relative; }
+  .rp-chart-svg-wrap svg { width: 100%; height: 340px; display: block; }
+  .rp-bar-tip { position: absolute; transform: translate(-50%, -100%); margin-top: -8px; background: var(--ink); color: var(--bg); font-size: 11.5px; font-weight: 500; padding: 5px 11px; border-radius: 9px; white-space: nowrap; pointer-events: none; }
+  .rp-assumptions { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .rp-assumptions li { font-size: 11.5px; color: var(--muted); line-height: 1.7; padding-left: 16px; position: relative; }
+  .rp-assumptions li::before { content: "–"; position: absolute; left: 0; color: var(--olive); }
+
+</style>
+</head>
+<body>
+
+<div class="oi-nav">
+  <div class="oi-nav-inner">
+    <a href="index.html#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
+    <div class="oi-nav-links">
+      <a href="index.html#top">หน้าแรก</a>
+      <a href="index.html#top">พอร์ตหุ้น</a>
+      <a href="tools.html" class="active">เครื่องมือทางการเงิน</a>
+      <a href="index.html#top">บทความ</a>
+      <a href="index.html#top">เกี่ยวกับ</a>
+    </div>
+    <button class="oi-theme-btn" id="oi-theme-btn" title="สลับธีม Light / Dark / Auto">
+      <span class="icon" id="oi-theme-icon">◐</span>
+      <span class="label" id="oi-theme-label">AUTO</span>
+    </button>
+  </div>
+</div>
+
+<div class="rp-header">
+  <div class="rp-crumb"><a href="tools.html">เครื่องมือทางการเงิน</a> / วางแผนเกษียณ</div>
+  <h1 class="rp-h1">เงินที่มี พอให้เกษียณไหม?</h1>
+  <p class="rp-lead">กรอกตัวเลขของคุณ เริ่มจากค่าใช้จ่ายที่อยากใช้ตอนเกษียณก่อนเลย แล้วดูว่าเงินจะพอใช้ถึงอายุเท่าไหร่ — ปรับตัวเลขเล่นได้เรื่อยๆ ผลลัพธ์คำนวณใหม่ทันที เป็นการประมาณการคร่าวๆ ไม่ใช่คำแนะนำทางการเงิน</p>
+  <a href="#rp-steps-head" class="rp-jump">วางแผนเลย ↓</a>
+</div>
+
+<div class="rp-layout">
+<div class="rp-input-col" id="rp-steps-head">
+<div class="rp-steps">
+
+  <div class="rp-step">
+    <div class="rp-step-head"><span class="rp-step-num">1</span><span class="rp-step-title">ค่าใช้จ่ายยามเกษียณ</span></div>
+    <div class="rp-step-fields">
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-spending">อยากใช้เดือนละ (มูลค่าวันนี้)</label>
+          <div class="rp-field-input"><input type="number" id="n-spending"><span class="rp-unit">บาท</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-spending">
+      </div>
+    </div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-head"><span class="rp-step-num">2</span><span class="rp-step-title">อายุและระยะเวลา</span></div>
+    <div class="rp-step-fields">
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-currentAge">ตอนนี้อายุ</label>
+          <div class="rp-field-input"><input type="number" id="n-currentAge"><span class="rp-unit">ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-currentAge">
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-retireAge">อยากเกษียณตอนอายุ</label>
+          <div class="rp-field-input"><input type="number" id="n-retireAge"><span class="rp-unit">ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-retireAge">
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-planAge">อยากให้เงินอยู่ถึงอายุ</label>
+          <div class="rp-field-input"><input type="number" id="n-planAge"><span class="rp-unit">ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-planAge">
+      </div>
+    </div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-head"><span class="rp-step-num">3</span><span class="rp-step-title">เงินออมและเงินลงทุน</span></div>
+    <div class="rp-step-fields">
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-savings">มีเงินเก็บอยู่แล้ว</label>
+          <div class="rp-field-input"><input type="number" id="n-savings"><span class="rp-unit">บาท</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-savings">
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-monthlyInv">ลงทุนเพิ่มเดือนละ</label>
+          <div class="rp-field-input"><input type="number" id="n-monthlyInv"><span class="rp-unit">บาท</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-monthlyInv">
+        <div class="rp-hint" id="hint-finalcontrib"></div>
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-stepUp">ปรับเงินลงทุนขึ้นทุกปี</label>
+          <div class="rp-field-input"><input type="number" id="n-stepUp" step="0.5"><span class="rp-unit">%/ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-stepUp">
+        <div class="rp-hint">เผื่อไว้สำหรับตอนเงินเดือนขึ้น</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-head"><span class="rp-step-num">4</span><span class="rp-step-title">ผลตอบแทนที่คาดหวัง</span></div>
+    <div class="rp-step-fields">
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-retPre">ช่วงก่อนเกษียณ</label>
+          <div class="rp-field-input"><input type="number" id="n-retPre" step="0.5"><span class="rp-unit">%/ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-retPre">
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-retPost">ช่วงหลังเกษียณ</label>
+          <div class="rp-field-input"><input type="number" id="n-retPost" step="0.5"><span class="rp-unit">%/ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-retPost">
+        <div class="rp-hint">มักตั้งให้ต่ำกว่าช่วงก่อนเกษียณ เพราะพอร์ตจะเน้นความเสี่ยงต่ำลง</div>
+      </div>
+      <div class="rp-field">
+        <div class="rp-field-head">
+          <label for="n-inflation">เงินเฟ้อเฉลี่ย</label>
+          <div class="rp-field-input"><input type="number" id="n-inflation" step="0.5"><span class="rp-unit">%/ปี</span></div>
+        </div>
+        <input type="range" class="rp-slider" id="s-inflation">
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="rp-results" id="rp-results">
+  <div class="rp-hero ok" id="rp-hero">
+    <div class="rp-hero-title" id="rp-hero-title"></div>
+    <div class="rp-hero-sub" id="rp-hero-sub"></div>
+
+    <div class="rp-lifebar">
+      <div class="rp-lifebar-track" id="lb-track">
+        <div class="rp-lifebar-seg acc" id="lb-acc"></div>
+        <div class="rp-lifebar-seg draw" id="lb-draw"></div>
+        <div class="rp-lifebar-seg gone" id="lb-gone" hidden></div>
+        <div class="rp-lifebar-pin" id="lb-pin"><span class="tag">เกษียณ</span><span class="stem"></span></div>
+      </div>
+      <div class="rp-lifebar-ends">
+        <span id="lb-age-start"></span>
+        <span id="lb-age-end"></span>
+      </div>
+    </div>
+
+    <div class="rp-stats3">
+      <div class="rp-stat-card">
+        <span class="rp-stat-label mono">เงินก้อนตอนเกษียณ</span>
+        <span class="rp-stat-value" id="stat-nestegg-main"></span>
+        <span class="rp-stat-sub" id="stat-nestegg-sub"></span>
+      </div>
+      <div class="rp-stat-card">
+        <span class="rp-stat-label mono">อัตราถอนเงินปีแรก</span>
+        <span class="rp-stat-value" id="stat-wr-main"></span>
+        <span class="rp-stat-sub" id="stat-wr-sub"></span>
+      </div>
+      <div class="rp-stat-card">
+        <span class="rp-stat-label mono">ใช้จ่ายได้สูงสุดแบบพอดีเงิน</span>
+        <span class="rp-stat-value" id="stat-maxspend-main"></span>
+        <span class="rp-stat-sub" id="stat-maxspend-sub"></span>
+      </div>
+      <div class="rp-stat-card">
+        <span class="rp-stat-label mono">ค่าใช้จ่ายหลังเกษียณ (ปรับเงินเฟ้อแล้ว)</span>
+        <span class="rp-stat-value" id="stat-spendret-main" style="color:var(--gold)"></span>
+        <span class="rp-stat-sub" id="stat-spendret-sub"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rp-chart-card">
+    <div class="rp-chart-head">
+      <span class="rp-chart-title">พอร์ตของคุณในแต่ละปี</span>
+      <span class="rp-chart-hint">ชี้ที่แท่งเพื่อดูตัวเลขปีนั้นๆ</span>
+      <div class="rp-legend">
+        <span class="rp-legend-item"><span class="rp-legend-dot" style="background:var(--green)"></span>ช่วงสะสมเงิน</span>
+        <span class="rp-legend-item"><span class="rp-legend-dot" style="background:var(--gold)"></span>ช่วงใช้เงิน</span>
+      </div>
+    </div>
+    <div class="rp-chart-svg-wrap">
+      <svg viewBox="0 0 1000 380" preserveAspectRatio="none" overflow="visible" id="rp-chart-svg"></svg>
+      <div class="rp-bar-tip mono" id="rp-bar-tip" hidden></div>
+    </div>
+    <ul class="rp-assumptions">
+      <li>คิดดอกเบี้ยทบต้นแบบรายเดือน</li>
+      <li>เงินลงทุนและค่าใช้จ่ายขยับขึ้นปีละครั้งตามอัตราที่ตั้งไว้ ไม่ใช่ขยับทุกเดือน</li>
+      <li>ผลตอบแทนสลับจากอัตรา "ก่อนเกษียณ" เป็น "หลังเกษียณ" ทันทีที่ถึงอายุเกษียณที่ตั้งไว้</li>
+      <li>เป็นการประมาณการคร่าวๆ เพื่อการศึกษาเท่านั้น ไม่ใช่คำแนะนำทางการเงินหรือการลงทุน</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<script>
+(() => {
+  // ── Theme (shared chrome) ──
+  const THEME_ICON = { auto: '◐', light: '○', dark: '●' };
+  let theme = 'auto';
+  try { theme = localStorage.getItem('oatinvestor-preview-theme') || 'auto'; } catch (e) {}
+  function applyTheme() {
+    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    document.getElementById('oi-theme-icon').textContent = THEME_ICON[theme];
+    document.getElementById('oi-theme-label').textContent = theme.toUpperCase();
+  }
+  document.getElementById('oi-theme-btn').addEventListener('click', () => {
+    const order = ['auto', 'light', 'dark'];
+    theme = order[(order.indexOf(theme) + 1) % 3];
+    applyTheme();
+    try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
+  });
+  applyTheme();
+
+  // ── Retirement calculator ──
+  const $ = (id) => document.getElementById(id);
+
+  const state = {
+    currentAge: 30, retireAge: 60, planAge: 99,
+    savings: 0, monthlyInv: 5000, stepUp: 0,
+    retPre: 16, retPost: 6, inflation: 3,
+    spending: 50000
+  };
+  const specs = {
+    currentAge: { min: 18, max: 80, step: 1 },
+    retireAge:  { min: 19, max: 85, step: 1 },
+    planAge:    { min: 20, max: 110, step: 1 },
+    savings:    { min: 0, max: 10000000, step: 10000 },
+    monthlyInv: { min: 0, max: 200000, step: 500 },
+    stepUp:     { min: 0, max: 20, step: 0.5 },
+    retPre:     { min: 0, max: 20, step: 0.5 },
+    retPost:    { min: 0, max: 15, step: 0.5 },
+    inflation:  { min: 0, max: 10, step: 0.5 },
+    spending:   { min: 0, max: 500000, step: 500 }
+  };
+
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+
+  function fmtMoney(v) { return '฿' + Math.round(v).toLocaleString('en-US'); }
+  function fmtBig(v) {
+    if (Math.abs(v) >= 1e6) return (v / 1e6).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' ล้านบาท';
+    return fmtMoney(v);
+  }
+  function fmtAxis(v) {
+    if (v >= 1e6) return '฿' + (v / 1e6).toFixed(1) + 'M';
+    if (v >= 1e3) return '฿' + Math.round(v / 1e3) + 'K';
+    return '฿' + Math.round(v);
+  }
+  function pickStep(range) {
+    for (const s of [1, 2, 3, 5, 10, 15, 20]) if (range / s <= 13) return s;
+    return 25;
+  }
+
+  function setControl(key) {
+    const spec = specs[key], val = state[key];
+    $('n-' + key).value = val;
+    $('s-' + key).value = val;
+    const pct = ((val - spec.min) / (spec.max - spec.min)) * 100;
+    $('s-' + key).style.background = `linear-gradient(to right, var(--green) ${pct}%, var(--line) ${pct}%)`;
+  }
+
+  function normalizeAges() {
+    if (state.retireAge <= state.currentAge) state.retireAge = state.currentAge + 1;
+    if (state.planAge <= state.retireAge) state.planAge = state.retireAge + 1;
+  }
+
+  function onFieldChange() {
+    normalizeAges();
+    Object.keys(specs).forEach(setControl);
+    recalcAndRender();
+  }
+
+  Object.keys(specs).forEach((key) => {
+    const spec = specs[key];
+    const num = $('n-' + key), slider = $('s-' + key);
+    num.min = spec.min; num.max = spec.max; num.step = spec.step;
+    slider.min = spec.min; slider.max = spec.max; slider.step = spec.step;
+    num.addEventListener('input', () => { state[key] = clamp(parseFloat(num.value) || 0, spec.min, spec.max); onFieldChange(); });
+    slider.addEventListener('input', () => { state[key] = parseFloat(slider.value); onFieldChange(); });
+  });
+
+  // Monthly-compounding projection. Contributions and spending step once a
+  // year (matches the "%/yr" inputs) rather than continuously.
+  function monthlyRate(annualPct) { return Math.pow(1 + annualPct / 100, 1 / 12) - 1; }
+
+  function simulate(p) {
+    const iPre = monthlyRate(p.retPre), iPost = monthlyRate(p.retPost);
+    const years1 = p.retireAge - p.currentAge, years2 = p.planAge - p.retireAge;
+    let balance = p.savings;
+    const yearly = [{ age: p.currentAge, balance }];
+    let contrib = p.monthlyInv, finalContrib = contrib;
+    for (let y = 0; y < years1; y++) {
+      finalContrib = contrib;
+      for (let m = 0; m < 12; m++) balance = balance * (1 + iPre) + contrib;
+      yearly.push({ age: p.currentAge + y + 1, balance });
+      contrib *= (1 + p.stepUp / 100);
+    }
+    const nestEgg = balance;
+    let spend = p.spending * Math.pow(1 + p.inflation / 100, years1);
+    const spendingAtRetirement = spend;
+    let depletionAge = null;
+    for (let y = 0; y < years2; y++) {
+      for (let m = 0; m < 12; m++) {
+        balance = balance * (1 + iPost) - spend;
+        if (depletionAge == null && balance < 0) depletionAge = p.retireAge + y + (m + 1) / 12;
+      }
+      yearly.push({ age: p.retireAge + y + 1, balance });
+      spend *= (1 + p.inflation / 100);
+    }
+    return { yearly, nestEgg, spendingAtRetirement, endBalance: balance, depletionAge, finalContrib, years1, years2 };
+  }
+
+  function solveMaxSpending(p) {
+    let lo = 0, hi = 2000000;
+    for (let i = 0; i < 60; i++) {
+      const mid = (lo + hi) / 2;
+      const r = simulate(Object.assign({}, p, { spending: mid }));
+      if (r.endBalance > 0) lo = mid; else hi = mid;
+    }
+    return (lo + hi) / 2;
+  }
+
+  function renderHero(r, p) {
+    const el = $('rp-hero');
+    if (r.depletionAge == null) {
+      el.className = 'rp-hero ok';
+      $('rp-hero-title').textContent = 'เงินของคุณน่าจะอยู่ได้ยาวๆ ถึงอายุ ' + p.planAge + ' 🎉';
+      $('rp-hero-sub').textContent = 'ประเมินว่าตอนอายุ ' + p.planAge + ' จะยังเหลือเงินอยู่ประมาณ ' + fmtMoney(r.endBalance);
+    } else {
+      el.className = 'rp-hero warn';
+      $('rp-hero-title').textContent = 'เงินอาจไม่พอใช้ตลอดแผน';
+      $('rp-hero-sub').textContent = 'ตามตัวเลขนี้ เงินน่าจะหมดตอนอายุประมาณ ' + Math.floor(r.depletionAge) + ' ปี (ก่อนถึงเป้าที่ตั้งไว้อายุ ' + p.planAge + ') — ลองเพิ่มเงินลงทุนต่อเดือน หรือลดค่าใช้จ่ายยามเกษียณดูในส่วนด้านบน';
+    }
+  }
+
+  function renderLifebar(r, p) {
+    const total = p.planAge - p.currentAge;
+    const accPct = clamp((p.retireAge - p.currentAge) / total * 100, 0, 100);
+    let drawPct = 100 - accPct, gonePct = 0;
+    if (r.depletionAge != null) {
+      const usedFrac = clamp((r.depletionAge - p.retireAge) / (p.planAge - p.retireAge), 0, 1);
+      drawPct = usedFrac * (100 - accPct);
+      gonePct = (100 - accPct) - drawPct;
+    }
+    $('lb-acc').style.width = accPct + '%';
+    $('lb-draw').style.width = drawPct + '%';
+    $('lb-gone').style.width = gonePct + '%';
+    $('lb-gone').hidden = gonePct <= 0.2;
+    $('lb-pin').style.left = accPct + '%';
+    $('lb-age-start').textContent = 'ตอนนี้ (อายุ ' + p.currentAge + ')';
+    $('lb-age-end').textContent = 'อายุ ' + p.planAge;
+  }
+
+  let chartData = null;
+  function renderChart(r, p) {
+    const W = 1000, H = 380, padL = 70, padR = 16, padT = 46, padB = 40;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+    const n = r.yearly.length;
+    const maxVal = Math.max.apply(null, r.yearly.map((d) => d.balance).concat([1])) * 1.15;
+    const baseY = padT + plotH;
+    const xFor = (i) => padL + (i / n) * plotW;
+    const barW = Math.max(1.4, (plotW / n) - 2);
+    const yVal = (v) => padT + (1 - Math.max(v, 0) / maxVal) * plotH;
+
+    let gridSvg = '', yLabelsSvg = '';
+    for (let i = 0; i <= 4; i++) {
+      const v = maxVal * (1 - i / 4);
+      const y = padT + (i / 4) * plotH;
+      gridSvg += `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" stroke="var(--line2)" stroke-width="1"/>`;
+      yLabelsSvg += `<text x="${padL - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${fmtAxis(v)}</text>`;
+    }
+
+    let bars = '';
+    r.yearly.forEach((d, i) => {
+      const v = Math.max(d.balance, 0);
+      const x = xFor(i);
+      const y = yVal(v);
+      const h = Math.max(baseY - y, 0);
+      const color = d.age <= p.retireAge ? 'var(--green)' : 'var(--gold)';
+      bars += `<rect class="rp-bar" data-i="${i}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" rx="1.5" fill="${color}" fill-opacity="0.85"></rect>`;
+    });
+
+    const step = pickStep(p.planAge - p.currentAge);
+    let xTicksSvg = '';
+    r.yearly.forEach((d, i) => {
+      if (d.age % step === 0 || i === 0 || i === n - 1) {
+        xTicksSvg += `<text x="${(xFor(i) + barW / 2).toFixed(1)}" y="${H - padB + 22}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${d.age}</text>`;
+      }
+    });
+
+    const retI = r.yearly.findIndex((d) => d.age === p.retireAge);
+    const retX = (xFor(retI) + barW / 2).toFixed(1);
+    const retireTag = `<g>
+        <circle cx="${retX}" cy="26" r="3" fill="var(--gold)"></circle>
+        <line x1="${retX}" y1="29" x2="${retX}" y2="36" stroke="var(--gold)" stroke-width="1.5"></line>
+        <text x="${retX}" y="16" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" fill="var(--gold)">เกษียณ</text>
+      </g>`;
+
+    $('rp-chart-svg').innerHTML = `${gridSvg}${bars}${retireTag}${yLabelsSvg}${xTicksSvg}`;
+
+    chartData = { yearly: r.yearly, xFor, barW };
+    const svgEl = $('rp-chart-svg'), tip = $('rp-bar-tip');
+    svgEl.querySelectorAll('.rp-bar').forEach((rect) => {
+      rect.addEventListener('mouseenter', () => {
+        const i = Number(rect.getAttribute('data-i'));
+        const d = chartData.yearly[i];
+        const svgRect = svgEl.getBoundingClientRect();
+        const barRect = rect.getBoundingClientRect();
+        const leftPct = ((barRect.left + barRect.width / 2 - svgRect.left) / svgRect.width) * 100;
+        const topPct = ((barRect.top - svgRect.top) / svgRect.height) * 100;
+        tip.style.left = leftPct + '%';
+        tip.style.top = topPct + '%';
+        tip.textContent = 'อายุ ' + d.age + ' · ' + fmtMoney(d.balance);
+        tip.hidden = false;
+      });
+      rect.addEventListener('mouseleave', () => { tip.hidden = true; });
+    });
+  }
+
+  function recalcAndRender() {
+    const p = Object.assign({}, state);
+    const r = simulate(p);
+    const maxSpend = solveMaxSpending(p);
+    const wr = r.nestEgg > 0 ? (r.spendingAtRetirement * 12 / r.nestEgg) * 100 : null;
+
+    renderHero(r, p);
+    renderLifebar(r, p);
+
+    $('stat-nestegg-main').textContent = fmtBig(r.nestEgg);
+    $('stat-nestegg-sub').textContent = '≈ ' + fmtBig(r.nestEgg / Math.pow(1 + p.inflation / 100, r.years1)) + ' ในมูลค่าเงินวันนี้';
+
+    const wrEl = $('stat-wr-main');
+    if (wr == null) {
+      wrEl.textContent = '—'; wrEl.style.color = '';
+      $('stat-wr-sub').textContent = 'ยังไม่มีเงินก้อนให้คำนวณ';
+    } else {
+      wrEl.textContent = wr.toFixed(1) + '%/ปี';
+      wrEl.style.color = wr <= 4 ? 'var(--green)' : wr <= 6 ? 'var(--gold)' : 'var(--red)';
+      $('stat-wr-sub').textContent = 'ปีแรกถอนเงิน ' + wr.toFixed(1) + '% ของเงินก้อน (กฎ 4% ถือว่าปลอดภัยระยะยาว)';
+    }
+
+    $('stat-maxspend-main').textContent = fmtMoney(maxSpend) + '/เดือน';
+    $('stat-maxspend-sub').textContent = 'มูลค่าเงินวันนี้ — ใช้เท่านี้แล้วเงินจะหมดพอดีตอนอายุ ' + p.planAge;
+
+    $('stat-spendret-main').textContent = fmtMoney(r.spendingAtRetirement) + '/เดือน';
+    $('stat-spendret-sub').textContent = 'ตอนอายุ ' + p.retireAge + ' (จาก ' + fmtMoney(p.spending) + '/เดือน วันนี้ ปรับเงินเฟ้อ ' + r.years1 + ' ปี)';
+
+    $('hint-finalcontrib').textContent = p.stepUp > 0
+      ? 'จะขยับเป็น ~' + fmtMoney(r.finalContrib) + '/เดือน ในปีสุดท้ายก่อนเกษียณ'
+      : 'คงที่ ' + fmtMoney(r.finalContrib) + '/เดือน ตลอดช่วงสะสมเงิน';
+
+    renderChart(r, p);
+  }
+
+  Object.keys(specs).forEach(setControl);
+  recalcAndRender();
+})();
+</script>
+</body>
+</html>
