@@ -1,275 +1,122 @@
 <!DOCTYPE html>
-<html lang="th" data-theme="dark">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>oatinvestor — ลงทุนกับโอ๊ต</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .stock-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
-    .trend-preview-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
-    @media (max-width: 768px) {
-      .stock-grid { grid-template-columns: 1fr 1fr; }
-      .trend-preview-grid { grid-template-columns: 1fr; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oatinvestor — เล่าเรื่องหุ้นแบบเพื่อนเล่าให้ฟัง</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+<style>
+  :root {
+    --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
+    --line: #E3DBC6; --line2: #EFE8D6;
+    --green: #1F7A4E; --on-green: #FDFBF3; --red: #BE4438; --gold: #A9812F; --olive: #7A7462;
+    --strip: #1F2218; --strip-ink: #EFE9D8; --strip-muted: #98937F;
+    --shadow: 0 1px 2px rgba(41,35,15,.04), 0 16px 40px -18px rgba(41,35,15,.18);
+  }
+  html[data-theme="dark"] {
+    --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+    --line: #2E3122; --line2: #23261A;
+    --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+    --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]):not([data-theme="dark"]) {
+      --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+      --line: #2E3122; --line2: #23261A;
+      --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+      --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
     }
-  </style>
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans Thai', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; transition: background-color .35s ease, color .35s ease; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  /* ── Nav ──────────────────────────────────────────────────────── */
+  .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
+  .oi-nav-inner { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); min-height: 66px; flex-wrap: wrap; row-gap: 0; }
+  .oi-logo { text-decoration: none; display: flex; align-items: baseline; flex: none; }
+  .oi-logo .oat { font-family: 'Trirong', Georgia, serif; font-style: italic; font-weight: 700; font-size: 25px; color: var(--green); }
+  .oi-logo .investor { font-weight: 700; font-size: 22px; color: var(--ink); letter-spacing: -.3px; }
+  .oi-nav-links { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 26px); margin-left: auto; flex-wrap: wrap; padding: 6px 0; }
+  .oi-nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; color: var(--muted); border-bottom: 2px solid transparent; padding: 21px 2px 19px; transition: color .2s; }
+  .oi-nav-links a:hover { color: var(--ink); }
+  .oi-nav-links a.active { font-weight: 600; color: var(--ink); border-bottom-color: var(--green); padding: 10px 2px 8px; }
+  .oi-theme-btn { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; color: var(--ink); transition: border-color .2s, background-color .35s; }
+  .oi-theme-btn:hover { border-color: var(--green); }
+  .oi-theme-btn .icon { font-size: 13px; line-height: 1; }
+  .oi-theme-btn .label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .oi-cta { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 13.5px; font-weight: 600; padding: 9px 18px; border-radius: 999px; flex: none; transition: transform .2s; display: inline-block; }
+  .oi-cta:hover { transform: translateY(-1px); }
+
+  /* ── Coming soon ──────────────────────────────────────────────── */
+  .cs-wrap { max-width: 720px; margin: 0 auto; padding: clamp(70px, 13vw, 130px) clamp(16px, 4vw, 32px); min-height: 56vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; scroll-margin-top: 70px; }
+  .cs-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
+  .cs-h1 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(32px, 6vw, 48px); line-height: 1.3; }
+  .cs-h1 em { font-style: italic; color: var(--green); }
+  .cs-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: var(--gold); background: color-mix(in srgb, var(--gold) 12%, transparent); padding: 6px 16px; border-radius: 999px; }
+  .cs-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+  .cs-lead { margin: 0; font-size: 15.5px; line-height: 1.85; color: var(--muted); max-width: 56ch; }
+  .cs-cta { margin-top: 6px; text-decoration: none; background: var(--green); color: var(--on-green); font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 999px; transition: transform .2s, box-shadow .2s; display: inline-block; }
+  .cs-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--green) 70%, transparent); }
+
+</style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <span class="logo-dot"></span>
-      oatinvestor
-    </a>
-    <div class="nav-links">
-      <a href="index.html">หน้าแรก</a>
-      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
-      <a href="member/stocks.html">Watchlist</a>
-      <a href="member/trends.html">Trends</a>
-      <a href="member/theme.html">Theme</a>
-      <a href="team.html">About</a>
+<div class="oi-nav">
+  <div class="oi-nav-inner">
+    <a href="#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
+    <div class="oi-nav-links">
+      <a href="#top" class="active">หน้าแรก</a>
+      <a href="#top">พอร์ตหุ้น</a>
+      <a href="tools.html">เครื่องมือทางการเงิน</a>
+      <a href="#top">บทความ</a>
+      <a href="#top">เกี่ยวกับ</a>
     </div>
-    <div class="nav-actions">
-      <button class="theme-btn" id="theme-btn" title="เปลี่ยน Theme">🌙</button>
-    </div>
+    <button class="oi-theme-btn" id="oi-theme-btn" title="สลับธีม Light / Dark / Auto">
+      <span class="icon" id="oi-theme-icon">◐</span>
+      <span class="label" id="oi-theme-label">AUTO</span>
+    </button>
+    <a href="tools.html" class="oi-cta">ลองใช้เครื่องมือ</a>
   </div>
-</nav>
+</div>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container">
-    <h1>ลงทุนกับโอ๊ต</h1>
-    <p>แชร์ความรู้การเงิน การลงทุน ให้เข้าใจแบบง่ายๆ</p>
-    <div class="hero-actions">
-      <a href="portfolio.html" class="btn btn-primary btn-lg">ดูพอร์ตโฟลิโอ</a>
-      <a href="member/stocks.html" class="btn btn-secondary btn-lg">ดู Watchlist</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat-item">
-        <div class="hero-stat-num" id="stat-tickers">23</div>
-        <div class="hero-stat-label">หุ้นใน Watchlist</div>
-      </div>
-      <div class="hero-stat-item">
-        <div class="hero-stat-num">14</div>
-        <div class="hero-stat-label">Mega Trends</div>
-      </div>
-      <div class="hero-stat-item">
-        <div class="hero-stat-num" id="stat-port">—</div>
-        <div class="hero-stat-label">Port AI Return</div>
-      </div>
-      <div class="hero-stat-item">
-        <div class="hero-stat-num" id="stat-voo">—</div>
-        <div class="hero-stat-label">vs VOO</div>
-      </div>
-    </div>
-  </div>
-</section>
+<div id="top" class="cs-wrap">
+  <div class="cs-eyebrow mono">PERSONAL INVESTMENT JOURNAL</div>
+  <h1 class="cs-h1">เล่าเรื่องหุ้น<br>แบบ<em>เพื่อน</em>เล่าให้ฟัง</h1>
+  <span class="cs-badge">กำลังเตรียมเนื้อหา</span>
+  <p class="cs-lead">หน้านี้กำลังปรับปรุงอยู่ครับ เร็วๆ นี้จะมีพอร์ตจริง บทความวิเคราะห์หุ้น และเนื้อหาการลงทุนให้ติดตาม — ระหว่างนี้ลองใช้เครื่องมือวางแผนการเงินที่พร้อมใช้งานแล้วก่อนได้เลย</p>
+  <a href="tools.html" class="cs-cta">ไปที่เครื่องมือทางการเงิน →</a>
+</div>
 
-<!-- Portfolio Preview -->
-<section class="section-sm" style="border-bottom:1px solid var(--border-soft)">
-  <div class="container">
-    <h2 class="section-title">พอร์ตสาธิตจริง</h2>
-    <p class="section-sub">ออมเงินสร้างพอร์ต เทียบผลกับ S&P500 และ NASDAQ100 แบบ Real-time</p>
-    <div class="grid-2" style="gap:20px;align-items:center">
-      <div class="card" style="padding:28px">
-        <div class="section-label" style="margin-bottom:4px">PORT AI</div>
-        <h3 style="margin-bottom:4px;font-size:1.1rem">Warren Paper #1</h3>
-        <p style="font-size:.85rem;margin-bottom:20px">NVDA · MSFT · META — AI Infrastructure Play</p>
-        <div class="grid-2" style="gap:10px;margin-bottom:16px">
-          <div class="stat-card" style="background:var(--bg-surface);border-radius:var(--r);padding:12px">
-            <div class="stat-value" style="font-size:1.4rem" id="port-return">—</div>
-            <div class="stat-label">Portfolio Return</div>
-          </div>
-          <div class="stat-card" style="background:var(--bg-surface);border-radius:var(--r);padding:12px">
-            <div class="stat-value" style="font-size:1.4rem" id="voo-return">—</div>
-            <div class="stat-label">vs VOO</div>
-          </div>
-        </div>
-        <a href="portfolio.html" class="btn btn-primary" style="width:100%;justify-content:center">ดูพอร์ตเต็ม →</a>
-      </div>
-      <div style="background:var(--bg-surface);border-radius:var(--r-lg);padding:24px;border:1px solid var(--border)">
-        <div class="section-label" style="margin-bottom:12px">วิธีลงทุน</div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="display:flex;gap:12px;align-items:center">
-            <img src="images/team/warren.png" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:1px solid var(--border)">
-            <div><strong style="font-size:.9rem">Warren วิเคราะห์</strong><p style="font-size:.82rem;margin-top:2px;margin-bottom:0">คำนวณ Fair Value + WAF Score ทุกหุ้น</p></div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:center">
-            <img src="images/team/charlie.png" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:1px solid var(--border)">
-            <div><strong style="font-size:.9rem">Charlie ตรวจสอบ</strong><p style="font-size:.82rem;margin-top:2px;margin-bottom:0">Risk review ก่อนตัดสินใจลงทุนทุกครั้ง</p></div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:center">
-            <div style="width:36px;height:36px;border-radius:50%;background:var(--yellow-dim);color:var(--yellow-text);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;flex-shrink:0;border:1px solid var(--border)">OAT</div>
-            <div><strong style="font-size:.9rem">โอ๊ต approve & ลงทุน</strong><p style="font-size:.82rem;margin-top:2px;margin-bottom:0">Deploy เงินจริงตาม Framework</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Stocks Preview -->
-<section class="section" style="border-bottom:1px solid var(--border-soft)">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;flex-wrap:wrap;gap:12px">
-      <div>
-        <h2 class="section-title" style="margin-bottom:6px">Watchlist + WAF Score</h2>
-        <p style="font-size:.9rem;color:var(--text-3)">23 หุ้นพร้อม Fair Value, Margin of Safety และ WAF Score</p>
-      </div>
-      <a href="member/stocks.html" class="btn btn-secondary">ดูทั้งหมด →</a>
-    </div>
-    <div class="stock-grid" id="stocks-preview">
-      <div style="color:var(--text-3);font-size:.85rem">กำลังโหลด...</div>
-    </div>
-  </div>
-</section>
-
-<!-- Trends Preview -->
-<section class="section" style="border-bottom:1px solid var(--border-soft)">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;flex-wrap:wrap;gap:12px">
-      <div>
-        <h2 class="section-title" style="margin-bottom:6px">Mega Trends</h2>
-        <p style="font-size:.9rem;color:var(--text-3)">วิเคราะห์ Trends ที่กำลังเปลี่ยนโลก พร้อม Conviction และหุ้นที่เกี่ยวข้อง</p>
-      </div>
-      <a href="member/trends.html" class="btn btn-secondary">ดูทั้งหมด →</a>
-    </div>
-    <div class="trend-preview-grid" id="trends-preview">
-      <div style="color:var(--text-3);font-size:.85rem">กำลังโหลด...</div>
-    </div>
-  </div>
-</section>
-
-<!-- What's here -->
-<section class="section">
-  <div class="container">
-    <div class="text-center" style="margin-bottom:48px">
-      <h2>มีอะไรในเว็บนี้</h2>
-    </div>
-    <div class="grid-3" style="gap:20px">
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h4>Watchlist + WAF Score</h4>
-        <p>23 หุ้นพร้อม Fair Value, MoS และ WAF Score ที่อัพเดทสม่ำเสมอ</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔍</div>
-        <h4>Stock Detail Analysis</h4>
-        <p>วิเคราะห์ละเอียด Story Gate, Bull Case, Risk และ Charlie Verdict ทุกหุ้น</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🌊</div>
-        <h4>14 Mega Trends</h4>
-        <p>วิเคราะห์ Mega Trends ที่ขับเคลื่อนตลาด พร้อม Conviction และหุ้น Play</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📈</div>
-        <h4>Portfolio จริง</h4>
-        <p>ติดตามพอร์ตจริงของโอ๊ต เทียบกับ VOO และ QQQM แบบ Real-time</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📰</div>
-        <h4>Stock News Daily</h4>
-        <p>ข่าวธุรกิจสำคัญที่กระทบหุ้นใน Watchlist ทุกเช้าวันทำการ <span class="coming-soon-badge">Soon</span></p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">✍️</div>
-        <h4>Blog & Analysis</h4>
-        <p>บทความวิเคราะห์เชิงลึกจากโอ๊ต เกี่ยวกับการลงทุนและตลาดหุ้น <span class="coming-soon-badge">Soon</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">oatinvestor</div>
-      <div style="font-size:.78rem;color:var(--text-3);margin-top:4px">แชร์ความรู้การเงิน การลงทุน ให้เข้าใจแบบง่ายๆ</div>
-    </div>
-    <div class="footer-links">
-      <a href="portfolio.html">พอร์ตโฟลิโอ</a>
-      <a href="member/stocks.html">Watchlist</a>
-      <a href="member/trends.html">Trends</a>
-    </div>
-  </div>
-  <div class="footer-copy">© 2026 oatinvestor · ข้อมูลเพื่อการศึกษา ไม่ใช่คำแนะนำการลงทุน</div>
-</footer>
-
-<script src="trends.js"></script>
-<script src="app.js"></script>
 <script>
-// Portfolio stats
-fetch('data/benchmark.json').then(r => r.json()).then(d => {
-  const p = d.summary?.portfolio_pct;
-  const v = d.summary?.voo_pct;
-  const set = (id, val) => {
-    const el = document.getElementById(id);
-    if (!el || val == null) return;
-    el.textContent = (val >= 0 ? '+' : '') + val.toFixed(2) + '%';
-    el.className = 'hero-stat-num ' + (val >= 0 ? 'pos' : 'neg');
-    const el2 = document.getElementById(id === 'stat-port' ? 'port-return' : 'voo-return');
-    if (el2) { el2.textContent = (val >= 0 ? '+' : '') + val.toFixed(2) + '%'; el2.className = 'stat-value ' + (val >= 0 ? 'pos' : 'neg'); }
-  };
-  set('stat-port', p);
-  set('stat-voo', v);
-}).catch(() => {});
-
-// Stocks preview (top 6 by WAF)
-fetch('data/stocks.json').then(r => r.json()).then(data => {
-  const stocks = Object.values(data).sort((a,b) => (b.waf||0) - (a.waf||0)).slice(0, 6);
-  document.getElementById('stat-tickers').textContent = Object.keys(data).length;
-  document.getElementById('stocks-preview').innerHTML = stocks.map(s => {
-    const action = (s.action || 'study').toLowerCase();
-    const mos = s.mos;
-    const mosClass = mos == null ? '' : mos >= 15 ? 'pos' : mos < 0 ? 'neg' : '';
-    const mosText = mos == null ? '—' : (mos >= 0 ? '+' : '') + mos.toFixed(1) + '%';
-    return `
-    <a href="member/stock.html?t=${s.symbol}" style="text-decoration:none;display:block">
-      <div class="stock-card">
-        <div class="stock-card-header">
-          <div>
-            <div class="stock-ticker">${s.symbol}</div>
-            <div class="stock-name">${s.name || ''}</div>
-          </div>
-          ${actionBadge(action)}
-        </div>
-        ${wafBar(s.waf)}
-        <div class="stock-numbers">
-          <div class="stock-num-item">
-            <div class="stock-num-label">Fair Value</div>
-            <div class="stock-num-value">${fmtPrice(s.fv)}</div>
-          </div>
-          <div class="stock-num-item">
-            <div class="stock-num-label">MoS</div>
-            <div class="stock-num-value ${mosClass}">${mosText}</div>
-          </div>
-        </div>
-      </div>
-    </a>`;
-  }).join('');
-}).catch(() => {});
-
-// Trends preview (top 4)
-if (window.TRENDS_DATA) {
-  const top = TRENDS_DATA.slice(0, 4);
-  document.getElementById('trends-preview').innerHTML = top.map(t => `
-    <a href="member/trends.html" style="text-decoration:none;display:block">
-      <div class="trend-card">
-        <div class="trend-tag">${t.tag || ''}</div>
-        <div class="trend-title">${t.title || ''}</div>
-        <div class="trend-subtitle">${t.subtitle || ''}</div>
-        <div class="trend-card-meta" style="margin-top:10px">
-          <span class="badge ${t.conviction === 'HIGH' ? 'badge-high' : 'badge-medium'}">${t.conviction || ''}</span>
-          <span class="trend-date">${t.last_updated || ''}</span>
-        </div>
-        <div class="ticker-strip" style="margin-top:8px">
-          ${(t.tickers||[]).slice(0,4).map(tk=>`<span class="ticker-pill">${tk}</span>`).join('')}
-        </div>
-      </div>
-    </a>`).join('');
-}
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const THEME_ICON = { auto: '◐', light: '○', dark: '●' };
+  let theme = 'auto';
+  try { theme = localStorage.getItem('oatinvestor-preview-theme') || 'auto'; } catch (e) {}
+  function applyTheme() {
+    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    $('oi-theme-icon').textContent = THEME_ICON[theme];
+    $('oi-theme-label').textContent = theme.toUpperCase();
+  }
+  $('oi-theme-btn').addEventListener('click', () => {
+    const order = ['auto', 'light', 'dark'];
+    theme = order[(order.indexOf(theme) + 1) % 3];
+    applyTheme();
+    try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
+  });
+  applyTheme();
+})();
 </script>
 </body>
 </html>

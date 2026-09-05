@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oatinvestor — เครื่องมือทางการเงิน</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+<style>
+  :root {
+    --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
+    --line: #E3DBC6; --line2: #EFE8D6;
+    --green: #1F7A4E; --on-green: #FDFBF3; --red: #BE4438; --gold: #A9812F; --olive: #7A7462;
+    --strip: #1F2218; --strip-ink: #EFE9D8; --strip-muted: #98937F;
+    --shadow: 0 1px 2px rgba(41,35,15,.04), 0 16px 40px -18px rgba(41,35,15,.18);
+  }
+  html[data-theme="dark"] {
+    --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+    --line: #2E3122; --line2: #23261A;
+    --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+    --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]):not([data-theme="dark"]) {
+      --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+      --line: #2E3122; --line2: #23261A;
+      --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+      --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans Thai', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; transition: background-color .35s ease, color .35s ease; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
+  .oi-nav-inner { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); min-height: 66px; flex-wrap: wrap; row-gap: 0; }
+  .oi-logo { text-decoration: none; display: flex; align-items: baseline; flex: none; }
+  .oi-logo .oat { font-family: 'Trirong', Georgia, serif; font-style: italic; font-weight: 700; font-size: 25px; color: var(--green); }
+  .oi-logo .investor { font-weight: 700; font-size: 22px; color: var(--ink); letter-spacing: -.3px; }
+  .oi-nav-links { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 26px); margin-left: auto; flex-wrap: wrap; padding: 6px 0; }
+  .oi-nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; color: var(--muted); border-bottom: 2px solid transparent; padding: 21px 2px 19px; transition: color .2s; }
+  .oi-nav-links a:hover { color: var(--ink); }
+  .oi-nav-links a.active { font-weight: 600; color: var(--ink); border-bottom-color: var(--green); padding: 10px 2px 8px; }
+  .oi-theme-btn { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; color: var(--ink); transition: border-color .2s, background-color .35s; }
+  .oi-theme-btn:hover { border-color: var(--green); }
+  .oi-theme-btn .icon { font-size: 13px; line-height: 1; }
+  .oi-theme-btn .label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .oi-cta { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 13.5px; font-weight: 600; padding: 9px 18px; border-radius: 999px; flex: none; transition: transform .2s; display: inline-block; }
+  .oi-cta:hover { transform: translateY(-1px); }
+
+  .tools-hero { max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 64px) clamp(16px, 4vw, 32px) 8px; }
+  .tools-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
+  .tools-h1 { margin: 10px 0 12px; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(28px, 5vw, 42px); line-height: 1.3; }
+  .tools-lead { margin: 0; font-size: 15.5px; line-height: 1.85; color: var(--muted); max-width: 62ch; }
+
+  .tools-grid { max-width: 1240px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 32px) 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px; }
+  .tool-card { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; transition: transform .25s ease, border-color .25s ease, background-color .35s ease; }
+  .tool-card.live:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+  .tool-card.soon { cursor: default; opacity: .72; }
+  .tool-icon { width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--green) 12%, transparent); color: var(--green); flex: none; }
+  .tool-icon svg { width: 22px; height: 22px; }
+  .tool-title { font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 19px; line-height: 1.35; }
+  .tool-desc { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--muted); flex: 1; }
+  .tool-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 2px; }
+  .tool-cta { font-size: 13.5px; font-weight: 600; color: var(--green); }
+  .tool-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px; background: var(--line2); font-size: 11px; font-weight: 600; color: var(--muted); }
+  .tool-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="oi-nav">
+  <div class="oi-nav-inner">
+    <a href="index.html#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
+    <div class="oi-nav-links">
+      <a href="index.html#top">หน้าแรก</a>
+      <a href="index.html#top">พอร์ตหุ้น</a>
+      <a href="tools.html" class="active">เครื่องมือทางการเงิน</a>
+      <a href="index.html#top">บทความ</a>
+      <a href="index.html#top">เกี่ยวกับ</a>
+    </div>
+    <button class="oi-theme-btn" id="oi-theme-btn" title="สลับธีม Light / Dark / Auto">
+      <span class="icon" id="oi-theme-icon">◐</span>
+      <span class="label" id="oi-theme-label">AUTO</span>
+    </button>
+  </div>
+</div>
+
+<div class="tools-hero">
+  <div class="tools-eyebrow mono">FINANCIAL TOOLS</div>
+  <h1 class="tools-h1">เครื่องมือทางการเงิน</h1>
+  <p class="tools-lead">รวมเครื่องมือช่วยคำนวณและวางแผนการเงิน ใช้งานง่าย ฟรี ไม่ต้องสมัครสมาชิก — เริ่มจากตัวแรก แล้วจะทยอยเพิ่มเครื่องมือใหม่ๆ เข้ามาเรื่อยๆ</p>
+</div>
+
+<div class="tools-grid">
+  <a href="retirement-planner.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    </div>
+    <div class="tool-title">วางแผนเกษียณ</div>
+    <p class="tool-desc">ใส่อายุ เงินออม เงินลงทุนต่อเดือน และผลตอบแทนที่คาดหวัง แล้วดูว่าเงินจะพอใช้ถึงอายุเท่าไหร่ พร้อมกราฟจำลองพอร์ตทั้งช่วงสะสมและช่วงใช้เงิน</p>
+    <div class="tool-foot">
+      <span class="tool-cta">เริ่มคำนวณ →</span>
+    </div>
+  </a>
+
+  <div class="tool-card soon">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    </div>
+    <div class="tool-title">อิสรภาพทางการเงิน (FIRE)</div>
+    <p class="tool-desc">คำนวณว่าต้องมีเงินก้อนเท่าไหร่ถึงจะหยุดทำงานได้เร็วกว่ากำหนด ตามค่าใช้จ่ายและอัตราถอนเงินที่ตั้งไว้</p>
+    <div class="tool-foot"><span class="tool-badge">เร็วๆ นี้</span></div>
+  </div>
+
+  <div class="tool-card soon">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+    </div>
+    <div class="tool-title">คำนวณสินเชื่อบ้าน/รถ</div>
+    <p class="tool-desc">ดูค่างวดต่อเดือน ดอกเบี้ยรวมตลอดสัญญา และตารางผ่อนชำระ จากวงเงินกู้และอัตราดอกเบี้ยที่ต้องการ</p>
+    <div class="tool-foot"><span class="tool-badge">เร็วๆ นี้</span></div>
+  </div>
+
+  <div class="tool-card soon">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c1.1 0 2 .9 2 2v3.5c0 3-2 5.5-4.5 6.5L12 19l-4.5-2c-2.5-1-4.5-3.5-4.5-6.5V7c0-1.1.9-2 2-2h1.5L8 3h8l1.5 2z"/><circle cx="15.5" cy="10.5" r="1"/></svg>
+    </div>
+    <div class="tool-title">เป้าหมายเงินออม</div>
+    <p class="tool-desc">ตั้งเป้าหมาย (เช่น เงินดาวน์บ้าน กองทุนสำรองฉุกเฉิน) แล้วดูว่าต้องออมเดือนละเท่าไหร่ถึงจะถึงเป้าตามเวลาที่ตั้งไว้</p>
+    <div class="tool-foot"><span class="tool-badge">เร็วๆ นี้</span></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const THEME_ICON = { auto: '◐', light: '○', dark: '●' };
+  let theme = 'auto';
+  try { theme = localStorage.getItem('oatinvestor-preview-theme') || 'auto'; } catch (e) {}
+  function applyTheme() {
+    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    document.getElementById('oi-theme-icon').textContent = THEME_ICON[theme];
+    document.getElementById('oi-theme-label').textContent = theme.toUpperCase();
+  }
+  document.getElementById('oi-theme-btn').addEventListener('click', () => {
+    const order = ['auto', 'light', 'dark'];
+    theme = order[(order.indexOf(theme) + 1) % 3];
+    applyTheme();
+    try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
+  });
+  applyTheme();
+})();
+</script>
+</body>
+</html>
