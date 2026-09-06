@@ -67,6 +67,32 @@
   .cs-cta { margin-top: 6px; text-decoration: none; background: var(--green); color: var(--on-green); font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 999px; transition: transform .2s, box-shadow .2s; display: inline-block; }
   .cs-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--green) 70%, transparent); }
 
+  /* ── Live portfolio ───────────────────────────────────────────── */
+  .pf-wrap { max-width: 640px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px) clamp(80px, 12vw, 120px); scroll-margin-top: 70px; }
+  .pf-head { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 30px; }
+  .pf-h2 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(24px, 4vw, 30px); }
+  .pf-lead { margin: 0; font-size: 14px; line-height: 1.8; color: var(--muted); max-width: 48ch; }
+
+  .pf-tabs { display: flex; gap: 4px; background: var(--line2); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin: 0 auto 18px; width: fit-content; }
+  .pf-tab { border: none; background: transparent; color: var(--muted); font-size: 12.5px; font-weight: 600; letter-spacing: .3px; padding: 8px 16px; border-radius: 999px; cursor: pointer; transition: background-color .2s, color .2s; }
+  .pf-tab:hover { color: var(--ink); }
+  .pf-tab.active { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+
+  .pf-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 26px); box-shadow: var(--shadow); }
+  .pf-state { text-align: center; font-size: 13.5px; color: var(--muted); padding: 30px 0; }
+
+  .pf-row { padding: 13px 0; border-bottom: 1px solid var(--line2); }
+  .pf-row:last-child { border-bottom: none; }
+  .pf-row-top { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+  .pf-ticker { font-size: 14px; font-weight: 600; letter-spacing: .3px; }
+  .pf-pl { font-size: 13.5px; font-weight: 600; }
+  .pf-pl.up { color: var(--green); }
+  .pf-pl.down { color: var(--red); }
+  .pf-bar-track { height: 6px; border-radius: 999px; background: var(--line2); overflow: hidden; }
+  .pf-bar-fill { height: 100%; border-radius: 999px; background: var(--olive); }
+  .pf-row-bottom { margin-top: 6px; font-size: 11px; color: var(--muted); text-align: right; }
+
+  .pf-foot { text-align: center; font-size: 10.5px; color: var(--muted); margin-top: 16px; letter-spacing: .3px; }
 </style>
 </head>
 <body>
@@ -76,7 +102,7 @@
     <a href="#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
     <div class="oi-nav-links">
       <a href="#top" class="active">หน้าแรก</a>
-      <a href="#top">พอร์ตหุ้น</a>
+      <a href="#portfolio">พอร์ตหุ้น</a>
       <a href="tools.html">เครื่องมือทางการเงิน</a>
       <a href="#top">บทความ</a>
       <a href="#top">เกี่ยวกับ</a>
@@ -95,6 +121,27 @@
   <span class="cs-badge">กำลังเตรียมเนื้อหา</span>
   <p class="cs-lead">หน้านี้กำลังปรับปรุงอยู่ครับ เร็วๆ นี้จะมีพอร์ตจริง บทความวิเคราะห์หุ้น และเนื้อหาการลงทุนให้ติดตาม — ระหว่างนี้ลองใช้เครื่องมือวางแผนการเงินที่พร้อมใช้งานแล้วก่อนได้เลย</p>
   <a href="tools.html" class="cs-cta">ไปที่เครื่องมือทางการเงิน →</a>
+</div>
+
+<div id="portfolio" class="pf-wrap">
+  <div class="pf-head">
+    <div class="cs-eyebrow mono">LIVE PORTFOLIO</div>
+    <h2 class="pf-h2">พอร์ตหุ้นจริงของผม</h2>
+    <p class="pf-lead">ดึงข้อมูลสดจาก Google Sheets ทุกครั้งที่เปิดหน้านี้ — แสดงเฉพาะสัดส่วนถือครองและกำไร/ขาดทุน% เท่านั้น ไม่มี Transaction และไม่ใช่คำแนะนำซื้อขาย</p>
+  </div>
+
+  <div class="pf-tabs mono" id="pf-tabs">
+    <button class="pf-tab active" data-key="combined">รวมพอร์ต</button>
+    <button class="pf-tab" data-key="ai_port">พอร์ตออมหุ้น</button>
+    <button class="pf-tab" data-key="sp500_port">พอร์ตออม S&P500</button>
+  </div>
+
+  <div class="pf-card">
+    <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
+    <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
+    <div class="pf-list" id="pf-list" hidden></div>
+  </div>
+  <div class="pf-foot mono" id="pf-updated" hidden></div>
 </div>
 
 <script>
@@ -116,6 +163,76 @@
     try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
   });
   applyTheme();
+})();
+</script>
+
+<script>
+(() => {
+  const WORKER_URL = 'https://oat-portfolio-worker.wittayanan-oat.workers.dev';
+  const $ = (id) => document.getElementById(id);
+  const loadingEl = $('pf-loading');
+  const errorEl = $('pf-error');
+  const listEl = $('pf-list');
+  const updatedEl = $('pf-updated');
+  const tabsEl = $('pf-tabs');
+
+  let portfolios = null;
+  let activeKey = 'combined';
+
+  function fmtSigned(v) {
+    const sign = v > 0 ? '+' : '';
+    return `${sign}${v.toFixed(1)}%`;
+  }
+
+  function render() {
+    if (!portfolios) return;
+    const pf = portfolios.find((p) => p.key === activeKey);
+    if (!pf || !pf.holdings || !pf.holdings.length) {
+      listEl.innerHTML = '<div class="pf-state">ไม่มีข้อมูลถือครองในพอร์ตนี้</div>';
+      listEl.hidden = false;
+      return;
+    }
+    const maxPos = Math.max(...pf.holdings.map((h) => h.pos_pct), 1);
+    listEl.innerHTML = pf.holdings.map((h) => `
+      <div class="pf-row">
+        <div class="pf-row-top">
+          <span class="pf-ticker mono">${h.ticker}</span>
+          <span class="pf-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
+        </div>
+        <div class="pf-bar-track"><div class="pf-bar-fill" style="width:${(h.pos_pct / maxPos * 100).toFixed(1)}%"></div></div>
+        <div class="pf-row-bottom mono">สัดส่วน ${h.pos_pct.toFixed(1)}%</div>
+      </div>
+    `).join('');
+    listEl.hidden = false;
+    loadingEl.hidden = true;
+    errorEl.hidden = true;
+  }
+
+  tabsEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.pf-tab');
+    if (!btn) return;
+    tabsEl.querySelectorAll('.pf-tab').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeKey = btn.dataset.key;
+    render();
+  });
+
+  fetch(WORKER_URL)
+    .then((r) => r.json())
+    .then((data) => {
+      if (data.error || !data.portfolios) throw new Error(data.error || 'no data');
+      portfolios = data.portfolios;
+      render();
+      if (data.updated_at) {
+        const d = new Date(data.updated_at);
+        updatedEl.textContent = `อัพเดทล่าสุด ${d.toLocaleString('th-TH', { dateStyle: 'medium', timeStyle: 'short' })}`;
+        updatedEl.hidden = false;
+      }
+    })
+    .catch(() => {
+      loadingEl.hidden = true;
+      errorEl.hidden = false;
+    });
 })();
 </script>
 </body>
