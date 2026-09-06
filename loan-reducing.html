@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oatinvestor — คำนวณสินเชื่อบ้าน (ลดต้นลดดอก)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+<style>
+  :root {
+    --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
+    --line: #E3DBC6; --line2: #EFE8D6;
+    --green: #1F7A4E; --on-green: #FDFBF3; --red: #BE4438; --gold: #A9812F; --olive: #7A7462;
+    --strip: #1F2218; --strip-ink: #EFE9D8; --strip-muted: #98937F;
+    --shadow: 0 1px 2px rgba(41,35,15,.04), 0 16px 40px -18px rgba(41,35,15,.18);
+  }
+  html[data-theme="dark"] {
+    --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+    --line: #2E3122; --line2: #23261A;
+    --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+    --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]):not([data-theme="dark"]) {
+      --bg: #131510; --card: #1B1E15; --ink: #EDE7D4; --muted: #A29B86;
+      --line: #2E3122; --line2: #23261A;
+      --green: #5BC488; --on-green: #0E140C; --red: #E4695C; --gold: #D6B05C; --olive: #A8A18C;
+      --strip: #0B0D07; --strip-ink: #EDE7D4; --strip-muted: #8A8471;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 16px 40px -18px rgba(0,0,0,.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans Thai', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; transition: background-color .35s ease, color .35s ease; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
+  .oi-nav-inner { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); min-height: 66px; flex-wrap: wrap; row-gap: 0; }
+  .oi-logo { text-decoration: none; display: flex; align-items: baseline; flex: none; }
+  .oi-logo .oat { font-family: 'Trirong', Georgia, serif; font-style: italic; font-weight: 700; font-size: 25px; color: var(--green); }
+  .oi-logo .investor { font-weight: 700; font-size: 22px; color: var(--ink); letter-spacing: -.3px; }
+  .oi-nav-links { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 26px); margin-left: auto; flex-wrap: wrap; padding: 6px 0; }
+  .oi-nav-links a { text-decoration: none; font-size: 14.5px; font-weight: 500; color: var(--muted); border-bottom: 2px solid transparent; padding: 21px 2px 19px; transition: color .2s; }
+  .oi-nav-links a:hover { color: var(--ink); }
+  .oi-nav-links a.active { font-weight: 600; color: var(--ink); border-bottom-color: var(--green); padding: 10px 2px 8px; }
+  .oi-theme-btn { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; color: var(--ink); transition: border-color .2s, background-color .35s; }
+  .oi-theme-btn:hover { border-color: var(--green); }
+  .oi-theme-btn .icon { font-size: 13px; line-height: 1; }
+  .oi-theme-btn .label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+
+  .ft-header { max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 44px) clamp(16px, 4vw, 32px) 4px; }
+  .ft-crumb { font-size: 12.5px; color: var(--muted); }
+  .ft-crumb a { color: var(--muted); text-decoration: none; }
+  .ft-crumb a:hover { color: var(--green); }
+  .ft-h1 { margin: 14px 0 10px; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(26px, 4.6vw, 38px); }
+  .ft-lead { margin: 0; font-size: 15px; color: var(--muted); max-width: 68ch; line-height: 1.8; }
+
+  .ft-layout { max-width: 1240px; margin: 0 auto; padding: 22px clamp(16px, 4vw, 32px) 90px; display: grid; grid-template-columns: 360px 1fr; gap: 26px; align-items: start; }
+  @media (max-width: 900px) { .ft-layout { grid-template-columns: 1fr; } .ft-input-col { position: static !important; } }
+  .ft-input-col { position: sticky; top: 84px; }
+  .ft-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: clamp(20px, 3vw, 26px); box-shadow: var(--shadow); }
+  .ft-card-title { font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 17.5px; margin-bottom: 20px; }
+  .ft-fields { display: flex; flex-direction: column; gap: 20px; }
+
+  .ft-field { display: flex; flex-direction: column; gap: 9px; }
+  .ft-field-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .ft-field-head label { font-size: 13.5px; font-weight: 600; }
+  .ft-field-input { display: flex; align-items: center; gap: 6px; background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 5px 6px 5px 14px; flex: none; }
+  .ft-field-input input[type=number] { width: 100px; border: none; background: transparent; color: var(--ink); font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; text-align: right; outline: none; }
+  .ft-unit { font-size: 11px; color: var(--muted); white-space: nowrap; background: var(--line2); padding: 3px 9px; border-radius: 999px; }
+  .ft-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: var(--line); cursor: pointer; }
+  .ft-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%; background: var(--green); cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.3); margin-top: -5.5px; }
+  .ft-slider::-moz-range-thumb { width: 17px; height: 17px; border-radius: 50%; background: var(--green); cursor: pointer; border: none; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+  .ft-slider::-moz-range-track { height: 6px; border-radius: 999px; background: var(--line); }
+  .ft-hint { font-size: 11.5px; color: var(--olive); line-height: 1.5; }
+
+  .ft-hero { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 4vw, 34px); box-shadow: var(--shadow); text-align: center; }
+  .ft-hero-label { font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+  .ft-hero-value { font-family: 'IBM Plex Mono', monospace; font-size: clamp(32px, 6vw, 48px); font-weight: 700; color: var(--green); margin-top: 8px; }
+  .ft-hero-sub { margin-top: 8px; font-size: 13.5px; color: var(--muted); }
+
+  .ft-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 20px; }
+  .ft-stat-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .ft-stat-label { font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase; }
+  .ft-stat-value { font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600; margin-top: 6px; }
+  .ft-stat-sub { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
+
+  .ft-chart-card { margin-top: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 24px clamp(14px, 2vw, 26px); box-shadow: var(--shadow); }
+  .ft-chart-head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+  .ft-chart-title { font-size: 15px; font-weight: 700; }
+  .ft-legend { display: flex; gap: 16px; margin-left: auto; flex-wrap: wrap; }
+  .ft-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+  .ft-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+  .ft-chart-svg-wrap { position: relative; }
+  .ft-chart-svg-wrap svg { width: 100%; height: 320px; display: block; }
+  .ft-chart-tip { position: absolute; transform: translate(-50%, -100%); margin-top: -10px; background: var(--ink); color: var(--bg); font-size: 11.5px; font-weight: 500; padding: 5px 11px; border-radius: 9px; white-space: nowrap; pointer-events: none; }
+
+  .ft-table-card { margin-top: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); overflow: hidden; }
+  .ft-table-head { padding: 20px 24px 14px; font-size: 15px; font-weight: 700; font-family: 'Trirong', Georgia, serif; }
+  .ft-table-scroll { max-height: 420px; overflow-y: auto; overflow-x: auto; }
+  .ft-table { width: 100%; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; }
+  .ft-table th { position: sticky; top: 0; background: var(--card); text-align: right; padding: 8px 20px; font-size: 10.5px; color: var(--muted); border-bottom: 1px solid var(--line2); white-space: nowrap; }
+  .ft-table th:first-child { text-align: left; }
+  .ft-table td { text-align: right; padding: 7px 20px; border-bottom: 1px solid var(--line2); white-space: nowrap; }
+  .ft-table td:first-child { text-align: left; color: var(--muted); }
+
+  .ft-assumptions { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .ft-assumptions li { font-size: 11.5px; color: var(--muted); line-height: 1.7; padding-left: 16px; position: relative; }
+  .ft-assumptions li::before { content: "–"; position: absolute; left: 0; color: var(--olive); }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+</style>
+</head>
+<body>
+
+<div class="oi-nav">
+  <div class="oi-nav-inner">
+    <a href="index.html#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
+    <div class="oi-nav-links">
+      <a href="index.html#top">หน้าแรก</a>
+      <a href="index.html#top">พอร์ตหุ้น</a>
+      <a href="tools.html" class="active">เครื่องมือทางการเงิน</a>
+      <a href="index.html#top">บทความ</a>
+      <a href="index.html#top">เกี่ยวกับ</a>
+    </div>
+    <button class="oi-theme-btn" id="oi-theme-btn" title="สลับธีม Light / Dark / Auto">
+      <span class="icon" id="oi-theme-icon">◐</span>
+      <span class="label" id="oi-theme-label">AUTO</span>
+    </button>
+  </div>
+</div>
+
+<div class="ft-header">
+  <div class="ft-crumb"><a href="tools.html">เครื่องมือทางการเงิน</a> / คำนวณสินเชื่อบ้าน</div>
+  <h1 class="ft-h1">ผ่อนบ้านเดือนละเท่าไหร่ ดอกเบี้ยรวมเท่าไหร่?</h1>
+  <p class="ft-lead">คำนวณแบบลดต้นลดดอก (ใช้กับสินเชื่อบ้านและสินเชื่อส่วนบุคคลส่วนใหญ่) ลองใส่ยอดจ่ายเพิ่มต่อเดือนดูว่าช่วยลดเวลาผ่อนและประหยัดดอกเบี้ยได้แค่ไหน</p>
+</div>
+
+<div class="ft-layout">
+  <div class="ft-input-col">
+    <div class="ft-card">
+      <div class="ft-card-title">เงื่อนไขการกู้</div>
+      <div class="ft-fields">
+        <div class="ft-field">
+          <div class="ft-field-head">
+            <label for="n-principal">เงินต้น / วงเงินกู้</label>
+            <div class="ft-field-input"><input type="number" id="n-principal"><span class="ft-unit">บาท</span></div>
+          </div>
+          <input type="range" class="ft-slider" id="s-principal">
+        </div>
+        <div class="ft-field">
+          <div class="ft-field-head">
+            <label for="n-rate">ดอกเบี้ยต่อปี</label>
+            <div class="ft-field-input"><input type="number" id="n-rate" step="0.1"><span class="ft-unit">%/ปี</span></div>
+          </div>
+          <input type="range" class="ft-slider" id="s-rate">
+        </div>
+        <div class="ft-field">
+          <div class="ft-field-head">
+            <label for="n-term">งวดชำระ</label>
+            <div class="ft-field-input"><input type="number" id="n-term"><span class="ft-unit">เดือน</span></div>
+          </div>
+          <input type="range" class="ft-slider" id="s-term">
+        </div>
+        <div class="ft-field">
+          <div class="ft-field-head">
+            <label for="n-extra">จ่ายเพิ่มต่อเดือน</label>
+            <div class="ft-field-input"><input type="number" id="n-extra"><span class="ft-unit">บาท</span></div>
+          </div>
+          <input type="range" class="ft-slider" id="s-extra">
+          <div class="ft-hint">ยอดโปะเพิ่มจากค่างวดปกติทุกเดือน ช่วยลดเวลาผ่อนและดอกเบี้ยรวม</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ft-results">
+    <div class="ft-hero">
+      <div class="ft-hero-label mono">ค่างวดปกติ / เดือน</div>
+      <div class="ft-hero-value" id="out-payment"></div>
+      <div class="ft-hero-sub" id="out-summary"></div>
+    </div>
+
+    <div class="ft-stats">
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">จ่ายรวม/เดือน</span>
+        <div class="ft-stat-value" id="out-paytotal"></div>
+      </div>
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">ดอกเบี้ยรวม</span>
+        <div class="ft-stat-value" id="out-interest"></div>
+      </div>
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">ยอดชำระรวม</span>
+        <div class="ft-stat-value" id="out-paid"></div>
+      </div>
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">งวดชำระจริง</span>
+        <div class="ft-stat-value" id="out-months"></div>
+      </div>
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">ลดงวดชำระไป</span>
+        <div class="ft-stat-value pos" id="out-months-saved"></div>
+      </div>
+      <div class="ft-stat-card">
+        <span class="ft-stat-label mono">ประหยัดดอกเบี้ย</span>
+        <div class="ft-stat-value pos" id="out-interest-saved"></div>
+      </div>
+    </div>
+
+    <div class="ft-chart-card">
+      <div class="ft-chart-head">
+        <span class="ft-chart-title">ยอดคงเหลือ vs ดอกเบี้ยจ่ายสะสม</span>
+        <div class="ft-legend">
+          <span class="ft-legend-item"><span class="ft-legend-dot" style="background:var(--green)"></span>ยอดคงเหลือ</span>
+          <span class="ft-legend-item"><span class="ft-legend-dot" style="background:var(--gold)"></span>ดอกเบี้ยจ่ายสะสม</span>
+        </div>
+      </div>
+      <div class="ft-chart-svg-wrap">
+        <svg viewBox="0 0 1000 380" preserveAspectRatio="none" overflow="visible" id="chart-svg"></svg>
+        <div class="ft-chart-tip mono" id="chart-tip" hidden></div>
+      </div>
+    </div>
+
+    <div class="ft-table-card">
+      <div class="ft-table-head">ตารางผ่อนชำระ</div>
+      <div class="ft-table-scroll">
+        <table class="ft-table">
+          <thead><tr><th>งวดที่</th><th>ดอกเบี้ย</th><th>เงินต้น</th><th>คงเหลือ</th></tr></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <ul class="ft-assumptions">
+      <li>คำนวณแบบลดต้นลดดอก (Effective Rate) ดอกเบี้ยคิดจากยอดคงเหลือจริงทุกเดือน</li>
+      <li>ยอดจ่ายเพิ่มทั้งหมดตัดเข้าเงินต้นโดยตรง ทำให้ดอกเบี้ยเดือนถัดไปลดลง</li>
+      <li>เป็นการประมาณการเบื้องต้นเพื่อการศึกษาเท่านั้น อัตราดอกเบี้ยจริงอาจปรับเปลี่ยนได้ตามสัญญา ไม่ใช่คำแนะนำทางการเงิน</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const THEME_ICON = { auto: '◐', light: '○', dark: '●' };
+  let theme = 'auto';
+  try { theme = localStorage.getItem('oatinvestor-preview-theme') || 'auto'; } catch (e) {}
+  function applyTheme() {
+    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    $('oi-theme-icon').textContent = THEME_ICON[theme];
+    $('oi-theme-label').textContent = theme.toUpperCase();
+  }
+  $('oi-theme-btn').addEventListener('click', () => {
+    const order = ['auto', 'light', 'dark'];
+    theme = order[(order.indexOf(theme) + 1) % 3];
+    applyTheme();
+    try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
+  });
+  applyTheme();
+
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+  function fmtMoney(v) { return '฿' + Math.round(v).toLocaleString('en-US'); }
+  function fmtAxis(v) {
+    if (Math.abs(v) >= 1e6) return '฿' + (v / 1e6).toFixed(1) + 'M';
+    if (Math.abs(v) >= 1e3) return '฿' + Math.round(v / 1e3) + 'K';
+    return '฿' + Math.round(v);
+  }
+  function pickStep(range) {
+    for (const s of [1, 3, 6, 12, 24, 36, 60]) if (range / s <= 13) return s;
+    return Math.ceil(range / 13);
+  }
+
+  const state = { principal: 2000000, rate: 6.5, term: 240, extra: 0 };
+  const specs = {
+    principal: { min: 100000, max: 20000000, step: 10000 },
+    rate:      { min: 0.5, max: 15, step: 0.1 },
+    term:      { min: 12, max: 360, step: 12 },
+    extra:     { min: 0, max: 100000, step: 500 }
+  };
+
+  function setControl(key) {
+    const spec = specs[key], val = state[key];
+    $('n-' + key).value = val;
+    $('s-' + key).value = val;
+    const pct = ((val - spec.min) / (spec.max - spec.min)) * 100;
+    $('s-' + key).style.background = `linear-gradient(to right, var(--green) ${pct}%, var(--line) ${pct}%)`;
+  }
+  function onFieldChange() { Object.keys(specs).forEach(setControl); render(); }
+  Object.keys(specs).forEach((key) => {
+    const spec = specs[key];
+    const num = $('n-' + key), slider = $('s-' + key);
+    num.min = spec.min; num.max = spec.max; num.step = spec.step;
+    slider.min = spec.min; slider.max = spec.max; slider.step = spec.step;
+    num.addEventListener('input', () => { state[key] = clamp(parseFloat(num.value) || 0, spec.min, spec.max); onFieldChange(); });
+    slider.addEventListener('input', () => { state[key] = parseFloat(slider.value); onFieldChange(); });
+  });
+
+  function amortize(principal, annualRatePct, termMonths, extra) {
+    const r = annualRatePct / 100 / 12;
+    const payment = r > 0 ? principal * r / (1 - Math.pow(1 + r, -termMonths)) : principal / termMonths;
+    let balance = principal, totalInterest = 0, month = 0;
+    const schedule = [];
+    const maxIter = termMonths * 3 + 600;
+    while (balance > 0.5 && month < maxIter) {
+      month++;
+      const interest = balance * r;
+      let principalPortion = payment - interest + extra;
+      if (principalPortion > balance) principalPortion = balance;
+      balance -= principalPortion;
+      totalInterest += interest;
+      schedule.push({ month, interest, principal: principalPortion, balance: Math.max(balance, 0), cumInterest: totalInterest });
+    }
+    return { payment, totalInterest, totalMonths: month, schedule, totalPaid: principal + totalInterest };
+  }
+
+  function render() {
+    const p = Object.assign({}, state);
+    const base = amortize(p.principal, p.rate, p.term, 0);
+    const withExtra = p.extra > 0 ? amortize(p.principal, p.rate, p.term, p.extra) : base;
+    const monthsSaved = base.totalMonths - withExtra.totalMonths;
+    const interestSaved = base.totalInterest - withExtra.totalInterest;
+
+    $('out-payment').textContent = fmtMoney(base.payment) + '/ด.';
+    $('out-summary').textContent = 'กู้ ' + fmtMoney(p.principal) + ' ดอกเบี้ย ' + p.rate + '%/ปี ผ่อน ' + p.term + ' เดือน';
+    $('out-paytotal').textContent = fmtMoney(base.payment + p.extra) + '/ด.';
+    $('out-interest').textContent = fmtMoney(withExtra.totalInterest);
+    $('out-paid').textContent = fmtMoney(withExtra.totalPaid);
+    $('out-months').textContent = withExtra.totalMonths + ' เดือน';
+    $('out-months-saved').textContent = monthsSaved + ' เดือน';
+    $('out-interest-saved').textContent = fmtMoney(interestSaved);
+
+    renderChart(withExtra);
+    renderTable(withExtra);
+  }
+
+  function renderChart(r) {
+    const W = 1000, H = 380, padL = 70, padR = 60, padT = 24, padB = 40;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+    const n = r.schedule.length;
+    const maxBal = Math.max.apply(null, r.schedule.map((d) => d.balance).concat([1])) * 1.08;
+    const maxInt = Math.max.apply(null, r.schedule.map((d) => d.cumInterest).concat([1])) * 1.08;
+    const xFor = (i) => padL + (i / (n - 1)) * plotW;
+    const yBal = (v) => padT + (1 - v / maxBal) * plotH;
+    const yInt = (v) => padT + (1 - v / maxInt) * plotH;
+
+    let gridSvg = '', yLabelsSvg = '';
+    for (let i = 0; i <= 4; i++) {
+      const y = padT + (i / 4) * plotH;
+      gridSvg += `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" stroke="var(--line2)" stroke-width="1"/>`;
+      yLabelsSvg += `<text x="${padL - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${fmtAxis(maxBal * (1 - i / 4))}</text>`;
+      yLabelsSvg += `<text x="${W - padR + 10}" y="${(y + 4).toFixed(1)}" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${fmtAxis(maxInt * (1 - i / 4))}</text>`;
+    }
+    const step = pickStep(n);
+    let xTicksSvg = '';
+    r.schedule.forEach((d, i) => {
+      if (d.month % step === 0 || i === 0 || i === n - 1) {
+        xTicksSvg += `<text x="${xFor(i).toFixed(1)}" y="${H - padB + 22}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${d.month}ง.</text>`;
+      }
+    });
+
+    const balPts = r.schedule.map((d, i) => ({ x: xFor(i), y: yBal(d.balance), d }));
+    const intPts = r.schedule.map((d, i) => ({ x: xFor(i), y: yInt(d.cumInterest), d }));
+    const lineFor = (arr) => arr.map((p, i) => (i ? 'L' : 'M') + p.x.toFixed(1) + ' ' + p.y.toFixed(1)).join(' ');
+
+    $('chart-svg').innerHTML = `
+      ${gridSvg}
+      <path d="${lineFor(balPts)}" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path>
+      <path d="${lineFor(intPts)}" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path>
+      ${yLabelsSvg}${xTicksSvg}
+      <circle id="chart-dot" r="4.5" fill="var(--ink)" stroke="var(--card)" stroke-width="2" style="display:none"></circle>
+      <rect x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" fill="transparent" id="chart-hover"></rect>
+    `;
+    const svgEl = $('chart-svg'), tip = $('chart-tip'), dot = $('chart-dot'), hoverRect = $('chart-hover');
+    hoverRect.addEventListener('mousemove', (e) => {
+      const rectBB = svgEl.getBoundingClientRect();
+      const fracFull = clamp((e.clientX - rectBB.left) / rectBB.width, 0, 1);
+      const frac = clamp((fracFull * W - padL) / plotW, 0, 1);
+      const i = Math.round(frac * (n - 1));
+      const b = balPts[i];
+      dot.setAttribute('cx', b.x.toFixed(1)); dot.setAttribute('cy', b.y.toFixed(1)); dot.style.display = 'block';
+      tip.style.left = (b.x / W * 100) + '%'; tip.style.top = (b.y / H * 100) + '%';
+      tip.textContent = 'งวด ' + b.d.month + ' · เหลือ ' + fmtMoney(b.d.balance);
+      tip.hidden = false;
+    });
+    hoverRect.addEventListener('mouseleave', () => { dot.style.display = 'none'; tip.hidden = true; });
+  }
+
+  function renderTable(r) {
+    $('table-body').innerHTML = r.schedule.map((d) => `
+      <tr>
+        <td>${d.month}</td>
+        <td>${fmtMoney(d.interest)}</td>
+        <td>${fmtMoney(d.principal)}</td>
+        <td>${fmtMoney(d.balance)}</td>
+      </tr>`).join('');
+  }
+
+  Object.keys(specs).forEach(setControl);
+  render();
+})();
+</script>
+</body>
+</html>
