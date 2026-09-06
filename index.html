@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
@@ -81,16 +82,28 @@
   .pf-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 26px); box-shadow: var(--shadow); }
   .pf-state { text-align: center; font-size: 13.5px; color: var(--muted); padding: 30px 0; }
 
-  .pf-row { padding: 13px 0; border-bottom: 1px solid var(--line2); }
+  .pf-body { display: grid; grid-template-columns: 240px 1fr; gap: clamp(20px, 4vw, 40px); align-items: center; }
+  .pf-chart-wrap { position: relative; width: 100%; max-width: 240px; margin: 0 auto; }
+  .pf-chart-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; text-align: center; }
+  .pf-chart-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .pf-chart-value { font-size: 22px; font-weight: 700; margin-top: 4px; font-family: 'Trirong', Georgia, serif; }
+  @media (max-width: 640px) { .pf-body { grid-template-columns: 1fr; } .pf-chart-wrap { max-width: 220px; } }
+
+  .pf-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line2); }
   .pf-row:last-child { border-bottom: none; }
-  .pf-row-top { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+  .pf-row-left { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1; }
+  .pf-info { min-width: 0; flex: 1; }
+  .pf-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; background: var(--line2); border: 1px solid var(--line); flex-shrink: 0; }
+  .pf-logo-fallback { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: var(--muted); }
+  .pf-ticker-row { display: flex; align-items: center; gap: 6px; }
+  .pf-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .pf-ticker { font-size: 14px; font-weight: 600; letter-spacing: .3px; }
+  .pf-name { font-size: 11px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pf-row-right { text-align: right; flex-shrink: 0; }
   .pf-pl { font-size: 13.5px; font-weight: 600; }
   .pf-pl.up { color: var(--green); }
   .pf-pl.down { color: var(--red); }
-  .pf-bar-track { height: 6px; border-radius: 999px; background: var(--line2); overflow: hidden; }
-  .pf-bar-fill { height: 100%; border-radius: 999px; background: var(--olive); }
-  .pf-row-bottom { margin-top: 6px; font-size: 11px; color: var(--muted); text-align: right; }
+  .pf-pos { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
   .pf-foot { text-align: center; font-size: 10.5px; color: var(--muted); margin-top: 16px; letter-spacing: .3px; }
 </style>
@@ -139,7 +152,16 @@
   <div class="pf-card">
     <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
     <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
-    <div class="pf-list" id="pf-list" hidden></div>
+    <div class="pf-body" id="pf-body" hidden>
+      <div class="pf-chart-wrap">
+        <canvas id="pf-alloc-chart"></canvas>
+        <div class="pf-chart-center">
+          <div class="pf-chart-label mono">HOLDINGS</div>
+          <div class="pf-chart-value" id="pf-chart-count">—</div>
+        </div>
+      </div>
+      <div class="pf-list" id="pf-list"></div>
+    </div>
   </div>
   <div class="pf-foot mono" id="pf-updated" hidden></div>
 </div>
@@ -172,16 +194,85 @@
   const $ = (id) => document.getElementById(id);
   const loadingEl = $('pf-loading');
   const errorEl = $('pf-error');
+  const bodyEl = $('pf-body');
   const listEl = $('pf-list');
+  const chartCountEl = $('pf-chart-count');
   const updatedEl = $('pf-updated');
   const tabsEl = $('pf-tabs');
 
-  let portfolios = null;
-  let activeKey = 'combined';
+  // เหมือนหน้า portfolio.html ต้นแบบ — สีแบรนด์ต่อ ticker + โดเมนสำหรับดึงโลโก้
+  const TICKER_COLORS = {
+    NVDA: '#76b900', MSFT: '#00a4ef', META: '#0668e1', AMZN: '#ff9900',
+    TSM: '#0072c6', NFLX: '#e50914', VOO: '#96151d', ARM: '#0091bd',
+    ASML: '#0f5ea3', MU: '#0089cf', SPCX: '#2c2c2c', SGOV: '#00674b',
+  };
+  const NAME_MAP = {
+    NVDA: 'NVIDIA', MSFT: 'Microsoft', META: 'Meta', AMZN: 'Amazon',
+    TSM: 'TSMC', NFLX: 'Netflix', VOO: 'Vanguard S&P 500 ETF',
+    ARM: 'Arm Holdings', ASML: 'ASML Holding', MU: 'Micron Technology',
+    SPCX: 'SpaceX', SGOV: 'iShares 0-3 Month Treasury', CASH: 'เงินสด',
+  };
+  const LOGO_DOMAINS = {
+    NVDA: 'nvidia.com', MSFT: 'microsoft.com', META: 'meta.com', AMZN: 'amazon.com',
+    TSM: 'tsmc.com', NFLX: 'netflix.com', VOO: 'vanguard.com', ARM: 'arm.com',
+    ASML: 'asml.com', MU: 'micron.com', SPCX: 'spacex.com', SGOV: 'ishares.com',
+  };
+  const CASH_COLOR = '#8A8471';
+  const FALLBACK_COLORS = ['#f59e0b', '#06b6d4', '#84cc16', '#f43f5e', '#8b5cf6', '#fb923c'];
 
+  function assignColors(sorted) {
+    const map = {}; let f = 0;
+    for (const h of sorted) {
+      if (h.ticker === 'CASH') map[h.ticker] = CASH_COLOR;
+      else map[h.ticker] = TICKER_COLORS[h.ticker] || FALLBACK_COLORS[f++ % FALLBACK_COLORS.length];
+    }
+    return map;
+  }
+  function logoHTML(ticker) {
+    const domain = LOGO_DOMAINS[ticker];
+    if (!domain) {
+      const txt = ticker === 'CASH' ? '฿' : ticker.slice(0, 2);
+      return `<div class="pf-logo pf-logo-fallback">${txt}</div>`;
+    }
+    return `<img class="pf-logo" src="https://www.google.com/s2/favicons?domain=${domain}&sz=64"
+      alt="${ticker}" onerror="this.outerHTML='<div class=\\'pf-logo pf-logo-fallback\\'>${ticker.slice(0,2)}</div>'">`;
+  }
   function fmtSigned(v) {
     const sign = v > 0 ? '+' : '';
     return `${sign}${v.toFixed(1)}%`;
+  }
+  function cssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  let portfolios = null;
+  let activeKey = 'combined';
+  let allocChart = null;
+
+  function renderChart(sorted, colorMap) {
+    const canvas = $('pf-alloc-chart');
+    if (!canvas) return;
+    const border = cssVar('--card') || '#FFFCF4';
+    if (allocChart) allocChart.destroy();
+    allocChart = new Chart(canvas, {
+      type: 'doughnut',
+      data: {
+        labels: sorted.map((h) => h.ticker),
+        datasets: [{
+          data: sorted.map((h) => h.pos_pct),
+          backgroundColor: sorted.map((h) => colorMap[h.ticker] || CASH_COLOR),
+          borderColor: border, borderWidth: 2.5, hoverOffset: 6,
+        }],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: true, aspectRatio: 1, cutout: '64%',
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (c) => ` ${c.label}: ${c.raw.toFixed(1)}%` } },
+        },
+        animation: { duration: 450 },
+      },
+    });
   }
 
   function render() {
@@ -189,21 +280,39 @@
     const pf = portfolios.find((p) => p.key === activeKey);
     if (!pf || !pf.holdings || !pf.holdings.length) {
       listEl.innerHTML = '<div class="pf-state">ไม่มีข้อมูลถือครองในพอร์ตนี้</div>';
-      listEl.hidden = false;
+      bodyEl.hidden = false;
+      loadingEl.hidden = true;
       return;
     }
-    const maxPos = Math.max(...pf.holdings.map((h) => h.pos_pct), 1);
-    listEl.innerHTML = pf.holdings.map((h) => `
+    const sorted = pf.holdings.slice().sort((a, b) => {
+      if (a.ticker === 'CASH') return 1;
+      if (b.ticker === 'CASH') return -1;
+      return b.pos_pct - a.pos_pct;
+    });
+    const colorMap = assignColors(sorted);
+    renderChart(sorted, colorMap);
+    chartCountEl.textContent = sorted.length;
+
+    listEl.innerHTML = sorted.map((h) => `
       <div class="pf-row">
-        <div class="pf-row-top">
-          <span class="pf-ticker mono">${h.ticker}</span>
-          <span class="pf-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
+        <div class="pf-row-left">
+          ${logoHTML(h.ticker)}
+          <div class="pf-info">
+            <div class="pf-ticker-row">
+              <span class="pf-dot" style="background:${colorMap[h.ticker]}"></span>
+              <span class="pf-ticker mono">${h.ticker}</span>
+            </div>
+            <div class="pf-name">${NAME_MAP[h.ticker] || h.ticker}</div>
+          </div>
         </div>
-        <div class="pf-bar-track"><div class="pf-bar-fill" style="width:${(h.pos_pct / maxPos * 100).toFixed(1)}%"></div></div>
-        <div class="pf-row-bottom mono">สัดส่วน ${h.pos_pct.toFixed(1)}%</div>
+        <div class="pf-row-right">
+          <div class="pf-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</div>
+          <div class="pf-pos mono">สัดส่วน ${h.pos_pct.toFixed(1)}%</div>
+        </div>
       </div>
     `).join('');
-    listEl.hidden = false;
+
+    bodyEl.hidden = false;
     loadingEl.hidden = true;
     errorEl.hidden = true;
   }
@@ -216,6 +325,11 @@
     activeKey = btn.dataset.key;
     render();
   });
+
+  // ธีมเปลี่ยน (ปุ่มสลับ Light/Dark/Auto) → รีเฟรชสีขอบวงกราฟให้ตรงพื้นหลังใหม่
+  new MutationObserver(() => {
+    if (portfolios) render();
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
   fetch(WORKER_URL)
     .then((r) => r.json())
