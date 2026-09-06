@@ -126,7 +126,7 @@
   .rp-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
   .rp-chart-svg-wrap { position: relative; }
   .rp-chart-svg-wrap svg { width: 100%; height: 340px; display: block; }
-  .rp-bar-tip { position: absolute; transform: translate(-50%, -100%); margin-top: -8px; background: var(--ink); color: var(--bg); font-size: 11.5px; font-weight: 500; padding: 5px 11px; border-radius: 9px; white-space: nowrap; pointer-events: none; }
+  .rp-chart-tip { position: absolute; transform: translate(-50%, -100%); margin-top: -10px; background: var(--ink); color: var(--bg); font-size: 11.5px; font-weight: 500; padding: 5px 11px; border-radius: 9px; white-space: nowrap; pointer-events: none; }
   .rp-assumptions { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
   .rp-assumptions li { font-size: 11.5px; color: var(--muted); line-height: 1.7; padding-left: 16px; position: relative; }
   .rp-assumptions li::before { content: "–"; position: absolute; left: 0; color: var(--olive); }
@@ -316,7 +316,7 @@
     </div>
     <div class="rp-chart-svg-wrap">
       <svg viewBox="0 0 1000 380" preserveAspectRatio="none" overflow="visible" id="rp-chart-svg"></svg>
-      <div class="rp-bar-tip mono" id="rp-bar-tip" hidden></div>
+      <div class="rp-chart-tip mono" id="rp-chart-tip" hidden></div>
     </div>
     <ul class="rp-assumptions">
       <li>คิดดอกเบี้ยทบต้นแบบรายเดือน</li>
@@ -487,15 +487,13 @@
     $('lb-age-end').textContent = 'อายุ ' + p.planAge;
   }
 
-  let chartData = null;
   function renderChart(r, p) {
     const W = 1000, H = 380, padL = 70, padR = 16, padT = 46, padB = 40;
     const plotW = W - padL - padR, plotH = H - padT - padB;
     const n = r.yearly.length;
     const maxVal = Math.max.apply(null, r.yearly.map((d) => d.balance).concat([1])) * 1.15;
     const baseY = padT + plotH;
-    const xFor = (i) => padL + (i / n) * plotW;
-    const barW = Math.max(1.4, (plotW / n) - 2);
+    const xFor = (i) => padL + (i / (n - 1)) * plotW;
     const yVal = (v) => padT + (1 - Math.max(v, 0) / maxVal) * plotH;
 
     let gridSvg = '', yLabelsSvg = '';
@@ -506,51 +504,71 @@
       yLabelsSvg += `<text x="${padL - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${fmtAxis(v)}</text>`;
     }
 
-    let bars = '';
-    r.yearly.forEach((d, i) => {
-      const v = Math.max(d.balance, 0);
-      const x = xFor(i);
-      const y = yVal(v);
-      const h = Math.max(baseY - y, 0);
-      const color = d.age <= p.retireAge ? 'var(--green)' : 'var(--gold)';
-      bars += `<rect class="rp-bar" data-i="${i}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" rx="1.5" fill="${color}" fill-opacity="0.85"></rect>`;
-    });
+    const pts = r.yearly.map((d, i) => ({ age: d.age, x: xFor(i), y: yVal(d.balance) }));
+    const accPts = pts.filter((d) => d.age <= p.retireAge);
+    const drawPts = pts.filter((d) => d.age >= p.retireAge);
+    const pathFor = (arr) => arr.map((d, i) => (i ? 'L' : 'M') + d.x.toFixed(1) + ' ' + d.y.toFixed(1)).join(' ');
+    const areaFor = (arr) => {
+      if (!arr.length) return '';
+      return pathFor(arr) + ` L ${arr[arr.length - 1].x.toFixed(1)} ${baseY} L ${arr[0].x.toFixed(1)} ${baseY} Z`;
+    };
 
     const step = pickStep(p.planAge - p.currentAge);
     let xTicksSvg = '';
     r.yearly.forEach((d, i) => {
       if (d.age % step === 0 || i === 0 || i === n - 1) {
-        xTicksSvg += `<text x="${(xFor(i) + barW / 2).toFixed(1)}" y="${H - padB + 22}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${d.age}</text>`;
+        xTicksSvg += `<text x="${xFor(i).toFixed(1)}" y="${H - padB + 22}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">${d.age}</text>`;
       }
     });
 
     const retI = r.yearly.findIndex((d) => d.age === p.retireAge);
-    const retX = (xFor(retI) + barW / 2).toFixed(1);
+    const retX = xFor(retI).toFixed(1);
     const retireTag = `<g>
+        <line x1="${retX}" y1="${padT}" x2="${retX}" y2="${baseY}" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"></line>
         <circle cx="${retX}" cy="26" r="3" fill="var(--gold)"></circle>
         <line x1="${retX}" y1="29" x2="${retX}" y2="36" stroke="var(--gold)" stroke-width="1.5"></line>
         <text x="${retX}" y="16" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" fill="var(--gold)">เกษียณ</text>
       </g>`;
 
-    $('rp-chart-svg').innerHTML = `${gridSvg}${bars}${retireTag}${yLabelsSvg}${xTicksSvg}`;
+    $('rp-chart-svg').innerHTML = `
+      <defs>
+        <linearGradient id="accFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--green)" stop-opacity="0.25"></stop>
+          <stop offset="1" stop-color="var(--green)" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="drawFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--gold)" stop-opacity="0.25"></stop>
+          <stop offset="1" stop-color="var(--gold)" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+      ${gridSvg}
+      <path d="${areaFor(accPts)}" fill="url(#accFill)" stroke="none"></path>
+      <path d="${areaFor(drawPts)}" fill="url(#drawFill)" stroke="none"></path>
+      <path d="${pathFor(accPts)}" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path>
+      <path d="${pathFor(drawPts)}" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path>
+      ${retireTag}
+      ${yLabelsSvg}
+      ${xTicksSvg}
+      <circle id="rp-chart-dot" r="4.5" fill="var(--ink)" stroke="var(--card)" stroke-width="2" style="display:none"></circle>
+      <rect x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" fill="transparent" id="rp-chart-hover"></rect>
+    `;
 
-    chartData = { yearly: r.yearly, xFor, barW };
-    const svgEl = $('rp-chart-svg'), tip = $('rp-bar-tip');
-    svgEl.querySelectorAll('.rp-bar').forEach((rect) => {
-      rect.addEventListener('mouseenter', () => {
-        const i = Number(rect.getAttribute('data-i'));
-        const d = chartData.yearly[i];
-        const svgRect = svgEl.getBoundingClientRect();
-        const barRect = rect.getBoundingClientRect();
-        const leftPct = ((barRect.left + barRect.width / 2 - svgRect.left) / svgRect.width) * 100;
-        const topPct = ((barRect.top - svgRect.top) / svgRect.height) * 100;
-        tip.style.left = leftPct + '%';
-        tip.style.top = topPct + '%';
-        tip.textContent = 'อายุ ' + d.age + ' · ' + fmtMoney(d.balance);
-        tip.hidden = false;
-      });
-      rect.addEventListener('mouseleave', () => { tip.hidden = true; });
+    const svgEl = $('rp-chart-svg'), tip = $('rp-chart-tip'), dot = $('rp-chart-dot'), hoverRect = $('rp-chart-hover');
+    hoverRect.addEventListener('mousemove', (e) => {
+      const svgRect = svgEl.getBoundingClientRect();
+      const fracFull = clamp((e.clientX - svgRect.left) / svgRect.width, 0, 1);
+      const frac = clamp((fracFull * W - padL) / plotW, 0, 1);
+      const i = Math.round(frac * (n - 1));
+      const d = pts[i], data = r.yearly[i];
+      dot.setAttribute('cx', d.x.toFixed(1));
+      dot.setAttribute('cy', d.y.toFixed(1));
+      dot.style.display = 'block';
+      tip.style.left = (d.x / W * 100) + '%';
+      tip.style.top = (d.y / H * 100) + '%';
+      tip.textContent = 'อายุ ' + data.age + ' · ' + fmtMoney(data.balance);
+      tip.hidden = false;
     });
+    hoverRect.addEventListener('mouseleave', () => { dot.style.display = 'none'; tip.hidden = true; });
   }
 
   function recalcAndRender() {
