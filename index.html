@@ -103,6 +103,21 @@
   .hp-more { text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--green); display: flex; align-items: center; gap: 6px; }
   .hp-more:hover { text-decoration: underline; }
 
+  .hp-range-row { display: flex; align-items: center; gap: 6px; }
+  .hp-range-btn { padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all .2s; border: 1px solid var(--line); background: transparent; color: var(--muted); }
+  .hp-range-btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .hp-range-chg { margin-left: auto; font-size: 12.5px; font-weight: 600; color: var(--muted); }
+  .hp-range-chg.up { color: var(--green); }
+  .hp-range-chg.down { color: var(--red); }
+  .hp-chart-pos { position: relative; }
+  .hp-chart-pos svg { display: block; width: 100%; height: 120px; }
+  .hp-chart-overlay { position: absolute; inset: 0; cursor: crosshair; }
+  .hp-chart-guide { position: absolute; top: 0; bottom: 0; width: 1px; background: color-mix(in srgb, var(--ink) 25%, transparent); pointer-events: none; }
+  .hp-chart-dot { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--green); border: 2px solid var(--card); transform: translate(-50%, -50%); pointer-events: none; }
+  .hp-chart-tip { position: absolute; top: -4px; transform: translate(-50%, -100%); background: var(--ink); color: var(--bg); font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 8px; white-space: nowrap; pointer-events: none; }
+  .hp-axis { display: flex; justify-content: space-between; }
+  .hp-axis span { font-size: 10px; color: var(--muted); }
+
   /* ── Portfolio section ────────────────────────────────────────── */
   .portfolio-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(36px, 5vw, 56px) clamp(16px, 4vw, 32px) clamp(80px, 10vw, 110px); scroll-margin-top: 70px; }
   .portfolio-head { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; margin-bottom: 22px; }
@@ -211,6 +226,29 @@
       <span class="hp-headline-sub">ผลตอบแทนสะสม (รวมพอร์ต) · ไม่แสดงมูลค่าเงิน</span>
     </div>
     <div class="hp-badges" id="hp-badges"></div>
+    <div id="hp-chart-block" style="display:flex;flex-direction:column;gap:8px" hidden>
+      <div class="hp-range-row mono" id="hp-range-tabs"></div>
+      <div class="hp-chart-pos">
+        <svg viewBox="0 0 320 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="hpSparkFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--green)" stop-opacity="0.22"></stop>
+              <stop offset="1" stop-color="var(--green)" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <path id="hp-spark-area" fill="url(#hpSparkFill)" stroke="none"></path>
+          <path id="hp-spark-line" fill="none" stroke="var(--green)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+        </svg>
+        <div class="hp-chart-guide mono" id="hp-chart-guide" hidden></div>
+        <div class="hp-chart-dot" id="hp-chart-dot" hidden></div>
+        <div class="hp-chart-tip mono" id="hp-chart-tip" hidden></div>
+        <div class="hp-chart-overlay" id="hp-chart-overlay"></div>
+      </div>
+      <div class="hp-axis mono">
+        <span id="hp-axis-start">—</span>
+        <span id="hp-axis-end">—</span>
+      </div>
+    </div>
     <div class="hp-divider"></div>
     <div style="display:flex;flex-direction:column;gap:9px">
       <span class="hp-holdings-label">TOP HOLDINGS</span>
@@ -362,6 +400,117 @@
     `).join('');
   }
 
+  // ── Hero return chart — daily history from data/portfolio.json ───────
+  // Only ever plots a %-return line: dollar values from that file are
+  // combined internally to compute the ratio, then discarded.
+  let combinedHist = null;   // { dates, retPct }
+  let chartPeriod = 'ALL';
+  let hoverCtx = null;
+
+  function buildCombinedHistory(pfJson) {
+    const aiHist = pfJson?.ai_port?.history;
+    const spHist = pfJson?.sp500_port?.history;
+    const toMap = (h) => {
+      const m = new Map();
+      (h?.dates || []).forEach((d, i) => m.set(d, { v: h.portfolio[i] || 0, dep: (h.deposited ? h.deposited[i] : 0) || 0 }));
+      return m;
+    };
+    const aiMap = toMap(aiHist), spMap = toMap(spHist);
+    if (!aiMap.size && !spMap.size) return null;
+    const allDates = Array.from(new Set([...aiMap.keys(), ...spMap.keys()])).sort();
+    let lastAi = { v: 0, dep: 0 }, lastSp = { v: 0, dep: 0 };
+    const dates = [], retPct = [];
+    for (const d of allDates) {
+      if (aiMap.has(d)) lastAi = aiMap.get(d);
+      if (spMap.has(d)) lastSp = spMap.get(d);
+      const dep = lastAi.dep + lastSp.dep;
+      const val = lastAi.v + lastSp.v;
+      dates.push(d);
+      retPct.push(dep > 0 ? ((val / dep - 1) * 100) : 0);
+    }
+    return { dates, retPct };
+  }
+
+  function periodSlice(hist, period) {
+    const n = hist.dates.length;
+    if (period === 'ALL' || n === 0) return hist;
+    const days = { '1M': 21, '3M': 63, '6M': 126 }[period] || n;
+    const start = Math.max(0, n - days);
+    return { dates: hist.dates.slice(start), retPct: hist.retPct.slice(start) };
+  }
+
+  function fmtDateShort(iso) {
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: '2-digit' });
+  }
+
+  function renderHeroChart() {
+    const block = $('hp-chart-block');
+    if (!combinedHist || combinedHist.dates.length < 2) { block.hidden = true; return; }
+    const sliced = periodSlice(combinedHist, chartPeriod);
+    const vals = sliced.retPct;
+    const N = vals.length;
+    if (N < 2) { block.hidden = true; return; }
+    block.hidden = false;
+
+    const min = Math.min(...vals, 0), max = Math.max(...vals, 0);
+    const pad = (max - min) * 0.15 || 1;
+    const lo = min - pad, hi = max + pad;
+    const X = (i) => (i / (N - 1)) * 320;
+    const Y = (v) => 86 - ((v - lo) / (hi - lo)) * 70;
+    const line = vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' ');
+    $('hp-spark-line').setAttribute('d', line);
+    $('hp-spark-area').setAttribute('d', line + ' L 320 100 L 0 100 Z');
+    $('hp-axis-start').textContent = fmtDateShort(sliced.dates[0]);
+    $('hp-axis-end').textContent = fmtDateShort(sliced.dates[N - 1]);
+
+    const rp = vals[N - 1] - vals[0];
+    const chgEl = $('hp-range-chg');
+    if (chgEl) {
+      chgEl.textContent = (rp >= 0 ? '+' : '') + rp.toFixed(1) + 'pp';
+      chgEl.className = 'hp-range-chg mono ' + (rp >= 0 ? 'up' : 'down');
+    }
+    hoverCtx = { sliced, X, Y, N };
+  }
+
+  function buildRangeTabs() {
+    if (!combinedHist) return;
+    const n = combinedHist.dates.length;
+    const daysMap = { '1M': 21, '3M': 63, '6M': 126 };
+    const opts = ['1M', '3M', '6M', 'ALL'].filter((p) => p === 'ALL' || n >= daysMap[p]);
+    if (!opts.includes(chartPeriod)) chartPeriod = opts[opts.length - 1];
+    $('hp-range-tabs').innerHTML = opts.map((p) => `<button class="hp-range-btn${p === chartPeriod ? ' active' : ''}" data-period="${p}">${p}</button>`).join('') + '<span class="hp-range-chg mono" id="hp-range-chg"></span>';
+    $('hp-range-tabs').querySelectorAll('.hp-range-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        chartPeriod = btn.dataset.period;
+        $('hp-range-tabs').querySelectorAll('.hp-range-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderHeroChart();
+      });
+    });
+  }
+
+  $('hp-chart-overlay').addEventListener('mousemove', (e) => {
+    if (!hoverCtx) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    const { sliced, X, Y, N } = hoverCtx;
+    const i = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
+    const leftPct = (X(i) / 320 * 100).toFixed(2) + '%';
+    const topPct = (Y(sliced.retPct[i]) / 100 * 100).toFixed(2) + '%';
+    const guide = $('hp-chart-guide'), dot = $('hp-chart-dot'), tip = $('hp-chart-tip');
+    guide.style.left = leftPct; guide.hidden = false;
+    dot.style.left = leftPct; dot.style.top = topPct; dot.hidden = false;
+    tip.style.left = Math.max(14, Math.min(86, (X(i) / 320) * 100)) + '%';
+    tip.textContent = fmtDateShort(sliced.dates[i]) + ' · ' + fmtSigned(sliced.retPct[i]);
+    tip.hidden = false;
+  });
+  $('hp-chart-overlay').addEventListener('mouseleave', () => {
+    $('hp-chart-guide').hidden = true;
+    $('hp-chart-dot').hidden = true;
+    $('hp-chart-tip').hidden = true;
+  });
+
   // ── Allocation ring (SVG stroke segments, hover synced with legend) ──
   const SVG_NS = 'http://www.w3.org/2000/svg';
   let ringCircles = [];
@@ -487,9 +636,11 @@
     if (portfolios) renderPortfolioSection();
   }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
-  fetch(WORKER_URL)
-    .then((r) => r.json())
-    .then((data) => {
+  Promise.all([
+    fetch(WORKER_URL).then((r) => r.json()),
+    fetch('data/portfolio.json').then((r) => r.json()).catch(() => null),
+  ])
+    .then(([data, pfJson]) => {
       if (data.error || !data.portfolios) throw new Error(data.error || 'no data');
       portfolios = data.portfolios;
       renderHero();
@@ -501,6 +652,11 @@
         const updatedEl = $('pf-updated');
         updatedEl.textContent = label;
         updatedEl.hidden = false;
+      }
+      if (pfJson) {
+        combinedHist = buildCombinedHistory(pfJson);
+        buildRangeTabs();
+        renderHeroChart();
       }
     })
     .catch(() => {
