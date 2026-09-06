@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #F6F1E6; --card: #FFFCF4; --ink: #23261D; --muted: #716C5D;
@@ -39,6 +38,7 @@
   a { color: inherit; }
   button { font-family: inherit; }
   .mono { font-family: 'IBM Plex Mono', monospace; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 
   /* ── Nav ──────────────────────────────────────────────────────── */
   .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
@@ -57,55 +57,110 @@
   .oi-cta { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 13.5px; font-weight: 600; padding: 9px 18px; border-radius: 999px; flex: none; transition: transform .2s; display: inline-block; }
   .oi-cta:hover { transform: translateY(-1px); }
 
-  /* ── Coming soon ──────────────────────────────────────────────── */
-  .cs-wrap { max-width: 720px; margin: 0 auto; padding: clamp(70px, 13vw, 130px) clamp(16px, 4vw, 32px); min-height: 56vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; scroll-margin-top: 70px; }
-  .cs-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
-  .cs-h1 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(32px, 6vw, 48px); line-height: 1.3; }
-  .cs-h1 em { font-style: italic; color: var(--green); }
-  .cs-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: var(--gold); background: color-mix(in srgb, var(--gold) 12%, transparent); padding: 6px 16px; border-radius: 999px; }
-  .cs-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
-  .cs-lead { margin: 0; font-size: 15.5px; line-height: 1.85; color: var(--muted); max-width: 56ch; }
-  .cs-cta { margin-top: 6px; text-decoration: none; background: var(--green); color: var(--on-green); font-size: 15px; font-weight: 600; padding: 13px 28px; border-radius: 999px; transition: transform .2s, box-shadow .2s; display: inline-block; }
-  .cs-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--green) 70%, transparent); }
+  /* ── Shared ───────────────────────────────────────────────────── */
+  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
 
-  /* ── Live portfolio ───────────────────────────────────────────── */
-  .pf-wrap { max-width: 640px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px) clamp(80px, 12vw, 120px); scroll-margin-top: 70px; }
-  .pf-head { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 30px; }
-  .pf-h2 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(24px, 4vw, 30px); }
-  .pf-lead { margin: 0; font-size: 14px; line-height: 1.8; color: var(--muted); max-width: 48ch; }
+  /* ── Hero ─────────────────────────────────────────────────────── */
+  .hero-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(36px, 6vw, 72px) clamp(16px, 4vw, 32px) 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr)); gap: clamp(32px, 5vw, 56px); align-items: center; scroll-margin-top: 80px; }
+  .hero-left { display: flex; flex-direction: column; gap: 22px; animation: fadeUp .7s ease both; }
+  .hero-h1 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(34px, 7.2vw, 56px); line-height: 1.24; letter-spacing: -.5px; }
+  .hero-h1 em { font-style: italic; color: var(--green); }
+  .hero-lead { margin: 0; font-size: 16.5px; line-height: 1.85; color: var(--muted); max-width: 56ch; }
+  .hero-ctas { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+  .hero-cta-primary { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 15px; font-weight: 600; padding: 13px 26px; border-radius: 999px; transition: transform .2s, box-shadow .2s; display: inline-block; }
+  .hero-cta-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--green) 70%, transparent); }
+  .hero-cta-secondary { text-decoration: none; border: 1px solid var(--line); color: var(--ink); font-size: 15px; font-weight: 600; padding: 12px 24px; border-radius: 999px; transition: border-color .2s, color .2s; display: inline-block; }
+  .hero-cta-secondary:hover { border-color: var(--green); color: var(--green); }
+  .hero-byline { display: flex; align-items: center; gap: 14px; margin-top: 10px; }
+  .hero-avatar { width: 48px; height: 48px; border-radius: 50%; flex: none; background: var(--green); color: var(--on-green); display: flex; align-items: center; justify-content: center; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 19px; }
+  .hero-byline-text { display: flex; flex-direction: column; gap: 2px; }
+  .hero-byline-name { font-size: 14px; font-weight: 600; }
+  .hero-byline-sub { font-size: 12.5px; color: var(--muted); }
 
-  .pf-tabs { display: flex; gap: 4px; background: var(--line2); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin: 0 auto 18px; width: fit-content; }
+  /* ── Hero portfolio snapshot card ─────────────────────────────── */
+  .hp-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px 26px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 16px; animation: fadeUp .7s ease .12s both; transition: background-color .35s ease, border-color .35s ease; }
+  .hp-top { display: flex; align-items: center; gap: 10px; }
+  .hp-top-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
+  .hp-top-time { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--muted); }
+  .hp-headline { display: flex; flex-direction: column; gap: 7px; }
+  .hp-pl { font-family: 'IBM Plex Mono', monospace; font-size: clamp(30px, 7vw, 40px); font-weight: 600; letter-spacing: -1px; line-height: 1; min-height: 34px; }
+  .hp-pl.up { color: var(--green); }
+  .hp-pl.down { color: var(--red); }
+  .hp-headline-sub { font-size: 12.5px; color: var(--muted); }
+  .hp-badges { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .hp-badge { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+  .hp-badge.up { color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); }
+  .hp-badge.down { color: var(--red); background: color-mix(in srgb, var(--red) 12%, transparent); }
+  .hp-divider { height: 1px; background: var(--line2); }
+  .hp-holdings-label { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .hp-hrow { display: flex; align-items: center; gap: 10px; }
+  .hp-hrow .t { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; width: 56px; }
+  .hp-hrow .n { font-size: 12px; color: var(--muted); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hp-hrow .a { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); }
+  .hp-hrow .p { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; width: 62px; text-align: right; }
+  .hp-hrow .p.up { color: var(--green); }
+  .hp-hrow .p.down { color: var(--red); }
+  .hp-more { text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--green); display: flex; align-items: center; gap: 6px; }
+  .hp-more:hover { text-decoration: underline; }
+
+  /* ── Portfolio section ────────────────────────────────────────── */
+  .portfolio-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(36px, 5vw, 56px) clamp(16px, 4vw, 32px) clamp(80px, 10vw, 110px); scroll-margin-top: 70px; }
+  .portfolio-head { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; margin-bottom: 22px; }
+  .portfolio-head-left { display: flex; flex-direction: column; gap: 10px; }
+  .portfolio-h2 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(27px, 5.4vw, 38px); line-height: 1.3; }
+  .portfolio-updated { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); }
+  .portfolio-lead { margin: 0; font-size: 14px; line-height: 1.8; color: var(--muted); max-width: 60ch; }
+
+  .pf-tabs { display: flex; gap: 4px; background: var(--line2); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-bottom: 22px; width: fit-content; }
   .pf-tab { border: none; background: transparent; color: var(--muted); font-size: 12.5px; font-weight: 600; letter-spacing: .3px; padding: 8px 16px; border-radius: 999px; cursor: pointer; transition: background-color .2s, color .2s; }
   .pf-tab:hover { color: var(--ink); }
   .pf-tab.active { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
 
-  .pf-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 26px); box-shadow: var(--shadow); }
-  .pf-state { text-align: center; font-size: 13.5px; color: var(--muted); padding: 30px 0; }
+  .pf-state { text-align: center; font-size: 13.5px; color: var(--muted); padding: 40px 0; }
 
-  .pf-body { display: grid; grid-template-columns: 240px 1fr; gap: clamp(20px, 4vw, 40px); align-items: center; }
-  .pf-chart-wrap { position: relative; width: 100%; max-width: 240px; margin: 0 auto; }
-  .pf-chart-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none; text-align: center; }
-  .pf-chart-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
-  .pf-chart-value { font-size: 22px; font-weight: 700; margin-top: 4px; font-family: 'Trirong', Georgia, serif; }
-  @media (max-width: 640px) { .pf-body { grid-template-columns: 1fr; } .pf-chart-wrap { max-width: 220px; } }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 26px; align-items: stretch; }
 
-  .pf-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line2); }
-  .pf-row:last-child { border-bottom: none; }
-  .pf-row-left { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1; }
-  .pf-info { min-width: 0; flex: 1; }
-  .pf-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; background: var(--line2); border: 1px solid var(--line); flex-shrink: 0; }
-  .pf-logo-fallback { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: var(--muted); }
-  .pf-ticker-row { display: flex; align-items: center; gap: 6px; }
-  .pf-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-  .pf-ticker { font-size: 14px; font-weight: 600; letter-spacing: .3px; }
-  .pf-name { font-size: 11px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .pf-row-right { text-align: right; flex-shrink: 0; }
-  .pf-pl { font-size: 13.5px; font-weight: 600; }
-  .pf-pl.up { color: var(--green); }
-  .pf-pl.down { color: var(--red); }
-  .pf-pos { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .alloc-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; transition: background-color .35s ease, border-color .35s ease; }
+  .alloc-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
+  .alloc-body { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; flex: 1; }
+  .alloc-ring-wrap { position: relative; width: min(216px, 100%); max-width: 216px; aspect-ratio: 1; flex: none; margin: 0 auto; }
+  .alloc-ring-wrap svg { display: block; width: 100%; height: 100%; }
+  .alloc-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; pointer-events: none; text-align: center; }
+  .alloc-ring-top { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
+  .alloc-ring-main { font-family: 'IBM Plex Mono', monospace; font-size: 21px; font-weight: 600; }
+  .alloc-ring-main.up { color: var(--green); }
+  .alloc-ring-main.down { color: var(--red); }
+  .alloc-ring-sub { font-size: 12px; color: var(--muted); }
+  .alloc-legend { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 160px; }
+  .alloc-legend-row { display: flex; align-items: center; gap: 10px; cursor: pointer; transition: opacity .25s; }
+  .alloc-legend-dot { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  .alloc-legend-sym { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; }
+  .alloc-legend-pct { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
 
-  .pf-foot { text-align: center; font-size: 10.5px; color: var(--muted); margin-top: 16px; letter-spacing: .3px; }
+  .hold-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: background-color .35s ease, border-color .35s ease; }
+  .hold-head { padding: 22px 26px 14px; display: flex; align-items: center; gap: 10px; }
+  .hold-head-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
+  .hold-head-total { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; }
+  .hold-head-total.up { color: var(--green); }
+  .hold-head-total.down { color: var(--red); }
+  .hold-scroll { overflow-x: auto; }
+  .hold-table { min-width: 420px; }
+  .hold-row-header { display: grid; grid-template-columns: 1.7fr .9fr 1.3fr; gap: 12px; padding: 9px 26px; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2); font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
+  .hold-row { display: grid; grid-template-columns: 1.7fr .9fr 1.3fr; gap: 12px; padding: 11px 26px; border-bottom: 1px solid var(--line2); align-items: center; transition: background-color .2s; }
+  .hold-row:hover { background-color: color-mix(in srgb, var(--ink) 3%, transparent); }
+  .hold-row:last-child { border-bottom: none; }
+  .hold-name-col { display: flex; flex-direction: column; gap: 1px; overflow: hidden; }
+  .hold-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; font-weight: 600; }
+  .hold-name { font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hold-pl { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; text-align: right; }
+  .hold-pl.up { color: var(--green); }
+  .hold-pl.down { color: var(--red); }
+  .hold-alloc-col { display: flex; align-items: center; gap: 10px; }
+  .hold-alloc-bar { flex: 1; height: 5px; border-radius: 99px; background: var(--line2); overflow: hidden; }
+  .hold-alloc-fill { height: 5px; border-radius: 99px; }
+  .hold-alloc-pct { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); width: 38px; text-align: right; }
+  .hold-foot { padding: 14px 26px; margin-top: auto; }
+  .hold-foot span { font-size: 12px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -128,19 +183,51 @@
   </div>
 </div>
 
-<div id="top" class="cs-wrap">
-  <div class="cs-eyebrow mono">PERSONAL INVESTMENT JOURNAL</div>
-  <h1 class="cs-h1">เล่าเรื่องหุ้น<br>แบบ<em>เพื่อน</em>เล่าให้ฟัง</h1>
-  <span class="cs-badge">กำลังเตรียมเนื้อหา</span>
-  <p class="cs-lead">หน้านี้กำลังปรับปรุงอยู่ครับ เร็วๆ นี้จะมีพอร์ตจริง บทความวิเคราะห์หุ้น และเนื้อหาการลงทุนให้ติดตาม — ระหว่างนี้ลองใช้เครื่องมือวางแผนการเงินที่พร้อมใช้งานแล้วก่อนได้เลย</p>
-  <a href="tools.html" class="cs-cta">ไปที่เครื่องมือทางการเงิน →</a>
+<div id="top" class="hero-wrap">
+  <div class="hero-left">
+    <div class="eyebrow">PERSONAL INVESTMENT JOURNAL — US STOCKS</div>
+    <h1 class="hero-h1">เล่าเรื่องหุ้น<br>แบบ<em>เพื่อน</em>เล่าให้ฟัง</h1>
+    <p class="hero-lead">สวัสดีครับ ผมโอ๊ต — ที่นี่คือบันทึกการลงทุนของผม พอร์ตจริงที่เปิดให้ดูกันชัดๆ (เฉพาะ % กำไร/ขาดทุนกับสัดส่วนถือครอง) พร้อมเครื่องมือวางแผนการเงินที่ใช้ได้จริง บทความวิเคราะห์หุ้นและมุมมองตลาดกำลังทยอยตามมา ไม่ใช่คำแนะนำการลงทุน แต่เป็นเรื่องเล่าจากประสบการณ์จริง</p>
+    <div class="hero-ctas">
+      <a href="#portfolio" class="hero-cta-primary">ส่องพอร์ตของผม →</a>
+      <a href="tools.html" class="hero-cta-secondary">เครื่องมือทางการเงิน</a>
+    </div>
+    <div class="hero-byline">
+      <div class="hero-avatar">อ</div>
+      <div class="hero-byline-text">
+        <span class="hero-byline-name">โอ๊ต · @oatinvestor</span>
+        <span class="hero-byline-sub">ลงทุนหุ้น US · แชร์พอร์ตแบบเปิดเผย</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hp-card">
+    <div class="hp-top">
+      <span class="hp-top-label mono">MY PORTFOLIO</span>
+      <span class="hp-top-time mono" id="hp-time">—</span>
+    </div>
+    <div class="hp-headline">
+      <div class="hp-pl mono" id="hp-pl">—</div>
+      <span class="hp-headline-sub">ผลตอบแทนสะสม (รวมพอร์ต) · ไม่แสดงมูลค่าเงิน</span>
+    </div>
+    <div class="hp-badges" id="hp-badges"></div>
+    <div class="hp-divider"></div>
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <span class="hp-holdings-label">TOP HOLDINGS</span>
+      <div id="hp-holdings"></div>
+    </div>
+    <a href="#portfolio" class="hp-more">ดูพอร์ตเต็มแบบรายตัว →</a>
+  </div>
 </div>
 
-<div id="portfolio" class="pf-wrap">
-  <div class="pf-head">
-    <div class="cs-eyebrow mono">LIVE PORTFOLIO</div>
-    <h2 class="pf-h2">พอร์ตหุ้นจริงของผม</h2>
-    <p class="pf-lead">ดึงข้อมูลสดจาก Google Sheets ทุกครั้งที่เปิดหน้านี้ — แสดงเฉพาะสัดส่วนถือครองและกำไร/ขาดทุน% เท่านั้น ไม่มี Transaction และไม่ใช่คำแนะนำซื้อขาย</p>
+<div id="portfolio" class="portfolio-wrap">
+  <div class="portfolio-head">
+    <div class="portfolio-head-left">
+      <span class="eyebrow">PORTFOLIO</span>
+      <h2 class="portfolio-h2">พอร์ตตอนนี้ เปิดให้ดูกันชัดๆ</h2>
+      <p class="portfolio-lead">ดึงข้อมูลสดจาก Google Sheets ทุกครั้งที่เปิดหน้านี้ — แสดงเฉพาะสัดส่วนถือครองและกำไร/ขาดทุน% เท่านั้น ไม่มี Transaction และไม่ใช่คำแนะนำซื้อขาย</p>
+    </div>
+    <span class="portfolio-updated mono" id="pf-updated" hidden></span>
   </div>
 
   <div class="pf-tabs mono" id="pf-tabs">
@@ -149,21 +236,40 @@
     <button class="pf-tab" data-key="sp500_port">พอร์ตออม S&P500</button>
   </div>
 
-  <div class="pf-card">
-    <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
-    <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
-    <div class="pf-body" id="pf-body" hidden>
-      <div class="pf-chart-wrap">
-        <canvas id="pf-alloc-chart"></canvas>
-        <div class="pf-chart-center">
-          <div class="pf-chart-label mono">HOLDINGS</div>
-          <div class="pf-chart-value" id="pf-chart-count">—</div>
+  <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
+  <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
+
+  <div class="portfolio-grid" id="portfolio-grid" hidden>
+    <div class="alloc-card">
+      <span class="alloc-card-label">ALLOCATION · สัดส่วนพอร์ต</span>
+      <div class="alloc-body">
+        <div class="alloc-ring-wrap">
+          <svg viewBox="0 0 220 220" id="alloc-ring-svg"></svg>
+          <div class="alloc-ring-center">
+            <span class="alloc-ring-top mono" id="alloc-ring-top">—</span>
+            <span class="alloc-ring-main mono" id="alloc-ring-main">—</span>
+            <span class="alloc-ring-sub" id="alloc-ring-sub">—</span>
+          </div>
+        </div>
+        <div class="alloc-legend" id="alloc-legend"></div>
+      </div>
+    </div>
+    <div class="hold-card">
+      <div class="hold-head">
+        <span class="hold-head-label">HOLDINGS · หุ้นที่ถืออยู่</span>
+        <span class="hold-head-total mono" id="hold-head-total">—</span>
+      </div>
+      <div class="hold-scroll">
+        <div class="hold-table">
+          <div class="hold-row-header">
+            <span>หุ้น</span><span style="text-align:right">P/L</span><span style="padding-left:8px">สัดส่วน</span>
+          </div>
+          <div id="hold-rows"></div>
         </div>
       </div>
-      <div class="pf-list" id="pf-list"></div>
+      <div class="hold-foot"><span>* แสดงเฉพาะ % กำไร/ขาดทุนและสัดส่วนถือครอง ไม่มีมูลค่าเงิน ไม่ใช่คำแนะนำซื้อขาย</span></div>
     </div>
   </div>
-  <div class="pf-foot mono" id="pf-updated" hidden></div>
 </div>
 
 <script>
@@ -192,15 +298,7 @@
 (() => {
   const WORKER_URL = 'https://oat-portfolio-worker.wittayanan-oat.workers.dev';
   const $ = (id) => document.getElementById(id);
-  const loadingEl = $('pf-loading');
-  const errorEl = $('pf-error');
-  const bodyEl = $('pf-body');
-  const listEl = $('pf-list');
-  const chartCountEl = $('pf-chart-count');
-  const updatedEl = $('pf-updated');
-  const tabsEl = $('pf-tabs');
 
-  // เหมือนหน้า portfolio.html ต้นแบบ — สีแบรนด์ต่อ ticker + โดเมนสำหรับดึงโลโก้
   const TICKER_COLORS = {
     NVDA: '#76b900', MSFT: '#00a4ef', META: '#0668e1', AMZN: '#ff9900',
     TSM: '#0072c6', NFLX: '#e50914', VOO: '#96151d', ARM: '#0091bd',
@@ -211,11 +309,6 @@
     TSM: 'TSMC', NFLX: 'Netflix', VOO: 'Vanguard S&P 500 ETF',
     ARM: 'Arm Holdings', ASML: 'ASML Holding', MU: 'Micron Technology',
     SPCX: 'SpaceX', SGOV: 'iShares 0-3 Month Treasury', CASH: 'เงินสด',
-  };
-  const LOGO_DOMAINS = {
-    NVDA: 'nvidia.com', MSFT: 'microsoft.com', META: 'meta.com', AMZN: 'amazon.com',
-    TSM: 'tsmc.com', NFLX: 'netflix.com', VOO: 'vanguard.com', ARM: 'arm.com',
-    ASML: 'asml.com', MU: 'micron.com', SPCX: 'spacex.com', SGOV: 'ishares.com',
   };
   const CASH_COLOR = '#8A8471';
   const FALLBACK_COLORS = ['#f59e0b', '#06b6d4', '#84cc16', '#f43f5e', '#8b5cf6', '#fb923c'];
@@ -228,107 +321,170 @@
     }
     return map;
   }
-  function logoHTML(ticker) {
-    const domain = LOGO_DOMAINS[ticker];
-    if (!domain) {
-      const txt = ticker === 'CASH' ? '฿' : ticker.slice(0, 2);
-      return `<div class="pf-logo pf-logo-fallback">${txt}</div>`;
-    }
-    return `<img class="pf-logo" src="https://www.google.com/s2/favicons?domain=${domain}&sz=64"
-      alt="${ticker}" onerror="this.outerHTML='<div class=\\'pf-logo pf-logo-fallback\\'>${ticker.slice(0,2)}</div>'">`;
-  }
   function fmtSigned(v) {
     const sign = v > 0 ? '+' : '';
     return `${sign}${v.toFixed(1)}%`;
   }
-  function cssVar(name) {
-    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-  }
-
-  let portfolios = null;
-  let activeKey = 'combined';
-  let allocChart = null;
-
-  function renderChart(sorted, colorMap) {
-    const canvas = $('pf-alloc-chart');
-    if (!canvas) return;
-    const border = cssVar('--card') || '#FFFCF4';
-    if (allocChart) allocChart.destroy();
-    allocChart = new Chart(canvas, {
-      type: 'doughnut',
-      data: {
-        labels: sorted.map((h) => h.ticker),
-        datasets: [{
-          data: sorted.map((h) => h.pos_pct),
-          backgroundColor: sorted.map((h) => colorMap[h.ticker] || CASH_COLOR),
-          borderColor: border, borderWidth: 2.5, hoverOffset: 6,
-        }],
-      },
-      options: {
-        responsive: true, maintainAspectRatio: true, aspectRatio: 1, cutout: '64%',
-        plugins: {
-          legend: { display: false },
-          tooltip: { callbacks: { label: (c) => ` ${c.label}: ${c.raw.toFixed(1)}%` } },
-        },
-        animation: { duration: 450 },
-      },
-    });
-  }
-
-  function render() {
-    if (!portfolios) return;
-    const pf = portfolios.find((p) => p.key === activeKey);
-    if (!pf || !pf.holdings || !pf.holdings.length) {
-      listEl.innerHTML = '<div class="pf-state">ไม่มีข้อมูลถือครองในพอร์ตนี้</div>';
-      bodyEl.hidden = false;
-      loadingEl.hidden = true;
-      return;
-    }
-    const sorted = pf.holdings.slice().sort((a, b) => {
+  function sortHoldings(holdings) {
+    return holdings.slice().sort((a, b) => {
       if (a.ticker === 'CASH') return 1;
       if (b.ticker === 'CASH') return -1;
       return b.pos_pct - a.pos_pct;
     });
-    const colorMap = assignColors(sorted);
-    renderChart(sorted, colorMap);
-    chartCountEl.textContent = sorted.length;
+  }
 
-    listEl.innerHTML = sorted.map((h) => `
-      <div class="pf-row">
-        <div class="pf-row-left">
-          ${logoHTML(h.ticker)}
-          <div class="pf-info">
-            <div class="pf-ticker-row">
-              <span class="pf-dot" style="background:${colorMap[h.ticker]}"></span>
-              <span class="pf-ticker mono">${h.ticker}</span>
-            </div>
-            <div class="pf-name">${NAME_MAP[h.ticker] || h.ticker}</div>
-          </div>
+  let portfolios = null;
+  let activeKey = 'combined';
+
+  // ── Hero snapshot card (always shows the combined portfolio) ─────────
+  function renderHero() {
+    const combined = portfolios.find((p) => p.key === 'combined');
+    const ai = portfolios.find((p) => p.key === 'ai_port');
+    const sp = portfolios.find((p) => p.key === 'sp500_port');
+    if (!combined) return;
+
+    const plEl = $('hp-pl');
+    plEl.textContent = fmtSigned(combined.pl_pct);
+    plEl.className = 'hp-pl mono ' + (combined.pl_pct >= 0 ? 'up' : 'down');
+
+    $('hp-badges').innerHTML = [ai, sp].filter(Boolean).map((p) => `
+      <span class="hp-badge ${p.pl_pct >= 0 ? 'up' : 'down'}">${p.name} ${fmtSigned(p.pl_pct)}</span>
+    `).join('');
+
+    const top3 = sortHoldings(combined.holdings).filter((h) => h.ticker !== 'CASH').slice(0, 3);
+    $('hp-holdings').innerHTML = top3.map((h) => `
+      <div class="hp-hrow">
+        <span class="t mono">${h.ticker}</span>
+        <span class="n">${NAME_MAP[h.ticker] || h.ticker}</span>
+        <span class="a mono">${h.pos_pct.toFixed(1)}%</span>
+        <span class="p mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
+      </div>
+    `).join('');
+  }
+
+  // ── Allocation ring (SVG stroke segments, hover synced with legend) ──
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  let ringCircles = [];
+  let legendRows = [];
+  let ringDefault = { top: '—', main: '—', sub: '—' };
+
+  function setHover(idx, sorted, colorMap) {
+    const top = $('alloc-ring-top'), main = $('alloc-ring-main'), sub = $('alloc-ring-sub');
+    ringCircles.forEach((c, i) => {
+      c.style.opacity = idx == null || idx === i ? '1' : '.3';
+      c.setAttribute('stroke-width', idx === i ? 40 : 32);
+    });
+    legendRows.forEach((r, i) => { r.style.opacity = idx == null || idx === i ? '1' : '.35'; });
+    if (idx == null) {
+      top.textContent = ringDefault.top;
+      main.textContent = ringDefault.main;
+      main.className = 'alloc-ring-main mono';
+      sub.textContent = ringDefault.sub;
+    } else {
+      const h = sorted[idx];
+      top.textContent = h.ticker;
+      main.textContent = h.pos_pct.toFixed(1) + '%';
+      main.className = 'alloc-ring-main mono ' + (h.pl_pct >= 0 ? 'up' : 'down');
+      sub.textContent = fmtSigned(h.pl_pct) + ' P/L';
+    }
+  }
+
+  function renderRing(sorted, colorMap) {
+    const svg = $('alloc-ring-svg');
+    svg.innerHTML = '';
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('transform', 'rotate(-90 110 110)');
+    const C = 2 * Math.PI * 80;
+    let cum = 0;
+    ringCircles = sorted.map((h, i) => {
+      const len = (h.pos_pct / 100) * C;
+      const vis = Math.max(0.5, len - 2.2);
+      const c = document.createElementNS(SVG_NS, 'circle');
+      c.setAttribute('cx', '110'); c.setAttribute('cy', '110'); c.setAttribute('r', '80');
+      c.setAttribute('fill', 'none');
+      c.setAttribute('stroke', colorMap[h.ticker] || CASH_COLOR);
+      c.setAttribute('stroke-width', '32');
+      c.setAttribute('stroke-dasharray', vis.toFixed(2) + ' ' + (C - vis).toFixed(2));
+      c.setAttribute('stroke-dashoffset', (-(cum + 1.1)).toFixed(2));
+      c.style.transition = 'opacity .25s ease, stroke-width .25s ease';
+      c.style.cursor = 'pointer';
+      c.addEventListener('mouseenter', () => setHover(i, sorted, colorMap));
+      c.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
+      cum += len;
+      g.appendChild(c);
+      return c;
+    });
+    svg.appendChild(g);
+
+    ringDefault = { top: 'HOLDINGS', main: String(sorted.length), sub: 'ตำแหน่งถือครอง' };
+    setHover(null, sorted, colorMap);
+  }
+
+  function renderLegend(sorted, colorMap) {
+    const el = $('alloc-legend');
+    el.innerHTML = sorted.map((h) => `
+      <div class="alloc-legend-row">
+        <span class="alloc-legend-dot" style="background:${colorMap[h.ticker] || CASH_COLOR}"></span>
+        <span class="alloc-legend-sym mono">${h.ticker}</span>
+        <span class="alloc-legend-pct mono">${h.pos_pct.toFixed(1)}%</span>
+      </div>
+    `).join('');
+    legendRows = Array.from(el.children);
+    legendRows.forEach((row, i) => {
+      row.addEventListener('mouseenter', () => setHover(i, sorted, colorMap));
+      row.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
+    });
+  }
+
+  function renderTable(sorted, colorMap) {
+    $('hold-rows').innerHTML = sorted.map((h) => `
+      <div class="hold-row">
+        <div class="hold-name-col">
+          <span class="hold-ticker mono">${h.ticker}</span>
+          <span class="hold-name">${NAME_MAP[h.ticker] || h.ticker}</span>
         </div>
-        <div class="pf-row-right">
-          <div class="pf-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</div>
-          <div class="pf-pos mono">สัดส่วน ${h.pos_pct.toFixed(1)}%</div>
+        <span class="hold-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
+        <div class="hold-alloc-col">
+          <div class="hold-alloc-bar"><div class="hold-alloc-fill" style="width:${Math.min(100, h.pos_pct)}%;background:${colorMap[h.ticker] || CASH_COLOR}"></div></div>
+          <span class="hold-alloc-pct mono">${h.pos_pct.toFixed(1)}%</span>
         </div>
       </div>
     `).join('');
-
-    bodyEl.hidden = false;
-    loadingEl.hidden = true;
-    errorEl.hidden = true;
   }
 
-  tabsEl.addEventListener('click', (e) => {
+  function renderPortfolioSection() {
+    if (!portfolios) return;
+    const pf = portfolios.find((p) => p.key === activeKey);
+    const loadingEl = $('pf-loading'), errorEl = $('pf-error'), gridEl = $('portfolio-grid');
+    if (!pf || !pf.holdings || !pf.holdings.length) {
+      loadingEl.hidden = true; errorEl.hidden = false; gridEl.hidden = true;
+      return;
+    }
+    const sorted = sortHoldings(pf.holdings);
+    const colorMap = assignColors(sorted);
+    renderRing(sorted, colorMap);
+    renderLegend(sorted, colorMap);
+    renderTable(sorted, colorMap);
+
+    const totalEl = $('hold-head-total');
+    totalEl.textContent = fmtSigned(pf.pl_pct) + ' ทั้งพอร์ต';
+    totalEl.className = 'hold-head-total mono ' + (pf.pl_pct >= 0 ? 'up' : 'down');
+
+    loadingEl.hidden = true; errorEl.hidden = true; gridEl.hidden = false;
+  }
+
+  $('pf-tabs').addEventListener('click', (e) => {
     const btn = e.target.closest('.pf-tab');
     if (!btn) return;
-    tabsEl.querySelectorAll('.pf-tab').forEach((b) => b.classList.remove('active'));
+    $('pf-tabs').querySelectorAll('.pf-tab').forEach((b) => b.classList.remove('active'));
     btn.classList.add('active');
     activeKey = btn.dataset.key;
-    render();
+    renderPortfolioSection();
   });
 
-  // ธีมเปลี่ยน (ปุ่มสลับ Light/Dark/Auto) → รีเฟรชสีขอบวงกราฟให้ตรงพื้นหลังใหม่
+  // ธีมเปลี่ยน (ปุ่มสลับ Light/Dark/Auto) → รีเฟรช hover state ให้ default กลับมาถูกต้อง
   new MutationObserver(() => {
-    if (portfolios) render();
+    if (portfolios) renderPortfolioSection();
   }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
   fetch(WORKER_URL)
@@ -336,16 +492,21 @@
     .then((data) => {
       if (data.error || !data.portfolios) throw new Error(data.error || 'no data');
       portfolios = data.portfolios;
-      render();
+      renderHero();
+      renderPortfolioSection();
       if (data.updated_at) {
         const d = new Date(data.updated_at);
-        updatedEl.textContent = `อัพเดทล่าสุด ${d.toLocaleString('th-TH', { dateStyle: 'medium', timeStyle: 'short' })}`;
+        const label = `อัพเดทล่าสุด ${d.toLocaleString('th-TH', { dateStyle: 'medium', timeStyle: 'short' })}`;
+        $('hp-time').textContent = d.toLocaleString('th-TH', { dateStyle: 'medium' });
+        const updatedEl = $('pf-updated');
+        updatedEl.textContent = label;
         updatedEl.hidden = false;
       }
     })
     .catch(() => {
-      loadingEl.hidden = true;
-      errorEl.hidden = false;
+      $('pf-loading').hidden = true;
+      $('pf-error').hidden = false;
+      $('hp-pl').textContent = '—';
     });
 })();
 </script>
