@@ -159,14 +159,16 @@
   .hold-head-total.up { color: var(--green); }
   .hold-head-total.down { color: var(--red); }
   .hold-scroll { overflow-x: auto; }
-  .hold-table { min-width: 420px; }
-  .hold-row-header { display: grid; grid-template-columns: 1.7fr .9fr 1.3fr; gap: 12px; padding: 9px 26px; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2); font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
-  .hold-row { display: grid; grid-template-columns: 1.7fr .9fr 1.3fr; gap: 12px; padding: 11px 26px; border-bottom: 1px solid var(--line2); align-items: center; transition: background-color .2s; }
+  .hold-table { min-width: 560px; }
+  .hold-row-header { display: grid; grid-template-columns: 1.7fr .9fr .9fr .8fr 1.2fr; gap: 12px; padding: 9px 26px; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2); font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
+  .hold-row-header span:not(:first-child) { text-align: right; }
+  .hold-row { display: grid; grid-template-columns: 1.7fr .9fr .9fr .8fr 1.2fr; gap: 12px; padding: 11px 26px; border-bottom: 1px solid var(--line2); align-items: center; transition: background-color .2s; }
   .hold-row:hover { background-color: color-mix(in srgb, var(--ink) 3%, transparent); }
   .hold-row:last-child { border-bottom: none; }
   .hold-name-col { display: flex; flex-direction: column; gap: 1px; overflow: hidden; }
   .hold-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; font-weight: 600; }
   .hold-name { font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hold-masked { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--muted); text-align: right; letter-spacing: 1px; }
   .hold-pl { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; text-align: right; }
   .hold-pl.up { color: var(--green); }
   .hold-pl.down { color: var(--red); }
@@ -222,8 +224,8 @@
       <span class="hp-top-time mono" id="hp-time">—</span>
     </div>
     <div class="hp-headline">
-      <div class="hp-pl mono" id="hp-pl">—</div>
-      <span class="hp-headline-sub">ผลตอบแทนสะสม (รวมพอร์ต) · ไม่แสดงมูลค่าเงิน</span>
+      <div class="hp-pl mono" id="hp-pl">***</div>
+      <span class="hp-headline-sub">มูลค่าพอร์ตรวม · ซ่อนไว้เพื่อความเป็นส่วนตัว</span>
     </div>
     <div class="hp-badges" id="hp-badges"></div>
     <div id="hp-chart-block" style="display:flex;flex-direction:column;gap:8px" hidden>
@@ -300,7 +302,7 @@
       <div class="hold-scroll">
         <div class="hold-table">
           <div class="hold-row-header">
-            <span>หุ้น</span><span style="text-align:right">P/L</span><span style="padding-left:8px">สัดส่วน</span>
+            <span>หุ้น</span><span>AVG COST</span><span>PRICE</span><span>P/L</span><span style="padding-left:8px">สัดส่วน</span>
           </div>
           <div id="hold-rows"></div>
         </div>
@@ -363,10 +365,13 @@
     const sign = v > 0 ? '+' : '';
     return `${sign}${v.toFixed(1)}%`;
   }
+  // SGOV (T-bill ETF) and CASH aren't real stock picks — always park them at
+  // the end of the list so the holdings that are actual positions stand out.
+  const TAIL_TICKERS = ['SGOV', 'CASH'];
   function sortHoldings(holdings) {
     return holdings.slice().sort((a, b) => {
-      if (a.ticker === 'CASH') return 1;
-      if (b.ticker === 'CASH') return -1;
+      const aTail = TAIL_TICKERS.includes(a.ticker), bTail = TAIL_TICKERS.includes(b.ticker);
+      if (aTail !== bTail) return aTail ? 1 : -1;
       return b.pos_pct - a.pos_pct;
     });
   }
@@ -381,15 +386,14 @@
     const sp = portfolios.find((p) => p.key === 'sp500_port');
     if (!combined) return;
 
-    const plEl = $('hp-pl');
-    plEl.textContent = fmtSigned(combined.pl_pct);
-    plEl.className = 'hp-pl mono ' + (combined.pl_pct >= 0 ? 'up' : 'down');
+    // Total value is intentionally never fetched with real digits — mask only.
+    $('hp-pl').textContent = '***';
 
-    $('hp-badges').innerHTML = [ai, sp].filter(Boolean).map((p) => `
+    $('hp-badges').innerHTML = [combined, ai, sp].filter(Boolean).map((p) => `
       <span class="hp-badge ${p.pl_pct >= 0 ? 'up' : 'down'}">${p.name} ${fmtSigned(p.pl_pct)}</span>
     `).join('');
 
-    const top3 = sortHoldings(combined.holdings).filter((h) => h.ticker !== 'CASH').slice(0, 3);
+    const top3 = sortHoldings(combined.holdings).filter((h) => !TAIL_TICKERS.includes(h.ticker)).slice(0, 3);
     $('hp-holdings').innerHTML = top3.map((h) => `
       <div class="hp-hrow">
         <span class="t mono">${h.ticker}</span>
@@ -565,7 +569,7 @@
     });
     svg.appendChild(g);
 
-    ringDefault = { top: 'HOLDINGS', main: String(sorted.length), sub: 'ตำแหน่งถือครอง' };
+    ringDefault = { top: 'TOTAL VALUE', main: '***', sub: `${sorted.length} ตำแหน่ง` };
     setHover(null, sorted, colorMap);
   }
 
@@ -592,6 +596,8 @@
           <span class="hold-ticker mono">${h.ticker}</span>
           <span class="hold-name">${NAME_MAP[h.ticker] || h.ticker}</span>
         </div>
+        <span class="hold-masked">***</span>
+        <span class="hold-masked">***</span>
         <span class="hold-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
         <div class="hold-alloc-col">
           <div class="hold-alloc-bar"><div class="hold-alloc-fill" style="width:${Math.min(100, h.pos_pct)}%;background:${colorMap[h.ticker] || CASH_COLOR}"></div></div>
