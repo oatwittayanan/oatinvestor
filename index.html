@@ -547,7 +547,10 @@
 
     const seriesKeys = ['port', 'voo', 'qqqm'].filter((k) => s[k]);
     const sliced = { dates: s.dates.slice(range.start, range.end) };
-    seriesKeys.forEach((k) => { sliced[k] = s[k].slice(range.start, range.end); });
+    seriesKeys.forEach((k) => {
+      const cut = s[k].slice(range.start, range.end);
+      sliced[k] = perfPeriod === 'ALL' ? cut : rebaseReturns(cut);
+    });
 
     const allVals = seriesKeys.flatMap((k) => sliced[k]);
     const min = Math.min(...allVals, 0), max = Math.max(...allVals, 0);
@@ -604,6 +607,18 @@
     return { dates: hist.dates.slice(start), retPct: hist.retPct.slice(start) };
   }
 
+  // Re-anchor a %-return series so it starts at 0.00 at the first point of
+  // the visible window, instead of carrying its cumulative-since-inception
+  // value — lets ALL vs 1M/3M/6M compare "performance in this window", not
+  // "cumulative return sliced to this window". Compounds off the growth
+  // factor (1 + return) rather than subtracting, since deposits can still
+  // land mid-window.
+  function rebaseReturns(arr) {
+    if (!arr || !arr.length) return arr;
+    const base = 1 + arr[0] / 100;
+    return arr.map((v) => ((1 + v / 100) / base - 1) * 100);
+  }
+
   function fmtDateShort(iso) {
     const d = new Date(iso + 'T00:00:00');
     return d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: '2-digit' });
@@ -613,7 +628,7 @@
     const block = $('hp-chart-block');
     if (!combinedHist || combinedHist.dates.length < 2) { block.hidden = true; return; }
     const sliced = periodSlice(combinedHist, chartPeriod);
-    const vals = sliced.retPct;
+    const vals = chartPeriod === 'ALL' ? sliced.retPct : rebaseReturns(sliced.retPct);
     const N = vals.length;
     if (N < 2) { block.hidden = true; return; }
     block.hidden = false;
@@ -635,7 +650,7 @@
       chgEl.textContent = (rp >= 0 ? '+' : '') + rp.toFixed(1) + '%';
       chgEl.className = 'hp-range-chg mono ' + (rp >= 0 ? 'up' : 'down');
     }
-    hoverCtx = { sliced, X, Y, N };
+    hoverCtx = { dates: sliced.dates, vals, X, Y, N };
   }
 
   function buildRangeTabs() {
@@ -659,15 +674,15 @@
     if (!hoverCtx) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    const { sliced, X, Y, N } = hoverCtx;
+    const { dates, vals, X, Y, N } = hoverCtx;
     const i = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
     const leftPct = (X(i) / 320 * 100).toFixed(2) + '%';
-    const topPct = (Y(sliced.retPct[i]) / 100 * 100).toFixed(2) + '%';
+    const topPct = (Y(vals[i]) / 100 * 100).toFixed(2) + '%';
     const guide = $('hp-chart-guide'), dot = $('hp-chart-dot'), tip = $('hp-chart-tip');
     guide.style.left = leftPct; guide.hidden = false;
     dot.style.left = leftPct; dot.style.top = topPct; dot.hidden = false;
     tip.style.left = Math.max(14, Math.min(86, (X(i) / 320) * 100)) + '%';
-    tip.textContent = fmtDateShort(sliced.dates[i]) + ' · ' + fmtSigned(sliced.retPct[i]);
+    tip.textContent = fmtDateShort(dates[i]) + ' · ' + fmtSigned(vals[i]);
     tip.hidden = false;
   });
   $('hp-chart-overlay').addEventListener('mouseleave', () => {
