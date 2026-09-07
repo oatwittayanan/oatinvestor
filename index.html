@@ -150,20 +150,16 @@
 
   .alloc-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; transition: background-color .35s ease, border-color .35s ease; }
   .alloc-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
-  .alloc-body { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; flex: 1; }
-  .alloc-ring-wrap { position: relative; width: min(216px, 100%); max-width: 216px; aspect-ratio: 1; flex: none; margin: 0 auto; }
-  .alloc-ring-wrap svg { display: block; width: 100%; height: 100%; }
+  .alloc-body { display: flex; align-items: center; justify-content: center; flex: 1; }
+  .alloc-ring-wrap { position: relative; width: min(360px, 100%); max-width: 360px; aspect-ratio: 1; flex: none; margin: 0 auto; }
+  .alloc-ring-wrap svg { display: block; width: 100%; height: 100%; overflow: visible; }
   .alloc-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; pointer-events: none; text-align: center; }
   .alloc-ring-top { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
   .alloc-ring-main { font-family: 'IBM Plex Mono', monospace; font-size: 21px; font-weight: 600; }
   .alloc-ring-main.up { color: var(--green); }
   .alloc-ring-main.down { color: var(--red); }
   .alloc-ring-sub { font-size: 12px; color: var(--muted); }
-  .alloc-legend { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 160px; }
-  .alloc-legend-row { display: flex; align-items: center; gap: 10px; cursor: pointer; transition: opacity .25s; }
-  .alloc-legend-dot { width: 10px; height: 10px; border-radius: 3px; flex: none; }
-  .alloc-legend-sym { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; }
-  .alloc-legend-pct { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
+  .alloc-label-group { cursor: pointer; transition: opacity .25s ease; }
 
   .hold-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: background-color .35s ease, border-color .35s ease; }
   .hold-head { padding: 22px 26px 14px; display: flex; align-items: center; gap: 10px; }
@@ -322,14 +318,13 @@
       <span class="alloc-card-label">ALLOCATION · สัดส่วนพอร์ต</span>
       <div class="alloc-body">
         <div class="alloc-ring-wrap">
-          <svg viewBox="0 0 220 220" id="alloc-ring-svg"></svg>
+          <svg viewBox="0 0 300 300" id="alloc-ring-svg"></svg>
           <div class="alloc-ring-center">
             <span class="alloc-ring-top mono" id="alloc-ring-top">—</span>
             <span class="alloc-ring-main mono" id="alloc-ring-main">—</span>
             <span class="alloc-ring-sub" id="alloc-ring-sub">—</span>
           </div>
         </div>
-        <div class="alloc-legend" id="alloc-legend"></div>
       </div>
     </div>
     <div class="hold-card">
@@ -387,6 +382,11 @@
     TSM: 'TSMC', NFLX: 'Netflix', VOO: 'Vanguard S&P 500 ETF',
     ARM: 'Arm Holdings', ASML: 'ASML Holding', MU: 'Micron Technology',
     SPCX: 'SpaceX', SGOV: 'iShares 0-3 Month Treasury', CASH: 'เงินสด',
+  };
+  const LOGO_DOMAINS = {
+    NVDA: 'nvidia.com', MSFT: 'microsoft.com', META: 'meta.com', AMZN: 'amazon.com',
+    TSM: 'tsmc.com', NFLX: 'netflix.com', VOO: 'vanguard.com', ARM: 'arm.com',
+    ASML: 'asml.com', MU: 'micron.com', SPCX: 'spacex.com', SGOV: 'ishares.com',
   };
   const CASH_COLOR = '#8A8471';
   const FALLBACK_COLORS = ['#f59e0b', '#06b6d4', '#84cc16', '#f43f5e', '#8b5cf6', '#fb923c'];
@@ -676,10 +676,11 @@
     $('hp-chart-tip').hidden = true;
   });
 
-  // ── Allocation ring (SVG stroke segments, hover synced with legend) ──
+  // ── Allocation ring (SVG stroke segments + outer pointer labels, like the original site) ──
   const SVG_NS = 'http://www.w3.org/2000/svg';
+  const RING_CX = 150, RING_CY = 150, RING_R = 80;
   let ringCircles = [];
-  let legendRows = [];
+  let labelGroups = [];
   let ringDefault = { top: '—', main: '—', sub: '—' };
 
   function setHover(idx, sorted, colorMap) {
@@ -688,7 +689,7 @@
       c.style.opacity = idx == null || idx === i ? '1' : '.3';
       c.setAttribute('stroke-width', idx === i ? 40 : 32);
     });
-    legendRows.forEach((r, i) => { r.style.opacity = idx == null || idx === i ? '1' : '.35'; });
+    labelGroups.forEach(({ el, sortedIdx }) => { el.style.opacity = idx == null || idx === sortedIdx ? '1' : '.35'; });
     if (idx == null) {
       top.textContent = ringDefault.top;
       main.textContent = ringDefault.main;
@@ -707,14 +708,14 @@
     const svg = $('alloc-ring-svg');
     svg.innerHTML = '';
     const g = document.createElementNS(SVG_NS, 'g');
-    g.setAttribute('transform', 'rotate(-90 110 110)');
-    const C = 2 * Math.PI * 80;
+    g.setAttribute('transform', `rotate(-90 ${RING_CX} ${RING_CY})`);
+    const C = 2 * Math.PI * RING_R;
     let cum = 0;
     ringCircles = sorted.map((h, i) => {
       const len = (h.pos_pct / 100) * C;
       const vis = Math.max(0.5, len - 2.2);
       const c = document.createElementNS(SVG_NS, 'circle');
-      c.setAttribute('cx', '110'); c.setAttribute('cy', '110'); c.setAttribute('r', '80');
+      c.setAttribute('cx', RING_CX); c.setAttribute('cy', RING_CY); c.setAttribute('r', RING_R);
       c.setAttribute('fill', 'none');
       c.setAttribute('stroke', colorMap[h.ticker] || CASH_COLOR);
       c.setAttribute('stroke-width', '32');
@@ -729,24 +730,119 @@
       return c;
     });
     svg.appendChild(g);
+    renderOuterLabels(svg, sorted, colorMap);
 
     ringDefault = { top: 'TOTAL VALUE', main: '***', sub: `${sorted.length} ตำแหน่ง` };
     setHover(null, sorted, colorMap);
   }
 
-  function renderLegend(sorted, colorMap) {
-    const el = $('alloc-legend');
-    el.innerHTML = sorted.map((h) => `
-      <div class="alloc-legend-row">
-        <span class="alloc-legend-dot" style="background:${colorMap[h.ticker] || CASH_COLOR}"></span>
-        <span class="alloc-legend-sym mono">${h.ticker}</span>
-        <span class="alloc-legend-pct mono">${h.pos_pct.toFixed(1)}%</span>
-      </div>
-    `).join('');
-    legendRows = Array.from(el.children);
-    legendRows.forEach((row, i) => {
-      row.addEventListener('mouseenter', () => setHover(i, sorted, colorMap));
-      row.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
+  // Outer pointer-line + logo + ticker/% labels around the ring, matching
+  // the original site's donut. Slices under 4% are too thin to label.
+  function renderOuterLabels(svg, sorted, colorMap) {
+    const OUTER_R = RING_R + 16, RADIAL = 14, H_LINE = 18, LR = 15, GAP = 8, ROW = 14, EDGE = 6;
+    const W = 300, H = 300;
+    const C = 2 * Math.PI * RING_R;
+    let cum = 0;
+    const items = [];
+    sorted.forEach((h, sortedIdx) => {
+      const len = (h.pos_pct / 100) * C;
+      const midFrac = (cum + len / 2) / C;
+      cum += len;
+      if (h.pos_pct < 4) return;
+      const angle = (-90 + midFrac * 360) * Math.PI / 180;
+      const right = Math.cos(angle) >= 0;
+      const px1x = RING_CX + OUTER_R * Math.cos(angle), px1y = RING_CY + OUTER_R * Math.sin(angle);
+      const px2x = RING_CX + (OUTER_R + RADIAL) * Math.cos(angle), px2y = RING_CY + (OUTER_R + RADIAL) * Math.sin(angle);
+      items.push({
+        h, sortedIdx, right, color: colorMap[h.ticker] || CASH_COLOR,
+        px1x, px1y, px2x, px2y,
+        elbowX: px2x + (right ? H_LINE : -H_LINE), elbowY: px2y,
+      });
+    });
+
+    // Push overlapping labels on the same side apart vertically.
+    const MIN_GAP = ROW * 2 + 6;
+    for (let pass = 0; pass < 4; pass++) {
+      for (let a = 0; a < items.length; a++) {
+        for (let b = a + 1; b < items.length; b++) {
+          const ia = items[a], ib = items[b];
+          if (ia.right !== ib.right) continue;
+          const dy = ib.elbowY - ia.elbowY;
+          if (Math.abs(dy) < MIN_GAP) {
+            const push = (MIN_GAP - Math.abs(dy)) / 2;
+            if (dy >= 0) { ia.elbowY -= push; ib.elbowY += push; } else { ia.elbowY += push; ib.elbowY -= push; }
+          }
+        }
+      }
+    }
+
+    labelGroups = items.map((it, i) => {
+      const logoCY = Math.max(LR + EDGE, Math.min(H - LR - EDGE, it.elbowY));
+      const logoCX = it.right ? it.elbowX + LR + 2 : it.elbowX - LR - 2;
+      const tx = it.right ? logoCX + LR + GAP : logoCX - LR - GAP;
+
+      const g = document.createElementNS(SVG_NS, 'g');
+      g.setAttribute('class', 'alloc-label-group');
+
+      const line = document.createElementNS(SVG_NS, 'polyline');
+      line.setAttribute('points', `${it.px1x.toFixed(1)},${it.px1y.toFixed(1)} ${it.px2x.toFixed(1)},${it.px2y.toFixed(1)} ${it.elbowX.toFixed(1)},${logoCY.toFixed(1)}`);
+      line.setAttribute('fill', 'none');
+      line.setAttribute('stroke', it.color);
+      line.setAttribute('stroke-width', '1.4');
+      line.setAttribute('stroke-linejoin', 'round');
+      line.setAttribute('opacity', '0.55');
+      g.appendChild(line);
+
+      const backdrop = document.createElementNS(SVG_NS, 'circle');
+      backdrop.setAttribute('cx', logoCX); backdrop.setAttribute('cy', logoCY); backdrop.setAttribute('r', LR + 1.5);
+      backdrop.setAttribute('fill', 'var(--card)');
+      backdrop.setAttribute('stroke', it.color);
+      backdrop.setAttribute('stroke-width', '1.5');
+      g.appendChild(backdrop);
+
+      const domain = LOGO_DOMAINS[it.h.ticker];
+      const fallback = document.createElementNS(SVG_NS, 'text');
+      fallback.setAttribute('x', logoCX); fallback.setAttribute('y', logoCY);
+      fallback.setAttribute('text-anchor', 'middle'); fallback.setAttribute('dominant-baseline', 'central');
+      fallback.setAttribute('font-family', "'IBM Plex Mono', monospace");
+      fallback.setAttribute('font-size', '10'); fallback.setAttribute('font-weight', '700');
+      fallback.setAttribute('fill', it.color);
+      fallback.textContent = it.h.ticker === 'CASH' ? '฿' : it.h.ticker.slice(0, 2);
+      fallback.style.display = domain ? 'none' : '';
+      g.appendChild(fallback);
+
+      if (domain) {
+        const img = document.createElementNS(SVG_NS, 'image');
+        img.setAttribute('href', `https://www.google.com/s2/favicons?domain=${domain}&sz=64`);
+        img.setAttribute('x', logoCX - LR); img.setAttribute('y', logoCY - LR);
+        img.setAttribute('width', LR * 2); img.setAttribute('height', LR * 2);
+        img.style.clipPath = `circle(${LR}px)`;
+        img.addEventListener('error', () => { img.style.display = 'none'; fallback.style.display = ''; });
+        g.appendChild(img);
+      }
+
+      const tickerText = document.createElementNS(SVG_NS, 'text');
+      tickerText.setAttribute('x', tx); tickerText.setAttribute('y', logoCY - 1);
+      tickerText.setAttribute('text-anchor', it.right ? 'start' : 'end');
+      tickerText.setAttribute('font-family', "'IBM Plex Mono', monospace");
+      tickerText.setAttribute('font-size', '13'); tickerText.setAttribute('font-weight', '700');
+      tickerText.setAttribute('fill', 'var(--ink)');
+      tickerText.textContent = it.h.ticker;
+      g.appendChild(tickerText);
+
+      const pctText = document.createElementNS(SVG_NS, 'text');
+      pctText.setAttribute('x', tx); pctText.setAttribute('y', logoCY + 12);
+      pctText.setAttribute('text-anchor', it.right ? 'start' : 'end');
+      pctText.setAttribute('font-family', "'IBM Plex Mono', monospace");
+      pctText.setAttribute('font-size', '11'); pctText.setAttribute('font-weight', '600');
+      pctText.setAttribute('fill', it.color);
+      pctText.textContent = it.h.pos_pct.toFixed(1) + '%';
+      g.appendChild(pctText);
+
+      g.addEventListener('mouseenter', () => setHover(it.sortedIdx, sorted, colorMap));
+      g.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
+      svg.appendChild(g);
+      return { el: g, sortedIdx: it.sortedIdx };
     });
   }
 
@@ -779,7 +875,6 @@
     const sorted = sortHoldings(pf.holdings);
     const colorMap = assignColors(sorted);
     renderRing(sorted, colorMap);
-    renderLegend(sorted, colorMap);
     renderTable(sorted, colorMap);
 
     const totalEl = $('hold-head-total');
