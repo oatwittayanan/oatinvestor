@@ -135,18 +135,6 @@
 
   .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 26px; align-items: stretch; }
 
-  .perf-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); margin-bottom: 26px; transition: background-color .35s ease, border-color .35s ease; }
-  .perf-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
-  .perf-legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
-  .perf-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
-  .perf-legend-swatch { width: 16px; height: 2px; border-radius: 2px; flex: none; }
-  .perf-legend-val { font-weight: 600; }
-  .perf-legend-val.up { color: var(--green); }
-  .perf-legend-val.down { color: var(--red); }
-  .perf-tip { position: absolute; top: -4px; transform: translate(-50%, -100%); background: var(--ink); color: var(--bg); font-size: 11px; padding: 6px 10px; border-radius: 8px; white-space: nowrap; pointer-events: none; }
-  .perf-tip-date { opacity: .7; margin-bottom: 3px; }
-  .perf-tip-row { display: flex; align-items: center; gap: 6px; }
-  .perf-tip-row + .perf-tip-row { margin-top: 2px; }
 
   .alloc-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; transition: background-color .35s ease, border-color .35s ease; }
   .alloc-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
@@ -288,31 +276,6 @@
   <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
   <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
 
-  <div class="perf-card" id="perf-card" hidden>
-    <div class="perf-head">
-      <span class="alloc-card-label">PERFORMANCE · เทียบ BENCHMARK</span>
-      <div class="hp-range-row mono" id="perf-range-tabs"></div>
-    </div>
-    <div class="pf-state" id="perf-empty" hidden>ยังไม่มีข้อมูลผลตอบแทนย้อนหลังสำหรับพอร์ตนี้</div>
-    <div id="perf-body">
-      <div class="hp-chart-pos">
-        <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-          <path id="perf-line-port" fill="none" stroke="var(--green)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-          <path id="perf-line-voo" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-dasharray="4 3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-          <path id="perf-line-qqqm" fill="none" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="2 4" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-        </svg>
-        <div class="hp-chart-guide mono" id="perf-guide" hidden></div>
-        <div class="perf-tip mono" id="perf-tip" hidden></div>
-        <div class="hp-chart-overlay" id="perf-overlay"></div>
-      </div>
-      <div class="hp-axis mono">
-        <span id="perf-axis-start">—</span>
-        <span id="perf-axis-end">—</span>
-      </div>
-      <div class="perf-legend mono" id="perf-legend"></div>
-    </div>
-  </div>
-
   <div class="portfolio-grid" id="portfolio-grid" hidden>
     <div class="alloc-card">
       <span class="alloc-card-label">ALLOCATION · สัดส่วนพอร์ต</span>
@@ -452,152 +415,29 @@
   function buildCombinedHistory(pfJson) {
     const aiHist = pfJson?.ai_port?.history;
     const spHist = pfJson?.sp500_port?.history;
-    // QQQM is mirrored for both portfolios so a combined QQQM line is valid;
-    // VOO is only mirrored for ai_port, so it's left out of the combined view.
     const toMap = (h) => {
       const m = new Map();
       (h?.dates || []).forEach((d, i) => m.set(d, {
         v: h.portfolio[i] || 0,
         dep: (h.deposited ? h.deposited[i] : 0) || 0,
-        bm: (h.qqqm ? h.qqqm[i] : 0) || 0,
       }));
       return m;
     };
     const aiMap = toMap(aiHist), spMap = toMap(spHist);
     if (!aiMap.size && !spMap.size) return null;
     const allDates = Array.from(new Set([...aiMap.keys(), ...spMap.keys()])).sort();
-    let lastAi = { v: 0, dep: 0, bm: 0 }, lastSp = { v: 0, dep: 0, bm: 0 };
-    const dates = [], retPct = [], qqqm = [];
+    let lastAi = { v: 0, dep: 0 }, lastSp = { v: 0, dep: 0 };
+    const dates = [], retPct = [];
     for (const d of allDates) {
       if (aiMap.has(d)) lastAi = aiMap.get(d);
       if (spMap.has(d)) lastSp = spMap.get(d);
       const dep = lastAi.dep + lastSp.dep;
       const val = lastAi.v + lastSp.v;
-      const bmVal = lastAi.bm + lastSp.bm;
       dates.push(d);
       retPct.push(dep > 0 ? ((val / dep - 1) * 100) : 0);
-      qqqm.push(dep > 0 ? ((bmVal / dep - 1) * 100) : 0);
     }
-    return { dates, retPct, qqqm };
+    return { dates, retPct };
   }
-
-  // ── Performance-vs-benchmark chart (tab-aware: combined/ai_port/sp500_port) ──
-  const PERF_COLORS = { port: 'var(--green)', voo: 'var(--gold)', qqqm: '#3B82F6' };
-  const PERF_LABELS = { port: 'พอร์ต', voo: 'VOO', qqqm: 'QQQM' };
-  let perfSeriesMap = null;
-  let perfPeriod = 'ALL';
-  let perfHoverCtx = null;
-
-  function buildPortfolioSeries(hist) {
-    if (!hist || !hist.dates || !hist.dates.length) return null;
-    const dep = hist.deposited || [];
-    const toRet = (arr) => arr.map((v, i) => (dep[i] > 0 ? (v / dep[i] - 1) * 100 : 0));
-    const s = { dates: hist.dates, port: toRet(hist.portfolio) };
-    if (hist.voo) s.voo = toRet(hist.voo);
-    if (hist.qqqm) s.qqqm = toRet(hist.qqqm);
-    return s;
-  }
-
-  function buildPerfSeriesMap(pfJson) {
-    return {
-      ai_port: buildPortfolioSeries(pfJson?.ai_port?.history),
-      sp500_port: buildPortfolioSeries(pfJson?.sp500_port?.history),
-      combined: combinedHist ? { dates: combinedHist.dates, port: combinedHist.retPct, qqqm: combinedHist.qqqm } : null,
-    };
-  }
-
-  function periodRange(n, period) {
-    if (period === 'ALL' || n === 0) return { start: 0, end: n };
-    const days = { '1M': 21, '3M': 63, '6M': 126 }[period] || n;
-    return { start: Math.max(0, n - days), end: n };
-  }
-
-  function buildPerfRangeTabs() {
-    const s = perfSeriesMap && perfSeriesMap[activeKey];
-    const n = s ? s.dates.length : 0;
-    const daysMap = { '1M': 21, '3M': 63, '6M': 126 };
-    const opts = ['1M', '3M', '6M', 'ALL'].filter((p) => p === 'ALL' || n >= daysMap[p]);
-    if (!opts.includes(perfPeriod)) perfPeriod = opts[opts.length - 1] || 'ALL';
-    $('perf-range-tabs').innerHTML = opts.map((p) => `<button class="hp-range-btn${p === perfPeriod ? ' active' : ''}" data-period="${p}">${p}</button>`).join('');
-    $('perf-range-tabs').querySelectorAll('.hp-range-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        perfPeriod = btn.dataset.period;
-        $('perf-range-tabs').querySelectorAll('.hp-range-btn').forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderPerfChart();
-      });
-    });
-  }
-
-  function renderPerfChart() {
-    const card = $('perf-card');
-    if (!perfSeriesMap) { card.hidden = true; return; }
-    card.hidden = false;
-    const s = perfSeriesMap[activeKey];
-    const range = s ? periodRange(s.dates.length, perfPeriod) : { start: 0, end: 0 };
-    const N = range.end - range.start;
-    if (!s || N < 2) {
-      $('perf-empty').hidden = false;
-      $('perf-body').hidden = true;
-      perfHoverCtx = null;
-      return;
-    }
-    $('perf-empty').hidden = true;
-    $('perf-body').hidden = false;
-
-    const seriesKeys = ['port', 'voo', 'qqqm'].filter((k) => s[k]);
-    const sliced = { dates: s.dates.slice(range.start, range.end) };
-    seriesKeys.forEach((k) => {
-      const cut = s[k].slice(range.start, range.end);
-      sliced[k] = perfPeriod === 'ALL' ? cut : rebaseReturns(cut);
-    });
-
-    const allVals = seriesKeys.flatMap((k) => sliced[k]);
-    const min = Math.min(...allVals, 0), max = Math.max(...allVals, 0);
-    const pad = (max - min) * 0.15 || 1;
-    const lo = min - pad, hi = max + pad;
-    const X = (i) => (i / (N - 1)) * 320;
-    const Y = (v) => 86 - ((v - lo) / (hi - lo)) * 70;
-
-    ['port', 'voo', 'qqqm'].forEach((k) => {
-      const path = $(`perf-line-${k}`);
-      if (seriesKeys.includes(k)) {
-        path.setAttribute('d', sliced[k].map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' '));
-        path.style.display = '';
-      } else {
-        path.style.display = 'none';
-      }
-    });
-
-    $('perf-axis-start').textContent = fmtDateShort(sliced.dates[0]);
-    $('perf-axis-end').textContent = fmtDateShort(sliced.dates[N - 1]);
-
-    $('perf-legend').innerHTML = seriesKeys.map((k) => {
-      const last = sliced[k][N - 1];
-      return `<span class="perf-legend-item"><span class="perf-legend-swatch" style="background:${PERF_COLORS[k]}"></span>${PERF_LABELS[k]} <span class="perf-legend-val ${last >= 0 ? 'up' : 'down'}">${fmtSigned(last)}</span></span>`;
-    }).join('');
-
-    perfHoverCtx = { sliced, X, N, seriesKeys };
-  }
-
-  $('perf-overlay').addEventListener('mousemove', (e) => {
-    if (!perfHoverCtx) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    const { sliced, X, N, seriesKeys } = perfHoverCtx;
-    const i = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
-    const leftPct = (X(i) / 320 * 100).toFixed(2) + '%';
-    const guide = $('perf-guide'), tip = $('perf-tip');
-    guide.style.left = leftPct; guide.hidden = false;
-    tip.style.left = Math.max(14, Math.min(86, (X(i) / 320) * 100)) + '%';
-    tip.innerHTML = `<div class="perf-tip-date">${fmtDateShort(sliced.dates[i])}</div>` +
-      seriesKeys.map((k) => `<div class="perf-tip-row"><span class="perf-legend-swatch" style="background:${PERF_COLORS[k]}"></span>${PERF_LABELS[k]} ${fmtSigned(sliced[k][i])}</div>`).join('');
-    tip.hidden = false;
-  });
-  $('perf-overlay').addEventListener('mouseleave', () => {
-    $('perf-guide').hidden = true;
-    $('perf-tip').hidden = true;
-  });
 
   function periodSlice(hist, period) {
     const n = hist.dates.length;
@@ -906,8 +746,6 @@
     btn.classList.add('active');
     activeKey = btn.dataset.key;
     renderPortfolioSection();
-    buildPerfRangeTabs();
-    renderPerfChart();
   });
 
   // ธีมเปลี่ยน (ปุ่มสลับ Light/Dark/Auto) → รีเฟรช hover state ให้ default กลับมาถูกต้อง
@@ -936,9 +774,6 @@
         combinedHist = buildCombinedHistory(pfJson);
         buildRangeTabs();
         renderHeroChart();
-        perfSeriesMap = buildPerfSeriesMap(pfJson);
-        buildPerfRangeTabs();
-        renderPerfChart();
       }
     })
     .catch(() => {
