@@ -201,7 +201,7 @@
   <div class="hero-left">
     <div class="eyebrow">PERSONAL INVESTMENT JOURNAL — US STOCKS</div>
     <h1 class="hero-h1">เล่าเรื่องหุ้น<br>แบบ<em>เพื่อน</em>เล่าให้ฟัง</h1>
-    <p class="hero-lead">สวัสดีครับ ผมโอ๊ต — ที่นี่คือบันทึกการลงทุนของผม พอร์ตจริงที่เปิดให้ดูกันชัดๆ (เฉพาะ % กำไร/ขาดทุนกับสัดส่วนถือครอง) พร้อมเครื่องมือวางแผนการเงินที่ใช้ได้จริง บทความวิเคราะห์หุ้นและมุมมองตลาดกำลังทยอยตามมา ไม่ใช่คำแนะนำการลงทุน แต่เป็นเรื่องเล่าจากประสบการณ์จริง</p>
+    <p class="hero-lead">สวัสดีครับ ผมโอ๊ต — ที่นี่คือบันทึกการลงทุนของผม พอร์ตจริงที่เปิดให้ดูกันชัดๆ พร้อมเครื่องมือวางแผนการเงินที่ใช้ได้จริง บทความวิเคราะห์หุ้นและมุมมองตลาดกำลังทยอยตามมา ไม่ใช่คำแนะนำการลงทุน แต่เป็นเรื่องเล่าจากประสบการณ์จริง</p>
     <div class="hero-ctas">
       <a href="#portfolio" class="hero-cta-primary">ส่องพอร์ตของผม →</a>
       <a href="tools.html" class="hero-cta-secondary">เครื่องมือทางการเงิน</a>
@@ -221,8 +221,8 @@
       <span class="hp-top-time mono" id="hp-time">—</span>
     </div>
     <div class="hp-headline">
-      <div class="hp-pl mono" id="hp-pl">***</div>
-      <span class="hp-headline-sub">มูลค่าพอร์ตรวม · ซ่อนไว้เพื่อความเป็นส่วนตัว</span>
+      <div class="hp-pl mono" id="hp-pl">—</div>
+      <span class="hp-headline-sub">มูลค่าพอร์ตรวม · อัพเดทสดจาก Google Sheets</span>
     </div>
     <div class="hp-badges" id="hp-badges"></div>
     <div id="hp-chart-block" style="display:flex;flex-direction:column;gap:8px" hidden>
@@ -302,7 +302,7 @@
           <div id="hold-rows"></div>
         </div>
       </div>
-      <div class="hold-foot"><span>* แสดงเฉพาะ % กำไร/ขาดทุนและสัดส่วนถือครอง ไม่มีมูลค่าเงิน ไม่ใช่คำแนะนำซื้อขาย</span></div>
+      <div class="hold-foot"><span>* ข้อมูลจากพอร์ตจริง อัพเดทสดทุกครั้งที่เปิดหน้านี้ ไม่ใช่คำแนะนำซื้อขาย</span></div>
     </div>
   </div>
 </div>
@@ -365,6 +365,12 @@
     const sign = v > 0 ? '+' : '';
     return `${sign}${v.toFixed(1)}%`;
   }
+  function fmtMoney(v) {
+    return '$' + Math.round(v).toLocaleString('en-US');
+  }
+  function fmtMoney2(v) {
+    return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
   // SGOV (T-bill ETF) and CASH aren't real stock picks — always park them at
   // the end of the list so the holdings that are actual positions stand out.
   const TAIL_TICKERS = ['SGOV', 'CASH'];
@@ -386,8 +392,7 @@
     const sp = portfolios.find((p) => p.key === 'sp500_port');
     if (!combined) return;
 
-    // Total value is intentionally never fetched with real digits — mask only.
-    $('hp-pl').textContent = '***';
+    $('hp-pl').textContent = fmtMoney(combined.total_value);
 
     $('hp-badges').innerHTML = [combined, ai, sp].filter(Boolean).map((p) => `
       <span class="hp-badge ${p.pl_pct >= 0 ? 'up' : 'down'}">${p.name} ${fmtSigned(p.pl_pct)}</span>
@@ -558,7 +563,7 @@
     }
   }
 
-  function renderRing(sorted, colorMap) {
+  function renderRing(sorted, colorMap, totalValue) {
     const svg = $('alloc-ring-svg');
     svg.innerHTML = '';
     const g = document.createElementNS(SVG_NS, 'g');
@@ -586,7 +591,7 @@
     svg.appendChild(g);
     renderOuterLabels(svg, sorted, colorMap);
 
-    ringDefault = { top: 'TOTAL VALUE', main: '***', sub: `${sorted.length} ตำแหน่ง` };
+    ringDefault = { top: 'TOTAL VALUE', main: fmtMoney(totalValue), sub: `${sorted.length} ตำแหน่ง` };
     setHover(null, sorted, colorMap);
   }
 
@@ -707,8 +712,8 @@
           <span class="hold-ticker mono">${h.ticker}</span>
           <span class="hold-name">${NAME_MAP[h.ticker] || h.ticker}</span>
         </div>
-        <span class="hold-masked">***</span>
-        <span class="hold-masked">***</span>
+        <span class="hold-masked">${fmtMoney2(h.avg_cost)}</span>
+        <span class="hold-masked">${fmtMoney2(h.price)}</span>
         <span class="hold-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
         <div class="hold-alloc-col">
           <div class="hold-alloc-bar"><div class="hold-alloc-fill" style="width:${Math.min(100, h.pos_pct)}%;background:${colorMap[h.ticker] || CASH_COLOR}"></div></div>
@@ -728,7 +733,7 @@
     }
     const sorted = sortHoldings(pf.holdings);
     const colorMap = assignColors(sorted);
-    renderRing(sorted, colorMap);
+    renderRing(sorted, colorMap, pf.total_value);
     renderTable(sorted, colorMap);
 
     const totalEl = $('hold-head-total');
