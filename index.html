@@ -443,6 +443,28 @@
     return { dates, retPct };
   }
 
+  // The daily-cron history file only reaches yesterday's close at best. Once
+  // the live Worker responds, graft today's live return% on as the chart's
+  // final point (same deposited-capital formula, see the Worker's
+  // summarize()) so the line ends exactly where the badges say "right now" —
+  // everything before that point still comes from the cron file, since a
+  // live-reconstructed daily history isn't possible (the Sheet has no
+  // day-by-day value log, see [[project_oatinvestor]] notes on this).
+  function appendLivePoint(hist, liveData) {
+    if (!hist || !hist.dates.length || !liveData || !liveData.portfolios) return hist;
+    const combined = liveData.portfolios.find((p) => p.key === 'combined');
+    if (!combined) return hist;
+    const todayStr = new Date(liveData.updated_at || Date.now()).toISOString().slice(0, 10);
+    const lastIdx = hist.dates.length - 1;
+    if (hist.dates[lastIdx] === todayStr) {
+      hist.retPct[lastIdx] = combined.pl_pct;
+    } else {
+      hist.dates.push(todayStr);
+      hist.retPct.push(combined.pl_pct);
+    }
+    return hist;
+  }
+
   function periodSlice(hist, period) {
     const n = hist.dates.length;
     if (period === 'ALL' || n === 0) return hist;
@@ -776,6 +798,7 @@
       }
       if (pfJson) {
         combinedHist = buildCombinedHistory(pfJson);
+        combinedHist = appendLivePoint(combinedHist, data);
         buildRangeTabs();
         renderHeroChart();
       }
