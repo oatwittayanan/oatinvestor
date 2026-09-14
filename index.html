@@ -152,7 +152,12 @@
   .hold-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: background-color .35s ease, border-color .35s ease; }
   .hold-head { padding: 22px 26px 14px; display: flex; align-items: center; gap: 10px; }
   .hold-head-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
-  .hold-head-total { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; }
+  .hold-head-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .hold-bench { display: flex; align-items: center; gap: 6px; }
+  .hold-bench-tag { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--line2); color: var(--muted); }
+  .hold-bench-tag.up { color: var(--green); }
+  .hold-bench-tag.down { color: var(--red); }
+  .hold-head-total { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; }
   .hold-head-total.up { color: var(--green); }
   .hold-head-total.down { color: var(--red); }
   .hold-scroll { overflow-x: auto; }
@@ -292,7 +297,10 @@
     <div class="hold-card">
       <div class="hold-head">
         <span class="hold-head-label">HOLDINGS · หุ้นที่ถืออยู่</span>
-        <span class="hold-head-total mono" id="hold-head-total">—</span>
+        <div class="hold-head-right">
+          <span class="hold-bench mono" id="hold-bench"></span>
+          <span class="hold-head-total mono" id="hold-head-total">—</span>
+        </div>
       </div>
       <div class="hold-scroll">
         <div class="hold-table">
@@ -384,6 +392,11 @@
 
   let portfolios = null;
   let activeKey = 'combined';
+  // Benchmark returns (VOO/QQQM) — last value from the daily-cron history
+  // file, same source/lag as the hero chart. Only ai_port has a VOO mirror;
+  // sp500_port only mirrors QQQM; combined has no valid single benchmark
+  // (see buildCombinedHistory notes), so it gets no tags.
+  let benchSummary = null;
 
   // ── Hero snapshot card (always shows the combined portfolio) ─────────
   function renderHero() {
@@ -762,6 +775,11 @@
     totalEl.textContent = fmtSigned(pf.pl_pct) + ' ทั้งพอร์ต';
     totalEl.className = 'hold-head-total mono ' + (pf.pl_pct >= 0 ? 'up' : 'down');
 
+    const bench = benchSummary && benchSummary[activeKey];
+    $('hold-bench').innerHTML = bench
+      ? Object.entries(bench).map(([label, v]) => `<span class="hold-bench-tag ${v >= 0 ? 'up' : 'down'}">${label} ${fmtSigned(v)}</span>`).join('')
+      : '';
+
     loadingEl.hidden = true; errorEl.hidden = true; gridEl.hidden = false;
   }
 
@@ -786,6 +804,19 @@
     .then(([data, pfJson]) => {
       if (data.error || !data.portfolios) throw new Error(data.error || 'no data');
       portfolios = data.portfolios;
+      if (pfJson) {
+        const aiSum = pfJson.ai_port?.history?.summary || {};
+        const spSum = pfJson.sp500_port?.history?.summary || {};
+        benchSummary = {};
+        if (aiSum.voo_pct != null || aiSum.qqqm_pct != null) {
+          benchSummary.ai_port = {};
+          if (aiSum.voo_pct != null) benchSummary.ai_port.VOO = aiSum.voo_pct;
+          if (aiSum.qqqm_pct != null) benchSummary.ai_port.QQQM = aiSum.qqqm_pct;
+        }
+        if (spSum.qqqm_pct != null) {
+          benchSummary.sp500_port = { QQQM: spSum.qqqm_pct };
+        }
+      }
       renderHero();
       renderPortfolioSection();
       if (data.updated_at) {
