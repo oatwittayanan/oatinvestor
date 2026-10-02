@@ -11,7 +11,7 @@ Columns fixed (rows 4-15):
 
 Special cases:
   DCA S&P500 — T7 has static DIV amount 0.28 (skip to preserve)
-  AI PORT    — V4 is CASH row with special formula T4 (not GOOGLEFINANCE, skip)
+  DCA STOCK    — V4 is CASH row with special formula T4 (not GOOGLEFINANCE, skip)
 """
 import os
 from google.oauth2 import service_account
@@ -86,9 +86,9 @@ def main():
     print("\n[1/2] DCA S&P500")
     fix_tab(svc, "DCA S&P500", skip_t_rows=[7])
 
-    # AI PORT: skip V4 (CASH row uses =T4 instead of GOOGLEFINANCE)
-    print("\n[2/2] AI PORT")
-    fix_tab(svc, "AI PORT", skip_v_rows=[4])
+    # DCA STOCK: skip V4 (CASH row uses =T4 instead of GOOGLEFINANCE)
+    print("\n[2/2] DCA STOCK")
+    fix_tab(svc, "DCA STOCK", skip_v_rows=[4])
 
     print("\n✅ Both tabs fixed:")
     print("   T: BUY/SELL auto-calc, DIV = blank (type amount manually)")
