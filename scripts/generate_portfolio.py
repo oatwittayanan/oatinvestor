@@ -1,6 +1,6 @@
 """
 generate_portfolio.py
-Reads both "AI PORT" and "DCA S&P500" tabs from Google Sheets,
+Reads both "DCA STOCK" and "DCA S&P500" tabs from Google Sheets,
 downloads historical prices, and writes data/portfolio.json.
 
 Usage:
@@ -433,9 +433,9 @@ def main():
     print("📊 Generating portfolio.json ...")
     svc = get_sheets_service()
 
-    # ── AI PORT ──────────────────────────────────────────────────
-    print("\n[1/2] AI PORT tab")
-    ai_rows = read_tab(svc, "AI PORT")
+    # ── DCA STOCK ──────────────────────────────────────────────────
+    print("\n[1/2] DCA STOCK tab")
+    ai_rows = read_tab(svc, "DCA STOCK")
     ai_summary, ai_holdings, ai_txs, ai_deposits = parse_holdings(ai_rows)
     print(f"  holdings: {[h['ticker'] for h in ai_holdings]}")
     print(f"  transactions: {len(ai_txs)}")
@@ -469,7 +469,7 @@ def main():
     output = {
         "ai_port": {
             "name": "ลงทุนกับ AI",
-            "tab":  "AI PORT",
+            "tab":  "DCA STOCK",
             **ai_summary,
             "total_dividends": ai_dividends,
             "holdings":    ai_holdings,
