@@ -2015,5 +2015,654 @@
       "WebSearch — TSMC 2026-08-07 (ไม่พบข่าวใหม่ material, ยืนยัน re-syndication claim)",
       "WebSearch — Nvidia China export control status 2026-08 (H200 framework, share loss confirmed แต่ตัวเลขต่างจาก Warren)"
     ]
+  },
+  {
+    "id": "review-2026-10-15",
+    "date": "2026-10-15",
+    "paper_id": "2026-10-15",
+    "paper_date": "2026-10-15",
+    "title": "Charlie Review — Paper #5 (Reconcile Oat Self-Executed + NVDA ADD $30)",
+    "overall_verdict": "CAUTION",
+    "overall_summary": "NVDA ADD ผ่าน valuation อิสระชัดเจน (Charlie FV $374 vs Warren $384, gap 2.6%, MoS ~41%, Reverse DCF ต้องการโตแค่ ~15%/ปี) และ weight math ถูกต้อง (23.52% ≤ 25%) แต่ให้ CAUTION เพราะหลังซื้อพอร์ต ~41% อยู่ในสายโซ่ AI-compute ที่ขยับพร้อมกัน ก่อน hyperscaler capex prints ปลาย ต.ค. และ RA ของ NVDA ไม่สะท้อน M&A/antitrust ที่สะสม (รอบที่ 5). ประเด็นที่หนักกว่า NVDA คือ SPCX: ⚠️ Speculative ถือ 5.53% เกินเพดาน 3% ที่ห้ามปลด แต่ Paper แค่ no-add → DISAGREE (thesis/rule) ให้โอ๊ตตัดสิน trim หรือยกเว้น. Held อื่นๆ HOLD ถูกต้องทั้งหมด; V/MA ไม่มี coverage.",
+    "frozen_tickers": [
+      "SPCX"
+    ],
+    "frozen_note": "SPCX ไม่มี BUY ให้ freeze — การ freeze นี้ใช้ surface การละเมิด Speculative cap 3% ให้โอ๊ตตัดสิน (trim ~$14 หรือประกาศยกเว้น)",
+    "ticker_reviews": [
+      {
+        "ticker": "NVDA",
+        "warren_action": "ADD",
+        "warren_amount": 30,
+        "data_date": "2026-10-15",
+        "warren_price": 221.3,
+        "warren_fv_base": 384,
+        "warren_mos_pct": 42.37,
+        "warren_waf": 8.78,
+        "warren_tier": "🚀 Pre-Inevitable",
+        "charlie_verdict": "CAUTION",
+        "charlie_fv": 374,
+        "charlie_fv_floor": 354,
+        "charlie_price_used": 221.3,
+        "live_price_check": "Nasdaq quote 216.26 / CNBC 215.97 (10-15 10:12 ET, -2.3%) — diff 0.1%; ใช้ 221.30 (10-14 close, สูงกว่า = conservative)",
+        "warren_fv_gap_pct": 2.6,
+        "charlie_fv_method": "pe_multiple",
+        "variant_view_verdict": "NO_VARIANT",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "CLEAN",
+        "charlie_fv_work": {
+          "eps_used": 14.98,
+          "eps_fiscal_year": "FY2028 (Jan 2028)",
+          "eps_tier": 2,
+          "eps_source": "Revenue $680,000M (management FY28 ~+70% growth path, guide-midpoint) x 53.5% net margin / 24,285M diluted sh (SEC 10-Q Q2 FY27) = $14.98; cross-check Nasdaq earnings-forecast API FY Jan-2028 $15.53 (15 est, 0 up/0 down, ดึงซ้ำ 2026-10-15 ช่วงตลาดเปิด — ไม่เปลี่ยน)",
+          "eps_basis": "non-GAAP diluted",
+          "ttm_actual_eps": 6.9,
+          "multiple_used": 25.0,
+          "multiple_options": {
+            "5yr_median_pe": 51.3,
+            "current_forward_pe": 14.8
+          },
+          "multiple_chosen_why": "25x (haircut จาก median 51.3x เพื่อสะท้อน RA 5.1) — min() จะได้ 14.8x = ราคา/EPS = FV เท่าราคาโดยนิยาม (tautology) จึงไม่ใช้",
+          "calculation": "680,000 x 0.535 / 24,285 = 14.98; 14.98 x 25 = 374.5 -> 374",
+          "floor_calculation": "TTM 6.90 (1.24+1.57+1.87+2.22) x 51.3 = 354",
+          "mos_at_charlie_fv": "(374 - 221.30) / 374 = +40.8% (ที่ราคา live 216.26 = +42.2%)",
+          "implied_growth_pct": 15.6,
+          "reverse_dcf_note": "ที่ $221.30, exit 25x, discount 10%: EPS ปีที่ 5 ที่ต้องได้ = 221.30 x 1.1^5 / 25 = $14.26 = โต 15.6%/ปี จาก TTM $6.90 (ที่ $216.26 = 15.1%/ปี) — ต่ำกว่าเส้นทาง guide FY28 อย่างเดียว ตลาดแทบไม่ให้ค่าการเติบโตหลัง FY28 = ไม่เรียกร้องเกินจริง",
+          "er_check": "Charlie ER = (374/221.30)^(1/5)-1 = 11.1% + 30% = 41.1% vs Warren 41.65% — ห่าง 0.6pp (<5pp)",
+          "known_weakness": "FV ทั้งก้อนแขวนบน guide FY28 +70% ตัวเดียว; 25x เป็น judgment multiple ไม่ใช่ค่าที่วัดได้"
+        },
+        "verified_claims": [
+          "ราคา: Nasdaq 216.26 vs CNBC 215.97 (diff 0.1%) — ราคา Warren 221.30 = 10-14 close ตรงกับ Nasdaq/CNBC รอบเช้า",
+          "Nasdaq FY Jan-2027 $9.25 (17 est), FY Jan-2028 $15.53 (15 est), FY Jan-2029 $21.64 — ไม่มี revision ใน 4 สัปดาห์",
+          "Weight math ✓: (103.45 + 30) / 567.44 = 23.52% ≤ TQR Strong ceiling 25%; +$40 = 25.28% เกิน — การจำกัดที่ $30 ถูกต้อง",
+          "Headline 'หยุดส่งของให้ลูกค้า unsafe-AI' — ค้นแล้วไม่พบรายงานยืนยันว่ามีการหยุดส่งจริง; พบเพียงคำพูด Jensen Huang เรื่อง AI lab safety = tone ไม่มีตัวเลขรายได้ (ตรงกับที่ Warren ประเมิน)",
+          "yfinance rate-limited 10-15 — ใช้ Nasdaq + CNBC API แทน (fallback ตามระบบ)"
+        ],
+        "concerns": [
+          "Correlation/concentration: หลัง ADD สายโซ่ AI-compute (NVDA 23.5% + TSM 5.6% + SPCX 5.5% + ARM 3.2% + ASML 1.7% + MU 1.5%) ≈ 41% ของพอร์ต และวันนี้ semis ร่วงพร้อมกันอีก (TSM -4.3% ทั้งที่ Q3 beat + Q4 guide แข็ง) — ความเสี่ยงไม่ได้อยู่ที่ NVDA ตัวเดียวแต่อยู่ที่ทั้งชั้นขยับด้วยกัน",
+          "Timing ก่อน event: hyperscaler Q3 (MSFT/META/GOOGL/AMZN) ปลาย ต.ค. คือ capex guide ของลูกค้า NVDA — ลูกค้าหลักหลายรายมี FCF ติดลบ/หนี้เพิ่ม (GOOGL debt ~2x, AMZN off-balance GPU leaseback) = demand NVDA พึ่ง financing ของลูกค้ามากขึ้น",
+          "ค้างรอบที่ 5: RA 5.1 note ยังเขียน 'no new risk escalation' ขณะที่ M&A/antitrust สะสมเพิ่ม (Groq DOJ probe, Reflection AI ~$25B talks) — คะแนนกับเนื้อหาไม่ตรงกัน",
+          "Share count Warren 23.7B ต่ำกว่า SEC diluted 24.285B 2.4% (นับ buyback ล่วงหน้า) — FV $384 vs $374 (เล็ก ไม่กระทบ action)"
+        ],
+        "red_flags": [],
+        "verify_further": [
+          "Hyperscaler capex guide ปลาย ต.ค.",
+          "NVDA Q3 FY27 ปลาย พ.ย.: FY28 outlook, FCF vs buyback + vendor-financing guarantees",
+          "Reflection AI: เงื่อนไขดีล/regulatory ถ้าเซ็นจริง"
+        ],
+        "caution_basis": "CAUTION เป็นเรื่อง sizing/correlation และ risk-score ที่ค้าง ไม่ใช่ valuation — FV อิสระ $374 รองรับ ADD ด้วย MoS ~41%"
+      },
+      {
+        "ticker": "MSFT",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 562,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": 0.0,
+        "note": "ราคา live 536.00 → MoS 4.6% — HOLD ถูก (ไม่ถึง gate 15%)"
+      },
+      {
+        "ticker": "META",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 711,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": 0.0,
+        "note": "HOLD+Flag ถูก: ราคา 733.77 เหนือ FV 3%; New Mexico UPA penalty ruling ปลาย ต.ค. = binary ทางกฎหมาย (Meta $3.45B vs state $35-40B) — ไม่กระทบ action HOLD"
+      },
+      {
+        "ticker": "AMZN",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 216,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 6.5,
+        "note": "Warren SOTP ยังใช้ tax 15% + net cash เก่า (ยังไม่แก้ — รอบที่ 2) — HOLD/no-add ถูก"
+      },
+      {
+        "ticker": "TSM",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 429,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": -1.3,
+        "note": "Q3 beat + Q4 guide $52.3-54.3B / GM 65-67% (6-K 10-15) แต่ราคา -4.3% เป็น 411.57 = MoS ~4% ที่ Charlie FV; HOLD ถูก"
+      },
+      {
+        "ticker": "ASML",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 1744,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 2.5,
+        "note": "FX ที่ Warren ใช้ (1.1509) เก่า; ราคา live 1,616 → MoS ~7.3% ที่ Charlie FV ยังนอก STARTER band — near-miss STARTER ของ Warren อย่าเพิ่ง trigger"
+      },
+      {
+        "ticker": "ARM",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 137,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 26.7,
+        "note": "gap >20% บังคับ CAUTION; Qualcomm breach verdict + bench ruling ค้าง; HOLD/no-add ถูก"
+      },
+      {
+        "ticker": "SPCX",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-15",
+        "charlie_verdict": "DISAGREE",
+        "disagree_type": "thesis",
+        "charlie_fv": 62,
+        "warren_fv_gap_pct": 0.0,
+        "charlie_fv_method": "sotp",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "OVERSIZED",
+        "variant_view_verdict": "NO_VARIANT",
+        "charlie_fv_work": "SOTP (Charlie watchlist 10-15 fresh): Connectivity 28.3B x 12 + Space 4.9B x 8 + AI leg — รวม $62/sh = Warren $62; ราคา live 144.83 = 2.3x FV",
+        "verified_claims": [
+          "ราคา CNBC 144.83 (10-15 10:12 ET, -4.8%)",
+          "Weight 31.39/567.44 = 5.53% ✓ (Warren คำนวณถูก)"
+        ],
+        "concerns": [
+          "OVERSIZED: ⚠️ Speculative cap ≤3% (กฎที่ห้ามปลด) แต่ position 5.53% — Warren ทำแค่ 'FREEZE/no-add' แล้ว HOLD ทั้งก้อน = ยอมรับการถือเกินเพดานต่อไปโดยไม่มีแผนแก้ (§4.7 ข้อ 4: เกิน cap → DISAGREE ห้ามผ่อน)",
+          "ราคา 2.3x FV อิสระ, lockup wave 10-24 + ~1.3B shares หลัง Q3 = supply overhang ใกล้มาก",
+          "ถ้า trim ให้เหลือ ≤3% ต้องขายราว $14 (เหลือ ~$17) — เหตุผลคือเพดานคุณภาพ ไม่ใช่ market timing"
+        ],
+        "red_flags": [
+          "Speculative position เกินเพดาน 1.8 เท่า และ Paper ไม่มี action แก้"
+        ],
+        "verify_further": [
+          "โอ๊ตตัดสิน: (ก) trim เหลือ ≤3% หรือ (ข) ประกาศยกเว้นเพดานเป็นลายลักษณ์อักษร — ห้ามปล่อยค้างเงียบ"
+        ]
+      },
+      {
+        "ticker": "MU",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 174,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 32.3,
+        "note": "gap >20% (normalized margin 29.6% vs 20%); Cyclical weight 1.5% ใต้เพดาน; ราคา 881 = 5x Charlie FV; Taiwan strike mediation 10-22"
+      },
+      {
+        "ticker": "GOOGL",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (Charlie watchlist batch เช้าวันเดียวกัน — ไม่มีข้อมูลใหม่ระหว่างวัน, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 347,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": -8.4,
+        "note": "Warren FV $320 ต่ำกว่า (revenue base เก่า) — ฝั่ง conservative; ราคา 351 ≈ FV; HOLD+Flag + re-estimate หลัง Q3 ถูก"
+      },
+      {
+        "ticker": "AAPL",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-15",
+        "charlie_verdict": "CAUTION",
+        "charlie_fv": 280,
+        "charlie_fv_floor": 250,
+        "warren_fv_gap_pct": -2.9,
+        "charlie_fv_method": "pe_multiple",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "CLEAN",
+        "variant_view_verdict": "NO_VARIANT",
+        "charlie_fv_work": {
+          "eps_used": 9.76,
+          "eps_fiscal_year": "FY2027 (Sep 2027)",
+          "eps_tier": 3,
+          "eps_source": "Charlie watchlist 10-15: consensus revenue $528,641M x 26.5% / 14,350M sh = $9.76",
+          "multiple_used": 28.7,
+          "calculation": "9.76 x 28.7 = 280",
+          "note": "carried same-day"
+        },
+        "concerns": [
+          "ราคา 345 = 23% เหนือ Charlie FV; ER Warren 4.2% < 10% — Fisher Rule 2 flag ถูกต้อง (flag เท่านั้น ไม่ใช่สัญญาณขายตามราคา)",
+          "CEO-transition test (Ternus call แรก ปลาย ต.ค.) ยังไม่เกิด — tier Inevitable ยังเป็น provisional",
+          "Position $3.10 ต่ำกว่า minimum $10 ของระบบ — เป็น noise ในพอร์ต ไม่มีผลทางเศรษฐกิจ"
+        ],
+        "verify_further": [
+          "Q4 FY26 call ปลาย ต.ค. (Ternus capital allocation)"
+        ]
+      },
+      {
+        "ticker": "V",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-15",
+        "charlie_verdict": "CAUTION",
+        "charlie_fv": 374,
+        "warren_fv_gap_pct": null,
+        "charlie_fv_method": "pe_multiple",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "NO_TQR",
+        "variant_view_verdict": "NO_VARIANT",
+        "charlie_fv_work": {
+          "eps_used": 14.98,
+          "eps_fiscal_year": "FY Sep-2027",
+          "eps_tier": 3,
+          "eps_source": "Nasdaq earnings-forecast API FY Sep-2027 consensus (ดึง 2026-10-15)",
+          "ttm_actual_eps": 12.78,
+          "multiple_used": 25.0,
+          "multiple_options": {
+            "5yr_median_pe": "ไม่มีใน cache (ไม่เคย cover) — ไม่ได้วัด",
+            "current_forward_pe": 26.5
+          },
+          "multiple_chosen_why": "25x = judgment haircut ต่ำกว่า forward P/E ปัจจุบัน; min() กับ current จะได้ FV = ราคา (tautology) — ตัวเลขนี้เป็นเพียงจุดอ้างอิงจนกว่า Warren ทำ card",
+          "calculation": "14.98 x 25 = 374.5 -> 374",
+          "mos_at_charlie_fv": "(374 - 397.29) / 374 = -6.2%",
+          "known_weakness": "ไม่มี measured 5yr median P/E; FV เป็น provisional"
+        },
+        "concerns": [
+          "UNCOVERED: Warren ไม่มี FV/WAF/TQR — ตรวจ gap ไม่ได้ (warren_fv_gap_pct = null)",
+          "ราคา 397.29 สูงกว่า provisional FV $374 — ซื้อมาโดยไม่ผ่าน gate",
+          "น้ำหนัก 0.9% — ผลต่อพอร์ตเล็ก แต่เป็นตัวอย่างของ coverage gap"
+        ],
+        "verify_further": [
+          "โอ๊ตตัดสิน: เพิ่มเข้า watchlist (Warren ทำ card) หรือปล่อยเป็น basket นอกระบบ"
+        ]
+      },
+      {
+        "ticker": "MA",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-15",
+        "charlie_verdict": "CAUTION",
+        "charlie_fv": 574,
+        "warren_fv_gap_pct": null,
+        "charlie_fv_method": "pe_multiple",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "NO_TQR",
+        "variant_view_verdict": "NO_VARIANT",
+        "charlie_fv_work": {
+          "eps_used": 22.94,
+          "eps_fiscal_year": "FY Dec-2027",
+          "eps_tier": 3,
+          "eps_source": "Nasdaq earnings-forecast API FY Dec-2027 consensus (ดึง 2026-10-15)",
+          "ttm_actual_eps": 18.78,
+          "multiple_used": 25.0,
+          "multiple_options": {
+            "5yr_median_pe": "ไม่มีใน cache (ไม่เคย cover) — ไม่ได้วัด",
+            "current_forward_pe": 26.7
+          },
+          "multiple_chosen_why": "25x = judgment haircut ต่ำกว่า forward P/E ปัจจุบัน; min() กับ current จะได้ FV = ราคา (tautology) — ตัวเลขนี้เป็นเพียงจุดอ้างอิงจนกว่า Warren ทำ card",
+          "calculation": "22.94 x 25 = 573.5 -> 574",
+          "mos_at_charlie_fv": "(574 - 612.76) / 574 = -6.8%",
+          "known_weakness": "ไม่มี measured 5yr median P/E; FV เป็น provisional"
+        },
+        "concerns": [
+          "UNCOVERED: Warren ไม่มี FV/WAF/TQR — ตรวจ gap ไม่ได้ (warren_fv_gap_pct = null)",
+          "ราคา 612.76 สูงกว่า provisional FV $574 — ซื้อมาโดยไม่ผ่าน gate",
+          "น้ำหนัก 0.9% — ผลต่อพอร์ตเล็ก แต่เป็นตัวอย่างของ coverage gap"
+        ],
+        "verify_further": [
+          "โอ๊ตตัดสิน: เพิ่มเข้า watchlist (Warren ทำ card) หรือปล่อยเป็น basket นอกระบบ"
+        ]
+      },
+      {
+        "ticker": "SGOV",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "charlie_verdict": "AGREE",
+        "charlie_fv": null,
+        "fv_unavailable_reason": "T-bill ETF (0-3M Treasury) — มูลค่า = NAV ไม่มี earnings ให้ทำ FV; ทำหน้าที่ War Chest ผูกกับ SGOV Staged Deployment (VIX ≥25)",
+        "charlie_fv_work": "N/A — cash-equivalent, NAV-based",
+        "tqr_verdict": "NO_TQR"
+      }
+    ],
+    "points_to_verify": [
+      "SPCX: ตัดสิน trim เหลือ ≤3% (~ขาย $14) หรือยกเว้นเพดานเป็นลายลักษณ์อักษร — ก่อน lockup 10-24",
+      "NVDA: CAUTION = ไม้แรกครึ่งเดียวตามกฎ; ส่วนที่เหลือพิจารณาหลัง hyperscaler capex prints ปลาย ต.ค.",
+      "V/MA: เลือกว่าจะให้ Warren cover หรือเก็บเป็น basket นอกระบบ",
+      "ASML: re-mark FX ก่อน trigger STARTER ใดๆ"
+    ],
+    "watch_out": [
+      "Correlation: AI-compute chain ~41% + hyperscaler layer (MSFT/META/AMZN/GOOGL ~34%) = ~75% ของพอร์ตผูกกับวงจร AI capex เดียว; ลูกค้าหลักของ NVDA มี FCF ติดลบ/หนี้เพิ่ม",
+      "Process: 8 จาก 13 positions (ASML/ARM/SPCX/MU/GOOGL/AAPL/V/MA) เปิดโดยโอ๊ตเองนอก gate — Paper กลายเป็นการ reconcile ย้อนหลัง; positions ที่ MoS ติดลบลึกที่สุดล้วนมาจากทางนี้",
+      "Semis ร่วงต่อเนื่อง 10-14/10-15 แม้ข่าวพื้นฐานดี (TSM beat) = sentiment-driven; drawdown ร่วมกันทั้งชั้นเป็นไปได้"
+    ],
+    "data_sources": [
+      "Nasdaq quote API + CNBC quote API — ราคา 2026-10-15 10:12 ET",
+      "Nasdaq earnings-forecast API — NVDA/V/MA 2026-10-15",
+      "Nasdaq EPS API — V/MA TTM actuals",
+      "SEC 6-K TSMC Q3 2026 (Q4 guide)",
+      "Web search: NVDA shipment-suspension headline (ไม่พบการยืนยัน; Jensen Huang CNN interview on AI lab safety)",
+      "Charlie watchlist review 2026-10-15 (same-day independent FV builds)",
+      "yfinance — rate-limited 10-15 (ไม่ได้ใช้)"
+    ]
+  },
+  {
+    "id": "review-2026-10-16",
+    "date": "2026-10-16",
+    "paper_id": "2026-10-16",
+    "paper_date": "2026-10-16",
+    "title": "Charlie Review — Paper #6 (NVDA ADD $30 ไม้ 1/2 + SGOV $80 + ASML FX recheck)",
+    "overall_verdict": "AGREE",
+    "overall_summary": "Warren ปิด concern ของ Paper #5 ครบทั้ง 4 ข้อ (share count, RA, timing ด้วยการแบ่งไม้, ASML FX) — NVDA FV $374 ตรงกับ Charlie อิสระ (gap 0%), MoS 41.9%, Reverse DCF ต้องการโตแค่ ~15%/ปี, weight 19.75% ใต้ TQR 25% → ไม้ 1 $30 ซื้อได้เต็มจำนวน. SGOV $80 ถูกต้องตามกฎเพราะไม่มีตัวที่ 2 ผ่าน gate. เหลือจุดเล็ก: total_invested นับไม้ที่ยังไม่ execute ซ้ำบทเรียนเดิม, เงื่อนไขไม้ 2 ควรเข้มขึ้น, และ CAUTION เดิมของ AMZN/ARM/MU (HOLD ไม่มีเงินเข้า) ยังค้าง.",
+    "frozen_tickers": [],
+    "prior_review_followup": {
+      "review-2026-10-15": "CAUTION → concern ทั้งหมดถูกตอบ: NVDA (4/4 ปิด), ASML FX (ปิด), SPCX (owner exception), V/MA/AAPL (หุ้นฟรี owner policy), MU (รับไปทบทวน), AMZN (เลื่อนไป Q3 re-base — รอบที่ 3, ห้ามเลื่อนอีก)"
+    },
+    "ticker_reviews": [
+      {
+        "ticker": "NVDA",
+        "warren_action": "ADD",
+        "warren_amount": 30,
+        "data_date": "2026-10-16",
+        "warren_price": 217.23,
+        "warren_fv_base": 374,
+        "warren_mos_pct": 41.92,
+        "warren_waf": 8.73,
+        "warren_tier": "🚀 Pre-Inevitable",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 374,
+        "charlie_fv_floor": 354,
+        "charlie_price_used": 217.23,
+        "live_price_check": "CNBC 217.23 / Nasdaq 217.23 (10-15 close; ตลาดปิด ณ เวลารัน 09:53 BKK 10-16) — diff 0%",
+        "warren_fv_gap_pct": 0.0,
+        "charlie_fv_method": "pe_multiple",
+        "variant_view_verdict": "NO_VARIANT",
+        "tier_verdict": "AGREE",
+        "tqr_verdict": "CLEAN",
+        "charlie_fv_work": {
+          "eps_used": 14.98,
+          "eps_fiscal_year": "FY2028 (Jan 2028)",
+          "eps_tier": 2,
+          "eps_source": "Revenue $680,000M (management FY28 ~+70% growth path, guide-midpoint) × 53.5% net margin ÷ 24,285M diluted sh (SEC 10-Q Q2 FY27) = $14.98; cross-check Nasdaq earnings-forecast API (ดึง 2026-10-16) FY Jan-2028 $15.53 (15 est, 0 up/0 down), FY Jan-2027 $9.25 (17 est, 1 up) — Charlie EPS ต่ำกว่า consensus 3.5% (conservative side)",
+          "eps_basis": "non-GAAP diluted",
+          "ttm_actual_eps": 6.9,
+          "multiple_used": 25.0,
+          "multiple_options": {
+            "5yr_median_pe": 51.3,
+            "current_forward_pe": 14.5
+          },
+          "multiple_chosen_why": "25x (haircut จาก median 51.3x สะท้อน RA 4.8) — min() จะได้ ~14.5x = ราคา/EPS = FV เท่าราคาโดยนิยาม (tautology) จึงไม่ใช้; 5yr median carried จาก Charlie 10-15 (<90 วัน)",
+          "calculation": "680,000 × 0.535 ÷ 24,285 = 14.98; 14.98 × 25 = 374.5 → 374",
+          "floor_calculation": "TTM 6.90 (1.24+1.57+1.87+2.22, Nasdaq EPS-surprise API) × 51.3 = 354",
+          "mos_at_charlie_fv": "(374 − 217.23) ÷ 374 = +41.9%",
+          "implied_growth_pct": 15.2,
+          "reverse_dcf_note": "ที่ $217.23, exit 25x, discount 10%: EPS ปีที่ 5 = 217.23 × 1.1^5 ÷ 25 = $13.99 → โต 15.2%/ปี จาก TTM $6.90 — ต่ำกว่า consensus FY28 ($15.53) ที่จะถึงใน ~15 เดือน; ตลาดแทบไม่ให้ค่าการเติบโตหลัง FY28",
+          "er_check": "Charlie ER = (374/217.23)^(1/5) − 1 = 11.5% + 30% = 41.5% vs Warren 41.48% — ตรงกัน (<5pp). growth 30% ใกล้ blend consensus FY27→FY30 (+68%/+39%/+22%) — ไม่เฟ้อ",
+          "known_weakness": "FV แขวนบน guide FY28 +70% + EPS ปีที่ 2 ไม่ได้ discount กลับมาวันนี้ (FV ~15 เดือนข้างหน้า); 25x เป็น judgment multiple; bear $207 ต่ำกว่าราคา 4.7%"
+        },
+        "prior_concerns_check": [
+          "Concern 1 (correlation AI-compute ~41%) → ตอบแล้ว: อ้างนโยบายโอ๊ต 07-26 ยกเลิก theme cap (§4.7 Charlie ไม่ตรวจเพดานที่ปลดแล้ว) + แบ่ง 2 ไม้ + แสดงตัวเลขจริง (compute chain 34.6%, ทั้งธีม 64.2%) ✓ ปิด",
+          "Concern 2 (timing ก่อน hyperscaler capex prints) → ตอบแล้ว: ไม้ 2 ผูกเงื่อนไขผล capex guide จริง ✓ ปิด",
+          "Concern 3 (RA 5.1 ไม่ตรงเนื้อหา ค้าง 5 รอบ) → แก้แล้ว: RA 4.8 พร้อมเหตุผล DOJ Groq/Reflection AI/vendor-financing ✓ ปิด (RA* ใน TQR 5.5 ยังไม่ sync — Warren flag ไป /warren theme แล้ว)",
+          "Concern 4 (share count 23.7B) → แก้แล้ว: 24.285B SEC diluted, FV $374 = Charlie ✓ ปิด"
+        ],
+        "verified_claims": [
+          "ราคา $217.23 ✓ CNBC + Nasdaq ตรงกัน (10-15 close)",
+          "FV $374 ✓ = Charlie FV อิสระ (gap 0%) — EPS chain 680,000×0.535/24,285 ตรง",
+          "MoS 41.92% ✓; ER 41.48% ✓ (Charlie 41.5%)",
+          "Weight math ✓: (101.54+30)/666.05 = 19.75%; ไม้ 2 → 24.25% ≤ TQR Strong 25%; $70 = 25.75% เกิน — การจำกัด $60 ถูกต้อง",
+          "TQR 7.89 = Strong band (7.0–8.5) ↔ ceiling 25 ✓; RA* 5.5 ≠ ra 4.8 (ไม่ใช่ copy) ✓; ไม่พบคำอ้างราคาใน TQR reasoning",
+          "Cash reconciliation ✓: 47.82 + 100 = 147.82; deploy 30+80 = 110 → cash 37.82",
+          "DOJ Groq probe: รายงาน 09-10 เป็นการตรวจโครงสร้างดีล ไม่ใช่ finding; ผลที่น่าจะเป็น = ค่าปรับ ไม่ใช่ unwind — ไม่มีข่าวยกระดับใหม่; Reflection AI ไม่พบการยืนยันดีล"
+        ],
+        "concerns": [
+          "Data integrity (เล็ก แต่ซ้ำบทเรียนที่ Warren เพิ่งเขียน): total_invested_usd = 130 นับไม้ 1 ที่ 'รอโอ๊ต execute' เข้าไปแล้ว — lessons_summary 10-16 เองบอกว่า 'ADD ที่ไม่ได้ execute ห้ามนับ total_invested' → ให้ Kim/Warren confirm หลังโอ๊ตซื้อจริงก่อน carry",
+          "เงื่อนไขไม้ 2 หลวมไป: 'ไม่มี hyperscaler ตัด capex guide' — ความเสี่ยงจริงคือ capex growth ชะลอ/ย้ายไป off-balance (AMZN leaseback SPV) หรือ guide FY27 แบนลง แม้ไม่ 'ตัด' ก็พอทำ semis ทั้งชั้น re-rate; ควรเพิ่มเงื่อนไข 'capex growth FY27 guide ไม่ลดลงจากรอบก่อน'",
+          "หลังไม้ 2 พอร์ตจะชน TQR ceiling 25% พอดี — ถ้าราคา NVDA ขึ้น >3% ก่อนไม้ 2 ต้องลดไม้ 2 เป็น $20 (เงื่อนไข ≤25% มีแล้ว — ต้องคำนวณใหม่วันซื้อ ไม่ใช้ตัวเลข 10-16)"
+        ],
+        "red_flags": [],
+        "verify_further": [
+          "Hyperscaler capex guides MSFT/META/GOOGL/AMZN ~10-28→10-30 (gate ไม้ 2)",
+          "NVDA Q3 FY27 ปลาย พ.ย.: FY28 outlook ยืนยัน +70%? + vendor-financing guarantees",
+          "หลังโอ๊ต execute: แก้ total_invested ให้ตรง Sheets"
+        ]
+      },
+      {
+        "ticker": "MSFT",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 562,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": 0.0,
+        "note": "MoS 4.0% ที่ $539.44 — HOLD ถูก; STARTER trigger ≤~$517 ถูกต้อง"
+      },
+      {
+        "ticker": "META",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 711,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": 0.0,
+        "note": "ราคา $736.72 เหนือ FV 3.6%; NM UPA ruling ปลาย ต.ค. — HOLD ถูก"
+      },
+      {
+        "ticker": "AMZN",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 216,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 6.9,
+        "note": "Warren ยอมรับ tax/net cash แก้ใน Q3 re-base ~10-30 (รอบที่ 3 ที่ยังไม่แก้ — ห้ามเลื่อนอีก); ราคาเหนือ Charlie FV 18% — HOLD/no-add ถูก"
+      },
+      {
+        "ticker": "TSM",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 429,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": -1.3,
+        "note": "MoS ~1.6% ที่ Charlie FV — HOLD ถูก; ห้ามใช้ ER แทน MoS ✓"
+      },
+      {
+        "ticker": "ASML",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-16",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 1744,
+        "warren_fv_gap_pct": 0.0,
+        "charlie_fv_method": "pe_multiple",
+        "charlie_fv_work": "€51.83 × FX 1.1215 = $58.13 × 30 = 1744 (Charlie watchlist 10-15 fresh; FX ตรงกันแล้ว)",
+        "tier_verdict": "AGREE",
+        "variant_view_verdict": "NO_VARIANT",
+        "concerns": [
+          "Concern เดิม (FX stale 1.1509) แก้แล้ว — Warren FV $1,744 = Charlie; MoS 4.96% นอก STARTER band → HOLD ถูก",
+          "FX เป็นตัวแปรที่ขยับทุกวัน: EUR/USD −1% = FV −$17 — trigger STARTER ≤$1,604 ต้องคำนวณใหม่ ณ วันซื้อ"
+        ],
+        "tqr_verdict": "CLEAN",
+        "prior_concern_closed": true
+      },
+      {
+        "ticker": "ARM",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 137,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 26.7,
+        "note": "gap >20% บังคับ CAUTION; Qualcomm bench remedy ค้าง; HOLD/no-add ถูก"
+      },
+      {
+        "ticker": "SPCX",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-16",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 62,
+        "warren_fv_gap_pct": 0.0,
+        "charlie_fv_method": "sotp",
+        "charlie_fv_work": {
+          "method_note": "SOTP — Connectivity + Space + AI leg (Charlie watchlist 10-15 fresh)",
+          "calculation": "รวม $62/sh",
+          "price_multiple_of_fv": "148.62/62 = 2.4x"
+        },
+        "tier_verdict": "AGREE",
+        "variant_view_verdict": "NO_VARIANT",
+        "concerns": [
+          "Speculative cap: ปิดด้วย written owner exception ของโอ๊ต (10-15) — ไม่ re-flag; Warren no-add ✓ ตรงกับเงื่อนไขยกเว้น",
+          "Lockup 10-24 ยังเป็น supply overhang — ข้อมูลเท่านั้น ไม่ใช่สัญญาณขาย"
+        ],
+        "tqr_verdict": "OVERSIZED",
+        "owner_exception": "โอ๊ต 10-15: ถือต่อเกิน cap 3% (4.6%) ไม่ trim, ห้าม add",
+        "prior_concern_closed": true
+      },
+      {
+        "ticker": "MU",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 174,
+        "charlie_verdict": "CAUTION",
+        "warren_fv_gap_pct": 32.3,
+        "note": "gap >20% (normalized margin 29.6% vs 20%) — Warren รับไปทบทวนใน /warren watchlist; Cyclical 1.3% ใต้เพดาน; HOLD/no-add ถูก"
+      },
+      {
+        "ticker": "GOOGL",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "carried_from": "2026-10-15",
+        "carried_source": "charlie-watchlist-2026-10-15 (fresh builds 10-15; ไม่มีข่าวใหม่/earnings ใหม่ระหว่าง 10-15→10-16, ราคาขยับ <10%)",
+        "unchanged": true,
+        "charlie_fv": 347,
+        "charlie_verdict": "AGREE",
+        "warren_fv_gap_pct": -8.4,
+        "note": "Warren FV $320 ต่ำกว่า (revenue base เก่า) = ฝั่ง conservative; HOLD+Flag ถูก"
+      },
+      {
+        "ticker": "AAPL",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-16",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 280,
+        "warren_fv_gap_pct": -2.9,
+        "charlie_fv_method": "pe_multiple",
+        "charlie_fv_work": "9.76 (FY27 Sep, tier3 consensus rev × 26.5%) × 28.7 = 280 (Charlie watchlist 10-15 fresh)",
+        "tier_verdict": "AGREE",
+        "variant_view_verdict": "NO_VARIANT",
+        "concerns": [
+          "หุ้นฟรีจากโบรก (owner policy) = passive holding $3.19 — ไม่ re-flag; ราคาเหนือ FV ~22% → no-add ถูก",
+          "CEO-transition test (Ternus call ปลาย ต.ค.) — ติดตามใน watchlist"
+        ],
+        "tqr_verdict": "CLEAN",
+        "prior_concern_closed": true
+      },
+      {
+        "ticker": "V",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-16",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 374,
+        "warren_fv_gap_pct": null,
+        "charlie_fv_method": "pe_multiple",
+        "charlie_fv_work": "14.98 (FY Sep-27, tier3 Nasdaq) × 25 (judgment; ไม่มี 5yr median ใน cache) = 374 — provisional",
+        "tier_verdict": "AGREE",
+        "variant_view_verdict": "NO_VARIANT",
+        "concerns": [
+          "หุ้นฟรีจากโบรก (owner policy) — passive, ไม่ต้อง coverage; ราคา $399.75 เหนือ provisional FV 7% → no-add ถูก"
+        ],
+        "tqr_verdict": "NO_TQR",
+        "prior_concern_closed": true
+      },
+      {
+        "ticker": "MA",
+        "warren_action": "HOLD",
+        "warren_amount": 0,
+        "data_date": "2026-10-16",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": 574,
+        "warren_fv_gap_pct": null,
+        "charlie_fv_method": "pe_multiple",
+        "charlie_fv_work": "22.94 (FY Dec-27, tier3 Nasdaq) × 25 (judgment; ไม่มี 5yr median ใน cache) = 574 — provisional",
+        "tier_verdict": "AGREE",
+        "variant_view_verdict": "NO_VARIANT",
+        "concerns": [
+          "หุ้นฟรีจากโบรก (owner policy) — passive, ไม่ต้อง coverage; ราคา $616.32 เหนือ provisional FV 7% → no-add ถูก"
+        ],
+        "tqr_verdict": "NO_TQR",
+        "prior_concern_closed": true
+      },
+      {
+        "ticker": "SGOV",
+        "warren_action": "HOLD",
+        "warren_amount": 80,
+        "action_note": "Paper ระบุ action HOLD + amount_usd 80 = parking เพิ่ม (cash-equivalent ไม่ใช่ BUY หุ้น)",
+        "charlie_verdict": "AGREE",
+        "charlie_fv": null,
+        "fv_unavailable_reason": "T-bill ETF (0-3M Treasury) — มูลค่า = NAV ไม่มี earnings ให้ทำ FV; ทำหน้าที่ War Chest/parking ตาม WARREN.md Rule 4 + SGOV Staged Deployment",
+        "charlie_fv_work": "N/A — cash-equivalent, NAV-based (ราคา $100.55 CNBC/Nasdaq 10-15, 52W $100.27–100.73)",
+        "tqr_verdict": "NO_TQR",
+        "variant_view_verdict": "NO_VARIANT",
+        "tier_verdict": "AGREE",
+        "verified_claims": [
+          "การจัดสรรตามกฎ ✓: ไม่มีหุ้นตัวที่ 2 ผ่าน gate (ASML MoS 4.96%, MSFT 4.0%, TSM 0.3%, ที่เหลือติดลบ) → SGOV คือที่พักเงินที่ถูกต้อง (WARREN.md Rule 4/#468)",
+          "หลังซื้อ SGOV $190.07 = 28.5% + เงินสด $37.82 = 5.7% → reserve ~34% — VIX 16.46 ต่ำกว่า Stage 1 (25) จึงไม่ trigger deployment ✓",
+          "เงินสดเหลือ $37.82 = earmark NVDA ไม้ 2 $30 + เศษ $7.82 ✓ สมเหตุสมผล (ไม่ต้องขาย SGOV ไปมาภายใน 2 สัปดาห์)"
+        ],
+        "concerns": [
+          "Yield ที่ใช้ใน war-chest math (~4%/ปี) สูงกว่าข้อมูลล่าสุดที่พบ: 30-day SEC yield ~3.6% (YieldFinder ต้น ก.ย. 2026) — ต่างกัน ~$0.3/ปีบน $80 ไม่กระทบ decision แต่ควรใช้ตัวเลขจริง",
+          "AVGO/UBER ที่ watchlist ยังเป็น BUY แต่ valuation stale 50-60 วัน — SGOV $80 นี้อาจเป็นแค่ที่พักชั่วคราว; ถ้า /warren watchlist รอบหน้ายืนยันผ่าน gate ควรย้ายจาก SGOV (ไม่ใช่รอเงินฝากเดือนหน้า)"
+        ],
+        "red_flags": [],
+        "verify_further": [
+          "เช็คค่าธรรมเนียมโบรกบนการซื้อ ETF $80 (ช่อง S ในชีต)"
+        ]
+      }
+    ],
+    "points_to_verify": [
+      "NVDA ไม้ 2 ($30): ใช้เมื่อ hyperscaler capex guide ไม่ลด *growth* (ไม่ใช่แค่ไม่ 'ตัด') + MoS ≥15% + คำนวณ weight ใหม่ ณ วันซื้อ ≤25%",
+      "หลังโอ๊ตซื้อ NVDA ไม้ 1 จริง: ยืนยัน total_invested $130 กับ Sheets (Paper ใส่ไว้ล่วงหน้าแล้ว)",
+      "AMZN SOTP: tax/net cash ต้องแก้ใน Q3 re-base ~10-30 — ค้างมา 3 รอบ",
+      "AVGO/UBER: ใส่ /warren watchlist รอบถัดไป — ถ้าผ่าน gate อาจย้ายจาก SGOV"
+    ],
+    "watch_out": [
+      "Event cluster 10-24→10-30: SPCX lockup + hyperscaler Q3 capex guides + META NM penalty ruling + AAPL call — พอร์ตส่วนหุ้น ~98% อยู่ในธีม AI; ถ้า capex guide ผิดหวัง ทั้งชั้นอาจขยับพร้อมกัน (กันชนคือ SGOV+เงินสด ~34%)",
+      "Demand NVDA พึ่ง financing ของลูกค้ามากขึ้น (off-balance GPU leaseback, vendor-financing guarantees SB Energy $105B) — RA 4.8 สะท้อนแล้ว แต่ FV ยังแขวนบน guide FY28 ตัวเดียว",
+      "Input staleness เอียง FV ขึ้นเสมอ (ASML FX, NVDA shares) — Warren เสนอ re-mark FX/shares ทุก batch แล้ว ควรทำให้เป็นกฎจริง"
+    ],
+    "data_sources": [
+      "CNBC quote API + Nasdaq quote API — 14 holdings, 10-15 close (ดึง 2026-10-16 09:53 BKK, ตลาดปิด)",
+      "Nasdaq earnings-forecast API — NVDA yearly/quarterly (2026-10-16)",
+      "Nasdaq earnings-surprise API — NVDA TTM actuals 6.90",
+      "Charlie watchlist review 2026-10-15 (fresh builds สำหรับ carry-forward)",
+      "Web: DOJ probe Nvidia–Groq licensing deal (NYT via The Star 2026-09-10, techzine) — ไม่พบข่าวยกระดับใหม่",
+      "Web: SGOV 30-day SEC yield ~3.63% (yieldfinder.app, ต้น ก.ย. 2026)",
+      "yfinance — ไม่ได้ใช้ (rate-limit pattern; ใช้ CNBC/Nasdaq แทน)"
+    ]
   }
 ]
