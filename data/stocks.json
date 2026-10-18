@@ -151,6 +151,155 @@
       "ซื้อหุ้นคืนระดับ $235B ควบคู่การค้ำประกันการเงินให้ลูกค้า ต้องดูว่าเงินสดอิสระรองรับไหวไหมตอนงบ Q3"
     ]
   },
+  "TSM": {
+    "symbol": "TSM",
+    "display": "TSMC",
+    "category": "semiconductor",
+    "name": "Taiwan Semiconductor",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "Advanced Foundry"
+    ],
+    "bull": [
+      "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
+      "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
+      "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
+      "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
+      "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
+    ],
+    "risk": [
+      "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
+      "US tariff + trade policy uncertainty กระทบ supply chain",
+      "Customer concentration: Apple + NVIDIA + AMD = top 3",
+      "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
+      "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 4,
+    "waf": 8.1,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 412.61,
+    "fv": 436.0,
+    "mos": 5.36,
+    "fpe": 18.93,
+    "peg": 0.95,
+    "scores": {
+      "bq": [
+        9.5,
+        "green",
+        95
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        6.3,
+        "orange",
+        63
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "10-18 post-print rebase: FY27 revenue consensus NT$7.43T->7.65T -> FV $423->$436; price $412.61 (post-print, risk-off) -> MoS +5.36% vs gate 15% (9.6 pts short, outside STARTER band 8-15). PEG 0.95, ER 21.1%, WAF 8.10 HIGH. HOLD (holding; no add). Watch: price <= ~$401 enters STARTER band (MoS 8%), <= ~$371 = full gate 15%.",
+    "updated": "2026-10-18",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-10-18",
+      "tier": "🏛️ Inevitable",
+      "tier_slug": "inevitable",
+      "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
+      "why": "Consensus อ่าน Q2 print ว่า \"ดีแต่ priced-in, จับตา margin/capex\" — Warren เห็น second-level signal ที่ FY2026 growth guidance ขึ้นเป็น **ครั้งที่สองของปี** (>30%→\"slightly above 40%\") + CapEx ขึ้นเป็น $60–64B + Arizona +$100B + demand \"stronger and stronger\" และ supply ตึงถึง 2029–2030 = demand เร่งจริง ไม่ใช่แค่ทรงตัว. แต่หลัง FV recalibration ใช้ consensus EPS (ไม่ใช้ peak-year) FV base ขยับเป็น ~$420 และราคา $403.41 → **MoS เหลือ ~4% เท่านั้น** = ซื้อเกือบเต็มมูลค่า. edge จึงไม่ใช่ \"ราคาถูก\" แต่คือ \"คุณภาพหายากระดับ Inevitable ที่ควรถือ ไม่เติมจนกว่าจะมี buffer\".",
+      "risk": "US-Taiwan geopolitical escalates to military action, OR Apple+NVIDIA shift >30% of volume to Samsung/Intel Foundry simultaneously, OR the guided H2 margin compression (N2 ramp −3–4pp GM) proves deeper/longer than management indicated."
+    },
+    "tier": "🏛️ Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price Nasdaq quote API = CNBC quote API 10-16 close (0% divergence); 52w range 266.82-487.47 (CNBC) - price at ~65% of range",
+        "TSMC Q3 release (pr.tsmc.com 10-15): revenue NT$1,494.24B / US$46.72B, NI NT$763.06B, EPS NT$29.43 (US$4.60/ADR), GM 66.4%; Q4 guide US$52.3-54.3B",
+        "Nasdaq EPS API: Q3-26 actual 4.60 vs consensus 4.45 (beat 3.4%); FY27 panel 21.44 -> 21.50 since 10-15 (4 up, 0 down)",
+        "Warren FY27 revenue NT$7.65T confirmed vs yfinance consensus NT$7,647B"
+      ],
+      "concerns": [
+        "FV at min() rule equals price (tautology) - no provable margin of safety at $412.61 without assuming the median multiple holds; HOLD is correct, not a BUY",
+        "TQR ra_ex_valuation 5.5 = scores.ra 5.5 exactly - acceptable for TSM (RA is geopolitics/Taiwan, non-valuation) but should be shown explicitly at next playbook refresh",
+        "FY26/FY27 capex guidance from the Oct call not independently verified (only the July raise to US$60-64B)"
+      ],
+      "summary": "",
+      "review_date": "2026-10-18"
+    },
+    "mark_easy": {
+      "one_liner": "โรงงานชิปที่ชิป AI ทุกตัวต้องผ่าน — หลังงบ Q3 นักวิเคราะห์ปรับประมาณการรายได้ปี 2027 ขึ้น FV ขยับเป็น $436 ราคา $412.61 MoS +5.36% ยังไม่ถึงเกณฑ์ 15% Warren HOLD, Charlie AGREE",
+      "what": "TSMC รับจ้างผลิตชิปตามแบบของลูกค้า (pure-play foundry) โดยไม่ออกแบบชิปขายแข่งกับลูกค้า ลูกค้าอย่าง Apple, NVIDIA, AMD จึงไว้ใจส่งแบบลับมาให้ผลิต",
+      "why_invest": [
+        "งบ Q3: รายได้ US$46.72B เกินขอบบนของเป้า gross margin 66.4% และ guide Q4 US$52.3-54.3B — ผู้บริหารยังปรับเป้าการเติบโตรายได้ปี 2026 (USD) ขึ้นเป็นราว 44% จากเดิม 'มากกว่า 40% เล็กน้อย'",
+        "ผูกขาดชิปขั้นสูง (N3/N2) และ CoWoS ที่เป็นคอขวดของการประกอบชิป AI — คุณภาพธุรกิจและการเติบโตได้ 9.5/10 ทั้งคู่",
+        "WAF 8.10 conviction HIGH, TQR Strong 8.38 และ PEG 0.95 — ผลตอบแทนคาดการณ์ 21.11%/ปี"
+      ],
+      "watch_out": [
+        "MoS +5.36% ยังห่างเกณฑ์ 15% อยู่ 9.6 จุด — ถือได้ แต่ยังไม่ใช่จังหวะเติม (Warren บอกโซน STARTER เริ่มที่ราว $401 และเกณฑ์เต็มที่ราว $371)",
+        "Charlie เตือนว่า FV ของเขา ($413) แทบเท่าราคาพอดี — ยังพิสูจน์ส่วนเผื่อความปลอดภัยไม่ได้ ถ้าไม่สมมติว่าตลาดให้ P/E 20 เท่าต่อ",
+        "ความเสี่ยงไต้หวัน, มาร์จิ้นที่ใช้ 49% สูงกว่าค่าปกติ ~40% และผู้บริหารยังไม่ให้ guide ปี 2027"
+      ]
+    },
+    "mark_full": {
+      "business_overview": "TSMC คือโรงงานรับจ้างผลิตชิปที่ใหญ่ที่สุดในโลก รายได้ส่วนใหญ่มาจากกลุ่ม HPC (AI + เซิร์ฟเวอร์) ตามด้วยสมาร์ทโฟน/ยานยนต์ ซึ่งช่วยเป็นกันชนนอกธีม AI ได้บ้าง",
+      "tam": "ดีมานด์ชิป AI ทำให้ foundry ขั้นสูงตึงตัวต่อเนื่อง บริษัทตั้งเป้ารายได้ระยะยาวโตเฉลี่ย ~25%/ปี (2024-2029) พร้อม gross margin 56%+ ตลอดวัฏจักร",
+      "moat": "โมเดล pure-play ที่ไม่แข่งกับลูกค้า + ความเป็นผู้นำ process (N3/N2/A16) + CoWoS advanced packaging — Samsung/Intel ยังตามไม่ทันเรื่อง yield ทำให้ชิป AI ระดับท็อปแทบทุกตัวต้องผ่าน TSMC",
+      "latest_financials": "Q3 2026 (ประกาศ 15 ต.ค.): รายได้ NT$1,494.24B (US$46.72B) เกินขอบบนของเป้า, gross margin 66.4%, กำไรสุทธิ NT$763.06B, EPS NT$29.43 (US$4.60/ADR) Guide Q4 US$52.3-54.3B ผู้บริหารปรับเป้าการเติบโตรายได้ปี 2026 (USD) เป็น ~44% ส่วน capex $60-64B คงเดิม — หลังงบ ค่าเฉลี่ยประมาณการรายได้ปี 2027 ขยับจาก NT$7.43T เป็น NT$7.65T Warren จึงปรับฐาน: NT$7.65T × มาร์จิ้นสุทธิ 49% → EPS $21.80/ADR × 20 เท่า = FV $436 (Bull $523 / Bear $327) ราคา $412.61 MoS +5.36% P/E ล่วงหน้า 18.9 เท่า PEG 0.95 ผลตอบแทนคาดการณ์ 21.11%/ปี WAF 8.10 — Charlie ได้ FV $413",
+      "key_points": [
+        "HOLD: ถือต่อ ไม่เติม — FV $423→$436 แต่ MoS +5.36% ยังขาดเกณฑ์ 15% อยู่ 9.6 จุด",
+        "Charlie AGREE — ยืนยันตัวเลขงบ Q3 และรายได้ปี 2027 ที่ Warren ใช้ตรงกับค่าเฉลี่ยนักวิเคราะห์ FV Charlie $413 (ถ้าใช้ P/E กลาง 20 เท่าได้ $430)",
+        "ข่าว Terafab: C.C. Wei ยืนยันว่าคุยกับ Musk แค่ระยะแรก และ TSMC ต้องเป็นคนบริหารโรงงานเอง — ยังไม่มีดีล ไม่มีตัวเลข จึงไม่ได้นำมาคิดใน FV",
+        "จุดทดสอบ: capex และ gross margin ปี 2027 จาก conference call และการปรับประมาณการรอบหลังงบให้ครบ"
+      ]
+    },
+    "warren_easy": [
+      "TSM tier 🏛️ Inevitable WAF 8.10 conviction HIGH — หลังงบ Q3 ค่าเฉลี่ยประมาณการรายได้ปี 2027 ขึ้นเป็น NT$7.65T Warren ปรับ FV $423→$436 (Bull $523 / Bear $327)",
+      "ราคา $412.61 MoS +5.36% เทียบเกณฑ์ 15% ห่าง 9.6 จุด → HOLD (ถือของเดิม ไม่เติม) โซน STARTER เริ่มที่ราว $401",
+      "ข่าว Texas/Terafab ยังเป็นแค่การคุยระยะแรก ไม่มีดีล ไม่เปลี่ยนคะแนน — Charlie AGREE"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "review_date": "2026-10-18",
+      "paragraphs": [
+        "Charlie ยืนยันตัวเลขงบ Q3 จากประกาศทางการของ TSMC (รายได้ NT$1,494.24B, EPS US$4.60/ADR, GM 66.4%) และรายได้ปี 2027 NT$7.65T ที่ Warren ใช้ตรงกับค่าเฉลี่ยนักวิเคราะห์พอดี",
+        "FV ของ Charlie $413 เทียบ Warren $436 (ห่าง 5.3%) — ใช้ EPS ปี 2027 $21.50 × P/E 19.19 เท่า (ตามกฎเลือกตัวคูณที่ต่ำกว่า) ถ้าใช้ P/E กลาง 5 ปี 20 เท่าจะได้ $430 ทั้งสองทางยังต่ำกว่าเกณฑ์ MoS 15%",
+        "ข้อสังเกต: ตอนนี้ P/E ล่วงหน้าต่ำกว่าค่ากลาง ทำให้กฎ min() คืน FV เท่าราคาพอดี — FV ตัวนี้จึงไม่ได้บอกส่วนเผื่อความปลอดภัย HOLD ถูกต้อง แต่ยังไม่ใช่ BUY",
+        "ต้องติดตาม: ความเห็นเรื่อง capex/gross margin ปี 2027 จาก conference call เดือน ต.ค. ที่ยังตรวจสอบอิสระไม่ได้"
+      ]
+    },
+    "idea_th": "HOLD — TSMC คือคอขวดที่ชิป AI ทุกตัวต้องผ่าน งบ Q3 เกินเป้า guide Q4 โตต่อ และผู้บริหารปรับเป้าปี 2026 ขึ้นเป็น ~44% นักวิเคราะห์จึงขยับประมาณการรายได้ปี 2027 ขึ้น FV เป็น $436 ราคา $412.61 MoS +5.36% ยังไม่ถึงเกณฑ์ 15% ถือของเดิมต่อ ไม่เติม Charlie AGREE",
+    "story_gate_th": {
+      "what": "TSMC เป็นผู้ผลิตชิปขั้นสูง (N3, N2, A16) ในปริมาณมากเพียงรายเดียวของโลก — ชิป AI ระดับท็อปแทบไม่มีตัวไหนผลิตได้โดยไม่ผ่าน TSMC และความร่วมมือกับ NVIDIA ผูกความสัมพันธ์ไว้ระยะยาว",
+      "why": "งบ Q3 ยืนยันดีมานด์จริง — รายได้เกินขอบบนของเป้า guide Q4 โตต่อ และเป้าการเติบโตปี 2026 ขึ้นเป็น ~44% FV ขยับเป็น $436 แต่ edge ตอนนี้ยังไม่ใช่ 'ราคาถูก' เป็น 'คุณภาพหายากที่ควรถือ แล้วรอราคามีส่วนเผื่อก่อนเติม'",
+      "risk": "ถ้าความตึงเครียดสหรัฐฯ-ไต้หวันลุกลามเป็นการทหาร, Apple+NVIDIA ย้ายการผลิตไป Samsung/Intel พร้อมกันเกิน 30%, หรือมาร์จิ้นที่ถูกกดจาก N2 และโรงงานต่างประเทศลึกและนานกว่าที่ผู้บริหารบอก"
+    },
+    "bull_th": [
+      "งบ Q3: รายได้ US$46.72B สูงกว่าขอบบนของเป้า gross margin 66.4% แม้มี N2 กดมาร์จิ้น",
+      "Guide Q4 US$52.3-54.3B และเป้าการเติบโตรายได้ปี 2026 (USD) ปรับขึ้นเป็น ~44%",
+      "หลังงบ ค่าเฉลี่ยประมาณการรายได้ปี 2027 ขึ้นจาก NT$7.43T เป็น NT$7.65T → FV $436",
+      "ผู้นำ process N3/N2/A16 และ CoWoS advanced packaging คือคอขวดของชิป AI ทุกตัว",
+      "PEG 0.95 และผลตอบแทนคาดการณ์ 21.11%/ปี ผ่านเกณฑ์ — ติดแค่ MoS"
+    ],
+    "risk_th": [
+      "MoS +5.36% ยังห่างเกณฑ์ 15% ราว 9.6 จุด และ FV ของ Charlie ($413) แทบเท่าราคา — ยังไม่มีส่วนเผื่อความปลอดภัยที่พิสูจน์ได้",
+      "ความเสี่ยงภูมิรัฐศาสตร์ช่องแคบไต้หวัน — ความเสี่ยงหลักที่ตลาดให้ส่วนลด",
+      "มาร์จิ้นสุทธิที่ใช้ 49% สูงกว่าค่าปกติ ~40% — N2 และโรงงานสหรัฐฯ กดมาร์จิ้น และค่าเงินไต้หวันที่แข็งขึ้นก็เป็นแรงกดดัน",
+      "ผู้บริหารยังระมัดระวังเรื่องดีมานด์ AI และไม่ให้ guide ปี 2027 — ถ้าดีล Terafab เกิดขึ้นจริง อาจเพิ่ม capex โรงงานต่างประเทศที่กดมาร์จิ้น",
+      "ความเสี่ยงเสียงานชิป TPU ของ Google ให้คู่แข่ง และลูกค้าอาจต้านการขึ้นราคาเวเฟอร์"
+    ]
+  },
   "MSFT": {
     "symbol": "MSFT",
     "display": "MSFT",
@@ -299,152 +448,6 @@
       "พึ่งพา OpenAI สูง — ทั้ง backlog และกำไรพิเศษ ~$10B ใน GAAP ปี FY26",
       "การยืดอายุการใช้งานสินทรัพย์ (15→25 ปี) ทำให้กำไรดูดีขึ้น — ต้องจับตาคุณภาพกำไร",
       "FV พึ่งตัวคูณ 25.21 เท่า (ลด 20% จาก median 5 ปี) — ถ้าตลาดให้ multiple ต่ำลง FV ลดตาม"
-    ]
-  },
-  "TSM": {
-    "symbol": "TSM",
-    "display": "TSMC",
-    "category": "semiconductor",
-    "name": "Taiwan Semiconductor",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "Advanced Foundry"
-    ],
-    "bull": [
-      "N2/A16 process leadership — Intel, Samsung ยัง catch up ไม่ถึง",
-      "CoWoS advanced packaging chokepoint สำหรับ AI chips ทุกตัว",
-      "Q1 2026 Revenue +41% YoY, Gross Margin 66% = exceptional economics",
-      "PEG 0.75 — cheap relative to growth สำหรับ foundry dominance",
-      "AI Accelerator demand visibility แข็งแกร่ง — customer backlog ยาว"
-    ],
-    "risk": [
-      "Taiwan Strait geopolitical risk — ความเสี่ยงหลักที่ตลาดให้ discount ใหญ่",
-      "US tariff + trade policy uncertainty กระทบ supply chain",
-      "Customer concentration: Apple + NVIDIA + AMD = top 3",
-      "Intel Foundry 18A ถ้าสำเร็จ capture market share บางส่วน",
-      "Arizona/Japan fab ramp cost กด margin ระยะกลาง 2026-2028"
-    ],
-    "action": "hold",
-    "actionLabel": "Hold",
-    "conviction": 4,
-    "waf": 7.98,
-    "wafBadge": "waf-mid",
-    "wafComposite": "waf-composite-blue",
-    "price": 430.0,
-    "fv": 423.4,
-    "mos": -1.56,
-    "fpe": 20.31,
-    "peg": 1.02,
-    "scores": {
-      "bq": [
-        9.5,
-        "green",
-        95
-      ],
-      "gp": [
-        9.5,
-        "green",
-        95
-      ],
-      "va": [
-        5.8,
-        "orange",
-        58
-      ],
-      "ra": [
-        5.5,
-        "orange",
-        55
-      ]
-    },
-    "idea": "Q3 rebase 10-15 — beat (US$46.72B vs guide 44.6-45.8) + Q4 guide US$52.3-54.3B; FY27 consensus NT$7.43T -> FV $411->$423; price $430 (pre-print close) -> MoS -1.56% vs gate 15% (16.6 pts short). PEG 1.02, ER 19.7%, WAF 7.98 HIGH. HOLD (holding; no add). ⚠️ price does not reflect today's print.",
-    "updated": "2026-10-15",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-10-15",
-      "tier": "🏛️ Inevitable",
-      "tier_slug": "inevitable",
-      "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
-      "why": "Consensus อ่าน Q2 print ว่า \"ดีแต่ priced-in, จับตา margin/capex\" — Warren เห็น second-level signal ที่ FY2026 growth guidance ขึ้นเป็น **ครั้งที่สองของปี** (>30%→\"slightly above 40%\") + CapEx ขึ้นเป็น $60–64B + Arizona +$100B + demand \"stronger and stronger\" และ supply ตึงถึง 2029–2030 = demand เร่งจริง ไม่ใช่แค่ทรงตัว. แต่หลัง FV recalibration ใช้ consensus EPS (ไม่ใช้ peak-year) FV base ขยับเป็น ~$420 และราคา $403.41 → **MoS เหลือ ~4% เท่านั้น** = ซื้อเกือบเต็มมูลค่า. edge จึงไม่ใช่ \"ราคาถูก\" แต่คือ \"คุณภาพหายากระดับ Inevitable ที่ควรถือ ไม่เติมจนกว่าจะมี buffer\".",
-      "risk": "US-Taiwan geopolitical escalates to military action, OR Apple+NVIDIA shift >30% of volume to Samsung/Intel Foundry simultaneously, OR the guided H2 margin compression (N2 ramp −3–4pp GM) proves deeper/longer than management indicated."
-    },
-    "tier": "🏛️ Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price = Nasdaq quote API (secondary 10-14 close) = CNBC quote API 10-14 close (0% divergence); pre-market 10-15 lower on both sources - conservative (higher) close used",
-        "TSMC release 10-15: Q3 revenue NT$1,494.24B (US$46.72B), NI NT$763.06B, diluted EPS NT$29.43 (US$4.60/ADR), GM 66.4% / OM 58.7% / NM 51.1%; Q4 guide US$52.3-54.3B, GM 65-67%, OM 56.5-58.5% (FX 31.8) - Warren's secondary-source figures confirmed exactly"
-      ],
-      "concerns": [
-        "Price $430 predates the print (pre-market $424.50) - Warren flagged correctly; consensus will likely move up after the Q4 guide, which would lift FV ~3-5%",
-        "FV ~= price at the median multiple: no provable margin of safety at this price without assuming a re-rating"
-      ],
-      "summary": "",
-      "review_date": "2026-10-15"
-    },
-    "mark_easy": {
-      "one_liner": "โรงงานชิปที่ชิป AI ทุกตัวต้องผ่าน — งบ Q3 เกินเป้า FV ขยับเป็น $423 แต่ราคา $430 ยังสูงกว่าเล็กน้อย Warren HOLD, Charlie AGREE",
-      "what": "TSMC รับจ้างผลิตชิปตามแบบของลูกค้า (pure-play foundry) โดยไม่ออกแบบชิปขายแข่งกับลูกค้า ลูกค้าอย่าง Apple, NVIDIA, AMD จึงไว้ใจส่งแบบลับมาให้ผลิต",
-      "why_invest": [
-        "งบ Q3: รายได้ US$46.72B (NT$1.494T) เกินขอบบนของเป้า gross margin 66.4% และ guide Q4 US$52.3-54.3B โตต่ออีกราว 14% — ดีมานด์ AI ยืนยันด้วยตัวเลขจริง",
-        "ผูกขาดชิปขั้นสูง (N3/N2) และ CoWoS ที่เป็นคอขวดของการประกอบชิป AI — คุณภาพธุรกิจและการเติบโตได้ 9.5/10 ทั้งคู่",
-        "TQR Strong (8.38) WAF 7.98 conviction HIGH — สูงสุดกลุ่มเซมิในชุดนี้"
-      ],
-      "watch_out": [
-        "MoS -1.56% เทียบเกณฑ์ 15% ห่างราว 16.6 จุด — ถือได้ แต่ยังไม่ใช่จังหวะเพิ่มเงิน (ราคา $430 เป็นราคาก่อนงบออก)",
-        "FV ยังใช้ประมาณการก่อนงบ — ถ้านักวิเคราะห์ปรับขึ้นตาม guide Q4 FV อาจขยับอีก 3-5%",
-        "ความเสี่ยงไต้หวัน, มาร์จิ้นที่ใช้ 49% สูงกว่าค่าปกติ ~40% และ N2/โรงงานต่างประเทศที่กดมาร์จิ้น"
-      ]
-    },
-    "mark_full": {
-      "business_overview": "TSMC คือโรงงานรับจ้างผลิตชิปที่ใหญ่ที่สุดในโลก รายได้ส่วนใหญ่มาจากกลุ่ม HPC (AI + เซิร์ฟเวอร์) ตามด้วยสมาร์ทโฟน/ยานยนต์ ซึ่งช่วยเป็นกันชนนอกธีม AI ได้บ้าง",
-      "tam": "ดีมานด์ชิป AI ทำให้ foundry ขั้นสูงตึงตัวต่อเนื่อง บริษัทตั้งเป้ารายได้ระยะยาวโตเฉลี่ย ~25%/ปี (2024-2029) พร้อม gross margin 56%+ ตลอดวัฏจักร",
-      "moat": "โมเดล pure-play ที่ไม่แข่งกับลูกค้า + ความเป็นผู้นำ process (N3/N2/A16) + CoWoS advanced packaging — Samsung/Intel ยังตามไม่ทันเรื่อง yield ทำให้ชิป AI ระดับท็อปแทบทุกตัวต้องผ่าน TSMC",
-      "latest_financials": "Q3 2026 (ประกาศ 15 ต.ค.): รายได้ NT$1,494.24B (US$46.72B) เกินขอบบนของเป้า US$44.6-45.8B, gross margin 66.4%, operating margin 58.7%, มาร์จิ้นสุทธิ 51.1%, กำไรสุทธิ NT$763.06B, EPS NT$29.43 (US$4.60/ADR) Guide Q4 US$52.3-54.3B GM 65-67% — Warren ปรับฐาน: รายได้ปี 2027 NT$7.43T × มาร์จิ้นสุทธิ 49% → EPS/ADR $21.17 × 20 เท่า = FV $423 (Bull $508 / Bear $318) ราคา $430 (ก่อนงบออก) MoS -1.56% PEG 1.02 ผลตอบแทนคาดการณ์ 19.69%/ปี Charlie ได้ $429",
-      "key_points": [
-        "HOLD: ถือต่อ ไม่เพิ่ม — FV $411→$423 ราคาสูงกว่าเล็กน้อย",
-        "Charlie AGREE — ยืนยันตัวเลขงบทุกตัว FV $429 ใกล้กัน แต่ FV ≈ ราคา = ยังไม่มีส่วนเผื่อความปลอดภัย",
-        "จุดทดสอบ: การปรับประมาณการหลัง guide Q4 และ capex/gross margin ปี 2027 จาก conference call"
-      ]
-    },
-    "warren_easy": [
-      "TSM tier 🏛️ Inevitable WAF 7.98 conviction HIGH — งบ Q3 ออกวันนี้: รายได้ US$46.72B เกินขอบบนของเป้า และ guide Q4 US$52.3-54.3B Warren ปรับฐานรายได้ปี 2027 เป็น NT$7.43T → FV $411→$423",
-      "ราคา $430 MoS -1.56% เทียบเกณฑ์ 15% ห่าง 16.6 จุด → HOLD (ถือของเดิม ไม่เติม) ⚠️ ราคานี้เป็นราคาปิดก่อนงบออก",
-      "Warren ยังไม่ดันประมาณการขึ้นล่วงหน้า รอนักวิเคราะห์ปรับตาม guide Q4 ก่อน — Charlie AGREE"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "review_date": "2026-10-15",
-      "paragraphs": [
-        "Charlie ยืนยันตัวเลขงบ Q3 จากประกาศทางการของ TSMC ตรงกับที่ Warren ใช้ทุกตัว (รายได้ NT$1,494.24B, EPS US$4.60/ADR, GM 66.4%, มาร์จิ้นสุทธิ 51.1%)",
-        "FV ของ Charlie $429 เทียบ Warren $423 (ห่าง 1.3%) — ใช้ EPS ปี 2027 ค่าเฉลี่ยนักวิเคราะห์ $21.44 ซึ่ง Charlie มองว่าค่อนข้างต่ำ (conservative) เพราะประมาณการปี 2026 ยังต่ำกว่าผลจริงที่ออกมา",
-        "ข้อสังเกต: FV แทบเท่าราคา ($429 vs $430) — ที่ P/E กลาง 20 เท่า ยังไม่มีส่วนเผื่อความปลอดภัยให้เห็น ถ้าไม่สมมติว่าหุ้นจะ re-rating ขึ้น ส่วนราคา $430 ยังเป็นราคาก่อนงบออก",
-        "ต้องติดตาม: นักวิเคราะห์ปรับประมาณการขึ้นหลัง guide Q4 (Charlie คาดว่าอาจดัน FV ขึ้นได้ราว 3-5%) และความเห็นเรื่อง capex/gross margin ปี 2027 จาก conference call"
-      ]
-    },
-    "idea_th": "HOLD — TSMC คือคอขวดที่ชิป AI ทุกตัวต้องผ่าน งบ Q3 เกินเป้าและ guide Q4 โตอีก ~14% จากไตรมาสก่อน FV ขยับเป็น $423 แต่ราคา $430 (ก่อนงบออก) ยังสูงกว่า FV เล็กน้อย (MoS -1.56%) ถือของเดิมต่อ ไม่เติม Charlie AGREE ตัวเลขตรงกัน",
-    "story_gate_th": {
-      "what": "TSMC เป็นผู้ผลิตชิปขั้นสูง (N3, N2, A16) ในปริมาณมากเพียงรายเดียวของโลก — ชิป AI ระดับท็อปแทบไม่มีตัวไหนผลิตได้โดยไม่ผ่าน TSMC และความร่วมมือกับ NVIDIA ผูกความสัมพันธ์ไว้ระยะยาว",
-      "why": "งบ Q3 ยืนยันดีมานด์จริง — รายได้เกินขอบบนของเป้า, N2 เริ่มมีสัดส่วน 8% ของรายได้เวเฟอร์ และ guide Q4 โตต่อ FV ขยับขึ้นเป็น $423 แต่ edge ตอนนี้ยังไม่ใช่ 'ราคาถูก' เป็น 'คุณภาพหายากที่ควรถือ แล้วรอราคามีส่วนเผื่อก่อนเติม'",
-      "risk": "ถ้าความตึงเครียดสหรัฐฯ-ไต้หวันลุกลามเป็นการทหาร, Apple+NVIDIA ย้ายการผลิตไป Samsung/Intel พร้อมกันเกิน 30%, หรือมาร์จิ้นที่ถูกกดจาก N2 และโรงงานต่างประเทศลึกและนานกว่าที่ผู้บริหารบอก"
-    },
-    "bull_th": [
-      "งบ Q3: รายได้ US$46.72B สูงกว่าขอบบนของเป้า (US$44.6-45.8B) gross margin 66.4% อยู่ครึ่งบนของเป้าแม้มี N2 กดมาร์จิ้น",
-      "Guide Q4 US$52.3-54.3B (กลางเป้าโต ~14% จาก Q3) gross margin 65-67%",
-      "ผู้นำ process N3/N2/A16 — N2 เริ่มมีสัดส่วน 8% ของรายได้เวเฟอร์แล้ว Samsung และ Intel ยังตามไม่ทัน",
-      "CoWoS advanced packaging คือคอขวดของชิป AI ทุกตัว",
-      "PEG 1.02 และผลตอบแทนคาดการณ์ 19.69%/ปี ผ่านเกณฑ์ — ติดแค่ MoS",
-      "Charlie มองว่าประมาณการของนักวิเคราะห์ยังต่ำกว่าจริง ถ้าปรับขึ้นหลังงบ FV มีโอกาสขยับอีก"
-    ],
-    "risk_th": [
-      "ราคา $430 สูงกว่า FV $423 เล็กน้อย (MoS -1.56%) ห่างเกณฑ์ 15% ราว 16.6 จุด และ FV แทบเท่าราคา — ยังไม่มีส่วนเผื่อความปลอดภัย",
-      "ความเสี่ยงภูมิรัฐศาสตร์ช่องแคบไต้หวัน — ความเสี่ยงหลักที่ตลาดให้ส่วนลด",
-      "มาร์จิ้นสุทธิที่ใช้ 49% สูงกว่าค่าปกติ ~40% (แม้ Q3 จะทำได้ 51.1%) — N2 และโรงงานสหรัฐฯ กดมาร์จิ้น และเงินบาทไต้หวันที่แข็งขึ้นก็เป็นแรงกดดัน",
-      "ความเสี่ยงเสียงาน packaging ชิป TPU ของ Google ให้คู่แข่ง และลูกค้าอาจต้านการขึ้นราคาเวเฟอร์",
-      "ผู้บริหารเองเคยแสดงความระมัดระวังเรื่องดีมานด์ AI หลังปี 2027"
     ]
   },
   "ASML": {
@@ -888,6 +891,156 @@
       "คดีต่อต้านการผูกขาด (Search/Ad Tech) ยังเป็นความเสี่ยงระยะยาว"
     ]
   },
+  "PLTR": {
+    "symbol": "PLTR",
+    "display": "PLTR",
+    "category": "software",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Software & AI Platform",
+    "sectorSlug": "software",
+    "chips": [
+      "Software",
+      "AI Platform + Government"
+    ],
+    "bull": [
+      "รายได้ Q2 2026 $1.935B +93% YoY, US Commercial +149% YoY = growth เร่งขึ้นต่อเนื่องทั้งฝั่ง government และ commercial",
+      "Rule of 40 พุ่งเป็น 155% (Adj Op Margin 62%, Adj FCF margin 63%) = profitable growth ที่หายากมากในกลุ่ม software",
+      "AIP (Artificial Intelligence Platform) bootcamp model เร่ง enterprise adoption — ปิดดีล $1M+ ถึง 220 ดีลใน Q2 เดียว",
+      "US Commercial RDV (remaining deal value) $6.238B +124% YoY = revenue visibility ระยะยาวชัดเจนขึ้น",
+      "Government moat: Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community — switching cost สูงมาก"
+    ],
+    "risk": [
+      "Valuation แพงมาก — multiple สูงกว่ากลุ่ม software เกือบทุกตัว ต้องการ execution perfect ต่อเนื่องหลายปี",
+      "Government revenue concentration — พึ่งพา contract renewal + budget cycle ของภาครัฐสหรัฐฯ",
+      "Dual-class share structure (Karp/Thiel/Cohen) = governance control อยู่ในมือผู้ก่อตั้งกลุ่มเล็ก",
+      "Insider selling ต่อเนื่องจากผู้บริหารระดับสูงในหลายไตรมาสที่ผ่านมา",
+      "Competition จาก hyperscaler AI platforms + in-house data platform ของลูกค้าองค์กรขนาดใหญ่"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.74,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 186.03,
+    "fv": 86.1,
+    "mos": -116.06,
+    "fpe": 75.62,
+    "peg": 1.76,
+    "scores": {
+      "bq": [
+        9.0,
+        "green",
+        90
+      ],
+      "gp": [
+        9.3,
+        "green",
+        93
+      ],
+      "va": [
+        1.5,
+        "orange",
+        15
+      ],
+      "ra": [
+        5.8,
+        "orange",
+        58
+      ]
+    },
+    "idea": "Price-trigger (-11.0% to $186.03, market risk-off, no company news). Fwd P/E 75.6x back under 80x -> standard P/E method restored; FV $86 (EV/Sales cross-check $85 - converges). MoS -116.06% vs gate 15%; PEG 1.76 fails. WATCH. Next test: Q3 print 11-02.",
+    "updated": "2026-10-18",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-10-18",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Palantir's AIP platform + Ontology converts enterprise/government data into production AI decisions within days — a capability hyperscalers (MSFT/GOOGL/AMZN) cannot replicate because they lack operational context and workflow depth. Q2 2026 adds an \"AI Sovereignty\" framing: customers own the weights/models/data instead of feeding frontier-lab APIs.",
+      "why": "Consensus post-Q2-print is digesting a genuine beat-and-raise (revenue +93% YoY vs ~81% expected, Adj EPS $0.41 vs ~$0.35 consensus, FY2026 guidance raised to $8.15-8.16B/+82% from $7.65-7.66B/+71% — management calls it the largest-ever guidance raise) alongside NDR accelerating to 157% and Rule of 40 hitting 155% (12th straight quarter of expansion). Warren's second-level read: the market had already priced in a large chunk of this optimism ahead of the print (stock +21.6% into earnings on NVIDIA/NGC2 momentum since mid-July) — the beat is real and the business quality case has gotten stronger, not weaker, but the price has run even further ahead of a defensible valuation base than it had at the last check (MoS -33.7% pre-print → -61.05% post-print, because price outran even a genuinely-raised FV). This is a case of \"the business got better AND more overvalued at the same time\" — those are not contradictory.",
+      "risk": "Microsoft/Google/Amazon replicate AIP bootcamp effectiveness ผ่าน Azure AI Foundry/Vertex AI สำเร็จ; NGC2/government AI budget สะดุดในขั้น appropriations; growth decelerates meaningfully faster than the 45%/yr forward assumption used here; หรือ the Cupat securities-class-action 10th Circuit appeal (oral arguments already held, ruling pending) resolves against the company."
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "Price Nasdaq quote API = CNBC quote API 10-16 close (0% divergence); 52w range 106.37-212.94 (CNBC) - down 12.6% from high",
+        "SEC 10-Q Q2-26: revenue $1,935M (+93% y/y), op income $912M, pretax $1,081M, tax $15M, NI $1,062M, diluted EPS $0.41 (yfinance quarterly income)",
+        "yfinance revenue consensus FY26 $8,215M (+83.6%) / FY27 $12,333M (+50.1%); Q3 consensus $2,180M vs guide ~$2.16B",
+        "News search 10-18: no company-specific October news found for the -11% move (high-multiple de-rating)"
+      ],
+      "concerns": [
+        "Warren eps_basis_type='consensus_forward' but EPS 2.46 is +29% above the Nasdaq panel 1.90 and is a GAAP-margin build, not consensus - label mismatch (Consensus-as-Base rule)",
+        "Warren's 54% net margin rests on a ~1.4% tax rate + interest income; normalized tax gives ~43% (EPS ~$1.96, FV ~$69 at 35x) - Warren FV is slightly generous on the P/E route",
+        "Method flip EV/Sales -> P/E was triggered by the price falling below the 80x line, not by business data; the 35x multiple is not the §2.5 min() multiple. FVs converge (gap 1.3%), so WATCH is unaffected"
+      ],
+      "summary": "",
+      "review_date": "2026-10-18"
+    },
+    "mark_easy": {
+      "one_liner": "แพลตฟอร์ม AI สำหรับรัฐบาลและองค์กรที่โตเกือบเท่าตัว — แต่ราคา $186.03 ยังสูงกว่า FV $86.1 ราว 2 เท่า (MoS -116.06%) Warren WATCH, Charlie CAUTION",
+      "what": "Palantir สร้างซอฟต์แวร์ AIP + Ontology ที่แปลงข้อมูลองค์กร/ภาครัฐให้ตัดสินใจด้วย AI ได้ภายในไม่กี่วัน ลูกค้าหลักคือรัฐบาลสหรัฐฯ (Gotham/Maven) และองค์กรเอกชน (Foundry/AIP)",
+      "why_invest": [
+        "ไตรมาส Q2-26 รายได้ $1,935M โต 93% YoY และ guide ทั้งปี 2026 $8.15-8.158B (+82%) — การเติบโตระดับนี้หายากมากในซอฟต์แวร์ขนาดใหญ่",
+        "ทำกำไรได้จริง: Q2 กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M และมีเงินสดสุทธิ $9.4B ไม่มีหนี้",
+        "คุณภาพธุรกิจ 9.0 และการเติบโต 9.3/10 — ลูกค้าภาครัฐ/กลาโหมย้ายออกยากมาก"
+      ],
+      "watch_out": [
+        "MoS -116.06% — ราคายังสูงกว่า FV ราว 2 เท่า และไม่มีข่าวธุรกิจใหม่ตั้งแต่ 24 ก.ย.",
+        "Charlie CAUTION: EPS $2.46 ที่ Warren ใช้มาจากมาร์จิ้น 54% ซึ่งได้อานิสงส์อัตราภาษีแค่ ~1.4% — ถ้าภาษีปกติ มาร์จิ้นเหลือ ~43% และ FV อาจเหลือราว $69",
+        "PEG 1.76 เกินเพดาน 1.5, SBC ราว 14% ของรายได้, พึ่งงบประมาณภาครัฐ และคดีอุทธรณ์ Cupat ยังค้าง"
+      ],
+      "bottom_line": "PLTR ธุรกิจดีจริง แต่ราคายังไกลจากมูลค่าที่ป้องกันได้มาก — Warren WATCH ส่วน Charlie ให้ CAUTION เพราะสงสัยวิธีคิดกำไร (ตัวเลข FV ใกล้กันแต่ฐานคิดยังไม่นิ่ง) รองบ Q3 วันที่ 2 พ.ย."
+    },
+    "mark_full": {
+      "business_overview": "Palantir มี 4 แพลตฟอร์มหลัก: Foundry (ข้อมูลองค์กร), AIP (generative AI + agentic workflow), Gotham (ภาครัฐ/กลาโหม) และ Apollo (deploy ได้ทุกที่รวม air-gapped) — Q2-26 รายได้ $1,935M (+93% YoY) กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M EPS $0.41",
+      "tam": "องค์กรและภาครัฐทั่วโลกกำลังเปลี่ยนสู่การทำงานด้วย AI — Palantir วางตำแหน่งเป็นชั้น 'AI Sovereignty' ที่ลูกค้าเป็นเจ้าของข้อมูล/โมเดลเอง และตลาดภาครัฐสหรัฐฯ ยังเหลือพื้นที่โตอีกมาก",
+      "moat": "Ontology (แกนกลางที่แปลงข้อมูลเป็นการตัดสินใจ) ลอกเลียนยาก + ความสัมพันธ์ภาครัฐ/กลาโหมสหรัฐฯ กว่า 20 ปี + AIP Bootcamp ที่เห็นผลใน 5 วัน — ความเสี่ยงคือ hyperscaler (MSFT/GOOGL/AMZN) พยายามทำแพลตฟอร์มแบบเดียวกัน",
+      "latest_financials": "รอบ 18 ต.ค. ไม่มีงบหรือข่าวธุรกิจใหม่ (Q3 ออก 2 พ.ย.) ที่ราคา $186.03 P/E ล่วงหน้า = 75.6 เท่า ต่ำกว่าเส้น 80 เท่า Warren จึงกลับมาใช้วิธีมาตรฐาน P/E: รายได้ FY2027 $11,820M × มาร์จิ้นสุทธิ 54% ÷ 2,600M หุ้น = EPS $2.46 × 35 เท่า = FV $86.1 (Bull $115 / Bear $53) สอบทานด้วย EV/Sales 18 เท่าได้ $85 MoS -116.06% PEG 1.76 ผลตอบแทนคาดการณ์ 28.72%/ปี WAF 6.74 (MEDIUM) — Charlie ใช้ EV/Sales ได้ FV $85",
+      "key_points": [
+        "WATCH: FV $86.1 (กลับมาใช้ P/E เพราะ P/E ล่วงหน้าต่ำกว่า 80 เท่า มูลค่าแทบเท่าเดิม)",
+        "Charlie CAUTION (เปลี่ยนจาก AGREE) — FV $85 ใกล้กัน แต่ติง 2 เรื่อง: EPS $2.46 ถูกติดป้ายว่า 'ค่าเฉลี่ยนักวิเคราะห์' ทั้งที่จริงคำนวณเองจากมาร์จิ้น GAAP และสูงกว่าค่าเฉลี่ยนักวิเคราะห์ $1.90 ราว 29% และการสลับวิธีคิดเกิดจากราคาข้ามเส้น 80 เท่า ไม่ใช่ข้อมูลธุรกิจ",
+        "Reverse DCF ของ Charlie: ราคานี้ต้องการให้รายได้โตราว 17.4%/ปีต่อเนื่อง 5 ปีหลังปี 2027 (ต่อจาก +45-50% ในปี 2027) — ยังสะท้อนการทำงานแบบแทบไม่มีพลาด",
+        "จุดทดสอบ: งบ Q3 วันที่ 2 พ.ย. — รายได้เทียบ guide ~$2.16B, การปรับ guide ทั้งปี และแนวโน้มอัตราภาษี"
+      ]
+    },
+    "warren_easy": [
+      "PLTR tier 🚀 Pre-Inevitable WAF 6.74 conviction MEDIUM — P/E ล่วงหน้ากลับมาต่ำกว่า 80 เท่า (75.6 เท่า) จึงกลับไปใช้ P/E มาตรฐาน: EPS $2.46 × 35 เท่า = FV $86.1 (EV/Sales สอบทานได้ $85)",
+      "ราคา $186.03 MoS -116.06% เทียบเกณฑ์ 15% และ PEG 1.76 เกินเพดาน 1.5 → WATCH",
+      "ไม่มีข่าวธุรกิจใหม่ตั้งแต่ 24 ก.ย. — รอบนี้รีวิวเพราะราคาเปลี่ยนเกิน 10% เท่านั้น ไม่เปลี่ยนคะแนน รองบ Q3 วันที่ 2 พ.ย."
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "review_date": "2026-10-18",
+      "paragraphs": [
+        "Charlie ให้ CAUTION (เปลี่ยนจาก AGREE รอบก่อน) — FV ของ Charlie $85 เทียบ Warren $86.1 (ห่างแค่ 1.3%) ข้อสรุป WATCH ไม่เปลี่ยน แต่ไม่เห็นด้วยกับวิธีที่ Warren ใช้หาตัวเลข",
+        "ข้อติงที่ 1: EPS $2.46 ที่ Warren ระบุว่าเป็น 'ค่าเฉลี่ยนักวิเคราะห์' จริงๆ แล้วคำนวณเองจากมาร์จิ้นสุทธิ 54% และสูงกว่าค่าเฉลี่ยนักวิเคราะห์ ($1.90) ราว 29% — มาร์จิ้นนี้ได้แรงหนุนจากดอกเบี้ยรับและอัตราภาษีแค่ ~1.4% ถ้าคิดภาษีปกติ 21% มาร์จิ้นเหลือ ~43% EPS ~$1.96 และ FV ที่ 35 เท่าจะเหลือราว $69",
+        "ข้อติงที่ 2: Warren สลับกลับจาก EV/Sales มาเป็น P/E เพราะราคาข้ามเส้น 80 เท่า ไม่ใช่เพราะข้อมูลธุรกิจเปลี่ยน — Charlie เลยคง EV/Sales 18 เท่า และมองว่าวิธีคิดไม่ควรสลับไปมาตามราคา",
+        "ต้องติดตาม: งบ Q3 วันที่ 2 พ.ย. (รายได้เทียบ guide ~$2.16B, การปรับ guide ทั้งปี, แนวโน้มอัตราภาษี)"
+      ]
+    },
+    "idea_th": "WATCH — Palantir คือหนึ่งในธุรกิจซอฟต์แวร์ที่โตเร็วและทำกำไรได้ดีที่สุด (Q2 รายได้ +93%) แต่ราคา $186.03 ยังสูงกว่า FV $86.1 ราว 2 เท่า (MoS -116.06%) Charlie ให้ CAUTION — FV ใกล้กันแต่ติงว่ากำไรที่ใช้คิดสูงเกินจริงเพราะภาษีต่ำผิดปกติ ธุรกิจดีจริง แต่ราคายังนำไปไกล รองบ Q3 วันที่ 2 พ.ย.",
+    "story_gate_th": {
+      "what": "แพลตฟอร์ม AIP + Ontology ของ Palantir แปลงข้อมูลองค์กร/ภาครัฐให้เป็นการตัดสินใจด้วย AI ที่ใช้งานจริงได้ในไม่กี่วัน — สิ่งที่ hyperscaler (MSFT/GOOGL/AMZN) ยังทำตามไม่ได้เพราะขาดบริบทการทำงานเชิงลึก และวางตำแหน่ง 'AI Sovereignty' ที่ลูกค้าเป็นเจ้าของโมเดล/ข้อมูลเอง",
+      "why": "หลังงบ Q2 ที่ทั้งเกินคาดและปรับ guide ขึ้นครั้งใหญ่ที่สุด (รายได้ +93%, guide ปี 2026 +82%, Rule of 40 แตะ 155%) ธุรกิจดีขึ้นจริง — แต่ Warren มองว่าราคาวิ่งนำไปไกลกว่ามูลค่าที่ป้องกันได้อีก 'ธุรกิจดีขึ้นและแพงขึ้นพร้อมกัน' ไม่ได้ขัดกัน",
+      "risk": "ถ้า Microsoft/Google/Amazon ทำแพลตฟอร์มแบบ AIP ได้ผลจริง, งบ AI ภาครัฐสะดุดในขั้นอนุมัติงบประมาณ, การเติบโตชะลอเร็วกว่าสมมติฐาน 45%/ปี หรือคดีอุทธรณ์ Cupat ศาลชั้น 10th Circuit ตัดสินไม่เป็นผลดีกับบริษัท"
+    },
+    "bull_th": [
+      "Q2-26 รายได้ $1,935M โต 93% YoY และ guide ปี 2026 $8.15-8.158B (+82%)",
+      "ทำกำไรสูง: Q2 กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M",
+      "เงินสดสุทธิ $9.4B ไม่มีหนี้",
+      "Ontology + ความสัมพันธ์ภาครัฐ/กลาโหมสหรัฐฯ = ต้นทุนการย้ายออกสูงมาก",
+      "ผลตอบแทนคาดการณ์ 28.72%/ปี — Charlie ใช้รายได้ปี 2027 ต่ำกว่าค่าเฉลี่ยนักวิเคราะห์ ($12,333M) ราว 4% จึงเป็นการประเมินแบบระวัง"
+    ],
+    "risk_th": [
+      "ราคา $186.03 สูงกว่า FV $86.1 ราว 2 เท่า (MoS -116.06%) และ PEG 1.76 เกินเพดาน 1.5",
+      "กำไรที่ใช้คิด FV อาจสูงเกินจริง: อัตราภาษีแค่ ~1.4% ถ้าภาษีปกติ FV อาจเหลือราว $69 (Charlie)",
+      "ราคานี้ต้องการการเติบโตราว 17.4%/ปีต่อเนื่อง 5 ปีหลังปี 2027 — แทบไม่มีที่ให้พลาด",
+      "SBC ราว 14% ของรายได้ และพึ่งงบประมาณภาครัฐสหรัฐฯ (Maven ยังอยู่ในขั้นเสนอ)",
+      "Hyperscaler อาจทำแพลตฟอร์มแข่ง และคดีอุทธรณ์ Cupat ยังค้างอยู่"
+    ]
+  },
   "AMD": {
     "symbol": "AMD",
     "display": "AMD",
@@ -1034,156 +1187,6 @@
       "ถ้า narrative 'agentic CPU' ที่ตลาดกำลังเชื่อกันพิสูจน์ว่า overhype ราคาจะปรับฐานเร็ว",
       "ซื้อกิจการ AI ใหญ่ 2 ดีลในไม่กี่สัปดาห์ (diworsification) ผูกพันเงินรวมราว $25B ขณะที่ราคาสูงกว่า Bull case แล้ว",
       "ประมาณการกำไรปี 2027 ของนักวิเคราะห์โต +114% และตัวเลขสูง-ต่ำห่างกันเกือบ 2 เท่า — ฐานที่ใช้คิด FV เองก็มองโลกในแง่ดีอยู่แล้ว"
-    ]
-  },
-  "PLTR": {
-    "symbol": "PLTR",
-    "display": "PLTR",
-    "category": "software",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Software & AI Platform",
-    "sectorSlug": "software",
-    "chips": [
-      "Software",
-      "AI Platform + Government"
-    ],
-    "bull": [
-      "รายได้ Q2 2026 $1.935B +93% YoY, US Commercial +149% YoY = growth เร่งขึ้นต่อเนื่องทั้งฝั่ง government และ commercial",
-      "Rule of 40 พุ่งเป็น 155% (Adj Op Margin 62%, Adj FCF margin 63%) = profitable growth ที่หายากมากในกลุ่ม software",
-      "AIP (Artificial Intelligence Platform) bootcamp model เร่ง enterprise adoption — ปิดดีล $1M+ ถึง 220 ดีลใน Q2 เดียว",
-      "US Commercial RDV (remaining deal value) $6.238B +124% YoY = revenue visibility ระยะยาวชัดเจนขึ้น",
-      "Government moat: Gotham + Maven Smart System ฝังลึกใน DoD/intelligence community — switching cost สูงมาก"
-    ],
-    "risk": [
-      "Valuation แพงมาก — multiple สูงกว่ากลุ่ม software เกือบทุกตัว ต้องการ execution perfect ต่อเนื่องหลายปี",
-      "Government revenue concentration — พึ่งพา contract renewal + budget cycle ของภาครัฐสหรัฐฯ",
-      "Dual-class share structure (Karp/Thiel/Cohen) = governance control อยู่ในมือผู้ก่อตั้งกลุ่มเล็ก",
-      "Insider selling ต่อเนื่องจากผู้บริหารระดับสูงในหลายไตรมาสที่ผ่านมา",
-      "Competition จาก hyperscaler AI platforms + in-house data platform ของลูกค้าองค์กรขนาดใหญ่"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 3,
-    "waf": 6.66,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 209.05,
-    "fv": 85,
-    "mos": -145.94,
-    "fpe": 76.73,
-    "peg": null,
-    "scores": {
-      "bq": [
-        9.0,
-        "green",
-        90
-      ],
-      "gp": [
-        9.3,
-        "green",
-        93
-      ],
-      "va": [
-        1.2,
-        "orange",
-        12
-      ],
-      "ra": [
-        5.8,
-        "orange",
-        58
-      ]
-    },
-    "idea": "Price-trigger (+10.8% to $209.05, new high). Fwd P/E 85x crossed the 80x line -> method flips to EV/Sales (18x, card cross-check) per rule; FV $85 (vs $86 on P/E - unchanged in substance). MoS -145.94% vs gate 20%; WATCH. Charlie to adjudicate EV/Sales multiple.",
-    "updated": "2026-10-11",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-10-11",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "Palantir's AIP platform + Ontology converts enterprise/government data into production AI decisions within days — a capability hyperscalers (MSFT/GOOGL/AMZN) cannot replicate because they lack operational context and workflow depth. Q2 2026 adds an \"AI Sovereignty\" framing: customers own the weights/models/data instead of feeding frontier-lab APIs.",
-      "why": "Consensus post-Q2-print is digesting a genuine beat-and-raise (revenue +93% YoY vs ~81% expected, Adj EPS $0.41 vs ~$0.35 consensus, FY2026 guidance raised to $8.15-8.16B/+82% from $7.65-7.66B/+71% — management calls it the largest-ever guidance raise) alongside NDR accelerating to 157% and Rule of 40 hitting 155% (12th straight quarter of expansion). Warren's second-level read: the market had already priced in a large chunk of this optimism ahead of the print (stock +21.6% into earnings on NVIDIA/NGC2 momentum since mid-July) — the beat is real and the business quality case has gotten stronger, not weaker, but the price has run even further ahead of a defensible valuation base than it had at the last check (MoS -33.7% pre-print → -61.05% post-print, because price outran even a genuinely-raised FV). This is a case of \"the business got better AND more overvalued at the same time\" — those are not contradictory.",
-      "risk": "Microsoft/Google/Amazon replicate AIP bootcamp effectiveness ผ่าน Azure AI Foundry/Vertex AI สำเร็จ; NGC2/government AI budget สะดุดในขั้น appropriations; growth decelerates meaningfully faster than the 45%/yr forward assumption used here; หรือ the Cupat securities-class-action 10th Circuit appeal (oral arguments already held, ruling pending) resolves against the company."
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price = Nasdaq quote API = CNBC quote API = prices_cache 10-09 close (0% divergence); price above Nasdaq 52w high 207.52 (CNBC high 209.58) = new high",
-        "SEC 10-Q Q2-26: revenue $1,935M (+93% y/y), op income $912M, NI $1,062M, diluted EPS $0.41",
-        "EV/Sales FY27 ~45x confirmed; P/E >80x on both EPS bases - method flip correct",
-        "News search 10-11: no new Palantir contract/business news dated October found"
-      ],
-      "concerns": [
-        "Price ~2.5x FV after a run to a new high with no new business data - WATCH correct; quality is not the issue",
-        "SBC ~14% of revenue excluded from adjusted EPS - dilution partly offset by using 2,600M shares",
-        "Q3 print 11-02 vs $2.16B guide is the next real test of the +45% FY27 path"
-      ],
-      "summary": "",
-      "review_date": "2026-10-11"
-    },
-    "mark_easy": {
-      "one_liner": "แพลตฟอร์ม AI สำหรับรัฐบาลและองค์กรที่โตเกือบเท่าตัว — แต่ราคา $209.05 สูงกว่า FV $85 ราว 2.5 เท่า (MoS -145.94%) Warren WATCH, Charlie AGREE",
-      "what": "Palantir สร้างซอฟต์แวร์ AIP + Ontology ที่แปลงข้อมูลองค์กร/ภาครัฐให้ตัดสินใจด้วย AI ได้ภายในไม่กี่วัน ลูกค้าหลักคือรัฐบาลสหรัฐฯ (Gotham/Maven) และองค์กรเอกชน (Foundry/AIP)",
-      "why_invest": [
-        "ไตรมาส Q2-26 รายได้ $1,935M โต 93% YoY และ guide ทั้งปี 2026 $8.15-8.158B (+82%) — การเติบโตระดับนี้หายากมากในซอฟต์แวร์ขนาดใหญ่",
-        "ทำกำไรได้จริง: Q2 กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M และมีเงินสดสุทธิ $9.4B ไม่มีหนี้",
-        "คุณภาพธุรกิจ 9.0 และการเติบโต 9.3/10 — ลูกค้าภาครัฐ/กลาโหมย้ายออกยากมาก"
-      ],
-      "watch_out": [
-        "MoS -145.94% — ราคาสูงกว่า FV ราว 2.5 เท่า ขณะที่ไม่มีข่าวธุรกิจใหม่ตั้งแต่ 24 ก.ย.",
-        "P/E ล่วงหน้าราว 85 เท่า เกินเส้น 80 เท่า จึงต้องเปลี่ยนไปใช้ EV/Sales — ตอนนี้ตลาดให้ราว 45 เท่าของยอดขายปี 2027 ขณะที่ FV ใช้ 18 เท่า",
-        "ค่าตอบแทนเป็นหุ้น (SBC) ราว 14% ของรายได้, พึ่งงบประมาณภาครัฐ และคดีอุทธรณ์ Cupat ยังค้าง"
-      ],
-      "bottom_line": "PLTR ธุรกิจดีขึ้นจริงทุกไตรมาส แต่ราคาวิ่งไปไกลกว่ามูลค่าที่ป้องกันได้มาก — Warren และ Charlie เห็นตรงกันว่ายังไม่ใช่จังหวะ รองบ Q3 วันที่ 2 พ.ย."
-    },
-    "mark_full": {
-      "business_overview": "Palantir มี 4 แพลตฟอร์มหลัก: Foundry (ข้อมูลองค์กร), AIP (generative AI + agentic workflow), Gotham (ภาครัฐ/กลาโหม) และ Apollo (deploy ได้ทุกที่รวม air-gapped) — Q2-26 รายได้ $1,935M (+93% YoY) กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M EPS $0.41",
-      "tam": "องค์กรและภาครัฐทั่วโลกกำลังเปลี่ยนสู่การทำงานด้วย AI — Palantir วางตำแหน่งเป็นชั้น 'AI Sovereignty' ที่ลูกค้าเป็นเจ้าของข้อมูล/โมเดลเอง และตลาดภาครัฐสหรัฐฯ ยังเหลือพื้นที่โตอีกมาก",
-      "moat": "Ontology (แกนกลางที่แปลงข้อมูลเป็นการตัดสินใจ) ลอกเลียนยาก + ความสัมพันธ์ภาครัฐ/กลาโหมสหรัฐฯ กว่า 20 ปี + AIP Bootcamp ที่เห็นผลใน 5 วัน — ความเสี่ยงคือ hyperscaler (MSFT/GOOGL/AMZN) พยายามทำแพลตฟอร์มแบบเดียวกัน",
-      "latest_financials": "รอบ 11 ต.ค. ไม่มีงบใหม่ (Q3 ออก 2 พ.ย.) P/E ล่วงหน้าที่ราคานี้ = 84.98 เท่า เกินเส้น 80 เท่า Warren จึงเปลี่ยนไปใช้ EV/Sales: รายได้ FY2027 $11,820M × 18 เท่า + เงินสดสุทธิ $9,400M ÷ 2,600M หุ้น = FV $85 (Bull $113 / Bear $58) — ถ้าใช้ P/E แบบเดิมจะได้ $86 ผลแทบไม่ต่าง ราคา $209.05 MoS -145.94% ผลตอบแทนคาดการณ์ 26.53%/ปี WAF 6.66 (MEDIUM)",
-      "key_points": [
-        "WATCH: FV $85 (เปลี่ยนวิธีจาก P/E เป็น EV/Sales ตามกฎ แต่มูลค่าแทบเท่าเดิม)",
-        "Charlie AGREE — FV $85 ตรงกัน (gap 0%) และสอบทานด้วยอีกวิธี (P/E 35 เท่าบนกำไรตามมาร์จิ้นที่บริษัท guide) ได้ $84 สองเส้นทางห่างกันไม่ถึง 1%",
-        "Reverse DCF ของ Charlie: ราคานี้ต้องการให้รายได้โตราว 20%/ปีต่อเนื่อง 5 ปีหลังปี 2027 (ต่อจาก +45% ในปี 2027) — เป็นไปได้ แต่ราคาสะท้อนการทำงานแบบแทบไม่มีพลาด",
-        "จุดทดสอบ: งบ Q3 วันที่ 2 พ.ย. — รายได้เทียบ guide $2.16B, การปรับ guide ทั้งปี และการเติบโตลูกค้าเอกชนสหรัฐฯ"
-      ]
-    },
-    "warren_easy": [
-      "PLTR tier 🚀 Pre-Inevitable WAF 6.66 conviction MEDIUM — P/E ล่วงหน้าเกิน 80 เท่า จึงเปลี่ยนวิธีเป็น EV/Sales 18 เท่า ได้ FV $85 (เกือบเท่าเดิม $86)",
-      "ราคา $209.05 MoS -145.94% เทียบเกณฑ์ 20% — ไกลจากโซนซื้อมาก ผลตอบแทนคาดการณ์ 26.53% ผ่านตามตัวเลขแต่ MoS ไม่ผ่าน → WATCH",
-      "ไม่มีข่าวธุรกิจใหม่ตั้งแต่ 24 ก.ย. — การเคลื่อนไหวรอบนี้มาจากราคาล้วน ไม่เปลี่ยนคะแนน รองบ Q3 วันที่ 2 พ.ย."
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "paragraphs": [
-        "Charlie ยืนยันการเปลี่ยนวิธี: P/E ล่วงหน้าเกิน 80 เท่าทั้งบน EPS ของ Warren (85 เท่า) และของ Charlie เอง (87.5 เท่า) จึงต้องใช้ EV/Sales — คำนวณได้ FV $85 ตรงกับ Warren (gap 0%)",
-        "ตัวคูณ 18 เท่าสอดคล้องกับการคำนวณ P/E ของ Charlie เอง ($84 ที่ 35 เท่า) — สองวิธีอิสระได้ผลห่างกันไม่ถึง 1% ส่วนรายได้ FY2027 $11,820M สมมติว่าการเติบโตชะลอจาก +93% เหลือ +45% ซึ่งถือว่า conservative",
-        "ราคาปัจจุบันสูงกว่า FV ราว 2.5 เท่าหลังวิ่งขึ้นโดยไม่มีข้อมูลธุรกิจใหม่ — คุณภาพไม่ใช่ปัญหา ปัญหาคือราคา SBC ราว 14% ของรายได้ถูกชดเชยบางส่วนด้วยการใช้จำนวนหุ้นที่สูงกว่า (2,600M)",
-        "ต้องติดตาม: งบ Q3 วันที่ 2 พ.ย. (รายได้เทียบ guide $2.16B, การปรับ guide ทั้งปี, ลูกค้าเอกชนสหรัฐฯ)"
-      ],
-      "review_date": "2026-10-11"
-    },
-    "idea_th": "WATCH — Palantir คือหนึ่งในธุรกิจซอฟต์แวร์ที่โตเร็วและทำกำไรได้ดีที่สุด (Q2 รายได้ +93%) แต่ราคา $209.05 สูงกว่า FV $85 ราว 2.5 เท่า (MoS -145.94%) Charlie AGREE ทั้งวิธีและตัวเลข — ธุรกิจดีขึ้นจริง แต่ราคาวิ่งนำไปไกลมาก รองบ Q3 วันที่ 2 พ.ย.",
-    "story_gate_th": {
-      "what": "แพลตฟอร์ม AIP + Ontology ของ Palantir แปลงข้อมูลองค์กร/ภาครัฐให้เป็นการตัดสินใจด้วย AI ที่ใช้งานจริงได้ในไม่กี่วัน — สิ่งที่ hyperscaler (MSFT/GOOGL/AMZN) ยังทำตามไม่ได้เพราะขาดบริบทการทำงานเชิงลึก และวางตำแหน่ง 'AI Sovereignty' ที่ลูกค้าเป็นเจ้าของโมเดล/ข้อมูลเอง",
-      "why": "หลังงบ Q2 ที่ทั้งเกินคาดและปรับ guide ขึ้นครั้งใหญ่ที่สุด (รายได้ +93%, guide ปี 2026 +82%, Rule of 40 แตะ 155%) ธุรกิจดีขึ้นจริง — แต่ Warren มองว่าราคาวิ่งนำไปไกลกว่ามูลค่าที่ป้องกันได้อีก 'ธุรกิจดีขึ้นและแพงขึ้นพร้อมกัน' ไม่ได้ขัดกัน",
-      "risk": "ถ้า Microsoft/Google/Amazon ทำแพลตฟอร์มแบบ AIP ได้ผลจริง, งบ AI ภาครัฐสะดุดในขั้นอนุมัติงบประมาณ, การเติบโตชะลอเร็วกว่าสมมติฐาน 45%/ปี หรือคดีอุทธรณ์ Cupat ศาลชั้น 10th Circuit ตัดสินไม่เป็นผลดีกับบริษัท"
-    },
-    "bull_th": [
-      "Q2-26 รายได้ $1,935M โต 93% YoY และ guide ปี 2026 $8.15-8.158B (+82%)",
-      "ทำกำไรสูง: Q2 กำไรจากการดำเนินงาน $912M กำไรสุทธิ $1,062M",
-      "เงินสดสุทธิ $9.4B ไม่มีหนี้",
-      "Ontology + ความสัมพันธ์ภาครัฐ/กลาโหมสหรัฐฯ = ต้นทุนการย้ายออกสูงมาก",
-      "ผลตอบแทนคาดการณ์ 26.53%/ปี และ Charlie AGREE ทั้งวิธีและตัวเลข"
-    ],
-    "risk_th": [
-      "ราคา $209.05 สูงกว่า FV $85 ราว 2.5 เท่า (MoS -145.94%) — ตลาดให้ราว 45 เท่าของยอดขายปี 2027",
-      "ราคานี้ต้องการการเติบโตราว 20%/ปีต่อเนื่อง 5 ปีหลังปี 2027 — แทบไม่มีที่ให้พลาด",
-      "SBC ราว 14% ของรายได้ ไม่ถูกนับใน EPS แบบ adjusted",
-      "พึ่งงบประมาณภาครัฐสหรัฐฯ — Maven ยังอยู่ในขั้นเสนอ ยังไม่ได้รับการอนุมัติงบ",
-      "Hyperscaler อาจทำแพลตฟอร์มแข่ง และคดีอุทธรณ์ Cupat ยังค้างอยู่"
     ]
   },
   "AMZN": {
@@ -2393,12 +2396,12 @@
     "action": "avoid",
     "actionLabel": "Avoid",
     "conviction": 2,
-    "waf": 5.22,
+    "waf": 5.3,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 65.78,
+    "price": 61.39,
     "fv": 35,
-    "mos": -87.94,
+    "mos": -75.4,
     "fpe": null,
     "peg": null,
     "scores": {
@@ -2413,9 +2416,9 @@
         85
       ],
       "va": [
-        2.0,
+        2.3,
         "orange",
-        20
+        23
       ],
       "ra": [
         2.5,
@@ -2423,12 +2426,12 @@
         25
       ]
     },
-    "idea": "Bond-market scare (2032 yield ~15%) drove -26.6% to $65.78. FV $35 carried (no new filing); RA 3.0->2.5 on higher marginal funding cost. MoS -87.9%, ER -11.9%/yr, WAF 5.23. AVOID. TQR Peripheral 5.55 unchanged (RA* funding-cost point flagged for next /warren theme).",
-    "updated": "2026-10-15",
+    "idea": "CEO memo defends backlog ($104.2B + >$25B Q3) vs bond scare (yields ~15%, CDS >1,000bp); no new filing. FV $35 carried; price $61.39 (near 52w low). MoS -75.4%, ER -10.6%/yr, WAF 5.30 LOW. AVOID. TQR Peripheral 5.55 unchanged (RA* funding-cost point still pending /warren theme).",
+    "updated": "2026-10-18",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-10-15",
+      "updated": "2026-10-18",
       "tier": "⚠️ Speculative",
       "tier_slug": "speculative",
       "what": "CoreWeave ให้เช่า GPU cloud capacity เฉพาะทาง AI (training/inference) ผ่านสัญญา multi-year take-or-pay — ชนะด้วยความเร็ว deploy GPU generation ใหม่ก่อนใคร (NVIDIA Exemplar Cloud status) และ relationship พิเศษกับ NVIDIA ($2B equity investment)",
@@ -2439,74 +2442,75 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price 10-14 close: Nasdaq quote API (secondary) = CNBC quote API = Warren prices_cache (0% divergence); 10-15 pre-market 3-6% lower on both - conservative (higher) close used",
-        "Nasdaq EPS panel FY26 -$5.19 / FY27 -$3.42 (negative => P/E unusable, EV/Sales correct)",
-        "2032 notes: $1.25B 9.625% + EUR2B 8.5% issued April 2026 (company IR)"
+        "Price Nasdaq quote API = CNBC quote API 10-16 close (0% divergence); 52w range 59.51-150.40 (CNBC) - near 52w low",
+        "Nasdaq EPS panel FY26 -$5.19 / FY27 -$3.42 (negative -> P/E unusable, EV/Sales correct)",
+        "Q2-26: revenue $2,575M, op income -$49M, NI -$626M (yfinance quarterly income); FY26 guide raised to $12.4-13.2B, capex $35-39B (Q2 call coverage, MarketBeat/channelchek)"
       ],
       "concerns": [
-        "RA 3.0->2.5 is a funding-cost input, not price contamination - accepted",
-        "35M-share ATM usage and Q3 capex burn unknown until 11-11 - both push FV down, not up"
+        "Warren revenue $12.5B uses the superseded $12-13B guide - error is in the conservative direction (Charlie FV higher, $38 vs $35)",
+        "Q3 capex burn $11.5-13.5B + ATM usage unknown until 11-11 - both push FV down"
       ],
       "summary": "",
-      "review_date": "2026-10-15"
+      "review_date": "2026-10-18"
     },
     "mark_easy": {
-      "one_liner": "ผู้ให้เช่า GPU cloud เฉพาะทาง AI ใหญ่สุดตาม backlog (~$104B) — แต่หักหนี้สุทธิ $28.4B แล้ว FV เหลือ $35 ราคา $65.78 ยังสูงกว่ามาก (MoS -87.94%) AVOID; Charlie AGREE ($36)",
+      "one_liner": "ผู้ให้เช่า GPU cloud เฉพาะทาง AI ใหญ่สุดตาม backlog (~$104B) — แต่หักหนี้สุทธิ $28.4B แล้ว FV เหลือ $35 ราคา $61.39 ยังสูงกว่ามาก (MoS -75.4%) AVOID; Charlie AGREE ($38)",
       "what": "CoreWeave คือ cloud ที่สร้างมาเพื่อ AI โดยเฉพาะ ให้เช่ากำลังประมวลผล GPU ผ่านสัญญา take-or-pay ระยะยาว (เฉลี่ย ~5 ปี) Q2 2026 รายได้ $2.58 พันล้านดอลลาร์ +112.5% YoY backlog ~$104 พันล้านดอลลาร์ กำลังไฟที่สัญญาไว้ ~4.2GW guide รายได้ปี 2026 $12-13 พันล้านดอลลาร์",
       "why_invest": [
-        "backlog ใหญ่ที่สุดในกลุ่ม neocloud (~$104B) พร้อมสถานะ NVIDIA Exemplar Cloud",
-        "SemiAnalysis ClusterMAX ระดับ Platinum เป็นรอบที่ 3 ติด — หลักฐานว่าลูกค้ายอมจ่ายราคา premium",
-        "CEO ระบุว่าไม่มีการลดคำสั่งซื้อ GPU (ยังไม่มีตัวเลขรองรับ)"
+        "backlog ใหญ่ที่สุดในกลุ่ม neocloud ($104.2B ณ Q2) และ CEO บอกว่ามีสัญญาใหม่อีกกว่า $25B ใน Q3",
+        "SemiAnalysis ClusterMAX ระดับ Platinum เป็นรอบที่ 3 ติด และสถานะ NVIDIA Exemplar Cloud — หลักฐานว่าลูกค้ายอมจ่ายราคา premium",
+        "Charlie ตรวจพบว่า guide รายได้ปี 2026 ถูกปรับขึ้นเป็น $12.4-13.2B แล้ว (สูงกว่าที่ Warren ใช้)"
       ],
       "watch_out": [
-        "Warren: (รายได้ FY26E $12,500M × EV/Sales 4.0 เท่า − หนี้สุทธิ $28,433M) ÷ 610M หุ้น = FV $35 (Bull $66 / Bear $0 — ที่ Bear EV ต่ำกว่าหนี้สุทธิ ส่วนของผู้ถือหุ้นเหลือ 0)",
-        "ตลาดกลัวหนี้กลุ่ม AI: yield หุ้นกู้ CoreWeave 2032 ขึ้นไปราว 15% (ตอนออก เม.ย. ~9.75%) — ทุกครั้งที่ต้องระดมเงินก้อนใหม่จะแพงขึ้นหรือ dilute มากขึ้น; CreditSights ชี้ว่าสัญญาเช่า (ยาว) กับสัญญาลูกค้า (สั้นกว่า) ไม่ตรงกัน",
-        "หนี้รวม $35.1B (หนี้+lease ~$52B) + capex ปี 2026 $31-35B และกระแสเงินสดอิสระติดลบ ~$25B ปีนี้ = ต้องหาเงินต่อเนื่อง; gross margin ลดลง 5 ไตรมาสติด; ลูกค้า top-2 ~65% ของรายได้"
+        "Warren: (รายได้ FY26E $12,500M × EV/Sales 4.0 เท่า − หนี้สุทธิ $28,433M) ÷ 610M หุ้น = FV $35 (Bull $66 / Bear $0 — ที่ Bear ส่วนของผู้ถือหุ้นเหลือ 0)",
+        "ตลาดเครดิตยังกังวล: yield หุ้นกู้ 2031/2032 ราว 14.8-16% และ CDS เกิน 1,000bp — CEO ส่ง memo บอกพนักงานว่าตลาด 'ไม่มีเหตุผล' แต่ไม่ได้มีตัวเลขใหม่",
+        "capex ปี 2026 สูงและกระแสเงินสดอิสระติดลบ ~$25B ปีนี้ = ต้องหาเงินต่อเนื่อง; ลูกค้า top-2 ~65% ของรายได้"
       ],
-      "bottom_line": "ธุรกิจโตเร็วและมี backlog ใหญ่จริง แต่ส่วนของผู้ถือหุ้นเป็นแค่ 'ส่วนที่เหลือ' บางๆ หลังหักหนี้ก้อนใหญ่ และตอนนี้ต้นทุนเงินกู้กำลังแพงขึ้น — TQR Peripheral (5.55) และ MoS -87.94% ทำให้ AVOID ชัดเจน"
+      "bottom_line": "backlog ใหญ่เป็นของจริง แต่ส่วนของผู้ถือหุ้นเป็นแค่ 'ส่วนที่เหลือ' บางๆ หลังหักหนี้ก้อนใหญ่ และต้นทุนเงินกู้ยังแพง — TQR Peripheral (5.55) และ MoS -75.4% ทำให้ AVOID ชัดเจน รองบ Q3 วันที่ 11 พ.ย."
     },
     "mark_full": {
       "business_overview": "CoreWeave เป็น cloud ที่ออกแบบมาเฉพาะสำหรับ AI workload (training/inference/agentic) ต่างจาก cloud อเนกประสงค์อย่าง AWS/GCP/Azure — รายได้เกือบทั้งหมดมาจากสัญญาเช่ากำลังประมวลผล GPU ระยะยาวแบบ take-or-pay (สัญญาเฉลี่ย ~5 ปี) ไม่มีการแยก segment รายได้ ก่อตั้งปี 2017 เข้าตลาด Nasdaq มีนาคม 2025 ไตรมาสล่าสุด (Q2 2026) รายได้ $2.58 พันล้านดอลลาร์ โต 112.5% เทียบปีก่อน backlog สะสม (RPO + estimated future revenue) ประมาณ $104 พันล้านดอลลาร์",
       "tam": "ตลาด AI cloud infrastructure กำลังขยายตัวเร็วมากตามดีมานด์ training/inference — ผู้บริหารประเมินว่ากว่าครึ่งของ compute ที่ใช้งานจริงตอนนี้เป็น inference แล้ว (ไม่ใช่แค่ training เหมือนช่วงแรก) เป็นสัญญาณว่าลูกค้ากำลังใช้งานจริงไม่ใช่แค่ทดลอง เป้าหมายบริษัทคือ exit-run-rate revenue เกิน $30,000 ล้านดอลลาร์ในปี 2027 โดย 75%+ ผูกสัญญาไว้แล้ว",
       "moat": "จุดขายหลักคือความเร็วในการ deploy GPU รุ่นใหม่ก่อนใคร — ได้สถานะ NVIDIA Exemplar Cloud สำหรับ GB200/GB300 และเป็นรายเดียวที่ได้ SemiAnalysis ClusterMAX Platinum rating นอกจากนี้ NVIDIA ยังลงทุนตรงใน CoreWeave ($2,000 ล้านดอลลาร์) และร่วมมือขยาย AI factory 5GW+ ภายในปี 2030 อย่างไรก็ตาม moat นี้ยังพิสูจน์ไม่เต็มที่ — ไม่มี exclusivity กับ NVIDIA ลูกค้าใหญ่สามารถซื้อ GPU ตรงหรือสร้าง infrastructure เองได้ในระยะยาว และ hardware เองเป็นสินค้า commodity โดย moat ที่แท้จริงต้องอยู่ที่ชั้น software/orchestration ซึ่งยังไม่มีหลักฐานชัดว่าลอกเลียนยากจริง",
-      "latest_financials": "Q2 2026: รายได้ $2.58B +112.5% YoY, backlog ~$104B, contracted power ~4.2GW, guide FY26 $12-13B Warren (15 ต.ค., ข่าวหุ้นกู้ + ราคา) คง FV ที่หักหนี้สุทธิแล้ว: (รายได้ FY26E $12,500M × EV/Sales 4.0 − หนี้สุทธิ $28,433M) ÷ 610M หุ้น = FV $35 (Bull $66 / Bear $0) หุ้นกู้แปลงสภาพ 2033 (ราคาแปลง $97.85) ถือเป็นหนี้ ราคาที่ใช้ $65.78 MoS -87.94% ผลตอบแทนคาดการณ์ -11.86%/ปี WAF 5.22 (RA ลด 3.0 → 2.5) Charlie รีวิวใหม่ FV $36 AGREE",
+      "latest_financials": "Q2 2026: รายได้ $2.58B +112.5% YoY, backlog $104.2B, กำไรจากการดำเนินงาน -$49M ขาดทุนสุทธิ -$626M รอบ 18 ต.ค.: CEO Intrator ส่ง memo ถึงพนักงานว่า backlog + สัญญาใหม่ใน Q3 กว่า $25B มากพอรองรับหนี้ — ไม่มีตัวเลขใหม่ ไม่มี guide เปลี่ยนหรือสัญญาถูกยกเลิก Warren จึงคง FV: (รายได้ FY26E $12,500M × EV/Sales 4.0 − หนี้สุทธิ $28,433M) ÷ 610M หุ้น = FV $35 (Bull $66 / Bear $0) ราคา $61.39 MoS -75.4% ผลตอบแทนคาดการณ์ -10.63%/ปี WAF 5.30 (RA คง 2.5) — Charlie ใช้ guide ใหม่ $12.4-13.2B (กลาง $12.8B) ได้ FV $38",
       "key_points": [
-        "AVOID: FV $35 ราคา $65.78 MoS -87.94% ไม่ผ่านเกณฑ์ 15%",
-        "Charlie AGREE (รีวิวใหม่เต็ม): FV $36 vs $35 — ยอมรับการลด RA เพราะเป็นเรื่องต้นทุนเงินกู้จริง",
-        "yield หุ้นกู้ 2032 ขึ้นราว 15% ในสัปดาห์เดียว (ตอนออก ~9.75%) ขณะที่ดอกเบี้ยจ่าย Q2 $640M (2 เท่าของปีก่อน) และ S&P จัดความเสี่ยงการเงิน 'aggressive'",
-        "TQR Peripheral (5.55): Resilience 1.5 ต่ำสุดในธีม — รายได้ 100% ผูกกับดีมานด์ AI compute; งบ Q3 11 พ.ย."
+        "AVOID: FV $35 ราคา $61.39 MoS -75.4% ไม่ผ่านเกณฑ์ 15%",
+        "Charlie AGREE: FV $38 vs $35 — Warren ยังใช้ guide เก่า $12-13B แต่ความคลาดเคลื่อนอยู่ฝั่งระวัง (FV ต่ำไว้ก่อน) AVOID ถูกต้อง",
+        "ตลาดเครดิต: yield หุ้นกู้ 2031/2032 ราว 14.8-16%, CDS เกิน 1,000bp — Warren คง RA 2.5 เพราะลดไปแล้วรอบ 15 ต.ค. ไม่ลดซ้ำ",
+        "จุดทดสอบ: งบ Q3 วันที่ 11 พ.ย. — หนี้สุทธิ, การขายหุ้นผ่าน ATM และ guidance ปี 2026; Charlie เตือนว่าถ้าหนี้สุทธิเพิ่ม ~$5B FV อาจลงไปราว $29"
       ]
     },
     "warren_easy": [
-      "CRWV: AVOID, tier Speculative, WAF 5.22 — FV $35 คงเดิม ((รายได้ FY26E $12.5B × 4.0 เท่า − หนี้สุทธิ $28.4B) ÷ 610M หุ้น) Bull $66 / Bear $0",
-      "ราคาที่ใช้ $65.78 MoS -87.94% ผลตอบแทนคาดการณ์ -11.86%/ปี — ราคาย่อลงเพราะตลาดกลัวหนี้ของกลุ่ม neocloud (yield หุ้นกู้ CoreWeave 2032 ขึ้นไปราว 15%) ยังไม่มีการลด guidance หรือยกเลิกสัญญา",
-      "Warren ลดคะแนนความเสี่ยง (RA) 3.0 → 2.5: ต้นทุนการกู้ก้อนใหม่แพงขึ้นชัด ขณะที่ต้องหาเงินต่อเนื่องสำหรับ capex $31-35B — Q3 ประกาศ 11 พ.ย."
+      "CRWV: AVOID, tier Speculative, WAF 5.30 — FV $35 คงเดิม ((รายได้ FY26E $12.5B × 4.0 เท่า − หนี้สุทธิ $28.4B) ÷ 610M หุ้น) Bull $66 / Bear $0",
+      "ราคา $61.39 MoS -75.4% ผลตอบแทนคาดการณ์ -10.63%/ปี — memo ของ CEO ยืนยัน backlog $104.2B + สัญญาใหม่ >$25B แต่เป็นตัวเลขที่ Warren นับไว้แล้ว",
+      "ตลาดเครดิตยังตึง (yield หุ้นกู้ ~15%, CDS >1,000bp) Warren คง RA 2.5 ไม่ลดซ้ำ — Q3 ประกาศ 11 พ.ย."
     ],
     "charlie_easy": {
       "verdict": "AGREE",
+      "review_date": "2026-10-18",
       "paragraphs": [
-        "Charlie รีวิวใหม่เต็ม (ไม่ carry แล้ว): ((รายได้ FY26E $12,500M × 4.0) − หนี้สุทธิ ~$29,000M) ÷ 582.5M หุ้น = FV $36 เทียบ Warren $35 (ห่าง -2.9%) → AGREE ว่า AVOID",
-        "เห็นด้วยที่ Warren ลด RA 3.0 → 2.5 เพราะเป็นเรื่องต้นทุนเงินกู้จริง ไม่ใช่การเอาราคาหุ้นมาปน — แต่หมายเหตุว่า yield ~15% ของหุ้นกู้ 2032 ยังยืนยันจากแหล่งอิสระไม่ได้ (เจอแค่ดอกเบี้ยตอนออก 9.625%/8.5% และคอมเมนต์ yield ~13%) ทิศทางยังถูกอยู่ดี",
-        "จุดที่ทำให้ FV อาจต่ำกว่านี้: ยังไม่รู้ว่าขายหุ้นผ่าน ATM ไปเท่าไร และเงินสดที่ใช้กับ capex ใน Q3 — ทั้งสองเรื่องกด FV ลง ไม่ใช่ดันขึ้น",
-        "ต้องติดตาม: งบ Q3 วันที่ 11 พ.ย. — หนี้สุทธิ, การขายหุ้น ATM, guidance FY26"
-      ],
-      "review_date": "2026-10-15"
+        "Charlie รีวิวใหม่: ((รายได้ FY26E $12,800M × 4.0) − หนี้สุทธิ ~$29,000M) ÷ 582.5M หุ้น = FV $38 เทียบ Warren $35 → AGREE ว่า AVOID",
+        "จุดที่ต่าง: Charlie พบว่า guide รายได้ปี 2026 ถูกปรับขึ้นเป็น $12.4-13.2B แล้ว (Warren ยังใช้ $12-13B) แต่ความต่างนี้อยู่ฝั่งระวัง และ EPS ยังติดลบทั้งปี 2026-2027 จึงต้องใช้ EV/Sales แทน P/E ถูกต้อง",
+        "ความเสี่ยงที่จะกด FV ลงอีก: capex Q3 ราว $11.5-13.5B และการขายหุ้นผ่าน ATM ที่ยังไม่รู้ตัวเลข — ถ้าหนี้สุทธิเพิ่ม ~$5B FV อาจเหลือราว $29",
+        "ต้องติดตาม: งบ Q3 วันที่ 11 พ.ย. — หนี้สุทธิ, จำนวนหุ้นที่ขาย ATM, guidance FY26"
+      ]
     },
-    "idea_th": "AVOID — FV $35 (Bull $66 / Bear $0) หลังหักหนี้สุทธิ $28.4B ราคา $65.78 MoS -87.94% ผลตอบแทนคาดการณ์ -11.86%/ปี ราคาย่อลงเพราะตลาดกลัวหนี้กลุ่ม neocloud ซึ่งทำให้ต้นทุนเงินกู้ก้อนใหม่แพงขึ้นจริง (RA ลดเป็น 2.5) Charlie AGREE ($36) — backlog ~$104B เป็นของจริง แต่ส่วนของผู้ถือหุ้นเป็นส่วนเหลือบางๆ ของ EV",
+    "idea_th": "AVOID — FV $35 (Bull $66 / Bear $0) หลังหักหนี้สุทธิ $28.4B ราคา $61.39 MoS -75.4% ผลตอบแทนคาดการณ์ -10.63%/ปี CEO ยืนยัน backlog $104.2B แต่ตลาดเครดิตยังให้ต้นทุนเงินกู้สูง (yield ~15%) Charlie AGREE ($38) — backlog เป็นของจริง แต่ส่วนของผู้ถือหุ้นเป็นส่วนเหลือบางๆ หลังหักหนี้",
     "story_gate_th": {
       "what": "CoreWeave ให้เช่ากำลังประมวลผล GPU เฉพาะทาง AI (training/inference) ผ่านสัญญา take-or-pay หลายปี — ชนะด้วยความเร็วในการ deploy GPU รุ่นใหม่ก่อนใครและความสัมพันธ์พิเศษกับ NVIDIA (ลงทุนในหุ้น $2B)",
       "why": "ตลาดมองเป็น 'ผู้นำ neocloud ที่มี backlog ใหญ่สุด' — Warren เห็นต่างว่าตลาดยังไม่ price-in ความเสี่ยง: gross margin ลดลง 5 ไตรมาสติด หนี้รวมโตถึง $35.1B และลูกค้า top-2 ~65% ของรายได้ ทำให้ backlog ส่วนหนึ่งผูกกับความเสี่ยงของ AI lab ที่ยังไม่ทำกำไร",
       "risk": "ถ้ามาร์จิ้นไม่ฟื้นตามที่สัญญา หรือลูกค้ารายใหญ่ลดสัญญา ตลาดสินเชื่ออาจ re-price หนี้ทันที เพราะโมเดลพึ่งกำลังผลิตที่ระดมด้วยหนี้ และต้องหาเงินต่อเนื่องสำหรับ capex $31-35B"
     },
     "bull_th": [
-      "backlog ~$104B จากสัญญา take-or-pay หลายปี = เห็นรายได้ล่วงหน้ายาว; กำลังไฟที่สัญญาไว้ ~4.2GW",
-      "Q2 2026 รายได้ $2.58B +112.5% YoY; guide FY26 $12-13B",
-      "เป็นรายแรกๆ ที่ deploy GPU รุ่นใหม่ (GB200/GB300, Rubin) และได้ SemiAnalysis ClusterMAX Platinum ติดต่อกัน 3 รอบ",
+      "backlog $104.2B จากสัญญา take-or-pay หลายปี + สัญญาใหม่ใน Q3 กว่า $25B (ตาม CEO) = เห็นรายได้ล่วงหน้ายาว",
+      "Q2 2026 รายได้ $2.58B +112.5% YoY; guide FY26 ปรับขึ้นเป็น $12.4-13.2B (Charlie ตรวจสอบ)",
+      "เป็นรายแรกๆ ที่ deploy GPU รุ่นใหม่ และได้ SemiAnalysis ClusterMAX Platinum ติดต่อกัน 3 รอบ",
       "สถาปัตยกรรมสร้างเพื่อ AI โดยเฉพาะ ได้เปรียบเรื่อง density/latency เทียบ cloud อเนกประสงค์"
     ],
     "risk_th": [
       "หนี้สุทธิ $28.4B (หนี้รวม $35.1B, หนี้+lease ~$52B) เทียบรายได้ FY26E $12.5B",
-      "ต้นทุนเงินกู้ก้อนใหม่แพงขึ้น: yield หุ้นกู้ 2032 ราว 15% ขณะที่ capex FY26 $31-35B และกระแสเงินสดอิสระติดลบ ~$25B ต้องระดมทุนต่อเนื่อง (หุ้นกู้แปลงสภาพ + ATM = dilute)",
+      "ต้นทุนเงินกู้ก้อนใหม่แพง: yield หุ้นกู้ 2031/2032 ราว 14.8-16%, CDS เกิน 1,000bp ขณะที่กระแสเงินสดอิสระติดลบ ~$25B ปีนี้ ต้องระดมทุนต่อเนื่อง (หุ้นกู้แปลงสภาพ + ATM = dilute)",
+      "capex Q3 $11.5-13.5B และการขาย ATM อาจดันหนี้สุทธิขึ้น — Charlie ประเมินว่า FV อาจลงไปราว $29",
       "ลูกค้า top-2 ~65% ของรายได้ gross margin ลดลง 5 ไตรมาส และสัญญาเช่า data center ยาวกว่าสัญญาลูกค้า",
       "GPU commoditization — ลูกค้าซื้อตรงจาก NVIDIA ได้; TQR Resilience 1.5 ต่ำสุดในธีม"
     ]
