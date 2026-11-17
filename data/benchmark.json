@@ -1,21 +1,21 @@
 {
   "SPY": {
     "name": "S&P 500",
-    "return_1y": 13.48,
-    "price": 754.37,
-    "date": "2026-11-13"
+    "return_1y": 12.36,
+    "price": 739.95,
+    "date": "2026-11-16"
   },
   "QQQ": {
     "name": "NASDAQ 100",
-    "return_1y": 12.19,
-    "price": 679.89,
-    "date": "2026-11-13"
+    "return_1y": 10.14,
+    "price": 661.75,
+    "date": "2026-11-16"
   },
   "VT": {
     "name": "Total World",
-    "return_1y": 13.39,
-    "price": 155.3,
-    "date": "2026-11-13"
+    "return_1y": 12.48,
+    "price": 152.36,
+    "date": "2026-11-16"
   },
-  "generated_at": "2026-11-14T03:02:55Z"
+  "generated_at": "2026-11-17T05:01:16Z"
 }
