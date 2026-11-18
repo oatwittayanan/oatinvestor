@@ -429,6 +429,49 @@ def build_history(transactions: list, benchmark_tickers: list[str],
     return result
 
 # ── Main ──────────────────────────────────────────────────────────
+def mask_money(output: dict) -> None:
+    """Hide real dollar amounts in the public portfolio.json (โอ๊ต 2026-11-18: ปิดมูลค่าพอร์ตทั้งหมด).
+
+    Every money field is multiplied by one factor k so that both ports' total value = 100.
+    All ratios (pl_pct, pos_pct, returns, the chart, combined weights) stay exact, but no
+    absolute dollar amount is recoverable. Per-share market prices stay real (public data);
+    share counts are scaled instead. CASH (shares=1, price=amount) has its price scaled.
+    """
+    total = sum((output[k].get("total_value") or 0) for k in ("ai_port", "sp500_port"))
+    if total <= 0:
+        return
+    k = 100.0 / total
+    sc = lambda v, nd=6: round(v * k, nd) if isinstance(v, (int, float)) else v
+    for key in ("ai_port", "sp500_port"):
+        p = output[key]
+        for f in ("total_cost", "total_value", "pl_usd", "total_dividends"):
+            if f in p:
+                p[f] = sc(p[f], 4)
+        for h in p.get("holdings", []):
+            for f in ("cost", "value", "pl_usd"):
+                if f in h:
+                    h[f] = sc(h[f], 4)
+            if h.get("ticker") == "CASH":
+                h["avg_cost"], h["price"] = sc(h.get("avg_cost")), sc(h.get("price"))
+            elif "shares" in h:
+                h["shares"] = sc(h["shares"], 8)
+        for t in p.get("transactions", []):
+            if "total" in t:
+                t["total"] = sc(t["total"], 4)
+            if t.get("ticker") == "CASH":
+                t["price"] = sc(t.get("price"))
+            elif isinstance(t.get("shares"), (int, float)):
+                t["shares"] = sc(t["shares"], 8)
+        hist = p.get("history") or {}
+        for f, v in list(hist.items()):
+            if f != "dates" and isinstance(v, list):
+                hist[f] = [sc(x, 4) for x in v]
+        summ = hist.get("summary") or {}
+        if "total_deposited" in summ:
+            summ["total_deposited"] = sc(summ["total_deposited"], 4)
+    output["money_masked"] = "ตัวเลขเงินทั้งหมดถูกย่อเป็นหน่วยดัชนี (2 พอร์ตรวม = 100) — สัดส่วนและ % ถูกต้อง แต่ไม่ใช่ดอลลาร์จริง"
+
+
 def main():
     print("📊 Generating portfolio.json ...")
     svc = get_sheets_service()
@@ -488,17 +531,18 @@ def main():
         "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
 
-    OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2))
-    print(f"\n✅  portfolio.json → {OUT_FILE}")
-
-    # Print summary
+    # Print summary (real numbers — local log only, before masking)
     for key, label in [("ai_port","ลงทุนกับ AI"), ("sp500_port","พอร์ตออม S&P500")]:
         p = output[key]
         s = p.get("history", {}).get("summary", {})
         print(f"  [{label}] cost=${p.get('total_cost',0):.2f} value=${p.get('total_value',0):.2f} "
               f"P/L={p.get('pl_pct',0):+.2f}% | "
               f"vs VOO={s.get('voo_pct', s.get('qqqm_pct',0)):+.2f}%")
+
+    mask_money(output)
+    OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    OUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    print(f"\n✅  portfolio.json → {OUT_FILE} (money masked: index units, both ports sum to 100)")
 
 if __name__ == "__main__":
     main()

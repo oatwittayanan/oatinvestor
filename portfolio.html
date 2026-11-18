@@ -503,6 +503,7 @@ function pctStr(v, digits=2) {
   if (v == null) return '—';
   return (v >= 0 ? '+' : '') + v.toFixed(digits) + '%';
 }
+const MASK = '***'; // 2026-11-18 ปิดมูลค่าพอร์ตบนเว็บ
 function usdStr(v) {
   if (v == null) return '—';
   return (v >= 0 ? '+$' : '-$') + Math.abs(v).toFixed(2);
@@ -644,10 +645,10 @@ function renderAI(p) {
   const cashHolding = p.holdings.find(h => h.ticker === 'CASH');
   const cashAmt     = cashHolding ? cashHolding.value : 0;
   document.getElementById('ai-stats').innerHTML = [
-    statCard('มูลค่ารวม', '$' + (p.total_value||0).toFixed(2)),
-    statCard('ต้นทุนรวม', '$' + (p.total_cost||0).toFixed(2)),
-    statCard('กำไร/ขาดทุน', usdStr(p.pl_usd), pctClass(p.pl_usd), pctStr(p.pl_pct), pctClass(p.pl_usd)),
-    statCard('Cash (เงินสด)', fmtPrice(cashAmt), '', 'เงินสดในพอร์ต'),
+    statCard('มูลค่ารวม', MASK),
+    statCard('ต้นทุนรวม', MASK),
+    statCard('กำไร/ขาดทุน', pctStr(p.pl_pct), pctClass(p.pl_pct)),
+    statCard('Cash (เงินสด)', (cashAmt / (p.total_value||1) * 100).toFixed(1) + '%', '', 'สัดส่วนเงินสดในพอร์ต'),
   ].join('');
 
   // Chart — need ≥2 data points for a line; show comparison cards if too short
@@ -711,7 +712,7 @@ function renderAI(p) {
         </div>
         <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${colorMap[h.ticker]}"></div></div>
         <div class="holding-numbers">
-          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-value">${MASK}</div>
           <div class="holding-pl">
             <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
             <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
@@ -730,9 +731,9 @@ function renderAI(p) {
         <div class="tx-row">
           <span class="tx-date">${t.date}</span>
           <span>${txBadge(t.type)} <strong>${t.ticker}</strong></span>
-          <span>${t.type==='DIV' ? '—' : t.shares.toFixed(4)}</span>
+          <span>${t.type==='DIV' ? '—' : MASK}</span>
           <span class="tx-price-col" style="color:var(--text-3)">${t.type==='DIV' ? '—' : '$'+t.price.toFixed(2)}</span>
-          <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${t.type==='DIV' ? '+$'+t.total.toFixed(2) : '$'+t.total.toFixed(2)}</span>
+          <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${MASK}</span>
         </div>`).join('')}
     </div>`;
 
@@ -749,10 +750,10 @@ function renderSP(p) {
   // Stats
   const spDiv = p.total_dividends || 0;
   document.getElementById('sp-stats').innerHTML = [
-    statCard('มูลค่ารวม', '$' + (p.total_value||0).toFixed(2)),
-    statCard('ต้นทุนรวม', '$' + (p.total_cost||0).toFixed(2)),
-    statCard('กำไร/ขาดทุน', usdStr(p.pl_usd), pctClass(p.pl_usd), pctStr(p.pl_pct), pctClass(p.pl_usd)),
-    statCard('ปันผลสะสม', '+$' + spDiv.toFixed(2), spDiv > 0 ? 'pos' : '', 'รวมทั้งหมดที่เคยได้รับ'),
+    statCard('มูลค่ารวม', MASK),
+    statCard('ต้นทุนรวม', MASK),
+    statCard('กำไร/ขาดทุน', pctStr(p.pl_pct), pctClass(p.pl_pct)),
+    statCard('ปันผลสะสม', spDiv > 0 ? 'ได้รับแล้ว' : '—', spDiv > 0 ? 'pos' : '', 'รวมทั้งหมดที่เคยได้รับ'),
   ].join('');
 
   // Chart (depositNorm=true: performance only, ignores DCA cash inflows)
@@ -796,7 +797,7 @@ function renderSP(p) {
         </div>
         <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${spColors[h.ticker]}"></div></div>
         <div class="holding-numbers">
-          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-value">${MASK}</div>
           <div class="holding-pl">
             <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
             <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
@@ -810,9 +811,9 @@ function renderSP(p) {
     <div class="tx-row">
       <span class="tx-date">${t.date}</span>
       <span>${txBadge(t.type === 'BUY' ? 'BUY' : t.type)} <strong>${t.ticker}</strong></span>
-      <span>${t.type==='DIV' ? '—' : t.shares.toFixed(4)}</span>
+      <span>${t.type==='DIV' ? '—' : MASK}</span>
       <span class="tx-price-col" style="color:var(--text-3)">${t.type==='DIV' ? '—' : '$'+t.price.toFixed(2)}</span>
-      <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${t.type==='DIV' ? '+$'+t.total.toFixed(2) : '$'+t.total.toFixed(2)}</span>
+      <span class="tx-total ${t.type==='DIV' ? 'pos' : ''}">${MASK}</span>
     </div>`).join('');
 
   // DCA Summary
@@ -824,11 +825,11 @@ function renderSP(p) {
   document.getElementById('sp-dca-summary').innerHTML = `
     <div style="display:flex;gap:24px;flex-wrap:wrap;font-size:.85rem">
       <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ออม DCA</div><div style="font-weight:700">${buyTxs.length} ครั้ง</div></div>
-      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">เงินทั้งหมด</div><div style="font-weight:700">$${p.total_cost.toFixed(2)}</div></div>
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">เงินทั้งหมด</div><div style="font-weight:700">${MASK}</div></div>
       <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ราคาเฉลี่ย</div><div style="font-weight:700">$${avgPrice.toFixed(2)}</div></div>
       ${currentPrice ? `<div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ราคาปัจจุบัน</div><div style="font-weight:700">$${currentPrice.toFixed(2)}</div></div>` : ''}
-      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">หน่วยทั้งหมด</div><div style="font-weight:700">${totalShares.toFixed(4)}</div></div>
-      ${divTotal > 0 ? `<div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ปันผลสะสม</div><div style="font-weight:700;color:var(--green)">+$${divTotal.toFixed(2)}</div></div>` : ''}
+      <div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">หน่วยทั้งหมด</div><div style="font-weight:700">${MASK}</div></div>
+      ${divTotal > 0 ? `<div><div style="color:var(--text-3);font-size:.75rem;margin-bottom:2px">ปันผลสะสม</div><div style="font-weight:700;color:var(--green)">ได้รับแล้ว</div></div>` : ''}
     </div>`;
 
   document.getElementById('sp-loading').style.display = 'none';
@@ -864,10 +865,10 @@ function renderCombined(aiPort, spPort) {
   const totalDiv = (aiPort.total_dividends || 0) + (spPort.total_dividends || 0);
 
   document.getElementById('combined-stats').innerHTML = [
-    statCard('มูลค่ารวมทั้งหมด', '$' + totalValue.toFixed(2)),
-    statCard('ต้นทุนรวมทั้งหมด', '$' + totalCost.toFixed(2)),
-    statCard('กำไร/ขาดทุนรวม', usdStr(plUsd), pctClass(plUsd), pctStr(plPct), pctClass(plUsd)),
-    statCard('ปันผลสะสมรวม', '+$' + totalDiv.toFixed(2), totalDiv > 0 ? 'pos' : '', 'ทั้ง 2 พอร์ต'),
+    statCard('มูลค่ารวมทั้งหมด', MASK),
+    statCard('ต้นทุนรวมทั้งหมด', MASK),
+    statCard('กำไร/ขาดทุนรวม', pctStr(plPct), pctClass(plPct)),
+    statCard('ปันผลสะสมรวม', totalDiv > 0 ? 'ได้รับแล้ว' : '—', totalDiv > 0 ? 'pos' : '', 'ทั้ง 2 พอร์ต'),
   ].join('');
 
   const nameMap = { CASH:'เงินสด', NVDA:'NVIDIA', MSFT:'Microsoft', META:'Meta', AMZN:'Amazon', GOOGL:'Alphabet', AAPL:'Apple', VOO:'Vanguard S&P 500 ETF' };
@@ -902,7 +903,7 @@ function renderCombined(aiPort, spPort) {
         </div>
         <div class="holding-bar"><div class="holding-bar-fill" style="width:${Math.min(100,pct)}%;background:${colorMap[h.ticker]}"></div></div>
         <div class="holding-numbers">
-          <div class="holding-value">$${h.value.toFixed(2)}</div>
+          <div class="holding-value">${MASK}</div>
           <div class="holding-pl">
             <span class="${pctClass(h.pl_pct)}">${pctStr(h.pl_pct)}</span>
             <span style="color:var(--text)"> · ${pct.toFixed(1)}%</span>
@@ -983,11 +984,11 @@ function renderSavingsGoal(total) {
   const GOAL = 1_000_000;
   const pct  = total / GOAL * 100;
   const usd  = (n, dp) => '$' + n.toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp });
-  document.getElementById('sg-current').textContent = usd(total, 2);
-  document.getElementById('sg-pct').textContent     = (pct < 0.01 ? pct.toFixed(4) : pct < 1 ? pct.toFixed(2) : pct.toFixed(1)) + '%';
-  document.getElementById('sg-remain').textContent  = 'เหลืออีก ' + usd(Math.max(GOAL - total, 0), 0);
-  // กว้างขั้นต่ำ 6px เพื่อให้เห็นว่าแถบเริ่มแล้ว แม้ % จะน้อยมาก
-  document.getElementById('sg-bar-fill').style.width = total > 0 ? `max(${Math.min(pct, 100)}%, 6px)` : '0';
+  // 2026-11-18 โอ๊ตปิดมูลค่าพอร์ต — ไม่แสดงยอดเงิน/ความคืบหน้าที่คำนวณย้อนเป็นเงินได้
+  document.getElementById('sg-current').textContent = MASK;
+  document.getElementById('sg-pct').textContent     = MASK;
+  document.getElementById('sg-remain').textContent  = 'เป้าหมาย ' + usd(GOAL, 0);
+  document.getElementById('sg-bar-fill').style.width = '6px';
 }
 
 // ── Load & Init ───────────────────────────────────────────────────

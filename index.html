@@ -370,12 +370,9 @@
     const sign = v > 0 ? '+' : '';
     return `${sign}${v.toFixed(1)}%`;
   }
-  function fmtMoney(v) {
-    return '$' + Math.round(v).toLocaleString('en-US');
-  }
-  function fmtMoney2(v) {
-    return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  }
+  // 2026-11-18 โอ๊ตปิดมูลค่าพอร์ตอีกครั้ง (ทั้งหน้าเว็บและ Worker) — แสดง *** แทนตัวเลขเงินทุกจุด
+  function fmtMoney() { return '***'; }
+  function fmtMoney2() { return '***'; }
   // SGOV (T-bill ETF) and CASH aren't real stock picks — always park them at
   // the end of the list so the holdings that are actual positions stand out.
   const TAIL_TICKERS = ['SGOV', 'CASH'];
