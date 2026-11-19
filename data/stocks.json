@@ -177,14 +177,14 @@
     "action": "buy",
     "actionLabel": "Buy",
     "conviction": 4,
-    "waf": 8.28,
+    "waf": 8.33,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 150.9,
-    "fv": 315,
-    "mos": 52.1,
-    "fpe": 10.07,
-    "peg": 0.34,
+    "price": 152.75,
+    "fv": 344,
+    "mos": 55.6,
+    "fpe": 9.31,
+    "peg": 0.31,
     "scores": {
       "bq": [
         8.5,
@@ -192,27 +192,27 @@
         85
       ],
       "gp": [
+        9.7,
+        "green",
+        97
+      ],
+      "va": [
         9.5,
         "green",
         95
       ],
-      "va": [
-        9.4,
-        "green",
-        94
-      ],
       "ra": [
-        3.5,
+        3.3,
         "orange",
-        35
+        33
       ]
     },
-    "idea": "11-12 /warren NVDA (CEO exit): Huang resigned, Kress interim CEO. Multiple 23→21x → FV $315; price $150.90 premarket → MoS 52.1% vs gate 15%, ER 45.86%, WAF 8.28 HIGH. Long-term HOLD (no sell/trim — moat assets intact near-term, price < Bear FV). BUY = staged: starter now is acceptable on price; add after 11-17 print if (a) Q3 rev ≥ $105.8B, (b) FY28 +~70% reaffirmed by Kress, (c) no key-EVP departures. Never above TQR Strong cap 25%.",
-    "updated": "2026-11-12",
+    "idea": "11-19 /warren NVDA (post-Q3 FY27): Q3 $115.8B beat thesis line $105.8B; Q4 guide $130B; FY28 raised to ~+75%. FV $315→$344 (EPS $14.98→$16.40, 21x). MoS 55.6% vs gate 10%, WAF 8.33 HIGH. Sell triggers a/b/c NOT fired. Rules say BUY (within TQR cap 25%); for Oat's existing holding = HOLD (no sell/trim); ADD allowed only within cap if Oat lifts no-new-buy stance. || 11-12 /warren NVDA (CEO exit): Huang resigned, Kress interim CEO. Multiple 23→21x → FV $315; price $150.90 premarket → MoS 52.1% vs gate 15%, ER 45.86%, WAF 8.28 HIGH. Long-term HOLD (no sell/trim — moat assets intact near-term, price < Bear FV). BUY = staged: starter now is acceptable on price; add after 11-17 print if (a) Q3 rev ≥ $105.8B, (b) FY28 +~70% reaffirmed by Kress, (c) no key-EVP departures. Never above TQR Strong cap 25%.",
+    "updated": "2026-11-19",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-11-12",
+      "updated": "2026-11-19",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
@@ -1342,144 +1342,6 @@
       "คดี FTC เรื่องระบบประมูลโฆษณา + คดีผูกขาดที่จะขึ้นศาลต้นปี 2027"
     ]
   },
-  "SKHY": {
-    "symbol": "SKHY",
-    "display": "SK Hynix",
-    "category": "semiconductor",
-    "name": "SK hynix Inc. ADR",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Memory",
-      "HBM Leader"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 2,
-    "waf": 6.43,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 122.47,
-    "fv": 74.4,
-    "mos": -64.61,
-    "fpe": 21.39,
-    "peg": null,
-    "scores": {
-      "bq": [
-        8.0,
-        "green",
-        80
-      ],
-      "gp": [
-        8.8,
-        "green",
-        88
-      ],
-      "va": [
-        2.6,
-        "orange",
-        26
-      ],
-      "ra": [
-        5.0,
-        "orange",
-        50
-      ]
-    },
-    "idea": "11-19: Q3 read (80% op margin, booked to 2029) -> normalized FV $60 -> $74.4; price -18.5% to $122.47 (new 52w low, sector). MoS -64.6%, ER 5.5%. WATCH.",
-    "updated": "2026-11-19",
-    "risk": [
-      "Carried forward - if de-cycling holds (margin >50% sustained through a downturn) normalized basis ($60) may be too low; Samsung/CXMT HBM parity is the offsetting risk; new capacity (Dalian +50% NAND, $39B Korea fabs) raises supply-catchup risk for 2027-28. Solidigm IPO (2027+) unconfirmed. 10-15: CXMT denser-DRAM design (server product by end-2026) adds to China catch-up risk (playbook KPI cost-gap ~10%, not breached)."
-    ],
-    "bull": [
-      "HBM leadership + AI memory demand จริง structural — LTA lock-in (~10 customers) + Nvidia/SK Group $500B+ AI-infra partnership reinforce the long-term demand case, but normalized mid-cycle earnings (rebuilt 08-18 under Revenue-as-Base) sit far below the current $155.37 price; SK Hynix still has zero down-cycle track record as a standalone public print."
-    ],
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-11-19",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "SK hynix เป็นผู้นำ HBM อันดับ 1 โลก (56.4% share) ผลิต advanced memory (DRAM/HBM/NAND) ซึ่งเป็นหัวใจของ AI compute — ชนะด้วย HBM technology lead (HBM4 industry-first) + qualification switching cost + scale/vertical packaging.",
-      "why": "Consensus treats the Nvidia/SK Group AI-infrastructure partnership + sovereign-wealth-fund buying interest (and now Japan-fab exploration headlines) as confirmation that SK Hynix's re-rating is justified — Warren's second-level read: **none of these are quantified earnings events, including the 08-24 Japan news, which SK Hynix itself has not confirmed as a decision.** Even after the stock's -9.34% pullback since 08-18, price ($155.37) sits far above the independently-rebuilt normalized fair value ($60/ADS) — the actual hard evidence for de-cycling (concluded LTAs with ~10 customers, two quarters of record-and-rising op margin 71%→76%) remains fully priced in and then some. This is the textbook cyclical-peak trap Lynch warned about: geographic-expansion headlines and partnership buzz are not a substitute for a lower entry price or a proven cycle trough.",
-      "risk": "ถ้า de-cycling เป็นจริง — operating margin ยืน >50% ต่อเนื่อง 2+ ปีแม้ capacity ใหม่ (M15X/Yongin/Fab 2/Japan ถ้าเกิดจริง) ramp เต็ม + LTA floors ยืนไม่มี oversupply price crash — แปลว่า normalized earnings อยู่ใกล้ระดับ peak จริง, FV base ผิด (ทั้ง $60 รอบนี้และ $110 รอบก่อน), และราคาปัจจุบัน justified. Two consecutive quarters of rising (not falling) operating margin (71%→76%) plus the Nvidia partnership's demand visibility are themselves data points in that direction — watch Q3 (next real test)."
-    },
-    "tier": "🔁 Cyclical",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price 122.47 = CNBC close; premarket 128.65",
-        "Net profit W39.8T vs op profit W83.3T gap unexplained - Warren flagged too",
-        "52w range 117.40-199.87 (CNBC)"
-      ],
-      "concerns": [
-        "Warren FV inflated vs Charlie conservative FV $58.1 (gap 21.9%) - WATCH unaffected"
-      ],
-      "summary": "",
-      "review_date": "2026-11-19"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้นำ HBM อันดับ 1 ของโลก — ธุรกิจแกร่ง แต่ราคา $147.55 ยังสูงกว่า FV ปกติ $60 ราว 2.5 เท่า Warren WATCH, Charlie CAUTION ($47)",
-      "what": "SK hynix ผลิตหน่วยความจำขั้นสูง (DRAM/HBM/NAND) ที่เป็นหัวใจของ AI — HBM ส่วนแบ่ง 56.4% อันดับ 1 โลก และ DRAM/NAND อันดับ 2 รายได้ส่วนใหญ่มาจาก DRAM ธุรกิจนี้เป็นวัฏจักรเหมือน memory ทั้งกลุ่ม",
-      "why_invest": [
-        "HBM #1 และเป็นเจ้าแรกที่ผลิต HBM3/HBM3E/HBM4 — ลูกค้าต้องผ่านการทดสอบรับรองนาน จึงย้ายค่ายยาก",
-        "มีสัญญาระยะยาว (LTA) กับลูกค้าราว 10 ราย และมาร์จิ้นการดำเนินงานล่าสุดสูงเป็นประวัติการณ์",
-        "ตลาด memory เป็น oligopoly 3 ราย (Samsung, SK hynix, Micron) — คู่แข่งใหม่เข้ายาก"
-      ],
-      "watch_out": [
-        "FV ปกติ $60 (Charlie $47) เทียบราคา $147.55 → MoS -145.92% ผลตอบแทนคาดการณ์ -1.47%/ปี",
-        "CXMT (จีน) ประกาศความคืบหน้า DRAM ความหนาแน่นสูง + ผลิตภัณฑ์ server ภายในสิ้นปี 2026 — เพิ่มความเสี่ยงจีนไล่ทัน (ยังไม่ถึงเกณฑ์อันตรายใน playbook) และ Samsung กำไร Q3 เบื้องต้นสูงเป็นประวัติการณ์",
-        "กำลังผลิตใหม่ (Dalian NAND, โรงงานเกาหลี $39B) เพิ่มความเสี่ยงซัพพลายล้นในปี 2027-28"
-      ],
-      "bottom_line": "SKHY คือผู้นำที่ดีที่สุดในกลุ่ม HBM ราคาย่อลงจากกระแสทั้งกลุ่ม แต่ยังจ่ายล่วงหน้าไปไกลกว่าทั้ง FV $60 ของ Warren และ $47 ของ Charlie — งบ Q3 ปลาย ต.ค. คือบททดสอบจริง ยัง WATCH"
-    },
-    "mark_full": {
-      "business_overview": "รายได้หลักมาจาก DRAM (~77%) และ NAND (~22% รวม Solidigm ที่ซื้อจาก Intel) อันดับโลก: HBM #1 (56.4%), DRAM #2, NAND #2 ลูกค้าหลักอยู่ในสหรัฐฯ และจีน โรงงานอยู่เกาหลีและจีน",
-      "tam": "การสร้างโครงสร้างพื้นฐาน AI ดันดีมานด์ HBM/DRAM เซิร์ฟเวอร์/eSSD ตลาดเป็น oligopoly 3 รายที่ต้องใช้เงินลงทุนมหาศาล — แต่คาดการณ์ส่วนแบ่ง HBM ปี 2027 ชี้ว่า Samsung (41%) อาจแซง SK hynix (39%)",
-      "moat": "เจ้าแรกที่ผลิต HBM รุ่นใหม่ได้ก่อนเสมอ + ต้นทุนการเปลี่ยนซัพพลายเออร์ (ต้องผ่าน qualification) + เทคโนโลยีการซ้อนชิป + สัญญาระยะยาว — แต่ยังไม่เคยผ่านขาลงของวัฏจักรในฐานะบริษัทที่ซื้อขาย ADS แยก",
-      "latest_financials": "ยังไม่มีงบใหม่ตั้งแต่ Q2 (งบ Q3 ปลาย ต.ค.) Warren คงสูตร 18 ส.ค.: รายได้ปกติ $131,000M × มาร์จิ้นสุทธิ 25.6% ÷ 7,288.65M หุ้น = EPS $4.60/ADS × 13 เท่า = FV $60 (Bull $82 / Bear $23) ราคาที่ใช้ $147.55 MoS -145.92% ผลตอบแทนคาดการณ์ -1.47%/ปี WAF 6.08 TQR Peripheral (6.5)",
-      "key_points": [
-        "WATCH: FV ปกติ $60 ราคา $147.55 ยังสูงกว่าราว 2.5 เท่า — ราคาที่ย่อลงมาจากกระแสทั้งกลุ่ม ไม่ใช่ปัจจัยบริษัท",
-        "Charlie CAUTION: มาร์จิ้นปกติ 20% ได้ FV $47 ห่าง Warren 21.7% — ข้อโต้แย้งเรื่องมาร์จิ้น (20% vs 25.6%) ยังไม่มีหลักฐานใหม่มาตัดสิน (รอบที่ 3)",
-        "ข่าว CXMT พัฒนา DRAM ความหนาแน่นสูงเป็นจุดเฝ้าดู (ช่องว่างต้นทุน DRAM จีน ~10% ยังไม่ถึงเกณฑ์ <5%) ไม่ได้เปลี่ยนคะแนน",
-        "จุดทดสอบ: งบ Q3 ปลาย ต.ค. — ส่วนแบ่ง HBM, มาร์จิ้นการดำเนินงาน และทิศทางราคาสัญญา"
-      ]
-    },
-    "warren_easy": [
-      "SKHY tier 🔁 Cyclical WAF 6.08 conviction LOW — FV ปกติ $60 คงเดิม (Bull $82 / Bear $23)",
-      "ราคาที่ใช้ $147.55 MoS -145.92% ผลตอบแทนคาดการณ์ -1.47%/ปี → WATCH ราคาย่อลงจากรอบก่อนเพราะกระแสทั้งกลุ่ม memory (ข่าว CXMT จีนพัฒนา DRAM ความหนาแน่นสูง + ตลาดเกาหลีเทขาย + ความกังวลหนี้ AI) ไม่ใช่ปัจจัยของบริษัทเอง",
-      "ไม่มีงบ/ข่าวใหม่ของ SK hynix และไม่มีการลด guidance — ข่าว CXMT เป็นแค่จุดที่ต้องเฝ้าดู (ยังไม่ถึงเกณฑ์อันตราย) งบ Q3 ปลาย ต.ค. คือบททดสอบจริง"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie รีเช็คใหม่ที่ราคา $147.55: ใช้มาร์จิ้นปกติ 20% (กึ่งกลางวัฏจักร 2019-2025 ที่มีทั้งปีขาดทุนและปีพีค) → EPS $3.59 × 13 เท่า = FV $47 ต่ำกว่า Warren ($60) 21.7% เกินเกณฑ์ 20% จึงเป็น CAUTION บังคับ — เถียงกันเรื่องมาร์จิ้น 20% vs 25.6% มา 3 รอบแล้ว",
-        "ถ้าจะให้ราคาตอนนี้สมเหตุสมผล รายได้ต้องโตราว 12.2%/ปี ต่อเนื่อง 10 ปี — ยังคาดหวังสูงสำหรับธุรกิจวัฏจักรที่ Samsung/CXMT กำลังไล่",
-        "ตัวเลขที่ตรวจตรง: ราคาตรงกับ Nasdaq/CNBC (ต่าง 0%) และประมาณการ EPS ไม่ถูกปรับลด — ยืนยันว่าราคาที่ลงมาจากอารมณ์ตลาด ไม่ใช่ตัวเลขบริษัทแย่ลง",
-        "WATCH ถูกต้องทั้งสองมุม (MoS -146% ตาม Warren / -214% ตาม Charlie) ต้องติดตาม: งบ Q3 ปลาย ต.ค. — ส่วนแบ่ง HBM มาร์จิ้น และราคาสัญญา"
-      ],
-      "review_date": "2026-10-15"
-    },
-    "idea_th": "WATCH — SK hynix ยังเป็นผู้นำ HBM ตัวจริง ราคาย่อลงมาที่ $147.55 จากกระแสทั้งกลุ่ม memory (ข่าว CXMT จีนพัฒนา DRAM ความหนาแน่นสูง + ตลาดเกาหลีเทขาย + ความกังวลหนี้ AI) ไม่ใช่ปัจจัยของบริษัทเอง แต่ยังสูงกว่า FV ปกติ $60 (Charlie $47) มาก MoS -145.92% ผลตอบแทนคาดการณ์ -1.47%/ปี — Charlie CAUTION เรื่องมาร์จิ้นปกติ รองบ Q3 ปลาย ต.ค.",
-    "story_gate_th": {
-      "what": "SK hynix เป็นผู้นำ HBM อันดับ 1 โลก (ส่วนแบ่ง 56.4%) ผลิตหน่วยความจำขั้นสูงที่เป็นหัวใจของ AI — ชนะด้วยความเป็นเจ้าแรกด้านเทคโนโลยี HBM ต้นทุนการเปลี่ยนซัพพลายเออร์ และการผลิตครบวงจร",
-      "why": "ตลาดมองข่าวความร่วมมือกับ NVIDIA/SK Group และข่าวขยายโรงงานว่าเป็นเหตุผลให้หุ้นถูกตีมูลค่าใหม่ — Warren มองว่าข่าวเหล่านี้ไม่ใช่ตัวเลขกำไร และหลักฐานเรื่อง 'หลุดพ้นวัฏจักร' ที่มีจริงถูกสะท้อนในราคาไปหมดแล้ว นี่คือกับดักหุ้นวัฏจักรช่วงพีคแบบคลาสสิก",
-      "risk": "ถ้า de-cycling เป็นจริง — มาร์จิ้นการดำเนินงานยืนเกิน 50% ต่อเนื่อง 2 ปีขึ้นไป แม้กำลังผลิตใหม่ทั้งหมดเดินเครื่องเต็มที่ และราคาไม่ร่วงจากซัพพลายล้น — FV ปกติจะผิด และราคาปัจจุบันอาจสมเหตุสมผล"
-    },
-    "bull_th": [
-      "HBM #1 ของโลก (ส่วนแบ่ง 56.4%) และเป็นเจ้าแรกในทุกรุ่นของ HBM",
-      "สัญญาระยะยาวกับลูกค้าราว 10 ราย ช่วยล็อกดีมานด์",
-      "มาร์จิ้นการดำเนินงานล่าสุดสูงเป็นประวัติการณ์",
-      "ตลาด memory เป็น oligopoly 3 ราย กำแพงการเข้าสูงมาก"
-    ],
-    "risk_th": [
-      "ราคา $147.55 สูงกว่า FV ปกติ $60 ราว 2.5 เท่า (MoS -145.92%)",
-      "Charlie มองมาร์จิ้นปกติ 20% → FV $47 ต่ำกว่าอีก",
-      "Samsung ไล่ทันทั้งกำไร memory และส่วนแบ่ง HBM (คาดแซงในปี 2027) และ CXMT จีนเร่งพัฒนา DRAM ความหนาแน่นสูง",
-      "กำลังผลิตใหม่ (Dalian NAND, โรงงานเกาหลี $39B) เสี่ยงซัพพลายล้นปี 2027-28",
-      "ยังไม่เคยผ่านขาลงวัฏจักรในรูปแบบ ADS — ไม่มีหลักฐานว่ามาร์จิ้นจะยืนได้"
-    ]
-  },
   "ARM": {
     "symbol": "ARM",
     "display": "ARM",
@@ -1775,145 +1637,6 @@
       "Speculative tier + key-man risk (Musk หลายบริษัท) ห้ามซื้อเพิ่ม"
     ]
   },
-  "MU": {
-    "symbol": "MU",
-    "display": "MU",
-    "category": "semiconductor",
-    "name": "Micron Technology",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Memory",
-      "HBM"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 2,
-    "waf": 6.16,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 705.27,
-    "fv": 256.4,
-    "mos": -175.07,
-    "fpe": 41.27,
-    "peg": null,
-    "scores": {
-      "bq": [
-        7.8,
-        "amber",
-        78
-      ],
-      "gp": [
-        9.0,
-        "green",
-        90
-      ],
-      "va": [
-        1.8,
-        "orange",
-        18
-      ],
-      "ra": [
-        4.5,
-        "orange",
-        45
-      ]
-    },
-    "idea": "11-19 price trigger: -20.5% on sector selloff, not fundamentals. Normalized FV $256 carried -> MoS -175%, ER -10%. WATCH. Next: FQ1 FY27 (Dec).",
-    "updated": "2026-11-19",
-    "risk": [
-      "Normalized net margin 29.6% remains the key sensitivity (SCA-floor variant ~$330; bull $542); peak-cycle signature (ASP growth decelerating, industry capex wave, 10-K: LTAs can create oversupply); Taiwan labor: Taichung settled 10-21 (terms undisclosed), Taoyuan unresolved (third round 11-06); consideration payable $4.32B; Samsung/SK Hynix capacity race; ~65% of revenue still market-priced."
-    ],
-    "bull": [
-      "HBM/AI memory demand เป็นของจริงเชิงโครงสร้าง และ 16 SCAs (~$100B) ยกพื้นของรอบถัดไปให้สูงกว่ารอบก่อนจริง — แต่ราคาปัจจุบันไม่ได้กำลังจ่ายให้ \"พื้นที่สูงขึ้น\" มันกำลังจ่ายให้ \"ยอดวัฏจักรคือระดับถาวร\" ซึ่งเป็นสมมติฐานที่กฎ Cyclical ของระบบนี้ห้ามไว้โดยตรง"
-    ],
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-11-19",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Micron เป็นผู้ผลิต HBM สัญชาติอเมริกันรายเดียวที่ป้อน NVIDIA Vera Rubin/GB200 และได้เลือกเป็นซัพพลายเออร์ HBM4 — ชนะช่วงนี้เพราะ agentic AI สร้างปัญหา KV-cache ที่ต้องการทั้ง HBM และ NAND พร้อมกัน ในขณะที่กำลังการผลิตทั้งอุตสาหกรรมตึงตัว",
-      "why": "Consensus มองที่ forward P/E **13.24×** บน consensus FY2026 EPS $73.39 แล้วสรุปว่า \"ถูกมาก\" (rating Strong Buy). **Warren เห็นต่างที่ตัวหาร ไม่ใช่ตัวเศษ**: $73.39 คือกำไรของ**ปีที่เป็นยอดวัฏจักร** ซึ่งเกิดจากราคาล้วนๆ ไม่ใช่ปริมาณ — FQ3 บิต DRAM โตแค่ single digit แต่ ASP โต low-60s% QoQ. เมื่อ normalize กลับสู่ mid-cycle อย่างที่กฎ Cyclical บังคับ EPS = **$17.50** และ P/E ที่ราคาปัจจุบันคือ **55.5×** ไม่ใช่ 13.2×. ⚠️ **และสิ่งที่ยังไม่ถูกมองเลยคือฐานที่ระบบนี้เองใช้อยู่**: ตัวเลข \"normalized mid-cycle EPS $76.7\" ที่ carry มาตั้งแต่ ก.ค. **สูงกว่า EPS ของปีที่เป็นพีคเองเสียอีก** ⇒ ที่ผ่านมาระบบกำลังตีมูลค่า MU ด้วยตัวเลขที่แย่กว่าการใช้ peak EPS ตรงๆ ด้วยซ้ำ",
-      "risk": "ASP ทรงตัวที่ระดับใกล้เคียงปัจจุบันต่อเนื่องเกิน 4-6 ไตรมาสโดยที่ Samsung/SK Hynix/CXMT เพิ่มกำลังผลิตแล้วราคายังไม่ลง (แปลว่า SCA/HBM เปลี่ยนโครงสร้างอุตสาหกรรมจริงและ normalized margin ควรสูงกว่า 29.6% มาก), หรือในทางกลับกัน — งบ FQ4 (~ก.ย. 2026) พลาด guide $50B/$31.00 หรือ FQ1 FY2027 guide ราคาลง QoQ เป็นครั้งแรก = ยืนยัน cycle rollover"
-    },
-    "tier": "🔁 Cyclical",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price 705.27 = CNBC close; premarket 739.57 (+4.9%)",
-        "CNBC fwd EPS 175.71 / fwd P/E 4.0 = peak-cycle",
-        "52w range 192.59-1,255.00 (CNBC)"
-      ],
-      "concerns": [
-        "Warren FV inflated vs Charlie conservative FV $173 (gap 32.5%) - WATCH unaffected"
-      ],
-      "summary": "",
-      "review_date": "2026-11-19"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้ผลิต HBM/DRAM/NAND สัญชาติอเมริกัน — ธุรกิจอยู่ช่วงพีคมาก แต่ราคา $1,029 สูงกว่า FV ปกติ $257 ราว 4 เท่า Warren WATCH, Charlie CAUTION (เห็นต่างเรื่องมาร์จิ้นปกติ)",
-      "what": "Micron ผลิตหน่วยความจำ HBM (ติดอยู่บน GPU ของ NVIDIA) และ DRAM/NAND ทุกประเภท เป็นผู้ผลิต memory รายเดียวในสหรัฐฯ ธุรกิจนี้เป็นวัฏจักร — ช่วงขาดแคลนกำไรพุ่ง ช่วงล้นตลาดกำไรหาย",
-      "why_invest": [
-        "ดีมานด์ HBM/AI memory เป็นของจริง มีสัญญาระยะยาว (SCA) 16 ฉบับ มูลค่ารวมราว $100B ช่วยยกพื้นรอบถัดไป",
-        "guide ไตรมาสหน้า (FQ1 FY27) รายได้ $61.5B และ gross margin ~86% — ราคา memory ยังขึ้น ยังไม่เห็นสัญญาณวัฏจักรกลับตัว",
-        "ยอมความคดีสิทธิบัตรกับ Netlist ($30M/ไตรมาส รวม $600M ใน 5 ปี) ปิดความเสี่ยงโดนห้ามนำเข้า HBM ด้วยต้นทุนที่เล็กมาก"
-      ],
-      "watch_out": [
-        "กฎ Cyclical บังคับให้ใช้กำไรช่วงกลางวัฏจักร ไม่ใช่ช่วงพีค: Warren ได้ FV $257 ส่วน Charlie ได้ $174 — ราคาปัจจุบันสูงกว่าทั้งคู่หลายเท่า",
-        "ผลตอบแทนคาดการณ์ -16.23%/ปี (ฝั่ง Charlie -21.9%) — ซื้อตอนนี้คือจ่ายเหมือนยอดวัฏจักรเป็นของถาวร",
-        "ข้อพิพาทแรงงานในไต้หวัน (ไกล่เกลี่ย 22 ต.ค.) และการแข่งขยายกำลังผลิตกับ Samsung/SK Hynix"
-      ],
-      "bottom_line": "MU คือธุรกิจดีในรอบที่ดีมาก แต่ราคาตอนนี้จ่ายล่วงหน้าเหมือนพีคจะอยู่ตลอดไป Warren WATCH, Charlie CAUTION เพราะคิดว่า FV ควรต่ำกว่านี้อีก — ทั้งสองฝั่งเห็นตรงกันว่ายังไม่ใช่จังหวะซื้อ"
-    },
-    "mark_full": {
-      "business_overview": "Micron แบ่งธุรกิจ 4 กลุ่ม: Cloud Memory, Core Data Center, Mobile and Client, Automotive and Embedded — งบ FQ4 FY26 (30 ก.ย.) รายได้ $54.23B GM 87% ทั้งปี FY26 รายได้ $133.19B ซึ่งเป็นตัวเลขระดับยอดวัฏจักร",
-      "tam": "HBM คาดโตเฉลี่ยราว 40%/ปี ถึงปี 2028 และ agentic AI ดันดีมานด์ทั้ง DRAM และ NAND (เก็บ KV cache) — แต่ในปี 2027 คาดว่า MU จะมีส่วนแบ่ง HBM ราว 20% เป็นอันดับ 3 รองจาก Samsung และ SK Hynix",
-      "moat": "ผู้ผลิต memory สัญชาติอเมริกันรายเดียว (ได้ประโยชน์จาก CHIPS Act), เทคโนโลยี DRAM EUV รุ่นแรก และ HBM ที่ประหยัดพลังงาน — แต่ตลาด memory เป็นสินค้าที่คู่แข่งผลิตทดแทนได้ ราคาจึงขึ้นลงตามวัฏจักร",
-      "latest_financials": "Warren ใช้รายได้ปกติ $66.4B × มาร์จิ้นสุทธิ 29.6% ÷ 1,147M หุ้น = EPS ปกติ $17.14 × 15 เท่า = FV $257 (Bull $544 / Bear $115) ราคา $1,029 MoS -300.39% ผลตอบแทนคาดการณ์ -16.23%/ปี WAF 5.93 TQR Peripheral (6.48) — ค่ายอมความ Netlist ราว $0.08-0.10/หุ้น/ปี เล็กเกินกว่าจะใส่ในโมเดล",
-      "key_points": [
-        "WATCH: FV ปกติ $257 ราคาสูงกว่าราว 4 เท่า",
-        "Charlie CAUTION: ใช้มาร์จิ้นปกติ 20% (อิงค่าเฉลี่ย FY19-FY25) ได้ FV $174 ห่างจาก Warren 32.3% — ทุกอย่างต่างกันที่สมมติฐานมาร์จิ้นเรื่องเดียว (15% → $130, 25% → $217)",
-        "ความเสี่ยงฝั่งตรงข้าม: ถ้าราคา memory ยืนสูงอีก 4-6 ไตรมาส ฐานปกติอาจต่ำไป (Bull $544)",
-        "จุดทดสอบถัดไป: ไกล่เกลี่ยแรงงานไต้หวัน 22 ต.ค. และงบ FQ1 FY27 (ปลาย ธ.ค.) — ถ้า guide ไตรมาสถัดไปลดลงครั้งแรก = สัญญาณวัฏจักรกลับตัว"
-      ]
-    },
-    "warren_easy": [
-      "MU tier 🔁 Cyclical WAF 5.93 conviction LOW — FV ปกติ $257 คงเดิม (ไม่ใช้กำไรช่วงพีค)",
-      "ราคา $1,029 MoS -300.39% ผลตอบแทนคาดการณ์ -16.23%/ปี → WATCH",
-      "ข่าวรอบนี้: ยอมความ Netlist $600M/5 ปี ปิดความเสี่ยงคดี HBM ด้วยต้นทุนเล็กมาก — ไม่เปลี่ยนตัวเลข"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie ไม่เห็นด้วยกับมาร์จิ้นปกติ 29.6% ของ Warren ซึ่งใกล้ระดับปีที่เป็นพีค — ใช้ 20% ตามค่าเฉลี่ยกำไรสุทธิ FY19-FY25 ได้ FV $174 ต่ำกว่า Warren 32.3% เกินเกณฑ์ 20% จึงต้องเป็น CAUTION",
-        "ผลตอบแทนคาดการณ์ฝั่ง Charlie -21.9%/ปี ต่ำกว่าของ Warren 5.7 จุด (เกินเกณฑ์ 5 จุด) — แต่ไม่ว่าจะเชื่อฝั่งไหน ราคาปัจจุบันสูงกว่า FV 4-6 เท่า WATCH ถูกต้อง",
-        "ตรวจสอบแล้วว่าค่ายอมความ Netlist เล็กมาก (<1% ของกำไรปกติ) — Warren ไม่ใส่ในโมเดลถูกต้อง",
-        "ต้องติดตาม: ไกล่เกลี่ยแรงงานไต้หวัน 22 ต.ค. และงบ FQ1 FY27 เทียบ guide $61.5B"
-      ],
-      "review_date": "2026-10-11"
-    },
-    "idea_th": "WATCH — Micron ได้ประโยชน์จาก HBM/AI memory จริง แต่ตอนนี้กำไรอยู่ช่วงพีคของวัฏจักร พอปรับกลับเป็นกำไรปกติ FV อยู่ที่ $257 (Charlie มองต่ำกว่านั้นที่ $174) ขณะที่ราคา $1,029 — Charlie CAUTION เรื่องมาร์จิ้นปกติ แต่ทั้งสองฝั่งเห็นตรงกันว่ายังไม่ใช่จังหวะซื้อ",
-    "story_gate_th": {
-      "what": "Micron เป็นผู้ผลิต HBM สัญชาติอเมริกันรายเดียวที่ป้อนชิป NVIDIA และได้เป็นซัพพลายเออร์ HBM4 — ชนะช่วงนี้เพราะ agentic AI ต้องการทั้ง HBM และ NAND พร้อมกัน ขณะที่กำลังผลิตทั้งอุตสาหกรรมตึงตัว",
-      "why": "ตลาดมอง P/E บนกำไรปีนี้แล้วว่าถูก แต่ Warren เห็นต่างที่ 'ตัวหาร' — กำไรปีนี้เกิดจากราคา memory พุ่ง ไม่ใช่ปริมาณ พอปรับกลับสู่กำไรกลางวัฏจักรตามกฎ Cyclical หุ้นนี้ไม่ได้ถูกอย่างที่เห็น",
-      "risk": "ถ้าราคา memory ยืนสูงเกิน 4-6 ไตรมาสแม้คู่แข่งเพิ่มกำลังผลิต (แปลว่าสัญญาระยะยาว/HBM เปลี่ยนโครงสร้างอุตสาหกรรมจริง) FV ปกติจะต่ำไป — ในทางกลับกัน ถ้า guide ไตรมาสถัดไปลดลงครั้งแรก = ยืนยันว่าวัฏจักรกลับตัว"
-    },
-    "bull_th": [
-      "ดีมานด์ HBM/AI memory เป็นของจริงเชิงโครงสร้าง",
-      "สัญญาระยะยาว (SCA) 16 ฉบับ ราว $100B ช่วยยกพื้นของรอบถัดไป",
-      "guide FQ1 FY27 รายได้ $61.5B GM ~86% — ราคา memory ยังไม่กลับตัว",
-      "ยอมความ Netlist ปิดความเสี่ยงคดี HBM/ITC ด้วยต้นทุนเล็กมาก",
-      "ผู้ผลิต memory สัญชาติอเมริกันรายเดียว ได้แรงหนุนเชิงนโยบาย"
-    ],
-    "risk_th": [
-      "ราคา $1,029 สูงกว่า FV ปกติ $257 ราว 4 เท่า (MoS -300.39%) ผลตอบแทนคาดการณ์ติดลบ",
-      "Charlie มองมาร์จิ้นปกติแค่ 20% → FV $174 — ทุก ±10 จุดของมาร์จิ้นขยับ FV ราว $150",
-      "ข้อพิพาทแรงงานไต้หวัน (ไกล่เกลี่ย 22 ต.ค.) กระทบฐานผลิตใหญ่",
-      "Samsung/SK Hynix แข่งเพิ่มกำลังผลิต — MU คาดเป็นอันดับ 3 ในส่วนแบ่ง HBM ปี 2027",
-      "หลังปี 2029 โรงงานใหม่ทั่วอุตสาหกรรมอาจกดราคา memory"
-    ]
-  },
   "AAPL": {
     "symbol": "AAPL",
     "display": "AAPL",
@@ -2089,12 +1812,12 @@
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 2,
-    "waf": 5.38,
+    "waf": 5.4,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 383.72,
+    "price": 377.25,
     "fv": 290,
-    "mos": -32.32,
+    "mos": -30.09,
     "fpe": null,
     "peg": null,
     "scores": {
@@ -2109,9 +1832,9 @@
         75
       ],
       "va": [
-        3.5,
+        3.6,
         "orange",
-        35
+        36
       ],
       "ra": [
         3.0,
@@ -2119,7 +1842,7 @@
         30
       ]
     },
-    "idea": "11-19 time refresh: FV $290 carried; price $383.72 -> MoS -32.3%. Robotaxi city #N + Cybercab pre-orders = optionality, not numbers. WATCH.",
+    "idea": "11-19 /warren TSLA (robotics lens): real Physical-AI optionality (Optimus production started, Cybercab/robotaxi live) but ~77% of price is unproven optionality; FV $290 unchanged, MoS -30%. WATCH.",
     "updated": "2026-11-19",
     "story_gate": {
       "passed": true,
@@ -2207,152 +1930,6 @@
       "Cybercab: NHTSA ให้เวลาเพิ่มแค่ 30 วัน ต้องตอบเรื่องมาตรฐานภายใน 30 ต.ค. — ผลออกได้ทางเดียวว่าผ่านหรือไม่ผ่าน",
       "WAF 5.57 Speculative tier ห้ามซื้อเพิ่มไม่ว่ากรณีใด — capex >$25B/ปี กับ FCF ติดลบ",
       "Robotaxi/Cybercab ยังไม่มีรายได้แยกรายงานได้จริงในงบ"
-    ]
-  },
-  "SNDK": {
-    "symbol": "SNDK",
-    "display": "SNDK",
-    "category": "semiconductor",
-    "name": "Sandisk Corporation",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Memory",
-      "NAND Flash"
-    ],
-    "bull": [
-      "Q3 FY2026 Revenue $5.95B +251% YoY, Non-GAAP Gross Margin 78.4% ทะลุ guidance มาก (memory supercycle)",
-      "Datacenter segment โต +645% YoY จาก enterprise SSD สำหรับ AI workloads",
-      "Net cash position — จ่ายหนี้หมดแล้ว (Long-term debt = $0) หลัง spin-off จาก WDC",
-      "Non-GAAP EPS $23.41 ไตรมาสเดียว เกิน guidance มาก = operating leverage สูงมากในช่วง upcycle",
-      "NAND flash supply chain oligopoly (Flash Ventures JV กับ Kioxia) = barrier to entry สูง"
-    ],
-    "risk": [
-      "Memory เป็น commodity cyclical — margin พุ่งแรงตอน upcycle แต่มีความเสี่ยง downcycle รุนแรง (เหมือน MU)",
-      "Bit shipments flat YoY, down high-teens QoQ — สะสม inventory รอ product ใหม่ (BiCS8 QLC)",
-      "พึ่งพา Kioxia JV เกือบทั้งหมดสำหรับ flash supply — ไม่ควบคุม manufacturing เอง",
-      "Valuation reflect upcycle sentiment มาก — Lynch peak signal risk คล้ายที่เจอใน MU/SKHY",
-      "Consumer segment หดตัว QoQ ตาม seasonality"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 2,
-    "waf": 5.33,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 776.22,
-    "fv": 458.0,
-    "mos": -69.48,
-    "fpe": 22.03,
-    "peg": null,
-    "scores": {
-      "bq": [
-        6.5,
-        "amber",
-        65
-      ],
-      "gp": [
-        7.7,
-        "amber",
-        77
-      ],
-      "va": [
-        2.2,
-        "orange",
-        22
-      ],
-      "ra": [
-        3.5,
-        "orange",
-        35
-      ]
-    },
-    "idea": "FQ1 beat (rev $11.0B, DC +61% QoQ). Normalized FV $422.7 -> $458.0 (pre-split). Price fell 35% to $776.22 but still ~22x normalized EPS -> MoS -69.48%. WATCH — cyclical BUY needs <= ~$412.2 pre-split (~$51.5 post-split).",
-    "updated": "2026-11-19",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-11-19",
-      "tier": "🔁 Cyclical",
-      "tier_slug": "cyclical",
-      "what": "Sandisk เป็นผู้นำเทคโนโลยี NAND (BiCS8 = majority ของ bits แล้ว, BiCS10 ประกาศแล้ว) ผ่าน Flash Ventures JV กับ Kioxia (ต่ออายุถึง 2034) — ขาย enterprise SSD/QLC ให้ AI inference + Edge/Consumer และกำลังเปลี่ยนธุรกิจเป็นสัญญาหลายปี (NBM) ที่มีพื้นราคาและหลักประกัน.",
-      "why": "Consensus มอง GM mid-80s + NBM $93.9B แล้วสรุปว่า \"NAND de-cycled ถาวร\" (management เองเรียก mid-80s ว่า \"fair return\"); Warren เห็นต่างที่ตัวหาร — กำไรปีนี้มาจากราคา ~⅔ ไม่ใช่ปริมาณ, NBM มี collateral จริงแค่ ~11% ของ RPO และ 10-K ยอมรับว่า guarantee อาจชดเชยไม่เต็ม, และ ~ครึ่งของ bits FY27 ยังขายราคาตลาด → ที่ราคา $1,299 = 40× EPS normalized ซึ่งยังไม่ได้ price-in การ mean-revert ของส่วน non-NBM เลย.",
-      "risk": "ราคา NAND contract ทรงตัวใกล้ระดับปัจจุบันต่อเนื่อง 4–6 ไตรมาสหลังกำลังผลิตใหม่ (Kioxia/Sandisk $31B Japan, Samsung/SK Hynix) เข้าตลาด และ NBM ขยายเกิน ~⅔ ของ bits ด้วย collateral ที่สูงขึ้น (แปลว่า normalized margin/revenue ควรสูงกว่า base มาก → bull $906); ฝั่งกลับ: FQ1 FY27 GM ต่ำกว่า 83% หรือ Q2 guide ราคาลง QoQ = ยืนยัน rollover."
-    },
-    "tier": "🔁 Cyclical",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price 776.22 = CNBC close (pre-split)",
-        "FY27 consensus revenue $49.6B = peak run-rate Warren uses",
-        "52w range 183.00-2,354.39 (CNBC)"
-      ],
-      "concerns": [
-        "Warren FV inflated vs Charlie conservative FV $327 (gap 28.6%) - WATCH unaffected",
-        "Split 11-23: all per-share figures must be converted together"
-      ],
-      "summary": "",
-      "review_date": "2026-11-19"
-    },
-    "mark_easy": {
-      "one_liner": "ผู้นำ NAND flash — ราคา $1,403.34 สูงกว่า FV ปกติ $415 ราว 3.4 เท่า (MoS -238.15%) Warren WATCH, Charlie CAUTION ($296) เห็นต่างเรื่องมาร์จิ้นปกติ 28% vs 20%",
-      "what": "Sandisk ผลิต NAND flash และโซลูชันเก็บข้อมูล (SSD, embedded, memory card) แยกตัวจาก Western Digital เมื่อ ก.พ. 2025 flash supply เกือบทั้งหมดมาจาก JV กับ Kioxia งบ FQ4 FY26 (สิ้นสุด 3 ก.ค.) รายได้ $8.965 พันล้านดอลลาร์ (+51% QoQ) EPS non-GAAP $39.25 guide FQ1 FY27 รายได้ $10.30-10.80B EPS $44-46",
-      "why_invest": [
-        "เทคโนโลยี BiCS8 ระดับนำ และ flash supply chain เป็น oligopoly ผ่าน JV กับ Kioxia — barrier to entry สูง",
-        "Datacenter โตแรง (+645% YoY ใน FQ3) จาก enterprise SSD สำหรับ AI; RPO $41.6B; ไม่มีหนี้ระยะยาว (net cash)",
-        "รูปแบบสัญญาใหม่ (NBM) พยายามลดความผันผวนของวัฏจักร — ถ้าได้ผลจริง ฐานปกติอาจสูงกว่าที่คำนวณ (Bull $889)"
-      ],
-      "watch_out": [
-        "Warren: รายได้ปกติ $18.0B × มาร์จิ้นสุทธิ 28% ÷ 158M หุ้น = EPS $31.9 × 13 เท่า = FV $415 (Bull $889 / Bear $136) ผลตอบแทนคาดการณ์ -13.63%/ปี",
-        "Charlie: มาร์จิ้นปกติ 20% → EPS $22.78 × 13 = FV $296 ห่าง Warren 28.7% (15% → $222, 28% → $415) — Sandisk ขาดทุนในปี FY24-25 มาร์จิ้น 20% จึงไม่ได้ต่ำเกินไป",
-        "การเติบโตล่าสุดมาจากราคา ~2/3 และปริมาณ ~1/3 (ลายเซ็นยอดราคา); ต้องพึ่ง Kioxia JV (ต่ออายุ 2029/2034); หุ้นผันผวนแรงตามกลุ่ม memory"
-      ],
-      "bottom_line": "SNDK ดีขึ้นจริงทั้งงบและสัญญา แต่ราคาอยู่เหนือ FV ทั้งของ Warren ($415) และ Charlie ($296) หลายเท่า แม้ย่อลงมาแล้ว — WATCH ถูกต้องทั้งสองมุม ประเด็นที่ต้องตามคืองบ FQ1 (ต้น พ.ย.)"
-    },
-    "mark_full": {
-      "business_overview": "Sandisk ผลิต NAND flash memory และโซลูชัน data storage แบ่งรายได้เป็น 3 กลุ่ม: Datacenter (enterprise SSD สำหรับ AI/cloud), Edge (OEM สำหรับ PC/มือถือ/gaming), Consumer (retail) ไตรมาส FQ3 FY2026 รายได้ $5.95 พันล้านดอลลาร์ +251% YoY (Datacenter $1,467 ล้าน +645%, Edge $3,663 ล้าน +295%, Consumer $820 ล้าน +44%) และ FQ4 FY2026 รายได้ $8.965 พันล้านดอลลาร์ (+51% QoQ) แยกตัวจาก Western Digital เป็นบริษัทอิสระตั้งแต่ ก.พ. 2025",
-      "tam": "ตลาด NAND flash เป็น oligopoly มีผู้เล่นหลัก 5 ราย (Samsung, SK Hynix/Solidigm, Kioxia, Micron, Sandisk) ดีมานด์หลักตอนนี้มาจาก AI datacenter (enterprise SSD สำหรับ workload ที่ต้องใช้หน่วยความจำมาก) ผู้บริหารปรับเป้าการเติบโตของฝั่ง Datacenter ปีปฏิทิน 2026 ขึ้นต่อเนื่องจาก 20% กว่า เป็น 40% กว่า เป็น 60% กว่า และล่าสุดเป็น 'mid-70s%' สะท้อนดีมานด์ที่แรงกว่าที่เคยประเมินไว้ทุกรอบ",
-      "moat": "จุดแข็งหลักคือเทคโนโลยี BiCS8 (3D NAND รุ่นล่าสุดที่พัฒนาร่วมกับ Kioxia ถูกยกให้เป็น industry gold standard) + การควบคุมทั้งสายการผลิตตั้งแต่ front-end จนถึง back-end + IP สะสมหลายทศวรรษผ่าน Flash Ventures JV + switching cost สูงเพราะลูกค้า enterprise ต้องผ่านกระบวนการ qualification นานเป็นปีก่อนใช้งานจริง นอกจากนี้ยังสร้าง moat ใหม่ผ่าน New Business Model (NBM) — สัญญาหลายปีที่มีการค้ำประกันทางการเงิน ช่วยให้ดีมานด์คาดการณ์ได้มากขึ้นและลด cyclicality ของธุรกิจ อย่างไรก็ตาม Sandisk ไม่มี DRAM เป็นของตัวเอง (ต่างจาก Samsung/SK Hynix/Micron) และยังต้องพึ่งพา Kioxia JV ที่ควบคุมเองไม่ได้เต็มที่",
-      "latest_financials": "FQ4 FY26 (สิ้นสุด 3 ก.ค. 2026): รายได้ $8.965B (+51% QoQ), non-GAAP EPS $39.25; guide FQ1 FY27 รายได้ $10.30-10.80B EPS $44-46; การเติบโตมาจากราคา ~2/3 และปริมาณ ~1/3 Warren คงสูตร 19 ก.ย.: รายได้ปกติ $18.0B × มาร์จิ้นสุทธิ 28% ÷ 158M หุ้น = EPS $31.9 × 13 เท่า = FV $415 (Bull $889 / Bear $136) ราคาที่ใช้ $1,403.34 MoS -238.15% ผลตอบแทนคาดการณ์ -13.63%/ปี WAF 4.67 TQR Peripheral (5.5)",
-      "key_points": [
-        "WATCH: FV ปกติ $415 ราคา $1,403.34 MoS -238.15% — ราคาย่อลงจากกระแสทั้งกลุ่ม ไม่มีข่าวบริษัทใหม่",
-        "Charlie CAUTION: มาร์จิ้นปกติ 20% ได้ FV $296 ห่าง Warren 28.7% และผลตอบแทนคาดการณ์ต่างกัน 5.1 จุด — ช่องว่างทั้งหมดอยู่ที่มาร์จิ้น 28% vs 20%",
-        "บริษัทบอกว่า NAND ขาดตลาดถึงสิ้นปี 2026 และขึ้นราคาออเดอร์ใหม่ — เป็นสัญญาณราคาพีค ไม่ใช่ข้อมูลมาร์จิ้นปกติ",
-        "ถ้า NBM/สัญญา datacenter (RPO $41.6B) ลดวัฏจักรจริง ฐานปกติต่ำไป (Bull $889) — ด่านถัดไปคืองบ FQ1 ต้น พ.ย."
-      ]
-    },
-    "warren_easy": [
-      "SNDK: WATCH, tier Cyclical, WAF 4.67 — FV ปกติ $415 คงเดิม (รายได้ปกติ $18.0B × มาร์จิ้นสุทธิ 28% ÷ 158M หุ้น × 13 เท่า) Bull $889 / Bear $136",
-      "ราคาที่ใช้ $1,403.34 MoS -238.15% ผลตอบแทนคาดการณ์ -13.63%/ปี ไม่ผ่านเกณฑ์ MoS 15% อย่างมาก — ราคาย่อลงจากรอบก่อนเพราะกระแสทั้งกลุ่ม memory (ข่าว CXMT จีนพัฒนา DRAM ความหนาแน่นสูง + ตลาดเกาหลีเทขาย + ความกังวลหนี้ AI) ไม่ใช่ปัจจัยของบริษัทเอง",
-      "ไม่มีงบ/guidance ใหม่ (ข่าวมีแค่รางวัล GMIF2026 และคอมเมนต์ NAND ขาดตลาด) — งบ FQ1 FY27 ต้น พ.ย. (guide รายได้ $10.3-10.8B, EPS $44-46) คือด่านถัดไป"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "paragraphs": [
-        "Charlie รีวิวใหม่เต็มที่ราคา $1,403.34: ใช้มาร์จิ้นสุทธิปกติ 20% (Warren 28%) → 18,000 × 0.20 ÷ 158 = EPS $22.78 × 13 เท่า = FV $296 ห่าง Warren 28.7% จึงเป็น CAUTION บังคับ — ความเห็นต่างทั้งหมดคือเรื่องมาร์จิ้นข้อเดียว (15% → $222, 20% → $296, 28% → $415)",
-        "เหตุผลที่ Charlie ระวังกว่า: Sandisk เองขาดทุนในปี FY24-25 มาร์จิ้น 20% จึงสูงกว่าสถิติทั้งวัฏจักรของบริษัทอยู่แล้ว และกลไกสัญญา NBM ยังไม่เคยผ่านขาลงจริง",
-        "ผลตอบแทนคาดการณ์ของ Charlie -18.7%/ปี ต่ำกว่า Warren 5.1 จุด (เกิน 5 จุด) เป็นอีกเหตุที่ต้อง CAUTION; ถ้าจะให้ราคาตอนนี้สมเหตุสมผล รายได้ต้องโตราว 16.8%/ปี นาน 10 ปี",
-        "ตัวเลขที่ตรวจตรง: ราคาตรงกับ Nasdaq/CNBC และประมาณการ EPS FQ1 $45.22 อยู่ในช่วง guide $44-46 — WATCH ถูกต้องทั้งสองมุม (MoS -238% / -374%)"
-      ],
-      "review_date": "2026-10-15"
-    },
-    "idea_th": "WATCH — FV ปกติ $415 (Bull $889 / Bear $136) ราคา $1,403.34 ยังสูงกว่าราว 3.4 เท่า (MoS -238.15%, ผลตอบแทนคาดการณ์ -13.63%/ปี) ราคาย่อลงจากกระแสทั้งกลุ่ม ไม่มีข่าวบริษัทใหม่ Charlie CAUTION FV $296 ห่าง 28.7% เพราะใช้มาร์จิ้นปกติ 20% แทน 28% — รองบ FQ1 ต้น พ.ย.",
-    "story_gate_th": {
-      "what": "Sandisk เป็นผู้นำเทคโนโลยี NAND flash (BiCS8) ผ่าน JV Flash Ventures กับ Kioxia แยกตัวจาก WDC ก.พ. 2025 วางตัวเป็นพาร์ทเนอร์ NAND สำหรับ AI inference (KV cache/RAG) และใช้สัญญาแบบ multi-year (NBM) เพื่อลดความผันผวนของวัฏจักร",
-      "why": "ตลาดมองว่า AI datacenter + NBM ทำให้มาร์จิ้นสูงเป็น 'ระดับใหม่ถาวร' แต่ Warren เห็นต่างว่ามาร์จิ้น GM ระดับนี้คือยอดของวัฏจักรราคา — การเติบโตล่าสุด ~2/3 มาจากราคา จึงใช้มาร์จิ้นสุทธิปกติ 28% (FV $415) ส่วน Charlie ระวังกว่า ใช้ 20% (FV $296)",
-      "risk": "ASP ของ NAND ย้อนกลับเร็วกว่าที่สมมติ (analyst บางส่วนเริ่มมองเช่นนั้น) หรือ Kioxia JV ต่ออายุ 2029/2034 มีปัญหา หรือ NBM ล้มเมื่อเจอขาลงจริง — ในทางกลับกันถ้าสัญญา datacenter ลดวัฏจักรสำเร็จ FV ปกติต่ำไป (Bull $889)"
-    },
-    "bull_th": [
-      "FQ4 FY26 รายได้ $8.965B (+51% QoQ) EPS $39.25 และ guide FQ1 FY27 รายได้ $10.3-10.8B / EPS $44-46 — ยังโตต่อ",
-      "Datacenter โตแรงจาก enterprise SSD สำหรับ AI RPO $41.6B ไม่มีหนี้ระยะยาว (net cash)",
-      "flash supply เป็น oligopoly (Flash Ventures กับ Kioxia) barrier to entry สูง",
-      "ถ้า NBM/สัญญา datacenter ลดวัฏจักรจริง ฐานปกติอาจสูงกว่า $415 (Bull $889)"
-    ],
-    "risk_th": [
-      "ราคา $1,403.34 สูงกว่า FV Warren $415 ราว 3.4 เท่า (MoS -238.15%) และสูงกว่า Charlie $296 ราว 4.7 เท่า",
-      "ความเห็นต่างเรื่องมาร์จิ้นปกติ 28% vs 20% — ±5 จุดขยับ FV ราว $75",
-      "การเติบโตล่าสุด ~2/3 มาจากราคา ไม่ใช่ปริมาณ — ลายเซ็นยอดวัฏจักร; หุ้นผันผวนสูงตามกลุ่ม memory",
-      "พึ่ง Kioxia JV เกือบทั้งหมด และ datacenter ~38% ของบิตทำให้บัฟเฟอร์จาก Edge/Consumer บางลง"
     ]
   }
 }
