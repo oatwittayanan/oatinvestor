@@ -26,15 +26,15 @@
     ],
     "action": "buy",
     "actionLabel": "Buy",
-    "conviction": 4,
-    "waf": 8.47,
+    "conviction": 5,
+    "waf": 8.65,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 359.69,
+    "price": 318.71,
     "fv": 451.8,
-    "mos": 20.39,
-    "fpe": 15.92,
-    "peg": 0.8,
+    "mos": 29.46,
+    "fpe": 14.11,
+    "peg": 0.71,
     "scores": {
       "bq": [
         9.5,
@@ -47,9 +47,9 @@
         95
       ],
       "va": [
-        7.8,
-        "amber",
-        78
+        8.5,
+        "green",
+        85
       ],
       "ra": [
         5.5,
@@ -57,12 +57,12 @@
         55
       ]
     },
-    "idea": "11-18 /warren TSM: FV $451.8 carried (no estimate cut, Oct revenue record, NVDA beat-and-raise). Price $359.69 -> MoS 20.39% >= gate 15% (also 18.1% at spot FX) · PEG 0.8 · ER 24.67% · WAF 8.47 -> BUY (STARTER->BUY). Long-term DCA $200 OK within TQR Strong 25% cap; price ~6% above Bear $338.9 so stage it (e.g. 2 lots). || 10-30: FV $451.8 carried; price $411.92 -> MoS 8.83% = STARTER by 0.8 pt, FX-sensitive (spot: 7.06%, outside band). Keep Paper #7 execution line <= ~$409 (holds on either FX). Full gate <= ~$384.",
-    "updated": "2026-11-18",
+    "idea": "11-21: BUY — FV $451.8 carried; $318.71 MoS 29.5%, ER 27.2%, WAF 8.65. || 11-18 /warren TSM: FV $451.8 carried (no estimate cut, Oct revenue record, NVDA beat-and-raise). Price $359.69 -> MoS 20.39% >= gate 15% (also 18.1% at spot FX) · PEG 0.8 · ER 24.67% · WAF 8.47 -> BUY (STARTER->BUY). Long-term DCA $200 OK within TQR Strong 25% cap; price ~6% above Bear $338.9 so stage it (e.g. 2 lots). || 10-30: FV $451.8 carried; price $411.92 -> MoS 8.83% = STARTER by 0.8 pt, FX-sensitive (spot: 7.06%, outside band). Keep Paper #7 execution line <= ~$409 (holds on either FX). Full gate <= ~$384.",
+    "updated": "2026-11-21",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-11-18",
+      "updated": "2026-11-21",
       "tier": "🏛️ Inevitable",
       "tier_slug": "inevitable",
       "what": "TSMC is the sole high-volume producer of advanced semiconductors (N3, N2, A16) — no top-tier AI chip ships without TSMC; NVIDIA-TSMC partnership locks in the relationship long-term.",
@@ -71,21 +71,19 @@
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price = higher of Nasdaq quote API / CNBC quote API at 10:51 ET 10-30, INTRADAY (divergence <0.1%); Warren's $411.92 is ~0.4% lower",
-        "52w range 266.82-487.47 (CNBC)",
-        "CNBC TWD= 32.591 = Warren's spot 32.605",
-        "CoWoS +10-20%: TrendForce/Commercial Times, TSMC unconfirmed - correctly excluded (agree with Warren)"
+        "Price CNBC 11-20 close 318.71 (-9.5%), AH 328.60; Nasdaq $352.01 stale (= 11-19 close)",
+        "CNBC trailing P/E 20.7, fwd 15.5, TTM EPS 15.42",
+        "Nasdaq FY27 USD EPS 22.90 vs 22.44 at 10-30 - estimates up, not down"
       ],
       "concerns": [
-        "STARTER does not hold at the live price on any FX basis tested: Warren FV 8.4% is the only reading above 8%, and it needs the Q3-average 31.98. Charlie FV (spot) 7.0%, USD panel 7.8%. Recommend no new tranche above ~$409 (MoS 8% on Charlie FV) - same as Paper #7 line",
-        "Warren's 8.83% used a price 0.4% below the current quote; the band edge is that thin",
-        "10-30 fall is sector-driven (Intel Q4 guide + AMZN), not TSM data",
-        "TQR ra_ex_valuation 5.5 = scores.ra 5.5 exactly - acceptable (Taiwan geopolitics), minor"
+        "Drop is sector contagion from NVDA (no TSM-specific news found 11-17->11-20)",
+        "NVDA is TSM's largest customer: if NVDA demand were overstated it would show in TSM monthly revenue first - watch Nov revenue (~12-10)",
+        "BIS foundry due-diligence rule - watch scope"
       ],
       "summary": "",
-      "review_date": "2026-10-30"
+      "review_date": "2026-11-20"
     },
     "mark_easy": {
       "one_liner": "โรงงานชิปที่ชิป AI ทุกตัวต้องผ่าน — หลังงบ Q3 นักวิเคราะห์ปรับประมาณการรายได้ปี 2027 ขึ้น FV ขยับเป็น $436 ราคา $412.61 MoS +5.36% ยังไม่ถึงเกณฑ์ 15% Warren HOLD, Charlie AGREE",
@@ -174,17 +172,17 @@
       "AMD MI455X competition ใน memory bandwidth — ROCm กำลังตามทัน",
       "Antitrust สอบสวนจากหลายประเทศเรื่อง GPU supply allocation"
     ],
-    "action": "buy",
-    "actionLabel": "Buy",
+    "action": "sell",
+    "actionLabel": "Sell",
     "conviction": 4,
-    "waf": 8.33,
+    "waf": 8.31,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 152.75,
+    "price": 125.53,
     "fv": 344,
-    "mos": 55.6,
-    "fpe": 9.31,
-    "peg": 0.31,
+    "mos": 63.51,
+    "fpe": 7.65,
+    "peg": 0.26,
     "scores": {
       "bq": [
         8.5,
@@ -197,22 +195,22 @@
         97
       ],
       "va": [
-        9.5,
+        9.7,
         "green",
-        95
+        97
       ],
       "ra": [
-        3.3,
+        2.8,
         "orange",
-        33
+        28
       ]
     },
-    "idea": "11-19 /warren NVDA (post-Q3 FY27): Q3 $115.8B beat thesis line $105.8B; Q4 guide $130B; FY28 raised to ~+75%. FV $315→$344 (EPS $14.98→$16.40, 21x). MoS 55.6% vs gate 10%, WAF 8.33 HIGH. Sell triggers a/b/c NOT fired. Rules say BUY (within TQR cap 25%); for Oat's existing holding = HOLD (no sell/trim); ADD allowed only within cap if Oat lifts no-new-buy stance. || 11-12 /warren NVDA (CEO exit): Huang resigned, Kress interim CEO. Multiple 23→21x → FV $315; price $150.90 premarket → MoS 52.1% vs gate 15%, ER 45.86%, WAF 8.28 HIGH. Long-term HOLD (no sell/trim — moat assets intact near-term, price < Bear FV). BUY = staged: starter now is acceptable on price; add after 11-17 print if (a) Q3 rev ≥ $105.8B, (b) FY28 +~70% reaffirmed by Kress, (c) no key-EVP departures. Never above TQR Strong cap 25%.",
-    "updated": "2026-11-19",
+    "idea": "11-21: FV $344 carried; $125.53 -> MoS 63.5% vs gate 5%, ER 52.3%, WAF 8.31. Falsifiers A-E not fired (D closest: SEC = reported inquiry, CA AG = investigative subpoena, neither a charge). New falsifier F (accounting: restatement / NT 10-Q / auditor exit or qualified opinion / confirmed Wells notice). For Oat: HOLD (no add); sell decision = Oat's. || 11-19 /warren NVDA (post-Q3 FY27): Q3 $115.8B beat thesis line $105.8B; Q4 guide $130B; FY28 raised to ~+75%. FV $315→$344 (EPS $14.98→$16.40, 21x). MoS 55.6% vs gate 10%, WAF 8.33 HIGH. Sell triggers a/b/c NOT fired. Rules say BUY (within TQR cap 25%); for Oat's existing holding = HOLD (no sell/trim); ADD allowed only within cap if Oat lifts no-new-buy stance. || 11-12 /warren NVDA (CEO exit): Huang resigned, Kress interim CEO. Multiple 23→21x → FV $315; price $150.90 premarket → MoS 52.1% vs gate 15%, ER 45.86%, WAF 8.28 HIGH. Long-term HOLD (no sell/trim — moat assets intact near-term, price < Bear FV). BUY = staged: starter now is acceptable on price; add after 11-17 print if (a) Q3 rev ≥ $105.8B, (b) FY28 +~70% reaffirmed by Kress, (c) no key-EVP departures. Never above TQR Strong cap 25%.",
+    "updated": "2026-11-22",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-11-19",
+      "updated": "2026-11-21",
       "tier": "🚀 Pre-Inevitable",
       "tier_slug": "pre-inevitable",
       "what": "NVIDIA sells full-stack AI factory platforms (Blackwell → Vera Rubin) dominated by CUDA ecosystem lock-in (7.5M devs, 1.5M AI models) + Vera CPU $200B TAM purpose-built for agentic AI + Physical AI ($9B+ 12mo).",
@@ -221,20 +219,21 @@
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "AGREE",
+      "charlie_verdict": "DISAGREE",
       "verified_claims": [
-        "Price = higher of Nasdaq quote API / CNBC quote API at 10:51 ET 10-30, INTRADAY (divergence <0.1%)",
-        "52w range 164.27-243.37 (CNBC)",
-        "Paper #7 capex condition VERIFIED on primary docs (Warren had secondary only and AMZN unverified): GOOGL Q3 capex $51.4B (Ex-99.1); AMZN Q3 purchases of P&E $77.3B gross, TTM $210.7B net (Ex-99.1); MSFT FQ1 additions to P&E $39.4B + finance-lease ROU $5.2B (10-Q). Call reporting: GOOGL FY26 $195-205B kept + 2027 'increase significantly'; AMZN ~$220B FY26 + 2027 'meaningfully more'; MSFT FQ2 >$50B, CY27 ~$170B. No cut found",
-        "NVDA $3B into META: 424B5 confirms cornerstone indications up to $5B combined are NON-binding; the NVDA $3B figure is press-reported only"
+        "Price: CNBC 11-20 close 125.53 (-14.0%), low 124.50 = 52w low, AH 130.01. Nasdaq API showed $145.98 = stale (equals CNBC previous close 11-19) - not a divergence, ignored",
+        "Q3 FY27 (press release 11-17): revenue $115.8B (+103% y/y, +20% q/q), DC $107.6B, GM 74.9% non-GAAP, EPS $2.68 non-GAAP; Q4 guide $130.0B ±3%, GM 71-72%, no China DC compute assumed",
+        "SEC EDGAR (checked 11-22): last filings 8-K 11-17 (2.02), 8-K 11-12 (5.02 CEO exit), Form 144 11-19. NO 10-Q for quarter ended 10-25-2026. Q1/Q2 FY27 10-Qs were filed same day as earnings (05-20, 08-26)",
+        "Kress on call: 10-Q 'in the coming weeks'; timing tied to the investigation and whether more risk factors are needed (TechCrunch). Deadline ~12-04 (40 days)"
       ],
       "concerns": [
-        "Customer financing is now system-wide: GOOGL FCF -$9.1B in Q3, AMZN TTM FCF -$42.4B, META selling equity, MSFT in the bond market 10-29/30. Capex is not cut, but it is increasingly externally funded - the demand signal is intact while its funding quality falls. Warren's RA 4.8 covers vendor financing; watch this KPI",
-        "10-30 sector selloff has a business cause Warren left open: Intel weak Q4 guide (shares ~-27%) plus AMZN capex/FCF reaction. Not NVDA-specific",
-        "TQR ceiling 25%: recompute weight on purchase day (no amount in watchlist file)"
+        "DATA INTEGRITY: Q3 numbers exist only in a press release; the reviewed 10-Q is withheld for the first time in ~9 quarters, with management linking it to the investigation. Charlie FV is built on these numbers -> cannot be verified at Evidence tier 1 until filed",
+        "SEC accounting inquiry (Reuters) on top of SEC disclosure probe (WSJ), CA AG investigative subpoena (single-sourced, Newsquawk), DOJ Megaspeed criminal export probe with NVDA GC outreach reported (Bloomberg/NYT), no permanent CEO",
+        "No evidence yet that the thesis is broken: no restatement, no NT 10-Q, no auditor resignation, no Wells notice, demand/guide raised. Estimates still rising",
+        "Freeze = new BUY only. Not a sell signal for the existing holding"
       ],
       "summary": "",
-      "review_date": "2026-10-30"
+      "review_date": "2026-11-20"
     },
     "mark_easy": {
       "one_liner": "ผู้นำแพลตฟอร์ม AI factory — Warren ยัง BUY (FV $374, MoS 41.92%) และรอบนี้ Charlie ให้ AGREE แล้ว หลัง Warren ปรับจำนวนหุ้นตาม SEC และลดคะแนนความเสี่ยงให้สะท้อนดีล M&A",
@@ -373,21 +372,15 @@
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price = higher of Nasdaq quote API / CNBC quote API at 10:51 ET 10-30, INTRADAY (divergence <0.1%)",
-        "52w range 946.11-1,999.96 (CNBC)",
-        "Warren FV arithmetic reproduces at FX 1.1145; no fundamental change since the Q3 print",
-        "Affiliates Rule: Federal Register suspension runs through 11-09-2026 'absent a future extension'; no extension found in search as of 10-30"
-      ],
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
       "concerns": [
-        "STARTER sits 0.9 pt above the band floor on a single intraday print (-4.9%); at the 10-29 close MoS is 4.2% = WATCH. A -1% EUR/USD or a +1% price move each closes it - confirm at the close, not on the intraday quote",
-        "Dated policy event inside the buy window: BIS 50% Affiliates Rule suspension lapses after 11-09 absent extension, with China 23% of Q3 system sales per Warren. Effect on ASML not quantified anywhere and not in FV; RA held 6.5. Stagger: first half now, rest after 11-10 if the rule outcome is known",
-        "10-30 drop has a sector cause Warren left open (Intel weak Q4 guide + AMZN capex/FCF reaction) - not ASML company data, so it is no thesis break, only a price event",
-        "TQR ra_ex_valuation 6.5 = scores.ra 6.5 exactly - acceptable (RA is export/geopolitics, non-valuation), minor"
+        "ความเสี่ยงนโยบายที่ไม่อยู่ใน FV: US MATCH Act (เสนอห้าม DUV + service เครื่องในจีน) — รัฐบาลดัตช์ปฏิเสธ 11-18 แต่ยังไม่จบ · จีน 23% ของ system sales Q3 (ดึงซื้อล่วงหน้าก่อนถูกตัด = ยอดอาจไม่ยั่งยืน)",
+        "การเปิดรับ ASML ทั้งครอบครัวเพิ่มพร้อมกัน: Long Term +$1,270 และพ่อแม่ ASML01 ~฿60K ในวันเดียว — correlation กับ TSM ที่ซื้อหนักสุด",
+        "Margin 35% สูงกว่า normalized 28.4% — stress test ยังผ่าน gate"
       ],
       "summary": "",
-      "review_date": "2026-10-30"
+      "review_date": "2026-11-22"
     },
     "mark_easy": {
       "one_liner": "เจ้าเดียวในโลกที่ทำเครื่อง EUV ได้ — งบ Q3 แข็งแรง แต่หลังปรับค่าเงินยูโรให้เป็นปัจจุบัน FV เหลือ $1,744 ราคา $1,657.44 MoS 4.96% ยังไม่เข้าโซนทยอยซื้อ Warren WATCH, Charlie AGREE",
@@ -602,6 +595,90 @@
       "FV พึ่งตัวคูณ 25.21 เท่า (ลด 20% จาก median 5 ปี) — ถ้าตลาดให้ multiple ต่ำลง FV ลดตาม"
     ]
   },
+  "AVGO": {
+    "symbol": "AVGO",
+    "display": "AVGO",
+    "category": "ai_semiconductor",
+    "name": "Broadcom Inc.",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "Custom AI Chips + Networking"
+    ],
+    "bull": [
+      "Custom XPU: GXPU (Google), MTIA (Meta), OpenAI XPU = exclusive partnerships",
+      "AI revenue FY2025 $12.2B +106% YoY — addressable market growing 3x",
+      "Tomahawk/Jericho Ethernet near-monopoly สำหรับ AI clusters",
+      "VMware integration $8B+ revenue synergy กำลัง materialize",
+      "Dividend + buyback = total return play ที่แข็งแกร่ง"
+    ],
+    "risk": [
+      "Custom XPU customers อาจพัฒนา in-house ลดความ dependency ระยะยาว",
+      "VMware debt overhang จาก acquisition $69B",
+      "Semiconductor cyclicality ใน Enterprise networking",
+      "Hock Tan succession planning ระยะยาว"
+    ],
+    "action": "buy",
+    "actionLabel": "Buy",
+    "conviction": 4,
+    "waf": 8.07,
+    "wafBadge": "waf-mid",
+    "wafComposite": "waf-composite-blue",
+    "price": 358.76,
+    "fv": 431,
+    "mos": 16.76,
+    "fpe": 21.34,
+    "peg": 0.854,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        7.5,
+        "amber",
+        75
+      ],
+      "ra": [
+        5.3,
+        "orange",
+        53
+      ]
+    },
+    "idea": "",
+    "updated": "2026-08-25",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-08-25",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Broadcom ออกแบบ custom AI accelerator (XPU) + networking silicon ให้ hyperscaler ที่ไม่อยากพึ่ง NVDA และเก็บกำไรอีกขาจาก VMware/infrastructure software ที่เป็นสัญญาต่ออายุ margin 78-79% — ชนะเพราะเป็น 1 ใน 2 เจ้าในโลก (คู่ MRVL) ที่ทำ custom silicon ระดับ leading-edge พร้อม networking ครบ stack ได้",
+      "why": "Consensus รู้แล้วว่า AI semi ของ AVGO จะทะลุ $100B ใน FY2027 (บริษัทพูดเอง 2 รอบ) — สิ่งที่ Warren เห็นต่างคือ 2 เรื่อง: (1) **โครงสร้างกำไรกำลังแย่ลงเงียบๆ ขณะที่รายได้โตแรง** จาก mix shift ไปทาง AI semi (gross margin ~70%) จาก software (93%); (2) **ราคาร่วง 8.7% ใน 10 วัน (นักลงทุนบางส่วนกังวลภาระ capex/debt ของทั้งอุตสาหกรรม $370B) ขณะที่ demand-side ยังแข็งขึ้น** — Broadcom กำลังขยาย AI-compute SPV จาก $35B tranche แรกเป็น $70-80B เพื่อรองรับ Anthropic/OpenAI เพิ่ม ซึ่งเป็นสัญญาณ contracted-demand ไม่ใช่ demand หด ตลาดกำลังลงโทษราคาจาก sentiment/leverage-concern มากกว่าจาก fundamental — ราคาที่ต่ำลงนี้เปิดช่องว่างที่ยังไม่ price-in เต็ม",
+      "risk": "hyperscaler รายใดรายหนึ่งใน 6 รายประกาศย้าย XPU program ไปเจ้าอื่น (แบบที่ Google TPU9 ย้าย packaging ไป Intel EMIB-T แล้ว) หรือ AI semi revenue FY2027 ออกมาต่ำกว่า $100B ที่ reaffirm ไว้ หรือ terms ของ debt financing $70-80B ออกมาแพง/มีเงื่อนไขที่กระทบ credit quality อย่างมีนัย = thesis เรื่อง duopoly durability พัง"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [
+        "EPS rebuild reproduces $16.81/FV $431 exactly, unchanged since 08-18",
+        "AI SPV debt raise ($70-80B, $45B senior/$35B junior split) independently confirmed via 5+ sources (CNBC, gurufocus, qz.com, Yahoo Finance, 24/7 Wall St, all dated 08-21/08-24)"
+      ],
+      "concerns": [
+        "MoS cushion over BUY gate is only 1.76pp (16.76% vs 15%) — Warren's own sensitivity shows a 2pp margin miss flips this back to FAIL; this is a knife-edge BUY, not a comfortable one",
+        "🚨 Independent WebSearch surfaces reporting of a ~$370B cumulative guaranteed AI-financing exposure by 2029 tied to AVGO's SPV structure (24/7 Wall St 08-24, corroborated directionally by other outlets) — materially larger than the $70-80B immediate raise Warren's RA note references. Not yet independently quantified/confirmed to AVGO's own balance sheet disclosures (single-source characterization), but the scale gap between what's in the card and what's being reported externally warrants caution before sizing a new position at full conviction."
+      ],
+      "summary": "",
+      "review_date": "2026-08-25"
+    }
+  },
   "GOOGL": {
     "symbol": "GOOGL",
     "display": "GOOGL",
@@ -627,17 +704,17 @@
       "Wiz acquisition compress Cloud margin 2026",
       "China revenue = zero = missed market ขนาดใหญ่"
     ],
-    "action": "starter",
-    "actionLabel": "Starter",
+    "action": "hold",
+    "actionLabel": "Hold",
     "conviction": 4,
     "waf": 7.62,
     "wafBadge": "waf-mid",
     "wafComposite": "waf-composite-blue",
-    "price": 282.44,
+    "price": 265.29,
     "fv": 302.8,
-    "mos": 6.72,
-    "fpe": 21.86,
-    "peg": 1.49,
+    "mos": 12.39,
+    "fpe": 20.53,
+    "peg": 1.4,
     "scores": {
       "bq": [
         9.5,
@@ -661,7 +738,7 @@
       ]
     },
     "idea": "11-19: STARTER (held, 1/3 tranche) — Cloud +103% with 36% margin offsets Search deceleration; FV cut $320->$303 on lower margin (D&A). Flip depends on 10% gate (borderline regime).",
-    "updated": "2026-11-19",
+    "updated": "2026-11-22",
     "story_gate": {
       "passed": true,
       "status": "PASS",
@@ -674,7 +751,7 @@
     },
     "tier": "🏛️ Inevitable",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price 282.44 = CNBC 11-18 close = prices_cache; premarket 294.13 (+4.1%, largest premarket move of the 3 priority names; cause not found)",
         "CNBC 52w 272.11-408.61: price sits 3.8% above the 52w low",
@@ -682,13 +759,12 @@
         "TQR 8.43 Strong ceiling 25 = consistent"
       ],
       "concerns": [
-        "STARTER is robust to the gate only via Charlie FV (MoS 12.3% -> STARTER band under 15% gate too); under Warren FV it exists only at the 10% gate",
-        "Premarket +4.1% erases Warren's MoS (2.9% < 3% band floor) - at open GOOGL may fall out of STARTER under Warren's own numbers",
-        "Unverified/undated report of Gemini co-lead Noam Shazeer leaving for OpenAI (stockanalysis news feed, no date) - talent risk, not in Warren's RA",
-        "Paper #8 review: ≤ $288 (MoS ≥ 4.9% Warren FV / 10.6% Charlie FV; ER ≥ 15.7%)"
+        "Limit $288 = MoS 4.89% บน Warren FV → ต่ำกว่า gate 5% (ปัดผิดฝั่ง) → ใช้ ≤ $287",
+        "Estimate revisions ลบ: FY26 0 up/13 down · FY27 5 up/8 down · FCF ติดลบ หนี้ $46.5B→$98.2B",
+        "ราคาอยู่ที่ 52w low — กระแส 'Google ลดชิป' + Gemini delay ยังไม่ใช่ตัวเลขธุรกิจ"
       ],
       "summary": "",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-22"
     },
     "mark_easy": {
       "one_liner": "ครบทั้ง stack AI (TPU + Gemini + Cloud) — ราคา $347.64 สูงกว่า FV $320 (MoS -8.64%) Warren WATCH, Charlie AGREE",
@@ -750,6 +826,85 @@
       "พึ่งลูกค้า TPU รายใหญ่ (Anthropic) และ Gemini 3.5 Pro ล่าช้า",
       "คดีต่อต้านการผูกขาด (Search/Ad Tech) ยังเป็นความเสี่ยงระยะยาว"
     ]
+  },
+  "ORCL": {
+    "symbol": "ORCL",
+    "display": "ORCL",
+    "category": "software",
+    "name": "Oracle Corporation",
+    "sector": "Software",
+    "sectorSlug": "software",
+    "chips": [
+      "Software",
+      "Cloud Apps + AI Infrastructure (OCI)"
+    ],
+    "bull": [
+      "Full-stack: OCI + Database + Fusion/NetSuite apps + AI tooling ในที่เดียว",
+      "Multicloud Database รันบน Azure/Google Cloud/AWS = unlock ลูกค้าเดิม",
+      "Switching cost สูง: ERP/Database mission-critical ผูกระบบมานาน",
+      "AI data center buildout หลาย GW + backlog สัญญา AI ขนาดใหญ่",
+      "ผู้ก่อตั้ง Larry Ellison (CTO/Chairman) ยังคุมทิศทางเชิงกลยุทธ์"
+    ],
+    "risk": [
+      "หนี้พุ่งเร็วมากเพื่อ fund AI buildout (notes ~$135B ณ ก.พ. 2026)",
+      "Off-balance-sheet lease/power commitments โตเร็วกว่าที่เห็นในงบ",
+      "Dilution จาก Mandatory Convertible Preferred (แปลงบังคับ ม.ค. 2029)",
+      "Customer concentration ในสัญญา AI ใหญ่ไม่กี่ราย",
+      "Gross margin ถูกกดจาก data center ramp-up · Co-CEO structure ยังใหม่"
+    ],
+    "action": "starter",
+    "actionLabel": "Starter",
+    "conviction": 3,
+    "waf": 7.4,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 183.53,
+    "fv": 209,
+    "mos": 12.2,
+    "fpe": 22.8,
+    "peg": 1.27,
+    "scores": {
+      "bq": [
+        8.0,
+        "green",
+        80
+      ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
+      "va": [
+        6.5,
+        "amber",
+        65
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "",
+    "updated": "2026-06-18",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-06-18",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Oracle รวม infrastructure (OCI) + database + enterprise applications เป็น full-stack เดียว — ชนะด้วย multicloud database (รันบน AWS/Azure/GCP ได้) ที่ไม่มีคู่แข่งทำได้ + speed-to-deploy ใน AI data center buildout",
+      "why": "Consensus เห็นว่า Oracle คือ \"enterprise software เดิมที่กำลังได้ AI tailwind จาก OCI\" — Warren เห็นต่างว่าตลาดยัง underweight ว่า RPO $638B (+363% YoY) ส่วนใหญ่มาจาก customer prepayment/bring-your-own-hardware ($75B สะสม) ซึ่งลด capital risk ของ Oracle เองได้มากกว่าที่ headline leverage number ($134.6B notes payable) จะดูน่ากลัว — Oracle กำลังเปลี่ยนสถานะจาก \"incumbent ที่กำลังจะถูก disrupt\" เป็น \"AI infrastructure hypergrowth player\" ที่ตลาดยังตีราคาด้วย multiple ของ enterprise software เดิม",
+      "risk": "ถ้า gross margin ไม่ inflect ตามสัญญา (FY27 guidance บอกจะลดลงต่อก่อนฟื้น) หรือ 4 ลูกค้าใหญ่ที่เซ็นสัญญา AI infra เกิน $8B รายละแต่ละ ราย concentrate เกินไปจนกลายเป็น counterparty risk แทน diversification"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-06-18"
+    }
   },
   "META": {
     "symbol": "META",
@@ -823,7 +978,7 @@
     },
     "tier": "🚀 Pre-Inevitable",
     "charlie": {
-      "charlie_verdict": "CAUTION",
+      "charlie_verdict": "AGREE",
       "verified_claims": [
         "Price 616.38 = CNBC 11-18 close = prices_cache; premarket 627.50 (+1.8%)",
         "CNBC: TTM EPS 25.46, fwd EPS 29.26, 52w 520.26-779.82, shares 2.60B",
@@ -831,13 +986,12 @@
         "TQR 7.55 Strong ceiling 25 = consistent; no price words in notes"
       ],
       "concerns": [
-        "ADD rests on a 0.25pt cushion (MoS 10.25% vs gate 10%) at the 11-18 close; at 11-19 premarket 627.50 Warren MoS = 8.6% -> STARTER, not ADD",
-        "ADD exists only because of the 10% gate - at 15% gate META is STARTER under both FVs",
-        "Two known dilutive/legal tails (NM $25B judgment, $60B ATM) both point down and both are outside the Base; either one alone pushes MoS under 10%",
-        "Nasdaq FY27 revisions 7 down vs 6 up - estimate momentum is not supportive"
+        "หาง legal/dilution 2 ตัวชี้ลงทั้งคู่ (NM $25B · Class C ATM ~$60B) — stress รวมยังผ่าน gate แต่ cushion เหลือ ~15%",
+        "Estimate momentum FY27 7 up/6 down ไม่หนุน · FCF ติดลบจาก capex",
+        "ขาย META ใน Dime ($1,185) แล้วซื้อ META ใน Long Term ($870) สัปดาห์เดียวกัน = สุทธิลด META $315 + เสีย spread/ค่าคอม 2 ขา — ไม่ผิด แต่ทำ META ขาซื้อหลังขาขาย settle"
       ],
       "summary": "",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-22"
     },
     "mark_easy": {
       "one_liner": "เครื่องโฆษณาที่แข็งที่สุดในโลก — ราคา $718.67 ใกล้ FV $711 (MoS -1.08%) Warren HOLD, Charlie AGREE แต่มีคดี New Mexico รอคำตัดสิน",
@@ -899,6 +1053,228 @@
       "งบ Q3 คาดมีค่าใช้จ่ายยอมความครั้งเดียวราว $10B และ EPS ไตรมาสล่าสุดลดลง",
       "Muse agent ยังพิสูจน์การทำเงินไม่ได้ และถูกบางร้านค้า (Amazon) บล็อก"
     ]
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "display": "AMD",
+    "category": "ai_semiconductor",
+    "name": "AMD",
+    "sector": "Semiconductor",
+    "sectorSlug": "semi",
+    "chips": [
+      "Semiconductor",
+      "CPU + GPU AI"
+    ],
+    "bull": [
+      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
+      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
+      "Lisa Su execution track record = among best in semiconductor",
+      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
+      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+    ],
+    "risk": [
+      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
+      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
+      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
+      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
+      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.07,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 424.39,
+    "fv": 355.0,
+    "mos": -19.55,
+    "fpe": 29.89,
+    "peg": 0.85,
+    "scores": {
+      "bq": [
+        8.5,
+        "green",
+        85
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        3.5,
+        "orange",
+        35
+      ],
+      "ra": [
+        5.3,
+        "orange",
+        53
+      ]
+    },
+    "idea": "11-21: WATCH — FV $355 carried; $424.39 MoS -19.5%; BUY <= ~$337. || 11-19 re-base on Q3: FV $329 -> $355 (+8%); price $530.14 -> MoS -49.3% vs 10% gate. Growth story stronger than ever but price far above Bull $477. WATCH — BUY <= ~$320.",
+    "updated": "2026-11-21",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-11-21",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
+      "why": "Consensus (BofA, Wells Fargo, Mizuho) ตอนนี้เห็นด้วยกับ \"agentic AI CPU\" thesis แล้ว — raise TAM เป็น $170B และเรียก AMD \"top CPU pick\". Warren เห็นว่านี่คือสัญญาณว่า edge เดิม (rerating จาก 'laggard' → 'second source') กำลังกลายเป็น consensus — second-level thinking บอกว่าต้องระวังไม่ chase ราคาที่วิ่งขึ้นจาก sentiment เดียวกันกับที่ตลาดเพิ่งรู้. **2026-08-05 update (post-Q2 earnings):** Q2 FY2026 (Aug 4 after close) beat ทั้งรายได้ ($11.5B +50% YoY, เหนือ guide $11.2B±$300M) และ Non-GAAP EPS ($1.66 vs consensus $1.61) — Data Center revenue $6.7B **+107% YoY** (58% ของรายได้รวม ขึ้นจาก 42% ปีก่อน). Management **raise TAM ครั้งใหญ่**: DC AI accelerator TAM → ~$1.4T by 2030 (>45% CAGR), server CPU TAM → **~$220B by 2030 (ขึ้นจาก $120B ที่ guide แค่ไตรมาสก่อน)**. Anthropic เข้ามาเป็น anchor customer รายที่ 3 (up to 2GW MI450, AMD ลงทุนตรง $5B — ไม่ใช่ warrant structure). Q3 guide $13.0B±$300M (+41% YoY) แข็งแรง. **แต่ตลาดตอบสนองแบบ \"sell the news\"**: หุ้นวิ่งขึ้น +7% ระหว่างวัน 08-04 ปิดที่ $518.58 (ราคาที่ปรากฏใน prices_cache.json รอบนี้ — **แต่เป็นราคาปิดตลาดปกติก่อนงบออกหลังตลาดปิด ไม่ใช่ราคาล่าสุด**), แล้วร่วง after-hours -8.8% เหลือ **~$472.94** และ pre-market ต่อเนื่องแถว **$474-475** เช้า 08-05 (ยืนยันจาก yfinance fast_info previousClose $472.85 + WebSearch หลายแหล่ง — finbold/tradingkey) — expectations ที่ baked-in ไปแล้วสูงกว่าที่ผลจริงจะ satisfy ได้ แม้ผลจะ beat ตัวเลขที่ประกาศไว้ก็ตาม — วัดจากราคาก่อนงบ ($518.58) ที่ยืนเหนือ FV Base ของ Warren เองอยู่มาก (🚫 ตัวเลข analyst price target ตัดออกตามกฎห้าม PT 2026-07-20). Second-level read: TAM raise เป็นของจริง (management เอง ไม่ใช่แค่ analyst) แต่ตลาดกำลัง price-in ว่า \"ดีมากแล้ว ดีกว่านี้ยาก\" ระยะสั้น — MoS ยังคง fail gate ต่อเนื่อง แม้ที่ราคาที่ถูกกว่าที่ cache แสดง",
+      "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง — หรือ ถ้า \"agentic CPU\" consensus narrative พิสูจน์ว่า overhype (TAM ไม่ materialize ตามที่ BofA/management project) ราคาจะ de-rate เร็ว — เพิ่มเติมรอบนี้: forward commitments ($30.3B unconditional + subsequent $5.0B investment + $9.5B new DC leases) พุ่งเร็วกว่ารายได้ ถ้า AI demand ชะลอกว่าที่ผูกพันไว้ = balance-sheet stress risk ใหม่"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [
+        "Price CNBC 11-20 close 424.39 (-13.25%), prior close 489.19; Nasdaq consistent",
+        "Nasdaq FY27 EPS revisions 18 up / 0 down - no fundamental cut behind the drop"
+      ],
+      "concerns": [
+        "MoS -15% - WATCH correct at both FVs; BUY zone under Charlie FV <= ~$350 (5% gate)"
+      ],
+      "summary": "",
+      "review_date": "2026-11-20"
+    },
+    "mark_easy": {
+      "one_liner": "ธุรกิจ AI โตแรง แต่ราคา $570.82 แพงกว่า FV $329 ราว 73% — Warren WATCH, Charlie AGREE",
+      "what": "AMD ขายทั้งชิป CPU เซิร์ฟเวอร์ (EPYC) และชิป AI accelerator (Instinct/Helios) แข่งกับ NVIDIA โดยตรง ไตรมาสล่าสุด Data Center โต 107% YoY กลายเป็น 58% ของรายได้รวมแล้ว",
+      "why_invest": [
+        "ลูกค้า anchor 3 ราย OpenAI/Meta/Anthropic ผูกสัญญาระยะยาวแล้วจริง — Anthropic ล่าสุดใส่เงินลงทุนตรง $5B พร้อมสัญญาใช้ MI450 สูงสุด 2GW",
+        "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่: ตลาดชิป AI accelerator เป็น $1.4T และตลาด server CPU เป็น $220B ภายในปี 2030 (จากเดิม $120B)",
+        "Helios แพลตฟอร์ม rack-scale เริ่มส่งมอบจริงไตรมาส 3 ปี 2026 — ลูกค้าดีมานด์ 'เกินคาด' ตามที่ผู้บริหารพูดเอง"
+      ],
+      "watch_out": [
+        "ราคา $570.82 สูงกว่า FV $329 และสูงกว่า Bull case $442 — MoS -73.50% เหลือที่ว่างให้พลาดน้อยมาก",
+        "Helion แร็คใหม่ยังไม่มีตัวเลขราคา/รายได้ — ต้องรอดูว่าแปลงเป็นยอดขายได้จริงแค่ไหน",
+        "ระดมทุน/ก่อหนี้ (~$25B ในเดือน ส.ค.) + ซื้อกิจการ AI ใหญ่ 2 ดีลติดกัน ต้องจับตา"
+      ]
+    },
+    "mark_full": {
+      "business_overview": "AMD เป็นบริษัทออกแบบชิปแบบ fabless แบ่งรายได้เป็น 3 ธุรกิจ: Data Center (58% ของรายได้ ไตรมาสล่าสุด — EPYC CPU + Instinct AI GPU), Client & Gaming (33% — Ryzen/Radeon), Embedded (9% — FPGA จาก Xilinx) ผลิตทั้งหมดผ่าน TSMC",
+      "tam": "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่ในไตรมาสล่าสุด: ตลาดชิป AI accelerator ในดาต้าเซ็นเตอร์เป็น ~$1.4T ภายในปี 2030 (โต >45%/ปี) และตลาด server CPU เป็น ~$220B (โต >50%/ปี จากเดิมที่ประเมิน $120B เมื่อไตรมาสก่อน)",
+      "moat": "จุดแข็งคือเป็นบริษัทเดียวที่มีทั้ง x86 CPU + AI GPU + แพลตฟอร์ม rack-scale ครบมือ ทำให้สลับต้นทุนสูงสำหรับลูกค้าที่ย้ายมา แต่ซอฟต์แวร์ ROCm ยังตามหลัง CUDA ของ NVIDIA อยู่พอสมควร",
+      "latest_financials": "Q2 2026: รายได้ $11.5B +50% YoY, Non-GAAP EPS $1.66, Data Center revenue $6.7B +107% YoY guidance ไตรมาส 3 ที่ $13.0B ±$300M (+41% YoY) รอบ 15 ต.ค.: ประมาณการรายได้ปี 2027 ขยับเป็น $89.05B × มาร์จิ้นสุทธิ 25% ÷ 1,692.3M หุ้น = EPS $13.16 × 25 เท่า = FV $329 (Bull $442 / Bear $167) ราคา $570.82 MoS -73.50% PEG 1.24 Charlie AGREE ได้ $329 ตรงกัน",
+      "key_points": [
+        "WATCH: FV ขยับ $323→$329 ราคายังสูงกว่า FV ราว 73% และเหนือ Bull case",
+        "Charlie AGREE ตัวเลขตรงกันเป๊ะ (EPS FY27 consensus $13.83 vs Warren $13.16 — Warren ระวังกว่า)",
+        "Helion แร็ค agentic ส่งมอบ พ.ย. ยืนยัน thesis แต่ยังไม่มีตัวเลข จุดทดสอบ: งบ Q3 ต้น พ.ย. เทียบ guide ~$13B"
+      ]
+    },
+    "warren_easy": [
+      "AMD ยัง WATCH tier Pre-Inevitable WAF 6.69 — ปรับฐานตามประมาณการรายได้ปี 2027 ที่ขยับขึ้นเป็น $89.05B → FV ขยับ $323→$329 (EPS $13.16 × 25 เท่า)",
+      "ราคา $570.82 MoS -73.50% เทียบเกณฑ์ 15% ห่างราว 88 จุด และยังสูงกว่า Bull case $442 — ตลาดจ่ายล่วงหน้าไปไกลมาก",
+      "ข่าวใหม่: เปิดตัว Helion แร็ค agentic AI (CPU Zen6 ล้วน 32,768 คอร์สำหรับ hyperscaler + รุ่น EPYC+MI350P สำหรับองค์กร) พาร์ทเนอร์ Dell/HPE/Lenovo/Supermicro เริ่มส่ง พ.ย. นี้ — ยืนยัน thesis 'CPU กลับมาสำคัญ' แต่ยังไม่มีตัวเลขรายได้ Charlie AGREE"
+    ],
+    "charlie_easy": {
+      "verdict": "AGREE",
+      "review_date": "2026-10-15",
+      "paragraphs": [
+        "Charlie ได้ FV $329 ตรงกับ Warren เป๊ะ (gap 0%) — EPS ปี 2027 $13.16 ต่ำกว่าค่าเฉลี่ยนักวิเคราะห์ ($13.83) อยู่ 4.9% ถือว่า Warren ไม่ได้ตั้งตัวเลขสวยเกินจริง",
+        "Warren ใช้จำนวนหุ้น 1,692.3M ซึ่งนับรวมหุ้นที่ออกเพื่อซื้อกิจการแล้ว (มากกว่าตัวเลข SEC 1,659M) — เป็นสมมติฐานที่ระวังกว่า",
+        "ข้อกังวล: ราคาสูงกว่า FV 73% และประมาณการกำไรปี 2027 ของนักวิเคราะห์เองก็โต +114% จากปีนี้ โดยตัวเลขสูงสุด-ต่ำสุดห่างกันถึง 1.87 เท่า — แปลว่าแม้แต่ consensus เองก็มองดีมากอยู่แล้ว",
+        "Helion ยังไม่มีราคา/รายได้ — ถูกต้องที่ไม่เอามาใส่ใน FV ต้องติดตาม: งบ Q3 ต้น พ.ย. (MI450 ramp และรายได้ GPU ดาต้าเซ็นเตอร์ เทียบ consensus $89B)"
+      ]
+    },
+    "idea_th": "WATCH ต่อเนื่อง — ธุรกิจ AI โตแรงจริงและ Helion แร็ค agentic ช่วยยืนยันว่า CPU กลับมาสำคัญในยุค AI agent แต่ราคา $570.82 สูงกว่า FV $329 ราว 73% และสูงกว่า Bull case $442 ด้วย Charlie AGREE ตัวเลขตรงกันเป๊ะ — รองบ Q3 ต้น พ.ย. ก่อนคิดใหม่",
+    "story_gate_th": {
+      "what": "AMD เป็นบริษัทเดียวที่มีทั้ง x86 CPU (EPYC), AI GPU (Instinct) และแพลตฟอร์ม rack-scale (Helios) ครบมือ ครองส่วนแบ่งตลาด server CPU กว่า 40% และเป็นผู้ท้าชิงที่น่าเชื่อถือที่สุดอันดับ 2 ในตลาด AI accelerator รองจาก NVIDIA",
+      "why": "FV ขยับขึ้นเล็กน้อยเป็น $329 ตามประมาณการรายได้ปี 2027 ที่เพิ่มขึ้น ธุรกิจยังดีขึ้นต่อเนื่อง แต่ราคา $570.82 ตีมูลค่าล่วงหน้าไปไกลมาก (MoS -73.50%) และอยู่เหนือ Bull case $442",
+      "risk": "ถ้า MI450 ส่งมอบล่าช้า หรือ ROCm ตาม CUDA ไม่ทันทำให้ hyperscaler ไม่ adopt จริงจัง หรือ narrative 'agentic CPU' ที่ตลาดเชื่อกันตอนนี้พิสูจน์ว่า overhype ราคาจะปรับฐานเร็ว — การระดมทุนสะสม ~$25B ใน 12 วันที่ผ่านมา (13-23 ส.ค.) เพิ่มความเสี่ยงด้านงบดุลถ้า demand ชะลอกว่าที่ผูกพันไว้"
+    },
+    "bull_th": [
+      "Data Center revenue +107% YoY กลายเป็น 58% ของรายได้รวมแล้ว จาก 42% เมื่อปีก่อน",
+      "ลูกค้า anchor 3 ราย OpenAI/Meta/Anthropic ผูกสัญญาระยะยาวแล้วจริง ไม่ใช่แค่ความหวัง",
+      "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่: accelerator TAM $1.4T และ server CPU TAM $220B ภายในปี 2030",
+      "เปิดตัว Helion แร็ค agentic AI (CPU Zen6 32,768 คอร์) พาร์ทเนอร์ Dell/HPE/Lenovo/Supermicro/Cisco เริ่มส่งมอบ พ.ย. 2026 — ตอกย้ำว่า agentic AI ต้องใช้ CPU เยอะขึ้น",
+      "ประมาณการรายได้ปี 2027 ขยับขึ้นเป็น $89.05B — FV ปรับขึ้นเป็น $329",
+      "ซื้อ World Labs ($8.2B จ่ายด้วยหุ้น) เพิ่มทีมและโมเดล AI เชิงพื้นที่ — ยังไม่มีรายได้ ถือเป็น option ในอนาคตที่ยังไม่อยู่ใน FV"
+    ],
+    "risk_th": [
+      "ราคา $570.82 แพงกว่า FV $329 ราว 73% (MoS -73.50%) และเกิน Bull case $442 — ราคาวิ่งนำธุรกิจไปไกล ห่างเกณฑ์ 15% ราว 88 จุด",
+      "ROCm ซอฟต์แวร์ยังตามหลัง CUDA ของ NVIDIA — ความเสี่ยงเชิงโครงสร้างที่ยังไม่ปิดช่องว่าง",
+      "ระดมทุนสะสม ~$25B ใน 12 วัน (13-23 ส.ค.: หุ้นกู้ $4.75B + วงเงินเพิ่ม $5B + TSMC packaging JV $10B+) เร็วกว่าที่เคยรับรู้ เพิ่มภาระหนี้ต่อเนื่อง",
+      "ถ้า narrative 'agentic CPU' ที่ตลาดกำลังเชื่อกันพิสูจน์ว่า overhype ราคาจะปรับฐานเร็ว",
+      "ซื้อกิจการ AI ใหญ่ 2 ดีลในไม่กี่สัปดาห์ (diworsification) ผูกพันเงินรวมราว $25B ขณะที่ราคาสูงกว่า Bull case แล้ว",
+      "ประมาณการกำไรปี 2027 ของนักวิเคราะห์โต +114% และตัวเลขสูง-ต่ำห่างกันเกือบ 2 เท่า — ฐานที่ใช้คิด FV เองก็มองโลกในแง่ดีอยู่แล้ว"
+    ]
+  },
+  "DUOL": {
+    "symbol": "DUOL",
+    "display": "DUOL",
+    "category": "consumer",
+    "name": "Duolingo",
+    "sector": "Consumer",
+    "sectorSlug": "consumer",
+    "chips": [
+      "Consumer",
+      "EdTech"
+    ],
+    "bull": [
+      "Revenue $292.0M +27% YoY, Net Income $43.5M, FCF $147.8M (margin 50.6%)",
+      "DAU +21% YoY (56.5M), Bookings +14%",
+      "ไม่มีหนี้, cash $1.39B"
+    ],
+    "risk": [
+      "App Store concentration: Apple 62% + Google 20% = >80% รายได้ — สัญญายกเลิกได้แค่แจ้ง 30 วัน",
+      "Dual-class governance: ผู้บริหาร+กรรมการคุม 76.3% voting power",
+      "Gross margin คาดลด 73%→69% จาก AI cost; 10-K เตือนเองว่า GenAI อาจให้คู่แข่งแซงหน้า",
+      "MAU โตช้าเหลือ +6% (DAU โตจาก retention ไม่ใช่ user ใหม่)"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 7.0,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 128.35,
+    "fv": 214,
+    "mos": 38.0,
+    "fpe": 19.2,
+    "peg": 1.11,
+    "scores": {
+      "bq": [
+        7.0,
+        "amber",
+        70
+      ],
+      "gp": [
+        7.5,
+        "amber",
+        75
+      ],
+      "va": [
+        7.0,
+        "amber",
+        70
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "AI-accelerated content-scale moat compounding while stock trades near trough multiple (19x fwd) after a 73% de-rate from its 2025 ATH ($468)",
+    "updated": "2026-07-15",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-15",
+      "tier": "🌱 Fast Grower",
+      "tier_slug": "fast-grower",
+      "what": "Duolingo คือแอปเรียนภาษาที่ใหญ่ที่สุดในโลกแบบ freemium — ชนะด้วย data flywheel (ผู้ใช้ทำแบบฝึกหัด ~2 พันล้านครั้ง/วัน) และ organic brand growth ที่ทำให้ CAC ต่ำกว่าคู่แข่งมาก",
+      "why": "Consensus เห็นว่า Duolingo คือ \"EdTech growth stock ที่ราคาแพงไปแล้ว/ถูก GenAI disrupt ได้\" (sentiment ตลาดฝั่ง Hold) — Warren เห็นต่างว่าตลาดยัง underweight ว่า Duolingo เองคือผู้ใช้ AI เร่ง content scale ได้เร็วกว่าใคร (20,500 course units/ไตรมาส จาก 1,800 เมื่อ 2 ปีก่อน = 10x+) ทำให้ moat ด้าน content breadth ขยายเร็วกว่าที่ผู้เล่นหน้าใหม่ GenAI-native จะตามทัน ขณะที่หุ้นร่วงจาก ATH $468 (2025) มาเหลือ ~$128 (de-rate จาก sentiment ล้วนๆ ไม่ใช่พื้นฐานพัง — FCF margin ยังขยายต่อเนื่อง) ทำให้ forward P/E เหลือแค่ ~19x จาก 5-yr average ~33x — ราคาปัจจุบันไม่ได้ price-in คุณภาพการเงินที่ยังดีขึ้นเรื่อยๆ",
+      "risk": "ถ้า MAU growth ที่ชะลอเหลือ +6% (เทียบ DAU +21%) ไม่ฟื้นภายใน 2-3 ไตรมาส (ยังไม่มีข้อมูล Q2 ใหม่ — earnings 5 ส.ค. 2026) — แสดงว่า top-of-funnel ใหม่หมดแรงจริง ไม่ใช่แค่ noise ชั่วคราว และ DAU growth ที่เหลือจาก retention อย่างเดียวจะ plateau ในที่สุด"
+    },
+    "tier": "🌱 Fast Grower",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-08-09"
+    }
   },
   "PLTR": {
     "symbol": "PLTR",
@@ -1047,42 +1423,192 @@
       "Hyperscaler อาจทำแพลตฟอร์มแข่ง และคดีอุทธรณ์ Cupat ยังค้างอยู่"
     ]
   },
-  "AMD": {
-    "symbol": "AMD",
-    "display": "AMD",
+  "ARM": {
+    "symbol": "ARM",
+    "display": "ARM",
     "category": "ai_semiconductor",
-    "name": "AMD",
+    "name": "Arm Holdings",
     "sector": "Semiconductor",
     "sectorSlug": "semi",
     "chips": [
       "Semiconductor",
-      "CPU + GPU AI"
+      "IP Licensing"
     ],
     "bull": [
-      "MI455X HBM bandwidth สูงกว่า NVIDIA H200 ใน bandwidth-bound workloads",
-      "EPYC market share ใน x86 server CPU expanding ต่อเนื่อง",
-      "Lisa Su execution track record = among best in semiconductor",
-      "ROCm ecosystem improving — Meta/Microsoft กำลัง adopt",
-      "Ryzen AI กำลัง capture NPU market สำหรับ AI PC"
+      "Armv9 royalty rate 2x Armv8 = structural revenue uplift ทุกปี",
+      "22M+ developers ecosystem ฝังแน่นใน mobile, IoT, servers",
+      "350B chips shipped = installed base ขนาดใหญ่ที่สุดในโลก",
+      "CSS (Compute Subsystem) higher royalty tier กำลัง scale",
+      "AWS Graviton, Apple M-series = royalty revenue ใหม่ขนาดใหญ่"
     ],
     "risk": [
-      "ROCm ecosystem ตาม CUDA มากกว่า 5 ปี — switching cost ของ CUDA สูงมาก",
-      "MoS เพียง 3.1% ต่ำเกินไป — ราคาใกล้ Fair Value แล้ว",
-      "AI GPU revenue $7B+ FY2025 vs NVIDIA $193B — gap ยังใหญ่มาก",
-      "Intel recovery ใน server CPU ถ้า 18A ประสบความสำเร็จ",
-      "CapEx ต่ำกว่า NVIDIA ทำให้ capacity supply ถูกจำกัด"
+      "P/E 55x ราคาสูงมาก — ต้องการ execution perfect และ growth ต่อเนื่อง",
+      "RISC-V open-source ถูกกว่า ถ้า adoption เร็วกระทบ licensing revenue",
+      "Qualcomm dispute ยืดเยื้อ — ถ้าแพ้คดีกระทบรายได้ mobile chips",
+      "SoftBank ถือหุ้นใหญ่ = overhang และ selling pressure",
+      "UK regulatory environment ไม่แน่นอน"
+    ],
+    "action": "hold",
+    "actionLabel": "Hold",
+    "conviction": 3,
+    "waf": 6.68,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 152.2,
+    "fv": 186.9,
+    "mos": 18.57,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        8.0,
+        "green",
+        80
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        6.0,
+        "orange",
+        60
+      ],
+      "ra": [
+        2.5,
+        "orange",
+        25
+      ]
+    },
+    "idea": "11-21: ADD by Warren rules (MoS 18.6%, ER 34.2%, WAF 6.68 just over 6.5) but Charlie conservative FV $140 -> NO-BUY in Paper until re-review. Not a 'should not hold' case: WAF>5, TQR Strong 7.33, IF WRONG not fired. || 11-19: WATCH (held) — FV unchanged $187; price $183. Enters STARTER band (<=3% short of 10% gate) at <= ~$181; MoS 10% at <= $168. Qualcomm remedy ruling is the swing factor.",
+    "updated": "2026-11-22",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-11-21",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "ARM owns the dominant CPU ISA (>95% mobile share) and monetizes via licensing + per-chip royalties with near-zero marginal cost, now expanding into datacenter/AI via Compute Subsystems (CSS) and AGI CPU production silicon.",
+      "why": "Consensus is digesting a two-sided Q1 FY2027 print (clean beat on revenue/EPS but a royalty-growth guide cut on mobile BOM inflation, plus a crystallized Qualcomm/Nuvia court loss) alongside a genuine TAM reframe (AGI CPU Cloud AI CPU TAM $100B→$220B-equivalent, demand backlog >$2B) — Warren's edge is that even after reconciling the valuation to defensible (not just optimistic) consensus EPS, the stock trades at ~95x forward earnings on the re-derived base, i.e. the AGI CPU optionality is being priced as if it's already Base case when it still belongs in Bull; that gap is real but the market isn't pricing it as a gap.",
+      "risk": "DOJ/FTC antitrust action forces licensing model change, OR RISC-V adoption accelerates at hyperscalers, OR the 3rd Circuit appeal against Qualcomm also fails (removing the ~10%-of-revenue Qualcomm relationship from Arm's control) — any of these collapses royalty growth and triggers multiple compression."
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "DISAGREE",
+      "verified_claims": [
+        "Price CNBC 11-20 close 152.20 (-14.1%), AH 156.67; Nasdaq $177.17 stale (= 11-19 close)",
+        "CNBC: trailing P/E 174x, fwd P/E 64x, TTM EPS 0.87, mcap $162.9B, shares 1.07B",
+        "Market gate 5% (VIX 35.89 > 30, SPX fwd P/E 16.66x) confirmed mechanically"
+      ],
+      "concerns": [
+        "Warren FV inflated vs Charlie conservative FV $140 (Δ +25.1%) -> FV-Gap Conservative Rule: MoS on min(FV)=140 is -8.7% -> NO-BUY (same as Warren's own 11-21 note)",
+        "ADD comes entirely from price falling with the sector on NVDA contagion (NVDA licenses ARM cores) - no ARM-specific improvement",
+        "SoftBank margin-loan pledge: a further sector leg down can force selling"
+      ],
+      "summary": "",
+      "review_date": "2026-11-20"
+    },
+    "mark_easy": {
+      "one_liner": "เจ้าของสถาปัตยกรรมชิปที่มือถือเกือบทั้งโลกใช้ — แต่ราคา $238.01 สูงกว่า FV $187 (MoS -27.28%) และคดี Qualcomm ยังไม่จบ Warren WATCH, Charlie CAUTION",
+      "what": "ARM ไม่ได้ผลิตชิปเอง แต่ออกแบบสถาปัตยกรรม (ISA) แล้วเก็บค่าไลเซนส์ + ค่าลิขสิทธิ์ต่อชิปที่ผลิตออกมา ล่าสุดเริ่มขยายไปทำชิปสำเร็จรูปเอง (Arm AGI CPU) สำหรับดาต้าเซ็นเตอร์",
+      "why_invest": [
+        "Ecosystem นักพัฒนา 22 ล้านคน และ gross margin ราว 98% — คุณภาพธุรกิจได้ 8/10",
+        "เก็บค่าลิขสิทธิ์ได้ไม่ว่าใครชนะสงครามชิป AI (NVIDIA, AMD หรือชิปของ hyperscaler เองก็ใช้ core ของ ARM)",
+        "TQR Strong (7.33) — ทนทานสุดในกลุ่มเซมิของธีม เพราะรายได้กระจายทั้งมือถือ/IoT/รถยนต์ ไม่ใช่แค่เซิร์ฟเวอร์ AI"
+      ],
+      "watch_out": [
+        "MoS -27.28% เทียบเกณฑ์ 15% ห่างราว 42 จุด — ไกลจากโซนซื้อมาก",
+        "คดี Qualcomm (ตัดสิน 13 ต.ค.): ARM ผิดสัญญาแต่จ่ายแค่ $2 — ด่านถัดไปคือผู้พิพากษาตัดสินเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปี ถ้า Qualcomm ชนะ FV ลดเหลือราว $170 (Warren) หรือ $125 (Charlie)",
+        "Charlie คิดว่า FV ควรอยู่ที่ $137 ไม่ใช่ $187 เพราะ Warren ใช้รายได้ปี FY2028 โดยไม่คิดลดกลับมา"
+      ],
+      "bottom_line": "ARM เป็นธุรกิจคุณภาพที่วางตัวดีในโลก AI แต่ราคาตอนนี้แพงกว่าทุกวิธีคำนวณ และคดี Qualcomm ยังเหลือคำตัดสินสำคัญของผู้พิพากษา — เฝ้าดูอย่างเดียว"
+    },
+    "mark_full": {
+      "business_overview": "ARM ออกแบบและให้สิทธิใช้งาน IP สำหรับ CPU/GPU/System IP เก็บรายได้ 2 ทาง — Royalty เมื่อชิปถูกผลิตจริง และ License fee เมื่อลูกค้านำ IP ไปออกแบบ ปีงบ FY26 รายได้ $4,920M ไตรมาส Q1 FY27 รายได้ $1,289M (+22%) และ guide Q2 ที่ $1.38B",
+      "tam": "บริษัทขยายจากการขายแค่ IP ไปสู่การทำชิปดาต้าเซ็นเตอร์สำเร็จรูป (Arm AGI CPU) เพื่อเก็บมูลค่าชิปทั้งก้อนแทนค่าลิขสิทธิ์ต่อชิป — เป็นโอกาสใหญ่ แต่ Warren ยังจัดไว้ในกรณี Bull ไม่ใช่ Base",
+      "moat": "จุดแข็งคือ ecosystem lock-in — นักพัฒนากว่า 22 ล้านคนออกแบบบนสถาปัตยกรรม ARM ทำให้ต้นทุนการย้ายค่ายสูงมาก ความเสี่ยงต่อ moat คือ RISC-V (โอเพนซอร์ส ไม่มีค่าไลเซนส์), คดีกับ Qualcomm และการที่ ARM ทำชิปเองอาจไปแข่งกับลูกค้า",
+      "latest_financials": "รอบ 15 ต.ค. ไม่มีงบใหม่ (Q2 FY27 ออกต้น พ.ย.) Warren ใช้ EV/Sales 24 เท่า บนรายได้ FY2028 (consensus) $8,190M + เงินสดสุทธิ $3,400M ÷ 1,070M หุ้น = FV $187 (Bull $233 / Bear $118) ราคา $238.01 MoS -27.28% ผลตอบแทนคาดการณ์ 25.29%/ปี WAF 6.05 (LOW) คะแนนความเสี่ยงลด 3.5→3.0 หลังคำตัดสินคดี Qualcomm — Charlie ใช้รายได้ FY2027 $6,002M + เงินสด $3,888M (งบ 10-Q) ÷ 1,078M หุ้น = $137",
+      "key_points": [
+        "WATCH: FV $187 คงเดิม ราคาสูงกว่า FV และอยู่เหนือ Bull case ($233) ด้วย",
+        "Charlie CAUTION — FV $137 ห่าง 26.7%: ตัวคูณ 24 เท่าปรับจากยอดขายย้อนหลัง จึงควรใช้กับรายได้ปีปัจจุบัน (FY27) ไม่ใช่ FY28 ที่ไม่ได้คิดลด",
+        "คดี Qualcomm (13 ต.ค.): คณะลูกขุนชี้ว่า ARM ผิดสัญญา (กักเครื่องมือทดสอบ + แทรกแซงดีล Qualcomm-Meta ~$170M) แต่ค่าเสียหาย $2 — ประเด็นงดจ่ายค่าลิขสิทธิ์ 5 ปี และการเจรจา Armv10 รอผู้พิพากษา Noreika ตัดสิน (ยังไม่มีกำหนด)",
+        "จุดทดสอบ: คำตัดสินของผู้พิพากษา และงบ Q2 FY27 ต้น พ.ย. เทียบ guide $1.38B"
+      ]
+    },
+    "warren_easy": [
+      "ARM tier 🚀 Pre-Inevitable WAF 6.05 conviction LOW — FV $187 คงเดิม (EV/Sales 24 เท่า บนรายได้ FY2028)",
+      "คดี Qualcomm ตัดสินแล้ว (13 ต.ค.): คณะลูกขุนชี้ว่า ARM ผิดสัญญาและแทรกแซงความสัมพันธ์ Qualcomm-Meta แต่ให้ชดใช้แค่ $2 — ยังเหลือประเด็นใหญ่ที่ผู้พิพากษาต้องตัดสินเอง: Qualcomm จะได้สิทธิไม่จ่ายค่าลิขสิทธิ์ 5 ปีไหม (ราว 9% ของรายได้) Warren ลดคะแนนความเสี่ยง 3.5→3.0 กรณีแย่สุด FV ราว $170",
+      "ราคา $238.01 MoS -27.28% เทียบเกณฑ์ 15% ห่างราว 42 จุด และ WAF ต่ำกว่า 6.5 → WATCH"
+    ],
+    "charlie_easy": {
+      "verdict": "CAUTION",
+      "review_date": "2026-10-15",
+      "paragraphs": [
+        "Charlie คำนวณได้ FV $137 เทียบ Warren $187 (ห่าง 26.7% เกิน 20% = CAUTION บังคับ) — ความต่างทั้งหมดมาจาก Warren เอาตัวคูณ 24 เท่า (ปรับจากยอดขายย้อนหลัง) ไปคูณรายได้ปี FY28 โดยไม่คิดลดกลับมา Charlie ใช้รายได้ FY27 $6,002M แทน",
+        "ผลตอบแทนคาดการณ์ของ Charlie 19.5% ต่ำกว่าของ Warren (25.29%) 5.8 จุด — เกินเส้น 5 จุดที่ตั้งไว้ อีกเหตุผลของ CAUTION",
+        "คดี Qualcomm: ตอนนี้ศาลยืนยันแล้วว่า ARM ผิดสัญญา ทำให้คำถามเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปีกลายเป็นเรื่องจริงจัง — กรณีแย่สุด FV ของ Charlie เหลือราว $125 Charlie เห็นด้วยที่ Warren ลดคะแนนความเสี่ยงเป็น 3.0",
+        "ไม่ว่าจะใช้ FV ไหน (MoS -27% ของ Warren หรือ -74% ของ Charlie) WATCH ก็ถูกต้อง ต้องติดตาม: คำตัดสินของผู้พิพากษา (ยังไม่มีกำหนด) และงบ Q2 FY27 ต้น พ.ย. เทียบ guide $1.38B"
+      ]
+    },
+    "idea_th": "WATCH — ARM เก็บค่าลิขสิทธิ์จากชิปแทบทุกค่าย คุณภาพธุรกิจดี แต่ราคา $238.01 สูงกว่า FV $187 (MoS -27.28% และ Charlie มองว่า FV ควรอยู่ที่ $137) คดี Qualcomm ตัดสินแล้วว่า ARM ผิดสัญญา ค่าเสียหายแค่ $2 แต่เรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปี (ราว 9% ของรายได้) ยังรอผู้พิพากษา Charlie CAUTION — เฝ้าดูอย่างเดียว",
+    "story_gate_th": {
+      "what": "ARM เป็นเจ้าของสถาปัตยกรรม CPU ที่ครองมือถือกว่า 95% และหารายได้จากค่าไลเซนส์ + ค่าลิขสิทธิ์ต่อชิปที่แทบไม่มีต้นทุนเพิ่ม กำลังขยายไปสู่ดาต้าเซ็นเตอร์/AI ผ่าน Compute Subsystems (CSS) และชิป AGI CPU ของตัวเอง",
+      "why": "คำตัดสินคดี Qualcomm ออกมาครึ่งทาง — ARM ถูกชี้ว่าผิดสัญญาแต่ค่าเสียหายแค่ $2 และเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ยังไม่ตัดสิน thesis หลัก (เก็บค่าลิขสิทธิ์ได้ไม่ว่าใครชนะสงครามชิป) จึงยังอยู่ Story Gate ผ่าน แต่ต้องรันใหม่เมื่อผู้พิพากษาตัดสิน",
+      "risk": "ถ้า DOJ/FTC บังคับเปลี่ยนโมเดลไลเซนส์, RISC-V ถูกใช้ใน hyperscaler เร็วขึ้น หรือ ARM แพ้คดี Qualcomm (ความสัมพันธ์ราว 10% ของรายได้หลุดจากการควบคุม) — ข้อใดข้อหนึ่งจะทำให้การเติบโตของค่าลิขสิทธิ์สะดุดและตัวคูณหดลง"
+    },
+    "bull_th": [
+      "สถาปัตยกรรม ARM ครองมือถือกว่า 95% และนักพัฒนากว่า 22 ล้านคน",
+      "Gross margin ราว 98% — รายได้ค่าลิขสิทธิ์แทบไม่มีต้นทุนเพิ่ม",
+      "เก็บเงินได้ไม่ว่าใครชนะชิป AI — NVIDIA/AMD/ชิป hyperscaler ล้วนใช้ core ARM",
+      "คดี Qualcomm: ค่าเสียหายที่คณะลูกขุนให้แค่ $2 และ ARM ชนะ 4 ข้อกล่าวหา — ยังไม่กระทบรายได้โดยตรงในตอนนี้",
+      "Q1 FY27 รายได้ $1,289M โต 22% และ guide Q2 $1.38B",
+      "ชิป AGI CPU สำหรับดาต้าเซ็นเตอร์เป็นโอกาสใหม่ (Warren จัดไว้ในกรณี Bull)"
+    ],
+    "risk_th": [
+      "ราคา $238.01 สูงกว่า FV $187 (MoS -27.28%) และสูงกว่า Bull case $233",
+      "คณะลูกขุนชี้แล้วว่า ARM ผิดสัญญา Qualcomm — ผู้พิพากษายังต้องตัดสินว่าข้อสัญญางดจ่ายค่าลิขสิทธิ์ 5 ปี (ราว 9% ของรายได้) ใช้บังคับได้ไหม และเรื่องเจรจาไลเซนส์ Armv10 อย่างสุจริต — กรณีแย่สุด FV ราว $170 (Warren) / $125 (Charlie)",
+      "Charlie ได้ FV $137 (ห่าง 26.7%) — สมมติฐานรายได้ FY28 ของ Warren อาจมองไกลเกินไป",
+      "RISC-V (โอเพนซอร์ส) เป็นทางเลือกที่ถูกกว่า และการทำชิปเองอาจไปแข่งกับลูกค้า",
+      "SoftBank ถือหุ้นใหญ่ (แรงขายที่อาจเกิดขึ้น) + การสอบสวนของ FTC + คดีอุทธรณ์ Nuvia"
+    ]
+  },
+  "CRWD": {
+    "symbol": "CRWD",
+    "display": "CRWD",
+    "category": "software",
+    "name": "CrowdStrike Holdings",
+    "sector": "Software",
+    "sectorSlug": "software",
+    "chips": [
+      "Software",
+      "Cybersecurity"
+    ],
+    "bull": [
+      "Falcon platform 33 modules — cross-sell + switching cost สูงเมื่อ adopt module ที่ 3+",
+      "ARR $5.25B (+24% YoY) + NRR 115% = expansion ภายในฐานลูกค้าทำงานจริง",
+      "Falcon Flex ARR +120% YoY + Charlotte AI ARR tripled — momentum หลัง July 2024 outage",
+      "AI-native cloud architecture ไม่ legacy on-prem แบบ Symantec/McAfee",
+      "Net retention 115% + GAAP gross margin 78%+ = software unit economics ระดับ best-in-class"
+    ],
+    "risk": [
+      "Valuation สูงมากเทียบกับ growth — ต้องการ execution ต่อเนื่อง",
+      "Microsoft Defender bundling ดึงลูกค้า price-sensitive — competitive moat ระยะยาวเสี่ยง",
+      "July 2024 outage legacy: residual class actions + customer trust ฟื้นช้า",
+      "SBC ยังสูง — dilution ต่อ shareholders ในหลายปีข้างหน้า",
+      "Net new ARR growth ชะลอลงจาก peak — มี structural slow-down อาจจะมา"
     ],
     "action": "watch",
     "actionLabel": "Watch",
     "conviction": 3,
-    "waf": 6.85,
+    "waf": 6.6,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 530.14,
-    "fv": 355.0,
-    "mos": -49.34,
-    "fpe": 37.34,
-    "peg": 1.07,
+    "price": 183.28,
+    "fv": 150,
+    "mos": -22.2,
+    "fpe": 149.0,
+    "peg": 5.3,
     "scores": {
       "bq": [
         8.5,
@@ -1090,109 +1616,41 @@
         85
       ],
       "gp": [
-        9.5,
+        8.5,
         "green",
-        95
+        85
       ],
       "va": [
-        2.6,
+        3.0,
         "orange",
-        26
+        30
       ],
       "ra": [
-        5.3,
+        5.0,
         "orange",
-        53
+        50
       ]
     },
-    "idea": "11-19 re-base on Q3: FV $329 -> $355 (+8%); price $530.14 -> MoS -49.3% vs 10% gate. Growth story stronger than ever but price far above Bull $477. WATCH — BUY <= ~$320.",
-    "updated": "2026-11-19",
+    "idea": "Fresh Q1 FY2027 (Mark 07-24): Rev $1,385.6M +26%, ARR $5.51B +24%, record Q1 NNARR $255.8M +32%, FY27 NNARR guide ยกเป็น 27.7% (re-accelerating), FCF margin 34%. ราคา -13% ($210.73→$183.28) ดัน MoS -40.5%→-22.2% แต่ยัง price>FV. New MATERIAL risk: SEC+DOJ inquiry เรื่อง revenue recognition + ARR reporting (10-Q Note 10) กระทบ metric หลักที่ตลาดใช้ประเมินโดยตรง. 2 ใน 4 ด่าน fail: MoS -22.2% ✗, PEG 5.3 ✗ (Fast Grower cap 1.0); ER 24.2% ✓ แต่ไม่ override MoS ที่ fail; WAF 6.60 MEDIUM → WATCH. ไม่มี tier change.",
+    "updated": "2026-07-25",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-11-19",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "AMD เป็น sole credible #2 ใน AI accelerator (Instinct MI series) + ครอง >40% server CPU share (EPYC) + เป็นบริษัทเดียวที่มี x86 CPU + AI GPU + rack-scale Helios platform ครบในมือ",
-      "why": "Consensus (BofA, Wells Fargo, Mizuho) ตอนนี้เห็นด้วยกับ \"agentic AI CPU\" thesis แล้ว — raise TAM เป็น $170B และเรียก AMD \"top CPU pick\". Warren เห็นว่านี่คือสัญญาณว่า edge เดิม (rerating จาก 'laggard' → 'second source') กำลังกลายเป็น consensus — second-level thinking บอกว่าต้องระวังไม่ chase ราคาที่วิ่งขึ้นจาก sentiment เดียวกันกับที่ตลาดเพิ่งรู้. **2026-08-05 update (post-Q2 earnings):** Q2 FY2026 (Aug 4 after close) beat ทั้งรายได้ ($11.5B +50% YoY, เหนือ guide $11.2B±$300M) และ Non-GAAP EPS ($1.66 vs consensus $1.61) — Data Center revenue $6.7B **+107% YoY** (58% ของรายได้รวม ขึ้นจาก 42% ปีก่อน). Management **raise TAM ครั้งใหญ่**: DC AI accelerator TAM → ~$1.4T by 2030 (>45% CAGR), server CPU TAM → **~$220B by 2030 (ขึ้นจาก $120B ที่ guide แค่ไตรมาสก่อน)**. Anthropic เข้ามาเป็น anchor customer รายที่ 3 (up to 2GW MI450, AMD ลงทุนตรง $5B — ไม่ใช่ warrant structure). Q3 guide $13.0B±$300M (+41% YoY) แข็งแรง. **แต่ตลาดตอบสนองแบบ \"sell the news\"**: หุ้นวิ่งขึ้น +7% ระหว่างวัน 08-04 ปิดที่ $518.58 (ราคาที่ปรากฏใน prices_cache.json รอบนี้ — **แต่เป็นราคาปิดตลาดปกติก่อนงบออกหลังตลาดปิด ไม่ใช่ราคาล่าสุด**), แล้วร่วง after-hours -8.8% เหลือ **~$472.94** และ pre-market ต่อเนื่องแถว **$474-475** เช้า 08-05 (ยืนยันจาก yfinance fast_info previousClose $472.85 + WebSearch หลายแหล่ง — finbold/tradingkey) — expectations ที่ baked-in ไปแล้วสูงกว่าที่ผลจริงจะ satisfy ได้ แม้ผลจะ beat ตัวเลขที่ประกาศไว้ก็ตาม — วัดจากราคาก่อนงบ ($518.58) ที่ยืนเหนือ FV Base ของ Warren เองอยู่มาก (🚫 ตัวเลข analyst price target ตัดออกตามกฎห้าม PT 2026-07-20). Second-level read: TAM raise เป็นของจริง (management เอง ไม่ใช่แค่ analyst) แต่ตลาดกำลัง price-in ว่า \"ดีมากแล้ว ดีกว่านี้ยาก\" ระยะสั้น — MoS ยังคง fail gate ต่อเนื่อง แม้ที่ราคาที่ถูกกว่าที่ cache แสดง",
-      "risk": "MI450 ramp slip หรือ ROCm ตาม CUDA ไม่ทัน ทำให้ hyperscalers ไม่ adopt จริงจัง — หรือ ถ้า \"agentic CPU\" consensus narrative พิสูจน์ว่า overhype (TAM ไม่ materialize ตามที่ BofA/management project) ราคาจะ de-rate เร็ว — เพิ่มเติมรอบนี้: forward commitments ($30.3B unconditional + subsequent $5.0B investment + $9.5B new DC leases) พุ่งเร็วกว่ารายได้ ถ้า AI demand ชะลอกว่าที่ผูกพันไว้ = balance-sheet stress risk ใหม่"
+      "updated": "2026-07-25",
+      "tier": "🌱 Fast Grower",
+      "tier_slug": "fast-grower",
+      "what": "CrowdStrike's Falcon platform is AI-native cloud cybersecurity with 33 modules spanning the kill chain (EDR/XDR/Identity/Cloud/SIEM) — once Falcon Flex committed, switching cost is high because customers consolidate across modules, locked-in via threat graph data accumulation.",
+      "why": "Q1 FY2027 (Mark 07-24) ยืนยัน fundamentals แข็ง — Rev +26%, ARR $5.51B +24%, record Q1 NNARR $255.8M +32%, FY27 NNARR guide ยกขึ้นเป็น 27.7% (re-accelerating), FCF margin 34%; ราคาร่วง -13% ($210.73→$183.28) ทำให้ MoS ดีขึ้นเป็น -22.2% แต่ยังแพงกว่า FV; Warren เห็นว่า risk ใหม่ที่สำคัญที่สุดคือ **SEC + DOJ inquiry เรื่อง revenue recognition + การรายงาน ARR** (10-Q Note 10) — เป็นความเสี่ยงเชิงบัญชีที่กระทบ metric หลัก (ARR) ที่ตลาดใช้ประเมิน CRWD โดยตรง; growth story เป็น consensus เต็มตัวแล้ว + valuation ยัง extreme (Fwd PE ~149x, PEG ~5.3) → ไม่ใช่ edge ที่ pay up ได้",
+      "risk": "Microsoft Defender bundle scale ดึง enterprise customers >20% market share หรือ Falcon Flex churn rate กลับมาเกิน 10% หลัง initial commitment expire, หรือ DIY agentic SOC (จาก UBS AI Survey) แย่ง mindshare จาก Charlotte AI ต่อเนื่อง, หรือ **SEC/DOJ probe พบปัญหาการรับรู้รายได้/ARR จริง = re-rate ครั้งใหญ่**"
     },
-    "tier": "🚀 Pre-Inevitable",
+    "tier": "🌱 Fast Grower",
     "charlie": {
-      "charlie_verdict": "AGREE",
-      "verified_claims": [
-        "Price 530.14 = CNBC close",
-        "Revisions strongly positive after Q3 (19 up / 0 down)",
-        "52w range 188.22-658.52 (CNBC)"
-      ],
-      "concerns": [
-        "MoS -44% - WATCH correct; Charlie FV 3.7% above Warren (consensus revenue $95.9B > Warren $92.4B)"
-      ],
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [],
       "summary": "",
-      "review_date": "2026-11-19"
-    },
-    "mark_easy": {
-      "one_liner": "ธุรกิจ AI โตแรง แต่ราคา $570.82 แพงกว่า FV $329 ราว 73% — Warren WATCH, Charlie AGREE",
-      "what": "AMD ขายทั้งชิป CPU เซิร์ฟเวอร์ (EPYC) และชิป AI accelerator (Instinct/Helios) แข่งกับ NVIDIA โดยตรง ไตรมาสล่าสุด Data Center โต 107% YoY กลายเป็น 58% ของรายได้รวมแล้ว",
-      "why_invest": [
-        "ลูกค้า anchor 3 ราย OpenAI/Meta/Anthropic ผูกสัญญาระยะยาวแล้วจริง — Anthropic ล่าสุดใส่เงินลงทุนตรง $5B พร้อมสัญญาใช้ MI450 สูงสุด 2GW",
-        "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่: ตลาดชิป AI accelerator เป็น $1.4T และตลาด server CPU เป็น $220B ภายในปี 2030 (จากเดิม $120B)",
-        "Helios แพลตฟอร์ม rack-scale เริ่มส่งมอบจริงไตรมาส 3 ปี 2026 — ลูกค้าดีมานด์ 'เกินคาด' ตามที่ผู้บริหารพูดเอง"
-      ],
-      "watch_out": [
-        "ราคา $570.82 สูงกว่า FV $329 และสูงกว่า Bull case $442 — MoS -73.50% เหลือที่ว่างให้พลาดน้อยมาก",
-        "Helion แร็คใหม่ยังไม่มีตัวเลขราคา/รายได้ — ต้องรอดูว่าแปลงเป็นยอดขายได้จริงแค่ไหน",
-        "ระดมทุน/ก่อหนี้ (~$25B ในเดือน ส.ค.) + ซื้อกิจการ AI ใหญ่ 2 ดีลติดกัน ต้องจับตา"
-      ]
-    },
-    "mark_full": {
-      "business_overview": "AMD เป็นบริษัทออกแบบชิปแบบ fabless แบ่งรายได้เป็น 3 ธุรกิจ: Data Center (58% ของรายได้ ไตรมาสล่าสุด — EPYC CPU + Instinct AI GPU), Client & Gaming (33% — Ryzen/Radeon), Embedded (9% — FPGA จาก Xilinx) ผลิตทั้งหมดผ่าน TSMC",
-      "tam": "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่ในไตรมาสล่าสุด: ตลาดชิป AI accelerator ในดาต้าเซ็นเตอร์เป็น ~$1.4T ภายในปี 2030 (โต >45%/ปี) และตลาด server CPU เป็น ~$220B (โต >50%/ปี จากเดิมที่ประเมิน $120B เมื่อไตรมาสก่อน)",
-      "moat": "จุดแข็งคือเป็นบริษัทเดียวที่มีทั้ง x86 CPU + AI GPU + แพลตฟอร์ม rack-scale ครบมือ ทำให้สลับต้นทุนสูงสำหรับลูกค้าที่ย้ายมา แต่ซอฟต์แวร์ ROCm ยังตามหลัง CUDA ของ NVIDIA อยู่พอสมควร",
-      "latest_financials": "Q2 2026: รายได้ $11.5B +50% YoY, Non-GAAP EPS $1.66, Data Center revenue $6.7B +107% YoY guidance ไตรมาส 3 ที่ $13.0B ±$300M (+41% YoY) รอบ 15 ต.ค.: ประมาณการรายได้ปี 2027 ขยับเป็น $89.05B × มาร์จิ้นสุทธิ 25% ÷ 1,692.3M หุ้น = EPS $13.16 × 25 เท่า = FV $329 (Bull $442 / Bear $167) ราคา $570.82 MoS -73.50% PEG 1.24 Charlie AGREE ได้ $329 ตรงกัน",
-      "key_points": [
-        "WATCH: FV ขยับ $323→$329 ราคายังสูงกว่า FV ราว 73% และเหนือ Bull case",
-        "Charlie AGREE ตัวเลขตรงกันเป๊ะ (EPS FY27 consensus $13.83 vs Warren $13.16 — Warren ระวังกว่า)",
-        "Helion แร็ค agentic ส่งมอบ พ.ย. ยืนยัน thesis แต่ยังไม่มีตัวเลข จุดทดสอบ: งบ Q3 ต้น พ.ย. เทียบ guide ~$13B"
-      ]
-    },
-    "warren_easy": [
-      "AMD ยัง WATCH tier Pre-Inevitable WAF 6.69 — ปรับฐานตามประมาณการรายได้ปี 2027 ที่ขยับขึ้นเป็น $89.05B → FV ขยับ $323→$329 (EPS $13.16 × 25 เท่า)",
-      "ราคา $570.82 MoS -73.50% เทียบเกณฑ์ 15% ห่างราว 88 จุด และยังสูงกว่า Bull case $442 — ตลาดจ่ายล่วงหน้าไปไกลมาก",
-      "ข่าวใหม่: เปิดตัว Helion แร็ค agentic AI (CPU Zen6 ล้วน 32,768 คอร์สำหรับ hyperscaler + รุ่น EPYC+MI350P สำหรับองค์กร) พาร์ทเนอร์ Dell/HPE/Lenovo/Supermicro เริ่มส่ง พ.ย. นี้ — ยืนยัน thesis 'CPU กลับมาสำคัญ' แต่ยังไม่มีตัวเลขรายได้ Charlie AGREE"
-    ],
-    "charlie_easy": {
-      "verdict": "AGREE",
-      "review_date": "2026-10-15",
-      "paragraphs": [
-        "Charlie ได้ FV $329 ตรงกับ Warren เป๊ะ (gap 0%) — EPS ปี 2027 $13.16 ต่ำกว่าค่าเฉลี่ยนักวิเคราะห์ ($13.83) อยู่ 4.9% ถือว่า Warren ไม่ได้ตั้งตัวเลขสวยเกินจริง",
-        "Warren ใช้จำนวนหุ้น 1,692.3M ซึ่งนับรวมหุ้นที่ออกเพื่อซื้อกิจการแล้ว (มากกว่าตัวเลข SEC 1,659M) — เป็นสมมติฐานที่ระวังกว่า",
-        "ข้อกังวล: ราคาสูงกว่า FV 73% และประมาณการกำไรปี 2027 ของนักวิเคราะห์เองก็โต +114% จากปีนี้ โดยตัวเลขสูงสุด-ต่ำสุดห่างกันถึง 1.87 เท่า — แปลว่าแม้แต่ consensus เองก็มองดีมากอยู่แล้ว",
-        "Helion ยังไม่มีราคา/รายได้ — ถูกต้องที่ไม่เอามาใส่ใน FV ต้องติดตาม: งบ Q3 ต้น พ.ย. (MI450 ramp และรายได้ GPU ดาต้าเซ็นเตอร์ เทียบ consensus $89B)"
-      ]
-    },
-    "idea_th": "WATCH ต่อเนื่อง — ธุรกิจ AI โตแรงจริงและ Helion แร็ค agentic ช่วยยืนยันว่า CPU กลับมาสำคัญในยุค AI agent แต่ราคา $570.82 สูงกว่า FV $329 ราว 73% และสูงกว่า Bull case $442 ด้วย Charlie AGREE ตัวเลขตรงกันเป๊ะ — รองบ Q3 ต้น พ.ย. ก่อนคิดใหม่",
-    "story_gate_th": {
-      "what": "AMD เป็นบริษัทเดียวที่มีทั้ง x86 CPU (EPYC), AI GPU (Instinct) และแพลตฟอร์ม rack-scale (Helios) ครบมือ ครองส่วนแบ่งตลาด server CPU กว่า 40% และเป็นผู้ท้าชิงที่น่าเชื่อถือที่สุดอันดับ 2 ในตลาด AI accelerator รองจาก NVIDIA",
-      "why": "FV ขยับขึ้นเล็กน้อยเป็น $329 ตามประมาณการรายได้ปี 2027 ที่เพิ่มขึ้น ธุรกิจยังดีขึ้นต่อเนื่อง แต่ราคา $570.82 ตีมูลค่าล่วงหน้าไปไกลมาก (MoS -73.50%) และอยู่เหนือ Bull case $442",
-      "risk": "ถ้า MI450 ส่งมอบล่าช้า หรือ ROCm ตาม CUDA ไม่ทันทำให้ hyperscaler ไม่ adopt จริงจัง หรือ narrative 'agentic CPU' ที่ตลาดเชื่อกันตอนนี้พิสูจน์ว่า overhype ราคาจะปรับฐานเร็ว — การระดมทุนสะสม ~$25B ใน 12 วันที่ผ่านมา (13-23 ส.ค.) เพิ่มความเสี่ยงด้านงบดุลถ้า demand ชะลอกว่าที่ผูกพันไว้"
-    },
-    "bull_th": [
-      "Data Center revenue +107% YoY กลายเป็น 58% ของรายได้รวมแล้ว จาก 42% เมื่อปีก่อน",
-      "ลูกค้า anchor 3 ราย OpenAI/Meta/Anthropic ผูกสัญญาระยะยาวแล้วจริง ไม่ใช่แค่ความหวัง",
-      "ผู้บริหารปรับเป้าตลาดขึ้นครั้งใหญ่: accelerator TAM $1.4T และ server CPU TAM $220B ภายในปี 2030",
-      "เปิดตัว Helion แร็ค agentic AI (CPU Zen6 32,768 คอร์) พาร์ทเนอร์ Dell/HPE/Lenovo/Supermicro/Cisco เริ่มส่งมอบ พ.ย. 2026 — ตอกย้ำว่า agentic AI ต้องใช้ CPU เยอะขึ้น",
-      "ประมาณการรายได้ปี 2027 ขยับขึ้นเป็น $89.05B — FV ปรับขึ้นเป็น $329",
-      "ซื้อ World Labs ($8.2B จ่ายด้วยหุ้น) เพิ่มทีมและโมเดล AI เชิงพื้นที่ — ยังไม่มีรายได้ ถือเป็น option ในอนาคตที่ยังไม่อยู่ใน FV"
-    ],
-    "risk_th": [
-      "ราคา $570.82 แพงกว่า FV $329 ราว 73% (MoS -73.50%) และเกิน Bull case $442 — ราคาวิ่งนำธุรกิจไปไกล ห่างเกณฑ์ 15% ราว 88 จุด",
-      "ROCm ซอฟต์แวร์ยังตามหลัง CUDA ของ NVIDIA — ความเสี่ยงเชิงโครงสร้างที่ยังไม่ปิดช่องว่าง",
-      "ระดมทุนสะสม ~$25B ใน 12 วัน (13-23 ส.ค.: หุ้นกู้ $4.75B + วงเงินเพิ่ม $5B + TSMC packaging JV $10B+) เร็วกว่าที่เคยรับรู้ เพิ่มภาระหนี้ต่อเนื่อง",
-      "ถ้า narrative 'agentic CPU' ที่ตลาดกำลังเชื่อกันพิสูจน์ว่า overhype ราคาจะปรับฐานเร็ว",
-      "ซื้อกิจการ AI ใหญ่ 2 ดีลในไม่กี่สัปดาห์ (diworsification) ผูกพันเงินรวมราว $25B ขณะที่ราคาสูงกว่า Bull case แล้ว",
-      "ประมาณการกำไรปี 2027 ของนักวิเคราะห์โต +114% และตัวเลขสูง-ต่ำห่างกันเกือบ 2 เท่า — ฐานที่ใช้คิด FV เองก็มองโลกในแง่ดีอยู่แล้ว"
-    ]
+      "review_date": "2026-08-09"
+    }
   },
   "AMZN": {
     "symbol": "AMZN",
@@ -1342,154 +1800,6 @@
       "คดี FTC เรื่องระบบประมูลโฆษณา + คดีผูกขาดที่จะขึ้นศาลต้นปี 2027"
     ]
   },
-  "ARM": {
-    "symbol": "ARM",
-    "display": "ARM",
-    "category": "ai_semiconductor",
-    "name": "Arm Holdings",
-    "sector": "Semiconductor",
-    "sectorSlug": "semi",
-    "chips": [
-      "Semiconductor",
-      "IP Licensing"
-    ],
-    "bull": [
-      "Armv9 royalty rate 2x Armv8 = structural revenue uplift ทุกปี",
-      "22M+ developers ecosystem ฝังแน่นใน mobile, IoT, servers",
-      "350B chips shipped = installed base ขนาดใหญ่ที่สุดในโลก",
-      "CSS (Compute Subsystem) higher royalty tier กำลัง scale",
-      "AWS Graviton, Apple M-series = royalty revenue ใหม่ขนาดใหญ่"
-    ],
-    "risk": [
-      "P/E 55x ราคาสูงมาก — ต้องการ execution perfect และ growth ต่อเนื่อง",
-      "RISC-V open-source ถูกกว่า ถ้า adoption เร็วกระทบ licensing revenue",
-      "Qualcomm dispute ยืดเยื้อ — ถ้าแพ้คดีกระทบรายได้ mobile chips",
-      "SoftBank ถือหุ้นใหญ่ = overhang และ selling pressure",
-      "UK regulatory environment ไม่แน่นอน"
-    ],
-    "action": "watch",
-    "actionLabel": "Watch",
-    "conviction": 2,
-    "waf": 6.38,
-    "wafBadge": "waf-low",
-    "wafComposite": "waf-composite-amber",
-    "price": 182.76,
-    "fv": 186.9,
-    "mos": 2.22,
-    "fpe": null,
-    "peg": null,
-    "scores": {
-      "bq": [
-        8.0,
-        "green",
-        80
-      ],
-      "gp": [
-        8.0,
-        "green",
-        80
-      ],
-      "va": [
-        4.5,
-        "orange",
-        45
-      ],
-      "ra": [
-        3.0,
-        "orange",
-        30
-      ]
-    },
-    "idea": "11-19: WATCH (held) — FV unchanged $187; price $183. Enters STARTER band (<=3% short of 10% gate) at <= ~$181; MoS 10% at <= $168. Qualcomm remedy ruling is the swing factor.",
-    "updated": "2026-11-19",
-    "story_gate": {
-      "passed": true,
-      "status": "PASS",
-      "updated": "2026-11-19",
-      "tier": "🚀 Pre-Inevitable",
-      "tier_slug": "pre-inevitable",
-      "what": "ARM owns the dominant CPU ISA (>95% mobile share) and monetizes via licensing + per-chip royalties with near-zero marginal cost, now expanding into datacenter/AI via Compute Subsystems (CSS) and AGI CPU production silicon.",
-      "why": "Consensus is digesting a two-sided Q1 FY2027 print (clean beat on revenue/EPS but a royalty-growth guide cut on mobile BOM inflation, plus a crystallized Qualcomm/Nuvia court loss) alongside a genuine TAM reframe (AGI CPU Cloud AI CPU TAM $100B→$220B-equivalent, demand backlog >$2B) — Warren's edge is that even after reconciling the valuation to defensible (not just optimistic) consensus EPS, the stock trades at ~95x forward earnings on the re-derived base, i.e. the AGI CPU optionality is being priced as if it's already Base case when it still belongs in Bull; that gap is real but the market isn't pricing it as a gap.",
-      "risk": "DOJ/FTC antitrust action forces licensing model change, OR RISC-V adoption accelerates at hyperscalers, OR the 3rd Circuit appeal against Qualcomm also fails (removing the ~10%-of-revenue Qualcomm relationship from Arm's control) — any of these collapses royalty growth and triggers multiple compression."
-    },
-    "tier": "🚀 Pre-Inevitable",
-    "charlie": {
-      "charlie_verdict": "CAUTION",
-      "verified_claims": [
-        "Price 182.76 = CNBC close; premarket 190.99 (+4.5%)",
-        "CNBC fwd P/E 77x, TTM revenue $5.46B",
-        "52w range 100.02-452.70 (CNBC)"
-      ],
-      "concerns": [
-        "Warren FV inflated vs Charlie conservative FV $140 (gap 25.1%) - WATCH unaffected"
-      ],
-      "summary": "",
-      "review_date": "2026-11-19"
-    },
-    "mark_easy": {
-      "one_liner": "เจ้าของสถาปัตยกรรมชิปที่มือถือเกือบทั้งโลกใช้ — แต่ราคา $238.01 สูงกว่า FV $187 (MoS -27.28%) และคดี Qualcomm ยังไม่จบ Warren WATCH, Charlie CAUTION",
-      "what": "ARM ไม่ได้ผลิตชิปเอง แต่ออกแบบสถาปัตยกรรม (ISA) แล้วเก็บค่าไลเซนส์ + ค่าลิขสิทธิ์ต่อชิปที่ผลิตออกมา ล่าสุดเริ่มขยายไปทำชิปสำเร็จรูปเอง (Arm AGI CPU) สำหรับดาต้าเซ็นเตอร์",
-      "why_invest": [
-        "Ecosystem นักพัฒนา 22 ล้านคน และ gross margin ราว 98% — คุณภาพธุรกิจได้ 8/10",
-        "เก็บค่าลิขสิทธิ์ได้ไม่ว่าใครชนะสงครามชิป AI (NVIDIA, AMD หรือชิปของ hyperscaler เองก็ใช้ core ของ ARM)",
-        "TQR Strong (7.33) — ทนทานสุดในกลุ่มเซมิของธีม เพราะรายได้กระจายทั้งมือถือ/IoT/รถยนต์ ไม่ใช่แค่เซิร์ฟเวอร์ AI"
-      ],
-      "watch_out": [
-        "MoS -27.28% เทียบเกณฑ์ 15% ห่างราว 42 จุด — ไกลจากโซนซื้อมาก",
-        "คดี Qualcomm (ตัดสิน 13 ต.ค.): ARM ผิดสัญญาแต่จ่ายแค่ $2 — ด่านถัดไปคือผู้พิพากษาตัดสินเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปี ถ้า Qualcomm ชนะ FV ลดเหลือราว $170 (Warren) หรือ $125 (Charlie)",
-        "Charlie คิดว่า FV ควรอยู่ที่ $137 ไม่ใช่ $187 เพราะ Warren ใช้รายได้ปี FY2028 โดยไม่คิดลดกลับมา"
-      ],
-      "bottom_line": "ARM เป็นธุรกิจคุณภาพที่วางตัวดีในโลก AI แต่ราคาตอนนี้แพงกว่าทุกวิธีคำนวณ และคดี Qualcomm ยังเหลือคำตัดสินสำคัญของผู้พิพากษา — เฝ้าดูอย่างเดียว"
-    },
-    "mark_full": {
-      "business_overview": "ARM ออกแบบและให้สิทธิใช้งาน IP สำหรับ CPU/GPU/System IP เก็บรายได้ 2 ทาง — Royalty เมื่อชิปถูกผลิตจริง และ License fee เมื่อลูกค้านำ IP ไปออกแบบ ปีงบ FY26 รายได้ $4,920M ไตรมาส Q1 FY27 รายได้ $1,289M (+22%) และ guide Q2 ที่ $1.38B",
-      "tam": "บริษัทขยายจากการขายแค่ IP ไปสู่การทำชิปดาต้าเซ็นเตอร์สำเร็จรูป (Arm AGI CPU) เพื่อเก็บมูลค่าชิปทั้งก้อนแทนค่าลิขสิทธิ์ต่อชิป — เป็นโอกาสใหญ่ แต่ Warren ยังจัดไว้ในกรณี Bull ไม่ใช่ Base",
-      "moat": "จุดแข็งคือ ecosystem lock-in — นักพัฒนากว่า 22 ล้านคนออกแบบบนสถาปัตยกรรม ARM ทำให้ต้นทุนการย้ายค่ายสูงมาก ความเสี่ยงต่อ moat คือ RISC-V (โอเพนซอร์ส ไม่มีค่าไลเซนส์), คดีกับ Qualcomm และการที่ ARM ทำชิปเองอาจไปแข่งกับลูกค้า",
-      "latest_financials": "รอบ 15 ต.ค. ไม่มีงบใหม่ (Q2 FY27 ออกต้น พ.ย.) Warren ใช้ EV/Sales 24 เท่า บนรายได้ FY2028 (consensus) $8,190M + เงินสดสุทธิ $3,400M ÷ 1,070M หุ้น = FV $187 (Bull $233 / Bear $118) ราคา $238.01 MoS -27.28% ผลตอบแทนคาดการณ์ 25.29%/ปี WAF 6.05 (LOW) คะแนนความเสี่ยงลด 3.5→3.0 หลังคำตัดสินคดี Qualcomm — Charlie ใช้รายได้ FY2027 $6,002M + เงินสด $3,888M (งบ 10-Q) ÷ 1,078M หุ้น = $137",
-      "key_points": [
-        "WATCH: FV $187 คงเดิม ราคาสูงกว่า FV และอยู่เหนือ Bull case ($233) ด้วย",
-        "Charlie CAUTION — FV $137 ห่าง 26.7%: ตัวคูณ 24 เท่าปรับจากยอดขายย้อนหลัง จึงควรใช้กับรายได้ปีปัจจุบัน (FY27) ไม่ใช่ FY28 ที่ไม่ได้คิดลด",
-        "คดี Qualcomm (13 ต.ค.): คณะลูกขุนชี้ว่า ARM ผิดสัญญา (กักเครื่องมือทดสอบ + แทรกแซงดีล Qualcomm-Meta ~$170M) แต่ค่าเสียหาย $2 — ประเด็นงดจ่ายค่าลิขสิทธิ์ 5 ปี และการเจรจา Armv10 รอผู้พิพากษา Noreika ตัดสิน (ยังไม่มีกำหนด)",
-        "จุดทดสอบ: คำตัดสินของผู้พิพากษา และงบ Q2 FY27 ต้น พ.ย. เทียบ guide $1.38B"
-      ]
-    },
-    "warren_easy": [
-      "ARM tier 🚀 Pre-Inevitable WAF 6.05 conviction LOW — FV $187 คงเดิม (EV/Sales 24 เท่า บนรายได้ FY2028)",
-      "คดี Qualcomm ตัดสินแล้ว (13 ต.ค.): คณะลูกขุนชี้ว่า ARM ผิดสัญญาและแทรกแซงความสัมพันธ์ Qualcomm-Meta แต่ให้ชดใช้แค่ $2 — ยังเหลือประเด็นใหญ่ที่ผู้พิพากษาต้องตัดสินเอง: Qualcomm จะได้สิทธิไม่จ่ายค่าลิขสิทธิ์ 5 ปีไหม (ราว 9% ของรายได้) Warren ลดคะแนนความเสี่ยง 3.5→3.0 กรณีแย่สุด FV ราว $170",
-      "ราคา $238.01 MoS -27.28% เทียบเกณฑ์ 15% ห่างราว 42 จุด และ WAF ต่ำกว่า 6.5 → WATCH"
-    ],
-    "charlie_easy": {
-      "verdict": "CAUTION",
-      "review_date": "2026-10-15",
-      "paragraphs": [
-        "Charlie คำนวณได้ FV $137 เทียบ Warren $187 (ห่าง 26.7% เกิน 20% = CAUTION บังคับ) — ความต่างทั้งหมดมาจาก Warren เอาตัวคูณ 24 เท่า (ปรับจากยอดขายย้อนหลัง) ไปคูณรายได้ปี FY28 โดยไม่คิดลดกลับมา Charlie ใช้รายได้ FY27 $6,002M แทน",
-        "ผลตอบแทนคาดการณ์ของ Charlie 19.5% ต่ำกว่าของ Warren (25.29%) 5.8 จุด — เกินเส้น 5 จุดที่ตั้งไว้ อีกเหตุผลของ CAUTION",
-        "คดี Qualcomm: ตอนนี้ศาลยืนยันแล้วว่า ARM ผิดสัญญา ทำให้คำถามเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปีกลายเป็นเรื่องจริงจัง — กรณีแย่สุด FV ของ Charlie เหลือราว $125 Charlie เห็นด้วยที่ Warren ลดคะแนนความเสี่ยงเป็น 3.0",
-        "ไม่ว่าจะใช้ FV ไหน (MoS -27% ของ Warren หรือ -74% ของ Charlie) WATCH ก็ถูกต้อง ต้องติดตาม: คำตัดสินของผู้พิพากษา (ยังไม่มีกำหนด) และงบ Q2 FY27 ต้น พ.ย. เทียบ guide $1.38B"
-      ]
-    },
-    "idea_th": "WATCH — ARM เก็บค่าลิขสิทธิ์จากชิปแทบทุกค่าย คุณภาพธุรกิจดี แต่ราคา $238.01 สูงกว่า FV $187 (MoS -27.28% และ Charlie มองว่า FV ควรอยู่ที่ $137) คดี Qualcomm ตัดสินแล้วว่า ARM ผิดสัญญา ค่าเสียหายแค่ $2 แต่เรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ 5 ปี (ราว 9% ของรายได้) ยังรอผู้พิพากษา Charlie CAUTION — เฝ้าดูอย่างเดียว",
-    "story_gate_th": {
-      "what": "ARM เป็นเจ้าของสถาปัตยกรรม CPU ที่ครองมือถือกว่า 95% และหารายได้จากค่าไลเซนส์ + ค่าลิขสิทธิ์ต่อชิปที่แทบไม่มีต้นทุนเพิ่ม กำลังขยายไปสู่ดาต้าเซ็นเตอร์/AI ผ่าน Compute Subsystems (CSS) และชิป AGI CPU ของตัวเอง",
-      "why": "คำตัดสินคดี Qualcomm ออกมาครึ่งทาง — ARM ถูกชี้ว่าผิดสัญญาแต่ค่าเสียหายแค่ $2 และเรื่องสิทธิงดจ่ายค่าลิขสิทธิ์ยังไม่ตัดสิน thesis หลัก (เก็บค่าลิขสิทธิ์ได้ไม่ว่าใครชนะสงครามชิป) จึงยังอยู่ Story Gate ผ่าน แต่ต้องรันใหม่เมื่อผู้พิพากษาตัดสิน",
-      "risk": "ถ้า DOJ/FTC บังคับเปลี่ยนโมเดลไลเซนส์, RISC-V ถูกใช้ใน hyperscaler เร็วขึ้น หรือ ARM แพ้คดี Qualcomm (ความสัมพันธ์ราว 10% ของรายได้หลุดจากการควบคุม) — ข้อใดข้อหนึ่งจะทำให้การเติบโตของค่าลิขสิทธิ์สะดุดและตัวคูณหดลง"
-    },
-    "bull_th": [
-      "สถาปัตยกรรม ARM ครองมือถือกว่า 95% และนักพัฒนากว่า 22 ล้านคน",
-      "Gross margin ราว 98% — รายได้ค่าลิขสิทธิ์แทบไม่มีต้นทุนเพิ่ม",
-      "เก็บเงินได้ไม่ว่าใครชนะชิป AI — NVIDIA/AMD/ชิป hyperscaler ล้วนใช้ core ARM",
-      "คดี Qualcomm: ค่าเสียหายที่คณะลูกขุนให้แค่ $2 และ ARM ชนะ 4 ข้อกล่าวหา — ยังไม่กระทบรายได้โดยตรงในตอนนี้",
-      "Q1 FY27 รายได้ $1,289M โต 22% และ guide Q2 $1.38B",
-      "ชิป AGI CPU สำหรับดาต้าเซ็นเตอร์เป็นโอกาสใหม่ (Warren จัดไว้ในกรณี Bull)"
-    ],
-    "risk_th": [
-      "ราคา $238.01 สูงกว่า FV $187 (MoS -27.28%) และสูงกว่า Bull case $233",
-      "คณะลูกขุนชี้แล้วว่า ARM ผิดสัญญา Qualcomm — ผู้พิพากษายังต้องตัดสินว่าข้อสัญญางดจ่ายค่าลิขสิทธิ์ 5 ปี (ราว 9% ของรายได้) ใช้บังคับได้ไหม และเรื่องเจรจาไลเซนส์ Armv10 อย่างสุจริต — กรณีแย่สุด FV ราว $170 (Warren) / $125 (Charlie)",
-      "Charlie ได้ FV $137 (ห่าง 26.7%) — สมมติฐานรายได้ FY28 ของ Warren อาจมองไกลเกินไป",
-      "RISC-V (โอเพนซอร์ส) เป็นทางเลือกที่ถูกกว่า และการทำชิปเองอาจไปแข่งกับลูกค้า",
-      "SoftBank ถือหุ้นใหญ่ (แรงขายที่อาจเกิดขึ้น) + การสอบสวนของ FTC + คดีอุทธรณ์ Nuvia"
-    ]
-  },
   "SPCX": {
     "symbol": "SPCX",
     "display": "SPCX",
@@ -1518,12 +1828,12 @@
     "action": "hold",
     "actionLabel": "Hold",
     "conviction": 2,
-    "waf": 6.25,
+    "waf": 6.35,
     "wafBadge": "waf-low",
     "wafComposite": "waf-composite-amber",
-    "price": 143.5,
+    "price": 127.79,
     "fv": 83,
-    "mos": -72.89,
+    "mos": -53.96,
     "fpe": null,
     "peg": null,
     "scores": {
@@ -1538,9 +1848,9 @@
         95
       ],
       "va": [
-        2.8,
+        3.2,
         "orange",
-        28
+        32
       ],
       "ra": [
         2.0,
@@ -1548,12 +1858,12 @@
         20
       ]
     },
-    "idea": "11-19 time refresh: SOTP FV $83 carried; $143.50 -> MoS -72.9%, ER 9.6%. HOLD (no-add). Watch 12-08 lock-up + Q1-27 $33-37B guide delivery.",
-    "updated": "2026-11-19",
+    "idea": "11-21: HOLD — $127.79 (below IPO $135), MoS -54%, ER 11.7%. Watch 12-08 lock-up + Tesla deal. || 11-19 time refresh: SOTP FV $83 carried; $143.50 -> MoS -72.9%, ER 9.6%. HOLD (no-add). Watch 12-08 lock-up + Q1-27 $33-37B guide delivery.",
+    "updated": "2026-11-21",
     "story_gate": {
       "passed": true,
       "status": "PASS",
-      "updated": "2026-11-19",
+      "updated": "2026-11-21",
       "tier": "⚠️ Speculative",
       "tier_slug": "speculative",
       "what": "SpaceX รวม 3 ธุรกิจที่ต้นทุนเชื่อมกันไว้ในบริษัทเดียว — Space (Falcon 9 reusability + ~90% ของ mass to orbit โลก), Connectivity (Starlink 13.6M consumer subs, Adj EBITDA margin 66.7% = เครื่องผลิตเงินสด) และ SI/Super Intelligence (เดิม \"AI\": compute 1.7GW + Grok/X + Cursor) — ชนะเพราะจรวดของตัวเองส่งดาวเทียมของตัวเองในราคาทุน และ (ตามที่ผู้บริหารอ้าง) เปิดไฟ/compute ได้เร็วกว่าคนอื่น 12–18 เดือน",
@@ -1563,16 +1873,16 @@
     "charlie": {
       "charlie_verdict": "AGREE",
       "verified_claims": [
-        "Price 143.50 = CNBC close, CNBC shares 13.58B = Charlie count",
-        "TTM revenue $32.0B (CNBC)",
-        "52w range 104.83-225.64 (CNBC)"
+        "Price CNBC 11-20 close 127.79 (-7.7%), below IPO $135; Nasdaq consistent",
+        "Lock-up: ~798M shares (~5.9%) eligible 12-08 (TIKR)",
+        "Nasdaq FY27 EPS panel $4.09 (12 est, range 0.51-13.49) - dispersion extreme"
       ],
       "concerns": [
-        "MoS -77% - HOLD (no add) only because it is an existing free-share position",
-        "Director departure + Starship booster loss (Warren noted) - no FV impact"
+        "MoS -58% - HOLD (no add) only because existing free-share position",
+        "12-08 lock-up + market fear regime"
       ],
       "summary": "",
-      "review_date": "2026-11-19"
+      "review_date": "2026-11-20"
     },
     "mark_easy": {
       "one_liner": "SpaceX (Space + Starlink + AI) — FV SOTP $62 แต่ราคา $152.16 สูงกว่ามาก (MoS -145.42%) และมีคลื่นปลดล็อกหุ้นรออยู่",
@@ -1636,6 +1946,249 @@
       "RA ต่ำ: กระจุกตัว NVDA GPU, คดีกังหันไฟฟ้า, สัญญา AI compute ยกเลิกได้ทุก 90 วัน, พันธบัตร $45B",
       "Speculative tier + key-man risk (Musk หลายบริษัท) ห้ามซื้อเพิ่ม"
     ]
+  },
+  "ANT": {
+    "symbol": "ANT",
+    "display": "ANT",
+    "category": "software",
+    "name": "Anthropic, PBC",
+    "sector": "Software & AI Platform",
+    "sectorSlug": "software",
+    "chips": [
+      "Software",
+      "Frontier AI Model (Claude)"
+    ],
+    "bull": [
+      "Frontier model + enterprise focus: >80% รายได้ Q3 2026 มาจากโมเดลที่ออกใน 6 เดือน",
+      "Multi-chip compute (Trainium/TPU/NVIDIA/AMD) ลด vendor dependence",
+      "กระจายผ่านครบ 3 cloud (AWS/Google/Microsoft) + partner network",
+      "Switching cost เริ่มก่อตัวจาก workflow/agent ที่ลูกค้าสร้างบน platform",
+      "ผู้ก่อตั้งทั้ง 7 คนยังอยู่ · Q2 2026 op income บวกครั้งแรก"
+    ],
+    "risk": [
+      "Compute commitments ใหญ่กว่ารายได้หลายเท่า (take-or-pay, non-cancelable)",
+      "Governance: Founder LLC 50.1% + LTBT เลือกบอร์ด — ผู้ถือ Class A แทบไม่มีเสียง",
+      "Dilution built-in (Public Benefit Issuances + convertible notes)",
+      "Frenemy: Amazon/Google/Microsoft เป็นทั้งผู้ลงทุน ผู้ขาย compute ช่องทางขาย และคู่แข่ง",
+      "บริษัทเตือนเองว่า growth จะชะลอและ margin อาจถูกกด"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.35,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 83.0,
+    "fv": 80.85,
+    "mos": -2.66,
+    "fpe": null,
+    "peg": null,
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        9.5,
+        "green",
+        95
+      ],
+      "va": [
+        3.5,
+        "orange",
+        35
+      ],
+      "ra": [
+        2.5,
+        "orange",
+        25
+      ]
+    },
+    "idea": "11-19: WATCH — priced $83 vs FV Base $80.85 (MoS -2.7%). Cap if bought: min(TQR Peripheral 10%, Speculative 3%, new-IPO 5%) = 3%. Buy zone <= $72.8 at current 10% gate. Next checks: first-day close, FY26 print (~Feb-Mar 2027) + lock-up waves.",
+    "updated": "2026-11-19",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-11-19",
+      "tier": "⚠️ Speculative",
+      "tier_slug": "speculative",
+      "what": "Anthropic ขาย \"ความฉลาดระดับ frontier\" (Claude) ให้องค์กรผ่าน API / Claude Code / Cowork บนทั้ง 3 cloud และชนะด้วยการเป็นผู้นำโมเดลสำหรับงาน enterprise/coding — วัดได้จาก NRR ~900% และลูกค้า ≥$100K >11,900 ราย",
+      "why": "Consensus เห็น \"บริษัท AI โตเร็วที่สุดในประวัติศาสตร์ → IPO $1T+\" และตั้งราคาจาก Run-Rate/รายได้ปี 2028 ของธนาคาร — Warren เห็นต่างว่ามูลค่า **ต่อหุ้น Class A** ถูกกำหนดโดย 3 อย่างที่ตลาดวันแรกยังไม่ price in: (1) หุ้นจริง 18.0B ไม่ใช่ 13.1B + เครื่องผลิต dilution ในตัว (Public Benefit Issuance 2%/ทุก +50%, NPA $77B แปลงที่ VWAP/ส่วนลด) (2) ภาระ compute $900.9B ที่ทำให้ margin แกว่งตามความเร็วการโต ไม่ใช่ตามขนาด (Q3 กลับมาขาดทุน) (3) หุ้นลอยตัว 825M แต่ปลดล็อกได้ 3.7B ภายใน 180 วัน → จุดซื้อที่ดีกว่าคือหลัง lock-up ก้อนใหญ่ (หลังงบ FY26 / Q1'27) เมื่อได้เห็น margin ไตรมาสสาธารณะจริง ไม่ใช่วัน IPO",
+      "risk": "รายได้ QoQ ต่ำกว่า ~15% สองไตรมาสติดกันขณะค่า compute ยังโต (Adj Op Margin < 5%) **หรือ** Run-Rate หยุดขึ้น/ลดลงในรายงานบริษัท **หรือ** ศาล en banc ยืน DoD supply-chain-risk designation แล้วลามไปลูกค้าเอกชนที่ขายให้รัฐ"
+    },
+    "tier": "⚠️ Speculative",
+    "charlie": {
+      "charlie_verdict": "DISAGREE",
+      "verified_claims": [
+        "424B4 exists on EDGAR (acc 0001628280-26-074944, anthropicpbc-424b4.htm) - confirms Warren's source",
+        "Net cash $232.4B and 18,013M FD shares = Warren's figures, accepted",
+        "Warren WATCH (MoS -2.66%) agrees with Charlie's no-buy; Speculative tier, TQR 6.55 Peripheral ceiling 10% = consistent"
+      ],
+      "concerns": [
+        "Warren FV $80.85 rests on $136B underwriter revenue (+18% vs Charlie build) and 9.0x (above the 8.2x the IPO range implied) -> gap 19.2%",
+        "Any first-day pop widens the gap: at $100 MoS = -53% vs Charlie FV",
+        "IPO-day rule: do not buy on first trade; Warren buy level $72.8, Charlie $58.8",
+        "Paper #8 review: earmark $140 ≤ $58.8 (min FV 65.3 × 0.90); gate 15% → ≤ $55.5"
+      ],
+      "summary": "",
+      "review_date": "2026-11-19"
+    }
+  },
+  "SHOP": {
+    "symbol": "SHOP",
+    "display": "SHOP",
+    "category": "consumer",
+    "name": "Shopify Inc.",
+    "sector": "Consumer",
+    "sectorSlug": "consumer",
+    "chips": [
+      "Consumer",
+      "Commerce Platform"
+    ],
+    "bull": [
+      "GMV $100.7B +35% YoY, Revenue $3.17B +34%, FCF $476M (margin 15%)",
+      "AI เขียนโค้ด 50%+ ของ Shopify เอง; Sidekick weekly active shops +385% YoY",
+      "Universal Commerce Protocol (UCP) ร่วมกับ Google + Amazon/Meta/Microsoft/Salesforce/Stripe",
+      "Buyback $2B ที่ประกาศแล้ว"
+    ],
+    "risk": [
+      "Founder Share structure: Tobi Lütke คุม voting power 40.09% (cap 49.9%) ที่ไม่ dilute ตามจำนวนหุ้นใหม่ — conflict-of-interest ที่บริษัทเปิดเผยเอง",
+      "พึ่งพา 2 PSP (Stripe+PayPal) สำหรับ Shopify Payments ที่ขับเคลื่อน Merchant Solutions (76% ของรายได้)",
+      "CRA transfer-pricing assessment (tax year 2020) ยังไม่จบ",
+      "GAAP net loss $(581)M ไตรมาสนี้ (จาก equity investment markdown)"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.27,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 125.68,
+    "fv": 115,
+    "mos": -9.3,
+    "fpe": 93.1,
+    "peg": 3.32,
+    "scores": {
+      "bq": [
+        8.0,
+        "green",
+        80
+      ],
+      "gp": [
+        8.0,
+        "green",
+        80
+      ],
+      "va": [
+        2.3,
+        "orange",
+        23
+      ],
+      "ra": [
+        6.0,
+        "orange",
+        60
+      ]
+    },
+    "idea": "Sidekick AI Extensions (launched 1 Jul) + 8x YoY AI-driven traffic growth are real product-roadmap evidence for the agentic-commerce thesis, but MoS flipped negative as price outran fundamentals",
+    "updated": "2026-07-15",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-15",
+      "tier": "🚀 Pre-Inevitable",
+      "tier_slug": "pre-inevitable",
+      "what": "Shopify เป็น \"essential internet infrastructure for commerce\" ที่รวม online/POS/B2B/social/agentic channel เป็น system of record เดียว — ชนะด้วย cohort economics ที่ทบต้น (merchant เก่าไม่หยุดโต, 90% ของรายได้จาก merchant ที่อยู่เกิน 1 ปี)",
+      "why": "Consensus เดิมเห็นว่า Shopify คือ \"e-commerce platform ที่ valuation แพงเกินไปแล้ว\" — Warren เห็นต่างว่าตลาดยัง underweight Universal Commerce Protocol (UCP) — ตอนนี้ thesis เดินหน้าต่อจริงด้วย **Sidekick AI Extensions** (เปิดตัว 1 ก.ค. 2026) ให้ merchant ใช้ AI บริหารร้านค้าโดยตรง ต่อยอดจาก AI-driven traffic ที่โต 8x YoY ที่รายงานไว้ Q1 — เป็นหลักฐานว่า agentic commerce ไม่ใช่แค่ theory แต่กำลังกลายเป็น product roadmap หลักของบริษัท (Harley Finkelstein: \"AI is now Shopify's native language\")",
+      "risk": "ถ้า agentic commerce traffic ไม่ scale ต่อจาก early numbers (เป็นแค่ novelty ชั่วคราว) หรือ Founder Share governance structure (Lütke คุม voting power สูงถึง 49.9%) นำไปสู่การตัดสินใจที่ไม่ align กับ shareholder อื่น — เพิ่มเติม: การแบน e-cigarette sales (บังคับ merchant ลบสินค้าก่อน 8 ก.ค. หลังแรงกดดันจาก 25+ attorneys general) เป็นสัญญาณว่า regulatory/compliance pressure ต่อ merchant base กำลังเพิ่มขึ้น — ผลกระทบรายได้ตรงคาดว่าเล็กน้อย (niche category) แต่ต้องติดตามว่าจะขยายไปหมวดอื่นไหม"
+    },
+    "tier": "🚀 Pre-Inevitable",
+    "charlie": {
+      "charlie_verdict": "CAUTION",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-08-09"
+    }
+  },
+  "AXON": {
+    "symbol": "AXON",
+    "display": "AXON",
+    "category": "public_safety",
+    "name": "Axon Enterprise",
+    "sector": "Public Safety",
+    "sectorSlug": "publicsafety",
+    "chips": [
+      "Public Safety",
+      "Connected Devices + AI"
+    ],
+    "bull": [
+      "Revenue Q1 2026 $807M +34% YoY — ไตรมาสที่ 9 ติดต่อกันที่โตเกิน 30%",
+      "AI bookings +140% YoY, Dedrone (drone detection) bookings +500% YoY หนุนด้วย Safer Skies Act $250M federal grant",
+      "2028 target model: revenue $6B, Adj EBITDA margin 28%, TAM $159B",
+      "FY26 guidance ปรับขึ้นเป็น growth 30-32%",
+      "S&S (AI/cloud software) segment AI revenue +700% YoY"
+    ],
+    "risk": [
+      "Material weakness ใน revenue recognition controls ยังไม่ remediate (ต้อง restate งบ 2023-2024)",
+      "คดี product liability 3 เคส (wrongful death/injury จาก TASER)",
+      "ATF firearms license/import permit risk สำหรับ TASER 10",
+      "OCF/FCF ติดลบไตรมาสนี้ (-$32M/-$55M) แม้กำไรบวก"
+    ],
+    "action": "watch",
+    "actionLabel": "Watch",
+    "conviction": 3,
+    "waf": 6.25,
+    "wafBadge": "waf-low",
+    "wafComposite": "waf-composite-amber",
+    "price": 547.26,
+    "fv": 330,
+    "mos": -65.8,
+    "fpe": 74.97,
+    "peg": 2.42,
+    "scores": {
+      "bq": [
+        7.5,
+        "amber",
+        75
+      ],
+      "gp": [
+        8.5,
+        "green",
+        85
+      ],
+      "va": [
+        2.5,
+        "orange",
+        25
+      ],
+      "ra": [
+        5.5,
+        "orange",
+        55
+      ]
+    },
+    "idea": "Excellent business quality (ecosystem switching costs, NRR 125%) but price ran +29% in a month on momentum/analyst-PT-chase with no earnings revision — MoS and PEG fail badly, WAF composite (6.25) falls below the 6.5 BUY threshold despite strong BQ/GP.",
+    "updated": "2026-07-15",
+    "story_gate": {
+      "passed": true,
+      "status": "PASS",
+      "updated": "2026-07-15",
+      "tier": "🌱 Fast Grower",
+      "tier_slug": "fast-grower",
+      "what": "Axon ขาย \"connected ecosystem\" ของ TASER + camera + AI software ให้ public safety agencies — ชนะด้วย switching cost สูง (data/workflow ฝังในระบบ) และ land-and-expand จากฐาน 17,000+ agencies",
+      "why": "Consensus เดิมมองว่า Axon คือ \"TASER company ที่กำลังโต AI\" — ตอนนี้ consensus เริ่มไล่ตามมุมมองของ Warren แล้ว (analyst PT ปรับขึ้นรัวๆ อ้างอิง Dedrone/Safer Skies Act โดยตรง — Piper Sandler $674→$724, Needham $600→$750 ต้น ก.ค. 2026) ทำให้ edge เดิม (Dedrone bookings +500% YoY เปลี่ยน Axon เป็น multi-category platform) ถูก price-in ไปมากแล้วจากการวิ่ง +40% ใน 6 วันทำการต้นเดือน ก.ค. — second-level edge ที่เหลือคือกรรมการใหม่ 2 คน (Vivek Mohindra, Eiso Kant) สาย AI/strategy ที่เพิ่งเข้าบอร์ด 8 ก.ค. บ่งชี้ว่าบริษัทกำลังลงทุนเชิงลึกด้าน AI มากกว่าที่ guidance ปัจจุบันสะท้อน",
+      "risk": "ถ้า Material Weakness ใน revenue recognition controls ไม่ remediate ภายในปีนี้ (10-Q Q1 2026 ยืนยันว่า design control เสร็จแล้วแต่ยังไม่ confirm \"effective for sufficient period\") หรือ growth ชะลอจาก 30%+ ต่อเนื่อง 2 ไตรมาส — เพิ่มเติมจากรอบก่อน: ความเสี่ยงใหม่คือ political/ethics scrutiny (Trump ซื้อหุ้น $1-5M ก่อนดีล ICE TASER $220M ถูกเปิดเผย + ข้อกล่าวหา Scottsdale councilman เรื่อง election interference) อาจกลายเป็น headline/regulatory risk ที่กระทบ premium valuation"
+    },
+    "tier": "🌱 Fast Grower",
+    "charlie": {
+      "charlie_verdict": "AGREE",
+      "verified_claims": [],
+      "concerns": [],
+      "summary": "",
+      "review_date": "2026-08-09"
+    }
   },
   "AAPL": {
     "symbol": "AAPL",
