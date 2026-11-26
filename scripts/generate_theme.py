@@ -18,7 +18,7 @@ OAT_OS = ROOT.parent
 
 THEMES_DIR = os.environ.get(
     "THEMES_DIR",
-    str(OAT_OS / "oat-investment-knowledge" / "Research" / "warren" / "themes"),
+    str(OAT_OS / "apps" / "oat-investment-knowledge" / "Research" / "warren" / "themes"),
 )
 OUTPUT_FILE = os.environ.get("OUTPUT_FILE", str(ROOT / "theme.js"))
 WATCHLIST_FILE = os.environ.get(

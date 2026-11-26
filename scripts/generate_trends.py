@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT   = Path(__file__).parent.parent
 OAT_OS = ROOT.parent
-PUB    = OAT_OS / "oat-public-website"
+PUB    = OAT_OS / "apps" / "oat-public-website"
 
 PUB_TRENDS_OUT = PUB / "trends.js"
 OUT_FILE       = ROOT / "trends.js"
