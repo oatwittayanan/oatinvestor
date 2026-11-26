@@ -1,10 +1,14 @@
 """
 generate_portfolio.py
-Reads both "DCA STOCK" and "DCA S&P500" tabs from Google Sheets,
-downloads historical prices, and writes data/portfolio.json.
+Reads the "Life Sheet" Google Sheet (tabs "Long Term Port", "DCA VOO" + the
+"พอร์ต" summary tab), downloads historical prices, and writes data/portfolio.json.
+
+2026-11-26: switched from the old "DCA Port" sheet (tabs DCA STOCK / DCA S&P500).
+Old version kept as generate_portfolio_dcaport_old.py.
 
 Usage:
     python3 scripts/generate_portfolio.py
+    PORTFOLIO_OUT=/tmp/x.json python3 scripts/generate_portfolio.py   # write elsewhere
 """
 
 import json
@@ -20,12 +24,25 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # ── Config ────────────────────────────────────────────────────────
-SHEET_ID  = "1jlSF2S6e6wSkf2KnnfmC9-zIx-RjRg8y_L69FUnL_90"
+SHEET_ID  = "1W8M8IDcLlBJRzTqiQUdXM6kKJbeHNapOMJWHAwZkX80"   # Life Sheet
 CRED_FILE = os.environ.get(
     "GOOGLE_CRED_FILE",
     "/Users/wittayanan/DATA/Credentials/oat-portfolio-dd6c8e0730ab.json"
 )
-OUT_FILE  = Path(__file__).parent.parent / "data" / "portfolio.json"
+OUT_FILE  = Path(os.environ.get(
+    "PORTFOLIO_OUT",
+    Path(__file__).parent.parent / "data" / "portfolio.json"
+))
+
+# output key → Life Sheet port (name in 'พอร์ต'!A = tab name)
+# pl_basis keeps each port's old P/L definition:
+#   deposit = value − money deposited (old DCA STOCK) · cost = value − total cost (old DCA S&P500)
+PORTS = {
+    "ai_port":    {"tab": "Long Term Port", "name": "ลงทุนกับ AI",
+                   "benchmarks": ["VOO", "QQQM"], "pl_basis": "deposit"},
+    "sp500_port": {"tab": "DCA VOO",        "name": "พอร์ตออม S&P500",
+                   "benchmarks": ["QQQM"],        "pl_basis": "deposit"},  # โอ๊ตเลือก 11-26: แบบ Life Sheet
+}
 
 THAI_MONTHS = {
     "ม.ค.": 1, "ก.พ.": 2, "มี.ค.": 3, "เม.ย.": 4,
@@ -74,103 +91,128 @@ def get_sheets_service():
     creds  = service_account.Credentials.from_service_account_file(CRED_FILE, scopes=scopes)
     return build("sheets", "v4", credentials=creds)
 
-def read_tab(svc, tab: str) -> list[list[str]]:
-    # Read through AN: deposit log lives in AI:AL, past the old Z cutoff.
-    res = svc.spreadsheets().values().get(
-        spreadsheetId=SHEET_ID, range=f"'{tab}'!A1:AN100"
-    ).execute()
-    rows = res.get("values", [])
-    out = []
-    for row in rows:
-        padded = [clean(c) for c in row]
-        while len(padded) < 40:
-            padded.append("")
-        out.append(padded)
-    return out
+def num(v) -> float | None:
+    """UNFORMATTED_VALUE cells come back as numbers; fall back to to_float for text."""
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    return to_float(v)
+
+def read_life_sheet(svc) -> tuple[list, list, dict]:
+    """One batchGet: 'พอร์ต' summary + holdings, plus every port tab's log."""
+    ranges = ["'พอร์ต'!A3:N14", "'พอร์ต'!A19:M218"] + \
+             [f"'{cfg['tab']}'!A2:M501" for cfg in PORTS.values()]
+    res = svc.spreadsheets().values().batchGet(
+        spreadsheetId=SHEET_ID, ranges=ranges,
+        valueRenderOption="UNFORMATTED_VALUE",
+        dateTimeRenderOption="FORMATTED_STRING",
+    ).execute()["valueRanges"]
+    vals = [r.get("values", []) for r in res]
+    pad = lambda rows, n: [list(r) + [""] * (n - len(r)) for r in rows]
+    summ, hold = pad(vals[0], 14), pad(vals[1], 13)
+    logs = {cfg["tab"]: pad(v, 13) for cfg, v in zip(PORTS.values(), vals[2:])}
+    return summ, hold, logs
 
 # ── Parse sheet ───────────────────────────────────────────────────
-def parse_holdings(rows: list) -> tuple[dict, list, list, list]:
-    """Returns (summary, holdings, transactions, deposits)."""
-    summary = {}
-    holdings = []
-    transactions = []
-    deposits = []
-
-    # Row 2 (index 1): summary totals
-    if len(rows) > 1:
-        r = rows[1]
-        summary = {
-            "total_cost":  to_float(r[4]) or 0.0,
-            "total_value": to_float(r[5]) or 0.0,
-            "pl_usd":      to_float(r[7]) or 0.0,
-            "pl_pct":      to_float(clean(r[8]).replace("%", "")) or 0.0,
-        }
-
-    # Rows 4+ (index 3+): holdings (col B–J) and transactions (col N–T)
-    for row in rows[3:]:
-        ticker = clean(row[1]).upper()
-        # Holdings
-        if ticker and ticker not in ("#N/A",):
-            shares    = to_float(row[2])
-            avg_cost  = to_float(row[3])
-            tot_cost  = to_float(row[4])
-            tot_val   = to_float(row[5])
-            price     = to_float(row[6])
-            pl_usd    = to_float(row[7])
-            pl_pct_s  = clean(row[8]).replace("%", "")
-            pl_pct    = to_float(pl_pct_s)
-            pos_pct_s = clean(row[9]).replace("%", "")
-            pos_pct   = to_float(pos_pct_s)
-            if shares is not None and tot_cost is not None:
-                holdings.append({
-                    "ticker":   ticker,
-                    "shares":   shares,
-                    "avg_cost": avg_cost,
-                    "cost":     tot_cost or 0.0,
-                    "value":    tot_val  or 0.0,
-                    "price":    price,
-                    "pl_usd":   pl_usd   or 0.0,
-                    "pl_pct":   pl_pct   or 0.0,
-                    "pos_pct":  pos_pct  or 0.0,
-                })
-
-        # Transactions (col N = index 13)
-        tx_date_raw = clean(row[13])
-        tx_ticker   = clean(row[14]).upper()
-        tx_type     = clean(row[15]).upper()
-        tx_shares   = to_float(row[16])
-        tx_price    = to_float(row[17])
-        tx_total    = to_float(row[19])
-        if tx_date_raw and tx_ticker and tx_type in ("BUY","SELL","DIV"):
-            d = parse_thai_date(tx_date_raw)
-            # DIV has no shares; BUY/SELL require shares
-            valid = d and (tx_type == "DIV" or tx_shares is not None)
-            if valid:
-                transactions.append({
-                    "date":   d.isoformat(),
-                    "ticker": tx_ticker,
-                    "type":   tx_type,
-                    "shares": tx_shares or 0.0,
-                    "price":  tx_price  or 0.0,
-                    "total":  tx_total  or 0.0,
-                })
-
-        # Deposit log (col AI = index 34): date, USD, THB, rate
-        dep_date_raw = clean(row[34])
-        dep_usd      = to_float(row[35])
-        if dep_date_raw and dep_usd:
-            dd = parse_thai_date(dep_date_raw)
-            if dd:
-                deposits.append({
-                    "date": dd.isoformat(),
-                    "usd":  dep_usd,
-                    "thb":  to_float(row[36]) or 0.0,
-                    "rate": to_float(row[37]) or 0.0,
-                })
-
-    transactions.sort(key=lambda x: x["date"])
+def parse_log(rows: list) -> tuple[list, list, list]:
+    """Port tab log (A date · B ticker · C type · D shares · E price/amount ·
+    F fee · G THB · H note · I total). Returns (transactions, deposits, adjustments).
+    DEPOSIT/WITHDRAW → deposits (WITHDRAW negative) · ADJ → cash adjustments."""
+    transactions, deposits, adjustments = [], [], []
+    for r in rows:
+        typ = clean(r[2]).upper()
+        d = parse_thai_date(r[0])
+        if not d or not typ:
+            continue
+        ticker = clean(r[1]).upper()
+        total  = num(r[8])
+        if total is None:
+            total = num(r[4]) or 0.0
+        if typ in ("BUY", "SELL", "DIV") and ticker:
+            shares = num(r[3])
+            if typ != "DIV" and shares is None:
+                continue
+            transactions.append({
+                "date":   d.isoformat(),
+                "ticker": ticker,
+                "type":   typ,
+                "shares": round(shares, 8) if (shares and typ != "DIV") else 0.0,
+                "price":  round(num(r[4]) or 0.0, 4) if typ != "DIV" else 0.0,
+                "total":  round(total, 4),
+            })
+        elif typ in ("DEPOSIT", "WITHDRAW"):
+            usd = total if typ == "DEPOSIT" else -abs(total)
+            thb = num(r[6]) or 0.0
+            deposits.append({
+                "date": d.isoformat(),
+                "usd":  usd,
+                "thb":  thb if typ == "DEPOSIT" else -abs(thb),
+                "rate": round(abs(thb / usd), 2) if (thb and usd) else 0.0,
+            })
+        elif typ == "ADJ" and total:
+            adjustments.append({"date": d.isoformat(), "usd": total})
+    transactions.sort(key=lambda x: x["date"])   # stable: keeps sheet order within a day
     deposits.sort(key=lambda x: x["date"])
-    return summary, holdings, transactions, deposits
+    adjustments.sort(key=lambda x: x["date"])
+    return transactions, deposits, adjustments
+
+def parse_port(port: str, cfg: dict, summ: list, hold: list,
+               transactions: list) -> tuple[dict, list]:
+    """Summary + holdings for one port from the 'พอร์ต' tab. Returns (summary, holdings)."""
+    srow = next((r for r in summ if clean(r[0]) == port), None)
+    if srow is None:
+        raise SystemExit(f"❌ port '{port}' not found in 'พอร์ต'!A3:A14")
+    total_value = num(srow[6]) or 0.0
+    cash        = num(srow[5]) or 0.0
+    net_deposit = num(srow[7]) or 0.0
+
+    holdings = []
+    if abs(cash) > 0.005:
+        c = round(cash, 2)
+        holdings.append({"ticker": "CASH", "shares": 1.0, "avg_cost": c, "cost": c,
+                         "value": c, "price": c, "pl_usd": 0.0, "pl_pct": 0.0,
+                         "pos_pct": round(cash / total_value * 100, 2) if total_value else 0.0})
+    # Same order as the old sheet: first BUY date of each ticker
+    first_buy = {}
+    for i, t in enumerate(transactions):
+        first_buy.setdefault(t["ticker"], i)
+    rows = [r for r in hold if clean(r[0]) == port and clean(r[1])]
+    rows.sort(key=lambda r: first_buy.get(clean(r[1]).upper(), 10**6))
+    for r in rows:
+        shares, cost, value = num(r[2]), num(r[3]), num(r[8])
+        if shares is None or cost is None:
+            continue
+        pl = num(r[9]) or 0.0
+        plp = num(r[10])
+        holdings.append({
+            "ticker":   clean(r[1]).upper(),
+            "shares":   round(shares, 8),
+            "avg_cost": round(num(r[4]), 2) if num(r[4]) is not None else None,
+            "cost":     round(cost, 2),
+            "value":    round(value or 0.0, 2),
+            "price":    round(num(r[7]), 2) if num(r[7]) is not None else None,
+            "pl_usd":   round(pl, 2),
+            "pl_pct":   round(plp * 100, 2) if plp is not None else 0.0,
+            "pos_pct":  round((value or 0.0) / total_value * 100, 2) if total_value else 0.0,
+        })
+
+    total_cost = sum(h["cost"] for h in holdings)   # holdings cost + cash (old sheet E2)
+    if cfg["pl_basis"] == "deposit":                 # old DCA STOCK: value − money deposited
+        pl_usd = num(srow[8]) or 0.0
+        pl_pct = (num(srow[9]) or 0.0) * 100
+    else:                                            # old DCA S&P500: value − total cost
+        pl_usd = total_value - total_cost
+        pl_pct = pl_usd / total_cost * 100 if total_cost else 0.0
+    summary = {
+        "total_cost":  round(total_cost, 2),
+        "total_value": round(total_value, 2),
+        "pl_usd":      round(pl_usd, 2),
+        "pl_pct":      round(pl_pct, 2),
+    }
+    print(f"  [sheet] stock={num(srow[4]) or 0:.2f} cash={cash:.2f} "
+          f"total={total_value:.2f} net_deposit={net_deposit:.2f}")
+    return summary, holdings
 
 # ── Prices ────────────────────────────────────────────────────────
 def _fetch_prices_http(tickers: list[str], start: date,
@@ -250,7 +292,8 @@ def fetch_prices(tickers: list[str], start: date, adjusted: bool = True) -> pd.D
 # ── Build history ─────────────────────────────────────────────────
 def build_history(transactions: list, benchmark_tickers: list[str],
                   deposits: list | None = None,
-                  holdings: list | None = None) -> dict:
+                  holdings: list | None = None,
+                  adjustments: list | None = None) -> dict:
     """
     Total-portfolio model. Both sides answer the same question:
     "every dollar transferred in — what is it worth today?"
@@ -266,11 +309,14 @@ def build_history(transactions: list, benchmark_tickers: list[str],
     Portfolio holdings use RAW prices because their dividends are already
     counted as received cash; adjusted prices would double-count them.
 
+    - adjustments (optional): ADJ rows = cash corrections inside the portfolio
+      (fee/rounding true-ups). They move cash but are not deposits.
     - holdings (optional): current holdings used as a price fallback so a
       transient price-fetch failure for one ticker can't silently drop that
       position to $0 while its deployed capital still counts (phantom loss bug).
     """
     deposits = list(deposits or [])
+    adjustments = sorted(adjustments or [], key=lambda a: a["date"])
     # CASH rows in the transaction log are a running *balance*, not a cash flow.
     # Cash is derived from deposits/buys/sells/divs here, so skip them entirely.
     stock_txs = [t for t in transactions if t["ticker"] != "CASH"]
@@ -336,7 +382,7 @@ def build_history(transactions: list, benchmark_tickers: list[str],
     dates_out, port_vals = [], []
     bm_vals: dict[str, list] = {bm: [] for bm in benchmark_tickers}
     dep_totals = []
-    dep_i, applied = 0, set()
+    dep_i, adj_i, applied = 0, 0, set()
 
     for trade_date in idx:
         # Money transferred in on/before today → lands as cash, and mirrors into
@@ -352,6 +398,11 @@ def build_history(transactions: list, benchmark_tickers: list[str],
                     s = s[s.index >= pd.Timestamp(dp["date"])]
                     if not s.empty and float(s.iloc[0]) > 0:
                         bm_shares[bm] += dp["usd"] / float(s.iloc[0])
+
+        # Cash corrections (ADJ) — change cash, not the deposited total
+        while adj_i < len(adjustments) and pd.Timestamp(adjustments[adj_i]["date"]) <= trade_date:
+            cash += adjustments[adj_i]["usd"]
+            adj_i += 1
 
         # Apply pending transactions — these move money *within* the portfolio
         for i, tx in enumerate(stock_txs):
@@ -473,69 +524,45 @@ def mask_money(output: dict) -> None:
 
 
 def main():
-    print("📊 Generating portfolio.json ...")
+    print("📊 Generating portfolio.json (Life Sheet) ...")
     svc = get_sheets_service()
+    summ, hold, logs = read_life_sheet(svc)
 
-    # ── DCA STOCK ──────────────────────────────────────────────────
-    print("\n[1/2] DCA STOCK tab")
-    ai_rows = read_tab(svc, "DCA STOCK")
-    ai_summary, ai_holdings, ai_txs, ai_deposits = parse_holdings(ai_rows)
-    print(f"  holdings: {[h['ticker'] for h in ai_holdings]}")
-    print(f"  transactions: {len(ai_txs)}")
-    print(f"  deposits: {len(ai_deposits)} = ${sum(d['usd'] for d in ai_deposits):.2f}")
-    print(f"  total cost: ${ai_summary.get('total_cost',0):.2f}, value: ${ai_summary.get('total_value',0):.2f}")
+    output = {}
+    for n, (key, cfg) in enumerate(PORTS.items(), 1):
+        tab = cfg["tab"]
+        print(f"\n[{n}/{len(PORTS)}] {tab} tab")
+        txs, deposits, adjs = parse_log(logs[tab])
+        summary, holdings = parse_port(tab, cfg, summ, hold, txs)
+        print(f"  holdings: {[h['ticker'] for h in holdings]}")
+        print(f"  transactions: {len(txs)}")
+        print(f"  deposits: {len(deposits)} = ${sum(d['usd'] for d in deposits):.2f}")
+        print(f"  adjustments: {len(adjs)} = ${sum(a['usd'] for a in adjs):.2f}")
+        print(f"  total cost: ${summary['total_cost']:.2f}, value: ${summary['total_value']:.2f}")
 
-    ai_history = {}
-    if ai_txs:
-        ai_history = build_history(ai_txs, ["VOO", "QQQM"],
-                                   deposits=ai_deposits, holdings=ai_holdings)
-    ai_dividends = round(sum(t["total"] for t in ai_txs if t["type"] == "DIV"), 2)
-    print(f"  dividends received: ${ai_dividends:.2f}")
+        history = {}
+        if txs:
+            history = build_history(txs, cfg["benchmarks"], deposits=deposits,
+                                    holdings=holdings, adjustments=adjs)
+        dividends = round(sum(t["total"] for t in txs if t["type"] == "DIV"), 2)
+        print(f"  dividends received: ${dividends:.2f}")
 
-    # ── DCA S&P500 ────────────────────────────────────────────────
-    print("\n[2/2] DCA S&P500 tab")
-    sp_rows = read_tab(svc, "DCA S&P500")
-    sp_summary, sp_holdings, sp_txs, sp_deposits = parse_holdings(sp_rows)
-    print(f"  holdings: {[h['ticker'] for h in sp_holdings]}")
-    print(f"  transactions: {len(sp_txs)}")
-    print(f"  deposits: {len(sp_deposits)} = ${sum(d['usd'] for d in sp_deposits):.2f}")
-    print(f"  total cost: ${sp_summary.get('total_cost',0):.2f}, value: ${sp_summary.get('total_value',0):.2f}")
-
-    sp_history = {}
-    if sp_txs:
-        sp_history = build_history(sp_txs, ["QQQM"],
-                                   deposits=sp_deposits, holdings=sp_holdings)
-    sp_dividends = round(sum(t["total"] for t in sp_txs if t["type"] == "DIV"), 2)
-    print(f"  dividends received: ${sp_dividends:.2f}")
-
-    # ── Output ────────────────────────────────────────────────────
-    output = {
-        "ai_port": {
-            "name": "ลงทุนกับ AI",
-            "tab":  "DCA STOCK",
-            **ai_summary,
-            "total_dividends": ai_dividends,
-            "holdings":    ai_holdings,
-            "transactions": ai_txs,
-            "history":     ai_history,
-        },
-        "sp500_port": {
-            "name": "พอร์ตออม S&P500",
-            "tab":  "DCA S&P500",
-            **sp_summary,
-            "total_dividends": sp_dividends,
-            "holdings":    sp_holdings,
-            "transactions": sp_txs,
-            "history":     sp_history,
-        },
-        "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-    }
+        output[key] = {
+            "name": cfg["name"],
+            "tab":  tab,
+            **summary,
+            "total_dividends": dividends,
+            "holdings":     holdings,
+            "transactions": txs,
+            "history":      history,
+        }
+    output["generated_at"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Print summary (real numbers — local log only, before masking)
-    for key, label in [("ai_port","ลงทุนกับ AI"), ("sp500_port","พอร์ตออม S&P500")]:
+    for key, cfg in PORTS.items():
         p = output[key]
         s = p.get("history", {}).get("summary", {})
-        print(f"  [{label}] cost=${p.get('total_cost',0):.2f} value=${p.get('total_value',0):.2f} "
+        print(f"  [{cfg['name']}] cost=${p.get('total_cost',0):.2f} value=${p.get('total_value',0):.2f} "
               f"P/L={p.get('pl_pct',0):+.2f}% | "
               f"vs VOO={s.get('voo_pct', s.get('qqqm_pct',0)):+.2f}%")
 
