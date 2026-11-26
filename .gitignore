@@ -15,3 +15,9 @@ __pycache__/
 
 # Local dev
 *.local
+
+# 2026-11-26 Oat: never publish personal portfolio data in this public repo
+data/papers*.json
+data/charlie_reviews*.json
+data/benchmark.json
+data/_archive/
