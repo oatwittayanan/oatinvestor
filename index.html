@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oatinvestor — เล่าเรื่องหุ้นแบบเพื่อนเล่าให้ฟัง</title>
+<title>oatinvestor — เครื่องมือทางการเงิน</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Trirong:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
@@ -38,9 +38,6 @@
   a { color: inherit; }
   button { font-family: inherit; }
   .mono { font-family: 'IBM Plex Mono', monospace; }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-
-  /* ── Nav ──────────────────────────────────────────────────────── */
   .oi-nav { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); transition: background-color .35s ease, border-color .35s ease; }
   .oi-nav-inner { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); min-height: 66px; flex-wrap: wrap; row-gap: 0; }
   .oi-logo { text-decoration: none; display: flex; align-items: baseline; flex: none; }
@@ -57,782 +54,147 @@
   .oi-cta { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 13.5px; font-weight: 600; padding: 9px 18px; border-radius: 999px; flex: none; transition: transform .2s; display: inline-block; }
   .oi-cta:hover { transform: translateY(-1px); }
 
-  /* ── Shared ───────────────────────────────────────────────────── */
-  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
+  .tools-hero { max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 64px) clamp(16px, 4vw, 32px) 8px; }
+  .tools-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; color: var(--green); }
+  .tools-h1 { margin: 10px 0 12px; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(28px, 5vw, 42px); line-height: 1.3; }
+  .tools-lead { margin: 0; font-size: 15.5px; line-height: 1.85; color: var(--muted); max-width: 62ch; }
 
-  /* ── Hero ─────────────────────────────────────────────────────── */
-  .hero-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(36px, 6vw, 72px) clamp(16px, 4vw, 32px) 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr)); gap: clamp(32px, 5vw, 56px); align-items: center; scroll-margin-top: 80px; }
-  .hero-left { display: flex; flex-direction: column; gap: 22px; animation: fadeUp .7s ease both; }
-  .hero-h1 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(34px, 7.2vw, 56px); line-height: 1.24; letter-spacing: -.5px; }
-  .hero-h1 em { font-style: italic; color: var(--green); }
-  .hero-lead { margin: 0; font-size: 16.5px; line-height: 1.85; color: var(--muted); max-width: 56ch; }
-  .hero-ctas { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
-  .hero-cta-primary { text-decoration: none; background: var(--green); color: var(--on-green); font-size: 15px; font-weight: 600; padding: 13px 26px; border-radius: 999px; transition: transform .2s, box-shadow .2s; display: inline-block; }
-  .hero-cta-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--green) 70%, transparent); }
-  .hero-cta-secondary { text-decoration: none; border: 1px solid var(--line); color: var(--ink); font-size: 15px; font-weight: 600; padding: 12px 24px; border-radius: 999px; transition: border-color .2s, color .2s; display: inline-block; }
-  .hero-cta-secondary:hover { border-color: var(--green); color: var(--green); }
-  .hero-byline { display: flex; align-items: center; gap: 14px; margin-top: 10px; }
-  .hero-avatar { width: 48px; height: 48px; border-radius: 50%; flex: none; background: var(--green); color: var(--on-green); display: flex; align-items: center; justify-content: center; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 19px; }
-  .hero-byline-text { display: flex; flex-direction: column; gap: 2px; }
-  .hero-byline-name { font-size: 14px; font-weight: 600; }
-  .hero-byline-sub { font-size: 12.5px; color: var(--muted); }
-
-  /* ── Hero portfolio snapshot card ─────────────────────────────── */
-  .hp-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px 26px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 16px; animation: fadeUp .7s ease .12s both; transition: background-color .35s ease, border-color .35s ease; }
-  .hp-top { display: flex; align-items: center; gap: 10px; }
-  .hp-top-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
-  .hp-top-time { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--muted); }
-  .hp-headline { display: flex; flex-direction: column; gap: 7px; }
-  .hp-pl { font-family: 'IBM Plex Mono', monospace; font-size: clamp(30px, 7vw, 40px); font-weight: 600; letter-spacing: -1px; line-height: 1; min-height: 34px; }
-  .hp-pl.up { color: var(--green); }
-  .hp-pl.down { color: var(--red); }
-  .hp-headline-sub { font-size: 12.5px; color: var(--muted); }
-  .hp-badges { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .hp-badge { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
-  .hp-badge.up { color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); }
-  .hp-badge.down { color: var(--red); background: color-mix(in srgb, var(--red) 12%, transparent); }
-  .hp-divider { height: 1px; background: var(--line2); }
-  .hp-holdings-label { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
-  .hp-hrow { display: flex; align-items: center; gap: 10px; }
-  .hp-hrow .t { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; width: 56px; }
-  .hp-hrow .n { font-size: 12px; color: var(--muted); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .hp-hrow .a { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); }
-  .hp-hrow .p { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; width: 62px; text-align: right; }
-  .hp-hrow .p.up { color: var(--green); }
-  .hp-hrow .p.down { color: var(--red); }
-  .hp-more { text-decoration: none; font-size: 13.5px; font-weight: 600; color: var(--green); display: flex; align-items: center; gap: 6px; }
-  .hp-more:hover { text-decoration: underline; }
-
-  .hp-range-row { display: flex; align-items: center; gap: 6px; }
-  .hp-range-btn { padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all .2s; border: 1px solid var(--line); background: transparent; color: var(--muted); }
-  .hp-range-btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-  .hp-range-chg { margin-left: auto; font-size: 12.5px; font-weight: 600; color: var(--muted); }
-  .hp-range-chg.up { color: var(--green); }
-  .hp-range-chg.down { color: var(--red); }
-  .hp-chart-pos { position: relative; }
-  .hp-chart-pos svg { display: block; width: 100%; height: 120px; }
-  .hp-chart-overlay { position: absolute; inset: 0; cursor: crosshair; }
-  .hp-chart-guide { position: absolute; top: 0; bottom: 0; width: 1px; background: color-mix(in srgb, var(--ink) 25%, transparent); pointer-events: none; }
-  .hp-chart-dot { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--green); border: 2px solid var(--card); transform: translate(-50%, -50%); pointer-events: none; }
-  .hp-chart-tip { position: absolute; top: -4px; transform: translate(-50%, -100%); background: var(--ink); color: var(--bg); font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 8px; white-space: nowrap; pointer-events: none; }
-  .hp-axis { display: flex; justify-content: space-between; }
-  .hp-axis span { font-size: 10px; color: var(--muted); }
-
-  /* ── Portfolio section ────────────────────────────────────────── */
-  .portfolio-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(36px, 5vw, 56px) clamp(16px, 4vw, 32px) clamp(80px, 10vw, 110px); scroll-margin-top: 70px; }
-  .portfolio-head { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; margin-bottom: 22px; }
-  .portfolio-head-left { display: flex; flex-direction: column; gap: 10px; }
-  .portfolio-h2 { margin: 0; font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: clamp(27px, 5.4vw, 38px); line-height: 1.3; }
-  .portfolio-updated { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); }
-  .portfolio-lead { margin: 0; font-size: 14px; line-height: 1.8; color: var(--muted); max-width: 60ch; }
-
-  .pf-tabs { display: flex; gap: 4px; background: var(--line2); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-bottom: 22px; width: fit-content; }
-  .pf-tab { border: none; background: transparent; color: var(--muted); font-size: 12.5px; font-weight: 600; letter-spacing: .3px; padding: 8px 16px; border-radius: 999px; cursor: pointer; transition: background-color .2s, color .2s; }
-  .pf-tab:hover { color: var(--ink); }
-  .pf-tab.active { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
-
-  .pf-state { text-align: center; font-size: 13.5px; color: var(--muted); padding: 40px 0; }
-
-  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 26px; align-items: stretch; }
-
-
-  .alloc-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; transition: background-color .35s ease, border-color .35s ease; }
-  .alloc-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
-  .alloc-body { display: flex; align-items: center; justify-content: center; flex: 1; }
-  .alloc-ring-wrap { position: relative; width: min(360px, 100%); max-width: 360px; aspect-ratio: 1; flex: none; margin: 0 auto; }
-  .alloc-ring-wrap svg { display: block; width: 100%; height: 100%; overflow: visible; }
-  .alloc-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; pointer-events: none; text-align: center; }
-  .alloc-ring-top { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; color: var(--muted); }
-  .alloc-ring-main { font-family: 'IBM Plex Mono', monospace; font-size: 21px; font-weight: 600; }
-  .alloc-ring-main.up { color: var(--green); }
-  .alloc-ring-main.down { color: var(--red); }
-  .alloc-ring-sub { font-size: 12px; color: var(--muted); }
-  .alloc-label-group { cursor: pointer; transition: opacity .25s ease; }
-
-  .hold-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: background-color .35s ease, border-color .35s ease; }
-  .hold-head { padding: 22px 26px 14px; display: flex; align-items: center; gap: 10px; }
-  .hold-head-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--muted); }
-  .hold-head-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
-  .hold-bench { display: flex; align-items: center; gap: 6px; }
-  .hold-bench-tag { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--gold) 14%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent); }
-  .hold-bench-tag.up { color: var(--green); }
-  .hold-bench-tag.down { color: var(--red); }
-  .hold-head-total { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; }
-  .hold-head-total.up { color: var(--green); }
-  .hold-head-total.down { color: var(--red); }
-  .hold-scroll { overflow-x: auto; }
-  .hold-table { min-width: 560px; }
-  .hold-row-header { display: grid; grid-template-columns: 1.7fr .9fr .9fr .8fr 1.2fr; gap: 12px; padding: 9px 26px; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2); font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
-  .hold-row-header span:not(:first-child) { text-align: right; }
-  .hold-row { display: grid; grid-template-columns: 1.7fr .9fr .9fr .8fr 1.2fr; gap: 12px; padding: 11px 26px; border-bottom: 1px solid var(--line2); align-items: center; transition: background-color .2s; }
-  .hold-row:hover { background-color: color-mix(in srgb, var(--ink) 3%, transparent); }
-  .hold-row:last-child { border-bottom: none; }
-  .hold-name-col { display: flex; flex-direction: column; gap: 1px; overflow: hidden; }
-  .hold-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; font-weight: 600; }
-  .hold-name { font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .hold-masked { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--muted); text-align: right; letter-spacing: 1px; }
-  .hold-pl { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 600; text-align: right; }
-  .hold-pl.up { color: var(--green); }
-  .hold-pl.down { color: var(--red); }
-  .hold-alloc-col { display: flex; align-items: center; gap: 10px; }
-  .hold-alloc-bar { flex: 1; height: 5px; border-radius: 99px; background: var(--line2); overflow: hidden; }
-  .hold-alloc-fill { height: 5px; border-radius: 99px; }
-  .hold-alloc-pct { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); width: 38px; text-align: right; }
+  .tools-grid { max-width: 1240px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 32px) 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px; }
+  .tool-card { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; transition: transform .25s ease, border-color .25s ease, background-color .35s ease; }
+  .tool-card.live:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+  .tool-card.soon { cursor: default; opacity: .72; }
+  .tool-icon { width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--green) 12%, transparent); color: var(--green); flex: none; }
+  .tool-icon svg { width: 22px; height: 22px; }
+  .tool-title { font-family: 'Trirong', Georgia, serif; font-weight: 700; font-size: 19px; line-height: 1.35; }
+  .tool-desc { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--muted); flex: 1; }
+  .tool-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 2px; }
+  .tool-cta { font-size: 13.5px; font-weight: 600; color: var(--green); }
+  .tool-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px; background: var(--line2); font-size: 11px; font-weight: 600; color: var(--muted); }
+  .tool-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
 </style>
 </head>
 <body>
 
 <div class="oi-nav">
   <div class="oi-nav-inner">
-    <a href="#top" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
+    <a href="index.html" class="oi-logo"><span class="oat">oat</span><span class="investor">investor</span></a>
     <div class="oi-nav-links">
-      <a href="#top" class="active">หน้าแรก</a>
-      <a href="#portfolio">พอร์ตหุ้น</a>
-      <a href="tools.html">เครื่องมือทางการเงิน</a>
-      <a href="#top">บทความ</a>
-      <a href="#top">เกี่ยวกับ</a>
+      <a href="index.html" class="active">เครื่องมือทางการเงิน</a>
     </div>
     <button class="oi-theme-btn" id="oi-theme-btn" title="สลับธีม Light / Dark / Auto">
       <span class="icon" id="oi-theme-icon">◐</span>
       <span class="label" id="oi-theme-label">AUTO</span>
     </button>
-    <a href="tools.html" class="oi-cta">ลองใช้เครื่องมือ</a>
   </div>
 </div>
 
-<div id="top" class="hero-wrap">
-  <div class="hero-left">
-    <div class="eyebrow">PERSONAL INVESTMENT JOURNAL — US STOCKS</div>
-    <h1 class="hero-h1">เล่าเรื่องหุ้น<br>แบบ<em>เพื่อน</em>เล่าให้ฟัง</h1>
-    <p class="hero-lead">สวัสดีครับ ผมโอ๊ต — ที่นี่คือบันทึกการลงทุนของผม</p>
-    <div class="hero-ctas">
-      <a href="#portfolio" class="hero-cta-primary">ส่องพอร์ตของผม →</a>
-      <a href="tools.html" class="hero-cta-secondary">เครื่องมือทางการเงิน</a>
-    </div>
-    <div class="hero-byline">
-      <div class="hero-avatar">อ</div>
-      <div class="hero-byline-text">
-        <span class="hero-byline-name">โอ๊ต · @oatinvestor</span>
-        <span class="hero-byline-sub">ลงทุนหุ้น US · แชร์พอร์ตแบบเปิดเผย</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="hp-card">
-    <div class="hp-top">
-      <span class="hp-top-label mono">MY PORTFOLIO</span>
-      <span class="hp-top-time mono" id="hp-time">—</span>
-    </div>
-    <div class="hp-headline">
-      <div class="hp-pl mono" id="hp-pl">—</div>
-      <span class="hp-headline-sub">มูลค่าพอร์ตรวม</span>
-    </div>
-    <div class="hp-badges" id="hp-badges"></div>
-    <div id="hp-chart-block" style="display:flex;flex-direction:column;gap:8px" hidden>
-      <div class="hp-range-row mono" id="hp-range-tabs"></div>
-      <div class="hp-chart-pos">
-        <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="hpSparkFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="var(--green)" stop-opacity="0.22"></stop>
-              <stop offset="1" stop-color="var(--green)" stop-opacity="0"></stop>
-            </linearGradient>
-          </defs>
-          <path id="hp-spark-area" fill="url(#hpSparkFill)" stroke="none"></path>
-          <path id="hp-spark-line" fill="none" stroke="var(--green)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-        </svg>
-        <div class="hp-chart-guide mono" id="hp-chart-guide" hidden></div>
-        <div class="hp-chart-dot" id="hp-chart-dot" hidden></div>
-        <div class="hp-chart-tip mono" id="hp-chart-tip" hidden></div>
-        <div class="hp-chart-overlay" id="hp-chart-overlay"></div>
-      </div>
-      <div class="hp-axis mono">
-        <span id="hp-axis-start">—</span>
-        <span id="hp-axis-end">—</span>
-      </div>
-    </div>
-    <div class="hp-divider"></div>
-    <div style="display:flex;flex-direction:column;gap:9px">
-      <span class="hp-holdings-label">TOP HOLDINGS</span>
-      <div id="hp-holdings"></div>
-    </div>
-    <a href="#portfolio" class="hp-more">ดูพอร์ตเต็มแบบรายตัว →</a>
-  </div>
+<div class="tools-hero">
+  <div class="tools-eyebrow mono">FINANCIAL TOOLS</div>
+  <h1 class="tools-h1">เครื่องมือทางการเงิน</h1>
+  <p class="tools-lead">รวมเครื่องมือช่วยคำนวณและวางแผนการเงิน ใช้งานง่าย ฟรี ไม่ต้องสมัครสมาชิก — เริ่มจากตัวแรก แล้วจะทยอยเพิ่มเครื่องมือใหม่ๆ เข้ามาเรื่อยๆ</p>
 </div>
 
-<div id="portfolio" class="portfolio-wrap">
-  <div class="portfolio-head">
-    <div class="portfolio-head-left">
-      <span class="eyebrow">PORTFOLIO</span>
-      <h2 class="portfolio-h2">พอร์ตตอนนี้</h2>
+<div class="tools-grid">
+  <a href="retirement-planner.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
     </div>
-    <span class="portfolio-updated mono" id="pf-updated" hidden></span>
-  </div>
+    <div class="tool-title">วางแผนเกษียณ</div>
+    <p class="tool-desc">ใส่อายุ เงินออม เงินลงทุนต่อเดือน และผลตอบแทนที่คาดหวัง แล้วดูว่าเงินจะพอใช้ถึงอายุเท่าไหร่ พร้อมกราฟจำลองพอร์ตทั้งช่วงสะสมและช่วงใช้เงิน</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
 
-  <div class="pf-tabs mono" id="pf-tabs">
-    <button class="pf-tab active" data-key="combined">รวมพอร์ต</button>
-    <button class="pf-tab" data-key="ai_port">พอร์ตออมหุ้น</button>
-    <button class="pf-tab" data-key="sp500_port">พอร์ตออม S&P500</button>
-  </div>
-
-  <div class="pf-state" id="pf-loading">กำลังโหลดข้อมูล...</div>
-  <div class="pf-state" id="pf-error" hidden>โหลดข้อมูลไม่สำเร็จ ลองรีเฟรชหน้าอีกครั้งนะครับ</div>
-
-  <div class="portfolio-grid" id="portfolio-grid" hidden>
-    <div class="alloc-card">
-      <span class="alloc-card-label">ALLOCATION · สัดส่วนพอร์ต</span>
-      <div class="alloc-body">
-        <div class="alloc-ring-wrap">
-          <svg viewBox="0 0 300 300" id="alloc-ring-svg"></svg>
-          <div class="alloc-ring-center">
-            <span class="alloc-ring-top mono" id="alloc-ring-top">—</span>
-            <span class="alloc-ring-main mono" id="alloc-ring-main">—</span>
-            <span class="alloc-ring-sub" id="alloc-ring-sub">—</span>
-          </div>
-        </div>
-      </div>
+  <a href="dca-calculator.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
     </div>
-    <div class="hold-card">
-      <div class="hold-head">
-        <span class="hold-head-label">HOLDINGS · หุ้นที่ถืออยู่</span>
-        <div class="hold-head-right">
-          <span class="hold-bench mono" id="hold-bench"></span>
-          <span class="hold-head-total mono" id="hold-head-total">—</span>
-        </div>
-      </div>
-      <div class="hold-scroll">
-        <div class="hold-table">
-          <div class="hold-row-header">
-            <span>หุ้น</span><span>AVG COST</span><span>PRICE</span><span>P/L</span><span style="padding-left:8px">สัดส่วน</span>
-          </div>
-          <div id="hold-rows"></div>
-        </div>
-      </div>
+    <div class="tool-title">คำนวณ DCA</div>
+    <p class="tool-desc">จำลองผลของการลงทุนแบบถัวเฉลี่ยต้นทุนทุกเดือน ดูมูลค่าพอร์ตที่ควรจะเป็นเมื่อครบกำหนด เทียบกับเงินที่ลงทุนไปจริง</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="compound-interest.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 0-7 1.3-7 3s3 3 7 3 7-1.3 7-3-3-3-7-3z"/><path d="M5 6v4c0 1.7 3 3 7 3s7-1.3 7-3V6"/><path d="M5 10v4c0 1.7 3 3 7 3s7-1.3 7-3v-4"/></svg>
     </div>
-  </div>
+    <div class="tool-title">คำนวณดอกเบี้ยทบต้น</div>
+    <p class="tool-desc">ดูพลังของดอกเบี้ยทบต้น เงินต้นบวกเงินออมต่อเดือนจะโตเป็นเท่าไหร่ และดอกเบี้ยช่วยทำงานให้เท่าไหร่</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="cagr-calculator.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="3" height="8"/><rect x="10.5" y="7" width="3" height="13"/><rect x="17" y="3" width="3" height="17"/></svg>
+    </div>
+    <div class="tool-title">คำนวณ CAGR</div>
+    <p class="tool-desc">หาอัตราเติบโตเฉลี่ยต่อปีแบบทบต้นจากมูลค่าเริ่มต้นกับมูลค่าปัจจุบัน ใช้เทียบผลตอบแทนกองทุน หุ้น หรือพอร์ตตัวเองได้</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="loan-reducing.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+    </div>
+    <div class="tool-title">คำนวณสินเชื่อบ้าน</div>
+    <p class="tool-desc">คำนวณแบบลดต้นลดดอก ดูค่างวด ดอกเบี้ยรวม ตารางผ่อนชำระ และลองจ่ายเพิ่มเพื่อดูว่าลดเวลาผ่อนได้แค่ไหน</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="loan-fixed.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.2-3.6A2 2 0 0 1 8.1 6h7.8a2 2 0 0 1 1.9 1.4L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.3" r="1.3"/><circle cx="16.5" cy="17.3" r="1.3"/></svg>
+    </div>
+    <div class="tool-title">คำนวณสินเชื่อดอกเบี้ยคงที่</div>
+    <p class="tool-desc">สำหรับไฟแนนซ์รถ รถจักรยานยนต์ และสินเชื่อส่วนบุคคลที่คิดดอกเบี้ยคงที่ตลอดสัญญา ดูค่างวดและตารางผ่อนชำระ</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="savings-goal.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c1.1 0 2 .9 2 2v3.5c0 3-2 5.5-4.5 6.5L12 19l-4.5-2c-2.5-1-4.5-3.5-4.5-6.5V7c0-1.1.9-2 2-2h1.5L8 3h8l1.5 2z"/><circle cx="15.5" cy="10.5" r="1"/></svg>
+    </div>
+    <div class="tool-title">เป้าหมายการออม</div>
+    <p class="tool-desc">ตั้งเป้าหมาย (เช่น เงินดาวน์บ้าน กองทุนสำรองฉุกเฉิน) แล้วดูว่าต้องออมเดือนละเท่าไหร่ถึงจะถึงเป้าตามเวลาที่ตั้งไว้</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="fire-calculator.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    </div>
+    <div class="tool-title">อิสรภาพทางการเงิน (FIRE)</div>
+    <p class="tool-desc">คำนวณว่าต้องมีเงินก้อนเท่าไหร่ถึงจะหยุดทำงานได้เร็วกว่ากำหนด และอีกกี่ปีจะไปถึง ตามค่าใช้จ่ายและอัตราถอนเงินที่ตั้งไว้</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
+
+  <a href="present-value.html" class="tool-card live">
+    <div class="tool-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19l-7-7 7-7M18 19l-7-7 7-7"/></svg>
+    </div>
+    <div class="tool-title">คำนวณมูลค่าปัจจุบัน (PV)</div>
+    <p class="tool-desc">เงินก้อนที่จะได้รับในอนาคต มีมูลค่าเท่าไหร่ในวันนี้ ใช้ประเมินข้อเสนอเงินก้อน หรือเทียบทางเลือกลงทุนคนละช่วงเวลา</p>
+    <div class="tool-foot"><span class="tool-cta">เริ่มคำนวณ →</span></div>
+  </a>
 </div>
 
 <script>
 (() => {
-  const $ = (id) => document.getElementById(id);
   const THEME_ICON = { auto: '◐', light: '○', dark: '●' };
   let theme = 'auto';
   try { theme = localStorage.getItem('oatinvestor-preview-theme') || 'auto'; } catch (e) {}
   function applyTheme() {
     if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
     else document.documentElement.setAttribute('data-theme', theme);
-    $('oi-theme-icon').textContent = THEME_ICON[theme];
-    $('oi-theme-label').textContent = theme.toUpperCase();
+    document.getElementById('oi-theme-icon').textContent = THEME_ICON[theme];
+    document.getElementById('oi-theme-label').textContent = theme.toUpperCase();
   }
-  $('oi-theme-btn').addEventListener('click', () => {
+  document.getElementById('oi-theme-btn').addEventListener('click', () => {
     const order = ['auto', 'light', 'dark'];
     theme = order[(order.indexOf(theme) + 1) % 3];
     applyTheme();
     try { localStorage.setItem('oatinvestor-preview-theme', theme); } catch (e) {}
   });
   applyTheme();
-})();
-</script>
-
-<script>
-(() => {
-  const WORKER_URL = 'https://oat-portfolio-worker.wittayanan-oat.workers.dev';
-  const $ = (id) => document.getElementById(id);
-
-  const TICKER_COLORS = {
-    NVDA: '#76b900', MSFT: '#00a4ef', META: '#0668e1', AMZN: '#ff9900',
-    TSM: '#0072c6', NFLX: '#e50914', VOO: '#96151d', ARM: '#0091bd',
-    ASML: '#0f5ea3', MU: '#0089cf', SPCX: '#2c2c2c', SGOV: '#00674b',
-  };
-  const NAME_MAP = {
-    NVDA: 'NVIDIA', MSFT: 'Microsoft', META: 'Meta', AMZN: 'Amazon',
-    TSM: 'TSMC', NFLX: 'Netflix', VOO: 'Vanguard S&P 500 ETF',
-    ARM: 'Arm Holdings', ASML: 'ASML Holding', MU: 'Micron Technology',
-    SPCX: 'SpaceX', SGOV: 'iShares 0-3 Month Treasury', CASH: 'เงินสด',
-  };
-  const LOGO_DOMAINS = {
-    NVDA: 'nvidia.com', MSFT: 'microsoft.com', META: 'meta.com', AMZN: 'amazon.com',
-    TSM: 'tsmc.com', NFLX: 'netflix.com', VOO: 'vanguard.com', ARM: 'arm.com',
-    ASML: 'asml.com', MU: 'micron.com', SPCX: 'spacex.com', SGOV: 'ishares.com',
-  };
-  const CASH_COLOR = '#8A8471';
-  const FALLBACK_COLORS = ['#f59e0b', '#06b6d4', '#84cc16', '#f43f5e', '#8b5cf6', '#fb923c'];
-
-  function assignColors(sorted) {
-    const map = {}; let f = 0;
-    for (const h of sorted) {
-      if (h.ticker === 'CASH') map[h.ticker] = CASH_COLOR;
-      else map[h.ticker] = TICKER_COLORS[h.ticker] || FALLBACK_COLORS[f++ % FALLBACK_COLORS.length];
-    }
-    return map;
-  }
-  function fmtSigned(v) {
-    const sign = v > 0 ? '+' : '';
-    return `${sign}${v.toFixed(1)}%`;
-  }
-  // 2026-11-18 โอ๊ตปิดมูลค่าพอร์ตอีกครั้ง (ทั้งหน้าเว็บและ Worker) — แสดง *** แทนตัวเลขเงินทุกจุด
-  function fmtMoney() { return '***'; }
-  function fmtMoney2() { return '***'; }
-  // SGOV (T-bill ETF) and CASH aren't real stock picks — always park them at
-  // the end of the list so the holdings that are actual positions stand out.
-  const TAIL_TICKERS = ['SGOV', 'CASH'];
-  function sortHoldings(holdings) {
-    return holdings.slice().sort((a, b) => {
-      const aTail = TAIL_TICKERS.includes(a.ticker), bTail = TAIL_TICKERS.includes(b.ticker);
-      if (aTail !== bTail) return aTail ? 1 : -1;
-      return b.pos_pct - a.pos_pct;
-    });
-  }
-
-  let portfolios = null;
-  let activeKey = 'combined';
-  // Benchmark returns (VOO/QQQM) — last value from the daily-cron history
-  // file, same source/lag as the hero chart. Only ai_port has a VOO mirror;
-  // sp500_port only mirrors QQQM; combined has no valid single benchmark
-  // (see buildCombinedHistory notes), so it gets no tags.
-  let benchSummary = null;
-
-  // ── Hero snapshot card (always shows the combined portfolio) ─────────
-  function renderHero() {
-    const combined = portfolios.find((p) => p.key === 'combined');
-    const ai = portfolios.find((p) => p.key === 'ai_port');
-    const sp = portfolios.find((p) => p.key === 'sp500_port');
-    if (!combined) return;
-
-    $('hp-pl').textContent = fmtMoney(combined.total_value);
-
-    $('hp-badges').innerHTML = [combined, ai, sp].filter(Boolean).map((p) => `
-      <span class="hp-badge ${p.pl_pct >= 0 ? 'up' : 'down'}">${p.name} ${fmtSigned(p.pl_pct)}</span>
-    `).join('');
-
-    const top3 = sortHoldings(combined.holdings).filter((h) => !TAIL_TICKERS.includes(h.ticker)).slice(0, 3);
-    $('hp-holdings').innerHTML = top3.map((h) => `
-      <div class="hp-hrow">
-        <span class="t mono">${h.ticker}</span>
-        <span class="n">${NAME_MAP[h.ticker] || h.ticker}</span>
-        <span class="a mono">${h.pos_pct.toFixed(1)}%</span>
-        <span class="p mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
-      </div>
-    `).join('');
-  }
-
-  // ── Hero return chart — daily history from data/portfolio.json ───────
-  // Only ever plots a %-return line: dollar values from that file are
-  // combined internally to compute the ratio, then discarded.
-  let combinedHist = null;   // { dates, retPct }
-  let chartPeriod = 'ALL';
-  let hoverCtx = null;
-
-  function buildCombinedHistory(pfJson) {
-    const aiHist = pfJson?.ai_port?.history;
-    const spHist = pfJson?.sp500_port?.history;
-    const toMap = (h) => {
-      const m = new Map();
-      (h?.dates || []).forEach((d, i) => m.set(d, {
-        v: h.portfolio[i] || 0,
-        dep: (h.deposited ? h.deposited[i] : 0) || 0,
-      }));
-      return m;
-    };
-    const aiMap = toMap(aiHist), spMap = toMap(spHist);
-    if (!aiMap.size && !spMap.size) return null;
-    const allDates = Array.from(new Set([...aiMap.keys(), ...spMap.keys()])).sort();
-    let lastAi = { v: 0, dep: 0 }, lastSp = { v: 0, dep: 0 };
-    const dates = [], retPct = [];
-    for (const d of allDates) {
-      if (aiMap.has(d)) lastAi = aiMap.get(d);
-      if (spMap.has(d)) lastSp = spMap.get(d);
-      const dep = lastAi.dep + lastSp.dep;
-      const val = lastAi.v + lastSp.v;
-      dates.push(d);
-      retPct.push(dep > 0 ? ((val / dep - 1) * 100) : 0);
-    }
-    return { dates, retPct };
-  }
-
-  // The daily-cron history file only reaches yesterday's close at best. Once
-  // the live Worker responds, graft today's live return% on as the chart's
-  // final point (same deposited-capital formula, see the Worker's
-  // summarize()) so the line ends exactly where the badges say "right now" —
-  // everything before that point still comes from the cron file, since a
-  // live-reconstructed daily history isn't possible (the Sheet has no
-  // day-by-day value log, see [[project_oatinvestor]] notes on this).
-  function appendLivePoint(hist, liveData) {
-    if (!hist || !hist.dates.length || !liveData || !liveData.portfolios) return hist;
-    const combined = liveData.portfolios.find((p) => p.key === 'combined');
-    if (!combined) return hist;
-    const todayStr = new Date(liveData.updated_at || Date.now()).toISOString().slice(0, 10);
-    const lastIdx = hist.dates.length - 1;
-    if (hist.dates[lastIdx] === todayStr) {
-      hist.retPct[lastIdx] = combined.pl_pct;
-    } else {
-      hist.dates.push(todayStr);
-      hist.retPct.push(combined.pl_pct);
-    }
-    return hist;
-  }
-
-  function periodSlice(hist, period) {
-    const n = hist.dates.length;
-    if (period === 'ALL' || n === 0) return hist;
-    const days = { '1M': 21, '3M': 63, '6M': 126 }[period] || n;
-    const start = Math.max(0, n - days);
-    return { dates: hist.dates.slice(start), retPct: hist.retPct.slice(start) };
-  }
-
-  // Re-anchor a %-return series so it starts at 0.00 at the first point of
-  // the visible window, instead of carrying its cumulative-since-inception
-  // value — lets ALL vs 1M/3M/6M compare "performance in this window", not
-  // "cumulative return sliced to this window". Compounds off the growth
-  // factor (1 + return) rather than subtracting, since deposits can still
-  // land mid-window.
-  function rebaseReturns(arr) {
-    if (!arr || !arr.length) return arr;
-    const base = 1 + arr[0] / 100;
-    return arr.map((v) => ((1 + v / 100) / base - 1) * 100);
-  }
-
-  function fmtDateShort(iso) {
-    const d = new Date(iso + 'T00:00:00');
-    return d.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: '2-digit' });
-  }
-
-  function renderHeroChart() {
-    const block = $('hp-chart-block');
-    if (!combinedHist || combinedHist.dates.length < 2) { block.hidden = true; return; }
-    const sliced = periodSlice(combinedHist, chartPeriod);
-    const vals = chartPeriod === 'ALL' ? sliced.retPct : rebaseReturns(sliced.retPct);
-    const N = vals.length;
-    if (N < 2) { block.hidden = true; return; }
-    block.hidden = false;
-
-    const min = Math.min(...vals, 0), max = Math.max(...vals, 0);
-    const pad = (max - min) * 0.15 || 1;
-    const lo = min - pad, hi = max + pad;
-    const X = (i) => (i / (N - 1)) * 320;
-    const Y = (v) => 86 - ((v - lo) / (hi - lo)) * 70;
-    const line = vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' ');
-    $('hp-spark-line').setAttribute('d', line);
-    $('hp-spark-area').setAttribute('d', line + ' L 320 100 L 0 100 Z');
-    $('hp-axis-start').textContent = fmtDateShort(sliced.dates[0]);
-    $('hp-axis-end').textContent = fmtDateShort(sliced.dates[N - 1]);
-
-    const rp = vals[N - 1] - vals[0];
-    const chgEl = $('hp-range-chg');
-    if (chgEl) {
-      chgEl.textContent = (rp >= 0 ? '+' : '') + rp.toFixed(1) + '%';
-      chgEl.className = 'hp-range-chg mono ' + (rp >= 0 ? 'up' : 'down');
-    }
-    hoverCtx = { dates: sliced.dates, vals, X, Y, N };
-  }
-
-  function buildRangeTabs() {
-    if (!combinedHist) return;
-    const n = combinedHist.dates.length;
-    const daysMap = { '1M': 21, '3M': 63, '6M': 126 };
-    const opts = ['1M', '3M', '6M', 'ALL'].filter((p) => p === 'ALL' || n >= daysMap[p]);
-    if (!opts.includes(chartPeriod)) chartPeriod = opts[opts.length - 1];
-    $('hp-range-tabs').innerHTML = opts.map((p) => `<button class="hp-range-btn${p === chartPeriod ? ' active' : ''}" data-period="${p}">${p}</button>`).join('') + '<span class="hp-range-chg mono" id="hp-range-chg"></span>';
-    $('hp-range-tabs').querySelectorAll('.hp-range-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        chartPeriod = btn.dataset.period;
-        $('hp-range-tabs').querySelectorAll('.hp-range-btn').forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderHeroChart();
-      });
-    });
-  }
-
-  $('hp-chart-overlay').addEventListener('mousemove', (e) => {
-    if (!hoverCtx) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    const { dates, vals, X, Y, N } = hoverCtx;
-    const i = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
-    const leftPct = (X(i) / 320 * 100).toFixed(2) + '%';
-    const topPct = (Y(vals[i]) / 100 * 100).toFixed(2) + '%';
-    const guide = $('hp-chart-guide'), dot = $('hp-chart-dot'), tip = $('hp-chart-tip');
-    guide.style.left = leftPct; guide.hidden = false;
-    dot.style.left = leftPct; dot.style.top = topPct; dot.hidden = false;
-    tip.style.left = Math.max(14, Math.min(86, (X(i) / 320) * 100)) + '%';
-    tip.textContent = fmtDateShort(dates[i]) + ' · ' + fmtSigned(vals[i]);
-    tip.hidden = false;
-  });
-  $('hp-chart-overlay').addEventListener('mouseleave', () => {
-    $('hp-chart-guide').hidden = true;
-    $('hp-chart-dot').hidden = true;
-    $('hp-chart-tip').hidden = true;
-  });
-
-  // ── Allocation ring (SVG stroke segments + outer pointer labels, like the original site) ──
-  const SVG_NS = 'http://www.w3.org/2000/svg';
-  const RING_CX = 150, RING_CY = 150, RING_R = 80;
-  let ringCircles = [];
-  let labelGroups = [];
-  let ringDefault = { top: '—', main: '—', sub: '—' };
-
-  function setHover(idx, sorted, colorMap) {
-    const top = $('alloc-ring-top'), main = $('alloc-ring-main'), sub = $('alloc-ring-sub');
-    ringCircles.forEach((c, i) => {
-      c.style.opacity = idx == null || idx === i ? '1' : '.3';
-      c.setAttribute('stroke-width', idx === i ? 40 : 32);
-    });
-    labelGroups.forEach(({ el, sortedIdx }) => { el.style.opacity = idx == null || idx === sortedIdx ? '1' : '.35'; });
-    if (idx == null) {
-      top.textContent = ringDefault.top;
-      main.textContent = ringDefault.main;
-      main.className = 'alloc-ring-main mono';
-      sub.textContent = ringDefault.sub;
-    } else {
-      const h = sorted[idx];
-      top.textContent = h.ticker;
-      main.textContent = h.pos_pct.toFixed(1) + '%';
-      main.className = 'alloc-ring-main mono ' + (h.pl_pct >= 0 ? 'up' : 'down');
-      sub.textContent = fmtSigned(h.pl_pct) + ' P/L';
-    }
-  }
-
-  function renderRing(sorted, colorMap, totalValue) {
-    const svg = $('alloc-ring-svg');
-    svg.innerHTML = '';
-    const g = document.createElementNS(SVG_NS, 'g');
-    g.setAttribute('transform', `rotate(-90 ${RING_CX} ${RING_CY})`);
-    const C = 2 * Math.PI * RING_R;
-    let cum = 0;
-    ringCircles = sorted.map((h, i) => {
-      const len = (h.pos_pct / 100) * C;
-      const vis = Math.max(0.5, len - 2.2);
-      const c = document.createElementNS(SVG_NS, 'circle');
-      c.setAttribute('cx', RING_CX); c.setAttribute('cy', RING_CY); c.setAttribute('r', RING_R);
-      c.setAttribute('fill', 'none');
-      c.setAttribute('stroke', colorMap[h.ticker] || CASH_COLOR);
-      c.setAttribute('stroke-width', '32');
-      c.setAttribute('stroke-dasharray', vis.toFixed(2) + ' ' + (C - vis).toFixed(2));
-      c.setAttribute('stroke-dashoffset', (-(cum + 1.1)).toFixed(2));
-      c.style.transition = 'opacity .25s ease, stroke-width .25s ease';
-      c.style.cursor = 'pointer';
-      c.addEventListener('mouseenter', () => setHover(i, sorted, colorMap));
-      c.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
-      cum += len;
-      g.appendChild(c);
-      return c;
-    });
-    svg.appendChild(g);
-    renderOuterLabels(svg, sorted, colorMap);
-
-    ringDefault = { top: 'TOTAL VALUE', main: fmtMoney(totalValue), sub: `${sorted.length} ตำแหน่ง` };
-    setHover(null, sorted, colorMap);
-  }
-
-  // Outer pointer-line + logo + ticker/% labels around the ring, matching
-  // the original site's donut. Slices under 4% are too thin to label.
-  function renderOuterLabels(svg, sorted, colorMap) {
-    const OUTER_R = RING_R + 16, RADIAL = 14, H_LINE = 18, LR = 15, GAP = 8, ROW = 14, EDGE = 6;
-    const W = 300, H = 300;
-    const C = 2 * Math.PI * RING_R;
-    let cum = 0;
-    const items = [];
-    sorted.forEach((h, sortedIdx) => {
-      const len = (h.pos_pct / 100) * C;
-      const midFrac = (cum + len / 2) / C;
-      cum += len;
-      if (h.pos_pct < 4) return;
-      const angle = (-90 + midFrac * 360) * Math.PI / 180;
-      const right = Math.cos(angle) >= 0;
-      const px1x = RING_CX + OUTER_R * Math.cos(angle), px1y = RING_CY + OUTER_R * Math.sin(angle);
-      const px2x = RING_CX + (OUTER_R + RADIAL) * Math.cos(angle), px2y = RING_CY + (OUTER_R + RADIAL) * Math.sin(angle);
-      items.push({
-        h, sortedIdx, right, color: colorMap[h.ticker] || CASH_COLOR,
-        px1x, px1y, px2x, px2y,
-        elbowX: px2x + (right ? H_LINE : -H_LINE), elbowY: px2y,
-      });
-    });
-
-    // Push overlapping labels on the same side apart vertically.
-    const MIN_GAP = ROW * 2 + 6;
-    for (let pass = 0; pass < 4; pass++) {
-      for (let a = 0; a < items.length; a++) {
-        for (let b = a + 1; b < items.length; b++) {
-          const ia = items[a], ib = items[b];
-          if (ia.right !== ib.right) continue;
-          const dy = ib.elbowY - ia.elbowY;
-          if (Math.abs(dy) < MIN_GAP) {
-            const push = (MIN_GAP - Math.abs(dy)) / 2;
-            if (dy >= 0) { ia.elbowY -= push; ib.elbowY += push; } else { ia.elbowY += push; ib.elbowY -= push; }
-          }
-        }
-      }
-    }
-
-    labelGroups = items.map((it, i) => {
-      const logoCY = Math.max(LR + EDGE, Math.min(H - LR - EDGE, it.elbowY));
-      const logoCX = it.right ? it.elbowX + LR + 2 : it.elbowX - LR - 2;
-      const tx = it.right ? logoCX + LR + GAP : logoCX - LR - GAP;
-
-      const g = document.createElementNS(SVG_NS, 'g');
-      g.setAttribute('class', 'alloc-label-group');
-
-      const line = document.createElementNS(SVG_NS, 'polyline');
-      line.setAttribute('points', `${it.px1x.toFixed(1)},${it.px1y.toFixed(1)} ${it.px2x.toFixed(1)},${it.px2y.toFixed(1)} ${it.elbowX.toFixed(1)},${logoCY.toFixed(1)}`);
-      line.setAttribute('fill', 'none');
-      line.setAttribute('stroke', it.color);
-      line.setAttribute('stroke-width', '1.4');
-      line.setAttribute('stroke-linejoin', 'round');
-      line.setAttribute('opacity', '0.55');
-      g.appendChild(line);
-
-      const backdrop = document.createElementNS(SVG_NS, 'circle');
-      backdrop.setAttribute('cx', logoCX); backdrop.setAttribute('cy', logoCY); backdrop.setAttribute('r', LR + 1.5);
-      backdrop.setAttribute('fill', 'var(--card)');
-      backdrop.setAttribute('stroke', it.color);
-      backdrop.setAttribute('stroke-width', '1.5');
-      g.appendChild(backdrop);
-
-      const domain = LOGO_DOMAINS[it.h.ticker];
-      const fallback = document.createElementNS(SVG_NS, 'text');
-      fallback.setAttribute('x', logoCX); fallback.setAttribute('y', logoCY);
-      fallback.setAttribute('text-anchor', 'middle'); fallback.setAttribute('dominant-baseline', 'central');
-      fallback.setAttribute('font-family', "'IBM Plex Mono', monospace");
-      fallback.setAttribute('font-size', '10'); fallback.setAttribute('font-weight', '700');
-      fallback.setAttribute('fill', it.color);
-      fallback.textContent = it.h.ticker === 'CASH' ? '$' : it.h.ticker.slice(0, 2);
-      fallback.style.display = domain ? 'none' : '';
-      g.appendChild(fallback);
-
-      if (domain) {
-        const img = document.createElementNS(SVG_NS, 'image');
-        img.setAttribute('href', `https://www.google.com/s2/favicons?domain=${domain}&sz=64`);
-        img.setAttribute('x', logoCX - LR); img.setAttribute('y', logoCY - LR);
-        img.setAttribute('width', LR * 2); img.setAttribute('height', LR * 2);
-        img.style.clipPath = `circle(${LR}px)`;
-        img.addEventListener('error', () => { img.style.display = 'none'; fallback.style.display = ''; });
-        g.appendChild(img);
-      }
-
-      const tickerText = document.createElementNS(SVG_NS, 'text');
-      tickerText.setAttribute('x', tx); tickerText.setAttribute('y', logoCY - 1);
-      tickerText.setAttribute('text-anchor', it.right ? 'start' : 'end');
-      tickerText.setAttribute('font-family', "'IBM Plex Mono', monospace");
-      tickerText.setAttribute('font-size', '13'); tickerText.setAttribute('font-weight', '700');
-      tickerText.setAttribute('fill', 'var(--ink)');
-      tickerText.textContent = it.h.ticker;
-      g.appendChild(tickerText);
-
-      const pctText = document.createElementNS(SVG_NS, 'text');
-      pctText.setAttribute('x', tx); pctText.setAttribute('y', logoCY + 12);
-      pctText.setAttribute('text-anchor', it.right ? 'start' : 'end');
-      pctText.setAttribute('font-family', "'IBM Plex Mono', monospace");
-      pctText.setAttribute('font-size', '11'); pctText.setAttribute('font-weight', '600');
-      pctText.setAttribute('fill', it.color);
-      pctText.textContent = it.h.pos_pct.toFixed(1) + '%';
-      g.appendChild(pctText);
-
-      g.addEventListener('mouseenter', () => setHover(it.sortedIdx, sorted, colorMap));
-      g.addEventListener('mouseleave', () => setHover(null, sorted, colorMap));
-      svg.appendChild(g);
-      return { el: g, sortedIdx: it.sortedIdx };
-    });
-  }
-
-  function renderTable(sorted, colorMap) {
-    $('hold-rows').innerHTML = sorted.map((h) => `
-      <div class="hold-row">
-        <div class="hold-name-col">
-          <span class="hold-ticker mono">${h.ticker}</span>
-          <span class="hold-name">${NAME_MAP[h.ticker] || h.ticker}</span>
-        </div>
-        <span class="hold-masked">${fmtMoney2(h.avg_cost)}</span>
-        <span class="hold-masked">${fmtMoney2(h.price)}</span>
-        <span class="hold-pl mono ${h.pl_pct >= 0 ? 'up' : 'down'}">${fmtSigned(h.pl_pct)}</span>
-        <div class="hold-alloc-col">
-          <div class="hold-alloc-bar"><div class="hold-alloc-fill" style="width:${Math.min(100, h.pos_pct)}%;background:${colorMap[h.ticker] || CASH_COLOR}"></div></div>
-          <span class="hold-alloc-pct mono">${h.pos_pct.toFixed(1)}%</span>
-        </div>
-      </div>
-    `).join('');
-  }
-
-  function renderPortfolioSection() {
-    if (!portfolios) return;
-    const pf = portfolios.find((p) => p.key === activeKey);
-    const loadingEl = $('pf-loading'), errorEl = $('pf-error'), gridEl = $('portfolio-grid');
-    if (!pf || !pf.holdings || !pf.holdings.length) {
-      loadingEl.hidden = true; errorEl.hidden = false; gridEl.hidden = true;
-      return;
-    }
-    const sorted = sortHoldings(pf.holdings);
-    const colorMap = assignColors(sorted);
-    renderRing(sorted, colorMap, pf.total_value);
-    renderTable(sorted, colorMap);
-
-    const totalEl = $('hold-head-total');
-    totalEl.textContent = fmtSigned(pf.pl_pct) + ' ทั้งพอร์ต';
-    totalEl.className = 'hold-head-total mono ' + (pf.pl_pct >= 0 ? 'up' : 'down');
-
-    const bench = benchSummary && benchSummary[activeKey];
-    $('hold-bench').innerHTML = bench
-      ? Object.entries(bench).map(([label, v]) => `<span class="hold-bench-tag ${v >= 0 ? 'up' : 'down'}">${label} ${fmtSigned(v)}</span>`).join('')
-      : '';
-
-    loadingEl.hidden = true; errorEl.hidden = true; gridEl.hidden = false;
-  }
-
-  $('pf-tabs').addEventListener('click', (e) => {
-    const btn = e.target.closest('.pf-tab');
-    if (!btn) return;
-    $('pf-tabs').querySelectorAll('.pf-tab').forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeKey = btn.dataset.key;
-    renderPortfolioSection();
-  });
-
-  // ธีมเปลี่ยน (ปุ่มสลับ Light/Dark/Auto) → รีเฟรช hover state ให้ default กลับมาถูกต้อง
-  new MutationObserver(() => {
-    if (portfolios) renderPortfolioSection();
-  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-
-  Promise.all([
-    fetch(WORKER_URL).then((r) => r.json()),
-    fetch('data/portfolio.json').then((r) => r.json()).catch(() => null),
-  ])
-    .then(([data, pfJson]) => {
-      if (data.error || !data.portfolios) throw new Error(data.error || 'no data');
-      portfolios = data.portfolios;
-      if (pfJson) {
-        const aiSum = pfJson.ai_port?.history?.summary || {};
-        const spSum = pfJson.sp500_port?.history?.summary || {};
-        benchSummary = {};
-        if (aiSum.voo_pct != null || aiSum.qqqm_pct != null) {
-          benchSummary.ai_port = {};
-          if (aiSum.voo_pct != null) benchSummary.ai_port.VOO = aiSum.voo_pct;
-          if (aiSum.qqqm_pct != null) benchSummary.ai_port.QQQM = aiSum.qqqm_pct;
-        }
-        if (spSum.qqqm_pct != null) {
-          benchSummary.sp500_port = { QQQM: spSum.qqqm_pct };
-        }
-      }
-      renderHero();
-      renderPortfolioSection();
-      if (data.updated_at) {
-        const d = new Date(data.updated_at);
-        const label = `อัพเดทล่าสุด ${d.toLocaleString('th-TH', { dateStyle: 'medium', timeStyle: 'short' })}`;
-        $('hp-time').textContent = d.toLocaleString('th-TH', { dateStyle: 'medium' });
-        const updatedEl = $('pf-updated');
-        updatedEl.textContent = label;
-        updatedEl.hidden = false;
-      }
-      if (pfJson) {
-        combinedHist = buildCombinedHistory(pfJson);
-        combinedHist = appendLivePoint(combinedHist, data);
-        buildRangeTabs();
-        renderHeroChart();
-      }
-    })
-    .catch(() => {
-      $('pf-loading').hidden = true;
-      $('pf-error').hidden = false;
-      $('hp-pl').textContent = '—';
-    });
 })();
 </script>
 </body>
