@@ -21,3 +21,11 @@ data/papers*.json
 data/charlie_reviews*.json
 data/benchmark.json
 data/_archive/
+
+# 2026-11-27 Oat: site = financial tools only — never publish portfolio/stock/trend data or member pages again
+data/portfolio.json
+data/stocks.json*
+trends.js
+member/
+team.html
+join.html
